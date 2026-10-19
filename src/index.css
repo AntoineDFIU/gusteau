@@ -1,0 +1,38 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    -webkit-font-smoothing: antialiased;
+    scroll-behavior: smooth;
+  }
+  body {
+    @apply bg-cream-100 font-sans text-charcoal-700;
+  }
+  ::selection {
+    @apply bg-tomato-100 text-tomato-700;
+  }
+}
+
+.scanline {
+  animation: scan 1.8s ease-in-out infinite;
+}
+@keyframes scan {
+  0% {
+    top: -4rem;
+  }
+  100% {
+    top: 100%;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}

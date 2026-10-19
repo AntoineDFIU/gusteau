@@ -1,0 +1,4 @@
+# Keep LF everywhere: deploy/ files run on the Raspberry Pi (bash, systemd, python).
+* text=auto eol=lf
+*.png binary
+*.jpg binary

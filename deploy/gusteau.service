@@ -1,0 +1,18 @@
+# systemd unit for Gusteau on a Raspberry Pi.
+# Install:  sudo cp gusteau.service /etc/systemd/system/ && sudo systemctl enable --now gusteau
+# Adjust User and paths if your username or install folder differ.
+[Unit]
+Description=Gusteau chef assistant
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+User=antoined
+WorkingDirectory=/home/antoined/gusteau
+EnvironmentFile=/home/antoined/gusteau/gusteau.env
+ExecStart=/usr/bin/python3 /home/antoined/gusteau/gusteau_server.py
+Restart=on-failure
+RestartSec=3
+
+[Install]
+WantedBy=multi-user.target
