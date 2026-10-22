@@ -47,7 +47,7 @@ export function UploadScreen({
             What’s in your <span className="italic text-tomato-500">kitchen?</span>
           </h1>
           <p className="mt-5 max-w-md text-lg leading-relaxed text-charcoal-500">
-            Upload a photo of your fridge or pantry and Gusteau will help you cook with what you have.
+            Upload a photo of your fridge or pantry or table and Gusteau will help you cook with what you have.
           </p>
           <ol className="mt-8 grid max-w-md gap-3 text-sm text-charcoal-500">
             {[
