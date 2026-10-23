@@ -1,0 +1,2892 @@
+[
+ {
+  "id": "ch-rr-001",
+  "slug": "rr-30-minute-chicken-parm",
+  "title": "30-Minute Chicken Parm",
+  "genre": "italian",
+  "subgenre": "secondi",
+  "chef": {
+   "name": "Rachael Ray",
+   "slug": "rachael-ray"
+  },
+  "description": "Thin cutlets pan-fried and broiled with sauce and mozzarella in half an hour.",
+  "difficulty": "beginner",
+  "easeScore": 9,
+  "spiceScore": 2,
+  "popularity": 10,
+  "pantryScore": 9,
+  "servings": 4,
+  "prepMin": 12,
+  "cookMin": 18,
+  "totalMin": 30,
+  "equipment": [
+   "stovetop",
+   "broiler"
+  ],
+  "ingredients": [
+   "4 boneless chicken breasts, halved and pounded thin",
+   "1 cup all-purpose flour",
+   "2 eggs, beaten",
+   "1 1/2 cups Italian breadcrumbs",
+   "1 cup grated Parmesan",
+   "2 tsp salt",
+   "1 tsp black pepper",
+   "1/2 cup olive oil",
+   "2 cups marinara sauce",
+   "12 oz fresh mozzarella, sliced",
+   "1/2 cup fresh basil"
+  ],
+  "ingredientKeys": [
+   "chicken-breast",
+   "flour",
+   "egg",
+   "italian-breadcrumbs",
+   "parmesan",
+   "salt",
+   "black-pepper",
+   "olive-oil",
+   "marinara-sauce",
+   "fresh-mozzarella",
+   "fresh-basil"
+  ],
+  "specialty": [
+   "italian-breadcrumbs",
+   "fresh-mozzarella"
+  ],
+  "steps": [
+   "Pound the cutlets to 1/4 inch - thin is the whole reason this works in 30 minutes. Set up flour, beaten egg, and breadcrumbs mixed with half the Parmesan.",
+   "Season and coat each cutlet in flour, egg, then crumbs, pressing firmly.",
+   "Fry in the olive oil over medium-high, 2-3 minutes per side, until deep golden. Drain on a rack.",
+   "Warm the marinara in a small pan while the cutlets cook.",
+   "Put the cutlets on a sheet pan, spoon sauce over the center of each but leave the crust edges bare so they stay crisp, then top with mozzarella and the rest of the Parmesan.",
+   "Broil 2-3 minutes until the cheese bubbles and browns. Finish with torn basil."
+  ],
+  "diet": {
+   "vegetarian": false,
+   "vegan": false,
+   "pescatarian": false,
+   "glutenFree": false,
+   "glutenFreeAdaptable": true,
+   "dairyFree": false,
+   "nutFree": true,
+   "eggFree": false
+  },
+  "allergens": [
+   "gluten",
+   "dairy",
+   "egg"
+  ],
+  "gmo": {
+   "risk": "moderate",
+   "sources": [
+    "grain-fed-meat",
+    "processed-bread",
+    "grain-fed-dairy",
+    "processed-sauce"
+   ]
+  },
+  "nutrition": {
+   "calories": 882,
+   "proteinG": 72,
+   "carbsG": 48,
+   "fiberG": 4,
+   "sugarG": 9,
+   "fatG": 44,
+   "satFatG": 16,
+   "sodiumMg": 1680,
+   "cholesterolMg": 286
+  },
+  "tags": [
+   "quick",
+   "weeknight",
+   "family",
+   "30-minute",
+   "high-protein",
+   "kid-friendly",
+   "comfort"
+  ],
+  "image": {
+   "file": "chicken-parmesan.jpg",
+   "wikipedia": "Chicken parmigiana"
+  }
+ },
+ {
+  "id": "ch-rr-002",
+  "slug": "rr-vodka-cream-pasta",
+  "title": "Vodka Cream Pasta",
+  "genre": "italian",
+  "subgenre": "pasta",
+  "chef": {
+   "name": "Rachael Ray",
+   "slug": "rachael-ray"
+  },
+  "description": "A 20-minute pink sauce with vodka, cream and a hit of red pepper.",
+  "difficulty": "beginner",
+  "easeScore": 10,
+  "spiceScore": 3,
+  "popularity": 9,
+  "pantryScore": 9,
+  "servings": 4,
+  "prepMin": 5,
+  "cookMin": 20,
+  "totalMin": 25,
+  "equipment": [
+   "stovetop"
+  ],
+  "ingredients": [
+   "1 lb penne",
+   "2 tbsp olive oil",
+   "1 tbsp butter",
+   "4 cloves garlic, minced",
+   "1 shallot, minced",
+   "1/2 tsp red pepper flakes",
+   "1/2 cup vodka",
+   "1 can (28 oz) crushed tomatoes",
+   "1 1/2 tsp salt",
+   "3/4 cup heavy cream",
+   "20 fresh basil leaves",
+   "1 cup grated Parmesan"
+  ],
+  "ingredientKeys": [
+   "penne",
+   "olive-oil",
+   "butter",
+   "garlic",
+   "shallot",
+   "red-pepper-flakes",
+   "vodka",
+   "crushed-tomatoes",
+   "salt",
+   "heavy-cream",
+   "fresh-basil",
+   "parmesan"
+  ],
+  "specialty": [
+   "shallot",
+   "vodka"
+  ],
+  "steps": [
+   "Get the pasta water boiling before anything else - the sauce finishes in the time the pasta takes.",
+   "Cook the garlic, shallot and pepper flakes in the oil and butter over medium heat 3 minutes without browning them.",
+   "Add the vodka and let it reduce by half, about 3 minutes. The alcohol cooks off and leaves the sharpness that makes this sauce.",
+   "Add the tomatoes and salt and simmer 10 minutes.",
+   "Stir in the cream over low heat, then tear in most of the basil.",
+   "Toss the drained pasta through the sauce with a splash of pasta water, then finish with Parmesan and the rest of the basil."
+  ],
+  "diet": {
+   "vegetarian": true,
+   "vegan": false,
+   "pescatarian": true,
+   "glutenFree": false,
+   "glutenFreeAdaptable": true,
+   "dairyFree": false,
+   "nutFree": true,
+   "eggFree": true
+  },
+  "allergens": [
+   "gluten",
+   "dairy"
+  ],
+  "gmo": {
+   "risk": "low",
+   "sources": [
+    "grain-fed-dairy"
+   ]
+  },
+  "nutrition": {
+   "calories": 682,
+   "proteinG": 22,
+   "carbsG": 82,
+   "fiberG": 6,
+   "sugarG": 11,
+   "fatG": 28,
+   "satFatG": 14,
+   "sodiumMg": 1080,
+   "cholesterolMg": 62
+  },
+  "tags": [
+   "quick",
+   "30-minute",
+   "vegetarian",
+   "weeknight",
+   "date-night",
+   "family",
+   "comfort"
+  ],
+  "image": {
+   "file": "penne-alla-vodka.jpg",
+   "wikipedia": "Pasta alla vodka"
+  }
+ },
+ {
+  "id": "ch-rr-003",
+  "slug": "rr-buffalo-chicken-chili",
+  "title": "Buffalo Chicken Chili",
+  "genre": "american",
+  "subgenre": "comfort",
+  "chef": {
+   "name": "Rachael Ray",
+   "slug": "rachael-ray"
+  },
+  "description": "White chili with ground chicken, hot sauce and blue cheese on top.",
+  "difficulty": "beginner",
+  "easeScore": 10,
+  "spiceScore": 6,
+  "popularity": 8,
+  "pantryScore": 9,
+  "servings": 6,
+  "prepMin": 15,
+  "cookMin": 30,
+  "totalMin": 45,
+  "equipment": [
+   "stovetop"
+  ],
+  "ingredients": [
+   "2 lb ground chicken",
+   "3 tbsp olive oil",
+   "1 yellow onion, diced",
+   "4 celery stalks, diced",
+   "4 cloves garlic, minced",
+   "2 tbsp chili powder",
+   "1 tbsp ground cumin",
+   "1 tsp smoked paprika",
+   "2 tsp salt",
+   "1/2 cup hot sauce",
+   "3 tbsp butter",
+   "2 cans (15 oz each) cannellini beans, drained",
+   "3 cups chicken broth",
+   "1 cup crumbled blue cheese",
+   "4 scallions, sliced",
+   "2 celery stalks, cut in sticks"
+  ],
+  "ingredientKeys": [
+   "ground-chicken",
+   "olive-oil",
+   "yellow-onion",
+   "celery",
+   "garlic",
+   "chili-powder",
+   "cumin",
+   "smoked-paprika",
+   "salt",
+   "hot-sauce",
+   "butter",
+   "cannellini-beans",
+   "chicken-broth",
+   "blue-cheese",
+   "scallion",
+   "celery"
+  ],
+  "specialty": [
+   "ground-chicken",
+   "cannellini-beans",
+   "blue-cheese"
+  ],
+  "steps": [
+   "Brown the ground chicken in the oil over high heat, breaking it up, 8 minutes. Ground chicken releases a lot of water, so keep the heat high until it starts to brown rather than steam.",
+   "Add the onion, celery and garlic and cook 6 minutes.",
+   "Stir in the chili powder, cumin, paprika and salt and cook 1 minute to bloom them.",
+   "Add the hot sauce and butter - together they are what makes this taste like buffalo wings rather than just spicy chili.",
+   "Add the beans and broth and simmer 15-20 minutes until thickened.",
+   "Serve topped with blue cheese and scallions, with celery sticks on the side."
+  ],
+  "diet": {
+   "vegetarian": false,
+   "vegan": false,
+   "pescatarian": false,
+   "glutenFree": true,
+   "glutenFreeAdaptable": false,
+   "dairyFree": false,
+   "nutFree": true,
+   "eggFree": true
+  },
+  "allergens": [
+   "dairy"
+  ],
+  "gmo": {
+   "risk": "moderate",
+   "sources": [
+    "grain-fed-meat",
+    "grain-fed-dairy",
+    "processed-sauce"
+   ]
+  },
+  "nutrition": {
+   "calories": 586,
+   "proteinG": 48,
+   "carbsG": 32,
+   "fiberG": 9,
+   "sugarG": 5,
+   "fatG": 30,
+   "satFatG": 12,
+   "sodiumMg": 1880,
+   "cholesterolMg": 158
+  },
+  "tags": [
+   "quick",
+   "30-minute",
+   "game-day",
+   "spicy",
+   "gluten-free",
+   "high-protein",
+   "family",
+   "one-pot"
+  ],
+  "image": {
+   "file": "chili-con-carne.jpg",
+   "wikipedia": "Chili con carne"
+  }
+ },
+ {
+  "id": "ch-rr-004",
+  "slug": "rr-super-sloppy-joes",
+  "title": "Super Sloppy Joes",
+  "genre": "american",
+  "subgenre": "diner",
+  "chef": {
+   "name": "Rachael Ray",
+   "slug": "rachael-ray"
+  },
+  "description": "Sloppy joes built from scratch with brown sugar, vinegar and steak sauce.",
+  "difficulty": "beginner",
+  "easeScore": 10,
+  "spiceScore": 2,
+  "popularity": 9,
+  "pantryScore": 10,
+  "servings": 6,
+  "prepMin": 10,
+  "cookMin": 20,
+  "totalMin": 30,
+  "equipment": [
+   "stovetop"
+  ],
+  "ingredients": [
+   "2 lb ground beef (85/15)",
+   "2 tbsp olive oil",
+   "1 yellow onion, diced",
+   "1 red bell pepper, diced",
+   "3 cloves garlic, minced",
+   "2 tbsp brown sugar",
+   "1 tbsp steak sauce",
+   "2 tbsp tomato paste",
+   "1 cup tomato sauce",
+   "2 tbsp red wine vinegar",
+   "1 tbsp Worcestershire sauce",
+   "1 tbsp chili powder",
+   "2 tsp salt",
+   "1 tsp black pepper",
+   "6 hamburger buns",
+   "3 tbsp butter"
+  ],
+  "ingredientKeys": [
+   "ground-beef",
+   "olive-oil",
+   "yellow-onion",
+   "red-bell-pepper",
+   "garlic",
+   "brown-sugar",
+   "steak-sauce",
+   "tomato-paste",
+   "tomato-sauce",
+   "red-wine-vinegar",
+   "worcestershire",
+   "chili-powder",
+   "salt",
+   "black-pepper",
+   "hamburger-bun",
+   "butter"
+  ],
+  "specialty": [
+   "steak-sauce"
+  ],
+  "steps": [
+   "Brown the beef in the oil over high heat, breaking it up fine, 7 minutes. Drain most of the fat but leave a tablespoon.",
+   "Add the onion, bell pepper and garlic and cook 5 minutes.",
+   "Stir in the brown sugar, steak sauce and tomato paste and cook 2 minutes until the paste darkens.",
+   "Add the tomato sauce, vinegar, Worcestershire, chili powder, salt and pepper.",
+   "Simmer 8-10 minutes until thick enough to mound on a spoon rather than run off it.",
+   "Butter and toast the buns, then pile the filling in. Taste before serving - it wants a balance of sweet and sharp, so adjust with sugar or vinegar."
+  ],
+  "diet": {
+   "vegetarian": false,
+   "vegan": false,
+   "pescatarian": false,
+   "glutenFree": false,
+   "glutenFreeAdaptable": true,
+   "dairyFree": false,
+   "nutFree": true,
+   "eggFree": true
+  },
+  "allergens": [
+   "gluten",
+   "dairy"
+  ],
+  "gmo": {
+   "risk": "high",
+   "sources": [
+    "grain-fed-meat",
+    "processed-bread",
+    "corn-syrup",
+    "sugar-beet",
+    "processed-sauce"
+   ]
+  },
+  "nutrition": {
+   "calories": 586,
+   "proteinG": 34,
+   "carbsG": 42,
+   "fiberG": 3,
+   "sugarG": 16,
+   "fatG": 30,
+   "satFatG": 12,
+   "sodiumMg": 1480,
+   "cholesterolMg": 112
+  },
+  "tags": [
+   "quick",
+   "30-minute",
+   "family",
+   "budget",
+   "kid-friendly",
+   "weeknight",
+   "comfort",
+   "one-pan"
+  ],
+  "image": {
+   "file": "sloppy-joe.jpg",
+   "wikipedia": "Sloppy joe"
+  }
+ },
+ {
+  "id": "ch-rr-005",
+  "slug": "rr-carbonara",
+  "title": "Weeknight Carbonara",
+  "genre": "italian",
+  "subgenre": "pasta",
+  "chef": {
+   "name": "Rachael Ray",
+   "slug": "rachael-ray"
+  },
+  "description": "Pancetta, egg and Pecorino carbonara on the table in 25 minutes.",
+  "difficulty": "beginner",
+  "easeScore": 8,
+  "spiceScore": 2,
+  "popularity": 9,
+  "pantryScore": 8,
+  "servings": 4,
+  "prepMin": 8,
+  "cookMin": 17,
+  "totalMin": 25,
+  "equipment": [
+   "stovetop"
+  ],
+  "ingredients": [
+   "1 lb spaghetti",
+   "6 oz pancetta, diced",
+   "2 tbsp olive oil",
+   "4 cloves garlic, minced",
+   "3 eggs",
+   "1 egg yolk",
+   "1 1/2 cups grated Pecorino Romano",
+   "2 tsp coarse black pepper",
+   "1/4 cup chopped parsley",
+   "1 tbsp salt, for the water"
+  ],
+  "ingredientKeys": [
+   "spaghetti",
+   "pancetta",
+   "olive-oil",
+   "garlic",
+   "egg",
+   "egg-yolk",
+   "pecorino",
+   "black-pepper",
+   "parsley",
+   "salt"
+  ],
+  "specialty": [
+   "pancetta",
+   "pecorino"
+  ],
+  "steps": [
+   "Beat the eggs, yolk, Pecorino and black pepper into a thick paste. This is the sauce - there is no cream in carbonara.",
+   "Render the pancetta in the oil over medium heat 7 minutes until crisp, then add the garlic for 1 minute and take the pan off the heat.",
+   "Boil the spaghetti to al dente and reserve 2 cups of the water.",
+   "Add the hot drained pasta to the warm pancetta pan, off the heat, and toss to coat in the fat.",
+   "Pour in the egg mixture and toss hard and fast, adding splashes of pasta water until it turns creamy. Keep the pan off the burner - any direct heat scrambles the eggs.",
+   "Serve immediately with parsley and more Pecorino. Carbonara does not wait."
+  ],
+  "diet": {
+   "vegetarian": false,
+   "vegan": false,
+   "pescatarian": false,
+   "glutenFree": false,
+   "glutenFreeAdaptable": true,
+   "dairyFree": false,
+   "nutFree": true,
+   "eggFree": false
+  },
+  "allergens": [
+   "gluten",
+   "dairy",
+   "egg"
+  ],
+  "gmo": {
+   "risk": "moderate",
+   "sources": [
+    "grain-fed-meat",
+    "grain-fed-dairy"
+   ]
+  },
+  "nutrition": {
+   "calories": 782,
+   "proteinG": 38,
+   "carbsG": 86,
+   "fiberG": 4,
+   "sugarG": 3,
+   "fatG": 32,
+   "satFatG": 13,
+   "sodiumMg": 1280,
+   "cholesterolMg": 282
+  },
+  "tags": [
+   "quick",
+   "30-minute",
+   "weeknight",
+   "high-protein",
+   "family",
+   "italian",
+   "pantry"
+  ],
+  "image": {
+   "file": "carbonara.jpg",
+   "wikipedia": "Carbonara"
+  }
+ },
+ {
+  "id": "ch-rr-006",
+  "slug": "rr-chicken-riggies",
+  "title": "Chicken Riggies",
+  "genre": "italian",
+  "subgenre": "pasta",
+  "chef": {
+   "name": "Rachael Ray",
+   "slug": "rachael-ray"
+  },
+  "description": "Upstate New York specialty: rigatoni with chicken, cherry peppers and cream.",
+  "difficulty": "intermediate",
+  "easeScore": 7,
+  "spiceScore": 6,
+  "popularity": 7,
+  "pantryScore": 7,
+  "servings": 6,
+  "prepMin": 20,
+  "cookMin": 35,
+  "totalMin": 55,
+  "equipment": [
+   "stovetop"
+  ],
+  "ingredients": [
+   "1 1/2 lb boneless chicken thighs, cubed",
+   "1 lb rigatoni",
+   "3 tbsp olive oil",
+   "2 tsp salt",
+   "1 tsp black pepper",
+   "1 yellow onion, diced",
+   "1 red bell pepper, sliced",
+   "6 cloves garlic, sliced",
+   "1 cup hot cherry peppers, sliced",
+   "1/4 cup cherry pepper brine",
+   "8 oz cremini mushrooms, sliced",
+   "1/2 cup dry white wine",
+   "1 can (28 oz) crushed tomatoes",
+   "1 cup heavy cream",
+   "1 1/2 cups grated Pecorino Romano",
+   "1/2 cup chopped basil"
+  ],
+  "ingredientKeys": [
+   "chicken-thighs",
+   "rigatoni",
+   "olive-oil",
+   "salt",
+   "black-pepper",
+   "yellow-onion",
+   "red-bell-pepper",
+   "garlic",
+   "cherry-peppers",
+   "cherry-pepper-brine",
+   "mushroom",
+   "white-wine",
+   "crushed-tomatoes",
+   "heavy-cream",
+   "pecorino",
+   "fresh-basil"
+  ],
+  "specialty": [
+   "cherry-peppers",
+   "cherry-pepper-brine",
+   "white-wine",
+   "pecorino"
+  ],
+  "steps": [
+   "Season the chicken and brown it hard in the oil over high heat, 5 minutes, then set it aside. It will finish in the sauce.",
+   "Cook the onion, bell pepper and mushrooms 8 minutes until browned, then add the garlic for 1 minute.",
+   "Add the cherry peppers and their brine. The brine is essential here - it is what gives riggies their signature sharp heat rather than just chile burn.",
+   "Pour in the wine and reduce by half, then add the tomatoes and simmer 12 minutes.",
+   "Lower the heat, stir in the cream and return the chicken for 5 minutes until cooked through.",
+   "Toss with the cooked rigatoni and a splash of pasta water, then finish off the heat with the Pecorino and basil."
+  ],
+  "diet": {
+   "vegetarian": false,
+   "vegan": false,
+   "pescatarian": false,
+   "glutenFree": false,
+   "glutenFreeAdaptable": true,
+   "dairyFree": false,
+   "nutFree": true,
+   "eggFree": true
+  },
+  "allergens": [
+   "gluten",
+   "dairy",
+   "sulfites"
+  ],
+  "gmo": {
+   "risk": "moderate",
+   "sources": [
+    "grain-fed-meat",
+    "grain-fed-dairy"
+   ]
+  },
+  "nutrition": {
+   "calories": 882,
+   "proteinG": 52,
+   "carbsG": 86,
+   "fiberG": 7,
+   "sugarG": 12,
+   "fatG": 38,
+   "satFatG": 18,
+   "sodiumMg": 1680,
+   "cholesterolMg": 178
+  },
+  "tags": [
+   "regional",
+   "spicy",
+   "comfort",
+   "family",
+   "weeknight",
+   "high-protein",
+   "italian"
+  ],
+  "image": {
+   "file": "rigatoni.jpg",
+   "wikipedia": "Chicken riggies"
+  }
+ },
+ {
+  "id": "ch-rr-007",
+  "slug": "rr-turkey-burgers",
+  "title": "Spinach and Feta Turkey Burgers",
+  "genre": "american",
+  "subgenre": "burgers",
+  "chef": {
+   "name": "Rachael Ray",
+   "slug": "rachael-ray"
+  },
+  "description": "Ground turkey patties packed with spinach, feta and dill.",
+  "difficulty": "beginner",
+  "easeScore": 9,
+  "spiceScore": 2,
+  "popularity": 8,
+  "pantryScore": 8,
+  "servings": 4,
+  "prepMin": 15,
+  "cookMin": 15,
+  "totalMin": 30,
+  "equipment": [
+   "stovetop"
+  ],
+  "ingredients": [
+   "1 3/4 lb ground turkey (93/7)",
+   "10 oz frozen spinach, thawed and squeezed dry",
+   "6 oz feta, crumbled",
+   "1/2 yellow onion, grated",
+   "3 cloves garlic, minced",
+   "3 tbsp chopped dill",
+   "1 tsp dried oregano",
+   "2 tsp salt",
+   "1 tsp black pepper",
+   "3 tbsp olive oil",
+   "4 hamburger buns",
+   "1/2 cup Greek yogurt",
+   "1 tbsp lemon juice",
+   "4 leaves lettuce",
+   "1 tomato, sliced"
+  ],
+  "ingredientKeys": [
+   "ground-turkey",
+   "frozen-spinach",
+   "feta",
+   "yellow-onion",
+   "garlic",
+   "fresh-dill",
+   "dried-oregano",
+   "salt",
+   "black-pepper",
+   "olive-oil",
+   "hamburger-bun",
+   "greek-yogurt",
+   "lemon-juice",
+   "lettuce",
+   "tomato"
+  ],
+  "specialty": [
+   "feta",
+   "fresh-dill",
+   "greek-yogurt"
+  ],
+  "steps": [
+   "Squeeze every drop of water out of the spinach and the grated onion. Turkey is already soft, and wet add-ins make patties that fall apart in the pan.",
+   "Mix the turkey with the spinach, feta, onion, garlic, dill, oregano, salt and pepper, handling it just enough to combine.",
+   "Form 4 patties and chill them 10 minutes if you have time - cold patties hold their shape far better.",
+   "Cook in the olive oil over medium heat 6-7 minutes per side, to 165F internal. Turkey needs lower heat and longer than beef.",
+   "Stir the yogurt with the lemon juice and a pinch of salt.",
+   "Toast the buns and build with the yogurt sauce, lettuce, patty and tomato."
+  ],
+  "diet": {
+   "vegetarian": false,
+   "vegan": false,
+   "pescatarian": false,
+   "glutenFree": false,
+   "glutenFreeAdaptable": true,
+   "dairyFree": false,
+   "nutFree": true,
+   "eggFree": true
+  },
+  "allergens": [
+   "gluten",
+   "dairy"
+  ],
+  "gmo": {
+   "risk": "moderate",
+   "sources": [
+    "grain-fed-meat",
+    "processed-bread",
+    "grain-fed-dairy"
+   ]
+  },
+  "nutrition": {
+   "calories": 682,
+   "proteinG": 52,
+   "carbsG": 38,
+   "fiberG": 5,
+   "sugarG": 7,
+   "fatG": 36,
+   "satFatG": 12,
+   "sodiumMg": 1680,
+   "cholesterolMg": 148
+  },
+  "tags": [
+   "quick",
+   "30-minute",
+   "weeknight",
+   "high-protein",
+   "family",
+   "healthier",
+   "meal-prep"
+  ],
+  "image": {
+   "file": "hamburger.jpg",
+   "wikipedia": "Hamburger"
+  }
+ },
+ {
+  "id": "ch-rr-008",
+  "slug": "rr-chicken-rice-stoup",
+  "title": "Chicken and Rice Stoup",
+  "genre": "american",
+  "subgenre": "soups",
+  "chef": {
+   "name": "Rachael Ray",
+   "slug": "rachael-ray"
+  },
+  "description": "Thicker than soup, thinner than stew - chicken, rice and vegetables in 35 minutes.",
+  "difficulty": "beginner",
+  "easeScore": 10,
+  "spiceScore": 2,
+  "popularity": 8,
+  "pantryScore": 9,
+  "servings": 6,
+  "prepMin": 15,
+  "cookMin": 30,
+  "totalMin": 45,
+  "equipment": [
+   "stovetop"
+  ],
+  "ingredients": [
+   "2 lb boneless chicken thighs, cubed",
+   "3 tbsp olive oil",
+   "2 tsp salt",
+   "1 tsp black pepper",
+   "1 yellow onion, diced",
+   "3 carrots, diced",
+   "3 celery stalks, diced",
+   "4 cloves garlic, minced",
+   "1 tbsp fresh thyme leaves",
+   "1 cup long-grain white rice",
+   "8 cups chicken broth",
+   "2 bay leaves",
+   "2 cups baby spinach",
+   "3 tbsp lemon juice",
+   "1/3 cup chopped parsley",
+   "1 cup grated Parmesan"
+  ],
+  "ingredientKeys": [
+   "chicken-thighs",
+   "olive-oil",
+   "salt",
+   "black-pepper",
+   "yellow-onion",
+   "carrot",
+   "celery",
+   "garlic",
+   "fresh-thyme",
+   "white-rice",
+   "chicken-broth",
+   "bay-leaf",
+   "baby-spinach",
+   "lemon-juice",
+   "parsley",
+   "parmesan"
+  ],
+  "specialty": [
+   "fresh-thyme",
+   "baby-spinach"
+  ],
+  "steps": [
+   "Season the chicken and brown it in the oil over high heat 6 minutes, then push it to one side.",
+   "Add the onion, carrots and celery and cook 6 minutes, then the garlic and thyme for 1 minute.",
+   "Stir in the rice and toast it 2 minutes, then add the broth and bay leaves.",
+   "Simmer 18-20 minutes until the rice is tender. It will thicken considerably as it sits - add broth if you want it looser.",
+   "Stir in the spinach and let it wilt, 2 minutes, then discard the bay leaves.",
+   "Add the lemon juice off the heat. The acid is what keeps a rice soup from tasting heavy and flat. Serve with parsley and Parmesan."
+  ],
+  "diet": {
+   "vegetarian": false,
+   "vegan": false,
+   "pescatarian": false,
+   "glutenFree": true,
+   "glutenFreeAdaptable": false,
+   "dairyFree": false,
+   "nutFree": true,
+   "eggFree": true
+  },
+  "allergens": [
+   "dairy"
+  ],
+  "gmo": {
+   "risk": "low",
+   "sources": [
+    "grain-fed-meat",
+    "grain-fed-dairy"
+   ]
+  },
+  "nutrition": {
+   "calories": 586,
+   "proteinG": 48,
+   "carbsG": 42,
+   "fiberG": 4,
+   "sugarG": 6,
+   "fatG": 24,
+   "satFatG": 7,
+   "sodiumMg": 1680,
+   "cholesterolMg": 168
+  },
+  "tags": [
+   "soup",
+   "quick",
+   "30-minute",
+   "gluten-free",
+   "family",
+   "comfort",
+   "one-pot",
+   "high-protein",
+   "winter"
+  ],
+  "image": {
+   "file": "chicken-soup.jpg",
+   "wikipedia": "Chicken soup"
+  }
+ },
+ {
+  "id": "ch-rr-009",
+  "slug": "rr-cauliflower-mac",
+  "title": "Cauliflower Mac and Cheese",
+  "genre": "american",
+  "subgenre": "comfort",
+  "chef": {
+   "name": "Rachael Ray",
+   "slug": "rachael-ray"
+  },
+  "description": "Macaroni and cauliflower in a sharp cheddar sauce, broiled on top.",
+  "difficulty": "beginner",
+  "easeScore": 9,
+  "spiceScore": 2,
+  "popularity": 8,
+  "pantryScore": 9,
+  "servings": 6,
+  "prepMin": 15,
+  "cookMin": 30,
+  "totalMin": 45,
+  "equipment": [
+   "stovetop",
+   "broiler"
+  ],
+  "ingredients": [
+   "1 lb elbow macaroni",
+   "1 head cauliflower, cut in small florets",
+   "4 tbsp butter",
+   "1/3 cup all-purpose flour",
+   "3 1/2 cups whole milk, warmed",
+   "1 tsp mustard powder",
+   "1/2 tsp ground nutmeg",
+   "1/2 tsp cayenne pepper",
+   "2 tsp salt",
+   "1 tsp black pepper",
+   "3 cups shredded sharp cheddar",
+   "1 cup grated Parmesan",
+   "1 cup panko breadcrumbs",
+   "2 tbsp butter, melted",
+   "1/4 cup chopped chives"
+  ],
+  "ingredientKeys": [
+   "elbow-macaroni",
+   "cauliflower",
+   "butter",
+   "flour",
+   "whole-milk",
+   "mustard-powder",
+   "nutmeg",
+   "cayenne",
+   "salt",
+   "black-pepper",
+   "cheddar",
+   "parmesan",
+   "panko",
+   "butter",
+   "chives"
+  ],
+  "specialty": [
+   "mustard-powder",
+   "panko"
+  ],
+  "steps": [
+   "Boil the macaroni, adding the cauliflower florets for the last 5 minutes so they cook in the same pot. Drain both together.",
+   "Melt the 4 tbsp butter, whisk in the flour and cook 2 minutes, then add the warm milk gradually and simmer 4 minutes until it coats a spoon.",
+   "Season with the mustard powder, nutmeg, cayenne, salt and pepper.",
+   "Take the pan off the heat before adding the cheddar and half the Parmesan, a handful at a time. Direct heat makes the sauce grainy.",
+   "Fold in the pasta and cauliflower and pour into a broiler-safe dish.",
+   "Toss the panko with the melted butter and remaining Parmesan, scatter over and broil 3-4 minutes until golden. Finish with chives."
+  ],
+  "diet": {
+   "vegetarian": true,
+   "vegan": false,
+   "pescatarian": true,
+   "glutenFree": false,
+   "glutenFreeAdaptable": true,
+   "dairyFree": false,
+   "nutFree": true,
+   "eggFree": true
+  },
+  "allergens": [
+   "gluten",
+   "dairy"
+  ],
+  "gmo": {
+   "risk": "moderate",
+   "sources": [
+    "grain-fed-dairy",
+    "processed-bread"
+   ]
+  },
+  "nutrition": {
+   "calories": 782,
+   "proteinG": 34,
+   "carbsG": 72,
+   "fiberG": 5,
+   "sugarG": 11,
+   "fatG": 40,
+   "satFatG": 22,
+   "sodiumMg": 1280,
+   "cholesterolMg": 112
+  },
+  "tags": [
+   "quick",
+   "vegetarian",
+   "family",
+   "comfort",
+   "kid-friendly",
+   "weeknight",
+   "30-minute"
+  ],
+  "image": {
+   "file": "macaroni-and-cheese.jpg",
+   "wikipedia": "Macaroni and cheese"
+  }
+ },
+ {
+  "id": "ch-rr-010",
+  "slug": "rr-beef-mushroom-ragu",
+  "title": "Beef and Mushroom Ragu",
+  "genre": "italian",
+  "subgenre": "pasta",
+  "chef": {
+   "name": "Rachael Ray",
+   "slug": "rachael-ray"
+  },
+  "description": "A deep-tasting ragu in 40 minutes using mushrooms for body.",
+  "difficulty": "beginner",
+  "easeScore": 9,
+  "spiceScore": 2,
+  "popularity": 8,
+  "pantryScore": 9,
+  "servings": 6,
+  "prepMin": 15,
+  "cookMin": 35,
+  "totalMin": 50,
+  "equipment": [
+   "stovetop"
+  ],
+  "ingredients": [
+   "1 1/2 lb ground beef (85/15)",
+   "12 oz cremini mushrooms, finely chopped",
+   "3 tbsp olive oil",
+   "1 yellow onion, finely diced",
+   "2 carrots, finely diced",
+   "5 cloves garlic, minced",
+   "3 tbsp tomato paste",
+   "1 cup dry red wine",
+   "1 can (28 oz) crushed tomatoes",
+   "1 tbsp fresh thyme leaves",
+   "2 tsp salt",
+   "1 tsp black pepper",
+   "1/2 cup whole milk",
+   "1 lb rigatoni",
+   "1 1/2 cups grated Parmesan",
+   "1/2 cup chopped parsley"
+  ],
+  "ingredientKeys": [
+   "ground-beef",
+   "mushroom",
+   "olive-oil",
+   "yellow-onion",
+   "carrot",
+   "garlic",
+   "tomato-paste",
+   "red-wine",
+   "crushed-tomatoes",
+   "fresh-thyme",
+   "salt",
+   "black-pepper",
+   "whole-milk",
+   "rigatoni",
+   "parmesan",
+   "parsley"
+  ],
+  "specialty": [
+   "red-wine",
+   "fresh-thyme"
+  ],
+  "steps": [
+   "Chop the mushrooms very fine, almost to a mince. They bring the savory depth that a long-simmered ragu would otherwise take hours to build.",
+   "Brown the beef in the oil over high heat 7 minutes, then add the mushrooms and cook 8 minutes until all their water has evaporated and they start to brown.",
+   "Add the onion, carrots and garlic and cook 6 minutes, then the tomato paste for 2 minutes.",
+   "Pour in the wine and reduce by half, scraping the pan.",
+   "Add the tomatoes, thyme, salt and pepper and simmer 15 minutes, then stir in the milk - it rounds off the acidity.",
+   "Toss with the cooked rigatoni and a ladle of pasta water, then finish with Parmesan and parsley."
+  ],
+  "diet": {
+   "vegetarian": false,
+   "vegan": false,
+   "pescatarian": false,
+   "glutenFree": false,
+   "glutenFreeAdaptable": true,
+   "dairyFree": false,
+   "nutFree": true,
+   "eggFree": true
+  },
+  "allergens": [
+   "gluten",
+   "dairy",
+   "sulfites"
+  ],
+  "gmo": {
+   "risk": "moderate",
+   "sources": [
+    "grain-fed-meat",
+    "grain-fed-dairy"
+   ]
+  },
+  "nutrition": {
+   "calories": 782,
+   "proteinG": 44,
+   "carbsG": 82,
+   "fiberG": 7,
+   "sugarG": 12,
+   "fatG": 32,
+   "satFatG": 12,
+   "sodiumMg": 1280,
+   "cholesterolMg": 112
+  },
+  "tags": [
+   "quick",
+   "weeknight",
+   "family",
+   "comfort",
+   "italian",
+   "leftovers",
+   "high-protein"
+  ],
+  "image": {
+   "file": "bolognese.jpg",
+   "wikipedia": "Bolognese sauce"
+  }
+ },
+ {
+  "id": "ch-rr-011",
+  "slug": "rr-chicken-piccata",
+  "title": "Quick Chicken Piccata",
+  "genre": "italian",
+  "subgenre": "secondi",
+  "chef": {
+   "name": "Rachael Ray",
+   "slug": "rachael-ray"
+  },
+  "description": "Lemon, caper and butter pan sauce over thin cutlets in 25 minutes.",
+  "difficulty": "beginner",
+  "easeScore": 9,
+  "spiceScore": 1,
+  "popularity": 9,
+  "pantryScore": 8,
+  "servings": 4,
+  "prepMin": 10,
+  "cookMin": 15,
+  "totalMin": 25,
+  "equipment": [
+   "stovetop"
+  ],
+  "ingredients": [
+   "4 boneless chicken breasts, pounded thin",
+   "1/2 cup all-purpose flour",
+   "2 tsp salt",
+   "1 tsp black pepper",
+   "3 tbsp olive oil",
+   "5 tbsp butter",
+   "4 cloves garlic, minced",
+   "1/2 cup dry white wine",
+   "1 cup chicken broth",
+   "1/3 cup lemon juice",
+   "1/4 cup capers, rinsed",
+   "1/3 cup chopped parsley",
+   "1 lemon, sliced thin"
+  ],
+  "ingredientKeys": [
+   "chicken-breast",
+   "flour",
+   "salt",
+   "black-pepper",
+   "olive-oil",
+   "butter",
+   "garlic",
+   "white-wine",
+   "chicken-broth",
+   "lemon-juice",
+   "capers",
+   "parsley",
+   "lemon"
+  ],
+  "specialty": [
+   "capers",
+   "white-wine"
+  ],
+  "steps": [
+   "Pound the cutlets to 1/2 inch, season, and dredge in flour, shaking off the excess. That thin flour coat browns the chicken and thickens the sauce later.",
+   "Sear in the oil and 1 tbsp butter over medium-high, 3 minutes per side, then move to a plate.",
+   "Add the garlic for 30 seconds, then the wine, and reduce by half while scraping up the browned bits.",
+   "Add the broth and lemon slices and reduce 3 minutes.",
+   "Take the pan off the heat and whisk in the remaining butter a piece at a time. Off the heat is what emulsifies it into a sauce instead of a greasy puddle.",
+   "Add the lemon juice and capers, return the chicken briefly, and finish with parsley."
+  ],
+  "diet": {
+   "vegetarian": false,
+   "vegan": false,
+   "pescatarian": false,
+   "glutenFree": false,
+   "glutenFreeAdaptable": true,
+   "dairyFree": false,
+   "nutFree": true,
+   "eggFree": true
+  },
+  "allergens": [
+   "gluten",
+   "dairy",
+   "sulfites"
+  ],
+  "gmo": {
+   "risk": "moderate",
+   "sources": [
+    "grain-fed-meat",
+    "grain-fed-dairy"
+   ]
+  },
+  "nutrition": {
+   "calories": 586,
+   "proteinG": 56,
+   "carbsG": 16,
+   "fiberG": 1,
+   "sugarG": 2,
+   "fatG": 32,
+   "satFatG": 14,
+   "sodiumMg": 1480,
+   "cholesterolMg": 198
+  },
+  "tags": [
+   "quick",
+   "30-minute",
+   "weeknight",
+   "high-protein",
+   "date-night",
+   "family",
+   "italian"
+  ],
+  "image": {
+   "file": "chicken-piccata.jpg",
+   "wikipedia": "Piccata"
+  }
+ },
+ {
+  "id": "ch-rr-012",
+  "slug": "rr-meatball-subs",
+  "title": "Quick Meatball Subs",
+  "genre": "italian",
+  "subgenre": "sandwiches",
+  "chef": {
+   "name": "Rachael Ray",
+   "slug": "rachael-ray"
+  },
+  "description": "Pan-fried meatballs simmered in sauce and broiled in rolls with provolone.",
+  "difficulty": "beginner",
+  "easeScore": 9,
+  "spiceScore": 2,
+  "popularity": 9,
+  "pantryScore": 9,
+  "servings": 4,
+  "prepMin": 15,
+  "cookMin": 25,
+  "totalMin": 40,
+  "equipment": [
+   "stovetop",
+   "broiler"
+  ],
+  "ingredients": [
+   "1 1/2 lb ground beef and pork mix",
+   "3/4 cup Italian breadcrumbs",
+   "1/2 cup whole milk",
+   "1 egg",
+   "1 cup grated Parmesan",
+   "4 cloves garlic, minced",
+   "1/3 cup chopped parsley",
+   "2 tsp salt",
+   "1 tsp black pepper",
+   "3 tbsp olive oil",
+   "3 cups marinara sauce",
+   "4 hoagie rolls",
+   "8 slices provolone",
+   "1/2 cup fresh basil"
+  ],
+  "ingredientKeys": [
+   "ground-beef-pork",
+   "italian-breadcrumbs",
+   "whole-milk",
+   "egg",
+   "parmesan",
+   "garlic",
+   "parsley",
+   "salt",
+   "black-pepper",
+   "olive-oil",
+   "marinara-sauce",
+   "hoagie-roll",
+   "provolone",
+   "fresh-basil"
+  ],
+  "specialty": [
+   "ground-beef-pork",
+   "italian-breadcrumbs",
+   "hoagie-roll"
+  ],
+  "steps": [
+   "Soak the breadcrumbs in the milk for 5 minutes. This is the difference between tender meatballs and dense ones.",
+   "Mix in the meat, egg, half the Parmesan, the garlic, parsley, salt and pepper with your hands, stopping as soon as it comes together.",
+   "Roll into 16 balls and brown them in the oil over medium-high, turning, 6 minutes. They do not need to cook through.",
+   "Add the marinara, cover, and simmer 12 minutes until the meatballs are cooked and have absorbed some sauce.",
+   "Split the rolls, toast them briefly under the broiler, then fill with meatballs and a little sauce - not so much that it soaks the bread.",
+   "Top with provolone and the rest of the Parmesan and broil 3 minutes until melted and browned. Finish with basil."
+  ],
+  "diet": {
+   "vegetarian": false,
+   "vegan": false,
+   "pescatarian": false,
+   "glutenFree": false,
+   "glutenFreeAdaptable": false,
+   "dairyFree": false,
+   "nutFree": true,
+   "eggFree": false
+  },
+  "allergens": [
+   "gluten",
+   "dairy",
+   "egg"
+  ],
+  "gmo": {
+   "risk": "high",
+   "sources": [
+    "grain-fed-meat",
+    "processed-bread",
+    "grain-fed-dairy",
+    "processed-sauce"
+   ]
+  },
+  "nutrition": {
+   "calories": 982,
+   "proteinG": 58,
+   "carbsG": 62,
+   "fiberG": 5,
+   "sugarG": 12,
+   "fatG": 54,
+   "satFatG": 22,
+   "sodiumMg": 1880,
+   "cholesterolMg": 198
+  },
+  "tags": [
+   "quick",
+   "weeknight",
+   "family",
+   "game-day",
+   "comfort",
+   "kid-friendly",
+   "high-protein"
+  ],
+  "image": {
+   "file": "meatball-sub.jpg",
+   "wikipedia": "Meatball sandwich"
+  }
+ },
+ {
+  "id": "ch-rr-013",
+  "slug": "rr-steak-gorgonzola",
+  "title": "Steak with Gorgonzola Sauce",
+  "genre": "american",
+  "subgenre": "steaks",
+  "chef": {
+   "name": "Rachael Ray",
+   "slug": "rachael-ray"
+  },
+  "description": "Pan-seared strip steaks under a quick gorgonzola cream sauce.",
+  "difficulty": "beginner",
+  "easeScore": 8,
+  "spiceScore": 1,
+  "popularity": 8,
+  "pantryScore": 7,
+  "servings": 4,
+  "prepMin": 10,
+  "cookMin": 20,
+  "totalMin": 30,
+  "equipment": [
+   "stovetop"
+  ],
+  "ingredients": [
+   "4 New York strip steaks (8 oz each)",
+   "2 tsp salt",
+   "1 tsp coarse black pepper",
+   "2 tbsp olive oil",
+   "2 tbsp butter",
+   "1 shallot, minced",
+   "2 cloves garlic, minced",
+   "1/2 cup dry red wine",
+   "3/4 cup heavy cream",
+   "6 oz gorgonzola, crumbled",
+   "2 tbsp chopped chives",
+   "1 tbsp chopped fresh thyme"
+  ],
+  "ingredientKeys": [
+   "strip-steak",
+   "salt",
+   "black-pepper",
+   "olive-oil",
+   "butter",
+   "shallot",
+   "garlic",
+   "red-wine",
+   "heavy-cream",
+   "gorgonzola",
+   "chives",
+   "fresh-thyme"
+  ],
+  "specialty": [
+   "strip-steak",
+   "shallot",
+   "gorgonzola",
+   "fresh-thyme"
+  ],
+  "steps": [
+   "Pat the steaks completely dry and season them heavily. Dry surface, hot pan - that is the whole formula for a crust.",
+   "Sear in the oil over high heat 4 minutes per side for medium-rare, then move them to a board to rest.",
+   "Lower the heat, add the butter and cook the shallot 2 minutes, then the garlic for 1.",
+   "Add the wine and reduce by half, scraping up the browned bits from the steaks.",
+   "Stir in the cream and simmer 3 minutes, then add the gorgonzola off the heat and stir until just melted. Boiling blue cheese makes it bitter and grainy.",
+   "Slice the rested steaks against the grain, spoon the sauce over and finish with chives and thyme."
+  ],
+  "diet": {
+   "vegetarian": false,
+   "vegan": false,
+   "pescatarian": false,
+   "glutenFree": true,
+   "glutenFreeAdaptable": false,
+   "dairyFree": false,
+   "nutFree": true,
+   "eggFree": true
+  },
+  "allergens": [
+   "dairy",
+   "sulfites"
+  ],
+  "gmo": {
+   "risk": "moderate",
+   "sources": [
+    "grain-fed-meat",
+    "grain-fed-dairy"
+   ]
+  },
+  "nutrition": {
+   "calories": 882,
+   "proteinG": 58,
+   "carbsG": 6,
+   "fiberG": 0,
+   "sugarG": 2,
+   "fatG": 68,
+   "satFatG": 34,
+   "sodiumMg": 1680,
+   "cholesterolMg": 268
+  },
+  "tags": [
+   "quick",
+   "30-minute",
+   "date-night",
+   "gluten-free",
+   "low-carb",
+   "high-protein",
+   "restaurant-style"
+  ],
+  "image": {
+   "file": "strip-steak.jpg",
+   "wikipedia": "Strip steak"
+  }
+ },
+ {
+  "id": "ch-rr-014",
+  "slug": "rr-italian-wedding-soup",
+  "title": "Quick Italian Wedding Soup",
+  "genre": "italian",
+  "subgenre": "soups",
+  "chef": {
+   "name": "Rachael Ray",
+   "slug": "rachael-ray"
+  },
+  "description": "Tiny meatballs and pasta in broth with escarole, in 40 minutes.",
+  "difficulty": "beginner",
+  "easeScore": 9,
+  "spiceScore": 1,
+  "popularity": 8,
+  "pantryScore": 8,
+  "servings": 6,
+  "prepMin": 20,
+  "cookMin": 25,
+  "totalMin": 45,
+  "equipment": [
+   "stovetop"
+  ],
+  "ingredients": [
+   "1 lb ground beef and pork mix",
+   "1/2 cup Italian breadcrumbs",
+   "1/3 cup whole milk",
+   "1 egg",
+   "1 cup grated Parmesan",
+   "3 cloves garlic, minced",
+   "1/4 cup chopped parsley",
+   "2 tsp salt",
+   "1 tsp black pepper",
+   "2 tbsp olive oil",
+   "1 yellow onion, diced",
+   "3 carrots, diced",
+   "3 celery stalks, diced",
+   "10 cups chicken broth",
+   "1 cup acini di pepe pasta",
+   "1 head escarole, chopped",
+   "1/4 tsp ground nutmeg",
+   "2 tbsp lemon juice"
+  ],
+  "ingredientKeys": [
+   "ground-beef-pork",
+   "italian-breadcrumbs",
+   "whole-milk",
+   "egg",
+   "parmesan",
+   "garlic",
+   "parsley",
+   "salt",
+   "black-pepper",
+   "olive-oil",
+   "yellow-onion",
+   "carrot",
+   "celery",
+   "chicken-broth",
+   "acini-di-pepe",
+   "escarole",
+   "nutmeg",
+   "lemon-juice"
+  ],
+  "specialty": [
+   "ground-beef-pork",
+   "italian-breadcrumbs",
+   "acini-di-pepe",
+   "escarole"
+  ],
+  "steps": [
+   "Soak the breadcrumbs in the milk 5 minutes, then mix with the meat, egg, half the Parmesan, garlic, parsley, 1 tsp salt and the pepper.",
+   "Roll into very small meatballs, about 3/4 inch. Marble-sized is traditional and they cook through in the broth in minutes.",
+   "Cook the onion, carrots and celery in the oil 8 minutes, then add the broth and bring to a gentle simmer.",
+   "Drop the meatballs in and simmer 10 minutes. Do not stir hard for the first few minutes or they break apart.",
+   "Add the pasta and cook 8 minutes, then the escarole for 2-3 minutes until wilted.",
+   "Season with the remaining salt, the nutmeg and the lemon juice, and serve with the rest of the Parmesan."
+  ],
+  "diet": {
+   "vegetarian": false,
+   "vegan": false,
+   "pescatarian": false,
+   "glutenFree": false,
+   "glutenFreeAdaptable": true,
+   "dairyFree": false,
+   "nutFree": true,
+   "eggFree": false
+  },
+  "allergens": [
+   "gluten",
+   "dairy",
+   "egg"
+  ],
+  "gmo": {
+   "risk": "moderate",
+   "sources": [
+    "grain-fed-meat",
+    "processed-bread",
+    "grain-fed-dairy"
+   ]
+  },
+  "nutrition": {
+   "calories": 512,
+   "proteinG": 34,
+   "carbsG": 38,
+   "fiberG": 4,
+   "sugarG": 7,
+   "fatG": 24,
+   "satFatG": 9,
+   "sodiumMg": 1880,
+   "cholesterolMg": 118
+  },
+  "tags": [
+   "soup",
+   "quick",
+   "family",
+   "comfort",
+   "winter",
+   "kid-friendly",
+   "italian",
+   "30-minute"
+  ],
+  "image": {
+   "file": "italian-wedding-soup.jpg",
+   "wikipedia": "Italian wedding soup"
+  }
+ },
+ {
+  "id": "ch-rr-015",
+  "slug": "rr-sausage-peppers-skillet",
+  "title": "Sausage and Peppers Skillet",
+  "genre": "italian",
+  "subgenre": "secondi",
+  "chef": {
+   "name": "Rachael Ray",
+   "slug": "rachael-ray"
+  },
+  "description": "Italian sausage, peppers and onions in one pan with vinegar at the end.",
+  "difficulty": "beginner",
+  "easeScore": 10,
+  "spiceScore": 4,
+  "popularity": 9,
+  "pantryScore": 9,
+  "servings": 4,
+  "prepMin": 10,
+  "cookMin": 25,
+  "totalMin": 35,
+  "equipment": [
+   "stovetop"
+  ],
+  "ingredients": [
+   "2 lb Italian sausage links",
+   "3 tbsp olive oil",
+   "3 bell peppers, sliced",
+   "2 yellow onions, sliced",
+   "6 cloves garlic, sliced",
+   "1 tsp red pepper flakes",
+   "2 tsp dried oregano",
+   "1 1/2 tsp salt",
+   "1 tsp black pepper",
+   "1/2 cup dry white wine",
+   "3 tbsp red wine vinegar",
+   "1/3 cup chopped parsley",
+   "4 hoagie rolls"
+  ],
+  "ingredientKeys": [
+   "italian-sausage",
+   "olive-oil",
+   "bell-pepper",
+   "yellow-onion",
+   "garlic",
+   "red-pepper-flakes",
+   "dried-oregano",
+   "salt",
+   "black-pepper",
+   "white-wine",
+   "red-wine-vinegar",
+   "parsley",
+   "hoagie-roll"
+  ],
+  "specialty": [
+   "italian-sausage",
+   "white-wine",
+   "hoagie-roll"
+  ],
+  "steps": [
+   "Brown the whole sausages in the oil over medium-high, turning, 8 minutes. Do not prick them - the casings hold the juices in.",
+   "Move the sausages out and add the peppers and onions to the pan. Cook over high heat 8 minutes until charred at the edges.",
+   "Add the garlic, pepper flakes, oregano, salt and pepper for 1 minute.",
+   "Pour in the wine, return the sausages, and simmer 8 minutes until the sausages reach 160F and the wine has mostly cooked away.",
+   "Add the vinegar off the heat and toss. The splash of acid at the end is what lifts the whole pan out of richness.",
+   "Slice the sausages, add the parsley, and pile into rolls or serve over polenta."
+  ],
+  "diet": {
+   "vegetarian": false,
+   "vegan": false,
+   "pescatarian": false,
+   "glutenFree": false,
+   "glutenFreeAdaptable": true,
+   "dairyFree": true,
+   "nutFree": true,
+   "eggFree": true
+  },
+  "allergens": [
+   "gluten",
+   "sulfites"
+  ],
+  "gmo": {
+   "risk": "moderate",
+   "sources": [
+    "grain-fed-meat",
+    "processed-bread"
+   ]
+  },
+  "nutrition": {
+   "calories": 882,
+   "proteinG": 42,
+   "carbsG": 52,
+   "fiberG": 6,
+   "sugarG": 11,
+   "fatG": 54,
+   "satFatG": 17,
+   "sodiumMg": 1880,
+   "cholesterolMg": 112
+  },
+  "tags": [
+   "quick",
+   "30-minute",
+   "one-pan",
+   "weeknight",
+   "family",
+   "dairy-free",
+   "game-day",
+   "high-protein"
+  ],
+  "image": {
+   "file": "sausage-peppers.jpg",
+   "wikipedia": "Italian sausage"
+  }
+ },
+ {
+  "id": "ch-rr-016",
+  "slug": "rr-philly-cheesesteak-sloppy-joes",
+  "title": "Philly Cheesesteak Sloppy Joes",
+  "genre": "american",
+  "subgenre": "diner",
+  "chef": {
+   "name": "Rachael Ray",
+   "slug": "rachael-ray"
+  },
+  "description": "Ground beef with peppers and onions in a provolone cheese sauce, on rolls.",
+  "difficulty": "beginner",
+  "easeScore": 10,
+  "spiceScore": 2,
+  "popularity": 8,
+  "pantryScore": 9,
+  "servings": 4,
+  "prepMin": 10,
+  "cookMin": 25,
+  "totalMin": 35,
+  "equipment": [
+   "stovetop"
+  ],
+  "ingredients": [
+   "2 lb ground beef (85/15)",
+   "3 tbsp olive oil",
+   "1 yellow onion, diced",
+   "1 green bell pepper, diced",
+   "8 oz cremini mushrooms, sliced",
+   "4 cloves garlic, minced",
+   "2 tbsp Worcestershire sauce",
+   "1 cup beef broth",
+   "2 tsp salt",
+   "1 tsp black pepper",
+   "3 tbsp butter",
+   "3 tbsp all-purpose flour",
+   "1 1/2 cups whole milk",
+   "8 oz provolone, shredded",
+   "4 hoagie rolls",
+   "1/4 cup chopped parsley"
+  ],
+  "ingredientKeys": [
+   "ground-beef",
+   "olive-oil",
+   "yellow-onion",
+   "green-bell-pepper",
+   "mushroom",
+   "garlic",
+   "worcestershire",
+   "beef-broth",
+   "salt",
+   "black-pepper",
+   "butter",
+   "flour",
+   "whole-milk",
+   "provolone",
+   "hoagie-roll",
+   "parsley"
+  ],
+  "specialty": [
+   "hoagie-roll"
+  ],
+  "steps": [
+   "Brown the beef in the oil over high heat 7 minutes, then drain most of the fat.",
+   "Add the onion, bell pepper and mushrooms and cook 8 minutes until the mushrooms have browned and lost their water.",
+   "Add the garlic, Worcestershire, broth, salt and pepper and simmer 6 minutes until thick enough to hold on a spoon.",
+   "In a separate pan, melt the butter, whisk in the flour for 2 minutes, then add the milk gradually and simmer 3 minutes until thick.",
+   "Take the cheese sauce off the heat before stirring in the provolone - it strings and goes oily if it boils.",
+   "Pile the beef mixture into split rolls and pour the cheese sauce over. Finish with parsley."
+  ],
+  "diet": {
+   "vegetarian": false,
+   "vegan": false,
+   "pescatarian": false,
+   "glutenFree": false,
+   "glutenFreeAdaptable": false,
+   "dairyFree": false,
+   "nutFree": true,
+   "eggFree": true
+  },
+  "allergens": [
+   "gluten",
+   "dairy"
+  ],
+  "gmo": {
+   "risk": "high",
+   "sources": [
+    "grain-fed-meat",
+    "processed-bread",
+    "grain-fed-dairy",
+    "processed-sauce"
+   ]
+  },
+  "nutrition": {
+   "calories": 982,
+   "proteinG": 62,
+   "carbsG": 52,
+   "fiberG": 4,
+   "sugarG": 11,
+   "fatG": 58,
+   "satFatG": 26,
+   "sodiumMg": 1880,
+   "cholesterolMg": 198
+  },
+  "tags": [
+   "quick",
+   "30-minute",
+   "family",
+   "game-day",
+   "comfort",
+   "kid-friendly",
+   "high-protein",
+   "one-pan"
+  ],
+  "image": {
+   "file": "cheesesteak.jpg",
+   "wikipedia": "Cheesesteak"
+  }
+ },
+ {
+  "id": "ch-rr-017",
+  "slug": "rr-grilled-pizza",
+  "title": "Grilled Pizza",
+  "genre": "italian",
+  "subgenre": "pizza",
+  "chef": {
+   "name": "Rachael Ray",
+   "slug": "rachael-ray"
+  },
+  "description": "Pizza dough cooked straight on the grill grate for a smoky, blistered base.",
+  "difficulty": "intermediate",
+  "easeScore": 7,
+  "spiceScore": 2,
+  "popularity": 8,
+  "pantryScore": 7,
+  "servings": 4,
+  "prepMin": 20,
+  "cookMin": 20,
+  "totalMin": 40,
+  "equipment": [
+   "grill"
+  ],
+  "ingredients": [
+   "1 1/2 lb store-bought pizza dough",
+   "1/3 cup olive oil",
+   "2 tsp salt",
+   "1 1/2 cups pizza sauce",
+   "12 oz fresh mozzarella, torn",
+   "1 cup grated Parmesan",
+   "1 cup cherry tomatoes, halved",
+   "4 oz pepperoni, sliced",
+   "1 tsp red pepper flakes",
+   "2 tsp dried oregano",
+   "1 cup fresh basil"
+  ],
+  "ingredientKeys": [
+   "pizza-dough",
+   "olive-oil",
+   "salt",
+   "pizza-sauce",
+   "fresh-mozzarella",
+   "parmesan",
+   "cherry-tomato",
+   "pepperoni",
+   "red-pepper-flakes",
+   "dried-oregano",
+   "fresh-basil"
+  ],
+  "specialty": [
+   "pizza-dough",
+   "pizza-sauce",
+   "fresh-mozzarella",
+   "pepperoni"
+  ],
+  "steps": [
+   "Let the dough come to room temperature, then divide into 4 and stretch each by hand into a rough oval 1/4 inch thick.",
+   "Brush both sides generously with olive oil and season. Oil is what keeps the dough from welding to the grate.",
+   "Heat the grill to medium-high and scrape the grates clean. Lay the dough directly on the grate and cook 2-3 minutes until it puffs and the underside is marked.",
+   "Flip, then work fast: spread sauce thinly, add the mozzarella, Parmesan, tomatoes and pepperoni.",
+   "Close the lid for 3-4 minutes, until the cheese melts and the bottom is crisp. Longer than that and the base burns, so have your toppings ready before the dough goes on.",
+   "Slide onto a board, add the pepper flakes, oregano and torn basil, and cut into strips."
+  ],
+  "diet": {
+   "vegetarian": false,
+   "vegan": false,
+   "pescatarian": false,
+   "glutenFree": false,
+   "glutenFreeAdaptable": false,
+   "dairyFree": false,
+   "nutFree": true,
+   "eggFree": true
+  },
+  "allergens": [
+   "gluten",
+   "dairy"
+  ],
+  "gmo": {
+   "risk": "high",
+   "sources": [
+    "processed-bread",
+    "grain-fed-meat",
+    "processed-sauce",
+    "grain-fed-dairy"
+   ]
+  },
+  "nutrition": {
+   "calories": 882,
+   "proteinG": 42,
+   "carbsG": 82,
+   "fiberG": 5,
+   "sugarG": 9,
+   "fatG": 44,
+   "satFatG": 18,
+   "sodiumMg": 1880,
+   "cholesterolMg": 98
+  },
+  "tags": [
+   "grill",
+   "family",
+   "party",
+   "summer",
+   "technique",
+   "italian",
+   "weekend"
+  ],
+  "image": {
+   "file": "pepperoni-pizza.jpg",
+   "wikipedia": "Pizza"
+  }
+ },
+ {
+  "id": "ch-rr-018",
+  "slug": "rr-caesar-pasta-salad",
+  "title": "Caesar Pasta Salad",
+  "genre": "italian",
+  "subgenre": "salads",
+  "chef": {
+   "name": "Rachael Ray",
+   "slug": "rachael-ray"
+  },
+  "description": "Pasta salad dressed like a Caesar, with romaine and garlic croutons.",
+  "difficulty": "beginner",
+  "easeScore": 10,
+  "spiceScore": 2,
+  "popularity": 7,
+  "pantryScore": 8,
+  "servings": 8,
+  "prepMin": 20,
+  "cookMin": 70,
+  "totalMin": 90,
+  "equipment": [
+   "stovetop",
+   "oven"
+  ],
+  "ingredients": [
+   "1 lb rotini",
+   "3 cups cubed bread",
+   "1/4 cup olive oil, for the croutons",
+   "4 anchovy fillets, minced",
+   "4 cloves garlic, minced",
+   "2 egg yolks",
+   "3 tbsp lemon juice",
+   "1 tbsp Dijon mustard",
+   "1 tsp Worcestershire sauce",
+   "2/3 cup olive oil",
+   "1 1/2 cups grated Parmesan",
+   "2 tsp salt",
+   "1 tsp black pepper",
+   "1 head romaine lettuce, chopped",
+   "1 cup cherry tomatoes, halved",
+   "1/3 cup chopped parsley"
+  ],
+  "ingredientKeys": [
+   "rotini",
+   "bread",
+   "olive-oil",
+   "anchovy",
+   "garlic",
+   "egg-yolk",
+   "lemon-juice",
+   "dijon-mustard",
+   "worcestershire",
+   "olive-oil",
+   "parmesan",
+   "salt",
+   "black-pepper",
+   "romaine-lettuce",
+   "cherry-tomato",
+   "parsley"
+  ],
+  "specialty": [
+   "anchovy"
+  ],
+  "steps": [
+   "Toss the bread cubes with the 1/4 cup oil and a pinch of salt and bake at 400F for 12 minutes until golden and dry through. Cool completely.",
+   "Cook the pasta just past al dente - it firms up as it chills - then rinse under cold water and drain well.",
+   "Mash the anchovies and garlic to a paste with the flat of a knife. They give the dressing its savory backbone and will not taste fishy.",
+   "Whisk in the egg yolks, lemon juice, Dijon and Worcestershire, then add the 2/3 cup oil in a very thin stream, whisking constantly so it emulsifies.",
+   "Stir in half the Parmesan and season. Toss with the pasta and chill 1 hour.",
+   "Just before serving, fold in the romaine, tomatoes, croutons, parsley and remaining Parmesan. Add the croutons last so they stay crisp."
+  ],
+  "diet": {
+   "vegetarian": false,
+   "vegan": false,
+   "pescatarian": true,
+   "glutenFree": false,
+   "glutenFreeAdaptable": false,
+   "dairyFree": false,
+   "nutFree": true,
+   "eggFree": false
+  },
+  "allergens": [
+   "gluten",
+   "dairy",
+   "egg",
+   "fish"
+  ],
+  "gmo": {
+   "risk": "moderate",
+   "sources": [
+    "processed-bread",
+    "grain-fed-dairy"
+   ]
+  },
+  "nutrition": {
+   "calories": 682,
+   "proteinG": 22,
+   "carbsG": 62,
+   "fiberG": 4,
+   "sugarG": 4,
+   "fatG": 40,
+   "satFatG": 9,
+   "sodiumMg": 1180,
+   "cholesterolMg": 68
+  },
+  "tags": [
+   "salad",
+   "make-ahead",
+   "potluck",
+   "party",
+   "summer",
+   "picnic",
+   "pescatarian"
+  ],
+  "image": {
+   "file": "italian-pasta-salad.jpg",
+   "wikipedia": "Pasta salad"
+  }
+ },
+ {
+  "id": "ch-rr-019",
+  "slug": "rr-tuscan-chicken-beans",
+  "title": "Tuscan Chicken and White Bean Skillet",
+  "genre": "italian",
+  "subgenre": "secondi",
+  "chef": {
+   "name": "Rachael Ray",
+   "slug": "rachael-ray"
+  },
+  "description": "Chicken thighs with cannellini beans, kale and rosemary in one skillet.",
+  "difficulty": "beginner",
+  "easeScore": 10,
+  "spiceScore": 3,
+  "popularity": 8,
+  "pantryScore": 9,
+  "servings": 4,
+  "prepMin": 10,
+  "cookMin": 30,
+  "totalMin": 40,
+  "equipment": [
+   "stovetop"
+  ],
+  "ingredients": [
+   "2 lb boneless chicken thighs",
+   "3 tbsp olive oil",
+   "2 tsp salt",
+   "1 tsp black pepper",
+   "1 yellow onion, sliced",
+   "6 cloves garlic, sliced",
+   "1 tsp red pepper flakes",
+   "2 tbsp fresh rosemary, chopped",
+   "1/2 cup dry white wine",
+   "2 cans (15 oz each) cannellini beans, drained",
+   "1 1/2 cups chicken broth",
+   "1 bunch lacinato kale, chopped",
+   "2 tbsp lemon juice",
+   "1 cup grated Parmesan"
+  ],
+  "ingredientKeys": [
+   "chicken-thighs",
+   "olive-oil",
+   "salt",
+   "black-pepper",
+   "yellow-onion",
+   "garlic",
+   "red-pepper-flakes",
+   "fresh-rosemary",
+   "white-wine",
+   "cannellini-beans",
+   "chicken-broth",
+   "lacinato-kale",
+   "lemon-juice",
+   "parmesan"
+  ],
+  "specialty": [
+   "fresh-rosemary",
+   "white-wine",
+   "cannellini-beans",
+   "lacinato-kale"
+  ],
+  "steps": [
+   "Season the chicken and brown it in the oil over high heat 5 minutes per side, then set aside.",
+   "Cook the onion in the same pan 5 minutes, then the garlic, pepper flakes and rosemary for 1 minute.",
+   "Add the wine and reduce by half, scraping up the browned bits.",
+   "Mash about a third of the beans, then add all of them with the broth. The mashed beans thicken the pan into a sauce without any cream.",
+   "Return the chicken, cover and simmer 10 minutes until cooked through.",
+   "Stir in the kale and cook 4 minutes until tender, then add the lemon juice off the heat and serve with Parmesan."
+  ],
+  "diet": {
+   "vegetarian": false,
+   "vegan": false,
+   "pescatarian": false,
+   "glutenFree": true,
+   "glutenFreeAdaptable": false,
+   "dairyFree": false,
+   "nutFree": true,
+   "eggFree": true
+  },
+  "allergens": [
+   "dairy",
+   "sulfites"
+  ],
+  "gmo": {
+   "risk": "low",
+   "sources": [
+    "grain-fed-meat",
+    "grain-fed-dairy"
+   ]
+  },
+  "nutrition": {
+   "calories": 712,
+   "proteinG": 58,
+   "carbsG": 42,
+   "fiberG": 12,
+   "sugarG": 5,
+   "fatG": 32,
+   "satFatG": 9,
+   "sodiumMg": 1480,
+   "cholesterolMg": 178
+  },
+  "tags": [
+   "quick",
+   "30-minute",
+   "one-pan",
+   "gluten-free",
+   "healthy",
+   "high-protein",
+   "high-fiber",
+   "weeknight",
+   "family"
+  ],
+  "image": {
+   "file": "salsiccia-fagioli.jpg",
+   "wikipedia": "Cannellini bean"
+  }
+ },
+ {
+  "id": "ch-rr-020",
+  "slug": "rr-shrimp-fra-diavolo",
+  "title": "Shrimp Fra Diavolo",
+  "genre": "italian",
+  "subgenre": "pasta",
+  "chef": {
+   "name": "Rachael Ray",
+   "slug": "rachael-ray"
+  },
+  "description": "Shrimp in a fiery garlic-chile tomato sauce over linguine in 30 minutes.",
+  "difficulty": "beginner",
+  "easeScore": 9,
+  "spiceScore": 7,
+  "popularity": 8,
+  "pantryScore": 8,
+  "servings": 4,
+  "prepMin": 10,
+  "cookMin": 20,
+  "totalMin": 30,
+  "equipment": [
+   "stovetop"
+  ],
+  "ingredients": [
+   "1 lb linguine",
+   "2 lb large shrimp, peeled",
+   "1/3 cup olive oil",
+   "8 cloves garlic, sliced",
+   "2 tsp red pepper flakes",
+   "1/2 tsp cayenne pepper",
+   "1/2 cup dry white wine",
+   "1 can (28 oz) crushed tomatoes",
+   "2 tsp salt",
+   "1 tsp dried oregano",
+   "3 tbsp butter",
+   "1/2 cup chopped parsley",
+   "1 lemon, juiced"
+  ],
+  "ingredientKeys": [
+   "linguine",
+   "shrimp",
+   "olive-oil",
+   "garlic",
+   "red-pepper-flakes",
+   "cayenne",
+   "white-wine",
+   "crushed-tomatoes",
+   "salt",
+   "dried-oregano",
+   "butter",
+   "parsley",
+   "lemon-juice"
+  ],
+  "specialty": [
+   "shrimp",
+   "white-wine"
+  ],
+  "steps": [
+   "Get the pasta water boiling first - the sauce takes exactly as long as the linguine.",
+   "Pat the shrimp dry and sear them in 2 tbsp of the oil over high heat, 1 minute per side, then pull them out. They finish in the sauce, and overcooking here is the one way to ruin this.",
+   "Add the rest of the oil, the garlic, pepper flakes and cayenne and cook 1 minute. Fra diavolo means brother devil, so do not be timid with the chile.",
+   "Pour in the wine and reduce by half, then add the tomatoes, salt and oregano and simmer 12 minutes.",
+   "Toss in the drained linguine with a splash of pasta water.",
+   "Return the shrimp for 1-2 minutes only, swirl in the butter off the heat, then add the parsley and lemon juice. No cheese with this one."
+  ],
+  "diet": {
+   "vegetarian": false,
+   "vegan": false,
+   "pescatarian": true,
+   "glutenFree": false,
+   "glutenFreeAdaptable": true,
+   "dairyFree": false,
+   "nutFree": true,
+   "eggFree": true
+  },
+  "allergens": [
+   "gluten",
+   "dairy",
+   "shellfish",
+   "sulfites"
+  ],
+  "gmo": {
+   "risk": "low",
+   "sources": [
+    "grain-fed-dairy"
+   ]
+  },
+  "nutrition": {
+   "calories": 782,
+   "proteinG": 58,
+   "carbsG": 86,
+   "fiberG": 6,
+   "sugarG": 9,
+   "fatG": 26,
+   "satFatG": 8,
+   "sodiumMg": 1480,
+   "cholesterolMg": 312
+  },
+  "tags": [
+   "quick",
+   "30-minute",
+   "seafood",
+   "pescatarian",
+   "spicy",
+   "weeknight",
+   "high-protein",
+   "date-night"
+  ],
+  "image": {
+   "file": "fra-diavolo.jpg",
+   "wikipedia": "Fra diavolo sauce"
+  }
+ },
+ {
+  "id": "ch-rr-021",
+  "slug": "rr-pork-chops-apples",
+  "title": "Pork Chops with Apples and Onions",
+  "genre": "american",
+  "subgenre": "comfort",
+  "chef": {
+   "name": "Rachael Ray",
+   "slug": "rachael-ray"
+  },
+  "description": "Seared chops with cider-glazed apples and onions in the same pan.",
+  "difficulty": "beginner",
+  "easeScore": 9,
+  "spiceScore": 2,
+  "popularity": 8,
+  "pantryScore": 8,
+  "servings": 4,
+  "prepMin": 10,
+  "cookMin": 25,
+  "totalMin": 35,
+  "equipment": [
+   "stovetop"
+  ],
+  "ingredients": [
+   "4 bone-in pork chops, 1 inch thick",
+   "2 tsp salt",
+   "1 tsp black pepper",
+   "3 tbsp olive oil",
+   "3 tbsp butter",
+   "2 yellow onions, sliced",
+   "3 Honeycrisp apples, cut in wedges",
+   "2 tbsp fresh thyme leaves",
+   "1 tbsp brown sugar",
+   "1 cup apple cider",
+   "2 tbsp apple cider vinegar",
+   "1 tbsp Dijon mustard",
+   "1/4 cup chopped parsley"
+  ],
+  "ingredientKeys": [
+   "pork-chops",
+   "salt",
+   "black-pepper",
+   "olive-oil",
+   "butter",
+   "yellow-onion",
+   "apple",
+   "fresh-thyme",
+   "brown-sugar",
+   "apple-cider",
+   "apple-cider-vinegar",
+   "dijon-mustard",
+   "parsley"
+  ],
+  "specialty": [
+   "pork-chops",
+   "apple-cider",
+   "fresh-thyme"
+  ],
+  "steps": [
+   "Pat the chops very dry and season well. Sear them in the oil over high heat 4 minutes per side until deeply browned, then move to a plate - they are not cooked through yet.",
+   "Lower the heat, add the butter and cook the onions 6 minutes until soft.",
+   "Add the apples, thyme and brown sugar and cook 5 minutes until the apples start to caramelize at the edges.",
+   "Pour in the cider and vinegar and let it bubble down by half, scraping the pan.",
+   "Whisk in the Dijon, then return the chops with their juices and simmer 6-8 minutes, turning once, to 145F internal.",
+   "Rest the chops 5 minutes before serving with the apples and pan sauce and a scatter of parsley."
+  ],
+  "diet": {
+   "vegetarian": false,
+   "vegan": false,
+   "pescatarian": false,
+   "glutenFree": true,
+   "glutenFreeAdaptable": false,
+   "dairyFree": false,
+   "nutFree": true,
+   "eggFree": true
+  },
+  "allergens": [
+   "dairy"
+  ],
+  "gmo": {
+   "risk": "moderate",
+   "sources": [
+    "grain-fed-meat",
+    "grain-fed-dairy",
+    "sugar-beet"
+   ]
+  },
+  "nutrition": {
+   "calories": 682,
+   "proteinG": 48,
+   "carbsG": 42,
+   "fiberG": 5,
+   "sugarG": 32,
+   "fatG": 34,
+   "satFatG": 13,
+   "sodiumMg": 1280,
+   "cholesterolMg": 158
+  },
+  "tags": [
+   "quick",
+   "30-minute",
+   "one-pan",
+   "gluten-free",
+   "fall",
+   "family",
+   "weeknight",
+   "high-protein"
+  ],
+  "image": {
+   "file": "pork-chop.jpg",
+   "wikipedia": "Pork chop"
+  }
+ },
+ {
+  "id": "ch-rr-022",
+  "slug": "rr-french-onion-burgers",
+  "title": "French Onion Burgers",
+  "genre": "american",
+  "subgenre": "burgers",
+  "chef": {
+   "name": "Rachael Ray",
+   "slug": "rachael-ray"
+  },
+  "description": "Burgers topped with caramelized onions and melted Gruyere on toasted rolls.",
+  "difficulty": "beginner",
+  "easeScore": 8,
+  "spiceScore": 1,
+  "popularity": 8,
+  "pantryScore": 8,
+  "servings": 4,
+  "prepMin": 15,
+  "cookMin": 35,
+  "totalMin": 50,
+  "equipment": [
+   "stovetop"
+  ],
+  "ingredients": [
+   "1 1/2 lb ground beef (80/20)",
+   "2 tsp salt",
+   "1 tsp black pepper",
+   "3 tbsp olive oil",
+   "3 yellow onions, thinly sliced",
+   "3 tbsp butter",
+   "2 tbsp fresh thyme leaves",
+   "1/2 cup dry white wine",
+   "1 tbsp Worcestershire sauce",
+   "8 oz Gruyere, grated",
+   "4 kaiser rolls",
+   "1/3 cup mayonnaise",
+   "1 tbsp Dijon mustard"
+  ],
+  "ingredientKeys": [
+   "ground-beef",
+   "salt",
+   "black-pepper",
+   "olive-oil",
+   "yellow-onion",
+   "butter",
+   "fresh-thyme",
+   "white-wine",
+   "worcestershire",
+   "gruyere",
+   "kaiser-roll",
+   "mayonnaise",
+   "dijon-mustard"
+  ],
+  "specialty": [
+   "fresh-thyme",
+   "white-wine",
+   "gruyere",
+   "kaiser-roll"
+  ],
+  "steps": [
+   "Cook the onions in the butter and 1 tbsp oil over medium-low for 25 minutes, stirring now and then, until deeply browned and jammy. There is no way to rush this - high heat gives you burnt edges and raw middles.",
+   "Add the thyme, wine and Worcestershire and let it reduce until almost dry, 5 minutes.",
+   "Stir the mayonnaise with the Dijon.",
+   "Form 4 loose patties wider than the rolls, dimple the centers, and season just before cooking.",
+   "Cook in the remaining oil over high heat 3-4 minutes per side for medium.",
+   "Pile the onions on each patty, cover with Gruyere and put a lid on the pan for 1 minute to melt. Toast the rolls, spread with the Dijon mayo and build."
+  ],
+  "diet": {
+   "vegetarian": false,
+   "vegan": false,
+   "pescatarian": false,
+   "glutenFree": false,
+   "glutenFreeAdaptable": true,
+   "dairyFree": false,
+   "nutFree": true,
+   "eggFree": false
+  },
+  "allergens": [
+   "gluten",
+   "dairy",
+   "egg",
+   "sulfites"
+  ],
+  "gmo": {
+   "risk": "high",
+   "sources": [
+    "grain-fed-meat",
+    "processed-bread",
+    "seed-oil",
+    "grain-fed-dairy"
+   ]
+  },
+  "nutrition": {
+   "calories": 982,
+   "proteinG": 58,
+   "carbsG": 48,
+   "fiberG": 4,
+   "sugarG": 12,
+   "fatG": 62,
+   "satFatG": 28,
+   "sodiumMg": 1680,
+   "cholesterolMg": 198
+  },
+  "tags": [
+   "burgers",
+   "weeknight",
+   "comfort",
+   "family",
+   "high-protein",
+   "game-day"
+  ],
+  "image": {
+   "file": "hamburger.jpg",
+   "wikipedia": "Hamburger"
+  }
+ },
+ {
+  "id": "ch-rr-023",
+  "slug": "rr-baked-ziti-spinach",
+  "title": "Baked Ziti with Spinach",
+  "genre": "italian",
+  "subgenre": "pasta",
+  "chef": {
+   "name": "Rachael Ray",
+   "slug": "rachael-ray"
+  },
+  "description": "Ziti with ricotta, spinach and sausage, baked in 45 minutes start to finish.",
+  "difficulty": "beginner",
+  "easeScore": 9,
+  "spiceScore": 3,
+  "popularity": 9,
+  "pantryScore": 9,
+  "servings": 8,
+  "prepMin": 15,
+  "cookMin": 30,
+  "totalMin": 45,
+  "equipment": [
+   "stovetop",
+   "oven"
+  ],
+  "ingredients": [
+   "1 lb ziti",
+   "1 lb Italian sausage, casings removed",
+   "3 tbsp olive oil",
+   "1 yellow onion, diced",
+   "5 cloves garlic, minced",
+   "1 tsp red pepper flakes",
+   "2 cans (28 oz each) crushed tomatoes",
+   "2 tsp salt",
+   "10 oz frozen spinach, thawed and squeezed dry",
+   "2 cups ricotta cheese",
+   "1 egg",
+   "1 1/2 cups grated Parmesan",
+   "3 cups shredded mozzarella",
+   "1/2 cup fresh basil"
+  ],
+  "ingredientKeys": [
+   "ziti",
+   "italian-sausage",
+   "olive-oil",
+   "yellow-onion",
+   "garlic",
+   "red-pepper-flakes",
+   "crushed-tomatoes",
+   "salt",
+   "frozen-spinach",
+   "ricotta",
+   "egg",
+   "parmesan",
+   "mozzarella",
+   "fresh-basil"
+  ],
+  "specialty": [
+   "ziti",
+   "italian-sausage",
+   "ricotta"
+  ],
+  "steps": [
+   "Boil the ziti 3 minutes short of al dente. It finishes in the oven, and fully cooked pasta turns to mush in a bake.",
+   "Brown the sausage in the oil, then add the onion for 5 minutes, the garlic and pepper flakes for 1, then the tomatoes and salt. Simmer 12 minutes.",
+   "Squeeze the spinach completely dry - wet spinach makes a watery bake - then mix it with the ricotta, egg and half the Parmesan.",
+   "Toss the drained pasta with most of the sauce.",
+   "Layer half the pasta in a 9x13 dish, dollop the ricotta mixture over, add the rest of the pasta, remaining sauce, mozzarella and Parmesan.",
+   "Bake at 425F for 20-25 minutes until bubbling and browned. Rest 10 minutes and finish with basil."
+  ],
+  "diet": {
+   "vegetarian": false,
+   "vegan": false,
+   "pescatarian": false,
+   "glutenFree": false,
+   "glutenFreeAdaptable": true,
+   "dairyFree": false,
+   "nutFree": true,
+   "eggFree": false
+  },
+  "allergens": [
+   "gluten",
+   "dairy",
+   "egg"
+  ],
+  "gmo": {
+   "risk": "moderate",
+   "sources": [
+    "grain-fed-meat",
+    "grain-fed-dairy"
+   ]
+  },
+  "nutrition": {
+   "calories": 812,
+   "proteinG": 48,
+   "carbsG": 72,
+   "fiberG": 7,
+   "sugarG": 13,
+   "fatG": 38,
+   "satFatG": 18,
+   "sodiumMg": 1680,
+   "cholesterolMg": 138
+  },
+  "tags": [
+   "family",
+   "comfort",
+   "make-ahead",
+   "potluck",
+   "kid-friendly",
+   "weeknight",
+   "leftovers",
+   "crowd-pleaser"
+  ],
+  "image": {
+   "file": "baked-ziti.jpg",
+   "wikipedia": "Baked ziti"
+  }
+ },
+ {
+  "id": "ch-rr-024",
+  "slug": "rr-chicken-and-dumplings",
+  "title": "30-Minute Chicken and Dumplings",
+  "genre": "american",
+  "subgenre": "comfort",
+  "chef": {
+   "name": "Rachael Ray",
+   "slug": "rachael-ray"
+  },
+  "description": "Creamy chicken stew with drop biscuit dumplings steamed on top.",
+  "difficulty": "intermediate",
+  "easeScore": 7,
+  "spiceScore": 1,
+  "popularity": 9,
+  "pantryScore": 9,
+  "servings": 6,
+  "prepMin": 15,
+  "cookMin": 30,
+  "totalMin": 45,
+  "equipment": [
+   "stovetop"
+  ],
+  "ingredients": [
+   "2 lb boneless chicken thighs, cubed",
+   "4 tbsp butter",
+   "3 tbsp olive oil",
+   "2 tsp salt",
+   "1 tsp black pepper",
+   "1 yellow onion, diced",
+   "3 carrots, sliced",
+   "3 celery stalks, sliced",
+   "4 cloves garlic, minced",
+   "1/3 cup all-purpose flour",
+   "5 cups chicken broth",
+   "1 cup heavy cream",
+   "1 tbsp fresh thyme leaves",
+   "1 cup frozen peas",
+   "2 cups self-rising flour",
+   "1/4 cup cold butter, diced",
+   "1 cup cold buttermilk",
+   "1/3 cup chopped parsley"
+  ],
+  "ingredientKeys": [
+   "chicken-thighs",
+   "butter",
+   "olive-oil",
+   "salt",
+   "black-pepper",
+   "yellow-onion",
+   "carrot",
+   "celery",
+   "garlic",
+   "flour",
+   "chicken-broth",
+   "heavy-cream",
+   "fresh-thyme",
+   "frozen-peas",
+   "self-rising-flour",
+   "butter",
+   "buttermilk",
+   "parsley"
+  ],
+  "specialty": [
+   "fresh-thyme",
+   "self-rising-flour",
+   "buttermilk"
+  ],
+  "steps": [
+   "Season the chicken and brown it in the oil and 2 tbsp butter over high heat 6 minutes, then add the onion, carrots and celery and cook 6 minutes.",
+   "Add the garlic, then the flour, and stir 2 minutes. Whisk in the broth gradually so it stays smooth, then the cream and thyme.",
+   "Simmer 8 minutes until thickened, then stir in the peas.",
+   "Rub the cold butter into the self-rising flour with your fingertips until pea-sized, then stir in the cold buttermilk to a shaggy dough. Mix as little as possible - overworked dumplings come out heavy.",
+   "Drop spoonfuls of dough over the surface of the simmering stew, leaving gaps.",
+   "Cover tightly and steam 12-15 minutes without lifting the lid. The trapped steam is what cooks them through, so peeking costs you the rise. Finish with parsley."
+  ],
+  "diet": {
+   "vegetarian": false,
+   "vegan": false,
+   "pescatarian": false,
+   "glutenFree": false,
+   "glutenFreeAdaptable": false,
+   "dairyFree": false,
+   "nutFree": true,
+   "eggFree": true
+  },
+  "allergens": [
+   "gluten",
+   "dairy"
+  ],
+  "gmo": {
+   "risk": "moderate",
+   "sources": [
+    "grain-fed-meat",
+    "grain-fed-dairy"
+   ]
+  },
+  "nutrition": {
+   "calories": 882,
+   "proteinG": 48,
+   "carbsG": 62,
+   "fiberG": 5,
+   "sugarG": 9,
+   "fatG": 48,
+   "satFatG": 24,
+   "sodiumMg": 1680,
+   "cholesterolMg": 228
+  },
+  "tags": [
+   "comfort",
+   "family",
+   "one-pot",
+   "winter",
+   "kid-friendly",
+   "high-protein",
+   "weeknight"
+  ],
+  "image": {
+   "file": "chicken-and-dumplings.jpg",
+   "wikipedia": "Chicken and dumplings"
+  }
+ },
+ {
+  "id": "ch-rr-025",
+  "slug": "rr-ricotta-honey-toasts",
+  "title": "Ricotta and Honey Toasts",
+  "genre": "italian",
+  "subgenre": "desserts",
+  "chef": {
+   "name": "Rachael Ray",
+   "slug": "rachael-ray"
+  },
+  "description": "Whipped ricotta on grilled bread with honey, lemon and pistachios.",
+  "difficulty": "beginner",
+  "easeScore": 10,
+  "spiceScore": 0,
+  "popularity": 7,
+  "pantryScore": 7,
+  "servings": 4,
+  "prepMin": 10,
+  "cookMin": 5,
+  "totalMin": 15,
+  "equipment": [
+   "stovetop",
+   "broiler"
+  ],
+  "ingredients": [
+   "2 cups whole-milk ricotta",
+   "2 tbsp olive oil",
+   "1 tsp lemon zest",
+   "1/4 tsp salt",
+   "8 thick slices country bread",
+   "3 tbsp olive oil, for the bread",
+   "1/3 cup honey",
+   "1/2 cup chopped pistachios",
+   "1/4 tsp flaky sea salt",
+   "1/4 tsp black pepper"
+  ],
+  "ingredientKeys": [
+   "ricotta",
+   "olive-oil",
+   "lemon-zest",
+   "salt",
+   "country-bread",
+   "olive-oil",
+   "honey",
+   "pistachios",
+   "flaky-salt",
+   "black-pepper"
+  ],
+  "specialty": [
+   "ricotta",
+   "country-bread",
+   "pistachios",
+   "flaky-salt"
+  ],
+  "steps": [
+   "Whip the ricotta with the 2 tbsp olive oil, lemon zest and salt for 2 minutes until it goes from grainy to genuinely smooth and light. That whipping is the only technique in the dish and it makes all the difference.",
+   "Brush the bread with the remaining oil and grill or broil until charred at the edges but still chewy in the middle.",
+   "Spread the whipped ricotta thickly on the warm toasts.",
+   "Drizzle generously with honey.",
+   "Scatter the pistachios, flaky salt and a little black pepper over. The salt and pepper against the honey are what keep this from being merely sweet.",
+   "Serve immediately, while the bread is still warm."
+  ],
+  "diet": {
+   "vegetarian": true,
+   "vegan": false,
+   "pescatarian": true,
+   "glutenFree": false,
+   "glutenFreeAdaptable": true,
+   "dairyFree": false,
+   "nutFree": false,
+   "eggFree": true
+  },
+  "allergens": [
+   "gluten",
+   "dairy",
+   "tree-nut"
+  ],
+  "gmo": {
+   "risk": "low",
+   "sources": [
+    "grain-fed-dairy",
+    "processed-bread"
+   ]
+  },
+  "nutrition": {
+   "calories": 586,
+   "proteinG": 20,
+   "carbsG": 62,
+   "fiberG": 4,
+   "sugarG": 28,
+   "fatG": 30,
+   "satFatG": 10,
+   "sodiumMg": 580,
+   "cholesterolMg": 42
+  },
+  "tags": [
+   "dessert",
+   "quick",
+   "vegetarian",
+   "easy",
+   "entertaining",
+   "breakfast",
+   "no-bake",
+   "italian"
+  ],
+  "image": {
+   "file": "ricotta-toast.jpg",
+   "wikipedia": "Ricotta"
+  }
+ }
+]

@@ -1,0 +1,2883 @@
+[
+ {
+  "id": "ch-gd-001",
+  "slug": "gd-lemon-spaghetti",
+  "title": "Lemon Spaghetti",
+  "genre": "italian",
+  "subgenre": "pasta",
+  "chef": {
+   "name": "Giada De Laurentiis",
+   "slug": "giada-de-laurentiis"
+  },
+  "description": "Olive oil, lemon and Parmesan whisked into a no-cook sauce.",
+  "difficulty": "beginner",
+  "easeScore": 10,
+  "spiceScore": 1,
+  "popularity": 9,
+  "pantryScore": 9,
+  "servings": 6,
+  "prepMin": 10,
+  "cookMin": 12,
+  "totalMin": 22,
+  "equipment": [
+   "stovetop"
+  ],
+  "ingredients": [
+   "1 lb spaghetti",
+   "2/3 cup olive oil",
+   "2/3 cup grated Parmesan",
+   "1/2 cup lemon juice",
+   "2 tbsp lemon zest",
+   "1 1/2 tsp salt",
+   "1 tsp black pepper",
+   "1/3 cup chopped fresh basil",
+   "1 tbsp salt, for the water"
+  ],
+  "ingredientKeys": [
+   "spaghetti",
+   "olive-oil",
+   "parmesan",
+   "lemon-juice",
+   "lemon-zest",
+   "salt",
+   "black-pepper",
+   "fresh-basil",
+   "salt"
+  ],
+  "specialty": [],
+  "steps": [
+   "Whisk the olive oil, Parmesan and lemon juice in a large bowl until it emulsifies into a thick, pale sauce. There is no cooking at all - the whisking is what brings it together.",
+   "Boil the spaghetti in well-salted water to al dente and reserve 1 cup of the cooking water.",
+   "Add the hot drained pasta directly to the bowl of sauce and toss immediately. The heat of the pasta is what melts the cheese and sets the sauce.",
+   "Add the reserved pasta water a few tablespoons at a time, tossing, until it coats every strand without pooling at the bottom.",
+   "Season with the salt and pepper and add the lemon zest off the heat - cooked zest tastes bitter.",
+   "Fold in the basil and serve at once. This dish does not reheat."
+  ],
+  "diet": {
+   "vegetarian": true,
+   "vegan": false,
+   "pescatarian": true,
+   "glutenFree": false,
+   "glutenFreeAdaptable": true,
+   "dairyFree": false,
+   "nutFree": true,
+   "eggFree": true
+  },
+  "allergens": [
+   "gluten",
+   "dairy"
+  ],
+  "gmo": {
+   "risk": "low",
+   "sources": [
+    "grain-fed-dairy"
+   ]
+  },
+  "nutrition": {
+   "calories": 682,
+   "proteinG": 18,
+   "carbsG": 72,
+   "fiberG": 4,
+   "sugarG": 3,
+   "fatG": 36,
+   "satFatG": 7,
+   "sodiumMg": 880,
+   "cholesterolMg": 12
+  },
+  "tags": [
+   "quick",
+   "vegetarian",
+   "weeknight",
+   "summer",
+   "easy",
+   "italian",
+   "pantry",
+   "no-cook-sauce"
+  ],
+  "image": {
+   "file": "pasta-al-limone.jpg",
+   "wikipedia": "Pasta"
+  }
+ },
+ {
+  "id": "ch-gd-002",
+  "slug": "gd-turkey-bolognese",
+  "title": "Turkey Bolognese",
+  "genre": "italian",
+  "subgenre": "pasta",
+  "chef": {
+   "name": "Giada De Laurentiis",
+   "slug": "giada-de-laurentiis"
+  },
+  "description": "A lighter bolognese built on ground turkey and plenty of soffritto.",
+  "difficulty": "beginner",
+  "easeScore": 9,
+  "spiceScore": 2,
+  "popularity": 8,
+  "pantryScore": 9,
+  "servings": 6,
+  "prepMin": 15,
+  "cookMin": 50,
+  "totalMin": 65,
+  "equipment": [
+   "stovetop"
+  ],
+  "ingredients": [
+   "2 lb ground turkey (93/7)",
+   "1/4 cup olive oil",
+   "1 yellow onion, finely diced",
+   "2 carrots, finely diced",
+   "2 celery stalks, finely diced",
+   "5 cloves garlic, minced",
+   "3 tbsp tomato paste",
+   "1 cup dry white wine",
+   "1 can (28 oz) crushed tomatoes",
+   "2 tsp dried oregano",
+   "1/2 tsp red pepper flakes",
+   "2 tsp salt",
+   "1 tsp black pepper",
+   "1/2 cup whole milk",
+   "1 lb pappardelle",
+   "1 1/2 cups grated Parmesan",
+   "1/2 cup chopped basil"
+  ],
+  "ingredientKeys": [
+   "ground-turkey",
+   "olive-oil",
+   "yellow-onion",
+   "carrot",
+   "celery",
+   "garlic",
+   "tomato-paste",
+   "white-wine",
+   "crushed-tomatoes",
+   "dried-oregano",
+   "red-pepper-flakes",
+   "salt",
+   "black-pepper",
+   "whole-milk",
+   "pappardelle",
+   "parmesan",
+   "fresh-basil"
+  ],
+  "specialty": [
+   "white-wine",
+   "pappardelle"
+  ],
+  "steps": [
+   "Cook the onion, carrots and celery in the oil over medium heat for 12 minutes until completely soft. Turkey has far less fat than beef, so this soffritto is carrying the flavor - do not rush it.",
+   "Add the garlic for 1 minute, then the turkey, and cook 10 minutes, breaking it up, until no pink remains and it starts to brown.",
+   "Stir in the tomato paste and cook 2 minutes, then add the wine and reduce by half.",
+   "Add the tomatoes, oregano, pepper flakes, salt and pepper and simmer 25 minutes.",
+   "Stir in the milk at the end - it rounds off the acidity and gives the sauce the body that turkey lacks.",
+   "Toss with the cooked pappardelle and a ladle of pasta water, then finish with Parmesan and basil."
+  ],
+  "diet": {
+   "vegetarian": false,
+   "vegan": false,
+   "pescatarian": false,
+   "glutenFree": false,
+   "glutenFreeAdaptable": true,
+   "dairyFree": false,
+   "nutFree": true,
+   "eggFree": false
+  },
+  "allergens": [
+   "gluten",
+   "dairy",
+   "egg",
+   "sulfites"
+  ],
+  "gmo": {
+   "risk": "moderate",
+   "sources": [
+    "grain-fed-meat",
+    "grain-fed-dairy"
+   ]
+  },
+  "nutrition": {
+   "calories": 712,
+   "proteinG": 52,
+   "carbsG": 78,
+   "fiberG": 7,
+   "sugarG": 12,
+   "fatG": 26,
+   "satFatG": 8,
+   "sodiumMg": 1280,
+   "cholesterolMg": 118
+  },
+  "tags": [
+   "weeknight",
+   "family",
+   "healthier",
+   "high-protein",
+   "make-ahead",
+   "italian",
+   "leftovers"
+  ],
+  "image": {
+   "file": "bolognese.jpg",
+   "wikipedia": "Bolognese sauce"
+  }
+ },
+ {
+  "id": "ch-gd-003",
+  "slug": "gd-lasagna-rolls",
+  "title": "Spinach and Ricotta Lasagna Rolls",
+  "genre": "italian",
+  "subgenre": "pasta",
+  "chef": {
+   "name": "Giada De Laurentiis",
+   "slug": "giada-de-laurentiis"
+  },
+  "description": "Individual lasagna noodles rolled around ricotta and baked in bechamel.",
+  "difficulty": "intermediate",
+  "easeScore": 7,
+  "spiceScore": 1,
+  "popularity": 8,
+  "pantryScore": 8,
+  "servings": 6,
+  "prepMin": 35,
+  "cookMin": 40,
+  "totalMin": 75,
+  "equipment": [
+   "stovetop",
+   "oven"
+  ],
+  "ingredients": [
+   "12 lasagna noodles",
+   "2 cups ricotta cheese",
+   "10 oz frozen spinach, thawed and squeezed dry",
+   "1 cup grated Parmesan",
+   "3 oz prosciutto, chopped",
+   "1 egg",
+   "1/4 tsp ground nutmeg",
+   "1 1/2 tsp salt",
+   "1 tsp black pepper",
+   "2 tbsp butter",
+   "2 tbsp all-purpose flour",
+   "1 1/4 cups whole milk, warmed",
+   "2 cups marinara sauce",
+   "1 cup shredded mozzarella",
+   "1/4 cup chopped basil"
+  ],
+  "ingredientKeys": [
+   "lasagna-noodles",
+   "ricotta",
+   "frozen-spinach",
+   "parmesan",
+   "prosciutto",
+   "egg",
+   "nutmeg",
+   "salt",
+   "black-pepper",
+   "butter",
+   "flour",
+   "whole-milk",
+   "marinara-sauce",
+   "mozzarella",
+   "fresh-basil"
+  ],
+  "specialty": [
+   "lasagna-noodles",
+   "ricotta",
+   "prosciutto"
+  ],
+  "steps": [
+   "Boil the noodles 2 minutes short of the package time, then lay them flat on oiled sheet pans so they do not stick together or tear when you roll them.",
+   "Squeeze every drop of water from the spinach. Wet spinach makes a filling too loose to stay inside the roll.",
+   "Mix the ricotta, spinach, half the Parmesan, the prosciutto, egg, nutmeg, salt and pepper.",
+   "Make a quick bechamel: melt the butter, whisk in the flour and cook 2 minutes, then add the warm milk gradually and simmer until thick. Spread it over the base of a baking dish.",
+   "Spread about 3 tbsp of filling along each noodle, roll it up, and set it seam-side down on the bechamel.",
+   "Spoon the marinara over, scatter the mozzarella and remaining Parmesan, and bake at 400F for 20-25 minutes until bubbling. Finish with basil."
+  ],
+  "diet": {
+   "vegetarian": false,
+   "vegan": false,
+   "pescatarian": false,
+   "glutenFree": false,
+   "glutenFreeAdaptable": false,
+   "dairyFree": false,
+   "nutFree": true,
+   "eggFree": false
+  },
+  "allergens": [
+   "gluten",
+   "dairy",
+   "egg"
+  ],
+  "gmo": {
+   "risk": "moderate",
+   "sources": [
+    "grain-fed-meat",
+    "grain-fed-dairy",
+    "processed-sauce"
+   ]
+  },
+  "nutrition": {
+   "calories": 612,
+   "proteinG": 34,
+   "carbsG": 52,
+   "fiberG": 4,
+   "sugarG": 11,
+   "fatG": 30,
+   "satFatG": 15,
+   "sodiumMg": 1480,
+   "cholesterolMg": 118
+  },
+  "tags": [
+   "italian",
+   "make-ahead",
+   "entertaining",
+   "family",
+   "comfort",
+   "dinner-party"
+  ],
+  "image": {
+   "file": "lasagna.jpg",
+   "wikipedia": "Lasagne"
+  }
+ },
+ {
+  "id": "ch-gd-004",
+  "slug": "gd-chicken-tetrazzini",
+  "title": "Chicken Tetrazzini",
+  "genre": "italian",
+  "subgenre": "pasta",
+  "chef": {
+   "name": "Giada De Laurentiis",
+   "slug": "giada-de-laurentiis"
+  },
+  "description": "Linguine baked with chicken and mushrooms in a wine cream sauce.",
+  "difficulty": "beginner",
+  "easeScore": 8,
+  "spiceScore": 1,
+  "popularity": 8,
+  "pantryScore": 8,
+  "servings": 8,
+  "prepMin": 25,
+  "cookMin": 45,
+  "totalMin": 70,
+  "equipment": [
+   "stovetop",
+   "oven"
+  ],
+  "ingredients": [
+   "1 lb linguine",
+   "2 lb boneless chicken thighs, cubed",
+   "6 tbsp butter",
+   "3 tbsp olive oil",
+   "1 lb cremini mushrooms, sliced",
+   "1 yellow onion, diced",
+   "4 cloves garlic, minced",
+   "1/3 cup all-purpose flour",
+   "1 cup dry white wine",
+   "3 cups chicken broth",
+   "1 1/2 cups heavy cream",
+   "1 tbsp fresh thyme leaves",
+   "2 tsp salt",
+   "1 tsp black pepper",
+   "1 cup frozen peas",
+   "1 1/2 cups grated Parmesan",
+   "1 cup panko breadcrumbs",
+   "1/3 cup chopped parsley"
+  ],
+  "ingredientKeys": [
+   "linguine",
+   "chicken-thighs",
+   "butter",
+   "olive-oil",
+   "mushroom",
+   "yellow-onion",
+   "garlic",
+   "flour",
+   "white-wine",
+   "chicken-broth",
+   "heavy-cream",
+   "fresh-thyme",
+   "salt",
+   "black-pepper",
+   "frozen-peas",
+   "parmesan",
+   "panko",
+   "parsley"
+  ],
+  "specialty": [
+   "white-wine",
+   "fresh-thyme",
+   "panko"
+  ],
+  "steps": [
+   "Boil the linguine 3 minutes short of the package time - it absorbs sauce in the oven and turns to mush if fully cooked now.",
+   "Brown the chicken in the oil over high heat 6 minutes and set aside.",
+   "Add 4 tbsp butter and cook the mushrooms over high heat 8 minutes until browned and dry, then add the onion for 5 minutes and the garlic for 1.",
+   "Stir in the flour and cook 2 minutes, then add the wine and reduce by half. Add the broth gradually, then the cream, thyme, salt and pepper, and simmer 5 minutes until it coats a spoon.",
+   "Fold in the pasta, chicken, peas and 1 cup of the Parmesan, then pour into a buttered 9x13 dish.",
+   "Toss the panko with the remaining melted butter and Parmesan, scatter over, and bake at 375F for 30-35 minutes until golden and bubbling. Finish with parsley."
+  ],
+  "diet": {
+   "vegetarian": false,
+   "vegan": false,
+   "pescatarian": false,
+   "glutenFree": false,
+   "glutenFreeAdaptable": false,
+   "dairyFree": false,
+   "nutFree": true,
+   "eggFree": true
+  },
+  "allergens": [
+   "gluten",
+   "dairy",
+   "sulfites"
+  ],
+  "gmo": {
+   "risk": "moderate",
+   "sources": [
+    "grain-fed-meat",
+    "grain-fed-dairy",
+    "processed-bread"
+   ]
+  },
+  "nutrition": {
+   "calories": 882,
+   "proteinG": 52,
+   "carbsG": 72,
+   "fiberG": 5,
+   "sugarG": 9,
+   "fatG": 42,
+   "satFatG": 21,
+   "sodiumMg": 1480,
+   "cholesterolMg": 198
+  },
+  "tags": [
+   "comfort",
+   "family",
+   "make-ahead",
+   "potluck",
+   "italian",
+   "crowd-pleaser",
+   "leftovers"
+  ],
+  "image": {
+   "file": "chicken-tetrazzini.jpg",
+   "wikipedia": "Tetrazzini"
+  }
+ },
+ {
+  "id": "ch-gd-005",
+  "slug": "gd-roman-style-chicken",
+  "title": "Roman-Style Chicken",
+  "genre": "italian",
+  "subgenre": "secondi",
+  "chef": {
+   "name": "Giada De Laurentiis",
+   "slug": "giada-de-laurentiis"
+  },
+  "description": "Chicken braised with prosciutto, peppers and capers in white wine.",
+  "difficulty": "beginner",
+  "easeScore": 9,
+  "spiceScore": 2,
+  "popularity": 8,
+  "pantryScore": 7,
+  "servings": 6,
+  "prepMin": 15,
+  "cookMin": 45,
+  "totalMin": 60,
+  "equipment": [
+   "stovetop"
+  ],
+  "ingredients": [
+   "8 bone-in chicken thighs",
+   "2 tsp salt",
+   "1 tsp black pepper",
+   "1/4 cup olive oil",
+   "4 oz prosciutto, chopped",
+   "2 red bell peppers, sliced",
+   "1 yellow bell pepper, sliced",
+   "4 cloves garlic, minced",
+   "1 cup dry white wine",
+   "1 can (14 oz) diced tomatoes",
+   "1 tbsp fresh thyme leaves",
+   "1 tbsp fresh oregano, chopped",
+   "1/4 cup capers, rinsed",
+   "1 cup chicken broth",
+   "1/3 cup chopped parsley"
+  ],
+  "ingredientKeys": [
+   "chicken-thighs",
+   "salt",
+   "black-pepper",
+   "olive-oil",
+   "prosciutto",
+   "red-bell-pepper",
+   "yellow-bell-pepper",
+   "garlic",
+   "white-wine",
+   "diced-tomatoes",
+   "fresh-thyme",
+   "fresh-oregano",
+   "capers",
+   "chicken-broth",
+   "parsley"
+  ],
+  "specialty": [
+   "prosciutto",
+   "yellow-bell-pepper",
+   "white-wine",
+   "fresh-thyme",
+   "fresh-oregano",
+   "capers"
+  ],
+  "steps": [
+   "Pat the chicken dry, season well, and brown it skin-side down in the oil for 7 minutes, then 3 on the other side. Set aside.",
+   "Add the prosciutto to the pan and cook 3 minutes until it crisps and renders.",
+   "Add the peppers and cook 6 minutes, then the garlic for 1 minute.",
+   "Pour in the wine and reduce by half, scraping up the browned bits, then add the tomatoes, herbs, capers and broth.",
+   "Return the chicken skin-side up, sitting above the liquid so the skin does not go soft, and simmer uncovered 30 minutes.",
+   "Taste before adding salt - the prosciutto and capers are both salty. Finish with parsley and serve with bread or polenta."
+  ],
+  "diet": {
+   "vegetarian": false,
+   "vegan": false,
+   "pescatarian": false,
+   "glutenFree": true,
+   "glutenFreeAdaptable": false,
+   "dairyFree": true,
+   "nutFree": true,
+   "eggFree": true
+  },
+  "allergens": [
+   "sulfites"
+  ],
+  "gmo": {
+   "risk": "low",
+   "sources": [
+    "grain-fed-meat"
+   ]
+  },
+  "nutrition": {
+   "calories": 586,
+   "proteinG": 48,
+   "carbsG": 14,
+   "fiberG": 3,
+   "sugarG": 7,
+   "fatG": 36,
+   "satFatG": 9,
+   "sodiumMg": 1680,
+   "cholesterolMg": 198
+  },
+  "tags": [
+   "one-pot",
+   "gluten-free",
+   "dairy-free",
+   "weeknight",
+   "family",
+   "italian",
+   "high-protein",
+   "entertaining"
+  ],
+  "image": {
+   "file": "chicken-cacciatore.jpg",
+   "wikipedia": "Roman cuisine"
+  }
+ },
+ {
+  "id": "ch-gd-006",
+  "slug": "gd-escarole-bean-soup",
+  "title": "Escarole and Bean Soup",
+  "genre": "italian",
+  "subgenre": "soups",
+  "chef": {
+   "name": "Giada De Laurentiis",
+   "slug": "giada-de-laurentiis"
+  },
+  "description": "A simple broth with cannellini beans, escarole and a Parmesan rind.",
+  "difficulty": "beginner",
+  "easeScore": 10,
+  "spiceScore": 2,
+  "popularity": 7,
+  "pantryScore": 9,
+  "servings": 6,
+  "prepMin": 10,
+  "cookMin": 30,
+  "totalMin": 40,
+  "equipment": [
+   "stovetop"
+  ],
+  "ingredients": [
+   "1/4 cup olive oil",
+   "1 yellow onion, diced",
+   "3 carrots, diced",
+   "4 cloves garlic, sliced",
+   "1/2 tsp red pepper flakes",
+   "2 cans (15 oz each) cannellini beans, drained",
+   "8 cups chicken broth",
+   "1 Parmesan rind",
+   "1 head escarole, chopped",
+   "2 tsp salt",
+   "1 tsp black pepper",
+   "2 tbsp lemon juice",
+   "1 cup grated Parmesan"
+  ],
+  "ingredientKeys": [
+   "olive-oil",
+   "yellow-onion",
+   "carrot",
+   "garlic",
+   "red-pepper-flakes",
+   "cannellini-beans",
+   "chicken-broth",
+   "parmesan-rind",
+   "escarole",
+   "salt",
+   "black-pepper",
+   "lemon-juice",
+   "parmesan"
+  ],
+  "specialty": [
+   "cannellini-beans",
+   "parmesan-rind",
+   "escarole"
+  ],
+  "steps": [
+   "Cook the onion and carrots in the oil over medium heat 8 minutes, then add the garlic and pepper flakes for 1 minute.",
+   "Mash about a third of the beans with a fork, then add all the beans, the broth and the Parmesan rind. The mashed beans thicken the soup and the rind adds savoriness as it softens.",
+   "Simmer 20 minutes.",
+   "Add the escarole and cook 5 minutes until wilted and tender. Escarole is bitter raw and turns sweet and silky with just a few minutes of cooking.",
+   "Fish out the Parmesan rind and season with the salt and pepper.",
+   "Add the lemon juice off the heat and serve with Parmesan and a drizzle of olive oil."
+  ],
+  "diet": {
+   "vegetarian": false,
+   "vegan": false,
+   "pescatarian": false,
+   "glutenFree": true,
+   "glutenFreeAdaptable": false,
+   "dairyFree": false,
+   "nutFree": true,
+   "eggFree": true
+  },
+  "allergens": [
+   "dairy"
+  ],
+  "gmo": {
+   "risk": "low",
+   "sources": [
+    "grain-fed-meat",
+    "grain-fed-dairy"
+   ]
+  },
+  "nutrition": {
+   "calories": 342,
+   "proteinG": 18,
+   "carbsG": 32,
+   "fiberG": 10,
+   "sugarG": 6,
+   "fatG": 16,
+   "satFatG": 5,
+   "sodiumMg": 1480,
+   "cholesterolMg": 18
+  },
+  "tags": [
+   "soup",
+   "quick",
+   "healthy",
+   "gluten-free",
+   "high-fiber",
+   "budget",
+   "italian",
+   "make-ahead",
+   "winter"
+  ],
+  "image": {
+   "file": "pasta-e-fagioli.jpg",
+   "wikipedia": "Escarole"
+  }
+ },
+ {
+  "id": "ch-gd-007",
+  "slug": "gd-italian-chopped-salad",
+  "title": "Italian Chopped Salad",
+  "genre": "italian",
+  "subgenre": "salads",
+  "chef": {
+   "name": "Giada De Laurentiis",
+   "slug": "giada-de-laurentiis"
+  },
+  "description": "Everything cut to the same size and tossed in oregano vinaigrette.",
+  "difficulty": "beginner",
+  "easeScore": 10,
+  "spiceScore": 2,
+  "popularity": 8,
+  "pantryScore": 7,
+  "servings": 6,
+  "prepMin": 25,
+  "cookMin": 0,
+  "totalMin": 25,
+  "equipment": [
+   "no-cook"
+  ],
+  "ingredients": [
+   "1 head romaine lettuce, chopped small",
+   "1 head radicchio, chopped small",
+   "1 can (15 oz) chickpeas, drained",
+   "6 oz salami, diced",
+   "6 oz provolone, diced",
+   "1 cup cherry tomatoes, quartered",
+   "1 cucumber, diced",
+   "1/2 red onion, finely diced",
+   "1/2 cup pepperoncini, sliced",
+   "1/3 cup olive oil",
+   "3 tbsp red wine vinegar",
+   "1 tbsp Dijon mustard",
+   "1 tbsp dried oregano",
+   "2 cloves garlic, minced",
+   "1 1/2 tsp salt",
+   "1 tsp black pepper",
+   "1/2 cup grated Parmesan"
+  ],
+  "ingredientKeys": [
+   "romaine-lettuce",
+   "radicchio",
+   "chickpeas",
+   "salami",
+   "provolone",
+   "cherry-tomato",
+   "cucumber",
+   "red-onion",
+   "pepperoncini",
+   "olive-oil",
+   "red-wine-vinegar",
+   "dijon-mustard",
+   "dried-oregano",
+   "garlic",
+   "salt",
+   "black-pepper",
+   "parmesan"
+  ],
+  "specialty": [
+   "radicchio",
+   "salami",
+   "pepperoncini"
+  ],
+  "steps": [
+   "Chop everything to roughly the same small dice. That uniformity is the entire point of a chopped salad - every forkful should have a bit of each thing.",
+   "Whisk the olive oil, vinegar, Dijon, oregano, garlic, salt and pepper into a vinaigrette.",
+   "Combine the romaine, radicchio, chickpeas, salami, provolone, tomatoes, cucumber, onion and pepperoncini in a large bowl.",
+   "Dress it just before serving and toss thoroughly. Dressed early, the lettuce wilts and the whole thing weeps.",
+   "Add the Parmesan and toss once more.",
+   "Taste for salt - the salami, provolone and pepperoncini all contribute, so it may need none."
+  ],
+  "diet": {
+   "vegetarian": false,
+   "vegan": false,
+   "pescatarian": false,
+   "glutenFree": true,
+   "glutenFreeAdaptable": false,
+   "dairyFree": false,
+   "nutFree": true,
+   "eggFree": true
+  },
+  "allergens": [
+   "dairy",
+   "sulfites"
+  ],
+  "gmo": {
+   "risk": "moderate",
+   "sources": [
+    "grain-fed-meat",
+    "grain-fed-dairy"
+   ]
+  },
+  "nutrition": {
+   "calories": 512,
+   "proteinG": 24,
+   "carbsG": 28,
+   "fiberG": 8,
+   "sugarG": 7,
+   "fatG": 34,
+   "satFatG": 11,
+   "sodiumMg": 1480,
+   "cholesterolMg": 58
+  },
+  "tags": [
+   "salad",
+   "no-cook",
+   "quick",
+   "lunch",
+   "italian",
+   "make-ahead",
+   "high-protein",
+   "easy"
+  ],
+  "image": {
+   "file": "italian-pasta-salad.jpg",
+   "wikipedia": "Chopped salad"
+  }
+ },
+ {
+  "id": "ch-gd-008",
+  "slug": "gd-baked-rigatoni",
+  "title": "Baked Rigatoni with Bechamel",
+  "genre": "italian",
+  "subgenre": "pasta",
+  "chef": {
+   "name": "Giada De Laurentiis",
+   "slug": "giada-de-laurentiis"
+  },
+  "description": "Rigatoni folded through bechamel and meat sauce, baked until the top crisps.",
+  "difficulty": "intermediate",
+  "easeScore": 7,
+  "spiceScore": 2,
+  "popularity": 8,
+  "pantryScore": 8,
+  "servings": 8,
+  "prepMin": 30,
+  "cookMin": 50,
+  "totalMin": 80,
+  "equipment": [
+   "stovetop",
+   "oven"
+  ],
+  "ingredients": [
+   "1 lb rigatoni",
+   "1 lb Italian sausage, casings removed",
+   "3 tbsp olive oil",
+   "1 yellow onion, diced",
+   "4 cloves garlic, minced",
+   "1/2 cup dry red wine",
+   "1 can (28 oz) crushed tomatoes",
+   "1 tsp red pepper flakes",
+   "2 tsp salt",
+   "1 tsp black pepper",
+   "5 tbsp butter",
+   "1/3 cup all-purpose flour",
+   "3 cups whole milk, warmed",
+   "1/4 tsp ground nutmeg",
+   "2 cups grated Parmesan",
+   "2 cups shredded mozzarella",
+   "1/2 cup chopped basil"
+  ],
+  "ingredientKeys": [
+   "rigatoni",
+   "italian-sausage",
+   "olive-oil",
+   "yellow-onion",
+   "garlic",
+   "red-wine",
+   "crushed-tomatoes",
+   "red-pepper-flakes",
+   "salt",
+   "black-pepper",
+   "butter",
+   "flour",
+   "whole-milk",
+   "nutmeg",
+   "parmesan",
+   "mozzarella",
+   "fresh-basil"
+  ],
+  "specialty": [
+   "italian-sausage",
+   "red-wine",
+   "mozzarella"
+  ],
+  "steps": [
+   "Boil the rigatoni 3 minutes short of al dente. The tubes fill with sauce in the oven, and fully cooked pasta collapses.",
+   "Brown the sausage in the oil, add the onion for 6 minutes and the garlic for 1, then the wine and reduce by half. Add the tomatoes, pepper flakes, salt and pepper and simmer 20 minutes.",
+   "Make the bechamel: melt the butter, whisk in the flour and cook 2 minutes, then add the warm milk gradually and simmer 5 minutes until it coats a spoon. Season with nutmeg.",
+   "Combine the pasta, meat sauce, bechamel and half the Parmesan in a large bowl. Folding them together rather than layering gives you sauce inside every tube.",
+   "Pour into a buttered 9x13 dish and top with the mozzarella and remaining Parmesan.",
+   "Bake at 400F for 25-30 minutes until browned and bubbling. Rest 10 minutes and finish with basil."
+  ],
+  "diet": {
+   "vegetarian": false,
+   "vegan": false,
+   "pescatarian": false,
+   "glutenFree": false,
+   "glutenFreeAdaptable": true,
+   "dairyFree": false,
+   "nutFree": true,
+   "eggFree": true
+  },
+  "allergens": [
+   "gluten",
+   "dairy",
+   "sulfites"
+  ],
+  "gmo": {
+   "risk": "moderate",
+   "sources": [
+    "grain-fed-meat",
+    "grain-fed-dairy"
+   ]
+  },
+  "nutrition": {
+   "calories": 882,
+   "proteinG": 48,
+   "carbsG": 78,
+   "fiberG": 6,
+   "sugarG": 14,
+   "fatG": 44,
+   "satFatG": 22,
+   "sodiumMg": 1680,
+   "cholesterolMg": 138
+  },
+  "tags": [
+   "italian",
+   "comfort",
+   "family",
+   "make-ahead",
+   "party",
+   "crowd-pleaser",
+   "sunday"
+  ],
+  "image": {
+   "file": "baked-ziti.jpg",
+   "wikipedia": "Pasta al forno"
+  }
+ },
+ {
+  "id": "ch-gd-009",
+  "slug": "gd-zucchini-carpaccio",
+  "title": "Zucchini Carpaccio",
+  "genre": "italian",
+  "subgenre": "salads",
+  "chef": {
+   "name": "Giada De Laurentiis",
+   "slug": "giada-de-laurentiis"
+  },
+  "description": "Raw zucchini shaved paper-thin with lemon, Parmesan and almonds.",
+  "difficulty": "beginner",
+  "easeScore": 10,
+  "spiceScore": 1,
+  "popularity": 6,
+  "pantryScore": 7,
+  "servings": 4,
+  "prepMin": 15,
+  "cookMin": 15,
+  "totalMin": 30,
+  "equipment": [
+   "no-cook"
+  ],
+  "ingredients": [
+   "4 small zucchini",
+   "1/3 cup olive oil",
+   "3 tbsp lemon juice",
+   "1 tbsp lemon zest",
+   "1 1/2 tsp flaky sea salt",
+   "1 tsp black pepper",
+   "3/4 cup shaved Parmesan",
+   "1/3 cup toasted sliced almonds",
+   "1/4 cup fresh mint leaves",
+   "2 tbsp chopped basil"
+  ],
+  "ingredientKeys": [
+   "zucchini",
+   "olive-oil",
+   "lemon-juice",
+   "lemon-zest",
+   "flaky-salt",
+   "black-pepper",
+   "parmesan",
+   "almonds",
+   "fresh-mint",
+   "fresh-basil"
+  ],
+  "specialty": [
+   "flaky-salt",
+   "almonds",
+   "fresh-mint"
+  ],
+  "steps": [
+   "Use small, firm zucchini. Large ones are watery and seedy and will not work raw.",
+   "Shave them lengthwise on a mandoline or with a vegetable peeler into long ribbons as thin as you can manage.",
+   "Lay the ribbons out on a platter in overlapping layers rather than piling them in a bowl.",
+   "Whisk the olive oil, lemon juice and zest and spoon it over, then season with the flaky salt and pepper.",
+   "Let it sit 15 minutes. The zucchini softens and absorbs the dressing in that time, which is what turns raw squash into a dish.",
+   "Scatter the Parmesan, almonds, mint and basil over just before serving."
+  ],
+  "diet": {
+   "vegetarian": true,
+   "vegan": false,
+   "pescatarian": true,
+   "glutenFree": true,
+   "glutenFreeAdaptable": false,
+   "dairyFree": false,
+   "nutFree": false,
+   "eggFree": true
+  },
+  "allergens": [
+   "dairy",
+   "tree-nut"
+  ],
+  "gmo": {
+   "risk": "low",
+   "sources": [
+    "grain-fed-dairy"
+   ]
+  },
+  "nutrition": {
+   "calories": 286,
+   "proteinG": 10,
+   "carbsG": 11,
+   "fiberG": 3,
+   "sugarG": 6,
+   "fatG": 24,
+   "satFatG": 5,
+   "sodiumMg": 680,
+   "cholesterolMg": 15
+  },
+  "tags": [
+   "salad",
+   "no-cook",
+   "quick",
+   "vegetarian",
+   "gluten-free",
+   "low-carb",
+   "summer",
+   "healthy",
+   "entertaining"
+  ],
+  "image": {
+   "file": "zucchini-salad.jpg",
+   "wikipedia": "Zucchini"
+  }
+ },
+ {
+  "id": "ch-gd-010",
+  "slug": "gd-lemon-ricotta-cookies",
+  "title": "Lemon Ricotta Cookies",
+  "genre": "italian",
+  "subgenre": "desserts",
+  "chef": {
+   "name": "Giada De Laurentiis",
+   "slug": "giada-de-laurentiis"
+  },
+  "description": "Soft cake-like cookies made with ricotta and finished with lemon glaze.",
+  "difficulty": "beginner",
+  "easeScore": 9,
+  "spiceScore": 0,
+  "popularity": 8,
+  "pantryScore": 8,
+  "servings": 36,
+  "prepMin": 20,
+  "cookMin": 50,
+  "totalMin": 70,
+  "equipment": [
+   "oven"
+  ],
+  "ingredients": [
+   "2 1/2 cups all-purpose flour",
+   "1 tsp baking powder",
+   "1 tsp salt",
+   "1/2 cup butter, softened",
+   "2 cups sugar",
+   "2 eggs",
+   "15 oz whole-milk ricotta",
+   "3 tbsp lemon juice",
+   "2 tbsp lemon zest",
+   "1 1/2 cups powdered sugar",
+   "3 tbsp lemon juice, for the glaze",
+   "1 tbsp lemon zest, for the glaze"
+  ],
+  "ingredientKeys": [
+   "flour",
+   "baking-powder",
+   "salt",
+   "butter",
+   "sugar",
+   "egg",
+   "ricotta",
+   "lemon-juice",
+   "lemon-zest",
+   "powdered-sugar",
+   "lemon-juice",
+   "lemon-zest"
+  ],
+  "specialty": [
+   "ricotta"
+  ],
+  "steps": [
+   "Heat the oven to 375F. Whisk the flour, baking powder and salt together.",
+   "Cream the butter and sugar 3 minutes until light, then beat in the eggs one at a time.",
+   "Add the ricotta, lemon juice and zest and beat until smooth. The ricotta is what makes these soft and cakey rather than crisp - do not substitute it.",
+   "Stir in the dry ingredients just until combined. The dough will be very soft and sticky, almost a batter. Resist adding flour.",
+   "Drop tablespoons onto lined sheets, well apart, and bake 14-16 minutes until the edges are just barely golden. They should stay pale.",
+   "Cool completely, then whisk the glaze ingredients and spoon it over each cookie. Let the glaze set 2 hours before stacking."
+  ],
+  "diet": {
+   "vegetarian": true,
+   "vegan": false,
+   "pescatarian": true,
+   "glutenFree": false,
+   "glutenFreeAdaptable": false,
+   "dairyFree": false,
+   "nutFree": true,
+   "eggFree": false
+  },
+  "allergens": [
+   "gluten",
+   "dairy",
+   "egg"
+  ],
+  "gmo": {
+   "risk": "moderate",
+   "sources": [
+    "sugar-beet",
+    "grain-fed-dairy"
+   ]
+  },
+  "nutrition": {
+   "calories": 142,
+   "proteinG": 3,
+   "carbsG": 24,
+   "fiberG": 0,
+   "sugarG": 16,
+   "fatG": 4,
+   "satFatG": 3,
+   "sodiumMg": 82,
+   "cholesterolMg": 22
+  },
+  "tags": [
+   "dessert",
+   "baking",
+   "vegetarian",
+   "italian",
+   "make-ahead",
+   "party",
+   "holiday",
+   "easy"
+  ],
+  "image": {
+   "file": "ricotta-cookies.jpg",
+   "wikipedia": "Ricotta"
+  }
+ },
+ {
+  "id": "ch-gd-011",
+  "slug": "gd-mascarpone-cheesecake",
+  "title": "Mascarpone Cheesecake",
+  "genre": "italian",
+  "subgenre": "desserts",
+  "chef": {
+   "name": "Giada De Laurentiis",
+   "slug": "giada-de-laurentiis"
+  },
+  "description": "A lighter cheesecake made with mascarpone and an amaretti crust.",
+  "difficulty": "intermediate",
+  "easeScore": 6,
+  "spiceScore": 0,
+  "popularity": 7,
+  "pantryScore": 6,
+  "servings": 12,
+  "prepMin": 30,
+  "cookMin": 390,
+  "totalMin": 420,
+  "equipment": [
+   "oven"
+  ],
+  "ingredients": [
+   "2 cups crushed amaretti cookies",
+   "6 tbsp butter, melted",
+   "3 tbsp sugar, for the crust",
+   "16 oz cream cheese, at room temperature",
+   "16 oz mascarpone, at room temperature",
+   "1 1/4 cups sugar",
+   "4 eggs, at room temperature",
+   "2 tbsp lemon zest",
+   "2 tsp vanilla extract",
+   "1/2 tsp salt",
+   "1/4 cup all-purpose flour",
+   "2 cups mixed berries"
+  ],
+  "ingredientKeys": [
+   "amaretti-cookies",
+   "butter",
+   "sugar",
+   "cream-cheese",
+   "mascarpone",
+   "sugar",
+   "egg",
+   "lemon-zest",
+   "vanilla-extract",
+   "salt",
+   "flour",
+   "mixed-berries"
+  ],
+  "specialty": [
+   "amaretti-cookies",
+   "cream-cheese",
+   "mascarpone",
+   "mixed-berries"
+  ],
+  "steps": [
+   "Mix the crushed amaretti, melted butter and 3 tbsp sugar, press firmly into a 9-inch springform pan, and bake at 350F for 12 minutes. Wrap the outside of the pan in heavy foil.",
+   "Beat the room-temperature cream cheese and mascarpone together for 3 minutes until completely smooth. Cold cheese leaves lumps that never disappear.",
+   "Add the sugar and beat 2 minutes, then the eggs one at a time on low speed. Beating air in now causes cracks later.",
+   "Mix in the lemon zest, vanilla, salt and flour until just combined.",
+   "Pour over the crust, set the pan inside a roasting pan and add boiling water halfway up the sides. The water bath is what keeps the texture silky.",
+   "Bake at 325F for 60-70 minutes until the outside is set and the center still wobbles. Turn the oven off and leave it inside with the door ajar 1 hour, then chill 6 hours. Serve with berries."
+  ],
+  "diet": {
+   "vegetarian": true,
+   "vegan": false,
+   "pescatarian": true,
+   "glutenFree": false,
+   "glutenFreeAdaptable": false,
+   "dairyFree": false,
+   "nutFree": false,
+   "eggFree": false
+  },
+  "allergens": [
+   "gluten",
+   "dairy",
+   "egg",
+   "tree-nut"
+  ],
+  "gmo": {
+   "risk": "moderate",
+   "sources": [
+    "sugar-beet",
+    "grain-fed-dairy"
+   ]
+  },
+  "nutrition": {
+   "calories": 586,
+   "proteinG": 10,
+   "carbsG": 48,
+   "fiberG": 2,
+   "sugarG": 38,
+   "fatG": 40,
+   "satFatG": 23,
+   "sodiumMg": 320,
+   "cholesterolMg": 158
+  },
+  "tags": [
+   "dessert",
+   "italian",
+   "special-occasion",
+   "make-ahead",
+   "entertaining",
+   "baking",
+   "party"
+  ],
+  "image": {
+   "file": "cheesecake.jpg",
+   "wikipedia": "Cheesecake"
+  }
+ },
+ {
+  "id": "ch-gd-012",
+  "slug": "gd-chocolate-hazelnut-biscotti",
+  "title": "Chocolate Hazelnut Biscotti",
+  "genre": "italian",
+  "subgenre": "desserts",
+  "chef": {
+   "name": "Giada De Laurentiis",
+   "slug": "giada-de-laurentiis"
+  },
+  "description": "Twice-baked cocoa biscotti with toasted hazelnuts, dipped in chocolate.",
+  "difficulty": "beginner",
+  "easeScore": 8,
+  "spiceScore": 0,
+  "popularity": 7,
+  "pantryScore": 7,
+  "servings": 30,
+  "prepMin": 20,
+  "cookMin": 60,
+  "totalMin": 80,
+  "equipment": [
+   "oven"
+  ],
+  "ingredients": [
+   "2 cups all-purpose flour",
+   "1/2 cup cocoa powder",
+   "1 1/2 tsp baking powder",
+   "1/2 tsp salt",
+   "3/4 cup sugar",
+   "3 eggs",
+   "1 tsp vanilla extract",
+   "1 1/2 cups hazelnuts, toasted and skinned",
+   "1/2 cup chocolate chips",
+   "6 oz dark chocolate, melted"
+  ],
+  "ingredientKeys": [
+   "flour",
+   "cocoa-powder",
+   "baking-powder",
+   "salt",
+   "sugar",
+   "egg",
+   "vanilla-extract",
+   "hazelnuts",
+   "chocolate-chips",
+   "dark-chocolate"
+  ],
+  "specialty": [
+   "cocoa-powder",
+   "hazelnuts",
+   "dark-chocolate"
+  ],
+  "steps": [
+   "Toast the hazelnuts at 350F for 10 minutes, then rub them in a towel to remove the skins. The skins are bitter and come off easily while warm.",
+   "Whisk the flour, cocoa, baking powder and salt, then stir in the sugar, eggs and vanilla to a stiff dough. Fold in the hazelnuts and chocolate chips.",
+   "Divide in two and shape each half into a flat log about 12 inches long on a lined sheet pan. Wet your hands to stop it sticking.",
+   "Bake at 350F for 25-30 minutes until firm to the touch.",
+   "Cool 15 minutes - warm enough to handle but not hot. Cutting them cold shatters them, cutting them hot squashes them. Slice each log diagonally into 1/2-inch pieces with a serrated knife.",
+   "Lay the slices cut-side down and bake 10 minutes per side until dry. Cool, then dip one end of each in the melted chocolate and set on parchment until firm."
+  ],
+  "diet": {
+   "vegetarian": true,
+   "vegan": false,
+   "pescatarian": true,
+   "glutenFree": false,
+   "glutenFreeAdaptable": false,
+   "dairyFree": true,
+   "nutFree": false,
+   "eggFree": false
+  },
+  "allergens": [
+   "gluten",
+   "egg",
+   "tree-nut",
+   "soy"
+  ],
+  "gmo": {
+   "risk": "moderate",
+   "sources": [
+    "sugar-beet",
+    "soy"
+   ]
+  },
+  "nutrition": {
+   "calories": 168,
+   "proteinG": 4,
+   "carbsG": 18,
+   "fiberG": 2,
+   "sugarG": 11,
+   "fatG": 9,
+   "satFatG": 3,
+   "sodiumMg": 82,
+   "cholesterolMg": 18
+  },
+  "tags": [
+   "dessert",
+   "baking",
+   "italian",
+   "make-ahead",
+   "holiday",
+   "christmas",
+   "vegetarian",
+   "coffee"
+  ],
+  "image": {
+   "file": "biscotti.jpg",
+   "wikipedia": "Biscotti"
+  }
+ },
+ {
+  "id": "ch-gd-013",
+  "slug": "gd-orecchiette-chicken-meatballs",
+  "title": "Orecchiette with Mini Chicken Meatballs",
+  "genre": "italian",
+  "subgenre": "pasta",
+  "chef": {
+   "name": "Giada De Laurentiis",
+   "slug": "giada-de-laurentiis"
+  },
+  "description": "Tiny chicken meatballs in a light tomato sauce with ear-shaped pasta.",
+  "difficulty": "beginner",
+  "easeScore": 8,
+  "spiceScore": 2,
+  "popularity": 8,
+  "pantryScore": 8,
+  "servings": 6,
+  "prepMin": 25,
+  "cookMin": 35,
+  "totalMin": 60,
+  "equipment": [
+   "stovetop"
+  ],
+  "ingredients": [
+   "1 1/2 lb ground chicken",
+   "3/4 cup Italian breadcrumbs",
+   "1/2 cup whole milk",
+   "1 egg",
+   "1 cup grated Parmesan",
+   "3 cloves garlic, minced",
+   "1/3 cup chopped parsley",
+   "2 tsp salt",
+   "1 tsp black pepper",
+   "3 tbsp olive oil",
+   "1 yellow onion, diced",
+   "1/2 tsp red pepper flakes",
+   "1 can (28 oz) crushed tomatoes",
+   "1 lb orecchiette",
+   "1/2 cup chopped basil"
+  ],
+  "ingredientKeys": [
+   "ground-chicken",
+   "italian-breadcrumbs",
+   "whole-milk",
+   "egg",
+   "parmesan",
+   "garlic",
+   "parsley",
+   "salt",
+   "black-pepper",
+   "olive-oil",
+   "yellow-onion",
+   "red-pepper-flakes",
+   "crushed-tomatoes",
+   "orecchiette",
+   "fresh-basil"
+  ],
+  "specialty": [
+   "ground-chicken",
+   "italian-breadcrumbs",
+   "orecchiette"
+  ],
+  "steps": [
+   "Soak the breadcrumbs in the milk 5 minutes. Ground chicken is lean, so this panade is essential or the meatballs come out dry and tight.",
+   "Mix in the chicken, egg, half the Parmesan, the garlic, parsley, salt and pepper, handling it just enough to combine.",
+   "Roll into very small meatballs, about 3/4 inch - they should be bite-sized to match the pasta.",
+   "Brown them in the oil over medium-high 5 minutes, turning gently, then set aside.",
+   "Cook the onion in the same pan 6 minutes, add the pepper flakes and tomatoes, and simmer 15 minutes. Return the meatballs for the last 8 minutes to finish cooking in the sauce.",
+   "Toss with the cooked orecchiette and a ladle of pasta water, then finish with basil and the remaining Parmesan."
+  ],
+  "diet": {
+   "vegetarian": false,
+   "vegan": false,
+   "pescatarian": false,
+   "glutenFree": false,
+   "glutenFreeAdaptable": false,
+   "dairyFree": false,
+   "nutFree": true,
+   "eggFree": false
+  },
+  "allergens": [
+   "gluten",
+   "dairy",
+   "egg"
+  ],
+  "gmo": {
+   "risk": "moderate",
+   "sources": [
+    "grain-fed-meat",
+    "processed-bread",
+    "grain-fed-dairy"
+   ]
+  },
+  "nutrition": {
+   "calories": 782,
+   "proteinG": 48,
+   "carbsG": 82,
+   "fiberG": 6,
+   "sugarG": 11,
+   "fatG": 28,
+   "satFatG": 9,
+   "sodiumMg": 1480,
+   "cholesterolMg": 148
+  },
+  "tags": [
+   "italian",
+   "family",
+   "kid-friendly",
+   "weeknight",
+   "high-protein",
+   "make-ahead",
+   "comfort"
+  ],
+  "image": {
+   "file": "orecchiette.jpg",
+   "wikipedia": "Orecchiette"
+  }
+ },
+ {
+  "id": "ch-gd-014",
+  "slug": "gd-seafood-risotto",
+  "title": "Seafood Risotto",
+  "genre": "italian",
+  "subgenre": "risotto",
+  "chef": {
+   "name": "Giada De Laurentiis",
+   "slug": "giada-de-laurentiis"
+  },
+  "description": "Risotto finished with shrimp, scallops and a little saffron.",
+  "difficulty": "intermediate",
+  "easeScore": 6,
+  "spiceScore": 2,
+  "popularity": 7,
+  "pantryScore": 5,
+  "servings": 4,
+  "prepMin": 20,
+  "cookMin": 40,
+  "totalMin": 60,
+  "equipment": [
+   "stovetop"
+  ],
+  "ingredients": [
+   "1 1/2 cups arborio rice",
+   "6 cups fish or chicken broth",
+   "1/2 tsp saffron threads",
+   "1 shallot, finely diced",
+   "4 cloves garlic, minced",
+   "4 tbsp butter",
+   "3 tbsp olive oil",
+   "3/4 cup dry white wine",
+   "1 lb large shrimp, peeled",
+   "1/2 lb bay scallops",
+   "1 cup cherry tomatoes, halved",
+   "2 tsp salt",
+   "1 tsp black pepper",
+   "1/3 cup chopped parsley",
+   "1 lemon, zested and juiced"
+  ],
+  "ingredientKeys": [
+   "arborio-rice",
+   "fish-broth",
+   "saffron",
+   "shallot",
+   "garlic",
+   "butter",
+   "olive-oil",
+   "white-wine",
+   "shrimp",
+   "scallops",
+   "cherry-tomato",
+   "salt",
+   "black-pepper",
+   "parsley",
+   "lemon"
+  ],
+  "specialty": [
+   "arborio-rice",
+   "fish-broth",
+   "saffron",
+   "shallot",
+   "white-wine",
+   "shrimp",
+   "scallops"
+  ],
+  "steps": [
+   "Keep the broth at a bare simmer and steep the saffron in a ladleful of it. Cold broth added to risotto stops the cooking and makes it gluey.",
+   "Sweat the shallot in 2 tbsp butter and the oil 4 minutes, then add the garlic and the rice and toast 2 minutes until the grains are translucent at the edges.",
+   "Add the wine and stir until absorbed, then add the hot broth a ladle at a time with the saffron, stirring often, for 16 minutes.",
+   "Pat the seafood dry and season it. Add the shrimp and scallops to the risotto in the last 4 minutes only - any longer and they turn rubbery.",
+   "Fold in the tomatoes and cook 2 minutes more.",
+   "Off the heat, beat in the remaining butter hard, then add the parsley, lemon zest and juice. No cheese with seafood risotto. Serve immediately, while it still ripples."
+  ],
+  "diet": {
+   "vegetarian": false,
+   "vegan": false,
+   "pescatarian": true,
+   "glutenFree": true,
+   "glutenFreeAdaptable": false,
+   "dairyFree": false,
+   "nutFree": true,
+   "eggFree": true
+  },
+  "allergens": [
+   "dairy",
+   "shellfish",
+   "fish",
+   "sulfites"
+  ],
+  "gmo": {
+   "risk": "low",
+   "sources": [
+    "grain-fed-dairy"
+   ]
+  },
+  "nutrition": {
+   "calories": 682,
+   "proteinG": 42,
+   "carbsG": 68,
+   "fiberG": 3,
+   "sugarG": 4,
+   "fatG": 24,
+   "satFatG": 10,
+   "sodiumMg": 1480,
+   "cholesterolMg": 228
+  },
+  "tags": [
+   "seafood",
+   "pescatarian",
+   "gluten-free",
+   "italian",
+   "date-night",
+   "restaurant-style",
+   "technique",
+   "special-occasion"
+  ],
+  "image": {
+   "file": "risotto-milanese.jpg",
+   "wikipedia": "Risotto"
+  }
+ },
+ {
+  "id": "ch-gd-015",
+  "slug": "gd-prosciutto-asparagus",
+  "title": "Prosciutto-Wrapped Asparagus",
+  "genre": "italian",
+  "subgenre": "antipasti",
+  "chef": {
+   "name": "Giada De Laurentiis",
+   "slug": "giada-de-laurentiis"
+  },
+  "description": "Asparagus spears wrapped in prosciutto and roasted until crisp.",
+  "difficulty": "beginner",
+  "easeScore": 10,
+  "spiceScore": 1,
+  "popularity": 8,
+  "pantryScore": 6,
+  "servings": 6,
+  "prepMin": 15,
+  "cookMin": 15,
+  "totalMin": 30,
+  "equipment": [
+   "oven"
+  ],
+  "ingredients": [
+   "2 lb asparagus, woody ends snapped off",
+   "12 slices prosciutto",
+   "3 tbsp olive oil",
+   "1 tsp black pepper",
+   "1/2 cup grated Parmesan",
+   "1 tbsp lemon zest",
+   "2 tbsp lemon juice",
+   "1/2 tsp flaky sea salt"
+  ],
+  "ingredientKeys": [
+   "asparagus",
+   "prosciutto",
+   "olive-oil",
+   "black-pepper",
+   "parmesan",
+   "lemon-zest",
+   "lemon-juice",
+   "flaky-salt"
+  ],
+  "specialty": [
+   "asparagus",
+   "prosciutto",
+   "flaky-salt"
+  ],
+  "steps": [
+   "Heat the oven to 425F. Snap the woody ends off the asparagus rather than cutting - they break naturally where the tough part ends.",
+   "Toss the spears with the olive oil and black pepper. Do not salt yet; the prosciutto brings plenty.",
+   "Cut each prosciutto slice in half lengthwise and wrap one strip around each spear in a spiral, leaving the tip exposed.",
+   "Set them on a sheet pan in a single layer with space between - crowded spears steam and the prosciutto stays flabby.",
+   "Roast 12-15 minutes until the prosciutto is crisp and the asparagus is tender but still has some bite.",
+   "Scatter the Parmesan, lemon zest and flaky salt over and squeeze the lemon juice on just before serving."
+  ],
+  "diet": {
+   "vegetarian": false,
+   "vegan": false,
+   "pescatarian": false,
+   "glutenFree": true,
+   "glutenFreeAdaptable": false,
+   "dairyFree": false,
+   "nutFree": true,
+   "eggFree": true
+  },
+  "allergens": [
+   "dairy"
+  ],
+  "gmo": {
+   "risk": "low",
+   "sources": [
+    "grain-fed-meat",
+    "grain-fed-dairy"
+   ]
+  },
+  "nutrition": {
+   "calories": 186,
+   "proteinG": 14,
+   "carbsG": 6,
+   "fiberG": 3,
+   "sugarG": 3,
+   "fatG": 13,
+   "satFatG": 4,
+   "sodiumMg": 880,
+   "cholesterolMg": 32
+  },
+  "tags": [
+   "appetizer",
+   "side",
+   "quick",
+   "gluten-free",
+   "low-carb",
+   "spring",
+   "entertaining",
+   "easy",
+   "high-protein"
+  ],
+  "image": {
+   "file": "prosciutto-asparagus.jpg",
+   "wikipedia": "Prosciutto"
+  }
+ },
+ {
+  "id": "ch-gd-016",
+  "slug": "gd-chicken-florentine",
+  "title": "Chicken Florentine",
+  "genre": "italian",
+  "subgenre": "secondi",
+  "chef": {
+   "name": "Giada De Laurentiis",
+   "slug": "giada-de-laurentiis"
+  },
+  "description": "Pan-seared cutlets in a spinach and white wine cream sauce.",
+  "difficulty": "beginner",
+  "easeScore": 9,
+  "spiceScore": 2,
+  "popularity": 8,
+  "pantryScore": 8,
+  "servings": 4,
+  "prepMin": 15,
+  "cookMin": 25,
+  "totalMin": 40,
+  "equipment": [
+   "stovetop"
+  ],
+  "ingredients": [
+   "4 boneless chicken breasts, pounded thin",
+   "1/2 cup all-purpose flour",
+   "2 tsp salt",
+   "1 tsp black pepper",
+   "3 tbsp olive oil",
+   "3 tbsp butter",
+   "1 shallot, minced",
+   "4 cloves garlic, minced",
+   "1/2 tsp red pepper flakes",
+   "3/4 cup dry white wine",
+   "1 cup chicken broth",
+   "3/4 cup heavy cream",
+   "10 oz baby spinach",
+   "1 cup grated Parmesan",
+   "2 tbsp lemon juice"
+  ],
+  "ingredientKeys": [
+   "chicken-breast",
+   "flour",
+   "salt",
+   "black-pepper",
+   "olive-oil",
+   "butter",
+   "shallot",
+   "garlic",
+   "red-pepper-flakes",
+   "white-wine",
+   "chicken-broth",
+   "heavy-cream",
+   "baby-spinach",
+   "parmesan",
+   "lemon-juice"
+  ],
+  "specialty": [
+   "shallot",
+   "white-wine",
+   "baby-spinach"
+  ],
+  "steps": [
+   "Pound the cutlets to an even 1/2 inch, season, and dredge in flour, shaking off the excess. That thin flour coat browns the chicken and lightly thickens the sauce.",
+   "Sear in the oil and 1 tbsp butter over medium-high 3-4 minutes per side, then move to a plate.",
+   "Add the remaining butter and cook the shallot 3 minutes, then the garlic and pepper flakes for 1 minute.",
+   "Pour in the wine and reduce by half, scraping up the browned bits, then add the broth and reduce 3 minutes.",
+   "Stir in the cream, then add the spinach in handfuls, letting each wilt before adding the next.",
+   "Take the pan off the heat before adding the Parmesan and lemon juice, then return the chicken with its juices for a minute to warm through."
+  ],
+  "diet": {
+   "vegetarian": false,
+   "vegan": false,
+   "pescatarian": false,
+   "glutenFree": false,
+   "glutenFreeAdaptable": true,
+   "dairyFree": false,
+   "nutFree": true,
+   "eggFree": true
+  },
+  "allergens": [
+   "gluten",
+   "dairy",
+   "sulfites"
+  ],
+  "gmo": {
+   "risk": "moderate",
+   "sources": [
+    "grain-fed-meat",
+    "grain-fed-dairy"
+   ]
+  },
+  "nutrition": {
+   "calories": 712,
+   "proteinG": 62,
+   "carbsG": 18,
+   "fiberG": 3,
+   "sugarG": 5,
+   "fatG": 42,
+   "satFatG": 21,
+   "sodiumMg": 1480,
+   "cholesterolMg": 228
+  },
+  "tags": [
+   "weeknight",
+   "italian",
+   "high-protein",
+   "date-night",
+   "quick",
+   "family",
+   "low-carb"
+  ],
+  "image": {
+   "file": "chicken-florentine.jpg",
+   "wikipedia": "Florentine (culinary term)"
+  }
+ },
+ {
+  "id": "ch-gd-017",
+  "slug": "gd-farfalle-broccoli-sausage",
+  "title": "Farfalle with Broccoli and Sausage",
+  "genre": "italian",
+  "subgenre": "pasta",
+  "chef": {
+   "name": "Giada De Laurentiis",
+   "slug": "giada-de-laurentiis"
+  },
+  "description": "Bow-tie pasta with sausage and broccoli cooked in the same pot.",
+  "difficulty": "beginner",
+  "easeScore": 10,
+  "spiceScore": 3,
+  "popularity": 8,
+  "pantryScore": 9,
+  "servings": 6,
+  "prepMin": 10,
+  "cookMin": 25,
+  "totalMin": 35,
+  "equipment": [
+   "stovetop"
+  ],
+  "ingredients": [
+   "1 lb farfalle",
+   "1 large head broccoli, cut in small florets",
+   "1 lb Italian sausage, casings removed",
+   "1/4 cup olive oil",
+   "6 cloves garlic, sliced",
+   "1 tsp red pepper flakes",
+   "1/2 cup chicken broth",
+   "2 tsp salt",
+   "1 tsp black pepper",
+   "1 1/2 cups grated Parmesan",
+   "2 tbsp lemon juice",
+   "1/3 cup chopped parsley"
+  ],
+  "ingredientKeys": [
+   "farfalle",
+   "broccoli",
+   "italian-sausage",
+   "olive-oil",
+   "garlic",
+   "red-pepper-flakes",
+   "chicken-broth",
+   "salt",
+   "black-pepper",
+   "parmesan",
+   "lemon-juice",
+   "parsley"
+  ],
+  "specialty": [
+   "farfalle",
+   "italian-sausage"
+  ],
+  "steps": [
+   "Boil the farfalle in well-salted water, adding the broccoli florets for the last 4 minutes so everything cooks in one pot. Reserve 1 cup of the water before draining.",
+   "Brown the sausage in the oil over high heat, breaking it into chunks rather than crumbs, 8 minutes.",
+   "Add the garlic and pepper flakes for 1 minute.",
+   "Pour in the broth and let it bubble 2 minutes, scraping up the browned bits.",
+   "Add the drained pasta and broccoli with a splash of pasta water and toss hard for 2 minutes. Some of the broccoli will break down and thicken the sauce, which is what you want.",
+   "Off the heat, add the Parmesan, lemon juice and parsley and season."
+  ],
+  "diet": {
+   "vegetarian": false,
+   "vegan": false,
+   "pescatarian": false,
+   "glutenFree": false,
+   "glutenFreeAdaptable": true,
+   "dairyFree": false,
+   "nutFree": true,
+   "eggFree": true
+  },
+  "allergens": [
+   "gluten",
+   "dairy"
+  ],
+  "gmo": {
+   "risk": "moderate",
+   "sources": [
+    "grain-fed-meat",
+    "grain-fed-dairy"
+   ]
+  },
+  "nutrition": {
+   "calories": 782,
+   "proteinG": 42,
+   "carbsG": 82,
+   "fiberG": 7,
+   "sugarG": 5,
+   "fatG": 34,
+   "satFatG": 12,
+   "sodiumMg": 1480,
+   "cholesterolMg": 98
+  },
+  "tags": [
+   "quick",
+   "weeknight",
+   "family",
+   "one-pot",
+   "italian",
+   "high-protein",
+   "easy",
+   "kid-friendly"
+  ],
+  "image": {
+   "file": "orecchiette.jpg",
+   "wikipedia": "Farfalle"
+  }
+ },
+ {
+  "id": "ch-gd-018",
+  "slug": "gd-tuscan-white-bean-soup",
+  "title": "Tuscan White Bean Soup",
+  "genre": "italian",
+  "subgenre": "soups",
+  "chef": {
+   "name": "Giada De Laurentiis",
+   "slug": "giada-de-laurentiis"
+  },
+  "description": "Pureed cannellini beans with rosemary and a garlic oil drizzle.",
+  "difficulty": "beginner",
+  "easeScore": 10,
+  "spiceScore": 2,
+  "popularity": 7,
+  "pantryScore": 9,
+  "servings": 6,
+  "prepMin": 10,
+  "cookMin": 30,
+  "totalMin": 40,
+  "equipment": [
+   "stovetop",
+   "blender"
+  ],
+  "ingredients": [
+   "1/4 cup olive oil",
+   "1 yellow onion, diced",
+   "2 carrots, diced",
+   "2 celery stalks, diced",
+   "5 cloves garlic, minced",
+   "3 cans (15 oz each) cannellini beans, drained",
+   "6 cups chicken broth",
+   "2 sprigs fresh rosemary",
+   "1 Parmesan rind",
+   "2 tsp salt",
+   "1 tsp black pepper",
+   "3 tbsp olive oil, for finishing",
+   "3 cloves garlic, sliced, for finishing",
+   "1 cup grated Parmesan",
+   "1 loaf crusty bread"
+  ],
+  "ingredientKeys": [
+   "olive-oil",
+   "yellow-onion",
+   "carrot",
+   "celery",
+   "garlic",
+   "cannellini-beans",
+   "chicken-broth",
+   "fresh-rosemary",
+   "parmesan-rind",
+   "salt",
+   "black-pepper",
+   "olive-oil",
+   "garlic",
+   "parmesan",
+   "crusty-bread"
+  ],
+  "specialty": [
+   "cannellini-beans",
+   "fresh-rosemary",
+   "parmesan-rind",
+   "crusty-bread"
+  ],
+  "steps": [
+   "Cook the onion, carrots and celery in the 1/4 cup oil over medium heat 10 minutes until soft, then add the minced garlic for 1 minute.",
+   "Add the beans, broth, rosemary and Parmesan rind and simmer 20 minutes.",
+   "Remove the rosemary stems and the rind, then puree about two thirds of the soup and stir it back in. Leaving a third whole gives you both a creamy base and intact beans.",
+   "Season with the salt and pepper and thin with broth if it is thicker than heavy cream.",
+   "Warm the 3 tbsp oil with the sliced garlic over low heat 3 minutes until pale gold, then take it off the heat immediately - burnt garlic will ruin the whole pot.",
+   "Ladle the soup into bowls and spoon the garlic oil over each. Serve with Parmesan and crusty bread."
+  ],
+  "diet": {
+   "vegetarian": false,
+   "vegan": false,
+   "pescatarian": false,
+   "glutenFree": false,
+   "glutenFreeAdaptable": true,
+   "dairyFree": false,
+   "nutFree": true,
+   "eggFree": true
+  },
+  "allergens": [
+   "gluten",
+   "dairy"
+  ],
+  "gmo": {
+   "risk": "low",
+   "sources": [
+    "grain-fed-meat",
+    "grain-fed-dairy",
+    "processed-bread"
+   ]
+  },
+  "nutrition": {
+   "calories": 512,
+   "proteinG": 24,
+   "carbsG": 52,
+   "fiberG": 13,
+   "sugarG": 6,
+   "fatG": 24,
+   "satFatG": 6,
+   "sodiumMg": 1480,
+   "cholesterolMg": 18
+  },
+  "tags": [
+   "soup",
+   "healthy",
+   "high-fiber",
+   "budget",
+   "italian",
+   "make-ahead",
+   "winter",
+   "comfort",
+   "pantry"
+  ],
+  "image": {
+   "file": "pasta-e-fagioli.jpg",
+   "wikipedia": "Cannellini bean"
+  }
+ },
+ {
+  "id": "ch-gd-019",
+  "slug": "gd-grilled-lemon-herb-chicken",
+  "title": "Grilled Lemon Herb Chicken",
+  "genre": "mediterranean",
+  "subgenre": "mains",
+  "chef": {
+   "name": "Giada De Laurentiis",
+   "slug": "giada-de-laurentiis"
+  },
+  "description": "Chicken thighs in a lemon, oregano and garlic marinade, grilled hot.",
+  "difficulty": "beginner",
+  "easeScore": 9,
+  "spiceScore": 2,
+  "popularity": 8,
+  "pantryScore": 8,
+  "servings": 6,
+  "prepMin": 15,
+  "cookMin": 135,
+  "totalMin": 150,
+  "equipment": [
+   "grill"
+  ],
+  "ingredients": [
+   "2 1/2 lb boneless chicken thighs",
+   "1/2 cup olive oil",
+   "1/3 cup lemon juice",
+   "2 tbsp lemon zest",
+   "8 cloves garlic, minced",
+   "2 tbsp chopped fresh oregano",
+   "2 tbsp chopped fresh thyme",
+   "1 tbsp honey",
+   "2 tsp salt",
+   "1 tsp black pepper",
+   "1/2 tsp red pepper flakes",
+   "1/3 cup chopped parsley",
+   "2 lemons, halved"
+  ],
+  "ingredientKeys": [
+   "chicken-thighs",
+   "olive-oil",
+   "lemon-juice",
+   "lemon-zest",
+   "garlic",
+   "fresh-oregano",
+   "fresh-thyme",
+   "honey",
+   "salt",
+   "black-pepper",
+   "red-pepper-flakes",
+   "parsley",
+   "lemon"
+  ],
+  "specialty": [
+   "fresh-oregano",
+   "fresh-thyme"
+  ],
+  "steps": [
+   "Whisk the oil, lemon juice, zest, garlic, oregano, thyme, honey, salt, pepper and pepper flakes into a marinade.",
+   "Coat the chicken and refrigerate 2 hours. Thighs are forgiving over high heat in a way breast meat is not.",
+   "Pat the chicken dry before it goes on the grill - wet marinade flares up and leaves soot rather than char.",
+   "Grill over medium-high heat 6-7 minutes per side, until charred at the edges and 175F inside.",
+   "Grill the lemon halves cut-side down for the last 4 minutes until caramelized.",
+   "Rest 5 minutes, then squeeze the grilled lemons over and finish with parsley."
+  ],
+  "diet": {
+   "vegetarian": false,
+   "vegan": false,
+   "pescatarian": false,
+   "glutenFree": true,
+   "glutenFreeAdaptable": false,
+   "dairyFree": true,
+   "nutFree": true,
+   "eggFree": true
+  },
+  "allergens": [],
+  "gmo": {
+   "risk": "low",
+   "sources": [
+    "grain-fed-meat"
+   ]
+  },
+  "nutrition": {
+   "calories": 512,
+   "proteinG": 42,
+   "carbsG": 7,
+   "fiberG": 1,
+   "sugarG": 5,
+   "fatG": 34,
+   "satFatG": 8,
+   "sodiumMg": 1080,
+   "cholesterolMg": 178
+  },
+  "tags": [
+   "grill",
+   "gluten-free",
+   "dairy-free",
+   "healthy",
+   "high-protein",
+   "summer",
+   "meal-prep",
+   "family",
+   "low-carb"
+  ],
+  "image": {
+   "file": "greek-lemon-chicken.jpg",
+   "wikipedia": "Chicken as food"
+  }
+ },
+ {
+  "id": "ch-gd-020",
+  "slug": "gd-greek-salad-shrimp",
+  "title": "Greek Salad with Grilled Shrimp",
+  "genre": "mediterranean",
+  "subgenre": "salads",
+  "chef": {
+   "name": "Giada De Laurentiis",
+   "slug": "giada-de-laurentiis"
+  },
+  "description": "A chunky Greek salad topped with oregano-grilled shrimp.",
+  "difficulty": "beginner",
+  "easeScore": 9,
+  "spiceScore": 2,
+  "popularity": 8,
+  "pantryScore": 7,
+  "servings": 4,
+  "prepMin": 20,
+  "cookMin": 10,
+  "totalMin": 30,
+  "equipment": [
+   "grill",
+   "no-cook"
+  ],
+  "ingredients": [
+   "1 1/2 lb large shrimp, peeled",
+   "3 tbsp olive oil",
+   "2 tsp dried oregano",
+   "2 tsp salt",
+   "1 tsp black pepper",
+   "4 ripe tomatoes, cut in wedges",
+   "2 cucumbers, cut in thick half-moons",
+   "1 red onion, thinly sliced",
+   "1 green bell pepper, sliced",
+   "1 cup Kalamata olives",
+   "8 oz feta, cut in slabs",
+   "1/3 cup olive oil, for the dressing",
+   "3 tbsp red wine vinegar",
+   "1 tbsp dried oregano, for the dressing",
+   "2 tbsp capers"
+  ],
+  "ingredientKeys": [
+   "shrimp",
+   "olive-oil",
+   "dried-oregano",
+   "salt",
+   "black-pepper",
+   "tomato",
+   "cucumber",
+   "red-onion",
+   "green-bell-pepper",
+   "kalamata-olives",
+   "feta",
+   "olive-oil",
+   "red-wine-vinegar",
+   "dried-oregano",
+   "capers"
+  ],
+  "specialty": [
+   "shrimp",
+   "kalamata-olives",
+   "feta",
+   "capers"
+  ],
+  "steps": [
+   "Toss the shrimp with the 3 tbsp oil, 2 tsp oregano, salt and pepper.",
+   "Thread them on skewers so they are easy to turn and grill over high heat 90 seconds per side. Pull them the moment they curl into a loose C - a tight O means overcooked.",
+   "Cut the vegetables in large, rustic pieces. A real Greek salad is chunky and has no lettuce in it.",
+   "Combine the tomatoes, cucumbers, onion and bell pepper in a wide bowl and season directly.",
+   "Whisk the remaining oil, vinegar and oregano and pour it over, tossing gently. Add the olives and capers.",
+   "Set the feta slabs on top rather than crumbling them, lay the warm shrimp over, and serve with bread to mop the juices."
+  ],
+  "diet": {
+   "vegetarian": false,
+   "vegan": false,
+   "pescatarian": true,
+   "glutenFree": true,
+   "glutenFreeAdaptable": false,
+   "dairyFree": false,
+   "nutFree": true,
+   "eggFree": true
+  },
+  "allergens": [
+   "dairy",
+   "shellfish",
+   "sulfites"
+  ],
+  "gmo": {
+   "risk": "low",
+   "sources": [
+    "grain-fed-dairy"
+   ]
+  },
+  "nutrition": {
+   "calories": 586,
+   "proteinG": 42,
+   "carbsG": 18,
+   "fiberG": 5,
+   "sugarG": 9,
+   "fatG": 40,
+   "satFatG": 12,
+   "sodiumMg": 1880,
+   "cholesterolMg": 286
+  },
+  "tags": [
+   "salad",
+   "seafood",
+   "pescatarian",
+   "gluten-free",
+   "quick",
+   "summer",
+   "healthy",
+   "high-protein",
+   "low-carb",
+   "grill"
+  ],
+  "image": {
+   "file": "greek-salad.jpg",
+   "wikipedia": "Greek salad"
+  }
+ },
+ {
+  "id": "ch-gd-021",
+  "slug": "gd-vegetable-bolognese",
+  "title": "Rigatoni with Vegetable Bolognese",
+  "genre": "italian",
+  "subgenre": "pasta",
+  "chef": {
+   "name": "Giada De Laurentiis",
+   "slug": "giada-de-laurentiis"
+  },
+  "description": "A meatless ragu where mushrooms and lentils do the work of beef.",
+  "difficulty": "beginner",
+  "easeScore": 9,
+  "spiceScore": 2,
+  "popularity": 7,
+  "pantryScore": 9,
+  "servings": 6,
+  "prepMin": 20,
+  "cookMin": 45,
+  "totalMin": 65,
+  "equipment": [
+   "stovetop",
+   "food-processor"
+  ],
+  "ingredients": [
+   "1 lb cremini mushrooms",
+   "2 carrots, chopped",
+   "2 celery stalks, chopped",
+   "1 yellow onion, chopped",
+   "1/4 cup olive oil",
+   "5 cloves garlic, minced",
+   "3 tbsp tomato paste",
+   "1 cup brown lentils",
+   "1 cup dry red wine",
+   "1 can (28 oz) crushed tomatoes",
+   "3 cups vegetable broth",
+   "2 tsp dried oregano",
+   "1/2 tsp red pepper flakes",
+   "2 tsp salt",
+   "1 tsp black pepper",
+   "1 lb rigatoni",
+   "1 1/2 cups grated Parmesan",
+   "1/2 cup chopped basil"
+  ],
+  "ingredientKeys": [
+   "mushroom",
+   "carrot",
+   "celery",
+   "yellow-onion",
+   "olive-oil",
+   "garlic",
+   "tomato-paste",
+   "brown-lentils",
+   "red-wine",
+   "crushed-tomatoes",
+   "vegetable-broth",
+   "dried-oregano",
+   "red-pepper-flakes",
+   "salt",
+   "black-pepper",
+   "rigatoni",
+   "parmesan",
+   "fresh-basil"
+  ],
+  "specialty": [
+   "brown-lentils",
+   "red-wine"
+  ],
+  "steps": [
+   "Pulse the mushrooms, carrots, celery and onion in a food processor separately until each is finely minced, almost to a crumb. That fine texture is what makes this read as a meat ragu.",
+   "Cook the vegetable mince in the oil over medium-high 15 minutes, until all the mushroom water has evaporated and it starts to brown. Do not skip this - wet vegetables mean a thin, watery sauce.",
+   "Add the garlic and tomato paste and cook 2 minutes until the paste darkens.",
+   "Pour in the wine and reduce by half, then add the lentils, tomatoes, broth, oregano and pepper flakes.",
+   "Simmer 25-30 minutes until the lentils are tender and the sauce is thick enough to mound on a spoon. Season.",
+   "Toss with the cooked rigatoni and a ladle of pasta water, then finish with Parmesan and basil."
+  ],
+  "diet": {
+   "vegetarian": true,
+   "vegan": false,
+   "pescatarian": true,
+   "glutenFree": false,
+   "glutenFreeAdaptable": true,
+   "dairyFree": false,
+   "nutFree": true,
+   "eggFree": true
+  },
+  "allergens": [
+   "gluten",
+   "dairy",
+   "sulfites"
+  ],
+  "gmo": {
+   "risk": "low",
+   "sources": [
+    "grain-fed-dairy"
+   ]
+  },
+  "nutrition": {
+   "calories": 712,
+   "proteinG": 28,
+   "carbsG": 102,
+   "fiberG": 14,
+   "sugarG": 14,
+   "fatG": 21,
+   "satFatG": 6,
+   "sodiumMg": 1280,
+   "cholesterolMg": 18
+  },
+  "tags": [
+   "vegetarian",
+   "healthy",
+   "high-fiber",
+   "make-ahead",
+   "family",
+   "italian",
+   "budget",
+   "meatless",
+   "leftovers"
+  ],
+  "image": {
+   "file": "bolognese.jpg",
+   "wikipedia": "Bolognese sauce"
+  }
+ },
+ {
+  "id": "ch-gd-022",
+  "slug": "gd-chocolate-amaretti-torte",
+  "title": "Chocolate Amaretti Torte",
+  "genre": "italian",
+  "subgenre": "desserts",
+  "chef": {
+   "name": "Giada De Laurentiis",
+   "slug": "giada-de-laurentiis"
+  },
+  "description": "A flourless chocolate torte with crushed amaretti and almonds.",
+  "difficulty": "intermediate",
+  "easeScore": 7,
+  "spiceScore": 0,
+  "popularity": 7,
+  "pantryScore": 6,
+  "servings": 10,
+  "prepMin": 25,
+  "cookMin": 50,
+  "totalMin": 75,
+  "equipment": [
+   "oven",
+   "stovetop"
+  ],
+  "ingredients": [
+   "10 oz bittersweet chocolate, chopped",
+   "1 cup butter",
+   "1 cup sugar",
+   "6 eggs, separated",
+   "1 1/2 cups almond flour",
+   "1 cup crushed amaretti cookies",
+   "1/4 cup amaretto liqueur",
+   "1/2 tsp salt",
+   "2 tbsp powdered sugar",
+   "1 cup whipped cream"
+  ],
+  "ingredientKeys": [
+   "bittersweet-chocolate",
+   "butter",
+   "sugar",
+   "egg",
+   "almond-flour",
+   "amaretti-cookies",
+   "amaretto",
+   "salt",
+   "powdered-sugar",
+   "whipped-cream"
+  ],
+  "specialty": [
+   "bittersweet-chocolate",
+   "almond-flour",
+   "amaretti-cookies",
+   "amaretto"
+  ],
+  "steps": [
+   "Heat the oven to 350F and line a 9-inch springform pan. Melt the chocolate and butter together over low heat, then cool 10 minutes.",
+   "Beat the egg yolks with 3/4 cup of the sugar until pale and thick, then fold in the chocolate, almond flour, crushed amaretti, amaretto and salt.",
+   "Beat the egg whites to soft peaks, add the remaining sugar and beat to firm, glossy peaks.",
+   "Fold the whites into the batter in three additions, cutting down through the middle and lifting over. With no flour, the whites are the only structure - every extra stroke costs you height.",
+   "Bake 40-45 minutes until the top has cracked and a skewer comes out with a few moist crumbs.",
+   "Cool completely in the pan. It will sink slightly in the center, which is correct for a flourless torte. Dust with powdered sugar and serve with whipped cream."
+  ],
+  "diet": {
+   "vegetarian": true,
+   "vegan": false,
+   "pescatarian": true,
+   "glutenFree": false,
+   "glutenFreeAdaptable": false,
+   "dairyFree": false,
+   "nutFree": false,
+   "eggFree": false
+  },
+  "allergens": [
+   "gluten",
+   "dairy",
+   "egg",
+   "tree-nut",
+   "soy"
+  ],
+  "gmo": {
+   "risk": "moderate",
+   "sources": [
+    "sugar-beet",
+    "grain-fed-dairy",
+    "soy"
+   ]
+  },
+  "nutrition": {
+   "calories": 612,
+   "proteinG": 12,
+   "carbsG": 48,
+   "fiberG": 5,
+   "sugarG": 38,
+   "fatG": 44,
+   "satFatG": 21,
+   "sodiumMg": 220,
+   "cholesterolMg": 168
+  },
+  "tags": [
+   "dessert",
+   "italian",
+   "special-occasion",
+   "entertaining",
+   "baking",
+   "vegetarian",
+   "dinner-party"
+  ],
+  "image": {
+   "file": "torta-caprese.jpg",
+   "wikipedia": "Torta caprese"
+  }
+ },
+ {
+  "id": "ch-gd-023",
+  "slug": "gd-grilled-vegetable-antipasto",
+  "title": "Grilled Vegetable Antipasto",
+  "genre": "mediterranean",
+  "subgenre": "antipasti",
+  "chef": {
+   "name": "Giada De Laurentiis",
+   "slug": "giada-de-laurentiis"
+  },
+  "description": "Marinated grilled vegetables served at room temperature with herbs.",
+  "difficulty": "beginner",
+  "easeScore": 10,
+  "spiceScore": 2,
+  "popularity": 7,
+  "pantryScore": 8,
+  "servings": 8,
+  "prepMin": 20,
+  "cookMin": 55,
+  "totalMin": 75,
+  "equipment": [
+   "grill"
+  ],
+  "ingredients": [
+   "3 zucchini, sliced lengthwise",
+   "2 eggplants, sliced in rounds",
+   "3 red bell peppers, halved",
+   "2 red onions, cut in thick rounds",
+   "1 lb asparagus, trimmed",
+   "1/2 cup olive oil",
+   "2 tsp salt",
+   "1 tsp black pepper",
+   "1/3 cup olive oil, for the marinade",
+   "3 tbsp balsamic vinegar",
+   "4 cloves garlic, minced",
+   "1 tbsp chopped fresh oregano",
+   "1/2 tsp red pepper flakes",
+   "1/3 cup chopped basil",
+   "1/4 cup chopped mint"
+  ],
+  "ingredientKeys": [
+   "zucchini",
+   "eggplant",
+   "red-bell-pepper",
+   "red-onion",
+   "asparagus",
+   "olive-oil",
+   "salt",
+   "black-pepper",
+   "olive-oil",
+   "balsamic-vinegar",
+   "garlic",
+   "fresh-oregano",
+   "red-pepper-flakes",
+   "fresh-basil",
+   "fresh-mint"
+  ],
+  "specialty": [
+   "eggplant",
+   "asparagus",
+   "fresh-oregano",
+   "fresh-mint"
+  ],
+  "steps": [
+   "Brush all the vegetables with the 1/2 cup olive oil and season with salt and pepper.",
+   "Grill them in batches over medium-high heat, by cooking time: peppers 10 minutes, eggplant 8, zucchini and onions 6, asparagus 4. Grouping them this way keeps everything properly cooked.",
+   "Let the peppers steam in a covered bowl for 10 minutes, then slip the skins off.",
+   "Whisk the remaining oil, balsamic, garlic, oregano and pepper flakes into a marinade.",
+   "Arrange the grilled vegetables in a shallow dish and pour the marinade over while they are still warm. Warm vegetables absorb it; cold ones just sit in it.",
+   "Let them sit at least 30 minutes at room temperature, then finish with basil and mint. This is better after a few hours and keeps three days."
+  ],
+  "diet": {
+   "vegetarian": true,
+   "vegan": true,
+   "pescatarian": true,
+   "glutenFree": true,
+   "glutenFreeAdaptable": false,
+   "dairyFree": true,
+   "nutFree": true,
+   "eggFree": true
+  },
+  "allergens": [
+   "sulfites"
+  ],
+  "gmo": {
+   "risk": "low",
+   "sources": [
+    "none"
+   ]
+  },
+  "nutrition": {
+   "calories": 286,
+   "proteinG": 4,
+   "carbsG": 18,
+   "fiberG": 6,
+   "sugarG": 11,
+   "fatG": 23,
+   "satFatG": 3,
+   "sodiumMg": 580,
+   "cholesterolMg": 0
+  },
+  "tags": [
+   "appetizer",
+   "vegan",
+   "vegetarian",
+   "gluten-free",
+   "dairy-free",
+   "grill",
+   "make-ahead",
+   "summer",
+   "healthy",
+   "entertaining"
+  ],
+  "image": {
+   "file": "antipasto.jpg",
+   "wikipedia": "Antipasto"
+  }
+ },
+ {
+  "id": "ch-gd-024",
+  "slug": "gd-stracotto-pot-roast",
+  "title": "Stracotto Italian Pot Roast",
+  "genre": "italian",
+  "subgenre": "secondi",
+  "chef": {
+   "name": "Giada De Laurentiis",
+   "slug": "giada-de-laurentiis"
+  },
+  "description": "Chuck roast braised in red wine and tomato, served over polenta.",
+  "difficulty": "intermediate",
+  "easeScore": 7,
+  "spiceScore": 2,
+  "popularity": 7,
+  "pantryScore": 7,
+  "servings": 8,
+  "prepMin": 25,
+  "cookMin": 210,
+  "totalMin": 235,
+  "equipment": [
+   "oven",
+   "stovetop"
+  ],
+  "ingredients": [
+   "1 chuck roast (4 lb)",
+   "2 tsp salt",
+   "1 tsp black pepper",
+   "1/4 cup olive oil",
+   "2 yellow onions, chopped",
+   "3 carrots, chopped",
+   "3 celery stalks, chopped",
+   "6 cloves garlic, minced",
+   "1/4 cup tomato paste",
+   "2 cups dry red wine",
+   "1 can (28 oz) crushed tomatoes",
+   "2 cups beef broth",
+   "3 sprigs fresh rosemary",
+   "1 Parmesan rind",
+   "2 bay leaves",
+   "2 cups polenta",
+   "8 cups water",
+   "1 cup grated Parmesan",
+   "4 tbsp butter"
+  ],
+  "ingredientKeys": [
+   "chuck-roast",
+   "salt",
+   "black-pepper",
+   "olive-oil",
+   "yellow-onion",
+   "carrot",
+   "celery",
+   "garlic",
+   "tomato-paste",
+   "red-wine",
+   "crushed-tomatoes",
+   "beef-broth",
+   "fresh-rosemary",
+   "parmesan-rind",
+   "bay-leaf",
+   "polenta",
+   "water",
+   "parmesan",
+   "butter"
+  ],
+  "specialty": [
+   "chuck-roast",
+   "red-wine",
+   "fresh-rosemary",
+   "parmesan-rind",
+   "polenta"
+  ],
+  "steps": [
+   "Pat the roast dry, season heavily, and sear it in the oil in a Dutch oven 4-5 minutes per side until a deep crust forms. This browning carries the whole braise.",
+   "Set the meat aside and cook the onions, carrots and celery 10 minutes, then the garlic and tomato paste for 2 minutes.",
+   "Add the wine and reduce by half, scraping the bottom clean. Reducing properly removes the raw, sharp edge.",
+   "Return the roast with the tomatoes, broth, rosemary, Parmesan rind and bay leaves. The liquid should come two thirds up the meat, not cover it.",
+   "Cover and braise at 325F for 3 to 3 1/2 hours, until a fork twists in the meat with no resistance.",
+   "Cook the polenta in the salted water for 35 minutes, stirring often, then beat in the Parmesan and butter. Shred the beef, skim the sauce, and serve over the polenta."
+  ],
+  "diet": {
+   "vegetarian": false,
+   "vegan": false,
+   "pescatarian": false,
+   "glutenFree": true,
+   "glutenFreeAdaptable": false,
+   "dairyFree": false,
+   "nutFree": true,
+   "eggFree": true
+  },
+  "allergens": [
+   "dairy",
+   "sulfites"
+  ],
+  "gmo": {
+   "risk": "high",
+   "sources": [
+    "grain-fed-meat",
+    "corn",
+    "grain-fed-dairy"
+   ]
+  },
+  "nutrition": {
+   "calories": 882,
+   "proteinG": 58,
+   "carbsG": 62,
+   "fiberG": 6,
+   "sugarG": 12,
+   "fatG": 42,
+   "satFatG": 18,
+   "sodiumMg": 1480,
+   "cholesterolMg": 186
+  },
+  "tags": [
+   "italian",
+   "sunday",
+   "comfort",
+   "make-ahead",
+   "special-occasion",
+   "gluten-free",
+   "high-protein",
+   "winter",
+   "entertaining"
+  ],
+  "image": {
+   "file": "pot-roast.jpg",
+   "wikipedia": "Pot roast"
+  }
+ },
+ {
+  "id": "ch-gd-025",
+  "slug": "gd-sgroppino",
+  "title": "Sgroppino",
+  "genre": "italian",
+  "subgenre": "drinks",
+  "chef": {
+   "name": "Giada De Laurentiis",
+   "slug": "giada-de-laurentiis"
+  },
+  "description": "Lemon sorbet whipped with prosecco and vodka into a frothy Venetian drink.",
+  "difficulty": "beginner",
+  "easeScore": 10,
+  "spiceScore": 0,
+  "popularity": 6,
+  "pantryScore": 6,
+  "servings": 4,
+  "prepMin": 5,
+  "cookMin": 0,
+  "totalMin": 5,
+  "equipment": [
+   "blender",
+   "no-cook"
+  ],
+  "ingredients": [
+   "3 cups lemon sorbet, slightly softened",
+   "1 cup prosecco, cold",
+   "1/4 cup vodka, cold",
+   "1 tbsp lemon zest",
+   "4 fresh mint sprigs"
+  ],
+  "ingredientKeys": [
+   "lemon-sorbet",
+   "prosecco",
+   "vodka",
+   "lemon-zest",
+   "fresh-mint"
+  ],
+  "specialty": [
+   "lemon-sorbet",
+   "prosecco",
+   "vodka",
+   "fresh-mint"
+  ],
+  "steps": [
+   "Chill four glasses in the freezer while you work. Everything about this drink depends on staying cold.",
+   "Let the sorbet sit out just 5 minutes so it is scoopable but not melting.",
+   "Whisk or briefly blend the sorbet with the vodka until smooth and thick.",
+   "Add the cold prosecco and whisk gently - just enough to combine. Over-mixing knocks out the bubbles and the froth collapses.",
+   "Pour into the chilled glasses; it should be the texture of a thick, foamy slush.",
+   "Finish with lemon zest and a mint sprig and serve immediately, with a spoon."
+  ],
+  "diet": {
+   "vegetarian": true,
+   "vegan": true,
+   "pescatarian": true,
+   "glutenFree": true,
+   "glutenFreeAdaptable": false,
+   "dairyFree": true,
+   "nutFree": true,
+   "eggFree": true
+  },
+  "allergens": [
+   "sulfites"
+  ],
+  "gmo": {
+   "risk": "moderate",
+   "sources": [
+    "sugar-beet"
+   ]
+  },
+  "nutrition": {
+   "calories": 268,
+   "proteinG": 0,
+   "carbsG": 48,
+   "fiberG": 0,
+   "sugarG": 44,
+   "fatG": 0,
+   "satFatG": 0,
+   "sodiumMg": 12,
+   "cholesterolMg": 0
+  },
+  "tags": [
+   "drink",
+   "cocktail",
+   "dessert",
+   "no-cook",
+   "quick",
+   "party",
+   "italian",
+   "adults-only",
+   "summer",
+   "vegan"
+  ],
+  "image": {
+   "file": "sgroppino.jpg",
+   "wikipedia": "Sgroppino"
+  }
+ }
+]

@@ -1,0 +1,3020 @@
+[
+ {
+  "id": "ch-wp-001",
+  "slug": "wp-smoked-salmon-pizza",
+  "title": "Smoked Salmon Pizza",
+  "genre": "international",
+  "subgenre": "pizza",
+  "chef": {
+   "name": "Wolfgang Puck",
+   "slug": "wolfgang-puck"
+  },
+  "description": "The Spago signature: crisp pizza with dill cream, smoked salmon and caviar.",
+  "difficulty": "intermediate",
+  "easeScore": 6,
+  "spiceScore": 1,
+  "popularity": 9,
+  "pantryScore": 4,
+  "servings": 4,
+  "prepMin": 25,
+  "cookMin": 105,
+  "totalMin": 130,
+  "equipment": [
+   "oven",
+   "stovetop"
+  ],
+  "ingredients": [
+   "3 cups bread flour",
+   "1 tsp instant yeast",
+   "1 1/4 tsp salt",
+   "1 cup warm water",
+   "2 tbsp olive oil",
+   "3/4 cup creme fraiche",
+   "2 tbsp chopped fresh dill",
+   "1 tbsp lemon juice",
+   "1/2 tsp black pepper",
+   "1/2 red onion, very thinly sliced",
+   "8 oz smoked salmon, thinly sliced",
+   "2 oz salmon caviar",
+   "2 tbsp chopped chives",
+   "2 tbsp cornmeal, for the peel"
+  ],
+  "ingredientKeys": [
+   "bread-flour",
+   "instant-yeast",
+   "salt",
+   "water",
+   "olive-oil",
+   "creme-fraiche",
+   "fresh-dill",
+   "lemon-juice",
+   "black-pepper",
+   "red-onion",
+   "smoked-salmon",
+   "salmon-caviar",
+   "chives",
+   "cornmeal"
+  ],
+  "specialty": [
+   "bread-flour",
+   "creme-fraiche",
+   "fresh-dill",
+   "smoked-salmon",
+   "salmon-caviar",
+   "cornmeal"
+  ],
+  "steps": [
+   "Mix the flour, yeast, salt, water and oil into a dough, knead 8 minutes until smooth, and let it rise 1 hour until doubled. Divide into four balls and rest 30 minutes.",
+   "Stir the creme fraiche with the dill, lemon juice and pepper and refrigerate.",
+   "Stretch each ball thin and bake on a preheated stone or inverted sheet at 500F for 8-10 minutes until crisp and spotted. Dust the peel with cornmeal so it releases.",
+   "The crust must be fully baked and cooled slightly before anything goes on. This is the entire trick: every topping is cold and raw, and a hot crust would cook the salmon and break the cream.",
+   "Spread the dill cream over the warm crusts, then drape the smoked salmon over it in loose folds and scatter the red onion.",
+   "Spoon the caviar over, finish with chives, and cut into wedges. Serve immediately, while the crust is still crisp under the cold toppings."
+  ],
+  "diet": {
+   "vegetarian": false,
+   "vegan": false,
+   "pescatarian": true,
+   "glutenFree": false,
+   "glutenFreeAdaptable": false,
+   "dairyFree": false,
+   "nutFree": true,
+   "eggFree": true
+  },
+  "allergens": [
+   "gluten",
+   "dairy",
+   "fish"
+  ],
+  "gmo": {
+   "risk": "moderate",
+   "sources": [
+    "grain-fed-dairy",
+    "corn"
+   ]
+  },
+  "nutrition": {
+   "calories": 682,
+   "proteinG": 32,
+   "carbsG": 72,
+   "fiberG": 3,
+   "sugarG": 4,
+   "fatG": 28,
+   "satFatG": 12,
+   "sodiumMg": 1680,
+   "cholesterolMg": 138
+  },
+  "tags": [
+   "signature",
+   "pizza",
+   "entertaining",
+   "pescatarian",
+   "restaurant-style",
+   "technique",
+   "party",
+   "iconic"
+  ],
+  "image": {
+   "file": "smoked-salmon-pizza.jpg",
+   "wikipedia": "Pizza"
+  }
+ },
+ {
+  "id": "ch-wp-002",
+  "slug": "wp-chinois-chicken-salad",
+  "title": "Chinois Chicken Salad",
+  "genre": "international",
+  "subgenre": "salads",
+  "chef": {
+   "name": "Wolfgang Puck",
+   "slug": "wolfgang-puck"
+  },
+  "description": "Crisp cabbage and chicken with a sweet mustard-soy vinaigrette and fried wontons.",
+  "difficulty": "beginner",
+  "easeScore": 8,
+  "spiceScore": 3,
+  "popularity": 8,
+  "pantryScore": 6,
+  "servings": 6,
+  "prepMin": 30,
+  "cookMin": 25,
+  "totalMin": 55,
+  "equipment": [
+   "stovetop",
+   "no-cook"
+  ],
+  "ingredients": [
+   "4 boneless chicken breasts",
+   "2 tsp salt",
+   "1 tsp black pepper",
+   "2 tbsp vegetable oil",
+   "1 small napa cabbage, shredded",
+   "2 cups shredded red cabbage",
+   "3 carrots, julienned",
+   "6 scallions, sliced",
+   "1 cup cilantro leaves",
+   "12 wonton wrappers, cut in strips",
+   "2 cups vegetable oil, for frying",
+   "1/4 cup rice vinegar",
+   "3 tbsp soy sauce",
+   "2 tbsp Dijon mustard",
+   "3 tbsp honey",
+   "2 tbsp toasted sesame oil",
+   "1 tbsp grated ginger",
+   "2 cloves garlic, minced",
+   "1/2 cup peanut oil",
+   "1/3 cup toasted sesame seeds"
+  ],
+  "ingredientKeys": [
+   "chicken-breast",
+   "salt",
+   "black-pepper",
+   "vegetable-oil",
+   "napa-cabbage",
+   "red-cabbage",
+   "carrot",
+   "scallion",
+   "cilantro",
+   "wonton-wrappers",
+   "vegetable-oil",
+   "rice-vinegar",
+   "soy-sauce",
+   "dijon-mustard",
+   "honey",
+   "sesame-oil",
+   "ginger",
+   "garlic",
+   "peanut-oil",
+   "sesame-seeds"
+  ],
+  "specialty": [
+   "napa-cabbage",
+   "wonton-wrappers",
+   "rice-vinegar",
+   "soy-sauce",
+   "sesame-oil",
+   "ginger",
+   "peanut-oil",
+   "sesame-seeds"
+  ],
+  "steps": [
+   "Season the chicken and sear it in the vegetable oil 6 minutes per side until 165F, then cool and slice it across the grain.",
+   "Fry the wonton strips in 350F oil in batches, 45 seconds until golden, and drain on paper towels. They stay crisp for hours and are what makes this salad recognizable.",
+   "Whisk the rice vinegar, soy sauce, Dijon, honey, sesame oil, ginger and garlic, then stream in the peanut oil to emulsify. The Dijon is doing double duty here - it emulsifies the dressing and bridges the French and Chinese halves of the dish.",
+   "Toss both cabbages, the carrots, scallions and cilantro together and keep them very cold until serving.",
+   "Dress the vegetables just before serving - cabbage wilts fast once the acid hits it and this salad is all about crunch.",
+   "Add the chicken, toss again, and pile the fried wontons and sesame seeds on top at the table."
+  ],
+  "diet": {
+   "vegetarian": false,
+   "vegan": false,
+   "pescatarian": false,
+   "glutenFree": false,
+   "glutenFreeAdaptable": false,
+   "dairyFree": true,
+   "nutFree": false,
+   "eggFree": false
+  },
+  "allergens": [
+   "gluten",
+   "soy",
+   "sesame",
+   "peanut",
+   "egg"
+  ],
+  "gmo": {
+   "risk": "high",
+   "sources": [
+    "seed-oil",
+    "soy",
+    "grain-fed-meat"
+   ]
+  },
+  "nutrition": {
+   "calories": 612,
+   "proteinG": 42,
+   "carbsG": 38,
+   "fiberG": 6,
+   "sugarG": 18,
+   "fatG": 34,
+   "satFatG": 5,
+   "sodiumMg": 1480,
+   "cholesterolMg": 98
+  },
+  "tags": [
+   "signature",
+   "salad",
+   "fusion",
+   "restaurant-style",
+   "high-protein",
+   "dairy-free",
+   "lunch",
+   "iconic",
+   "entertaining"
+  ],
+  "image": {
+   "file": "chinese-chicken-salad.jpg",
+   "wikipedia": "Chinese chicken salad"
+  }
+ },
+ {
+  "id": "ch-wp-003",
+  "slug": "wp-wiener-schnitzel",
+  "title": "Wiener Schnitzel",
+  "genre": "international",
+  "subgenre": "secondi",
+  "chef": {
+   "name": "Wolfgang Puck",
+   "slug": "wolfgang-puck"
+  },
+  "description": "Pounded veal in a puffed golden crust, the Austrian dish of his childhood.",
+  "difficulty": "intermediate",
+  "easeScore": 7,
+  "spiceScore": 1,
+  "popularity": 8,
+  "pantryScore": 6,
+  "servings": 4,
+  "prepMin": 25,
+  "cookMin": 20,
+  "totalMin": 45,
+  "equipment": [
+   "stovetop"
+  ],
+  "ingredients": [
+   "4 veal cutlets (5 oz each)",
+   "2 tsp salt",
+   "1 tsp white pepper",
+   "1 cup all-purpose flour",
+   "3 eggs",
+   "2 tbsp heavy cream",
+   "2 1/2 cups fine dry breadcrumbs",
+   "1 1/2 cups clarified butter",
+   "1/2 cup vegetable oil",
+   "2 lemons, cut in wedges",
+   "1/4 cup chopped parsley",
+   "2 tbsp capers",
+   "4 anchovy fillets"
+  ],
+  "ingredientKeys": [
+   "veal-cutlet",
+   "salt",
+   "white-pepper",
+   "flour",
+   "egg",
+   "heavy-cream",
+   "breadcrumbs",
+   "clarified-butter",
+   "vegetable-oil",
+   "lemon",
+   "parsley",
+   "capers",
+   "anchovy"
+  ],
+  "specialty": [
+   "veal-cutlet",
+   "white-pepper",
+   "clarified-butter",
+   "capers",
+   "anchovy"
+  ],
+  "steps": [
+   "Pound the cutlets between plastic sheets to a scant 1/4 inch, working from the center outward. Thin and even is everything - a thick schnitzel steams instead of crisping.",
+   "Season, then set up three dishes: flour, the eggs beaten with the cream, and the breadcrumbs. Press the cutlets only lightly into the crumbs rather than packing them on.",
+   "Have enough fat in the pan that the schnitzel floats rather than sits - about 1/2 inch of clarified butter and oil, at 340-350F.",
+   "Fry one at a time, 2 minutes per side, constantly swirling the pan so hot fat washes over the top. That swirling is what makes the crust puff away from the meat, the mark of a real Wiener Schnitzel.",
+   "Drain on a rack, never on paper, and never stack them.",
+   "Serve immediately with lemon wedges, parsley, and the capers and chopped anchovy scattered over, which is the Viennese garnish."
+  ],
+  "diet": {
+   "vegetarian": false,
+   "vegan": false,
+   "pescatarian": false,
+   "glutenFree": false,
+   "glutenFreeAdaptable": false,
+   "dairyFree": false,
+   "nutFree": true,
+   "eggFree": false
+  },
+  "allergens": [
+   "gluten",
+   "dairy",
+   "egg",
+   "fish"
+  ],
+  "gmo": {
+   "risk": "high",
+   "sources": [
+    "seed-oil",
+    "processed-bread",
+    "grain-fed-meat",
+    "grain-fed-dairy"
+   ]
+  },
+  "nutrition": {
+   "calories": 882,
+   "proteinG": 48,
+   "carbsG": 52,
+   "fiberG": 3,
+   "sugarG": 3,
+   "fatG": 52,
+   "satFatG": 24,
+   "sodiumMg": 1680,
+   "cholesterolMg": 338
+  },
+  "tags": [
+   "signature",
+   "austrian",
+   "technique",
+   "classic",
+   "restaurant-style",
+   "high-protein",
+   "date-night",
+   "iconic"
+  ],
+  "image": {
+   "file": "schnitzel.jpg",
+   "wikipedia": "Wiener schnitzel"
+  }
+ },
+ {
+  "id": "ch-wp-004",
+  "slug": "wp-butternut-squash-soup",
+  "title": "Butternut Squash Soup",
+  "genre": "international",
+  "subgenre": "soups",
+  "chef": {
+   "name": "Wolfgang Puck",
+   "slug": "wolfgang-puck"
+  },
+  "description": "Velvety roasted squash soup with apple, ginger and a swirl of cream.",
+  "difficulty": "beginner",
+  "easeScore": 9,
+  "spiceScore": 2,
+  "popularity": 8,
+  "pantryScore": 7,
+  "servings": 6,
+  "prepMin": 20,
+  "cookMin": 55,
+  "totalMin": 75,
+  "equipment": [
+   "oven",
+   "stovetop",
+   "blender"
+  ],
+  "ingredients": [
+   "3 lb butternut squash, peeled and cubed",
+   "3 tbsp olive oil",
+   "4 tbsp butter",
+   "1 yellow onion, diced",
+   "2 leeks, sliced",
+   "2 Granny Smith apples, peeled and diced",
+   "1 tbsp grated ginger",
+   "6 cups chicken broth",
+   "1/2 cup heavy cream",
+   "2 tsp salt",
+   "1 tsp white pepper",
+   "1/4 tsp ground nutmeg",
+   "2 tbsp maple syrup",
+   "1/4 cup pumpkin seeds, toasted",
+   "2 tbsp chopped chives"
+  ],
+  "ingredientKeys": [
+   "butternut-squash",
+   "olive-oil",
+   "butter",
+   "yellow-onion",
+   "leek",
+   "granny-smith-apple",
+   "ginger",
+   "chicken-broth",
+   "heavy-cream",
+   "salt",
+   "white-pepper",
+   "nutmeg",
+   "maple-syrup",
+   "pumpkin-seeds",
+   "chives"
+  ],
+  "specialty": [
+   "butternut-squash",
+   "leek",
+   "ginger",
+   "white-pepper",
+   "maple-syrup",
+   "pumpkin-seeds"
+  ],
+  "steps": [
+   "Roast the squash with the olive oil and salt at 425F for 30 minutes until browned at the edges. Roasting rather than boiling is the difference between a sweet, deep soup and a watery one.",
+   "Melt the butter and cook the onion and leeks 8 minutes without browning them, then add the apples and ginger for 4 minutes.",
+   "Add the roasted squash and the broth and simmer 15 minutes.",
+   "Blend in batches until completely smooth, filling the jar no more than half full with hot liquid and venting the lid.",
+   "Return to the pot, stir in the cream, and season with the salt, white pepper, nutmeg and maple syrup. Taste for balance - it wants to be just barely sweet, not a dessert.",
+   "Serve with the toasted pumpkin seeds and chives. It freezes well before the cream goes in."
+  ],
+  "diet": {
+   "vegetarian": false,
+   "vegan": false,
+   "pescatarian": false,
+   "glutenFree": true,
+   "glutenFreeAdaptable": false,
+   "dairyFree": false,
+   "nutFree": true,
+   "eggFree": true
+  },
+  "allergens": [
+   "dairy"
+  ],
+  "gmo": {
+   "risk": "low",
+   "sources": [
+    "grain-fed-dairy",
+    "grain-fed-meat"
+   ]
+  },
+  "nutrition": {
+   "calories": 382,
+   "proteinG": 7,
+   "carbsG": 42,
+   "fiberG": 7,
+   "sugarG": 18,
+   "fatG": 22,
+   "satFatG": 11,
+   "sodiumMg": 1180,
+   "cholesterolMg": 52
+  },
+  "tags": [
+   "soup",
+   "fall",
+   "gluten-free",
+   "restaurant-style",
+   "make-ahead",
+   "healthy",
+   "high-fiber",
+   "thanksgiving",
+   "easy",
+   "freezer"
+  ],
+  "image": {
+   "file": "butternut-squash-soup.jpg",
+   "wikipedia": "Squash soup"
+  }
+ },
+ {
+  "id": "ch-wp-005",
+  "slug": "wp-pizza-dough",
+  "title": "Spago Pizza Dough",
+  "genre": "international",
+  "subgenre": "pizza",
+  "chef": {
+   "name": "Wolfgang Puck",
+   "slug": "wolfgang-puck"
+  },
+  "description": "A honey-sweetened dough that bakes crisp and blistered in a home oven.",
+  "difficulty": "beginner",
+  "easeScore": 8,
+  "spiceScore": 0,
+  "popularity": 9,
+  "pantryScore": 10,
+  "servings": 4,
+  "prepMin": 20,
+  "cookMin": 100,
+  "totalMin": 120,
+  "equipment": [
+   "oven"
+  ],
+  "ingredients": [
+   "1 package (2 1/4 tsp) active dry yeast",
+   "1 tsp honey",
+   "1 cup warm water",
+   "3 cups bread flour",
+   "1 tsp salt",
+   "3 tbsp olive oil",
+   "2 tbsp cornmeal, for the peel"
+  ],
+  "ingredientKeys": [
+   "active-dry-yeast",
+   "honey",
+   "water",
+   "bread-flour",
+   "salt",
+   "olive-oil",
+   "cornmeal"
+  ],
+  "specialty": [
+   "bread-flour",
+   "cornmeal"
+  ],
+  "steps": [
+   "Dissolve the yeast and honey in 1/4 cup of the warm water and leave it 10 minutes until foamy. If it does not foam the yeast is dead and the dough will never rise.",
+   "Add the flour, salt, oil and remaining water and knead 8-10 minutes, until the dough is smooth and springs back when poked.",
+   "Oil a bowl, cover, and rise 30 minutes. Divide into four balls, place them on a floured tray, cover, and rest 30 minutes more. This second rest is what lets you stretch the dough without it snapping back.",
+   "Preheat a stone or inverted heavy sheet pan at 500F for a full 30 minutes. Home ovens need that long to store enough heat to crisp the base.",
+   "Stretch each ball by hand from the center outward, leaving a thicker rim. Keep the center thin - a rolling pin presses out the gas bubbles that make the crust light.",
+   "Dust the peel with cornmeal, top the pizza quickly, and bake 8-10 minutes until the rim is blistered and the base is firm. The dough can be refrigerated a day for better flavor."
+  ],
+  "diet": {
+   "vegetarian": true,
+   "vegan": false,
+   "pescatarian": true,
+   "glutenFree": false,
+   "glutenFreeAdaptable": false,
+   "dairyFree": true,
+   "nutFree": true,
+   "eggFree": true
+  },
+  "allergens": [
+   "gluten"
+  ],
+  "gmo": {
+   "risk": "moderate",
+   "sources": [
+    "corn"
+   ]
+  },
+  "nutrition": {
+   "calories": 448,
+   "proteinG": 12,
+   "carbsG": 74,
+   "fiberG": 3,
+   "sugarG": 2,
+   "fatG": 11,
+   "satFatG": 2,
+   "sodiumMg": 580,
+   "cholesterolMg": 0
+  },
+  "tags": [
+   "foundation",
+   "pizza",
+   "baking",
+   "vegetarian",
+   "dairy-free",
+   "budget",
+   "pantry",
+   "technique",
+   "make-ahead",
+   "easy"
+  ],
+  "image": {
+   "file": "pizza-dough.jpg",
+   "wikipedia": "Pizza dough"
+  }
+ },
+ {
+  "id": "ch-wp-006",
+  "slug": "wp-roast-chicken-herbs",
+  "title": "Roast Chicken with Herbs",
+  "genre": "international",
+  "subgenre": "secondi",
+  "chef": {
+   "name": "Wolfgang Puck",
+   "slug": "wolfgang-puck"
+  },
+  "description": "A whole chicken with herb butter under the skin and lemon in the cavity.",
+  "difficulty": "beginner",
+  "easeScore": 9,
+  "spiceScore": 1,
+  "popularity": 9,
+  "pantryScore": 8,
+  "servings": 4,
+  "prepMin": 20,
+  "cookMin": 80,
+  "totalMin": 100,
+  "equipment": [
+   "oven"
+  ],
+  "ingredients": [
+   "1 whole chicken (4 lb)",
+   "2 tbsp salt",
+   "1 tsp black pepper",
+   "6 tbsp softened butter",
+   "2 tbsp chopped fresh thyme",
+   "2 tbsp chopped fresh rosemary",
+   "2 tbsp chopped parsley",
+   "6 cloves garlic, minced",
+   "1 lemon, halved",
+   "1 head garlic, halved",
+   "2 tbsp olive oil",
+   "1 lb baby potatoes, halved",
+   "1 cup chicken broth"
+  ],
+  "ingredientKeys": [
+   "whole-chicken",
+   "salt",
+   "black-pepper",
+   "butter",
+   "fresh-thyme",
+   "fresh-rosemary",
+   "parsley",
+   "garlic",
+   "lemon",
+   "garlic",
+   "olive-oil",
+   "baby-potato",
+   "chicken-broth"
+  ],
+  "specialty": [
+   "whole-chicken",
+   "fresh-thyme",
+   "fresh-rosemary",
+   "baby-potato"
+  ],
+  "steps": [
+   "Salt the chicken all over and leave it uncovered in the refrigerator at least 4 hours, ideally overnight. Dry skin browns; wet skin steams.",
+   "Mash the butter with the thyme, rosemary, parsley, minced garlic and pepper.",
+   "Slide your fingers under the breast skin to separate it from the meat, then push the herb butter into that pocket and smooth it flat from outside. Butter under the skin bastes the breast from within, which is the whole point - butter on top just runs off.",
+   "Stuff the cavity with the lemon and halved garlic head and tie the legs together.",
+   "Set it on the potatoes in a roasting pan, drizzle with oil, and roast at 425F for 20 minutes, then 375F for about 50 minutes more, to 165F in the thigh.",
+   "Rest 15 minutes before carving. Deglaze the pan with the broth, scraping up the browned bits, and spoon over the carved chicken and potatoes."
+  ],
+  "diet": {
+   "vegetarian": false,
+   "vegan": false,
+   "pescatarian": false,
+   "glutenFree": true,
+   "glutenFreeAdaptable": false,
+   "dairyFree": false,
+   "nutFree": true,
+   "eggFree": true
+  },
+  "allergens": [
+   "dairy"
+  ],
+  "gmo": {
+   "risk": "moderate",
+   "sources": [
+    "grain-fed-meat",
+    "grain-fed-dairy"
+   ]
+  },
+  "nutrition": {
+   "calories": 712,
+   "proteinG": 58,
+   "carbsG": 24,
+   "fiberG": 3,
+   "sugarG": 2,
+   "fatG": 42,
+   "satFatG": 18,
+   "sodiumMg": 1480,
+   "cholesterolMg": 238
+  },
+  "tags": [
+   "foundation",
+   "roast",
+   "gluten-free",
+   "sunday",
+   "family",
+   "high-protein",
+   "one-pan",
+   "classic",
+   "easy"
+  ],
+  "image": {
+   "file": "roast-chicken.jpg",
+   "wikipedia": "Roast chicken"
+  }
+ },
+ {
+  "id": "ch-wp-007",
+  "slug": "wp-potato-leek-soup",
+  "title": "Potato Leek Soup",
+  "genre": "international",
+  "subgenre": "soups",
+  "chef": {
+   "name": "Wolfgang Puck",
+   "slug": "wolfgang-puck"
+  },
+  "description": "Silky potato and leek soup, good hot or chilled as vichyssoise.",
+  "difficulty": "beginner",
+  "easeScore": 10,
+  "spiceScore": 1,
+  "popularity": 8,
+  "pantryScore": 9,
+  "servings": 6,
+  "prepMin": 15,
+  "cookMin": 35,
+  "totalMin": 50,
+  "equipment": [
+   "stovetop",
+   "blender"
+  ],
+  "ingredients": [
+   "4 leeks, white and light green parts, sliced",
+   "4 tbsp butter",
+   "2 lb Yukon Gold potatoes, peeled and cubed",
+   "6 cups chicken broth",
+   "1 bay leaf",
+   "2 sprigs fresh thyme",
+   "3/4 cup heavy cream",
+   "2 tsp salt",
+   "1 tsp white pepper",
+   "2 tbsp chopped chives"
+  ],
+  "ingredientKeys": [
+   "leek",
+   "butter",
+   "yukon-gold-potato",
+   "chicken-broth",
+   "bay-leaf",
+   "fresh-thyme",
+   "heavy-cream",
+   "salt",
+   "white-pepper",
+   "chives"
+  ],
+  "specialty": [
+   "leek",
+   "fresh-thyme",
+   "white-pepper"
+  ],
+  "steps": [
+   "Slice the leeks and wash them in a bowl of water, lifting them out and leaving the grit behind. Leeks hold sand deep between their layers and rinsing the outside does nothing.",
+   "Sweat the leeks in the butter over low heat 10 minutes, covered, without letting them take any color. Browned leeks turn the soup grey and sweet in the wrong way.",
+   "Add the potatoes, broth, bay leaf and thyme and simmer 20 minutes until the potatoes fall apart under a fork.",
+   "Remove the bay leaf and thyme stems and blend until completely smooth - but briefly. Over-blending potatoes turns them gluey, so stop as soon as it is smooth.",
+   "Stir in the cream and season with salt and white pepper. White pepper rather than black keeps the soup clean-looking.",
+   "Serve hot with chives, or chill it thoroughly and serve cold as vichyssoise, in which case season it again - cold food needs more salt."
+  ],
+  "diet": {
+   "vegetarian": false,
+   "vegan": false,
+   "pescatarian": false,
+   "glutenFree": true,
+   "glutenFreeAdaptable": false,
+   "dairyFree": false,
+   "nutFree": true,
+   "eggFree": true
+  },
+  "allergens": [
+   "dairy"
+  ],
+  "gmo": {
+   "risk": "low",
+   "sources": [
+    "grain-fed-dairy",
+    "grain-fed-meat"
+   ]
+  },
+  "nutrition": {
+   "calories": 382,
+   "proteinG": 7,
+   "carbsG": 38,
+   "fiberG": 4,
+   "sugarG": 5,
+   "fatG": 22,
+   "satFatG": 14,
+   "sodiumMg": 1180,
+   "cholesterolMg": 68
+  },
+  "tags": [
+   "soup",
+   "foundation",
+   "gluten-free",
+   "budget",
+   "make-ahead",
+   "comfort",
+   "easy",
+   "french",
+   "classic",
+   "freezer"
+  ],
+  "image": {
+   "file": "potato-leek-soup.jpg",
+   "wikipedia": "Leek soup"
+  }
+ },
+ {
+  "id": "ch-wp-008",
+  "slug": "wp-tuna-tartare-cones",
+  "title": "Tuna Tartare Cones",
+  "genre": "international",
+  "subgenre": "appetizers",
+  "chef": {
+   "name": "Wolfgang Puck",
+   "slug": "wolfgang-puck"
+  },
+  "description": "Sesame-miso tuna tartare served in crisp cones. His Oscars party staple.",
+  "difficulty": "advanced",
+  "easeScore": 4,
+  "spiceScore": 3,
+  "popularity": 7,
+  "pantryScore": 3,
+  "servings": 8,
+  "prepMin": 45,
+  "cookMin": 25,
+  "totalMin": 70,
+  "equipment": [
+   "oven",
+   "no-cook"
+  ],
+  "ingredients": [
+   "1 lb sushi-grade ahi tuna",
+   "2 tbsp toasted sesame oil",
+   "2 tbsp soy sauce",
+   "1 tbsp white miso paste",
+   "1 tbsp rice vinegar",
+   "1 tbsp grated ginger",
+   "2 scallions, minced",
+   "1 tsp sriracha",
+   "1 tbsp black sesame seeds",
+   "1/2 cup all-purpose flour",
+   "2 egg whites",
+   "3 tbsp melted butter",
+   "2 tbsp sugar",
+   "1/4 tsp salt",
+   "1 tbsp black sesame seeds, for the cones",
+   "1/3 cup creme fraiche",
+   "2 oz salmon caviar",
+   "2 tbsp chopped chives"
+  ],
+  "ingredientKeys": [
+   "ahi-tuna",
+   "sesame-oil",
+   "soy-sauce",
+   "white-miso",
+   "rice-vinegar",
+   "ginger",
+   "scallion",
+   "sriracha",
+   "sesame-seeds",
+   "flour",
+   "egg-white",
+   "butter",
+   "sugar",
+   "salt",
+   "sesame-seeds",
+   "creme-fraiche",
+   "salmon-caviar",
+   "chives"
+  ],
+  "specialty": [
+   "ahi-tuna",
+   "sesame-oil",
+   "white-miso",
+   "rice-vinegar",
+   "sriracha",
+   "sesame-seeds",
+   "creme-fraiche",
+   "salmon-caviar"
+  ],
+  "steps": [
+   "Make the cone batter: whisk the flour, egg whites, melted butter, sugar, salt and sesame seeds into a smooth paste and rest it 20 minutes.",
+   "Spread thin 4-inch circles on a silicone mat and bake at 350F for 6-8 minutes until golden at the edges. Roll each one around a cone mold the moment it comes out - they stay pliable for about fifteen seconds and shatter once cool.",
+   "Buy tuna from a fishmonger you trust and tell them it will be eaten raw. Keep it ice-cold until the moment you cut it.",
+   "Dice the tuna by hand into 1/4-inch cubes with a very sharp knife. A food processor crushes it into paste.",
+   "Whisk the sesame oil, soy, miso, vinegar, ginger, scallions and sriracha, and fold it into the tuna no more than 10 minutes before serving. The acid and salt begin to cure the fish, and left longer it turns opaque and firm.",
+   "Fill each cone, top with a dot of creme fraiche, a little caviar and chives, and serve at once before the cone softens."
+  ],
+  "diet": {
+   "vegetarian": false,
+   "vegan": false,
+   "pescatarian": true,
+   "glutenFree": false,
+   "glutenFreeAdaptable": false,
+   "dairyFree": false,
+   "nutFree": true,
+   "eggFree": false
+  },
+  "allergens": [
+   "fish",
+   "soy",
+   "sesame",
+   "gluten",
+   "dairy",
+   "egg"
+  ],
+  "gmo": {
+   "risk": "moderate",
+   "sources": [
+    "soy",
+    "sugar-beet",
+    "grain-fed-dairy"
+   ]
+  },
+  "nutrition": {
+   "calories": 286,
+   "proteinG": 22,
+   "carbsG": 14,
+   "fiberG": 1,
+   "sugarG": 4,
+   "fatG": 16,
+   "satFatG": 6,
+   "sodiumMg": 780,
+   "cholesterolMg": 62
+  },
+  "tags": [
+   "signature",
+   "appetizer",
+   "party",
+   "restaurant-style",
+   "raw",
+   "pescatarian",
+   "technique",
+   "project",
+   "iconic",
+   "entertaining"
+  ],
+  "image": {
+   "file": "tuna-tartare.jpg",
+   "wikipedia": "Sashimi"
+  }
+ },
+ {
+  "id": "ch-wp-009",
+  "slug": "wp-wild-mushroom-risotto",
+  "title": "Wild Mushroom Risotto",
+  "genre": "italian",
+  "subgenre": "risotto",
+  "chef": {
+   "name": "Wolfgang Puck",
+   "slug": "wolfgang-puck"
+  },
+  "description": "Risotto with mixed mushrooms, thyme and a finish of mascarpone.",
+  "difficulty": "intermediate",
+  "easeScore": 6,
+  "spiceScore": 1,
+  "popularity": 8,
+  "pantryScore": 6,
+  "servings": 6,
+  "prepMin": 20,
+  "cookMin": 45,
+  "totalMin": 65,
+  "equipment": [
+   "stovetop"
+  ],
+  "ingredients": [
+   "1 1/2 cups arborio rice",
+   "1 oz dried porcini mushrooms",
+   "1 lb mixed fresh mushrooms, sliced",
+   "7 cups chicken broth",
+   "1 shallot, minced",
+   "1 yellow onion, finely diced",
+   "4 tbsp butter",
+   "3 tbsp olive oil",
+   "3 cloves garlic, minced",
+   "1 cup dry white wine",
+   "2 tbsp chopped fresh thyme",
+   "1/2 cup mascarpone cheese",
+   "1 cup grated Parmesan",
+   "2 tsp salt",
+   "1 tsp black pepper",
+   "2 tbsp chopped parsley",
+   "1 tbsp truffle oil"
+  ],
+  "ingredientKeys": [
+   "arborio-rice",
+   "dried-porcini",
+   "mushroom",
+   "chicken-broth",
+   "shallot",
+   "yellow-onion",
+   "butter",
+   "olive-oil",
+   "garlic",
+   "white-wine",
+   "fresh-thyme",
+   "mascarpone",
+   "parmesan",
+   "salt",
+   "black-pepper",
+   "parsley",
+   "truffle-oil"
+  ],
+  "specialty": [
+   "arborio-rice",
+   "dried-porcini",
+   "shallot",
+   "white-wine",
+   "fresh-thyme",
+   "mascarpone",
+   "truffle-oil"
+  ],
+  "steps": [
+   "Soak the porcini in a cup of hot broth 20 minutes, then chop them and strain the liquid back into the broth pot. Keep the broth at a bare simmer the whole time.",
+   "Sear the fresh mushrooms in the olive oil over high heat in batches, 6 minutes, until browned. Crowding them makes them release water and stew, and you lose all the browning.",
+   "Set the mushrooms aside. Cook the onion and shallot in 2 tbsp of the butter 6 minutes, then the garlic for 1 minute.",
+   "Add the rice and toast 2 minutes until the grains look glassy at the edges, then add the wine and stir until absorbed.",
+   "Add the hot broth a ladle at a time, stirring often, about 18 minutes, until the rice is al dente with a loose creamy sauce. Fold in the mushrooms, chopped porcini and thyme near the end.",
+   "Off the heat beat in the remaining butter, the mascarpone and the Parmesan hard until glossy. Season, finish with parsley and a few drops of truffle oil, and serve at once."
+  ],
+  "diet": {
+   "vegetarian": false,
+   "vegan": false,
+   "pescatarian": false,
+   "glutenFree": true,
+   "glutenFreeAdaptable": false,
+   "dairyFree": false,
+   "nutFree": true,
+   "eggFree": true
+  },
+  "allergens": [
+   "dairy",
+   "sulfites"
+  ],
+  "gmo": {
+   "risk": "low",
+   "sources": [
+    "grain-fed-dairy",
+    "grain-fed-meat"
+   ]
+  },
+  "nutrition": {
+   "calories": 612,
+   "proteinG": 18,
+   "carbsG": 62,
+   "fiberG": 4,
+   "sugarG": 5,
+   "fatG": 30,
+   "satFatG": 15,
+   "sodiumMg": 1480,
+   "cholesterolMg": 72
+  },
+  "tags": [
+   "risotto",
+   "restaurant-style",
+   "technique",
+   "gluten-free",
+   "vegetarian-adaptable",
+   "entertaining",
+   "fall",
+   "date-night",
+   "italian"
+  ],
+  "image": {
+   "file": "mushroom-risotto.jpg",
+   "wikipedia": "Risotto"
+  }
+ },
+ {
+  "id": "ch-wp-010",
+  "slug": "wp-filet-mignon-cabernet",
+  "title": "Filet Mignon with Cabernet Sauce",
+  "genre": "international",
+  "subgenre": "secondi",
+  "chef": {
+   "name": "Wolfgang Puck",
+   "slug": "wolfgang-puck"
+  },
+  "description": "Pan-seared filet with a reduced red wine butter sauce.",
+  "difficulty": "intermediate",
+  "easeScore": 7,
+  "spiceScore": 1,
+  "popularity": 9,
+  "pantryScore": 6,
+  "servings": 4,
+  "prepMin": 15,
+  "cookMin": 40,
+  "totalMin": 55,
+  "equipment": [
+   "stovetop",
+   "oven"
+  ],
+  "ingredients": [
+   "4 filet mignon steaks (7 oz each)",
+   "2 tsp salt",
+   "1 tsp black pepper",
+   "2 tbsp vegetable oil",
+   "6 tbsp butter",
+   "2 shallots, minced",
+   "3 cloves garlic, smashed",
+   "2 sprigs fresh thyme",
+   "2 cups Cabernet Sauvignon",
+   "2 cups beef broth",
+   "1 tbsp tomato paste",
+   "1 tsp sugar",
+   "1 tbsp cold butter, to finish",
+   "2 tbsp chopped chives"
+  ],
+  "ingredientKeys": [
+   "filet-mignon",
+   "salt",
+   "black-pepper",
+   "vegetable-oil",
+   "butter",
+   "shallot",
+   "garlic",
+   "fresh-thyme",
+   "cabernet-sauvignon",
+   "beef-broth",
+   "tomato-paste",
+   "sugar",
+   "butter",
+   "chives"
+  ],
+  "specialty": [
+   "filet-mignon",
+   "shallot",
+   "fresh-thyme",
+   "cabernet-sauvignon",
+   "beef-broth"
+  ],
+  "steps": [
+   "Take the steaks out of the refrigerator 45 minutes ahead and dry them thoroughly. Cold, wet meat will not form a crust.",
+   "Make the sauce first so it is ready: cook the shallots in 2 tbsp butter, add the garlic, thyme and tomato paste, then the wine, and reduce it to a quarter cup. Add the broth and reduce again by half, then strain.",
+   "The sauce must be reduced hard, past the point where it looks like wine. Under-reduced red wine sauce tastes thin and acidic, and no amount of butter fixes it.",
+   "Season the steaks heavily and sear them in the oil in a very hot pan, 3 minutes per side, then add the remaining butter and baste 2 minutes, spooning it over continuously.",
+   "Finish in a 400F oven to 125F internal for medium-rare, about 4 minutes, and rest them 8 minutes on a rack. Resting is not optional; cutting early empties the juices onto the board.",
+   "Reheat the strained sauce, whisk in the cold butter off the heat so it emulsifies glossily, correct with the sugar and salt, and spoon over the steaks with chives."
+  ],
+  "diet": {
+   "vegetarian": false,
+   "vegan": false,
+   "pescatarian": false,
+   "glutenFree": true,
+   "glutenFreeAdaptable": false,
+   "dairyFree": false,
+   "nutFree": true,
+   "eggFree": true
+  },
+  "allergens": [
+   "dairy",
+   "sulfites"
+  ],
+  "gmo": {
+   "risk": "high",
+   "sources": [
+    "seed-oil",
+    "grain-fed-meat",
+    "grain-fed-dairy",
+    "sugar-beet"
+   ]
+  },
+  "nutrition": {
+   "calories": 782,
+   "proteinG": 52,
+   "carbsG": 9,
+   "fiberG": 1,
+   "sugarG": 4,
+   "fatG": 58,
+   "satFatG": 28,
+   "sodiumMg": 1280,
+   "cholesterolMg": 212
+  },
+  "tags": [
+   "steak",
+   "restaurant-style",
+   "date-night",
+   "special-occasion",
+   "gluten-free",
+   "high-protein",
+   "low-carb",
+   "technique",
+   "entertaining"
+  ],
+  "image": {
+   "file": "filet-mignon.jpg",
+   "wikipedia": "Filet mignon"
+  }
+ },
+ {
+  "id": "ch-wp-011",
+  "slug": "wp-chicken-schnitzel-sandwich",
+  "title": "Chicken Schnitzel Sandwich",
+  "genre": "international",
+  "subgenre": "sandwiches",
+  "chef": {
+   "name": "Wolfgang Puck",
+   "slug": "wolfgang-puck"
+  },
+  "description": "Crisp breaded chicken on a roll with slaw and lemon aioli.",
+  "difficulty": "beginner",
+  "easeScore": 9,
+  "spiceScore": 2,
+  "popularity": 8,
+  "pantryScore": 8,
+  "servings": 4,
+  "prepMin": 20,
+  "cookMin": 20,
+  "totalMin": 40,
+  "equipment": [
+   "stovetop"
+  ],
+  "ingredients": [
+   "4 boneless chicken breasts, halved horizontally",
+   "2 tsp salt",
+   "1 tsp black pepper",
+   "1 cup all-purpose flour",
+   "2 eggs",
+   "2 cups panko breadcrumbs",
+   "1 cup vegetable oil",
+   "3/4 cup mayonnaise",
+   "2 tbsp lemon juice",
+   "1 tbsp lemon zest",
+   "2 cloves garlic, minced",
+   "1 tsp Dijon mustard",
+   "3 cups shredded cabbage",
+   "1 carrot, grated",
+   "2 tbsp red wine vinegar",
+   "4 ciabatta rolls",
+   "1 cup arugula"
+  ],
+  "ingredientKeys": [
+   "chicken-breast",
+   "salt",
+   "black-pepper",
+   "flour",
+   "egg",
+   "panko",
+   "vegetable-oil",
+   "mayonnaise",
+   "lemon-juice",
+   "lemon-zest",
+   "garlic",
+   "dijon-mustard",
+   "cabbage",
+   "carrot",
+   "red-wine-vinegar",
+   "ciabatta-roll",
+   "arugula"
+  ],
+  "specialty": [
+   "panko",
+   "ciabatta-roll",
+   "arugula"
+  ],
+  "steps": [
+   "Halve the breasts horizontally and pound them to an even 1/4 inch. Thin cutlets cook through before the crust burns, which is the only real difficulty here.",
+   "Season, then dredge in flour, beaten egg, and panko. Panko rather than fine breadcrumbs gives a shaggier, crisper coating that stays crunchy under the slaw.",
+   "Fry in 1/4 inch of 350F oil, 3 minutes per side, until deep golden. Drain on a rack.",
+   "Whisk the mayonnaise with the lemon juice, zest, garlic and Dijon into an aioli.",
+   "Toss the cabbage and carrot with the vinegar, salt and 2 tbsp of the aioli, then squeeze out any excess liquid so the sandwich does not go soggy.",
+   "Spread aioli on both cut sides of each roll, add the cutlet, the slaw and the arugula, and press the sandwich closed firmly before cutting."
+  ],
+  "diet": {
+   "vegetarian": false,
+   "vegan": false,
+   "pescatarian": false,
+   "glutenFree": false,
+   "glutenFreeAdaptable": false,
+   "dairyFree": true,
+   "nutFree": true,
+   "eggFree": false
+  },
+  "allergens": [
+   "gluten",
+   "egg"
+  ],
+  "gmo": {
+   "risk": "high",
+   "sources": [
+    "seed-oil",
+    "processed-bread",
+    "grain-fed-meat"
+   ]
+  },
+  "nutrition": {
+   "calories": 882,
+   "proteinG": 52,
+   "carbsG": 72,
+   "fiberG": 5,
+   "sugarG": 7,
+   "fatG": 42,
+   "satFatG": 7,
+   "sodiumMg": 1680,
+   "cholesterolMg": 198
+  },
+  "tags": [
+   "sandwich",
+   "lunch",
+   "family",
+   "quick",
+   "high-protein",
+   "dairy-free",
+   "weeknight",
+   "easy",
+   "crowd-pleaser"
+  ],
+  "image": {
+   "file": "chicken-schnitzel-sandwich.jpg",
+   "wikipedia": "Schnitzel"
+  }
+ },
+ {
+  "id": "ch-wp-012",
+  "slug": "wp-seared-scallops-corn",
+  "title": "Seared Scallops with Corn",
+  "genre": "international",
+  "subgenre": "seafood",
+  "chef": {
+   "name": "Wolfgang Puck",
+   "slug": "wolfgang-puck"
+  },
+  "description": "Deeply browned scallops over a sweet corn and bacon saute.",
+  "difficulty": "intermediate",
+  "easeScore": 7,
+  "spiceScore": 2,
+  "popularity": 8,
+  "pantryScore": 6,
+  "servings": 4,
+  "prepMin": 20,
+  "cookMin": 25,
+  "totalMin": 45,
+  "equipment": [
+   "stovetop"
+  ],
+  "ingredients": [
+   "1 1/2 lb large dry-pack scallops",
+   "2 tsp salt",
+   "1 tsp white pepper",
+   "2 tbsp grapeseed oil",
+   "4 oz bacon, diced",
+   "4 ears corn, kernels cut off",
+   "1 shallot, minced",
+   "2 cloves garlic, minced",
+   "1/2 cup heavy cream",
+   "4 tbsp butter",
+   "2 tbsp lemon juice",
+   "1/4 cup chopped basil",
+   "1/4 tsp cayenne pepper",
+   "2 tbsp chopped chives"
+  ],
+  "ingredientKeys": [
+   "scallops",
+   "salt",
+   "white-pepper",
+   "grapeseed-oil",
+   "bacon",
+   "corn",
+   "shallot",
+   "garlic",
+   "heavy-cream",
+   "butter",
+   "lemon-juice",
+   "fresh-basil",
+   "cayenne",
+   "chives"
+  ],
+  "specialty": [
+   "scallops",
+   "white-pepper",
+   "grapeseed-oil",
+   "shallot"
+  ],
+  "steps": [
+   "Buy dry-pack scallops. Wet-pack scallops are treated with phosphate solution, hold water, and will steam grey in the pan no matter how hot it is.",
+   "Pull off the small tough side muscle from each scallop, then blot them completely dry and leave them uncovered on paper towels 15 minutes.",
+   "Render the bacon, then cook the corn, shallot and garlic in the fat 6 minutes. Add the cream and reduce 3 minutes, then finish with the lemon juice, basil and cayenne. Keep warm.",
+   "Get the pan very hot with the grapeseed oil - it has a higher smoke point than olive oil and that matters here.",
+   "Season the scallops and lay them in without crowding. Do not touch them for 2 minutes. Then flip, add the butter, and cook 1 minute more, basting.",
+   "They should be deep brown on one side and barely translucent in the center. Scallops go from perfect to rubbery in under a minute, so pull them early. Serve on the corn with chives."
+  ],
+  "diet": {
+   "vegetarian": false,
+   "vegan": false,
+   "pescatarian": true,
+   "glutenFree": true,
+   "glutenFreeAdaptable": false,
+   "dairyFree": false,
+   "nutFree": true,
+   "eggFree": true
+  },
+  "allergens": [
+   "shellfish",
+   "dairy"
+  ],
+  "gmo": {
+   "risk": "high",
+   "sources": [
+    "corn",
+    "grain-fed-meat",
+    "grain-fed-dairy",
+    "seed-oil"
+   ]
+  },
+  "nutrition": {
+   "calories": 612,
+   "proteinG": 38,
+   "carbsG": 32,
+   "fiberG": 4,
+   "sugarG": 11,
+   "fatG": 38,
+   "satFatG": 18,
+   "sodiumMg": 1480,
+   "cholesterolMg": 138
+  },
+  "tags": [
+   "seafood",
+   "restaurant-style",
+   "summer",
+   "gluten-free",
+   "pescatarian",
+   "technique",
+   "date-night",
+   "high-protein",
+   "entertaining"
+  ],
+  "image": {
+   "file": "seared-scallops.jpg",
+   "wikipedia": "Scallop"
+  }
+ },
+ {
+  "id": "ch-wp-013",
+  "slug": "wp-cauliflower-steak",
+  "title": "Roasted Cauliflower Steak",
+  "genre": "international",
+  "subgenre": "vegetables",
+  "chef": {
+   "name": "Wolfgang Puck",
+   "slug": "wolfgang-puck"
+  },
+  "description": "Thick cauliflower slabs seared and roasted, with capers and raisins.",
+  "difficulty": "beginner",
+  "easeScore": 9,
+  "spiceScore": 3,
+  "popularity": 7,
+  "pantryScore": 7,
+  "servings": 4,
+  "prepMin": 15,
+  "cookMin": 35,
+  "totalMin": 50,
+  "equipment": [
+   "stovetop",
+   "oven"
+  ],
+  "ingredients": [
+   "2 large heads cauliflower",
+   "1/3 cup olive oil",
+   "2 tsp salt",
+   "1 tsp black pepper",
+   "1 tsp smoked paprika",
+   "4 cloves garlic, sliced",
+   "1/3 cup capers, rinsed",
+   "1/3 cup golden raisins",
+   "1/4 cup pine nuts",
+   "3 tbsp butter",
+   "2 tbsp lemon juice",
+   "1/2 tsp red pepper flakes",
+   "1/3 cup chopped parsley",
+   "1/4 cup grated Parmesan"
+  ],
+  "ingredientKeys": [
+   "cauliflower",
+   "olive-oil",
+   "salt",
+   "black-pepper",
+   "smoked-paprika",
+   "garlic",
+   "capers",
+   "golden-raisins",
+   "pine-nuts",
+   "butter",
+   "lemon-juice",
+   "red-pepper-flakes",
+   "parsley",
+   "parmesan"
+  ],
+  "specialty": [
+   "cauliflower",
+   "smoked-paprika",
+   "capers",
+   "golden-raisins",
+   "pine-nuts"
+  ],
+  "steps": [
+   "Trim the leaves but keep the core intact, then cut each head through the stem into 1 1/4-inch slabs. Only the two center slices from each head hold together as steaks - the outer pieces fall into florets, so roast those alongside.",
+   "Brush the slabs with oil and season with salt, pepper and paprika.",
+   "Sear them in a hot ovenproof skillet 4 minutes per side until deeply browned. That browning is where all the flavor is; pale cauliflower tastes of nothing.",
+   "Transfer the pan to a 425F oven for 15-18 minutes until a knife slides through the stem easily.",
+   "Meanwhile toast the pine nuts in the butter, then add the garlic, capers, raisins and pepper flakes and cook 2 minutes. Add the lemon juice off the heat.",
+   "Spoon the caper-raisin butter over the steaks and finish with parsley and Parmesan. The sweet-salty combination is what keeps this from being just roasted vegetables."
+  ],
+  "diet": {
+   "vegetarian": true,
+   "vegan": false,
+   "pescatarian": true,
+   "glutenFree": true,
+   "glutenFreeAdaptable": false,
+   "dairyFree": false,
+   "nutFree": false,
+   "eggFree": true
+  },
+  "allergens": [
+   "dairy",
+   "tree-nut"
+  ],
+  "gmo": {
+   "risk": "low",
+   "sources": [
+    "grain-fed-dairy"
+   ]
+  },
+  "nutrition": {
+   "calories": 382,
+   "proteinG": 11,
+   "carbsG": 32,
+   "fiberG": 8,
+   "sugarG": 16,
+   "fatG": 28,
+   "satFatG": 8,
+   "sodiumMg": 1180,
+   "cholesterolMg": 28
+  },
+  "tags": [
+   "vegetarian",
+   "gluten-free",
+   "side",
+   "main",
+   "healthy",
+   "high-fiber",
+   "restaurant-style",
+   "low-carb",
+   "easy",
+   "technique"
+  ],
+  "image": {
+   "file": "cauliflower-steak.jpg",
+   "wikipedia": "Cauliflower"
+  }
+ },
+ {
+  "id": "ch-wp-014",
+  "slug": "wp-spatzle",
+  "title": "Buttered Spatzle",
+  "genre": "international",
+  "subgenre": "sides",
+  "chef": {
+   "name": "Wolfgang Puck",
+   "slug": "wolfgang-puck"
+  },
+  "description": "Soft Austrian egg dumplings pushed through a colander and fried in butter.",
+  "difficulty": "beginner",
+  "easeScore": 8,
+  "spiceScore": 1,
+  "popularity": 7,
+  "pantryScore": 9,
+  "servings": 6,
+  "prepMin": 15,
+  "cookMin": 25,
+  "totalMin": 40,
+  "equipment": [
+   "stovetop"
+  ],
+  "ingredients": [
+   "2 1/2 cups all-purpose flour",
+   "4 eggs",
+   "3/4 cup milk",
+   "1 1/2 tsp salt",
+   "1/4 tsp ground nutmeg",
+   "1/2 tsp white pepper",
+   "5 tbsp butter",
+   "1/3 cup chopped parsley",
+   "1/4 cup chopped chives"
+  ],
+  "ingredientKeys": [
+   "flour",
+   "egg",
+   "milk",
+   "salt",
+   "nutmeg",
+   "white-pepper",
+   "butter",
+   "parsley",
+   "chives"
+  ],
+  "specialty": [
+   "white-pepper"
+  ],
+  "steps": [
+   "Beat the flour, eggs, milk, salt, nutmeg and white pepper into a thick batter and beat it hard for 2 minutes until it is elastic and pulls in strands off the spoon. That beating gives spatzle its chew.",
+   "Rest the batter 15 minutes.",
+   "Bring a large pot of salted water to a gentle boil, not a hard one, which would tear the dumplings apart.",
+   "Press the batter through a colander with large holes or a spatzle maker directly over the water, working in batches so you do not crowd the pot.",
+   "They are done about 30 seconds after they float. Lift them out with a spider into cold water, then drain well.",
+   "Fry the drained spatzle in the butter over medium-high heat 5-6 minutes, without stirring much, until some of them crisp and brown. Toss with the parsley and chives. They can be boiled ahead and fried at the last minute."
+  ],
+  "diet": {
+   "vegetarian": true,
+   "vegan": false,
+   "pescatarian": true,
+   "glutenFree": false,
+   "glutenFreeAdaptable": false,
+   "dairyFree": false,
+   "nutFree": true,
+   "eggFree": false
+  },
+  "allergens": [
+   "gluten",
+   "dairy",
+   "egg"
+  ],
+  "gmo": {
+   "risk": "low",
+   "sources": [
+    "grain-fed-dairy"
+   ]
+  },
+  "nutrition": {
+   "calories": 382,
+   "proteinG": 12,
+   "carbsG": 48,
+   "fiberG": 2,
+   "sugarG": 3,
+   "fatG": 15,
+   "satFatG": 8,
+   "sodiumMg": 680,
+   "cholesterolMg": 152
+  },
+  "tags": [
+   "side",
+   "austrian",
+   "vegetarian",
+   "budget",
+   "pantry",
+   "technique",
+   "comfort",
+   "family",
+   "classic",
+   "easy"
+  ],
+  "image": {
+   "file": "spatzle.jpg",
+   "wikipedia": "Spätzle"
+  }
+ },
+ {
+  "id": "ch-wp-015",
+  "slug": "wp-apple-strudel",
+  "title": "Apple Strudel",
+  "genre": "international",
+  "subgenre": "desserts",
+  "chef": {
+   "name": "Wolfgang Puck",
+   "slug": "wolfgang-puck"
+  },
+  "description": "Apples, raisins and cinnamon rolled in paper-thin pastry.",
+  "difficulty": "advanced",
+  "easeScore": 4,
+  "spiceScore": 0,
+  "popularity": 8,
+  "pantryScore": 7,
+  "servings": 10,
+  "prepMin": 50,
+  "cookMin": 115,
+  "totalMin": 165,
+  "equipment": [
+   "oven",
+   "stovetop"
+  ],
+  "ingredients": [
+   "2 cups bread flour",
+   "1/2 tsp salt",
+   "1/2 cup warm water",
+   "3 tbsp vegetable oil",
+   "1 egg",
+   "3 lb Granny Smith apples, peeled and thinly sliced",
+   "3/4 cup sugar",
+   "2 tsp ground cinnamon",
+   "1/2 cup raisins",
+   "1/2 cup chopped walnuts",
+   "1 cup fresh breadcrumbs",
+   "3/4 cup melted butter",
+   "2 tbsp lemon juice",
+   "2 tbsp powdered sugar",
+   "1 cup whipped cream"
+  ],
+  "ingredientKeys": [
+   "bread-flour",
+   "salt",
+   "water",
+   "vegetable-oil",
+   "egg",
+   "granny-smith-apple",
+   "sugar",
+   "cinnamon",
+   "raisins",
+   "walnuts",
+   "breadcrumbs",
+   "butter",
+   "lemon-juice",
+   "powdered-sugar",
+   "whipped-cream"
+  ],
+  "specialty": [
+   "bread-flour",
+   "granny-smith-apple",
+   "raisins",
+   "walnuts",
+   "whipped-cream"
+  ],
+  "steps": [
+   "Knead the flour, salt, water, oil and egg for 10 minutes until the dough is very smooth and silky, then oil it, cover, and rest it 1 hour at room temperature. The long rest is what makes the gluten extensible enough to stretch.",
+   "Toss the apples with the sugar, cinnamon, raisins, walnuts and lemon juice.",
+   "Toast the breadcrumbs in 1/4 cup of the butter until golden. These go down before the apples and absorb the juice - skip them and the bottom of the strudel turns to paste.",
+   "Stretch the dough on a floured cloth, working from underneath with the backs of your hands, until it is thin enough to read newsprint through. Patch any tears with trimmings.",
+   "Brush with butter, scatter the crumbs over the lower third, mound the apples on them, and use the cloth to roll it up, tucking in the ends.",
+   "Lift it onto a lined sheet seam-side down, brush with butter, and bake at 375F for 45-50 minutes, brushing twice more. Cool 20 minutes, dust with powdered sugar, and serve warm with whipped cream."
+  ],
+  "diet": {
+   "vegetarian": true,
+   "vegan": false,
+   "pescatarian": true,
+   "glutenFree": false,
+   "glutenFreeAdaptable": false,
+   "dairyFree": false,
+   "nutFree": false,
+   "eggFree": false
+  },
+  "allergens": [
+   "gluten",
+   "dairy",
+   "egg",
+   "tree-nut"
+  ],
+  "gmo": {
+   "risk": "high",
+   "sources": [
+    "seed-oil",
+    "sugar-beet",
+    "processed-bread",
+    "grain-fed-dairy"
+   ]
+  },
+  "nutrition": {
+   "calories": 512,
+   "proteinG": 7,
+   "carbsG": 68,
+   "fiberG": 5,
+   "sugarG": 38,
+   "fatG": 24,
+   "satFatG": 12,
+   "sodiumMg": 280,
+   "cholesterolMg": 62
+  },
+  "tags": [
+   "dessert",
+   "austrian",
+   "project",
+   "technique",
+   "baking",
+   "holiday",
+   "classic",
+   "iconic",
+   "signature",
+   "entertaining"
+  ],
+  "image": {
+   "file": "apple-strudel.jpg",
+   "wikipedia": "Apple strudel"
+  }
+ },
+ {
+  "id": "ch-wp-016",
+  "slug": "wp-lobster-club-sandwich",
+  "title": "Lobster Club Sandwich",
+  "genre": "international",
+  "subgenre": "sandwiches",
+  "chef": {
+   "name": "Wolfgang Puck",
+   "slug": "wolfgang-puck"
+  },
+  "description": "Poached lobster, bacon and tarragon aioli on toasted brioche.",
+  "difficulty": "intermediate",
+  "easeScore": 7,
+  "spiceScore": 2,
+  "popularity": 7,
+  "pantryScore": 3,
+  "servings": 4,
+  "prepMin": 30,
+  "cookMin": 25,
+  "totalMin": 55,
+  "equipment": [
+   "stovetop"
+  ],
+  "ingredients": [
+   "2 lobsters (1 1/2 lb each)",
+   "2 tbsp salt, for the water",
+   "3/4 cup mayonnaise",
+   "2 tbsp chopped fresh tarragon",
+   "2 tbsp lemon juice",
+   "1 tsp lemon zest",
+   "1 tsp Dijon mustard",
+   "1/4 tsp cayenne pepper",
+   "8 slices bacon",
+   "12 slices brioche bread",
+   "4 tbsp softened butter",
+   "2 tomatoes, sliced",
+   "4 leaves butter lettuce",
+   "1 avocado, sliced",
+   "1 tsp salt",
+   "1/2 tsp black pepper"
+  ],
+  "ingredientKeys": [
+   "lobster",
+   "salt",
+   "mayonnaise",
+   "fresh-tarragon",
+   "lemon-juice",
+   "lemon-zest",
+   "dijon-mustard",
+   "cayenne",
+   "bacon",
+   "brioche",
+   "butter",
+   "tomato",
+   "butter-lettuce",
+   "avocado",
+   "salt",
+   "black-pepper"
+  ],
+  "specialty": [
+   "lobster",
+   "fresh-tarragon",
+   "brioche",
+   "butter-lettuce",
+   "avocado"
+  ],
+  "steps": [
+   "Boil the lobsters in heavily salted water 8 minutes, then plunge them into ice water. Pulling them at 8 minutes rather than the usual 12 leaves the tail meat tender rather than fibrous.",
+   "Crack and pick the meat from the tails and claws and cut it into large chunks - big enough to recognize.",
+   "Whisk the mayonnaise with the tarragon, lemon juice, zest, Dijon and cayenne. Fold just enough of it into the lobster to coat it; the rest is for the bread.",
+   "Cook the bacon until crisp and drain it.",
+   "Butter and toast all twelve slices of brioche on both sides. Brioche is soft and sweet and must be toasted firm or the double-decker collapses.",
+   "Build each sandwich in three layers: aioli, lobster, lettuce; then a middle slice, aioli, bacon, tomato, avocado; then the top. Season the tomato and avocado as you go, skewer with picks, and cut into quarters."
+  ],
+  "diet": {
+   "vegetarian": false,
+   "vegan": false,
+   "pescatarian": false,
+   "glutenFree": false,
+   "glutenFreeAdaptable": false,
+   "dairyFree": false,
+   "nutFree": true,
+   "eggFree": false
+  },
+  "allergens": [
+   "shellfish",
+   "gluten",
+   "dairy",
+   "egg"
+  ],
+  "gmo": {
+   "risk": "high",
+   "sources": [
+    "seed-oil",
+    "processed-bread",
+    "grain-fed-meat",
+    "grain-fed-dairy"
+   ]
+  },
+  "nutrition": {
+   "calories": 882,
+   "proteinG": 42,
+   "carbsG": 52,
+   "fiberG": 6,
+   "sugarG": 11,
+   "fatG": 58,
+   "satFatG": 18,
+   "sodiumMg": 1880,
+   "cholesterolMg": 258
+  },
+  "tags": [
+   "sandwich",
+   "luxury",
+   "restaurant-style",
+   "lunch",
+   "entertaining",
+   "high-protein",
+   "signature",
+   "special-occasion"
+  ],
+  "image": {
+   "file": "lobster-roll.jpg",
+   "wikipedia": "Club sandwich"
+  }
+ },
+ {
+  "id": "ch-wp-017",
+  "slug": "wp-pumpkin-ravioli",
+  "title": "Pumpkin Ravioli with Sage Butter",
+  "genre": "italian",
+  "subgenre": "pasta",
+  "chef": {
+   "name": "Wolfgang Puck",
+   "slug": "wolfgang-puck"
+  },
+  "description": "Fresh pasta filled with spiced pumpkin, sauced with brown butter and sage.",
+  "difficulty": "advanced",
+  "easeScore": 4,
+  "spiceScore": 1,
+  "popularity": 7,
+  "pantryScore": 5,
+  "servings": 6,
+  "prepMin": 60,
+  "cookMin": 45,
+  "totalMin": 105,
+  "equipment": [
+   "oven",
+   "stovetop"
+  ],
+  "ingredients": [
+   "3 cups all-purpose flour",
+   "4 eggs",
+   "2 egg yolks",
+   "1 tsp salt",
+   "1 tbsp olive oil",
+   "2 lb pumpkin or kabocha squash",
+   "1 cup ricotta cheese",
+   "3/4 cup grated Parmesan",
+   "1/4 tsp ground nutmeg",
+   "1/4 tsp ground cinnamon",
+   "1 1/2 tsp salt",
+   "1/2 tsp white pepper",
+   "1/3 cup fresh breadcrumbs",
+   "1 egg, beaten, for sealing",
+   "8 tbsp butter",
+   "20 fresh sage leaves",
+   "1/3 cup chopped hazelnuts",
+   "1 tbsp lemon juice"
+  ],
+  "ingredientKeys": [
+   "flour",
+   "egg",
+   "egg-yolk",
+   "salt",
+   "olive-oil",
+   "pumpkin",
+   "ricotta",
+   "parmesan",
+   "nutmeg",
+   "cinnamon",
+   "salt",
+   "white-pepper",
+   "breadcrumbs",
+   "egg",
+   "butter",
+   "fresh-sage",
+   "hazelnuts",
+   "lemon-juice"
+  ],
+  "specialty": [
+   "pumpkin",
+   "ricotta",
+   "white-pepper",
+   "fresh-sage",
+   "hazelnuts"
+  ],
+  "steps": [
+   "Make the pasta: mound the flour, add the eggs, yolks, salt and oil, and work it into a stiff dough. Knead 10 minutes until smooth, wrap, and rest 1 hour. The rest matters more than the kneading.",
+   "Roast the squash cut-side down at 400F for 40 minutes, then scoop out the flesh and let it drain in a sieve 20 minutes. Watery filling bursts ravioli in the pot.",
+   "Mash the drained squash with the ricotta, Parmesan, nutmeg, cinnamon, salt, white pepper and breadcrumbs. The crumbs absorb the last of the moisture.",
+   "Roll the dough in sheets thin enough to see your hand through, working with one piece at a time and keeping the rest covered so it does not dry out.",
+   "Pipe teaspoons of filling in rows, brush around each with beaten egg, lay a second sheet over, and press out all the air from the center outward before cutting. Trapped air is what makes ravioli split.",
+   "Boil in batches 3-4 minutes. Meanwhile brown the butter with the sage until the milk solids are nutty and golden and the sage is crisp, add the hazelnuts and lemon juice, and spoon over the drained ravioli."
+  ],
+  "diet": {
+   "vegetarian": true,
+   "vegan": false,
+   "pescatarian": true,
+   "glutenFree": false,
+   "glutenFreeAdaptable": false,
+   "dairyFree": false,
+   "nutFree": false,
+   "eggFree": false
+  },
+  "allergens": [
+   "gluten",
+   "dairy",
+   "egg",
+   "tree-nut"
+  ],
+  "gmo": {
+   "risk": "moderate",
+   "sources": [
+    "grain-fed-dairy",
+    "processed-bread"
+   ]
+  },
+  "nutrition": {
+   "calories": 712,
+   "proteinG": 28,
+   "carbsG": 68,
+   "fiberG": 5,
+   "sugarG": 7,
+   "fatG": 38,
+   "satFatG": 18,
+   "sodiumMg": 1180,
+   "cholesterolMg": 288
+  },
+  "tags": [
+   "italian",
+   "project",
+   "technique",
+   "vegetarian",
+   "fall",
+   "thanksgiving",
+   "restaurant-style",
+   "entertaining",
+   "special-occasion"
+  ],
+  "image": {
+   "file": "ravioli.jpg",
+   "wikipedia": "Ravioli"
+  }
+ },
+ {
+  "id": "ch-wp-018",
+  "slug": "wp-beet-goat-cheese-salad",
+  "title": "Beet and Goat Cheese Salad",
+  "genre": "international",
+  "subgenre": "salads",
+  "chef": {
+   "name": "Wolfgang Puck",
+   "slug": "wolfgang-puck"
+  },
+  "description": "Roasted beets with whipped goat cheese, walnuts and sherry vinaigrette.",
+  "difficulty": "beginner",
+  "easeScore": 9,
+  "spiceScore": 1,
+  "popularity": 8,
+  "pantryScore": 6,
+  "servings": 6,
+  "prepMin": 20,
+  "cookMin": 70,
+  "totalMin": 90,
+  "equipment": [
+   "oven",
+   "no-cook"
+  ],
+  "ingredients": [
+   "2 lb mixed beets",
+   "3 tbsp olive oil",
+   "2 tsp salt",
+   "8 oz goat cheese",
+   "1/4 cup heavy cream",
+   "1 tbsp honey",
+   "1/4 cup sherry vinegar",
+   "1 tbsp Dijon mustard",
+   "1 shallot, minced",
+   "2/3 cup olive oil",
+   "1 tsp salt",
+   "1/2 tsp black pepper",
+   "3/4 cup walnuts, toasted",
+   "5 oz arugula",
+   "2 tbsp chopped fresh tarragon",
+   "1 orange, segmented"
+  ],
+  "ingredientKeys": [
+   "beets",
+   "olive-oil",
+   "salt",
+   "goat-cheese",
+   "heavy-cream",
+   "honey",
+   "sherry-vinegar",
+   "dijon-mustard",
+   "shallot",
+   "olive-oil",
+   "salt",
+   "black-pepper",
+   "walnuts",
+   "arugula",
+   "fresh-tarragon",
+   "orange"
+  ],
+  "specialty": [
+   "beets",
+   "goat-cheese",
+   "sherry-vinegar",
+   "shallot",
+   "walnuts",
+   "arugula",
+   "fresh-tarragon"
+  ],
+  "steps": [
+   "Wrap the beets individually in foil with a little oil and salt and roast at 400F for 60-70 minutes, until a skewer slides in with no resistance. Roasting concentrates them; boiling leaches the sugar into the water.",
+   "Roast different colors in separate packets, or the red will stain everything else.",
+   "Peel them while still warm - the skins slip off easily then and fight you once cold. Cut into wedges.",
+   "Whip the goat cheese with the cream and honey until light and spreadable, which takes a minute in a food processor.",
+   "Whisk the sherry vinegar, Dijon, shallot, salt and pepper, then stream in the olive oil. Dress the warm beets and let them sit 15 minutes to absorb it.",
+   "Spread the whipped goat cheese on the plates, pile the beets on top, and finish with the arugula, walnuts, orange segments and tarragon."
+  ],
+  "diet": {
+   "vegetarian": true,
+   "vegan": false,
+   "pescatarian": true,
+   "glutenFree": true,
+   "glutenFreeAdaptable": false,
+   "dairyFree": false,
+   "nutFree": false,
+   "eggFree": true
+  },
+  "allergens": [
+   "dairy",
+   "tree-nut",
+   "sulfites"
+  ],
+  "gmo": {
+   "risk": "low",
+   "sources": [
+    "grain-fed-dairy"
+   ]
+  },
+  "nutrition": {
+   "calories": 512,
+   "proteinG": 14,
+   "carbsG": 28,
+   "fiberG": 6,
+   "sugarG": 20,
+   "fatG": 40,
+   "satFatG": 11,
+   "sodiumMg": 1180,
+   "cholesterolMg": 32
+  },
+  "tags": [
+   "salad",
+   "vegetarian",
+   "gluten-free",
+   "restaurant-style",
+   "healthy",
+   "entertaining",
+   "make-ahead",
+   "fall",
+   "easy"
+  ],
+  "image": {
+   "file": "beet-salad.jpg",
+   "wikipedia": "Beetroot"
+  }
+ },
+ {
+  "id": "ch-wp-019",
+  "slug": "wp-short-ribs-red-wine",
+  "title": "Braised Short Ribs",
+  "genre": "international",
+  "subgenre": "secondi",
+  "chef": {
+   "name": "Wolfgang Puck",
+   "slug": "wolfgang-puck"
+  },
+  "description": "Short ribs braised in red wine until the sauce is glossy and the meat gives.",
+  "difficulty": "intermediate",
+  "easeScore": 7,
+  "spiceScore": 2,
+  "popularity": 9,
+  "pantryScore": 6,
+  "servings": 6,
+  "prepMin": 30,
+  "cookMin": 210,
+  "totalMin": 240,
+  "equipment": [
+   "oven",
+   "stovetop"
+  ],
+  "ingredients": [
+   "6 lb bone-in short ribs",
+   "2 tbsp salt",
+   "1 tbsp black pepper",
+   "1/2 cup all-purpose flour",
+   "1/4 cup vegetable oil",
+   "2 yellow onions, diced",
+   "3 carrots, diced",
+   "3 celery stalks, diced",
+   "1 head garlic, cloves smashed",
+   "1/4 cup tomato paste",
+   "1 bottle (750 ml) dry red wine",
+   "4 cups beef broth",
+   "4 sprigs fresh thyme",
+   "2 bay leaves",
+   "2 star anise",
+   "2 tbsp balsamic vinegar",
+   "1/4 cup chopped parsley",
+   "1 tbsp orange zest"
+  ],
+  "ingredientKeys": [
+   "short-ribs",
+   "salt",
+   "black-pepper",
+   "flour",
+   "vegetable-oil",
+   "yellow-onion",
+   "carrot",
+   "celery",
+   "garlic",
+   "tomato-paste",
+   "red-wine",
+   "beef-broth",
+   "fresh-thyme",
+   "bay-leaf",
+   "star-anise",
+   "balsamic-vinegar",
+   "parsley",
+   "orange-zest"
+  ],
+  "specialty": [
+   "short-ribs",
+   "red-wine",
+   "beef-broth",
+   "fresh-thyme",
+   "star-anise"
+  ],
+  "steps": [
+   "Season the ribs the night before if you can, and dust them with flour just before searing.",
+   "Brown them hard in the oil on every side, in batches, about 12 minutes total. This is the single most important step - the color on the meat becomes the color and depth of the sauce.",
+   "Cook the onions, carrots and celery 10 minutes, then the garlic and tomato paste for 3 minutes until the paste turns brick red.",
+   "Add the whole bottle of wine and reduce it by half. Reducing drives off the alcohol and the raw tannic edge; skipping it leaves the braise harsh.",
+   "Return the ribs with the broth, thyme, bay leaves and star anise - the anise is barely detectable but it rounds out the beef. Liquid should come two thirds up the meat.",
+   "Cover and braise at 325F for 3 hours. Strain the sauce, skim the fat hard, and reduce it until it coats a spoon. Return the ribs to warm through, then finish with the balsamic, parsley and orange zest. Better made a day ahead."
+  ],
+  "diet": {
+   "vegetarian": false,
+   "vegan": false,
+   "pescatarian": false,
+   "glutenFree": false,
+   "glutenFreeAdaptable": true,
+   "dairyFree": true,
+   "nutFree": true,
+   "eggFree": true
+  },
+  "allergens": [
+   "gluten",
+   "sulfites"
+  ],
+  "gmo": {
+   "risk": "high",
+   "sources": [
+    "seed-oil",
+    "grain-fed-meat"
+   ]
+  },
+  "nutrition": {
+   "calories": 882,
+   "proteinG": 62,
+   "carbsG": 22,
+   "fiberG": 3,
+   "sugarG": 9,
+   "fatG": 58,
+   "satFatG": 24,
+   "sodiumMg": 1680,
+   "cholesterolMg": 212
+  },
+  "tags": [
+   "braise",
+   "special-occasion",
+   "make-ahead",
+   "dairy-free",
+   "high-protein",
+   "winter",
+   "entertaining",
+   "restaurant-style",
+   "technique",
+   "one-pot"
+  ],
+  "image": {
+   "file": "braised-short-ribs.jpg",
+   "wikipedia": "Short ribs"
+  }
+ },
+ {
+  "id": "ch-wp-020",
+  "slug": "wp-salmon-mustard-crust",
+  "title": "Salmon with Mustard Crust",
+  "genre": "international",
+  "subgenre": "seafood",
+  "chef": {
+   "name": "Wolfgang Puck",
+   "slug": "wolfgang-puck"
+  },
+  "description": "Salmon fillets under a mustard, herb and breadcrumb crust.",
+  "difficulty": "beginner",
+  "easeScore": 9,
+  "spiceScore": 2,
+  "popularity": 8,
+  "pantryScore": 7,
+  "servings": 4,
+  "prepMin": 15,
+  "cookMin": 20,
+  "totalMin": 35,
+  "equipment": [
+   "oven"
+  ],
+  "ingredients": [
+   "4 salmon fillets (6 oz each), skin removed",
+   "1 1/2 tsp salt",
+   "1/2 tsp black pepper",
+   "1/4 cup Dijon mustard",
+   "2 tbsp whole-grain mustard",
+   "1 tbsp honey",
+   "1 cup panko breadcrumbs",
+   "3 tbsp melted butter",
+   "2 tbsp chopped fresh dill",
+   "2 tbsp chopped chives",
+   "1 tbsp lemon zest",
+   "2 cloves garlic, minced",
+   "2 tbsp lemon juice"
+  ],
+  "ingredientKeys": [
+   "salmon-fillet",
+   "salt",
+   "black-pepper",
+   "dijon-mustard",
+   "whole-grain-mustard",
+   "honey",
+   "panko",
+   "butter",
+   "fresh-dill",
+   "chives",
+   "lemon-zest",
+   "garlic",
+   "lemon-juice"
+  ],
+  "specialty": [
+   "salmon-fillet",
+   "whole-grain-mustard",
+   "panko",
+   "fresh-dill"
+  ],
+  "steps": [
+   "Pat the salmon very dry and season it. Set it on a lined sheet with space between the fillets.",
+   "Mix both mustards with the honey and spread the mixture over the tops and sides of the fish. The mustard is the glue - without it the crumbs slide off in the oven.",
+   "Toss the panko with the melted butter, dill, chives, lemon zest and garlic, then press it onto the mustard in an even layer.",
+   "Pre-moistening the crumbs with butter is what browns them in the short time the salmon needs; dry crumbs come out pale and raw-tasting.",
+   "Roast at 425F for 12-14 minutes, depending on thickness, until the crust is golden and the center reads 125F for medium.",
+   "Rest 3 minutes and squeeze the lemon juice over at the table. If the crust needs more color, 60 seconds under the broiler will do it - watch it closely."
+  ],
+  "diet": {
+   "vegetarian": false,
+   "vegan": false,
+   "pescatarian": true,
+   "glutenFree": false,
+   "glutenFreeAdaptable": true,
+   "dairyFree": false,
+   "nutFree": true,
+   "eggFree": true
+  },
+  "allergens": [
+   "fish",
+   "gluten",
+   "dairy"
+  ],
+  "gmo": {
+   "risk": "moderate",
+   "sources": [
+    "processed-bread",
+    "grain-fed-dairy"
+   ]
+  },
+  "nutrition": {
+   "calories": 512,
+   "proteinG": 42,
+   "carbsG": 22,
+   "fiberG": 2,
+   "sugarG": 7,
+   "fatG": 28,
+   "satFatG": 9,
+   "sodiumMg": 1280,
+   "cholesterolMg": 118
+  },
+  "tags": [
+   "seafood",
+   "quick",
+   "weeknight",
+   "pescatarian",
+   "high-protein",
+   "healthy",
+   "easy",
+   "restaurant-style",
+   "family"
+  ],
+  "image": {
+   "file": "baked-salmon.jpg",
+   "wikipedia": "Salmon as food"
+  }
+ },
+ {
+  "id": "ch-wp-021",
+  "slug": "wp-truffled-mac-cheese",
+  "title": "Truffled Mac and Cheese",
+  "genre": "international",
+  "subgenre": "pasta",
+  "chef": {
+   "name": "Wolfgang Puck",
+   "slug": "wolfgang-puck"
+  },
+  "description": "Baked macaroni with three cheeses, cream and a hit of truffle.",
+  "difficulty": "beginner",
+  "easeScore": 8,
+  "spiceScore": 2,
+  "popularity": 9,
+  "pantryScore": 7,
+  "servings": 8,
+  "prepMin": 20,
+  "cookMin": 45,
+  "totalMin": 65,
+  "equipment": [
+   "stovetop",
+   "oven"
+  ],
+  "ingredients": [
+   "1 lb elbow macaroni",
+   "5 tbsp butter",
+   "1/3 cup all-purpose flour",
+   "4 cups whole milk",
+   "1 cup heavy cream",
+   "2 cups shredded Gruyere",
+   "2 cups shredded sharp cheddar",
+   "1 cup grated Parmesan",
+   "1 tsp Dijon mustard",
+   "1/4 tsp ground nutmeg",
+   "1/2 tsp cayenne pepper",
+   "2 tsp salt",
+   "1 tsp white pepper",
+   "2 tbsp truffle oil",
+   "1/4 cup chopped fresh chives",
+   "1 1/2 cups panko breadcrumbs",
+   "3 tbsp melted butter"
+  ],
+  "ingredientKeys": [
+   "elbow-macaroni",
+   "butter",
+   "flour",
+   "whole-milk",
+   "heavy-cream",
+   "gruyere",
+   "cheddar",
+   "parmesan",
+   "dijon-mustard",
+   "nutmeg",
+   "cayenne",
+   "salt",
+   "white-pepper",
+   "truffle-oil",
+   "chives",
+   "panko",
+   "butter"
+  ],
+  "specialty": [
+   "gruyere",
+   "white-pepper",
+   "truffle-oil",
+   "panko"
+  ],
+  "steps": [
+   "Boil the macaroni 2 minutes short of the package time. It finishes in the oven and fully cooked pasta turns to mush in the sauce.",
+   "Make a roux with the butter and flour, cooking it 2 minutes without browning, then whisk in the milk and cream gradually and simmer until it thickens enough to coat a spoon.",
+   "Take the pot off the heat before adding the cheeses, and add them in handfuls. Cheese added to boiling sauce breaks and goes grainy and oily - this is the step that ruins most mac and cheese.",
+   "Stir in the Dijon, nutmeg, cayenne, salt and white pepper, then the truffle oil off the heat. Truffle oil is volatile; cooked into a hot sauce it loses its aroma entirely.",
+   "Fold in the pasta and the chives and spread it in a buttered baking dish. The sauce should look too loose - it tightens as it bakes.",
+   "Toss the panko with the melted butter, scatter it over, and bake at 375F for 25-30 minutes until bubbling at the edges and golden on top. Rest 10 minutes before serving."
+  ],
+  "diet": {
+   "vegetarian": true,
+   "vegan": false,
+   "pescatarian": true,
+   "glutenFree": false,
+   "glutenFreeAdaptable": false,
+   "dairyFree": false,
+   "nutFree": true,
+   "eggFree": true
+  },
+  "allergens": [
+   "gluten",
+   "dairy"
+  ],
+  "gmo": {
+   "risk": "moderate",
+   "sources": [
+    "grain-fed-dairy",
+    "processed-bread",
+    "processed-cheese"
+   ]
+  },
+  "nutrition": {
+   "calories": 882,
+   "proteinG": 38,
+   "carbsG": 72,
+   "fiberG": 3,
+   "sugarG": 9,
+   "fatG": 52,
+   "satFatG": 30,
+   "sodiumMg": 1480,
+   "cholesterolMg": 148
+  },
+  "tags": [
+   "comfort",
+   "vegetarian",
+   "family",
+   "crowd-pleaser",
+   "make-ahead",
+   "restaurant-style",
+   "holiday",
+   "easy",
+   "indulgent"
+  ],
+  "image": {
+   "file": "mac-and-cheese.jpg",
+   "wikipedia": "Macaroni and cheese"
+  }
+ },
+ {
+  "id": "ch-wp-022",
+  "slug": "wp-gazpacho",
+  "title": "Chilled Gazpacho",
+  "genre": "mediterranean",
+  "subgenre": "soups",
+  "chef": {
+   "name": "Wolfgang Puck",
+   "slug": "wolfgang-puck"
+  },
+  "description": "Raw tomato and cucumber soup, blended cold with sherry vinegar and oil.",
+  "difficulty": "beginner",
+  "easeScore": 10,
+  "spiceScore": 2,
+  "popularity": 7,
+  "pantryScore": 7,
+  "servings": 6,
+  "prepMin": 20,
+  "cookMin": 120,
+  "totalMin": 140,
+  "equipment": [
+   "blender",
+   "no-cook"
+  ],
+  "ingredients": [
+   "3 lb ripe tomatoes, cored",
+   "2 cucumbers, peeled and seeded",
+   "1 red bell pepper, seeded",
+   "1/2 red onion",
+   "3 cloves garlic",
+   "1 cup stale bread, torn",
+   "1/3 cup sherry vinegar",
+   "2/3 cup olive oil",
+   "2 tsp salt",
+   "1/2 tsp black pepper",
+   "1/4 tsp cayenne pepper",
+   "2 tbsp chopped basil",
+   "1/4 cup diced cucumber, to garnish",
+   "2 tbsp olive oil, to finish"
+  ],
+  "ingredientKeys": [
+   "tomato",
+   "cucumber",
+   "red-bell-pepper",
+   "red-onion",
+   "garlic",
+   "stale-bread",
+   "sherry-vinegar",
+   "olive-oil",
+   "salt",
+   "black-pepper",
+   "cayenne",
+   "fresh-basil",
+   "cucumber",
+   "olive-oil"
+  ],
+  "specialty": [
+   "sherry-vinegar",
+   "stale-bread"
+  ],
+  "steps": [
+   "This soup is only as good as the tomatoes. Use ripe summer tomatoes at room temperature - refrigerated or out-of-season ones make a thin, sour soup no seasoning can save.",
+   "Soak the torn bread in the sherry vinegar and a splash of water 10 minutes. The bread is what gives gazpacho its body and pale color rather than being a thin juice.",
+   "Blend the tomatoes, cucumbers, bell pepper, onion, garlic and soaked bread until completely smooth, working in batches.",
+   "With the blender running, stream in the olive oil slowly. Added this way it emulsifies and the soup turns creamy and opaque; dumped in, it separates.",
+   "Season with the salt, pepper and cayenne, then pass it through a sieve if you want it silky.",
+   "Chill at least 2 hours. Taste again when cold and add more salt and vinegar - cold dulls seasoning noticeably. Serve with the diced cucumber, basil and a thread of olive oil."
+  ],
+  "diet": {
+   "vegetarian": true,
+   "vegan": true,
+   "pescatarian": true,
+   "glutenFree": false,
+   "glutenFreeAdaptable": true,
+   "dairyFree": true,
+   "nutFree": true,
+   "eggFree": true
+  },
+  "allergens": [
+   "gluten",
+   "sulfites"
+  ],
+  "gmo": {
+   "risk": "low",
+   "sources": [
+    "processed-bread"
+   ]
+  },
+  "nutrition": {
+   "calories": 286,
+   "proteinG": 4,
+   "carbsG": 22,
+   "fiberG": 4,
+   "sugarG": 11,
+   "fatG": 22,
+   "satFatG": 3,
+   "sodiumMg": 780,
+   "cholesterolMg": 0
+  },
+  "tags": [
+   "soup",
+   "no-cook",
+   "vegan",
+   "vegetarian",
+   "dairy-free",
+   "summer",
+   "healthy",
+   "make-ahead",
+   "easy",
+   "spanish"
+  ],
+  "image": {
+   "file": "gazpacho.jpg",
+   "wikipedia": "Gazpacho"
+  }
+ },
+ {
+  "id": "ch-wp-023",
+  "slug": "wp-sachertorte",
+  "title": "Sachertorte",
+  "genre": "international",
+  "subgenre": "desserts",
+  "chef": {
+   "name": "Wolfgang Puck",
+   "slug": "wolfgang-puck"
+  },
+  "description": "Dense Viennese chocolate cake with apricot jam and a poured glaze.",
+  "difficulty": "advanced",
+  "easeScore": 4,
+  "spiceScore": 0,
+  "popularity": 8,
+  "pantryScore": 6,
+  "servings": 12,
+  "prepMin": 40,
+  "cookMin": 155,
+  "totalMin": 195,
+  "equipment": [
+   "oven",
+   "stovetop"
+  ],
+  "ingredients": [
+   "7 oz bittersweet chocolate, chopped",
+   "1 cup butter, softened",
+   "1 cup powdered sugar",
+   "6 eggs, separated",
+   "1 tsp vanilla extract",
+   "1/2 cup granulated sugar",
+   "1/4 tsp salt",
+   "1 1/4 cups all-purpose flour",
+   "1 1/4 cups apricot jam",
+   "2 tbsp rum",
+   "8 oz bittersweet chocolate, for the glaze",
+   "1 cup heavy cream",
+   "2 tbsp corn syrup",
+   "1 1/2 cups whipped cream"
+  ],
+  "ingredientKeys": [
+   "bittersweet-chocolate",
+   "butter",
+   "powdered-sugar",
+   "egg",
+   "vanilla-extract",
+   "sugar",
+   "salt",
+   "flour",
+   "apricot-jam",
+   "rum",
+   "bittersweet-chocolate",
+   "heavy-cream",
+   "corn-syrup",
+   "whipped-cream"
+  ],
+  "specialty": [
+   "bittersweet-chocolate",
+   "apricot-jam",
+   "rum",
+   "corn-syrup",
+   "whipped-cream"
+  ],
+  "steps": [
+   "Melt the 7 oz of chocolate and let it cool to barely warm. Hot chocolate added to butter will split the batter.",
+   "Cream the butter and powdered sugar, beat in the yolks one at a time, then the melted chocolate and vanilla.",
+   "Whip the whites with the salt to soft peaks, then add the granulated sugar and whip to firm but not dry peaks. Over-whipped whites break into curds and will not fold in.",
+   "Fold a third of the whites into the batter to loosen it, then alternate the remaining whites with the sifted flour in three additions, folding gently.",
+   "Bake in a buttered, parchment-lined 9-inch pan at 350F for 45-50 minutes. Cool completely, then split it horizontally into two layers.",
+   "Warm the jam with the rum and strain it. Spread it between the layers and over the whole cake, then chill 30 minutes - the jam layer is what keeps the glaze from soaking in. Melt the glaze chocolate with the cream and corn syrup, cool to 90F, and pour it over the chilled cake in one motion, letting it find its own level. Set 2 hours. Serve with whipped cream."
+  ],
+  "diet": {
+   "vegetarian": true,
+   "vegan": false,
+   "pescatarian": true,
+   "glutenFree": false,
+   "glutenFreeAdaptable": false,
+   "dairyFree": false,
+   "nutFree": true,
+   "eggFree": false
+  },
+  "allergens": [
+   "gluten",
+   "dairy",
+   "egg"
+  ],
+  "gmo": {
+   "risk": "high",
+   "sources": [
+    "corn-syrup",
+    "sugar-beet",
+    "grain-fed-dairy"
+   ]
+  },
+  "nutrition": {
+   "calories": 682,
+   "proteinG": 9,
+   "carbsG": 72,
+   "fiberG": 4,
+   "sugarG": 56,
+   "fatG": 42,
+   "satFatG": 24,
+   "sodiumMg": 220,
+   "cholesterolMg": 158
+  },
+  "tags": [
+   "dessert",
+   "austrian",
+   "project",
+   "baking",
+   "technique",
+   "special-occasion",
+   "iconic",
+   "signature",
+   "holiday",
+   "entertaining"
+  ],
+  "image": {
+   "file": "sachertorte.jpg",
+   "wikipedia": "Sachertorte"
+  }
+ },
+ {
+  "id": "ch-wp-024",
+  "slug": "wp-rack-of-lamb-herb-crust",
+  "title": "Rack of Lamb with Herb Crust",
+  "genre": "mediterranean",
+  "subgenre": "secondi",
+  "chef": {
+   "name": "Wolfgang Puck",
+   "slug": "wolfgang-puck"
+  },
+  "description": "Seared rack of lamb coated in mustard and herbed breadcrumbs.",
+  "difficulty": "intermediate",
+  "easeScore": 7,
+  "spiceScore": 2,
+  "popularity": 8,
+  "pantryScore": 6,
+  "servings": 4,
+  "prepMin": 25,
+  "cookMin": 35,
+  "totalMin": 60,
+  "equipment": [
+   "stovetop",
+   "oven"
+  ],
+  "ingredients": [
+   "2 racks of lamb (8 ribs each), frenched",
+   "2 tsp salt",
+   "1 tsp black pepper",
+   "3 tbsp olive oil",
+   "1/4 cup Dijon mustard",
+   "2 cups fresh breadcrumbs",
+   "6 cloves garlic, minced",
+   "1/4 cup chopped parsley",
+   "2 tbsp chopped fresh rosemary",
+   "2 tbsp chopped fresh thyme",
+   "1/2 cup grated Parmesan",
+   "4 tbsp melted butter",
+   "1 tbsp lemon zest",
+   "1/2 cup dry red wine",
+   "1 cup chicken broth"
+  ],
+  "ingredientKeys": [
+   "rack-of-lamb",
+   "salt",
+   "black-pepper",
+   "olive-oil",
+   "dijon-mustard",
+   "breadcrumbs",
+   "garlic",
+   "parsley",
+   "fresh-rosemary",
+   "fresh-thyme",
+   "parmesan",
+   "butter",
+   "lemon-zest",
+   "red-wine",
+   "chicken-broth"
+  ],
+  "specialty": [
+   "rack-of-lamb",
+   "fresh-rosemary",
+   "fresh-thyme",
+   "red-wine"
+  ],
+  "steps": [
+   "Bring the racks to room temperature and score the fat cap in a diamond pattern without cutting into the meat.",
+   "Season heavily and sear them fat-side down in the oil 4 minutes, then briefly on the other sides. Searing before crusting is what renders the fat; a raw fat cap under breadcrumbs stays flabby.",
+   "Pulse or mix the breadcrumbs with the garlic, parsley, rosemary, thyme, Parmesan, melted butter and lemon zest.",
+   "Brush the cooled racks all over with Dijon, then press the crumb mixture onto the fat side in a thick even layer.",
+   "Roast at 400F for 18-22 minutes, to 128F internal for medium-rare. Shield the exposed bones with foil if they start to char.",
+   "Rest 10 minutes before carving between the ribs - lamb this lean loses its juices immediately if cut hot. Deglaze the pan with the wine and broth, reduce, and serve alongside."
+  ],
+  "diet": {
+   "vegetarian": false,
+   "vegan": false,
+   "pescatarian": false,
+   "glutenFree": false,
+   "glutenFreeAdaptable": false,
+   "dairyFree": false,
+   "nutFree": true,
+   "eggFree": true
+  },
+  "allergens": [
+   "gluten",
+   "dairy",
+   "sulfites"
+  ],
+  "gmo": {
+   "risk": "moderate",
+   "sources": [
+    "grain-fed-meat",
+    "processed-bread",
+    "grain-fed-dairy"
+   ]
+  },
+  "nutrition": {
+   "calories": 782,
+   "proteinG": 52,
+   "carbsG": 32,
+   "fiberG": 3,
+   "sugarG": 4,
+   "fatG": 48,
+   "satFatG": 20,
+   "sodiumMg": 1680,
+   "cholesterolMg": 188
+  },
+  "tags": [
+   "special-occasion",
+   "easter",
+   "holiday",
+   "restaurant-style",
+   "high-protein",
+   "technique",
+   "entertaining",
+   "date-night",
+   "signature"
+  ],
+  "image": {
+   "file": "rack-of-lamb.jpg",
+   "wikipedia": "Rack of lamb"
+  }
+ },
+ {
+  "id": "ch-wp-025",
+  "slug": "wp-creamed-spinach",
+  "title": "Creamed Spinach",
+  "genre": "international",
+  "subgenre": "sides",
+  "chef": {
+   "name": "Wolfgang Puck",
+   "slug": "wolfgang-puck"
+  },
+  "description": "Spinach folded into a nutmeg cream sauce with Parmesan.",
+  "difficulty": "beginner",
+  "easeScore": 10,
+  "spiceScore": 1,
+  "popularity": 8,
+  "pantryScore": 8,
+  "servings": 6,
+  "prepMin": 15,
+  "cookMin": 25,
+  "totalMin": 40,
+  "equipment": [
+   "stovetop"
+  ],
+  "ingredients": [
+   "2 lb fresh spinach",
+   "4 tbsp butter",
+   "1 shallot, minced",
+   "4 cloves garlic, minced",
+   "3 tbsp all-purpose flour",
+   "1 1/2 cups whole milk",
+   "3/4 cup heavy cream",
+   "1/2 cup grated Parmesan",
+   "1/2 tsp ground nutmeg",
+   "1 1/2 tsp salt",
+   "1 tsp white pepper",
+   "1 tbsp lemon juice"
+  ],
+  "ingredientKeys": [
+   "fresh-spinach",
+   "butter",
+   "shallot",
+   "garlic",
+   "flour",
+   "whole-milk",
+   "heavy-cream",
+   "parmesan",
+   "nutmeg",
+   "salt",
+   "white-pepper",
+   "lemon-juice"
+  ],
+  "specialty": [
+   "fresh-spinach",
+   "shallot",
+   "white-pepper"
+  ],
+  "steps": [
+   "Wilt the spinach in a dry hot pan in batches, 1-2 minutes each, then transfer it to a colander.",
+   "Squeeze the cooked spinach as hard as you can - a surprising amount of water comes out, and every bit left behind thins the cream sauce into a puddle. Then chop it coarsely.",
+   "Cook the shallot and garlic in the butter 3 minutes, then stir in the flour and cook 2 minutes without letting it brown.",
+   "Whisk in the milk and cream gradually and simmer 5 minutes until thick.",
+   "Take it off the heat to stir in the Parmesan, then the nutmeg, salt and white pepper. Nutmeg with spinach and cream is a classic pairing and it should be noticeable, not hidden.",
+   "Fold in the chopped spinach, warm through for 2 minutes, and finish with the lemon juice. Serve at once."
+  ],
+  "diet": {
+   "vegetarian": true,
+   "vegan": false,
+   "pescatarian": true,
+   "glutenFree": false,
+   "glutenFreeAdaptable": true,
+   "dairyFree": false,
+   "nutFree": true,
+   "eggFree": true
+  },
+  "allergens": [
+   "gluten",
+   "dairy"
+  ],
+  "gmo": {
+   "risk": "low",
+   "sources": [
+    "grain-fed-dairy"
+   ]
+  },
+  "nutrition": {
+   "calories": 286,
+   "proteinG": 11,
+   "carbsG": 16,
+   "fiberG": 4,
+   "sugarG": 7,
+   "fatG": 22,
+   "satFatG": 13,
+   "sodiumMg": 880,
+   "cholesterolMg": 62
+  },
+  "tags": [
+   "side",
+   "vegetarian",
+   "steakhouse",
+   "holiday",
+   "thanksgiving",
+   "quick",
+   "easy",
+   "classic",
+   "family",
+   "comfort"
+  ],
+  "image": {
+   "file": "creamed-spinach.jpg",
+   "wikipedia": "Creamed spinach"
+  }
+ }
+]

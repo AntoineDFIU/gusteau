@@ -1,0 +1,2821 @@
+[
+ {
+  "id": "ch-jp-001",
+  "slug": "jp-country-omelette",
+  "title": "Country Omelette",
+  "genre": "french",
+  "subgenre": "breakfast",
+  "chef": {
+   "name": "Jacques Pepin",
+   "slug": "jacques-pepin"
+  },
+  "description": "A flat, browned omelette with potatoes and herbs, cooked firm.",
+  "difficulty": "beginner",
+  "easeScore": 8,
+  "spiceScore": 0,
+  "popularity": 8,
+  "pantryScore": 10,
+  "servings": 2,
+  "prepMin": 10,
+  "cookMin": 15,
+  "totalMin": 25,
+  "equipment": [
+   "stovetop"
+  ],
+  "ingredients": [
+   "5 eggs",
+   "1 potato, diced small",
+   "4 oz bacon, diced",
+   "1 yellow onion, diced",
+   "2 tbsp butter",
+   "1/2 tsp salt",
+   "1/4 tsp black pepper",
+   "2 tbsp chopped chives",
+   "2 tbsp chopped parsley"
+  ],
+  "ingredientKeys": [
+   "egg",
+   "potato",
+   "bacon",
+   "yellow-onion",
+   "butter",
+   "salt",
+   "black-pepper",
+   "chives",
+   "parsley"
+  ],
+  "specialty": [],
+  "steps": [
+   "There are two kinds of omelette worth knowing. The classic rolled one is pale and creamy; this country version is flat, firm and browned, and it is the one for a filling breakfast.",
+   "Render the bacon in a skillet, then add the diced potato and cook 8 minutes until tender and browned at the edges. Add the onion for 4 minutes.",
+   "Beat the eggs with the salt and pepper for 20 seconds.",
+   "Add the butter to the pan, let it foam, then pour in the eggs over the potato mixture and stir once to distribute.",
+   "Cook over medium heat 4-5 minutes without stirring, until the bottom is set and golden and only the surface is still loose.",
+   "Slide it onto a plate, invert the pan over it and flip it back in to brown the second side for a minute - or finish it under the broiler. Cut in wedges and serve with the herbs."
+  ],
+  "diet": {
+   "vegetarian": false,
+   "vegan": false,
+   "pescatarian": false,
+   "glutenFree": true,
+   "glutenFreeAdaptable": false,
+   "dairyFree": false,
+   "nutFree": true,
+   "eggFree": false
+  },
+  "allergens": [
+   "dairy",
+   "egg"
+  ],
+  "gmo": {
+   "risk": "moderate",
+   "sources": [
+    "grain-fed-meat",
+    "grain-fed-dairy"
+   ]
+  },
+  "nutrition": {
+   "calories": 586,
+   "proteinG": 28,
+   "carbsG": 28,
+   "fiberG": 3,
+   "sugarG": 4,
+   "fatG": 40,
+   "satFatG": 16,
+   "sodiumMg": 1080,
+   "cholesterolMg": 512
+  },
+  "tags": [
+   "french",
+   "breakfast",
+   "technique",
+   "quick",
+   "budget",
+   "gluten-free",
+   "high-protein",
+   "family",
+   "easy"
+  ],
+  "image": {
+   "file": "omelette.jpg",
+   "wikipedia": "Omelette"
+  }
+ },
+ {
+  "id": "ch-jp-002",
+  "slug": "jp-chicken-jardiniere",
+  "title": "Chicken Jardiniere",
+  "genre": "french",
+  "subgenre": "mains",
+  "chef": {
+   "name": "Jacques Pepin",
+   "slug": "jacques-pepin"
+  },
+  "description": "Chicken pieces braised with spring vegetables in one skillet.",
+  "difficulty": "beginner",
+  "easeScore": 9,
+  "spiceScore": 1,
+  "popularity": 7,
+  "pantryScore": 8,
+  "servings": 4,
+  "prepMin": 15,
+  "cookMin": 35,
+  "totalMin": 50,
+  "equipment": [
+   "stovetop"
+  ],
+  "ingredients": [
+   "1 whole chicken (3 1/2 lb), cut in 8 pieces",
+   "2 tsp salt",
+   "1 tsp black pepper",
+   "2 tbsp butter",
+   "1 tbsp olive oil",
+   "1 yellow onion, sliced",
+   "3 carrots, cut in chunks",
+   "1 lb baby potatoes, halved",
+   "4 cloves garlic, smashed",
+   "1 cup chicken broth",
+   "1/2 cup dry white wine",
+   "1 tsp dried thyme",
+   "1 cup frozen peas",
+   "1/3 cup chopped parsley"
+  ],
+  "ingredientKeys": [
+   "whole-chicken",
+   "salt",
+   "black-pepper",
+   "butter",
+   "olive-oil",
+   "yellow-onion",
+   "carrot",
+   "baby-potato",
+   "garlic",
+   "chicken-broth",
+   "white-wine",
+   "dried-thyme",
+   "frozen-peas",
+   "parsley"
+  ],
+  "specialty": [
+   "whole-chicken",
+   "baby-potato",
+   "white-wine"
+  ],
+  "steps": [
+   "Learning to cut up a whole chicken is worth the ten minutes it takes - it costs considerably less than parts and gives you the back and wing tips for stock.",
+   "Pat the pieces dry and season them. Brown them skin-side down in the butter and oil over medium-high heat, 6 minutes, then 3 minutes on the other side.",
+   "Add the onion, carrots, potatoes and garlic around the chicken and cook 5 minutes.",
+   "Add the broth, wine and thyme, cover, and simmer 20-25 minutes until the vegetables are tender and the chicken reads 175F in the thigh.",
+   "Scatter the peas over and cook 3 minutes more.",
+   "Taste the pan juices and season. Serve from the skillet with parsley - this is a complete dinner in one pan."
+  ],
+  "diet": {
+   "vegetarian": false,
+   "vegan": false,
+   "pescatarian": false,
+   "glutenFree": true,
+   "glutenFreeAdaptable": false,
+   "dairyFree": false,
+   "nutFree": true,
+   "eggFree": true
+  },
+  "allergens": [
+   "dairy",
+   "sulfites"
+  ],
+  "gmo": {
+   "risk": "low",
+   "sources": [
+    "grain-fed-meat",
+    "grain-fed-dairy"
+   ]
+  },
+  "nutrition": {
+   "calories": 682,
+   "proteinG": 52,
+   "carbsG": 38,
+   "fiberG": 6,
+   "sugarG": 8,
+   "fatG": 36,
+   "satFatG": 13,
+   "sodiumMg": 1280,
+   "cholesterolMg": 198
+  },
+  "tags": [
+   "french",
+   "one-pan",
+   "weeknight",
+   "family",
+   "gluten-free",
+   "budget",
+   "high-protein",
+   "easy",
+   "spring"
+  ],
+  "image": {
+   "file": "chicken-jardiniere.jpg",
+   "wikipedia": "Chicken as food"
+  }
+ },
+ {
+  "id": "ch-jp-003",
+  "slug": "jp-eggs-jeannette",
+  "title": "Eggs Jeannette",
+  "genre": "french",
+  "subgenre": "appetizers",
+  "chef": {
+   "name": "Jacques Pepin",
+   "slug": "jacques-pepin"
+  },
+  "description": "Halved hard-boiled eggs with the yolks mashed, stuffed back and browned.",
+  "difficulty": "beginner",
+  "easeScore": 9,
+  "spiceScore": 1,
+  "popularity": 7,
+  "pantryScore": 10,
+  "servings": 4,
+  "prepMin": 15,
+  "cookMin": 20,
+  "totalMin": 35,
+  "equipment": [
+   "stovetop"
+  ],
+  "ingredients": [
+   "6 eggs",
+   "2 cloves garlic, minced",
+   "3 tbsp chopped parsley",
+   "2 tbsp whole milk",
+   "1 tsp salt",
+   "1/2 tsp black pepper",
+   "2 tbsp canola oil",
+   "1 tbsp Dijon mustard",
+   "2 tbsp red wine vinegar",
+   "1/4 cup olive oil",
+   "4 cups salad greens"
+  ],
+  "ingredientKeys": [
+   "egg",
+   "garlic",
+   "parsley",
+   "whole-milk",
+   "salt",
+   "black-pepper",
+   "canola-oil",
+   "dijon-mustard",
+   "red-wine-vinegar",
+   "olive-oil",
+   "salad-greens"
+  ],
+  "specialty": [
+   "salad-greens"
+  ],
+  "steps": [
+   "This was his mother's dish, named for her, and it is a good example of making something out of almost nothing.",
+   "Hard-boil the eggs 10 minutes, cool them in ice water, peel and halve them lengthwise.",
+   "Pop the yolks into a bowl and mash them with the garlic, parsley, milk, salt and pepper into a smooth paste.",
+   "Spoon the mixture back into the whites, mounding it up.",
+   "Heat the canola oil in a skillet and set the eggs stuffed-side down. Cook 3-4 minutes over medium heat until the filling is browned and crusted - that browning is the whole point and what separates this from an ordinary deviled egg.",
+   "Whisk any leftover yolk mixture with the Dijon, vinegar and olive oil into a dressing, toss the greens in it, and serve the eggs browned-side up on top."
+  ],
+  "diet": {
+   "vegetarian": true,
+   "vegan": false,
+   "pescatarian": true,
+   "glutenFree": true,
+   "glutenFreeAdaptable": false,
+   "dairyFree": false,
+   "nutFree": true,
+   "eggFree": false
+  },
+  "allergens": [
+   "dairy",
+   "egg",
+   "sulfites"
+  ],
+  "gmo": {
+   "risk": "moderate",
+   "sources": [
+    "seed-oil",
+    "grain-fed-dairy"
+   ]
+  },
+  "nutrition": {
+   "calories": 342,
+   "proteinG": 12,
+   "carbsG": 4,
+   "fiberG": 1,
+   "sugarG": 2,
+   "fatG": 31,
+   "satFatG": 6,
+   "sodiumMg": 680,
+   "cholesterolMg": 372
+  },
+  "tags": [
+   "french",
+   "appetizer",
+   "technique",
+   "budget",
+   "gluten-free",
+   "vegetarian",
+   "quick",
+   "classic",
+   "easy"
+  ],
+  "image": {
+   "file": "deviled-eggs.jpg",
+   "wikipedia": "Stuffed egg"
+  }
+ },
+ {
+  "id": "ch-jp-004",
+  "slug": "jp-quick-roast-chicken",
+  "title": "Quick Roast Chicken",
+  "genre": "french",
+  "subgenre": "mains",
+  "chef": {
+   "name": "Jacques Pepin",
+   "slug": "jacques-pepin"
+  },
+  "description": "A chicken cut flat and roasted at high heat in under forty minutes.",
+  "difficulty": "beginner",
+  "easeScore": 9,
+  "spiceScore": 1,
+  "popularity": 9,
+  "pantryScore": 9,
+  "servings": 4,
+  "prepMin": 15,
+  "cookMin": 40,
+  "totalMin": 55,
+  "equipment": [
+   "oven",
+   "stovetop"
+  ],
+  "ingredients": [
+   "1 whole chicken (3 1/2 lb), backbone removed and flattened",
+   "2 tsp salt",
+   "1 tsp black pepper",
+   "2 tbsp canola oil",
+   "1 tsp dried thyme",
+   "4 cloves garlic, smashed",
+   "1/2 cup chicken broth",
+   "1/4 cup dry white wine",
+   "2 tbsp butter",
+   "2 tbsp chopped parsley"
+  ],
+  "ingredientKeys": [
+   "whole-chicken",
+   "salt",
+   "black-pepper",
+   "canola-oil",
+   "dried-thyme",
+   "garlic",
+   "chicken-broth",
+   "white-wine",
+   "butter",
+   "parsley"
+  ],
+  "specialty": [
+   "whole-chicken",
+   "white-wine"
+  ],
+  "steps": [
+   "Cut out the backbone with kitchen shears and press the bird flat, cracking the breastbone. Flattening it means the whole chicken cooks in one plane, so it roasts in 35 minutes instead of 75 and the breast and thighs finish together.",
+   "Pat it completely dry, rub with the oil, and season heavily with the salt, pepper and thyme.",
+   "Heat an oven-safe skillet over high heat and lay the chicken in skin-side down with the garlic. Press it flat and sear 5 minutes until the skin is golden.",
+   "Turn it skin-side up and put the skillet in a 450F oven for 30-35 minutes, until the thigh reads 175F.",
+   "Move the chicken to a board to rest 10 minutes. Pour off the fat, add the broth and wine to the hot pan, and boil hard while scraping, reducing to a few tablespoons.",
+   "Swirl in the butter off the heat, add the parsley, and spoon the sauce over the cut-up chicken."
+  ],
+  "diet": {
+   "vegetarian": false,
+   "vegan": false,
+   "pescatarian": false,
+   "glutenFree": true,
+   "glutenFreeAdaptable": false,
+   "dairyFree": false,
+   "nutFree": true,
+   "eggFree": true
+  },
+  "allergens": [
+   "dairy",
+   "sulfites"
+  ],
+  "gmo": {
+   "risk": "moderate",
+   "sources": [
+    "grain-fed-meat",
+    "seed-oil",
+    "grain-fed-dairy"
+   ]
+  },
+  "nutrition": {
+   "calories": 682,
+   "proteinG": 58,
+   "carbsG": 3,
+   "fiberG": 0,
+   "sugarG": 1,
+   "fatG": 48,
+   "satFatG": 15,
+   "sodiumMg": 1180,
+   "cholesterolMg": 218
+  },
+  "tags": [
+   "french",
+   "technique",
+   "weeknight",
+   "quick",
+   "gluten-free",
+   "high-protein",
+   "family",
+   "one-pan",
+   "easy"
+  ],
+  "image": {
+   "file": "roast-chicken.jpg",
+   "wikipedia": "Roast chicken"
+  }
+ },
+ {
+  "id": "ch-jp-005",
+  "slug": "jp-potato-galette",
+  "title": "Potato Galette",
+  "genre": "french",
+  "subgenre": "sides",
+  "chef": {
+   "name": "Jacques Pepin",
+   "slug": "jacques-pepin"
+  },
+  "description": "A single large potato cake, crisp on both sides, from one skillet.",
+  "difficulty": "intermediate",
+  "easeScore": 7,
+  "spiceScore": 0,
+  "popularity": 8,
+  "pantryScore": 10,
+  "servings": 4,
+  "prepMin": 15,
+  "cookMin": 35,
+  "totalMin": 50,
+  "equipment": [
+   "stovetop"
+  ],
+  "ingredients": [
+   "2 lb russet potatoes, peeled",
+   "4 tbsp butter",
+   "2 tbsp canola oil",
+   "1 1/2 tsp salt",
+   "1/2 tsp black pepper",
+   "2 tbsp chopped chives"
+  ],
+  "ingredientKeys": [
+   "russet-potato",
+   "butter",
+   "canola-oil",
+   "salt",
+   "black-pepper",
+   "chives"
+  ],
+  "specialty": [],
+  "steps": [
+   "Grate the potatoes on the large holes of a box grater, then wring them out hard in a clean towel. Do it twice. The amount of water that comes out is the difference between crisp and soggy.",
+   "Do not rinse the grated potato. The surface starch is the glue that holds the galette together as one cake.",
+   "Toss the dried shreds with the salt and pepper.",
+   "Heat half the butter and oil in a 10-inch skillet until the butter stops foaming, add the potatoes, and press them into an even layer with a spatula.",
+   "Cook over medium heat 15 minutes without touching it, pressing down occasionally. Shake the pan now and then to make sure it is not sticking.",
+   "Loosen the edges, slide the cake onto a plate, invert it back into the pan with the remaining butter and oil, and cook 12-15 minutes on the second side. Slide onto a rack for a minute so the bottom stays crisp, then cut in wedges and add chives."
+  ],
+  "diet": {
+   "vegetarian": true,
+   "vegan": false,
+   "pescatarian": true,
+   "glutenFree": true,
+   "glutenFreeAdaptable": false,
+   "dairyFree": false,
+   "nutFree": true,
+   "eggFree": true
+  },
+  "allergens": [
+   "dairy"
+  ],
+  "gmo": {
+   "risk": "moderate",
+   "sources": [
+    "seed-oil",
+    "grain-fed-dairy"
+   ]
+  },
+  "nutrition": {
+   "calories": 342,
+   "proteinG": 5,
+   "carbsG": 38,
+   "fiberG": 3,
+   "sugarG": 2,
+   "fatG": 19,
+   "satFatG": 8,
+   "sodiumMg": 780,
+   "cholesterolMg": 31
+  },
+  "tags": [
+   "french",
+   "side",
+   "technique",
+   "vegetarian",
+   "gluten-free",
+   "budget",
+   "classic",
+   "easy"
+  ],
+  "image": {
+   "file": "hash-browns.jpg",
+   "wikipedia": "Potato pancake"
+  }
+ },
+ {
+  "id": "ch-jp-006",
+  "slug": "jp-mushroom-fricassee",
+  "title": "Mushroom Fricassee",
+  "genre": "french",
+  "subgenre": "sides",
+  "chef": {
+   "name": "Jacques Pepin",
+   "slug": "jacques-pepin"
+  },
+  "description": "Mushrooms cooked hard in butter with shallots, garlic and parsley.",
+  "difficulty": "beginner",
+  "easeScore": 9,
+  "spiceScore": 1,
+  "popularity": 7,
+  "pantryScore": 8,
+  "servings": 4,
+  "prepMin": 10,
+  "cookMin": 20,
+  "totalMin": 30,
+  "equipment": [
+   "stovetop"
+  ],
+  "ingredients": [
+   "1 1/2 lb mixed mushrooms, quartered",
+   "3 tbsp butter",
+   "2 tbsp canola oil",
+   "2 shallots, minced",
+   "4 cloves garlic, minced",
+   "1/2 cup dry white wine",
+   "1 1/2 tsp salt",
+   "1/2 tsp black pepper",
+   "1/3 cup chopped parsley",
+   "4 slices country bread, toasted"
+  ],
+  "ingredientKeys": [
+   "mushroom",
+   "butter",
+   "canola-oil",
+   "shallot",
+   "garlic",
+   "white-wine",
+   "salt",
+   "black-pepper",
+   "parsley",
+   "country-bread"
+  ],
+  "specialty": [
+   "shallot",
+   "white-wine",
+   "country-bread"
+  ],
+  "steps": [
+   "Do not wash mushrooms under running water - they are sponges. Wipe them with a damp towel or brush the dirt off.",
+   "Heat the butter and oil in a wide skillet until the butter stops foaming, then add the mushrooms in a single layer. If they do not all fit, use two batches.",
+   "Leave them undisturbed for 4-5 minutes. Mushrooms release a great deal of water, and stirring early means they boil in it and turn grey instead of browning.",
+   "Once they have browned and the pan is dry again, add the shallots and cook 3 minutes, then the garlic for 1 minute.",
+   "Add the wine and let it bubble away almost completely, scraping the pan.",
+   "Season, add the parsley off the heat, and serve on toasted country bread or alongside meat."
+  ],
+  "diet": {
+   "vegetarian": true,
+   "vegan": false,
+   "pescatarian": true,
+   "glutenFree": false,
+   "glutenFreeAdaptable": true,
+   "dairyFree": false,
+   "nutFree": true,
+   "eggFree": true
+  },
+  "allergens": [
+   "gluten",
+   "dairy",
+   "sulfites"
+  ],
+  "gmo": {
+   "risk": "moderate",
+   "sources": [
+    "seed-oil",
+    "grain-fed-dairy",
+    "processed-bread"
+   ]
+  },
+  "nutrition": {
+   "calories": 286,
+   "proteinG": 9,
+   "carbsG": 28,
+   "fiberG": 4,
+   "sugarG": 5,
+   "fatG": 16,
+   "satFatG": 7,
+   "sodiumMg": 880,
+   "cholesterolMg": 24
+  },
+  "tags": [
+   "french",
+   "side",
+   "technique",
+   "vegetarian",
+   "quick",
+   "budget",
+   "easy",
+   "appetizer"
+  ],
+  "image": {
+   "file": "mushroom-pasta.jpg",
+   "wikipedia": "Fricassee"
+  }
+ },
+ {
+  "id": "ch-jp-007",
+  "slug": "jp-creme-caramel",
+  "title": "Creme Caramel",
+  "genre": "french",
+  "subgenre": "desserts",
+  "chef": {
+   "name": "Jacques Pepin",
+   "slug": "jacques-pepin"
+  },
+  "description": "Baked custard that unmolds under its own caramel sauce.",
+  "difficulty": "intermediate",
+  "easeScore": 7,
+  "spiceScore": 0,
+  "popularity": 8,
+  "pantryScore": 9,
+  "servings": 6,
+  "prepMin": 20,
+  "cookMin": 270,
+  "totalMin": 290,
+  "equipment": [
+   "oven",
+   "stovetop"
+  ],
+  "ingredients": [
+   "1 cup sugar",
+   "1/4 cup water",
+   "2 cups whole milk",
+   "1 cup heavy cream",
+   "1 vanilla bean, split",
+   "4 eggs",
+   "2 egg yolks",
+   "1/2 cup sugar, for the custard",
+   "1/4 tsp salt"
+  ],
+  "ingredientKeys": [
+   "sugar",
+   "water",
+   "whole-milk",
+   "heavy-cream",
+   "vanilla-bean",
+   "egg",
+   "egg-yolk",
+   "sugar",
+   "salt"
+  ],
+  "specialty": [
+   "vanilla-bean"
+  ],
+  "steps": [
+   "Cook the 1 cup sugar with the water over medium heat without stirring - swirl the pan instead - until it turns deep amber, 8-10 minutes. Stirring crystallizing sugar makes it grainy.",
+   "Pour the caramel immediately into six ramekins and tilt to coat the bottoms. It hardens at once, which is correct - it liquefies again in the oven and becomes the sauce.",
+   "Warm the milk, cream and scraped vanilla bean until steaming, then let it infuse 10 minutes.",
+   "Whisk the eggs, yolks, 1/2 cup sugar and salt, then temper by pouring the warm dairy in in a thin stream while whisking. Strain the custard and skim the foam - foam bakes into bubbles.",
+   "Divide between the ramekins, set them in a roasting pan, and pour boiling water halfway up the sides. The water bath moderates the heat so the custard sets smooth instead of curdling.",
+   "Bake at 325F for 40-45 minutes until just set with a slight wobble. Cool, then chill at least 4 hours. Run a knife around each and invert onto plates so the caramel runs down."
+  ],
+  "diet": {
+   "vegetarian": true,
+   "vegan": false,
+   "pescatarian": true,
+   "glutenFree": true,
+   "glutenFreeAdaptable": false,
+   "dairyFree": false,
+   "nutFree": true,
+   "eggFree": false
+  },
+  "allergens": [
+   "dairy",
+   "egg"
+  ],
+  "gmo": {
+   "risk": "moderate",
+   "sources": [
+    "sugar-beet",
+    "grain-fed-dairy"
+   ]
+  },
+  "nutrition": {
+   "calories": 386,
+   "proteinG": 9,
+   "carbsG": 52,
+   "fiberG": 0,
+   "sugarG": 50,
+   "fatG": 17,
+   "satFatG": 10,
+   "sodiumMg": 180,
+   "cholesterolMg": 228
+  },
+  "tags": [
+   "french",
+   "dessert",
+   "classic",
+   "technique",
+   "make-ahead",
+   "gluten-free",
+   "vegetarian",
+   "entertaining",
+   "budget"
+  ],
+  "image": {
+   "file": "flan.jpg",
+   "wikipedia": "Crème caramel"
+  }
+ },
+ {
+  "id": "ch-jp-008",
+  "slug": "jp-chicken-mustard-sauce",
+  "title": "Chicken Supreme with Mustard Sauce",
+  "genre": "french",
+  "subgenre": "mains",
+  "chef": {
+   "name": "Jacques Pepin",
+   "slug": "jacques-pepin"
+  },
+  "description": "Breast fillets sauteed and finished with a quick mustard cream pan sauce.",
+  "difficulty": "beginner",
+  "easeScore": 9,
+  "spiceScore": 3,
+  "popularity": 8,
+  "pantryScore": 8,
+  "servings": 4,
+  "prepMin": 10,
+  "cookMin": 20,
+  "totalMin": 30,
+  "equipment": [
+   "stovetop"
+  ],
+  "ingredients": [
+   "4 boneless chicken breasts",
+   "1 1/2 tsp salt",
+   "1 tsp black pepper",
+   "2 tbsp canola oil",
+   "2 tbsp butter",
+   "2 shallots, minced",
+   "1/2 cup dry white wine",
+   "3/4 cup chicken broth",
+   "1/2 cup heavy cream",
+   "3 tbsp Dijon mustard",
+   "1 tbsp whole-grain mustard",
+   "2 tbsp chopped chives",
+   "1 tbsp chopped parsley"
+  ],
+  "ingredientKeys": [
+   "chicken-breast",
+   "salt",
+   "black-pepper",
+   "canola-oil",
+   "butter",
+   "shallot",
+   "white-wine",
+   "chicken-broth",
+   "heavy-cream",
+   "dijon-mustard",
+   "whole-grain-mustard",
+   "chives",
+   "parsley"
+  ],
+  "specialty": [
+   "shallot",
+   "white-wine",
+   "whole-grain-mustard"
+  ],
+  "steps": [
+   "Pound the breasts to an even thickness so they cook uniformly, then pat them dry and season.",
+   "Sauté them in the oil over medium-high heat 5 minutes per side until golden and just cooked through, to 160F. Move them to a plate and keep warm.",
+   "Pour off the fat, add the butter and cook the shallots 2 minutes.",
+   "Add the wine and reduce almost completely, scraping the browned bits from the bottom - those bits are the sauce.",
+   "Add the broth and reduce by half, then the cream, and simmer 2 minutes.",
+   "Whisk in both mustards off the heat. Mustard turns bitter and loses its edge if boiled, so it always goes in last. Add any resting juices from the chicken, then spoon the sauce over and finish with the herbs."
+  ],
+  "diet": {
+   "vegetarian": false,
+   "vegan": false,
+   "pescatarian": false,
+   "glutenFree": true,
+   "glutenFreeAdaptable": false,
+   "dairyFree": false,
+   "nutFree": true,
+   "eggFree": true
+  },
+  "allergens": [
+   "dairy",
+   "sulfites"
+  ],
+  "gmo": {
+   "risk": "moderate",
+   "sources": [
+    "grain-fed-meat",
+    "seed-oil",
+    "grain-fed-dairy"
+   ]
+  },
+  "nutrition": {
+   "calories": 512,
+   "proteinG": 52,
+   "carbsG": 6,
+   "fiberG": 1,
+   "sugarG": 2,
+   "fatG": 30,
+   "satFatG": 14,
+   "sodiumMg": 1180,
+   "cholesterolMg": 198
+  },
+  "tags": [
+   "french",
+   "quick",
+   "weeknight",
+   "technique",
+   "gluten-free",
+   "low-carb",
+   "high-protein",
+   "date-night",
+   "easy"
+  ],
+  "image": {
+   "file": "chicken-supreme.jpg",
+   "wikipedia": "Supreme (cookery)"
+  }
+ },
+ {
+  "id": "ch-jp-009",
+  "slug": "jp-pasta-gratin",
+  "title": "Pasta Gratin",
+  "genre": "french",
+  "subgenre": "baking",
+  "chef": {
+   "name": "Jacques Pepin",
+   "slug": "jacques-pepin"
+  },
+  "description": "Leftover pasta baked with bechamel and Gruyere into a crisp-topped gratin.",
+  "difficulty": "beginner",
+  "easeScore": 9,
+  "spiceScore": 1,
+  "popularity": 7,
+  "pantryScore": 9,
+  "servings": 6,
+  "prepMin": 15,
+  "cookMin": 40,
+  "totalMin": 55,
+  "equipment": [
+   "stovetop",
+   "oven"
+  ],
+  "ingredients": [
+   "12 oz penne or shells",
+   "4 tbsp butter",
+   "1/3 cup all-purpose flour",
+   "3 cups whole milk, warmed",
+   "1/2 tsp ground nutmeg",
+   "2 tsp salt",
+   "1 tsp white pepper",
+   "2 cups grated Gruyere",
+   "1 cup grated Parmesan",
+   "4 oz ham, diced",
+   "1 cup fresh breadcrumbs",
+   "2 tbsp butter, melted"
+  ],
+  "ingredientKeys": [
+   "penne",
+   "butter",
+   "flour",
+   "whole-milk",
+   "nutmeg",
+   "salt",
+   "white-pepper",
+   "gruyere",
+   "parmesan",
+   "deli-ham",
+   "breadcrumbs",
+   "butter"
+  ],
+  "specialty": [
+   "gruyere",
+   "white-pepper",
+   "deli-ham"
+  ],
+  "steps": [
+   "This is a dish built for leftovers - it works just as well with pasta cooked yesterday as with fresh.",
+   "If cooking from scratch, boil the pasta 2 minutes short of the package time since it finishes in the oven.",
+   "Melt the 4 tbsp butter, whisk in the flour and cook 2 minutes without letting it color, then add the warm milk gradually and simmer 5 minutes until it coats a spoon.",
+   "Season with the nutmeg, salt and white pepper, then take the pan off the heat and stir in the Gruyere and half the Parmesan. Cheese added over direct heat goes grainy.",
+   "Fold in the pasta and the ham and pour into a buttered gratin dish.",
+   "Toss the breadcrumbs with the melted butter and remaining Parmesan, scatter over, and bake at 400F for 30-35 minutes until browned and bubbling at the edges."
+  ],
+  "diet": {
+   "vegetarian": false,
+   "vegan": false,
+   "pescatarian": false,
+   "glutenFree": false,
+   "glutenFreeAdaptable": false,
+   "dairyFree": false,
+   "nutFree": true,
+   "eggFree": true
+  },
+  "allergens": [
+   "gluten",
+   "dairy"
+  ],
+  "gmo": {
+   "risk": "moderate",
+   "sources": [
+    "grain-fed-dairy",
+    "grain-fed-meat",
+    "processed-bread"
+   ]
+  },
+  "nutrition": {
+   "calories": 682,
+   "proteinG": 34,
+   "carbsG": 62,
+   "fiberG": 3,
+   "sugarG": 9,
+   "fatG": 34,
+   "satFatG": 19,
+   "sodiumMg": 1480,
+   "cholesterolMg": 98
+  },
+  "tags": [
+   "french",
+   "leftovers",
+   "budget",
+   "family",
+   "comfort",
+   "easy",
+   "make-ahead",
+   "weeknight"
+  ],
+  "image": {
+   "file": "pasta-gratin.jpg",
+   "wikipedia": "Gratin"
+  }
+ },
+ {
+  "id": "ch-jp-010",
+  "slug": "jp-salmon-scaloppine",
+  "title": "Salmon Scaloppine",
+  "genre": "french",
+  "subgenre": "seafood",
+  "chef": {
+   "name": "Jacques Pepin",
+   "slug": "jacques-pepin"
+  },
+  "description": "Salmon sliced thin on the bias and cooked for barely a minute.",
+  "difficulty": "intermediate",
+  "easeScore": 7,
+  "spiceScore": 1,
+  "popularity": 7,
+  "pantryScore": 7,
+  "servings": 4,
+  "prepMin": 15,
+  "cookMin": 10,
+  "totalMin": 25,
+  "equipment": [
+   "stovetop"
+  ],
+  "ingredients": [
+   "1 1/2 lb salmon fillet, skin removed",
+   "1 1/2 tsp salt",
+   "1/2 tsp white pepper",
+   "2 tbsp canola oil",
+   "3 tbsp butter",
+   "2 shallots, minced",
+   "1/4 cup dry white wine",
+   "2 tbsp lemon juice",
+   "2 tbsp capers, rinsed",
+   "2 tbsp chopped chives",
+   "1 tbsp chopped parsley"
+  ],
+  "ingredientKeys": [
+   "salmon",
+   "salt",
+   "white-pepper",
+   "canola-oil",
+   "butter",
+   "shallot",
+   "white-wine",
+   "lemon-juice",
+   "capers",
+   "chives",
+   "parsley"
+  ],
+  "specialty": [
+   "salmon",
+   "white-pepper",
+   "shallot",
+   "white-wine",
+   "capers"
+  ],
+  "steps": [
+   "Hold a long sharp knife at a shallow angle and slice the salmon across the fillet into pieces about 1/4 inch thick, like smoked salmon but thicker. Cutting on the bias gives you wide thin pieces from a thick fillet.",
+   "Season them lightly just before cooking.",
+   "Heat the oil in a large skillet until it shimmers. The pan must be properly hot because the fish is in it for seconds.",
+   "Lay the slices in without overlapping and cook 30-40 seconds per side. That is all they need - thin salmon goes from silky to chalky almost instantly.",
+   "Move them to warm plates. Add the butter and shallots to the pan for 1 minute, then the wine and reduce by half.",
+   "Take the pan off the heat, add the lemon juice and capers, and spoon the sauce over the fish. Finish with chives and parsley."
+  ],
+  "diet": {
+   "vegetarian": false,
+   "vegan": false,
+   "pescatarian": true,
+   "glutenFree": true,
+   "glutenFreeAdaptable": false,
+   "dairyFree": false,
+   "nutFree": true,
+   "eggFree": true
+  },
+  "allergens": [
+   "dairy",
+   "fish",
+   "sulfites"
+  ],
+  "gmo": {
+   "risk": "moderate",
+   "sources": [
+    "seed-oil",
+    "grain-fed-dairy"
+   ]
+  },
+  "nutrition": {
+   "calories": 448,
+   "proteinG": 36,
+   "carbsG": 3,
+   "fiberG": 0,
+   "sugarG": 1,
+   "fatG": 32,
+   "satFatG": 10,
+   "sodiumMg": 1080,
+   "cholesterolMg": 118
+  },
+  "tags": [
+   "french",
+   "seafood",
+   "pescatarian",
+   "technique",
+   "quick",
+   "gluten-free",
+   "low-carb",
+   "high-protein",
+   "restaurant-style",
+   "date-night"
+  ],
+  "image": {
+   "file": "salmon-fillet.jpg",
+   "wikipedia": "Salmon as food"
+  }
+ },
+ {
+  "id": "ch-jp-011",
+  "slug": "jp-salmon-tartare",
+  "title": "Salmon Tartare",
+  "genre": "french",
+  "subgenre": "appetizers",
+  "chef": {
+   "name": "Jacques Pepin",
+   "slug": "jacques-pepin"
+  },
+  "description": "Raw salmon hand-chopped with shallot, capers and lemon.",
+  "difficulty": "beginner",
+  "easeScore": 9,
+  "spiceScore": 2,
+  "popularity": 7,
+  "pantryScore": 6,
+  "servings": 4,
+  "prepMin": 20,
+  "cookMin": 30,
+  "totalMin": 50,
+  "equipment": [
+   "no-cook"
+  ],
+  "ingredients": [
+   "1 lb very fresh skinless salmon fillet",
+   "2 shallots, very finely minced",
+   "3 tbsp capers, chopped",
+   "3 tbsp chopped chives",
+   "2 tbsp chopped parsley",
+   "3 tbsp olive oil",
+   "2 tbsp lemon juice",
+   "1 tbsp Dijon mustard",
+   "1 1/2 tsp salt",
+   "1 tsp black pepper",
+   "1 tsp hot sauce",
+   "4 slices country bread, toasted"
+  ],
+  "ingredientKeys": [
+   "salmon",
+   "shallot",
+   "capers",
+   "chives",
+   "parsley",
+   "olive-oil",
+   "lemon-juice",
+   "dijon-mustard",
+   "salt",
+   "black-pepper",
+   "hot-sauce",
+   "country-bread"
+  ],
+  "specialty": [
+   "salmon",
+   "shallot",
+   "capers",
+   "country-bread"
+  ],
+  "steps": [
+   "Buy the freshest salmon you can from someone you trust and tell them it is for eating raw. Sourcing matters more than any technique here.",
+   "Chop the salmon by hand with a sharp knife into a fine dice. Never use a food processor - it bruises and smears the fish into paste.",
+   "Chill the chopped salmon while you prepare everything else.",
+   "Whisk the olive oil, lemon juice, Dijon, salt, pepper and hot sauce into a dressing.",
+   "Fold the salmon with the shallots, capers, herbs and dressing no more than a few strokes.",
+   "Dress it no more than 30 minutes before serving. The lemon juice begins to cure and firm the fish, and left too long you lose the silky raw texture that is the point. Serve on toasted bread."
+  ],
+  "diet": {
+   "vegetarian": false,
+   "vegan": false,
+   "pescatarian": true,
+   "glutenFree": false,
+   "glutenFreeAdaptable": true,
+   "dairyFree": true,
+   "nutFree": true,
+   "eggFree": true
+  },
+  "allergens": [
+   "gluten",
+   "fish"
+  ],
+  "gmo": {
+   "risk": "low",
+   "sources": [
+    "processed-bread"
+   ]
+  },
+  "nutrition": {
+   "calories": 386,
+   "proteinG": 28,
+   "carbsG": 22,
+   "fiberG": 2,
+   "sugarG": 2,
+   "fatG": 21,
+   "satFatG": 4,
+   "sodiumMg": 1180,
+   "cholesterolMg": 62
+  },
+  "tags": [
+   "french",
+   "appetizer",
+   "no-cook",
+   "seafood",
+   "pescatarian",
+   "dairy-free",
+   "technique",
+   "entertaining",
+   "quick",
+   "restaurant-style"
+  ],
+  "image": {
+   "file": "salmon-tartare.jpg",
+   "wikipedia": "Steak tartare"
+  }
+ },
+ {
+  "id": "ch-jp-012",
+  "slug": "jp-fromage-fort",
+  "title": "Fromage Fort",
+  "genre": "french",
+  "subgenre": "appetizers",
+  "chef": {
+   "name": "Jacques Pepin",
+   "slug": "jacques-pepin"
+  },
+  "description": "Leftover cheese ends blitzed with wine and garlic into a spread.",
+  "difficulty": "beginner",
+  "easeScore": 10,
+  "spiceScore": 2,
+  "popularity": 6,
+  "pantryScore": 8,
+  "servings": 8,
+  "prepMin": 10,
+  "cookMin": 60,
+  "totalMin": 70,
+  "equipment": [
+   "food-processor"
+  ],
+  "ingredients": [
+   "1 lb assorted leftover cheeses, rinds removed",
+   "1/3 cup dry white wine",
+   "3 cloves garlic",
+   "1/2 tsp black pepper",
+   "2 tbsp chopped chives",
+   "1 baguette, sliced and toasted"
+  ],
+  "ingredientKeys": [
+   "assorted-cheese",
+   "white-wine",
+   "garlic",
+   "black-pepper",
+   "chives",
+   "baguette"
+  ],
+  "specialty": [
+   "assorted-cheese",
+   "white-wine",
+   "baguette"
+  ],
+  "steps": [
+   "This is a thrift recipe and one of the most useful things in the French repertoire: it turns the dried-out ends of a cheese board into something better than any of them were alone.",
+   "Use whatever you have - Brie, cheddar, blue, Gruyere, goat. The more variety the better. Cut away any hard rind or dried edges.",
+   "Put the cheeses, wine, garlic and pepper in a food processor and blitz until it forms a smooth, spreadable paste, scraping down once or twice.",
+   "Taste before adding salt. Most cheeses bring plenty, and blue cheese in the mix brings a great deal.",
+   "If it is too stiff, add wine a teaspoon at a time; the consistency should be like soft butter.",
+   "Pack into a crock and refrigerate at least 1 hour so the garlic mellows. Serve at room temperature on toasted baguette with chives. It keeps a week."
+  ],
+  "diet": {
+   "vegetarian": true,
+   "vegan": false,
+   "pescatarian": true,
+   "glutenFree": false,
+   "glutenFreeAdaptable": true,
+   "dairyFree": false,
+   "nutFree": true,
+   "eggFree": true
+  },
+  "allergens": [
+   "gluten",
+   "dairy",
+   "sulfites"
+  ],
+  "gmo": {
+   "risk": "low",
+   "sources": [
+    "grain-fed-dairy",
+    "processed-bread"
+   ]
+  },
+  "nutrition": {
+   "calories": 286,
+   "proteinG": 16,
+   "carbsG": 16,
+   "fiberG": 1,
+   "sugarG": 2,
+   "fatG": 18,
+   "satFatG": 11,
+   "sodiumMg": 780,
+   "cholesterolMg": 52
+  },
+  "tags": [
+   "french",
+   "appetizer",
+   "leftovers",
+   "budget",
+   "quick",
+   "vegetarian",
+   "make-ahead",
+   "party",
+   "technique",
+   "zero-waste"
+  ],
+  "image": {
+   "file": "cheese-spread.jpg",
+   "wikipedia": "Fromage fort"
+  }
+ },
+ {
+  "id": "ch-jp-013",
+  "slug": "jp-garlic-soup",
+  "title": "Garlic Soup",
+  "genre": "french",
+  "subgenre": "soups",
+  "chef": {
+   "name": "Jacques Pepin",
+   "slug": "jacques-pepin"
+  },
+  "description": "A whole head of garlic simmered until sweet, thickened with bread and egg.",
+  "difficulty": "beginner",
+  "easeScore": 9,
+  "spiceScore": 1,
+  "popularity": 6,
+  "pantryScore": 9,
+  "servings": 4,
+  "prepMin": 10,
+  "cookMin": 35,
+  "totalMin": 45,
+  "equipment": [
+   "stovetop"
+  ],
+  "ingredients": [
+   "2 heads garlic, cloves peeled",
+   "6 cups chicken broth",
+   "1 tsp dried thyme",
+   "2 bay leaves",
+   "4 slices country bread, cubed",
+   "3 tbsp olive oil",
+   "2 egg yolks",
+   "1/4 cup heavy cream",
+   "1 1/2 tsp salt",
+   "1/2 tsp black pepper",
+   "1 cup grated Gruyere",
+   "3 tbsp chopped parsley"
+  ],
+  "ingredientKeys": [
+   "garlic",
+   "chicken-broth",
+   "dried-thyme",
+   "bay-leaf",
+   "country-bread",
+   "olive-oil",
+   "egg-yolk",
+   "heavy-cream",
+   "salt",
+   "black-pepper",
+   "gruyere",
+   "parsley"
+  ],
+  "specialty": [
+   "country-bread",
+   "gruyere"
+  ],
+  "steps": [
+   "Two whole heads of garlic sounds alarming and is not. Simmered in liquid, garlic loses its bite entirely and turns sweet and nutty.",
+   "Simmer the peeled cloves in the broth with the thyme and bay leaves for 30 minutes until completely soft.",
+   "Fish out the bay leaves, then puree the soup until smooth. Return it to a bare simmer.",
+   "Fry the bread cubes in the olive oil until golden on all sides to make croutons.",
+   "Whisk the egg yolks with the cream, then temper them: whisk a ladle of hot soup into the yolks very slowly before returning it all to the pot. Rushing this scrambles the yolks.",
+   "Heat gently, never boiling, until it thickens slightly. Season and serve with the croutons, Gruyere and parsley."
+  ],
+  "diet": {
+   "vegetarian": false,
+   "vegan": false,
+   "pescatarian": false,
+   "glutenFree": false,
+   "glutenFreeAdaptable": false,
+   "dairyFree": false,
+   "nutFree": true,
+   "eggFree": false
+  },
+  "allergens": [
+   "gluten",
+   "dairy",
+   "egg"
+  ],
+  "gmo": {
+   "risk": "low",
+   "sources": [
+    "grain-fed-meat",
+    "grain-fed-dairy",
+    "processed-bread"
+   ]
+  },
+  "nutrition": {
+   "calories": 448,
+   "proteinG": 18,
+   "carbsG": 32,
+   "fiberG": 2,
+   "sugarG": 4,
+   "fatG": 28,
+   "satFatG": 12,
+   "sodiumMg": 1480,
+   "cholesterolMg": 158
+  },
+  "tags": [
+   "french",
+   "soup",
+   "budget",
+   "technique",
+   "comfort",
+   "winter",
+   "easy",
+   "classic"
+  ],
+  "image": {
+   "file": "garlic-soup.jpg",
+   "wikipedia": "Garlic soup"
+  }
+ },
+ {
+  "id": "ch-jp-014",
+  "slug": "jp-steak-shallot-sauce",
+  "title": "Steak with Shallot Sauce",
+  "genre": "french",
+  "subgenre": "mains",
+  "chef": {
+   "name": "Jacques Pepin",
+   "slug": "jacques-pepin"
+  },
+  "description": "Pan-seared steak with a red wine shallot reduction built in the same skillet.",
+  "difficulty": "beginner",
+  "easeScore": 8,
+  "spiceScore": 1,
+  "popularity": 9,
+  "pantryScore": 8,
+  "servings": 4,
+  "prepMin": 10,
+  "cookMin": 20,
+  "totalMin": 30,
+  "equipment": [
+   "stovetop"
+  ],
+  "ingredients": [
+   "4 strip steaks (8 oz each)",
+   "2 tsp salt",
+   "1 1/2 tsp coarse black pepper",
+   "2 tbsp canola oil",
+   "4 shallots, minced",
+   "1 cup dry red wine",
+   "1 cup beef broth",
+   "1 tsp dried thyme",
+   "4 tbsp cold butter, cubed",
+   "2 tbsp chopped parsley"
+  ],
+  "ingredientKeys": [
+   "strip-steak",
+   "salt",
+   "black-pepper",
+   "canola-oil",
+   "shallot",
+   "red-wine",
+   "beef-broth",
+   "dried-thyme",
+   "butter",
+   "parsley"
+  ],
+  "specialty": [
+   "strip-steak",
+   "shallot",
+   "red-wine"
+  ],
+  "steps": [
+   "Pat the steaks completely dry and season them heavily. A dry surface and a hot pan are the only two requirements for a crust.",
+   "Sear in the oil over high heat 4 minutes per side for medium-rare, then move them to a board to rest.",
+   "Pour off most of the fat but leave the browned bits stuck to the pan. Those bits are the entire sauce, and scraping them up is the whole technique of a pan sauce.",
+   "Lower the heat, add the shallots and cook 2 minutes, then the wine. Reduce by three quarters, scraping constantly.",
+   "Add the broth and thyme and reduce until about 1/2 cup remains and it coats a spoon.",
+   "Take the pan off the heat and whisk in the cold butter a cube at a time. Off the heat and cold butter are what emulsify it into a glossy sauce rather than a greasy one. Add any resting juices, pour over the sliced steaks, and finish with parsley."
+  ],
+  "diet": {
+   "vegetarian": false,
+   "vegan": false,
+   "pescatarian": false,
+   "glutenFree": true,
+   "glutenFreeAdaptable": false,
+   "dairyFree": false,
+   "nutFree": true,
+   "eggFree": true
+  },
+  "allergens": [
+   "dairy",
+   "sulfites"
+  ],
+  "gmo": {
+   "risk": "moderate",
+   "sources": [
+    "grain-fed-meat",
+    "seed-oil",
+    "grain-fed-dairy"
+   ]
+  },
+  "nutrition": {
+   "calories": 712,
+   "proteinG": 52,
+   "carbsG": 7,
+   "fiberG": 1,
+   "sugarG": 3,
+   "fatG": 52,
+   "satFatG": 22,
+   "sodiumMg": 1280,
+   "cholesterolMg": 198
+  },
+  "tags": [
+   "french",
+   "technique",
+   "quick",
+   "date-night",
+   "gluten-free",
+   "low-carb",
+   "high-protein",
+   "restaurant-style",
+   "foundation"
+  ],
+  "image": {
+   "file": "strip-steak.jpg",
+   "wikipedia": "Strip steak"
+  }
+ },
+ {
+  "id": "ch-jp-015",
+  "slug": "jp-chicken-ballotine",
+  "title": "Chicken Ballotine",
+  "genre": "french",
+  "subgenre": "mains",
+  "chef": {
+   "name": "Jacques Pepin",
+   "slug": "jacques-pepin"
+  },
+  "description": "A whole chicken boned, stuffed, rolled and roasted, then sliced in rounds.",
+  "difficulty": "advanced",
+  "easeScore": 2,
+  "spiceScore": 1,
+  "popularity": 6,
+  "pantryScore": 5,
+  "servings": 6,
+  "prepMin": 60,
+  "cookMin": 80,
+  "totalMin": 140,
+  "equipment": [
+   "oven",
+   "stovetop"
+  ],
+  "ingredients": [
+   "1 whole chicken (4 lb), boned",
+   "8 oz ground pork",
+   "4 oz chicken livers, chopped",
+   "2 shallots, minced",
+   "3 cloves garlic, minced",
+   "1/2 cup fresh breadcrumbs",
+   "1/4 cup heavy cream",
+   "1 egg",
+   "1/4 cup chopped parsley",
+   "1 tbsp fresh thyme leaves",
+   "1/4 cup pistachios",
+   "2 tsp salt",
+   "1 tsp black pepper",
+   "1/4 tsp ground allspice",
+   "2 tbsp canola oil",
+   "1 cup chicken broth",
+   "1/2 cup dry white wine",
+   "2 tbsp butter"
+  ],
+  "ingredientKeys": [
+   "whole-chicken",
+   "ground-pork",
+   "chicken-livers",
+   "shallot",
+   "garlic",
+   "breadcrumbs",
+   "heavy-cream",
+   "egg",
+   "parsley",
+   "fresh-thyme",
+   "pistachios",
+   "salt",
+   "black-pepper",
+   "allspice",
+   "canola-oil",
+   "chicken-broth",
+   "white-wine",
+   "butter"
+  ],
+  "specialty": [
+   "whole-chicken",
+   "ground-pork",
+   "chicken-livers",
+   "shallot",
+   "fresh-thyme",
+   "pistachios",
+   "allspice",
+   "white-wine"
+  ],
+  "steps": [
+   "Bone the chicken: cut down the backbone, then work the knife along the carcass on each side, keeping the skin intact, until the whole bird opens out flat. Remove the thigh and leg bones too. Take your time; a torn skin cannot hold the stuffing. Keep the bones for stock.",
+   "Lay the boned bird skin-side down and pound the thicker parts of the breast flat so the thickness is even.",
+   "Mix the pork, livers, shallots, garlic, breadcrumbs, cream, egg, herbs, pistachios, salt, pepper and allspice into a stuffing. Fry a teaspoon and taste it to check the seasoning.",
+   "Spread the stuffing down the center, then roll the chicken up around it and tie it with twine at 1 1/2-inch intervals into an even cylinder.",
+   "Brown the ballotine in the oil on all sides, then roast at 375F for 60-70 minutes to 165F at the center of the stuffing.",
+   "Rest 20 minutes before cutting the twine - it needs that time to firm up enough to slice into rounds. Make a pan sauce from the broth, wine and butter."
+  ],
+  "diet": {
+   "vegetarian": false,
+   "vegan": false,
+   "pescatarian": false,
+   "glutenFree": false,
+   "glutenFreeAdaptable": false,
+   "dairyFree": false,
+   "nutFree": false,
+   "eggFree": false
+  },
+  "allergens": [
+   "gluten",
+   "dairy",
+   "egg",
+   "tree-nut",
+   "sulfites"
+  ],
+  "gmo": {
+   "risk": "moderate",
+   "sources": [
+    "grain-fed-meat",
+    "processed-bread",
+    "grain-fed-dairy",
+    "seed-oil"
+   ]
+  },
+  "nutrition": {
+   "calories": 782,
+   "proteinG": 62,
+   "carbsG": 14,
+   "fiberG": 2,
+   "sugarG": 3,
+   "fatG": 52,
+   "satFatG": 17,
+   "sodiumMg": 1180,
+   "cholesterolMg": 338
+  },
+  "tags": [
+   "french",
+   "project",
+   "technique",
+   "special-occasion",
+   "entertaining",
+   "holiday",
+   "classic",
+   "high-protein"
+  ],
+  "image": {
+   "file": "ballotine.jpg",
+   "wikipedia": "Ballotine"
+  }
+ },
+ {
+  "id": "ch-jp-016",
+  "slug": "jp-apple-galette",
+  "title": "Rustic Apple Galette",
+  "genre": "french",
+  "subgenre": "desserts",
+  "chef": {
+   "name": "Jacques Pepin",
+   "slug": "jacques-pepin"
+  },
+  "description": "Apples on a free-form pastry round, folded at the edges and baked crisp.",
+  "difficulty": "intermediate",
+  "easeScore": 7,
+  "spiceScore": 0,
+  "popularity": 8,
+  "pantryScore": 8,
+  "servings": 8,
+  "prepMin": 30,
+  "cookMin": 60,
+  "totalMin": 90,
+  "equipment": [
+   "oven"
+  ],
+  "ingredients": [
+   "1 1/2 cups all-purpose flour",
+   "1/2 tsp salt",
+   "1 tbsp sugar",
+   "10 tbsp cold butter, cubed",
+   "1/3 cup ice water",
+   "4 baking apples, peeled and sliced thin",
+   "1/3 cup sugar, for the filling",
+   "1 tsp ground cinnamon",
+   "2 tbsp all-purpose flour, for the filling",
+   "3 tbsp butter, cut in pieces",
+   "1/4 cup apricot jam",
+   "1 tbsp water"
+  ],
+  "ingredientKeys": [
+   "flour",
+   "salt",
+   "sugar",
+   "butter",
+   "ice-water",
+   "baking-apples",
+   "sugar",
+   "cinnamon",
+   "flour",
+   "butter",
+   "apricot-jam",
+   "water"
+  ],
+  "specialty": [
+   "baking-apples",
+   "apricot-jam"
+  ],
+  "steps": [
+   "Cut the cold butter into the flour, salt and 1 tbsp sugar until the largest pieces are pea-sized, then add ice water a spoonful at a time until the dough just holds together when squeezed. Visible butter streaks are what make it flaky.",
+   "Flatten into a disk, wrap, and chill at least 1 hour.",
+   "Roll it out into a rough 14-inch round on parchment. A galette needs no pan and no crimping, which is why it is a far more forgiving introduction to pastry than a pie.",
+   "Toss the apples with the 1/3 cup sugar, cinnamon and 2 tbsp flour, then mound them in the center, leaving a 2-inch border.",
+   "Fold the border up over the fruit in overlapping pleats, leaving the center open. Dot the apples with butter.",
+   "Bake at 400F for 50-60 minutes until the crust is deep golden and the juices bubble thickly. Warm the jam with the water, strain it, and brush it over the hot fruit to glaze. Cool before cutting."
+  ],
+  "diet": {
+   "vegetarian": true,
+   "vegan": false,
+   "pescatarian": true,
+   "glutenFree": false,
+   "glutenFreeAdaptable": false,
+   "dairyFree": false,
+   "nutFree": true,
+   "eggFree": true
+  },
+  "allergens": [
+   "gluten",
+   "dairy"
+  ],
+  "gmo": {
+   "risk": "moderate",
+   "sources": [
+    "sugar-beet",
+    "grain-fed-dairy"
+   ]
+  },
+  "nutrition": {
+   "calories": 386,
+   "proteinG": 4,
+   "carbsG": 52,
+   "fiberG": 3,
+   "sugarG": 28,
+   "fatG": 19,
+   "satFatG": 12,
+   "sodiumMg": 180,
+   "cholesterolMg": 48
+  },
+  "tags": [
+   "french",
+   "dessert",
+   "technique",
+   "baking",
+   "fall",
+   "rustic",
+   "entertaining",
+   "vegetarian",
+   "classic"
+  ],
+  "image": {
+   "file": "apple-tart.jpg",
+   "wikipedia": "Galette"
+  }
+ },
+ {
+  "id": "ch-jp-017",
+  "slug": "jp-pears-in-red-wine",
+  "title": "Pears in Red Wine",
+  "genre": "french",
+  "subgenre": "desserts",
+  "chef": {
+   "name": "Jacques Pepin",
+   "slug": "jacques-pepin"
+  },
+  "description": "Whole pears poached in spiced red wine and served in the reduced syrup.",
+  "difficulty": "beginner",
+  "easeScore": 9,
+  "spiceScore": 1,
+  "popularity": 7,
+  "pantryScore": 7,
+  "servings": 6,
+  "prepMin": 15,
+  "cookMin": 60,
+  "totalMin": 75,
+  "equipment": [
+   "stovetop"
+  ],
+  "ingredients": [
+   "6 firm Bosc pears, peeled with stems intact",
+   "3 cups dry red wine",
+   "3/4 cup sugar",
+   "1 cinnamon stick",
+   "4 whole cloves",
+   "2 strips lemon peel",
+   "1 vanilla bean, split",
+   "1 cup heavy cream",
+   "2 tbsp powdered sugar"
+  ],
+  "ingredientKeys": [
+   "pears",
+   "red-wine",
+   "sugar",
+   "cinnamon-stick",
+   "whole-cloves",
+   "lemon-peel",
+   "vanilla-bean",
+   "heavy-cream",
+   "powdered-sugar"
+  ],
+  "specialty": [
+   "pears",
+   "red-wine",
+   "cinnamon-stick",
+   "whole-cloves",
+   "lemon-peel",
+   "vanilla-bean"
+  ],
+  "steps": [
+   "Use firm, slightly underripe pears. Ripe ones collapse into mush during poaching.",
+   "Peel them but leave the stems on for appearance, and trim the bases flat so they stand up.",
+   "Bring the wine, sugar, cinnamon stick, cloves, lemon peel and vanilla bean to a simmer in a pot just wide enough to hold the pears.",
+   "Stand the pears in the liquid and cover with a round of parchment pressed down onto the surface. The parchment keeps the exposed tops submerged so they color evenly.",
+   "Poach at a bare simmer 35-45 minutes, until a skewer slides into the thickest part with no resistance. Let them cool in the liquid, which deepens the color all the way through.",
+   "Lift the pears out and boil the liquid down to a syrup, about 15 minutes. Serve the pears standing in the syrup with cream whipped with the powdered sugar."
+  ],
+  "diet": {
+   "vegetarian": true,
+   "vegan": false,
+   "pescatarian": true,
+   "glutenFree": true,
+   "glutenFreeAdaptable": false,
+   "dairyFree": false,
+   "nutFree": true,
+   "eggFree": true
+  },
+  "allergens": [
+   "dairy",
+   "sulfites"
+  ],
+  "gmo": {
+   "risk": "moderate",
+   "sources": [
+    "sugar-beet",
+    "grain-fed-dairy"
+   ]
+  },
+  "nutrition": {
+   "calories": 386,
+   "proteinG": 2,
+   "carbsG": 58,
+   "fiberG": 6,
+   "sugarG": 48,
+   "fatG": 15,
+   "satFatG": 9,
+   "sodiumMg": 18,
+   "cholesterolMg": 42
+  },
+  "tags": [
+   "french",
+   "dessert",
+   "technique",
+   "make-ahead",
+   "gluten-free",
+   "vegetarian",
+   "elegant",
+   "winter",
+   "entertaining"
+  ],
+  "image": {
+   "file": "poached-pears.jpg",
+   "wikipedia": "Pear"
+  }
+ },
+ {
+  "id": "ch-jp-018",
+  "slug": "jp-haricots-verts",
+  "title": "Haricots Verts with Shallots",
+  "genre": "french",
+  "subgenre": "sides",
+  "chef": {
+   "name": "Jacques Pepin",
+   "slug": "jacques-pepin"
+  },
+  "description": "Thin green beans blanched, shocked and finished in shallot butter.",
+  "difficulty": "beginner",
+  "easeScore": 10,
+  "spiceScore": 0,
+  "popularity": 8,
+  "pantryScore": 8,
+  "servings": 6,
+  "prepMin": 10,
+  "cookMin": 15,
+  "totalMin": 25,
+  "equipment": [
+   "stovetop"
+  ],
+  "ingredients": [
+   "2 lb haricots verts, trimmed",
+   "1 tbsp salt, for the water",
+   "4 cups ice water",
+   "3 tbsp butter",
+   "3 shallots, thinly sliced",
+   "1 1/2 tsp salt",
+   "1/2 tsp black pepper",
+   "2 tbsp lemon juice",
+   "2 tbsp chopped parsley"
+  ],
+  "ingredientKeys": [
+   "haricots-verts",
+   "salt",
+   "ice-water",
+   "butter",
+   "shallot",
+   "salt",
+   "black-pepper",
+   "lemon-juice",
+   "parsley"
+  ],
+  "specialty": [
+   "haricots-verts",
+   "shallot"
+  ],
+  "steps": [
+   "Bring a large pot of heavily salted water to a hard boil. The water should taste distinctly of salt - that is how the beans get seasoned through rather than just on the surface.",
+   "Boil the beans 3-4 minutes until just tender with a slight bite.",
+   "Plunge them immediately into ice water. Shocking stops the cooking dead and fixes the chlorophyll, which is what keeps them bright green rather than olive.",
+   "Drain them well and pat dry. At this point they can wait several hours, which makes this a useful dish for entertaining.",
+   "Cook the shallots in the butter over medium heat 4 minutes until softened and lightly golden.",
+   "Add the beans and toss 2-3 minutes just to heat through. Season, add the lemon juice off the heat, and finish with parsley."
+  ],
+  "diet": {
+   "vegetarian": true,
+   "vegan": false,
+   "pescatarian": true,
+   "glutenFree": true,
+   "glutenFreeAdaptable": false,
+   "dairyFree": false,
+   "nutFree": true,
+   "eggFree": true
+  },
+  "allergens": [
+   "dairy"
+  ],
+  "gmo": {
+   "risk": "low",
+   "sources": [
+    "grain-fed-dairy"
+   ]
+  },
+  "nutrition": {
+   "calories": 112,
+   "proteinG": 3,
+   "carbsG": 11,
+   "fiberG": 4,
+   "sugarG": 5,
+   "fatG": 6,
+   "satFatG": 4,
+   "sodiumMg": 580,
+   "cholesterolMg": 16
+  },
+  "tags": [
+   "french",
+   "side",
+   "technique",
+   "vegetarian",
+   "gluten-free",
+   "quick",
+   "holiday",
+   "healthy",
+   "make-ahead",
+   "easy"
+  ],
+  "image": {
+   "file": "green-beans.jpg",
+   "wikipedia": "Green bean"
+  }
+ },
+ {
+  "id": "ch-jp-019",
+  "slug": "jp-choucroute",
+  "title": "Choucroute Garnie",
+  "genre": "french",
+  "subgenre": "braises",
+  "chef": {
+   "name": "Jacques Pepin",
+   "slug": "jacques-pepin"
+  },
+  "description": "Sauerkraut braised in white wine with pork ribs, sausages and potatoes.",
+  "difficulty": "intermediate",
+  "easeScore": 7,
+  "spiceScore": 2,
+  "popularity": 6,
+  "pantryScore": 6,
+  "servings": 8,
+  "prepMin": 25,
+  "cookMin": 135,
+  "totalMin": 160,
+  "equipment": [
+   "oven",
+   "stovetop"
+  ],
+  "ingredients": [
+   "3 lb sauerkraut, drained and rinsed",
+   "2 lb pork spare ribs",
+   "1 lb smoked pork shoulder, cubed",
+   "4 bratwurst",
+   "4 smoked sausages",
+   "8 oz bacon, diced",
+   "2 yellow onions, sliced",
+   "4 cloves garlic, sliced",
+   "2 cups dry Riesling",
+   "2 cups chicken broth",
+   "1 tbsp juniper berries",
+   "1 tbsp caraway seeds",
+   "2 bay leaves",
+   "1 tsp black pepper",
+   "2 lb small potatoes",
+   "1/4 cup Dijon mustard"
+  ],
+  "ingredientKeys": [
+   "sauerkraut",
+   "pork-ribs",
+   "smoked-pork",
+   "bratwurst",
+   "smoked-sausage",
+   "bacon",
+   "yellow-onion",
+   "garlic",
+   "riesling",
+   "chicken-broth",
+   "juniper-berries",
+   "caraway-seeds",
+   "bay-leaf",
+   "black-pepper",
+   "baby-potato",
+   "dijon-mustard"
+  ],
+  "specialty": [
+   "sauerkraut",
+   "pork-ribs",
+   "smoked-pork",
+   "bratwurst",
+   "smoked-sausage",
+   "riesling",
+   "juniper-berries",
+   "caraway-seeds",
+   "baby-potato"
+  ],
+  "steps": [
+   "Rinse the sauerkraut well and squeeze it dry. Straight from the jar it is too aggressively sour for a long braise, and rinsing brings it back into balance.",
+   "Render the bacon in a large Dutch oven, then brown the ribs and smoked pork shoulder. Set the meats aside.",
+   "Cook the onions in the fat 8 minutes, add the garlic, then the sauerkraut, juniper, caraway, bay leaves and pepper. Toss everything together.",
+   "Add the Riesling and broth, bury the ribs and shoulder in the sauerkraut, cover, and braise at 325F for 1 1/2 hours. A dry Alsatian Riesling is traditional and its acidity suits the dish.",
+   "Add the potatoes and the sausages, tucking them in, and cook 40 minutes more until the potatoes are tender and the ribs pull apart.",
+   "Pile the sauerkraut on a large platter with the meats and potatoes arranged over it, and serve with Dijon mustard."
+  ],
+  "diet": {
+   "vegetarian": false,
+   "vegan": false,
+   "pescatarian": false,
+   "glutenFree": false,
+   "glutenFreeAdaptable": true,
+   "dairyFree": true,
+   "nutFree": true,
+   "eggFree": true
+  },
+  "allergens": [
+   "gluten",
+   "sulfites"
+  ],
+  "gmo": {
+   "risk": "moderate",
+   "sources": [
+    "grain-fed-meat"
+   ]
+  },
+  "nutrition": {
+   "calories": 882,
+   "proteinG": 52,
+   "carbsG": 42,
+   "fiberG": 8,
+   "sugarG": 9,
+   "fatG": 56,
+   "satFatG": 19,
+   "sodiumMg": 2380,
+   "cholesterolMg": 178
+  },
+  "tags": [
+   "french",
+   "regional",
+   "project",
+   "winter",
+   "party",
+   "dairy-free",
+   "high-protein",
+   "make-ahead",
+   "classic",
+   "one-pot"
+  ],
+  "image": {
+   "file": "choucroute.jpg",
+   "wikipedia": "Choucroute garnie"
+  }
+ },
+ {
+  "id": "ch-jp-020",
+  "slug": "jp-lamb-navarin",
+  "title": "Lamb Navarin",
+  "genre": "french",
+  "subgenre": "braises",
+  "chef": {
+   "name": "Jacques Pepin",
+   "slug": "jacques-pepin"
+  },
+  "description": "A spring lamb stew with turnips, carrots and peas.",
+  "difficulty": "intermediate",
+  "easeScore": 7,
+  "spiceScore": 1,
+  "popularity": 6,
+  "pantryScore": 6,
+  "servings": 6,
+  "prepMin": 25,
+  "cookMin": 105,
+  "totalMin": 130,
+  "equipment": [
+   "stovetop"
+  ],
+  "ingredients": [
+   "3 lb lamb shoulder, cut in 2-inch cubes",
+   "2 tsp salt",
+   "1 tsp black pepper",
+   "3 tbsp canola oil",
+   "2 tbsp all-purpose flour",
+   "2 tbsp tomato paste",
+   "1 yellow onion, diced",
+   "4 cloves garlic, minced",
+   "1 cup dry white wine",
+   "4 cups chicken broth",
+   "1 bouquet garni of parsley, thyme and bay leaf",
+   "1 lb baby turnips, halved",
+   "4 carrots, cut in chunks",
+   "1 lb baby potatoes",
+   "18 pearl onions",
+   "2 cups frozen peas",
+   "1/3 cup chopped parsley"
+  ],
+  "ingredientKeys": [
+   "lamb-shoulder",
+   "salt",
+   "black-pepper",
+   "canola-oil",
+   "flour",
+   "tomato-paste",
+   "yellow-onion",
+   "garlic",
+   "white-wine",
+   "chicken-broth",
+   "bouquet-garni",
+   "turnip",
+   "carrot",
+   "baby-potato",
+   "pearl-onions",
+   "frozen-peas",
+   "parsley"
+  ],
+  "specialty": [
+   "lamb-shoulder",
+   "white-wine",
+   "bouquet-garni",
+   "turnip",
+   "baby-potato",
+   "pearl-onions"
+  ],
+  "steps": [
+   "Pat the lamb dry, season it, and brown it hard in the oil in batches. Crowding the pot steams the meat and you lose the fond the whole stew is built on.",
+   "Return all the lamb, sprinkle the flour over and stir 2 minutes, then add the tomato paste and cook 2 minutes more until it darkens.",
+   "Add the onion and garlic for 5 minutes, then the wine, and reduce by half while scraping the pot.",
+   "Add the broth and bouquet garni, bring to a bare simmer, cover, and cook 1 hour.",
+   "Navarin is a spring stew, so the vegetables go in by cooking time rather than all at once: turnips, carrots and potatoes for 30 minutes, pearl onions for the last 20.",
+   "Add the peas in the final 5 minutes so they stay bright. Discard the bouquet garni, skim the fat, season and finish with parsley."
+  ],
+  "diet": {
+   "vegetarian": false,
+   "vegan": false,
+   "pescatarian": false,
+   "glutenFree": false,
+   "glutenFreeAdaptable": true,
+   "dairyFree": true,
+   "nutFree": true,
+   "eggFree": true
+  },
+  "allergens": [
+   "gluten",
+   "sulfites"
+  ],
+  "gmo": {
+   "risk": "moderate",
+   "sources": [
+    "grain-fed-meat",
+    "seed-oil"
+   ]
+  },
+  "nutrition": {
+   "calories": 682,
+   "proteinG": 52,
+   "carbsG": 42,
+   "fiberG": 8,
+   "sugarG": 11,
+   "fatG": 32,
+   "satFatG": 11,
+   "sodiumMg": 1480,
+   "cholesterolMg": 158
+  },
+  "tags": [
+   "french",
+   "classic",
+   "technique",
+   "spring",
+   "one-pot",
+   "dairy-free",
+   "make-ahead",
+   "high-protein",
+   "comfort"
+  ],
+  "image": {
+   "file": "lamb-stew.jpg",
+   "wikipedia": "Irish stew"
+  }
+ },
+ {
+  "id": "ch-jp-021",
+  "slug": "jp-pork-rillettes",
+  "title": "Pork Rillettes",
+  "genre": "french",
+  "subgenre": "appetizers",
+  "chef": {
+   "name": "Jacques Pepin",
+   "slug": "jacques-pepin"
+  },
+  "description": "Pork shoulder cooked slowly in its own fat, shredded and potted.",
+  "difficulty": "intermediate",
+  "easeScore": 7,
+  "spiceScore": 2,
+  "popularity": 6,
+  "pantryScore": 6,
+  "servings": 12,
+  "prepMin": 20,
+  "cookMin": 270,
+  "totalMin": 290,
+  "equipment": [
+   "oven",
+   "stovetop"
+  ],
+  "ingredients": [
+   "4 lb boneless pork shoulder, cut in chunks",
+   "1 lb pork fatback, diced",
+   "2 yellow onions, quartered",
+   "6 cloves garlic, smashed",
+   "2 cups dry white wine",
+   "1 cup water",
+   "2 bay leaves",
+   "1 tbsp fresh thyme leaves",
+   "1 tbsp salt",
+   "2 tsp black pepper",
+   "1/2 tsp ground allspice",
+   "1/4 tsp ground cloves",
+   "1 baguette, sliced and toasted",
+   "1/2 cup cornichons",
+   "1/4 cup Dijon mustard"
+  ],
+  "ingredientKeys": [
+   "pork-shoulder",
+   "pork-fatback",
+   "yellow-onion",
+   "garlic",
+   "white-wine",
+   "water",
+   "bay-leaf",
+   "fresh-thyme",
+   "salt",
+   "black-pepper",
+   "allspice",
+   "ground-cloves",
+   "baguette",
+   "cornichons",
+   "dijon-mustard"
+  ],
+  "specialty": [
+   "pork-shoulder",
+   "pork-fatback",
+   "white-wine",
+   "fresh-thyme",
+   "allspice",
+   "ground-cloves",
+   "baguette",
+   "cornichons"
+  ],
+  "steps": [
+   "Put the pork, fatback, onions, garlic, wine, water, bay leaves, thyme, salt, pepper, allspice and cloves in a Dutch oven. The liquid should come about halfway up.",
+   "Cover and cook at 300F for 4 hours, until the meat falls apart at the touch of a fork and has rendered a great deal of fat.",
+   "Lift the meat out and discard the onions and bay leaves. Strain the liquid and let it settle so the fat rises and separates from the juices beneath.",
+   "Shred the pork with two forks into fine threads. Do not use a food processor - rillettes should be stringy and loose, not a smooth paste.",
+   "Mix the shredded meat with enough of the reserved fat and a little of the juices to make it moist and spreadable. Taste and season generously; this is served cold, when flavors read as muted.",
+   "Pack into crocks, pressing out air pockets, and pour a thin layer of melted fat over the top to seal. That fat cap is what lets rillettes keep for weeks. Chill overnight and serve at room temperature with toast, cornichons and mustard."
+  ],
+  "diet": {
+   "vegetarian": false,
+   "vegan": false,
+   "pescatarian": false,
+   "glutenFree": false,
+   "glutenFreeAdaptable": true,
+   "dairyFree": true,
+   "nutFree": true,
+   "eggFree": true
+  },
+  "allergens": [
+   "gluten",
+   "sulfites"
+  ],
+  "gmo": {
+   "risk": "low",
+   "sources": [
+    "grain-fed-meat",
+    "processed-bread"
+   ]
+  },
+  "nutrition": {
+   "calories": 586,
+   "proteinG": 32,
+   "carbsG": 16,
+   "fiberG": 1,
+   "sugarG": 2,
+   "fatG": 44,
+   "satFatG": 16,
+   "sodiumMg": 1180,
+   "cholesterolMg": 128
+  },
+  "tags": [
+   "french",
+   "appetizer",
+   "technique",
+   "make-ahead",
+   "charcuterie",
+   "party",
+   "dairy-free",
+   "project",
+   "entertaining"
+  ],
+  "image": {
+   "file": "rillettes.jpg",
+   "wikipedia": "Rillettes"
+  }
+ },
+ {
+  "id": "ch-jp-022",
+  "slug": "jp-salade-lyonnaise",
+  "title": "Salade Lyonnaise",
+  "genre": "french",
+  "subgenre": "salads",
+  "chef": {
+   "name": "Jacques Pepin",
+   "slug": "jacques-pepin"
+  },
+  "description": "Frisee with lardons, croutons and a poached egg that dresses the salad.",
+  "difficulty": "intermediate",
+  "easeScore": 7,
+  "spiceScore": 2,
+  "popularity": 7,
+  "pantryScore": 6,
+  "servings": 4,
+  "prepMin": 20,
+  "cookMin": 20,
+  "totalMin": 40,
+  "equipment": [
+   "stovetop"
+  ],
+  "ingredients": [
+   "2 heads frisee, torn",
+   "8 oz bacon, cut in lardons",
+   "2 cups cubed country bread",
+   "2 shallots, minced",
+   "3 tbsp red wine vinegar",
+   "1 tbsp Dijon mustard",
+   "1/4 cup olive oil",
+   "1 1/2 tsp salt",
+   "1 tsp black pepper",
+   "4 eggs",
+   "1 tbsp white vinegar",
+   "2 tbsp chopped chives"
+  ],
+  "ingredientKeys": [
+   "frisee",
+   "bacon",
+   "country-bread",
+   "shallot",
+   "red-wine-vinegar",
+   "dijon-mustard",
+   "olive-oil",
+   "salt",
+   "black-pepper",
+   "egg",
+   "white-vinegar",
+   "chives"
+  ],
+  "specialty": [
+   "frisee",
+   "country-bread",
+   "shallot"
+  ],
+  "steps": [
+   "Render the lardons in a skillet until crisp, then lift them out. Fry the bread cubes in the rendered fat until golden on all sides.",
+   "Make the dressing in the warm skillet: add the shallots, the red wine vinegar and the Dijon and whisk in the olive oil. Using the bacon fat as part of the dressing is the point of the dish.",
+   "Bring a wide pan of water to a bare simmer with the white vinegar.",
+   "Crack each egg through a fine sieve first to drain the loose white - this is why restaurant poached eggs look neat rather than ragged. Slip them into the water and poach 3 minutes for a runny yolk.",
+   "Toss the frisee with the warm dressing, the lardons and the croutons. Frisee is sturdy and bitter enough to take a hot dressing without wilting, which is why it is the right green here.",
+   "Set a poached egg on each salad and season it directly. Break the yolk at the table - it becomes the second half of the dressing. Finish with chives."
+  ],
+  "diet": {
+   "vegetarian": false,
+   "vegan": false,
+   "pescatarian": false,
+   "glutenFree": false,
+   "glutenFreeAdaptable": true,
+   "dairyFree": true,
+   "nutFree": true,
+   "eggFree": false
+  },
+  "allergens": [
+   "gluten",
+   "egg",
+   "sulfites"
+  ],
+  "gmo": {
+   "risk": "moderate",
+   "sources": [
+    "grain-fed-meat",
+    "processed-bread"
+   ]
+  },
+  "nutrition": {
+   "calories": 512,
+   "proteinG": 20,
+   "carbsG": 22,
+   "fiberG": 4,
+   "sugarG": 3,
+   "fatG": 38,
+   "satFatG": 10,
+   "sodiumMg": 1180,
+   "cholesterolMg": 228
+  },
+  "tags": [
+   "french",
+   "salad",
+   "classic",
+   "technique",
+   "bistro",
+   "lunch",
+   "dairy-free",
+   "high-protein",
+   "restaurant-style"
+  ],
+  "image": {
+   "file": "salade-lyonnaise.jpg",
+   "wikipedia": "Frisée"
+  }
+ },
+ {
+  "id": "ch-jp-023",
+  "slug": "jp-gnocchi-parisienne",
+  "title": "Gnocchi a la Parisienne",
+  "genre": "french",
+  "subgenre": "baking",
+  "chef": {
+   "name": "Jacques Pepin",
+   "slug": "jacques-pepin"
+  },
+  "description": "Choux paste piped into simmering water, then baked under Gruyere cream.",
+  "difficulty": "advanced",
+  "easeScore": 4,
+  "spiceScore": 1,
+  "popularity": 6,
+  "pantryScore": 7,
+  "servings": 6,
+  "prepMin": 35,
+  "cookMin": 50,
+  "totalMin": 85,
+  "equipment": [
+   "stovetop",
+   "oven"
+  ],
+  "ingredients": [
+   "1 cup water",
+   "6 tbsp butter",
+   "1 tsp salt",
+   "1/4 tsp ground nutmeg",
+   "1 cup all-purpose flour",
+   "4 eggs",
+   "1 cup grated Gruyere",
+   "3 tbsp butter, for the sauce",
+   "3 tbsp all-purpose flour, for the sauce",
+   "2 cups whole milk, warmed",
+   "1/2 tsp white pepper",
+   "1 cup grated Gruyere, for the sauce",
+   "1/2 cup grated Parmesan",
+   "2 tbsp chopped chives"
+  ],
+  "ingredientKeys": [
+   "water",
+   "butter",
+   "salt",
+   "nutmeg",
+   "flour",
+   "egg",
+   "gruyere",
+   "butter",
+   "flour",
+   "whole-milk",
+   "white-pepper",
+   "gruyere",
+   "parmesan",
+   "chives"
+  ],
+  "specialty": [
+   "gruyere",
+   "white-pepper"
+  ],
+  "steps": [
+   "These are not potato gnocchi. They are made from pate a choux - the same dough as cream puffs - which is why they come out light and almost souffled.",
+   "Bring the water, butter, salt and nutmeg to a boil, dump in the flour all at once, and beat hard over the heat 2 minutes until the dough forms a smooth ball that pulls from the pan.",
+   "Cool 5 minutes, then beat in the eggs one at a time until each is fully absorbed, and stir in 1 cup of the Gruyere.",
+   "Bring a wide pan of salted water to a bare simmer - not a boil, which would break the gnocchi apart. Pipe the dough through a 1/2-inch plain tip, cutting off 1-inch lengths with a knife straight into the water.",
+   "Poach 4-5 minutes, until they float and feel firm. Lift them out with a slotted spoon onto a towel.",
+   "Make a bechamel with the butter, flour and warm milk, season with white pepper, and stir in the second cup of Gruyere off the heat. Arrange the gnocchi in a buttered dish, pour the sauce over, scatter the Parmesan, and bake at 400F for 25-30 minutes until puffed and browned. Finish with chives."
+  ],
+  "diet": {
+   "vegetarian": true,
+   "vegan": false,
+   "pescatarian": true,
+   "glutenFree": false,
+   "glutenFreeAdaptable": false,
+   "dairyFree": false,
+   "nutFree": true,
+   "eggFree": false
+  },
+  "allergens": [
+   "gluten",
+   "dairy",
+   "egg"
+  ],
+  "gmo": {
+   "risk": "moderate",
+   "sources": [
+    "grain-fed-dairy"
+   ]
+  },
+  "nutrition": {
+   "calories": 612,
+   "proteinG": 26,
+   "carbsG": 32,
+   "fiberG": 1,
+   "sugarG": 7,
+   "fatG": 42,
+   "satFatG": 24,
+   "sodiumMg": 1180,
+   "cholesterolMg": 228
+  },
+  "tags": [
+   "french",
+   "project",
+   "technique",
+   "vegetarian",
+   "classic",
+   "entertaining",
+   "comfort",
+   "restaurant-style"
+  ],
+  "image": {
+   "file": "gnocchi-parisienne.jpg",
+   "wikipedia": "Gnocchi"
+  }
+ },
+ {
+  "id": "ch-jp-024",
+  "slug": "jp-grated-carrot-salad",
+  "title": "Grated Carrot Salad",
+  "genre": "french",
+  "subgenre": "salads",
+  "chef": {
+   "name": "Jacques Pepin",
+   "slug": "jacques-pepin"
+  },
+  "description": "Carottes rapees: grated carrots in a sharp mustard lemon dressing.",
+  "difficulty": "beginner",
+  "easeScore": 10,
+  "spiceScore": 1,
+  "popularity": 7,
+  "pantryScore": 9,
+  "servings": 6,
+  "prepMin": 15,
+  "cookMin": 30,
+  "totalMin": 45,
+  "equipment": [
+   "no-cook"
+  ],
+  "ingredients": [
+   "2 lb carrots, peeled and grated",
+   "1 shallot, very finely minced",
+   "3 tbsp lemon juice",
+   "1 tbsp Dijon mustard",
+   "1/3 cup olive oil",
+   "1 tsp honey",
+   "1 1/2 tsp salt",
+   "1/2 tsp black pepper",
+   "1/3 cup chopped parsley",
+   "2 tbsp chopped chives",
+   "1/4 cup raisins"
+  ],
+  "ingredientKeys": [
+   "carrot",
+   "shallot",
+   "lemon-juice",
+   "dijon-mustard",
+   "olive-oil",
+   "honey",
+   "salt",
+   "black-pepper",
+   "parsley",
+   "chives",
+   "raisins"
+  ],
+  "specialty": [
+   "shallot",
+   "raisins"
+  ],
+  "steps": [
+   "Grate the carrots on the large holes of a box grater or with the grating disk of a food processor. Long shreds rather than fine pulp - the texture is most of the pleasure.",
+   "Whisk the lemon juice, Dijon, honey, salt and pepper, then whisk in the olive oil in a stream so the dressing emulsifies.",
+   "Toss the grated carrots with the shallot, dressing and raisins.",
+   "Let it stand 30 minutes at room temperature before serving. The carrots soften slightly and absorb the dressing, which is what turns raw grated vegetable into a salad.",
+   "Taste again after it has rested - it will almost certainly want more salt and lemon.",
+   "Fold in the parsley and chives just before serving. It keeps three days and is a staple of every French deli counter for good reason."
+  ],
+  "diet": {
+   "vegetarian": true,
+   "vegan": false,
+   "pescatarian": true,
+   "glutenFree": true,
+   "glutenFreeAdaptable": false,
+   "dairyFree": true,
+   "nutFree": true,
+   "eggFree": true
+  },
+  "allergens": [],
+  "gmo": {
+   "risk": "low",
+   "sources": [
+    "none"
+   ]
+  },
+  "nutrition": {
+   "calories": 186,
+   "proteinG": 2,
+   "carbsG": 22,
+   "fiberG": 5,
+   "sugarG": 14,
+   "fatG": 12,
+   "satFatG": 2,
+   "sodiumMg": 680,
+   "cholesterolMg": 0
+  },
+  "tags": [
+   "french",
+   "salad",
+   "side",
+   "no-cook",
+   "budget",
+   "vegetarian",
+   "gluten-free",
+   "dairy-free",
+   "make-ahead",
+   "healthy",
+   "easy"
+  ],
+  "image": {
+   "file": "carrot-salad.jpg",
+   "wikipedia": "Carrot salad"
+  }
+ },
+ {
+  "id": "ch-jp-025",
+  "slug": "jp-chicken-liver-mousse",
+  "title": "Chicken Liver Mousse",
+  "genre": "french",
+  "subgenre": "appetizers",
+  "chef": {
+   "name": "Jacques Pepin",
+   "slug": "jacques-pepin"
+  },
+  "description": "Livers sauteed with cognac and blended with butter into a silky mousse.",
+  "difficulty": "intermediate",
+  "easeScore": 7,
+  "spiceScore": 2,
+  "popularity": 6,
+  "pantryScore": 6,
+  "servings": 10,
+  "prepMin": 20,
+  "cookMin": 250,
+  "totalMin": 270,
+  "equipment": [
+   "stovetop",
+   "blender"
+  ],
+  "ingredients": [
+   "1 1/2 lb chicken livers, trimmed",
+   "1 cup whole milk",
+   "3 tbsp butter",
+   "2 shallots, minced",
+   "3 cloves garlic, minced",
+   "1 tsp fresh thyme leaves",
+   "1/4 cup cognac",
+   "1/4 cup dry white wine",
+   "1 cup butter, softened",
+   "1/4 cup heavy cream",
+   "2 tsp salt",
+   "1 tsp black pepper",
+   "1/4 tsp ground allspice",
+   "1/4 cup melted butter, to seal",
+   "1 baguette, sliced and toasted",
+   "1/2 cup cornichons"
+  ],
+  "ingredientKeys": [
+   "chicken-livers",
+   "whole-milk",
+   "butter",
+   "shallot",
+   "garlic",
+   "fresh-thyme",
+   "cognac",
+   "white-wine",
+   "butter",
+   "heavy-cream",
+   "salt",
+   "black-pepper",
+   "allspice",
+   "butter",
+   "baguette",
+   "cornichons"
+  ],
+  "specialty": [
+   "chicken-livers",
+   "shallot",
+   "fresh-thyme",
+   "cognac",
+   "white-wine",
+   "allspice",
+   "baguette",
+   "cornichons"
+  ],
+  "steps": [
+   "Soak the trimmed livers in the milk for 1 hour, then drain and pat dry. Milk draws out some of the blood and mineral bitterness, which makes the finished mousse much rounder.",
+   "Sauté the shallots and garlic in the 3 tbsp butter 3 minutes, then add the livers and thyme and cook over medium-high heat 4-5 minutes.",
+   "The livers should stay rosy pink in the center. Overcooked liver turns grainy and chalky and no amount of blending fixes it.",
+   "Take the pan off the heat before adding the cognac, then return it and let it bubble down, followed by the wine. Reduce until syrupy.",
+   "Blend everything while still warm with the softened butter, cream, salt, pepper and allspice until completely smooth, then pass it through a fine sieve. Sieving is what makes the difference between a coarse pate and a silky mousse.",
+   "Pack into crocks, pour melted butter over the surface to seal, and chill at least 4 hours. Serve with toasted baguette and cornichons."
+  ],
+  "diet": {
+   "vegetarian": false,
+   "vegan": false,
+   "pescatarian": false,
+   "glutenFree": false,
+   "glutenFreeAdaptable": true,
+   "dairyFree": false,
+   "nutFree": true,
+   "eggFree": true
+  },
+  "allergens": [
+   "gluten",
+   "dairy",
+   "sulfites"
+  ],
+  "gmo": {
+   "risk": "moderate",
+   "sources": [
+    "grain-fed-meat",
+    "grain-fed-dairy",
+    "processed-bread"
+   ]
+  },
+  "nutrition": {
+   "calories": 512,
+   "proteinG": 18,
+   "carbsG": 18,
+   "fiberG": 1,
+   "sugarG": 3,
+   "fatG": 40,
+   "satFatG": 24,
+   "sodiumMg": 880,
+   "cholesterolMg": 398
+  },
+  "tags": [
+   "french",
+   "appetizer",
+   "technique",
+   "make-ahead",
+   "charcuterie",
+   "party",
+   "entertaining",
+   "classic",
+   "budget"
+  ],
+  "image": {
+   "file": "liver-mousse.jpg",
+   "wikipedia": "Pâté"
+  }
+ }
+]

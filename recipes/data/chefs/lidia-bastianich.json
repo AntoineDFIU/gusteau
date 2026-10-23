@@ -1,0 +1,2846 @@
+[
+ {
+  "id": "ch-lb-001",
+  "slug": "lb-marinara-sauce",
+  "title": "Marinara Sauce",
+  "genre": "italian",
+  "subgenre": "pasta",
+  "chef": {
+   "name": "Lidia Bastianich",
+   "slug": "lidia-bastianich"
+  },
+  "description": "A 30-minute tomato sauce with garlic and basil and nothing else.",
+  "difficulty": "beginner",
+  "easeScore": 10,
+  "spiceScore": 2,
+  "popularity": 10,
+  "pantryScore": 10,
+  "servings": 8,
+  "prepMin": 10,
+  "cookMin": 35,
+  "totalMin": 45,
+  "equipment": [
+   "stovetop"
+  ],
+  "ingredients": [
+   "2 cans (28 oz each) San Marzano tomatoes",
+   "1/3 cup olive oil",
+   "8 cloves garlic, thinly sliced",
+   "1/2 tsp red pepper flakes",
+   "2 tsp salt",
+   "1/2 tsp sugar",
+   "1 cup fresh basil leaves",
+   "1 lb spaghetti",
+   "1 cup grated Parmesan"
+  ],
+  "ingredientKeys": [
+   "san-marzano-tomatoes",
+   "olive-oil",
+   "garlic",
+   "red-pepper-flakes",
+   "salt",
+   "sugar",
+   "fresh-basil",
+   "spaghetti",
+   "parmesan"
+  ],
+  "specialty": [
+   "san-marzano-tomatoes"
+  ],
+  "steps": [
+   "Crush the tomatoes by hand in a bowl rather than blending them. Hand-crushing leaves varied pieces and a better texture; a blender aerates the sauce and turns it pale orange.",
+   "Warm the olive oil with the sliced garlic over medium-low heat 3-4 minutes, until the garlic is pale gold and fragrant. Browned garlic makes the whole pot bitter, so pull back the heat if it colors fast.",
+   "Add the pepper flakes for 30 seconds, then the crushed tomatoes with their juice.",
+   "Add the salt and the half teaspoon of sugar. The sugar is not there to sweeten the sauce - canned tomatoes are acidic, and it balances them.",
+   "Simmer 25-30 minutes until the sauce darkens and the oil separates slightly at the edges. That separation is the sign it is done.",
+   "Tear in the basil in the last 2 minutes. Toss with cooked spaghetti and a ladle of pasta water, and serve with Parmesan. The sauce freezes well in batches."
+  ],
+  "diet": {
+   "vegetarian": true,
+   "vegan": false,
+   "pescatarian": true,
+   "glutenFree": false,
+   "glutenFreeAdaptable": true,
+   "dairyFree": false,
+   "nutFree": true,
+   "eggFree": true
+  },
+  "allergens": [
+   "gluten",
+   "dairy"
+  ],
+  "gmo": {
+   "risk": "low",
+   "sources": [
+    "grain-fed-dairy",
+    "sugar-beet"
+   ]
+  },
+  "nutrition": {
+   "calories": 448,
+   "proteinG": 16,
+   "carbsG": 62,
+   "fiberG": 5,
+   "sugarG": 9,
+   "fatG": 16,
+   "satFatG": 4,
+   "sodiumMg": 880,
+   "cholesterolMg": 12
+  },
+  "tags": [
+   "italian",
+   "foundation",
+   "pantry",
+   "vegetarian",
+   "budget",
+   "make-ahead",
+   "family",
+   "classic",
+   "freezer",
+   "easy"
+  ],
+  "image": {
+   "file": "marinara.jpg",
+   "wikipedia": "Marinara sauce"
+  }
+ },
+ {
+  "id": "ch-lb-002",
+  "slug": "lb-pasta-e-piselli",
+  "title": "Pasta e Piselli",
+  "genre": "italian",
+  "subgenre": "pasta",
+  "chef": {
+   "name": "Lidia Bastianich",
+   "slug": "lidia-bastianich"
+  },
+  "description": "A soupy pasta and pea dish from the Italian pantry, ready in 25 minutes.",
+  "difficulty": "beginner",
+  "easeScore": 10,
+  "spiceScore": 2,
+  "popularity": 7,
+  "pantryScore": 10,
+  "servings": 6,
+  "prepMin": 10,
+  "cookMin": 25,
+  "totalMin": 35,
+  "equipment": [
+   "stovetop"
+  ],
+  "ingredients": [
+   "1/4 cup olive oil",
+   "4 oz pancetta, diced",
+   "1 yellow onion, finely diced",
+   "4 cloves garlic, sliced",
+   "1/2 tsp red pepper flakes",
+   "3 tbsp tomato paste",
+   "4 cups frozen peas",
+   "5 cups chicken broth",
+   "12 oz ditalini pasta",
+   "2 tsp salt",
+   "1 cup grated Parmesan",
+   "1/3 cup chopped parsley"
+  ],
+  "ingredientKeys": [
+   "olive-oil",
+   "pancetta",
+   "yellow-onion",
+   "garlic",
+   "red-pepper-flakes",
+   "tomato-paste",
+   "frozen-peas",
+   "chicken-broth",
+   "ditalini",
+   "salt",
+   "parmesan",
+   "parsley"
+  ],
+  "specialty": [
+   "pancetta",
+   "ditalini"
+  ],
+  "steps": [
+   "Render the pancetta in the olive oil 5 minutes, then add the onion and cook 6 minutes until soft.",
+   "Add the garlic and pepper flakes for 1 minute, then the tomato paste and fry it 2 minutes until it darkens from bright red to brick.",
+   "Add the peas and broth and simmer 8 minutes.",
+   "Add the pasta directly to the pot and cook until al dente, stirring often. Cooking the pasta in the broth rather than separately is what makes this a single dish - the starch thickens everything into a loose sauce.",
+   "Season and let it rest 5 minutes off the heat. It should be soupy but not watery, somewhere between pasta and soup, which is exactly right.",
+   "Stir in the Parmesan and parsley and serve with more olive oil and cheese."
+  ],
+  "diet": {
+   "vegetarian": false,
+   "vegan": false,
+   "pescatarian": false,
+   "glutenFree": false,
+   "glutenFreeAdaptable": true,
+   "dairyFree": false,
+   "nutFree": true,
+   "eggFree": true
+  },
+  "allergens": [
+   "gluten",
+   "dairy"
+  ],
+  "gmo": {
+   "risk": "moderate",
+   "sources": [
+    "grain-fed-meat",
+    "grain-fed-dairy"
+   ]
+  },
+  "nutrition": {
+   "calories": 512,
+   "proteinG": 24,
+   "carbsG": 62,
+   "fiberG": 8,
+   "sugarG": 9,
+   "fatG": 19,
+   "satFatG": 6,
+   "sodiumMg": 1280,
+   "cholesterolMg": 32
+  },
+  "tags": [
+   "italian",
+   "quick",
+   "budget",
+   "pantry",
+   "family",
+   "one-pot",
+   "weeknight",
+   "comfort",
+   "easy"
+  ],
+  "image": {
+   "file": "pasta-e-ceci.jpg",
+   "wikipedia": "Pasta e piselli"
+  }
+ },
+ {
+  "id": "ch-lb-003",
+  "slug": "lb-butternut-risotto",
+  "title": "Butternut Squash Risotto",
+  "genre": "italian",
+  "subgenre": "risotto",
+  "chef": {
+   "name": "Lidia Bastianich",
+   "slug": "lidia-bastianich"
+  },
+  "description": "Risotto with roasted squash, sage and plenty of Grana Padano.",
+  "difficulty": "intermediate",
+  "easeScore": 6,
+  "spiceScore": 1,
+  "popularity": 8,
+  "pantryScore": 6,
+  "servings": 6,
+  "prepMin": 20,
+  "cookMin": 50,
+  "totalMin": 70,
+  "equipment": [
+   "oven",
+   "stovetop"
+  ],
+  "ingredients": [
+   "2 lb butternut squash, peeled and cubed",
+   "3 tbsp olive oil",
+   "1 1/2 cups carnaroli rice",
+   "7 cups chicken broth",
+   "1 yellow onion, finely diced",
+   "6 tbsp butter",
+   "3/4 cup dry white wine",
+   "2 tbsp chopped fresh sage",
+   "1 1/2 cups grated Grana Padano",
+   "2 tsp salt",
+   "1 tsp black pepper",
+   "1/4 tsp ground nutmeg"
+  ],
+  "ingredientKeys": [
+   "butternut-squash",
+   "olive-oil",
+   "carnaroli-rice",
+   "chicken-broth",
+   "yellow-onion",
+   "butter",
+   "white-wine",
+   "fresh-sage",
+   "grana-padano",
+   "salt",
+   "black-pepper",
+   "nutmeg"
+  ],
+  "specialty": [
+   "butternut-squash",
+   "carnaroli-rice",
+   "white-wine",
+   "fresh-sage",
+   "grana-padano"
+  ],
+  "steps": [
+   "Toss the squash with the olive oil and salt and roast at 425F for 25 minutes until browned at the edges. Roasting rather than simmering it in the risotto concentrates the sweetness instead of diluting it.",
+   "Keep the broth at a bare simmer in a separate pot. Cold broth added to risotto halts the cooking and makes the grains gluey.",
+   "Cook the onion in 3 tbsp of the butter over medium heat 6 minutes without browning, then add the rice and toast it 2 minutes until the grains are translucent at the edges.",
+   "Add the wine and stir until absorbed, then add the hot broth one ladle at a time, stirring often and waiting until each is nearly absorbed. This takes 18-20 minutes, and the stirring is what pulls the starch out of the grains.",
+   "Mash half the roasted squash and fold it in during the last 5 minutes, leaving the rest in whole cubes.",
+   "Off the heat, beat in the remaining butter and the Grana Padano hard - this final whisking, the mantecatura, is what makes risotto glossy. Add the sage, nutmeg and pepper and serve immediately."
+  ],
+  "diet": {
+   "vegetarian": false,
+   "vegan": false,
+   "pescatarian": false,
+   "glutenFree": true,
+   "glutenFreeAdaptable": false,
+   "dairyFree": false,
+   "nutFree": true,
+   "eggFree": true
+  },
+  "allergens": [
+   "dairy",
+   "sulfites"
+  ],
+  "gmo": {
+   "risk": "low",
+   "sources": [
+    "grain-fed-dairy",
+    "grain-fed-meat"
+   ]
+  },
+  "nutrition": {
+   "calories": 586,
+   "proteinG": 18,
+   "carbsG": 68,
+   "fiberG": 5,
+   "sugarG": 9,
+   "fatG": 26,
+   "satFatG": 14,
+   "sodiumMg": 1280,
+   "cholesterolMg": 68
+  },
+  "tags": [
+   "italian",
+   "risotto",
+   "technique",
+   "fall",
+   "vegetarian-adaptable",
+   "gluten-free",
+   "comfort",
+   "entertaining"
+  ],
+  "image": {
+   "file": "risotto-milanese.jpg",
+   "wikipedia": "Risotto"
+  }
+ },
+ {
+  "id": "ch-lb-004",
+  "slug": "lb-pasta-alla-norcina",
+  "title": "Pasta alla Norcina",
+  "genre": "italian",
+  "subgenre": "pasta",
+  "chef": {
+   "name": "Lidia Bastianich",
+   "slug": "lidia-bastianich"
+  },
+  "description": "Umbrian sausage and cream sauce with white wine and no tomato.",
+  "difficulty": "intermediate",
+  "easeScore": 7,
+  "spiceScore": 3,
+  "popularity": 7,
+  "pantryScore": 7,
+  "servings": 4,
+  "prepMin": 15,
+  "cookMin": 25,
+  "totalMin": 40,
+  "equipment": [
+   "stovetop"
+  ],
+  "ingredients": [
+   "1 lb rigatoni",
+   "1 lb Italian sausage, casings removed",
+   "3 tbsp olive oil",
+   "1 yellow onion, finely diced",
+   "4 cloves garlic, minced",
+   "1/2 tsp red pepper flakes",
+   "1 cup dry white wine",
+   "1 cup heavy cream",
+   "1/4 tsp ground nutmeg",
+   "1 1/2 tsp salt",
+   "1 tsp black pepper",
+   "1 1/2 cups grated Pecorino Romano",
+   "1/3 cup chopped parsley"
+  ],
+  "ingredientKeys": [
+   "rigatoni",
+   "italian-sausage",
+   "olive-oil",
+   "yellow-onion",
+   "garlic",
+   "red-pepper-flakes",
+   "white-wine",
+   "heavy-cream",
+   "nutmeg",
+   "salt",
+   "black-pepper",
+   "pecorino",
+   "parsley"
+  ],
+  "specialty": [
+   "italian-sausage",
+   "white-wine",
+   "pecorino"
+  ],
+  "steps": [
+   "Break the sausage into small irregular pieces with your fingers rather than slicing it. Ragged edges brown far better and give the sauce its texture.",
+   "Brown the sausage in the oil over medium-high heat 8 minutes until well colored, then add the onion and cook 5 minutes.",
+   "Add the garlic and pepper flakes for 1 minute.",
+   "Pour in the wine and reduce by half, scraping the browned bits off the pan. There is no tomato in this sauce - the wine, the pork fat and the cream carry all of it, which is why Norcina tastes nothing like a red ragu.",
+   "Add the cream and nutmeg and simmer 5 minutes until it coats a spoon.",
+   "Toss with the cooked rigatoni and a splash of pasta water, then finish off the heat with the Pecorino and parsley."
+  ],
+  "diet": {
+   "vegetarian": false,
+   "vegan": false,
+   "pescatarian": false,
+   "glutenFree": false,
+   "glutenFreeAdaptable": true,
+   "dairyFree": false,
+   "nutFree": true,
+   "eggFree": true
+  },
+  "allergens": [
+   "gluten",
+   "dairy",
+   "sulfites"
+  ],
+  "gmo": {
+   "risk": "moderate",
+   "sources": [
+    "grain-fed-meat",
+    "grain-fed-dairy"
+   ]
+  },
+  "nutrition": {
+   "calories": 982,
+   "proteinG": 48,
+   "carbsG": 86,
+   "fiberG": 4,
+   "sugarG": 7,
+   "fatG": 52,
+   "satFatG": 26,
+   "sodiumMg": 1680,
+   "cholesterolMg": 178
+  },
+  "tags": [
+   "italian",
+   "regional",
+   "authentic",
+   "weeknight",
+   "comfort",
+   "high-protein",
+   "date-night",
+   "technique"
+  ],
+  "image": {
+   "file": "rigatoni.jpg",
+   "wikipedia": "Umbrian cuisine"
+  }
+ },
+ {
+  "id": "ch-lb-005",
+  "slug": "lb-chicken-scarpariello",
+  "title": "Chicken Scarpariello",
+  "genre": "italian",
+  "subgenre": "secondi",
+  "chef": {
+   "name": "Lidia Bastianich",
+   "slug": "lidia-bastianich"
+  },
+  "description": "Chicken and sausage with hot cherry peppers and a vinegar pan sauce.",
+  "difficulty": "beginner",
+  "easeScore": 9,
+  "spiceScore": 6,
+  "popularity": 8,
+  "pantryScore": 7,
+  "servings": 6,
+  "prepMin": 15,
+  "cookMin": 45,
+  "totalMin": 60,
+  "equipment": [
+   "stovetop",
+   "oven"
+  ],
+  "ingredients": [
+   "8 bone-in chicken thighs",
+   "1 lb Italian sausage links, cut in chunks",
+   "2 tsp salt",
+   "1 tsp black pepper",
+   "3 tbsp olive oil",
+   "2 yellow onions, sliced",
+   "8 cloves garlic, smashed",
+   "1 1/2 cups hot pickled cherry peppers, sliced",
+   "1/2 cup cherry pepper brine",
+   "1 cup dry white wine",
+   "1 1/2 cups chicken broth",
+   "2 sprigs fresh rosemary",
+   "1 lb baby potatoes, halved",
+   "1/3 cup chopped parsley"
+  ],
+  "ingredientKeys": [
+   "chicken-thighs",
+   "italian-sausage",
+   "salt",
+   "black-pepper",
+   "olive-oil",
+   "yellow-onion",
+   "garlic",
+   "cherry-peppers",
+   "cherry-pepper-brine",
+   "white-wine",
+   "chicken-broth",
+   "fresh-rosemary",
+   "baby-potato",
+   "parsley"
+  ],
+  "specialty": [
+   "italian-sausage",
+   "cherry-peppers",
+   "cherry-pepper-brine",
+   "white-wine",
+   "fresh-rosemary",
+   "baby-potato"
+  ],
+  "steps": [
+   "Pat the chicken dry, season well, and brown it skin-side down in the oil 7 minutes, then 3 on the other side. Set aside. Brown the sausage chunks in the same pan.",
+   "Add the onions and potatoes and cook 8 minutes, then the garlic for 1 minute.",
+   "Add the cherry peppers and their brine. The brine is the signature of scarpariello - it gives the dish its sharp, mouth-watering heat rather than just chile burn, so do not substitute plain vinegar.",
+   "Add the wine and reduce by half, then the broth and rosemary.",
+   "Return the chicken and sausage, skin-side up and above the liquid so the skin stays crisp, and roast uncovered at 400F for 25-30 minutes.",
+   "Check that the thighs read 175F and the potatoes are tender. Taste the sauce - it should be bright and hot. Finish with parsley."
+  ],
+  "diet": {
+   "vegetarian": false,
+   "vegan": false,
+   "pescatarian": false,
+   "glutenFree": true,
+   "glutenFreeAdaptable": false,
+   "dairyFree": true,
+   "nutFree": true,
+   "eggFree": true
+  },
+  "allergens": [
+   "sulfites"
+  ],
+  "gmo": {
+   "risk": "moderate",
+   "sources": [
+    "grain-fed-meat"
+   ]
+  },
+  "nutrition": {
+   "calories": 782,
+   "proteinG": 52,
+   "carbsG": 32,
+   "fiberG": 4,
+   "sugarG": 7,
+   "fatG": 48,
+   "satFatG": 15,
+   "sodiumMg": 1880,
+   "cholesterolMg": 212
+  },
+  "tags": [
+   "italian",
+   "one-pan",
+   "spicy",
+   "gluten-free",
+   "dairy-free",
+   "family",
+   "high-protein",
+   "weeknight",
+   "regional"
+  ],
+  "image": {
+   "file": "chicken-cacciatore.jpg",
+   "wikipedia": "Chicken scarpariello"
+  }
+ },
+ {
+  "id": "ch-lb-006",
+  "slug": "lb-stuffed-pork-loin",
+  "title": "Stuffed Pork Loin",
+  "genre": "italian",
+  "subgenre": "secondi",
+  "chef": {
+   "name": "Lidia Bastianich",
+   "slug": "lidia-bastianich"
+  },
+  "description": "Pork loin butterflied, filled with prosciutto and spinach, rolled and roasted.",
+  "difficulty": "intermediate",
+  "easeScore": 7,
+  "spiceScore": 1,
+  "popularity": 7,
+  "pantryScore": 6,
+  "servings": 8,
+  "prepMin": 35,
+  "cookMin": 80,
+  "totalMin": 115,
+  "equipment": [
+   "oven",
+   "stovetop"
+  ],
+  "ingredients": [
+   "1 boneless pork loin (4 lb)",
+   "2 tsp salt",
+   "1 tsp black pepper",
+   "10 oz fresh spinach",
+   "3 tbsp olive oil",
+   "4 cloves garlic, minced",
+   "6 oz prosciutto, sliced",
+   "1 cup grated Grana Padano",
+   "1 cup fresh breadcrumbs",
+   "1/4 cup pine nuts, toasted",
+   "1/4 cup raisins",
+   "2 tbsp chopped fresh rosemary",
+   "1 cup dry white wine",
+   "1 1/2 cups chicken broth",
+   "2 tbsp butter"
+  ],
+  "ingredientKeys": [
+   "pork-loin",
+   "salt",
+   "black-pepper",
+   "fresh-spinach",
+   "olive-oil",
+   "garlic",
+   "prosciutto",
+   "grana-padano",
+   "breadcrumbs",
+   "pine-nuts",
+   "raisins",
+   "fresh-rosemary",
+   "white-wine",
+   "chicken-broth",
+   "butter"
+  ],
+  "specialty": [
+   "pork-loin",
+   "fresh-spinach",
+   "prosciutto",
+   "grana-padano",
+   "pine-nuts",
+   "raisins",
+   "fresh-rosemary",
+   "white-wine"
+  ],
+  "steps": [
+   "Butterfly the loin: cut it lengthwise almost through, open it like a book, then pound it to an even 1/2 inch thickness between sheets of plastic.",
+   "Wilt the spinach with the garlic in the oil, then squeeze it completely dry. Wet filling steams the meat from the inside and leaks out during roasting.",
+   "Season the opened loin, lay the prosciutto over it, then spread the spinach, Grana Padano, breadcrumbs, pine nuts, raisins and rosemary across the surface, leaving a border.",
+   "Roll it up tightly from one long side and tie with twine every 1 1/2 inches into an even cylinder. Even thickness is what makes it cook uniformly.",
+   "Brown the roll in oil on all sides, then roast at 375F for 60-70 minutes, to 145F internal.",
+   "Rest 20 minutes before cutting the twine - it needs that time to firm up enough to slice into neat pinwheels. Deglaze the pan with the wine and broth, reduce, swirl in the butter, and spoon over."
+  ],
+  "diet": {
+   "vegetarian": false,
+   "vegan": false,
+   "pescatarian": false,
+   "glutenFree": false,
+   "glutenFreeAdaptable": false,
+   "dairyFree": false,
+   "nutFree": false,
+   "eggFree": true
+  },
+  "allergens": [
+   "gluten",
+   "dairy",
+   "tree-nut",
+   "sulfites"
+  ],
+  "gmo": {
+   "risk": "moderate",
+   "sources": [
+    "grain-fed-meat",
+    "processed-bread",
+    "grain-fed-dairy"
+   ]
+  },
+  "nutrition": {
+   "calories": 682,
+   "proteinG": 62,
+   "carbsG": 22,
+   "fiberG": 3,
+   "sugarG": 7,
+   "fatG": 36,
+   "satFatG": 13,
+   "sodiumMg": 1480,
+   "cholesterolMg": 178
+  },
+  "tags": [
+   "italian",
+   "special-occasion",
+   "holiday",
+   "technique",
+   "entertaining",
+   "high-protein",
+   "sunday",
+   "family"
+  ],
+  "image": {
+   "file": "stuffed-pork-loin.jpg",
+   "wikipedia": "Pork loin"
+  }
+ },
+ {
+  "id": "ch-lb-007",
+  "slug": "lb-eggplant-rollatini",
+  "title": "Eggplant Rollatini",
+  "genre": "italian",
+  "subgenre": "secondi",
+  "chef": {
+   "name": "Lidia Bastianich",
+   "slug": "lidia-bastianich"
+  },
+  "description": "Grilled eggplant slices rolled around ricotta and baked in tomato sauce.",
+  "difficulty": "intermediate",
+  "easeScore": 7,
+  "spiceScore": 2,
+  "popularity": 8,
+  "pantryScore": 7,
+  "servings": 6,
+  "prepMin": 35,
+  "cookMin": 50,
+  "totalMin": 85,
+  "equipment": [
+   "stovetop",
+   "oven"
+  ],
+  "ingredients": [
+   "3 large eggplants, sliced lengthwise 1/4 inch thick",
+   "1 tbsp salt, for draining",
+   "1/3 cup olive oil",
+   "2 cups ricotta cheese",
+   "1 1/2 cups grated Grana Padano",
+   "1 egg",
+   "1/3 cup chopped basil",
+   "1/4 tsp ground nutmeg",
+   "1 tsp salt",
+   "1/2 tsp black pepper",
+   "4 cups marinara sauce",
+   "2 cups shredded mozzarella"
+  ],
+  "ingredientKeys": [
+   "eggplant",
+   "salt",
+   "olive-oil",
+   "ricotta",
+   "grana-padano",
+   "egg",
+   "fresh-basil",
+   "nutmeg",
+   "salt",
+   "black-pepper",
+   "marinara-sauce",
+   "mozzarella"
+  ],
+  "specialty": [
+   "eggplant",
+   "ricotta",
+   "grana-padano",
+   "mozzarella"
+  ],
+  "steps": [
+   "Slice the eggplants lengthwise so you get long flexible planks. Salt them and lay them in a colander for 30 minutes, then press dry.",
+   "Brush the slices with oil and griddle them in a hot dry pan 2-3 minutes per side until pliable and marked. Grilling rather than frying keeps the dish from turning greasy, and the slices need to be flexible enough to roll without cracking.",
+   "Mix the ricotta, 1 cup of the Grana Padano, the egg, basil, nutmeg, salt and pepper into a filling.",
+   "Spread 2 tbsp of filling along the wide end of each slice and roll it up.",
+   "Spread 2 cups of marinara in a baking dish and set the rolls seam-side down in it. Spoon the rest of the sauce over.",
+   "Scatter the mozzarella and remaining Grana Padano and bake at 375F for 35-40 minutes until bubbling and browned. Rest 10 minutes before serving."
+  ],
+  "diet": {
+   "vegetarian": true,
+   "vegan": false,
+   "pescatarian": true,
+   "glutenFree": true,
+   "glutenFreeAdaptable": false,
+   "dairyFree": false,
+   "nutFree": true,
+   "eggFree": false
+  },
+  "allergens": [
+   "dairy",
+   "egg"
+  ],
+  "gmo": {
+   "risk": "moderate",
+   "sources": [
+    "grain-fed-dairy",
+    "processed-sauce"
+   ]
+  },
+  "nutrition": {
+   "calories": 586,
+   "proteinG": 30,
+   "carbsG": 32,
+   "fiberG": 9,
+   "sugarG": 16,
+   "fatG": 38,
+   "satFatG": 17,
+   "sodiumMg": 1480,
+   "cholesterolMg": 112
+  },
+  "tags": [
+   "italian",
+   "vegetarian",
+   "gluten-free",
+   "make-ahead",
+   "family",
+   "comfort",
+   "entertaining",
+   "sunday",
+   "high-fiber"
+  ],
+  "image": {
+   "file": "eggplant-parmesan.jpg",
+   "wikipedia": "Eggplant"
+  }
+ },
+ {
+  "id": "ch-lb-008",
+  "slug": "lb-frittata-di-spaghetti",
+  "title": "Frittata di Spaghetti",
+  "genre": "italian",
+  "subgenre": "pasta",
+  "chef": {
+   "name": "Lidia Bastianich",
+   "slug": "lidia-bastianich"
+  },
+  "description": "Leftover spaghetti bound with egg and cheese and fried into a cake.",
+  "difficulty": "beginner",
+  "easeScore": 9,
+  "spiceScore": 2,
+  "popularity": 7,
+  "pantryScore": 9,
+  "servings": 6,
+  "prepMin": 10,
+  "cookMin": 25,
+  "totalMin": 35,
+  "equipment": [
+   "stovetop"
+  ],
+  "ingredients": [
+   "1 lb cooked spaghetti, cooled",
+   "6 eggs",
+   "1 1/2 cups grated Grana Padano",
+   "1/2 cup diced salami",
+   "1 cup shredded mozzarella",
+   "1/3 cup chopped parsley",
+   "1 tsp salt",
+   "1 tsp black pepper",
+   "1/4 tsp red pepper flakes",
+   "1/4 cup olive oil"
+  ],
+  "ingredientKeys": [
+   "spaghetti",
+   "egg",
+   "grana-padano",
+   "salami",
+   "mozzarella",
+   "parsley",
+   "salt",
+   "black-pepper",
+   "red-pepper-flakes",
+   "olive-oil"
+  ],
+  "specialty": [
+   "grana-padano",
+   "salami",
+   "mozzarella"
+  ],
+  "steps": [
+   "This is the classic Italian answer to leftover pasta, and it genuinely works better with day-old spaghetti than freshly cooked - the strands are drier and hold together.",
+   "Beat the eggs with the Grana Padano, parsley, salt, pepper and pepper flakes.",
+   "Toss the cooled spaghetti thoroughly with the egg mixture, the salami and the mozzarella, making sure every strand is coated.",
+   "Heat the oil in a 10-inch nonstick skillet over medium heat, add the spaghetti mixture, and press it into a flat even cake with a spatula.",
+   "Cook 10-12 minutes without disturbing it, until the bottom is set and deeply golden. Shake the pan occasionally to check it is not sticking.",
+   "Slide it onto a plate, invert the pan over it and flip it back in, then cook 8-10 minutes on the second side. Rest 5 minutes and cut in wedges. Good hot, warm or at room temperature."
+  ],
+  "diet": {
+   "vegetarian": false,
+   "vegan": false,
+   "pescatarian": false,
+   "glutenFree": false,
+   "glutenFreeAdaptable": true,
+   "dairyFree": false,
+   "nutFree": true,
+   "eggFree": false
+  },
+  "allergens": [
+   "gluten",
+   "dairy",
+   "egg"
+  ],
+  "gmo": {
+   "risk": "moderate",
+   "sources": [
+    "grain-fed-meat",
+    "grain-fed-dairy"
+   ]
+  },
+  "nutrition": {
+   "calories": 586,
+   "proteinG": 30,
+   "carbsG": 48,
+   "fiberG": 3,
+   "sugarG": 3,
+   "fatG": 30,
+   "satFatG": 12,
+   "sodiumMg": 1180,
+   "cholesterolMg": 228
+  },
+  "tags": [
+   "italian",
+   "leftovers",
+   "budget",
+   "quick",
+   "family",
+   "picnic",
+   "easy",
+   "zero-waste",
+   "high-protein"
+  ],
+  "image": {
+   "file": "frittata.jpg",
+   "wikipedia": "Frittata"
+  }
+ },
+ {
+  "id": "ch-lb-009",
+  "slug": "lb-polenta-sausage-ragu",
+  "title": "Polenta with Sausage and Mushroom Ragu",
+  "genre": "italian",
+  "subgenre": "primi",
+  "chef": {
+   "name": "Lidia Bastianich",
+   "slug": "lidia-bastianich"
+  },
+  "description": "Soft polenta under a long-simmered sausage and porcini ragu.",
+  "difficulty": "intermediate",
+  "easeScore": 7,
+  "spiceScore": 3,
+  "popularity": 7,
+  "pantryScore": 7,
+  "servings": 6,
+  "prepMin": 20,
+  "cookMin": 75,
+  "totalMin": 95,
+  "equipment": [
+   "stovetop"
+  ],
+  "ingredients": [
+   "1 1/2 cups coarse polenta",
+   "6 cups water",
+   "2 tsp salt",
+   "4 tbsp butter",
+   "1 1/2 cups grated Grana Padano",
+   "1 oz dried porcini mushrooms",
+   "1 lb Italian sausage, casings removed",
+   "1 lb cremini mushrooms, sliced",
+   "1/4 cup olive oil",
+   "1 yellow onion, diced",
+   "4 cloves garlic, minced",
+   "3 tbsp tomato paste",
+   "1 cup dry red wine",
+   "1 can (14 oz) crushed tomatoes",
+   "2 sprigs fresh rosemary",
+   "1/3 cup chopped parsley"
+  ],
+  "ingredientKeys": [
+   "polenta",
+   "water",
+   "salt",
+   "butter",
+   "grana-padano",
+   "dried-porcini",
+   "italian-sausage",
+   "mushroom",
+   "olive-oil",
+   "yellow-onion",
+   "garlic",
+   "tomato-paste",
+   "red-wine",
+   "crushed-tomatoes",
+   "fresh-rosemary",
+   "parsley"
+  ],
+  "specialty": [
+   "polenta",
+   "grana-padano",
+   "dried-porcini",
+   "italian-sausage",
+   "red-wine",
+   "fresh-rosemary"
+  ],
+  "steps": [
+   "Soak the dried porcini in a cup of hot water 20 minutes, then chop them and strain the soaking liquid - that liquid carries the most concentrated mushroom flavor in the dish, so save it.",
+   "Brown the sausage in the oil, then add the fresh mushrooms over high heat and cook 8 minutes until they have given up their water and browned.",
+   "Add the onion for 5 minutes, then the garlic and tomato paste for 2 minutes.",
+   "Add the wine and reduce by half, then the tomatoes, the chopped porcini, the strained soaking liquid and the rosemary. Simmer 45 minutes until thick.",
+   "Meanwhile bring the water to a boil with the salt and rain in the polenta while whisking constantly - adding it all at once guarantees lumps. Cook 35-40 minutes on the lowest heat, stirring often and scraping the bottom.",
+   "Beat the butter and Grana Padano into the polenta off the heat. It should be pourable, not stiff. Spoon it into bowls, top with the ragu, and finish with parsley."
+  ],
+  "diet": {
+   "vegetarian": false,
+   "vegan": false,
+   "pescatarian": false,
+   "glutenFree": true,
+   "glutenFreeAdaptable": false,
+   "dairyFree": false,
+   "nutFree": true,
+   "eggFree": true
+  },
+  "allergens": [
+   "dairy",
+   "sulfites"
+  ],
+  "gmo": {
+   "risk": "high",
+   "sources": [
+    "corn",
+    "grain-fed-meat",
+    "grain-fed-dairy"
+   ]
+  },
+  "nutrition": {
+   "calories": 782,
+   "proteinG": 38,
+   "carbsG": 62,
+   "fiberG": 6,
+   "sugarG": 9,
+   "fatG": 42,
+   "satFatG": 17,
+   "sodiumMg": 1680,
+   "cholesterolMg": 118
+  },
+  "tags": [
+   "italian",
+   "comfort",
+   "gluten-free",
+   "technique",
+   "winter",
+   "make-ahead",
+   "family",
+   "regional",
+   "sunday"
+  ],
+  "image": {
+   "file": "polenta.jpg",
+   "wikipedia": "Polenta"
+  }
+ },
+ {
+  "id": "ch-lb-010",
+  "slug": "lb-zuppa-di-lenticchie",
+  "title": "Zuppa di Lenticchie",
+  "genre": "italian",
+  "subgenre": "soups",
+  "chef": {
+   "name": "Lidia Bastianich",
+   "slug": "lidia-bastianich"
+  },
+  "description": "Lentil soup with pancetta, rosemary and a Parmesan rind.",
+  "difficulty": "beginner",
+  "easeScore": 10,
+  "spiceScore": 2,
+  "popularity": 7,
+  "pantryScore": 10,
+  "servings": 6,
+  "prepMin": 15,
+  "cookMin": 50,
+  "totalMin": 65,
+  "equipment": [
+   "stovetop"
+  ],
+  "ingredients": [
+   "2 cups brown lentils, rinsed",
+   "1/4 cup olive oil",
+   "4 oz pancetta, diced",
+   "1 yellow onion, diced",
+   "2 carrots, diced",
+   "2 celery stalks, diced",
+   "5 cloves garlic, minced",
+   "3 tbsp tomato paste",
+   "1/2 tsp red pepper flakes",
+   "8 cups chicken broth",
+   "1 Parmesan rind",
+   "2 sprigs fresh rosemary",
+   "2 bay leaves",
+   "2 tsp salt",
+   "1 tsp black pepper",
+   "2 tbsp red wine vinegar",
+   "1 cup grated Grana Padano",
+   "1/3 cup chopped parsley"
+  ],
+  "ingredientKeys": [
+   "brown-lentils",
+   "olive-oil",
+   "pancetta",
+   "yellow-onion",
+   "carrot",
+   "celery",
+   "garlic",
+   "tomato-paste",
+   "red-pepper-flakes",
+   "chicken-broth",
+   "parmesan-rind",
+   "fresh-rosemary",
+   "bay-leaf",
+   "salt",
+   "black-pepper",
+   "red-wine-vinegar",
+   "grana-padano",
+   "parsley"
+  ],
+  "specialty": [
+   "brown-lentils",
+   "pancetta",
+   "parmesan-rind",
+   "fresh-rosemary",
+   "grana-padano"
+  ],
+  "steps": [
+   "Render the pancetta in the olive oil, then add the onion, carrots and celery and cook 10 minutes until soft. This slow start is where the body of the soup comes from.",
+   "Add the garlic, tomato paste and pepper flakes and cook 2 minutes until the paste darkens.",
+   "Add the lentils, broth, Parmesan rind, rosemary and bay leaves. Never add the salt yet - salting lentils early keeps the skins from softening.",
+   "Simmer 35-40 minutes until the lentils are tender but not collapsed.",
+   "Fish out the rind, rosemary stems and bay leaves, then season with the salt and pepper.",
+   "Add the vinegar off the heat. The acid is what lifts a lentil soup out of heaviness, and it is the step most people skip. Serve with Grana Padano, parsley and olive oil."
+  ],
+  "diet": {
+   "vegetarian": false,
+   "vegan": false,
+   "pescatarian": false,
+   "glutenFree": true,
+   "glutenFreeAdaptable": false,
+   "dairyFree": false,
+   "nutFree": true,
+   "eggFree": true
+  },
+  "allergens": [
+   "dairy",
+   "sulfites"
+  ],
+  "gmo": {
+   "risk": "low",
+   "sources": [
+    "grain-fed-meat",
+    "grain-fed-dairy"
+   ]
+  },
+  "nutrition": {
+   "calories": 512,
+   "proteinG": 30,
+   "carbsG": 52,
+   "fiberG": 16,
+   "sugarG": 7,
+   "fatG": 19,
+   "satFatG": 6,
+   "sodiumMg": 1480,
+   "cholesterolMg": 32
+  },
+  "tags": [
+   "italian",
+   "soup",
+   "budget",
+   "high-fiber",
+   "healthy",
+   "make-ahead",
+   "pantry",
+   "winter",
+   "comfort",
+   "easy"
+  ],
+  "image": {
+   "file": "lentil-soup.jpg",
+   "wikipedia": "Lentil soup"
+  }
+ },
+ {
+  "id": "ch-lb-011",
+  "slug": "lb-lamb-shanks-olives",
+  "title": "Lamb Shanks with Olives",
+  "genre": "italian",
+  "subgenre": "secondi",
+  "chef": {
+   "name": "Lidia Bastianich",
+   "slug": "lidia-bastianich"
+  },
+  "description": "Shanks braised with white wine, olives and rosemary until falling apart.",
+  "difficulty": "intermediate",
+  "easeScore": 7,
+  "spiceScore": 2,
+  "popularity": 7,
+  "pantryScore": 6,
+  "servings": 6,
+  "prepMin": 25,
+  "cookMin": 180,
+  "totalMin": 205,
+  "equipment": [
+   "oven",
+   "stovetop"
+  ],
+  "ingredients": [
+   "6 lamb shanks",
+   "2 tsp salt",
+   "1 tsp black pepper",
+   "1/2 cup all-purpose flour",
+   "1/4 cup olive oil",
+   "2 yellow onions, diced",
+   "3 carrots, diced",
+   "8 cloves garlic, smashed",
+   "3 tbsp tomato paste",
+   "2 cups dry white wine",
+   "4 cups chicken broth",
+   "3 sprigs fresh rosemary",
+   "2 bay leaves",
+   "1 1/2 cups green olives, pitted",
+   "1 tbsp lemon zest",
+   "1/3 cup chopped parsley"
+  ],
+  "ingredientKeys": [
+   "lamb-shank",
+   "salt",
+   "black-pepper",
+   "flour",
+   "olive-oil",
+   "yellow-onion",
+   "carrot",
+   "garlic",
+   "tomato-paste",
+   "white-wine",
+   "chicken-broth",
+   "fresh-rosemary",
+   "bay-leaf",
+   "green-olives",
+   "lemon-zest",
+   "parsley"
+  ],
+  "specialty": [
+   "lamb-shank",
+   "white-wine",
+   "fresh-rosemary",
+   "green-olives"
+  ],
+  "steps": [
+   "Season the shanks and dust them with flour, then brown them hard in the oil on every surface, 10 minutes total. Work in batches - crowding the pot steams the meat and costs you the crust that flavors the whole braise.",
+   "Cook the onions and carrots 10 minutes, then the garlic and tomato paste for 2 minutes.",
+   "Add the wine and reduce by half, scraping the bottom clean. Reducing it properly removes the raw, sharp edge.",
+   "Return the shanks with the broth, rosemary and bay leaves. The liquid should come two thirds up the meat rather than covering it.",
+   "Cover and braise at 325F for 2 1/2 hours, until the meat pulls away from the bone with no resistance.",
+   "Add the olives for the last 20 minutes - any earlier and they go bitter and lose their shape. Skim the fat, then finish with the lemon zest and parsley stirred in raw, which cuts through three hours of richness."
+  ],
+  "diet": {
+   "vegetarian": false,
+   "vegan": false,
+   "pescatarian": false,
+   "glutenFree": false,
+   "glutenFreeAdaptable": true,
+   "dairyFree": true,
+   "nutFree": true,
+   "eggFree": true
+  },
+  "allergens": [
+   "gluten",
+   "sulfites"
+  ],
+  "gmo": {
+   "risk": "moderate",
+   "sources": [
+    "grain-fed-meat"
+   ]
+  },
+  "nutrition": {
+   "calories": 682,
+   "proteinG": 62,
+   "carbsG": 22,
+   "fiberG": 4,
+   "sugarG": 7,
+   "fatG": 36,
+   "satFatG": 11,
+   "sodiumMg": 1680,
+   "cholesterolMg": 178
+  },
+  "tags": [
+   "italian",
+   "special-occasion",
+   "make-ahead",
+   "dairy-free",
+   "high-protein",
+   "winter",
+   "entertaining",
+   "one-pot",
+   "technique"
+  ],
+  "image": {
+   "file": "lamb-shanks.jpg",
+   "wikipedia": "Lamb and mutton"
+  }
+ },
+ {
+  "id": "ch-lb-012",
+  "slug": "lb-spaghetti-tuna-capers",
+  "title": "Spaghetti with Tuna and Capers",
+  "genre": "italian",
+  "subgenre": "pasta",
+  "chef": {
+   "name": "Lidia Bastianich",
+   "slug": "lidia-bastianich"
+  },
+  "description": "A pantry pasta of canned tuna, capers, olives and lemon.",
+  "difficulty": "beginner",
+  "easeScore": 10,
+  "spiceScore": 3,
+  "popularity": 7,
+  "pantryScore": 10,
+  "servings": 4,
+  "prepMin": 10,
+  "cookMin": 20,
+  "totalMin": 30,
+  "equipment": [
+   "stovetop"
+  ],
+  "ingredients": [
+   "1 lb spaghetti",
+   "2 cans (6 oz each) tuna in olive oil",
+   "1/3 cup olive oil",
+   "6 cloves garlic, sliced",
+   "1 tsp red pepper flakes",
+   "4 anchovy fillets",
+   "1/3 cup capers, rinsed",
+   "3/4 cup green olives, chopped",
+   "1 can (14 oz) cherry tomatoes",
+   "1 tsp salt",
+   "2 tbsp lemon juice",
+   "1 tbsp lemon zest",
+   "1/2 cup chopped parsley"
+  ],
+  "ingredientKeys": [
+   "spaghetti",
+   "canned-tuna",
+   "olive-oil",
+   "garlic",
+   "red-pepper-flakes",
+   "anchovy",
+   "capers",
+   "green-olives",
+   "canned-cherry-tomatoes",
+   "salt",
+   "lemon-juice",
+   "lemon-zest",
+   "parsley"
+  ],
+  "specialty": [
+   "canned-tuna",
+   "anchovy",
+   "capers",
+   "green-olives",
+   "canned-cherry-tomatoes"
+  ],
+  "steps": [
+   "Buy tuna packed in olive oil rather than water, and use the oil in the sauce. Water-packed tuna is dry and the dish loses most of its character.",
+   "Warm the olive oil with the garlic and pepper flakes over medium-low 2 minutes, then add the anchovies and mash them with a spoon until they dissolve entirely. They will not taste fishy - they taste savory.",
+   "Add the capers, olives and tomatoes and simmer 12 minutes, crushing the tomatoes with your spoon.",
+   "Flake in the tuna with its oil and warm through for 2 minutes only. Cooking canned tuna hard makes it chalky.",
+   "Taste before adding salt. The anchovies, capers and olives are all salty and this sauce often needs none.",
+   "Toss with the cooked spaghetti and a splash of pasta water, then finish off the heat with the lemon juice, zest and parsley. No cheese with this one."
+  ],
+  "diet": {
+   "vegetarian": false,
+   "vegan": false,
+   "pescatarian": true,
+   "glutenFree": false,
+   "glutenFreeAdaptable": true,
+   "dairyFree": true,
+   "nutFree": true,
+   "eggFree": true
+  },
+  "allergens": [
+   "gluten",
+   "fish"
+  ],
+  "gmo": {
+   "risk": "low",
+   "sources": [
+    "none"
+   ]
+  },
+  "nutrition": {
+   "calories": 682,
+   "proteinG": 38,
+   "carbsG": 82,
+   "fiberG": 6,
+   "sugarG": 7,
+   "fatG": 26,
+   "satFatG": 4,
+   "sodiumMg": 1480,
+   "cholesterolMg": 32
+  },
+  "tags": [
+   "italian",
+   "pantry",
+   "quick",
+   "budget",
+   "pescatarian",
+   "dairy-free",
+   "weeknight",
+   "easy",
+   "high-protein"
+  ],
+  "image": {
+   "file": "puttanesca.jpg",
+   "wikipedia": "Pasta"
+  }
+ },
+ {
+  "id": "ch-lb-013",
+  "slug": "lb-potato-gnocchi",
+  "title": "Potato Gnocchi",
+  "genre": "italian",
+  "subgenre": "pasta",
+  "chef": {
+   "name": "Lidia Bastianich",
+   "slug": "lidia-bastianich"
+  },
+  "description": "Hand-rolled potato dumplings made with as little flour as possible.",
+  "difficulty": "advanced",
+  "easeScore": 4,
+  "spiceScore": 1,
+  "popularity": 8,
+  "pantryScore": 9,
+  "servings": 6,
+  "prepMin": 50,
+  "cookMin": 50,
+  "totalMin": 100,
+  "equipment": [
+   "oven",
+   "stovetop"
+  ],
+  "ingredients": [
+   "3 lb russet potatoes",
+   "1 egg",
+   "1 1/2 tsp salt",
+   "1 1/2 to 2 cups all-purpose flour",
+   "6 tbsp butter",
+   "12 fresh sage leaves",
+   "1 1/2 cups grated Grana Padano",
+   "1/2 tsp black pepper",
+   "2 tbsp semolina, for dusting"
+  ],
+  "ingredientKeys": [
+   "russet-potato",
+   "egg",
+   "salt",
+   "flour",
+   "butter",
+   "fresh-sage",
+   "grana-padano",
+   "black-pepper",
+   "semolina"
+  ],
+  "specialty": [
+   "fresh-sage",
+   "grana-padano",
+   "semolina"
+  ],
+  "steps": [
+   "Bake the potatoes whole at 400F for about 1 hour rather than boiling them. Boiling waterlogs the flesh, and every bit of extra moisture means more flour, and more flour means heavy gnocchi.",
+   "Cut them open while hot, scoop out the flesh, and pass it through a ricer onto a board. Spread it out to let the steam escape and cool a few minutes.",
+   "Make a well, add the egg and salt, and sprinkle over about 1 1/2 cups of flour. Gather and knead gently just until a soft dough forms - 30 seconds, not more. Kneading develops gluten and toughens gnocchi.",
+   "Add flour only as needed to stop it sticking. Less flour gives lighter gnocchi but a more fragile dough, and learning that balance is the whole skill.",
+   "Roll pieces of dough into ropes 3/4 inch thick, cut into 1-inch pillows, and roll each over the back of a fork to make ridges that catch sauce. Dust with semolina.",
+   "Boil in batches in salted water. They are done the moment they float, about 90 seconds - any longer and they go gluey. Toss with butter browned with the sage, and finish with Grana Padano and pepper."
+  ],
+  "diet": {
+   "vegetarian": true,
+   "vegan": false,
+   "pescatarian": true,
+   "glutenFree": false,
+   "glutenFreeAdaptable": false,
+   "dairyFree": false,
+   "nutFree": true,
+   "eggFree": false
+  },
+  "allergens": [
+   "gluten",
+   "dairy",
+   "egg"
+  ],
+  "gmo": {
+   "risk": "low",
+   "sources": [
+    "grain-fed-dairy"
+   ]
+  },
+  "nutrition": {
+   "calories": 586,
+   "proteinG": 18,
+   "carbsG": 72,
+   "fiberG": 4,
+   "sugarG": 3,
+   "fatG": 24,
+   "satFatG": 14,
+   "sodiumMg": 880,
+   "cholesterolMg": 88
+  },
+  "tags": [
+   "italian",
+   "project",
+   "technique",
+   "vegetarian",
+   "classic",
+   "foundation",
+   "budget",
+   "weekend",
+   "authentic"
+  ],
+  "image": {
+   "file": "gnocchi.jpg",
+   "wikipedia": "Gnocchi"
+  }
+ },
+ {
+  "id": "ch-lb-014",
+  "slug": "lb-cavatelli-ricotta",
+  "title": "Cavatelli with Ricotta",
+  "genre": "italian",
+  "subgenre": "pasta",
+  "chef": {
+   "name": "Lidia Bastianich",
+   "slug": "lidia-bastianich"
+  },
+  "description": "Hand-rolled semolina pasta tossed with fresh ricotta and tomato.",
+  "difficulty": "intermediate",
+  "easeScore": 6,
+  "spiceScore": 2,
+  "popularity": 7,
+  "pantryScore": 8,
+  "servings": 6,
+  "prepMin": 45,
+  "cookMin": 30,
+  "totalMin": 75,
+  "equipment": [
+   "stovetop"
+  ],
+  "ingredients": [
+   "3 cups semolina flour",
+   "1 1/4 cups warm water",
+   "1 tsp salt",
+   "1/4 cup olive oil",
+   "5 cloves garlic, sliced",
+   "1/2 tsp red pepper flakes",
+   "1 can (28 oz) crushed tomatoes",
+   "1 1/2 tsp salt, for the sauce",
+   "1 cup fresh basil",
+   "2 cups fresh ricotta cheese",
+   "1 cup grated Grana Padano",
+   "1/2 tsp black pepper"
+  ],
+  "ingredientKeys": [
+   "semolina",
+   "water",
+   "salt",
+   "olive-oil",
+   "garlic",
+   "red-pepper-flakes",
+   "crushed-tomatoes",
+   "salt",
+   "fresh-basil",
+   "ricotta",
+   "grana-padano",
+   "black-pepper"
+  ],
+  "specialty": [
+   "semolina",
+   "ricotta",
+   "grana-padano"
+  ],
+  "steps": [
+   "Mix the semolina, warm water and salt into a stiff dough and knead 8-10 minutes until smooth and elastic. Semolina dough is firmer than egg pasta and takes real effort - it needs no eggs at all, which is typical of southern Italy.",
+   "Wrap and rest 30 minutes so the gluten relaxes.",
+   "Roll pieces into ropes 1/2 inch thick and cut into 1/2-inch pieces. Press each piece with your thumb or two fingers and drag it toward you so it curls into a hollow shell.",
+   "That hollow is the entire purpose of the shape - it traps sauce in a way a flat noodle cannot.",
+   "Make the sauce: warm the oil with the garlic and pepper flakes, add the tomatoes and salt, and simmer 20 minutes. Tear in the basil at the end.",
+   "Boil the cavatelli 8-10 minutes until tender with a chew, then toss with the sauce. Serve with spoonfuls of fresh ricotta dropped over the top and Grana Padano - the ricotta goes on unmixed so you get cool creamy pockets."
+  ],
+  "diet": {
+   "vegetarian": true,
+   "vegan": false,
+   "pescatarian": true,
+   "glutenFree": false,
+   "glutenFreeAdaptable": false,
+   "dairyFree": false,
+   "nutFree": true,
+   "eggFree": true
+  },
+  "allergens": [
+   "gluten",
+   "dairy"
+  ],
+  "gmo": {
+   "risk": "low",
+   "sources": [
+    "grain-fed-dairy"
+   ]
+  },
+  "nutrition": {
+   "calories": 682,
+   "proteinG": 28,
+   "carbsG": 82,
+   "fiberG": 6,
+   "sugarG": 9,
+   "fatG": 26,
+   "satFatG": 10,
+   "sodiumMg": 1180,
+   "cholesterolMg": 48
+  },
+  "tags": [
+   "italian",
+   "technique",
+   "vegetarian",
+   "authentic",
+   "regional",
+   "project",
+   "budget",
+   "family",
+   "weekend"
+  ],
+  "image": {
+   "file": "cavatelli.jpg",
+   "wikipedia": "Cavatelli"
+  }
+ },
+ {
+  "id": "ch-lb-015",
+  "slug": "lb-insalata-di-mare",
+  "title": "Insalata di Mare",
+  "genre": "italian",
+  "subgenre": "seafood",
+  "chef": {
+   "name": "Lidia Bastianich",
+   "slug": "lidia-bastianich"
+  },
+  "description": "Poached shellfish dressed in lemon and oil, served cool.",
+  "difficulty": "intermediate",
+  "easeScore": 7,
+  "spiceScore": 2,
+  "popularity": 7,
+  "pantryScore": 4,
+  "servings": 6,
+  "prepMin": 30,
+  "cookMin": 80,
+  "totalMin": 110,
+  "equipment": [
+   "stovetop",
+   "no-cook"
+  ],
+  "ingredients": [
+   "1 lb calamari, cleaned and sliced in rings",
+   "1 lb large shrimp, peeled",
+   "1 lb mussels, scrubbed",
+   "1 lb littleneck clams, scrubbed",
+   "1/2 cup dry white wine",
+   "4 cloves garlic, smashed",
+   "2 bay leaves",
+   "2/3 cup olive oil",
+   "1/2 cup lemon juice",
+   "1 tbsp lemon zest",
+   "4 cloves garlic, minced",
+   "2 celery stalks, thinly sliced",
+   "1/2 red onion, thinly sliced",
+   "1/2 cup chopped parsley",
+   "1 tsp red pepper flakes",
+   "2 tsp salt",
+   "1 tsp black pepper"
+  ],
+  "ingredientKeys": [
+   "calamari",
+   "shrimp",
+   "mussels",
+   "littleneck-clams",
+   "white-wine",
+   "garlic",
+   "bay-leaf",
+   "olive-oil",
+   "lemon-juice",
+   "lemon-zest",
+   "garlic",
+   "celery",
+   "red-onion",
+   "parsley",
+   "red-pepper-flakes",
+   "salt",
+   "black-pepper"
+  ],
+  "specialty": [
+   "calamari",
+   "shrimp",
+   "mussels",
+   "littleneck-clams",
+   "white-wine"
+  ],
+  "steps": [
+   "Steam the clams and mussels open in the wine with the smashed garlic and bay leaves, 5-7 minutes, then shell most of them and strain and reserve the liquor.",
+   "Poach the shrimp in that liquor 2 minutes until just pink, then lift them out.",
+   "Poach the calamari last, 90 seconds only. Squid has a narrow window: tender under two minutes, rubbery after three, and only tender again after forty minutes of braising.",
+   "Cool all the seafood quickly - spread it on a tray rather than leaving it in the warm liquid, where it keeps cooking.",
+   "Whisk the olive oil, lemon juice, zest, minced garlic, pepper flakes, salt and pepper into a dressing.",
+   "Toss the seafood with the celery, red onion, parsley and dressing. Let it sit 30 minutes at cool room temperature, not refrigerated - cold mutes both the seafood and the olive oil."
+  ],
+  "diet": {
+   "vegetarian": false,
+   "vegan": false,
+   "pescatarian": true,
+   "glutenFree": true,
+   "glutenFreeAdaptable": false,
+   "dairyFree": true,
+   "nutFree": true,
+   "eggFree": true
+  },
+  "allergens": [
+   "shellfish",
+   "sulfites"
+  ],
+  "gmo": {
+   "risk": "low",
+   "sources": [
+    "none"
+   ]
+  },
+  "nutrition": {
+   "calories": 448,
+   "proteinG": 48,
+   "carbsG": 11,
+   "fiberG": 1,
+   "sugarG": 2,
+   "fatG": 24,
+   "satFatG": 4,
+   "sodiumMg": 1280,
+   "cholesterolMg": 398
+  },
+  "tags": [
+   "italian",
+   "seafood",
+   "pescatarian",
+   "gluten-free",
+   "dairy-free",
+   "christmas",
+   "holiday",
+   "make-ahead",
+   "high-protein",
+   "authentic"
+  ],
+  "image": {
+   "file": "frutti-di-mare.jpg",
+   "wikipedia": "Seafood"
+  }
+ },
+ {
+  "id": "ch-lb-016",
+  "slug": "lb-stuffed-artichokes",
+  "title": "Stuffed Artichokes",
+  "genre": "italian",
+  "subgenre": "antipasti",
+  "chef": {
+   "name": "Lidia Bastianich",
+   "slug": "lidia-bastianich"
+  },
+  "description": "Whole artichokes packed with garlic breadcrumbs and braised in broth.",
+  "difficulty": "intermediate",
+  "easeScore": 6,
+  "spiceScore": 2,
+  "popularity": 7,
+  "pantryScore": 6,
+  "servings": 4,
+  "prepMin": 35,
+  "cookMin": 60,
+  "totalMin": 95,
+  "equipment": [
+   "stovetop"
+  ],
+  "ingredients": [
+   "4 large globe artichokes",
+   "2 lemons, halved",
+   "2 cups fresh breadcrumbs",
+   "1 1/2 cups grated Grana Padano",
+   "8 cloves garlic, minced",
+   "1/2 cup chopped parsley",
+   "1 tsp red pepper flakes",
+   "1 1/2 tsp salt",
+   "1 tsp black pepper",
+   "1/2 cup olive oil",
+   "2 cups chicken broth",
+   "1/2 cup dry white wine"
+  ],
+  "ingredientKeys": [
+   "artichokes",
+   "lemon",
+   "breadcrumbs",
+   "grana-padano",
+   "garlic",
+   "parsley",
+   "red-pepper-flakes",
+   "salt",
+   "black-pepper",
+   "olive-oil",
+   "chicken-broth",
+   "white-wine"
+  ],
+  "specialty": [
+   "artichokes",
+   "grana-padano",
+   "white-wine"
+  ],
+  "steps": [
+   "Cut the top inch off each artichoke, trim the stem flat, and snap off the tough outer leaves. Rub every cut surface with lemon as you work - artichokes oxidize and turn black within minutes.",
+   "Press each artichoke down firmly on the counter to open the leaves, and pull out the small inner leaves and any fuzzy choke you can reach.",
+   "Mix the breadcrumbs, Grana Padano, garlic, parsley, pepper flakes, salt, pepper and half the olive oil into a stuffing.",
+   "Push the stuffing down between the leaves, working all the way around and from the outside in. Open the leaves with your thumbs as you go - the filling should be in the artichoke, not piled on top.",
+   "Stand them snugly in a pot, drizzle with the remaining oil, and pour the broth and wine around them, not over the tops.",
+   "Cover and simmer 50-60 minutes, until an outer leaf pulls away easily and the base is tender when pierced. Serve warm with the pan juices."
+  ],
+  "diet": {
+   "vegetarian": false,
+   "vegan": false,
+   "pescatarian": false,
+   "glutenFree": false,
+   "glutenFreeAdaptable": false,
+   "dairyFree": false,
+   "nutFree": true,
+   "eggFree": true
+  },
+  "allergens": [
+   "gluten",
+   "dairy",
+   "sulfites"
+  ],
+  "gmo": {
+   "risk": "moderate",
+   "sources": [
+    "processed-bread",
+    "grain-fed-dairy",
+    "grain-fed-meat"
+   ]
+  },
+  "nutrition": {
+   "calories": 586,
+   "proteinG": 22,
+   "carbsG": 48,
+   "fiberG": 12,
+   "sugarG": 5,
+   "fatG": 36,
+   "satFatG": 10,
+   "sodiumMg": 1480,
+   "cholesterolMg": 32
+  },
+  "tags": [
+   "italian",
+   "appetizer",
+   "technique",
+   "authentic",
+   "spring",
+   "high-fiber",
+   "entertaining",
+   "regional",
+   "classic"
+  ],
+  "image": {
+   "file": "stuffed-artichokes.jpg",
+   "wikipedia": "Artichoke"
+  }
+ },
+ {
+  "id": "ch-lb-017",
+  "slug": "lb-pizza-rustica",
+  "title": "Pizza Rustica",
+  "genre": "italian",
+  "subgenre": "baking",
+  "chef": {
+   "name": "Lidia Bastianich",
+   "slug": "lidia-bastianich"
+  },
+  "description": "A deep Easter pie of ricotta, cured meats and cheese in pastry.",
+  "difficulty": "advanced",
+  "easeScore": 4,
+  "spiceScore": 2,
+  "popularity": 6,
+  "pantryScore": 5,
+  "servings": 12,
+  "prepMin": 50,
+  "cookMin": 260,
+  "totalMin": 310,
+  "equipment": [
+   "oven",
+   "food-processor"
+  ],
+  "ingredients": [
+   "3 1/2 cups all-purpose flour",
+   "1/2 cup sugar",
+   "1 tsp salt",
+   "1 cup cold butter, cubed",
+   "3 eggs",
+   "2 tbsp cold water",
+   "3 lb fresh ricotta, drained overnight",
+   "6 eggs, for the filling",
+   "2 cups grated Grana Padano",
+   "8 oz prosciutto, diced",
+   "8 oz soppressata, diced",
+   "8 oz mozzarella, diced",
+   "8 oz provolone, diced",
+   "1/3 cup chopped parsley",
+   "1 tsp black pepper",
+   "1 egg, beaten, for the wash"
+  ],
+  "ingredientKeys": [
+   "flour",
+   "sugar",
+   "salt",
+   "butter",
+   "egg",
+   "water",
+   "ricotta",
+   "egg",
+   "grana-padano",
+   "prosciutto",
+   "soppressata",
+   "mozzarella",
+   "provolone",
+   "parsley",
+   "black-pepper",
+   "egg"
+  ],
+  "specialty": [
+   "ricotta",
+   "grana-padano",
+   "prosciutto",
+   "soppressata",
+   "mozzarella"
+  ],
+  "steps": [
+   "Drain the ricotta overnight in a cheesecloth-lined sieve in the refrigerator, weighted with a plate. Wet ricotta will never set and the pie will be soupy - this is the step that decides the dish.",
+   "Make the pastry: pulse the flour, sugar and salt, cut in the cold butter until pea-sized, then add the 3 eggs and water and pulse until it just holds. Divide into two disks, one slightly larger, wrap and chill 1 hour.",
+   "Mix the drained ricotta with the 6 eggs, Grana Padano, all four meats and cheeses, the parsley and pepper. Taste - it should be assertively seasoned, since it is served at room temperature.",
+   "Roll the larger disk and line a 9-inch springform pan, bringing the pastry up the sides. Fill it, then roll the second disk and lay it over, sealing and crimping the edges firmly.",
+   "Cut several vents, brush with the beaten egg, and bake at 375F for about 1 1/2 hours, until deep golden and set in the center.",
+   "Cool completely in the pan, then refrigerate at least 2 hours before unmolding. This is traditionally made on Good Friday and eaten at room temperature on Easter, and it genuinely improves after a day."
+  ],
+  "diet": {
+   "vegetarian": false,
+   "vegan": false,
+   "pescatarian": false,
+   "glutenFree": false,
+   "glutenFreeAdaptable": false,
+   "dairyFree": false,
+   "nutFree": true,
+   "eggFree": false
+  },
+  "allergens": [
+   "gluten",
+   "dairy",
+   "egg"
+  ],
+  "gmo": {
+   "risk": "moderate",
+   "sources": [
+    "grain-fed-meat",
+    "grain-fed-dairy",
+    "sugar-beet"
+   ]
+  },
+  "nutrition": {
+   "calories": 882,
+   "proteinG": 48,
+   "carbsG": 42,
+   "fiberG": 2,
+   "sugarG": 11,
+   "fatG": 58,
+   "satFatG": 30,
+   "sodiumMg": 1880,
+   "cholesterolMg": 338
+  },
+  "tags": [
+   "italian",
+   "project",
+   "easter",
+   "holiday",
+   "authentic",
+   "make-ahead",
+   "party",
+   "high-protein",
+   "regional",
+   "baking"
+  ],
+  "image": {
+   "file": "pizza-rustica.jpg",
+   "wikipedia": "Pizza rustica"
+  }
+ },
+ {
+  "id": "ch-lb-018",
+  "slug": "lb-crostata-di-marmellata",
+  "title": "Crostata di Marmellata",
+  "genre": "italian",
+  "subgenre": "desserts",
+  "chef": {
+   "name": "Lidia Bastianich",
+   "slug": "lidia-bastianich"
+  },
+  "description": "A jam tart on sweet pastry with a lattice top.",
+  "difficulty": "intermediate",
+  "easeScore": 7,
+  "spiceScore": 0,
+  "popularity": 7,
+  "pantryScore": 9,
+  "servings": 10,
+  "prepMin": 30,
+  "cookMin": 105,
+  "totalMin": 135,
+  "equipment": [
+   "oven"
+  ],
+  "ingredients": [
+   "3 cups all-purpose flour",
+   "2/3 cup sugar",
+   "1 tsp baking powder",
+   "1/2 tsp salt",
+   "1 cup cold butter, cubed",
+   "2 eggs",
+   "1 egg yolk",
+   "1 tbsp lemon zest",
+   "1 tsp vanilla extract",
+   "2 cups apricot or cherry jam",
+   "1 egg, beaten, for the wash",
+   "2 tbsp coarse sugar",
+   "2 tbsp powdered sugar"
+  ],
+  "ingredientKeys": [
+   "flour",
+   "sugar",
+   "baking-powder",
+   "salt",
+   "butter",
+   "egg",
+   "egg-yolk",
+   "lemon-zest",
+   "vanilla-extract",
+   "apricot-jam",
+   "egg",
+   "coarse-sugar",
+   "powdered-sugar"
+  ],
+  "specialty": [
+   "apricot-jam",
+   "coarse-sugar"
+  ],
+  "steps": [
+   "This pastry is pasta frolla, the Italian sweet shortcrust. Unlike a flaky pie dough it is meant to be tender and cookie-like, so it is handled more and worries less about keeping butter in streaks.",
+   "Pulse or rub the cold butter into the flour, sugar, baking powder and salt until sandy, then add the eggs, yolk, lemon zest and vanilla and work it into a smooth dough.",
+   "Divide it two thirds and one third, flatten both, wrap and chill 1 hour. Cold pasta frolla is far easier to handle.",
+   "Roll the larger piece and line a 10-inch tart pan, pressing it up the sides. Spread the jam evenly over the base - use a thick jam, since a loose one boils over.",
+   "Roll the smaller piece and cut it into strips, then lay them over the jam in a lattice, pressing the ends into the rim.",
+   "Brush the lattice with the beaten egg, scatter the coarse sugar, and bake at 350F for 40-45 minutes until deep golden. Cool completely before cutting and dust with powdered sugar."
+  ],
+  "diet": {
+   "vegetarian": true,
+   "vegan": false,
+   "pescatarian": true,
+   "glutenFree": false,
+   "glutenFreeAdaptable": false,
+   "dairyFree": false,
+   "nutFree": true,
+   "eggFree": false
+  },
+  "allergens": [
+   "gluten",
+   "dairy",
+   "egg"
+  ],
+  "gmo": {
+   "risk": "moderate",
+   "sources": [
+    "sugar-beet",
+    "grain-fed-dairy"
+   ]
+  },
+  "nutrition": {
+   "calories": 512,
+   "proteinG": 7,
+   "carbsG": 78,
+   "fiberG": 2,
+   "sugarG": 48,
+   "fatG": 20,
+   "satFatG": 12,
+   "sodiumMg": 220,
+   "cholesterolMg": 112
+  },
+  "tags": [
+   "italian",
+   "dessert",
+   "baking",
+   "technique",
+   "authentic",
+   "make-ahead",
+   "family",
+   "classic",
+   "budget"
+  ],
+  "image": {
+   "file": "crostata.jpg",
+   "wikipedia": "Crostata"
+  }
+ },
+ {
+  "id": "ch-lb-019",
+  "slug": "lb-pignoli-cookies",
+  "title": "Pignoli Cookies",
+  "genre": "italian",
+  "subgenre": "desserts",
+  "chef": {
+   "name": "Lidia Bastianich",
+   "slug": "lidia-bastianich"
+  },
+  "description": "Chewy almond paste cookies rolled in pine nuts. Naturally gluten-free.",
+  "difficulty": "beginner",
+  "easeScore": 8,
+  "spiceScore": 0,
+  "popularity": 7,
+  "pantryScore": 5,
+  "servings": 30,
+  "prepMin": 20,
+  "cookMin": 50,
+  "totalMin": 70,
+  "equipment": [
+   "oven",
+   "food-processor"
+  ],
+  "ingredients": [
+   "1 lb almond paste",
+   "1 1/4 cups sugar",
+   "3 egg whites",
+   "1/4 tsp salt",
+   "1 tsp vanilla extract",
+   "1 tsp lemon zest",
+   "2 cups pine nuts",
+   "2 tbsp powdered sugar"
+  ],
+  "ingredientKeys": [
+   "almond-paste",
+   "sugar",
+   "egg-white",
+   "salt",
+   "vanilla-extract",
+   "lemon-zest",
+   "pine-nuts",
+   "powdered-sugar"
+  ],
+  "specialty": [
+   "almond-paste",
+   "pine-nuts"
+  ],
+  "steps": [
+   "Use almond paste, not marzipan. Marzipan has far more sugar and much less almond, and the cookies will spread into puddles.",
+   "Break the almond paste into chunks and process it with the sugar until it resembles fine crumbs.",
+   "Add the egg whites one at a time, the salt, vanilla and lemon zest, and process until a thick sticky dough forms. There is no flour at all in these - they are gluten-free by nature.",
+   "Spread the pine nuts in a shallow dish. Scoop tablespoons of dough with wet hands, roll into balls, and press each one into the nuts so they stick all over.",
+   "Set them on lined sheets 2 inches apart - they spread considerably.",
+   "Bake at 350F for 15-18 minutes until the pine nuts are golden and the cookies are cracked on top but still soft inside. Cool completely on the pans before moving; they firm up as they cool. Dust with powdered sugar."
+  ],
+  "diet": {
+   "vegetarian": true,
+   "vegan": false,
+   "pescatarian": true,
+   "glutenFree": true,
+   "glutenFreeAdaptable": false,
+   "dairyFree": true,
+   "nutFree": false,
+   "eggFree": false
+  },
+  "allergens": [
+   "egg",
+   "tree-nut"
+  ],
+  "gmo": {
+   "risk": "moderate",
+   "sources": [
+    "sugar-beet"
+   ]
+  },
+  "nutrition": {
+   "calories": 186,
+   "proteinG": 4,
+   "carbsG": 18,
+   "fiberG": 1,
+   "sugarG": 15,
+   "fatG": 12,
+   "satFatG": 1,
+   "sodiumMg": 42,
+   "cholesterolMg": 0
+  },
+  "tags": [
+   "italian",
+   "dessert",
+   "gluten-free",
+   "dairy-free",
+   "baking",
+   "holiday",
+   "christmas",
+   "authentic",
+   "make-ahead"
+  ],
+  "image": {
+   "file": "pignoli-cookies.jpg",
+   "wikipedia": "Pignoli"
+  }
+ },
+ {
+  "id": "ch-lb-020",
+  "slug": "lb-broccoli-rabe-garlic",
+  "title": "Broccoli Rabe with Garlic",
+  "genre": "italian",
+  "subgenre": "sides",
+  "chef": {
+   "name": "Lidia Bastianich",
+   "slug": "lidia-bastianich"
+  },
+  "description": "Bitter greens blanched then finished in garlic and chile oil.",
+  "difficulty": "beginner",
+  "easeScore": 9,
+  "spiceScore": 4,
+  "popularity": 7,
+  "pantryScore": 7,
+  "servings": 6,
+  "prepMin": 10,
+  "cookMin": 15,
+  "totalMin": 25,
+  "equipment": [
+   "stovetop"
+  ],
+  "ingredients": [
+   "2 lb broccoli rabe, tough ends trimmed",
+   "1 tbsp salt, for the water",
+   "1/3 cup olive oil",
+   "8 cloves garlic, sliced",
+   "1 tsp red pepper flakes",
+   "1 1/2 tsp salt",
+   "2 tbsp lemon juice",
+   "1/2 cup grated Grana Padano"
+  ],
+  "ingredientKeys": [
+   "broccoli-rabe",
+   "salt",
+   "olive-oil",
+   "garlic",
+   "red-pepper-flakes",
+   "salt",
+   "lemon-juice",
+   "grana-padano"
+  ],
+  "specialty": [
+   "broccoli-rabe",
+   "grana-padano"
+  ],
+  "steps": [
+   "Bring a large pot of heavily salted water to a hard boil.",
+   "Blanch the broccoli rabe 2-3 minutes, then lift it out and drain it well, pressing gently. Blanching is not optional here - raw broccoli rabe is aggressively bitter, and this single step tames it into something pleasantly sharp.",
+   "Save a few tablespoons of the blanching water.",
+   "Warm the olive oil with the garlic and pepper flakes over medium-low heat 3 minutes, until the garlic is pale gold. Browned garlic turns the whole dish bitter in a different and less pleasant way.",
+   "Add the drained greens and a splash of the blanching water and toss over medium heat 4-5 minutes.",
+   "Season, add the lemon juice off the heat, and serve with Grana Padano. Good hot or at room temperature, and excellent folded into pasta or piled on bread."
+  ],
+  "diet": {
+   "vegetarian": true,
+   "vegan": false,
+   "pescatarian": true,
+   "glutenFree": true,
+   "glutenFreeAdaptable": false,
+   "dairyFree": false,
+   "nutFree": true,
+   "eggFree": true
+  },
+  "allergens": [
+   "dairy"
+  ],
+  "gmo": {
+   "risk": "low",
+   "sources": [
+    "grain-fed-dairy"
+   ]
+  },
+  "nutrition": {
+   "calories": 186,
+   "proteinG": 7,
+   "carbsG": 7,
+   "fiberG": 4,
+   "sugarG": 2,
+   "fatG": 15,
+   "satFatG": 3,
+   "sodiumMg": 680,
+   "cholesterolMg": 8
+  },
+  "tags": [
+   "italian",
+   "side",
+   "technique",
+   "vegetarian",
+   "gluten-free",
+   "quick",
+   "healthy",
+   "authentic",
+   "spicy",
+   "low-carb"
+  ],
+  "image": {
+   "file": "orecchiette.jpg",
+   "wikipedia": "Rapini"
+  }
+ },
+ {
+  "id": "ch-lb-021",
+  "slug": "lb-roasted-peppers-breadcrumbs",
+  "title": "Roasted Peppers with Breadcrumbs",
+  "genre": "italian",
+  "subgenre": "antipasti",
+  "chef": {
+   "name": "Lidia Bastianich",
+   "slug": "lidia-bastianich"
+  },
+  "description": "Peeled roasted peppers layered with toasted garlic breadcrumbs.",
+  "difficulty": "beginner",
+  "easeScore": 9,
+  "spiceScore": 2,
+  "popularity": 7,
+  "pantryScore": 8,
+  "servings": 6,
+  "prepMin": 20,
+  "cookMin": 40,
+  "totalMin": 60,
+  "equipment": [
+   "oven",
+   "stovetop"
+  ],
+  "ingredients": [
+   "6 red and yellow bell peppers",
+   "1/3 cup olive oil",
+   "1 1/2 cups fresh breadcrumbs",
+   "6 cloves garlic, minced",
+   "1/3 cup chopped parsley",
+   "1/2 cup grated Grana Padano",
+   "2 tbsp capers, rinsed",
+   "1/2 tsp red pepper flakes",
+   "1 1/2 tsp salt",
+   "2 tbsp red wine vinegar"
+  ],
+  "ingredientKeys": [
+   "bell-pepper",
+   "olive-oil",
+   "breadcrumbs",
+   "garlic",
+   "parsley",
+   "grana-padano",
+   "capers",
+   "red-pepper-flakes",
+   "salt",
+   "red-wine-vinegar"
+  ],
+  "specialty": [
+   "grana-padano",
+   "capers"
+  ],
+  "steps": [
+   "Roast the whole peppers at 450F, turning occasionally, for 30 minutes until blackened and collapsed.",
+   "Seal them in a bowl with a plate on top for 15 minutes. The trapped steam loosens the skins, which then rub off with your fingers - without this step peeling is a miserable job.",
+   "Peel, seed and tear the peppers into wide strips, saving any juices that collect.",
+   "Toast the breadcrumbs in half the olive oil with the garlic over medium heat 4-5 minutes until golden and crisp, then stir in the parsley, Grana Padano, capers and pepper flakes off the heat.",
+   "Layer the pepper strips and the breadcrumb mixture in a dish, finishing with crumbs.",
+   "Whisk the reserved pepper juices with the remaining oil, the vinegar and the salt and spoon it over. Let it stand 20 minutes before serving at room temperature."
+  ],
+  "diet": {
+   "vegetarian": true,
+   "vegan": false,
+   "pescatarian": true,
+   "glutenFree": false,
+   "glutenFreeAdaptable": false,
+   "dairyFree": false,
+   "nutFree": true,
+   "eggFree": true
+  },
+  "allergens": [
+   "gluten",
+   "dairy",
+   "sulfites"
+  ],
+  "gmo": {
+   "risk": "moderate",
+   "sources": [
+    "processed-bread",
+    "grain-fed-dairy"
+   ]
+  },
+  "nutrition": {
+   "calories": 242,
+   "proteinG": 7,
+   "carbsG": 22,
+   "fiberG": 3,
+   "sugarG": 7,
+   "fatG": 15,
+   "satFatG": 3,
+   "sodiumMg": 780,
+   "cholesterolMg": 8
+  },
+  "tags": [
+   "italian",
+   "appetizer",
+   "side",
+   "technique",
+   "vegetarian",
+   "make-ahead",
+   "summer",
+   "authentic",
+   "budget",
+   "party"
+  ],
+  "image": {
+   "file": "roasted-peppers.jpg",
+   "wikipedia": "Bell pepper"
+  }
+ },
+ {
+  "id": "ch-lb-022",
+  "slug": "lb-fennel-orange-salad",
+  "title": "Fennel and Orange Salad",
+  "genre": "mediterranean",
+  "subgenre": "salads",
+  "chef": {
+   "name": "Lidia Bastianich",
+   "slug": "lidia-bastianich"
+  },
+  "description": "Shaved fennel with orange segments, olives and red onion.",
+  "difficulty": "beginner",
+  "easeScore": 10,
+  "spiceScore": 1,
+  "popularity": 7,
+  "pantryScore": 6,
+  "servings": 6,
+  "prepMin": 20,
+  "cookMin": 15,
+  "totalMin": 35,
+  "equipment": [
+   "no-cook"
+  ],
+  "ingredients": [
+   "3 fennel bulbs, trimmed",
+   "4 oranges",
+   "1/2 red onion, very thinly sliced",
+   "3/4 cup black olives, pitted",
+   "1/3 cup olive oil",
+   "2 tbsp red wine vinegar",
+   "1 1/2 tsp salt",
+   "1/2 tsp black pepper",
+   "1/4 tsp red pepper flakes",
+   "1/3 cup fennel fronds, chopped",
+   "1/4 cup chopped mint"
+  ],
+  "ingredientKeys": [
+   "fennel-bulb",
+   "orange",
+   "red-onion",
+   "black-olives",
+   "olive-oil",
+   "red-wine-vinegar",
+   "salt",
+   "black-pepper",
+   "red-pepper-flakes",
+   "fennel-fronds",
+   "fresh-mint"
+  ],
+  "specialty": [
+   "fennel-bulb",
+   "black-olives",
+   "fennel-fronds",
+   "fresh-mint"
+  ],
+  "steps": [
+   "Shave the fennel as thinly as you can on a mandoline or with a sharp knife. Thick fennel is tough and aggressively anise-flavored; shaved paper-thin it turns delicate and sweet.",
+   "Keep the fronds - they are the most flavorful part and most people throw them away.",
+   "Segment the oranges over a bowl so you catch the juice, cutting away all the white pith, which is bitter.",
+   "Rinse the sliced red onion under cold water and pat it dry to take the harsh raw edge off.",
+   "Whisk the collected orange juice with the olive oil, vinegar, salt, pepper and pepper flakes.",
+   "Toss the fennel, orange segments, onion and olives with the dressing and let it stand 15 minutes so the fennel softens slightly. Finish with the fronds and mint."
+  ],
+  "diet": {
+   "vegetarian": true,
+   "vegan": true,
+   "pescatarian": true,
+   "glutenFree": true,
+   "glutenFreeAdaptable": false,
+   "dairyFree": true,
+   "nutFree": true,
+   "eggFree": true
+  },
+  "allergens": [
+   "sulfites"
+  ],
+  "gmo": {
+   "risk": "low",
+   "sources": [
+    "none"
+   ]
+  },
+  "nutrition": {
+   "calories": 218,
+   "proteinG": 2,
+   "carbsG": 22,
+   "fiberG": 6,
+   "sugarG": 14,
+   "fatG": 15,
+   "satFatG": 2,
+   "sodiumMg": 780,
+   "cholesterolMg": 0
+  },
+  "tags": [
+   "italian",
+   "salad",
+   "no-cook",
+   "vegan",
+   "vegetarian",
+   "gluten-free",
+   "dairy-free",
+   "winter",
+   "healthy",
+   "authentic",
+   "quick"
+  ],
+  "image": {
+   "file": "fennel-orange-salad.jpg",
+   "wikipedia": "Fennel"
+  }
+ },
+ {
+  "id": "ch-lb-023",
+  "slug": "lb-radicchio-risotto",
+  "title": "Radicchio Risotto",
+  "genre": "italian",
+  "subgenre": "risotto",
+  "chef": {
+   "name": "Lidia Bastianich",
+   "slug": "lidia-bastianich"
+  },
+  "description": "A deep pink risotto with bitter radicchio, red wine and Grana Padano.",
+  "difficulty": "intermediate",
+  "easeScore": 6,
+  "spiceScore": 1,
+  "popularity": 6,
+  "pantryScore": 6,
+  "servings": 6,
+  "prepMin": 15,
+  "cookMin": 40,
+  "totalMin": 55,
+  "equipment": [
+   "stovetop"
+  ],
+  "ingredients": [
+   "1 1/2 cups carnaroli rice",
+   "7 cups chicken broth",
+   "2 heads radicchio, shredded",
+   "1 yellow onion, finely diced",
+   "4 oz pancetta, diced",
+   "6 tbsp butter",
+   "3 tbsp olive oil",
+   "1 cup dry red wine",
+   "1 1/2 cups grated Grana Padano",
+   "2 tsp salt",
+   "1 tsp black pepper",
+   "2 tbsp balsamic vinegar"
+  ],
+  "ingredientKeys": [
+   "carnaroli-rice",
+   "chicken-broth",
+   "radicchio",
+   "yellow-onion",
+   "pancetta",
+   "butter",
+   "olive-oil",
+   "red-wine",
+   "grana-padano",
+   "salt",
+   "black-pepper",
+   "balsamic-vinegar"
+  ],
+  "specialty": [
+   "carnaroli-rice",
+   "radicchio",
+   "pancetta",
+   "red-wine",
+   "grana-padano"
+  ],
+  "steps": [
+   "Keep the broth at a bare simmer in a separate pot throughout. Cold broth stops the cooking and makes risotto gluey.",
+   "Render the pancetta in the oil, then add the onion and cook 6 minutes without browning.",
+   "Add two thirds of the shredded radicchio and cook 5 minutes until it wilts and darkens. Cooking most of it down early mellows the bitterness into something sweet and deep.",
+   "Add the rice and toast 2 minutes, then the red wine. Red wine rather than white is what gives this risotto its startling pink color.",
+   "Add the hot broth a ladle at a time, stirring often, for about 18 minutes until the rice is al dente with a creamy sauce around it. Fold in the remaining raw radicchio in the last 2 minutes for a little fresh bitterness.",
+   "Off the heat, beat in the butter and Grana Padano hard until it ripples. Season, add the balsamic, and serve immediately."
+  ],
+  "diet": {
+   "vegetarian": false,
+   "vegan": false,
+   "pescatarian": false,
+   "glutenFree": true,
+   "glutenFreeAdaptable": false,
+   "dairyFree": false,
+   "nutFree": true,
+   "eggFree": true
+  },
+  "allergens": [
+   "dairy",
+   "sulfites"
+  ],
+  "gmo": {
+   "risk": "low",
+   "sources": [
+    "grain-fed-meat",
+    "grain-fed-dairy"
+   ]
+  },
+  "nutrition": {
+   "calories": 612,
+   "proteinG": 22,
+   "carbsG": 62,
+   "fiberG": 3,
+   "sugarG": 5,
+   "fatG": 30,
+   "satFatG": 16,
+   "sodiumMg": 1480,
+   "cholesterolMg": 82
+  },
+  "tags": [
+   "italian",
+   "risotto",
+   "technique",
+   "regional",
+   "authentic",
+   "gluten-free",
+   "winter",
+   "entertaining",
+   "date-night"
+  ],
+  "image": {
+   "file": "risotto-milanese.jpg",
+   "wikipedia": "Risotto"
+  }
+ },
+ {
+  "id": "ch-lb-024",
+  "slug": "lb-pasta-alla-genovese",
+  "title": "Pasta alla Genovese",
+  "genre": "italian",
+  "subgenre": "pasta",
+  "chef": {
+   "name": "Lidia Bastianich",
+   "slug": "lidia-bastianich"
+  },
+  "description": "A Neapolitan beef and onion ragu with no tomato, cooked for hours.",
+  "difficulty": "intermediate",
+  "easeScore": 6,
+  "spiceScore": 1,
+  "popularity": 6,
+  "pantryScore": 8,
+  "servings": 8,
+  "prepMin": 25,
+  "cookMin": 225,
+  "totalMin": 250,
+  "equipment": [
+   "stovetop"
+  ],
+  "ingredients": [
+   "3 lb beef chuck, cut in large chunks",
+   "6 lb yellow onions, thinly sliced",
+   "1/3 cup olive oil",
+   "4 oz pancetta, diced",
+   "2 carrots, finely diced",
+   "2 celery stalks, finely diced",
+   "1 cup dry white wine",
+   "2 tsp salt",
+   "1 tsp black pepper",
+   "2 bay leaves",
+   "1 lb ziti or rigatoni",
+   "1 1/2 cups grated Grana Padano",
+   "1/3 cup chopped parsley"
+  ],
+  "ingredientKeys": [
+   "beef-chuck",
+   "yellow-onion",
+   "olive-oil",
+   "pancetta",
+   "carrot",
+   "celery",
+   "white-wine",
+   "salt",
+   "black-pepper",
+   "bay-leaf",
+   "ziti",
+   "grana-padano",
+   "parsley"
+  ],
+  "specialty": [
+   "beef-chuck",
+   "pancetta",
+   "white-wine",
+   "ziti",
+   "grana-padano"
+  ],
+  "steps": [
+   "Six pounds of onions is not a mistake. Despite the name, this Neapolitan dish contains no tomato and no basil at all - the onions collapse into the sauce and become it.",
+   "Render the pancetta in the oil, then brown the beef chunks on all sides and set them aside.",
+   "Add all the sliced onions with the carrots and celery. The pot will be overflowing; they reduce to a fraction of the volume. Cook over medium-low, covered, for 45 minutes, stirring now and then.",
+   "Uncover, return the beef, add the wine, bay leaves, salt and pepper, and simmer very gently 2 1/2 to 3 hours.",
+   "The sauce is ready when the onions have melted into a thick golden-brown jam and the beef shreds under a fork. Stir more often toward the end, when it can catch.",
+   "Shred the beef into the sauce. Toss with the cooked ziti and a ladle of pasta water, then finish with Grana Padano and parsley. The beef is sometimes served separately as a second course."
+  ],
+  "diet": {
+   "vegetarian": false,
+   "vegan": false,
+   "pescatarian": false,
+   "glutenFree": false,
+   "glutenFreeAdaptable": true,
+   "dairyFree": false,
+   "nutFree": true,
+   "eggFree": true
+  },
+  "allergens": [
+   "gluten",
+   "dairy",
+   "sulfites"
+  ],
+  "gmo": {
+   "risk": "moderate",
+   "sources": [
+    "grain-fed-meat",
+    "grain-fed-dairy"
+   ]
+  },
+  "nutrition": {
+   "calories": 782,
+   "proteinG": 52,
+   "carbsG": 72,
+   "fiberG": 7,
+   "sugarG": 18,
+   "fatG": 30,
+   "satFatG": 11,
+   "sodiumMg": 1280,
+   "cholesterolMg": 138
+  },
+  "tags": [
+   "italian",
+   "regional",
+   "authentic",
+   "project",
+   "sunday",
+   "make-ahead",
+   "technique",
+   "comfort",
+   "leftovers"
+  ],
+  "image": {
+   "file": "pasta-alla-genovese.jpg",
+   "wikipedia": "Genovese sauce"
+  }
+ },
+ {
+  "id": "ch-lb-025",
+  "slug": "lb-limoncello",
+  "title": "Limoncello",
+  "genre": "italian",
+  "subgenre": "drinks",
+  "chef": {
+   "name": "Lidia Bastianich",
+   "slug": "lidia-bastianich"
+  },
+  "description": "Lemon peels steeped in alcohol for a month, then sweetened with syrup.",
+  "difficulty": "beginner",
+  "easeScore": 9,
+  "spiceScore": 0,
+  "popularity": 7,
+  "pantryScore": 6,
+  "servings": 20,
+  "prepMin": 25,
+  "cookMin": 2880,
+  "totalMin": 2905,
+  "equipment": [
+   "stovetop",
+   "no-cook"
+  ],
+  "ingredients": [
+   "12 unwaxed lemons",
+   "1 liter grain alcohol or vodka",
+   "3 cups sugar",
+   "4 cups water"
+  ],
+  "ingredientKeys": [
+   "lemon",
+   "grain-alcohol",
+   "sugar",
+   "water"
+  ],
+  "specialty": [
+   "grain-alcohol"
+  ],
+  "steps": [
+   "Scrub the lemons well and dry them. Use unwaxed, organic lemons if you can - the peel is the entire recipe, and wax and pesticide residue steep right into the liquor.",
+   "Peel them with a vegetable peeler, taking only the yellow zest. Any white pith that comes with it will make the finished limoncello bitter, so scrape it off.",
+   "Put the peels in a large jar, pour the alcohol over, seal it, and leave it somewhere dark at room temperature for 30 days. Shake it every few days.",
+   "The alcohol will turn bright yellow and the peels will go pale and brittle - that is the sign the oils have transferred.",
+   "Strain out and discard the peels. Boil the sugar and water for 5 minutes to make a syrup, then cool it completely before combining. Adding hot syrup to the infusion drives off alcohol and dulls the aroma.",
+   "Mix the syrup into the infusion, bottle it, and rest it another week before drinking. Store it in the freezer and serve ice-cold in small chilled glasses."
+  ],
+  "diet": {
+   "vegetarian": true,
+   "vegan": true,
+   "pescatarian": true,
+   "glutenFree": true,
+   "glutenFreeAdaptable": false,
+   "dairyFree": true,
+   "nutFree": true,
+   "eggFree": true
+  },
+  "allergens": [],
+  "gmo": {
+   "risk": "moderate",
+   "sources": [
+    "sugar-beet"
+   ]
+  },
+  "nutrition": {
+   "calories": 186,
+   "proteinG": 0,
+   "carbsG": 30,
+   "fiberG": 0,
+   "sugarG": 30,
+   "fatG": 0,
+   "satFatG": 0,
+   "sodiumMg": 2,
+   "cholesterolMg": 0
+  },
+  "tags": [
+   "italian",
+   "drink",
+   "make-ahead",
+   "project",
+   "adults-only",
+   "authentic",
+   "gift",
+   "vegan",
+   "gluten-free",
+   "technique"
+  ],
+  "image": {
+   "file": "limoncello.jpg",
+   "wikipedia": "Lemon (fruit)"
+  }
+ }
+]
