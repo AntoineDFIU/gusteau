@@ -1,3 +1,6 @@
+import { initCooking } from './cooking.js';
+import { toSpokenText } from './spoken-text.js';
+
 const $ = id => document.getElementById(id);
 let current = null;
 const status = value => { $('status').textContent = value; };
@@ -17,10 +20,10 @@ async function fetchModel() {
         ? Object.entries(magpieSpeakers).filter(([name]) => speech.voices.includes(name))
         : speech.voices.map(name => [name, name]);
       if (speech.id === 'magpietts' && voices.length) {
-        for (const id of ['voice', 'readback-voice']) $(id).replaceChildren();
+        for (const id of ['voice', 'readback-voice', 'cooking-voice']) $(id).replaceChildren();
       }
       for (const [name, speaker] of voices) {
-        for (const id of ['voice', 'readback-voice']) {
+        for (const id of ['voice', 'readback-voice', 'cooking-voice']) {
           const option = document.createElement('option');
           option.value = String(speaker);
           option.textContent = name;
@@ -29,15 +32,17 @@ async function fetchModel() {
       }
       if (speech.id === 'magpietts' && voices.length) {
         for (const id of ['voice', 'readback-voice']) $(id).value = '0';
+        $('cooking-voice').value = voices.some(([name]) => name === 'Jason') ? '1' : String(voices[0][1]);
       }
     }
   } catch (e) { error(`Model lookup: ${e.message}`); }
 }
 
-async function synthesize(text, voice = $('voice').value) {
+async function synthesize(text, voice = $('voice').value, signal) {
   const response = await fetch('/asr/v1/audio/speech', {
     method: 'POST', headers: { 'Content-Type': 'application/json' },
-    body: JSON.stringify({ model: 'magpie', input: text, voice,
+    signal,
+    body: JSON.stringify({ model: 'magpie', input: toSpokenText(text), voice,
       language: 'en-US', response_format: 'wav' }),
   });
   if (!response.ok) throw new Error(`Speech server returned ${response.status}: ${await response.text()}`);
@@ -133,18 +138,30 @@ function resample(input, fromRate, toRate = 16000) {
   return bytes;
 }
 
-async function start() {
-  if (current) return;
+async function start(mode = 'test', onCreated) {
+  if (current) return null;
   error(''); status('Connecting'); $('start').disabled = true;
   const session = { closed: false, chunks: [], count: 0, lastAudio: 0, retries: 0,
-    draft: '', finalized: true, speaking: false, committing: false, lastVoice: 0 };
+    draft: '', finalized: true, speaking: false, committing: false, lastVoice: 0, muted: false, mode };
   current = session;
-  $('stop').disabled = false;
-  $('finish').disabled = false;
+  onCreated?.(session);
+  if (mode === 'test') {
+    $('stop').disabled = false;
+    $('finish').disabled = false;
+    $('cooking-start').disabled = true;
+  }
+  session.permissionTimer = setTimeout(() => {
+    if (current !== session || session.stream) return;
+    if (mode === 'cooking') $('cooking-status').textContent = 'Allow microphone access in your browser';
+    else status('Allow microphone access in your browser');
+  }, 2500);
   try {
     session.stream = await navigator.mediaDevices.getUserMedia({ audio: {
       channelCount: 1, echoCancellation: true, noiseSuppression: true, autoGainControl: true,
     } });
+    session.stream.getAudioTracks().forEach(track => { track.enabled = !session.muted; });
+    clearTimeout(session.permissionTimer);
+    if (session.closed) { session.stream.getTracks().forEach(track => track.stop()); return null; }
     session.context = new AudioContext();
     await session.context.audioWorklet.addModule('/audio-worklet.js');
     session.source = session.context.createMediaStreamSource(session.stream);
@@ -152,7 +169,7 @@ async function start() {
     session.source.connect(session.worklet);
     session.worklet.connect(session.context.destination);
     session.worklet.port.onmessage = ({ data }) => {
-      if (!current || current !== session || session.speaking || session.committing ||
+      if (!current || current !== session || session.muted || session.speaking || session.videoPlaying || session.committing ||
           session.ws?.readyState !== WebSocket.OPEN) return;
       session.chunks.push(data); session.count += data.length;
       const frameSize = Math.round(session.context.sampleRate / 10);
@@ -168,17 +185,36 @@ async function start() {
       if (session.draft && !session.committing && session.lastVoice &&
           session.lastAudio - session.lastVoice > 1100) finishUtterance(session);
     };
-    if (session.closed) { session.stream.getTracks().forEach(track => track.stop()); return; }
+    if (session.closed) { session.stream.getTracks().forEach(track => track.stop()); return null; }
     connect(session);
-  } catch (e) { error(e.message); await stop(); }
+    return session;
+  } catch (e) {
+    if (mode === 'cooking') $('cooking-error').textContent = e.message;
+    else error(e.message);
+    await stop();
+    return null;
+  }
 }
 
 function finishUtterance(session = current) {
-  if (!session || session.closed || session.speaking || session.committing ||
+  if (!session || session.closed || session.speaking || session.videoPlaying || session.committing ||
       !session.draft || session.ws?.readyState !== WebSocket.OPEN) return;
   session.committing = true;
-  $('utterance-state').textContent = 'Finalizing…';
+  if (session.mode === 'cooking') $('cooking-status').textContent = 'Finalizing your words…';
+  else $('utterance-state').textContent = 'Finalizing…';
   session.ws.send(JSON.stringify({ type: 'input_audio_buffer.commit' }));
+}
+
+function toggleCookingMute() {
+  const session = current;
+  if (!session || session.closed || session.mode !== 'cooking') return;
+  if (!session.muted && session.draft) finishUtterance(session);
+  session.muted = !session.muted;
+  session.stream?.getAudioTracks().forEach(track => { track.enabled = !session.muted; });
+  session.chunks = [];
+  session.count = 0;
+  session.lastVoice = 0;
+  cooking.onMuted(session, session.muted);
 }
 
 async function readBack(session, text) {
@@ -223,26 +259,34 @@ function connect(session) {
         ws.send(JSON.stringify({ type: 'session.update', session: {
           sample_rate: 16000, language: 'en-US', endpointing_ms: 650,
         } }));
-        status('Listening'); session.retries = 0; session.committing = false; break;
+        status('Listening'); session.retries = 0; session.committing = false;
+        if (session.mode === 'cooking') cooking.onConnected(session);
+        break;
       case 'conversation.item.input_audio_transcription.delta':
         if (!event.delta) break;
         if (session.finalized) { session.draft = ''; session.finalized = false; }
         if (!session.lastVoice) session.lastVoice = performance.now();
         session.draft += event.delta;
-        $('live').textContent = session.draft;
-        $('utterance-state').textContent = session.committing ? 'Finalizing…' : 'Draft · updating';
+        if (session.mode === 'cooking') $('cooking-heard').textContent = session.draft;
+        else {
+          $('live').textContent = session.draft;
+          $('utterance-state').textContent = session.committing ? 'Finalizing…' : 'Draft · updating';
+        }
         break;
       case 'conversation.item.input_audio_transcription.completed': {
         const text = event.transcript || event.text || '';
-        if (text) { const item = document.createElement('li'); item.textContent = text; $('history').prepend(item); }
-        $('live').textContent = text || session.draft || '—';
-        $('utterance-state').textContent = 'Final · saved below';
+        if (session.mode === 'test') {
+          if (text) { const item = document.createElement('li'); item.textContent = text; $('history').prepend(item); }
+          $('live').textContent = text || session.draft || '—';
+          $('utterance-state').textContent = 'Final · saved below';
+        }
         session.draft = '';
         session.finalized = true;
         session.committing = false;
         session.lastVoice = 0;
         if (session.lastAudio) $('latency').textContent = `${Math.round(performance.now() - session.lastAudio)} ms since latest audio frame`;
-        if (text && $('auto-readback').checked && !session.speaking && !session.closed) readBack(session, text);
+        if (text && session.mode === 'cooking') cooking.onTranscript(session, text);
+        else if (text && $('auto-readback').checked && !session.speaking && !session.closed) readBack(session, text);
         break;
       }
       case 'error':
@@ -265,7 +309,9 @@ async function stop() {
   const session = current;
   if (!session) return;
   current = null; session.closed = true;
+  clearTimeout(session.permissionTimer);
   $('readback-audio').pause();
+  if (session.mode === 'cooking') cooking.onStopped(session);
   clearTimeout(session.timer);
   session.worklet?.disconnect(); session.source?.disconnect();
   session.stream?.getTracks().forEach(track => track.stop());
@@ -275,11 +321,14 @@ async function stop() {
   }
   session.ws?.close();
   await session.context?.close();
-  $('start').disabled = false; $('finish').disabled = true; $('stop').disabled = true; status('Stopped');
+  $('start').disabled = false; $('finish').disabled = true; $('stop').disabled = true;
+  if (session.mode === 'test') $('cooking-start').disabled = !cooking.hasRecipe();
+  status('Stopped');
 }
 
-$('start').addEventListener('click', start);
+$('start').addEventListener('click', () => start('test'));
 $('finish').addEventListener('click', () => finishUtterance());
+$('cooking-mute').addEventListener('click', toggleCookingMute);
 $('stop').addEventListener('click', stop);
 $('upload').addEventListener('click', () => runFileTest($('file').files?.[0], false));
 $('roundtrip').addEventListener('click', () => runFileTest($('file').files?.[0], true));
@@ -292,3 +341,4 @@ window.addEventListener('pagehide', () => {
   }
 });
 fetchModel();
+const cooking = initCooking({ startMic: onCreated => start('cooking', onCreated), stopMic: stop, synthesize, setAudio });
