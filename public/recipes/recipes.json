@@ -1,0 +1,2532 @@
+{
+ "note": "Gusteau sample recipes. Placeholders written by the Gusteau team until the real recipe database is exported here. See docs/RECIPE_FORMAT.md.",
+ "recipes": [
+  {
+   "id": "mx-microwave-burrito-bowl",
+   "title": "Microwave Rice & Bean Burrito Bowl",
+   "cuisine": "mexican",
+   "description": "Fluffy rice, warm seasoned black beans and melty cheese, all made in one microwave. A weeknight bowl in about 15 minutes.",
+   "emoji": "🥣",
+   "total_minutes": 14,
+   "servings": 2,
+   "difficulty": "Easy",
+   "equipment": [
+    "microwave"
+   ],
+   "tags": [
+    "vegetarian",
+    "quick",
+    "comfort"
+   ],
+   "popularity": 92,
+   "ingredients": [
+    {
+     "id": "rice",
+     "name": "Rice",
+     "amount": 0.75,
+     "unit": "cup",
+     "note": "long-grain"
+    },
+    {
+     "id": "black-beans",
+     "name": "Canned black beans",
+     "amount": 1,
+     "unit": "can",
+     "note": "15 oz"
+    },
+    {
+     "id": "cheese",
+     "name": "Shredded cheese",
+     "amount": 0.5,
+     "unit": "cup"
+    },
+    {
+     "id": "salsa",
+     "name": "Salsa",
+     "amount": 4,
+     "unit": "tbsp"
+    },
+    {
+     "id": "cumin",
+     "name": "Ground cumin",
+     "amount": 0.5,
+     "unit": "tsp",
+     "optional": true
+    },
+    {
+     "id": "cilantro",
+     "name": "Cilantro",
+     "amount": null,
+     "unit": "a few sprigs",
+     "optional": true
+    }
+   ],
+   "steps": [
+    {
+     "key": "prep-beans",
+     "title": "Prep the beans",
+     "text": "Drain and rinse the black beans. Tip them into a microwave-safe bowl with a pinch of salt, the cumin and a spoonful of the salsa.",
+     "uses": [
+      "black-beans",
+      "salsa",
+      "cumin"
+     ],
+     "tip": "Rinsing removes the starchy canning liquid, so the beans taste cleaner."
+    },
+    {
+     "key": "cook-rice",
+     "title": "Cook the rice",
+     "text": "Rinse the rice and put it in a large microwave-safe bowl with twice as much water and a pinch of salt. Cover loosely and microwave for 8 minutes, then let it stand covered for 2 minutes. Fluff and divide between two bowls.",
+     "uses": [
+      "rice"
+     ],
+     "timer_seconds": 480,
+     "technique": "rice",
+     "tip": "Use a big bowl. Rice foams up as it cooks."
+    },
+    {
+     "key": "heat-beans",
+     "title": "Heat the beans",
+     "text": "Microwave the beans for 2 minutes. Stir, then mash about a third of them with a fork so they turn creamy.",
+     "uses": [
+      "black-beans"
+     ],
+     "timer_seconds": 120,
+     "technique": "mash"
+    },
+    {
+     "key": "assemble",
+     "title": "Build the bowls",
+     "text": "Spoon the warm beans over the rice, then scatter with the cheese.",
+     "uses": [
+      "rice",
+      "black-beans",
+      "cheese"
+     ]
+    },
+    {
+     "key": "melt",
+     "title": "Melt the cheese",
+     "text": "Microwave each bowl for 30 to 45 seconds until the cheese melts.",
+     "uses": [
+      "cheese"
+     ],
+     "timer_seconds": 45
+    },
+    {
+     "key": "finish",
+     "title": "Top and serve",
+     "text": "Top with the rest of the salsa and the cilantro. Taste, add salt if needed, and dig in.",
+     "uses": [
+      "salsa",
+      "cilantro"
+     ]
+    }
+   ],
+   "stages": [
+    {
+     "title": "Prep the beans",
+     "icon": "prep",
+     "steps": [
+      "prep-beans"
+     ]
+    },
+    {
+     "title": "Cook the rice",
+     "icon": "microwave",
+     "steps": [
+      "cook-rice"
+     ]
+    },
+    {
+     "title": "Heat the beans",
+     "icon": "microwave",
+     "steps": [
+      "heat-beans"
+     ]
+    },
+    {
+     "title": "Build and serve",
+     "icon": "assemble",
+     "steps": [
+      "assemble",
+      "melt",
+      "finish"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "mx-chicken-tinga-tacos",
+   "title": "Chicken Tinga Tacos",
+   "cuisine": "mexican",
+   "description": "Shredded chicken simmered in a smoky tomato and chipotle sauce, piled into warm tortillas.",
+   "emoji": "🌮",
+   "total_minutes": 35,
+   "servings": 4,
+   "difficulty": "Medium",
+   "equipment": [
+    "stovetop"
+   ],
+   "tags": [
+    "spicy"
+   ],
+   "popularity": 88,
+   "ingredients": [
+    "1 lb chicken breast",
+    "1 onion, sliced",
+    "2 cloves garlic, minced",
+    "1 can crushed tomatoes (14 oz)",
+    "2 chipotle peppers in adobo, chopped",
+    "1 tsp dried oregano",
+    "8 corn tortillas",
+    "1 avocado, sliced",
+    "Cilantro, to serve"
+   ],
+   "steps": [
+    {
+     "title": "Poach the chicken",
+     "text": "Put the chicken in a pot, cover with salted water and simmer for 15 minutes until cooked through. Lift it out and shred it with two forks.",
+     "technique": "simmer",
+     "tip": "Chicken is safe once the thickest part reaches 165°F / 74°C."
+    },
+    {
+     "title": "Soften the onion",
+     "text": "Heat a little oil in a skillet and sauté the onion for 5 minutes until soft, then add the garlic for 1 minute."
+    },
+    {
+     "title": "Make the tinga sauce",
+     "text": "Stir in the crushed tomatoes, chipotle peppers and oregano. Simmer for 5 minutes."
+    },
+    {
+     "title": "Coat the chicken",
+     "text": "Fold the shredded chicken into the sauce and cook for 3 minutes so it soaks up the flavor."
+    },
+    {
+     "title": "Warm the tortillas",
+     "text": "Warm the corn tortillas in a dry skillet for 30 seconds per side."
+    },
+    {
+     "title": "Fill and serve",
+     "text": "Fill the tortillas with chicken tinga and top with avocado and cilantro."
+    }
+   ]
+  },
+  {
+   "id": "mx-black-bean-quesadillas",
+   "title": "Black Bean Quesadillas",
+   "cuisine": "mexican",
+   "description": "Crisp, golden tortillas stuffed with mashed black beans and melted cheese.",
+   "emoji": "🫓",
+   "total_minutes": 15,
+   "servings": 2,
+   "difficulty": "Easy",
+   "equipment": [
+    "stovetop"
+   ],
+   "tags": [
+    "vegetarian",
+    "quick"
+   ],
+   "popularity": 80,
+   "ingredients": [
+    "4 flour tortillas",
+    "1 can black beans, drained",
+    "1 cup shredded cheese",
+    "1/2 tsp ground cumin",
+    "Salsa, to serve"
+   ],
+   "steps": [
+    {
+     "title": "Mash the beans",
+     "text": "Mash the black beans with the cumin and a pinch of salt.",
+     "technique": "mash"
+    },
+    {
+     "title": "Fill and fold",
+     "text": "Spread the beans over half of each tortilla, scatter with cheese and fold."
+    },
+    {
+     "title": "Crisp them up",
+     "text": "Cook in a dry skillet over medium heat for 2 to 3 minutes per side until golden and the cheese melts."
+    },
+    {
+     "title": "Slice and serve",
+     "text": "Cut into wedges and serve with salsa."
+    }
+   ]
+  },
+  {
+   "id": "it-aglio-olio",
+   "title": "Spaghetti Aglio e Olio",
+   "cuisine": "italian",
+   "description": "Spaghetti tossed with golden garlic, chili and olive oil. A pantry dinner that tastes far better than it should.",
+   "emoji": "🍝",
+   "total_minutes": 15,
+   "servings": 2,
+   "difficulty": "Easy",
+   "equipment": [
+    "stovetop"
+   ],
+   "tags": [
+    "vegetarian",
+    "quick"
+   ],
+   "popularity": 90,
+   "ingredients": [
+    "8 oz spaghetti",
+    "5 cloves garlic, thinly sliced",
+    "1/3 cup olive oil",
+    "1/2 tsp red pepper flakes",
+    "2 tbsp chopped parsley",
+    "Parmesan, to serve (optional)"
+   ],
+   "steps": [
+    {
+     "title": "Boil the pasta",
+     "text": "Cook the spaghetti in a large pot of well-salted boiling water for 9 minutes. Save a mug of the pasta water before draining.",
+     "technique": "pasta"
+    },
+    {
+     "title": "Toast the garlic",
+     "text": "Meanwhile, warm the olive oil and garlic in a frying pan over medium-low heat for 3 to 4 minutes until pale gold. Add the red pepper flakes."
+    },
+    {
+     "title": "Toss together",
+     "text": "Add the drained spaghetti and a splash of pasta water and toss for 1 minute until glossy."
+    },
+    {
+     "title": "Finish and serve",
+     "text": "Toss in the parsley and serve with parmesan."
+    }
+   ]
+  },
+  {
+   "id": "it-chicken-piccata",
+   "title": "Chicken Piccata",
+   "cuisine": "italian",
+   "description": "Thin chicken cutlets in a bright, buttery lemon and caper sauce.",
+   "emoji": "🍋",
+   "total_minutes": 30,
+   "servings": 2,
+   "difficulty": "Medium",
+   "equipment": [
+    "stovetop"
+   ],
+   "tags": [],
+   "popularity": 78,
+   "ingredients": [
+    "2 chicken breasts",
+    "1/4 cup flour",
+    "2 tbsp olive oil",
+    "3 tbsp butter",
+    "1 lemon, juiced",
+    "2 tbsp capers",
+    "1/2 cup chicken broth",
+    "2 tbsp chopped parsley"
+   ],
+   "steps": [
+    {
+     "title": "Prep the cutlets",
+     "text": "Slice each chicken breast in half horizontally, season with salt and pepper and dust with the flour."
+    },
+    {
+     "title": "Sear the chicken",
+     "text": "Sear the cutlets in the oil and 1 tbsp butter in a skillet for 3 to 4 minutes per side until golden and cooked through. Set aside.",
+     "technique": "sear",
+     "tip": "Cooked through means 165°F / 74°C in the thickest part."
+    },
+    {
+     "title": "Make the sauce",
+     "text": "Pour the chicken broth and lemon juice into the pan, scrape up the browned bits and add the capers. Simmer for 3 minutes.",
+     "technique": "deglaze"
+    },
+    {
+     "title": "Finish with butter",
+     "text": "Swirl in the remaining butter, return the chicken to the pan for 1 minute and scatter with parsley."
+    }
+   ]
+  },
+  {
+   "id": "cn-egg-fried-rice",
+   "title": "Egg Fried Rice",
+   "cuisine": "chinese",
+   "description": "Day-old rice fried hot and fast with egg, scallions and soy sauce.",
+   "emoji": "🍚",
+   "total_minutes": 15,
+   "servings": 2,
+   "difficulty": "Easy",
+   "equipment": [
+    "stovetop"
+   ],
+   "tags": [
+    "vegetarian",
+    "quick"
+   ],
+   "popularity": 89,
+   "ingredients": [
+    "3 cups cooked rice, cold",
+    "3 eggs",
+    "3 scallions, sliced",
+    "1 cup frozen peas",
+    "2 tbsp soy sauce",
+    "1 tsp sesame oil",
+    "2 tbsp vegetable oil"
+   ],
+   "steps": [
+    {
+     "title": "Scramble the eggs",
+     "text": "Heat half the oil in a wok over high heat. Scramble the eggs for 1 minute until just set, then tip them onto a plate.",
+     "technique": "stir-fry"
+    },
+    {
+     "title": "Fry the rice",
+     "text": "Add the remaining oil and the rice. Stir-fry for 3 minutes, pressing out any clumps."
+    },
+    {
+     "title": "Add the veg",
+     "text": "Add the peas and most of the scallions and stir-fry for 2 minutes."
+    },
+    {
+     "title": "Season and serve",
+     "text": "Return the eggs, add the soy sauce and sesame oil, toss and serve topped with the rest of the scallions."
+    }
+   ]
+  },
+  {
+   "id": "cn-kung-pao-chicken",
+   "title": "Kung Pao Chicken",
+   "cuisine": "chinese",
+   "description": "Tender chicken, peanuts and dried chilies in a glossy sweet, sour and numbing sauce.",
+   "emoji": "🥜",
+   "total_minutes": 25,
+   "servings": 2,
+   "difficulty": "Medium",
+   "equipment": [
+    "stovetop"
+   ],
+   "tags": [
+    "spicy"
+   ],
+   "popularity": 84,
+   "ingredients": [
+    "1 lb chicken thighs, diced",
+    "1 tbsp cornstarch",
+    "3 tbsp soy sauce",
+    "1 tbsp rice vinegar",
+    "1 tbsp sugar",
+    "6 dried red chilies",
+    "1/2 cup roasted peanuts",
+    "3 cloves garlic, minced",
+    "1 thumb ginger, minced",
+    "3 scallions, sliced",
+    "1 tsp Sichuan peppercorns"
+   ],
+   "steps": [
+    {
+     "title": "Coat the chicken",
+     "text": "Toss the chicken with the cornstarch and 1 tbsp soy sauce."
+    },
+    {
+     "title": "Mix the sauce",
+     "text": "Stir together the remaining soy sauce, rice vinegar and sugar."
+    },
+    {
+     "title": "Stir-fry the chicken",
+     "text": "Stir-fry the chicken in a hot oiled wok for 5 minutes until browned and cooked through. Set aside.",
+     "technique": "stir-fry"
+    },
+    {
+     "title": "Bloom the aromatics",
+     "text": "Fry the dried chilies and Sichuan peppercorns for 30 seconds, then add the garlic and ginger for 30 seconds more.",
+     "technique": "toast-spices"
+    },
+    {
+     "title": "Bring it together",
+     "text": "Return the chicken, pour in the sauce and toss for 1 minute until glossy. Stir through the peanuts and scallions."
+    }
+   ]
+  },
+  {
+   "id": "jp-chicken-teriyaki",
+   "title": "Chicken Teriyaki",
+   "cuisine": "japanese",
+   "description": "Crisp-skinned chicken thighs lacquered in a homemade teriyaki glaze.",
+   "emoji": "🍗",
+   "total_minutes": 25,
+   "servings": 2,
+   "difficulty": "Easy",
+   "equipment": [
+    "stovetop"
+   ],
+   "tags": [],
+   "popularity": 87,
+   "ingredients": [
+    "4 chicken thighs",
+    "3 tbsp soy sauce",
+    "2 tbsp mirin",
+    "1 tbsp sugar",
+    "1 tbsp sake (optional)",
+    "1 tsp sesame seeds",
+    "2 scallions, sliced",
+    "2 cups cooked rice, to serve"
+   ],
+   "steps": [
+    {
+     "title": "Mix the glaze",
+     "text": "Stir the soy sauce, mirin, sugar and sake together."
+    },
+    {
+     "title": "Crisp the chicken",
+     "text": "Cook the chicken skin side down in a lightly oiled skillet over medium heat for 8 minutes until crisp, then turn and cook for 5 minutes more.",
+     "tip": "Done when the juices run clear and it reaches 165°F / 74°C."
+    },
+    {
+     "title": "Glaze",
+     "text": "Pour off the fat, add the glaze and simmer for 2 minutes, turning the chicken until coated and sticky."
+    },
+    {
+     "title": "Slice and serve",
+     "text": "Slice the chicken, spoon over the glaze and serve on rice with sesame seeds and scallions."
+    }
+   ]
+  },
+  {
+   "id": "jp-miso-soup",
+   "title": "Miso Soup with Tofu",
+   "cuisine": "japanese",
+   "description": "A gentle, savory broth with silken tofu, wakame and scallions.",
+   "emoji": "🍲",
+   "total_minutes": 10,
+   "servings": 2,
+   "difficulty": "Easy",
+   "equipment": [
+    "stovetop"
+   ],
+   "tags": [
+    "quick"
+   ],
+   "popularity": 76,
+   "ingredients": [
+    "3 cups water",
+    "2 tsp dashi powder",
+    "3 tbsp white miso paste",
+    "7 oz silken tofu, cubed",
+    "1 tbsp dried wakame",
+    "2 scallions, sliced"
+   ],
+   "steps": [
+    {
+     "title": "Heat the dashi",
+     "text": "Bring the water and dashi powder to a simmer in a saucepan."
+    },
+    {
+     "title": "Add the tofu and wakame",
+     "text": "Add the tofu and wakame and simmer gently for 2 minutes."
+    },
+    {
+     "title": "Stir in the miso",
+     "text": "Turn off the heat. Whisk the miso with a ladle of broth, then stir it back into the pot.",
+     "tip": "Boiling miso dulls its flavor, so add it off the heat."
+    },
+    {
+     "title": "Serve",
+     "text": "Ladle into bowls and top with scallions."
+    }
+   ]
+  },
+  {
+   "id": "in-chana-masala",
+   "title": "Chana Masala",
+   "cuisine": "indian",
+   "description": "Chickpeas simmered in a tangy, spiced tomato and onion gravy.",
+   "emoji": "🍛",
+   "total_minutes": 30,
+   "servings": 4,
+   "difficulty": "Easy",
+   "equipment": [
+    "stovetop"
+   ],
+   "tags": [
+    "vegan",
+    "vegetarian"
+   ],
+   "popularity": 86,
+   "ingredients": [
+    "2 cans chickpeas, drained",
+    "1 onion, finely chopped",
+    "3 cloves garlic, minced",
+    "1 thumb ginger, grated",
+    "1 can crushed tomatoes (14 oz)",
+    "1 tsp cumin seeds",
+    "2 tsp garam masala",
+    "1 tsp ground turmeric",
+    "1 green chili, sliced",
+    "1 lemon",
+    "Cilantro, to serve"
+   ],
+   "steps": [
+    {
+     "title": "Bloom the cumin",
+     "text": "Heat 2 tbsp oil in a saucepan and fry the cumin seeds for 30 seconds until fragrant.",
+     "technique": "toast-spices"
+    },
+    {
+     "title": "Cook the aromatics",
+     "text": "Add the onion and cook for 8 minutes until golden, then add the garlic, ginger and chili for 1 minute.",
+     "technique": "saute"
+    },
+    {
+     "title": "Build the gravy",
+     "text": "Stir in the turmeric, garam masala and crushed tomatoes and simmer for 5 minutes."
+    },
+    {
+     "title": "Simmer the chickpeas",
+     "text": "Add the chickpeas and a splash of water and simmer for 10 minutes, mashing a few chickpeas to thicken the sauce."
+    },
+    {
+     "title": "Finish",
+     "text": "Squeeze in the lemon, season with salt and scatter with cilantro."
+    }
+   ]
+  },
+  {
+   "id": "in-butter-chicken",
+   "title": "Butter Chicken",
+   "cuisine": "indian",
+   "description": "Marinated chicken in a silky, mildly spiced tomato and cream sauce.",
+   "emoji": "🧈",
+   "total_minutes": 45,
+   "servings": 4,
+   "difficulty": "Medium",
+   "equipment": [
+    "stovetop"
+   ],
+   "tags": [],
+   "popularity": 93,
+   "ingredients": [
+    "1.5 lb chicken thighs, cubed",
+    "1/2 cup plain yogurt",
+    "2 tsp garam masala",
+    "1 tsp chili powder",
+    "3 tbsp butter",
+    "1 onion, finely chopped",
+    "3 cloves garlic, minced",
+    "1 thumb ginger, grated",
+    "1 can tomato puree (14 oz)",
+    "1/2 cup heavy cream",
+    "Cilantro, to serve"
+   ],
+   "steps": [
+    {
+     "title": "Marinate the chicken",
+     "text": "Mix the chicken with the yogurt, half the garam masala, the chili powder and a pinch of salt. Leave for 15 minutes.",
+     "technique": "marinate"
+    },
+    {
+     "title": "Brown the chicken",
+     "text": "Brown the chicken in 1 tbsp butter in a large skillet for 5 minutes. Set aside.",
+     "technique": "sear"
+    },
+    {
+     "title": "Make the base",
+     "text": "Melt the rest of the butter and cook the onion for 6 minutes, then add the garlic and ginger for 1 minute.",
+     "technique": "saute"
+    },
+    {
+     "title": "Simmer the sauce",
+     "text": "Add the tomato puree and remaining garam masala and simmer for 8 minutes."
+    },
+    {
+     "title": "Finish with cream",
+     "text": "Stir in the cream and chicken and simmer for 8 minutes until the chicken is cooked through. Top with cilantro.",
+     "tip": "The chicken should reach 165°F / 74°C."
+    }
+   ]
+  },
+  {
+   "id": "fr-omelette-fines-herbes",
+   "title": "Omelette aux Fines Herbes",
+   "cuisine": "french",
+   "description": "A soft, rolled French omelette with butter and fresh herbs.",
+   "emoji": "🍳",
+   "total_minutes": 8,
+   "servings": 1,
+   "difficulty": "Medium",
+   "equipment": [
+    "stovetop"
+   ],
+   "tags": [
+    "vegetarian",
+    "quick"
+   ],
+   "popularity": 74,
+   "ingredients": [
+    "3 eggs",
+    "1 tbsp butter",
+    "1 tbsp chopped chives",
+    "1 tbsp chopped parsley",
+    "1 tsp chopped tarragon (optional)"
+   ],
+   "steps": [
+    {
+     "title": "Beat the eggs",
+     "text": "Whisk the eggs with a pinch of salt and most of the herbs until smooth.",
+     "technique": "whisk"
+    },
+    {
+     "title": "Cook gently",
+     "text": "Melt the butter in a nonstick frying pan over medium-low heat. Add the eggs and stir with a fork while shaking the pan for 1 to 2 minutes until softly set."
+    },
+    {
+     "title": "Roll and serve",
+     "text": "Tilt the pan, roll the omelette onto a plate and scatter with the remaining herbs."
+    }
+   ]
+  },
+  {
+   "id": "fr-ratatouille",
+   "title": "Ratatouille",
+   "cuisine": "french",
+   "description": "Summer vegetables slowly stewed with garlic, tomato and herbs.",
+   "emoji": "🍆",
+   "total_minutes": 50,
+   "servings": 4,
+   "difficulty": "Medium",
+   "equipment": [
+    "stovetop"
+   ],
+   "tags": [
+    "vegan",
+    "vegetarian"
+   ],
+   "popularity": 79,
+   "ingredients": [
+    "1 eggplant, diced",
+    "2 zucchini, diced",
+    "1 red bell pepper, diced",
+    "1 onion, diced",
+    "3 cloves garlic, minced",
+    "1 can crushed tomatoes (14 oz)",
+    "1 tsp dried thyme",
+    "4 tbsp olive oil",
+    "Basil, to serve"
+   ],
+   "steps": [
+    {
+     "title": "Brown the eggplant",
+     "text": "Sauté the eggplant in half the olive oil in a large pot for 6 minutes until golden. Set aside.",
+     "technique": "saute"
+    },
+    {
+     "title": "Cook the vegetables",
+     "text": "Add the remaining oil, onion and bell pepper and cook for 5 minutes, then add the zucchini and garlic for 3 minutes."
+    },
+    {
+     "title": "Stew",
+     "text": "Return the eggplant, add the crushed tomatoes and thyme, cover and simmer for 25 minutes, stirring now and then.",
+     "technique": "simmer"
+    },
+    {
+     "title": "Rest and serve",
+     "text": "Season, rest for 5 minutes and tear over the basil."
+    }
+   ]
+  },
+  {
+   "id": "th-pad-krapow",
+   "title": "Thai Basil Chicken (Pad Krapow)",
+   "cuisine": "thai",
+   "description": "Minced chicken stir-fried with chilies, garlic and holy basil, served over rice with a fried egg.",
+   "emoji": "🌶️",
+   "total_minutes": 20,
+   "servings": 2,
+   "difficulty": "Easy",
+   "equipment": [
+    "stovetop"
+   ],
+   "tags": [
+    "spicy",
+    "quick"
+   ],
+   "popularity": 88,
+   "ingredients": [
+    "1 lb ground chicken",
+    "4 cloves garlic",
+    "2 Thai chilies",
+    "1 tbsp oyster sauce",
+    "1 tbsp soy sauce",
+    "1 tsp fish sauce",
+    "1 tsp sugar",
+    "1 cup Thai basil leaves",
+    "2 eggs",
+    "2 cups cooked jasmine rice"
+   ],
+   "steps": [
+    {
+     "title": "Pound the aromatics",
+     "text": "Roughly pound or finely chop the garlic and chilies together.",
+     "technique": "mince"
+    },
+    {
+     "title": "Stir-fry the chicken",
+     "text": "Stir-fry the garlic and chilies in a hot oiled wok for 30 seconds, then add the chicken and cook for 5 minutes until no pink remains.",
+     "technique": "stir-fry"
+    },
+    {
+     "title": "Season",
+     "text": "Add the oyster sauce, soy sauce, fish sauce and sugar and toss for 1 minute. Fold in the basil until it wilts."
+    },
+    {
+     "title": "Fry the eggs",
+     "text": "Fry the eggs in hot oil for 2 minutes until the edges are crisp."
+    },
+    {
+     "title": "Serve",
+     "text": "Serve the chicken over the rice, topped with the eggs."
+    }
+   ]
+  },
+  {
+   "id": "th-green-curry",
+   "title": "Green Curry with Vegetables",
+   "cuisine": "thai",
+   "description": "Creamy coconut green curry with crisp vegetables and tofu.",
+   "emoji": "🥥",
+   "total_minutes": 25,
+   "servings": 4,
+   "difficulty": "Easy",
+   "equipment": [
+    "stovetop"
+   ],
+   "tags": [
+    "vegan",
+    "vegetarian"
+   ],
+   "popularity": 85,
+   "ingredients": [
+    "3 tbsp green curry paste",
+    "1 can coconut milk (14 oz)",
+    "14 oz firm tofu, cubed",
+    "1 red bell pepper, sliced",
+    "1 zucchini, sliced",
+    "1 cup green beans",
+    "1 tbsp soy sauce",
+    "1 tsp sugar",
+    "1 lime",
+    "Thai basil, to serve",
+    "Cooked jasmine rice, to serve"
+   ],
+   "steps": [
+    {
+     "title": "Fry the curry paste",
+     "text": "Fry the curry paste in a splash of the coconut milk in a saucepan for 2 minutes until fragrant."
+    },
+    {
+     "title": "Add the coconut milk",
+     "text": "Pour in the rest of the coconut milk with half a can of water and bring to a simmer."
+    },
+    {
+     "title": "Simmer the vegetables",
+     "text": "Add the tofu, green beans, bell pepper and zucchini and simmer for 8 minutes until just tender.",
+     "technique": "simmer"
+    },
+    {
+     "title": "Season",
+     "text": "Season with the soy sauce, sugar and lime juice."
+    },
+    {
+     "title": "Serve",
+     "text": "Serve over rice with Thai basil."
+    }
+   ]
+  },
+  {
+   "id": "es-tortilla-espanola",
+   "title": "Tortilla Española",
+   "cuisine": "spanish",
+   "description": "A thick, tender potato and onion omelette, golden outside and just set inside.",
+   "emoji": "🥔",
+   "total_minutes": 45,
+   "servings": 4,
+   "difficulty": "Medium",
+   "equipment": [
+    "stovetop"
+   ],
+   "tags": [
+    "vegetarian"
+   ],
+   "popularity": 82,
+   "ingredients": [
+    "1.5 lb potatoes, thinly sliced",
+    "1 onion, thinly sliced",
+    "6 eggs",
+    "1/2 cup olive oil"
+   ],
+   "steps": [
+    {
+     "title": "Cook the potatoes",
+     "text": "Cook the potatoes and onion gently in the olive oil in a nonstick skillet for 20 minutes until soft but not browned. Drain, saving the oil.",
+     "technique": "slice-thin"
+    },
+    {
+     "title": "Combine with eggs",
+     "text": "Beat the eggs with salt and fold in the potatoes. Rest for 5 minutes.",
+     "technique": "whisk"
+    },
+    {
+     "title": "Cook the first side",
+     "text": "Heat 2 tbsp of the saved oil in the skillet and cook the tortilla over medium-low heat for 6 minutes."
+    },
+    {
+     "title": "Flip and finish",
+     "text": "Flip it onto a plate, slide it back into the skillet and cook for 4 minutes more."
+    },
+    {
+     "title": "Rest and serve",
+     "text": "Rest for 5 minutes and serve warm or at room temperature."
+    }
+   ]
+  },
+  {
+   "id": "es-gambas-al-ajillo",
+   "title": "Garlic Shrimp (Gambas al Ajillo)",
+   "cuisine": "spanish",
+   "description": "Shrimp sizzled in olive oil with plenty of garlic, chili and paprika.",
+   "emoji": "🦐",
+   "total_minutes": 15,
+   "servings": 2,
+   "difficulty": "Easy",
+   "equipment": [
+    "stovetop"
+   ],
+   "tags": [
+    "quick"
+   ],
+   "popularity": 81,
+   "ingredients": [
+    "1 lb shrimp, peeled",
+    "6 cloves garlic, sliced",
+    "1/3 cup olive oil",
+    "1/2 tsp red pepper flakes",
+    "1 tsp smoked paprika",
+    "1 lemon",
+    "2 tbsp chopped parsley",
+    "Crusty bread, to serve"
+   ],
+   "steps": [
+    {
+     "title": "Infuse the oil",
+     "text": "Warm the olive oil, garlic and red pepper flakes in a skillet over medium heat for 2 minutes until the garlic sizzles."
+    },
+    {
+     "title": "Cook the shrimp",
+     "text": "Add the shrimp and paprika and cook for 3 minutes, turning once, until pink and opaque."
+    },
+    {
+     "title": "Finish",
+     "text": "Squeeze over the lemon and scatter with parsley. Serve with bread to mop up the oil."
+    }
+   ]
+  },
+  {
+   "id": "gr-horiatiki",
+   "title": "Greek Salad (Horiatiki)",
+   "cuisine": "greek",
+   "description": "Tomatoes, cucumber, peppers and olives under a slab of feta and a pour of olive oil.",
+   "emoji": "🥗",
+   "total_minutes": 10,
+   "servings": 2,
+   "difficulty": "Easy",
+   "equipment": [],
+   "tags": [
+    "vegetarian",
+    "quick"
+   ],
+   "popularity": 80,
+   "ingredients": [
+    "3 tomatoes, cut into wedges",
+    "1 cucumber, sliced",
+    "1 green bell pepper, sliced",
+    "1/2 red onion, thinly sliced",
+    "1/2 cup Kalamata olives",
+    "7 oz feta",
+    "1 tsp dried oregano",
+    "3 tbsp olive oil",
+    "1 tbsp red wine vinegar"
+   ],
+   "steps": [
+    {
+     "title": "Chop the vegetables",
+     "text": "Cut the tomatoes, cucumber, bell pepper and onion and pile them into a bowl.",
+     "technique": "slice-thin"
+    },
+    {
+     "title": "Dress",
+     "text": "Season with salt, add the olives and drizzle with the vinegar and olive oil."
+    },
+    {
+     "title": "Top and serve",
+     "text": "Lay the feta on top, sprinkle with oregano and serve."
+    }
+   ]
+  },
+  {
+   "id": "gr-chicken-souvlaki",
+   "title": "Chicken Souvlaki",
+   "cuisine": "greek",
+   "description": "Lemon and oregano chicken skewers with warm pita and a quick yogurt sauce.",
+   "emoji": "🍢",
+   "total_minutes": 35,
+   "servings": 4,
+   "difficulty": "Easy",
+   "equipment": [
+    "grill"
+   ],
+   "tags": [],
+   "popularity": 84,
+   "ingredients": [
+    "1.5 lb chicken breast, cubed",
+    "1 lemon",
+    "3 tbsp olive oil",
+    "2 tsp dried oregano",
+    "3 cloves garlic, minced",
+    "1 cup Greek yogurt",
+    "1/2 cucumber, grated",
+    "4 pita breads"
+   ],
+   "steps": [
+    {
+     "title": "Marinate the chicken",
+     "text": "Toss the chicken with the juice of the lemon, olive oil, oregano, two-thirds of the garlic and salt. Leave for 15 minutes.",
+     "technique": "marinate"
+    },
+    {
+     "title": "Make the sauce",
+     "text": "Squeeze the grated cucumber dry and stir it into the yogurt with the rest of the garlic and a pinch of salt."
+    },
+    {
+     "title": "Grill the skewers",
+     "text": "Thread the chicken onto skewers and grill over high heat for 10 to 12 minutes, turning, until charred and cooked through.",
+     "tip": "Cooked through means 165°F / 74°C."
+    },
+    {
+     "title": "Warm the pita and serve",
+     "text": "Grill the pita for 30 seconds per side and serve with the skewers and sauce."
+    }
+   ]
+  },
+  {
+   "id": "kr-bibimbap",
+   "title": "Vegetable Bibimbap",
+   "cuisine": "korean",
+   "description": "Rice topped with seasoned vegetables, a fried egg and spicy gochujang sauce.",
+   "emoji": "🍚",
+   "total_minutes": 35,
+   "servings": 2,
+   "difficulty": "Medium",
+   "equipment": [
+    "stovetop"
+   ],
+   "tags": [
+    "vegetarian"
+   ],
+   "popularity": 86,
+   "ingredients": [
+    "2 cups cooked rice",
+    "2 eggs",
+    "1 carrot, julienned",
+    "1 zucchini, julienned",
+    "2 cups spinach",
+    "1 cup bean sprouts",
+    "2 tbsp gochujang",
+    "1 tbsp sesame oil",
+    "1 tbsp soy sauce",
+    "1 tsp sugar",
+    "1 tsp sesame seeds"
+   ],
+   "steps": [
+    {
+     "title": "Mix the sauce",
+     "text": "Stir the gochujang with half the sesame oil, the sugar and 1 tbsp water."
+    },
+    {
+     "title": "Cook the vegetables",
+     "text": "Sauté the carrot and zucchini separately in a little oil in a skillet for 2 minutes each, then wilt the spinach and bean sprouts for 1 minute. Season each with a little soy sauce and sesame oil.",
+     "technique": "slice-thin"
+    },
+    {
+     "title": "Fry the eggs",
+     "text": "Fry the eggs in the skillet for 2 to 3 minutes until the whites are set."
+    },
+    {
+     "title": "Assemble",
+     "text": "Divide the rice between bowls, arrange the vegetables on top and add the eggs."
+    },
+    {
+     "title": "Serve",
+     "text": "Spoon over the sauce, sprinkle with sesame seeds and mix it all together at the table."
+    }
+   ]
+  },
+  {
+   "id": "kr-kimchi-fried-rice",
+   "title": "Kimchi Fried Rice",
+   "cuisine": "korean",
+   "description": "Tangy, spicy fried rice with kimchi, finished with a runny fried egg.",
+   "emoji": "🍳",
+   "total_minutes": 15,
+   "servings": 2,
+   "difficulty": "Easy",
+   "equipment": [
+    "stovetop"
+   ],
+   "tags": [
+    "spicy",
+    "quick",
+    "vegetarian"
+   ],
+   "popularity": 83,
+   "ingredients": [
+    "3 cups cooked rice, cold",
+    "1 cup kimchi, chopped",
+    "2 tbsp kimchi juice",
+    "1 tbsp gochujang",
+    "2 eggs",
+    "2 scallions, sliced",
+    "1 tsp sesame oil"
+   ],
+   "steps": [
+    {
+     "title": "Fry the kimchi",
+     "text": "Fry the kimchi in a little oil in a skillet for 3 minutes until it starts to caramelize."
+    },
+    {
+     "title": "Fry the rice",
+     "text": "Add the rice, kimchi juice and gochujang and fry for 4 minutes, pressing the rice into the pan."
+    },
+    {
+     "title": "Fry the eggs",
+     "text": "In another pan, fry the eggs for 2 minutes until the whites are set."
+    },
+    {
+     "title": "Serve",
+     "text": "Stir the sesame oil through the rice, top with the eggs and scallions."
+    }
+   ]
+  },
+  {
+   "id": "vn-lemongrass-chicken",
+   "title": "Lemongrass Chicken",
+   "cuisine": "vietnamese",
+   "description": "Caramelized chicken thighs with lemongrass, garlic and fish sauce over rice.",
+   "emoji": "🍗",
+   "total_minutes": 35,
+   "servings": 4,
+   "difficulty": "Medium",
+   "equipment": [
+    "stovetop"
+   ],
+   "tags": [],
+   "popularity": 80,
+   "ingredients": [
+    "1.5 lb chicken thighs, sliced",
+    "2 stalks lemongrass, finely chopped",
+    "4 cloves garlic, minced",
+    "2 tbsp fish sauce",
+    "2 tbsp brown sugar",
+    "1 shallot, sliced",
+    "1 red chili, sliced",
+    "Cilantro, to serve",
+    "Cooked jasmine rice, to serve"
+   ],
+   "steps": [
+    {
+     "title": "Marinate",
+     "text": "Toss the chicken with the lemongrass, garlic, fish sauce and half the sugar. Leave for 15 minutes.",
+     "technique": "marinate"
+    },
+    {
+     "title": "Caramelize the sugar",
+     "text": "Melt the rest of the sugar with 1 tbsp water in a skillet for 2 minutes until amber."
+    },
+    {
+     "title": "Cook the chicken",
+     "text": "Add the chicken, shallot and chili and cook for 10 minutes, stirring, until sticky and cooked through.",
+     "tip": "Cooked through means 165°F / 74°C."
+    },
+    {
+     "title": "Serve",
+     "text": "Serve over rice with cilantro."
+    }
+   ]
+  },
+  {
+   "id": "vn-fresh-spring-rolls",
+   "title": "Fresh Spring Rolls",
+   "cuisine": "vietnamese",
+   "description": "Rice paper rolls packed with shrimp, herbs and noodles, with peanut dipping sauce.",
+   "emoji": "🥢",
+   "total_minutes": 30,
+   "servings": 4,
+   "difficulty": "Medium",
+   "equipment": [
+    "stovetop"
+   ],
+   "tags": [],
+   "popularity": 77,
+   "ingredients": [
+    "12 rice paper wrappers",
+    "12 cooked shrimp, halved",
+    "4 oz rice vermicelli",
+    "1 cup lettuce, shredded",
+    "1 carrot, julienned",
+    "Mint leaves",
+    "Cilantro leaves",
+    "1/4 cup peanut butter",
+    "2 tbsp hoisin sauce",
+    "1 lime"
+   ],
+   "steps": [
+    {
+     "title": "Cook the noodles",
+     "text": "Boil the vermicelli for 3 minutes, then drain and rinse under cold water."
+    },
+    {
+     "title": "Make the dipping sauce",
+     "text": "Whisk the peanut butter, hoisin sauce, lime juice and 3 tbsp warm water until smooth.",
+     "technique": "whisk"
+    },
+    {
+     "title": "Soften the wrappers",
+     "text": "Dip one rice paper wrapper in warm water for 10 seconds and lay it flat."
+    },
+    {
+     "title": "Fill and roll",
+     "text": "Lay shrimp, noodles, lettuce, carrot, mint and cilantro on the wrapper, fold in the sides and roll tightly. Repeat.",
+     "technique": "roll"
+    },
+    {
+     "title": "Serve",
+     "text": "Serve the rolls with the dipping sauce."
+    }
+   ]
+  },
+  {
+   "id": "us-cheeseburger",
+   "title": "Classic Cheeseburger",
+   "cuisine": "american",
+   "description": "Juicy smashed beef patties with melted cheese, pickles and all the fixings.",
+   "emoji": "🍔",
+   "total_minutes": 20,
+   "servings": 4,
+   "difficulty": "Easy",
+   "equipment": [
+    "stovetop"
+   ],
+   "tags": [],
+   "popularity": 91,
+   "ingredients": [
+    "1.5 lb ground beef",
+    "4 slices cheddar cheese",
+    "4 burger buns",
+    "1 tomato, sliced",
+    "Lettuce leaves",
+    "Pickles",
+    "1/2 onion, thinly sliced",
+    "Ketchup and mustard, to serve"
+   ],
+   "steps": [
+    {
+     "title": "Shape the patties",
+     "text": "Divide the beef into 4 balls and season generously with salt and pepper."
+    },
+    {
+     "title": "Smash and sear",
+     "text": "Smash each ball flat in a very hot skillet and sear for 3 minutes until a deep crust forms.",
+     "technique": "sear"
+    },
+    {
+     "title": "Flip and melt",
+     "text": "Flip, top with the cheese, and cook for 2 minutes more.",
+     "tip": "Ground beef is safe at 160°F / 71°C."
+    },
+    {
+     "title": "Toast the buns",
+     "text": "Toast the buns cut side down in the skillet for 1 minute."
+    },
+    {
+     "title": "Build the burgers",
+     "text": "Layer the buns with lettuce, tomato, patties, onion, pickles and sauces."
+    }
+   ]
+  },
+  {
+   "id": "us-mac-and-cheese",
+   "title": "Stovetop Mac and Cheese",
+   "cuisine": "american",
+   "description": "Creamy, cheesy macaroni made in one pot, no baking needed.",
+   "emoji": "🧀",
+   "total_minutes": 20,
+   "servings": 4,
+   "difficulty": "Easy",
+   "equipment": [
+    "stovetop"
+   ],
+   "tags": [
+    "vegetarian",
+    "comfort"
+   ],
+   "popularity": 88,
+   "ingredients": [
+    "12 oz macaroni",
+    "2 tbsp butter",
+    "2 tbsp flour",
+    "2 cups milk",
+    "2 cups shredded cheddar",
+    "1/2 tsp mustard powder"
+   ],
+   "steps": [
+    {
+     "title": "Boil the macaroni",
+     "text": "Cook the macaroni in a pot of salted boiling water for 7 minutes until just tender. Drain.",
+     "technique": "pasta"
+    },
+    {
+     "title": "Make the sauce",
+     "text": "Melt the butter in the same pot, stir in the flour for 1 minute, then whisk in the milk and simmer for 4 minutes until thickened.",
+     "technique": "whisk"
+    },
+    {
+     "title": "Melt in the cheese",
+     "text": "Take the pot off the heat and stir in the cheddar and mustard powder until smooth."
+    },
+    {
+     "title": "Combine and serve",
+     "text": "Fold in the macaroni and season to taste."
+    }
+   ]
+  },
+  {
+   "id": "lb-hummus",
+   "title": "Silky Hummus",
+   "cuisine": "lebanese",
+   "description": "Smooth, creamy chickpea dip with tahini, lemon and garlic.",
+   "emoji": "🧆",
+   "total_minutes": 10,
+   "servings": 4,
+   "difficulty": "Easy",
+   "equipment": [
+    "blender"
+   ],
+   "tags": [
+    "vegan",
+    "vegetarian",
+    "quick"
+   ],
+   "popularity": 84,
+   "ingredients": [
+    "1 can chickpeas, drained",
+    "1/4 cup tahini",
+    "1 lemon, juiced",
+    "1 clove garlic",
+    "3 tbsp ice water",
+    "2 tbsp olive oil",
+    "1/2 tsp ground cumin",
+    "Paprika, to serve"
+   ],
+   "steps": [
+    {
+     "title": "Blend the tahini",
+     "text": "Blend the tahini, lemon juice and garlic for 1 minute until pale and thick.",
+     "technique": "whisk"
+    },
+    {
+     "title": "Add the chickpeas",
+     "text": "Add the chickpeas, cumin and a pinch of salt and blend for 2 minutes, adding the ice water a spoonful at a time until silky."
+    },
+    {
+     "title": "Serve",
+     "text": "Spread in a bowl, drizzle with the olive oil and dust with paprika."
+    }
+   ]
+  },
+  {
+   "id": "lb-fattoush",
+   "title": "Fattoush",
+   "cuisine": "lebanese",
+   "description": "A crunchy chopped salad with toasted pita, sumac and a sharp lemon dressing.",
+   "emoji": "🥗",
+   "total_minutes": 20,
+   "servings": 4,
+   "difficulty": "Easy",
+   "equipment": [
+    "oven"
+   ],
+   "tags": [
+    "vegan",
+    "vegetarian"
+   ],
+   "popularity": 75,
+   "ingredients": [
+    "2 pita breads",
+    "1 romaine lettuce, chopped",
+    "2 tomatoes, diced",
+    "1 cucumber, diced",
+    "4 radishes, sliced",
+    "3 scallions, sliced",
+    "1/2 cup parsley leaves",
+    "1/4 cup mint leaves",
+    "1 lemon, juiced",
+    "1/4 cup olive oil",
+    "2 tsp sumac"
+   ],
+   "steps": [
+    {
+     "title": "Toast the pita",
+     "text": "Tear the pita into pieces, toss with a little olive oil and bake at 400°F / 200°C for 8 minutes until crisp."
+    },
+    {
+     "title": "Make the dressing",
+     "text": "Whisk the lemon juice, remaining olive oil, sumac and salt.",
+     "technique": "whisk"
+    },
+    {
+     "title": "Chop the salad",
+     "text": "Combine the lettuce, tomatoes, cucumber, radishes, scallions, parsley and mint in a big bowl.",
+     "technique": "chop-herbs"
+    },
+    {
+     "title": "Toss and serve",
+     "text": "Toss with the dressing and the toasted pita just before serving."
+    }
+   ]
+  },
+  {
+   "id": "tr-menemen",
+   "title": "Menemen",
+   "cuisine": "turkish",
+   "description": "Soft-scrambled eggs cooked into peppers and tomatoes, eaten straight from the pan.",
+   "emoji": "🍳",
+   "total_minutes": 20,
+   "servings": 2,
+   "difficulty": "Easy",
+   "equipment": [
+    "stovetop"
+   ],
+   "tags": [
+    "vegetarian",
+    "quick"
+   ],
+   "popularity": 79,
+   "ingredients": [
+    "2 green bell peppers, diced",
+    "3 tomatoes, diced",
+    "4 eggs",
+    "2 tbsp olive oil",
+    "1/2 tsp red pepper flakes",
+    "Crusty bread, to serve"
+   ],
+   "steps": [
+    {
+     "title": "Soften the peppers",
+     "text": "Sauté the peppers in the olive oil in a skillet for 5 minutes until soft.",
+     "technique": "saute"
+    },
+    {
+     "title": "Cook the tomatoes",
+     "text": "Add the tomatoes and pepper flakes and simmer for 6 minutes until jammy."
+    },
+    {
+     "title": "Scramble in the eggs",
+     "text": "Crack in the eggs and stir gently over low heat for 2 to 3 minutes until just set."
+    },
+    {
+     "title": "Serve",
+     "text": "Serve straight from the pan with bread."
+    }
+   ]
+  },
+  {
+   "id": "tr-mercimek-corbasi",
+   "title": "Red Lentil Soup (Mercimek Çorbası)",
+   "cuisine": "turkish",
+   "description": "A velvety red lentil soup brightened with lemon and a sizzle of paprika butter.",
+   "emoji": "🍲",
+   "total_minutes": 35,
+   "servings": 4,
+   "difficulty": "Easy",
+   "equipment": [
+    "stovetop",
+    "blender"
+   ],
+   "tags": [
+    "vegetarian"
+   ],
+   "popularity": 78,
+   "ingredients": [
+    "1 cup red lentils, rinsed",
+    "1 onion, chopped",
+    "1 carrot, chopped",
+    "1 tbsp tomato paste",
+    "1 tsp ground cumin",
+    "5 cups vegetable broth",
+    "2 tbsp butter",
+    "1 tsp paprika",
+    "1 lemon"
+   ],
+   "steps": [
+    {
+     "title": "Soften the vegetables",
+     "text": "Cook the onion and carrot in a little oil in a large pot for 5 minutes. Stir in the tomato paste and cumin for 1 minute."
+    },
+    {
+     "title": "Simmer the lentils",
+     "text": "Add the lentils and vegetable broth and simmer for 20 minutes until the lentils fall apart.",
+     "technique": "simmer"
+    },
+    {
+     "title": "Blend",
+     "text": "Blend the soup until smooth and season with salt."
+    },
+    {
+     "title": "Paprika butter and serve",
+     "text": "Melt the butter with the paprika until it sizzles, drizzle over the soup and serve with lemon wedges."
+    }
+   ]
+  },
+  {
+   "id": "ma-chicken-tagine",
+   "title": "Chicken Tagine with Lemon & Olives",
+   "cuisine": "moroccan",
+   "description": "Chicken braised with warm spices, preserved lemon and green olives.",
+   "emoji": "🫒",
+   "total_minutes": 60,
+   "servings": 4,
+   "difficulty": "Medium",
+   "equipment": [
+    "stovetop"
+   ],
+   "tags": [],
+   "popularity": 83,
+   "ingredients": [
+    "8 chicken thighs",
+    "1 onion, sliced",
+    "3 cloves garlic, minced",
+    "1 tsp ground ginger",
+    "1 tsp ground cumin",
+    "1 tsp ground turmeric",
+    "1 cinnamon stick",
+    "1 preserved lemon, chopped",
+    "1/2 cup green olives",
+    "1 cup chicken broth",
+    "Cilantro, to serve"
+   ],
+   "steps": [
+    {
+     "title": "Brown the chicken",
+     "text": "Season the chicken and brown it in oil in a heavy pot for 6 minutes. Set aside.",
+     "technique": "sear"
+    },
+    {
+     "title": "Cook the spices",
+     "text": "Cook the onion for 5 minutes, then add the garlic, ginger, cumin, turmeric and cinnamon for 1 minute.",
+     "technique": "toast-spices"
+    },
+    {
+     "title": "Braise",
+     "text": "Return the chicken, add the chicken broth, cover and simmer for 35 minutes.",
+     "technique": "simmer"
+    },
+    {
+     "title": "Add lemon and olives",
+     "text": "Stir in the preserved lemon and olives and simmer uncovered for 5 minutes."
+    },
+    {
+     "title": "Serve",
+     "text": "Scatter with cilantro and serve with couscous or bread."
+    }
+   ]
+  },
+  {
+   "id": "ma-vegetable-couscous",
+   "title": "Chickpea & Vegetable Couscous",
+   "cuisine": "moroccan",
+   "description": "Fluffy couscous under a fragrant stew of chickpeas, carrots and zucchini.",
+   "emoji": "🥕",
+   "total_minutes": 35,
+   "servings": 4,
+   "difficulty": "Easy",
+   "equipment": [
+    "stovetop"
+   ],
+   "tags": [
+    "vegan",
+    "vegetarian"
+   ],
+   "popularity": 74,
+   "ingredients": [
+    "1 1/2 cups couscous",
+    "1 can chickpeas, drained",
+    "2 carrots, chopped",
+    "1 zucchini, chopped",
+    "1 onion, chopped",
+    "1 can crushed tomatoes (14 oz)",
+    "2 tsp ras el hanout",
+    "2 cups vegetable broth",
+    "1/4 cup raisins",
+    "Parsley, to serve"
+   ],
+   "steps": [
+    {
+     "title": "Start the stew",
+     "text": "Cook the onion in oil in a large pot for 5 minutes, then stir in the ras el hanout for 30 seconds.",
+     "technique": "toast-spices"
+    },
+    {
+     "title": "Simmer the vegetables",
+     "text": "Add the carrots, crushed tomatoes and vegetable broth and simmer for 10 minutes. Add the zucchini, chickpeas and raisins and simmer for 8 minutes more.",
+     "technique": "simmer"
+    },
+    {
+     "title": "Soak the couscous",
+     "text": "Pour 1½ cups just-boiled water over the couscous with a pinch of salt, cover for 5 minutes, then fluff with a fork."
+    },
+    {
+     "title": "Serve",
+     "text": "Spoon the stew over the couscous and scatter with parsley."
+    }
+   ]
+  },
+  {
+   "id": "br-moqueca",
+   "title": "Moqueca (Fish & Coconut Stew)",
+   "cuisine": "brazilian",
+   "description": "White fish gently cooked in coconut milk with peppers, tomatoes and lime.",
+   "emoji": "🐟",
+   "total_minutes": 35,
+   "servings": 4,
+   "difficulty": "Medium",
+   "equipment": [
+    "stovetop"
+   ],
+   "tags": [],
+   "popularity": 79,
+   "ingredients": [
+    "1.5 lb white fish fillets, cut into chunks",
+    "1 lime",
+    "1 onion, sliced",
+    "1 red bell pepper, sliced",
+    "2 tomatoes, sliced",
+    "3 cloves garlic, minced",
+    "1 can coconut milk (14 oz)",
+    "1 tsp paprika",
+    "Cilantro, to serve",
+    "Cooked rice, to serve"
+   ],
+   "steps": [
+    {
+     "title": "Marinate the fish",
+     "text": "Toss the fish with the lime juice, garlic and salt. Leave for 10 minutes.",
+     "technique": "marinate"
+    },
+    {
+     "title": "Layer the vegetables",
+     "text": "Cook the onion and bell pepper in oil in a wide pot for 5 minutes, then add the tomatoes and paprika."
+    },
+    {
+     "title": "Simmer with coconut",
+     "text": "Nestle in the fish, pour over the coconut milk and simmer gently, covered, for 10 minutes until the fish flakes.",
+     "technique": "simmer"
+    },
+    {
+     "title": "Serve",
+     "text": "Scatter with cilantro and serve over rice."
+    }
+   ]
+  },
+  {
+   "id": "br-feijoada-stew",
+   "title": "Weeknight Feijoada-Style Stew",
+   "cuisine": "brazilian",
+   "description": "Black beans simmered with smoky sausage and bacon, a shortcut take on Brazil’s classic.",
+   "emoji": "🫘",
+   "total_minutes": 45,
+   "servings": 4,
+   "difficulty": "Medium",
+   "equipment": [
+    "stovetop"
+   ],
+   "tags": [],
+   "popularity": 77,
+   "ingredients": [
+    "2 cans black beans",
+    "8 oz smoked sausage, sliced",
+    "4 slices bacon, chopped",
+    "1 onion, chopped",
+    "4 cloves garlic, minced",
+    "2 bay leaves",
+    "1 orange",
+    "Cooked rice, to serve"
+   ],
+   "steps": [
+    {
+     "title": "Crisp the meats",
+     "text": "Cook the bacon in a large pot for 5 minutes, then add the sausage and brown for 4 minutes."
+    },
+    {
+     "title": "Add the aromatics",
+     "text": "Add the onion and garlic and cook for 5 minutes until soft."
+    },
+    {
+     "title": "Simmer the beans",
+     "text": "Add the black beans with their liquid, the bay leaves and 1 cup water and simmer for 20 minutes until thick.",
+     "technique": "simmer"
+    },
+    {
+     "title": "Serve",
+     "text": "Serve with rice and orange slices."
+    }
+   ]
+  },
+  {
+   "id": "pe-lomo-saltado",
+   "title": "Lomo Saltado",
+   "cuisine": "peruvian",
+   "description": "A smoky beef stir-fry with tomatoes, onions and soy, served with fries and rice.",
+   "emoji": "🥩",
+   "total_minutes": 30,
+   "servings": 4,
+   "difficulty": "Medium",
+   "equipment": [
+    "stovetop",
+    "oven"
+   ],
+   "tags": [],
+   "popularity": 83,
+   "ingredients": [
+    "1.5 lb beef sirloin, sliced",
+    "1 red onion, cut into wedges",
+    "2 tomatoes, cut into wedges",
+    "1 aji amarillo or jalapeño, sliced",
+    "3 tbsp soy sauce",
+    "2 tbsp red wine vinegar",
+    "3 cloves garlic, minced",
+    "1 lb frozen fries",
+    "Cilantro, to serve",
+    "Cooked rice, to serve"
+   ],
+   "steps": [
+    {
+     "title": "Bake the fries",
+     "text": "Bake the fries in the oven according to the package, about 20 minutes."
+    },
+    {
+     "title": "Sear the beef",
+     "text": "Sear the beef in batches in a very hot oiled wok for 2 minutes until browned. Set aside.",
+     "technique": "sear"
+    },
+    {
+     "title": "Stir-fry the vegetables",
+     "text": "Stir-fry the onion, garlic and chili for 2 minutes, then add the tomatoes for 1 minute.",
+     "technique": "stir-fry"
+    },
+    {
+     "title": "Sauce and toss",
+     "text": "Return the beef, add the soy sauce and vinegar and toss for 1 minute. Fold in the fries and cilantro."
+    },
+    {
+     "title": "Serve",
+     "text": "Serve with rice."
+    }
+   ]
+  },
+  {
+   "id": "pe-quinoa-salad",
+   "title": "Peruvian Quinoa Salad",
+   "cuisine": "peruvian",
+   "description": "Quinoa with corn, beans, peppers and a lime and cilantro dressing.",
+   "emoji": "🌽",
+   "total_minutes": 25,
+   "servings": 4,
+   "difficulty": "Easy",
+   "equipment": [
+    "stovetop"
+   ],
+   "tags": [
+    "vegan",
+    "vegetarian"
+   ],
+   "popularity": 70,
+   "ingredients": [
+    "1 cup quinoa, rinsed",
+    "1 can black beans, drained",
+    "1 cup corn kernels",
+    "1 red bell pepper, diced",
+    "1/2 red onion, finely diced",
+    "2 limes",
+    "3 tbsp olive oil",
+    "1/2 cup cilantro, chopped"
+   ],
+   "steps": [
+    {
+     "title": "Cook the quinoa",
+     "text": "Simmer the quinoa in 2 cups salted water, covered, for 15 minutes. Spread out to cool."
+    },
+    {
+     "title": "Make the dressing",
+     "text": "Whisk the lime juice, olive oil and a pinch of salt.",
+     "technique": "whisk"
+    },
+    {
+     "title": "Toss together",
+     "text": "Combine the quinoa, black beans, corn, bell pepper, onion and cilantro with the dressing."
+    }
+   ]
+  },
+  {
+   "id": "cb-jerk-chicken",
+   "title": "Jerk Chicken",
+   "cuisine": "caribbean",
+   "description": "Chicken marinated in a fiery scotch bonnet, allspice and thyme paste, then roasted until charred.",
+   "emoji": "🔥",
+   "total_minutes": 60,
+   "servings": 4,
+   "difficulty": "Medium",
+   "equipment": [
+    "blender",
+    "oven"
+   ],
+   "tags": [
+    "spicy"
+   ],
+   "popularity": 86,
+   "ingredients": [
+    "8 chicken drumsticks",
+    "4 scallions",
+    "2 scotch bonnet peppers",
+    "4 cloves garlic",
+    "1 thumb ginger",
+    "1 tbsp ground allspice",
+    "1 tsp dried thyme",
+    "2 tbsp soy sauce",
+    "1 lime",
+    "2 tbsp brown sugar"
+   ],
+   "steps": [
+    {
+     "title": "Blend the marinade",
+     "text": "Blend the scallions, peppers, garlic, ginger, allspice, thyme, soy sauce, lime juice and sugar into a paste.",
+     "tip": "Scotch bonnets are very hot. Wash your hands after handling them."
+    },
+    {
+     "title": "Marinate",
+     "text": "Rub the paste over the chicken and leave for at least 20 minutes.",
+     "technique": "marinate"
+    },
+    {
+     "title": "Roast",
+     "text": "Roast in the oven at 425°F / 220°C for 35 minutes, turning once, until charred and cooked through.",
+     "tip": "Cooked through means 165°F / 74°C."
+    },
+    {
+     "title": "Rest and serve",
+     "text": "Rest for 5 minutes and serve with rice and peas."
+    }
+   ]
+  },
+  {
+   "id": "cb-rice-and-peas",
+   "title": "Rice and Peas",
+   "cuisine": "caribbean",
+   "description": "Rice cooked with kidney beans, coconut milk, thyme and allspice.",
+   "emoji": "🍚",
+   "total_minutes": 35,
+   "servings": 4,
+   "difficulty": "Easy",
+   "equipment": [
+    "stovetop"
+   ],
+   "tags": [
+    "vegan",
+    "vegetarian"
+   ],
+   "popularity": 76,
+   "ingredients": [
+    "1 1/2 cups long-grain rice, rinsed",
+    "1 can kidney beans",
+    "1 can coconut milk (14 oz)",
+    "3 scallions",
+    "2 cloves garlic, crushed",
+    "3 sprigs thyme",
+    "4 allspice berries"
+   ],
+   "steps": [
+    {
+     "title": "Build the pot",
+     "text": "Put the kidney beans with their liquid, coconut milk, garlic, scallions, thyme and allspice in a pot with 1 cup water and bring to a simmer."
+    },
+    {
+     "title": "Cook the rice",
+     "text": "Stir in the rice and a good pinch of salt, cover and cook on low for 20 minutes until the liquid is absorbed.",
+     "technique": "rice"
+    },
+    {
+     "title": "Rest and fluff",
+     "text": "Rest off the heat for 5 minutes, remove the thyme and scallions and fluff with a fork."
+    }
+   ]
+  },
+  {
+   "id": "et-misir-wot",
+   "title": "Misir Wot (Spiced Red Lentils)",
+   "cuisine": "ethiopian",
+   "description": "Red lentils stewed with onions and berbere spice until rich and silky.",
+   "emoji": "🫘",
+   "total_minutes": 40,
+   "servings": 4,
+   "difficulty": "Easy",
+   "equipment": [
+    "stovetop"
+   ],
+   "tags": [
+    "vegan",
+    "vegetarian",
+    "spicy"
+   ],
+   "popularity": 74,
+   "ingredients": [
+    "1 1/2 cups red lentils, rinsed",
+    "2 onions, finely chopped",
+    "3 tbsp berbere spice",
+    "3 cloves garlic, minced",
+    "1 thumb ginger, grated",
+    "2 tbsp tomato paste",
+    "3 tbsp oil",
+    "Injera or rice, to serve"
+   ],
+   "steps": [
+    {
+     "title": "Cook the onions",
+     "text": "Cook the onions in a dry pot for 5 minutes, then add the oil and cook for 8 minutes more until soft and golden."
+    },
+    {
+     "title": "Bloom the berbere",
+     "text": "Stir in the garlic, ginger, tomato paste and berbere and cook for 2 minutes.",
+     "technique": "toast-spices"
+    },
+    {
+     "title": "Simmer the lentils",
+     "text": "Add the lentils and 4 cups water and simmer for 20 minutes, stirring often, until thick.",
+     "technique": "simmer"
+    },
+    {
+     "title": "Serve",
+     "text": "Season with salt and serve with injera or rice."
+    }
+   ]
+  },
+  {
+   "id": "et-gomen",
+   "title": "Gomen (Ethiopian Collard Greens)",
+   "cuisine": "ethiopian",
+   "description": "Collard greens gently braised with garlic, ginger and green chili.",
+   "emoji": "🥬",
+   "total_minutes": 30,
+   "servings": 4,
+   "difficulty": "Easy",
+   "equipment": [
+    "stovetop"
+   ],
+   "tags": [
+    "vegan",
+    "vegetarian"
+   ],
+   "popularity": 62,
+   "ingredients": [
+    "2 bunches collard greens, chopped",
+    "1 onion, chopped",
+    "3 cloves garlic, minced",
+    "1 thumb ginger, grated",
+    "1 green chili, sliced",
+    "3 tbsp oil"
+   ],
+   "steps": [
+    {
+     "title": "Soften the onion",
+     "text": "Cook the onion in the oil in a large pot for 5 minutes, then add the garlic, ginger and chili for 1 minute.",
+     "technique": "saute"
+    },
+    {
+     "title": "Braise the greens",
+     "text": "Add the collard greens and 1/2 cup water, cover and simmer for 15 minutes until tender.",
+     "technique": "simmer"
+    },
+    {
+     "title": "Season and serve",
+     "text": "Season with salt and serve warm."
+    }
+   ]
+  },
+  {
+   "id": "wa-jollof-rice",
+   "title": "Jollof Rice",
+   "cuisine": "west-african",
+   "description": "Rice cooked in a smoky, spiced tomato and pepper sauce until every grain is red.",
+   "emoji": "🍅",
+   "total_minutes": 50,
+   "servings": 4,
+   "difficulty": "Medium",
+   "equipment": [
+    "stovetop",
+    "blender"
+   ],
+   "tags": [
+    "spicy"
+   ],
+   "popularity": 87,
+   "ingredients": [
+    "2 cups long-grain rice, rinsed",
+    "1 can crushed tomatoes (14 oz)",
+    "1 red bell pepper",
+    "1 scotch bonnet pepper",
+    "2 onions",
+    "3 tbsp tomato paste",
+    "2 tsp curry powder",
+    "1 tsp dried thyme",
+    "2 bay leaves",
+    "2 cups chicken broth",
+    "1/3 cup oil"
+   ],
+   "steps": [
+    {
+     "title": "Blend the base",
+     "text": "Blend the crushed tomatoes, bell pepper, scotch bonnet and one onion until smooth."
+    },
+    {
+     "title": "Fry the tomato paste",
+     "text": "Slice the other onion and fry it in the oil in a heavy pot for 5 minutes, then add the tomato paste and fry for 3 minutes."
+    },
+    {
+     "title": "Cook the sauce",
+     "text": "Add the blended base, curry powder, thyme and bay leaves and simmer for 15 minutes until reduced.",
+     "technique": "simmer"
+    },
+    {
+     "title": "Cook the rice",
+     "text": "Stir in the rice and chicken broth, cover tightly and cook on low for 25 minutes until tender.",
+     "technique": "rice",
+     "tip": "A little crust on the bottom is prized. Don’t stir it away."
+    }
+   ]
+  },
+  {
+   "id": "wa-peanut-stew",
+   "title": "Groundnut Stew (Maafe)",
+   "cuisine": "west-african",
+   "description": "A rich peanut and tomato stew with chicken and sweet potato.",
+   "emoji": "🥜",
+   "total_minutes": 45,
+   "servings": 4,
+   "difficulty": "Easy",
+   "equipment": [
+    "stovetop"
+   ],
+   "tags": [],
+   "popularity": 76,
+   "ingredients": [
+    "1.5 lb chicken thighs, cubed",
+    "1 onion, chopped",
+    "3 cloves garlic, minced",
+    "1 thumb ginger, grated",
+    "2 tbsp tomato paste",
+    "1/2 cup peanut butter",
+    "1 sweet potato, cubed",
+    "3 cups chicken broth",
+    "2 cups spinach",
+    "Cooked rice, to serve"
+   ],
+   "steps": [
+    {
+     "title": "Brown the chicken",
+     "text": "Brown the chicken in oil in a large pot for 6 minutes. Set aside.",
+     "technique": "sear"
+    },
+    {
+     "title": "Cook the aromatics",
+     "text": "Cook the onion for 5 minutes, then add the garlic, ginger and tomato paste for 2 minutes."
+    },
+    {
+     "title": "Simmer",
+     "text": "Whisk the peanut butter into the chicken broth and add it to the pot with the chicken and sweet potato. Simmer for 25 minutes.",
+     "technique": "simmer"
+    },
+    {
+     "title": "Wilt the spinach and serve",
+     "text": "Stir in the spinach until wilted and serve over rice."
+    }
+   ]
+  },
+  {
+   "id": "ph-chicken-adobo",
+   "title": "Chicken Adobo",
+   "cuisine": "filipino",
+   "description": "Chicken braised in vinegar, soy sauce, garlic and bay until glossy and tender.",
+   "emoji": "🍗",
+   "total_minutes": 45,
+   "servings": 4,
+   "difficulty": "Easy",
+   "equipment": [
+    "stovetop"
+   ],
+   "tags": [],
+   "popularity": 89,
+   "ingredients": [
+    "8 chicken thighs",
+    "1/2 cup soy sauce",
+    "1/2 cup white vinegar",
+    "8 cloves garlic, crushed",
+    "3 bay leaves",
+    "1 tsp whole black peppercorns",
+    "1 tbsp brown sugar",
+    "Cooked rice, to serve"
+   ],
+   "steps": [
+    {
+     "title": "Marinate",
+     "text": "Combine the chicken with the soy sauce, vinegar, garlic, bay leaves and peppercorns. Leave for 15 minutes.",
+     "technique": "marinate"
+    },
+    {
+     "title": "Braise",
+     "text": "Bring everything to a boil in a pot, then cover and simmer for 25 minutes.",
+     "technique": "simmer"
+    },
+    {
+     "title": "Brown and reduce",
+     "text": "Lift out the chicken and brown it in a hot skillet for 4 minutes. Meanwhile, boil the sauce with the sugar for 5 minutes until syrupy."
+    },
+    {
+     "title": "Serve",
+     "text": "Pour the sauce over the chicken and serve with rice."
+    }
+   ]
+  },
+  {
+   "id": "ph-pancit-canton",
+   "title": "Pancit Canton",
+   "cuisine": "filipino",
+   "description": "Stir-fried egg noodles with chicken, cabbage and carrots in a savory sauce.",
+   "emoji": "🍜",
+   "total_minutes": 30,
+   "servings": 4,
+   "difficulty": "Easy",
+   "equipment": [
+    "stovetop"
+   ],
+   "tags": [],
+   "popularity": 78,
+   "ingredients": [
+    "8 oz pancit canton or egg noodles",
+    "8 oz chicken breast, thinly sliced",
+    "2 cups cabbage, shredded",
+    "1 carrot, julienned",
+    "1 onion, sliced",
+    "3 cloves garlic, minced",
+    "3 tbsp soy sauce",
+    "2 tbsp oyster sauce",
+    "1 1/2 cups chicken broth",
+    "1 lemon"
+   ],
+   "steps": [
+    {
+     "title": "Cook the chicken",
+     "text": "Stir-fry the chicken in oil in a wok for 4 minutes until cooked through. Set aside.",
+     "technique": "stir-fry"
+    },
+    {
+     "title": "Cook the vegetables",
+     "text": "Stir-fry the onion and garlic for 1 minute, then the carrot and cabbage for 2 minutes."
+    },
+    {
+     "title": "Cook the noodles",
+     "text": "Add the chicken broth, soy sauce and oyster sauce, bring to a boil and add the noodles. Toss for 3 minutes until the liquid is absorbed."
+    },
+    {
+     "title": "Serve",
+     "text": "Return the chicken, toss and serve with lemon wedges."
+    }
+   ]
+  },
+  {
+   "id": "id-nasi-goreng",
+   "title": "Nasi Goreng",
+   "cuisine": "indonesian",
+   "description": "Indonesian fried rice with sweet soy, chili and a fried egg on top.",
+   "emoji": "🍳",
+   "total_minutes": 20,
+   "servings": 2,
+   "difficulty": "Easy",
+   "equipment": [
+    "stovetop"
+   ],
+   "tags": [
+    "vegetarian",
+    "quick",
+    "spicy"
+   ],
+   "popularity": 85,
+   "ingredients": [
+    "3 cups cooked rice, cold",
+    "2 shallots, sliced",
+    "2 cloves garlic, minced",
+    "1 red chili, sliced",
+    "2 tbsp kecap manis",
+    "1 tbsp soy sauce",
+    "2 eggs",
+    "1 cucumber, sliced",
+    "Fried shallots, to serve"
+   ],
+   "steps": [
+    {
+     "title": "Fry the aromatics",
+     "text": "Stir-fry the shallots, garlic and chili in oil in a wok for 2 minutes.",
+     "technique": "stir-fry"
+    },
+    {
+     "title": "Fry the rice",
+     "text": "Add the rice, kecap manis and soy sauce and stir-fry for 4 minutes until every grain is coated."
+    },
+    {
+     "title": "Fry the eggs",
+     "text": "Fry the eggs in another pan for 2 minutes until the edges crisp."
+    },
+    {
+     "title": "Serve",
+     "text": "Top the rice with the eggs and serve with cucumber and fried shallots."
+    }
+   ]
+  },
+  {
+   "id": "id-gado-gado",
+   "title": "Gado-Gado",
+   "cuisine": "indonesian",
+   "description": "A warm vegetable salad with eggs and tofu under a rich peanut sauce.",
+   "emoji": "🥗",
+   "total_minutes": 35,
+   "servings": 4,
+   "difficulty": "Medium",
+   "equipment": [
+    "stovetop"
+   ],
+   "tags": [
+    "vegetarian"
+   ],
+   "popularity": 71,
+   "ingredients": [
+    "4 eggs",
+    "14 oz firm tofu, cubed",
+    "2 cups green beans",
+    "2 cups cabbage, shredded",
+    "1 cup bean sprouts",
+    "2 potatoes, cubed",
+    "1 cucumber, sliced",
+    "1/2 cup peanut butter",
+    "1 tbsp kecap manis",
+    "1 lime",
+    "1 clove garlic"
+   ],
+   "steps": [
+    {
+     "title": "Boil the eggs and potatoes",
+     "text": "Boil the potatoes for 12 minutes and the eggs for 9 minutes. Cool the eggs in cold water and peel them."
+    },
+    {
+     "title": "Blanch the vegetables",
+     "text": "Blanch the green beans, cabbage and bean sprouts in boiling water for 2 minutes, then drain."
+    },
+    {
+     "title": "Fry the tofu",
+     "text": "Fry the tofu in oil in a skillet for 6 minutes until golden on all sides."
+    },
+    {
+     "title": "Make the peanut sauce",
+     "text": "Whisk the peanut butter, kecap manis, lime juice, grated garlic and 1/3 cup hot water until smooth.",
+     "technique": "whisk"
+    },
+    {
+     "title": "Assemble",
+     "text": "Arrange everything on a platter with the halved eggs and cucumber and pour over the sauce."
+    }
+   ]
+  },
+  {
+   "id": "ir-kuku-sabzi",
+   "title": "Kuku Sabzi (Herb Frittata)",
+   "cuisine": "persian",
+   "description": "A vivid green Persian frittata packed with fresh herbs.",
+   "emoji": "🌿",
+   "total_minutes": 35,
+   "servings": 4,
+   "difficulty": "Medium",
+   "equipment": [
+    "stovetop"
+   ],
+   "tags": [
+    "vegetarian"
+   ],
+   "popularity": 66,
+   "ingredients": [
+    "6 eggs",
+    "2 cups parsley, finely chopped",
+    "2 cups cilantro, finely chopped",
+    "1 cup dill, finely chopped",
+    "4 scallions, finely chopped",
+    "1 tsp ground turmeric",
+    "1/2 tsp baking powder",
+    "1/4 cup walnuts, chopped (optional)",
+    "3 tbsp olive oil"
+   ],
+   "steps": [
+    {
+     "title": "Chop the herbs",
+     "text": "Finely chop the parsley, cilantro, dill and scallions.",
+     "technique": "chop-herbs"
+    },
+    {
+     "title": "Mix the batter",
+     "text": "Whisk the eggs with the turmeric, baking powder and salt, then fold in the herbs and walnuts.",
+     "technique": "whisk"
+    },
+    {
+     "title": "Cook slowly",
+     "text": "Heat the oil in a nonstick skillet, pour in the mixture, cover and cook on low for 15 minutes until set on top."
+    },
+    {
+     "title": "Flip and finish",
+     "text": "Cut into quarters, flip each piece and cook for 5 minutes more. Serve warm or cold."
+    }
+   ]
+  },
+  {
+   "id": "ir-joojeh-kabab",
+   "title": "Saffron Chicken Kebabs (Joojeh Kabab)",
+   "cuisine": "persian",
+   "description": "Chicken marinated in saffron, yogurt and lemon, grilled until golden.",
+   "emoji": "🍢",
+   "total_minutes": 45,
+   "servings": 4,
+   "difficulty": "Medium",
+   "equipment": [
+    "grill"
+   ],
+   "tags": [],
+   "popularity": 74,
+   "ingredients": [
+    "1.5 lb chicken thighs, cubed",
+    "1/2 cup plain yogurt",
+    "1 onion, grated",
+    "1 lemon, juiced",
+    "1/2 tsp saffron threads",
+    "2 tbsp butter, melted",
+    "Cooked rice, to serve"
+   ],
+   "steps": [
+    {
+     "title": "Bloom the saffron",
+     "text": "Grind the saffron with a pinch of sugar and steep it in 3 tbsp hot water for 5 minutes."
+    },
+    {
+     "title": "Marinate",
+     "text": "Mix the chicken with the yogurt, onion, lemon juice, half the saffron and salt. Leave for 20 minutes.",
+     "technique": "marinate"
+    },
+    {
+     "title": "Grill",
+     "text": "Thread onto skewers and grill for 10 to 12 minutes, turning and basting with the butter and remaining saffron.",
+     "tip": "Cooked through means 165°F / 74°C."
+    },
+    {
+     "title": "Serve",
+     "text": "Serve with rice."
+    }
+   ]
+  },
+  {
+   "id": "de-schnitzel",
+   "title": "Pork Schnitzel",
+   "cuisine": "german",
+   "description": "Thin pork cutlets in a crisp breadcrumb crust, served with lemon.",
+   "emoji": "🥩",
+   "total_minutes": 30,
+   "servings": 4,
+   "difficulty": "Medium",
+   "equipment": [
+    "stovetop"
+   ],
+   "tags": [],
+   "popularity": 82,
+   "ingredients": [
+    "4 pork loin cutlets",
+    "1/2 cup flour",
+    "2 eggs",
+    "1 1/2 cups breadcrumbs",
+    "1 cup oil, for frying",
+    "1 lemon"
+   ],
+   "steps": [
+    {
+     "title": "Pound the cutlets",
+     "text": "Pound the pork between two sheets of plastic wrap to 1/4 inch thick and season."
+    },
+    {
+     "title": "Bread them",
+     "text": "Dredge each cutlet in flour, then beaten eggs, then breadcrumbs, without pressing the crumbs on."
+    },
+    {
+     "title": "Fry",
+     "text": "Shallow fry in hot oil in a large skillet for 2 to 3 minutes per side until deep golden. Fry in batches.",
+     "technique": "shallow-fry",
+     "tip": "Pork is safe at 145°F / 63°C with a short rest."
+    },
+    {
+     "title": "Serve",
+     "text": "Drain on paper towels and serve with lemon wedges."
+    }
+   ]
+  },
+  {
+   "id": "de-bratkartoffeln",
+   "title": "Bratkartoffeln (Pan-Fried Potatoes)",
+   "cuisine": "german",
+   "description": "Crispy pan-fried potatoes with onion and bacon.",
+   "emoji": "🥔",
+   "total_minutes": 35,
+   "servings": 4,
+   "difficulty": "Easy",
+   "equipment": [
+    "stovetop"
+   ],
+   "tags": [],
+   "popularity": 70,
+   "ingredients": [
+    "2 lb waxy potatoes",
+    "1 onion, sliced",
+    "4 slices bacon, chopped",
+    "2 tbsp butter",
+    "Chives, to serve"
+   ],
+   "steps": [
+    {
+     "title": "Boil the potatoes",
+     "text": "Boil the whole potatoes for 15 minutes until just tender. Cool slightly and slice."
+    },
+    {
+     "title": "Crisp the bacon",
+     "text": "Cook the bacon in a large skillet for 4 minutes until crisp."
+    },
+    {
+     "title": "Fry the potatoes",
+     "text": "Add the butter and potatoes and fry for 10 minutes, turning occasionally, until golden. Add the onion for the last 5 minutes."
+    },
+    {
+     "title": "Serve",
+     "text": "Season and scatter with chives."
+    }
+   ]
+  },
+  {
+   "id": "gb-shepherds-pie",
+   "title": "Shepherd’s Pie",
+   "cuisine": "british",
+   "description": "Savory minced lamb and vegetables under a fluffy, golden mashed potato top.",
+   "emoji": "🥧",
+   "total_minutes": 75,
+   "servings": 4,
+   "difficulty": "Medium",
+   "equipment": [
+    "stovetop",
+    "oven"
+   ],
+   "tags": [
+    "comfort"
+   ],
+   "popularity": 84,
+   "ingredients": [
+    "1.5 lb ground lamb",
+    "1 onion, diced",
+    "2 carrots, diced",
+    "2 tbsp tomato paste",
+    "1 tbsp Worcestershire sauce",
+    "1 cup beef broth",
+    "1 cup frozen peas",
+    "2 lb potatoes, peeled and chopped",
+    "4 tbsp butter",
+    "1/2 cup milk"
+   ],
+   "steps": [
+    {
+     "title": "Boil the potatoes",
+     "text": "Boil the potatoes for 15 minutes until tender, then mash with the butter, milk and salt.",
+     "technique": "mash"
+    },
+    {
+     "title": "Brown the lamb",
+     "text": "Brown the lamb in a large skillet for 6 minutes, then add the onion and carrots and cook for 5 minutes.",
+     "technique": "sear"
+    },
+    {
+     "title": "Make the filling",
+     "text": "Stir in the tomato paste, Worcestershire sauce and beef broth and simmer for 10 minutes. Add the peas."
+    },
+    {
+     "title": "Top and bake",
+     "text": "Spoon the filling into a baking dish, spread the mash on top and bake at 400°F / 200°C for 25 minutes until golden."
+    },
+    {
+     "title": "Rest and serve",
+     "text": "Rest for 5 minutes before serving."
+    }
+   ]
+  },
+  {
+   "id": "gb-jacket-potato",
+   "title": "Jacket Potato with Beans & Cheese",
+   "cuisine": "british",
+   "description": "A fluffy baked potato split open and piled with baked beans and melted cheese.",
+   "emoji": "🥔",
+   "total_minutes": 20,
+   "servings": 2,
+   "difficulty": "Easy",
+   "equipment": [
+    "microwave"
+   ],
+   "tags": [
+    "vegetarian",
+    "comfort",
+    "quick"
+   ],
+   "popularity": 68,
+   "ingredients": [
+    "2 large baking potatoes",
+    "1 can baked beans",
+    "1 cup shredded cheddar",
+    "2 tbsp butter"
+   ],
+   "steps": [
+    {
+     "title": "Microwave the potatoes",
+     "text": "Prick the potatoes all over with a fork and microwave for 10 to 12 minutes, turning halfway, until soft in the middle."
+    },
+    {
+     "title": "Heat the beans",
+     "text": "Microwave the baked beans in a covered bowl for 2 minutes, stirring halfway."
+    },
+    {
+     "title": "Fill and serve",
+     "text": "Split the potatoes, add the butter and season, then pile on the beans and cheese."
+    }
+   ]
+  }
+ ]
+}

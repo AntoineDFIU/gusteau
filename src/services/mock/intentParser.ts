@@ -1,159 +1,157 @@
-import { CATALOG, matchIngredient } from '../../data/ingredients';
-import { shortName } from '../../agent/planner';
-import type { DietRuleId, Equipment, SessionChange, SessionState } from '../../types';
+import { describeChanges } from '../../agent/adapt';
+import { sameIngredient } from '../../data/ingredients';
+import { EQUIPMENT_IDS } from '../../data/rules';
+import { techniqueById, techniqueFor, techniqueFromQuestion } from '../../data/techniques';
+import type { CookSession, DietRuleId, SessionChange } from '../../types';
 import type { InterpretResult } from '../modelService';
 
 // ─────────────────────────────────────────────────────────────
 // MOCK conversational agent: a rule-based intent parser.
-// In Nebius mode a Nemotron model produces the same
-// { reply, changes } structure (see nebiusModelService.ts).
+// With a live model, the model produces the same structure and
+// this parser is the fallback when the model can't be reached.
+// Also used directly for hands-free voice commands, which need
+// to be instant.
 // ─────────────────────────────────────────────────────────────
 
-const NUMBER_WORDS: Record<string, number> = { one: 1, two: 2, three: 3, four: 4, five: 5, six: 6, seven: 7, eight: 8, nine: 9, ten: 10 };
-const num = (s: string) => (NUMBER_WORDS[s] ?? parseInt(s, 10));
+const NUMBER_WORDS: Record<string, number> = { a: 1, an: 1, one: 1, two: 2, three: 3, four: 4, five: 5, six: 6, seven: 7, eight: 8, nine: 9, ten: 10, fifteen: 15, twenty: 20, thirty: 30 };
+const num = (s: string) => NUMBER_WORDS[s] ?? parseFloat(s);
+const NUM = '(\\d+(?:\\.\\d+)?|a|an|one|two|three|four|five|six|seven|eight|nine|ten|fifteen|twenty|thirty)';
+
+/** Lowercase, with curly quotes from phones and suggestion chips made straight. */
+const clean = (s: string) => s.toLowerCase().replace(/[‘’ʼ]/g, "'").replace(/[“”]/g, '"').trim();
 
 const DIET_PATTERNS: [RegExp, DietRuleId][] = [
   [/\bvegan\b/, 'vegan'],
-  [/\bvegetarian|veggie only|no meat|meat-?free\b/, 'vegetarian'],
+  [/\b(vegetarian|veggie only|no meat|meat-?free)\b/, 'vegetarian'],
+  [/\bpescatarian\b/, 'pescatarian'],
   [/\b(dairy[- ]?free|no dairy|lactose)\b/, 'dairy-free'],
   [/\b(gluten[- ]?free|no gluten|celiac|coeliac)\b/, 'gluten-free'],
   [/\b(egg[- ]?free|no eggs?)\b/, 'egg-free'],
   [/\b(nut[- ]?free|no nuts)\b/, 'nut-free'],
+  [/\b(shellfish[- ]?free|no shellfish)\b/, 'shellfish-free'],
 ];
 
-export function parseIntent(raw: string, state: SessionState): InterpretResult {
-  const m = raw.toLowerCase().trim();
-  const changes: SessionChange[] = [];
-  const triggers: string[] = [];
-  const c = state.constraints;
+/** Instant, local commands for cooking mode (typed or spoken). */
+export function parseCommand(m: string): InterpretResult | null {
+  const t = clean(m).replace(/[?!.,]/g, '').trim();
+  const timer = t.match(new RegExp(`\\b(?:set |start )?(?:a |an )?${NUM}[- ](second|sec|minute|min|hour)s?(?: timer)?\\b|\\btimer for ${NUM} (second|sec|minute|min|hour)s?\\b`));
+  if (timer && /timer|set|start/.test(t)) {
+    const n = num(timer[1] ?? timer[3]);
+    const unit = timer[2] ?? timer[4];
+    const seconds = Math.round(unit.startsWith('s') ? n : unit.startsWith('h') ? n * 3600 : n * 60);
+    return { reply: null, changes: [], command: { type: 'timer', seconds } };
+  }
+  if (/^(ok |okay )?(gusteau )?(what'?s next|next( step)?|done|i'?m done|finished|go on|continue|ready)( step)?( please)?$/.test(t)) return { reply: null, changes: [], command: { type: 'next' } };
+  if (/^(repeat( that)?|say (that|it) again|what was that|come again|read (it|that) again|again)( please)?$/.test(t)) return { reply: null, changes: [], command: { type: 'repeat' } };
+  if (/^(go )?(back|previous( step)?|last step)( please)?$/.test(t)) return { reply: null, changes: [], command: { type: 'back' } };
+  if (/\b(show me( how)?|video|demonstrat|clip)\b/.test(t)) return { reply: null, changes: [], command: { type: 'show_technique' } };
+  return null;
+}
 
-  // ── Purchases & budget (check before generic "no X") ──
-  if (/\b(no (extra )?(purchases|shopping|buying)|can'?t (buy|shop|go to the store)|don'?t want to (buy|shop)|nothing new to buy|no store)\b/.test(m)) {
-    changes.push({ type: 'set_purchases', allowed: false });
-    triggers.push('No extra purchases');
-  } else if (/\b(can (buy|shop|grab|pick up)|happy to (buy|shop)|purchases? (are )?(ok|fine|allowed))\b/.test(m)) {
-    changes.push({ type: 'set_purchases', allowed: true });
-    triggers.push('Purchases allowed');
-  }
-  const budget = m.match(/\$\s?(\d+(?:\.\d+)?)/);
-  if (budget) {
-    changes.push({ type: 'set_budget', amount: parseFloat(budget[1]) });
-    triggers.push(`Budget $${budget[1]}`);
-  }
+export function parseIntent(raw: string, s: CookSession): InterpretResult {
+  const m = clean(raw);
+  const cmd = parseCommand(m);
+  if (cmd) return cmd;
+
+  const changes: SessionChange[] = [];
+  const r = s.rules;
+  const ingredientNames = [...s.original.ingredients.map((i) => i.name), ...s.recipe.ingredients.map((i) => i.name), ...s.pantry.map((p) => p.name)];
+  const known = (phrase: string) => ingredientNames.find((n) => sameIngredient(n, phrase) || n.toLowerCase().includes(phrase));
+
+  // ── Purchases ──
+  if (/\b(no (extra )?(purchases|shopping|buying)|can'?t (buy|shop|go to the store)|don'?t want to (buy|shop))\b/.test(m)) changes.push({ type: 'set_purchases', allowed: false });
+  else if (/\b(can (buy|shop|grab|pick up)|happy to (buy|shop)|allow (a )?(quick )?purchase|purchases? (are )?(ok|fine|allowed)|i'?ll (buy|get|pick up))\b/.test(m)) changes.push({ type: 'set_purchases', allowed: true });
 
   // ── Equipment ──
-  if (/\bonly (have )?(a |the )?microwave|microwave only|just (a |the )?microwave\b/.test(m)) {
-    changes.push({ type: 'set_equipment', equipment: ['microwave'] });
-    triggers.push('Microwave only');
-  } else {
-    let eq: Equipment[] = [...c.equipment];
-    if (/\bno (stove|stovetop|hob|burner)|stove (is )?(broken|busy)/.test(m)) eq = eq.filter((e) => e !== 'stovetop');
-    if (/\bno oven|oven (is )?(broken|busy)/.test(m)) eq = eq.filter((e) => e !== 'oven');
-    if (/\bno microwave/.test(m)) eq = eq.filter((e) => e !== 'microwave');
-    if (/\b(have|got|use) (an |the )?oven\b/.test(m) && !eq.includes('oven')) eq.push('oven');
-    if (/\b(have|got|use) (a |the )?(stove|stovetop)\b/.test(m) && !eq.includes('stovetop')) eq.push('stovetop');
-    if (eq.join() !== c.equipment.join() && eq.length) {
-      changes.push({ type: 'set_equipment', equipment: eq });
-      triggers.push('Equipment changed');
+  for (const e of EQUIPMENT_IDS) {
+    const word = e === 'stovetop' ? '(stove|stovetop|hob|burner)' : e;
+    if (new RegExp(`\\b(no|don'?t have (a|an)?|without (a|an|the)?) ?${word}\\b|\\b${word} (is )?(broken|busy|not working|died)`).test(m) && r.equipment.includes(e)) {
+      changes.push({ type: 'remove_equipment', equipment: e });
     }
   }
 
   // ── Diet rules & allergies ──
   for (const [re, rule] of DIET_PATTERNS) {
-    if (re.test(m) && !c.hardExclusions.includes(rule)) {
+    if (re.test(m) && !r.hardExclusions.includes(rule)) {
       changes.push({ type: 'add_exclusion', rule });
-      triggers.push(`Make it ${rule.replace('-', ' ')}`);
       break;
     }
   }
   const allergy = m.match(/allergic to ([a-z ]+?)(?:[.,!]|$| and )/);
-  if (allergy) {
-    changes.push({ type: 'add_exclusion', custom: allergy[1].trim() });
-    triggers.push(`Allergy: ${allergy[1].trim()}`);
-  }
+  if (allergy) changes.push({ type: 'add_exclusion', custom: allergy[1].trim() });
 
   // ── Time ──
-  const mins = m.match(/(\d+)\s*(?:min|mins|minutes)\b/);
-  if (mins) {
-    changes.push({ type: 'set_time', minutes: parseInt(mins[1], 10) });
-    triggers.push(`Only ${mins[1]} minutes`);
-  } else if (/half an hour/.test(m)) {
-    changes.push({ type: 'set_time', minutes: 30 });
-    triggers.push('Only 30 minutes');
-  }
+  const mins = m.match(/\b(?:only (?:have )?|got |have )?(\d+)\s*(?:min|mins|minutes)\b(?! timer)/);
+  if (mins && /\b(only|have|got|left|need to be done|hurry)\b/.test(m)) changes.push({ type: 'set_time', minutes: parseInt(mins[1], 10) });
+  else if (/\bhalf an hour\b/.test(m)) changes.push({ type: 'set_time', minutes: 30 });
 
   // ── Servings ──
-  const people = m.match(/\b(?:for|feed|feeding|serves?|serving)\s+(\d+|one|two|three|four|five|six|seven|eight|nine|ten)\b/) ?? m.match(/\b(\d+|two|three|four|five|six|seven|eight)\s+(?:people|of us|servings|guests|friends)\b/);
-  if (people && !mins) {
+  const people = m.match(/\b(?:for|feed|feeding|serves?|serving)\s+(\d+|one|two|three|four|five|six|seven|eight|nine|ten)\b(?! min)/) ?? m.match(/\b(\d+|two|three|four|five|six|seven|eight)\s+(?:people|of us|servings|guests)\b/);
+  if (people) {
     const n = num(people[1]);
-    if (n && n !== c.servings) {
-      changes.push({ type: 'set_servings', servings: n });
-      triggers.push(`Cooking for ${n}`);
-    }
-  } else if (/\bmore people|friends (are )?coming|extra (people|guests)|roommates?\b/.test(m)) {
-    changes.push({ type: 'set_servings', servings: c.servings + 2 });
-    triggers.push(`Cooking for ${c.servings + 2}`);
+    if (n && n !== r.servings) changes.push({ type: 'set_servings', servings: n });
+  } else if (/\b(more people|friends (are )?coming|extra guests)\b/.test(m)) changes.push({ type: 'set_servings', servings: r.servings + 2 });
+
+  // ── Leave out ──
+  const skip = m.match(/\b(?:cook |make it |go )?without (?:the |any )?([a-z ]+?)(?:[.,!?]|$)|\b(?:leave out|skip|drop) (?:the |any )?([a-z ]+?)(?:[.,!?]|$)/);
+  if (skip && !changes.some((c) => c.type === 'remove_equipment')) {
+    const phrase = (skip[1] ?? skip[2]).trim();
+    const name = known(phrase);
+    if (name) changes.push({ type: 'leave_out', name });
   }
 
   // ── Removed ingredients ──
   const removalRe =
-    /(?:don'?t|do not|didn'?t) (?:actually )?have (?:any )?([a-z ]+)|(?:out of|ran out of|run out of|used up|no more|i'?m out of|we'?re out of|without) (?:any |the |my )?([a-z ]+)|(?:the |my )?([a-z ]+?) (?:is|are|went|has gone|have gone) (?:gone|bad|off|spoiled|moldy|mouldy|expired|finished)|\bno ([a-z]+(?: [a-z]+)?)\b/g;
+    /(?:don'?t|do not|didn'?t) (?:actually )?have (?:any )?([a-z ]+)|(?:out of|ran out of|run out of|used up|no more|i'?m out of|we'?re out of) (?:any |the |my )?([a-z ]+)|(?:the |my )?([a-z ]+?) (?:is|are|went|has gone|have gone) (?:gone|bad|off|spoiled|moldy|mouldy|expired|finished)|\bno ([a-z]+(?: [a-z]+)?)\b/g;
   let rm: RegExpExecArray | null;
-  const alreadyHandled = changes.length > 0;
   while ((rm = removalRe.exec(m))) {
-    const phrase = (rm[1] ?? rm[2] ?? rm[3] ?? rm[4] ?? '').replace(/\b(actually|anymore|left|either|after all)\b/g, '').trim();
-    if (!phrase) continue;
-    const key = matchIngredient(phrase);
-    // "no X" is only an ingredient removal if X is a real ingredient.
-    if (!key && rm[4]) continue;
-    if (!key && alreadyHandled) continue;
-    const name = key ? CATALOG[key].name : phrase;
-    if (changes.some((ch) => ch.type === 'remove_ingredient' && ch.name === name)) continue;
+    const phrase = (rm[1] ?? rm[2] ?? rm[3] ?? rm[4] ?? '').replace(/\b(actually|anymore|left|either|after all|any|the)\b/g, '').trim();
+    if (!phrase || /^(time|minutes?|shopping|purchases|stove|stovetop|oven|microwave|blender|grill|meat|dairy|gluten|eggs?|nuts)$/.test(phrase)) continue;
+    // "no X" only counts if X is an ingredient Gusteau knows about.
+    const name = known(phrase) ?? (rm[4] ? null : phrase);
+    if (!name || changes.some((c) => (c.type === 'remove_ingredient' || c.type === 'leave_out') && sameIngredient(c.name, name))) continue;
     changes.push({ type: 'remove_ingredient', name });
-    triggers.push(`You're out of ${key ? shortName(key) : phrase}`);
   }
 
-  // ── Added ingredients ──
-  const add = m.match(/\b(?:i (?:also |actually )?(?:have|found|got)|add|there'?s (?:some |also )?)\s+(?:some |a |an |the )?([a-z ]+?)(?:[.,!]|$| too| as well| in )/);
-  if (add && !/don'?t have|do not have/.test(m)) {
+  // ── Found ingredients ──
+  const add = m.match(/\b(?:i (?:also |actually )?(?:have|found|got)|there'?s (?:some |also )?|found (?:some )?)\s*(?:some |a |an |the )?([a-z ]+?)(?:[.,!]|$| after all| too| as well)/);
+  if (add && !/don'?t have|do not have|only have|have \d/.test(m)) {
     const phrase = add[1].trim();
-    const key = matchIngredient(phrase);
-    if ((key || phrase.split(' ').length <= 3) && !['time', 'minutes', 'a microwave', 'microwave', 'an oven', 'oven', 'stove'].includes(phrase)) {
-      changes.push({ type: 'add_ingredient', name: key ? CATALOG[key].name : phrase });
-      triggers.push(`You found ${key ? shortName(key) : phrase}`);
-    }
+    if (phrase && phrase.split(' ').length <= 3 && !/^(time|minutes?|a minute|it|that|this)$/.test(phrase)) changes.push({ type: 'add_ingredient', name: known(phrase) ?? phrase });
   }
 
-  // ── Preferences ──
-  if (/\bspic(y|ier)|more heat|kick\b/.test(m)) changes.push({ type: 'add_preference', preference: 'spicy' });
-  if (/\b(more )?protein\b/.test(m)) changes.push({ type: 'add_preference', preference: 'high-protein' });
-  if (/\bcheesier|more cheese\b/.test(m)) changes.push({ type: 'add_preference', preference: 'cheesy' });
-
-  if (changes.length) return { reply: null, changes, trigger: triggers[0] ?? 'Plan adjusted' };
-  return { reply: answerQuestion(m, state), changes: [] };
+  if (changes.length) return { reply: null, changes, trigger: describeChanges(changes) };
+  return answerQuestion(m, s);
 }
 
-function answerQuestion(m: string, state: SessionState): string {
-  const step = state.recipe?.steps[state.currentStepIndex];
-  if (!state.recipe || !step) {
-    return "I'm here. Tell me what changed, like an ingredient you're out of, your time, equipment, or who you're feeding, and I'll replan.";
+function answerQuestion(m: string, s: CookSession): InterpretResult {
+  const step = s.recipe.steps[s.stepIndex];
+  const asked = techniqueFromQuestion(m);
+  if (asked && /\b(how|what|explain|mean|show)\b/.test(m)) {
+    return { reply: `${asked.title}: ${asked.howTo}`, changes: [], techniqueId: asked.id };
   }
-  if (/\b(how (do i|can i) )?(know|tell).*(done|ready|cooked)|is it done|how long\b/.test(m)) {
-    return step.tip
-      ? `For “${step.title}”: ${step.tip}${step.timerSeconds ? ` The timer is set for ${Math.round(step.timerSeconds / 60) || 1} min.` : ''}`
-      : `For “${step.title}”, trust your eyes and nose more than the clock. ${step.timerSeconds ? `Roughly ${Math.round(step.timerSeconds / 60) || 1} min.` : ''}`.trim();
+  if (!step) return { reply: 'You’re all done! Enjoy it. If you want to cook something else, head back to the recipes.', changes: [] };
+  const tech = techniqueFor(step);
+  if (/\b(how|explain|what does .* mean|i don'?t (get|understand)|confus|hard|difficult|stuck)\b/.test(m) && tech) {
+    return { reply: `For “${step.title}”: ${tech.howTo}`, changes: [], techniqueId: tech.id };
   }
-  if (/\b(safe|allerg|expire|spoil|fresh|raw)\b/.test(m)) {
-    return "I can share general cooking guidance, but I can't verify allergens, freshness or contamination from a photo. Check packaging and use-by dates, and when in doubt, leave it out. The food-safety lookup below links to trusted general guidance.";
+  if (/\b(how (do i|can i|will i) )?(know|tell).*(done|ready|cooked)|is it done|how long\b/.test(m)) {
+    const mins = step.timerSeconds ? `The timer for this step is ${Math.round(step.timerSeconds / 60) || 1} min. ` : '';
+    return { reply: `${mins}${step.tip ?? 'Trust your eyes and nose more than the clock: look for the color and texture the step describes.'}`, changes: [] };
+  }
+  if (/\b(safe|allerg|expire|spoil|fresh|raw|contaminat)\b/.test(m)) {
+    return {
+      reply: 'I can share general cooking guidance, but I can’t check allergens, freshness or contamination. Read the packaging and use-by dates, and when in doubt, leave it out. For meat, a food thermometer is the reliable test.',
+      changes: [],
+    };
   }
   if (/\b(substitut|swap|instead|replace)\b/.test(m)) {
-    return 'Tell me which ingredient you want to swap or are missing. Something like "I don\'t have cheese" works. I\'ll rework the whole remaining plan around it without breaking your rules.';
+    return { reply: 'Tell me what you’re missing, like “I don’t have cheese”, and I’ll rework the rest of the plan around it without breaking your rules.', changes: [] };
   }
-  if (/\b(why|reason)\b/.test(m)) {
-    return state.recipe.whyItFits.slice(0, 3).join(' ');
-  }
-  if (/\b(thanks|thank you|merci|great|awesome|perfect)\b/.test(m)) {
-    return 'Avec plaisir! You\'re doing great. Hit "Next" when this step is done.';
-  }
-  return `You're on “${step.title}”. ${step.tip ?? 'Take it one step at a time.'} If anything changes, like an ingredient, time, equipment, or servings, just tell me and I'll replan the rest.`;
+  if (/\b(thanks|thank you|merci|great|awesome|perfect)\b/.test(m)) return { reply: 'Avec plaisir! You’re doing great. Say “next” when this step is done.', changes: [] };
+  const t = step.technique ? techniqueById(step.technique) : tech;
+  return {
+    reply: `You’re on “${step.title}”. ${step.tip ?? (t ? `Need a hand? Ask me how to ${t.title.toLowerCase().replace(/^(\w+)ing\b/, '$1')}.` : 'Take it one step at a time.')} If anything changes, like an ingredient, time, equipment or servings, tell me and I’ll replan the rest.`,
+    changes: [],
+  };
 }

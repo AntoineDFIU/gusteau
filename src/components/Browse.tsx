@@ -1,0 +1,235 @@
+import { useMemo, useState } from 'react';
+import { EMPTY_FILTERS, MAX_MISSING_FOR_PANTRY, activeFilterCount, matchesFilters, recommendScore, tasteOf, type Filters } from '../agent/kitchen';
+import { CUISINES, cuisineById } from '../data/cuisines';
+import { GRAINS, PROTEINS, type GrainId, type ProteinId } from '../data/ingredients';
+import { DIET_RULES, DIET_RULE_IDS, DIFFICULTIES, EQUIPMENT } from '../data/rules';
+import type { PantryItem, Profile, Recipe } from '../types';
+import { PantryPanel } from './Pantry';
+import { RecipeCard } from './RecipeCard';
+import { Button, Card, Chip, Eyebrow, SectionTitle, Toggle, cx } from './ui';
+
+const TIMES = [15, 30, 45, 60];
+
+export function Browse({
+  recipes,
+  profile,
+  filters,
+  setFilters,
+  onOpen,
+  onPantry,
+  onDemo,
+  micHint,
+}: {
+  recipes: Recipe[];
+  profile: Profile;
+  filters: Filters;
+  setFilters: (f: Filters) => void;
+  onOpen: (r: Recipe) => void;
+  onPantry: (pantry: PantryItem[], basics: boolean) => void;
+  onDemo: () => void;
+  micHint: boolean;
+}) {
+  const [showAllCuisines, setShowAllCuisines] = useState(false);
+  const [showFilters, setShowFilters] = useState(false);
+  const [showPantry, setShowPantry] = useState(false);
+  const set = (patch: Partial<Filters>) => setFilters({ ...filters, ...patch });
+  const toggle = <T,>(list: T[], v: T) => (list.includes(v) ? list.filter((x) => x !== v) : [...list, v]);
+
+  const taste = useMemo(() => tasteOf(profile, recipes), [profile, recipes]);
+  const scored = useMemo(() => {
+    const s = new Map(recipes.map((r) => [r.id, recommendScore(r, profile, taste)]));
+    return [...recipes].sort((a, b) => s.get(b.id)! - s.get(a.id)!);
+  }, [recipes, profile, taste]);
+  const shown = useMemo(() => {
+    const list = scored.filter((r) => matchesFilters(r, filters, profile));
+    // Inside one cuisine, show its most popular dishes first.
+    return filters.cuisine ? list.sort((a, b) => b.popularity - a.popularity) : list;
+  }, [scored, filters, profile]);
+
+  const favorites = CUISINES.filter((c) => profile.favoriteCuisines.includes(c.id));
+  const others = CUISINES.filter((c) => !profile.favoriteCuisines.includes(c.id) && recipes.some((r) => r.cuisine === c.id));
+  const cuisineChips = showAllCuisines || !favorites.length ? [...favorites, ...others] : favorites;
+  // The profile's own diet rules are the starting point, not a filter the user added.
+  const base: Filters = { ...EMPTY_FILTERS, diet: profile.hardExclusions };
+  const dietIsDefault = filters.diet.length === profile.hardExclusions.length && filters.diet.every((d) => profile.hardExclusions.includes(d));
+  const nFilters = activeFilterCount(filters) - (dietIsDefault ? filters.diet.length : 0);
+  const browsingAll = !filters.cuisine && !filters.search && !nFilters;
+  const returning = profile.history.some((h) => h.finished);
+  const picks = browsingAll ? scored.filter((r) => matchesFilters(r, base, profile)).slice(0, 4) : [];
+  const cuisine = filters.cuisine ? cuisineById(filters.cuisine) : null;
+
+  return (
+    <div className="mx-auto max-w-7xl animate-rise">
+      <div className="flex flex-col gap-6 lg:flex-row lg:items-end lg:justify-between">
+        <div className="max-w-2xl">
+          <Eyebrow>{returning ? 'Welcome back' : 'Your personal chef assistant'}</Eyebrow>
+          <h1 className="mt-2 font-display text-4xl font-semibold leading-[1.05] text-charcoal-900 sm:text-5xl">
+            What are you <span className="italic text-tomato-500">craving?</span>
+          </h1>
+        </div>
+        <form onSubmit={(e) => e.preventDefault()} className="w-full lg:max-w-sm">
+          <input
+            type="search"
+            value={filters.search}
+            onChange={(e) => set({ search: e.target.value })}
+            placeholder="Search dishes, ingredients or chefs"
+            aria-label="Search recipes"
+            className="w-full rounded-full border border-cream-300 bg-white px-5 py-3 text-sm shadow-card outline-none focus:border-tomato-400"
+          />
+          {micHint && <p className="mt-2 pl-4 text-xs text-charcoal-400">Or tap 🎤 and say “something Thai under 20 minutes”.</p>}
+        </form>
+      </div>
+
+      {/* Cuisines */}
+      <div className="mt-6 flex flex-wrap items-center gap-2" role="group" aria-label="Cuisines">
+        <Chip active={!filters.cuisine} onClick={() => set({ cuisine: null })}>
+          🌍 All
+        </Chip>
+        {cuisineChips.map((c) => (
+          <Chip key={c.id} active={filters.cuisine === c.id} onClick={() => set({ cuisine: filters.cuisine === c.id ? null : c.id })}>
+            {c.emoji} {c.name}
+            {profile.favoriteCuisines.includes(c.id) && <span className="text-saffron-500" aria-label="favorite">★</span>}
+          </Chip>
+        ))}
+        {favorites.length > 0 && others.length > 0 && (
+          <button onClick={() => setShowAllCuisines((v) => !v)} className="px-2 text-sm font-semibold text-olive-500 hover:text-olive-700">
+            {showAllCuisines ? 'Fewer' : `+ ${others.length} more cuisines`}
+          </button>
+        )}
+      </div>
+
+      <div className="mt-4 flex flex-wrap items-center gap-2">
+        <Button variant={showFilters || nFilters ? 'primary' : 'secondary'} size="sm" onClick={() => setShowFilters((v) => !v)} aria-expanded={showFilters}>
+          ⚙︎ Filters{nFilters ? ` · ${nFilters}` : ''}
+        </Button>
+        <Button variant="secondary" size="sm" className="lg:hidden" onClick={() => setShowPantry((v) => !v)} aria-expanded={showPantry}>
+          🧺 My kitchen{profile.pantry.length ? ` · ${profile.pantry.length}` : ''}
+        </Button>
+        {(nFilters > 0 || filters.search || filters.cuisine) && (
+          <button onClick={() => setFilters(base)} className="px-2 text-sm font-medium text-charcoal-400 hover:text-tomato-600">
+            Clear all
+          </button>
+        )}
+      </div>
+
+      {showFilters && (
+        <Card className="mt-3 grid gap-5 p-5 sm:grid-cols-2 lg:grid-cols-3">
+          <FilterGroup title="Diet">
+            {DIET_RULE_IDS.map((d) => (
+              <Chip key={d} active={filters.diet.includes(d)} onClick={() => set({ diet: toggle(filters.diet, d) })}>
+                {DIET_RULES[d].label}
+              </Chip>
+            ))}
+          </FilterGroup>
+          <FilterGroup title="Protein">
+            {(Object.keys(PROTEINS) as ProteinId[]).map((p) => (
+              <Chip key={p} active={filters.proteins.includes(p)} onClick={() => set({ proteins: toggle(filters.proteins, p) })}>
+                {PROTEINS[p].emoji} {PROTEINS[p].label}
+              </Chip>
+            ))}
+          </FilterGroup>
+          <FilterGroup title="Rice, grains & carbs">
+            {(Object.keys(GRAINS) as GrainId[]).map((g) => (
+              <Chip key={g} active={filters.grains.includes(g)} onClick={() => set({ grains: toggle(filters.grains, g) })}>
+                {GRAINS[g].emoji} {GRAINS[g].label}
+              </Chip>
+            ))}
+            <Chip tone="olive" active={filters.vegForward} onClick={() => set({ vegForward: !filters.vegForward })}>
+              🥦 Veg-forward
+            </Chip>
+          </FilterGroup>
+          <FilterGroup title="Cooking time">
+            {TIMES.map((t) => (
+              <Chip key={t} active={filters.maxMinutes === t} onClick={() => set({ maxMinutes: filters.maxMinutes === t ? null : t })}>
+                ≤ {t} min
+              </Chip>
+            ))}
+          </FilterGroup>
+          <FilterGroup title="Difficulty">
+            {DIFFICULTIES.map((d) => (
+              <Chip key={d} active={filters.difficulty.includes(d)} onClick={() => set({ difficulty: toggle(filters.difficulty, d) })}>
+                {d}
+              </Chip>
+            ))}
+          </FilterGroup>
+          <FilterGroup title="Equipment & ingredients">
+            <label className="flex w-full items-center justify-between gap-3 text-sm text-charcoal-700">
+              <span>
+                Only my equipment
+                <span className="block text-xs text-charcoal-400">{profile.equipment.map((e) => EQUIPMENT[e].label).join(', ')}</span>
+              </span>
+              <Toggle checked={!!filters.equipment} onChange={(v) => set({ equipment: v ? profile.equipment : null })} label="Only my equipment" />
+            </label>
+            <label className={cx('flex w-full items-center justify-between gap-3 text-sm text-charcoal-700', !profile.pantry.length && 'opacity-50')}>
+              <span>
+                Uses what I have
+                <span className="block text-xs text-charcoal-400">{profile.pantry.length ? `Missing at most ${MAX_MISSING_FOR_PANTRY} ingredients` : 'Add your ingredients first'}</span>
+              </span>
+              <Toggle checked={filters.pantryOnly} onChange={(v) => profile.pantry.length && set({ pantryOnly: v })} label="Uses what I have" />
+            </label>
+          </FilterGroup>
+        </Card>
+      )}
+
+      <div className="mt-8 grid gap-8 lg:grid-cols-[minmax(0,1fr)_320px]">
+        <div className="min-w-0">
+          {picks.length > 0 && (
+            <section className="mb-10">
+              <SectionTitle>{returning ? 'Picked for you, based on what you’ve cooked' : profile.favoriteCuisines.length ? 'Picked for you' : 'Popular right now'}</SectionTitle>
+              <div className="mt-3 grid grid-cols-1 gap-4 sm:grid-cols-2 xl:grid-cols-4">
+                {picks.map((r) => (
+                  <RecipeCard key={r.id} recipe={r} profile={profile} onOpen={() => onOpen(r)} />
+                ))}
+              </div>
+            </section>
+          )}
+
+          <section>
+            <SectionTitle>
+              {cuisine ? `Popular ${cuisine.name} dishes` : browsingAll ? 'Every cuisine' : 'Matching dishes'} · {shown.length}
+              {dietIsDefault && filters.diet.length > 0 && ` ${filters.diet.map((d) => DIET_RULES[d].label.toLowerCase()).join(', ')}`}
+            </SectionTitle>
+            {shown.length ? (
+              <div key={filters.cuisine ?? 'all'} className="mt-3 grid animate-rise grid-cols-1 gap-4 sm:grid-cols-2 xl:grid-cols-3">
+                {shown.map((r) => (
+                  <RecipeCard key={r.id} recipe={r} profile={profile} onOpen={() => onOpen(r)} />
+                ))}
+              </div>
+            ) : (
+              <Card className="mt-3 p-8 text-center">
+                <p className="text-4xl">🤔</p>
+                <p className="mt-3 font-display text-xl font-semibold text-charcoal-900">No dishes match all of that</p>
+                <p className="mt-1 text-sm text-charcoal-500">Try removing a filter or two.</p>
+                <Button className="mt-4" variant="secondary" onClick={() => setFilters({ ...base, cuisine: filters.cuisine })}>
+                  Clear filters
+                </Button>
+              </Card>
+            )}
+          </section>
+        </div>
+
+        <aside className={cx('space-y-4 lg:sticky lg:top-24 lg:self-start', !showPantry && 'hidden lg:block', 'order-first lg:order-none')}>
+          <PantryPanel pantry={profile.pantry} basics={profile.pantryBasics} onChange={onPantry} />
+          <Card className="overflow-hidden border-saffron-100 bg-gradient-to-br from-saffron-100/70 via-white to-tomato-50 p-5">
+            <p className="font-display text-lg font-semibold text-charcoal-900">🎬 Try the live replanning demo</p>
+            <p className="mt-1 text-sm text-charcoal-500">
+              A microwave burrito bowl with rice, beans, tortillas, cheese and salsa. Vegetarian, 15 minutes, microwave only, no purchases. Then say “Actually, I don’t have rice.”
+            </p>
+            <Button variant="olive" size="sm" className="mt-3" onClick={onDemo}>
+              Load demo kitchen
+            </Button>
+          </Card>
+        </aside>
+      </div>
+    </div>
+  );
+}
+
+function FilterGroup({ title, children }: { title: string; children: React.ReactNode }) {
+  return (
+    <div>
+      <SectionTitle className="mb-2">{title}</SectionTitle>
+      <div className="flex flex-wrap gap-2">{children}</div>
+    </div>
+  );
+}

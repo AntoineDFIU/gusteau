@@ -1,5 +1,5 @@
-import type { PlanResult } from '../agent/planner';
-import type { DetectedIngredient, Recipe, SessionChange, SessionState } from '../types';
+import type { AdaptPrior, AdaptResult } from '../agent/adapt';
+import type { CookCommand, CookSession, DetectedIngredient, Recipe, RecipeStage, SessionChange } from '../types';
 
 // ─────────────────────────────────────────────────────────────
 // The ONE seam between Gusteau's UI/agent loop and any model.
@@ -8,8 +8,8 @@ import type { DetectedIngredient, Recipe, SessionChange, SessionState } from '..
 //   OpenAICompatModelService  → src/services/llm/   (NVIDIA Nemotron on
 //                               Nebius Token Factory, or Ollama)
 //
-// The UI only ever talks to `ChefModelService`, so swapping the
-// mock for a real model is a config change, not a rewrite.
+// The model proposes; Gusteau's validators decide. Every stage
+// grouping and every plan a model writes is checked before use.
 // ─────────────────────────────────────────────────────────────
 
 export interface PhotoInput {
@@ -23,8 +23,17 @@ export interface InterpretResult {
   reply: string | null;
   /** Structured state changes that trigger a full replan. */
   changes: SessionChange[];
+  /** A cooking command such as "next" or "set a timer". */
+  command?: CookCommand;
   /** Short label for the "Plan updated" banner, e.g. "You're out of rice". */
   trigger?: string;
+  /** Technique clip to offer alongside the reply. */
+  techniqueId?: string;
+}
+
+export interface StageResult {
+  stages: RecipeStage[];
+  by: NonNullable<Recipe['stagesBy']>;
 }
 
 export interface ChefModelService {
@@ -34,9 +43,15 @@ export interface ChefModelService {
   /** Image understanding + ingredient extraction. */
   analyzePhotos(photos: PhotoInput[]): Promise<DetectedIngredient[]>;
 
-  /** Recipe planning. Must respect every hard constraint in `state`. */
-  planRecipe(state: SessionState, previous: Recipe | null): Promise<PlanResult>;
+  /** Turn a chat or voice message into changes, a command, or a reply. */
+  interpretMessage(message: string, session: CookSession): Promise<InterpretResult>;
 
-  /** Conversational replanning: turn a chat message into state changes. */
-  interpretMessage(message: string, state: SessionState): Promise<InterpretResult>;
+  /** Group a recipe's steps into 3–5 stages with supported icons. */
+  stageRecipe(recipe: Recipe): Promise<StageResult>;
+
+  /**
+   * Gusteau's rule-based replanner has produced `draft`. When it couldn't
+   * solve something, a model may propose a fix; it is validated before use.
+   */
+  adaptPlan(session: CookSession, draft: AdaptResult, prior: AdaptPrior): Promise<AdaptResult>;
 }
