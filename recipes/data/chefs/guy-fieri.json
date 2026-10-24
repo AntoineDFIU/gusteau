@@ -123,6 +123,8 @@
   ],
   "image": {
    "file": "nachos.jpg",
+   "source": "wikipedia-lead",
+   "match": "representative",
    "wikipedia": "Nachos"
   }
  },
@@ -243,6 +245,8 @@
   ],
   "image": {
    "file": "macaroni-and-cheese.jpg",
+   "source": "wikipedia-lead",
+   "match": "representative",
    "wikipedia": "Macaroni and cheese"
   }
  },
@@ -365,6 +369,8 @@
   ],
   "image": {
    "file": "cheeseburger.jpg",
+   "source": "wikipedia-lead",
+   "match": "representative",
    "wikipedia": "Cheeseburger"
   }
  },
@@ -496,6 +502,8 @@
   ],
   "image": {
    "file": "chili-con-carne.jpg",
+   "source": "wikipedia-lead",
+   "match": "representative",
    "wikipedia": "Chili con carne"
   }
  },
@@ -620,8 +628,10 @@
    "family"
   ],
   "image": {
-   "file": "pulled-pork.jpg",
-   "wikipedia": "Pulled pork"
+   "file": "gf-pulled-pork-sandwich.jpg",
+   "source": "commons-file",
+   "match": "dish",
+   "commonsFile": "Pulled pork BBQ sandwich.jpg"
   }
  },
  {
@@ -737,6 +747,8 @@
   ],
   "image": {
    "file": "buffalo-wings.jpg",
+   "source": "wikipedia-lead",
+   "match": "representative",
    "wikipedia": "Chicken wings"
   }
  },
@@ -867,8 +879,10 @@
    "game-day"
   ],
   "image": {
-   "file": "chicken-sandwich.jpg",
-   "wikipedia": "Fried chicken sandwich"
+   "file": "gf-fried-chicken-sandwich.jpg",
+   "source": "commons-file",
+   "match": "dish",
+   "commonsFile": "Fried chicken sandwich.jpg"
   }
  },
  {
@@ -988,8 +1002,10 @@
    "crowd-pleaser"
   ],
   "image": {
-   "file": "cheese-fries.jpg",
-   "wikipedia": "Chili cheese fries"
+   "file": "gf-chili-cheese-fries.jpg",
+   "source": "commons-file",
+   "match": "dish",
+   "commonsFile": "Chili Cheese Fries (3566109614).jpg"
   }
  },
  {
@@ -1114,6 +1130,8 @@
   ],
   "image": {
    "file": "brisket.jpg",
+   "source": "wikipedia-lead",
+   "match": "representative",
    "wikipedia": "Brisket"
   }
  },
@@ -1232,8 +1250,10 @@
    "crowd-pleaser"
   ],
   "image": {
-   "file": "french-dip.jpg",
-   "wikipedia": "Italian beef"
+   "file": "gf-italian-beef-sandwich.jpg",
+   "source": "commons-file",
+   "match": "dish",
+   "commonsFile": "Italian beef sandwich with au jus.jpg"
   }
  },
  {
@@ -1349,6 +1369,8 @@
   ],
   "image": {
    "file": "burnt-ends.jpg",
+   "source": "wikipedia-lead",
+   "match": "representative",
    "wikipedia": "Burnt ends"
   }
  },
@@ -1468,6 +1490,8 @@
   ],
   "image": {
    "file": "chicken-fingers.jpg",
+   "source": "wikipedia-lead",
+   "match": "representative",
    "wikipedia": "Chicken fingers"
   }
  },
@@ -1600,6 +1624,8 @@
   ],
   "image": {
    "file": "po-boy.jpg",
+   "source": "wikipedia-lead",
+   "match": "representative",
    "wikipedia": "Po' boy"
   }
  },
@@ -1717,8 +1743,10 @@
    "technique"
   ],
   "image": {
-   "file": "cuban-sandwich.jpg",
-   "wikipedia": "Cuban sandwich"
+   "file": "gf-cuban-sandwich.jpg",
+   "source": "commons-file",
+   "match": "dish",
+   "commonsFile": "Cuban Sandwich (18196090911).jpg"
   }
  },
  {
@@ -1833,6 +1861,8 @@
   ],
   "image": {
    "file": "flank-steak.jpg",
+   "source": "wikipedia-lead",
+   "match": "representative",
    "wikipedia": "Tri-tip"
   }
  },
@@ -1943,6 +1973,8 @@
   ],
   "image": {
    "file": "jalapeno-poppers.jpg",
+   "source": "wikipedia-lead",
+   "match": "representative",
    "wikipedia": "Jalapeño popper"
   }
  },
@@ -2061,6 +2093,8 @@
   ],
   "image": {
    "file": "buffalo-chicken-dip.jpg",
+   "source": "wikipedia-lead",
+   "match": "representative",
    "wikipedia": "Buffalo wing"
   }
  },
@@ -2178,8 +2212,10 @@
    "technique"
   ],
   "image": {
-   "file": "onion-ring.jpg",
-   "wikipedia": "Onion ring"
+   "file": "gf-onion-rings-chipotle-ranch.jpg",
+   "source": "commons-file",
+   "match": "dish",
+   "commonsFile": "Beer Battered Onion Rings (4957953795).jpg"
   }
  },
  {
@@ -2298,6 +2334,8 @@
   ],
   "image": {
    "file": "pork-ribs.jpg",
+   "source": "wikipedia-lead",
+   "match": "representative",
    "wikipedia": "Pork ribs"
   }
  },
@@ -2424,8 +2462,10 @@
    "crowd-pleaser"
   ],
   "image": {
-   "file": "meatball-sub.jpg",
-   "wikipedia": "Meatball sandwich"
+   "file": "gf-meatball-sliders.jpg",
+   "source": "commons-file",
+   "match": "dish",
+   "commonsFile": "Meatball Sliders (30880786817).jpg"
   }
  },
  {
@@ -2551,6 +2591,8 @@
   ],
   "image": {
    "file": "grilled-cheese.jpg",
+   "source": "wikipedia-lead",
+   "match": "representative",
    "wikipedia": "Cheese sandwich"
   }
  },
@@ -2679,8 +2721,10 @@
    "weekend"
   ],
   "image": {
-   "file": "pozole.jpg",
-   "wikipedia": "Pozole"
+   "file": "gf-pozole-verde.jpg",
+   "source": "commons-file",
+   "match": "dish",
+   "commonsFile": "Pozole Verde.jpg"
   }
  },
  {
@@ -2803,6 +2847,8 @@
   ],
   "image": {
    "file": "bread-and-butter-pudding.jpg",
+   "source": "wikipedia-lead",
+   "match": "representative",
    "wikipedia": "Bread pudding"
   }
  },
@@ -2922,8 +2968,10 @@
    "easy"
   ],
   "image": {
-   "file": "peanut-butter-pie.jpg",
-   "wikipedia": "Cream pie"
+   "file": "gf-peanut-butter-chocolate-pie.jpg",
+   "source": "commons-file",
+   "match": "dish",
+   "commonsFile": "Peanut Butter Chocolate Pie.jpg"
   }
  },
  {
@@ -3049,8 +3097,10 @@
    "crowd-pleaser"
   ],
   "image": {
-   "file": "burrito.jpg",
-   "wikipedia": "Burrito"
+   "file": "gf-carne-asada-burrito.jpg",
+   "source": "commons-file",
+   "match": "dish",
+   "commonsFile": "Carne-asada-burrito.jpg"
   }
  }
 ]

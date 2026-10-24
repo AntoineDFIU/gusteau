@@ -87,8 +87,10 @@
    "spicy"
   ],
   "image": {
-   "file": "aglio-e-olio.jpg",
-   "wikipedia": "Spaghetti aglio e olio"
+   "file": "spaghetti-aglio-e-olio.jpg",
+   "source": "commons-file",
+   "match": "dish",
+   "commonsFile": "Spaghetti aglio e olio 1.jpg"
   }
  },
  {
@@ -182,8 +184,10 @@
    "classic"
   ],
   "image": {
-   "file": "carbonara.jpg",
-   "wikipedia": "Carbonara"
+   "file": "spaghetti-carbonara.jpg",
+   "source": "commons-file",
+   "match": "dish",
+   "commonsFile": "Spaghetti Carbonara 2015.jpg"
   }
  },
  {
@@ -269,8 +273,10 @@
    "classic"
   ],
   "image": {
-   "file": "cacio-e-pepe.jpg",
-   "wikipedia": "Cacio e pepe"
+   "file": "cacio-e-pepe-dish.jpg",
+   "source": "commons-file",
+   "match": "dish",
+   "commonsFile": "Cacio e pepe.jpg"
   }
  },
  {
@@ -369,6 +375,8 @@
   ],
   "image": {
    "file": "marinara.jpg",
+   "source": "wikipedia-lead",
+   "match": "representative",
    "wikipedia": "Marinara sauce"
   }
  },
@@ -484,8 +492,10 @@
    "classic"
   ],
   "image": {
-   "file": "spaghetti-and-meatballs.jpg",
-   "wikipedia": "Spaghetti with meatballs"
+   "file": "spaghetti-and-meatballs-dish.jpg",
+   "source": "commons-file",
+   "match": "dish",
+   "commonsFile": "Spaghetti & Meatballs (2) (38218931306).jpg"
   }
  },
  {
@@ -600,8 +610,10 @@
    "classic"
   ],
   "image": {
-   "file": "bolognese.jpg",
-   "wikipedia": "Bolognese sauce"
+   "file": "tagliatelle-bolognese.jpg",
+   "source": "commons-file",
+   "match": "dish",
+   "commonsFile": "Tagliatelle ragù bolognese 01.jpg"
   }
  },
  {
@@ -720,8 +732,10 @@
    "classic"
   ],
   "image": {
-   "file": "lasagna.jpg",
-   "wikipedia": "Lasagne"
+   "file": "classic-lasagna.jpg",
+   "source": "commons-file",
+   "match": "dish",
+   "commonsFile": "Lasagna Classico.jpg"
   }
  },
  {
@@ -832,8 +846,10 @@
    "budget"
   ],
   "image": {
-   "file": "baked-ziti.jpg",
-   "wikipedia": "Baked ziti"
+   "file": "baked-ziti-dish.jpg",
+   "source": "commons-file",
+   "match": "dish",
+   "commonsFile": "Baked Ziti (13966884849).jpg"
   }
  },
  {
@@ -933,8 +949,10 @@
    "comfort"
   ],
   "image": {
-   "file": "penne-alla-vodka.jpg",
-   "wikipedia": "Pasta alla vodka"
+   "file": "penne-alla-vodka-dish.jpg",
+   "source": "commons-file",
+   "match": "dish",
+   "commonsFile": "Penne alla Vodka.jpg"
   }
  },
  {
@@ -1023,8 +1041,10 @@
    "restaurant-style"
   ],
   "image": {
-   "file": "fettuccine-alfredo.jpg",
-   "wikipedia": "Fettuccine Alfredo"
+   "file": "fettuccine-alfredo-dish.jpg",
+   "source": "commons-file",
+   "match": "dish",
+   "commonsFile": "Fettuccine Alfredo.jpg"
   }
  },
  {
@@ -1136,8 +1156,10 @@
    "quick"
   ],
   "image": {
-   "file": "pasta-primavera.jpg",
-   "wikipedia": "Pasta primavera"
+   "file": "pasta-primavera-dish.jpg",
+   "source": "commons-file",
+   "match": "dish",
+   "commonsFile": "Pasta primavera.jpg"
   }
  },
  {
@@ -1236,6 +1258,8 @@
   ],
   "image": {
    "file": "pesto-pasta.jpg",
+   "source": "wikipedia-lead",
+   "match": "representative",
    "wikipedia": "Pesto"
   }
  },
@@ -1331,6 +1355,8 @@
   ],
   "image": {
    "file": "amatriciana.jpg",
+   "source": "wikipedia-lead",
+   "match": "representative",
    "wikipedia": "Sugo all'amatriciana"
   }
  },
@@ -1434,8 +1460,10 @@
    "budget"
   ],
   "image": {
-   "file": "puttanesca.jpg",
-   "wikipedia": "Pasta alla puttanesca"
+   "file": "spaghetti-puttanesca.jpg",
+   "source": "commons-file",
+   "match": "dish",
+   "commonsFile": "Spaghetti alla Puttanesca.jpg"
   }
  },
  {
@@ -1529,8 +1557,10 @@
    "authentic"
   ],
   "image": {
-   "file": "arrabbiata.jpg",
-   "wikipedia": "Arrabbiata sauce"
+   "file": "penne-arrabbiata.jpg",
+   "source": "commons-file",
+   "match": "dish",
+   "commonsFile": "Penne all'arrabbiata.jpg"
   }
  },
  {
@@ -1635,8 +1665,10 @@
    "restaurant-style"
   ],
   "image": {
-   "file": "shrimp-scampi.jpg",
-   "wikipedia": "Scampi"
+   "file": "shrimp-scampi-dish.jpg",
+   "source": "commons-file",
+   "match": "dish",
+   "commonsFile": "Shrimp Scampi.jpg"
   }
  },
  {
@@ -1734,8 +1766,10 @@
    "classic"
   ],
   "image": {
-   "file": "vongole.jpg",
-   "wikipedia": "Spaghetti alle vongole"
+   "file": "linguine-alle-vongole.jpg",
+   "source": "commons-file",
+   "match": "dish",
+   "commonsFile": "Linguine-alle-vongole.jpg"
   }
  },
  {
@@ -1850,8 +1884,10 @@
    "winter"
   ],
   "image": {
-   "file": "pasta-e-fagioli.jpg",
-   "wikipedia": "Pasta e fagioli"
+   "file": "pasta-e-fagioli-dish.jpg",
+   "source": "commons-file",
+   "match": "dish",
+   "commonsFile": "Pasta e fagioli 01.jpg"
   }
  },
  {
@@ -1951,6 +1987,8 @@
   ],
   "image": {
    "file": "orecchiette.jpg",
+   "source": "wikipedia-lead",
+   "match": "representative",
    "wikipedia": "Orecchiette"
   }
  },
@@ -2048,8 +2086,10 @@
    "classic"
   ],
   "image": {
-   "file": "pasta-alla-norma.jpg",
-   "wikipedia": "Pasta alla Norma"
+   "file": "pasta-alla-norma-dish.jpg",
+   "source": "commons-file",
+   "match": "dish",
+   "commonsFile": "Pasta alla Norma (2563876877).jpg"
   }
  },
  {
@@ -2153,8 +2193,10 @@
    "freezer"
   ],
   "image": {
-   "file": "stuffed-shells.jpg",
-   "wikipedia": "Conchiglie"
+   "file": "stuffed-shells-dish.jpg",
+   "source": "commons-file",
+   "match": "dish",
+   "commonsFile": "Stuffed shells 001.jpg"
   }
  },
  {
@@ -2262,8 +2304,10 @@
    "project"
   ],
   "image": {
-   "file": "manicotti.jpg",
-   "wikipedia": "Manicotti"
+   "file": "manicotti-dish.jpg",
+   "source": "commons-file",
+   "match": "dish",
+   "commonsFile": "Manicotti (93442794).jpg"
   }
  },
  {
@@ -2362,6 +2406,8 @@
   ],
   "image": {
    "file": "ravioli.jpg",
+   "source": "wikipedia-lead",
+   "match": "representative",
    "wikipedia": "Ravioli"
   }
  },
@@ -2458,8 +2504,10 @@
    "kid-friendly"
   ],
   "image": {
-   "file": "gnocchi.jpg",
-   "wikipedia": "Gnocchi"
+   "file": "gnocchi-al-pomodoro.jpg",
+   "source": "commons-file",
+   "match": "dish",
+   "commonsFile": "Gnocchi al Pomodoro (2920979155).jpg"
   }
  },
  {
@@ -2555,8 +2603,10 @@
    "shortcut"
   ],
   "image": {
-   "file": "tortellini-in-brodo.jpg",
-   "wikipedia": "Tortellini"
+   "file": "tortellini-in-brodo-dish.jpg",
+   "source": "commons-file",
+   "match": "dish",
+   "commonsFile": "Tortellini In Brodo.jpg"
   }
  },
  {
@@ -2648,6 +2698,8 @@
   ],
   "image": {
    "file": "pasta-al-limone.jpg",
+   "source": "wikipedia-lead",
+   "match": "representative",
    "wikipedia": "Pasta"
   }
  },
@@ -2751,6 +2803,8 @@
   ],
   "image": {
    "file": "sausage-and-peppers.jpg",
+   "source": "wikipedia-lead",
+   "match": "representative",
    "wikipedia": "Italian sausage"
   }
  },
@@ -2851,8 +2905,10 @@
    "restaurant-style"
   ],
   "image": {
-   "file": "chicken-alfredo.jpg",
-   "wikipedia": "Fettuccine Alfredo"
+   "file": "chicken-alfredo-dish.jpg",
+   "source": "commons-file",
+   "match": "dish",
+   "commonsFile": "Chicken-alfredo.jpg"
   }
  },
  {
@@ -2940,8 +2996,10 @@
    "classic"
   ],
   "image": {
-   "file": "gricia.jpg",
-   "wikipedia": "Pasta alla gricia"
+   "file": "pasta-alla-gricia.jpg",
+   "source": "commons-file",
+   "match": "dish",
+   "commonsFile": "Pasta alla Gricia.jpg"
   }
  },
  {
@@ -3038,8 +3096,10 @@
    "kid-friendly"
   ],
   "image": {
-   "file": "gnocchi-sorrentina.jpg",
-   "wikipedia": "Gnocchi"
+   "file": "gnocchi-alla-sorrentina.jpg",
+   "source": "commons-file",
+   "match": "dish",
+   "commonsFile": "Gnocchi alla Sorrentina.jpg"
   }
  },
  {
@@ -3154,6 +3214,8 @@
   ],
   "image": {
    "file": "italian-pasta-salad.jpg",
+   "source": "wikipedia-lead",
+   "match": "representative",
    "wikipedia": "Pasta salad"
   }
  },
@@ -3245,6 +3307,8 @@
   ],
   "image": {
    "file": "fresh-pasta.jpg",
+   "source": "wikipedia-lead",
+   "match": "representative",
    "wikipedia": "Pasta"
   }
  },
@@ -3367,6 +3431,8 @@
   ],
   "image": {
    "file": "sunday-gravy.jpg",
+   "source": "wikipedia-lead",
+   "match": "representative",
    "wikipedia": "Sunday gravy"
   }
  },
@@ -3478,6 +3544,8 @@
   ],
   "image": {
    "file": "frutti-di-mare.jpg",
+   "source": "wikipedia-lead",
+   "match": "representative",
    "wikipedia": "Seafood"
   }
  },
@@ -3580,8 +3648,10 @@
    "soup"
   ],
   "image": {
-   "file": "pasta-e-ceci.jpg",
-   "wikipedia": "Pasta e ceci"
+   "file": "pasta-e-ceci-dish.jpg",
+   "source": "commons-file",
+   "match": "dish",
+   "commonsFile": "Pasta e ceci.jpg"
   }
  },
  {
@@ -3683,6 +3753,8 @@
   ],
   "image": {
    "file": "pizza-margherita.jpg",
+   "source": "wikipedia-lead",
+   "match": "representative",
    "wikipedia": "Pizza Margherita"
   }
  },
@@ -3787,6 +3859,8 @@
   ],
   "image": {
    "file": "sheet-pan-pizza.jpg",
+   "source": "wikipedia-lead",
+   "match": "representative",
    "wikipedia": "Sicilian pizza"
   }
  },
@@ -3889,8 +3963,10 @@
    "weeknight"
   ],
   "image": {
-   "file": "pepperoni-pizza.jpg",
-   "wikipedia": "Pepperoni"
+   "file": "pepperoni-pizza-dish.jpg",
+   "source": "commons-file",
+   "match": "dish",
+   "commonsFile": "Pepperoni pizza 3.jpg"
   }
  },
  {
@@ -3991,8 +4067,10 @@
    "restaurant-style"
   ],
   "image": {
-   "file": "pizza-bianca.jpg",
-   "wikipedia": "White pizza"
+   "file": "pizza-bianca-dish.jpg",
+   "source": "commons-file",
+   "match": "dish",
+   "commonsFile": "White Pizza (4966174358).jpg"
   }
  },
  {
@@ -4099,8 +4177,10 @@
    "kid-friendly"
   ],
   "image": {
-   "file": "calzone.jpg",
-   "wikipedia": "Calzone"
+   "file": "calzone-dish.jpg",
+   "source": "commons-file",
+   "match": "dish",
+   "commonsFile": "Calzone (3348696443).jpg"
   }
  },
  {
@@ -4196,8 +4276,10 @@
    "party"
   ],
   "image": {
-   "file": "focaccia.jpg",
-   "wikipedia": "Focaccia"
+   "file": "focaccia-dish.jpg",
+   "source": "commons-file",
+   "match": "dish",
+   "commonsFile": "Rosemary Focaccia.jpg"
   }
  },
  {
@@ -4290,8 +4372,10 @@
    "classic"
   ],
   "image": {
-   "file": "garlic-bread.jpg",
-   "wikipedia": "Garlic bread"
+   "file": "garlic-bread-dish.jpg",
+   "source": "commons-file",
+   "match": "dish",
+   "commonsFile": "Garlic bread - in pan, cooked.jpg"
   }
  },
  {
@@ -4390,6 +4474,8 @@
   ],
   "image": {
    "file": "bruschetta.jpg",
+   "source": "wikipedia-lead",
+   "match": "representative",
    "wikipedia": "Bruschetta"
   }
  },
@@ -4500,8 +4586,10 @@
    "sharing"
   ],
   "image": {
-   "file": "stromboli.jpg",
-   "wikipedia": "Stromboli (food)"
+   "file": "stromboli-dish.jpg",
+   "source": "commons-file",
+   "match": "dish",
+   "commonsFile": "Stromboli 2026.jpg"
   }
  },
  {
@@ -4591,6 +4679,8 @@
   ],
   "image": {
    "file": "pizza-dough.jpg",
+   "source": "wikipedia-lead",
+   "match": "representative",
    "wikipedia": "Pizza"
   }
  },
@@ -4705,8 +4795,10 @@
    "sharing"
   ],
   "image": {
-   "file": "arancini.jpg",
-   "wikipedia": "Arancini"
+   "file": "arancini-dish.jpg",
+   "source": "commons-file",
+   "match": "dish",
+   "commonsFile": "Arancini 002.jpg"
   }
  },
  {
@@ -4802,8 +4894,10 @@
    "budget"
   ],
   "image": {
-   "file": "garlic-knots.jpg",
-   "wikipedia": "Garlic knot"
+   "file": "garlic-knots-dish.jpg",
+   "source": "commons-file",
+   "match": "dish",
+   "commonsFile": "Garlic knots.jpg"
   }
  },
  {
@@ -4898,8 +4992,10 @@
    "low-carb"
   ],
   "image": {
-   "file": "caprese.jpg",
-   "wikipedia": "Caprese salad"
+   "file": "caprese-salad.jpg",
+   "source": "commons-file",
+   "match": "dish",
+   "commonsFile": "Caprese salad (3124173264).jpg"
   }
  },
  {
@@ -5015,8 +5111,10 @@
    "quick"
   ],
   "image": {
-   "file": "antipasto.jpg",
-   "wikipedia": "Antipasto"
+   "file": "antipasto-platter.jpg",
+   "source": "commons-file",
+   "match": "dish",
+   "commonsFile": "Antipasto Platter.jpg"
   }
  },
  {
@@ -5114,8 +5212,10 @@
    "healthy"
   ],
   "image": {
-   "file": "insalata-tricolore.jpg",
-   "wikipedia": "Salad"
+   "file": "insalata-tricolore-dish.jpg",
+   "source": "commons-file",
+   "match": "dish",
+   "commonsFile": "Insalata Tricolore with anchovy dressing (26273808281).jpg"
   }
  },
  {
@@ -5216,8 +5316,10 @@
    "no-cook"
   ],
   "image": {
-   "file": "panzanella.jpg",
-   "wikipedia": "Panzanella"
+   "file": "panzanella-dish.jpg",
+   "source": "commons-file",
+   "match": "dish",
+   "commonsFile": "Panzanella 1 (1).jpg"
   }
  },
  {
@@ -5305,8 +5407,10 @@
    "entertaining"
   ],
   "image": {
-   "file": "prosciutto-melone.jpg",
-   "wikipedia": "Prosciutto"
+   "file": "prosciutto-e-melone.jpg",
+   "source": "commons-file",
+   "match": "dish",
+   "commonsFile": "Prosciutto e melone.jpg"
   }
  },
  {
@@ -5406,6 +5510,8 @@
   ],
   "image": {
    "file": "stuffed-mushrooms.jpg",
+   "source": "wikipedia-lead",
+   "match": "representative",
    "wikipedia": "Stuffed mushrooms"
   }
  },
@@ -5511,8 +5617,10 @@
    "sharing"
   ],
   "image": {
-   "file": "fried-calamari.jpg",
-   "wikipedia": "Squid as food"
+   "file": "fried-calamari-dish.jpg",
+   "source": "commons-file",
+   "match": "dish",
+   "commonsFile": "Deep-fried Calamari Rings.jpg"
   }
  },
  {
@@ -5613,8 +5721,10 @@
    "high-protein"
   ],
   "image": {
-   "file": "carpaccio.jpg",
-   "wikipedia": "Carpaccio"
+   "file": "beef-carpaccio.jpg",
+   "source": "commons-file",
+   "match": "dish",
+   "commonsFile": "Beef Carpaccio (3466985953).jpg"
   }
  },
  {
@@ -5728,8 +5838,10 @@
    "side"
   ],
   "image": {
-   "file": "caponata.jpg",
-   "wikipedia": "Caponata"
+   "file": "caponata-dish.jpg",
+   "source": "commons-file",
+   "match": "dish",
+   "commonsFile": "Caponata.jpg"
   }
  },
  {
@@ -5829,6 +5941,8 @@
   ],
   "image": {
    "file": "burrata.jpg",
+   "source": "wikipedia-lead",
+   "match": "representative",
    "wikipedia": "Burrata"
   }
  },
@@ -5927,8 +6041,10 @@
    "classic"
   ],
   "image": {
-   "file": "risotto-milanese.jpg",
-   "wikipedia": "Risotto alla milanese"
+   "file": "risotto-alla-milanese.jpg",
+   "source": "commons-file",
+   "match": "dish",
+   "commonsFile": "Risotto alla Milanese.JPG"
   }
  },
  {
@@ -6033,8 +6149,10 @@
    "technique"
   ],
   "image": {
-   "file": "mushroom-risotto.jpg",
-   "wikipedia": "Risotto"
+   "file": "mushroom-risotto-dish.jpg",
+   "source": "commons-file",
+   "match": "dish",
+   "commonsFile": "Mushroom Risotto (4789409441).jpg"
   }
  },
  {
@@ -6136,8 +6254,10 @@
    "technique"
   ],
   "image": {
-   "file": "lemon-risotto.jpg",
-   "wikipedia": "Risotto"
+   "file": "lemon-risotto-dish.jpg",
+   "source": "commons-file",
+   "match": "dish",
+   "commonsFile": "Lemon Pea Risotto.jpg"
   }
  },
  {
@@ -6243,6 +6363,8 @@
   ],
   "image": {
    "file": "polenta.jpg",
+   "source": "wikipedia-lead",
+   "match": "representative",
    "wikipedia": "Polenta"
   }
  },
@@ -6364,8 +6486,10 @@
    "leftovers"
   ],
   "image": {
-   "file": "minestrone.jpg",
-   "wikipedia": "Minestrone"
+   "file": "minestrone-dish.jpg",
+   "source": "commons-file",
+   "match": "dish",
+   "commonsFile": "Minestrone (14317965752).jpg"
   }
  },
  {
@@ -6486,8 +6610,10 @@
    "leftovers"
   ],
   "image": {
-   "file": "ribollita.jpg",
-   "wikipedia": "Ribollita"
+   "file": "ribollita-dish.jpg",
+   "source": "commons-file",
+   "match": "dish",
+   "commonsFile": "Ribollita.jpg"
   }
  },
  {
@@ -6597,8 +6723,10 @@
    "weeknight"
   ],
   "image": {
-   "file": "chicken-parmesan.jpg",
-   "wikipedia": "Chicken parmigiana"
+   "file": "chicken-parmesan-dish.jpg",
+   "source": "commons-file",
+   "match": "dish",
+   "commonsFile": "Chicken parmesan.jpg"
   }
  },
  {
@@ -6703,8 +6831,10 @@
    "classic"
   ],
   "image": {
-   "file": "chicken-marsala.jpg",
-   "wikipedia": "Chicken marsala"
+   "file": "chicken-marsala-dish.jpg",
+   "source": "commons-file",
+   "match": "dish",
+   "commonsFile": "Chicken Marsala 12.jpg"
   }
  },
  {
@@ -6810,8 +6940,10 @@
    "classic"
   ],
   "image": {
-   "file": "chicken-piccata.jpg",
-   "wikipedia": "Piccata"
+   "file": "chicken-piccata-dish.jpg",
+   "source": "commons-file",
+   "match": "dish",
+   "commonsFile": "Chicken Piccata (6408123327).jpg"
   }
  },
  {
@@ -6920,8 +7052,10 @@
    "leftovers"
   ],
   "image": {
-   "file": "chicken-cacciatore.jpg",
-   "wikipedia": "Chicken cacciatore"
+   "file": "chicken-cacciatore-dish.jpg",
+   "source": "commons-file",
+   "match": "dish",
+   "commonsFile": "2024-07-13 Chicken Cacciatore 1.jpg"
   }
  },
  {
@@ -7024,8 +7158,10 @@
    "classic"
   ],
   "image": {
-   "file": "saltimbocca.jpg",
-   "wikipedia": "Saltimbocca"
+   "file": "chicken-saltimbocca.jpg",
+   "source": "commons-file",
+   "match": "dish",
+   "commonsFile": "Chicken saltimbocca.jpg"
   }
  },
  {
@@ -7132,8 +7268,10 @@
    "sunday"
   ],
   "image": {
-   "file": "eggplant-parmesan.jpg",
-   "wikipedia": "Eggplant parmesan"
+   "file": "eggplant-parmesan-dish.jpg",
+   "source": "commons-file",
+   "match": "dish",
+   "commonsFile": "Eggplant parmesan (20287338975).jpg"
   }
  },
  {
@@ -7248,8 +7386,10 @@
    "classic"
   ],
   "image": {
-   "file": "osso-buco.jpg",
-   "wikipedia": "Ossobuco"
+   "file": "osso-buco-dish.jpg",
+   "source": "commons-file",
+   "match": "dish",
+   "commonsFile": "Osso buco, Breckenheim.jpg"
   }
  },
  {
@@ -7367,6 +7507,8 @@
   ],
   "image": {
    "file": "braciole.jpg",
+   "source": "wikipedia-lead",
+   "match": "representative",
    "wikipedia": "Braciole"
   }
  },
@@ -7467,8 +7609,10 @@
    "weekend"
   ],
   "image": {
-   "file": "porchetta.jpg",
-   "wikipedia": "Porchetta"
+   "file": "porchetta-dish.jpg",
+   "source": "commons-file",
+   "match": "dish",
+   "commonsFile": "Porchetta (3168207946).jpg"
   }
  },
  {
@@ -7570,8 +7714,10 @@
    "game-day"
   ],
   "image": {
-   "file": "sausage-peppers.jpg",
-   "wikipedia": "Italian sausage"
+   "file": "sausage-and-peppers-dish.jpg",
+   "source": "commons-file",
+   "match": "dish",
+   "commonsFile": "Sausage and peppers.jpg"
   }
  },
  {
@@ -7683,6 +7829,8 @@
   ],
   "image": {
    "file": "meatballs-al-forno.jpg",
+   "source": "wikipedia-lead",
+   "match": "representative",
    "wikipedia": "Meatball"
   }
  },
@@ -7788,8 +7936,10 @@
    "weeknight"
   ],
   "image": {
-   "file": "chicken-francese.jpg",
-   "wikipedia": "Schnitzel"
+   "file": "chicken-francese-dish.jpg",
+   "source": "commons-file",
+   "match": "dish",
+   "commonsFile": "Chicken Francese Meal Prep.jpg"
   }
  },
  {
@@ -7893,6 +8043,8 @@
   ],
   "image": {
    "file": "branzino.jpg",
+   "source": "wikipedia-lead",
+   "match": "representative",
    "wikipedia": "European seabass"
   }
  },
@@ -7998,8 +8150,10 @@
    "date-night"
   ],
   "image": {
-   "file": "fra-diavolo.jpg",
-   "wikipedia": "Fra diavolo sauce"
+   "file": "shrimp-fra-diavolo.jpg",
+   "source": "commons-file",
+   "match": "dish",
+   "commonsFile": "Shrimp Fra Diavolo.jpg"
   }
  },
  {
@@ -8126,8 +8280,10 @@
    "christmas"
   ],
   "image": {
-   "file": "cioppino.jpg",
-   "wikipedia": "Cioppino"
+   "file": "cioppino-dish.jpg",
+   "source": "commons-file",
+   "match": "dish",
+   "commonsFile": "Cioppino.jpg"
   }
  },
  {
@@ -8245,6 +8401,8 @@
   ],
   "image": {
    "file": "italian-wedding-soup.jpg",
+   "source": "wikipedia-lead",
+   "match": "representative",
    "wikipedia": "Italian wedding soup"
   }
  },
@@ -8354,6 +8512,8 @@
   ],
   "image": {
    "file": "chicken-milanese.jpg",
+   "source": "wikipedia-lead",
+   "match": "representative",
    "wikipedia": "Milanesa"
   }
  },
@@ -8457,6 +8617,8 @@
   ],
   "image": {
    "file": "pork-vinegar-peppers.jpg",
+   "source": "wikipedia-lead",
+   "match": "representative",
    "wikipedia": "Pork chop"
   }
  },
@@ -8568,8 +8730,10 @@
    "winter"
   ],
   "image": {
-   "file": "salsiccia-fagioli.jpg",
-   "wikipedia": "Italian sausage"
+   "file": "salsiccia-e-fagioli.jpg",
+   "source": "commons-file",
+   "match": "dish",
+   "commonsFile": "Salsiccia e fagioli.jpg"
   }
  },
  {
@@ -8671,8 +8835,10 @@
    "leftovers"
   ],
   "image": {
-   "file": "meatball-sub.jpg",
-   "wikipedia": "Meatball sandwich"
+   "file": "meatball-sub-dish.jpg",
+   "source": "commons-file",
+   "match": "dish",
+   "commonsFile": "Meatball Sub.jpg"
   }
  },
  {
@@ -8785,8 +8951,10 @@
    "make-ahead"
   ],
   "image": {
-   "file": "italian-sub.jpg",
-   "wikipedia": "Submarine sandwich"
+   "file": "italian-sub-dish.jpg",
+   "source": "commons-file",
+   "match": "dish",
+   "commonsFile": "Italian sub.jpg"
   }
  },
  {
@@ -8895,6 +9063,8 @@
   ],
   "image": {
    "file": "chicken-parm-sandwich.jpg",
+   "source": "wikipedia-lead",
+   "match": "representative",
    "wikipedia": "Chicken parmigiana"
   }
  },
@@ -9012,8 +9182,10 @@
    "sharing"
   ],
   "image": {
-   "file": "muffuletta.jpg",
-   "wikipedia": "Muffuletta"
+   "file": "muffuletta-dish.jpg",
+   "source": "commons-file",
+   "match": "dish",
+   "commonsFile": "Muffuletta in Quarters.jpg"
   }
  },
  {
@@ -9118,8 +9290,10 @@
    "no-bake"
   ],
   "image": {
-   "file": "tiramisu.jpg",
-   "wikipedia": "Tiramisu"
+   "file": "tiramisu-dish.jpg",
+   "source": "commons-file",
+   "match": "dish",
+   "commonsFile": "Tiramisu dessert.jpg"
   }
  },
  {
@@ -9215,8 +9389,10 @@
    "no-bake"
   ],
   "image": {
-   "file": "panna-cotta.jpg",
-   "wikipedia": "Panna cotta"
+   "file": "panna-cotta-dish.jpg",
+   "source": "commons-file",
+   "match": "dish",
+   "commonsFile": "Panna Cotta (353420626).jpg"
   }
  },
  {
@@ -9333,8 +9509,10 @@
    "vegetarian"
   ],
   "image": {
-   "file": "cannoli.jpg",
-   "wikipedia": "Cannoli"
+   "file": "cannoli-dish.jpg",
+   "source": "commons-file",
+   "match": "dish",
+   "commonsFile": "Cannoli in a box.jpg"
   }
  },
  {
@@ -9422,8 +9600,10 @@
    "no-bake"
   ],
   "image": {
-   "file": "affogato.jpg",
-   "wikipedia": "Affogato"
+   "file": "affogato-dish.jpg",
+   "source": "commons-file",
+   "match": "dish",
+   "commonsFile": "Affogato.JPG"
   }
  },
  {
@@ -9513,6 +9693,8 @@
   ],
   "image": {
    "file": "granita.jpg",
+   "source": "wikipedia-lead",
+   "match": "representative",
    "wikipedia": "Granita"
   }
  },
@@ -9614,8 +9796,10 @@
    "baking"
   ],
   "image": {
-   "file": "biscotti.jpg",
-   "wikipedia": "Biscotti"
+   "file": "biscotti-dish.jpg",
+   "source": "commons-file",
+   "match": "dish",
+   "commonsFile": "Almond Anise Biscotti (140491131).jpeg"
   }
  },
  {
@@ -9710,8 +9894,10 @@
    "sharing"
   ],
   "image": {
-   "file": "zeppole.jpg",
-   "wikipedia": "Zeppole"
+   "file": "zeppole-dish.jpg",
+   "source": "commons-file",
+   "match": "dish",
+   "commonsFile": "Zeppole (5906312247).jpg"
   }
  },
  {
@@ -9812,6 +9998,8 @@
   ],
   "image": {
    "file": "ricotta-cheesecake.jpg",
+   "source": "wikipedia-lead",
+   "match": "representative",
    "wikipedia": "Cheesecake"
   }
  },
@@ -9915,6 +10103,8 @@
   ],
   "image": {
    "file": "olive-oil-cake.jpg",
+   "source": "wikipedia-lead",
+   "match": "representative",
    "wikipedia": "Cake"
   }
  },
@@ -10028,8 +10218,10 @@
    "special-occasion"
   ],
   "image": {
-   "file": "panettone.jpg",
-   "wikipedia": "Panettone"
+   "file": "panettone-dish.jpg",
+   "source": "commons-file",
+   "match": "dish",
+   "commonsFile": "Panettone mascarpone.jpg"
   }
  },
  {
@@ -10128,8 +10320,10 @@
    "budget"
   ],
   "image": {
-   "file": "pizzelle.jpg",
-   "wikipedia": "Pizzelle"
+   "file": "pizzelle-dish.jpg",
+   "source": "commons-file",
+   "match": "dish",
+   "commonsFile": "Pizzelle love.jpg"
   }
  },
  {
@@ -10220,8 +10414,10 @@
    "classic"
   ],
   "image": {
-   "file": "zabaglione.jpg",
-   "wikipedia": "Zabaione"
+   "file": "zabaglione-dish.jpg",
+   "source": "commons-file",
+   "match": "dish",
+   "commonsFile": "Zabaglione 2021.jpg"
   }
  },
  {
@@ -10325,8 +10521,10 @@
    "baking"
   ],
   "image": {
-   "file": "torta-caprese.jpg",
-   "wikipedia": "Torta caprese"
+   "file": "torta-caprese-dish.jpg",
+   "source": "commons-file",
+   "match": "dish",
+   "commonsFile": "Torta Caprese.jpg"
   }
  },
  {
@@ -10416,8 +10614,10 @@
    "vegan"
   ],
   "image": {
-   "file": "aperol-spritz.jpg",
-   "wikipedia": "Spritz Veneziano"
+   "file": "aperol-spritz-dish.jpg",
+   "source": "commons-file",
+   "match": "dish",
+   "commonsFile": "Aperol Spritz 2014a.jpg"
   }
  }
 ]

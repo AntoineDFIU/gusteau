@@ -115,6 +115,8 @@
   ],
   "image": {
    "file": "roast-turkey.jpg",
+   "source": "wikipedia-lead",
+   "match": "representative",
    "wikipedia": "Roast turkey"
   }
  },
@@ -231,8 +233,10 @@
    "make-ahead"
   ],
   "image": {
-   "file": "macaroni-and-cheese.jpg",
-   "wikipedia": "Macaroni and cheese"
+   "file": "ab-baked-macaroni-and-cheese.jpg",
+   "source": "commons-file",
+   "match": "dish",
+   "commonsFile": "Baked macaroni and cheese.jpg"
   }
  },
  {
@@ -333,8 +337,10 @@
    "quick"
   ],
   "image": {
-   "file": "biscuits-and-gravy.jpg",
-   "wikipedia": "Biscuit (bread)"
+   "file": "ab-buttermilk-biscuits.jpg",
+   "source": "commons-file",
+   "match": "dish",
+   "commonsFile": "Buttermilk biscuit.jpg"
   }
  },
  {
@@ -445,6 +451,8 @@
   ],
   "image": {
    "file": "chocolate-chip-cookie.jpg",
+   "source": "wikipedia-lead",
+   "match": "representative",
    "wikipedia": "Chocolate chip cookie"
   }
  },
@@ -539,8 +547,10 @@
    "quick"
   ],
   "image": {
-   "file": "ribeye-steak.jpg",
-   "wikipedia": "Rib eye steak"
+   "file": "ab-pan-seared-ribeye.jpg",
+   "source": "commons-file",
+   "match": "dish",
+   "commonsFile": "Rib eye steak - 400 gr.JPG"
   }
  },
  {
@@ -645,6 +655,8 @@
   ],
   "image": {
    "file": "glazed-ham.jpg",
+   "source": "wikipedia-lead",
+   "match": "representative",
    "wikipedia": "Ham"
   }
  },
@@ -735,6 +747,8 @@
   ],
   "image": {
    "file": "deviled-eggs.jpg",
+   "source": "wikipedia-lead",
+   "match": "representative",
    "wikipedia": "Boiled egg"
   }
  },
@@ -854,8 +868,10 @@
    "entertaining"
   ],
   "image": {
-   "file": "french-onion-soup.jpg",
-   "wikipedia": "French onion soup"
+   "file": "ab-french-onion-soup.jpg",
+   "source": "commons-file",
+   "match": "dish",
+   "commonsFile": "French Onion Soup..JPG"
   }
  },
  {
@@ -957,8 +973,10 @@
    "low-carb"
   ],
   "image": {
-   "file": "chicken-stock.jpg",
-   "wikipedia": "Stock (food)"
+   "file": "ab-chicken-stock.jpg",
+   "source": "commons-file",
+   "match": "dish",
+   "commonsFile": "Chicken Stock.jpg"
   }
  },
  {
@@ -1063,6 +1081,8 @@
   ],
   "image": {
    "file": "waffle.jpg",
+   "source": "wikipedia-lead",
+   "match": "representative",
    "wikipedia": "Waffle"
   }
  },
@@ -1168,6 +1188,8 @@
   ],
   "image": {
    "file": "oatmeal.jpg",
+   "source": "wikipedia-lead",
+   "match": "representative",
    "wikipedia": "Steel-cut oats"
   }
  },
@@ -1265,8 +1287,10 @@
    "movie-night"
   ],
   "image": {
-   "file": "popcorn.jpg",
-   "wikipedia": "Popcorn"
+   "file": "ab-stovetop-popcorn.jpg",
+   "source": "commons-file",
+   "match": "dish",
+   "commonsFile": "Stovetop popcorn in Revere Ware.jpg"
   }
  },
  {
@@ -1372,8 +1396,10 @@
    "budget"
   ],
   "image": {
-   "file": "brownie.jpg",
-   "wikipedia": "Chocolate brownie"
+   "file": "ab-chewy-brownies.jpg",
+   "source": "commons-file",
+   "match": "dish",
+   "commonsFile": "Cocoa Avocado Brownies, June 2010.jpg"
   }
  },
  {
@@ -1473,6 +1499,8 @@
   ],
   "image": {
    "file": "pizza-dough.jpg",
+   "source": "wikipedia-lead",
+   "match": "representative",
    "wikipedia": "Pizza"
   }
  },
@@ -1580,6 +1608,8 @@
   ],
   "image": {
    "file": "salmon-fillet.jpg",
+   "source": "wikipedia-lead",
+   "match": "representative",
    "wikipedia": "Salmon as food"
   }
  },
@@ -1708,6 +1738,8 @@
   ],
   "image": {
    "file": "chili-con-carne.jpg",
+   "source": "wikipedia-lead",
+   "match": "representative",
    "wikipedia": "Chili con carne"
   }
  },
@@ -1810,8 +1842,10 @@
    "project"
   ],
   "image": {
-   "file": "prime-rib.jpg",
-   "wikipedia": "Standing rib roast"
+   "file": "ab-standing-rib-roast.jpg",
+   "source": "commons-file",
+   "match": "dish",
+   "commonsFile": "Standing-rib-roast.jpg"
   }
  },
  {
@@ -1907,6 +1941,8 @@
   ],
   "image": {
    "file": "baked-potato.jpg",
+   "source": "wikipedia-lead",
+   "match": "representative",
    "wikipedia": "Baked potato"
   }
  },
@@ -2000,8 +2036,10 @@
    "healthy"
   ],
   "image": {
-   "file": "sauerkraut.jpg",
-   "wikipedia": "Choucroute garnie"
+   "file": "ab-sauerkraut.jpg",
+   "source": "commons-file",
+   "match": "dish",
+   "commonsFile": "Homemade Sauerkraut.jpg"
   }
  },
  {
@@ -2115,8 +2153,10 @@
    "budget"
   ],
   "image": {
-   "file": "granola.jpg",
-   "wikipedia": "Granola"
+   "file": "ab-granola.jpg",
+   "source": "commons-file",
+   "match": "dish",
+   "commonsFile": "Granola and Yogurt.jpg"
   }
  },
  {
@@ -2222,8 +2262,10 @@
    "easy"
   ],
   "image": {
-   "file": "dutch-baby.jpg",
-   "wikipedia": "Dutch baby pancake"
+   "file": "ab-dutch-baby.jpg",
+   "source": "commons-file",
+   "match": "dish",
+   "commonsFile": "2-22-2025 Dutch baby pancake (10 of 12).jpg"
   }
  },
  {
@@ -2326,6 +2368,8 @@
   ],
   "image": {
    "file": "vanilla-ice-cream.jpg",
+   "source": "wikipedia-lead",
+   "match": "representative",
    "wikipedia": "Ice cream"
   }
  },
@@ -2421,8 +2465,10 @@
    "no-cook"
   ],
   "image": {
-   "file": "cold-brew.jpg",
-   "wikipedia": "Cold brew coffee"
+   "file": "ab-cold-brew-coffee.jpg",
+   "source": "commons-file",
+   "match": "dish",
+   "commonsFile": "Cold Brew Coffee.jpg"
   }
  },
  {
@@ -2529,8 +2575,10 @@
    "camping"
   ],
   "image": {
-   "file": "beef-jerky.jpg",
-   "wikipedia": "Jerky"
+   "file": "ab-beef-jerky.jpg",
+   "source": "commons-file",
+   "match": "dish",
+   "commonsFile": "Beef jerky, 2007.jpg"
   }
  },
  {
@@ -2637,8 +2685,10 @@
    "budget"
   ],
   "image": {
-   "file": "chocolate-pudding.jpg",
-   "wikipedia": "Chocolate pudding"
+   "file": "ab-chocolate-pudding.jpg",
+   "source": "commons-file",
+   "match": "dish",
+   "commonsFile": "Chocolate Pudding 2.jpg"
   }
  }
 ]

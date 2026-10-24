@@ -107,6 +107,8 @@
   ],
   "image": {
    "file": "chicken-parmesan.jpg",
+   "source": "wikipedia-lead",
+   "match": "representative",
    "wikipedia": "Chicken parmigiana"
   }
  },
@@ -215,6 +217,8 @@
   ],
   "image": {
    "file": "penne-alla-vodka.jpg",
+   "source": "wikipedia-lead",
+   "match": "representative",
    "wikipedia": "Pasta alla vodka"
   }
  },
@@ -334,6 +338,8 @@
   ],
   "image": {
    "file": "chili-con-carne.jpg",
+   "source": "wikipedia-lead",
+   "match": "representative",
    "wikipedia": "Chili con carne"
   }
  },
@@ -454,6 +460,8 @@
   ],
   "image": {
    "file": "sloppy-joe.jpg",
+   "source": "wikipedia-lead",
+   "match": "representative",
    "wikipedia": "Sloppy joe"
   }
  },
@@ -560,6 +568,8 @@
   ],
   "image": {
    "file": "carbonara.jpg",
+   "source": "wikipedia-lead",
+   "match": "representative",
    "wikipedia": "Carbonara"
   }
  },
@@ -679,8 +689,10 @@
    "italian"
   ],
   "image": {
-   "file": "rigatoni.jpg",
-   "wikipedia": "Chicken riggies"
+   "file": "rr-chicken-riggies.jpg",
+   "source": "commons-file",
+   "match": "dish",
+   "commonsFile": "Chicken Riggies.jpg"
   }
  },
  {
@@ -797,6 +809,8 @@
   ],
   "image": {
    "file": "hamburger.jpg",
+   "source": "wikipedia-lead",
+   "match": "representative",
    "wikipedia": "Hamburger"
   }
  },
@@ -915,6 +929,8 @@
   ],
   "image": {
    "file": "chicken-soup.jpg",
+   "source": "wikipedia-lead",
+   "match": "representative",
    "wikipedia": "Chicken soup"
   }
  },
@@ -1030,8 +1046,10 @@
    "30-minute"
   ],
   "image": {
-   "file": "macaroni-and-cheese.jpg",
-   "wikipedia": "Macaroni and cheese"
+   "file": "rr-cauliflower-mac.jpg",
+   "source": "commons-file",
+   "match": "dish",
+   "commonsFile": "Mac-and-Cheese-Style Cauliflower (6670008457).jpg"
   }
  },
  {
@@ -1149,6 +1167,8 @@
   ],
   "image": {
    "file": "bolognese.jpg",
+   "source": "wikipedia-lead",
+   "match": "representative",
    "wikipedia": "Bolognese sauce"
   }
  },
@@ -1260,8 +1280,10 @@
    "italian"
   ],
   "image": {
-   "file": "chicken-piccata.jpg",
-   "wikipedia": "Piccata"
+   "file": "rr-chicken-piccata.jpg",
+   "source": "commons-file",
+   "match": "dish",
+   "commonsFile": "Chicken Piccata (6408123327).jpg"
   }
  },
  {
@@ -1378,8 +1400,10 @@
    "high-protein"
   ],
   "image": {
-   "file": "meatball-sub.jpg",
-   "wikipedia": "Meatball sandwich"
+   "file": "rr-meatball-subs.jpg",
+   "source": "commons-file",
+   "match": "dish",
+   "commonsFile": "Meatball Sub.jpg"
   }
  },
  {
@@ -1490,6 +1514,8 @@
   ],
   "image": {
    "file": "strip-steak.jpg",
+   "source": "wikipedia-lead",
+   "match": "representative",
    "wikipedia": "Strip steak"
   }
  },
@@ -1616,6 +1642,8 @@
   ],
   "image": {
    "file": "italian-wedding-soup.jpg",
+   "source": "wikipedia-lead",
+   "match": "representative",
    "wikipedia": "Italian wedding soup"
   }
  },
@@ -1729,6 +1757,8 @@
   ],
   "image": {
    "file": "sausage-peppers.jpg",
+   "source": "wikipedia-lead",
+   "match": "representative",
    "wikipedia": "Italian sausage"
   }
  },
@@ -1848,6 +1878,8 @@
   ],
   "image": {
    "file": "cheesesteak.jpg",
+   "source": "wikipedia-lead",
+   "match": "representative",
    "wikipedia": "Cheesesteak"
   }
  },
@@ -1958,8 +1990,10 @@
    "weekend"
   ],
   "image": {
-   "file": "pepperoni-pizza.jpg",
-   "wikipedia": "Pizza"
+   "file": "rr-grilled-pizza.jpg",
+   "source": "commons-file",
+   "match": "dish",
+   "commonsFile": "Grilled pizza 2.jpg"
   }
  },
  {
@@ -2078,6 +2112,8 @@
   ],
   "image": {
    "file": "italian-pasta-salad.jpg",
+   "source": "wikipedia-lead",
+   "match": "representative",
    "wikipedia": "Pasta salad"
   }
  },
@@ -2195,6 +2231,8 @@
   ],
   "image": {
    "file": "salsiccia-fagioli.jpg",
+   "source": "wikipedia-lead",
+   "match": "representative",
    "wikipedia": "Cannellini bean"
   }
  },
@@ -2307,8 +2345,10 @@
    "date-night"
   ],
   "image": {
-   "file": "fra-diavolo.jpg",
-   "wikipedia": "Fra diavolo sauce"
+   "file": "rr-shrimp-fra-diavolo.jpg",
+   "source": "commons-file",
+   "match": "dish",
+   "commonsFile": "Shrimp Fra Diavolo.jpg"
   }
  },
  {
@@ -2421,6 +2461,8 @@
   ],
   "image": {
    "file": "pork-chop.jpg",
+   "source": "wikipedia-lead",
+   "match": "representative",
    "wikipedia": "Pork chop"
   }
  },
@@ -2537,6 +2579,8 @@
   ],
   "image": {
    "file": "hamburger.jpg",
+   "source": "wikipedia-lead",
+   "match": "representative",
    "wikipedia": "Hamburger"
   }
  },
@@ -2654,6 +2698,8 @@
   ],
   "image": {
    "file": "baked-ziti.jpg",
+   "source": "wikipedia-lead",
+   "match": "representative",
    "wikipedia": "Baked ziti"
   }
  },
@@ -2776,6 +2822,8 @@
   ],
   "image": {
    "file": "chicken-and-dumplings.jpg",
+   "source": "wikipedia-lead",
+   "match": "representative",
    "wikipedia": "Chicken and dumplings"
   }
  },
@@ -2886,6 +2934,8 @@
   ],
   "image": {
    "file": "ricotta-toast.jpg",
+   "source": "wikipedia-lead",
+   "match": "representative",
    "wikipedia": "Ricotta"
   }
  }

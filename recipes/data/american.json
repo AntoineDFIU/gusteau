@@ -94,8 +94,10 @@
    "comfort"
   ],
   "image": {
-   "file": "cheeseburger.jpg",
-   "wikipedia": "Cheeseburger"
+   "file": "classic-cheeseburger.jpg",
+   "source": "commons-file",
+   "match": "dish",
+   "commonsFile": "Classic double cheeseburger.jpg"
   }
  },
  {
@@ -192,8 +194,10 @@
    "comfort"
   ],
   "image": {
-   "file": "hamburger.jpg",
-   "wikipedia": "Hamburger"
+   "file": "smash-burgers.jpg",
+   "source": "commons-file",
+   "match": "dish",
+   "commonsFile": "Smash burger - Cambridge, MA.jpg"
   }
  },
  {
@@ -293,8 +297,10 @@
    "kid-friendly"
   ],
   "image": {
-   "file": "cheeseburger.jpg",
-   "wikipedia": "Cheeseburger"
+   "file": "bacon-cheeseburger.jpg",
+   "source": "commons-file",
+   "match": "dish",
+   "commonsFile": "Bacon Cheeseburger on plate.JPG"
   }
  },
  {
@@ -388,8 +394,10 @@
    "leftovers"
   ],
   "image": {
-   "file": "patty-melt.jpg",
-   "wikipedia": "Patty melt"
+   "file": "patty-melt-dish.jpg",
+   "source": "commons-file",
+   "match": "dish",
+   "commonsFile": "Patty Melt.jpg"
   }
  },
  {
@@ -479,8 +487,10 @@
    "comfort"
   ],
   "image": {
-   "file": "juicy-lucy.jpg",
-   "wikipedia": "Jucy Lucy"
+   "file": "juicy-lucy-dish.jpg",
+   "source": "commons-file",
+   "match": "dish",
+   "commonsFile": "Juicy lucy (5161158231).jpg"
   }
  },
  {
@@ -574,8 +584,10 @@
    "comfort"
   ],
   "image": {
-   "file": "hamburger.jpg",
-   "wikipedia": "Hamburger"
+   "file": "mushroom-swiss-burger.jpg",
+   "source": "commons-file",
+   "match": "dish",
+   "commonsFile": "Mushroom Swiss burger on an onion roll.jpg"
   }
  },
  {
@@ -675,8 +687,10 @@
    "meal-prep"
   ],
   "image": {
-   "file": "hamburger.jpg",
-   "wikipedia": "Hamburger"
+   "file": "turkey-burgers.jpg",
+   "source": "commons-file",
+   "match": "dish",
+   "commonsFile": "Turkey Burger.jpg"
   }
  },
  {
@@ -777,8 +791,10 @@
    "weeknight"
   ],
   "image": {
-   "file": "veggie-burger.jpg",
-   "wikipedia": "Veggie burger"
+   "file": "black-bean-burgers.jpg",
+   "source": "commons-file",
+   "match": "dish",
+   "commonsFile": "Black Bean Burgers (140363379).jpeg"
   }
  },
  {
@@ -873,6 +889,8 @@
   ],
   "image": {
    "file": "hamburger.jpg",
+   "source": "wikipedia-lead",
+   "match": "representative",
    "wikipedia": "Hamburger"
   }
  },
@@ -972,8 +990,10 @@
    "leftovers"
   ],
   "image": {
-   "file": "sloppy-joe.jpg",
-   "wikipedia": "Sloppy joe"
+   "file": "sloppy-joes.jpg",
+   "source": "commons-file",
+   "match": "dish",
+   "commonsFile": "Sloppy Joes Key West.jpg"
   }
  },
  {
@@ -1072,6 +1092,8 @@
   ],
   "image": {
    "file": "chili-dog.jpg",
+   "source": "wikipedia-lead",
+   "match": "representative",
    "wikipedia": "Chili dog"
   }
  },
@@ -1168,8 +1190,10 @@
    "budget"
   ],
   "image": {
-   "file": "pigs-in-a-blanket.jpg",
-   "wikipedia": "Pigs in a blanket"
+   "file": "pigs-in-a-blanket-dish.jpg",
+   "source": "commons-file",
+   "match": "dish",
+   "commonsFile": "Pigs in Blankets (11630904144).jpg"
   }
  },
  {
@@ -1261,6 +1285,8 @@
   ],
   "image": {
    "file": "ribeye-steak.jpg",
+   "source": "wikipedia-lead",
+   "match": "representative",
    "wikipedia": "Rib eye steak"
   }
  },
@@ -1351,6 +1377,8 @@
   ],
   "image": {
    "file": "sirloin-steak.jpg",
+   "source": "wikipedia-lead",
+   "match": "representative",
    "wikipedia": "Sirloin steak"
   }
  },
@@ -1439,8 +1467,10 @@
    "date-night"
   ],
   "image": {
-   "file": "t-bone-steak.jpg",
-   "wikipedia": "T-bone steak"
+   "file": "grilled-t-bone-steak.jpg",
+   "source": "commons-file",
+   "match": "dish",
+   "commonsFile": "T-Bone Steak (9417094937).jpg"
   }
  },
  {
@@ -1533,6 +1563,8 @@
   ],
   "image": {
    "file": "filet-mignon.jpg",
+   "source": "wikipedia-lead",
+   "match": "representative",
    "wikipedia": "Filet mignon"
   }
  },
@@ -1631,8 +1663,10 @@
    "special-occasion"
   ],
   "image": {
-   "file": "steak-au-poivre.jpg",
-   "wikipedia": "Steak au poivre"
+   "file": "steak-au-poivre-dish.jpg",
+   "source": "commons-file",
+   "match": "dish",
+   "commonsFile": "Steak Au Poivre.jpg"
   }
  },
  {
@@ -1728,6 +1762,8 @@
   ],
   "image": {
    "file": "flank-steak.jpg",
+   "source": "wikipedia-lead",
+   "match": "representative",
    "wikipedia": "Flank steak"
   }
  },
@@ -1829,8 +1865,10 @@
    "leftovers"
   ],
   "image": {
-   "file": "salisbury-steak.jpg",
-   "wikipedia": "Salisbury steak"
+   "file": "salisbury-steak-dish.jpg",
+   "source": "commons-file",
+   "match": "dish",
+   "commonsFile": "Salisbury Steak.jpg"
   }
  },
  {
@@ -1929,8 +1967,10 @@
    "high-protein"
   ],
   "image": {
-   "file": "chicken-fried-steak.jpg",
-   "wikipedia": "Chicken fried steak"
+   "file": "chicken-fried-steak-dish.jpg",
+   "source": "commons-file",
+   "match": "dish",
+   "commonsFile": "Chicken Fried Steak.jpg"
   }
  },
  {
@@ -2025,8 +2065,10 @@
    "game-day"
   ],
   "image": {
-   "file": "cheesesteak.jpg",
-   "wikipedia": "Cheesesteak"
+   "file": "philly-cheesesteak.jpg",
+   "source": "commons-file",
+   "match": "dish",
+   "commonsFile": "Philly Cheesesteak.jpg"
   }
  },
  {
@@ -2114,8 +2156,10 @@
    "gluten-free"
   ],
   "image": {
-   "file": "steak-and-eggs.jpg",
-   "wikipedia": "Steak and eggs"
+   "file": "steak-and-eggs-dish.jpg",
+   "source": "commons-file",
+   "match": "dish",
+   "commonsFile": "\"Steak and Eggs\".jpg"
   }
  },
  {
@@ -2219,6 +2263,8 @@
   ],
   "image": {
    "file": "pulled-pork.jpg",
+   "source": "wikipedia-lead",
+   "match": "representative",
    "wikipedia": "Pulled pork"
   }
  },
@@ -2318,8 +2364,10 @@
    "make-ahead"
   ],
   "image": {
-   "file": "pork-ribs.jpg",
-   "wikipedia": "Pork ribs"
+   "file": "oven-baby-back-ribs.jpg",
+   "source": "commons-file",
+   "match": "dish",
+   "commonsFile": "Baby back ribs - hickory smoked.jpg"
   }
  },
  {
@@ -2412,6 +2460,8 @@
   ],
   "image": {
    "file": "barbecue-chicken.jpg",
+   "source": "wikipedia-lead",
+   "match": "representative",
    "wikipedia": "Barbecue chicken"
   }
  },
@@ -2499,8 +2549,10 @@
    "project"
   ],
   "image": {
-   "file": "brisket.jpg",
-   "wikipedia": "Brisket"
+   "file": "smoked-beef-brisket.jpg",
+   "source": "commons-file",
+   "match": "dish",
+   "commonsFile": "Beef Brisket Udon 2026-10-08.jpg"
   }
  },
  {
@@ -2602,6 +2654,8 @@
   ],
   "image": {
    "file": "meatloaf.jpg",
+   "source": "wikipedia-lead",
+   "match": "representative",
    "wikipedia": "Meatloaf"
   }
  },
@@ -2688,8 +2742,10 @@
    "budget"
   ],
   "image": {
-   "file": "corn-on-the-cob.jpg",
-   "wikipedia": "Corn on the cob"
+   "file": "grilled-corn-on-the-cob.jpg",
+   "source": "commons-file",
+   "match": "dish",
+   "commonsFile": "Grilled Corn on the cob.JPG"
   }
  },
  {
@@ -2787,8 +2843,10 @@
    "dairy-free"
   ],
   "image": {
-   "file": "baked-beans.jpg",
-   "wikipedia": "Baked beans"
+   "file": "baked-beans-dish.jpg",
+   "source": "commons-file",
+   "match": "dish",
+   "commonsFile": "Homemade baked beans.jpg"
   }
  },
  {
@@ -2883,6 +2941,8 @@
   ],
   "image": {
    "file": "coleslaw.jpg",
+   "source": "wikipedia-lead",
+   "match": "representative",
    "wikipedia": "Coleslaw"
   }
  },
@@ -2981,8 +3041,10 @@
    "party"
   ],
   "image": {
-   "file": "potato-salad.jpg",
-   "wikipedia": "Potato salad"
+   "file": "classic-potato-salad.jpg",
+   "source": "commons-file",
+   "match": "dish",
+   "commonsFile": "Potato salad-2.jpg"
   }
  },
  {
@@ -3086,8 +3148,10 @@
    "make-ahead"
   ],
   "image": {
-   "file": "macaroni-and-cheese.jpg",
-   "wikipedia": "Macaroni and cheese"
+   "file": "baked-mac-and-cheese.jpg",
+   "source": "commons-file",
+   "match": "dish",
+   "commonsFile": "Homemade Mac & Cheese (436029123).jpg"
   }
  },
  {
@@ -3184,8 +3248,10 @@
    "southern"
   ],
   "image": {
-   "file": "cornbread.jpg",
-   "wikipedia": "Cornbread"
+   "file": "skillet-cornbread.jpg",
+   "source": "commons-file",
+   "match": "dish",
+   "commonsFile": "Cornbread in Skillet.jpg"
   }
  },
  {
@@ -3284,8 +3350,10 @@
    "gluten-free"
   ],
   "image": {
-   "file": "buffalo-wings.jpg",
-   "wikipedia": "Buffalo wing"
+   "file": "buffalo-wings-dish.jpg",
+   "source": "commons-file",
+   "match": "dish",
+   "commonsFile": "Buffalo Wings (6676460575).jpg"
   }
  },
  {
@@ -3382,8 +3450,10 @@
    "party"
   ],
   "image": {
-   "file": "beer-can-chicken.jpg",
-   "wikipedia": "Beer can chicken"
+   "file": "beer-can-chicken-dish.jpg",
+   "source": "commons-file",
+   "match": "dish",
+   "commonsFile": "Beer can chicken.jpg"
   }
  },
  {
@@ -3480,6 +3550,8 @@
   ],
   "image": {
    "file": "pancakes.jpg",
+   "source": "wikipedia-lead",
+   "match": "representative",
    "wikipedia": "Pancake"
   }
  },
@@ -3573,8 +3645,10 @@
    "kid-friendly"
   ],
   "image": {
-   "file": "waffle.jpg",
-   "wikipedia": "Waffle"
+   "file": "belgian-waffles.jpg",
+   "source": "commons-file",
+   "match": "dish",
+   "commonsFile": "Belgian Waffles, RR Nagar (2024).jpg"
   }
  },
  {
@@ -3673,8 +3747,10 @@
    "leftovers"
   ],
   "image": {
-   "file": "french-toast.jpg",
-   "wikipedia": "French toast"
+   "file": "french-toast-dish.jpg",
+   "source": "commons-file",
+   "match": "dish",
+   "commonsFile": "French toast 001.jpg"
   }
  },
  {
@@ -3772,8 +3848,10 @@
    "weekend"
   ],
   "image": {
-   "file": "biscuits-and-gravy.jpg",
-   "wikipedia": "Biscuits and gravy"
+   "file": "biscuits-and-sausage-gravy.jpg",
+   "source": "commons-file",
+   "match": "dish",
+   "commonsFile": "Biscuits and sausage gravy (6340833792).jpg"
   }
  },
  {
@@ -3859,8 +3937,10 @@
    "quick"
   ],
   "image": {
-   "file": "hash-browns.jpg",
-   "wikipedia": "Hash browns"
+   "file": "crispy-hash-browns.jpg",
+   "source": "commons-file",
+   "match": "dish",
+   "commonsFile": "Hash Browns.jpg"
   }
  },
  {
@@ -3957,8 +4037,10 @@
    "dairy-free"
   ],
   "image": {
-   "file": "corned-beef-hash.jpg",
-   "wikipedia": "Corned beef hash"
+   "file": "corned-beef-hash-dish.jpg",
+   "source": "commons-file",
+   "match": "dish",
+   "commonsFile": "Corned beef hash (2511208070).jpg"
   }
  },
  {
@@ -4049,6 +4131,8 @@
   ],
   "image": {
    "file": "omelette.jpg",
+   "source": "wikipedia-lead",
+   "match": "representative",
    "wikipedia": "Omelette"
   }
  },
@@ -4150,8 +4234,10 @@
    "high-protein"
   ],
   "image": {
-   "file": "eggs-benedict.jpg",
-   "wikipedia": "Eggs Benedict"
+   "file": "eggs-benedict-dish.jpg",
+   "source": "commons-file",
+   "match": "dish",
+   "commonsFile": "Eggs Benedict 2.jpg"
   }
  },
  {
@@ -4245,8 +4331,10 @@
    "meal-prep"
   ],
   "image": {
-   "file": "breakfast-sandwich.jpg",
-   "wikipedia": "Breakfast sandwich"
+   "file": "breakfast-sandwich-dish.jpg",
+   "source": "commons-file",
+   "match": "dish",
+   "commonsFile": "Egg and cheese breakfast sandwich.jpg"
   }
  },
  {
@@ -4352,8 +4440,10 @@
    "project"
   ],
   "image": {
-   "file": "fried-chicken.jpg",
-   "wikipedia": "Fried chicken"
+   "file": "southern-fried-chicken.jpg",
+   "source": "commons-file",
+   "match": "dish",
+   "commonsFile": "Southern Fried Chicken (17571213826).jpg"
   }
  },
  {
@@ -4452,8 +4542,10 @@
    "meal-prep"
   ],
   "image": {
-   "file": "chicken-fingers.jpg",
-   "wikipedia": "Chicken fingers"
+   "file": "chicken-tenders.jpg",
+   "source": "commons-file",
+   "match": "dish",
+   "commonsFile": "Chicken tenders (8884884960).jpg"
   }
  },
  {
@@ -4559,8 +4651,10 @@
    "spicy"
   ],
   "image": {
-   "file": "chicken-and-waffles.jpg",
-   "wikipedia": "Chicken and waffles"
+   "file": "chicken-and-waffles-dish.jpg",
+   "source": "commons-file",
+   "match": "dish",
+   "commonsFile": "Fried Chicken and Waffles (16629138330).jpg"
   }
  },
  {
@@ -4654,8 +4748,10 @@
    "classic"
   ],
   "image": {
-   "file": "club-sandwich.jpg",
-   "wikipedia": "Club sandwich"
+   "file": "club-sandwich-dish.jpg",
+   "source": "commons-file",
+   "match": "dish",
+   "commonsFile": "Club Sandwich 2015.jpg"
   }
  },
  {
@@ -4745,6 +4841,8 @@
   ],
   "image": {
    "file": "blt.jpg",
+   "source": "wikipedia-lead",
+   "match": "representative",
    "wikipedia": "BLT"
   }
  },
@@ -4833,8 +4931,10 @@
    "lunch"
   ],
   "image": {
-   "file": "grilled-cheese.jpg",
-   "wikipedia": "Cheese sandwich"
+   "file": "grilled-cheese-dish.jpg",
+   "source": "commons-file",
+   "match": "dish",
+   "commonsFile": "Grilled Cheese (5408562313).jpg"
   }
  },
  {
@@ -4934,8 +5034,10 @@
    "pantry"
   ],
   "image": {
-   "file": "tuna-melt.jpg",
-   "wikipedia": "Tuna fish sandwich"
+   "file": "tuna-melt-dish.jpg",
+   "source": "commons-file",
+   "match": "dish",
+   "commonsFile": "Tuna Melt 2.jpg"
   }
  },
  {
@@ -5033,6 +5135,8 @@
   ],
   "image": {
    "file": "reuben-sandwich.jpg",
+   "source": "wikipedia-lead",
+   "match": "representative",
    "wikipedia": "Reuben sandwich"
   }
  },
@@ -5129,8 +5233,10 @@
    "weeknight"
   ],
   "image": {
-   "file": "french-dip.jpg",
-   "wikipedia": "French dip"
+   "file": "french-dip-dish.jpg",
+   "source": "commons-file",
+   "match": "dish",
+   "commonsFile": "French Dip - 2442821376.jpg"
   }
  },
  {
@@ -5239,6 +5345,8 @@
   ],
   "image": {
    "file": "pot-roast.jpg",
+   "source": "wikipedia-lead",
+   "match": "representative",
    "wikipedia": "Pot roast"
   }
  },
@@ -5348,8 +5456,10 @@
    "winter"
   ],
   "image": {
-   "file": "beef-stew.jpg",
-   "wikipedia": "Beef stew"
+   "file": "beef-stew-dish.jpg",
+   "source": "commons-file",
+   "match": "dish",
+   "commonsFile": "Beef stew (13499700243).jpg"
   }
  },
  {
@@ -5457,8 +5567,10 @@
    "winter"
   ],
   "image": {
-   "file": "chicken-pot-pie.jpg",
-   "wikipedia": "Chicken pot pie"
+   "file": "chicken-pot-pie-dish.jpg",
+   "source": "commons-file",
+   "match": "dish",
+   "commonsFile": "191-365 Chicken Pot Pie.jpg"
   }
  },
  {
@@ -5566,8 +5678,10 @@
    "winter"
   ],
   "image": {
-   "file": "shepherds-pie.jpg",
-   "wikipedia": "Shepherd's pie"
+   "file": "shepherds-pie-dish.jpg",
+   "source": "commons-file",
+   "match": "dish",
+   "commonsFile": "Shepherd's Pie (8227698373).jpg"
   }
  },
  {
@@ -5675,8 +5789,10 @@
    "spicy"
   ],
   "image": {
-   "file": "chili-con-carne.jpg",
-   "wikipedia": "Chili con carne"
+   "file": "beef-chili.jpg",
+   "source": "commons-file",
+   "match": "dish",
+   "commonsFile": "Roast beef chili.jpg"
   }
  },
  {
@@ -5778,8 +5894,10 @@
    "seafood"
   ],
   "image": {
-   "file": "clam-chowder.jpg",
-   "wikipedia": "Clam chowder"
+   "file": "new-england-clam-chowder.jpg",
+   "source": "commons-file",
+   "match": "dish",
+   "commonsFile": "New England-style clam chowder (22848857879).jpg"
   }
  },
  {
@@ -5876,8 +5994,10 @@
    "winter"
   ],
   "image": {
-   "file": "tomato-soup.jpg",
-   "wikipedia": "Tomato soup"
+   "file": "creamy-tomato-soup.jpg",
+   "source": "commons-file",
+   "match": "dish",
+   "commonsFile": "Creamy Tomato Soup (140491229).jpeg"
   }
  },
  {
@@ -5985,8 +6105,10 @@
    "kid-friendly"
   ],
   "image": {
-   "file": "chicken-soup.jpg",
-   "wikipedia": "Chicken soup"
+   "file": "chicken-noodle-soup.jpg",
+   "source": "commons-file",
+   "match": "dish",
+   "commonsFile": "Chicken Noodle Soup.jpg"
   }
  },
  {
@@ -6075,8 +6197,10 @@
    "thanksgiving"
   ],
   "image": {
-   "file": "mashed-potato.jpg",
-   "wikipedia": "Mashed potato"
+   "file": "creamy-mashed-potatoes.jpg",
+   "source": "commons-file",
+   "match": "dish",
+   "commonsFile": "Mashed potatoes 27.jpg"
   }
  },
  {
@@ -6163,8 +6287,10 @@
    "kid-friendly"
   ],
   "image": {
-   "file": "french-fries.jpg",
-   "wikipedia": "French fries"
+   "file": "oven-french-fries.jpg",
+   "source": "commons-file",
+   "match": "dish",
+   "commonsFile": "French fries (52156666292).jpg"
   }
  },
  {
@@ -6256,8 +6382,10 @@
    "game-day"
   ],
   "image": {
-   "file": "onion-ring.jpg",
-   "wikipedia": "Onion ring"
+   "file": "beer-battered-onion-rings.jpg",
+   "source": "commons-file",
+   "match": "dish",
+   "commonsFile": "Beer Battered Onion Rings (4957953795).jpg"
   }
  },
  {
@@ -6348,8 +6476,10 @@
    "make-ahead"
   ],
   "image": {
-   "file": "potato-skins.jpg",
-   "wikipedia": "Potato skins"
+   "file": "loaded-potato-skins.jpg",
+   "source": "commons-file",
+   "match": "dish",
+   "commonsFile": "Potato Skins (3890820039).jpg"
   }
  },
  {
@@ -6439,8 +6569,10 @@
    "budget"
   ],
   "image": {
-   "file": "deviled-eggs.jpg",
-   "wikipedia": "Deviled egg"
+   "file": "deviled-eggs-dish.jpg",
+   "source": "commons-file",
+   "match": "dish",
+   "commonsFile": "Deviled Eggs (6665206207).jpg"
   }
  },
  {
@@ -6543,8 +6675,10 @@
    "no-cook"
   ],
   "image": {
-   "file": "cobb-salad.jpg",
-   "wikipedia": "Cobb salad"
+   "file": "cobb-salad-dish.jpg",
+   "source": "commons-file",
+   "match": "dish",
+   "commonsFile": "Cobb salad, 15 October 2010.jpg"
   }
  },
  {
@@ -6649,8 +6783,10 @@
    "restaurant-style"
   ],
   "image": {
-   "file": "caesar-salad.jpg",
-   "wikipedia": "Caesar salad"
+   "file": "caesar-salad-dish.jpg",
+   "source": "commons-file",
+   "match": "dish",
+   "commonsFile": "A Caesar salad.jpg"
   }
  },
  {
@@ -6750,8 +6886,10 @@
    "family"
   ],
   "image": {
-   "file": "green-bean-casserole.jpg",
-   "wikipedia": "Green bean casserole"
+   "file": "green-bean-casserole-dish.jpg",
+   "source": "commons-file",
+   "match": "dish",
+   "commonsFile": "Green bean casserole.jpg"
   }
  },
  {
@@ -6852,8 +6990,10 @@
    "family"
   ],
   "image": {
-   "file": "roast-turkey.jpg",
-   "wikipedia": "Roast turkey"
+   "file": "roast-turkey-dish.jpg",
+   "source": "commons-file",
+   "match": "dish",
+   "commonsFile": "2021 roast turkey.jpg"
   }
  },
  {
@@ -6948,8 +7088,10 @@
    "leftovers"
   ],
   "image": {
-   "file": "glazed-ham.jpg",
-   "wikipedia": "Ham"
+   "file": "honey-glazed-ham.jpg",
+   "source": "commons-file",
+   "match": "dish",
+   "commonsFile": "Honey-glazed ham.jpg"
   }
  },
  {
@@ -7051,8 +7193,10 @@
    "budget"
   ],
   "image": {
-   "file": "corn-dog.jpg",
-   "wikipedia": "Corn dog"
+   "file": "corn-dogs.jpg",
+   "source": "commons-file",
+   "match": "dish",
+   "commonsFile": "Corn dog 001.jpg"
   }
  },
  {
@@ -7152,8 +7296,10 @@
    "high-protein"
   ],
   "image": {
-   "file": "lobster-roll.jpg",
-   "wikipedia": "Lobster roll"
+   "file": "lobster-roll-dish.jpg",
+   "source": "commons-file",
+   "match": "dish",
+   "commonsFile": "Lobster roll (3692349983).jpg"
   }
  },
  {
@@ -7257,6 +7403,8 @@
   ],
   "image": {
    "file": "crab-cake.jpg",
+   "source": "wikipedia-lead",
+   "match": "representative",
    "wikipedia": "Crab cake"
   }
  },
@@ -7363,8 +7511,10 @@
    "spicy"
   ],
   "image": {
-   "file": "shrimp-and-grits.jpg",
-   "wikipedia": "Shrimp and grits"
+   "file": "shrimp-and-grits-dish.jpg",
+   "source": "commons-file",
+   "match": "dish",
+   "commonsFile": "Shrimp and Grits (Մանրախեցգետին եգիպտացորենի ձավարով).jpg"
   }
  },
  {
@@ -7471,8 +7621,10 @@
    "classic"
   ],
   "image": {
-   "file": "apple-pie.jpg",
-   "wikipedia": "Apple pie"
+   "file": "apple-pie-dish.jpg",
+   "source": "commons-file",
+   "match": "dish",
+   "commonsFile": "Apple pie 24.jpg"
   }
  },
  {
@@ -7573,8 +7725,10 @@
    "classic"
   ],
   "image": {
-   "file": "chocolate-chip-cookie.jpg",
-   "wikipedia": "Chocolate chip cookie"
+   "file": "chocolate-chip-cookies.jpg",
+   "source": "commons-file",
+   "match": "dish",
+   "commonsFile": "Chocolate chip cookies (2).jpg"
   }
  },
  {
@@ -7674,6 +7828,8 @@
   ],
   "image": {
    "file": "brownie.jpg",
+   "source": "wikipedia-lead",
+   "match": "representative",
    "wikipedia": "Chocolate brownie"
   }
  },
@@ -7774,8 +7930,10 @@
    "make-ahead"
   ],
   "image": {
-   "file": "pecan-pie.jpg",
-   "wikipedia": "Pecan pie"
+   "file": "pecan-pie-dish.jpg",
+   "source": "commons-file",
+   "match": "dish",
+   "commonsFile": "Pecan Pie - 2056170252.jpg"
   }
  },
  {
@@ -7880,8 +8038,10 @@
    "budget"
   ],
   "image": {
-   "file": "pumpkin-pie.jpg",
-   "wikipedia": "Pumpkin pie"
+   "file": "pumpkin-pie-dish.jpg",
+   "source": "commons-file",
+   "match": "dish",
+   "commonsFile": "Pumpkin Pie.jpg"
   }
  },
  {
@@ -7982,8 +8142,10 @@
    "party"
   ],
   "image": {
-   "file": "cheesecake.jpg",
-   "wikipedia": "Cheesecake"
+   "file": "new-york-cheesecake.jpg",
+   "source": "commons-file",
+   "match": "dish",
+   "commonsFile": "New York-style cheesecake 1 2019-10-13.jpg"
   }
  },
  {
@@ -8094,8 +8256,10 @@
    "easter"
   ],
   "image": {
-   "file": "carrot-cake.jpg",
-   "wikipedia": "Carrot cake"
+   "file": "carrot-cake-dish.jpg",
+   "source": "commons-file",
+   "match": "dish",
+   "commonsFile": "Carrot Cake 01.jpg"
   }
  },
  {
@@ -8190,8 +8354,10 @@
    "leftovers"
   ],
   "image": {
-   "file": "banana-bread.jpg",
-   "wikipedia": "Banana bread"
+   "file": "banana-bread-dish.jpg",
+   "source": "commons-file",
+   "match": "dish",
+   "commonsFile": "Banana bread 2.jpg"
   }
  },
  {
@@ -8277,8 +8443,10 @@
    "gluten-free"
   ],
   "image": {
-   "file": "milkshake.jpg",
-   "wikipedia": "Milkshake"
+   "file": "vanilla-milkshake.jpg",
+   "source": "commons-file",
+   "match": "dish",
+   "commonsFile": "Vanilla milkshake.jpg"
   }
  },
  {
@@ -8365,8 +8533,10 @@
    "party"
   ],
   "image": {
-   "file": "smore.jpg",
-   "wikipedia": "S'more"
+   "file": "smores.jpg",
+   "source": "commons-file",
+   "match": "dish",
+   "commonsFile": "S'mores with Venessa. (7374949200).jpg"
   }
  },
  {
@@ -8469,8 +8639,10 @@
    "gluten-free"
   ],
   "image": {
-   "file": "banana-split.jpg",
-   "wikipedia": "Banana split"
+   "file": "banana-split-dish.jpg",
+   "source": "commons-file",
+   "match": "dish",
+   "commonsFile": "Banana Split 02.jpg"
   }
  },
  {
@@ -8579,8 +8751,10 @@
    "leftovers"
   ],
   "image": {
-   "file": "jambalaya.jpg",
-   "wikipedia": "Jambalaya"
+   "file": "jambalaya-dish.jpg",
+   "source": "commons-file",
+   "match": "dish",
+   "commonsFile": "Jambalaya (30750226186).jpg"
   }
  },
  {
@@ -8690,8 +8864,10 @@
    "leftovers"
   ],
   "image": {
-   "file": "gumbo.jpg",
-   "wikipedia": "Gumbo"
+   "file": "chicken-and-sausage-gumbo.jpg",
+   "source": "commons-file",
+   "match": "dish",
+   "commonsFile": "Chicken and Sausage Gumbo.jpg"
   }
  },
  {
@@ -8796,8 +8972,10 @@
    "party"
   ],
   "image": {
-   "file": "fried-green-tomatoes.jpg",
-   "wikipedia": "Fried green tomatoes"
+   "file": "fried-green-tomatoes-dish.jpg",
+   "source": "commons-file",
+   "match": "dish",
+   "commonsFile": "Fried green tomatoes.jpg"
   }
  },
  {
@@ -8898,8 +9076,10 @@
    "budget"
   ],
   "image": {
-   "file": "hushpuppy.jpg",
-   "wikipedia": "Hushpuppy"
+   "file": "hush-puppies.jpg",
+   "source": "commons-file",
+   "match": "dish",
+   "commonsFile": "Hush Puppies.jpg"
   }
  },
  {
@@ -8997,6 +9177,8 @@
   ],
   "image": {
    "file": "collard-greens.jpg",
+   "source": "wikipedia-lead",
+   "match": "representative",
    "wikipedia": "Collard (plant)"
   }
  },
@@ -9091,8 +9273,10 @@
    "high-fiber"
   ],
   "image": {
-   "file": "succotash.jpg",
-   "wikipedia": "Succotash"
+   "file": "succotash-dish.jpg",
+   "source": "commons-file",
+   "match": "dish",
+   "commonsFile": "Succotash.jpg"
   }
  },
  {
@@ -9188,6 +9372,8 @@
   ],
   "image": {
    "file": "potatoes-au-gratin.jpg",
+   "source": "wikipedia-lead",
+   "match": "representative",
    "wikipedia": "Potatoes au gratin"
   }
  },
@@ -9285,8 +9471,10 @@
    "make-ahead"
   ],
   "image": {
-   "file": "pimento-cheese.jpg",
-   "wikipedia": "Pimento cheese"
+   "file": "pimento-cheese-dish.jpg",
+   "source": "commons-file",
+   "match": "dish",
+   "commonsFile": "Pimento cheese.jpg"
   }
  },
  {
@@ -9380,8 +9568,10 @@
    "make-ahead"
   ],
   "image": {
-   "file": "egg-salad.jpg",
-   "wikipedia": "Egg salad"
+   "file": "egg-salad-sandwich.jpg",
+   "source": "commons-file",
+   "match": "dish",
+   "commonsFile": "Egg Salad Sandwich.jpg"
   }
  },
  {
@@ -9482,8 +9672,10 @@
    "make-ahead"
   ],
   "image": {
-   "file": "chicken-salad.jpg",
-   "wikipedia": "Chicken salad"
+   "file": "chicken-salad-sandwich.jpg",
+   "source": "commons-file",
+   "match": "dish",
+   "commonsFile": "Chicken salad sandwich 01.jpg"
   }
  },
  {
@@ -9578,8 +9770,10 @@
    "classic"
   ],
   "image": {
-   "file": "roast-chicken.jpg",
-   "wikipedia": "Roast chicken"
+   "file": "roast-chicken-dish.jpg",
+   "source": "commons-file",
+   "match": "dish",
+   "commonsFile": "Simple roast chicken シンプルなレシピのローストチキン.jpg"
   }
  },
  {
@@ -9672,8 +9866,10 @@
    "dairy-free"
   ],
   "image": {
-   "file": "pork-chop.jpg",
-   "wikipedia": "Pork chop"
+   "file": "grilled-pork-chops-dish.jpg",
+   "source": "commons-file",
+   "match": "dish",
+   "commonsFile": "Grilled pork chops.jpg"
   }
  },
  {
@@ -9779,8 +9975,10 @@
    "leftovers"
   ],
   "image": {
-   "file": "hotdish.jpg",
-   "wikipedia": "Hotdish"
+   "file": "tater-tot-hotdish.jpg",
+   "source": "commons-file",
+   "match": "dish",
+   "commonsFile": "Tater tot hotdish 8286689740 o.jpg"
   }
  },
  {
@@ -9878,8 +10076,10 @@
    "spicy"
   ],
   "image": {
-   "file": "chicago-hot-dog.jpg",
-   "wikipedia": "Chicago-style hot dog"
+   "file": "chicago-style-hot-dog.jpg",
+   "source": "commons-file",
+   "match": "dish",
+   "commonsFile": "Chicago-style Hot Dog.jpg"
   }
  }
 ]

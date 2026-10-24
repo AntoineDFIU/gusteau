@@ -107,8 +107,10 @@
    "technique"
   ],
   "image": {
-   "file": "fried-chicken.jpg",
-   "wikipedia": "Fried chicken"
+   "file": "pd-southern-fried-chicken.jpg",
+   "source": "commons-file",
+   "match": "dish",
+   "commonsFile": "Southern Fried Chicken (17571213826).jpg"
   }
  },
  {
@@ -218,6 +220,8 @@
   ],
   "image": {
    "file": "hoecakes.jpg",
+   "source": "wikipedia-lead",
+   "match": "representative",
    "wikipedia": "Hoecake"
   }
  },
@@ -328,8 +332,10 @@
    "baking"
   ],
   "image": {
-   "file": "gooey-butter-cake.jpg",
-   "wikipedia": "Gooey butter cake"
+   "file": "pd-gooey-butter-cake.jpg",
+   "source": "commons-file",
+   "match": "dish",
+   "commonsFile": "182365 Gooey Butter Cake.jpg"
   }
  },
  {
@@ -442,6 +448,8 @@
   ],
   "image": {
    "file": "banana-pudding.jpg",
+   "source": "wikipedia-lead",
+   "match": "representative",
    "wikipedia": "Banana pudding"
   }
  },
@@ -554,6 +562,8 @@
   ],
   "image": {
    "file": "squash-casserole.jpg",
+   "source": "wikipedia-lead",
+   "match": "representative",
    "wikipedia": "Casserole"
   }
  },
@@ -657,6 +667,8 @@
   ],
   "image": {
    "file": "green-beans.jpg",
+   "source": "wikipedia-lead",
+   "match": "representative",
    "wikipedia": "Green bean"
   }
  },
@@ -773,6 +785,8 @@
   ],
   "image": {
    "file": "sweet-potato-casserole.jpg",
+   "source": "wikipedia-lead",
+   "match": "representative",
    "wikipedia": "Sweet potato casserole"
   }
  },
@@ -883,8 +897,10 @@
    "budget"
   ],
   "image": {
-   "file": "chess-pie.jpg",
-   "wikipedia": "Chess pie"
+   "file": "pd-chess-pie.jpg",
+   "source": "commons-file",
+   "match": "dish",
+   "commonsFile": "Baked chess pie.jpg"
   }
  },
  {
@@ -1010,6 +1026,8 @@
   ],
   "image": {
    "file": "red-velvet-cake.jpg",
+   "source": "wikipedia-lead",
+   "match": "representative",
    "wikipedia": "Red velvet cake"
   }
  },
@@ -1126,8 +1144,10 @@
    "high-protein"
   ],
   "image": {
-   "file": "low-country-boil.jpg",
-   "wikipedia": "Frogmore stew"
+   "file": "pd-low-country-boil.jpg",
+   "source": "commons-file",
+   "match": "dish",
+   "commonsFile": "Low country boil.jpg"
   }
  },
  {
@@ -1248,6 +1268,8 @@
   ],
   "image": {
    "file": "crab-dip.jpg",
+   "source": "wikipedia-lead",
+   "match": "representative",
    "wikipedia": "Crab dip"
   }
  },
@@ -1361,6 +1383,8 @@
   ],
   "image": {
    "file": "smothered-chicken.jpg",
+   "source": "wikipedia-lead",
+   "match": "representative",
    "wikipedia": "Smothered"
   }
  },
@@ -1478,6 +1502,8 @@
   ],
   "image": {
    "file": "cornbread-dressing.jpg",
+   "source": "wikipedia-lead",
+   "match": "representative",
    "wikipedia": "Stuffing"
   }
  },
@@ -1585,6 +1611,8 @@
   ],
   "image": {
    "file": "okra-tomatoes.jpg",
+   "source": "wikipedia-lead",
+   "match": "representative",
    "wikipedia": "Okra"
   }
  },
@@ -1684,8 +1712,10 @@
    "technique"
   ],
   "image": {
-   "file": "sweet-tea.jpg",
-   "wikipedia": "Sweet tea"
+   "file": "pd-sweet-tea.jpg",
+   "source": "commons-file",
+   "match": "dish",
+   "commonsFile": "Southern Sweet Tea (14888897979).jpg"
   }
  },
  {
@@ -1804,8 +1834,10 @@
    "potluck"
   ],
   "image": {
-   "file": "hummingbird-cake.jpg",
-   "wikipedia": "Hummingbird cake"
+   "file": "pd-hummingbird-cake.jpg",
+   "source": "commons-file",
+   "match": "dish",
+   "commonsFile": "Hummingbird cake.jpg"
   }
  },
  {
@@ -1916,8 +1948,10 @@
    "budget"
   ],
   "image": {
-   "file": "fried-okra.jpg",
-   "wikipedia": "Okra"
+   "file": "pd-fried-okra.jpg",
+   "source": "commons-file",
+   "match": "dish",
+   "commonsFile": "Fried okra.jpg"
   }
  },
  {
@@ -2039,6 +2073,8 @@
   ],
   "image": {
    "file": "crab-bisque.jpg",
+   "source": "wikipedia-lead",
+   "match": "representative",
    "wikipedia": "She-crab soup"
   }
  },
@@ -2142,8 +2178,10 @@
    "easy"
   ],
   "image": {
-   "file": "country-ham.jpg",
-   "wikipedia": "Red-eye gravy"
+   "file": "pd-country-ham-red-eye-gravy.jpg",
+   "source": "commons-file",
+   "match": "dish",
+   "commonsFile": "Country Red-Eye Gravy with Vegetarian Ham.jpg"
   }
  },
  {
@@ -2255,8 +2293,10 @@
    "classic"
   ],
   "image": {
-   "file": "butter-beans.jpg",
-   "wikipedia": "Lima bean"
+   "file": "pd-butter-beans.jpg",
+   "source": "commons-file",
+   "match": "dish",
+   "commonsFile": "Ham & butter beans (122092545).jpg"
   }
  },
  {
@@ -2365,8 +2405,10 @@
    "make-ahead"
   ],
   "image": {
-   "file": "buttermilk-pie.jpg",
-   "wikipedia": "Buttermilk pie"
+   "file": "pd-buttermilk-pie.jpg",
+   "source": "commons-file",
+   "match": "dish",
+   "commonsFile": "Buttermilk Pie.jpg"
   }
  },
  {
@@ -2467,8 +2509,10 @@
    "sharing"
   ],
   "image": {
-   "file": "cheese-straws.jpg",
-   "wikipedia": "Cheese straw"
+   "file": "pd-cheese-straws.jpg",
+   "source": "commons-file",
+   "match": "dish",
+   "commonsFile": "Cheese straws (78098634).jpg"
   }
  },
  {
@@ -2578,8 +2622,10 @@
    "party"
   ],
   "image": {
-   "file": "caramel-cake.jpg",
-   "wikipedia": "Butter cake"
+   "file": "pd-caramel-cake.jpg",
+   "source": "commons-file",
+   "match": "dish",
+   "commonsFile": "Caramel Cake.jpg"
   }
  },
  {
@@ -2688,8 +2734,10 @@
    "entertaining"
   ],
   "image": {
-   "file": "tomato-pie.jpg",
-   "wikipedia": "Tomato"
+   "file": "pd-tomato-pie.jpg",
+   "source": "commons-file",
+   "match": "dish",
+   "commonsFile": "The Tomato Pie.jpg"
   }
  },
  {
@@ -2793,6 +2841,8 @@
   ],
   "image": {
    "file": "sausage-balls.jpg",
+   "source": "wikipedia-lead",
+   "match": "representative",
    "wikipedia": "Meatball"
   }
  }

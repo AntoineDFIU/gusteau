@@ -1,301 +1,2863 @@
 [
-{"id":"ch-rd-001","slug":"rd-chicken-fried-steak","title":"Chicken Fried Steak","genre":"american","subgenre":"comfort","chef":{"name":"Ree Drummond","slug":"ree-drummond"},"description":"Cube steak in a craggy crust under black pepper cream gravy.","difficulty":"intermediate","easeScore":6,"spiceScore":3,"popularity":8,"pantryScore":8,"servings":4,"prepMin":20,"cookMin":30,"totalMin":50,"equipment":["stovetop"],
-"ingredients":["4 cube steaks (6 oz each)","2 cups all-purpose flour","2 tsp seasoned salt","2 tsp black pepper","1 tsp cayenne pepper","1 tsp paprika","2 eggs","1 1/2 cups whole milk","2 cups canola oil, for frying","1/4 cup all-purpose flour, for the gravy","2 1/2 cups whole milk, for the gravy","1 1/2 tsp salt","2 tsp black pepper, for the gravy"],
-"ingredientKeys":["cube-steak","flour","seasoned-salt","black-pepper","cayenne","paprika","egg","whole-milk","canola-oil","flour","whole-milk","salt","black-pepper"],
-"specialty":["cube-steak","seasoned-salt"],
-"steps":["Mix the 2 cups flour with the seasoned salt, pepper, cayenne and paprika in one dish. Beat the eggs with 1 1/2 cups milk in another.","Dredge each steak in the flour, then the egg mixture, then back into the flour, pressing hard. The double flour coating is what gives you the shaggy crust.","Rest the breaded steaks on a rack 10 minutes so the coating hydrates and grips.","Heat an inch of oil to 350F. Too cool and they turn greasy, too hot and the crust burns before the meat cooks.","Fry two at a time, 3-4 minutes per side, until deep golden. Drain on a rack, not paper towels, so the undersides stay crisp.","Pour off all but 1/4 cup of the oil, whisk in the 1/4 cup flour and cook 2 minutes, then add the 2 1/2 cups milk slowly and simmer 5 minutes. Season heavily with black pepper and pour over the steaks."],
-"diet":{"vegetarian":false,"vegan":false,"pescatarian":false,"glutenFree":false,"glutenFreeAdaptable":false,"dairyFree":false,"nutFree":true,"eggFree":false},
-"allergens":["gluten","dairy","egg"],
-"gmo":{"risk":"high","sources":["grain-fed-meat","seed-oil","grain-fed-dairy"]},
-"nutrition":{"calories":882,"proteinG":52,"carbsG":62,"fiberG":3,"sugarG":12,"fatG":44,"satFatG":13,"sodiumMg":1680,"cholesterolMg":248},
-"tags":["comfort","family","southern","high-protein","weekend","classic"],
-"image":{"file":"chicken-fried-steak.jpg","wikipedia":"Chicken fried steak"}},
-
-{"id":"ch-rd-002","slug":"rd-marlboro-man-sandwich","title":"Marlboro Man Sandwich","genre":"american","subgenre":"sandwiches","chef":{"name":"Ree Drummond","slug":"ree-drummond"},"description":"Thin-sliced sirloin and onions in Worcestershire butter on a crusty roll.","difficulty":"beginner","easeScore":10,"spiceScore":2,"popularity":8,"pantryScore":9,"servings":4,"prepMin":15,"cookMin":20,"totalMin":35,"equipment":["stovetop"],
-"ingredients":["1 1/2 lb sirloin steak, very thinly sliced","6 tbsp butter","2 yellow onions, thinly sliced","3 tbsp Worcestershire sauce","1 tsp seasoned salt","1 tsp black pepper","1/2 tsp red pepper flakes","4 kaiser rolls","4 slices provolone"],
-"ingredientKeys":["sirloin-steak","butter","yellow-onion","worcestershire","seasoned-salt","black-pepper","red-pepper-flakes","kaiser-roll","provolone"],
-"specialty":["seasoned-salt","kaiser-roll"],
-"steps":["Freeze the steak for 20-30 minutes until firm, then slice it as thinly as you can. Partial freezing is the only way to get thin slices without a deli slicer.","Cook the onions in 3 tbsp butter over medium-high 10 minutes until soft and browned at the edges, then move them to a plate.","Melt the remaining butter in the same pan and add the Worcestershire, seasoned salt, pepper and pepper flakes.","Add the beef in a single layer over high heat and cook just 60-90 seconds, tossing. Thin-sliced sirloin goes from tender to grey and tough in seconds.","Return the onions and toss everything together in the butter sauce.","Pile onto split rolls, top with provolone, and spoon the pan butter over. Serve immediately."],
-"diet":{"vegetarian":false,"vegan":false,"pescatarian":false,"glutenFree":false,"glutenFreeAdaptable":true,"dairyFree":false,"nutFree":true,"eggFree":true},
-"allergens":["gluten","dairy","fish"],
-"gmo":{"risk":"moderate","sources":["grain-fed-meat","processed-bread","grain-fed-dairy","processed-sauce"]},
-"nutrition":{"calories":782,"proteinG":52,"carbsG":42,"fiberG":3,"sugarG":9,"fatG":44,"satFatG":22,"sodiumMg":1480,"cholesterolMg":178},
-"tags":["quick","weeknight","family","comfort","high-protein","easy","one-pan"],
-"image":{"file":"cheesesteak.jpg","wikipedia":"Steak sandwich"}},
-
-{"id":"ch-rd-003","slug":"rd-cinnamon-rolls","title":"Cinnamon Rolls with Maple Icing","genre":"american","subgenre":"desserts","chef":{"name":"Ree Drummond","slug":"ree-drummond"},"description":"A big batch of soft rolls under a thin maple coffee glaze.","difficulty":"advanced","easeScore":4,"spiceScore":0,"popularity":9,"pantryScore":8,"servings":24,"prepMin":60,"cookMin":180,"totalMin":240,"equipment":["oven","stovetop"],
-"ingredients":["4 cups whole milk","1 cup vegetable oil","1 cup sugar","2 1/4 tsp active dry yeast","8 cups all-purpose flour","1 tsp baking powder","1 tsp baking soda","2 tsp salt","1 1/2 cups butter, melted","2 cups packed brown sugar","1/4 cup ground cinnamon","4 cups powdered sugar","1/2 cup whole milk, for the icing","1/4 cup brewed coffee","1/3 cup maple syrup","1/4 tsp salt, for the icing"],
-"ingredientKeys":["whole-milk","vegetable-oil","sugar","active-dry-yeast","flour","baking-powder","baking-soda","salt","butter","brown-sugar","cinnamon","powdered-sugar","whole-milk","brewed-coffee","maple-syrup","salt"],
-"specialty":["active-dry-yeast","maple-syrup"],
-"steps":["Heat the 4 cups milk, oil and sugar to just below a simmer, then cool to lukewarm - hotter than that kills the yeast. Sprinkle the yeast over and let it sit 10 minutes until foamy.","Stir in 7 cups of the flour, cover, and let it rise 1 hour until doubled.","Add the last cup of flour with the baking powder, baking soda and salt and stir in. The dough will be soft and sticky; resist adding more flour or the rolls turn dense.","Roll half the dough into a large rectangle, pour over half the melted butter, then scatter half the brown sugar and cinnamon. Roll up tightly from the long side and cut into 1-inch slices. Repeat with the rest.","Set the slices cut-side up in buttered pans, leaving space between, and rise 30 minutes.","Bake at 375F for 20-25 minutes until golden. Whisk the icing ingredients into a thin glaze and pour it over the rolls while they are still hot so it soaks in."],
-"diet":{"vegetarian":true,"vegan":false,"pescatarian":true,"glutenFree":false,"glutenFreeAdaptable":false,"dairyFree":false,"nutFree":true,"eggFree":true},
-"allergens":["gluten","dairy"],
-"gmo":{"risk":"high","sources":["seed-oil","sugar-beet","grain-fed-dairy"]},
-"nutrition":{"calories":586,"proteinG":7,"carbsG":92,"fiberG":2,"sugarG":58,"fatG":22,"satFatG":10,"sodiumMg":320,"cholesterolMg":38},
-"tags":["dessert","breakfast","baking","project","party","crowd-pleaser","holiday","make-ahead"],
-"image":{"file":"cinnamon-roll.jpg","wikipedia":"Cinnamon roll"}},
-
-{"id":"ch-rd-004","slug":"rd-chicken-spaghetti","title":"Chicken Spaghetti","genre":"american","subgenre":"comfort","chef":{"name":"Ree Drummond","slug":"ree-drummond"},"description":"A baked spaghetti casserole with chicken, peppers and plenty of cheese.","difficulty":"beginner","easeScore":10,"spiceScore":3,"popularity":8,"pantryScore":9,"servings":8,"prepMin":25,"cookMin":45,"totalMin":70,"equipment":["stovetop","oven"],
-"ingredients":["1 lb spaghetti, broken in half","4 cups shredded cooked chicken","2 cans (10.5 oz each) condensed cream of mushroom soup","2 cups reserved chicken broth","1 green bell pepper, diced","1 yellow onion, diced","1 jar (4 oz) diced pimentos, drained","1 tbsp seasoned salt","2 tsp black pepper","1/2 tsp cayenne pepper","4 cups shredded sharp cheddar","1/2 cup chopped parsley"],
-"ingredientKeys":["spaghetti","cooked-chicken","cream-of-mushroom-soup","chicken-broth","green-bell-pepper","yellow-onion","pimentos","seasoned-salt","black-pepper","cayenne","cheddar","parsley"],
-"specialty":["cream-of-mushroom-soup","pimentos","seasoned-salt"],
-"steps":["Boil the broken spaghetti 2 minutes short of the package time and drain. It absorbs liquid in the oven, so undercooking now prevents mush later.","Stir the soup, broth, bell pepper, onion, pimentos, seasoned salt, pepper and cayenne together in a large bowl.","Fold in the chicken, the drained spaghetti and half the cheddar.","Pour into a buttered 9x13 dish and spread level.","Scatter the rest of the cheddar over the top.","Bake at 350F for 40-45 minutes until bubbling at the edges and browned on top. Rest 10 minutes and finish with parsley."],
-"diet":{"vegetarian":false,"vegan":false,"pescatarian":false,"glutenFree":false,"glutenFreeAdaptable":false,"dairyFree":false,"nutFree":true,"eggFree":true},
-"allergens":["gluten","dairy","soy"],
-"gmo":{"risk":"high","sources":["soy","processed-sauce","grain-fed-meat","grain-fed-dairy"]},
-"nutrition":{"calories":712,"proteinG":48,"carbsG":52,"fiberG":3,"sugarG":7,"fatG":34,"satFatG":17,"sodiumMg":1680,"cholesterolMg":148},
-"tags":["comfort","family","potluck","make-ahead","kid-friendly","leftovers","budget","crowd-pleaser"],
-"image":{"file":"chicken-spaghetti.jpg","wikipedia":"Casserole"}},
-
-{"id":"ch-rd-005","slug":"rd-perfect-pot-roast","title":"Perfect Pot Roast","genre":"american","subgenre":"comfort","chef":{"name":"Ree Drummond","slug":"ree-drummond"},"description":"Chuck roast braised with carrots and onions for four hours.","difficulty":"beginner","easeScore":9,"spiceScore":1,"popularity":9,"pantryScore":8,"servings":8,"prepMin":20,"cookMin":250,"totalMin":270,"equipment":["oven","stovetop"],
-"ingredients":["1 chuck roast (5 lb)","1 tbsp kosher salt","2 tsp black pepper","3 tbsp olive oil","3 yellow onions, halved","8 carrots, cut in thick chunks","1 cup dry red wine","3 cups beef broth","4 sprigs fresh rosemary","6 sprigs fresh thyme"],
-"ingredientKeys":["chuck-roast","kosher-salt","black-pepper","olive-oil","yellow-onion","carrot","red-wine","beef-broth","fresh-rosemary","fresh-thyme"],
-"specialty":["chuck-roast","red-wine","fresh-rosemary","fresh-thyme"],
-"steps":["Heat the oven to 275F. Pat the roast completely dry and season it heavily all over.","Sear the onion halves cut-side down in the oil in a Dutch oven for 2 minutes, then the carrots for 2 minutes, and set both aside.","Sear the roast hard, 4-5 minutes per side, until a deep brown crust forms on every surface. This browning is where almost all the flavor comes from, so take the time.","Pour in the wine and scrape the bottom clean, then add the broth.","Return the roast with the onions and carrots tucked around it, and lay the rosemary and thyme on top.","Cover and braise 4 to 4 1/2 hours. It is done when a fork twists in the meat with no resistance at all - if it resists, it needs another 30 minutes. Shred and serve in the juices."],
-"diet":{"vegetarian":false,"vegan":false,"pescatarian":false,"glutenFree":true,"glutenFreeAdaptable":false,"dairyFree":true,"nutFree":true,"eggFree":true},
-"allergens":["sulfites"],
-"gmo":{"risk":"moderate","sources":["grain-fed-meat"]},
-"nutrition":{"calories":682,"proteinG":58,"carbsG":16,"fiberG":4,"sugarG":8,"fatG":40,"satFatG":15,"sodiumMg":1280,"cholesterolMg":186},
-"tags":["comfort","sunday","family","gluten-free","dairy-free","make-ahead","winter","high-protein","leftovers"],
-"image":{"file":"pot-roast.jpg","wikipedia":"Pot roast"}},
-
-{"id":"ch-rd-006","slug":"rd-crash-hot-potatoes","title":"Crash Hot Potatoes","genre":"american","subgenre":"sides","chef":{"name":"Ree Drummond","slug":"ree-drummond"},"description":"Boiled potatoes smashed flat and roasted until the edges shatter.","difficulty":"beginner","easeScore":10,"spiceScore":1,"popularity":9,"pantryScore":10,"servings":6,"prepMin":10,"cookMin":50,"totalMin":60,"equipment":["stovetop","oven"],
-"ingredients":["3 lb small red potatoes","1 tbsp kosher salt, for the water","1/2 cup olive oil","2 tsp kosher salt","2 tsp black pepper","2 tbsp chopped fresh rosemary","1/4 cup chopped chives"],
-"ingredientKeys":["red-potato","kosher-salt","olive-oil","kosher-salt","black-pepper","fresh-rosemary","chives"],
-"specialty":["fresh-rosemary"],
-"steps":["Boil the whole potatoes in heavily salted water 20-25 minutes until completely tender. They must be fully soft or they will not smash.","Heat the oven to 450F and generously oil a sheet pan.","Set the drained potatoes on the pan with space between them, then press down on each with a potato masher or the bottom of a glass until it splits and flattens to about half an inch.","Drizzle generously with olive oil, getting into all the cracks, and season with salt, pepper and rosemary. The ragged edges are what crisp up, so the more broken they look the better.","Roast 20-25 minutes until deeply golden and crunchy at the edges.","Finish with chives and serve immediately."],
-"diet":{"vegetarian":true,"vegan":true,"pescatarian":true,"glutenFree":true,"glutenFreeAdaptable":false,"dairyFree":true,"nutFree":true,"eggFree":true},
-"allergens":[],
-"gmo":{"risk":"low","sources":["none"]},
-"nutrition":{"calories":312,"proteinG":5,"carbsG":38,"fiberG":4,"sugarG":2,"fatG":17,"satFatG":2,"sodiumMg":780,"cholesterolMg":0},
-"tags":["side","vegan","vegetarian","gluten-free","dairy-free","easy","family","budget","holiday"],
-"image":{"file":"roasted-potatoes.jpg","wikipedia":"Roast potatoes"}},
-
-{"id":"ch-rd-007","slug":"rd-twice-baked-potatoes","title":"Twice-Baked Potatoes","genre":"american","subgenre":"sides","chef":{"name":"Ree Drummond","slug":"ree-drummond"},"description":"Potato shells refilled with a bacon, sour cream and cheddar mash.","difficulty":"beginner","easeScore":9,"spiceScore":2,"popularity":9,"pantryScore":9,"servings":8,"prepMin":25,"cookMin":90,"totalMin":115,"equipment":["oven","stovetop"],
-"ingredients":["8 russet potatoes","2 tbsp canola oil","1 tbsp kosher salt","8 slices bacon, diced","1/2 cup butter","1 cup sour cream","1 cup whole milk, warmed","3 cups shredded sharp cheddar","1 tsp seasoned salt","1 tsp black pepper","1/2 tsp cayenne pepper","6 scallions, sliced"],
-"ingredientKeys":["russet-potato","canola-oil","kosher-salt","bacon","butter","sour-cream","whole-milk","cheddar","seasoned-salt","black-pepper","cayenne","scallion"],
-"specialty":["seasoned-salt"],
-"steps":["Rub the potatoes with oil and kosher salt and bake directly on the oven rack at 400F for 60-70 minutes, until the skins are crisp and a knife slides in easily.","Cook the bacon until crisp and reserve the fat.","Cool the potatoes 10 minutes, halve them lengthwise, and scoop the flesh into a bowl, leaving a 1/4-inch shell so they hold their shape.","Mash the flesh with the butter, sour cream, warm milk, 2 cups of the cheddar, the bacon, seasoned salt, pepper and cayenne. Do not over-mash - a few lumps are better than gluey.","Pile the filling back into the shells, mounding it high, and top with the remaining cheddar.","Bake at 400F for 20 minutes until the tops are browned and bubbling. Finish with scallions."],
-"diet":{"vegetarian":false,"vegan":false,"pescatarian":false,"glutenFree":true,"glutenFreeAdaptable":false,"dairyFree":false,"nutFree":true,"eggFree":true},
-"allergens":["dairy"],
-"gmo":{"risk":"moderate","sources":["grain-fed-meat","seed-oil","grain-fed-dairy"]},
-"nutrition":{"calories":586,"proteinG":20,"carbsG":44,"fiberG":4,"sugarG":6,"fatG":38,"satFatG":21,"sodiumMg":1080,"cholesterolMg":98},
-"tags":["side","comfort","gluten-free","make-ahead","family","holiday","party","crowd-pleaser"],
-"image":{"file":"potato-skins.jpg","wikipedia":"Twice baked potato"}},
-
-{"id":"ch-rd-008","slug":"rd-breakfast-casserole","title":"Sausage Breakfast Casserole","genre":"american","subgenre":"breakfast","chef":{"name":"Ree Drummond","slug":"ree-drummond"},"description":"An overnight egg and sausage bake you assemble the night before.","difficulty":"beginner","easeScore":10,"spiceScore":2,"popularity":9,"pantryScore":9,"servings":10,"prepMin":20,"cookMin":540,"totalMin":560,"equipment":["stovetop","oven"],
-"ingredients":["1 1/2 lb breakfast sausage","1 lb country bread, cut in cubes","12 eggs","3 cups whole milk","1 tsp mustard powder","2 tsp seasoned salt","1 tsp black pepper","1/2 tsp cayenne pepper","4 cups shredded sharp cheddar","1 red bell pepper, diced","6 scallions, sliced","3 tbsp butter"],
-"ingredientKeys":["breakfast-sausage","country-bread","egg","whole-milk","mustard-powder","seasoned-salt","black-pepper","cayenne","cheddar","red-bell-pepper","scallion","butter"],
-"specialty":["breakfast-sausage","country-bread","mustard-powder","seasoned-salt"],
-"steps":["Brown the sausage, breaking it up, and drain off the fat.","Butter a 9x13 dish and spread the bread cubes over the base, then the sausage, bell pepper and 3 cups of the cheddar.","Whisk the eggs, milk, mustard powder, seasoned salt, pepper and cayenne until completely uniform and pour it over the bread.","Press the bread down so everything is submerged, cover, and refrigerate at least 8 hours or overnight. That long soak is what turns the bread into custard instead of leaving dry cubes on top.","Take it out 30 minutes before baking and scatter the rest of the cheddar over.","Bake at 350F for 50-60 minutes until puffed, set in the center and golden. Rest 10 minutes and finish with scallions."],
-"diet":{"vegetarian":false,"vegan":false,"pescatarian":false,"glutenFree":false,"glutenFreeAdaptable":false,"dairyFree":false,"nutFree":true,"eggFree":false},
-"allergens":["gluten","dairy","egg"],
-"gmo":{"risk":"moderate","sources":["grain-fed-meat","processed-bread","grain-fed-dairy"]},
-"nutrition":{"calories":612,"proteinG":34,"carbsG":32,"fiberG":2,"sugarG":7,"fatG":38,"satFatG":18,"sodiumMg":1480,"cholesterolMg":328},
-"tags":["breakfast","brunch","make-ahead","family","holiday","christmas","crowd-pleaser","high-protein"],
-"image":{"file":"breakfast-casserole.jpg","wikipedia":"Casserole"}},
-
-{"id":"ch-rd-009","slug":"rd-beef-enchiladas","title":"Beef Enchiladas","genre":"mexican","subgenre":"enchiladas","chef":{"name":"Ree Drummond","slug":"ree-drummond"},"description":"Corn tortillas dipped in homemade red sauce, filled with beef and baked.","difficulty":"beginner","easeScore":8,"spiceScore":4,"popularity":9,"pantryScore":9,"servings":8,"prepMin":25,"cookMin":40,"totalMin":65,"equipment":["stovetop","oven"],
-"ingredients":["2 lb ground beef (85/15)","1 yellow onion, diced","3 cloves garlic, minced","2 tsp salt","1 tsp black pepper","3 tbsp canola oil","3 tbsp all-purpose flour","1/4 cup chili powder","1 tbsp ground cumin","1 can (14 oz) tomato sauce","2 1/2 cups beef broth","1 can (4 oz) diced green chiles","18 corn tortillas","4 cups shredded cheddar","1/2 cup chopped cilantro","6 scallions, sliced","1 cup sour cream"],
-"ingredientKeys":["ground-beef","yellow-onion","garlic","salt","black-pepper","canola-oil","flour","chili-powder","cumin","tomato-sauce","beef-broth","green-chiles","corn-tortilla","cheddar","cilantro","scallion","sour-cream"],
-"specialty":["green-chiles"],
-"steps":["Brown the beef with the onion and garlic, season, and drain the fat. Set aside.","Make the sauce: heat the oil, whisk in the flour and cook 1 minute, then add the chili powder and cumin and stir 30 seconds. Add the tomato sauce, broth and green chiles and simmer 10 minutes until it thickens slightly.","Warm the tortillas in a dry skillet until pliable - cold corn tortillas crack the moment you roll them.","Dip each tortilla briefly in the warm sauce, then fill with beef and a little cheddar, roll up, and pack seam-side down in a 9x13 dish.","Pour the remaining sauce over and scatter the rest of the cheddar.","Bake at 350F for 25-30 minutes until bubbling. Rest 5 minutes, then top with cilantro, scallions and sour cream."],
-"diet":{"vegetarian":false,"vegan":false,"pescatarian":false,"glutenFree":false,"glutenFreeAdaptable":true,"dairyFree":false,"nutFree":true,"eggFree":true},
-"allergens":["gluten","dairy"],
-"gmo":{"risk":"high","sources":["grain-fed-meat","corn","seed-oil","grain-fed-dairy"]},
-"nutrition":{"calories":782,"proteinG":48,"carbsG":52,"fiberG":7,"sugarG":8,"fatG":42,"satFatG":19,"sodiumMg":1680,"cholesterolMg":158},
-"tags":["family","comfort","make-ahead","potluck","kid-friendly","leftovers","crowd-pleaser"],
-"image":{"file":"enchiladas.jpg","wikipedia":"Enchilada"}},
-
-{"id":"ch-rd-010","slug":"rd-white-chicken-enchiladas","title":"White Chicken Enchiladas","genre":"mexican","subgenre":"enchiladas","chef":{"name":"Ree Drummond","slug":"ree-drummond"},"description":"Flour tortillas rolled around chicken under a sour cream green chile sauce.","difficulty":"beginner","easeScore":9,"spiceScore":3,"popularity":8,"pantryScore":9,"servings":8,"prepMin":20,"cookMin":35,"totalMin":55,"equipment":["stovetop","oven"],
-"ingredients":["4 cups shredded cooked chicken","4 tbsp butter","1/4 cup all-purpose flour","2 1/2 cups chicken broth","1 1/2 cups sour cream","2 cans (4 oz each) diced green chiles","1 tsp ground cumin","1 tsp garlic powder","1 1/2 tsp salt","1/2 tsp cayenne pepper","12 flour tortillas","4 cups shredded Monterey Jack","1/2 cup chopped cilantro","4 scallions, sliced"],
-"ingredientKeys":["cooked-chicken","butter","flour","chicken-broth","sour-cream","green-chiles","cumin","garlic-powder","salt","cayenne","flour-tortilla","monterey-jack","cilantro","scallion"],
-"specialty":["green-chiles"],
-"steps":["Melt the butter, whisk in the flour and cook 1 minute, then add the broth gradually and simmer 4 minutes until it thickens.","Take the pan off the heat before stirring in the sour cream, green chiles, cumin, garlic powder, salt and cayenne. Sour cream added over direct heat will curdle and split.","Toss the chicken with 1 cup of the sauce and 1 cup of the Monterey Jack.","Fill the tortillas, roll them up and pack them seam-side down in a buttered 9x13 dish.","Pour the remaining sauce over and top with the rest of the cheese.","Bake at 350F for 25-30 minutes until bubbling and lightly browned. Finish with cilantro and scallions."],
-"diet":{"vegetarian":false,"vegan":false,"pescatarian":false,"glutenFree":false,"glutenFreeAdaptable":false,"dairyFree":false,"nutFree":true,"eggFree":true},
-"allergens":["gluten","dairy"],
-"gmo":{"risk":"high","sources":["processed-bread","grain-fed-meat","grain-fed-dairy"]},
-"nutrition":{"calories":812,"proteinG":52,"carbsG":48,"fiberG":3,"sugarG":9,"fatG":46,"satFatG":24,"sodiumMg":1680,"cholesterolMg":178},
-"tags":["family","comfort","make-ahead","potluck","kid-friendly","weeknight","crowd-pleaser"],
-"image":{"file":"enchiladas-verdes.jpg","wikipedia":"Enchilada"}},
-
-{"id":"ch-rd-011","slug":"rd-restaurant-style-salsa","title":"Restaurant-Style Salsa","genre":"mexican","subgenre":"salsas","chef":{"name":"Ree Drummond","slug":"ree-drummond"},"description":"Canned tomatoes blitzed with lime and cilantro in five minutes.","difficulty":"beginner","easeScore":10,"spiceScore":5,"popularity":9,"pantryScore":10,"servings":12,"prepMin":10,"cookMin":60,"totalMin":70,"equipment":["blender","no-cook"],
-"ingredients":["1 can (28 oz) whole tomatoes with juice","2 cans (10 oz each) diced tomatoes with green chiles","1/2 yellow onion, quartered","2 cloves garlic","2 jalapenos, stemmed","1/2 tsp sugar","1 1/2 tsp salt","1 tsp ground cumin","1 cup cilantro","1/2 cup lime juice"],
-"ingredientKeys":["canned-tomatoes","tomatoes-with-green-chiles","yellow-onion","garlic","jalapeno","sugar","salt","cumin","cilantro","lime-juice"],
-"specialty":["tomatoes-with-green-chiles"],
-"steps":["Put everything in a blender or food processor.","Pulse rather than puree - 10 to 15 short pulses. The point is a loose, slightly chunky salsa, and running the motor turns it into pink froth.","Taste and adjust: more jalapeno for heat, more lime for brightness, more salt if it tastes flat.","Refrigerate at least 1 hour. The raw onion and garlic mellow considerably in that time, and the salsa tastes noticeably better than it does straight from the blender.","Stir before serving - it separates as it sits.","Serve with tortilla chips. It keeps a week refrigerated."],
-"diet":{"vegetarian":true,"vegan":true,"pescatarian":true,"glutenFree":true,"glutenFreeAdaptable":false,"dairyFree":true,"nutFree":true,"eggFree":true},
-"allergens":[],
-"gmo":{"risk":"low","sources":["sugar-beet"]},
-"nutrition":{"calories":32,"proteinG":1,"carbsG":7,"fiberG":2,"sugarG":4,"fatG":0,"satFatG":0,"sodiumMg":480,"cholesterolMg":0},
-"tags":["salsa","no-cook","quick","vegan","vegetarian","gluten-free","dairy-free","party","pantry","make-ahead","budget"],
-"image":{"file":"salsa-roja.jpg","wikipedia":"Salsa (sauce)"}},
-
-{"id":"ch-rd-012","slug":"rd-bacon-meatloaf","title":"Bacon-Wrapped Meatloaf","genre":"american","subgenre":"comfort","chef":{"name":"Ree Drummond","slug":"ree-drummond"},"description":"A milk-soaked loaf wrapped in bacon with a sweet tomato glaze.","difficulty":"beginner","easeScore":9,"spiceScore":1,"popularity":9,"pantryScore":9,"servings":8,"prepMin":20,"cookMin":75,"totalMin":95,"equipment":["oven","stovetop"],
-"ingredients":["2 lb ground beef (85/15)","1 cup whole milk","6 slices white bread, torn","1 cup grated Parmesan","1/4 cup chopped parsley","2 tsp seasoned salt","1 tsp black pepper","4 eggs","12 slices thin-cut bacon","1 1/2 cups ketchup","1/3 cup packed brown sugar","1 tbsp mustard powder","2 tbsp hot sauce"],
-"ingredientKeys":["ground-beef","whole-milk","white-bread","parmesan","parsley","seasoned-salt","black-pepper","egg","bacon","ketchup","brown-sugar","mustard-powder","hot-sauce"],
-"specialty":["seasoned-salt","mustard-powder"],
-"steps":["Pour the milk over the torn bread and let it soak 10 minutes until completely soft. This is the single reason good meatloaf is moist.","Mix in the beef, Parmesan, parsley, seasoned salt, pepper and eggs with your hands, stopping the moment it comes together. Overworking makes it rubbery.","Shape into a loaf on a foil-lined sheet pan rather than packing it into a loaf pan, so more surface browns.","Lay the bacon slices crosswise over the loaf, overlapping slightly, and tuck the ends underneath. Thin-cut bacon is important - thick bacon will not render through in the time the loaf takes.","Whisk the ketchup, brown sugar, mustard powder and hot sauce and brush a third over the bacon.","Bake at 350F for 45 minutes, glaze again, then bake 25-30 minutes more to 160F internal. Rest 15 minutes before slicing."],
-"diet":{"vegetarian":false,"vegan":false,"pescatarian":false,"glutenFree":false,"glutenFreeAdaptable":false,"dairyFree":false,"nutFree":true,"eggFree":false},
-"allergens":["gluten","dairy","egg"],
-"gmo":{"risk":"high","sources":["grain-fed-meat","processed-bread","corn-syrup","sugar-beet","grain-fed-dairy"]},
-"nutrition":{"calories":682,"proteinG":42,"carbsG":42,"fiberG":2,"sugarG":28,"fatG":38,"satFatG":15,"sodiumMg":1880,"cholesterolMg":218},
-"tags":["comfort","family","classic","make-ahead","leftovers","kid-friendly","sunday"],
-"image":{"file":"meatloaf.jpg","wikipedia":"Meatloaf"}},
-
-{"id":"ch-rd-013","slug":"rd-fried-chicken","title":"Buttermilk Fried Chicken","genre":"american","subgenre":"comfort","chef":{"name":"Ree Drummond","slug":"ree-drummond"},"description":"Chicken brined in buttermilk and fried in a seasoned flour crust.","difficulty":"intermediate","easeScore":5,"spiceScore":4,"popularity":10,"pantryScore":8,"servings":6,"prepMin":25,"cookMin":215,"totalMin":240,"equipment":["stovetop"],
-"ingredients":["4 lb chicken pieces, bone-in","4 cups buttermilk","2 tbsp hot sauce","1 tbsp kosher salt, for the brine","3 cups all-purpose flour","1 tbsp seasoned salt","2 tsp paprika","2 tsp garlic powder","2 tsp black pepper","1 tsp cayenne pepper","1 tsp dried thyme","6 cups canola oil, for frying"],
-"ingredientKeys":["chicken-pieces","buttermilk","hot-sauce","kosher-salt","flour","seasoned-salt","paprika","garlic-powder","black-pepper","cayenne","dried-thyme","canola-oil"],
-"specialty":["chicken-pieces","buttermilk","seasoned-salt"],
-"steps":["Whisk the buttermilk, hot sauce and kosher salt and submerge the chicken. Refrigerate at least 3 hours, ideally overnight - the buttermilk tenderizes as well as seasons.","Mix the flour with the seasoned salt, paprika, garlic powder, pepper, cayenne and thyme. Drizzle in 3 tbsp of the buttermilk brine and rub it through with your fingers - those shaggy clumps become the crunchiest bits of crust.","Lift each piece from the brine, let it drip briefly, and press it firmly into the flour. Rest on a rack 15 minutes so the coating sets and grips.","Heat 2 inches of oil to 325F. Use a thermometer; this is the step most people get wrong.","Fry in batches of 3 or 4, never crowding, 14-18 minutes, turning once. Adjust the burner to hold 300-325F throughout.","Breasts are done at 160F, thighs and drumsticks at 175F. Drain on a rack and salt immediately. Let the oil recover between batches."],
-"diet":{"vegetarian":false,"vegan":false,"pescatarian":false,"glutenFree":false,"glutenFreeAdaptable":false,"dairyFree":false,"nutFree":true,"eggFree":true},
-"allergens":["gluten","dairy"],
-"gmo":{"risk":"high","sources":["grain-fed-meat","seed-oil","grain-fed-dairy"]},
-"nutrition":{"calories":782,"proteinG":52,"carbsG":38,"fiberG":2,"sugarG":5,"fatG":46,"satFatG":10,"sodiumMg":1680,"cholesterolMg":178},
-"tags":["southern","comfort","weekend","party","high-protein","classic","family"],
-"image":{"file":"fried-chicken.jpg","wikipedia":"Fried chicken"}},
-
-{"id":"ch-rd-014","slug":"rd-cowboy-quesadillas","title":"Cowboy Quesadillas","genre":"mexican","subgenre":"antojitos","chef":{"name":"Ree Drummond","slug":"ree-drummond"},"description":"Steak, peppers and cheese griddled between tortillas.","difficulty":"beginner","easeScore":9,"spiceScore":4,"popularity":8,"pantryScore":8,"servings":4,"prepMin":15,"cookMin":25,"totalMin":40,"equipment":["stovetop"],
-"ingredients":["1 1/2 lb sirloin steak, thinly sliced","3 tbsp canola oil","2 tsp chili powder","1 tsp ground cumin","2 tsp salt","1 tsp black pepper","2 bell peppers, sliced","1 yellow onion, sliced","2 jalapenos, sliced","8 flour tortillas","4 cups shredded Monterey Jack","3 tbsp butter","1 cup pico de gallo","1 cup sour cream"],
-"ingredientKeys":["sirloin-steak","canola-oil","chili-powder","cumin","salt","black-pepper","bell-pepper","yellow-onion","jalapeno","flour-tortilla","monterey-jack","butter","pico-de-gallo","sour-cream"],
-"specialty":[],
-"steps":["Toss the sliced steak with the chili powder, cumin, salt and pepper.","Sear it in the oil over the highest heat in two batches, 90 seconds each, then set aside. Thin steak overcooks almost instantly, and it gets a second round of heat inside the quesadilla.","Cook the peppers, onion and jalapenos in the same pan 8 minutes until charred at the edges, then combine with the steak.","Wipe the pan and melt a little butter over medium heat. Lay a tortilla in, cover with cheese, then the filling, then more cheese, then a second tortilla.","Cheese on both sides of the filling is what glues the quesadilla together.","Cook 3 minutes per side, pressing with a spatula, until crisp and fully melted. Rest 1 minute, cut into wedges, and serve with pico and sour cream."],
-"diet":{"vegetarian":false,"vegan":false,"pescatarian":false,"glutenFree":false,"glutenFreeAdaptable":true,"dairyFree":false,"nutFree":true,"eggFree":true},
-"allergens":["gluten","dairy"],
-"gmo":{"risk":"high","sources":["grain-fed-meat","processed-bread","seed-oil","grain-fed-dairy"]},
-"nutrition":{"calories":982,"proteinG":62,"carbsG":52,"fiberG":5,"sugarG":9,"fatG":58,"satFatG":28,"sodiumMg":1680,"cholesterolMg":198},
-"tags":["quick","weeknight","family","game-day","high-protein","kid-friendly","tex-mex"],
-"image":{"file":"quesadilla.jpg","wikipedia":"Quesadilla"}},
-
-{"id":"ch-rd-015","slug":"rd-corn-casserole","title":"Corn Casserole","genre":"american","subgenre":"sides","chef":{"name":"Ree Drummond","slug":"ree-drummond"},"description":"A spoonbread-style corn pudding that comes together in one bowl.","difficulty":"beginner","easeScore":10,"spiceScore":2,"popularity":8,"pantryScore":9,"servings":10,"prepMin":10,"cookMin":55,"totalMin":65,"equipment":["oven"],
-"ingredients":["1 can (15 oz) whole kernel corn, drained","1 can (15 oz) cream-style corn","1 box (8.5 oz) corn muffin mix","1 cup sour cream","1/2 cup butter, melted","2 eggs","1 cup shredded sharp cheddar","1 jalapeno, minced","1 tsp salt","1/2 tsp black pepper","4 scallions, sliced"],
-"ingredientKeys":["canned-corn","cream-style-corn","corn-muffin-mix","sour-cream","butter","egg","cheddar","jalapeno","salt","black-pepper","scallion"],
-"specialty":["cream-style-corn","corn-muffin-mix"],
-"steps":["Heat the oven to 350F and butter a 9x13 dish.","Stir the whole corn, cream-style corn, muffin mix, sour cream, melted butter, eggs, jalapeno, salt and pepper together in one bowl. Mix only until combined.","The cream-style corn is doing the work here - it supplies all the liquid, so do not add milk.","Pour into the dish and scatter the cheddar over.","Bake 50-55 minutes until the top is golden and the center is set but still soft, like a pudding rather than a cake.","Rest 10 minutes and finish with scallions. It firms up considerably as it cools."],
-"diet":{"vegetarian":true,"vegan":false,"pescatarian":true,"glutenFree":false,"glutenFreeAdaptable":false,"dairyFree":false,"nutFree":true,"eggFree":false},
-"allergens":["gluten","dairy","egg"],
-"gmo":{"risk":"high","sources":["corn","grain-fed-dairy","sugar-beet"]},
-"nutrition":{"calories":386,"proteinG":9,"carbsG":38,"fiberG":2,"sugarG":11,"fatG":22,"satFatG":13,"sodiumMg":780,"cholesterolMg":82},
-"tags":["side","thanksgiving","holiday","potluck","family","easy","vegetarian","crowd-pleaser"],
-"image":{"file":"corn-casserole.jpg","wikipedia":"Corn pudding"}},
-
-{"id":"ch-rd-016","slug":"rd-creamed-spinach","title":"Creamed Spinach","genre":"american","subgenre":"sides","chef":{"name":"Ree Drummond","slug":"ree-drummond"},"description":"Spinach in a Parmesan cream sauce with plenty of black pepper.","difficulty":"beginner","easeScore":9,"spiceScore":2,"popularity":8,"pantryScore":9,"servings":6,"prepMin":10,"cookMin":25,"totalMin":35,"equipment":["stovetop"],
-"ingredients":["2 lb frozen spinach, thawed","4 tbsp butter","1 yellow onion, finely diced","4 cloves garlic, minced","3 tbsp all-purpose flour","2 cups whole milk, warmed","1/2 cup heavy cream","1/4 tsp ground nutmeg","1 1/2 tsp salt","2 tsp black pepper","1/4 tsp cayenne pepper","1 cup grated Parmesan","4 oz cream cheese"],
-"ingredientKeys":["frozen-spinach","butter","yellow-onion","garlic","flour","whole-milk","heavy-cream","nutmeg","salt","black-pepper","cayenne","parmesan","cream-cheese"],
-"specialty":["cream-cheese"],
-"steps":["Squeeze the thawed spinach in handfuls until no more water comes out. Do it twice. Wet spinach makes a thin, grey sauce, and this is the only step that really matters.","Cook the onion in the butter over medium heat 8 minutes until soft, then add the garlic for 1 minute.","Stir in the flour and cook 2 minutes, then whisk in the warm milk gradually and simmer 4 minutes until thick.","Add the cream, nutmeg, salt, pepper and cayenne.","Take the pan off the heat and stir in the Parmesan and cream cheese until smooth.","Fold in the squeezed spinach and warm through 3 minutes. Taste for salt and add more black pepper than feels reasonable."],
-"diet":{"vegetarian":true,"vegan":false,"pescatarian":true,"glutenFree":false,"glutenFreeAdaptable":true,"dairyFree":false,"nutFree":true,"eggFree":true},
-"allergens":["gluten","dairy"],
-"gmo":{"risk":"low","sources":["grain-fed-dairy"]},
-"nutrition":{"calories":342,"proteinG":16,"carbsG":18,"fiberG":5,"sugarG":8,"fatG":24,"satFatG":15,"sodiumMg":880,"cholesterolMg":68},
-"tags":["side","vegetarian","comfort","holiday","steakhouse","family","quick"],
-"image":{"file":"creamed-spinach.jpg","wikipedia":"Creamed spinach"}},
-
-{"id":"ch-rd-017","slug":"rd-cowboy-nachos","title":"Cowboy Nachos","genre":"mexican","subgenre":"tex-mex","chef":{"name":"Ree Drummond","slug":"ree-drummond"},"description":"Sheet pan nachos with brisket or ground beef, beans and two cheeses.","difficulty":"beginner","easeScore":10,"spiceScore":4,"popularity":9,"pantryScore":9,"servings":8,"prepMin":15,"cookMin":25,"totalMin":40,"equipment":["stovetop","oven"],
-"ingredients":["2 lb ground beef (85/15)","1 yellow onion, diced","3 tbsp chili powder","1 tbsp ground cumin","2 tsp salt","1 can (14 oz) tomato sauce","1 can (15 oz) ranch-style beans","1 bag (13 oz) tortilla chips","3 cups shredded cheddar","2 cups shredded Monterey Jack","1 cup pickled jalapenos","1 cup pico de gallo","1 1/2 cups sour cream","1 cup guacamole","6 scallions, sliced","1/2 cup chopped cilantro"],
-"ingredientKeys":["ground-beef","yellow-onion","chili-powder","cumin","salt","tomato-sauce","ranch-style-beans","tortilla-chips","cheddar","monterey-jack","pickled-jalapenos","pico-de-gallo","sour-cream","guacamole","scallion","cilantro"],
-"specialty":["ranch-style-beans","tortilla-chips","pickled-jalapenos","guacamole"],
-"steps":["Brown the beef with the onion, drain the fat, then add the chili powder, cumin and salt and cook 1 minute.","Add the tomato sauce and beans and simmer 10 minutes until thick enough to sit on a chip without sliding off.","Heat the oven to 400F. Spread half the chips on a sheet pan, then half the beef mixture and half of both cheeses. Repeat for a second layer.","Layering twice rather than piling everything on top is what keeps the bottom chips from being bare and dry.","Bake 10-12 minutes until the cheese is fully melted and bubbling.","Add the jalapenos, pico, sour cream, guacamole, scallions and cilantro after baking - cold toppings go on hot nachos, never into the oven. Serve straight from the pan."],
-"diet":{"vegetarian":false,"vegan":false,"pescatarian":false,"glutenFree":true,"glutenFreeAdaptable":false,"dairyFree":false,"nutFree":true,"eggFree":true},
-"allergens":["dairy"],
-"gmo":{"risk":"high","sources":["grain-fed-meat","corn","seed-oil","grain-fed-dairy","processed-sauce"]},
-"nutrition":{"calories":982,"proteinG":48,"carbsG":62,"fiberG":10,"sugarG":9,"fatG":60,"satFatG":26,"sodiumMg":1880,"cholesterolMg":168},
-"tags":["party","game-day","family","sharing","tex-mex","crowd-pleaser","kid-friendly","gluten-free"],
-"image":{"file":"nachos.jpg","wikipedia":"Nachos"}},
-
-{"id":"ch-rd-018","slug":"rd-apple-dumplings","title":"Apple Dumplings","genre":"american","subgenre":"desserts","chef":{"name":"Ree Drummond","slug":"ree-drummond"},"description":"Apple wedges wrapped in crescent dough and baked in a buttery soda syrup.","difficulty":"beginner","easeScore":10,"spiceScore":0,"popularity":8,"pantryScore":8,"servings":8,"prepMin":15,"cookMin":45,"totalMin":60,"equipment":["oven","stovetop"],
-"ingredients":["2 Granny Smith apples, peeled and cut in 8 wedges each","2 packages (8 oz each) refrigerated crescent roll dough","1 cup butter","1 1/2 cups sugar","1 tsp vanilla extract","1 tsp ground cinnamon","1 can (12 oz) lemon-lime soda","1 cup vanilla ice cream"],
-"ingredientKeys":["granny-smith-apple","crescent-dough","butter","sugar","vanilla-extract","cinnamon","lemon-lime-soda","vanilla-ice-cream"],
-"specialty":["granny-smith-apple","crescent-dough","lemon-lime-soda"],
-"steps":["Heat the oven to 350F and butter a 9x13 dish.","Roll each apple wedge up in a crescent triangle, starting at the wide end, and set them in the dish in rows.","Melt the butter with the sugar, vanilla and half the cinnamon, stirring just until the sugar dissolves, then pour it over the dumplings.","Pour the soda around the edges of the dish, not over the dumplings. The carbonation and sugar react with the butter to make a caramel sauce in the pan - it sounds unlikely and it works.","Sprinkle the remaining cinnamon over the top.","Bake 40-45 minutes until puffed and deep golden and the sauce is bubbling thickly. Serve warm with ice cream and plenty of the pan sauce spooned over."],
-"diet":{"vegetarian":true,"vegan":false,"pescatarian":true,"glutenFree":false,"glutenFreeAdaptable":false,"dairyFree":false,"nutFree":true,"eggFree":true},
-"allergens":["gluten","dairy","soy"],
-"gmo":{"risk":"high","sources":["processed-bread","corn-syrup","sugar-beet","soy","grain-fed-dairy"]},
-"nutrition":{"calories":682,"proteinG":5,"carbsG":82,"fiberG":2,"sugarG":58,"fatG":38,"satFatG":19,"sodiumMg":580,"cholesterolMg":68},
-"tags":["dessert","easy","family","potluck","fall","crowd-pleaser","kid-friendly","quick"],
-"image":{"file":"apple-dumplings.jpg","wikipedia":"Apple dumpling"}},
-
-{"id":"ch-rd-019","slug":"rd-peach-cobbler","title":"Peach Cobbler","genre":"american","subgenre":"desserts","chef":{"name":"Ree Drummond","slug":"ree-drummond"},"description":"Peaches baked under a self-forming batter crust.","difficulty":"beginner","easeScore":10,"spiceScore":0,"popularity":9,"pantryScore":9,"servings":8,"prepMin":15,"cookMin":50,"totalMin":65,"equipment":["oven"],
-"ingredients":["2 lb fresh or frozen peach slices","1 cup sugar","1 tbsp lemon juice","1 tsp ground cinnamon","1/2 cup butter, melted","1 cup all-purpose flour","1 cup sugar, for the batter","2 tsp baking powder","1/2 tsp salt","1 cup whole milk","1 tsp vanilla extract","2 tbsp coarse sugar","1 cup vanilla ice cream"],
-"ingredientKeys":["peaches","sugar","lemon-juice","cinnamon","butter","flour","sugar","baking-powder","salt","whole-milk","vanilla-extract","coarse-sugar","vanilla-ice-cream"],
-"specialty":["peaches","coarse-sugar"],
-"steps":["Heat the oven to 350F. Toss the peaches with the 1 cup sugar, lemon juice and cinnamon and let them sit 15 minutes.","Pour the melted butter into a 9x13 dish and tilt to coat the bottom.","Whisk the flour, the second cup of sugar, baking powder and salt, then stir in the milk and vanilla to a smooth batter.","Pour the batter over the butter but do not stir them together. Then spoon the peaches and their juices over the batter, again without stirring.","During baking the batter rises up through the fruit and forms the crust on top. Stirring at any point destroys that, so leave it alone.","Sprinkle with coarse sugar and bake 45-50 minutes until deep golden and bubbling at the edges. Serve warm with ice cream."],
-"diet":{"vegetarian":true,"vegan":false,"pescatarian":true,"glutenFree":false,"glutenFreeAdaptable":true,"dairyFree":false,"nutFree":true,"eggFree":true},
-"allergens":["gluten","dairy"],
-"gmo":{"risk":"moderate","sources":["sugar-beet","grain-fed-dairy"]},
-"nutrition":{"calories":512,"proteinG":5,"carbsG":88,"fiberG":3,"sugarG":68,"fatG":16,"satFatG":10,"sodiumMg":320,"cholesterolMg":42},
-"tags":["dessert","easy","family","summer","potluck","southern","crowd-pleaser","baking"],
-"image":{"file":"peach-cobbler.jpg","wikipedia":"Cobbler (food)"}},
-
-{"id":"ch-rd-020","slug":"rd-chocolate-sheet-cake","title":"Chocolate Sheet Cake","genre":"american","subgenre":"desserts","chef":{"name":"Ree Drummond","slug":"ree-drummond"},"description":"A thin sheet cake iced while still hot so the frosting sets into the surface.","difficulty":"beginner","easeScore":9,"spiceScore":0,"popularity":9,"pantryScore":9,"servings":24,"prepMin":20,"cookMin":35,"totalMin":55,"equipment":["oven","stovetop"],
-"ingredients":["2 cups all-purpose flour","2 cups sugar","1/4 tsp salt","1 cup butter","4 tbsp cocoa powder","1 cup boiling water","1/2 cup buttermilk","2 eggs","1 tsp baking soda","1 tsp vanilla extract","1/2 cup butter, for the icing","4 tbsp cocoa powder, for the icing","6 tbsp whole milk","1 tsp vanilla extract, for the icing","1 lb powdered sugar","1 cup chopped pecans"],
-"ingredientKeys":["flour","sugar","salt","butter","cocoa-powder","water","buttermilk","egg","baking-soda","vanilla-extract","butter","cocoa-powder","whole-milk","vanilla-extract","powdered-sugar","pecans"],
-"specialty":["cocoa-powder","buttermilk","pecans"],
-"steps":["Heat the oven to 350F. Whisk the flour, sugar and salt in a large bowl.","Melt the 1 cup butter with the cocoa in a saucepan, then add the boiling water and let it bubble 30 seconds. Pour this over the flour mixture and stir.","Whisk the buttermilk, eggs, baking soda and vanilla together and stir into the batter until smooth. It will be thin - that is correct for a sheet cake.","Pour into a buttered 18x13 sheet pan and bake 20 minutes until a toothpick comes out clean.","While the cake bakes, melt the 1/2 cup butter with the cocoa, milk and vanilla, then whisk in the powdered sugar and pecans.","Pour the warm icing over the cake the moment it comes out of the oven and spread it quickly. Icing a hot cake is the whole trick: it soaks slightly into the surface and sets into a fudgy layer."],
-"diet":{"vegetarian":true,"vegan":false,"pescatarian":true,"glutenFree":false,"glutenFreeAdaptable":false,"dairyFree":false,"nutFree":false,"eggFree":false},
-"allergens":["gluten","dairy","egg","tree-nut"],
-"gmo":{"risk":"moderate","sources":["sugar-beet","grain-fed-dairy"]},
-"nutrition":{"calories":386,"proteinG":4,"carbsG":52,"fiberG":2,"sugarG":42,"fatG":19,"satFatG":9,"sodiumMg":180,"cholesterolMg":48},
-"tags":["dessert","potluck","party","family","baking","crowd-pleaser","easy","classic"],
-"image":{"file":"chocolate-cake.jpg","wikipedia":"Sheet cake"}},
-
-{"id":"ch-rd-021","slug":"rd-monkey-bread","title":"Monkey Bread","genre":"american","subgenre":"desserts","chef":{"name":"Ree Drummond","slug":"ree-drummond"},"description":"Biscuit dough balls rolled in cinnamon sugar and baked in caramel.","difficulty":"intermediate","easeScore":7,"spiceScore":0,"popularity":8,"pantryScore":8,"servings":10,"prepMin":25,"cookMin":50,"totalMin":75,"equipment":["oven","stovetop"],
-"ingredients":["3 cans (16 oz each) refrigerated biscuit dough","1 cup sugar","2 tbsp ground cinnamon","1 cup butter","1 cup packed brown sugar","1/4 cup heavy cream","1 tsp vanilla extract","1/2 tsp salt","1 cup chopped pecans"],
-"ingredientKeys":["biscuit-dough","sugar","cinnamon","butter","brown-sugar","heavy-cream","vanilla-extract","salt","pecans"],
-"specialty":["biscuit-dough","pecans"],
-"steps":["Heat the oven to 350F and butter a bundt pan generously, getting into every groove - this cake has a lot of caramel and will stick anywhere you miss.","Cut each biscuit into quarters. Mix the sugar and cinnamon and toss the dough pieces in it until well coated.","Scatter half the pecans in the bottom of the pan, then layer in the coated dough pieces loosely. Do not pack them - they need room to rise and the gaps let the caramel run through.","Melt the butter with the brown sugar, cream, vanilla and salt and simmer 2 minutes until smooth, then pour it evenly over the dough. Scatter the rest of the pecans on top.","Bake 45-50 minutes until deep golden and the center is cooked through. Tent with foil if the top darkens early.","Rest exactly 5 minutes, then invert onto a plate. Less and the caramel runs everywhere, more and it glues itself to the pan."],
-"diet":{"vegetarian":true,"vegan":false,"pescatarian":true,"glutenFree":false,"glutenFreeAdaptable":false,"dairyFree":false,"nutFree":false,"eggFree":true},
-"allergens":["gluten","dairy","tree-nut","soy"],
-"gmo":{"risk":"high","sources":["processed-bread","sugar-beet","soy","grain-fed-dairy"]},
-"nutrition":{"calories":782,"proteinG":9,"carbsG":92,"fiberG":3,"sugarG":58,"fatG":44,"satFatG":18,"sodiumMg":1180,"cholesterolMg":58},
-"tags":["dessert","breakfast","brunch","party","family","holiday","crowd-pleaser","baking"],
-"image":{"file":"monkey-bread.jpg","wikipedia":"Monkey bread"}},
-
-{"id":"ch-rd-022","slug":"rd-bbq-chicken-pizza","title":"Barbecue Chicken Pizza","genre":"american","subgenre":"comfort","chef":{"name":"Ree Drummond","slug":"ree-drummond"},"description":"Barbecue sauce instead of tomato, with chicken, red onion and cilantro.","difficulty":"beginner","easeScore":9,"spiceScore":3,"popularity":9,"pantryScore":8,"servings":4,"prepMin":15,"cookMin":20,"totalMin":35,"equipment":["oven"],
-"ingredients":["1 lb store-bought pizza dough","1 cup barbecue sauce","3 cups shredded cooked chicken","2 cups shredded mozzarella","1 cup shredded smoked gouda","1 red onion, thinly sliced","1/2 cup chopped cilantro","2 tbsp olive oil","1 tsp red pepper flakes","2 tbsp semolina, for dusting"],
-"ingredientKeys":["pizza-dough","barbecue-sauce","cooked-chicken","mozzarella","smoked-gouda","red-onion","cilantro","olive-oil","red-pepper-flakes","semolina"],
-"specialty":["pizza-dough","smoked-gouda","semolina"],
-"steps":["Put a pizza steel or inverted sheet pan in the oven and heat to 500F for a full 45 minutes. A properly preheated surface is the single biggest difference between home and pizzeria pizza.","Toss the chicken with half the barbecue sauce.","Stretch the dough by hand on a semolina-dusted peel or board - never roll it, which crushes the air out.","Spread the remaining barbecue sauce thinly, leaving a border, then add both cheeses, the chicken and the red onion.","Slide onto the hot surface and bake 10-12 minutes until the crust is browned and the cheese is blistered.","Finish with cilantro, a drizzle of olive oil and the pepper flakes. Cut on a rack so the bottom stays crisp."],
-"diet":{"vegetarian":false,"vegan":false,"pescatarian":false,"glutenFree":false,"glutenFreeAdaptable":false,"dairyFree":false,"nutFree":true,"eggFree":true},
-"allergens":["gluten","dairy"],
-"gmo":{"risk":"high","sources":["processed-bread","processed-sauce","corn-syrup","grain-fed-meat","grain-fed-dairy"]},
-"nutrition":{"calories":882,"proteinG":52,"carbsG":82,"fiberG":4,"sugarG":28,"fatG":36,"satFatG":16,"sodiumMg":1880,"cholesterolMg":148},
-"tags":["family","weeknight","game-day","kid-friendly","leftovers","quick","crowd-pleaser"],
-"image":{"file":"bbq-chicken-pizza.jpg","wikipedia":"California-style pizza"}},
-
-{"id":"ch-rd-023","slug":"rd-pork-carnitas-tacos","title":"Pork Carnitas Tacos","genre":"mexican","subgenre":"tacos","chef":{"name":"Ree Drummond","slug":"ree-drummond"},"description":"Pork shoulder slow-cooked with orange and crisped under the broiler.","difficulty":"intermediate","easeScore":7,"spiceScore":3,"popularity":9,"pantryScore":8,"servings":10,"prepMin":20,"cookMin":260,"totalMin":280,"equipment":["oven","broiler"],
-"ingredients":["5 lb boneless pork shoulder, cut in large chunks","1 tbsp kosher salt","2 tsp black pepper","2 tbsp ground cumin","1 tbsp dried oregano","1 tbsp chili powder","2 oranges, juiced, peels reserved","1 yellow onion, quartered","8 cloves garlic, smashed","2 bay leaves","1 1/2 cups chicken broth","24 corn tortillas","1 white onion, diced","1 cup chopped cilantro","3 limes, cut in wedges","1 cup salsa verde"],
-"ingredientKeys":["pork-shoulder","kosher-salt","black-pepper","cumin","dried-oregano","chili-powder","orange","yellow-onion","garlic","bay-leaf","chicken-broth","corn-tortilla","white-onion","cilantro","lime","salsa-verde"],
-"specialty":["pork-shoulder","salsa-verde"],
-"steps":["Heat the oven to 300F. Toss the pork with the salt, pepper, cumin, oregano and chili powder.","Put it in a Dutch oven with the orange juice, the squeezed peels, the quartered onion, garlic, bay leaves and broth. The liquid should come only a third of the way up - this starts as a braise and finishes as a fry once the water cooks off.","Cover and cook 4 hours, until the pork falls apart under a fork with no resistance.","Discard the peels, onion and bay leaves. Shred the pork coarsely and skim some of the rendered fat, keeping a few tablespoons.","Spread the meat on a sheet pan, spoon over the reserved fat and some pan juices, and broil 5-8 minutes until the edges are crisp and browned. Watch it closely - this is where carnitas gets its texture.","Serve on warm tortillas with diced onion, cilantro, lime and salsa verde."],
-"diet":{"vegetarian":false,"vegan":false,"pescatarian":false,"glutenFree":true,"glutenFreeAdaptable":false,"dairyFree":true,"nutFree":true,"eggFree":true},
-"allergens":[],
-"gmo":{"risk":"moderate","sources":["grain-fed-meat","corn"]},
-"nutrition":{"calories":612,"proteinG":48,"carbsG":38,"fiberG":6,"sugarG":6,"fatG":30,"satFatG":11,"sodiumMg":1180,"cholesterolMg":148},
-"tags":["party","make-ahead","gluten-free","dairy-free","high-protein","family","leftovers","crowd-pleaser"],
-"image":{"file":"carnitas.jpg","wikipedia":"Carnitas"}},
-
-{"id":"ch-rd-024","slug":"rd-olive-cheese-bread","title":"Olive Cheese Bread","genre":"american","subgenre":"appetizers","chef":{"name":"Ree Drummond","slug":"ree-drummond"},"description":"A split loaf loaded with olives, cheese and butter, broiled until bubbling.","difficulty":"beginner","easeScore":10,"spiceScore":2,"popularity":7,"pantryScore":7,"servings":10,"prepMin":15,"cookMin":20,"totalMin":35,"equipment":["oven","broiler"],
-"ingredients":["1 large French loaf, split lengthwise","1 cup green olives, chopped","1 cup Kalamata olives, chopped","1 can (4 oz) diced green chiles","4 scallions, sliced","1/2 cup butter, softened","1/2 cup mayonnaise","2 cups shredded Monterey Jack","1 cup grated Parmesan","1 tsp black pepper"],
-"ingredientKeys":["french-bread","green-olives","kalamata-olives","green-chiles","scallion","butter","mayonnaise","monterey-jack","parmesan","black-pepper"],
-"specialty":["french-bread","green-olives","kalamata-olives","green-chiles"],
-"steps":["Chop both kinds of olives and drain them well - wet olives make soggy bread.","Mix the olives, green chiles, scallions, softened butter, mayonnaise, both cheeses and the pepper into a thick spread.","Spread it generously over both cut halves of the loaf, right to the edges and into any holes in the crumb.","Bake at 325F for 15 minutes, until the butter has melted into the bread and everything is hot through.","Switch to the broiler for 2-4 minutes until the top is browned and bubbling. Do not walk away - it goes from golden to black in under a minute.","Cut into thick slices and serve immediately."],
-"diet":{"vegetarian":true,"vegan":false,"pescatarian":true,"glutenFree":false,"glutenFreeAdaptable":false,"dairyFree":false,"nutFree":true,"eggFree":false},
-"allergens":["gluten","dairy","egg"],
-"gmo":{"risk":"moderate","sources":["processed-bread","seed-oil","grain-fed-dairy"]},
-"nutrition":{"calories":512,"proteinG":16,"carbsG":32,"fiberG":3,"sugarG":3,"fatG":38,"satFatG":16,"sodiumMg":1480,"cholesterolMg":62},
-"tags":["appetizer","party","easy","vegetarian","holiday","game-day","sharing","quick"],
-"image":{"file":"garlic-bread.jpg","wikipedia":"Garlic bread"}},
-
-{"id":"ch-rd-025","slug":"rd-cowboy-chili","title":"Cowboy Chili","genre":"american","subgenre":"comfort","chef":{"name":"Ree Drummond","slug":"ree-drummond"},"description":"A thick, meaty chili thickened with masa harina and simmered for an hour.","difficulty":"beginner","easeScore":9,"spiceScore":6,"popularity":9,"pantryScore":9,"servings":8,"prepMin":15,"cookMin":80,"totalMin":95,"equipment":["stovetop"],
-"ingredients":["3 lb ground beef (85/15)","2 yellow onions, diced","6 cloves garlic, minced","1/4 cup chili powder","2 tbsp ground cumin","1 tbsp dried oregano","1 tsp cayenne pepper","2 tsp salt","1 can (14 oz) tomato sauce","2 cups beef broth","2 cans (15 oz each) kidney beans, drained","1/4 cup masa harina","2 cups shredded sharp cheddar","1 cup sour cream","1 yellow onion, diced","1 cup corn chips"],
-"ingredientKeys":["ground-beef","yellow-onion","garlic","chili-powder","cumin","dried-oregano","cayenne","salt","tomato-sauce","beef-broth","kidney-beans","masa-harina","cheddar","sour-cream","yellow-onion","corn-chips"],
-"specialty":["masa-harina","corn-chips"],
-"steps":["Brown the beef in a large pot over high heat, breaking it up, 10 minutes. Drain most of the fat.","Add the onions and cook 6 minutes, then the garlic for 1 minute.","Add the chili powder, cumin, oregano, cayenne and salt and stir for a full minute in the hot fat. Blooming the spices this way tastes completely different from stirring them into liquid.","Add the tomato sauce and broth and simmer, partially covered, for 45 minutes.","Add the beans and cook 15 minutes more.","Whisk the masa harina with 1/2 cup water until smooth, then stir it in and simmer 10 minutes. The masa thickens the chili and gives it a subtle corn flavor that flour cannot. Serve with cheddar, sour cream, raw onion and corn chips."],
-"diet":{"vegetarian":false,"vegan":false,"pescatarian":false,"glutenFree":true,"glutenFreeAdaptable":false,"dairyFree":false,"nutFree":true,"eggFree":true},
-"allergens":["dairy"],
-"gmo":{"risk":"high","sources":["grain-fed-meat","corn","grain-fed-dairy","processed-sauce"]},
-"nutrition":{"calories":782,"proteinG":52,"carbsG":42,"fiberG":11,"sugarG":8,"fatG":44,"satFatG":19,"sodiumMg":1480,"cholesterolMg":178},
-"tags":["comfort","family","game-day","make-ahead","gluten-free","spicy","high-protein","leftovers","one-pot"],
-"image":{"file":"chili-con-carne.jpg","wikipedia":"Chili con carne"}}
+ {
+  "id": "ch-rd-001",
+  "slug": "rd-chicken-fried-steak",
+  "title": "Chicken Fried Steak",
+  "genre": "american",
+  "subgenre": "comfort",
+  "chef": {
+   "name": "Ree Drummond",
+   "slug": "ree-drummond"
+  },
+  "description": "Cube steak in a craggy crust under black pepper cream gravy.",
+  "difficulty": "intermediate",
+  "easeScore": 6,
+  "spiceScore": 3,
+  "popularity": 8,
+  "pantryScore": 8,
+  "servings": 4,
+  "prepMin": 20,
+  "cookMin": 30,
+  "totalMin": 50,
+  "equipment": [
+   "stovetop"
+  ],
+  "ingredients": [
+   "4 cube steaks (6 oz each)",
+   "2 cups all-purpose flour",
+   "2 tsp seasoned salt",
+   "2 tsp black pepper",
+   "1 tsp cayenne pepper",
+   "1 tsp paprika",
+   "2 eggs",
+   "1 1/2 cups whole milk",
+   "2 cups canola oil, for frying",
+   "1/4 cup all-purpose flour, for the gravy",
+   "2 1/2 cups whole milk, for the gravy",
+   "1 1/2 tsp salt",
+   "2 tsp black pepper, for the gravy"
+  ],
+  "ingredientKeys": [
+   "cube-steak",
+   "flour",
+   "seasoned-salt",
+   "black-pepper",
+   "cayenne",
+   "paprika",
+   "egg",
+   "whole-milk",
+   "canola-oil",
+   "flour",
+   "whole-milk",
+   "salt",
+   "black-pepper"
+  ],
+  "specialty": [
+   "cube-steak",
+   "seasoned-salt"
+  ],
+  "steps": [
+   "Mix the 2 cups flour with the seasoned salt, pepper, cayenne and paprika in one dish. Beat the eggs with 1 1/2 cups milk in another.",
+   "Dredge each steak in the flour, then the egg mixture, then back into the flour, pressing hard. The double flour coating is what gives you the shaggy crust.",
+   "Rest the breaded steaks on a rack 10 minutes so the coating hydrates and grips.",
+   "Heat an inch of oil to 350F. Too cool and they turn greasy, too hot and the crust burns before the meat cooks.",
+   "Fry two at a time, 3-4 minutes per side, until deep golden. Drain on a rack, not paper towels, so the undersides stay crisp.",
+   "Pour off all but 1/4 cup of the oil, whisk in the 1/4 cup flour and cook 2 minutes, then add the 2 1/2 cups milk slowly and simmer 5 minutes. Season heavily with black pepper and pour over the steaks."
+  ],
+  "diet": {
+   "vegetarian": false,
+   "vegan": false,
+   "pescatarian": false,
+   "glutenFree": false,
+   "glutenFreeAdaptable": false,
+   "dairyFree": false,
+   "nutFree": true,
+   "eggFree": false
+  },
+  "allergens": [
+   "gluten",
+   "dairy",
+   "egg"
+  ],
+  "gmo": {
+   "risk": "high",
+   "sources": [
+    "grain-fed-meat",
+    "seed-oil",
+    "grain-fed-dairy"
+   ]
+  },
+  "nutrition": {
+   "calories": 882,
+   "proteinG": 52,
+   "carbsG": 62,
+   "fiberG": 3,
+   "sugarG": 12,
+   "fatG": 44,
+   "satFatG": 13,
+   "sodiumMg": 1680,
+   "cholesterolMg": 248
+  },
+  "tags": [
+   "comfort",
+   "family",
+   "southern",
+   "high-protein",
+   "weekend",
+   "classic"
+  ],
+  "image": {
+   "file": "rd-chicken-fried-steak.jpg",
+   "source": "commons-file",
+   "match": "dish",
+   "commonsFile": "Chicken Fried Steak.jpg"
+  }
+ },
+ {
+  "id": "ch-rd-002",
+  "slug": "rd-marlboro-man-sandwich",
+  "title": "Marlboro Man Sandwich",
+  "genre": "american",
+  "subgenre": "sandwiches",
+  "chef": {
+   "name": "Ree Drummond",
+   "slug": "ree-drummond"
+  },
+  "description": "Thin-sliced sirloin and onions in Worcestershire butter on a crusty roll.",
+  "difficulty": "beginner",
+  "easeScore": 10,
+  "spiceScore": 2,
+  "popularity": 8,
+  "pantryScore": 9,
+  "servings": 4,
+  "prepMin": 15,
+  "cookMin": 20,
+  "totalMin": 35,
+  "equipment": [
+   "stovetop"
+  ],
+  "ingredients": [
+   "1 1/2 lb sirloin steak, very thinly sliced",
+   "6 tbsp butter",
+   "2 yellow onions, thinly sliced",
+   "3 tbsp Worcestershire sauce",
+   "1 tsp seasoned salt",
+   "1 tsp black pepper",
+   "1/2 tsp red pepper flakes",
+   "4 kaiser rolls",
+   "4 slices provolone"
+  ],
+  "ingredientKeys": [
+   "sirloin-steak",
+   "butter",
+   "yellow-onion",
+   "worcestershire",
+   "seasoned-salt",
+   "black-pepper",
+   "red-pepper-flakes",
+   "kaiser-roll",
+   "provolone"
+  ],
+  "specialty": [
+   "seasoned-salt",
+   "kaiser-roll"
+  ],
+  "steps": [
+   "Freeze the steak for 20-30 minutes until firm, then slice it as thinly as you can. Partial freezing is the only way to get thin slices without a deli slicer.",
+   "Cook the onions in 3 tbsp butter over medium-high 10 minutes until soft and browned at the edges, then move them to a plate.",
+   "Melt the remaining butter in the same pan and add the Worcestershire, seasoned salt, pepper and pepper flakes.",
+   "Add the beef in a single layer over high heat and cook just 60-90 seconds, tossing. Thin-sliced sirloin goes from tender to grey and tough in seconds.",
+   "Return the onions and toss everything together in the butter sauce.",
+   "Pile onto split rolls, top with provolone, and spoon the pan butter over. Serve immediately."
+  ],
+  "diet": {
+   "vegetarian": false,
+   "vegan": false,
+   "pescatarian": false,
+   "glutenFree": false,
+   "glutenFreeAdaptable": true,
+   "dairyFree": false,
+   "nutFree": true,
+   "eggFree": true
+  },
+  "allergens": [
+   "gluten",
+   "dairy",
+   "fish"
+  ],
+  "gmo": {
+   "risk": "moderate",
+   "sources": [
+    "grain-fed-meat",
+    "processed-bread",
+    "grain-fed-dairy",
+    "processed-sauce"
+   ]
+  },
+  "nutrition": {
+   "calories": 782,
+   "proteinG": 52,
+   "carbsG": 42,
+   "fiberG": 3,
+   "sugarG": 9,
+   "fatG": 44,
+   "satFatG": 22,
+   "sodiumMg": 1480,
+   "cholesterolMg": 178
+  },
+  "tags": [
+   "quick",
+   "weeknight",
+   "family",
+   "comfort",
+   "high-protein",
+   "easy",
+   "one-pan"
+  ],
+  "image": {
+   "file": "cheesesteak.jpg",
+   "source": "wikipedia-lead",
+   "match": "representative",
+   "wikipedia": "Steak sandwich"
+  }
+ },
+ {
+  "id": "ch-rd-003",
+  "slug": "rd-cinnamon-rolls",
+  "title": "Cinnamon Rolls with Maple Icing",
+  "genre": "american",
+  "subgenre": "desserts",
+  "chef": {
+   "name": "Ree Drummond",
+   "slug": "ree-drummond"
+  },
+  "description": "A big batch of soft rolls under a thin maple coffee glaze.",
+  "difficulty": "advanced",
+  "easeScore": 4,
+  "spiceScore": 0,
+  "popularity": 9,
+  "pantryScore": 8,
+  "servings": 24,
+  "prepMin": 60,
+  "cookMin": 180,
+  "totalMin": 240,
+  "equipment": [
+   "oven",
+   "stovetop"
+  ],
+  "ingredients": [
+   "4 cups whole milk",
+   "1 cup vegetable oil",
+   "1 cup sugar",
+   "2 1/4 tsp active dry yeast",
+   "8 cups all-purpose flour",
+   "1 tsp baking powder",
+   "1 tsp baking soda",
+   "2 tsp salt",
+   "1 1/2 cups butter, melted",
+   "2 cups packed brown sugar",
+   "1/4 cup ground cinnamon",
+   "4 cups powdered sugar",
+   "1/2 cup whole milk, for the icing",
+   "1/4 cup brewed coffee",
+   "1/3 cup maple syrup",
+   "1/4 tsp salt, for the icing"
+  ],
+  "ingredientKeys": [
+   "whole-milk",
+   "vegetable-oil",
+   "sugar",
+   "active-dry-yeast",
+   "flour",
+   "baking-powder",
+   "baking-soda",
+   "salt",
+   "butter",
+   "brown-sugar",
+   "cinnamon",
+   "powdered-sugar",
+   "whole-milk",
+   "brewed-coffee",
+   "maple-syrup",
+   "salt"
+  ],
+  "specialty": [
+   "active-dry-yeast",
+   "maple-syrup"
+  ],
+  "steps": [
+   "Heat the 4 cups milk, oil and sugar to just below a simmer, then cool to lukewarm - hotter than that kills the yeast. Sprinkle the yeast over and let it sit 10 minutes until foamy.",
+   "Stir in 7 cups of the flour, cover, and let it rise 1 hour until doubled.",
+   "Add the last cup of flour with the baking powder, baking soda and salt and stir in. The dough will be soft and sticky; resist adding more flour or the rolls turn dense.",
+   "Roll half the dough into a large rectangle, pour over half the melted butter, then scatter half the brown sugar and cinnamon. Roll up tightly from the long side and cut into 1-inch slices. Repeat with the rest.",
+   "Set the slices cut-side up in buttered pans, leaving space between, and rise 30 minutes.",
+   "Bake at 375F for 20-25 minutes until golden. Whisk the icing ingredients into a thin glaze and pour it over the rolls while they are still hot so it soaks in."
+  ],
+  "diet": {
+   "vegetarian": true,
+   "vegan": false,
+   "pescatarian": true,
+   "glutenFree": false,
+   "glutenFreeAdaptable": false,
+   "dairyFree": false,
+   "nutFree": true,
+   "eggFree": true
+  },
+  "allergens": [
+   "gluten",
+   "dairy"
+  ],
+  "gmo": {
+   "risk": "high",
+   "sources": [
+    "seed-oil",
+    "sugar-beet",
+    "grain-fed-dairy"
+   ]
+  },
+  "nutrition": {
+   "calories": 586,
+   "proteinG": 7,
+   "carbsG": 92,
+   "fiberG": 2,
+   "sugarG": 58,
+   "fatG": 22,
+   "satFatG": 10,
+   "sodiumMg": 320,
+   "cholesterolMg": 38
+  },
+  "tags": [
+   "dessert",
+   "breakfast",
+   "baking",
+   "project",
+   "party",
+   "crowd-pleaser",
+   "holiday",
+   "make-ahead"
+  ],
+  "image": {
+   "file": "cinnamon-roll.jpg",
+   "source": "wikipedia-lead",
+   "match": "representative",
+   "wikipedia": "Cinnamon roll"
+  }
+ },
+ {
+  "id": "ch-rd-004",
+  "slug": "rd-chicken-spaghetti",
+  "title": "Chicken Spaghetti",
+  "genre": "american",
+  "subgenre": "comfort",
+  "chef": {
+   "name": "Ree Drummond",
+   "slug": "ree-drummond"
+  },
+  "description": "A baked spaghetti casserole with chicken, peppers and plenty of cheese.",
+  "difficulty": "beginner",
+  "easeScore": 10,
+  "spiceScore": 3,
+  "popularity": 8,
+  "pantryScore": 9,
+  "servings": 8,
+  "prepMin": 25,
+  "cookMin": 45,
+  "totalMin": 70,
+  "equipment": [
+   "stovetop",
+   "oven"
+  ],
+  "ingredients": [
+   "1 lb spaghetti, broken in half",
+   "4 cups shredded cooked chicken",
+   "2 cans (10.5 oz each) condensed cream of mushroom soup",
+   "2 cups reserved chicken broth",
+   "1 green bell pepper, diced",
+   "1 yellow onion, diced",
+   "1 jar (4 oz) diced pimentos, drained",
+   "1 tbsp seasoned salt",
+   "2 tsp black pepper",
+   "1/2 tsp cayenne pepper",
+   "4 cups shredded sharp cheddar",
+   "1/2 cup chopped parsley"
+  ],
+  "ingredientKeys": [
+   "spaghetti",
+   "cooked-chicken",
+   "cream-of-mushroom-soup",
+   "chicken-broth",
+   "green-bell-pepper",
+   "yellow-onion",
+   "pimentos",
+   "seasoned-salt",
+   "black-pepper",
+   "cayenne",
+   "cheddar",
+   "parsley"
+  ],
+  "specialty": [
+   "cream-of-mushroom-soup",
+   "pimentos",
+   "seasoned-salt"
+  ],
+  "steps": [
+   "Boil the broken spaghetti 2 minutes short of the package time and drain. It absorbs liquid in the oven, so undercooking now prevents mush later.",
+   "Stir the soup, broth, bell pepper, onion, pimentos, seasoned salt, pepper and cayenne together in a large bowl.",
+   "Fold in the chicken, the drained spaghetti and half the cheddar.",
+   "Pour into a buttered 9x13 dish and spread level.",
+   "Scatter the rest of the cheddar over the top.",
+   "Bake at 350F for 40-45 minutes until bubbling at the edges and browned on top. Rest 10 minutes and finish with parsley."
+  ],
+  "diet": {
+   "vegetarian": false,
+   "vegan": false,
+   "pescatarian": false,
+   "glutenFree": false,
+   "glutenFreeAdaptable": false,
+   "dairyFree": false,
+   "nutFree": true,
+   "eggFree": true
+  },
+  "allergens": [
+   "gluten",
+   "dairy",
+   "soy"
+  ],
+  "gmo": {
+   "risk": "high",
+   "sources": [
+    "soy",
+    "processed-sauce",
+    "grain-fed-meat",
+    "grain-fed-dairy"
+   ]
+  },
+  "nutrition": {
+   "calories": 712,
+   "proteinG": 48,
+   "carbsG": 52,
+   "fiberG": 3,
+   "sugarG": 7,
+   "fatG": 34,
+   "satFatG": 17,
+   "sodiumMg": 1680,
+   "cholesterolMg": 148
+  },
+  "tags": [
+   "comfort",
+   "family",
+   "potluck",
+   "make-ahead",
+   "kid-friendly",
+   "leftovers",
+   "budget",
+   "crowd-pleaser"
+  ],
+  "image": {
+   "file": "rd-chicken-spaghetti.jpg",
+   "source": "commons-file",
+   "match": "dish",
+   "commonsFile": "Spaghetti with chicken.jpg"
+  }
+ },
+ {
+  "id": "ch-rd-005",
+  "slug": "rd-perfect-pot-roast",
+  "title": "Perfect Pot Roast",
+  "genre": "american",
+  "subgenre": "comfort",
+  "chef": {
+   "name": "Ree Drummond",
+   "slug": "ree-drummond"
+  },
+  "description": "Chuck roast braised with carrots and onions for four hours.",
+  "difficulty": "beginner",
+  "easeScore": 9,
+  "spiceScore": 1,
+  "popularity": 9,
+  "pantryScore": 8,
+  "servings": 8,
+  "prepMin": 20,
+  "cookMin": 250,
+  "totalMin": 270,
+  "equipment": [
+   "oven",
+   "stovetop"
+  ],
+  "ingredients": [
+   "1 chuck roast (5 lb)",
+   "1 tbsp kosher salt",
+   "2 tsp black pepper",
+   "3 tbsp olive oil",
+   "3 yellow onions, halved",
+   "8 carrots, cut in thick chunks",
+   "1 cup dry red wine",
+   "3 cups beef broth",
+   "4 sprigs fresh rosemary",
+   "6 sprigs fresh thyme"
+  ],
+  "ingredientKeys": [
+   "chuck-roast",
+   "kosher-salt",
+   "black-pepper",
+   "olive-oil",
+   "yellow-onion",
+   "carrot",
+   "red-wine",
+   "beef-broth",
+   "fresh-rosemary",
+   "fresh-thyme"
+  ],
+  "specialty": [
+   "chuck-roast",
+   "red-wine",
+   "fresh-rosemary",
+   "fresh-thyme"
+  ],
+  "steps": [
+   "Heat the oven to 275F. Pat the roast completely dry and season it heavily all over.",
+   "Sear the onion halves cut-side down in the oil in a Dutch oven for 2 minutes, then the carrots for 2 minutes, and set both aside.",
+   "Sear the roast hard, 4-5 minutes per side, until a deep brown crust forms on every surface. This browning is where almost all the flavor comes from, so take the time.",
+   "Pour in the wine and scrape the bottom clean, then add the broth.",
+   "Return the roast with the onions and carrots tucked around it, and lay the rosemary and thyme on top.",
+   "Cover and braise 4 to 4 1/2 hours. It is done when a fork twists in the meat with no resistance at all - if it resists, it needs another 30 minutes. Shred and serve in the juices."
+  ],
+  "diet": {
+   "vegetarian": false,
+   "vegan": false,
+   "pescatarian": false,
+   "glutenFree": true,
+   "glutenFreeAdaptable": false,
+   "dairyFree": true,
+   "nutFree": true,
+   "eggFree": true
+  },
+  "allergens": [
+   "sulfites"
+  ],
+  "gmo": {
+   "risk": "moderate",
+   "sources": [
+    "grain-fed-meat"
+   ]
+  },
+  "nutrition": {
+   "calories": 682,
+   "proteinG": 58,
+   "carbsG": 16,
+   "fiberG": 4,
+   "sugarG": 8,
+   "fatG": 40,
+   "satFatG": 15,
+   "sodiumMg": 1280,
+   "cholesterolMg": 186
+  },
+  "tags": [
+   "comfort",
+   "sunday",
+   "family",
+   "gluten-free",
+   "dairy-free",
+   "make-ahead",
+   "winter",
+   "high-protein",
+   "leftovers"
+  ],
+  "image": {
+   "file": "pot-roast.jpg",
+   "source": "wikipedia-lead",
+   "match": "representative",
+   "wikipedia": "Pot roast"
+  }
+ },
+ {
+  "id": "ch-rd-006",
+  "slug": "rd-crash-hot-potatoes",
+  "title": "Crash Hot Potatoes",
+  "genre": "american",
+  "subgenre": "sides",
+  "chef": {
+   "name": "Ree Drummond",
+   "slug": "ree-drummond"
+  },
+  "description": "Boiled potatoes smashed flat and roasted until the edges shatter.",
+  "difficulty": "beginner",
+  "easeScore": 10,
+  "spiceScore": 1,
+  "popularity": 9,
+  "pantryScore": 10,
+  "servings": 6,
+  "prepMin": 10,
+  "cookMin": 50,
+  "totalMin": 60,
+  "equipment": [
+   "stovetop",
+   "oven"
+  ],
+  "ingredients": [
+   "3 lb small red potatoes",
+   "1 tbsp kosher salt, for the water",
+   "1/2 cup olive oil",
+   "2 tsp kosher salt",
+   "2 tsp black pepper",
+   "2 tbsp chopped fresh rosemary",
+   "1/4 cup chopped chives"
+  ],
+  "ingredientKeys": [
+   "red-potato",
+   "kosher-salt",
+   "olive-oil",
+   "kosher-salt",
+   "black-pepper",
+   "fresh-rosemary",
+   "chives"
+  ],
+  "specialty": [
+   "fresh-rosemary"
+  ],
+  "steps": [
+   "Boil the whole potatoes in heavily salted water 20-25 minutes until completely tender. They must be fully soft or they will not smash.",
+   "Heat the oven to 450F and generously oil a sheet pan.",
+   "Set the drained potatoes on the pan with space between them, then press down on each with a potato masher or the bottom of a glass until it splits and flattens to about half an inch.",
+   "Drizzle generously with olive oil, getting into all the cracks, and season with salt, pepper and rosemary. The ragged edges are what crisp up, so the more broken they look the better.",
+   "Roast 20-25 minutes until deeply golden and crunchy at the edges.",
+   "Finish with chives and serve immediately."
+  ],
+  "diet": {
+   "vegetarian": true,
+   "vegan": true,
+   "pescatarian": true,
+   "glutenFree": true,
+   "glutenFreeAdaptable": false,
+   "dairyFree": true,
+   "nutFree": true,
+   "eggFree": true
+  },
+  "allergens": [],
+  "gmo": {
+   "risk": "low",
+   "sources": [
+    "none"
+   ]
+  },
+  "nutrition": {
+   "calories": 312,
+   "proteinG": 5,
+   "carbsG": 38,
+   "fiberG": 4,
+   "sugarG": 2,
+   "fatG": 17,
+   "satFatG": 2,
+   "sodiumMg": 780,
+   "cholesterolMg": 0
+  },
+  "tags": [
+   "side",
+   "vegan",
+   "vegetarian",
+   "gluten-free",
+   "dairy-free",
+   "easy",
+   "family",
+   "budget",
+   "holiday"
+  ],
+  "image": {
+   "file": "roasted-potatoes.jpg",
+   "source": "wikipedia-lead",
+   "match": "representative",
+   "wikipedia": "Roast potatoes"
+  }
+ },
+ {
+  "id": "ch-rd-007",
+  "slug": "rd-twice-baked-potatoes",
+  "title": "Twice-Baked Potatoes",
+  "genre": "american",
+  "subgenre": "sides",
+  "chef": {
+   "name": "Ree Drummond",
+   "slug": "ree-drummond"
+  },
+  "description": "Potato shells refilled with a bacon, sour cream and cheddar mash.",
+  "difficulty": "beginner",
+  "easeScore": 9,
+  "spiceScore": 2,
+  "popularity": 9,
+  "pantryScore": 9,
+  "servings": 8,
+  "prepMin": 25,
+  "cookMin": 90,
+  "totalMin": 115,
+  "equipment": [
+   "oven",
+   "stovetop"
+  ],
+  "ingredients": [
+   "8 russet potatoes",
+   "2 tbsp canola oil",
+   "1 tbsp kosher salt",
+   "8 slices bacon, diced",
+   "1/2 cup butter",
+   "1 cup sour cream",
+   "1 cup whole milk, warmed",
+   "3 cups shredded sharp cheddar",
+   "1 tsp seasoned salt",
+   "1 tsp black pepper",
+   "1/2 tsp cayenne pepper",
+   "6 scallions, sliced"
+  ],
+  "ingredientKeys": [
+   "russet-potato",
+   "canola-oil",
+   "kosher-salt",
+   "bacon",
+   "butter",
+   "sour-cream",
+   "whole-milk",
+   "cheddar",
+   "seasoned-salt",
+   "black-pepper",
+   "cayenne",
+   "scallion"
+  ],
+  "specialty": [
+   "seasoned-salt"
+  ],
+  "steps": [
+   "Rub the potatoes with oil and kosher salt and bake directly on the oven rack at 400F for 60-70 minutes, until the skins are crisp and a knife slides in easily.",
+   "Cook the bacon until crisp and reserve the fat.",
+   "Cool the potatoes 10 minutes, halve them lengthwise, and scoop the flesh into a bowl, leaving a 1/4-inch shell so they hold their shape.",
+   "Mash the flesh with the butter, sour cream, warm milk, 2 cups of the cheddar, the bacon, seasoned salt, pepper and cayenne. Do not over-mash - a few lumps are better than gluey.",
+   "Pile the filling back into the shells, mounding it high, and top with the remaining cheddar.",
+   "Bake at 400F for 20 minutes until the tops are browned and bubbling. Finish with scallions."
+  ],
+  "diet": {
+   "vegetarian": false,
+   "vegan": false,
+   "pescatarian": false,
+   "glutenFree": true,
+   "glutenFreeAdaptable": false,
+   "dairyFree": false,
+   "nutFree": true,
+   "eggFree": true
+  },
+  "allergens": [
+   "dairy"
+  ],
+  "gmo": {
+   "risk": "moderate",
+   "sources": [
+    "grain-fed-meat",
+    "seed-oil",
+    "grain-fed-dairy"
+   ]
+  },
+  "nutrition": {
+   "calories": 586,
+   "proteinG": 20,
+   "carbsG": 44,
+   "fiberG": 4,
+   "sugarG": 6,
+   "fatG": 38,
+   "satFatG": 21,
+   "sodiumMg": 1080,
+   "cholesterolMg": 98
+  },
+  "tags": [
+   "side",
+   "comfort",
+   "gluten-free",
+   "make-ahead",
+   "family",
+   "holiday",
+   "party",
+   "crowd-pleaser"
+  ],
+  "image": {
+   "file": "rd-twice-baked-potatoes.jpg",
+   "source": "commons-file",
+   "match": "dish",
+   "commonsFile": "Twice Baked Potatoes (3965183906).jpg"
+  }
+ },
+ {
+  "id": "ch-rd-008",
+  "slug": "rd-breakfast-casserole",
+  "title": "Sausage Breakfast Casserole",
+  "genre": "american",
+  "subgenre": "breakfast",
+  "chef": {
+   "name": "Ree Drummond",
+   "slug": "ree-drummond"
+  },
+  "description": "An overnight egg and sausage bake you assemble the night before.",
+  "difficulty": "beginner",
+  "easeScore": 10,
+  "spiceScore": 2,
+  "popularity": 9,
+  "pantryScore": 9,
+  "servings": 10,
+  "prepMin": 20,
+  "cookMin": 540,
+  "totalMin": 560,
+  "equipment": [
+   "stovetop",
+   "oven"
+  ],
+  "ingredients": [
+   "1 1/2 lb breakfast sausage",
+   "1 lb country bread, cut in cubes",
+   "12 eggs",
+   "3 cups whole milk",
+   "1 tsp mustard powder",
+   "2 tsp seasoned salt",
+   "1 tsp black pepper",
+   "1/2 tsp cayenne pepper",
+   "4 cups shredded sharp cheddar",
+   "1 red bell pepper, diced",
+   "6 scallions, sliced",
+   "3 tbsp butter"
+  ],
+  "ingredientKeys": [
+   "breakfast-sausage",
+   "country-bread",
+   "egg",
+   "whole-milk",
+   "mustard-powder",
+   "seasoned-salt",
+   "black-pepper",
+   "cayenne",
+   "cheddar",
+   "red-bell-pepper",
+   "scallion",
+   "butter"
+  ],
+  "specialty": [
+   "breakfast-sausage",
+   "country-bread",
+   "mustard-powder",
+   "seasoned-salt"
+  ],
+  "steps": [
+   "Brown the sausage, breaking it up, and drain off the fat.",
+   "Butter a 9x13 dish and spread the bread cubes over the base, then the sausage, bell pepper and 3 cups of the cheddar.",
+   "Whisk the eggs, milk, mustard powder, seasoned salt, pepper and cayenne until completely uniform and pour it over the bread.",
+   "Press the bread down so everything is submerged, cover, and refrigerate at least 8 hours or overnight. That long soak is what turns the bread into custard instead of leaving dry cubes on top.",
+   "Take it out 30 minutes before baking and scatter the rest of the cheddar over.",
+   "Bake at 350F for 50-60 minutes until puffed, set in the center and golden. Rest 10 minutes and finish with scallions."
+  ],
+  "diet": {
+   "vegetarian": false,
+   "vegan": false,
+   "pescatarian": false,
+   "glutenFree": false,
+   "glutenFreeAdaptable": false,
+   "dairyFree": false,
+   "nutFree": true,
+   "eggFree": false
+  },
+  "allergens": [
+   "gluten",
+   "dairy",
+   "egg"
+  ],
+  "gmo": {
+   "risk": "moderate",
+   "sources": [
+    "grain-fed-meat",
+    "processed-bread",
+    "grain-fed-dairy"
+   ]
+  },
+  "nutrition": {
+   "calories": 612,
+   "proteinG": 34,
+   "carbsG": 32,
+   "fiberG": 2,
+   "sugarG": 7,
+   "fatG": 38,
+   "satFatG": 18,
+   "sodiumMg": 1480,
+   "cholesterolMg": 328
+  },
+  "tags": [
+   "breakfast",
+   "brunch",
+   "make-ahead",
+   "family",
+   "holiday",
+   "christmas",
+   "crowd-pleaser",
+   "high-protein"
+  ],
+  "image": {
+   "file": "breakfast-casserole.jpg",
+   "source": "wikipedia-lead",
+   "match": "representative",
+   "wikipedia": "Casserole"
+  }
+ },
+ {
+  "id": "ch-rd-009",
+  "slug": "rd-beef-enchiladas",
+  "title": "Beef Enchiladas",
+  "genre": "mexican",
+  "subgenre": "enchiladas",
+  "chef": {
+   "name": "Ree Drummond",
+   "slug": "ree-drummond"
+  },
+  "description": "Corn tortillas dipped in homemade red sauce, filled with beef and baked.",
+  "difficulty": "beginner",
+  "easeScore": 8,
+  "spiceScore": 4,
+  "popularity": 9,
+  "pantryScore": 9,
+  "servings": 8,
+  "prepMin": 25,
+  "cookMin": 40,
+  "totalMin": 65,
+  "equipment": [
+   "stovetop",
+   "oven"
+  ],
+  "ingredients": [
+   "2 lb ground beef (85/15)",
+   "1 yellow onion, diced",
+   "3 cloves garlic, minced",
+   "2 tsp salt",
+   "1 tsp black pepper",
+   "3 tbsp canola oil",
+   "3 tbsp all-purpose flour",
+   "1/4 cup chili powder",
+   "1 tbsp ground cumin",
+   "1 can (14 oz) tomato sauce",
+   "2 1/2 cups beef broth",
+   "1 can (4 oz) diced green chiles",
+   "18 corn tortillas",
+   "4 cups shredded cheddar",
+   "1/2 cup chopped cilantro",
+   "6 scallions, sliced",
+   "1 cup sour cream"
+  ],
+  "ingredientKeys": [
+   "ground-beef",
+   "yellow-onion",
+   "garlic",
+   "salt",
+   "black-pepper",
+   "canola-oil",
+   "flour",
+   "chili-powder",
+   "cumin",
+   "tomato-sauce",
+   "beef-broth",
+   "green-chiles",
+   "corn-tortilla",
+   "cheddar",
+   "cilantro",
+   "scallion",
+   "sour-cream"
+  ],
+  "specialty": [
+   "green-chiles"
+  ],
+  "steps": [
+   "Brown the beef with the onion and garlic, season, and drain the fat. Set aside.",
+   "Make the sauce: heat the oil, whisk in the flour and cook 1 minute, then add the chili powder and cumin and stir 30 seconds. Add the tomato sauce, broth and green chiles and simmer 10 minutes until it thickens slightly.",
+   "Warm the tortillas in a dry skillet until pliable - cold corn tortillas crack the moment you roll them.",
+   "Dip each tortilla briefly in the warm sauce, then fill with beef and a little cheddar, roll up, and pack seam-side down in a 9x13 dish.",
+   "Pour the remaining sauce over and scatter the rest of the cheddar.",
+   "Bake at 350F for 25-30 minutes until bubbling. Rest 5 minutes, then top with cilantro, scallions and sour cream."
+  ],
+  "diet": {
+   "vegetarian": false,
+   "vegan": false,
+   "pescatarian": false,
+   "glutenFree": false,
+   "glutenFreeAdaptable": true,
+   "dairyFree": false,
+   "nutFree": true,
+   "eggFree": true
+  },
+  "allergens": [
+   "gluten",
+   "dairy"
+  ],
+  "gmo": {
+   "risk": "high",
+   "sources": [
+    "grain-fed-meat",
+    "corn",
+    "seed-oil",
+    "grain-fed-dairy"
+   ]
+  },
+  "nutrition": {
+   "calories": 782,
+   "proteinG": 48,
+   "carbsG": 52,
+   "fiberG": 7,
+   "sugarG": 8,
+   "fatG": 42,
+   "satFatG": 19,
+   "sodiumMg": 1680,
+   "cholesterolMg": 158
+  },
+  "tags": [
+   "family",
+   "comfort",
+   "make-ahead",
+   "potluck",
+   "kid-friendly",
+   "leftovers",
+   "crowd-pleaser"
+  ],
+  "image": {
+   "file": "enchiladas.jpg",
+   "source": "wikipedia-lead",
+   "match": "representative",
+   "wikipedia": "Enchilada"
+  }
+ },
+ {
+  "id": "ch-rd-010",
+  "slug": "rd-white-chicken-enchiladas",
+  "title": "White Chicken Enchiladas",
+  "genre": "mexican",
+  "subgenre": "enchiladas",
+  "chef": {
+   "name": "Ree Drummond",
+   "slug": "ree-drummond"
+  },
+  "description": "Flour tortillas rolled around chicken under a sour cream green chile sauce.",
+  "difficulty": "beginner",
+  "easeScore": 9,
+  "spiceScore": 3,
+  "popularity": 8,
+  "pantryScore": 9,
+  "servings": 8,
+  "prepMin": 20,
+  "cookMin": 35,
+  "totalMin": 55,
+  "equipment": [
+   "stovetop",
+   "oven"
+  ],
+  "ingredients": [
+   "4 cups shredded cooked chicken",
+   "4 tbsp butter",
+   "1/4 cup all-purpose flour",
+   "2 1/2 cups chicken broth",
+   "1 1/2 cups sour cream",
+   "2 cans (4 oz each) diced green chiles",
+   "1 tsp ground cumin",
+   "1 tsp garlic powder",
+   "1 1/2 tsp salt",
+   "1/2 tsp cayenne pepper",
+   "12 flour tortillas",
+   "4 cups shredded Monterey Jack",
+   "1/2 cup chopped cilantro",
+   "4 scallions, sliced"
+  ],
+  "ingredientKeys": [
+   "cooked-chicken",
+   "butter",
+   "flour",
+   "chicken-broth",
+   "sour-cream",
+   "green-chiles",
+   "cumin",
+   "garlic-powder",
+   "salt",
+   "cayenne",
+   "flour-tortilla",
+   "monterey-jack",
+   "cilantro",
+   "scallion"
+  ],
+  "specialty": [
+   "green-chiles"
+  ],
+  "steps": [
+   "Melt the butter, whisk in the flour and cook 1 minute, then add the broth gradually and simmer 4 minutes until it thickens.",
+   "Take the pan off the heat before stirring in the sour cream, green chiles, cumin, garlic powder, salt and cayenne. Sour cream added over direct heat will curdle and split.",
+   "Toss the chicken with 1 cup of the sauce and 1 cup of the Monterey Jack.",
+   "Fill the tortillas, roll them up and pack them seam-side down in a buttered 9x13 dish.",
+   "Pour the remaining sauce over and top with the rest of the cheese.",
+   "Bake at 350F for 25-30 minutes until bubbling and lightly browned. Finish with cilantro and scallions."
+  ],
+  "diet": {
+   "vegetarian": false,
+   "vegan": false,
+   "pescatarian": false,
+   "glutenFree": false,
+   "glutenFreeAdaptable": false,
+   "dairyFree": false,
+   "nutFree": true,
+   "eggFree": true
+  },
+  "allergens": [
+   "gluten",
+   "dairy"
+  ],
+  "gmo": {
+   "risk": "high",
+   "sources": [
+    "processed-bread",
+    "grain-fed-meat",
+    "grain-fed-dairy"
+   ]
+  },
+  "nutrition": {
+   "calories": 812,
+   "proteinG": 52,
+   "carbsG": 48,
+   "fiberG": 3,
+   "sugarG": 9,
+   "fatG": 46,
+   "satFatG": 24,
+   "sodiumMg": 1680,
+   "cholesterolMg": 178
+  },
+  "tags": [
+   "family",
+   "comfort",
+   "make-ahead",
+   "potluck",
+   "kid-friendly",
+   "weeknight",
+   "crowd-pleaser"
+  ],
+  "image": {
+   "file": "enchiladas-verdes.jpg",
+   "source": "wikipedia-lead",
+   "match": "representative",
+   "wikipedia": "Enchilada"
+  }
+ },
+ {
+  "id": "ch-rd-011",
+  "slug": "rd-restaurant-style-salsa",
+  "title": "Restaurant-Style Salsa",
+  "genre": "mexican",
+  "subgenre": "salsas",
+  "chef": {
+   "name": "Ree Drummond",
+   "slug": "ree-drummond"
+  },
+  "description": "Canned tomatoes blitzed with lime and cilantro in five minutes.",
+  "difficulty": "beginner",
+  "easeScore": 10,
+  "spiceScore": 5,
+  "popularity": 9,
+  "pantryScore": 10,
+  "servings": 12,
+  "prepMin": 10,
+  "cookMin": 60,
+  "totalMin": 70,
+  "equipment": [
+   "blender",
+   "no-cook"
+  ],
+  "ingredients": [
+   "1 can (28 oz) whole tomatoes with juice",
+   "2 cans (10 oz each) diced tomatoes with green chiles",
+   "1/2 yellow onion, quartered",
+   "2 cloves garlic",
+   "2 jalapenos, stemmed",
+   "1/2 tsp sugar",
+   "1 1/2 tsp salt",
+   "1 tsp ground cumin",
+   "1 cup cilantro",
+   "1/2 cup lime juice"
+  ],
+  "ingredientKeys": [
+   "canned-tomatoes",
+   "tomatoes-with-green-chiles",
+   "yellow-onion",
+   "garlic",
+   "jalapeno",
+   "sugar",
+   "salt",
+   "cumin",
+   "cilantro",
+   "lime-juice"
+  ],
+  "specialty": [
+   "tomatoes-with-green-chiles"
+  ],
+  "steps": [
+   "Put everything in a blender or food processor.",
+   "Pulse rather than puree - 10 to 15 short pulses. The point is a loose, slightly chunky salsa, and running the motor turns it into pink froth.",
+   "Taste and adjust: more jalapeno for heat, more lime for brightness, more salt if it tastes flat.",
+   "Refrigerate at least 1 hour. The raw onion and garlic mellow considerably in that time, and the salsa tastes noticeably better than it does straight from the blender.",
+   "Stir before serving - it separates as it sits.",
+   "Serve with tortilla chips. It keeps a week refrigerated."
+  ],
+  "diet": {
+   "vegetarian": true,
+   "vegan": true,
+   "pescatarian": true,
+   "glutenFree": true,
+   "glutenFreeAdaptable": false,
+   "dairyFree": true,
+   "nutFree": true,
+   "eggFree": true
+  },
+  "allergens": [],
+  "gmo": {
+   "risk": "low",
+   "sources": [
+    "sugar-beet"
+   ]
+  },
+  "nutrition": {
+   "calories": 32,
+   "proteinG": 1,
+   "carbsG": 7,
+   "fiberG": 2,
+   "sugarG": 4,
+   "fatG": 0,
+   "satFatG": 0,
+   "sodiumMg": 480,
+   "cholesterolMg": 0
+  },
+  "tags": [
+   "salsa",
+   "no-cook",
+   "quick",
+   "vegan",
+   "vegetarian",
+   "gluten-free",
+   "dairy-free",
+   "party",
+   "pantry",
+   "make-ahead",
+   "budget"
+  ],
+  "image": {
+   "file": "salsa-roja.jpg",
+   "source": "wikipedia-lead",
+   "match": "representative",
+   "wikipedia": "Salsa (sauce)"
+  }
+ },
+ {
+  "id": "ch-rd-012",
+  "slug": "rd-bacon-meatloaf",
+  "title": "Bacon-Wrapped Meatloaf",
+  "genre": "american",
+  "subgenre": "comfort",
+  "chef": {
+   "name": "Ree Drummond",
+   "slug": "ree-drummond"
+  },
+  "description": "A milk-soaked loaf wrapped in bacon with a sweet tomato glaze.",
+  "difficulty": "beginner",
+  "easeScore": 9,
+  "spiceScore": 1,
+  "popularity": 9,
+  "pantryScore": 9,
+  "servings": 8,
+  "prepMin": 20,
+  "cookMin": 75,
+  "totalMin": 95,
+  "equipment": [
+   "oven",
+   "stovetop"
+  ],
+  "ingredients": [
+   "2 lb ground beef (85/15)",
+   "1 cup whole milk",
+   "6 slices white bread, torn",
+   "1 cup grated Parmesan",
+   "1/4 cup chopped parsley",
+   "2 tsp seasoned salt",
+   "1 tsp black pepper",
+   "4 eggs",
+   "12 slices thin-cut bacon",
+   "1 1/2 cups ketchup",
+   "1/3 cup packed brown sugar",
+   "1 tbsp mustard powder",
+   "2 tbsp hot sauce"
+  ],
+  "ingredientKeys": [
+   "ground-beef",
+   "whole-milk",
+   "white-bread",
+   "parmesan",
+   "parsley",
+   "seasoned-salt",
+   "black-pepper",
+   "egg",
+   "bacon",
+   "ketchup",
+   "brown-sugar",
+   "mustard-powder",
+   "hot-sauce"
+  ],
+  "specialty": [
+   "seasoned-salt",
+   "mustard-powder"
+  ],
+  "steps": [
+   "Pour the milk over the torn bread and let it soak 10 minutes until completely soft. This is the single reason good meatloaf is moist.",
+   "Mix in the beef, Parmesan, parsley, seasoned salt, pepper and eggs with your hands, stopping the moment it comes together. Overworking makes it rubbery.",
+   "Shape into a loaf on a foil-lined sheet pan rather than packing it into a loaf pan, so more surface browns.",
+   "Lay the bacon slices crosswise over the loaf, overlapping slightly, and tuck the ends underneath. Thin-cut bacon is important - thick bacon will not render through in the time the loaf takes.",
+   "Whisk the ketchup, brown sugar, mustard powder and hot sauce and brush a third over the bacon.",
+   "Bake at 350F for 45 minutes, glaze again, then bake 25-30 minutes more to 160F internal. Rest 15 minutes before slicing."
+  ],
+  "diet": {
+   "vegetarian": false,
+   "vegan": false,
+   "pescatarian": false,
+   "glutenFree": false,
+   "glutenFreeAdaptable": false,
+   "dairyFree": false,
+   "nutFree": true,
+   "eggFree": false
+  },
+  "allergens": [
+   "gluten",
+   "dairy",
+   "egg"
+  ],
+  "gmo": {
+   "risk": "high",
+   "sources": [
+    "grain-fed-meat",
+    "processed-bread",
+    "corn-syrup",
+    "sugar-beet",
+    "grain-fed-dairy"
+   ]
+  },
+  "nutrition": {
+   "calories": 682,
+   "proteinG": 42,
+   "carbsG": 42,
+   "fiberG": 2,
+   "sugarG": 28,
+   "fatG": 38,
+   "satFatG": 15,
+   "sodiumMg": 1880,
+   "cholesterolMg": 218
+  },
+  "tags": [
+   "comfort",
+   "family",
+   "classic",
+   "make-ahead",
+   "leftovers",
+   "kid-friendly",
+   "sunday"
+  ],
+  "image": {
+   "file": "meatloaf.jpg",
+   "source": "wikipedia-lead",
+   "match": "representative",
+   "wikipedia": "Meatloaf"
+  }
+ },
+ {
+  "id": "ch-rd-013",
+  "slug": "rd-fried-chicken",
+  "title": "Buttermilk Fried Chicken",
+  "genre": "american",
+  "subgenre": "comfort",
+  "chef": {
+   "name": "Ree Drummond",
+   "slug": "ree-drummond"
+  },
+  "description": "Chicken brined in buttermilk and fried in a seasoned flour crust.",
+  "difficulty": "intermediate",
+  "easeScore": 5,
+  "spiceScore": 4,
+  "popularity": 10,
+  "pantryScore": 8,
+  "servings": 6,
+  "prepMin": 25,
+  "cookMin": 215,
+  "totalMin": 240,
+  "equipment": [
+   "stovetop"
+  ],
+  "ingredients": [
+   "4 lb chicken pieces, bone-in",
+   "4 cups buttermilk",
+   "2 tbsp hot sauce",
+   "1 tbsp kosher salt, for the brine",
+   "3 cups all-purpose flour",
+   "1 tbsp seasoned salt",
+   "2 tsp paprika",
+   "2 tsp garlic powder",
+   "2 tsp black pepper",
+   "1 tsp cayenne pepper",
+   "1 tsp dried thyme",
+   "6 cups canola oil, for frying"
+  ],
+  "ingredientKeys": [
+   "chicken-pieces",
+   "buttermilk",
+   "hot-sauce",
+   "kosher-salt",
+   "flour",
+   "seasoned-salt",
+   "paprika",
+   "garlic-powder",
+   "black-pepper",
+   "cayenne",
+   "dried-thyme",
+   "canola-oil"
+  ],
+  "specialty": [
+   "chicken-pieces",
+   "buttermilk",
+   "seasoned-salt"
+  ],
+  "steps": [
+   "Whisk the buttermilk, hot sauce and kosher salt and submerge the chicken. Refrigerate at least 3 hours, ideally overnight - the buttermilk tenderizes as well as seasons.",
+   "Mix the flour with the seasoned salt, paprika, garlic powder, pepper, cayenne and thyme. Drizzle in 3 tbsp of the buttermilk brine and rub it through with your fingers - those shaggy clumps become the crunchiest bits of crust.",
+   "Lift each piece from the brine, let it drip briefly, and press it firmly into the flour. Rest on a rack 15 minutes so the coating sets and grips.",
+   "Heat 2 inches of oil to 325F. Use a thermometer; this is the step most people get wrong.",
+   "Fry in batches of 3 or 4, never crowding, 14-18 minutes, turning once. Adjust the burner to hold 300-325F throughout.",
+   "Breasts are done at 160F, thighs and drumsticks at 175F. Drain on a rack and salt immediately. Let the oil recover between batches."
+  ],
+  "diet": {
+   "vegetarian": false,
+   "vegan": false,
+   "pescatarian": false,
+   "glutenFree": false,
+   "glutenFreeAdaptable": false,
+   "dairyFree": false,
+   "nutFree": true,
+   "eggFree": true
+  },
+  "allergens": [
+   "gluten",
+   "dairy"
+  ],
+  "gmo": {
+   "risk": "high",
+   "sources": [
+    "grain-fed-meat",
+    "seed-oil",
+    "grain-fed-dairy"
+   ]
+  },
+  "nutrition": {
+   "calories": 782,
+   "proteinG": 52,
+   "carbsG": 38,
+   "fiberG": 2,
+   "sugarG": 5,
+   "fatG": 46,
+   "satFatG": 10,
+   "sodiumMg": 1680,
+   "cholesterolMg": 178
+  },
+  "tags": [
+   "southern",
+   "comfort",
+   "weekend",
+   "party",
+   "high-protein",
+   "classic",
+   "family"
+  ],
+  "image": {
+   "file": "rd-fried-chicken.jpg",
+   "source": "commons-file",
+   "match": "dish",
+   "commonsFile": "Buttermilk Fried Chicken.jpg"
+  }
+ },
+ {
+  "id": "ch-rd-014",
+  "slug": "rd-cowboy-quesadillas",
+  "title": "Cowboy Quesadillas",
+  "genre": "mexican",
+  "subgenre": "antojitos",
+  "chef": {
+   "name": "Ree Drummond",
+   "slug": "ree-drummond"
+  },
+  "description": "Steak, peppers and cheese griddled between tortillas.",
+  "difficulty": "beginner",
+  "easeScore": 9,
+  "spiceScore": 4,
+  "popularity": 8,
+  "pantryScore": 8,
+  "servings": 4,
+  "prepMin": 15,
+  "cookMin": 25,
+  "totalMin": 40,
+  "equipment": [
+   "stovetop"
+  ],
+  "ingredients": [
+   "1 1/2 lb sirloin steak, thinly sliced",
+   "3 tbsp canola oil",
+   "2 tsp chili powder",
+   "1 tsp ground cumin",
+   "2 tsp salt",
+   "1 tsp black pepper",
+   "2 bell peppers, sliced",
+   "1 yellow onion, sliced",
+   "2 jalapenos, sliced",
+   "8 flour tortillas",
+   "4 cups shredded Monterey Jack",
+   "3 tbsp butter",
+   "1 cup pico de gallo",
+   "1 cup sour cream"
+  ],
+  "ingredientKeys": [
+   "sirloin-steak",
+   "canola-oil",
+   "chili-powder",
+   "cumin",
+   "salt",
+   "black-pepper",
+   "bell-pepper",
+   "yellow-onion",
+   "jalapeno",
+   "flour-tortilla",
+   "monterey-jack",
+   "butter",
+   "pico-de-gallo",
+   "sour-cream"
+  ],
+  "specialty": [],
+  "steps": [
+   "Toss the sliced steak with the chili powder, cumin, salt and pepper.",
+   "Sear it in the oil over the highest heat in two batches, 90 seconds each, then set aside. Thin steak overcooks almost instantly, and it gets a second round of heat inside the quesadilla.",
+   "Cook the peppers, onion and jalapenos in the same pan 8 minutes until charred at the edges, then combine with the steak.",
+   "Wipe the pan and melt a little butter over medium heat. Lay a tortilla in, cover with cheese, then the filling, then more cheese, then a second tortilla.",
+   "Cheese on both sides of the filling is what glues the quesadilla together.",
+   "Cook 3 minutes per side, pressing with a spatula, until crisp and fully melted. Rest 1 minute, cut into wedges, and serve with pico and sour cream."
+  ],
+  "diet": {
+   "vegetarian": false,
+   "vegan": false,
+   "pescatarian": false,
+   "glutenFree": false,
+   "glutenFreeAdaptable": true,
+   "dairyFree": false,
+   "nutFree": true,
+   "eggFree": true
+  },
+  "allergens": [
+   "gluten",
+   "dairy"
+  ],
+  "gmo": {
+   "risk": "high",
+   "sources": [
+    "grain-fed-meat",
+    "processed-bread",
+    "seed-oil",
+    "grain-fed-dairy"
+   ]
+  },
+  "nutrition": {
+   "calories": 982,
+   "proteinG": 62,
+   "carbsG": 52,
+   "fiberG": 5,
+   "sugarG": 9,
+   "fatG": 58,
+   "satFatG": 28,
+   "sodiumMg": 1680,
+   "cholesterolMg": 198
+  },
+  "tags": [
+   "quick",
+   "weeknight",
+   "family",
+   "game-day",
+   "high-protein",
+   "kid-friendly",
+   "tex-mex"
+  ],
+  "image": {
+   "file": "quesadilla.jpg",
+   "source": "wikipedia-lead",
+   "match": "representative",
+   "wikipedia": "Quesadilla"
+  }
+ },
+ {
+  "id": "ch-rd-015",
+  "slug": "rd-corn-casserole",
+  "title": "Corn Casserole",
+  "genre": "american",
+  "subgenre": "sides",
+  "chef": {
+   "name": "Ree Drummond",
+   "slug": "ree-drummond"
+  },
+  "description": "A spoonbread-style corn pudding that comes together in one bowl.",
+  "difficulty": "beginner",
+  "easeScore": 10,
+  "spiceScore": 2,
+  "popularity": 8,
+  "pantryScore": 9,
+  "servings": 10,
+  "prepMin": 10,
+  "cookMin": 55,
+  "totalMin": 65,
+  "equipment": [
+   "oven"
+  ],
+  "ingredients": [
+   "1 can (15 oz) whole kernel corn, drained",
+   "1 can (15 oz) cream-style corn",
+   "1 box (8.5 oz) corn muffin mix",
+   "1 cup sour cream",
+   "1/2 cup butter, melted",
+   "2 eggs",
+   "1 cup shredded sharp cheddar",
+   "1 jalapeno, minced",
+   "1 tsp salt",
+   "1/2 tsp black pepper",
+   "4 scallions, sliced"
+  ],
+  "ingredientKeys": [
+   "canned-corn",
+   "cream-style-corn",
+   "corn-muffin-mix",
+   "sour-cream",
+   "butter",
+   "egg",
+   "cheddar",
+   "jalapeno",
+   "salt",
+   "black-pepper",
+   "scallion"
+  ],
+  "specialty": [
+   "cream-style-corn",
+   "corn-muffin-mix"
+  ],
+  "steps": [
+   "Heat the oven to 350F and butter a 9x13 dish.",
+   "Stir the whole corn, cream-style corn, muffin mix, sour cream, melted butter, eggs, jalapeno, salt and pepper together in one bowl. Mix only until combined.",
+   "The cream-style corn is doing the work here - it supplies all the liquid, so do not add milk.",
+   "Pour into the dish and scatter the cheddar over.",
+   "Bake 50-55 minutes until the top is golden and the center is set but still soft, like a pudding rather than a cake.",
+   "Rest 10 minutes and finish with scallions. It firms up considerably as it cools."
+  ],
+  "diet": {
+   "vegetarian": true,
+   "vegan": false,
+   "pescatarian": true,
+   "glutenFree": false,
+   "glutenFreeAdaptable": false,
+   "dairyFree": false,
+   "nutFree": true,
+   "eggFree": false
+  },
+  "allergens": [
+   "gluten",
+   "dairy",
+   "egg"
+  ],
+  "gmo": {
+   "risk": "high",
+   "sources": [
+    "corn",
+    "grain-fed-dairy",
+    "sugar-beet"
+   ]
+  },
+  "nutrition": {
+   "calories": 386,
+   "proteinG": 9,
+   "carbsG": 38,
+   "fiberG": 2,
+   "sugarG": 11,
+   "fatG": 22,
+   "satFatG": 13,
+   "sodiumMg": 780,
+   "cholesterolMg": 82
+  },
+  "tags": [
+   "side",
+   "thanksgiving",
+   "holiday",
+   "potluck",
+   "family",
+   "easy",
+   "vegetarian",
+   "crowd-pleaser"
+  ],
+  "image": {
+   "file": "corn-casserole.jpg",
+   "source": "wikipedia-lead",
+   "match": "representative",
+   "wikipedia": "Corn pudding"
+  }
+ },
+ {
+  "id": "ch-rd-016",
+  "slug": "rd-creamed-spinach",
+  "title": "Creamed Spinach",
+  "genre": "american",
+  "subgenre": "sides",
+  "chef": {
+   "name": "Ree Drummond",
+   "slug": "ree-drummond"
+  },
+  "description": "Spinach in a Parmesan cream sauce with plenty of black pepper.",
+  "difficulty": "beginner",
+  "easeScore": 9,
+  "spiceScore": 2,
+  "popularity": 8,
+  "pantryScore": 9,
+  "servings": 6,
+  "prepMin": 10,
+  "cookMin": 25,
+  "totalMin": 35,
+  "equipment": [
+   "stovetop"
+  ],
+  "ingredients": [
+   "2 lb frozen spinach, thawed",
+   "4 tbsp butter",
+   "1 yellow onion, finely diced",
+   "4 cloves garlic, minced",
+   "3 tbsp all-purpose flour",
+   "2 cups whole milk, warmed",
+   "1/2 cup heavy cream",
+   "1/4 tsp ground nutmeg",
+   "1 1/2 tsp salt",
+   "2 tsp black pepper",
+   "1/4 tsp cayenne pepper",
+   "1 cup grated Parmesan",
+   "4 oz cream cheese"
+  ],
+  "ingredientKeys": [
+   "frozen-spinach",
+   "butter",
+   "yellow-onion",
+   "garlic",
+   "flour",
+   "whole-milk",
+   "heavy-cream",
+   "nutmeg",
+   "salt",
+   "black-pepper",
+   "cayenne",
+   "parmesan",
+   "cream-cheese"
+  ],
+  "specialty": [
+   "cream-cheese"
+  ],
+  "steps": [
+   "Squeeze the thawed spinach in handfuls until no more water comes out. Do it twice. Wet spinach makes a thin, grey sauce, and this is the only step that really matters.",
+   "Cook the onion in the butter over medium heat 8 minutes until soft, then add the garlic for 1 minute.",
+   "Stir in the flour and cook 2 minutes, then whisk in the warm milk gradually and simmer 4 minutes until thick.",
+   "Add the cream, nutmeg, salt, pepper and cayenne.",
+   "Take the pan off the heat and stir in the Parmesan and cream cheese until smooth.",
+   "Fold in the squeezed spinach and warm through 3 minutes. Taste for salt and add more black pepper than feels reasonable."
+  ],
+  "diet": {
+   "vegetarian": true,
+   "vegan": false,
+   "pescatarian": true,
+   "glutenFree": false,
+   "glutenFreeAdaptable": true,
+   "dairyFree": false,
+   "nutFree": true,
+   "eggFree": true
+  },
+  "allergens": [
+   "gluten",
+   "dairy"
+  ],
+  "gmo": {
+   "risk": "low",
+   "sources": [
+    "grain-fed-dairy"
+   ]
+  },
+  "nutrition": {
+   "calories": 342,
+   "proteinG": 16,
+   "carbsG": 18,
+   "fiberG": 5,
+   "sugarG": 8,
+   "fatG": 24,
+   "satFatG": 15,
+   "sodiumMg": 880,
+   "cholesterolMg": 68
+  },
+  "tags": [
+   "side",
+   "vegetarian",
+   "comfort",
+   "holiday",
+   "steakhouse",
+   "family",
+   "quick"
+  ],
+  "image": {
+   "file": "creamed-spinach.jpg",
+   "source": "wikipedia-lead",
+   "match": "representative",
+   "wikipedia": "Creamed spinach"
+  }
+ },
+ {
+  "id": "ch-rd-017",
+  "slug": "rd-cowboy-nachos",
+  "title": "Cowboy Nachos",
+  "genre": "mexican",
+  "subgenre": "tex-mex",
+  "chef": {
+   "name": "Ree Drummond",
+   "slug": "ree-drummond"
+  },
+  "description": "Sheet pan nachos with brisket or ground beef, beans and two cheeses.",
+  "difficulty": "beginner",
+  "easeScore": 10,
+  "spiceScore": 4,
+  "popularity": 9,
+  "pantryScore": 9,
+  "servings": 8,
+  "prepMin": 15,
+  "cookMin": 25,
+  "totalMin": 40,
+  "equipment": [
+   "stovetop",
+   "oven"
+  ],
+  "ingredients": [
+   "2 lb ground beef (85/15)",
+   "1 yellow onion, diced",
+   "3 tbsp chili powder",
+   "1 tbsp ground cumin",
+   "2 tsp salt",
+   "1 can (14 oz) tomato sauce",
+   "1 can (15 oz) ranch-style beans",
+   "1 bag (13 oz) tortilla chips",
+   "3 cups shredded cheddar",
+   "2 cups shredded Monterey Jack",
+   "1 cup pickled jalapenos",
+   "1 cup pico de gallo",
+   "1 1/2 cups sour cream",
+   "1 cup guacamole",
+   "6 scallions, sliced",
+   "1/2 cup chopped cilantro"
+  ],
+  "ingredientKeys": [
+   "ground-beef",
+   "yellow-onion",
+   "chili-powder",
+   "cumin",
+   "salt",
+   "tomato-sauce",
+   "ranch-style-beans",
+   "tortilla-chips",
+   "cheddar",
+   "monterey-jack",
+   "pickled-jalapenos",
+   "pico-de-gallo",
+   "sour-cream",
+   "guacamole",
+   "scallion",
+   "cilantro"
+  ],
+  "specialty": [
+   "ranch-style-beans",
+   "tortilla-chips",
+   "pickled-jalapenos",
+   "guacamole"
+  ],
+  "steps": [
+   "Brown the beef with the onion, drain the fat, then add the chili powder, cumin and salt and cook 1 minute.",
+   "Add the tomato sauce and beans and simmer 10 minutes until thick enough to sit on a chip without sliding off.",
+   "Heat the oven to 400F. Spread half the chips on a sheet pan, then half the beef mixture and half of both cheeses. Repeat for a second layer.",
+   "Layering twice rather than piling everything on top is what keeps the bottom chips from being bare and dry.",
+   "Bake 10-12 minutes until the cheese is fully melted and bubbling.",
+   "Add the jalapenos, pico, sour cream, guacamole, scallions and cilantro after baking - cold toppings go on hot nachos, never into the oven. Serve straight from the pan."
+  ],
+  "diet": {
+   "vegetarian": false,
+   "vegan": false,
+   "pescatarian": false,
+   "glutenFree": true,
+   "glutenFreeAdaptable": false,
+   "dairyFree": false,
+   "nutFree": true,
+   "eggFree": true
+  },
+  "allergens": [
+   "dairy"
+  ],
+  "gmo": {
+   "risk": "high",
+   "sources": [
+    "grain-fed-meat",
+    "corn",
+    "seed-oil",
+    "grain-fed-dairy",
+    "processed-sauce"
+   ]
+  },
+  "nutrition": {
+   "calories": 982,
+   "proteinG": 48,
+   "carbsG": 62,
+   "fiberG": 10,
+   "sugarG": 9,
+   "fatG": 60,
+   "satFatG": 26,
+   "sodiumMg": 1880,
+   "cholesterolMg": 168
+  },
+  "tags": [
+   "party",
+   "game-day",
+   "family",
+   "sharing",
+   "tex-mex",
+   "crowd-pleaser",
+   "kid-friendly",
+   "gluten-free"
+  ],
+  "image": {
+   "file": "nachos.jpg",
+   "source": "wikipedia-lead",
+   "match": "representative",
+   "wikipedia": "Nachos"
+  }
+ },
+ {
+  "id": "ch-rd-018",
+  "slug": "rd-apple-dumplings",
+  "title": "Apple Dumplings",
+  "genre": "american",
+  "subgenre": "desserts",
+  "chef": {
+   "name": "Ree Drummond",
+   "slug": "ree-drummond"
+  },
+  "description": "Apple wedges wrapped in crescent dough and baked in a buttery soda syrup.",
+  "difficulty": "beginner",
+  "easeScore": 10,
+  "spiceScore": 0,
+  "popularity": 8,
+  "pantryScore": 8,
+  "servings": 8,
+  "prepMin": 15,
+  "cookMin": 45,
+  "totalMin": 60,
+  "equipment": [
+   "oven",
+   "stovetop"
+  ],
+  "ingredients": [
+   "2 Granny Smith apples, peeled and cut in 8 wedges each",
+   "2 packages (8 oz each) refrigerated crescent roll dough",
+   "1 cup butter",
+   "1 1/2 cups sugar",
+   "1 tsp vanilla extract",
+   "1 tsp ground cinnamon",
+   "1 can (12 oz) lemon-lime soda",
+   "1 cup vanilla ice cream"
+  ],
+  "ingredientKeys": [
+   "granny-smith-apple",
+   "crescent-dough",
+   "butter",
+   "sugar",
+   "vanilla-extract",
+   "cinnamon",
+   "lemon-lime-soda",
+   "vanilla-ice-cream"
+  ],
+  "specialty": [
+   "granny-smith-apple",
+   "crescent-dough",
+   "lemon-lime-soda"
+  ],
+  "steps": [
+   "Heat the oven to 350F and butter a 9x13 dish.",
+   "Roll each apple wedge up in a crescent triangle, starting at the wide end, and set them in the dish in rows.",
+   "Melt the butter with the sugar, vanilla and half the cinnamon, stirring just until the sugar dissolves, then pour it over the dumplings.",
+   "Pour the soda around the edges of the dish, not over the dumplings. The carbonation and sugar react with the butter to make a caramel sauce in the pan - it sounds unlikely and it works.",
+   "Sprinkle the remaining cinnamon over the top.",
+   "Bake 40-45 minutes until puffed and deep golden and the sauce is bubbling thickly. Serve warm with ice cream and plenty of the pan sauce spooned over."
+  ],
+  "diet": {
+   "vegetarian": true,
+   "vegan": false,
+   "pescatarian": true,
+   "glutenFree": false,
+   "glutenFreeAdaptable": false,
+   "dairyFree": false,
+   "nutFree": true,
+   "eggFree": true
+  },
+  "allergens": [
+   "gluten",
+   "dairy",
+   "soy"
+  ],
+  "gmo": {
+   "risk": "high",
+   "sources": [
+    "processed-bread",
+    "corn-syrup",
+    "sugar-beet",
+    "soy",
+    "grain-fed-dairy"
+   ]
+  },
+  "nutrition": {
+   "calories": 682,
+   "proteinG": 5,
+   "carbsG": 82,
+   "fiberG": 2,
+   "sugarG": 58,
+   "fatG": 38,
+   "satFatG": 19,
+   "sodiumMg": 580,
+   "cholesterolMg": 68
+  },
+  "tags": [
+   "dessert",
+   "easy",
+   "family",
+   "potluck",
+   "fall",
+   "crowd-pleaser",
+   "kid-friendly",
+   "quick"
+  ],
+  "image": {
+   "file": "rd-apple-dumplings.jpg",
+   "source": "commons-file",
+   "match": "dish",
+   "commonsFile": "Apple dumplings.jpg"
+  }
+ },
+ {
+  "id": "ch-rd-019",
+  "slug": "rd-peach-cobbler",
+  "title": "Peach Cobbler",
+  "genre": "american",
+  "subgenre": "desserts",
+  "chef": {
+   "name": "Ree Drummond",
+   "slug": "ree-drummond"
+  },
+  "description": "Peaches baked under a self-forming batter crust.",
+  "difficulty": "beginner",
+  "easeScore": 10,
+  "spiceScore": 0,
+  "popularity": 9,
+  "pantryScore": 9,
+  "servings": 8,
+  "prepMin": 15,
+  "cookMin": 50,
+  "totalMin": 65,
+  "equipment": [
+   "oven"
+  ],
+  "ingredients": [
+   "2 lb fresh or frozen peach slices",
+   "1 cup sugar",
+   "1 tbsp lemon juice",
+   "1 tsp ground cinnamon",
+   "1/2 cup butter, melted",
+   "1 cup all-purpose flour",
+   "1 cup sugar, for the batter",
+   "2 tsp baking powder",
+   "1/2 tsp salt",
+   "1 cup whole milk",
+   "1 tsp vanilla extract",
+   "2 tbsp coarse sugar",
+   "1 cup vanilla ice cream"
+  ],
+  "ingredientKeys": [
+   "peaches",
+   "sugar",
+   "lemon-juice",
+   "cinnamon",
+   "butter",
+   "flour",
+   "sugar",
+   "baking-powder",
+   "salt",
+   "whole-milk",
+   "vanilla-extract",
+   "coarse-sugar",
+   "vanilla-ice-cream"
+  ],
+  "specialty": [
+   "peaches",
+   "coarse-sugar"
+  ],
+  "steps": [
+   "Heat the oven to 350F. Toss the peaches with the 1 cup sugar, lemon juice and cinnamon and let them sit 15 minutes.",
+   "Pour the melted butter into a 9x13 dish and tilt to coat the bottom.",
+   "Whisk the flour, the second cup of sugar, baking powder and salt, then stir in the milk and vanilla to a smooth batter.",
+   "Pour the batter over the butter but do not stir them together. Then spoon the peaches and their juices over the batter, again without stirring.",
+   "During baking the batter rises up through the fruit and forms the crust on top. Stirring at any point destroys that, so leave it alone.",
+   "Sprinkle with coarse sugar and bake 45-50 minutes until deep golden and bubbling at the edges. Serve warm with ice cream."
+  ],
+  "diet": {
+   "vegetarian": true,
+   "vegan": false,
+   "pescatarian": true,
+   "glutenFree": false,
+   "glutenFreeAdaptable": true,
+   "dairyFree": false,
+   "nutFree": true,
+   "eggFree": true
+  },
+  "allergens": [
+   "gluten",
+   "dairy"
+  ],
+  "gmo": {
+   "risk": "moderate",
+   "sources": [
+    "sugar-beet",
+    "grain-fed-dairy"
+   ]
+  },
+  "nutrition": {
+   "calories": 512,
+   "proteinG": 5,
+   "carbsG": 88,
+   "fiberG": 3,
+   "sugarG": 68,
+   "fatG": 16,
+   "satFatG": 10,
+   "sodiumMg": 320,
+   "cholesterolMg": 42
+  },
+  "tags": [
+   "dessert",
+   "easy",
+   "family",
+   "summer",
+   "potluck",
+   "southern",
+   "crowd-pleaser",
+   "baking"
+  ],
+  "image": {
+   "file": "rd-peach-cobbler.jpg",
+   "source": "commons-file",
+   "match": "dish",
+   "commonsFile": "Fresh Peach Cobbler.jpg"
+  }
+ },
+ {
+  "id": "ch-rd-020",
+  "slug": "rd-chocolate-sheet-cake",
+  "title": "Chocolate Sheet Cake",
+  "genre": "american",
+  "subgenre": "desserts",
+  "chef": {
+   "name": "Ree Drummond",
+   "slug": "ree-drummond"
+  },
+  "description": "A thin sheet cake iced while still hot so the frosting sets into the surface.",
+  "difficulty": "beginner",
+  "easeScore": 9,
+  "spiceScore": 0,
+  "popularity": 9,
+  "pantryScore": 9,
+  "servings": 24,
+  "prepMin": 20,
+  "cookMin": 35,
+  "totalMin": 55,
+  "equipment": [
+   "oven",
+   "stovetop"
+  ],
+  "ingredients": [
+   "2 cups all-purpose flour",
+   "2 cups sugar",
+   "1/4 tsp salt",
+   "1 cup butter",
+   "4 tbsp cocoa powder",
+   "1 cup boiling water",
+   "1/2 cup buttermilk",
+   "2 eggs",
+   "1 tsp baking soda",
+   "1 tsp vanilla extract",
+   "1/2 cup butter, for the icing",
+   "4 tbsp cocoa powder, for the icing",
+   "6 tbsp whole milk",
+   "1 tsp vanilla extract, for the icing",
+   "1 lb powdered sugar",
+   "1 cup chopped pecans"
+  ],
+  "ingredientKeys": [
+   "flour",
+   "sugar",
+   "salt",
+   "butter",
+   "cocoa-powder",
+   "water",
+   "buttermilk",
+   "egg",
+   "baking-soda",
+   "vanilla-extract",
+   "butter",
+   "cocoa-powder",
+   "whole-milk",
+   "vanilla-extract",
+   "powdered-sugar",
+   "pecans"
+  ],
+  "specialty": [
+   "cocoa-powder",
+   "buttermilk",
+   "pecans"
+  ],
+  "steps": [
+   "Heat the oven to 350F. Whisk the flour, sugar and salt in a large bowl.",
+   "Melt the 1 cup butter with the cocoa in a saucepan, then add the boiling water and let it bubble 30 seconds. Pour this over the flour mixture and stir.",
+   "Whisk the buttermilk, eggs, baking soda and vanilla together and stir into the batter until smooth. It will be thin - that is correct for a sheet cake.",
+   "Pour into a buttered 18x13 sheet pan and bake 20 minutes until a toothpick comes out clean.",
+   "While the cake bakes, melt the 1/2 cup butter with the cocoa, milk and vanilla, then whisk in the powdered sugar and pecans.",
+   "Pour the warm icing over the cake the moment it comes out of the oven and spread it quickly. Icing a hot cake is the whole trick: it soaks slightly into the surface and sets into a fudgy layer."
+  ],
+  "diet": {
+   "vegetarian": true,
+   "vegan": false,
+   "pescatarian": true,
+   "glutenFree": false,
+   "glutenFreeAdaptable": false,
+   "dairyFree": false,
+   "nutFree": false,
+   "eggFree": false
+  },
+  "allergens": [
+   "gluten",
+   "dairy",
+   "egg",
+   "tree-nut"
+  ],
+  "gmo": {
+   "risk": "moderate",
+   "sources": [
+    "sugar-beet",
+    "grain-fed-dairy"
+   ]
+  },
+  "nutrition": {
+   "calories": 386,
+   "proteinG": 4,
+   "carbsG": 52,
+   "fiberG": 2,
+   "sugarG": 42,
+   "fatG": 19,
+   "satFatG": 9,
+   "sodiumMg": 180,
+   "cholesterolMg": 48
+  },
+  "tags": [
+   "dessert",
+   "potluck",
+   "party",
+   "family",
+   "baking",
+   "crowd-pleaser",
+   "easy",
+   "classic"
+  ],
+  "image": {
+   "file": "chocolate-cake.jpg",
+   "source": "wikipedia-lead",
+   "match": "representative",
+   "wikipedia": "Sheet cake"
+  }
+ },
+ {
+  "id": "ch-rd-021",
+  "slug": "rd-monkey-bread",
+  "title": "Monkey Bread",
+  "genre": "american",
+  "subgenre": "desserts",
+  "chef": {
+   "name": "Ree Drummond",
+   "slug": "ree-drummond"
+  },
+  "description": "Biscuit dough balls rolled in cinnamon sugar and baked in caramel.",
+  "difficulty": "intermediate",
+  "easeScore": 7,
+  "spiceScore": 0,
+  "popularity": 8,
+  "pantryScore": 8,
+  "servings": 10,
+  "prepMin": 25,
+  "cookMin": 50,
+  "totalMin": 75,
+  "equipment": [
+   "oven",
+   "stovetop"
+  ],
+  "ingredients": [
+   "3 cans (16 oz each) refrigerated biscuit dough",
+   "1 cup sugar",
+   "2 tbsp ground cinnamon",
+   "1 cup butter",
+   "1 cup packed brown sugar",
+   "1/4 cup heavy cream",
+   "1 tsp vanilla extract",
+   "1/2 tsp salt",
+   "1 cup chopped pecans"
+  ],
+  "ingredientKeys": [
+   "biscuit-dough",
+   "sugar",
+   "cinnamon",
+   "butter",
+   "brown-sugar",
+   "heavy-cream",
+   "vanilla-extract",
+   "salt",
+   "pecans"
+  ],
+  "specialty": [
+   "biscuit-dough",
+   "pecans"
+  ],
+  "steps": [
+   "Heat the oven to 350F and butter a bundt pan generously, getting into every groove - this cake has a lot of caramel and will stick anywhere you miss.",
+   "Cut each biscuit into quarters. Mix the sugar and cinnamon and toss the dough pieces in it until well coated.",
+   "Scatter half the pecans in the bottom of the pan, then layer in the coated dough pieces loosely. Do not pack them - they need room to rise and the gaps let the caramel run through.",
+   "Melt the butter with the brown sugar, cream, vanilla and salt and simmer 2 minutes until smooth, then pour it evenly over the dough. Scatter the rest of the pecans on top.",
+   "Bake 45-50 minutes until deep golden and the center is cooked through. Tent with foil if the top darkens early.",
+   "Rest exactly 5 minutes, then invert onto a plate. Less and the caramel runs everywhere, more and it glues itself to the pan."
+  ],
+  "diet": {
+   "vegetarian": true,
+   "vegan": false,
+   "pescatarian": true,
+   "glutenFree": false,
+   "glutenFreeAdaptable": false,
+   "dairyFree": false,
+   "nutFree": false,
+   "eggFree": true
+  },
+  "allergens": [
+   "gluten",
+   "dairy",
+   "tree-nut",
+   "soy"
+  ],
+  "gmo": {
+   "risk": "high",
+   "sources": [
+    "processed-bread",
+    "sugar-beet",
+    "soy",
+    "grain-fed-dairy"
+   ]
+  },
+  "nutrition": {
+   "calories": 782,
+   "proteinG": 9,
+   "carbsG": 92,
+   "fiberG": 3,
+   "sugarG": 58,
+   "fatG": 44,
+   "satFatG": 18,
+   "sodiumMg": 1180,
+   "cholesterolMg": 58
+  },
+  "tags": [
+   "dessert",
+   "breakfast",
+   "brunch",
+   "party",
+   "family",
+   "holiday",
+   "crowd-pleaser",
+   "baking"
+  ],
+  "image": {
+   "file": "rd-monkey-bread.jpg",
+   "source": "commons-file",
+   "match": "dish",
+   "commonsFile": "Monkey Bread.jpg"
+  }
+ },
+ {
+  "id": "ch-rd-022",
+  "slug": "rd-bbq-chicken-pizza",
+  "title": "Barbecue Chicken Pizza",
+  "genre": "american",
+  "subgenre": "comfort",
+  "chef": {
+   "name": "Ree Drummond",
+   "slug": "ree-drummond"
+  },
+  "description": "Barbecue sauce instead of tomato, with chicken, red onion and cilantro.",
+  "difficulty": "beginner",
+  "easeScore": 9,
+  "spiceScore": 3,
+  "popularity": 9,
+  "pantryScore": 8,
+  "servings": 4,
+  "prepMin": 15,
+  "cookMin": 20,
+  "totalMin": 35,
+  "equipment": [
+   "oven"
+  ],
+  "ingredients": [
+   "1 lb store-bought pizza dough",
+   "1 cup barbecue sauce",
+   "3 cups shredded cooked chicken",
+   "2 cups shredded mozzarella",
+   "1 cup shredded smoked gouda",
+   "1 red onion, thinly sliced",
+   "1/2 cup chopped cilantro",
+   "2 tbsp olive oil",
+   "1 tsp red pepper flakes",
+   "2 tbsp semolina, for dusting"
+  ],
+  "ingredientKeys": [
+   "pizza-dough",
+   "barbecue-sauce",
+   "cooked-chicken",
+   "mozzarella",
+   "smoked-gouda",
+   "red-onion",
+   "cilantro",
+   "olive-oil",
+   "red-pepper-flakes",
+   "semolina"
+  ],
+  "specialty": [
+   "pizza-dough",
+   "smoked-gouda",
+   "semolina"
+  ],
+  "steps": [
+   "Put a pizza steel or inverted sheet pan in the oven and heat to 500F for a full 45 minutes. A properly preheated surface is the single biggest difference between home and pizzeria pizza.",
+   "Toss the chicken with half the barbecue sauce.",
+   "Stretch the dough by hand on a semolina-dusted peel or board - never roll it, which crushes the air out.",
+   "Spread the remaining barbecue sauce thinly, leaving a border, then add both cheeses, the chicken and the red onion.",
+   "Slide onto the hot surface and bake 10-12 minutes until the crust is browned and the cheese is blistered.",
+   "Finish with cilantro, a drizzle of olive oil and the pepper flakes. Cut on a rack so the bottom stays crisp."
+  ],
+  "diet": {
+   "vegetarian": false,
+   "vegan": false,
+   "pescatarian": false,
+   "glutenFree": false,
+   "glutenFreeAdaptable": false,
+   "dairyFree": false,
+   "nutFree": true,
+   "eggFree": true
+  },
+  "allergens": [
+   "gluten",
+   "dairy"
+  ],
+  "gmo": {
+   "risk": "high",
+   "sources": [
+    "processed-bread",
+    "processed-sauce",
+    "corn-syrup",
+    "grain-fed-meat",
+    "grain-fed-dairy"
+   ]
+  },
+  "nutrition": {
+   "calories": 882,
+   "proteinG": 52,
+   "carbsG": 82,
+   "fiberG": 4,
+   "sugarG": 28,
+   "fatG": 36,
+   "satFatG": 16,
+   "sodiumMg": 1880,
+   "cholesterolMg": 148
+  },
+  "tags": [
+   "family",
+   "weeknight",
+   "game-day",
+   "kid-friendly",
+   "leftovers",
+   "quick",
+   "crowd-pleaser"
+  ],
+  "image": {
+   "file": "bbq-chicken-pizza.jpg",
+   "source": "wikipedia-lead",
+   "match": "representative",
+   "wikipedia": "California-style pizza"
+  }
+ },
+ {
+  "id": "ch-rd-023",
+  "slug": "rd-pork-carnitas-tacos",
+  "title": "Pork Carnitas Tacos",
+  "genre": "mexican",
+  "subgenre": "tacos",
+  "chef": {
+   "name": "Ree Drummond",
+   "slug": "ree-drummond"
+  },
+  "description": "Pork shoulder slow-cooked with orange and crisped under the broiler.",
+  "difficulty": "intermediate",
+  "easeScore": 7,
+  "spiceScore": 3,
+  "popularity": 9,
+  "pantryScore": 8,
+  "servings": 10,
+  "prepMin": 20,
+  "cookMin": 260,
+  "totalMin": 280,
+  "equipment": [
+   "oven",
+   "broiler"
+  ],
+  "ingredients": [
+   "5 lb boneless pork shoulder, cut in large chunks",
+   "1 tbsp kosher salt",
+   "2 tsp black pepper",
+   "2 tbsp ground cumin",
+   "1 tbsp dried oregano",
+   "1 tbsp chili powder",
+   "2 oranges, juiced, peels reserved",
+   "1 yellow onion, quartered",
+   "8 cloves garlic, smashed",
+   "2 bay leaves",
+   "1 1/2 cups chicken broth",
+   "24 corn tortillas",
+   "1 white onion, diced",
+   "1 cup chopped cilantro",
+   "3 limes, cut in wedges",
+   "1 cup salsa verde"
+  ],
+  "ingredientKeys": [
+   "pork-shoulder",
+   "kosher-salt",
+   "black-pepper",
+   "cumin",
+   "dried-oregano",
+   "chili-powder",
+   "orange",
+   "yellow-onion",
+   "garlic",
+   "bay-leaf",
+   "chicken-broth",
+   "corn-tortilla",
+   "white-onion",
+   "cilantro",
+   "lime",
+   "salsa-verde"
+  ],
+  "specialty": [
+   "pork-shoulder",
+   "salsa-verde"
+  ],
+  "steps": [
+   "Heat the oven to 300F. Toss the pork with the salt, pepper, cumin, oregano and chili powder.",
+   "Put it in a Dutch oven with the orange juice, the squeezed peels, the quartered onion, garlic, bay leaves and broth. The liquid should come only a third of the way up - this starts as a braise and finishes as a fry once the water cooks off.",
+   "Cover and cook 4 hours, until the pork falls apart under a fork with no resistance.",
+   "Discard the peels, onion and bay leaves. Shred the pork coarsely and skim some of the rendered fat, keeping a few tablespoons.",
+   "Spread the meat on a sheet pan, spoon over the reserved fat and some pan juices, and broil 5-8 minutes until the edges are crisp and browned. Watch it closely - this is where carnitas gets its texture.",
+   "Serve on warm tortillas with diced onion, cilantro, lime and salsa verde."
+  ],
+  "diet": {
+   "vegetarian": false,
+   "vegan": false,
+   "pescatarian": false,
+   "glutenFree": true,
+   "glutenFreeAdaptable": false,
+   "dairyFree": true,
+   "nutFree": true,
+   "eggFree": true
+  },
+  "allergens": [],
+  "gmo": {
+   "risk": "moderate",
+   "sources": [
+    "grain-fed-meat",
+    "corn"
+   ]
+  },
+  "nutrition": {
+   "calories": 612,
+   "proteinG": 48,
+   "carbsG": 38,
+   "fiberG": 6,
+   "sugarG": 6,
+   "fatG": 30,
+   "satFatG": 11,
+   "sodiumMg": 1180,
+   "cholesterolMg": 148
+  },
+  "tags": [
+   "party",
+   "make-ahead",
+   "gluten-free",
+   "dairy-free",
+   "high-protein",
+   "family",
+   "leftovers",
+   "crowd-pleaser"
+  ],
+  "image": {
+   "file": "rd-pork-carnitas-tacos.jpg",
+   "source": "commons-file",
+   "match": "dish",
+   "commonsFile": "Pork carnitas tacos.jpg"
+  }
+ },
+ {
+  "id": "ch-rd-024",
+  "slug": "rd-olive-cheese-bread",
+  "title": "Olive Cheese Bread",
+  "genre": "american",
+  "subgenre": "appetizers",
+  "chef": {
+   "name": "Ree Drummond",
+   "slug": "ree-drummond"
+  },
+  "description": "A split loaf loaded with olives, cheese and butter, broiled until bubbling.",
+  "difficulty": "beginner",
+  "easeScore": 10,
+  "spiceScore": 2,
+  "popularity": 7,
+  "pantryScore": 7,
+  "servings": 10,
+  "prepMin": 15,
+  "cookMin": 20,
+  "totalMin": 35,
+  "equipment": [
+   "oven",
+   "broiler"
+  ],
+  "ingredients": [
+   "1 large French loaf, split lengthwise",
+   "1 cup green olives, chopped",
+   "1 cup Kalamata olives, chopped",
+   "1 can (4 oz) diced green chiles",
+   "4 scallions, sliced",
+   "1/2 cup butter, softened",
+   "1/2 cup mayonnaise",
+   "2 cups shredded Monterey Jack",
+   "1 cup grated Parmesan",
+   "1 tsp black pepper"
+  ],
+  "ingredientKeys": [
+   "french-bread",
+   "green-olives",
+   "kalamata-olives",
+   "green-chiles",
+   "scallion",
+   "butter",
+   "mayonnaise",
+   "monterey-jack",
+   "parmesan",
+   "black-pepper"
+  ],
+  "specialty": [
+   "french-bread",
+   "green-olives",
+   "kalamata-olives",
+   "green-chiles"
+  ],
+  "steps": [
+   "Chop both kinds of olives and drain them well - wet olives make soggy bread.",
+   "Mix the olives, green chiles, scallions, softened butter, mayonnaise, both cheeses and the pepper into a thick spread.",
+   "Spread it generously over both cut halves of the loaf, right to the edges and into any holes in the crumb.",
+   "Bake at 325F for 15 minutes, until the butter has melted into the bread and everything is hot through.",
+   "Switch to the broiler for 2-4 minutes until the top is browned and bubbling. Do not walk away - it goes from golden to black in under a minute.",
+   "Cut into thick slices and serve immediately."
+  ],
+  "diet": {
+   "vegetarian": true,
+   "vegan": false,
+   "pescatarian": true,
+   "glutenFree": false,
+   "glutenFreeAdaptable": false,
+   "dairyFree": false,
+   "nutFree": true,
+   "eggFree": false
+  },
+  "allergens": [
+   "gluten",
+   "dairy",
+   "egg"
+  ],
+  "gmo": {
+   "risk": "moderate",
+   "sources": [
+    "processed-bread",
+    "seed-oil",
+    "grain-fed-dairy"
+   ]
+  },
+  "nutrition": {
+   "calories": 512,
+   "proteinG": 16,
+   "carbsG": 32,
+   "fiberG": 3,
+   "sugarG": 3,
+   "fatG": 38,
+   "satFatG": 16,
+   "sodiumMg": 1480,
+   "cholesterolMg": 62
+  },
+  "tags": [
+   "appetizer",
+   "party",
+   "easy",
+   "vegetarian",
+   "holiday",
+   "game-day",
+   "sharing",
+   "quick"
+  ],
+  "image": {
+   "file": "garlic-bread.jpg",
+   "source": "wikipedia-lead",
+   "match": "representative",
+   "wikipedia": "Garlic bread"
+  }
+ },
+ {
+  "id": "ch-rd-025",
+  "slug": "rd-cowboy-chili",
+  "title": "Cowboy Chili",
+  "genre": "american",
+  "subgenre": "comfort",
+  "chef": {
+   "name": "Ree Drummond",
+   "slug": "ree-drummond"
+  },
+  "description": "A thick, meaty chili thickened with masa harina and simmered for an hour.",
+  "difficulty": "beginner",
+  "easeScore": 9,
+  "spiceScore": 6,
+  "popularity": 9,
+  "pantryScore": 9,
+  "servings": 8,
+  "prepMin": 15,
+  "cookMin": 80,
+  "totalMin": 95,
+  "equipment": [
+   "stovetop"
+  ],
+  "ingredients": [
+   "3 lb ground beef (85/15)",
+   "2 yellow onions, diced",
+   "6 cloves garlic, minced",
+   "1/4 cup chili powder",
+   "2 tbsp ground cumin",
+   "1 tbsp dried oregano",
+   "1 tsp cayenne pepper",
+   "2 tsp salt",
+   "1 can (14 oz) tomato sauce",
+   "2 cups beef broth",
+   "2 cans (15 oz each) kidney beans, drained",
+   "1/4 cup masa harina",
+   "2 cups shredded sharp cheddar",
+   "1 cup sour cream",
+   "1 yellow onion, diced",
+   "1 cup corn chips"
+  ],
+  "ingredientKeys": [
+   "ground-beef",
+   "yellow-onion",
+   "garlic",
+   "chili-powder",
+   "cumin",
+   "dried-oregano",
+   "cayenne",
+   "salt",
+   "tomato-sauce",
+   "beef-broth",
+   "kidney-beans",
+   "masa-harina",
+   "cheddar",
+   "sour-cream",
+   "yellow-onion",
+   "corn-chips"
+  ],
+  "specialty": [
+   "masa-harina",
+   "corn-chips"
+  ],
+  "steps": [
+   "Brown the beef in a large pot over high heat, breaking it up, 10 minutes. Drain most of the fat.",
+   "Add the onions and cook 6 minutes, then the garlic for 1 minute.",
+   "Add the chili powder, cumin, oregano, cayenne and salt and stir for a full minute in the hot fat. Blooming the spices this way tastes completely different from stirring them into liquid.",
+   "Add the tomato sauce and broth and simmer, partially covered, for 45 minutes.",
+   "Add the beans and cook 15 minutes more.",
+   "Whisk the masa harina with 1/2 cup water until smooth, then stir it in and simmer 10 minutes. The masa thickens the chili and gives it a subtle corn flavor that flour cannot. Serve with cheddar, sour cream, raw onion and corn chips."
+  ],
+  "diet": {
+   "vegetarian": false,
+   "vegan": false,
+   "pescatarian": false,
+   "glutenFree": true,
+   "glutenFreeAdaptable": false,
+   "dairyFree": false,
+   "nutFree": true,
+   "eggFree": true
+  },
+  "allergens": [
+   "dairy"
+  ],
+  "gmo": {
+   "risk": "high",
+   "sources": [
+    "grain-fed-meat",
+    "corn",
+    "grain-fed-dairy",
+    "processed-sauce"
+   ]
+  },
+  "nutrition": {
+   "calories": 782,
+   "proteinG": 52,
+   "carbsG": 42,
+   "fiberG": 11,
+   "sugarG": 8,
+   "fatG": 44,
+   "satFatG": 19,
+   "sodiumMg": 1480,
+   "cholesterolMg": 178
+  },
+  "tags": [
+   "comfort",
+   "family",
+   "game-day",
+   "make-ahead",
+   "gluten-free",
+   "spicy",
+   "high-protein",
+   "leftovers",
+   "one-pot"
+  ],
+  "image": {
+   "file": "rd-cowboy-chili.jpg",
+   "source": "commons-file",
+   "match": "dish",
+   "commonsFile": "Cowboy Style Chili with Beans 1of7 (8736283094).jpg"
+  }
+ }
 ]

@@ -71,6 +71,9 @@ def main() -> int:
             "tags": r["tags"],
             "image": r["image"]["file"],
             "hasImage": (IMAGES / r["image"]["file"]).exists(),
+            # "representative" photos show the right kind of food but not
+            # necessarily this preparation - caption or de-emphasise them.
+            "imageMatch": r["image"].get("match", "representative"),
         })
 
     (ROOT / "index.json").write_text(json.dumps(index, indent=2) + "\n")
@@ -102,6 +105,11 @@ def main() -> int:
         "diet": dict(sorted(diet_counts.items(), key=lambda kv: -kv[1])),
         "pantryPerfect": sum(1 for r in index if r["specialtyCount"] == 0),
         "imagesPresent": sum(1 for r in index if r["hasImage"]),
+        "imageMatch": {
+            "dish": sum(1 for r in index if r["imageMatch"] == "dish"),
+            "representative": sum(1 for r in index
+                                  if r["imageMatch"] == "representative"),
+        },
         "medians": {
             "totalMin": sorted(r["totalMin"] for r in index)[len(index) // 2],
             "calories": sorted(r["calories"] for r in index)[len(index) // 2],
@@ -113,7 +121,9 @@ def main() -> int:
     chef_count = sum(1 for r in index if r["chefSlug"])
     print(f"index.json   {len(index)} recipes ({chef_count} chef-attributed)")
     print(f"facets.json  {len(facets['tags'])} tags, {len(facets['subgenre'])} subgenres")
-    print(f"images       {facets['imagesPresent']}/{len(index)} present")
+    print(f"images       {facets['imagesPresent']}/{len(index)} present "
+          f"({facets['imageMatch']['dish']} dish-specific, "
+          f"{facets['imageMatch']['representative']} representative)")
     print(f"pantry-only  {facets['pantryPerfect']} recipes need nothing special")
     return 0
 

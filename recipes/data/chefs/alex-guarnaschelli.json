@@ -116,6 +116,8 @@
   ],
   "image": {
    "file": "roast-chicken.jpg",
+   "source": "wikipedia-lead",
+   "match": "representative",
    "wikipedia": "Roast chicken"
   }
  },
@@ -236,6 +238,8 @@
   ],
   "image": {
    "file": "onion-dip.jpg",
+   "source": "wikipedia-lead",
+   "match": "representative",
    "wikipedia": "French onion dip"
   }
  },
@@ -365,6 +369,8 @@
   ],
   "image": {
    "file": "braised-short-ribs.jpg",
+   "source": "wikipedia-lead",
+   "match": "representative",
    "wikipedia": "Short ribs"
   }
  },
@@ -476,8 +482,10 @@
    "entertaining"
   ],
   "image": {
-   "file": "potato-gratin.jpg",
-   "wikipedia": "Gratin dauphinois"
+   "file": "ag-potato-gratin.jpg",
+   "source": "commons-file",
+   "match": "dish",
+   "commonsFile": "Potato gratin (7620845914).jpg"
   }
  },
  {
@@ -596,6 +604,8 @@
   ],
   "image": {
    "file": "pork-chops.jpg",
+   "source": "wikipedia-lead",
+   "match": "representative",
    "wikipedia": "Pork chop"
   }
  },
@@ -691,8 +701,10 @@
    "date-night"
   ],
   "image": {
-   "file": "cacio-e-pepe.jpg",
-   "wikipedia": "Cacio e pepe"
+   "file": "ag-cacio-e-pepe.jpg",
+   "source": "commons-file",
+   "match": "dish",
+   "commonsFile": "Cacio e pepe.jpg"
   }
  },
  {
@@ -823,8 +835,10 @@
    "classic"
   ],
   "image": {
-   "file": "crab-cakes.jpg",
-   "wikipedia": "Crab cake"
+   "file": "ag-crab-cakes.jpg",
+   "source": "commons-file",
+   "match": "dish",
+   "commonsFile": "Crab cakes (4817381966).jpg"
   }
  },
  {
@@ -948,8 +962,10 @@
    "make-ahead"
   ],
   "image": {
-   "file": "french-onion-soup.jpg",
-   "wikipedia": "French onion soup"
+   "file": "ag-french-onion-soup.jpg",
+   "source": "commons-file",
+   "match": "dish",
+   "commonsFile": "French Onion Soup..JPG"
   }
  },
  {
@@ -1062,6 +1078,8 @@
   ],
   "image": {
    "file": "poached-cod.jpg",
+   "source": "wikipedia-lead",
+   "match": "representative",
    "wikipedia": "Cod as food"
   }
  },
@@ -1181,6 +1199,8 @@
   ],
   "image": {
    "file": "wedge-salad.jpg",
+   "source": "wikipedia-lead",
+   "match": "representative",
    "wikipedia": "Wedge salad"
   }
  },
@@ -1310,8 +1330,10 @@
    "leftovers"
   ],
   "image": {
-   "file": "chicken-pot-pie.jpg",
-   "wikipedia": "Pot pie"
+   "file": "ag-chicken-pot-pie.jpg",
+   "source": "commons-file",
+   "match": "dish",
+   "commonsFile": "191-365 Chicken Pot Pie.jpg"
   }
  },
  {
@@ -1430,8 +1452,10 @@
    "indulgent"
   ],
   "image": {
-   "file": "brownies.jpg",
-   "wikipedia": "Chocolate brownie"
+   "file": "ag-salted-caramel-brownies.jpg",
+   "source": "commons-file",
+   "match": "dish",
+   "commonsFile": "Salted Caramel Brownies (25618670394).jpg"
   }
  },
  {
@@ -1537,6 +1561,8 @@
   ],
   "image": {
    "file": "brussels-sprouts.jpg",
+   "source": "wikipedia-lead",
+   "match": "representative",
    "wikipedia": "Brussels sprout"
   }
  },
@@ -1668,6 +1694,8 @@
   ],
   "image": {
    "file": "meatloaf.jpg",
+   "source": "wikipedia-lead",
+   "match": "representative",
    "wikipedia": "Meatloaf"
   }
  },
@@ -1782,8 +1810,10 @@
    "restaurant-style"
   ],
   "image": {
-   "file": "shrimp-scampi.jpg",
-   "wikipedia": "Scampi"
+   "file": "ag-shrimp-scampi.jpg",
+   "source": "commons-file",
+   "match": "dish",
+   "commonsFile": "Shrimp Scampi.jpg"
   }
  },
  {
@@ -1904,6 +1934,8 @@
   ],
   "image": {
    "file": "roast-turkey.jpg",
+   "source": "wikipedia-lead",
+   "match": "representative",
    "wikipedia": "Roast turkey"
   }
  },
@@ -2025,8 +2057,10 @@
    "restaurant-style"
   ],
   "image": {
-   "file": "mushroom-toast.jpg",
-   "wikipedia": "Edible mushroom"
+   "file": "ag-mushroom-toast.jpg",
+   "source": "commons-file",
+   "match": "dish",
+   "commonsFile": "Mushroom on Toast - The Canopy 2025-06-08.jpg"
   }
  },
  {
@@ -2150,8 +2184,10 @@
    "one-pot"
   ],
   "image": {
-   "file": "lamb-shoulder.jpg",
-   "wikipedia": "Lamb and mutton"
+   "file": "ag-braised-lamb-shoulder.jpg",
+   "source": "commons-file",
+   "match": "dish",
+   "commonsFile": "Roasted lamb shoulder in a pot, Brisbane, 2025, 01.jpg"
   }
  },
  {
@@ -2272,6 +2308,8 @@
   ],
   "image": {
    "file": "corn-chowder.jpg",
+   "source": "wikipedia-lead",
+   "match": "representative",
    "wikipedia": "Chowder"
   }
  },
@@ -2400,8 +2438,10 @@
    "crowd-pleaser"
   ],
   "image": {
-   "file": "apple-pie.jpg",
-   "wikipedia": "Apple pie"
+   "file": "ag-apple-crumb-pie.jpg",
+   "source": "commons-file",
+   "match": "dish",
+   "commonsFile": "Apple Crumb Pie (25619772963).jpg"
   }
  },
  {
@@ -2516,8 +2556,10 @@
    "classic"
   ],
   "image": {
-   "file": "steak-au-poivre.jpg",
-   "wikipedia": "Steak au poivre"
+   "file": "ag-steak-au-poivre.jpg",
+   "source": "commons-file",
+   "match": "dish",
+   "commonsFile": "Steak Au Poivre.jpg"
   }
  },
  {
@@ -2641,6 +2683,8 @@
   ],
   "image": {
    "file": "caesar-salad.jpg",
+   "source": "wikipedia-lead",
+   "match": "representative",
    "wikipedia": "Caesar salad"
   }
  },
@@ -2762,8 +2806,10 @@
    "crowd-pleaser"
   ],
   "image": {
-   "file": "sticky-toffee-pudding.jpg",
-   "wikipedia": "Sticky toffee pudding"
+   "file": "ag-sticky-toffee-pudding.jpg",
+   "source": "commons-file",
+   "match": "dish",
+   "commonsFile": "Sticky Toffee Pudding.jpg"
   }
  },
  {
@@ -2881,6 +2927,8 @@
   ],
   "image": {
    "file": "roasted-cauliflower.jpg",
+   "source": "wikipedia-lead",
+   "match": "representative",
    "wikipedia": "Cauliflower"
   }
  },
@@ -2986,8 +3034,10 @@
    "easy"
   ],
   "image": {
-   "file": "biscuits.jpg",
-   "wikipedia": "Biscuit (bread)"
+   "file": "ag-buttermilk-biscuits.jpg",
+   "source": "commons-file",
+   "match": "dish",
+   "commonsFile": "Buttermilk biscuit.jpg"
   }
  }
 ]

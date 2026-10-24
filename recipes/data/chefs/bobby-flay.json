@@ -107,6 +107,8 @@
   ],
   "image": {
    "file": "ribeye-steak.jpg",
+   "source": "wikipedia-lead",
+   "match": "representative",
    "wikipedia": "Rib eye steak"
   }
  },
@@ -221,6 +223,8 @@
   ],
   "image": {
    "file": "cheeseburger.jpg",
+   "source": "wikipedia-lead",
+   "match": "representative",
    "wikipedia": "Cheeseburger"
   }
  },
@@ -332,6 +336,8 @@
   ],
   "image": {
    "file": "barbecue-chicken.jpg",
+   "source": "wikipedia-lead",
+   "match": "representative",
    "wikipedia": "Barbecue chicken"
   }
  },
@@ -451,8 +457,10 @@
    "summer"
   ],
   "image": {
-   "file": "pork-ribs.jpg",
-   "wikipedia": "Pork ribs"
+   "file": "bf-grilled-baby-back-ribs.jpg",
+   "source": "commons-file",
+   "match": "dish",
+   "commonsFile": "Baby back ribs - hickory smoked.jpg"
   }
  },
  {
@@ -566,6 +574,8 @@
   ],
   "image": {
    "file": "cheeseburger.jpg",
+   "source": "wikipedia-lead",
+   "match": "representative",
    "wikipedia": "Green chile cheeseburger"
   }
  },
@@ -672,6 +682,8 @@
   ],
   "image": {
    "file": "corn-on-the-cob.jpg",
+   "source": "wikipedia-lead",
+   "match": "representative",
    "wikipedia": "Corn on the cob"
   }
  },
@@ -792,6 +804,8 @@
   ],
   "image": {
    "file": "barbecue-sauce.jpg",
+   "source": "wikipedia-lead",
+   "match": "representative",
    "wikipedia": "Barbecue sauce"
   }
  },
@@ -911,6 +925,8 @@
   ],
   "image": {
    "file": "shrimp-taco.jpg",
+   "source": "wikipedia-lead",
+   "match": "representative",
    "wikipedia": "Taco"
   }
  },
@@ -1034,6 +1050,8 @@
   ],
   "image": {
    "file": "fajitas.jpg",
+   "source": "wikipedia-lead",
+   "match": "representative",
    "wikipedia": "Fajita"
   }
  },
@@ -1155,6 +1173,8 @@
   ],
   "image": {
    "file": "pork-chop.jpg",
+   "source": "wikipedia-lead",
+   "match": "representative",
    "wikipedia": "Pork chop"
   }
  },
@@ -1269,6 +1289,8 @@
   ],
   "image": {
    "file": "potato-salad.jpg",
+   "source": "wikipedia-lead",
+   "match": "representative",
    "wikipedia": "Potato salad"
   }
  },
@@ -1396,6 +1418,8 @@
   ],
   "image": {
    "file": "enchiladas.jpg",
+   "source": "wikipedia-lead",
+   "match": "representative",
    "wikipedia": "Enchilada"
   }
  },
@@ -1505,6 +1529,8 @@
   ],
   "image": {
    "file": "salmon-fillet.jpg",
+   "source": "wikipedia-lead",
+   "match": "representative",
    "wikipedia": "Salmon as food"
   }
  },
@@ -1621,6 +1647,8 @@
   ],
   "image": {
    "file": "buffalo-wings.jpg",
+   "source": "wikipedia-lead",
+   "match": "representative",
    "wikipedia": "Chicken wings"
   }
  },
@@ -1741,6 +1769,8 @@
   ],
   "image": {
    "file": "carne-asada.jpg",
+   "source": "wikipedia-lead",
+   "match": "representative",
    "wikipedia": "Carne asada"
   }
  },
@@ -1858,6 +1888,8 @@
   ],
   "image": {
    "file": "cornbread.jpg",
+   "source": "wikipedia-lead",
+   "match": "representative",
    "wikipedia": "Cornbread"
   }
  },
@@ -1980,8 +2012,10 @@
    "family"
   ],
   "image": {
-   "file": "black-bean-soup.jpg",
-   "wikipedia": "Bean soup"
+   "file": "bf-black-bean-soup.jpg",
+   "source": "commons-file",
+   "match": "dish",
+   "commonsFile": "Black Bean Soup (140491813).jpeg"
   }
  },
  {
@@ -2097,8 +2131,10 @@
    "family"
   ],
   "image": {
-   "file": "quesadilla.jpg",
-   "wikipedia": "Quesadilla"
+   "file": "bf-grilled-vegetable-quesadilla.jpg",
+   "source": "commons-file",
+   "match": "dish",
+   "commonsFile": "Vegetable quesadilla.jpg"
   }
  },
  {
@@ -2216,6 +2252,8 @@
   ],
   "image": {
    "file": "corned-beef-hash.jpg",
+   "source": "wikipedia-lead",
+   "match": "representative",
    "wikipedia": "Hash (food)"
   }
  },
@@ -2330,6 +2368,8 @@
   ],
   "image": {
    "file": "flatbread.jpg",
+   "source": "wikipedia-lead",
+   "match": "representative",
    "wikipedia": "Flatbread"
   }
  },
@@ -2455,8 +2495,10 @@
    "high-protein"
   ],
   "image": {
-   "file": "tortilla-soup.jpg",
-   "wikipedia": "Tortilla soup"
+   "file": "bf-tortilla-soup.jpg",
+   "source": "commons-file",
+   "match": "dish",
+   "commonsFile": "Tortilla Soup.jpg"
   }
  },
  {
@@ -2577,8 +2619,10 @@
    "weeknight"
   ],
   "image": {
-   "file": "fish-taco.jpg",
-   "wikipedia": "Fish taco"
+   "file": "bf-grilled-fish-tacos.jpg",
+   "source": "commons-file",
+   "match": "dish",
+   "commonsFile": "Fish Taco Lunch (12097226334).jpg"
   }
  },
  {
@@ -2701,8 +2745,10 @@
    "crowd-pleaser"
   ],
   "image": {
-   "file": "nachos.jpg",
-   "wikipedia": "Nachos"
+   "file": "bf-smoked-chicken-nachos.jpg",
+   "source": "commons-file",
+   "match": "dish",
+   "commonsFile": "Classic Nachos with Fajita Chicken.jpg"
   }
  },
  {
@@ -2814,6 +2860,8 @@
   ],
   "image": {
    "file": "potato-gratin.jpg",
+   "source": "wikipedia-lead",
+   "match": "representative",
    "wikipedia": "Potatoes au gratin"
   }
  },
@@ -2921,6 +2969,8 @@
   ],
   "image": {
    "file": "margarita.jpg",
+   "source": "wikipedia-lead",
+   "match": "representative",
    "wikipedia": "Margarita"
   }
  }

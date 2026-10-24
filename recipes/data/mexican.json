@@ -102,8 +102,10 @@
    "high-protein"
   ],
   "image": {
-   "file": "taco.jpg",
-   "wikipedia": "Taco"
+   "file": "ground-beef-tacos.jpg",
+   "source": "commons-file",
+   "match": "dish",
+   "commonsFile": "Tacos with ground beef - Massachusetts.jpg"
   }
  },
  {
@@ -215,6 +217,8 @@
   ],
   "image": {
    "file": "tinga.jpg",
+   "source": "wikipedia-lead",
+   "match": "representative",
    "wikipedia": "Mexican cuisine"
   }
  },
@@ -321,8 +325,10 @@
    "authentic"
   ],
   "image": {
-   "file": "carne-asada.jpg",
-   "wikipedia": "Carne asada"
+   "file": "carne-asada-tacos.jpg",
+   "source": "commons-file",
+   "match": "dish",
+   "commonsFile": "Carne asada taco.jpg"
   }
  },
  {
@@ -437,8 +443,10 @@
    "spicy"
   ],
   "image": {
-   "file": "al-pastor.jpg",
-   "wikipedia": "Al pastor"
+   "file": "tacos-al-pastor.jpg",
+   "source": "commons-file",
+   "match": "dish",
+   "commonsFile": "Al pastor tacos (34965815632).jpg"
   }
  },
  {
@@ -544,6 +552,8 @@
   ],
   "image": {
    "file": "carnitas.jpg",
+   "source": "wikipedia-lead",
+   "match": "representative",
    "wikipedia": "Carnitas"
   }
  },
@@ -658,6 +668,8 @@
   ],
   "image": {
    "file": "fish-taco.jpg",
+   "source": "wikipedia-lead",
+   "match": "representative",
    "wikipedia": "Fish taco"
   }
  },
@@ -763,6 +775,8 @@
   ],
   "image": {
    "file": "shrimp-taco.jpg",
+   "source": "wikipedia-lead",
+   "match": "representative",
    "wikipedia": "Taco"
   }
  },
@@ -862,8 +876,10 @@
    "kid-friendly"
   ],
   "image": {
-   "file": "breakfast-taco.jpg",
-   "wikipedia": "Breakfast taco"
+   "file": "breakfast-tacos.jpg",
+   "source": "commons-file",
+   "match": "dish",
+   "commonsFile": "Breakfast Taco (4955913577).jpg"
   }
  },
  {
@@ -961,6 +977,8 @@
   ],
   "image": {
    "file": "chorizo-potato-taco.jpg",
+   "source": "wikipedia-lead",
+   "match": "representative",
    "wikipedia": "Chorizo"
   }
  },
@@ -1073,6 +1091,8 @@
   ],
   "image": {
    "file": "barbacoa.jpg",
+   "source": "wikipedia-lead",
+   "match": "representative",
    "wikipedia": "Barbacoa"
   }
  },
@@ -1199,8 +1219,10 @@
    "authentic"
   ],
   "image": {
-   "file": "birria.jpg",
-   "wikipedia": "Birria"
+   "file": "quesabirria-tacos.jpg",
+   "source": "commons-file",
+   "match": "dish",
+   "commonsFile": "Quesabirria tacos.jpg"
   }
  },
  {
@@ -1310,8 +1332,10 @@
    "one-pan"
   ],
   "image": {
-   "file": "fajitas.jpg",
-   "wikipedia": "Fajita"
+   "file": "chicken-fajitas.jpg",
+   "source": "commons-file",
+   "match": "dish",
+   "commonsFile": "Chicken Fajita.JPG"
   }
  },
  {
@@ -1418,6 +1442,8 @@
   ],
   "image": {
    "file": "fajitas.jpg",
+   "source": "wikipedia-lead",
+   "match": "representative",
    "wikipedia": "Fajita"
   }
  },
@@ -1515,8 +1541,10 @@
    "high-fiber"
   ],
   "image": {
-   "file": "burrito.jpg",
-   "wikipedia": "Burrito"
+   "file": "bean-and-cheese-burrito.jpg",
+   "source": "commons-file",
+   "match": "dish",
+   "commonsFile": "Bean and cheese burrito.jpg"
   }
  },
  {
@@ -1621,8 +1649,10 @@
    "weekend"
   ],
   "image": {
-   "file": "california-burrito.jpg",
-   "wikipedia": "California burrito"
+   "file": "california-burrito-dish.jpg",
+   "source": "commons-file",
+   "match": "dish",
+   "commonsFile": "California Burrito.jpg"
   }
  },
  {
@@ -1728,8 +1758,10 @@
    "freezer"
   ],
   "image": {
-   "file": "breakfast-burrito.jpg",
-   "wikipedia": "Breakfast burrito"
+   "file": "breakfast-burrito-dish.jpg",
+   "source": "commons-file",
+   "match": "dish",
+   "commonsFile": "Breakfast Burrito 1 2019-06-09.jpg"
   }
  },
  {
@@ -1839,8 +1871,10 @@
    "healthy"
   ],
   "image": {
-   "file": "burrito-bowl.jpg",
-   "wikipedia": "Burrito"
+   "file": "chicken-burrito-bowl.jpg",
+   "source": "commons-file",
+   "match": "dish",
+   "commonsFile": "Grilled Chicken Burrito Bowl 5 (28365044603).jpg"
   }
  },
  {
@@ -1945,8 +1979,10 @@
    "weeknight"
   ],
   "image": {
-   "file": "smothered-burrito.jpg",
-   "wikipedia": "Burrito"
+   "file": "smothered-burrito-dish.jpg",
+   "source": "commons-file",
+   "match": "dish",
+   "commonsFile": "Smothered beef burrito.JPG"
   }
  },
  {
@@ -2031,8 +2067,10 @@
    "snack"
   ],
   "image": {
-   "file": "quesadilla.jpg",
-   "wikipedia": "Quesadilla"
+   "file": "cheese-quesadilla.jpg",
+   "source": "commons-file",
+   "match": "dish",
+   "commonsFile": "Cheese quesadilla.jpg"
   }
  },
  {
@@ -2135,8 +2173,10 @@
    "budget"
   ],
   "image": {
-   "file": "quesadilla.jpg",
-   "wikipedia": "Quesadilla"
+   "file": "chicken-quesadilla.jpg",
+   "source": "commons-file",
+   "match": "dish",
+   "commonsFile": "Chicken quesadilla.jpg"
   }
  },
  {
@@ -2237,6 +2277,8 @@
   ],
   "image": {
    "file": "rajas-quesadilla.jpg",
+   "source": "wikipedia-lead",
+   "match": "representative",
    "wikipedia": "Quesadilla"
   }
  },
@@ -2344,8 +2386,10 @@
    "spicy"
   ],
   "image": {
-   "file": "nachos.jpg",
-   "wikipedia": "Nachos"
+   "file": "nachos-supreme.jpg",
+   "source": "commons-file",
+   "match": "dish",
+   "commonsFile": "Nachos supreme.jpg"
   }
  },
  {
@@ -2447,6 +2491,8 @@
   ],
   "image": {
    "file": "flautas.jpg",
+   "source": "wikipedia-lead",
+   "match": "representative",
    "wikipedia": "Flauta"
   }
  },
@@ -2552,6 +2598,8 @@
   ],
   "image": {
    "file": "chimichanga.jpg",
+   "source": "wikipedia-lead",
+   "match": "representative",
    "wikipedia": "Chimichanga"
   }
  },
@@ -2659,6 +2707,8 @@
   ],
   "image": {
    "file": "tostada.jpg",
+   "source": "wikipedia-lead",
+   "match": "representative",
    "wikipedia": "Tostada (tortilla)"
   }
  },
@@ -2756,8 +2806,10 @@
    "make-ahead"
   ],
   "image": {
-   "file": "enchiladas.jpg",
-   "wikipedia": "Enchilada"
+   "file": "cheese-enchiladas.jpg",
+   "source": "commons-file",
+   "match": "dish",
+   "commonsFile": "Cheese enchilada platter.jpg"
   }
  },
  {
@@ -2860,6 +2912,8 @@
   ],
   "image": {
    "file": "enchiladas-verdes.jpg",
+   "source": "wikipedia-lead",
+   "match": "representative",
    "wikipedia": "Enchilada"
   }
  },
@@ -2965,8 +3019,10 @@
    "weekend"
   ],
   "image": {
-   "file": "enchiladas-suizas.jpg",
-   "wikipedia": "Enchilada"
+   "file": "enchiladas-suizas-dish.jpg",
+   "source": "commons-file",
+   "match": "dish",
+   "commonsFile": "Enchiladas suizas.jpg"
   }
  },
  {
@@ -3071,6 +3127,8 @@
   ],
   "image": {
    "file": "enchilada-casserole.jpg",
+   "source": "wikipedia-lead",
+   "match": "representative",
    "wikipedia": "Enchilada"
   }
  },
@@ -3198,6 +3256,8 @@
   ],
   "image": {
    "file": "mole.jpg",
+   "source": "wikipedia-lead",
+   "match": "representative",
    "wikipedia": "Mole (sauce)"
   }
  },
@@ -3283,8 +3343,10 @@
    "side"
   ],
   "image": {
-   "file": "pico-de-gallo.jpg",
-   "wikipedia": "Pico de gallo"
+   "file": "pico-de-gallo-dish.jpg",
+   "source": "commons-file",
+   "match": "dish",
+   "commonsFile": "Pico de Gallo Homemade 2014.JPG"
   }
  },
  {
@@ -3374,8 +3436,10 @@
    "side"
   ],
   "image": {
-   "file": "guacamole.jpg",
-   "wikipedia": "Guacamole"
+   "file": "guacamole-dish.jpg",
+   "source": "commons-file",
+   "match": "dish",
+   "commonsFile": "Guacamole IMGP1256.jpg"
   }
  },
  {
@@ -3468,8 +3532,10 @@
    "side"
   ],
   "image": {
-   "file": "salsa-roja.jpg",
-   "wikipedia": "Salsa (sauce)"
+   "file": "salsa-roja-dish.jpg",
+   "source": "commons-file",
+   "match": "dish",
+   "commonsFile": "Salsa roja.jpg"
   }
  },
  {
@@ -3560,8 +3626,10 @@
    "side"
   ],
   "image": {
-   "file": "salsa-verde.jpg",
-   "wikipedia": "Salsa verde"
+   "file": "salsa-verde-dish.jpg",
+   "source": "commons-file",
+   "match": "dish",
+   "commonsFile": "Salsa Verde (140489859).jpeg"
   }
  },
  {
@@ -3649,8 +3717,10 @@
    "make-ahead"
   ],
   "image": {
-   "file": "chipotle-salsa.jpg",
-   "wikipedia": "Chipotle"
+   "file": "chipotle-salsa-dish.jpg",
+   "source": "commons-file",
+   "match": "dish",
+   "commonsFile": "Salsa chipotle.jpg"
   }
  },
  {
@@ -3752,8 +3822,10 @@
    "sharing"
   ],
   "image": {
-   "file": "queso-dip.jpg",
-   "wikipedia": "Chile con queso"
+   "file": "chile-con-queso.jpg",
+   "source": "commons-file",
+   "match": "dish",
+   "commonsFile": "Queso manchego con chile.jpg"
   }
  },
  {
@@ -3853,8 +3925,10 @@
    "sharing"
   ],
   "image": {
-   "file": "seven-layer-dip.jpg",
-   "wikipedia": "Seven-layer dip"
+   "file": "seven-layer-dip-dish.jpg",
+   "source": "commons-file",
+   "match": "dish",
+   "commonsFile": "Seven layer dip.jpg"
   }
  },
  {
@@ -3950,8 +4024,10 @@
    "authentic"
   ],
   "image": {
-   "file": "elote.jpg",
-   "wikipedia": "Elote"
+   "file": "elote-dish.jpg",
+   "source": "commons-file",
+   "match": "dish",
+   "commonsFile": "Elote Palomero.jpg"
   }
  },
  {
@@ -4054,8 +4130,10 @@
    "authentic"
   ],
   "image": {
-   "file": "esquites.jpg",
-   "wikipedia": "Esquites"
+   "file": "esquites-dish.jpg",
+   "source": "commons-file",
+   "match": "dish",
+   "commonsFile": "Traditional \"esquites\".jpg"
   }
  },
  {
@@ -4148,8 +4226,10 @@
    "pantry"
   ],
   "image": {
-   "file": "mexican-rice.jpg",
-   "wikipedia": "Mexican rice"
+   "file": "mexican-rice-dish.jpg",
+   "source": "commons-file",
+   "match": "dish",
+   "commonsFile": "Mexican rice homemade.jpg"
   }
  },
  {
@@ -4243,8 +4323,10 @@
    "authentic"
   ],
   "image": {
-   "file": "refried-beans.jpg",
-   "wikipedia": "Refried beans"
+   "file": "refried-beans-dish.jpg",
+   "source": "commons-file",
+   "match": "dish",
+   "commonsFile": "Refried Black Beans (4646266085).jpg"
   }
  },
  {
@@ -4335,8 +4417,10 @@
    "healthy"
   ],
   "image": {
-   "file": "frijoles-de-la-olla.jpg",
-   "wikipedia": "Pinto bean"
+   "file": "frijoles-de-la-olla-dish.jpg",
+   "source": "commons-file",
+   "match": "dish",
+   "commonsFile": "Frijoles de la olla.jpg"
   }
  },
  {
@@ -4423,8 +4507,10 @@
    "quick"
   ],
   "image": {
-   "file": "cilantro-lime-rice.jpg",
-   "wikipedia": "Rice"
+   "file": "cilantro-lime-rice-dish.jpg",
+   "source": "commons-file",
+   "match": "dish",
+   "commonsFile": "Cilantro Lime Chicken with Rice.jpg"
   }
  },
  {
@@ -4538,8 +4624,10 @@
    "high-fiber"
   ],
   "image": {
-   "file": "tortilla-soup.jpg",
-   "wikipedia": "Tortilla soup"
+   "file": "chicken-tortilla-soup.jpg",
+   "source": "commons-file",
+   "match": "dish",
+   "commonsFile": "Chicken TORTILLA SOUP.jpg"
   }
  },
  {
@@ -4653,8 +4741,10 @@
    "leftovers"
   ],
   "image": {
-   "file": "pozole.jpg",
-   "wikipedia": "Pozole"
+   "file": "pozole-rojo.jpg",
+   "source": "commons-file",
+   "match": "dish",
+   "commonsFile": "Pozole Rojo.jpg"
   }
  },
  {
@@ -4758,8 +4848,10 @@
    "high-protein"
   ],
   "image": {
-   "file": "caldo-de-pollo.jpg",
-   "wikipedia": "Caldo de pollo"
+   "file": "caldo-de-pollo-dish.jpg",
+   "source": "commons-file",
+   "match": "dish",
+   "commonsFile": "Caldo de Pollo (2411932823).jpg"
   }
  },
  {
@@ -4873,7 +4965,9 @@
   ],
   "image": {
    "file": "albondigas.jpg",
-   "wikipedia": "Alb\u00f3ndigas"
+   "source": "wikipedia-lead",
+   "match": "representative",
+   "wikipedia": "Albóndigas"
   }
  },
  {
@@ -4975,8 +5069,10 @@
    "pantry"
   ],
   "image": {
-   "file": "sopa-de-fideo.jpg",
-   "wikipedia": "Noodle soup"
+   "file": "sopa-de-fideo-dish.jpg",
+   "source": "commons-file",
+   "match": "dish",
+   "commonsFile": "Sopa de fideo.jpg"
   }
  },
  {
@@ -5081,8 +5177,10 @@
    "restaurant-style"
   ],
   "image": {
-   "file": "chiles-rellenos.jpg",
-   "wikipedia": "Chile relleno"
+   "file": "chiles-rellenos-dish.jpg",
+   "source": "commons-file",
+   "match": "dish",
+   "commonsFile": "Chiles Xalapeños rellenos.jpg"
   }
  },
  {
@@ -5185,6 +5283,8 @@
   ],
   "image": {
    "file": "calabacitas.jpg",
+   "source": "wikipedia-lead",
+   "match": "representative",
    "wikipedia": "Calabacitas"
   }
  },
@@ -5292,8 +5392,10 @@
    "high-fiber"
   ],
   "image": {
-   "file": "huevos-rancheros.jpg",
-   "wikipedia": "Huevos rancheros"
+   "file": "huevos-rancheros-dish.jpg",
+   "source": "commons-file",
+   "match": "dish",
+   "commonsFile": "Huevos Rancheros (11494813583).jpg"
   }
  },
  {
@@ -5398,8 +5500,10 @@
    "leftovers"
   ],
   "image": {
-   "file": "chilaquiles.jpg",
-   "wikipedia": "Chilaquiles"
+   "file": "chilaquiles-rojos.jpg",
+   "source": "commons-file",
+   "match": "dish",
+   "commonsFile": "Chilaquiles Rojos.JPG"
   }
  },
  {
@@ -5500,8 +5604,10 @@
    "budget"
   ],
   "image": {
-   "file": "migas.jpg",
-   "wikipedia": "Migas"
+   "file": "migas-dish.jpg",
+   "source": "commons-file",
+   "match": "dish",
+   "commonsFile": "Migas.PNG"
   }
  },
  {
@@ -5597,8 +5703,10 @@
    "high-protein"
   ],
   "image": {
-   "file": "huevos-a-la-mexicana.jpg",
-   "wikipedia": "Huevos a la mexicana"
+   "file": "huevos-a-la-mexicana-dish.jpg",
+   "source": "commons-file",
+   "match": "dish",
+   "commonsFile": "Huevos a la mexicana.jpg"
   }
  },
  {
@@ -5699,8 +5807,10 @@
    "quick"
   ],
   "image": {
-   "file": "machaca.jpg",
-   "wikipedia": "Machaca"
+   "file": "machaca-con-huevo.jpg",
+   "source": "commons-file",
+   "match": "dish",
+   "commonsFile": "Huevo con machaca.jpg"
   }
  },
  {
@@ -5805,8 +5915,10 @@
    "leftovers"
   ],
   "image": {
-   "file": "arroz-con-pollo.jpg",
-   "wikipedia": "Arroz con pollo"
+   "file": "arroz-con-pollo-dish.jpg",
+   "source": "commons-file",
+   "match": "dish",
+   "commonsFile": "Arroz-con-Pollo.jpg"
   }
  },
  {
@@ -5910,6 +6022,8 @@
   ],
   "image": {
    "file": "pollo-asado.jpg",
+   "source": "wikipedia-lead",
+   "match": "representative",
    "wikipedia": "Pollo asado"
   }
  },
@@ -6016,6 +6130,8 @@
   ],
   "image": {
    "file": "rajas-con-crema.jpg",
+   "source": "wikipedia-lead",
+   "match": "representative",
    "wikipedia": "Rajas con crema"
   }
  },
@@ -6127,8 +6243,10 @@
    "spicy"
   ],
   "image": {
-   "file": "cochinita-pibil.jpg",
-   "wikipedia": "Cochinita pibil"
+   "file": "cochinita-pibil-dish.jpg",
+   "source": "commons-file",
+   "match": "dish",
+   "commonsFile": "Authentic Cochinita Pibil.jpg"
   }
  },
  {
@@ -6232,8 +6350,10 @@
    "high-fiber"
   ],
   "image": {
-   "file": "carne-en-su-jugo.jpg",
-   "wikipedia": "Mexican cuisine"
+   "file": "carne-en-su-jugo-dish.jpg",
+   "source": "commons-file",
+   "match": "dish",
+   "commonsFile": "Carne En Su Jugo .jpg"
   }
  },
  {
@@ -6334,8 +6454,10 @@
    "one-pan"
   ],
   "image": {
-   "file": "picadillo.jpg",
-   "wikipedia": "Picadillo"
+   "file": "picadillo-dish.jpg",
+   "source": "commons-file",
+   "match": "dish",
+   "commonsFile": "Picadillo 1.jpg"
   }
  },
  {
@@ -6448,6 +6570,8 @@
   ],
   "image": {
    "file": "chile-verde.jpg",
+   "source": "wikipedia-lead",
+   "match": "representative",
    "wikipedia": "Chile verde"
   }
  },
@@ -6560,6 +6684,8 @@
   ],
   "image": {
    "file": "chile-colorado.jpg",
+   "source": "wikipedia-lead",
+   "match": "representative",
    "wikipedia": "Chili con carne"
   }
  },
@@ -6669,6 +6795,8 @@
   ],
   "image": {
    "file": "camarones-a-la-diabla.jpg",
+   "source": "wikipedia-lead",
+   "match": "representative",
    "wikipedia": "Shrimp"
   }
  },
@@ -6772,8 +6900,10 @@
    "high-protein"
   ],
   "image": {
-   "file": "ceviche.jpg",
-   "wikipedia": "Ceviche"
+   "file": "shrimp-ceviche.jpg",
+   "source": "commons-file",
+   "match": "dish",
+   "commonsFile": "Shrimp ceviche at Ortolan.jpg"
   }
  },
  {
@@ -6882,8 +7012,10 @@
    "high-protein"
   ],
   "image": {
-   "file": "pescado-veracruzana.jpg",
-   "wikipedia": "Red snapper"
+   "file": "pescado-a-la-veracruzana.jpg",
+   "source": "commons-file",
+   "match": "dish",
+   "commonsFile": "Pescado a la veracruzana.jpg"
   }
  },
  {
@@ -6982,6 +7114,8 @@
   ],
   "image": {
    "file": "mojo-de-ajo.jpg",
+   "source": "wikipedia-lead",
+   "match": "representative",
    "wikipedia": "Mojo (sauce)"
   }
  },
@@ -7078,8 +7212,10 @@
    "quick"
   ],
   "image": {
-   "file": "queso-fundido.jpg",
-   "wikipedia": "Queso flameado"
+   "file": "queso-fundido-dish.jpg",
+   "source": "commons-file",
+   "match": "dish",
+   "commonsFile": "Queso fundido (38571605521).jpg"
   }
  },
  {
@@ -7184,8 +7320,10 @@
    "sharing"
   ],
   "image": {
-   "file": "sopes.jpg",
-   "wikipedia": "Sope (food)"
+   "file": "sopes-dish.jpg",
+   "source": "commons-file",
+   "match": "dish",
+   "commonsFile": "Sopes (3589464443).jpg"
   }
  },
  {
@@ -7289,8 +7427,10 @@
    "budget"
   ],
   "image": {
-   "file": "gorditas.jpg",
-   "wikipedia": "Gordita"
+   "file": "gorditas-dish.jpg",
+   "source": "commons-file",
+   "match": "dish",
+   "commonsFile": "GORDITA.jpg"
   }
  },
  {
@@ -7381,8 +7521,10 @@
    "kid-friendly"
   ],
   "image": {
-   "file": "molletes.jpg",
-   "wikipedia": "Molletes"
+   "file": "molletes-dish.jpg",
+   "source": "commons-file",
+   "match": "dish",
+   "commonsFile": "Molletes (34965662722).jpg"
   }
  },
  {
@@ -7497,8 +7639,10 @@
    "weekend"
   ],
   "image": {
-   "file": "torta.jpg",
-   "wikipedia": "Torta"
+   "file": "torta-de-milanesa.jpg",
+   "source": "commons-file",
+   "match": "dish",
+   "commonsFile": "Torta de milanesa.jpg"
   }
  },
  {
@@ -7608,6 +7752,8 @@
   ],
   "image": {
    "file": "torta.jpg",
+   "source": "wikipedia-lead",
+   "match": "representative",
    "wikipedia": "Torta"
   }
  },
@@ -7720,8 +7866,10 @@
    "weeknight"
   ],
   "image": {
-   "file": "taco-salad.jpg",
-   "wikipedia": "Taco salad"
+   "file": "taco-salad-dish.jpg",
+   "source": "commons-file",
+   "match": "dish",
+   "commonsFile": "Taco salad (21881249691).jpg"
   }
  },
  {
@@ -7833,8 +7981,10 @@
    "kid-friendly"
   ],
   "image": {
-   "file": "taco-soup.jpg",
-   "wikipedia": "Taco soup"
+   "file": "taco-soup-dish.jpg",
+   "source": "commons-file",
+   "match": "dish",
+   "commonsFile": "Taco soup.jpg"
   }
  },
  {
@@ -7936,8 +8086,10 @@
    "sharing"
   ],
   "image": {
-   "file": "churros.jpg",
-   "wikipedia": "Churro"
+   "file": "churros-dish.jpg",
+   "source": "commons-file",
+   "match": "dish",
+   "commonsFile": "Churros 001.jpg"
   }
  },
  {
@@ -8032,8 +8184,10 @@
    "special-occasion"
   ],
   "image": {
-   "file": "flan.jpg",
-   "wikipedia": "Cr\u00e8me caramel"
+   "file": "flan-dish.jpg",
+   "source": "commons-file",
+   "match": "dish",
+   "commonsFile": "Homemade Flan.jpg"
   }
  },
  {
@@ -8141,6 +8295,8 @@
   ],
   "image": {
    "file": "tres-leches.jpg",
+   "source": "wikipedia-lead",
+   "match": "representative",
    "wikipedia": "Tres leches cake"
   }
  },
@@ -8237,8 +8393,10 @@
    "quick"
   ],
   "image": {
-   "file": "sopapillas.jpg",
-   "wikipedia": "Sopaipilla"
+   "file": "sopapillas-dish.jpg",
+   "source": "commons-file",
+   "match": "dish",
+   "commonsFile": "Sopapillas.jpg"
   }
  },
  {
@@ -8332,7 +8490,9 @@
   ],
   "image": {
    "file": "mexican-wedding-cookies.jpg",
-   "wikipedia": "Polvor\u00f3n"
+   "source": "wikipedia-lead",
+   "match": "representative",
+   "wikipedia": "Polvorón"
   }
  },
  {
@@ -8429,8 +8589,10 @@
    "make-ahead"
   ],
   "image": {
-   "file": "arroz-con-leche.jpg",
-   "wikipedia": "Rice pudding"
+   "file": "arroz-con-leche-dish.jpg",
+   "source": "commons-file",
+   "match": "dish",
+   "commonsFile": "Arroz con leche, postre.jpg"
   }
  },
  {
@@ -8519,6 +8681,8 @@
   ],
   "image": {
    "file": "paletas.jpg",
+   "source": "wikipedia-lead",
+   "match": "representative",
    "wikipedia": "Ice pop"
   }
  },
@@ -8614,8 +8778,10 @@
    "kid-friendly"
   ],
   "image": {
-   "file": "horchata.jpg",
-   "wikipedia": "Horchata"
+   "file": "horchata-dish.jpg",
+   "source": "commons-file",
+   "match": "dish",
+   "commonsFile": "Horchata (24414538074).jpg"
   }
  },
  {
@@ -8701,8 +8867,10 @@
    "healthy"
   ],
   "image": {
-   "file": "agua-de-jamaica.jpg",
-   "wikipedia": "Hibiscus tea"
+   "file": "agua-de-jamaica-dish.jpg",
+   "source": "commons-file",
+   "match": "dish",
+   "commonsFile": "Agua de jamaica.jpg"
   }
  },
  {
@@ -8795,8 +8963,10 @@
    "adults-only"
   ],
   "image": {
-   "file": "margarita.jpg",
-   "wikipedia": "Margarita"
+   "file": "classic-margarita.jpg",
+   "source": "commons-file",
+   "match": "dish",
+   "commonsFile": "Margarita Fischer 1916.jpg"
   }
  },
  {
@@ -8894,8 +9064,10 @@
    "brunch"
   ],
   "image": {
-   "file": "michelada.jpg",
-   "wikipedia": "Michelada"
+   "file": "michelada-dish.jpg",
+   "source": "commons-file",
+   "match": "dish",
+   "commonsFile": "Michelada 2.jpg"
   }
  },
  {
@@ -8993,6 +9165,8 @@
   ],
   "image": {
    "file": "mexican-hot-chocolate.jpg",
+   "source": "wikipedia-lead",
+   "match": "representative",
    "wikipedia": "Hot chocolate"
   }
  },
@@ -9100,8 +9274,10 @@
    "baking"
   ],
   "image": {
-   "file": "conchas.jpg",
-   "wikipedia": "Concha (bread)"
+   "file": "conchas-dish.jpg",
+   "source": "commons-file",
+   "match": "dish",
+   "commonsFile": "Conchas entrada210209 REFON.jpg"
   }
  },
  {
@@ -9211,8 +9387,10 @@
    "family"
   ],
   "image": {
-   "file": "empanadas.jpg",
-   "wikipedia": "Empanada"
+   "file": "beef-empanadas.jpg",
+   "source": "commons-file",
+   "match": "dish",
+   "commonsFile": "Traditional fried beef empanadas from Argentina.jpg"
   }
  },
  {
@@ -9327,6 +9505,8 @@
   ],
   "image": {
    "file": "tamales.jpg",
+   "source": "wikipedia-lead",
+   "match": "representative",
    "wikipedia": "Tamale"
   }
  },
@@ -9446,8 +9626,10 @@
    "leftovers"
   ],
   "image": {
-   "file": "tamale-pie.jpg",
-   "wikipedia": "Tamale pie"
+   "file": "tamale-pie-dish.jpg",
+   "source": "commons-file",
+   "match": "dish",
+   "commonsFile": "Tamale pie.jpg"
   }
  },
  {
@@ -9559,8 +9741,10 @@
    "kid-friendly"
   ],
   "image": {
-   "file": "king-ranch-chicken.jpg",
-   "wikipedia": "King Ranch Chicken"
+   "file": "king-ranch-chicken-dish.jpg",
+   "source": "commons-file",
+   "match": "dish",
+   "commonsFile": "King Ranch chicken casserole.jpg"
   }
  },
  {
@@ -9667,8 +9851,10 @@
    "party"
   ],
   "image": {
-   "file": "frito-pie.jpg",
-   "wikipedia": "Frito pie"
+   "file": "frito-pie-dish.jpg",
+   "source": "commons-file",
+   "match": "dish",
+   "commonsFile": "Frito Pie - served in the bag (16847451034).jpg"
   }
  },
  {
@@ -9774,8 +9960,10 @@
    "regional"
   ],
   "image": {
-   "file": "carne-asada-fries.jpg",
-   "wikipedia": "Carne asada fries"
+   "file": "carne-asada-fries-dish.jpg",
+   "source": "commons-file",
+   "match": "dish",
+   "commonsFile": "Carne Asada Fries.jpg"
   }
  },
  {
@@ -9881,8 +10069,10 @@
    "high-fiber"
   ],
   "image": {
-   "file": "stuffed-poblano.jpg",
-   "wikipedia": "Chile relleno"
+   "file": "stuffed-poblano-peppers.jpg",
+   "source": "commons-file",
+   "match": "dish",
+   "commonsFile": "Poblano Pepper.jpg"
   }
  },
  {
@@ -9993,8 +10183,10 @@
    "leftovers"
   ],
   "image": {
-   "file": "mexican-lasagna.jpg",
-   "wikipedia": "Lasagna"
+   "file": "mexican-lasagna-dish.jpg",
+   "source": "commons-file",
+   "match": "dish",
+   "commonsFile": "Mexican lasagna, December 2009.jpg"
   }
  },
  {
@@ -10103,6 +10295,8 @@
   ],
   "image": {
    "file": "mexican-pizza.jpg",
+   "source": "wikipedia-lead",
+   "match": "representative",
    "wikipedia": "Tostada (tortilla)"
   }
  },
@@ -10197,8 +10391,10 @@
    "pantry"
   ],
   "image": {
-   "file": "sincronizadas.jpg",
-   "wikipedia": "Quesadilla"
+   "file": "sincronizadas-dish.jpg",
+   "source": "commons-file",
+   "match": "dish",
+   "commonsFile": "Sincronizada mexicana.jpg"
   }
  },
  {
@@ -10301,6 +10497,8 @@
   ],
   "image": {
    "file": "aguachile.jpg",
+   "source": "wikipedia-lead",
+   "match": "representative",
    "wikipedia": "Aguachile"
   }
  },
@@ -10400,8 +10598,10 @@
    "sharing"
   ],
   "image": {
-   "file": "bunuelos.jpg",
-   "wikipedia": "Bu\u00f1uelo"
+   "file": "bunuelos-dish.jpg",
+   "source": "commons-file",
+   "match": "dish",
+   "commonsFile": "BUNUELOS.jpg"
   }
  }
 ]

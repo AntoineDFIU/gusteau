@@ -99,8 +99,10 @@
    "party"
   ],
   "image": {
-   "file": "hummus.jpg",
-   "wikipedia": "Hummus"
+   "file": "hummus-dish.jpg",
+   "source": "commons-file",
+   "match": "dish",
+   "commonsFile": "Homemade hummus and pita 03.jpg"
   }
  },
  {
@@ -199,8 +201,10 @@
    "authentic"
   ],
   "image": {
-   "file": "baba-ganoush.jpg",
-   "wikipedia": "Baba ghanoush"
+   "file": "baba-ganoush-dish.jpg",
+   "source": "commons-file",
+   "match": "dish",
+   "commonsFile": "Baba ganoush-Jordanie.jpg"
   }
  },
  {
@@ -297,8 +301,10 @@
    "party"
   ],
   "image": {
-   "file": "tzatziki.jpg",
-   "wikipedia": "Tzatziki"
+   "file": "tzatziki-dish.jpg",
+   "source": "commons-file",
+   "match": "dish",
+   "commonsFile": "Tzatziki (4824624030).jpg"
   }
  },
  {
@@ -403,8 +409,10 @@
    "no-cook"
   ],
   "image": {
-   "file": "muhammara.jpg",
-   "wikipedia": "Muhammara"
+   "file": "muhammara-dish.jpg",
+   "source": "commons-file",
+   "match": "dish",
+   "commonsFile": "Muhammara.jpg"
   }
  },
  {
@@ -497,8 +505,10 @@
    "party"
   ],
   "image": {
-   "file": "labneh.jpg",
-   "wikipedia": "Strained yogurt"
+   "file": "labneh-dish.jpg",
+   "source": "commons-file",
+   "match": "dish",
+   "commonsFile": "Labneh (9328907408).jpg"
   }
  },
  {
@@ -596,6 +606,8 @@
   ],
   "image": {
    "file": "whipped-feta.jpg",
+   "source": "wikipedia-lead",
+   "match": "representative",
    "wikipedia": "Feta"
   }
  },
@@ -697,8 +709,10 @@
    "summer"
   ],
   "image": {
-   "file": "tabbouleh.jpg",
-   "wikipedia": "Tabbouleh"
+   "file": "tabbouleh-dish.jpg",
+   "source": "commons-file",
+   "match": "dish",
+   "commonsFile": "Tabbouleh ingredients.png"
   }
  },
  {
@@ -811,8 +825,10 @@
    "quick"
   ],
   "image": {
-   "file": "fattoush.jpg",
-   "wikipedia": "Fattoush"
+   "file": "fattoush-dish.jpg",
+   "source": "commons-file",
+   "match": "dish",
+   "commonsFile": "Fattoush.JPG"
   }
  },
  {
@@ -919,8 +935,10 @@
    "side"
   ],
   "image": {
-   "file": "greek-salad.jpg",
-   "wikipedia": "Greek salad"
+   "file": "greek-salad-dish.jpg",
+   "source": "commons-file",
+   "match": "dish",
+   "commonsFile": "Greek salad (5178297958).jpg"
   }
  },
  {
@@ -1032,6 +1050,8 @@
   ],
   "image": {
    "file": "dolmades.jpg",
+   "source": "wikipedia-lead",
+   "match": "representative",
    "wikipedia": "Stuffed grape leaves"
   }
  },
@@ -1142,8 +1162,10 @@
    "entertaining"
   ],
   "image": {
-   "file": "spanakopita.jpg",
-   "wikipedia": "Spanakopita"
+   "file": "spanakopita-dish.jpg",
+   "source": "commons-file",
+   "match": "dish",
+   "commonsFile": "Spanakopita.jpg"
   }
  },
  {
@@ -1233,8 +1255,10 @@
    "entertaining"
   ],
   "image": {
-   "file": "saganaki.jpg",
-   "wikipedia": "Saganaki"
+   "file": "saganaki-dish.jpg",
+   "source": "commons-file",
+   "match": "dish",
+   "commonsFile": "Saganaki.jpg"
   }
  },
  {
@@ -1347,8 +1371,10 @@
    "project"
   ],
   "image": {
-   "file": "falafel.jpg",
-   "wikipedia": "Falafel"
+   "file": "falafel-dish.jpg",
+   "source": "commons-file",
+   "match": "dish",
+   "commonsFile": "Falafel 1.JPG"
   }
  },
  {
@@ -1439,8 +1465,10 @@
    "authentic"
   ],
   "image": {
-   "file": "pita.jpg",
-   "wikipedia": "Pita"
+   "file": "pita-bread.jpg",
+   "source": "commons-file",
+   "match": "dish",
+   "commonsFile": "Pita (bread).JPG"
   }
  },
  {
@@ -1552,8 +1580,10 @@
    "meal-prep"
   ],
   "image": {
-   "file": "souvlaki.jpg",
-   "wikipedia": "Souvlaki"
+   "file": "chicken-souvlaki.jpg",
+   "source": "commons-file",
+   "match": "dish",
+   "commonsFile": "Chicken souvlaki at Hellenic 2.jpg"
   }
  },
  {
@@ -1664,6 +1694,8 @@
   ],
   "image": {
    "file": "souvlaki.jpg",
+   "source": "wikipedia-lead",
+   "match": "representative",
    "wikipedia": "Souvlaki"
   }
  },
@@ -1778,6 +1810,8 @@
   ],
   "image": {
    "file": "gyros.jpg",
+   "source": "wikipedia-lead",
+   "match": "representative",
    "wikipedia": "Gyro (food)"
   }
  },
@@ -1904,8 +1938,10 @@
    "special-occasion"
   ],
   "image": {
-   "file": "moussaka.jpg",
-   "wikipedia": "Moussaka"
+   "file": "moussaka-dish.jpg",
+   "source": "commons-file",
+   "match": "dish",
+   "commonsFile": "Moussaka 10.jpg"
   }
  },
  {
@@ -2026,8 +2062,10 @@
    "leftovers"
   ],
   "image": {
-   "file": "pastitsio.jpg",
-   "wikipedia": "Pastitsio"
+   "file": "pastitsio-dish.jpg",
+   "source": "commons-file",
+   "match": "dish",
+   "commonsFile": "Pastitsio homemade.jpg"
   }
  },
  {
@@ -2124,6 +2162,8 @@
   ],
   "image": {
    "file": "greek-lemon-chicken.jpg",
+   "source": "wikipedia-lead",
+   "match": "representative",
    "wikipedia": "Roast chicken"
   }
  },
@@ -2216,6 +2256,8 @@
   ],
   "image": {
    "file": "greek-lemon-potatoes.jpg",
+   "source": "wikipedia-lead",
+   "match": "representative",
    "wikipedia": "Potato"
   }
  },
@@ -2332,6 +2374,8 @@
   ],
   "image": {
    "file": "keftedes.jpg",
+   "source": "wikipedia-lead",
+   "match": "representative",
    "wikipedia": "Keftedes"
   }
  },
@@ -2446,6 +2490,8 @@
   ],
   "image": {
    "file": "chicken-orzo.jpg",
+   "source": "wikipedia-lead",
+   "match": "representative",
    "wikipedia": "Orzo"
   }
  },
@@ -2543,8 +2589,10 @@
    "winter"
   ],
   "image": {
-   "file": "avgolemono.jpg",
-   "wikipedia": "Avgolemono"
+   "file": "avgolemono-dish.jpg",
+   "source": "commons-file",
+   "match": "dish",
+   "commonsFile": "Avgolemono ingredients.png"
   }
  },
  {
@@ -2670,8 +2718,10 @@
    "weeknight"
   ],
   "image": {
-   "file": "shawarma.jpg",
-   "wikipedia": "Shawarma"
+   "file": "chicken-shawarma.jpg",
+   "source": "commons-file",
+   "match": "dish",
+   "commonsFile": "Chicken Shawarma (2215717857).jpg"
   }
  },
  {
@@ -2787,6 +2837,8 @@
   ],
   "image": {
    "file": "kofta.jpg",
+   "source": "wikipedia-lead",
+   "match": "representative",
    "wikipedia": "Kofta"
   }
  },
@@ -2902,6 +2954,8 @@
   ],
   "image": {
    "file": "shish-tawook.jpg",
+   "source": "wikipedia-lead",
+   "match": "representative",
    "wikipedia": "Shish taouk"
   }
  },
@@ -3010,6 +3064,8 @@
   ],
   "image": {
    "file": "mujadara.jpg",
+   "source": "wikipedia-lead",
+   "match": "representative",
    "wikipedia": "Mujaddara"
   }
  },
@@ -3124,8 +3180,10 @@
    "authentic"
   ],
   "image": {
-   "file": "shakshuka.jpg",
-   "wikipedia": "Shakshouka"
+   "file": "shakshuka-dish.jpg",
+   "source": "commons-file",
+   "match": "dish",
+   "commonsFile": "Shakshuka (28310896066).jpg"
   }
  },
  {
@@ -3238,6 +3296,8 @@
   ],
   "image": {
    "file": "lentil-soup.jpg",
+   "source": "wikipedia-lead",
+   "match": "representative",
    "wikipedia": "Lentil soup"
   }
  },
@@ -3354,8 +3414,10 @@
    "technique"
   ],
   "image": {
-   "file": "kibbeh.jpg",
-   "wikipedia": "Kibbeh"
+   "file": "kibbeh-dish.jpg",
+   "source": "commons-file",
+   "match": "dish",
+   "commonsFile": "Kibbeh tower.jpg"
   }
  },
  {
@@ -3460,8 +3522,10 @@
    "budget"
   ],
   "image": {
-   "file": "manakish.jpg",
-   "wikipedia": "Manakish"
+   "file": "manakish-zaatar.jpg",
+   "source": "commons-file",
+   "match": "dish",
+   "commonsFile": "Manakish Za'atar.jpg"
   }
  },
  {
@@ -3557,8 +3621,10 @@
    "mezze"
   ],
   "image": {
-   "file": "batata-harra.jpg",
-   "wikipedia": "Batata harra"
+   "file": "batata-harra-dish.jpg",
+   "source": "commons-file",
+   "match": "dish",
+   "commonsFile": "Batata harra.jpg"
   }
  },
  {
@@ -3643,8 +3709,10 @@
    "sauce"
   ],
   "image": {
-   "file": "toum.jpg",
-   "wikipedia": "Toum"
+   "file": "toum-dish.jpg",
+   "source": "commons-file",
+   "match": "dish",
+   "commonsFile": "Toum-toum.jpg"
   }
  },
  {
@@ -3753,8 +3821,10 @@
    "party"
   ],
   "image": {
-   "file": "roasted-cauliflower.jpg",
-   "wikipedia": "Cauliflower"
+   "file": "roasted-cauliflower-tahini.jpg",
+   "source": "commons-file",
+   "match": "dish",
+   "commonsFile": "Roasted Cauliflower Lentils Tahini and Naan (3609281431).jpg"
   }
  },
  {
@@ -3873,6 +3943,8 @@
   ],
   "image": {
    "file": "lamb-kofta.jpg",
+   "source": "wikipedia-lead",
+   "match": "representative",
    "wikipedia": "Kofta"
   }
  },
@@ -3990,6 +4062,8 @@
   ],
   "image": {
    "file": "mahshi.jpg",
+   "source": "wikipedia-lead",
+   "match": "representative",
    "wikipedia": "Dolma"
   }
  },
@@ -4094,8 +4168,10 @@
    "healthy"
   ],
   "image": {
-   "file": "ful-medames.jpg",
-   "wikipedia": "Ful medames"
+   "file": "ful-medames-dish.jpg",
+   "source": "commons-file",
+   "match": "dish",
+   "commonsFile": "Ful Medames.JPG"
   }
  },
  {
@@ -4205,8 +4281,10 @@
    "technique"
   ],
   "image": {
-   "file": "adana-kebab.jpg",
-   "wikipedia": "Adana kebab\u0131"
+   "file": "adana-kebab-dish.jpg",
+   "source": "commons-file",
+   "match": "dish",
+   "commonsFile": "Adana kebab.jpg"
   }
  },
  {
@@ -4311,8 +4389,10 @@
    "high-protein"
   ],
   "image": {
-   "file": "menemen.jpg",
-   "wikipedia": "Menemen (food)"
+   "file": "menemen-dish.jpg",
+   "source": "commons-file",
+   "match": "dish",
+   "commonsFile": "Menemen in pan.jpg"
   }
  },
  {
@@ -4426,8 +4506,10 @@
    "sharing"
   ],
   "image": {
-   "file": "lahmacun.jpg",
-   "wikipedia": "Lahmacun"
+   "file": "lahmacun-dish.jpg",
+   "source": "commons-file",
+   "match": "dish",
+   "commonsFile": "Lahmacun.jpg"
   }
  },
  {
@@ -4532,7 +4614,9 @@
   ],
   "image": {
    "file": "imam-bayildi.jpg",
-   "wikipedia": "\u0130mam bay\u0131ld\u0131"
+   "source": "wikipedia-lead",
+   "match": "representative",
+   "wikipedia": "İmam bayıldı"
   }
  },
  {
@@ -4645,6 +4729,8 @@
   ],
   "image": {
    "file": "mercimek.jpg",
+   "source": "wikipedia-lead",
+   "match": "representative",
    "wikipedia": "Lentil soup"
   }
  },
@@ -4738,6 +4824,8 @@
   ],
   "image": {
    "file": "turkish-pilaf.jpg",
+   "source": "wikipedia-lead",
+   "match": "representative",
    "wikipedia": "Pilaf"
   }
  },
@@ -4848,7 +4936,9 @@
   ],
   "image": {
    "file": "borek.jpg",
-   "wikipedia": "B\u00f6rek"
+   "source": "wikipedia-lead",
+   "match": "representative",
+   "wikipedia": "Börek"
   }
  },
  {
@@ -4952,7 +5042,9 @@
   ],
   "image": {
    "file": "cilbir.jpg",
-   "wikipedia": "\u00c7\u0131lb\u0131r"
+   "source": "wikipedia-lead",
+   "match": "representative",
+   "wikipedia": "Çılbır"
   }
  },
  {
@@ -5066,6 +5158,8 @@
   ],
   "image": {
    "file": "chicken-tagine.jpg",
+   "source": "wikipedia-lead",
+   "match": "representative",
    "wikipedia": "Tagine"
   }
  },
@@ -5189,6 +5283,8 @@
   ],
   "image": {
    "file": "lamb-tagine.jpg",
+   "source": "wikipedia-lead",
+   "match": "representative",
    "wikipedia": "Tagine"
   }
  },
@@ -5314,6 +5410,8 @@
   ],
   "image": {
    "file": "couscous.jpg",
+   "source": "wikipedia-lead",
+   "match": "representative",
    "wikipedia": "Couscous"
   }
  },
@@ -5423,6 +5521,8 @@
   ],
   "image": {
    "file": "harissa-chicken.jpg",
+   "source": "wikipedia-lead",
+   "match": "representative",
    "wikipedia": "Harissa"
   }
  },
@@ -5533,6 +5633,8 @@
   ],
   "image": {
    "file": "chermoula-fish.jpg",
+   "source": "wikipedia-lead",
+   "match": "representative",
    "wikipedia": "Chermoula"
   }
  },
@@ -5632,6 +5734,8 @@
   ],
   "image": {
    "file": "moroccan-carrot-salad.jpg",
+   "source": "wikipedia-lead",
+   "match": "representative",
    "wikipedia": "Moroccan cuisine"
   }
  },
@@ -5751,8 +5855,10 @@
    "family"
   ],
   "image": {
-   "file": "harira.jpg",
-   "wikipedia": "Harira"
+   "file": "harira-dish.jpg",
+   "source": "commons-file",
+   "match": "dish",
+   "commonsFile": "Harira..JPG"
   }
  },
  {
@@ -5856,8 +5962,10 @@
    "high-fiber"
   ],
   "image": {
-   "file": "zaalouk.jpg",
-   "wikipedia": "Zaalouk"
+   "file": "zaalouk-dish.jpg",
+   "source": "commons-file",
+   "match": "dish",
+   "commonsFile": "Zaalouk-01.JPG"
   }
  },
  {
@@ -5942,8 +6050,10 @@
    "hot"
   ],
   "image": {
-   "file": "mint-tea.jpg",
-   "wikipedia": "Maghrebi mint tea"
+   "file": "moroccan-mint-tea.jpg",
+   "source": "commons-file",
+   "match": "dish",
+   "commonsFile": "Moroccan Mint Tea.jpg"
   }
  },
  {
@@ -6071,6 +6181,8 @@
   ],
   "image": {
    "file": "bastilla.jpg",
+   "source": "wikipedia-lead",
+   "match": "representative",
    "wikipedia": "Pastilla"
   }
  },
@@ -6176,6 +6288,8 @@
   ],
   "image": {
    "file": "grilled-fish.jpg",
+   "source": "wikipedia-lead",
+   "match": "representative",
    "wikipedia": "Fish as food"
   }
  },
@@ -6287,6 +6401,8 @@
   ],
   "image": {
    "file": "shrimp-saganaki.jpg",
+   "source": "wikipedia-lead",
+   "match": "representative",
    "wikipedia": "Saganaki"
   }
  },
@@ -6399,8 +6515,10 @@
    "restaurant-style"
   ],
   "image": {
-   "file": "grilled-octopus.jpg",
-   "wikipedia": "Octopus as food"
+   "file": "grilled-octopus-dish.jpg",
+   "source": "commons-file",
+   "match": "dish",
+   "commonsFile": "Grilled octopus.jpg"
   }
  },
  {
@@ -6513,6 +6631,8 @@
   ],
   "image": {
    "file": "salmon-tahini.jpg",
+   "source": "wikipedia-lead",
+   "match": "representative",
    "wikipedia": "Salmon as food"
   }
  },
@@ -6630,8 +6750,10 @@
    "technique"
   ],
   "image": {
-   "file": "paella.jpg",
-   "wikipedia": "Paella"
+   "file": "paella-dish.jpg",
+   "source": "commons-file",
+   "match": "dish",
+   "commonsFile": "Seafood Paella (2075476879).jpg"
   }
  },
  {
@@ -6735,8 +6857,10 @@
    "restaurant-style"
   ],
   "image": {
-   "file": "gambas-al-ajillo.jpg",
-   "wikipedia": "Gambas al ajillo"
+   "file": "gambas-al-ajillo-dish.jpg",
+   "source": "commons-file",
+   "match": "dish",
+   "commonsFile": "Gambas al ajillo, 2024.jpg"
   }
  },
  {
@@ -6847,6 +6971,8 @@
   ],
   "image": {
    "file": "baked-cod.jpg",
+   "source": "wikipedia-lead",
+   "match": "representative",
    "wikipedia": "Cod"
   }
  },
@@ -6963,8 +7089,10 @@
    "make-ahead"
   ],
   "image": {
-   "file": "salade-nicoise.jpg",
-   "wikipedia": "Salade ni\u00e7oise"
+   "file": "salade-nicoise-dish.jpg",
+   "source": "commons-file",
+   "match": "dish",
+   "commonsFile": "Salade nicoise.jpg"
   }
  },
  {
@@ -7096,8 +7224,10 @@
    "technique"
   ],
   "image": {
-   "file": "bouillabaisse.jpg",
-   "wikipedia": "Bouillabaisse"
+   "file": "bouillabaisse-dish.jpg",
+   "source": "commons-file",
+   "match": "dish",
+   "commonsFile": "20250903 Bouillabaisse in Khimki.jpg"
   }
  },
  {
@@ -7206,8 +7336,10 @@
    "authentic"
   ],
   "image": {
-   "file": "mussels.jpg",
-   "wikipedia": "Moules-frites"
+   "file": "mussels-white-wine.jpg",
+   "source": "commons-file",
+   "match": "dish",
+   "commonsFile": "Mussels cooked in white wine in Queensland 01.jpg"
   }
  },
  {
@@ -7322,6 +7454,8 @@
   ],
   "image": {
    "file": "orzo-salad.jpg",
+   "source": "wikipedia-lead",
+   "match": "representative",
    "wikipedia": "Orzo"
   }
  },
@@ -7430,6 +7564,8 @@
   ],
   "image": {
    "file": "roasted-vegetables.jpg",
+   "source": "wikipedia-lead",
+   "match": "representative",
    "wikipedia": "Za'atar"
   }
  },
@@ -7538,6 +7674,8 @@
   ],
   "image": {
    "file": "fasolakia.jpg",
+   "source": "wikipedia-lead",
+   "match": "representative",
    "wikipedia": "Green bean"
   }
  },
@@ -7651,6 +7789,8 @@
   ],
   "image": {
    "file": "gigantes.jpg",
+   "source": "wikipedia-lead",
+   "match": "representative",
    "wikipedia": "Gigantes plaki"
   }
  },
@@ -7759,6 +7899,8 @@
   ],
   "image": {
    "file": "beet-salad.jpg",
+   "source": "wikipedia-lead",
+   "match": "representative",
    "wikipedia": "Beetroot"
   }
  },
@@ -7873,8 +8015,10 @@
    "budget"
   ],
   "image": {
-   "file": "gemista.jpg",
-   "wikipedia": "Dolma"
+   "file": "gemista-dish.jpg",
+   "source": "commons-file",
+   "match": "dish",
+   "commonsFile": "Gemista.jpg"
   }
  },
  {
@@ -7990,6 +8134,8 @@
   ],
   "image": {
    "file": "farro-salad.jpg",
+   "source": "wikipedia-lead",
+   "match": "representative",
    "wikipedia": "Farro"
   }
  },
@@ -8105,6 +8251,8 @@
   ],
   "image": {
    "file": "chickpea-salad.jpg",
+   "source": "wikipedia-lead",
+   "match": "representative",
    "wikipedia": "Chickpea"
   }
  },
@@ -8215,8 +8363,10 @@
    "restaurant-style"
   ],
   "image": {
-   "file": "halloumi-salad.jpg",
-   "wikipedia": "Halloumi"
+   "file": "grilled-halloumi-salad.jpg",
+   "source": "commons-file",
+   "match": "dish",
+   "commonsFile": "Halloumi & Crispy Chickpeas Salad - No.16 2025-08-24.jpg"
   }
  },
  {
@@ -8314,6 +8464,8 @@
   ],
   "image": {
    "file": "lamb-chops.jpg",
+   "source": "wikipedia-lead",
+   "match": "representative",
    "wikipedia": "Lamb and mutton"
   }
  },
@@ -8415,8 +8567,10 @@
    "authentic"
   ],
   "image": {
-   "file": "roast-lamb.jpg",
-   "wikipedia": "Lamb and mutton"
+   "file": "roast-leg-of-lamb.jpg",
+   "source": "commons-file",
+   "match": "dish",
+   "commonsFile": "Roast Leg of Lamb (32823259234).jpg"
   }
  },
  {
@@ -8505,8 +8659,10 @@
    "technique"
   ],
   "image": {
-   "file": "spanish-tortilla.jpg",
-   "wikipedia": "Spanish omelette"
+   "file": "spanish-tortilla-dish.jpg",
+   "source": "commons-file",
+   "match": "dish",
+   "commonsFile": "Spanish Tortilla (5845088254).jpg"
   }
  },
  {
@@ -8615,8 +8771,10 @@
    "budget"
   ],
   "image": {
-   "file": "ratatouille.jpg",
-   "wikipedia": "Ratatouille"
+   "file": "ratatouille-dish.jpg",
+   "source": "commons-file",
+   "match": "dish",
+   "commonsFile": "Ratatouille 001.jpg"
   }
  },
  {
@@ -8707,8 +8865,10 @@
    "appetizer"
   ],
   "image": {
-   "file": "pan-con-tomate.jpg",
-   "wikipedia": "Pa amb tom\u00e0quet"
+   "file": "pan-con-tomate-dish.jpg",
+   "source": "commons-file",
+   "match": "dish",
+   "commonsFile": "Pan con tomate (23072527621).jpg"
   }
  },
  {
@@ -8815,8 +8975,10 @@
    "cold"
   ],
   "image": {
-   "file": "gazpacho.jpg",
-   "wikipedia": "Gazpacho"
+   "file": "gazpacho-dish.jpg",
+   "source": "commons-file",
+   "match": "dish",
+   "commonsFile": "Gazpacho 7862.jpg"
   }
  },
  {
@@ -8925,8 +9087,10 @@
    "sharing"
   ],
   "image": {
-   "file": "patatas-bravas.jpg",
-   "wikipedia": "Patatas bravas"
+   "file": "patatas-bravas-dish.jpg",
+   "source": "commons-file",
+   "match": "dish",
+   "commonsFile": "Patatas bravas-2011.JPG"
   }
  },
  {
@@ -9037,6 +9201,8 @@
   ],
   "image": {
    "file": "mediterranean-chicken.jpg",
+   "source": "wikipedia-lead",
+   "match": "representative",
    "wikipedia": "Mediterranean cuisine"
   }
  },
@@ -9156,6 +9322,8 @@
   ],
   "image": {
    "file": "lamb-shanks.jpg",
+   "source": "wikipedia-lead",
+   "match": "representative",
    "wikipedia": "Lamb and mutton"
   }
  },
@@ -9281,8 +9449,10 @@
    "sunday"
   ],
   "image": {
-   "file": "vegetable-moussaka.jpg",
-   "wikipedia": "Moussaka"
+   "file": "vegetable-moussaka-dish.jpg",
+   "source": "commons-file",
+   "match": "dish",
+   "commonsFile": "Vegetable moussaka (27938572142).jpg"
   }
  },
  {
@@ -9392,6 +9562,8 @@
   ],
   "image": {
    "file": "briam.jpg",
+   "source": "wikipedia-lead",
+   "match": "representative",
    "wikipedia": "Briam"
   }
  },
@@ -9500,6 +9672,8 @@
   ],
   "image": {
    "file": "bulgur-pilaf.jpg",
+   "source": "wikipedia-lead",
+   "match": "representative",
    "wikipedia": "Bulgur"
   }
  },
@@ -9603,6 +9777,8 @@
   ],
   "image": {
    "file": "marinated-olives.jpg",
+   "source": "wikipedia-lead",
+   "match": "representative",
    "wikipedia": "Olive"
   }
  },
@@ -9724,6 +9900,8 @@
   ],
   "image": {
    "file": "grain-bowl.jpg",
+   "source": "wikipedia-lead",
+   "match": "representative",
    "wikipedia": "Mediterranean diet"
   }
  },
@@ -9831,6 +10009,8 @@
   ],
   "image": {
    "file": "eggplant-yogurt.jpg",
+   "source": "wikipedia-lead",
+   "match": "representative",
    "wikipedia": "Eggplant"
   }
  },
@@ -9946,8 +10126,10 @@
    "sharing"
   ],
   "image": {
-   "file": "baklava.jpg",
-   "wikipedia": "Baklava"
+   "file": "baklava-dish.jpg",
+   "source": "commons-file",
+   "match": "dish",
+   "commonsFile": "Baklava 2.jpg"
   }
  },
  {
@@ -10061,8 +10243,10 @@
    "special-occasion"
   ],
   "image": {
-   "file": "galaktoboureko.jpg",
-   "wikipedia": "Galaktoboureko"
+   "file": "galaktoboureko-dish.jpg",
+   "source": "commons-file",
+   "match": "dish",
+   "commonsFile": "Galaktoboureko.jpg"
   }
  },
  {
@@ -10153,6 +10337,8 @@
   ],
   "image": {
    "file": "yogurt-honey.jpg",
+   "source": "wikipedia-lead",
+   "match": "representative",
    "wikipedia": "Strained yogurt"
   }
  },
@@ -10266,6 +10452,8 @@
   ],
   "image": {
    "file": "basbousa.jpg",
+   "source": "wikipedia-lead",
+   "match": "representative",
    "wikipedia": "Basbousa"
   }
  },
@@ -10374,8 +10562,10 @@
    "vegetarian"
   ],
   "image": {
-   "file": "loukoumades.jpg",
-   "wikipedia": "Loukoumades"
+   "file": "loukoumades-dish.jpg",
+   "source": "commons-file",
+   "match": "dish",
+   "commonsFile": "Loukoumades.jpg"
   }
  },
  {
@@ -10485,8 +10675,10 @@
    "technique"
   ],
   "image": {
-   "file": "knafeh.jpg",
-   "wikipedia": "Kanafeh"
+   "file": "knafeh-dish.jpg",
+   "source": "commons-file",
+   "match": "dish",
+   "commonsFile": "Knafeh khishneh.jpg"
   }
  },
  {
@@ -10585,6 +10777,8 @@
   ],
   "image": {
    "file": "halva.jpg",
+   "source": "wikipedia-lead",
+   "match": "representative",
    "wikipedia": "Halva"
   }
  },
@@ -10689,6 +10883,8 @@
   ],
   "image": {
    "file": "fruit-salad.jpg",
+   "source": "wikipedia-lead",
+   "match": "representative",
    "wikipedia": "Fruit salad"
   }
  },
@@ -10775,8 +10971,10 @@
    "hot"
   ],
   "image": {
-   "file": "turkish-coffee.jpg",
-   "wikipedia": "Turkish coffee"
+   "file": "turkish-coffee-dish.jpg",
+   "source": "commons-file",
+   "match": "dish",
+   "commonsFile": "Turkish Coffee - Lavash 2023-12-13.jpg"
   }
  },
  {
@@ -10868,8 +11066,10 @@
    "budget"
   ],
   "image": {
-   "file": "frappe.jpg",
-   "wikipedia": "Frapp\u00e9 coffee"
+   "file": "greek-frappe.jpg",
+   "source": "commons-file",
+   "match": "dish",
+   "commonsFile": "Greek Frappe.jpg"
   }
  }
 ]

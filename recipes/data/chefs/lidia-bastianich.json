@@ -100,8 +100,10 @@
    "easy"
   ],
   "image": {
-   "file": "marinara.jpg",
-   "wikipedia": "Marinara sauce"
+   "file": "lb-marinara-sauce.jpg",
+   "source": "commons-file",
+   "match": "dish",
+   "commonsFile": "Marinara sauce ingredients.png"
   }
  },
  {
@@ -212,6 +214,8 @@
   ],
   "image": {
    "file": "pasta-e-ceci.jpg",
+   "source": "wikipedia-lead",
+   "match": "representative",
    "wikipedia": "Pasta e piselli"
   }
  },
@@ -325,8 +329,10 @@
    "entertaining"
   ],
   "image": {
-   "file": "risotto-milanese.jpg",
-   "wikipedia": "Risotto"
+   "file": "lb-butternut-risotto.jpg",
+   "source": "commons-file",
+   "match": "dish",
+   "commonsFile": "Butternut Squash and Sage Risotto Cakes (13310596004).jpg"
   }
  },
  {
@@ -440,6 +446,8 @@
   ],
   "image": {
    "file": "rigatoni.jpg",
+   "source": "wikipedia-lead",
+   "match": "representative",
    "wikipedia": "Umbrian cuisine"
   }
  },
@@ -558,6 +566,8 @@
   ],
   "image": {
    "file": "chicken-cacciatore.jpg",
+   "source": "wikipedia-lead",
+   "match": "representative",
    "wikipedia": "Chicken scarpariello"
   }
  },
@@ -683,8 +693,10 @@
    "family"
   ],
   "image": {
-   "file": "stuffed-pork-loin.jpg",
-   "wikipedia": "Pork loin"
+   "file": "lb-stuffed-pork-loin.jpg",
+   "source": "commons-file",
+   "match": "dish",
+   "commonsFile": "Pork loin stuffed.jpg"
   }
  },
  {
@@ -797,8 +809,10 @@
    "high-fiber"
   ],
   "image": {
-   "file": "eggplant-parmesan.jpg",
-   "wikipedia": "Eggplant"
+   "file": "lb-eggplant-rollatini.jpg",
+   "source": "commons-file",
+   "match": "dish",
+   "commonsFile": "Eggplant Rollatini (140490235).jpeg"
   }
  },
  {
@@ -906,8 +920,10 @@
    "high-protein"
   ],
   "image": {
-   "file": "frittata.jpg",
-   "wikipedia": "Frittata"
+   "file": "lb-frittata-di-spaghetti.jpg",
+   "source": "commons-file",
+   "match": "dish",
+   "commonsFile": "Frittata-di-spaghetti.jpg"
   }
  },
  {
@@ -1031,6 +1047,8 @@
   ],
   "image": {
    "file": "polenta.jpg",
+   "source": "wikipedia-lead",
+   "match": "representative",
    "wikipedia": "Polenta"
   }
  },
@@ -1158,6 +1176,8 @@
   ],
   "image": {
    "file": "lentil-soup.jpg",
+   "source": "wikipedia-lead",
+   "match": "representative",
    "wikipedia": "Lentil soup"
   }
  },
@@ -1279,6 +1299,8 @@
   ],
   "image": {
    "file": "lamb-shanks.jpg",
+   "source": "wikipedia-lead",
+   "match": "representative",
    "wikipedia": "Lamb and mutton"
   }
  },
@@ -1394,6 +1416,8 @@
   ],
   "image": {
    "file": "puttanesca.jpg",
+   "source": "wikipedia-lead",
+   "match": "representative",
    "wikipedia": "Pasta"
   }
  },
@@ -1500,8 +1524,10 @@
    "authentic"
   ],
   "image": {
-   "file": "gnocchi.jpg",
-   "wikipedia": "Gnocchi"
+   "file": "lb-potato-gnocchi.jpg",
+   "source": "commons-file",
+   "match": "dish",
+   "commonsFile": "Potato gnocchi, aubergine arrabiata.jpg"
   }
  },
  {
@@ -1612,6 +1638,8 @@
   ],
   "image": {
    "file": "cavatelli.jpg",
+   "source": "wikipedia-lead",
+   "match": "representative",
    "wikipedia": "Cavatelli"
   }
  },
@@ -1736,8 +1764,10 @@
    "authentic"
   ],
   "image": {
-   "file": "frutti-di-mare.jpg",
-   "wikipedia": "Seafood"
+   "file": "lb-insalata-di-mare.jpg",
+   "source": "commons-file",
+   "match": "dish",
+   "commonsFile": "Insalata di mare pantesca.jpg"
   }
  },
  {
@@ -1850,8 +1880,10 @@
    "classic"
   ],
   "image": {
-   "file": "stuffed-artichokes.jpg",
-   "wikipedia": "Artichoke"
+   "file": "lb-stuffed-artichokes.jpg",
+   "source": "commons-file",
+   "match": "dish",
+   "commonsFile": "Stuffed Artichokes baked (3734148902).jpg"
   }
  },
  {
@@ -1976,8 +2008,10 @@
    "baking"
   ],
   "image": {
-   "file": "pizza-rustica.jpg",
-   "wikipedia": "Pizza rustica"
+   "file": "lb-pizza-rustica.jpg",
+   "source": "commons-file",
+   "match": "dish",
+   "commonsFile": "Pizza Rustica 1.jpg"
   }
  },
  {
@@ -2091,6 +2125,8 @@
   ],
   "image": {
    "file": "crostata.jpg",
+   "source": "wikipedia-lead",
+   "match": "representative",
    "wikipedia": "Crostata"
   }
  },
@@ -2194,6 +2230,8 @@
   ],
   "image": {
    "file": "pignoli-cookies.jpg",
+   "source": "wikipedia-lead",
+   "match": "representative",
    "wikipedia": "Pignoli"
   }
  },
@@ -2296,6 +2334,8 @@
   ],
   "image": {
    "file": "orecchiette.jpg",
+   "source": "wikipedia-lead",
+   "match": "representative",
    "wikipedia": "Rapini"
   }
  },
@@ -2406,6 +2446,8 @@
   ],
   "image": {
    "file": "roasted-peppers.jpg",
+   "source": "wikipedia-lead",
+   "match": "representative",
    "wikipedia": "Bell pepper"
   }
  },
@@ -2516,8 +2558,10 @@
    "quick"
   ],
   "image": {
-   "file": "fennel-orange-salad.jpg",
-   "wikipedia": "Fennel"
+   "file": "lb-fennel-orange-salad.jpg",
+   "source": "commons-file",
+   "match": "dish",
+   "commonsFile": "Fennel and orange salad.jpg"
   }
  },
  {
@@ -2630,8 +2674,10 @@
    "date-night"
   ],
   "image": {
-   "file": "risotto-milanese.jpg",
-   "wikipedia": "Risotto"
+   "file": "lb-radicchio-risotto.jpg",
+   "source": "commons-file",
+   "match": "dish",
+   "commonsFile": "Risotto with radicchio and oranges (32407613653).jpg"
   }
  },
  {
@@ -2748,6 +2794,8 @@
   ],
   "image": {
    "file": "pasta-alla-genovese.jpg",
+   "source": "wikipedia-lead",
+   "match": "representative",
    "wikipedia": "Genovese sauce"
   }
  },
@@ -2839,8 +2887,10 @@
    "technique"
   ],
   "image": {
-   "file": "limoncello.jpg",
-   "wikipedia": "Lemon (fruit)"
+   "file": "lb-limoncello.jpg",
+   "source": "commons-file",
+   "match": "dish",
+   "commonsFile": "Homemade limoncello.jpg"
   }
  }
 ]

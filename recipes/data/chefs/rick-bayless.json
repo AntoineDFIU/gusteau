@@ -1,301 +1,3083 @@
 [
-{"id":"ch-rb-001","slug":"rb-mole-poblano","title":"Mole Poblano","genre":"mexican","subgenre":"moles","chef":{"name":"Rick Bayless","slug":"rick-bayless"},"description":"The great Puebla mole: four chiles, nuts, seeds, spices and chocolate.","difficulty":"advanced","easeScore":2,"spiceScore":5,"popularity":8,"pantryScore":3,"servings":10,"prepMin":60,"cookMin":180,"totalMin":240,"equipment":["stovetop","blender"],
-"ingredients":["8 dried mulato chiles","6 dried ancho chiles","6 dried pasilla chiles","4 dried chipotle chiles","1 cup lard or vegetable oil","1/2 cup almonds","1/2 cup raisins","1/4 cup sesame seeds","2 tbsp pumpkin seeds","1 corn tortilla, torn","2 slices stale bread","1 white onion, sliced","8 cloves garlic","1 lb tomatoes, roasted","1/2 lb tomatillos, roasted","1 tsp ground cinnamon","1/2 tsp ground cloves","1/2 tsp black peppercorns","1/2 tsp anise seed","1/4 tsp ground allspice","3 oz Mexican chocolate","8 cups chicken broth","2 tbsp salt","3 tbsp sugar","1 whole chicken, cut up"],
-"ingredientKeys":["mulato-chile","ancho-chile","pasilla-chile","chipotle-chile","lard","almonds","raisins","sesame-seeds","pumpkin-seeds","corn-tortilla","stale-bread","white-onion","garlic","tomato","tomatillo","cinnamon","cloves","black-peppercorns","anise-seed","allspice","mexican-chocolate","chicken-broth","salt","sugar","whole-chicken"],
-"specialty":["mulato-chile","ancho-chile","pasilla-chile","chipotle-chile","lard","almonds","sesame-seeds","pumpkin-seeds","tomatillo","anise-seed","mexican-chocolate"],
-"steps":["Stem and seed all the chiles, then toast them in a dry pan a few at a time, 20-30 seconds per side, until they smell fragrant and flexible. One scorched chile will make the whole pot bitter, and there is no fixing it.","Soak the toasted chiles in hot water 30 minutes, then blend them with a cup of the soaking liquid until completely smooth.","Fry each remaining group separately in the lard - the nuts and seeds, then the tortilla and bread, then the onion and garlic - removing each as it colors. Frying them separately matters because they brown at wildly different rates.","Blend the fried items with the roasted tomatoes, tomatillos and spices, adding broth as needed, until smooth. Push everything through a medium sieve; traditional mole is strained twice.","Fry the chile puree in hot lard in a heavy pot, stirring constantly for 10 minutes until it darkens and thickens. Then add the nut and seed puree and fry 10 minutes more. This frying of the purees is the step that turns raw ingredients into mole.","Add the broth, chocolate, salt and sugar and simmer very gently, partly covered, for 1 1/2 hours, stirring often. Poach the chicken in salted water and serve it napped with the mole and a scatter of sesame seeds. Mole improves for days and freezes well."],
-"diet":{"vegetarian":false,"vegan":false,"pescatarian":false,"glutenFree":false,"glutenFreeAdaptable":false,"dairyFree":true,"nutFree":false,"eggFree":true},
-"allergens":["gluten","tree-nut","sesame"],
-"gmo":{"risk":"high","sources":["corn","seed-oil","sugar-beet","grain-fed-meat","processed-bread"]},
-"nutrition":{"calories":782,"proteinG":48,"carbsG":42,"fiberG":9,"sugarG":18,"fatG":48,"satFatG":14,"sodiumMg":1680,"cholesterolMg":138},
-"tags":["mexican","authentic","project","regional","technique","special-occasion","signature","iconic","make-ahead","spicy"],
-"image":{"file":"mole-poblano.jpg","wikipedia":"Mole poblano"}},
-
-{"id":"ch-rb-002","slug":"rb-carnitas","title":"Michoacan Carnitas","genre":"mexican","subgenre":"tacos","chef":{"name":"Rick Bayless","slug":"rick-bayless"},"description":"Pork shoulder simmered in its own fat until tender, then crisped.","difficulty":"beginner","easeScore":8,"spiceScore":2,"popularity":10,"pantryScore":7,"servings":8,"prepMin":20,"cookMin":180,"totalMin":200,"equipment":["stovetop","oven"],
-"ingredients":["4 lb boneless pork shoulder, cut in 2-inch cubes","1 cup lard","1 white onion, quartered","8 cloves garlic, smashed","2 tbsp salt","1 orange, halved","1 cup whole milk","2 bay leaves","1 tsp dried oregano","24 corn tortillas","1 white onion, finely diced","1 cup chopped cilantro","3 limes, cut in wedges","2 cups salsa verde"],
-"ingredientKeys":["pork-shoulder","lard","white-onion","garlic","salt","orange","whole-milk","bay-leaf","mexican-oregano","corn-tortilla","white-onion","cilantro","lime","salsa-verde"],
-"specialty":["pork-shoulder","lard","mexican-oregano","corn-tortilla","salsa-verde"],
-"steps":["Put the pork in a heavy pot with the lard, onion, garlic, salt, the squeezed orange halves, the milk, bay leaves and oregano. Add water to come halfway up the meat.","The milk and orange are not decoration - the milk sugars help the meat brown and the orange adds a background sweetness that is characteristic of Michoacan carnitas.","Bring to a simmer and cook uncovered, barely bubbling, for about 2 hours. Do not stir much or the cubes break apart.","The water cooks off and at that point the pork is confiting in pure fat. Watch it closely from here.","Raise the heat and let the cubes fry in the rendered fat 15-20 minutes, turning occasionally, until the edges are deep brown and crisp but the inside is still juicy.","Lift the pork out, discard the aromatics, and coarsely shred some of it while leaving plenty of crisp chunks. Serve on warm corn tortillas with onion, cilantro, lime and salsa verde."],
-"diet":{"vegetarian":false,"vegan":false,"pescatarian":false,"glutenFree":true,"glutenFreeAdaptable":false,"dairyFree":false,"nutFree":true,"eggFree":true},
-"allergens":["dairy"],
-"gmo":{"risk":"high","sources":["corn","grain-fed-meat","grain-fed-dairy"]},
-"nutrition":{"calories":782,"proteinG":52,"carbsG":48,"fiberG":6,"sugarG":7,"fatG":42,"satFatG":15,"sodiumMg":1680,"cholesterolMg":158},
-"tags":["mexican","authentic","tacos","regional","party","high-protein","gluten-free","crowd-pleaser","iconic","easy"],
-"image":{"file":"carnitas.jpg","wikipedia":"Carnitas"}},
-
-{"id":"ch-rb-003","slug":"rb-salsa-verde-asada","title":"Roasted Tomatillo Salsa Verde","genre":"mexican","subgenre":"salsas","chef":{"name":"Rick Bayless","slug":"rick-bayless"},"description":"Charred tomatillos, serranos and garlic blended into a bright green salsa.","difficulty":"beginner","easeScore":10,"spiceScore":6,"popularity":9,"pantryScore":7,"servings":8,"prepMin":10,"cookMin":20,"totalMin":30,"equipment":["broiler","blender"],
-"ingredients":["1 1/2 lb tomatillos, husked","4 serrano chiles","6 cloves garlic, unpeeled","1/2 white onion, roughly chopped","1 cup cilantro leaves and stems","1 1/2 tsp salt","1/2 tsp sugar","2 tbsp water"],
-"ingredientKeys":["tomatillo","serrano-chile","garlic","white-onion","cilantro","salt","sugar","water"],
-"specialty":["tomatillo","serrano-chile"],
-"steps":["Lay the tomatillos, serranos and unpeeled garlic on a foil-lined sheet and broil 5 inches from the element, 5 minutes per side, until blistered and blackened in patches and the tomatillos have softened.","Roasting rather than boiling the tomatillos is the whole difference. Boiled, they taste flat and sour; roasted, they turn sweet and smoky and the salsa holds its color better.","Peel the garlic once it has cooled enough to handle.","Rinse the chopped raw onion in cold water and drain it. This takes the harsh sulfurous bite out and is a step worth keeping.","Blend the tomatillos with their juices, the garlic, the serranos (start with two if you are unsure), the onion, cilantro, salt, sugar and water. Pulse to a coarse puree, not a smooth one.","Taste and adjust - roasted tomatillos vary a lot in acidity. It keeps a week refrigerated and is better after a few hours."],
-"diet":{"vegetarian":true,"vegan":true,"pescatarian":true,"glutenFree":true,"glutenFreeAdaptable":false,"dairyFree":true,"nutFree":true,"eggFree":true},
-"allergens":[],
-"gmo":{"risk":"low","sources":["sugar-beet"]},
-"nutrition":{"calories":48,"proteinG":1,"carbsG":9,"fiberG":2,"sugarG":5,"fatG":1,"satFatG":0,"sodiumMg":440,"cholesterolMg":0},
-"tags":["mexican","salsa","authentic","foundation","vegan","vegetarian","gluten-free","dairy-free","spicy","quick","easy","make-ahead"],
-"image":{"file":"salsa-verde.jpg","wikipedia":"Salsa verde"}},
-
-{"id":"ch-rb-004","slug":"rb-cochinita-pibil","title":"Cochinita Pibil","genre":"mexican","subgenre":"secondi","chef":{"name":"Rick Bayless","slug":"rick-bayless"},"description":"Yucatecan pork in achiote and sour orange, wrapped in banana leaves.","difficulty":"intermediate","easeScore":6,"spiceScore":4,"popularity":8,"pantryScore":4,"servings":10,"prepMin":30,"cookMin":270,"totalMin":300,"equipment":["oven"],
-"ingredients":["5 lb boneless pork shoulder","3 oz achiote paste","1 1/2 cups sour orange juice","8 cloves garlic","1 tbsp dried Mexican oregano","1 tsp ground cumin","1/2 tsp ground allspice","1/2 tsp ground cloves","1 tbsp salt","1 lb banana leaves","2 red onions, thinly sliced","1 cup lime juice","3 habanero chiles, sliced","1 tsp salt","30 corn tortillas","1 cup chopped cilantro"],
-"ingredientKeys":["pork-shoulder","achiote-paste","sour-orange-juice","garlic","mexican-oregano","cumin","allspice","cloves","salt","banana-leaves","red-onion","lime-juice","habanero-chile","salt","corn-tortilla","cilantro"],
-"specialty":["pork-shoulder","achiote-paste","sour-orange-juice","mexican-oregano","banana-leaves","habanero-chile","corn-tortilla"],
-"steps":["Blend the achiote paste with the sour orange juice, garlic, oregano, cumin, allspice, cloves and salt into a loose brick-red marinade. If you cannot find sour oranges, use two parts orange juice to one part each lime and grapefruit juice.","Cut the pork into large chunks, score them, and marinate at least 6 hours or overnight. Achiote colors everything it touches, so use a nonreactive dish.","Soften the banana leaves by passing them briefly over a flame or hot burner until they turn glossy and pliable. Raw leaves crack when you fold them.","Line a Dutch oven with overlapping leaves, letting them hang well over the sides. Add the pork with all its marinade, then fold the leaves over to seal it completely.","Cover and bake at 325F for 4 hours. The sealed leaves steam the meat in its own juices and give it their faint tea-like perfume - this is the pit-cooking method translated to an oven.","Meanwhile pickle the red onions in the lime juice with the habaneros and salt for at least an hour. Shred the pork into its juices and serve on corn tortillas with the pickled onions and cilantro."],
-"diet":{"vegetarian":false,"vegan":false,"pescatarian":false,"glutenFree":true,"glutenFreeAdaptable":false,"dairyFree":true,"nutFree":true,"eggFree":true},
-"allergens":[],
-"gmo":{"risk":"high","sources":["corn","grain-fed-meat"]},
-"nutrition":{"calories":712,"proteinG":52,"carbsG":52,"fiberG":7,"sugarG":9,"fatG":32,"satFatG":11,"sodiumMg":1480,"cholesterolMg":158},
-"tags":["mexican","authentic","regional","yucatan","spicy","make-ahead","gluten-free","dairy-free","party","technique","signature"],
-"image":{"file":"cochinita-pibil.jpg","wikipedia":"Cochinita pibil"}},
-
-{"id":"ch-rb-005","slug":"rb-enchiladas-rojas","title":"Enchiladas Rojas","genre":"mexican","subgenre":"enchiladas","chef":{"name":"Rick Bayless","slug":"rick-bayless"},"description":"Tortillas dipped in guajillo-ancho sauce, filled with chicken and cheese.","difficulty":"intermediate","easeScore":7,"spiceScore":5,"popularity":9,"pantryScore":6,"servings":6,"prepMin":30,"cookMin":55,"totalMin":85,"equipment":["stovetop","oven","blender"],
-"ingredients":["8 dried guajillo chiles","4 dried ancho chiles","4 cloves garlic","1/2 white onion","1/2 tsp ground cumin","1/2 tsp dried Mexican oregano","3 cups chicken broth","3 tbsp lard or vegetable oil","2 tsp salt","1 tsp sugar","3 cups shredded cooked chicken","18 corn tortillas","1/2 cup vegetable oil, for the tortillas","2 cups crumbled queso fresco","1 white onion, finely diced","1 cup Mexican crema","1 cup chopped cilantro"],
-"ingredientKeys":["guajillo-chile","ancho-chile","garlic","white-onion","cumin","mexican-oregano","chicken-broth","lard","salt","sugar","cooked-chicken","corn-tortilla","vegetable-oil","queso-fresco","white-onion","mexican-crema","cilantro"],
-"specialty":["guajillo-chile","ancho-chile","mexican-oregano","lard","corn-tortilla","queso-fresco","mexican-crema"],
-"steps":["Stem and seed the chiles and toast them in a dry pan 20 seconds per side until fragrant. Watch them - burnt chiles turn the sauce bitter.","Soak them in hot water 25 minutes, then blend with the garlic, onion, cumin, oregano and 1 1/2 cups of the broth until very smooth. Strain the puree, pressing hard on the solids.","Fry the strained puree in the lard over medium-high heat 8 minutes, stirring constantly - it will spatter. Frying the sauce deepens it from raw and sharp into something round and savory, and it is the step that separates good enchiladas from mediocre ones.","Add the rest of the broth, the salt and sugar and simmer 15 minutes until it coats a spoon lightly.","Pass each tortilla briefly through hot oil, 5 seconds a side, to make it pliable and keep it from dissolving. Then dip it in the warm sauce, fill it with chicken, and roll it.","Set the rolled enchiladas in a dish, pour the remaining sauce over, and bake at 350F for 15 minutes. Serve at once with queso fresco, onion, crema and cilantro - enchiladas do not hold, they go soft within minutes."],
-"diet":{"vegetarian":false,"vegan":false,"pescatarian":false,"glutenFree":true,"glutenFreeAdaptable":false,"dairyFree":false,"nutFree":true,"eggFree":true},
-"allergens":["dairy"],
-"gmo":{"risk":"high","sources":["corn","seed-oil","grain-fed-meat","grain-fed-dairy"]},
-"nutrition":{"calories":782,"proteinG":42,"carbsG":62,"fiberG":9,"sugarG":9,"fatG":42,"satFatG":15,"sodiumMg":1680,"cholesterolMg":128},
-"tags":["mexican","authentic","technique","spicy","gluten-free","family","comfort","classic","dinner"],
-"image":{"file":"enchiladas-rojas.jpg","wikipedia":"Enchilada"}},
-
-{"id":"ch-rb-006","slug":"rb-tacos-al-pastor","title":"Tacos al Pastor","genre":"mexican","subgenre":"tacos","chef":{"name":"Rick Bayless","slug":"rick-bayless"},"description":"Achiote-chile marinated pork with pineapple, roasted on a vertical stack.","difficulty":"intermediate","easeScore":6,"spiceScore":5,"popularity":10,"pantryScore":5,"servings":8,"prepMin":40,"cookMin":90,"totalMin":130,"equipment":["oven","stovetop","blender"],
-"ingredients":["4 lb boneless pork shoulder, thinly sliced","6 dried guajillo chiles","3 dried ancho chiles","2 dried chipotle chiles","2 oz achiote paste","1/2 cup pineapple juice","1/4 cup white vinegar","8 cloves garlic","1 tsp ground cumin","1 tsp dried Mexican oregano","1/2 tsp ground cloves","1 tbsp salt","1 tbsp sugar","1 pineapple, peeled and sliced","24 corn tortillas","1 white onion, finely diced","1 1/2 cups chopped cilantro","4 limes, cut in wedges","2 cups salsa roja"],
-"ingredientKeys":["pork-shoulder","guajillo-chile","ancho-chile","chipotle-chile","achiote-paste","pineapple-juice","white-vinegar","garlic","cumin","mexican-oregano","cloves","salt","sugar","pineapple","corn-tortilla","white-onion","cilantro","lime","salsa-roja"],
-"specialty":["pork-shoulder","guajillo-chile","ancho-chile","chipotle-chile","achiote-paste","pineapple-juice","mexican-oregano","pineapple","corn-tortilla","salsa-roja"],
-"steps":["Toast the stemmed and seeded chiles 20 seconds per side, soak them 25 minutes, then blend with the achiote, pineapple juice, vinegar, garlic, cumin, oregano, cloves, salt and sugar into a thick marinade.","Marinate the thin pork slices at least 6 hours, ideally overnight. Thin slices are essential - this is a dish about edges and caramelization, not about chunks of meat.","To build the vertical stack at home, thread the slices onto two long skewers set in a loaf pan, packing them tightly and topping with pineapple slices, which drip their juices down as it roasts.","Roast at 325F for about 1 1/4 hours, then raise the heat to 475F for 15 minutes to char the outside.","Shave the meat off the edges of the stack in thin strips, which is exactly how it is done from a trompo. Chop it fine with some of the charred pineapple.","Serve on small warm corn tortillas, two stacked, with onion, cilantro, lime and salsa. If skewering seems like too much, spread the marinated slices on sheet pans and broil them, then chop - less dramatic, nearly as good."],
-"diet":{"vegetarian":false,"vegan":false,"pescatarian":false,"glutenFree":true,"glutenFreeAdaptable":false,"dairyFree":true,"nutFree":true,"eggFree":true},
-"allergens":[],
-"gmo":{"risk":"high","sources":["corn","grain-fed-meat","sugar-beet"]},
-"nutrition":{"calories":712,"proteinG":48,"carbsG":62,"fiberG":8,"sugarG":20,"fatG":30,"satFatG":10,"sodiumMg":1480,"cholesterolMg":138},
-"tags":["mexican","authentic","tacos","technique","spicy","party","gluten-free","dairy-free","project","iconic","crowd-pleaser"],
-"image":{"file":"al-pastor.jpg","wikipedia":"Al pastor"}},
-
-{"id":"ch-rb-007","slug":"rb-guacamole-molcajete","title":"Molcajete Guacamole","genre":"mexican","subgenre":"salsas","chef":{"name":"Rick Bayless","slug":"rick-bayless"},"description":"Guacamole mashed in a stone mortar with a chile and onion paste base.","difficulty":"beginner","easeScore":10,"spiceScore":4,"popularity":10,"pantryScore":8,"servings":6,"prepMin":15,"cookMin":15,"totalMin":30,"equipment":["no-cook"],
-"ingredients":["4 ripe Hass avocados","2 serrano chiles, minced","1/2 white onion, finely diced","1/2 cup chopped cilantro","3 cloves garlic","1 1/2 tsp salt","3 tbsp lime juice","1 roma tomato, seeded and diced","8 oz tortilla chips"],
-"ingredientKeys":["avocado","serrano-chile","white-onion","cilantro","garlic","salt","lime-juice","roma-tomato","tortilla-chips"],
-"specialty":["avocado","serrano-chile","tortilla-chips"],
-"steps":["Start by grinding the garlic, serranos and salt to a paste in a molcajete or with the side of a knife. Grinding them first distributes the heat and garlic evenly - stirring them in whole leaves hot spots and raw bites.","Add half the onion and half the cilantro and work them into the paste.","Cut the avocados, scoop them in, and mash coarsely with the pestle or a fork. Leave real chunks; guacamole blended smooth loses all its character.","Add the lime juice and fold it in. The acid slows browning, but it is also structural - without enough lime the guacamole tastes fatty and dull.","Fold in the tomato and the remaining onion and cilantro at the very end so they stay distinct.","Taste for salt - avocado absorbs a lot more than you expect. Serve immediately with tortilla chips; guacamole is at its best in the first half hour."],
-"diet":{"vegetarian":true,"vegan":true,"pescatarian":true,"glutenFree":true,"glutenFreeAdaptable":false,"dairyFree":true,"nutFree":true,"eggFree":true},
-"allergens":[],
-"gmo":{"risk":"high","sources":["corn","seed-oil"]},
-"nutrition":{"calories":382,"proteinG":5,"carbsG":32,"fiberG":9,"sugarG":2,"fatG":28,"satFatG":4,"sodiumMg":680,"cholesterolMg":0},
-"tags":["mexican","authentic","no-cook","vegan","vegetarian","gluten-free","dairy-free","party","quick","easy","appetizer","iconic"],
-"image":{"file":"guacamole.jpg","wikipedia":"Guacamole"}},
-
-{"id":"ch-rb-008","slug":"rb-chiles-en-nogada","title":"Chiles en Nogada","genre":"mexican","subgenre":"secondi","chef":{"name":"Rick Bayless","slug":"rick-bayless"},"description":"Poblanos stuffed with fruited pork picadillo under a walnut cream sauce.","difficulty":"advanced","easeScore":3,"spiceScore":3,"popularity":7,"pantryScore":3,"servings":6,"prepMin":60,"cookMin":80,"totalMin":140,"equipment":["broiler","stovetop","blender"],
-"ingredients":["6 large poblano chiles","3 tbsp lard or vegetable oil","1 lb ground pork","1 white onion, diced","4 cloves garlic, minced","2 tomatoes, chopped","1/3 cup raisins","1/4 cup slivered almonds","1 peach, diced","1 pear, diced","1 apple, diced","1 plantain, diced","1/2 tsp ground cinnamon","1/4 tsp ground cloves","1 1/2 tsp salt","2 tbsp sherry","1 1/2 cups walnuts","1/2 cup blanched almonds","1 1/2 cups Mexican crema","4 oz goat cheese","2 tbsp sugar","1/4 tsp ground cinnamon","1 cup pomegranate seeds","1/3 cup parsley leaves"],
-"ingredientKeys":["poblano-chile","lard","ground-pork","white-onion","garlic","tomato","raisins","almonds","peach","pear","apple","plantain","cinnamon","cloves","salt","sherry","walnuts","almonds","mexican-crema","goat-cheese","sugar","cinnamon","pomegranate-seeds","parsley"],
-"specialty":["poblano-chile","lard","ground-pork","plantain","sherry","walnuts","almonds","mexican-crema","goat-cheese","pomegranate-seeds"],
-"steps":["Roast the poblanos under the broiler until blackened all over, then sweat them in a covered bowl 15 minutes and rub off the skins.","Slit each one down the side and remove the seed pod carefully, leaving the stem and the chile intact. Work gently; a torn chile will not hold the filling.","Make the picadillo: brown the pork in the lard, add the onion and garlic, then the tomatoes, dried fruit, nuts, fresh fruit, plantain, spices and salt. Cook 25 minutes until thick, and finish with the sherry. It should taste savory and sweet at once.","Soak the walnuts in boiling water 5 minutes and rub off their papery skins. This is tedious and it is the difference between a white, sweet sauce and a grey, bitter one.","Blend the peeled walnuts and the blanched almonds with the crema, goat cheese, sugar and cinnamon until completely smooth. Keep it at room temperature, never hot - the sauce is served cool over warm chiles.","Stuff the chiles generously, warm them briefly in a low oven, then spoon the nogada over and scatter pomegranate seeds and parsley. The green chile, white sauce and red seeds are the Mexican flag, which is why this is the dish of Independence Day."],
-"diet":{"vegetarian":false,"vegan":false,"pescatarian":false,"glutenFree":true,"glutenFreeAdaptable":false,"dairyFree":false,"nutFree":false,"eggFree":true},
-"allergens":["tree-nut","dairy","sulfites"],
-"gmo":{"risk":"moderate","sources":["grain-fed-meat","grain-fed-dairy","sugar-beet"]},
-"nutrition":{"calories":882,"proteinG":32,"carbsG":52,"fiberG":9,"sugarG":32,"fatG":62,"satFatG":18,"sodiumMg":1180,"cholesterolMg":118},
-"tags":["mexican","authentic","project","regional","special-occasion","signature","technique","holiday","iconic","entertaining"],
-"image":{"file":"chiles-en-nogada.jpg","wikipedia":"Chiles en nogada"}},
-
-{"id":"ch-rb-009","slug":"rb-sopa-de-tortilla","title":"Sopa de Tortilla","genre":"mexican","subgenre":"soups","chef":{"name":"Rick Bayless","slug":"rick-bayless"},"description":"Pasilla-tomato broth with fried tortilla strips, avocado and cheese.","difficulty":"beginner","easeScore":9,"spiceScore":4,"popularity":9,"pantryScore":7,"servings":6,"prepMin":20,"cookMin":40,"totalMin":60,"equipment":["stovetop","blender"],
-"ingredients":["12 corn tortillas, cut in strips","1 cup vegetable oil","4 dried pasilla chiles","1 1/2 lb tomatoes","1/2 white onion","4 cloves garlic","8 cups chicken broth","1 sprig epazote","2 tsp salt","2 avocados, diced","1 1/2 cups crumbled queso fresco","1 cup Mexican crema","3 limes, cut in wedges","1/2 cup chopped cilantro"],
-"ingredientKeys":["corn-tortilla","vegetable-oil","pasilla-chile","tomato","white-onion","garlic","chicken-broth","epazote","salt","avocado","queso-fresco","mexican-crema","lime","cilantro"],
-"specialty":["corn-tortilla","pasilla-chile","epazote","avocado","queso-fresco","mexican-crema"],
-"steps":["Fry the tortilla strips in 350F oil in batches until crisp and golden, then drain them on paper towels and salt them. Stale tortillas fry up crisper than fresh.","Fry the stemmed, seeded pasillas in the same oil for 5 seconds only - they go from fragrant to burnt almost instantly. Drain them and save a few, crumbled, for garnish.","Char the tomatoes, onion and garlic in a dry pan or under the broiler until blackened in spots, then blend them with most of the pasillas until smooth.","Strain the puree into a pot with 2 tbsp of the frying oil and fry it 8 minutes, stirring, until it darkens and thickens.","Add the broth and epazote and simmer 20 minutes. Epazote is the herb that makes this soup taste Mexican rather than generic; if you cannot find it, leave it out rather than substituting.","Season, and ladle the broth over a handful of tortilla strips in each bowl at the table. Adding the strips in the pot turns them to mush. Pass the avocado, queso fresco, crema, lime, cilantro and crumbled chile."],
-"diet":{"vegetarian":false,"vegan":false,"pescatarian":false,"glutenFree":true,"glutenFreeAdaptable":false,"dairyFree":false,"nutFree":true,"eggFree":true},
-"allergens":["dairy"],
-"gmo":{"risk":"high","sources":["corn","seed-oil","grain-fed-meat","grain-fed-dairy"]},
-"nutrition":{"calories":582,"proteinG":22,"carbsG":48,"fiberG":9,"sugarG":9,"fatG":36,"satFatG":12,"sodiumMg":1480,"cholesterolMg":58},
-"tags":["mexican","soup","authentic","spicy","gluten-free","comfort","family","easy","classic","weeknight"],
-"image":{"file":"tortilla-soup.jpg","wikipedia":"Tortilla soup"}},
-
-{"id":"ch-rb-010","slug":"rb-rajas-con-crema","title":"Rajas con Crema","genre":"mexican","subgenre":"vegetables","chef":{"name":"Rick Bayless","slug":"rick-bayless"},"description":"Roasted poblano strips with onions, corn and cream.","difficulty":"beginner","easeScore":9,"spiceScore":4,"popularity":8,"pantryScore":7,"servings":6,"prepMin":20,"cookMin":30,"totalMin":50,"equipment":["broiler","stovetop"],
-"ingredients":["8 poblano chiles","3 tbsp vegetable oil","2 white onions, sliced","4 cloves garlic, minced","2 cups corn kernels","1 cup Mexican crema","1/2 cup whole milk","1 1/2 tsp salt","1/2 tsp dried Mexican oregano","1 1/2 cups shredded Chihuahua cheese","1/4 cup chopped cilantro","12 corn tortillas"],
-"ingredientKeys":["poblano-chile","vegetable-oil","white-onion","garlic","corn","mexican-crema","whole-milk","salt","mexican-oregano","chihuahua-cheese","cilantro","corn-tortilla"],
-"specialty":["poblano-chile","mexican-crema","mexican-oregano","chihuahua-cheese","corn-tortilla"],
-"steps":["Broil the poblanos, turning them, until blackened on all sides, 10 minutes. Then seal them in a bowl 15 minutes - the steam loosens the skins so they rub off with your thumbs.","Peel, seed and cut them into wide strips, which is what rajas means.","Cook the onions in the oil over medium-high heat 10 minutes until well browned at the edges, not merely softened. Those browned onions are half the flavor of the dish.","Add the garlic and corn for 3 minutes, then the poblano strips.","Add the crema, milk, salt and oregano and simmer 5 minutes until slightly thickened. Mexican crema does not break the way sour cream does, which is why it is used here.","Stir in the cheese off the heat just until it melts into strands, then finish with cilantro. Serve as a side, as a taco filling in warm corn tortillas, or spooned over rice."],
-"diet":{"vegetarian":true,"vegan":false,"pescatarian":true,"glutenFree":true,"glutenFreeAdaptable":false,"dairyFree":false,"nutFree":true,"eggFree":true},
-"allergens":["dairy"],
-"gmo":{"risk":"high","sources":["corn","seed-oil","grain-fed-dairy"]},
-"nutrition":{"calories":512,"proteinG":18,"carbsG":48,"fiberG":7,"sugarG":11,"fatG":28,"satFatG":14,"sodiumMg":1180,"cholesterolMg":72},
-"tags":["mexican","vegetarian","authentic","side","tacos","gluten-free","spicy","easy","comfort","family"],
-"image":{"file":"rajas-con-crema.jpg","wikipedia":"Poblano"}},
-
-{"id":"ch-rb-011","slug":"rb-pozole-rojo","title":"Pozole Rojo","genre":"mexican","subgenre":"soups","chef":{"name":"Rick Bayless","slug":"rick-bayless"},"description":"Hominy and pork in a guajillo broth, with a table of garnishes.","difficulty":"intermediate","easeScore":7,"spiceScore":4,"popularity":9,"pantryScore":6,"servings":10,"prepMin":25,"cookMin":180,"totalMin":205,"equipment":["stovetop","blender"],
-"ingredients":["3 lb boneless pork shoulder, cubed","2 lb pork neck bones","1 white onion, halved","1 head garlic, halved","2 tbsp salt","10 dried guajillo chiles","4 dried ancho chiles","2 dried chiles de arbol","1 tsp dried Mexican oregano","1/2 tsp ground cumin","3 cans (29 oz each) white hominy, drained","1 small cabbage, shredded","1 bunch radishes, sliced","1 white onion, finely diced","2 tbsp dried Mexican oregano","4 limes, cut in wedges","2 avocados, sliced","8 oz tostadas"],
-"ingredientKeys":["pork-shoulder","pork-neck-bones","white-onion","garlic","salt","guajillo-chile","ancho-chile","chile-de-arbol","mexican-oregano","cumin","hominy","cabbage","radish","white-onion","mexican-oregano","lime","avocado","tostadas"],
-"specialty":["pork-shoulder","pork-neck-bones","guajillo-chile","ancho-chile","chile-de-arbol","mexican-oregano","hominy","tostadas"],
-"steps":["Simmer the pork shoulder and neck bones with the halved onion, garlic and salt in 5 quarts of water, skimming the foam for the first 20 minutes. Skimming is what gives you a clear broth rather than a cloudy one.","Cook gently 2 hours until the meat is tender, then pull out the bones and shred the shoulder coarsely.","Toast the stemmed, seeded chiles 20 seconds per side, soak them 25 minutes, and blend with the oregano, cumin and some broth until smooth. Strain the puree through a sieve - guajillo skins never fully break down and would leave the broth gritty.","Fry the strained puree in a little lard or oil 8 minutes until it darkens, then stir it into the pot.","Add the drained hominy and simmer 45 minutes more. The hominy should split open and go slightly fluffy, which thickens the broth naturally.","Season and serve with every garnish in separate bowls - cabbage, radish, onion, oregano, lime, avocado, tostadas. The garnishes are not optional decoration; the crunch and acid against the rich broth is the dish."],
-"diet":{"vegetarian":false,"vegan":false,"pescatarian":false,"glutenFree":true,"glutenFreeAdaptable":false,"dairyFree":true,"nutFree":true,"eggFree":true},
-"allergens":[],
-"gmo":{"risk":"high","sources":["corn","grain-fed-meat"]},
-"nutrition":{"calories":682,"proteinG":48,"carbsG":52,"fiberG":9,"sugarG":7,"fatG":32,"satFatG":10,"sodiumMg":1680,"cholesterolMg":138},
-"tags":["mexican","soup","authentic","regional","party","make-ahead","gluten-free","dairy-free","spicy","crowd-pleaser","iconic"],
-"image":{"file":"pozole.jpg","wikipedia":"Pozole"}},
-
-{"id":"ch-rb-012","slug":"rb-tamales-rojos","title":"Red Chile Tamales","genre":"mexican","subgenre":"tamales","chef":{"name":"Rick Bayless","slug":"rick-bayless"},"description":"Masa beaten with lard, filled with red chile pork, steamed in husks.","difficulty":"advanced","easeScore":3,"spiceScore":4,"popularity":8,"pantryScore":5,"servings":12,"prepMin":75,"cookMin":135,"totalMin":210,"equipment":["stovetop","blender"],
-"ingredients":["50 dried corn husks","2 lb fresh masa for tamales","1 1/2 cups lard","2 tsp baking powder","1 tbsp salt","2 cups warm chicken broth","3 lb pork shoulder, cooked and shredded","10 dried guajillo chiles","4 dried ancho chiles","6 cloves garlic","1/2 white onion","1 tsp ground cumin","1 tsp dried Mexican oregano","2 tsp salt","2 cups pork broth","3 tbsp lard, for the sauce"],
-"ingredientKeys":["corn-husks","fresh-masa","lard","baking-powder","salt","chicken-broth","pork-shoulder","guajillo-chile","ancho-chile","garlic","white-onion","cumin","mexican-oregano","salt","pork-broth","lard"],
-"specialty":["corn-husks","fresh-masa","lard","pork-shoulder","guajillo-chile","ancho-chile","mexican-oregano","pork-broth"],
-"steps":["Soak the husks in hot water at least an hour until fully pliable, weighted down so they stay submerged.","Make the filling: toast and soak the chiles, blend them with the garlic, onion, cumin, oregano and salt, strain, then fry the puree in lard 8 minutes. Add the pork broth, simmer to a thick sauce, and fold in the shredded pork. Let it cool completely - warm filling melts the masa.","Beat the lard alone with a mixer until white and fluffy, 5 minutes. This aeration is the single thing that decides whether your tamales are light or dense.","Add the baking powder and salt, then the masa in portions, then the warm broth, beating until the mixture is soft and spreadable. Test it by dropping a small spoonful into cold water - if it floats, it is aerated enough. If it sinks, keep beating.","Spread 1/4 cup of masa over the smooth side of each husk in a rectangle, leaving borders, add filling down the center, and fold the long sides over so the masa encloses the filling. Fold up the bottom.","Stand them upright, open end up, in a steamer over boiling water. Steam 1 1/4 to 1 1/2 hours, checking the water. They are done when the masa pulls cleanly away from the husk - test one and if it sticks, keep going. Rest 15 minutes before serving."],
-"diet":{"vegetarian":false,"vegan":false,"pescatarian":false,"glutenFree":true,"glutenFreeAdaptable":false,"dairyFree":true,"nutFree":true,"eggFree":true},
-"allergens":[],
-"gmo":{"risk":"high","sources":["corn","grain-fed-meat"]},
-"nutrition":{"calories":582,"proteinG":28,"carbsG":42,"fiberG":5,"sugarG":2,"fatG":34,"satFatG":13,"sodiumMg":1280,"cholesterolMg":78},
-"tags":["mexican","authentic","project","technique","holiday","christmas","party","gluten-free","dairy-free","make-ahead","freezer"],
-"image":{"file":"tamales.jpg","wikipedia":"Tamale"}},
-
-{"id":"ch-rb-013","slug":"rb-ceviche-verde","title":"Green Ceviche","genre":"mexican","subgenre":"seafood","chef":{"name":"Rick Bayless","slug":"rick-bayless"},"description":"Fish cured in lime with tomatillo, cilantro and serrano.","difficulty":"beginner","easeScore":9,"spiceScore":5,"popularity":8,"pantryScore":5,"servings":6,"prepMin":25,"cookMin":35,"totalMin":60,"equipment":["no-cook","blender"],
-"ingredients":["1 1/2 lb skinless snapper or halibut, diced small","1 1/4 cups lime juice","2 tsp salt","6 tomatillos, husked","2 serrano chiles","2 cloves garlic","1 cup cilantro leaves","1/4 cup chopped mint","1/2 white onion, finely diced","1 cucumber, peeled and diced","1 avocado, diced","3 tbsp olive oil","1/2 tsp sugar","8 oz tostadas"],
-"ingredientKeys":["white-fish","lime-juice","salt","tomatillo","serrano-chile","garlic","cilantro","fresh-mint","white-onion","cucumber","avocado","olive-oil","sugar","tostadas"],
-"specialty":["white-fish","tomatillo","serrano-chile","fresh-mint","avocado","tostadas"],
-"steps":["Buy the freshest fish you can and tell the fishmonger it is for ceviche. Dice it small and uniform, about 1/3 inch - uneven pieces cure unevenly.","Toss the fish with 1 cup of the lime juice and the salt and refrigerate 30-40 minutes, stirring once. It is ready when the pieces are opaque most of the way through but still have a faint translucent center.","Left in the lime for hours, fish does not get better - it turns dry and chalky. Drain it as soon as it is cured.","Blend the raw tomatillos with the serranos, garlic, cilantro, mint, the remaining lime juice, olive oil and sugar into a bright green sauce. Raw tomatillos rather than roasted keep it sharp and fresh here.","Drain the fish and fold it with the green sauce, the rinsed onion and the cucumber.","Fold in the avocado at the last moment and serve cold on tostadas. Dress it no more than 20 minutes before eating - the cilantro sauce dulls from green to olive as the acid works on it."],
-"diet":{"vegetarian":false,"vegan":false,"pescatarian":true,"glutenFree":true,"glutenFreeAdaptable":false,"dairyFree":true,"nutFree":true,"eggFree":true},
-"allergens":["fish"],
-"gmo":{"risk":"moderate","sources":["corn","seed-oil","sugar-beet"]},
-"nutrition":{"calories":382,"proteinG":32,"carbsG":28,"fiberG":6,"sugarG":5,"fatG":18,"satFatG":3,"sodiumMg":880,"cholesterolMg":58},
-"tags":["mexican","seafood","no-cook","authentic","pescatarian","gluten-free","dairy-free","spicy","summer","healthy","high-protein","easy"],
-"image":{"file":"ceviche.jpg","wikipedia":"Ceviche"}},
-
-{"id":"ch-rb-014","slug":"rb-frijoles-refritos","title":"Frijoles Refritos","genre":"mexican","subgenre":"beans","chef":{"name":"Rick Bayless","slug":"rick-bayless"},"description":"Pinto beans cooked from dry, then fried in lard until creamy.","difficulty":"beginner","easeScore":9,"spiceScore":2,"popularity":9,"pantryScore":9,"servings":8,"prepMin":10,"cookMin":135,"totalMin":145,"equipment":["stovetop"],
-"ingredients":["1 lb dried pinto beans","1/2 white onion, quartered","4 cloves garlic","2 bay leaves","1 sprig epazote","1 tbsp salt","1/2 cup lard","1 white onion, finely diced","3 cloves garlic, minced","1 serrano chile, minced","1 tsp salt","1 cup crumbled queso fresco"],
-"ingredientKeys":["pinto-beans","white-onion","garlic","bay-leaf","epazote","salt","lard","white-onion","garlic","serrano-chile","salt","queso-fresco"],
-"specialty":["pinto-beans","epazote","lard","serrano-chile","queso-fresco"],
-"steps":["Rinse the beans and pick them over but do not soak them. Soaking is unnecessary and leaches out flavor; unsoaked beans just take a little longer.","Simmer them with the quartered onion, whole garlic, bay leaves and epazote in water to cover by 2 inches, adding hot water as needed, for about 1 1/2 to 2 hours.","Add the salt only when the beans are nearly tender. Salting at the start keeps the skins tough.","Cook them past firm - properly soft beans are what make the refried version creamy. Save the cooking liquid.","Fry the diced onion, garlic and serrano in the lard until golden, then add the beans a ladle at a time with some liquid, mashing as you go with a potato masher.","Keep frying and mashing 15-20 minutes. The beans should thicken, darken, and start to pull away from the pan in one mass - that is when they are done. Add liquid to loosen if needed, and serve with queso fresco."],
-"diet":{"vegetarian":false,"vegan":false,"pescatarian":false,"glutenFree":true,"glutenFreeAdaptable":false,"dairyFree":false,"nutFree":true,"eggFree":true},
-"allergens":["dairy"],
-"gmo":{"risk":"low","sources":["grain-fed-meat","grain-fed-dairy"]},
-"nutrition":{"calories":382,"proteinG":18,"carbsG":42,"fiberG":14,"sugarG":3,"fatG":16,"satFatG":7,"sodiumMg":1180,"cholesterolMg":22},
-"tags":["mexican","authentic","foundation","budget","high-fiber","gluten-free","make-ahead","pantry","side","easy","family"],
-"image":{"file":"refried-beans.jpg","wikipedia":"Refried beans"}},
-
-{"id":"ch-rb-015","slug":"rb-camarones-mojo-ajo","title":"Camarones al Mojo de Ajo","genre":"mexican","subgenre":"seafood","chef":{"name":"Rick Bayless","slug":"rick-bayless"},"description":"Shrimp in slow-cooked garlic oil with lime and chile.","difficulty":"beginner","easeScore":9,"spiceScore":4,"popularity":8,"pantryScore":7,"servings":4,"prepMin":15,"cookMin":25,"totalMin":40,"equipment":["stovetop"],
-"ingredients":["1 1/2 lb large shrimp, peeled","2 heads garlic, cloves thinly sliced","3/4 cup olive oil","2 dried chiles de arbol, crumbled","1 1/2 tsp salt","1/2 tsp black pepper","3 tbsp lime juice","1/3 cup chopped cilantro","1 tbsp butter","12 corn tortillas"],
-"ingredientKeys":["shrimp","garlic","olive-oil","chile-de-arbol","salt","black-pepper","lime-juice","cilantro","butter","corn-tortilla"],
-"specialty":["shrimp","chile-de-arbol","corn-tortilla"],
-"steps":["Slice the garlic thin - two whole heads of it. This is a dish about garlic, and slicing rather than mincing keeps it from burning.","Cook the garlic in the olive oil over low heat, 10-12 minutes, stirring often, until it turns a pale even gold and sweet. Low and slow is non-negotiable; garlic that browns fast goes bitter and ruins the oil.","Add the crumbled chiles de arbol for the last 30 seconds, then strain the garlic and chile out of the oil and reserve both.","Pat the shrimp dry and season them. Raise the heat and sear them in a few tablespoons of the garlic oil, 90 seconds per side, until just pink and firm.","Shrimp overcook in seconds; pull them while the thickest part is barely opaque.","Return the garlic and chile to the pan with the lime juice and butter, swirl to make a sauce, and finish with cilantro. Serve with warm corn tortillas and plenty of the garlic oil spooned over."],
-"diet":{"vegetarian":false,"vegan":false,"pescatarian":true,"glutenFree":true,"glutenFreeAdaptable":false,"dairyFree":false,"nutFree":true,"eggFree":true},
-"allergens":["shellfish","dairy"],
-"gmo":{"risk":"moderate","sources":["corn","grain-fed-dairy"]},
-"nutrition":{"calories":582,"proteinG":38,"carbsG":38,"fiberG":5,"sugarG":2,"fatG":32,"satFatG":6,"sodiumMg":1180,"cholesterolMg":258},
-"tags":["mexican","seafood","quick","authentic","pescatarian","gluten-free","spicy","high-protein","weeknight","easy"],
-"image":{"file":"camarones-al-ajillo.jpg","wikipedia":"Shrimp"}},
-
-{"id":"ch-rb-016","slug":"rb-chilaquiles-verdes","title":"Chilaquiles Verdes","genre":"mexican","subgenre":"breakfast","chef":{"name":"Rick Bayless","slug":"rick-bayless"},"description":"Fried tortilla chips simmered briefly in salsa verde, topped with eggs.","difficulty":"beginner","easeScore":9,"spiceScore":5,"popularity":9,"pantryScore":8,"servings":4,"prepMin":15,"cookMin":30,"totalMin":45,"equipment":["stovetop","broiler","blender"],
-"ingredients":["12 corn tortillas, cut in wedges","1 cup vegetable oil","1 1/2 lb tomatillos, husked","3 serrano chiles","4 cloves garlic, unpeeled","1/2 white onion","1/2 cup cilantro","2 cups chicken broth","1 1/2 tsp salt","4 eggs","1 cup crumbled queso fresco","3/4 cup Mexican crema","1/2 white onion, thinly sliced","1 avocado, sliced","1/3 cup chopped cilantro"],
-"ingredientKeys":["corn-tortilla","vegetable-oil","tomatillo","serrano-chile","garlic","white-onion","cilantro","chicken-broth","salt","egg","queso-fresco","mexican-crema","white-onion","avocado","cilantro"],
-"specialty":["corn-tortilla","tomatillo","serrano-chile","queso-fresco","mexican-crema","avocado"],
-"steps":["Fry the tortilla wedges in 350F oil until crisp and golden, in batches, and drain them. Store-bought chips work but fry up thicker and sturdier at home, which matters here.","Broil the tomatillos, serranos and unpeeled garlic until blistered, about 10 minutes, then peel the garlic and blend everything with the onion and cilantro.","Fry the puree in 2 tbsp oil for 6 minutes until it darkens, then add the broth and salt and simmer 10 minutes until it is a loose sauce.","Fry the eggs sunny side up in a separate pan while the sauce simmers.","Add the chips to the simmering sauce and fold them just until coated - 1 minute, no more. The whole point of chilaquiles is the contrast between softened edges and chips that still have some snap, and 30 extra seconds costs you that.","Slide onto plates immediately, top with the fried eggs, and finish with queso fresco, crema, sliced onion, avocado and cilantro."],
-"diet":{"vegetarian":false,"vegan":false,"pescatarian":false,"glutenFree":true,"glutenFreeAdaptable":false,"dairyFree":false,"nutFree":true,"eggFree":false},
-"allergens":["dairy","egg"],
-"gmo":{"risk":"high","sources":["corn","seed-oil","grain-fed-meat","grain-fed-dairy"]},
-"nutrition":{"calories":682,"proteinG":24,"carbsG":52,"fiberG":9,"sugarG":9,"fatG":42,"satFatG":13,"sodiumMg":1280,"cholesterolMg":228},
-"tags":["mexican","breakfast","brunch","authentic","spicy","gluten-free","quick","comfort","easy","family"],
-"image":{"file":"chilaquiles.jpg","wikipedia":"Chilaquiles"}},
-
-{"id":"ch-rb-017","slug":"rb-arroz-a-la-mexicana","title":"Arroz a la Mexicana","genre":"mexican","subgenre":"rice","chef":{"name":"Rick Bayless","slug":"rick-bayless"},"description":"Rice toasted in oil, then simmered in tomato broth with peas and carrot.","difficulty":"beginner","easeScore":9,"spiceScore":2,"popularity":9,"pantryScore":9,"servings":6,"prepMin":15,"cookMin":35,"totalMin":50,"equipment":["stovetop","blender"],
-"ingredients":["1 1/2 cups long-grain white rice","1/4 cup vegetable oil","2 ripe tomatoes, cored","1/4 white onion","2 cloves garlic","2 1/2 cups chicken broth","1 1/2 tsp salt","1 carrot, diced","1 cup frozen peas","1 serrano chile, whole","1/3 cup chopped cilantro"],
-"ingredientKeys":["long-grain-rice","vegetable-oil","tomato","white-onion","garlic","chicken-broth","salt","carrot","frozen-peas","serrano-chile","cilantro"],
-"specialty":["serrano-chile"],
-"steps":["Rinse the rice in several changes of cold water until the water runs clear, then drain it well. Rinsing removes surface starch so the grains stay separate.","Fry the drained rice in the oil over medium heat, stirring, for 5-6 minutes until the grains turn chalky white and some are lightly golden. This toasting step is what makes Mexican rice fluffy rather than sticky, and rushing it is the most common mistake.","Blend the tomatoes, onion and garlic smooth and measure the puree - you want 1 cup. Pour it into the hot rice and fry 3 minutes until it thickens and mostly absorbs.","Add the broth, salt, carrot and the whole serrano, which perfumes the rice without making it hot.","Bring to a boil, then cover and cook on the lowest heat 15 minutes without lifting the lid.","Scatter the peas over the top, replace the lid, and let it stand off the heat 10 minutes. Then fluff with a fork, discard the chile, and fold in the cilantro."],
-"diet":{"vegetarian":false,"vegan":false,"pescatarian":false,"glutenFree":true,"glutenFreeAdaptable":false,"dairyFree":true,"nutFree":true,"eggFree":true},
-"allergens":[],
-"gmo":{"risk":"high","sources":["seed-oil","grain-fed-meat"]},
-"nutrition":{"calories":318,"proteinG":7,"carbsG":52,"fiberG":3,"sugarG":5,"fatG":9,"satFatG":1,"sodiumMg":880,"cholesterolMg":2},
-"tags":["mexican","side","foundation","authentic","budget","gluten-free","dairy-free","pantry","family","easy","technique"],
-"image":{"file":"mexican-rice.jpg","wikipedia":"Mexican rice"}},
-
-{"id":"ch-rb-018","slug":"rb-cheese-queso-fundido","title":"Queso Fundido with Chorizo","genre":"mexican","subgenre":"appetizers","chef":{"name":"Rick Bayless","slug":"rick-bayless"},"description":"Melted Chihuahua cheese with chorizo and poblano, scooped with tortillas.","difficulty":"beginner","easeScore":10,"spiceScore":4,"popularity":9,"pantryScore":7,"servings":6,"prepMin":15,"cookMin":25,"totalMin":40,"equipment":["stovetop","oven"],
-"ingredients":["8 oz Mexican chorizo, casings removed","1 poblano chile, roasted and cut in strips","1/2 white onion, diced","3 cloves garlic, minced","1 lb Chihuahua cheese, shredded","4 oz Monterey Jack, shredded","1/4 cup Mexican crema","1/3 cup chopped cilantro","18 corn tortillas","1 cup salsa verde"],
-"ingredientKeys":["mexican-chorizo","poblano-chile","white-onion","garlic","chihuahua-cheese","monterey-jack","mexican-crema","cilantro","corn-tortilla","salsa-verde"],
-"specialty":["mexican-chorizo","poblano-chile","chihuahua-cheese","mexican-crema","corn-tortilla","salsa-verde"],
-"steps":["Brown the chorizo in a dry skillet 8 minutes, breaking it up. Mexican chorizo is raw and loose, unlike the cured Spanish kind, and it renders a lot of red fat - pour most of it off.","Cook the onion in the remaining fat 5 minutes, then the garlic for 1 minute, and stir in the roasted poblano strips.","Toss the two cheeses together. Chihuahua melts into long smooth strands; using some Jack keeps it from tightening as it cools.","Spread half the cheese in an ovenproof skillet or small gratin dish, scatter the chorizo mixture over, and top with the rest of the cheese.","Bake at 400F for 10-12 minutes until completely molten and bubbling at the edges. Do not let it go so long that the oil separates and pools - that is the sign it has overcooked.","Drizzle with crema, scatter cilantro, and bring it to the table in the hot pan with warm corn tortillas and salsa verde. It must be eaten immediately; melted cheese waits for no one."],
-"diet":{"vegetarian":false,"vegan":false,"pescatarian":false,"glutenFree":true,"glutenFreeAdaptable":false,"dairyFree":false,"nutFree":true,"eggFree":true},
-"allergens":["dairy"],
-"gmo":{"risk":"high","sources":["corn","grain-fed-meat","grain-fed-dairy","processed-cheese"]},
-"nutrition":{"calories":782,"proteinG":42,"carbsG":42,"fiberG":5,"sugarG":5,"fatG":48,"satFatG":24,"sodiumMg":1680,"cholesterolMg":138},
-"tags":["mexican","appetizer","party","authentic","gluten-free","quick","easy","crowd-pleaser","game-day","indulgent"],
-"image":{"file":"queso-fundido.jpg","wikipedia":"Queso flameado"}},
-
-{"id":"ch-rb-019","slug":"rb-tinga-de-pollo","title":"Tinga de Pollo","genre":"mexican","subgenre":"secondi","chef":{"name":"Rick Bayless","slug":"rick-bayless"},"description":"Shredded chicken in smoky chipotle-tomato sauce with onions.","difficulty":"beginner","easeScore":10,"spiceScore":6,"popularity":9,"pantryScore":8,"servings":6,"prepMin":15,"cookMin":35,"totalMin":50,"equipment":["stovetop"],
-"ingredients":["3 cups shredded cooked chicken","3 tbsp lard or vegetable oil","2 white onions, thinly sliced","5 cloves garlic, minced","1 1/2 lb tomatoes, chopped","4 chipotle chiles in adobo, chopped","2 tbsp adobo sauce","1 tsp dried Mexican oregano","1/2 tsp ground cumin","1 1/2 tsp salt","1/2 tsp sugar","1 cup chicken broth","12 tostadas","1 cup crumbled queso fresco","3/4 cup Mexican crema","1 avocado, sliced","1/3 cup chopped cilantro"],
-"ingredientKeys":["cooked-chicken","lard","white-onion","garlic","tomato","chipotle-in-adobo","adobo-sauce","mexican-oregano","cumin","salt","sugar","chicken-broth","tostadas","queso-fresco","mexican-crema","avocado","cilantro"],
-"specialty":["lard","chipotle-in-adobo","adobo-sauce","mexican-oregano","tostadas","queso-fresco","mexican-crema","avocado"],
-"steps":["Cook the sliced onions in the lard over medium-high heat 10-12 minutes until genuinely browned at the edges, not just translucent. Tinga depends on that caramelization for its sweetness.","Add the garlic for 1 minute, then the tomatoes, and cook 10 minutes until they break down and the liquid reduces.","Add the chipotles with their adobo, the oregano, cumin, salt and sugar. Start with two chiles and taste - canned chipotles vary enormously in heat and these are genuinely hot.","Add the broth and simmer 8 minutes until the sauce thickens enough to cling.","Fold in the shredded chicken and simmer 5 minutes more, just to heat it through and let it absorb the sauce. Long cooking from here only dries out the chicken.","Pile onto tostadas with queso fresco, crema, avocado and cilantro. It also fills tacos and tortas, and it reheats better than almost anything."],
-"diet":{"vegetarian":false,"vegan":false,"pescatarian":false,"glutenFree":true,"glutenFreeAdaptable":false,"dairyFree":false,"nutFree":true,"eggFree":true},
-"allergens":["dairy"],
-"gmo":{"risk":"high","sources":["corn","grain-fed-meat","grain-fed-dairy","sugar-beet"]},
-"nutrition":{"calories":612,"proteinG":38,"carbsG":42,"fiberG":7,"sugarG":11,"fatG":32,"satFatG":11,"sodiumMg":1480,"cholesterolMg":118},
-"tags":["mexican","authentic","quick","spicy","gluten-free","make-ahead","family","weeknight","easy","leftovers","party"],
-"image":{"file":"tinga.jpg","wikipedia":"Mexican cuisine"}},
-
-{"id":"ch-rb-020","slug":"rb-flan-napolitano","title":"Flan Napolitano","genre":"mexican","subgenre":"desserts","chef":{"name":"Rick Bayless","slug":"rick-bayless"},"description":"Dense cream-cheese flan under a dark caramel, baked in a water bath.","difficulty":"intermediate","easeScore":7,"spiceScore":0,"popularity":9,"pantryScore":8,"servings":10,"prepMin":20,"cookMin":310,"totalMin":330,"equipment":["oven","stovetop","blender"],
-"ingredients":["1 1/4 cups sugar","2 tbsp water","1 can (14 oz) sweetened condensed milk","1 can (12 oz) evaporated milk","8 oz cream cheese, softened","6 eggs","1 tbsp vanilla extract","1/4 tsp salt","1 tbsp orange zest"],
-"ingredientKeys":["sugar","water","sweetened-condensed-milk","evaporated-milk","cream-cheese","egg","vanilla-extract","salt","orange-zest"],
-"specialty":["sweetened-condensed-milk","evaporated-milk","cream-cheese"],
-"steps":["Melt the sugar with the water in a dry heavy pan over medium heat without stirring - swirl the pan instead. Stirring makes it crystallize.","Cook it to a deep amber, just short of smoking. Pale caramel tastes only sweet; dark caramel is what gives flan its slight bitterness and keeps it from cloying. Pour it immediately into a 9-inch round pan and tilt to coat the bottom; it sets hard in seconds.","Blend the condensed milk, evaporated milk, cream cheese, eggs, vanilla, salt and orange zest until perfectly smooth, then let the foam settle a few minutes. The cream cheese is what makes this the dense napolitano style rather than a trembling light flan.","Pour the custard through a fine sieve over the hardened caramel.","Set the pan in a larger roasting pan and pour in hot water to come halfway up the sides. The water bath keeps the custard below the temperature at which eggs curdle - without it you get a grainy flan with a crust.","Bake at 325F for about 1 hour, until the center jiggles as one mass rather than rippling. Cool, then refrigerate at least 4 hours or overnight. Run a knife around the edge and invert onto a rimmed platter; the caramel will have turned to sauce."],
-"diet":{"vegetarian":true,"vegan":false,"pescatarian":true,"glutenFree":true,"glutenFreeAdaptable":false,"dairyFree":false,"nutFree":true,"eggFree":false},
-"allergens":["dairy","egg"],
-"gmo":{"risk":"moderate","sources":["sugar-beet","grain-fed-dairy"]},
-"nutrition":{"calories":448,"proteinG":11,"carbsG":58,"fiberG":0,"sugarG":56,"fatG":18,"satFatG":11,"sodiumMg":220,"cholesterolMg":158},
-"tags":["mexican","dessert","authentic","gluten-free","make-ahead","classic","family","holiday","technique","party"],
-"image":{"file":"flan.jpg","wikipedia":"Crème caramel"}},
-
-{"id":"ch-rb-021","slug":"rb-barbacoa-de-res","title":"Barbacoa de Res","genre":"mexican","subgenre":"secondi","chef":{"name":"Rick Bayless","slug":"rick-bayless"},"description":"Beef cheeks or chuck braised with chiles, avocado leaves and cloves.","difficulty":"intermediate","easeScore":7,"spiceScore":4,"popularity":9,"pantryScore":5,"servings":10,"prepMin":25,"cookMin":255,"totalMin":280,"equipment":["oven","blender"],
-"ingredients":["5 lb beef chuck or cheeks, cut in large pieces","8 dried guajillo chiles","4 dried ancho chiles","3 dried chipotle chiles","1 white onion, quartered","8 cloves garlic","2 tbsp white vinegar","1 tsp ground cumin","1 tsp dried Mexican oregano","1/2 tsp ground cloves","1/2 tsp ground cinnamon","1 tbsp salt","6 dried avocado leaves","3 bay leaves","2 cups beef broth","30 corn tortillas","1 white onion, finely diced","1 1/2 cups chopped cilantro","4 limes, cut in wedges","2 cups salsa roja"],
-"ingredientKeys":["beef-chuck","guajillo-chile","ancho-chile","chipotle-chile","white-onion","garlic","white-vinegar","cumin","mexican-oregano","cloves","cinnamon","salt","avocado-leaves","bay-leaf","beef-broth","corn-tortilla","white-onion","cilantro","lime","salsa-roja"],
-"specialty":["beef-chuck","guajillo-chile","ancho-chile","chipotle-chile","mexican-oregano","avocado-leaves","beef-broth","corn-tortilla","salsa-roja"],
-"steps":["Toast the stemmed, seeded chiles 20 seconds per side, soak them 25 minutes, then blend with the onion, garlic, vinegar, cumin, oregano, cloves, cinnamon and salt into a thick paste.","Rub the paste all over the beef and leave it at least 4 hours or overnight.","Toast the avocado leaves briefly over a flame until fragrant. They taste faintly of anise and are the signature of central Mexican barbacoa - if you cannot find them, a little anise seed is closer than nothing.","Put the beef and all its marinade in a Dutch oven with the avocado leaves, bay leaves and broth. Cover tightly, sealing with foil under the lid if it does not fit well. Trapping the steam is what approximates the earth pit.","Braise at 300F for 4 hours, until the meat shreds with no resistance at all. Beef cheeks are the traditional cut and give the silkiest result; chuck is easier to find.","Shred the meat, pull out the leaves, and moisten it well with the strained cooking liquid - dry barbacoa is a sad thing. Serve on corn tortillas with onion, cilantro, lime and salsa, with the remaining broth as consommé on the side."],
-"diet":{"vegetarian":false,"vegan":false,"pescatarian":false,"glutenFree":true,"glutenFreeAdaptable":false,"dairyFree":true,"nutFree":true,"eggFree":true},
-"allergens":[],
-"gmo":{"risk":"high","sources":["corn","grain-fed-meat"]},
-"nutrition":{"calories":712,"proteinG":58,"carbsG":48,"fiberG":8,"sugarG":7,"fatG":32,"satFatG":12,"sodiumMg":1680,"cholesterolMg":168},
-"tags":["mexican","authentic","regional","tacos","make-ahead","party","gluten-free","dairy-free","technique","weekend","crowd-pleaser"],
-"image":{"file":"barbacoa.jpg","wikipedia":"Barbacoa"}},
-
-{"id":"ch-rb-022","slug":"rb-salsa-macha","title":"Salsa Macha","genre":"mexican","subgenre":"salsas","chef":{"name":"Rick Bayless","slug":"rick-bayless"},"description":"A Veracruz chile oil with peanuts, sesame and garlic. Keeps for months.","difficulty":"beginner","easeScore":9,"spiceScore":8,"popularity":8,"pantryScore":6,"servings":16,"prepMin":10,"cookMin":25,"totalMin":35,"equipment":["stovetop","blender"],
-"ingredients":["2 cups vegetable oil","10 dried chiles de arbol, stemmed","4 dried morita chiles, stemmed","4 dried guajillo chiles, stemmed and torn","12 cloves garlic, peeled","3/4 cup peanuts","1/3 cup sesame seeds","2 tbsp apple cider vinegar","1 1/2 tsp salt","1 tsp sugar"],
-"ingredientKeys":["vegetable-oil","chile-de-arbol","morita-chile","guajillo-chile","garlic","peanuts","sesame-seeds","apple-cider-vinegar","salt","sugar"],
-"specialty":["chile-de-arbol","morita-chile","guajillo-chile","peanuts","sesame-seeds"],
-"steps":["Heat the oil to about 250F - warm, not hot. Everything here is fried gently in sequence, and the order is by how fast each thing burns.","Fry the garlic and peanuts first, 4-5 minutes, until pale gold, then lift them out with a slotted spoon.","Add the sesame seeds for 30 seconds only, until they just turn color, and remove them.","Turn off the heat and add all the chiles to the hot oil for 30-45 seconds, pushing them under. They need only to darken slightly and smell toasty. Any scorching here makes the whole batch acrid and it cannot be salvaged.","Let everything cool, then blend the chiles, garlic, peanuts and half the sesame seeds with the vinegar, salt, sugar and about half the oil. Pulse to a coarse, chunky texture - this is not a smooth sauce.","Stir in the remaining oil and sesame seeds. Store it in a jar at room temperature, keeping the solids under the oil; it lasts for months and improves after a week. Spoon it over eggs, tacos, grilled meat or vegetables."],
-"diet":{"vegetarian":true,"vegan":true,"pescatarian":true,"glutenFree":true,"glutenFreeAdaptable":false,"dairyFree":true,"nutFree":false,"eggFree":true},
-"allergens":["peanut","sesame"],
-"gmo":{"risk":"high","sources":["seed-oil","sugar-beet"]},
-"nutrition":{"calories":242,"proteinG":4,"carbsG":5,"fiberG":2,"sugarG":1,"fatG":24,"satFatG":3,"sodiumMg":220,"cholesterolMg":0},
-"tags":["mexican","salsa","authentic","regional","vegan","vegetarian","gluten-free","dairy-free","spicy","make-ahead","pantry","gift"],
-"image":{"file":"salsa-macha.jpg","wikipedia":"Chili oil"}},
-
-{"id":"ch-rb-023","slug":"rb-sopes","title":"Sopes","genre":"mexican","subgenre":"antojitos","chef":{"name":"Rick Bayless","slug":"rick-bayless"},"description":"Thick masa cakes with pinched rims, topped with beans, meat and salsa.","difficulty":"intermediate","easeScore":7,"spiceScore":4,"popularity":8,"pantryScore":7,"servings":6,"prepMin":35,"cookMin":35,"totalMin":70,"equipment":["stovetop"],
-"ingredients":["2 cups masa harina","1 1/2 cups warm water","1 tsp salt","1/2 cup vegetable oil","2 cups refried beans, warm","2 cups shredded cooked chicken","1 1/2 cups salsa verde","1 1/2 cups shredded lettuce","1 cup crumbled queso fresco","3/4 cup Mexican crema","1/2 white onion, finely diced","1 avocado, sliced","1/3 cup chopped cilantro"],
-"ingredientKeys":["masa-harina","water","salt","vegetable-oil","refried-beans","cooked-chicken","salsa-verde","lettuce","queso-fresco","mexican-crema","white-onion","avocado","cilantro"],
-"specialty":["masa-harina","refried-beans","salsa-verde","queso-fresco","mexican-crema","avocado"],
-"steps":["Mix the masa harina, warm water and salt into a dough like soft modeling clay and let it rest 10 minutes. If it cracks when you press it, add water a tablespoon at a time; dry masa is the usual problem.","Divide into 12 balls and press each into a 3-inch disk about 1/3 inch thick - noticeably thicker than a tortilla.","Griddle the disks on a dry comal over medium heat, 1 1/2 minutes per side, until they look dry and lightly freckled but are not yet cooked through.","Take them off one at a time and, while they are hot enough to hurt slightly, pinch up a rim around the edge with your fingers. They must be pinched hot - cooled sopes crack instead of pinching. Use a towel to protect your fingers.","Shallow-fry the pinched sopes in the oil, 1 minute per side, until the base is crisp and golden. That rim is what holds the toppings and their juices.","Fill while hot: beans first, then chicken, salsa, lettuce, queso fresco, crema, onion, avocado and cilantro. Serve at once."],
-"diet":{"vegetarian":false,"vegan":false,"pescatarian":false,"glutenFree":true,"glutenFreeAdaptable":false,"dairyFree":false,"nutFree":true,"eggFree":true},
-"allergens":["dairy"],
-"gmo":{"risk":"high","sources":["corn","seed-oil","grain-fed-meat","grain-fed-dairy"]},
-"nutrition":{"calories":682,"proteinG":32,"carbsG":62,"fiberG":11,"sugarG":7,"fatG":34,"satFatG":10,"sodiumMg":1480,"cholesterolMg":88},
-"tags":["mexican","antojitos","authentic","technique","party","gluten-free","family","street-food","crowd-pleaser"],
-"image":{"file":"sopes.jpg","wikipedia":"Sope (food)"}},
-
-{"id":"ch-rb-024","slug":"rb-agua-de-jamaica","title":"Agua de Jamaica","genre":"mexican","subgenre":"drinks","chef":{"name":"Rick Bayless","slug":"rick-bayless"},"description":"Hibiscus flowers steeped and sweetened into a tart ruby cooler.","difficulty":"beginner","easeScore":10,"spiceScore":0,"popularity":8,"pantryScore":6,"servings":8,"prepMin":10,"cookMin":80,"totalMin":90,"equipment":["stovetop"],
-"ingredients":["1 1/2 cups dried hibiscus flowers","8 cups water","3/4 cup sugar","2 tbsp lime juice","1 cinnamon stick","2 cups ice","1 lime, sliced"],
-"ingredientKeys":["dried-hibiscus","water","sugar","lime-juice","cinnamon-stick","ice","lime"],
-"specialty":["dried-hibiscus","cinnamon-stick"],
-"steps":["Rinse the hibiscus flowers briefly in cold water - they are dried in the open and often dusty.","Bring 4 cups of the water to a boil with the cinnamon stick, add the flowers, and take it off the heat immediately.","Steep 15-20 minutes, no longer. Boiling hibiscus or steeping it too long pulls out tannins and the drink turns astringent and faintly bitter instead of clean and tart.","Strain, pressing lightly on the flowers, and stir the sugar into the hot liquid until it dissolves completely.","Add the remaining 4 cups of cold water and the lime juice, then taste. Hibiscus is genuinely sour and needs more sugar than you expect, but it should still bite.","Chill thoroughly and serve over plenty of ice with lime slices. The steeped flowers can be chopped and used as a taco filling rather than thrown out."],
-"diet":{"vegetarian":true,"vegan":true,"pescatarian":true,"glutenFree":true,"glutenFreeAdaptable":false,"dairyFree":true,"nutFree":true,"eggFree":true},
-"allergens":[],
-"gmo":{"risk":"moderate","sources":["sugar-beet"]},
-"nutrition":{"calories":82,"proteinG":0,"carbsG":20,"fiberG":0,"sugarG":19,"fatG":0,"satFatG":0,"sodiumMg":8,"cholesterolMg":0},
-"tags":["mexican","drink","authentic","vegan","vegetarian","gluten-free","dairy-free","summer","make-ahead","easy","budget","kid-friendly"],
-"image":{"file":"agua-de-jamaica.jpg","wikipedia":"Hibiscus tea"}},
-
-{"id":"ch-rb-025","slug":"rb-pescado-a-la-veracruzana","title":"Pescado a la Veracruzana","genre":"mexican","subgenre":"seafood","chef":{"name":"Rick Bayless","slug":"rick-bayless"},"description":"Snapper poached in a tomato sauce with olives, capers and pickled chiles.","difficulty":"beginner","easeScore":9,"spiceScore":4,"popularity":8,"pantryScore":7,"servings":4,"prepMin":20,"cookMin":35,"totalMin":55,"equipment":["stovetop"],
-"ingredients":["4 red snapper fillets (7 oz each)","1 1/2 tsp salt","2 tbsp lime juice","1/4 cup olive oil","1 white onion, sliced","6 cloves garlic, sliced","2 lb ripe tomatoes, chopped","2 bay leaves","1 tsp dried Mexican oregano","1/2 tsp ground cinnamon","3/4 cup green olives, pitted and halved","1/3 cup capers, rinsed","4 pickled jalapenos, sliced","2 tbsp pickled jalapeno brine","1/2 tsp sugar","1/3 cup chopped parsley"],
-"ingredientKeys":["red-snapper","salt","lime-juice","olive-oil","white-onion","garlic","tomato","bay-leaf","mexican-oregano","cinnamon","green-olives","capers","pickled-jalapeno","jalapeno-brine","sugar","parsley"],
-"specialty":["red-snapper","mexican-oregano","green-olives","capers","pickled-jalapeno","jalapeno-brine"],
-"steps":["Season the fillets with salt and lime juice and leave them 15 minutes while you make the sauce.","Cook the onion in the olive oil 8 minutes until soft, then add the garlic for 1 minute.","Add the tomatoes, bay leaves, oregano and cinnamon and simmer 15 minutes until the sauce thickens and the tomatoes break down. The cinnamon and olives are the Spanish inheritance in this dish - Veracruz was the colonial port, and the sauce is Mediterranean grafted onto Mexican ingredients.","Add the olives, capers, pickled jalapenos and their brine and the sugar, and simmer 3 minutes. Taste - it should be salty, sour and faintly sweet all at once, and it probably needs no extra salt.","Nestle the fillets into the sauce, spoon some over them, cover, and poach gently 8-10 minutes, depending on thickness.","The fish is done when it flakes at the thickest point but still looks moist. Poaching in sauce is forgiving, but overcooked snapper still turns cottony. Finish with parsley and serve with white rice."],
-"diet":{"vegetarian":false,"vegan":false,"pescatarian":true,"glutenFree":true,"glutenFreeAdaptable":false,"dairyFree":true,"nutFree":true,"eggFree":true},
-"allergens":["fish"],
-"gmo":{"risk":"low","sources":["sugar-beet"]},
-"nutrition":{"calories":448,"proteinG":42,"carbsG":22,"fiberG":5,"sugarG":11,"fatG":24,"satFatG":4,"sodiumMg":1680,"cholesterolMg":78},
-"tags":["mexican","seafood","authentic","regional","pescatarian","gluten-free","dairy-free","healthy","high-protein","easy","weeknight"],
-"image":{"file":"pescado-veracruzana.jpg","wikipedia":"Veracruz cuisine"}}
+ {
+  "id": "ch-rb-001",
+  "slug": "rb-mole-poblano",
+  "title": "Mole Poblano",
+  "genre": "mexican",
+  "subgenre": "moles",
+  "chef": {
+   "name": "Rick Bayless",
+   "slug": "rick-bayless"
+  },
+  "description": "The great Puebla mole: four chiles, nuts, seeds, spices and chocolate.",
+  "difficulty": "advanced",
+  "easeScore": 2,
+  "spiceScore": 5,
+  "popularity": 8,
+  "pantryScore": 3,
+  "servings": 10,
+  "prepMin": 60,
+  "cookMin": 180,
+  "totalMin": 240,
+  "equipment": [
+   "stovetop",
+   "blender"
+  ],
+  "ingredients": [
+   "8 dried mulato chiles",
+   "6 dried ancho chiles",
+   "6 dried pasilla chiles",
+   "4 dried chipotle chiles",
+   "1 cup lard or vegetable oil",
+   "1/2 cup almonds",
+   "1/2 cup raisins",
+   "1/4 cup sesame seeds",
+   "2 tbsp pumpkin seeds",
+   "1 corn tortilla, torn",
+   "2 slices stale bread",
+   "1 white onion, sliced",
+   "8 cloves garlic",
+   "1 lb tomatoes, roasted",
+   "1/2 lb tomatillos, roasted",
+   "1 tsp ground cinnamon",
+   "1/2 tsp ground cloves",
+   "1/2 tsp black peppercorns",
+   "1/2 tsp anise seed",
+   "1/4 tsp ground allspice",
+   "3 oz Mexican chocolate",
+   "8 cups chicken broth",
+   "2 tbsp salt",
+   "3 tbsp sugar",
+   "1 whole chicken, cut up"
+  ],
+  "ingredientKeys": [
+   "mulato-chile",
+   "ancho-chile",
+   "pasilla-chile",
+   "chipotle-chile",
+   "lard",
+   "almonds",
+   "raisins",
+   "sesame-seeds",
+   "pumpkin-seeds",
+   "corn-tortilla",
+   "stale-bread",
+   "white-onion",
+   "garlic",
+   "tomato",
+   "tomatillo",
+   "cinnamon",
+   "cloves",
+   "black-peppercorns",
+   "anise-seed",
+   "allspice",
+   "mexican-chocolate",
+   "chicken-broth",
+   "salt",
+   "sugar",
+   "whole-chicken"
+  ],
+  "specialty": [
+   "mulato-chile",
+   "ancho-chile",
+   "pasilla-chile",
+   "chipotle-chile",
+   "lard",
+   "almonds",
+   "sesame-seeds",
+   "pumpkin-seeds",
+   "tomatillo",
+   "anise-seed",
+   "mexican-chocolate"
+  ],
+  "steps": [
+   "Stem and seed all the chiles, then toast them in a dry pan a few at a time, 20-30 seconds per side, until they smell fragrant and flexible. One scorched chile will make the whole pot bitter, and there is no fixing it.",
+   "Soak the toasted chiles in hot water 30 minutes, then blend them with a cup of the soaking liquid until completely smooth.",
+   "Fry each remaining group separately in the lard - the nuts and seeds, then the tortilla and bread, then the onion and garlic - removing each as it colors. Frying them separately matters because they brown at wildly different rates.",
+   "Blend the fried items with the roasted tomatoes, tomatillos and spices, adding broth as needed, until smooth. Push everything through a medium sieve; traditional mole is strained twice.",
+   "Fry the chile puree in hot lard in a heavy pot, stirring constantly for 10 minutes until it darkens and thickens. Then add the nut and seed puree and fry 10 minutes more. This frying of the purees is the step that turns raw ingredients into mole.",
+   "Add the broth, chocolate, salt and sugar and simmer very gently, partly covered, for 1 1/2 hours, stirring often. Poach the chicken in salted water and serve it napped with the mole and a scatter of sesame seeds. Mole improves for days and freezes well."
+  ],
+  "diet": {
+   "vegetarian": false,
+   "vegan": false,
+   "pescatarian": false,
+   "glutenFree": false,
+   "glutenFreeAdaptable": false,
+   "dairyFree": true,
+   "nutFree": false,
+   "eggFree": true
+  },
+  "allergens": [
+   "gluten",
+   "tree-nut",
+   "sesame"
+  ],
+  "gmo": {
+   "risk": "high",
+   "sources": [
+    "corn",
+    "seed-oil",
+    "sugar-beet",
+    "grain-fed-meat",
+    "processed-bread"
+   ]
+  },
+  "nutrition": {
+   "calories": 782,
+   "proteinG": 48,
+   "carbsG": 42,
+   "fiberG": 9,
+   "sugarG": 18,
+   "fatG": 48,
+   "satFatG": 14,
+   "sodiumMg": 1680,
+   "cholesterolMg": 138
+  },
+  "tags": [
+   "mexican",
+   "authentic",
+   "project",
+   "regional",
+   "technique",
+   "special-occasion",
+   "signature",
+   "iconic",
+   "make-ahead",
+   "spicy"
+  ],
+  "image": {
+   "file": "rb-mole-poblano.jpg",
+   "source": "commons-file",
+   "match": "dish",
+   "commonsFile": "Mole Poblano.jpg"
+  }
+ },
+ {
+  "id": "ch-rb-002",
+  "slug": "rb-carnitas",
+  "title": "Michoacan Carnitas",
+  "genre": "mexican",
+  "subgenre": "tacos",
+  "chef": {
+   "name": "Rick Bayless",
+   "slug": "rick-bayless"
+  },
+  "description": "Pork shoulder simmered in its own fat until tender, then crisped.",
+  "difficulty": "beginner",
+  "easeScore": 8,
+  "spiceScore": 2,
+  "popularity": 10,
+  "pantryScore": 7,
+  "servings": 8,
+  "prepMin": 20,
+  "cookMin": 180,
+  "totalMin": 200,
+  "equipment": [
+   "stovetop",
+   "oven"
+  ],
+  "ingredients": [
+   "4 lb boneless pork shoulder, cut in 2-inch cubes",
+   "1 cup lard",
+   "1 white onion, quartered",
+   "8 cloves garlic, smashed",
+   "2 tbsp salt",
+   "1 orange, halved",
+   "1 cup whole milk",
+   "2 bay leaves",
+   "1 tsp dried oregano",
+   "24 corn tortillas",
+   "1 white onion, finely diced",
+   "1 cup chopped cilantro",
+   "3 limes, cut in wedges",
+   "2 cups salsa verde"
+  ],
+  "ingredientKeys": [
+   "pork-shoulder",
+   "lard",
+   "white-onion",
+   "garlic",
+   "salt",
+   "orange",
+   "whole-milk",
+   "bay-leaf",
+   "mexican-oregano",
+   "corn-tortilla",
+   "white-onion",
+   "cilantro",
+   "lime",
+   "salsa-verde"
+  ],
+  "specialty": [
+   "pork-shoulder",
+   "lard",
+   "mexican-oregano",
+   "corn-tortilla",
+   "salsa-verde"
+  ],
+  "steps": [
+   "Put the pork in a heavy pot with the lard, onion, garlic, salt, the squeezed orange halves, the milk, bay leaves and oregano. Add water to come halfway up the meat.",
+   "The milk and orange are not decoration - the milk sugars help the meat brown and the orange adds a background sweetness that is characteristic of Michoacan carnitas.",
+   "Bring to a simmer and cook uncovered, barely bubbling, for about 2 hours. Do not stir much or the cubes break apart.",
+   "The water cooks off and at that point the pork is confiting in pure fat. Watch it closely from here.",
+   "Raise the heat and let the cubes fry in the rendered fat 15-20 minutes, turning occasionally, until the edges are deep brown and crisp but the inside is still juicy.",
+   "Lift the pork out, discard the aromatics, and coarsely shred some of it while leaving plenty of crisp chunks. Serve on warm corn tortillas with onion, cilantro, lime and salsa verde."
+  ],
+  "diet": {
+   "vegetarian": false,
+   "vegan": false,
+   "pescatarian": false,
+   "glutenFree": true,
+   "glutenFreeAdaptable": false,
+   "dairyFree": false,
+   "nutFree": true,
+   "eggFree": true
+  },
+  "allergens": [
+   "dairy"
+  ],
+  "gmo": {
+   "risk": "high",
+   "sources": [
+    "corn",
+    "grain-fed-meat",
+    "grain-fed-dairy"
+   ]
+  },
+  "nutrition": {
+   "calories": 782,
+   "proteinG": 52,
+   "carbsG": 48,
+   "fiberG": 6,
+   "sugarG": 7,
+   "fatG": 42,
+   "satFatG": 15,
+   "sodiumMg": 1680,
+   "cholesterolMg": 158
+  },
+  "tags": [
+   "mexican",
+   "authentic",
+   "tacos",
+   "regional",
+   "party",
+   "high-protein",
+   "gluten-free",
+   "crowd-pleaser",
+   "iconic",
+   "easy"
+  ],
+  "image": {
+   "file": "carnitas.jpg",
+   "source": "wikipedia-lead",
+   "match": "representative",
+   "wikipedia": "Carnitas"
+  }
+ },
+ {
+  "id": "ch-rb-003",
+  "slug": "rb-salsa-verde-asada",
+  "title": "Roasted Tomatillo Salsa Verde",
+  "genre": "mexican",
+  "subgenre": "salsas",
+  "chef": {
+   "name": "Rick Bayless",
+   "slug": "rick-bayless"
+  },
+  "description": "Charred tomatillos, serranos and garlic blended into a bright green salsa.",
+  "difficulty": "beginner",
+  "easeScore": 10,
+  "spiceScore": 6,
+  "popularity": 9,
+  "pantryScore": 7,
+  "servings": 8,
+  "prepMin": 10,
+  "cookMin": 20,
+  "totalMin": 30,
+  "equipment": [
+   "broiler",
+   "blender"
+  ],
+  "ingredients": [
+   "1 1/2 lb tomatillos, husked",
+   "4 serrano chiles",
+   "6 cloves garlic, unpeeled",
+   "1/2 white onion, roughly chopped",
+   "1 cup cilantro leaves and stems",
+   "1 1/2 tsp salt",
+   "1/2 tsp sugar",
+   "2 tbsp water"
+  ],
+  "ingredientKeys": [
+   "tomatillo",
+   "serrano-chile",
+   "garlic",
+   "white-onion",
+   "cilantro",
+   "salt",
+   "sugar",
+   "water"
+  ],
+  "specialty": [
+   "tomatillo",
+   "serrano-chile"
+  ],
+  "steps": [
+   "Lay the tomatillos, serranos and unpeeled garlic on a foil-lined sheet and broil 5 inches from the element, 5 minutes per side, until blistered and blackened in patches and the tomatillos have softened.",
+   "Roasting rather than boiling the tomatillos is the whole difference. Boiled, they taste flat and sour; roasted, they turn sweet and smoky and the salsa holds its color better.",
+   "Peel the garlic once it has cooled enough to handle.",
+   "Rinse the chopped raw onion in cold water and drain it. This takes the harsh sulfurous bite out and is a step worth keeping.",
+   "Blend the tomatillos with their juices, the garlic, the serranos (start with two if you are unsure), the onion, cilantro, salt, sugar and water. Pulse to a coarse puree, not a smooth one.",
+   "Taste and adjust - roasted tomatillos vary a lot in acidity. It keeps a week refrigerated and is better after a few hours."
+  ],
+  "diet": {
+   "vegetarian": true,
+   "vegan": true,
+   "pescatarian": true,
+   "glutenFree": true,
+   "glutenFreeAdaptable": false,
+   "dairyFree": true,
+   "nutFree": true,
+   "eggFree": true
+  },
+  "allergens": [],
+  "gmo": {
+   "risk": "low",
+   "sources": [
+    "sugar-beet"
+   ]
+  },
+  "nutrition": {
+   "calories": 48,
+   "proteinG": 1,
+   "carbsG": 9,
+   "fiberG": 2,
+   "sugarG": 5,
+   "fatG": 1,
+   "satFatG": 0,
+   "sodiumMg": 440,
+   "cholesterolMg": 0
+  },
+  "tags": [
+   "mexican",
+   "salsa",
+   "authentic",
+   "foundation",
+   "vegan",
+   "vegetarian",
+   "gluten-free",
+   "dairy-free",
+   "spicy",
+   "quick",
+   "easy",
+   "make-ahead"
+  ],
+  "image": {
+   "file": "salsa-verde.jpg",
+   "source": "wikipedia-lead",
+   "match": "representative",
+   "wikipedia": "Salsa verde"
+  }
+ },
+ {
+  "id": "ch-rb-004",
+  "slug": "rb-cochinita-pibil",
+  "title": "Cochinita Pibil",
+  "genre": "mexican",
+  "subgenre": "secondi",
+  "chef": {
+   "name": "Rick Bayless",
+   "slug": "rick-bayless"
+  },
+  "description": "Yucatecan pork in achiote and sour orange, wrapped in banana leaves.",
+  "difficulty": "intermediate",
+  "easeScore": 6,
+  "spiceScore": 4,
+  "popularity": 8,
+  "pantryScore": 4,
+  "servings": 10,
+  "prepMin": 30,
+  "cookMin": 270,
+  "totalMin": 300,
+  "equipment": [
+   "oven"
+  ],
+  "ingredients": [
+   "5 lb boneless pork shoulder",
+   "3 oz achiote paste",
+   "1 1/2 cups sour orange juice",
+   "8 cloves garlic",
+   "1 tbsp dried Mexican oregano",
+   "1 tsp ground cumin",
+   "1/2 tsp ground allspice",
+   "1/2 tsp ground cloves",
+   "1 tbsp salt",
+   "1 lb banana leaves",
+   "2 red onions, thinly sliced",
+   "1 cup lime juice",
+   "3 habanero chiles, sliced",
+   "1 tsp salt",
+   "30 corn tortillas",
+   "1 cup chopped cilantro"
+  ],
+  "ingredientKeys": [
+   "pork-shoulder",
+   "achiote-paste",
+   "sour-orange-juice",
+   "garlic",
+   "mexican-oregano",
+   "cumin",
+   "allspice",
+   "cloves",
+   "salt",
+   "banana-leaves",
+   "red-onion",
+   "lime-juice",
+   "habanero-chile",
+   "salt",
+   "corn-tortilla",
+   "cilantro"
+  ],
+  "specialty": [
+   "pork-shoulder",
+   "achiote-paste",
+   "sour-orange-juice",
+   "mexican-oregano",
+   "banana-leaves",
+   "habanero-chile",
+   "corn-tortilla"
+  ],
+  "steps": [
+   "Blend the achiote paste with the sour orange juice, garlic, oregano, cumin, allspice, cloves and salt into a loose brick-red marinade. If you cannot find sour oranges, use two parts orange juice to one part each lime and grapefruit juice.",
+   "Cut the pork into large chunks, score them, and marinate at least 6 hours or overnight. Achiote colors everything it touches, so use a nonreactive dish.",
+   "Soften the banana leaves by passing them briefly over a flame or hot burner until they turn glossy and pliable. Raw leaves crack when you fold them.",
+   "Line a Dutch oven with overlapping leaves, letting them hang well over the sides. Add the pork with all its marinade, then fold the leaves over to seal it completely.",
+   "Cover and bake at 325F for 4 hours. The sealed leaves steam the meat in its own juices and give it their faint tea-like perfume - this is the pit-cooking method translated to an oven.",
+   "Meanwhile pickle the red onions in the lime juice with the habaneros and salt for at least an hour. Shred the pork into its juices and serve on corn tortillas with the pickled onions and cilantro."
+  ],
+  "diet": {
+   "vegetarian": false,
+   "vegan": false,
+   "pescatarian": false,
+   "glutenFree": true,
+   "glutenFreeAdaptable": false,
+   "dairyFree": true,
+   "nutFree": true,
+   "eggFree": true
+  },
+  "allergens": [],
+  "gmo": {
+   "risk": "high",
+   "sources": [
+    "corn",
+    "grain-fed-meat"
+   ]
+  },
+  "nutrition": {
+   "calories": 712,
+   "proteinG": 52,
+   "carbsG": 52,
+   "fiberG": 7,
+   "sugarG": 9,
+   "fatG": 32,
+   "satFatG": 11,
+   "sodiumMg": 1480,
+   "cholesterolMg": 158
+  },
+  "tags": [
+   "mexican",
+   "authentic",
+   "regional",
+   "yucatan",
+   "spicy",
+   "make-ahead",
+   "gluten-free",
+   "dairy-free",
+   "party",
+   "technique",
+   "signature"
+  ],
+  "image": {
+   "file": "rb-cochinita-pibil.jpg",
+   "source": "commons-file",
+   "match": "dish",
+   "commonsFile": "Authentic Cochinita Pibil.jpg"
+  }
+ },
+ {
+  "id": "ch-rb-005",
+  "slug": "rb-enchiladas-rojas",
+  "title": "Enchiladas Rojas",
+  "genre": "mexican",
+  "subgenre": "enchiladas",
+  "chef": {
+   "name": "Rick Bayless",
+   "slug": "rick-bayless"
+  },
+  "description": "Tortillas dipped in guajillo-ancho sauce, filled with chicken and cheese.",
+  "difficulty": "intermediate",
+  "easeScore": 7,
+  "spiceScore": 5,
+  "popularity": 9,
+  "pantryScore": 6,
+  "servings": 6,
+  "prepMin": 30,
+  "cookMin": 55,
+  "totalMin": 85,
+  "equipment": [
+   "stovetop",
+   "oven",
+   "blender"
+  ],
+  "ingredients": [
+   "8 dried guajillo chiles",
+   "4 dried ancho chiles",
+   "4 cloves garlic",
+   "1/2 white onion",
+   "1/2 tsp ground cumin",
+   "1/2 tsp dried Mexican oregano",
+   "3 cups chicken broth",
+   "3 tbsp lard or vegetable oil",
+   "2 tsp salt",
+   "1 tsp sugar",
+   "3 cups shredded cooked chicken",
+   "18 corn tortillas",
+   "1/2 cup vegetable oil, for the tortillas",
+   "2 cups crumbled queso fresco",
+   "1 white onion, finely diced",
+   "1 cup Mexican crema",
+   "1 cup chopped cilantro"
+  ],
+  "ingredientKeys": [
+   "guajillo-chile",
+   "ancho-chile",
+   "garlic",
+   "white-onion",
+   "cumin",
+   "mexican-oregano",
+   "chicken-broth",
+   "lard",
+   "salt",
+   "sugar",
+   "cooked-chicken",
+   "corn-tortilla",
+   "vegetable-oil",
+   "queso-fresco",
+   "white-onion",
+   "mexican-crema",
+   "cilantro"
+  ],
+  "specialty": [
+   "guajillo-chile",
+   "ancho-chile",
+   "mexican-oregano",
+   "lard",
+   "corn-tortilla",
+   "queso-fresco",
+   "mexican-crema"
+  ],
+  "steps": [
+   "Stem and seed the chiles and toast them in a dry pan 20 seconds per side until fragrant. Watch them - burnt chiles turn the sauce bitter.",
+   "Soak them in hot water 25 minutes, then blend with the garlic, onion, cumin, oregano and 1 1/2 cups of the broth until very smooth. Strain the puree, pressing hard on the solids.",
+   "Fry the strained puree in the lard over medium-high heat 8 minutes, stirring constantly - it will spatter. Frying the sauce deepens it from raw and sharp into something round and savory, and it is the step that separates good enchiladas from mediocre ones.",
+   "Add the rest of the broth, the salt and sugar and simmer 15 minutes until it coats a spoon lightly.",
+   "Pass each tortilla briefly through hot oil, 5 seconds a side, to make it pliable and keep it from dissolving. Then dip it in the warm sauce, fill it with chicken, and roll it.",
+   "Set the rolled enchiladas in a dish, pour the remaining sauce over, and bake at 350F for 15 minutes. Serve at once with queso fresco, onion, crema and cilantro - enchiladas do not hold, they go soft within minutes."
+  ],
+  "diet": {
+   "vegetarian": false,
+   "vegan": false,
+   "pescatarian": false,
+   "glutenFree": true,
+   "glutenFreeAdaptable": false,
+   "dairyFree": false,
+   "nutFree": true,
+   "eggFree": true
+  },
+  "allergens": [
+   "dairy"
+  ],
+  "gmo": {
+   "risk": "high",
+   "sources": [
+    "corn",
+    "seed-oil",
+    "grain-fed-meat",
+    "grain-fed-dairy"
+   ]
+  },
+  "nutrition": {
+   "calories": 782,
+   "proteinG": 42,
+   "carbsG": 62,
+   "fiberG": 9,
+   "sugarG": 9,
+   "fatG": 42,
+   "satFatG": 15,
+   "sodiumMg": 1680,
+   "cholesterolMg": 128
+  },
+  "tags": [
+   "mexican",
+   "authentic",
+   "technique",
+   "spicy",
+   "gluten-free",
+   "family",
+   "comfort",
+   "classic",
+   "dinner"
+  ],
+  "image": {
+   "file": "rb-enchiladas-rojas.jpg",
+   "source": "commons-file",
+   "match": "dish",
+   "commonsFile": "Enchiladas-rojas.jpg"
+  }
+ },
+ {
+  "id": "ch-rb-006",
+  "slug": "rb-tacos-al-pastor",
+  "title": "Tacos al Pastor",
+  "genre": "mexican",
+  "subgenre": "tacos",
+  "chef": {
+   "name": "Rick Bayless",
+   "slug": "rick-bayless"
+  },
+  "description": "Achiote-chile marinated pork with pineapple, roasted on a vertical stack.",
+  "difficulty": "intermediate",
+  "easeScore": 6,
+  "spiceScore": 5,
+  "popularity": 10,
+  "pantryScore": 5,
+  "servings": 8,
+  "prepMin": 40,
+  "cookMin": 90,
+  "totalMin": 130,
+  "equipment": [
+   "oven",
+   "stovetop",
+   "blender"
+  ],
+  "ingredients": [
+   "4 lb boneless pork shoulder, thinly sliced",
+   "6 dried guajillo chiles",
+   "3 dried ancho chiles",
+   "2 dried chipotle chiles",
+   "2 oz achiote paste",
+   "1/2 cup pineapple juice",
+   "1/4 cup white vinegar",
+   "8 cloves garlic",
+   "1 tsp ground cumin",
+   "1 tsp dried Mexican oregano",
+   "1/2 tsp ground cloves",
+   "1 tbsp salt",
+   "1 tbsp sugar",
+   "1 pineapple, peeled and sliced",
+   "24 corn tortillas",
+   "1 white onion, finely diced",
+   "1 1/2 cups chopped cilantro",
+   "4 limes, cut in wedges",
+   "2 cups salsa roja"
+  ],
+  "ingredientKeys": [
+   "pork-shoulder",
+   "guajillo-chile",
+   "ancho-chile",
+   "chipotle-chile",
+   "achiote-paste",
+   "pineapple-juice",
+   "white-vinegar",
+   "garlic",
+   "cumin",
+   "mexican-oregano",
+   "cloves",
+   "salt",
+   "sugar",
+   "pineapple",
+   "corn-tortilla",
+   "white-onion",
+   "cilantro",
+   "lime",
+   "salsa-roja"
+  ],
+  "specialty": [
+   "pork-shoulder",
+   "guajillo-chile",
+   "ancho-chile",
+   "chipotle-chile",
+   "achiote-paste",
+   "pineapple-juice",
+   "mexican-oregano",
+   "pineapple",
+   "corn-tortilla",
+   "salsa-roja"
+  ],
+  "steps": [
+   "Toast the stemmed and seeded chiles 20 seconds per side, soak them 25 minutes, then blend with the achiote, pineapple juice, vinegar, garlic, cumin, oregano, cloves, salt and sugar into a thick marinade.",
+   "Marinate the thin pork slices at least 6 hours, ideally overnight. Thin slices are essential - this is a dish about edges and caramelization, not about chunks of meat.",
+   "To build the vertical stack at home, thread the slices onto two long skewers set in a loaf pan, packing them tightly and topping with pineapple slices, which drip their juices down as it roasts.",
+   "Roast at 325F for about 1 1/4 hours, then raise the heat to 475F for 15 minutes to char the outside.",
+   "Shave the meat off the edges of the stack in thin strips, which is exactly how it is done from a trompo. Chop it fine with some of the charred pineapple.",
+   "Serve on small warm corn tortillas, two stacked, with onion, cilantro, lime and salsa. If skewering seems like too much, spread the marinated slices on sheet pans and broil them, then chop - less dramatic, nearly as good."
+  ],
+  "diet": {
+   "vegetarian": false,
+   "vegan": false,
+   "pescatarian": false,
+   "glutenFree": true,
+   "glutenFreeAdaptable": false,
+   "dairyFree": true,
+   "nutFree": true,
+   "eggFree": true
+  },
+  "allergens": [],
+  "gmo": {
+   "risk": "high",
+   "sources": [
+    "corn",
+    "grain-fed-meat",
+    "sugar-beet"
+   ]
+  },
+  "nutrition": {
+   "calories": 712,
+   "proteinG": 48,
+   "carbsG": 62,
+   "fiberG": 8,
+   "sugarG": 20,
+   "fatG": 30,
+   "satFatG": 10,
+   "sodiumMg": 1480,
+   "cholesterolMg": 138
+  },
+  "tags": [
+   "mexican",
+   "authentic",
+   "tacos",
+   "technique",
+   "spicy",
+   "party",
+   "gluten-free",
+   "dairy-free",
+   "project",
+   "iconic",
+   "crowd-pleaser"
+  ],
+  "image": {
+   "file": "rb-tacos-al-pastor.jpg",
+   "source": "commons-file",
+   "match": "dish",
+   "commonsFile": "Al pastor tacos (34965815632).jpg"
+  }
+ },
+ {
+  "id": "ch-rb-007",
+  "slug": "rb-guacamole-molcajete",
+  "title": "Molcajete Guacamole",
+  "genre": "mexican",
+  "subgenre": "salsas",
+  "chef": {
+   "name": "Rick Bayless",
+   "slug": "rick-bayless"
+  },
+  "description": "Guacamole mashed in a stone mortar with a chile and onion paste base.",
+  "difficulty": "beginner",
+  "easeScore": 10,
+  "spiceScore": 4,
+  "popularity": 10,
+  "pantryScore": 8,
+  "servings": 6,
+  "prepMin": 15,
+  "cookMin": 15,
+  "totalMin": 30,
+  "equipment": [
+   "no-cook"
+  ],
+  "ingredients": [
+   "4 ripe Hass avocados",
+   "2 serrano chiles, minced",
+   "1/2 white onion, finely diced",
+   "1/2 cup chopped cilantro",
+   "3 cloves garlic",
+   "1 1/2 tsp salt",
+   "3 tbsp lime juice",
+   "1 roma tomato, seeded and diced",
+   "8 oz tortilla chips"
+  ],
+  "ingredientKeys": [
+   "avocado",
+   "serrano-chile",
+   "white-onion",
+   "cilantro",
+   "garlic",
+   "salt",
+   "lime-juice",
+   "roma-tomato",
+   "tortilla-chips"
+  ],
+  "specialty": [
+   "avocado",
+   "serrano-chile",
+   "tortilla-chips"
+  ],
+  "steps": [
+   "Start by grinding the garlic, serranos and salt to a paste in a molcajete or with the side of a knife. Grinding them first distributes the heat and garlic evenly - stirring them in whole leaves hot spots and raw bites.",
+   "Add half the onion and half the cilantro and work them into the paste.",
+   "Cut the avocados, scoop them in, and mash coarsely with the pestle or a fork. Leave real chunks; guacamole blended smooth loses all its character.",
+   "Add the lime juice and fold it in. The acid slows browning, but it is also structural - without enough lime the guacamole tastes fatty and dull.",
+   "Fold in the tomato and the remaining onion and cilantro at the very end so they stay distinct.",
+   "Taste for salt - avocado absorbs a lot more than you expect. Serve immediately with tortilla chips; guacamole is at its best in the first half hour."
+  ],
+  "diet": {
+   "vegetarian": true,
+   "vegan": true,
+   "pescatarian": true,
+   "glutenFree": true,
+   "glutenFreeAdaptable": false,
+   "dairyFree": true,
+   "nutFree": true,
+   "eggFree": true
+  },
+  "allergens": [],
+  "gmo": {
+   "risk": "high",
+   "sources": [
+    "corn",
+    "seed-oil"
+   ]
+  },
+  "nutrition": {
+   "calories": 382,
+   "proteinG": 5,
+   "carbsG": 32,
+   "fiberG": 9,
+   "sugarG": 2,
+   "fatG": 28,
+   "satFatG": 4,
+   "sodiumMg": 680,
+   "cholesterolMg": 0
+  },
+  "tags": [
+   "mexican",
+   "authentic",
+   "no-cook",
+   "vegan",
+   "vegetarian",
+   "gluten-free",
+   "dairy-free",
+   "party",
+   "quick",
+   "easy",
+   "appetizer",
+   "iconic"
+  ],
+  "image": {
+   "file": "guacamole.jpg",
+   "source": "wikipedia-lead",
+   "match": "representative",
+   "wikipedia": "Guacamole"
+  }
+ },
+ {
+  "id": "ch-rb-008",
+  "slug": "rb-chiles-en-nogada",
+  "title": "Chiles en Nogada",
+  "genre": "mexican",
+  "subgenre": "secondi",
+  "chef": {
+   "name": "Rick Bayless",
+   "slug": "rick-bayless"
+  },
+  "description": "Poblanos stuffed with fruited pork picadillo under a walnut cream sauce.",
+  "difficulty": "advanced",
+  "easeScore": 3,
+  "spiceScore": 3,
+  "popularity": 7,
+  "pantryScore": 3,
+  "servings": 6,
+  "prepMin": 60,
+  "cookMin": 80,
+  "totalMin": 140,
+  "equipment": [
+   "broiler",
+   "stovetop",
+   "blender"
+  ],
+  "ingredients": [
+   "6 large poblano chiles",
+   "3 tbsp lard or vegetable oil",
+   "1 lb ground pork",
+   "1 white onion, diced",
+   "4 cloves garlic, minced",
+   "2 tomatoes, chopped",
+   "1/3 cup raisins",
+   "1/4 cup slivered almonds",
+   "1 peach, diced",
+   "1 pear, diced",
+   "1 apple, diced",
+   "1 plantain, diced",
+   "1/2 tsp ground cinnamon",
+   "1/4 tsp ground cloves",
+   "1 1/2 tsp salt",
+   "2 tbsp sherry",
+   "1 1/2 cups walnuts",
+   "1/2 cup blanched almonds",
+   "1 1/2 cups Mexican crema",
+   "4 oz goat cheese",
+   "2 tbsp sugar",
+   "1/4 tsp ground cinnamon",
+   "1 cup pomegranate seeds",
+   "1/3 cup parsley leaves"
+  ],
+  "ingredientKeys": [
+   "poblano-chile",
+   "lard",
+   "ground-pork",
+   "white-onion",
+   "garlic",
+   "tomato",
+   "raisins",
+   "almonds",
+   "peach",
+   "pear",
+   "apple",
+   "plantain",
+   "cinnamon",
+   "cloves",
+   "salt",
+   "sherry",
+   "walnuts",
+   "almonds",
+   "mexican-crema",
+   "goat-cheese",
+   "sugar",
+   "cinnamon",
+   "pomegranate-seeds",
+   "parsley"
+  ],
+  "specialty": [
+   "poblano-chile",
+   "lard",
+   "ground-pork",
+   "plantain",
+   "sherry",
+   "walnuts",
+   "almonds",
+   "mexican-crema",
+   "goat-cheese",
+   "pomegranate-seeds"
+  ],
+  "steps": [
+   "Roast the poblanos under the broiler until blackened all over, then sweat them in a covered bowl 15 minutes and rub off the skins.",
+   "Slit each one down the side and remove the seed pod carefully, leaving the stem and the chile intact. Work gently; a torn chile will not hold the filling.",
+   "Make the picadillo: brown the pork in the lard, add the onion and garlic, then the tomatoes, dried fruit, nuts, fresh fruit, plantain, spices and salt. Cook 25 minutes until thick, and finish with the sherry. It should taste savory and sweet at once.",
+   "Soak the walnuts in boiling water 5 minutes and rub off their papery skins. This is tedious and it is the difference between a white, sweet sauce and a grey, bitter one.",
+   "Blend the peeled walnuts and the blanched almonds with the crema, goat cheese, sugar and cinnamon until completely smooth. Keep it at room temperature, never hot - the sauce is served cool over warm chiles.",
+   "Stuff the chiles generously, warm them briefly in a low oven, then spoon the nogada over and scatter pomegranate seeds and parsley. The green chile, white sauce and red seeds are the Mexican flag, which is why this is the dish of Independence Day."
+  ],
+  "diet": {
+   "vegetarian": false,
+   "vegan": false,
+   "pescatarian": false,
+   "glutenFree": true,
+   "glutenFreeAdaptable": false,
+   "dairyFree": false,
+   "nutFree": false,
+   "eggFree": true
+  },
+  "allergens": [
+   "tree-nut",
+   "dairy",
+   "sulfites"
+  ],
+  "gmo": {
+   "risk": "moderate",
+   "sources": [
+    "grain-fed-meat",
+    "grain-fed-dairy",
+    "sugar-beet"
+   ]
+  },
+  "nutrition": {
+   "calories": 882,
+   "proteinG": 32,
+   "carbsG": 52,
+   "fiberG": 9,
+   "sugarG": 32,
+   "fatG": 62,
+   "satFatG": 18,
+   "sodiumMg": 1180,
+   "cholesterolMg": 118
+  },
+  "tags": [
+   "mexican",
+   "authentic",
+   "project",
+   "regional",
+   "special-occasion",
+   "signature",
+   "technique",
+   "holiday",
+   "iconic",
+   "entertaining"
+  ],
+  "image": {
+   "file": "chiles-en-nogada.jpg",
+   "source": "wikipedia-lead",
+   "match": "representative",
+   "wikipedia": "Chiles en nogada"
+  }
+ },
+ {
+  "id": "ch-rb-009",
+  "slug": "rb-sopa-de-tortilla",
+  "title": "Sopa de Tortilla",
+  "genre": "mexican",
+  "subgenre": "soups",
+  "chef": {
+   "name": "Rick Bayless",
+   "slug": "rick-bayless"
+  },
+  "description": "Pasilla-tomato broth with fried tortilla strips, avocado and cheese.",
+  "difficulty": "beginner",
+  "easeScore": 9,
+  "spiceScore": 4,
+  "popularity": 9,
+  "pantryScore": 7,
+  "servings": 6,
+  "prepMin": 20,
+  "cookMin": 40,
+  "totalMin": 60,
+  "equipment": [
+   "stovetop",
+   "blender"
+  ],
+  "ingredients": [
+   "12 corn tortillas, cut in strips",
+   "1 cup vegetable oil",
+   "4 dried pasilla chiles",
+   "1 1/2 lb tomatoes",
+   "1/2 white onion",
+   "4 cloves garlic",
+   "8 cups chicken broth",
+   "1 sprig epazote",
+   "2 tsp salt",
+   "2 avocados, diced",
+   "1 1/2 cups crumbled queso fresco",
+   "1 cup Mexican crema",
+   "3 limes, cut in wedges",
+   "1/2 cup chopped cilantro"
+  ],
+  "ingredientKeys": [
+   "corn-tortilla",
+   "vegetable-oil",
+   "pasilla-chile",
+   "tomato",
+   "white-onion",
+   "garlic",
+   "chicken-broth",
+   "epazote",
+   "salt",
+   "avocado",
+   "queso-fresco",
+   "mexican-crema",
+   "lime",
+   "cilantro"
+  ],
+  "specialty": [
+   "corn-tortilla",
+   "pasilla-chile",
+   "epazote",
+   "avocado",
+   "queso-fresco",
+   "mexican-crema"
+  ],
+  "steps": [
+   "Fry the tortilla strips in 350F oil in batches until crisp and golden, then drain them on paper towels and salt them. Stale tortillas fry up crisper than fresh.",
+   "Fry the stemmed, seeded pasillas in the same oil for 5 seconds only - they go from fragrant to burnt almost instantly. Drain them and save a few, crumbled, for garnish.",
+   "Char the tomatoes, onion and garlic in a dry pan or under the broiler until blackened in spots, then blend them with most of the pasillas until smooth.",
+   "Strain the puree into a pot with 2 tbsp of the frying oil and fry it 8 minutes, stirring, until it darkens and thickens.",
+   "Add the broth and epazote and simmer 20 minutes. Epazote is the herb that makes this soup taste Mexican rather than generic; if you cannot find it, leave it out rather than substituting.",
+   "Season, and ladle the broth over a handful of tortilla strips in each bowl at the table. Adding the strips in the pot turns them to mush. Pass the avocado, queso fresco, crema, lime, cilantro and crumbled chile."
+  ],
+  "diet": {
+   "vegetarian": false,
+   "vegan": false,
+   "pescatarian": false,
+   "glutenFree": true,
+   "glutenFreeAdaptable": false,
+   "dairyFree": false,
+   "nutFree": true,
+   "eggFree": true
+  },
+  "allergens": [
+   "dairy"
+  ],
+  "gmo": {
+   "risk": "high",
+   "sources": [
+    "corn",
+    "seed-oil",
+    "grain-fed-meat",
+    "grain-fed-dairy"
+   ]
+  },
+  "nutrition": {
+   "calories": 582,
+   "proteinG": 22,
+   "carbsG": 48,
+   "fiberG": 9,
+   "sugarG": 9,
+   "fatG": 36,
+   "satFatG": 12,
+   "sodiumMg": 1480,
+   "cholesterolMg": 58
+  },
+  "tags": [
+   "mexican",
+   "soup",
+   "authentic",
+   "spicy",
+   "gluten-free",
+   "comfort",
+   "family",
+   "easy",
+   "classic",
+   "weeknight"
+  ],
+  "image": {
+   "file": "rb-sopa-de-tortilla.jpg",
+   "source": "commons-file",
+   "match": "dish",
+   "commonsFile": "Sopa de tortilla.jpg"
+  }
+ },
+ {
+  "id": "ch-rb-010",
+  "slug": "rb-rajas-con-crema",
+  "title": "Rajas con Crema",
+  "genre": "mexican",
+  "subgenre": "vegetables",
+  "chef": {
+   "name": "Rick Bayless",
+   "slug": "rick-bayless"
+  },
+  "description": "Roasted poblano strips with onions, corn and cream.",
+  "difficulty": "beginner",
+  "easeScore": 9,
+  "spiceScore": 4,
+  "popularity": 8,
+  "pantryScore": 7,
+  "servings": 6,
+  "prepMin": 20,
+  "cookMin": 30,
+  "totalMin": 50,
+  "equipment": [
+   "broiler",
+   "stovetop"
+  ],
+  "ingredients": [
+   "8 poblano chiles",
+   "3 tbsp vegetable oil",
+   "2 white onions, sliced",
+   "4 cloves garlic, minced",
+   "2 cups corn kernels",
+   "1 cup Mexican crema",
+   "1/2 cup whole milk",
+   "1 1/2 tsp salt",
+   "1/2 tsp dried Mexican oregano",
+   "1 1/2 cups shredded Chihuahua cheese",
+   "1/4 cup chopped cilantro",
+   "12 corn tortillas"
+  ],
+  "ingredientKeys": [
+   "poblano-chile",
+   "vegetable-oil",
+   "white-onion",
+   "garlic",
+   "corn",
+   "mexican-crema",
+   "whole-milk",
+   "salt",
+   "mexican-oregano",
+   "chihuahua-cheese",
+   "cilantro",
+   "corn-tortilla"
+  ],
+  "specialty": [
+   "poblano-chile",
+   "mexican-crema",
+   "mexican-oregano",
+   "chihuahua-cheese",
+   "corn-tortilla"
+  ],
+  "steps": [
+   "Broil the poblanos, turning them, until blackened on all sides, 10 minutes. Then seal them in a bowl 15 minutes - the steam loosens the skins so they rub off with your thumbs.",
+   "Peel, seed and cut them into wide strips, which is what rajas means.",
+   "Cook the onions in the oil over medium-high heat 10 minutes until well browned at the edges, not merely softened. Those browned onions are half the flavor of the dish.",
+   "Add the garlic and corn for 3 minutes, then the poblano strips.",
+   "Add the crema, milk, salt and oregano and simmer 5 minutes until slightly thickened. Mexican crema does not break the way sour cream does, which is why it is used here.",
+   "Stir in the cheese off the heat just until it melts into strands, then finish with cilantro. Serve as a side, as a taco filling in warm corn tortillas, or spooned over rice."
+  ],
+  "diet": {
+   "vegetarian": true,
+   "vegan": false,
+   "pescatarian": true,
+   "glutenFree": true,
+   "glutenFreeAdaptable": false,
+   "dairyFree": false,
+   "nutFree": true,
+   "eggFree": true
+  },
+  "allergens": [
+   "dairy"
+  ],
+  "gmo": {
+   "risk": "high",
+   "sources": [
+    "corn",
+    "seed-oil",
+    "grain-fed-dairy"
+   ]
+  },
+  "nutrition": {
+   "calories": 512,
+   "proteinG": 18,
+   "carbsG": 48,
+   "fiberG": 7,
+   "sugarG": 11,
+   "fatG": 28,
+   "satFatG": 14,
+   "sodiumMg": 1180,
+   "cholesterolMg": 72
+  },
+  "tags": [
+   "mexican",
+   "vegetarian",
+   "authentic",
+   "side",
+   "tacos",
+   "gluten-free",
+   "spicy",
+   "easy",
+   "comfort",
+   "family"
+  ],
+  "image": {
+   "file": "rb-rajas-con-crema.jpg",
+   "source": "commons-file",
+   "match": "dish",
+   "commonsFile": "Rajas con Crema.jpg"
+  }
+ },
+ {
+  "id": "ch-rb-011",
+  "slug": "rb-pozole-rojo",
+  "title": "Pozole Rojo",
+  "genre": "mexican",
+  "subgenre": "soups",
+  "chef": {
+   "name": "Rick Bayless",
+   "slug": "rick-bayless"
+  },
+  "description": "Hominy and pork in a guajillo broth, with a table of garnishes.",
+  "difficulty": "intermediate",
+  "easeScore": 7,
+  "spiceScore": 4,
+  "popularity": 9,
+  "pantryScore": 6,
+  "servings": 10,
+  "prepMin": 25,
+  "cookMin": 180,
+  "totalMin": 205,
+  "equipment": [
+   "stovetop",
+   "blender"
+  ],
+  "ingredients": [
+   "3 lb boneless pork shoulder, cubed",
+   "2 lb pork neck bones",
+   "1 white onion, halved",
+   "1 head garlic, halved",
+   "2 tbsp salt",
+   "10 dried guajillo chiles",
+   "4 dried ancho chiles",
+   "2 dried chiles de arbol",
+   "1 tsp dried Mexican oregano",
+   "1/2 tsp ground cumin",
+   "3 cans (29 oz each) white hominy, drained",
+   "1 small cabbage, shredded",
+   "1 bunch radishes, sliced",
+   "1 white onion, finely diced",
+   "2 tbsp dried Mexican oregano",
+   "4 limes, cut in wedges",
+   "2 avocados, sliced",
+   "8 oz tostadas"
+  ],
+  "ingredientKeys": [
+   "pork-shoulder",
+   "pork-neck-bones",
+   "white-onion",
+   "garlic",
+   "salt",
+   "guajillo-chile",
+   "ancho-chile",
+   "chile-de-arbol",
+   "mexican-oregano",
+   "cumin",
+   "hominy",
+   "cabbage",
+   "radish",
+   "white-onion",
+   "mexican-oregano",
+   "lime",
+   "avocado",
+   "tostadas"
+  ],
+  "specialty": [
+   "pork-shoulder",
+   "pork-neck-bones",
+   "guajillo-chile",
+   "ancho-chile",
+   "chile-de-arbol",
+   "mexican-oregano",
+   "hominy",
+   "tostadas"
+  ],
+  "steps": [
+   "Simmer the pork shoulder and neck bones with the halved onion, garlic and salt in 5 quarts of water, skimming the foam for the first 20 minutes. Skimming is what gives you a clear broth rather than a cloudy one.",
+   "Cook gently 2 hours until the meat is tender, then pull out the bones and shred the shoulder coarsely.",
+   "Toast the stemmed, seeded chiles 20 seconds per side, soak them 25 minutes, and blend with the oregano, cumin and some broth until smooth. Strain the puree through a sieve - guajillo skins never fully break down and would leave the broth gritty.",
+   "Fry the strained puree in a little lard or oil 8 minutes until it darkens, then stir it into the pot.",
+   "Add the drained hominy and simmer 45 minutes more. The hominy should split open and go slightly fluffy, which thickens the broth naturally.",
+   "Season and serve with every garnish in separate bowls - cabbage, radish, onion, oregano, lime, avocado, tostadas. The garnishes are not optional decoration; the crunch and acid against the rich broth is the dish."
+  ],
+  "diet": {
+   "vegetarian": false,
+   "vegan": false,
+   "pescatarian": false,
+   "glutenFree": true,
+   "glutenFreeAdaptable": false,
+   "dairyFree": true,
+   "nutFree": true,
+   "eggFree": true
+  },
+  "allergens": [],
+  "gmo": {
+   "risk": "high",
+   "sources": [
+    "corn",
+    "grain-fed-meat"
+   ]
+  },
+  "nutrition": {
+   "calories": 682,
+   "proteinG": 48,
+   "carbsG": 52,
+   "fiberG": 9,
+   "sugarG": 7,
+   "fatG": 32,
+   "satFatG": 10,
+   "sodiumMg": 1680,
+   "cholesterolMg": 138
+  },
+  "tags": [
+   "mexican",
+   "soup",
+   "authentic",
+   "regional",
+   "party",
+   "make-ahead",
+   "gluten-free",
+   "dairy-free",
+   "spicy",
+   "crowd-pleaser",
+   "iconic"
+  ],
+  "image": {
+   "file": "rb-pozole-rojo.jpg",
+   "source": "commons-file",
+   "match": "dish",
+   "commonsFile": "Pozole Rojo.jpg"
+  }
+ },
+ {
+  "id": "ch-rb-012",
+  "slug": "rb-tamales-rojos",
+  "title": "Red Chile Tamales",
+  "genre": "mexican",
+  "subgenre": "tamales",
+  "chef": {
+   "name": "Rick Bayless",
+   "slug": "rick-bayless"
+  },
+  "description": "Masa beaten with lard, filled with red chile pork, steamed in husks.",
+  "difficulty": "advanced",
+  "easeScore": 3,
+  "spiceScore": 4,
+  "popularity": 8,
+  "pantryScore": 5,
+  "servings": 12,
+  "prepMin": 75,
+  "cookMin": 135,
+  "totalMin": 210,
+  "equipment": [
+   "stovetop",
+   "blender"
+  ],
+  "ingredients": [
+   "50 dried corn husks",
+   "2 lb fresh masa for tamales",
+   "1 1/2 cups lard",
+   "2 tsp baking powder",
+   "1 tbsp salt",
+   "2 cups warm chicken broth",
+   "3 lb pork shoulder, cooked and shredded",
+   "10 dried guajillo chiles",
+   "4 dried ancho chiles",
+   "6 cloves garlic",
+   "1/2 white onion",
+   "1 tsp ground cumin",
+   "1 tsp dried Mexican oregano",
+   "2 tsp salt",
+   "2 cups pork broth",
+   "3 tbsp lard, for the sauce"
+  ],
+  "ingredientKeys": [
+   "corn-husks",
+   "fresh-masa",
+   "lard",
+   "baking-powder",
+   "salt",
+   "chicken-broth",
+   "pork-shoulder",
+   "guajillo-chile",
+   "ancho-chile",
+   "garlic",
+   "white-onion",
+   "cumin",
+   "mexican-oregano",
+   "salt",
+   "pork-broth",
+   "lard"
+  ],
+  "specialty": [
+   "corn-husks",
+   "fresh-masa",
+   "lard",
+   "pork-shoulder",
+   "guajillo-chile",
+   "ancho-chile",
+   "mexican-oregano",
+   "pork-broth"
+  ],
+  "steps": [
+   "Soak the husks in hot water at least an hour until fully pliable, weighted down so they stay submerged.",
+   "Make the filling: toast and soak the chiles, blend them with the garlic, onion, cumin, oregano and salt, strain, then fry the puree in lard 8 minutes. Add the pork broth, simmer to a thick sauce, and fold in the shredded pork. Let it cool completely - warm filling melts the masa.",
+   "Beat the lard alone with a mixer until white and fluffy, 5 minutes. This aeration is the single thing that decides whether your tamales are light or dense.",
+   "Add the baking powder and salt, then the masa in portions, then the warm broth, beating until the mixture is soft and spreadable. Test it by dropping a small spoonful into cold water - if it floats, it is aerated enough. If it sinks, keep beating.",
+   "Spread 1/4 cup of masa over the smooth side of each husk in a rectangle, leaving borders, add filling down the center, and fold the long sides over so the masa encloses the filling. Fold up the bottom.",
+   "Stand them upright, open end up, in a steamer over boiling water. Steam 1 1/4 to 1 1/2 hours, checking the water. They are done when the masa pulls cleanly away from the husk - test one and if it sticks, keep going. Rest 15 minutes before serving."
+  ],
+  "diet": {
+   "vegetarian": false,
+   "vegan": false,
+   "pescatarian": false,
+   "glutenFree": true,
+   "glutenFreeAdaptable": false,
+   "dairyFree": true,
+   "nutFree": true,
+   "eggFree": true
+  },
+  "allergens": [],
+  "gmo": {
+   "risk": "high",
+   "sources": [
+    "corn",
+    "grain-fed-meat"
+   ]
+  },
+  "nutrition": {
+   "calories": 582,
+   "proteinG": 28,
+   "carbsG": 42,
+   "fiberG": 5,
+   "sugarG": 2,
+   "fatG": 34,
+   "satFatG": 13,
+   "sodiumMg": 1280,
+   "cholesterolMg": 78
+  },
+  "tags": [
+   "mexican",
+   "authentic",
+   "project",
+   "technique",
+   "holiday",
+   "christmas",
+   "party",
+   "gluten-free",
+   "dairy-free",
+   "make-ahead",
+   "freezer"
+  ],
+  "image": {
+   "file": "tamales.jpg",
+   "source": "wikipedia-lead",
+   "match": "representative",
+   "wikipedia": "Tamale"
+  }
+ },
+ {
+  "id": "ch-rb-013",
+  "slug": "rb-ceviche-verde",
+  "title": "Green Ceviche",
+  "genre": "mexican",
+  "subgenre": "seafood",
+  "chef": {
+   "name": "Rick Bayless",
+   "slug": "rick-bayless"
+  },
+  "description": "Fish cured in lime with tomatillo, cilantro and serrano.",
+  "difficulty": "beginner",
+  "easeScore": 9,
+  "spiceScore": 5,
+  "popularity": 8,
+  "pantryScore": 5,
+  "servings": 6,
+  "prepMin": 25,
+  "cookMin": 35,
+  "totalMin": 60,
+  "equipment": [
+   "no-cook",
+   "blender"
+  ],
+  "ingredients": [
+   "1 1/2 lb skinless snapper or halibut, diced small",
+   "1 1/4 cups lime juice",
+   "2 tsp salt",
+   "6 tomatillos, husked",
+   "2 serrano chiles",
+   "2 cloves garlic",
+   "1 cup cilantro leaves",
+   "1/4 cup chopped mint",
+   "1/2 white onion, finely diced",
+   "1 cucumber, peeled and diced",
+   "1 avocado, diced",
+   "3 tbsp olive oil",
+   "1/2 tsp sugar",
+   "8 oz tostadas"
+  ],
+  "ingredientKeys": [
+   "white-fish",
+   "lime-juice",
+   "salt",
+   "tomatillo",
+   "serrano-chile",
+   "garlic",
+   "cilantro",
+   "fresh-mint",
+   "white-onion",
+   "cucumber",
+   "avocado",
+   "olive-oil",
+   "sugar",
+   "tostadas"
+  ],
+  "specialty": [
+   "white-fish",
+   "tomatillo",
+   "serrano-chile",
+   "fresh-mint",
+   "avocado",
+   "tostadas"
+  ],
+  "steps": [
+   "Buy the freshest fish you can and tell the fishmonger it is for ceviche. Dice it small and uniform, about 1/3 inch - uneven pieces cure unevenly.",
+   "Toss the fish with 1 cup of the lime juice and the salt and refrigerate 30-40 minutes, stirring once. It is ready when the pieces are opaque most of the way through but still have a faint translucent center.",
+   "Left in the lime for hours, fish does not get better - it turns dry and chalky. Drain it as soon as it is cured.",
+   "Blend the raw tomatillos with the serranos, garlic, cilantro, mint, the remaining lime juice, olive oil and sugar into a bright green sauce. Raw tomatillos rather than roasted keep it sharp and fresh here.",
+   "Drain the fish and fold it with the green sauce, the rinsed onion and the cucumber.",
+   "Fold in the avocado at the last moment and serve cold on tostadas. Dress it no more than 20 minutes before eating - the cilantro sauce dulls from green to olive as the acid works on it."
+  ],
+  "diet": {
+   "vegetarian": false,
+   "vegan": false,
+   "pescatarian": true,
+   "glutenFree": true,
+   "glutenFreeAdaptable": false,
+   "dairyFree": true,
+   "nutFree": true,
+   "eggFree": true
+  },
+  "allergens": [
+   "fish"
+  ],
+  "gmo": {
+   "risk": "moderate",
+   "sources": [
+    "corn",
+    "seed-oil",
+    "sugar-beet"
+   ]
+  },
+  "nutrition": {
+   "calories": 382,
+   "proteinG": 32,
+   "carbsG": 28,
+   "fiberG": 6,
+   "sugarG": 5,
+   "fatG": 18,
+   "satFatG": 3,
+   "sodiumMg": 880,
+   "cholesterolMg": 58
+  },
+  "tags": [
+   "mexican",
+   "seafood",
+   "no-cook",
+   "authentic",
+   "pescatarian",
+   "gluten-free",
+   "dairy-free",
+   "spicy",
+   "summer",
+   "healthy",
+   "high-protein",
+   "easy"
+  ],
+  "image": {
+   "file": "ceviche.jpg",
+   "source": "wikipedia-lead",
+   "match": "representative",
+   "wikipedia": "Ceviche"
+  }
+ },
+ {
+  "id": "ch-rb-014",
+  "slug": "rb-frijoles-refritos",
+  "title": "Frijoles Refritos",
+  "genre": "mexican",
+  "subgenre": "beans",
+  "chef": {
+   "name": "Rick Bayless",
+   "slug": "rick-bayless"
+  },
+  "description": "Pinto beans cooked from dry, then fried in lard until creamy.",
+  "difficulty": "beginner",
+  "easeScore": 9,
+  "spiceScore": 2,
+  "popularity": 9,
+  "pantryScore": 9,
+  "servings": 8,
+  "prepMin": 10,
+  "cookMin": 135,
+  "totalMin": 145,
+  "equipment": [
+   "stovetop"
+  ],
+  "ingredients": [
+   "1 lb dried pinto beans",
+   "1/2 white onion, quartered",
+   "4 cloves garlic",
+   "2 bay leaves",
+   "1 sprig epazote",
+   "1 tbsp salt",
+   "1/2 cup lard",
+   "1 white onion, finely diced",
+   "3 cloves garlic, minced",
+   "1 serrano chile, minced",
+   "1 tsp salt",
+   "1 cup crumbled queso fresco"
+  ],
+  "ingredientKeys": [
+   "pinto-beans",
+   "white-onion",
+   "garlic",
+   "bay-leaf",
+   "epazote",
+   "salt",
+   "lard",
+   "white-onion",
+   "garlic",
+   "serrano-chile",
+   "salt",
+   "queso-fresco"
+  ],
+  "specialty": [
+   "pinto-beans",
+   "epazote",
+   "lard",
+   "serrano-chile",
+   "queso-fresco"
+  ],
+  "steps": [
+   "Rinse the beans and pick them over but do not soak them. Soaking is unnecessary and leaches out flavor; unsoaked beans just take a little longer.",
+   "Simmer them with the quartered onion, whole garlic, bay leaves and epazote in water to cover by 2 inches, adding hot water as needed, for about 1 1/2 to 2 hours.",
+   "Add the salt only when the beans are nearly tender. Salting at the start keeps the skins tough.",
+   "Cook them past firm - properly soft beans are what make the refried version creamy. Save the cooking liquid.",
+   "Fry the diced onion, garlic and serrano in the lard until golden, then add the beans a ladle at a time with some liquid, mashing as you go with a potato masher.",
+   "Keep frying and mashing 15-20 minutes. The beans should thicken, darken, and start to pull away from the pan in one mass - that is when they are done. Add liquid to loosen if needed, and serve with queso fresco."
+  ],
+  "diet": {
+   "vegetarian": false,
+   "vegan": false,
+   "pescatarian": false,
+   "glutenFree": true,
+   "glutenFreeAdaptable": false,
+   "dairyFree": false,
+   "nutFree": true,
+   "eggFree": true
+  },
+  "allergens": [
+   "dairy"
+  ],
+  "gmo": {
+   "risk": "low",
+   "sources": [
+    "grain-fed-meat",
+    "grain-fed-dairy"
+   ]
+  },
+  "nutrition": {
+   "calories": 382,
+   "proteinG": 18,
+   "carbsG": 42,
+   "fiberG": 14,
+   "sugarG": 3,
+   "fatG": 16,
+   "satFatG": 7,
+   "sodiumMg": 1180,
+   "cholesterolMg": 22
+  },
+  "tags": [
+   "mexican",
+   "authentic",
+   "foundation",
+   "budget",
+   "high-fiber",
+   "gluten-free",
+   "make-ahead",
+   "pantry",
+   "side",
+   "easy",
+   "family"
+  ],
+  "image": {
+   "file": "rb-frijoles-refritos.jpg",
+   "source": "commons-file",
+   "match": "dish",
+   "commonsFile": "Frijoles refritos.jpg"
+  }
+ },
+ {
+  "id": "ch-rb-015",
+  "slug": "rb-camarones-mojo-ajo",
+  "title": "Camarones al Mojo de Ajo",
+  "genre": "mexican",
+  "subgenre": "seafood",
+  "chef": {
+   "name": "Rick Bayless",
+   "slug": "rick-bayless"
+  },
+  "description": "Shrimp in slow-cooked garlic oil with lime and chile.",
+  "difficulty": "beginner",
+  "easeScore": 9,
+  "spiceScore": 4,
+  "popularity": 8,
+  "pantryScore": 7,
+  "servings": 4,
+  "prepMin": 15,
+  "cookMin": 25,
+  "totalMin": 40,
+  "equipment": [
+   "stovetop"
+  ],
+  "ingredients": [
+   "1 1/2 lb large shrimp, peeled",
+   "2 heads garlic, cloves thinly sliced",
+   "3/4 cup olive oil",
+   "2 dried chiles de arbol, crumbled",
+   "1 1/2 tsp salt",
+   "1/2 tsp black pepper",
+   "3 tbsp lime juice",
+   "1/3 cup chopped cilantro",
+   "1 tbsp butter",
+   "12 corn tortillas"
+  ],
+  "ingredientKeys": [
+   "shrimp",
+   "garlic",
+   "olive-oil",
+   "chile-de-arbol",
+   "salt",
+   "black-pepper",
+   "lime-juice",
+   "cilantro",
+   "butter",
+   "corn-tortilla"
+  ],
+  "specialty": [
+   "shrimp",
+   "chile-de-arbol",
+   "corn-tortilla"
+  ],
+  "steps": [
+   "Slice the garlic thin - two whole heads of it. This is a dish about garlic, and slicing rather than mincing keeps it from burning.",
+   "Cook the garlic in the olive oil over low heat, 10-12 minutes, stirring often, until it turns a pale even gold and sweet. Low and slow is non-negotiable; garlic that browns fast goes bitter and ruins the oil.",
+   "Add the crumbled chiles de arbol for the last 30 seconds, then strain the garlic and chile out of the oil and reserve both.",
+   "Pat the shrimp dry and season them. Raise the heat and sear them in a few tablespoons of the garlic oil, 90 seconds per side, until just pink and firm.",
+   "Shrimp overcook in seconds; pull them while the thickest part is barely opaque.",
+   "Return the garlic and chile to the pan with the lime juice and butter, swirl to make a sauce, and finish with cilantro. Serve with warm corn tortillas and plenty of the garlic oil spooned over."
+  ],
+  "diet": {
+   "vegetarian": false,
+   "vegan": false,
+   "pescatarian": true,
+   "glutenFree": true,
+   "glutenFreeAdaptable": false,
+   "dairyFree": false,
+   "nutFree": true,
+   "eggFree": true
+  },
+  "allergens": [
+   "shellfish",
+   "dairy"
+  ],
+  "gmo": {
+   "risk": "moderate",
+   "sources": [
+    "corn",
+    "grain-fed-dairy"
+   ]
+  },
+  "nutrition": {
+   "calories": 582,
+   "proteinG": 38,
+   "carbsG": 38,
+   "fiberG": 5,
+   "sugarG": 2,
+   "fatG": 32,
+   "satFatG": 6,
+   "sodiumMg": 1180,
+   "cholesterolMg": 258
+  },
+  "tags": [
+   "mexican",
+   "seafood",
+   "quick",
+   "authentic",
+   "pescatarian",
+   "gluten-free",
+   "spicy",
+   "high-protein",
+   "weeknight",
+   "easy"
+  ],
+  "image": {
+   "file": "rb-camarones-mojo-ajo.jpg",
+   "source": "commons-file",
+   "match": "dish",
+   "commonsFile": "Camarones al mojo de ajo.JPG"
+  }
+ },
+ {
+  "id": "ch-rb-016",
+  "slug": "rb-chilaquiles-verdes",
+  "title": "Chilaquiles Verdes",
+  "genre": "mexican",
+  "subgenre": "breakfast",
+  "chef": {
+   "name": "Rick Bayless",
+   "slug": "rick-bayless"
+  },
+  "description": "Fried tortilla chips simmered briefly in salsa verde, topped with eggs.",
+  "difficulty": "beginner",
+  "easeScore": 9,
+  "spiceScore": 5,
+  "popularity": 9,
+  "pantryScore": 8,
+  "servings": 4,
+  "prepMin": 15,
+  "cookMin": 30,
+  "totalMin": 45,
+  "equipment": [
+   "stovetop",
+   "broiler",
+   "blender"
+  ],
+  "ingredients": [
+   "12 corn tortillas, cut in wedges",
+   "1 cup vegetable oil",
+   "1 1/2 lb tomatillos, husked",
+   "3 serrano chiles",
+   "4 cloves garlic, unpeeled",
+   "1/2 white onion",
+   "1/2 cup cilantro",
+   "2 cups chicken broth",
+   "1 1/2 tsp salt",
+   "4 eggs",
+   "1 cup crumbled queso fresco",
+   "3/4 cup Mexican crema",
+   "1/2 white onion, thinly sliced",
+   "1 avocado, sliced",
+   "1/3 cup chopped cilantro"
+  ],
+  "ingredientKeys": [
+   "corn-tortilla",
+   "vegetable-oil",
+   "tomatillo",
+   "serrano-chile",
+   "garlic",
+   "white-onion",
+   "cilantro",
+   "chicken-broth",
+   "salt",
+   "egg",
+   "queso-fresco",
+   "mexican-crema",
+   "white-onion",
+   "avocado",
+   "cilantro"
+  ],
+  "specialty": [
+   "corn-tortilla",
+   "tomatillo",
+   "serrano-chile",
+   "queso-fresco",
+   "mexican-crema",
+   "avocado"
+  ],
+  "steps": [
+   "Fry the tortilla wedges in 350F oil until crisp and golden, in batches, and drain them. Store-bought chips work but fry up thicker and sturdier at home, which matters here.",
+   "Broil the tomatillos, serranos and unpeeled garlic until blistered, about 10 minutes, then peel the garlic and blend everything with the onion and cilantro.",
+   "Fry the puree in 2 tbsp oil for 6 minutes until it darkens, then add the broth and salt and simmer 10 minutes until it is a loose sauce.",
+   "Fry the eggs sunny side up in a separate pan while the sauce simmers.",
+   "Add the chips to the simmering sauce and fold them just until coated - 1 minute, no more. The whole point of chilaquiles is the contrast between softened edges and chips that still have some snap, and 30 extra seconds costs you that.",
+   "Slide onto plates immediately, top with the fried eggs, and finish with queso fresco, crema, sliced onion, avocado and cilantro."
+  ],
+  "diet": {
+   "vegetarian": false,
+   "vegan": false,
+   "pescatarian": false,
+   "glutenFree": true,
+   "glutenFreeAdaptable": false,
+   "dairyFree": false,
+   "nutFree": true,
+   "eggFree": false
+  },
+  "allergens": [
+   "dairy",
+   "egg"
+  ],
+  "gmo": {
+   "risk": "high",
+   "sources": [
+    "corn",
+    "seed-oil",
+    "grain-fed-meat",
+    "grain-fed-dairy"
+   ]
+  },
+  "nutrition": {
+   "calories": 682,
+   "proteinG": 24,
+   "carbsG": 52,
+   "fiberG": 9,
+   "sugarG": 9,
+   "fatG": 42,
+   "satFatG": 13,
+   "sodiumMg": 1280,
+   "cholesterolMg": 228
+  },
+  "tags": [
+   "mexican",
+   "breakfast",
+   "brunch",
+   "authentic",
+   "spicy",
+   "gluten-free",
+   "quick",
+   "comfort",
+   "easy",
+   "family"
+  ],
+  "image": {
+   "file": "rb-chilaquiles-verdes.jpg",
+   "source": "commons-file",
+   "match": "dish",
+   "commonsFile": "Chilaquiles verdes.jpg"
+  }
+ },
+ {
+  "id": "ch-rb-017",
+  "slug": "rb-arroz-a-la-mexicana",
+  "title": "Arroz a la Mexicana",
+  "genre": "mexican",
+  "subgenre": "rice",
+  "chef": {
+   "name": "Rick Bayless",
+   "slug": "rick-bayless"
+  },
+  "description": "Rice toasted in oil, then simmered in tomato broth with peas and carrot.",
+  "difficulty": "beginner",
+  "easeScore": 9,
+  "spiceScore": 2,
+  "popularity": 9,
+  "pantryScore": 9,
+  "servings": 6,
+  "prepMin": 15,
+  "cookMin": 35,
+  "totalMin": 50,
+  "equipment": [
+   "stovetop",
+   "blender"
+  ],
+  "ingredients": [
+   "1 1/2 cups long-grain white rice",
+   "1/4 cup vegetable oil",
+   "2 ripe tomatoes, cored",
+   "1/4 white onion",
+   "2 cloves garlic",
+   "2 1/2 cups chicken broth",
+   "1 1/2 tsp salt",
+   "1 carrot, diced",
+   "1 cup frozen peas",
+   "1 serrano chile, whole",
+   "1/3 cup chopped cilantro"
+  ],
+  "ingredientKeys": [
+   "long-grain-rice",
+   "vegetable-oil",
+   "tomato",
+   "white-onion",
+   "garlic",
+   "chicken-broth",
+   "salt",
+   "carrot",
+   "frozen-peas",
+   "serrano-chile",
+   "cilantro"
+  ],
+  "specialty": [
+   "serrano-chile"
+  ],
+  "steps": [
+   "Rinse the rice in several changes of cold water until the water runs clear, then drain it well. Rinsing removes surface starch so the grains stay separate.",
+   "Fry the drained rice in the oil over medium heat, stirring, for 5-6 minutes until the grains turn chalky white and some are lightly golden. This toasting step is what makes Mexican rice fluffy rather than sticky, and rushing it is the most common mistake.",
+   "Blend the tomatoes, onion and garlic smooth and measure the puree - you want 1 cup. Pour it into the hot rice and fry 3 minutes until it thickens and mostly absorbs.",
+   "Add the broth, salt, carrot and the whole serrano, which perfumes the rice without making it hot.",
+   "Bring to a boil, then cover and cook on the lowest heat 15 minutes without lifting the lid.",
+   "Scatter the peas over the top, replace the lid, and let it stand off the heat 10 minutes. Then fluff with a fork, discard the chile, and fold in the cilantro."
+  ],
+  "diet": {
+   "vegetarian": false,
+   "vegan": false,
+   "pescatarian": false,
+   "glutenFree": true,
+   "glutenFreeAdaptable": false,
+   "dairyFree": true,
+   "nutFree": true,
+   "eggFree": true
+  },
+  "allergens": [],
+  "gmo": {
+   "risk": "high",
+   "sources": [
+    "seed-oil",
+    "grain-fed-meat"
+   ]
+  },
+  "nutrition": {
+   "calories": 318,
+   "proteinG": 7,
+   "carbsG": 52,
+   "fiberG": 3,
+   "sugarG": 5,
+   "fatG": 9,
+   "satFatG": 1,
+   "sodiumMg": 880,
+   "cholesterolMg": 2
+  },
+  "tags": [
+   "mexican",
+   "side",
+   "foundation",
+   "authentic",
+   "budget",
+   "gluten-free",
+   "dairy-free",
+   "pantry",
+   "family",
+   "easy",
+   "technique"
+  ],
+  "image": {
+   "file": "mexican-rice.jpg",
+   "source": "wikipedia-lead",
+   "match": "representative",
+   "wikipedia": "Mexican rice"
+  }
+ },
+ {
+  "id": "ch-rb-018",
+  "slug": "rb-cheese-queso-fundido",
+  "title": "Queso Fundido with Chorizo",
+  "genre": "mexican",
+  "subgenre": "appetizers",
+  "chef": {
+   "name": "Rick Bayless",
+   "slug": "rick-bayless"
+  },
+  "description": "Melted Chihuahua cheese with chorizo and poblano, scooped with tortillas.",
+  "difficulty": "beginner",
+  "easeScore": 10,
+  "spiceScore": 4,
+  "popularity": 9,
+  "pantryScore": 7,
+  "servings": 6,
+  "prepMin": 15,
+  "cookMin": 25,
+  "totalMin": 40,
+  "equipment": [
+   "stovetop",
+   "oven"
+  ],
+  "ingredients": [
+   "8 oz Mexican chorizo, casings removed",
+   "1 poblano chile, roasted and cut in strips",
+   "1/2 white onion, diced",
+   "3 cloves garlic, minced",
+   "1 lb Chihuahua cheese, shredded",
+   "4 oz Monterey Jack, shredded",
+   "1/4 cup Mexican crema",
+   "1/3 cup chopped cilantro",
+   "18 corn tortillas",
+   "1 cup salsa verde"
+  ],
+  "ingredientKeys": [
+   "mexican-chorizo",
+   "poblano-chile",
+   "white-onion",
+   "garlic",
+   "chihuahua-cheese",
+   "monterey-jack",
+   "mexican-crema",
+   "cilantro",
+   "corn-tortilla",
+   "salsa-verde"
+  ],
+  "specialty": [
+   "mexican-chorizo",
+   "poblano-chile",
+   "chihuahua-cheese",
+   "mexican-crema",
+   "corn-tortilla",
+   "salsa-verde"
+  ],
+  "steps": [
+   "Brown the chorizo in a dry skillet 8 minutes, breaking it up. Mexican chorizo is raw and loose, unlike the cured Spanish kind, and it renders a lot of red fat - pour most of it off.",
+   "Cook the onion in the remaining fat 5 minutes, then the garlic for 1 minute, and stir in the roasted poblano strips.",
+   "Toss the two cheeses together. Chihuahua melts into long smooth strands; using some Jack keeps it from tightening as it cools.",
+   "Spread half the cheese in an ovenproof skillet or small gratin dish, scatter the chorizo mixture over, and top with the rest of the cheese.",
+   "Bake at 400F for 10-12 minutes until completely molten and bubbling at the edges. Do not let it go so long that the oil separates and pools - that is the sign it has overcooked.",
+   "Drizzle with crema, scatter cilantro, and bring it to the table in the hot pan with warm corn tortillas and salsa verde. It must be eaten immediately; melted cheese waits for no one."
+  ],
+  "diet": {
+   "vegetarian": false,
+   "vegan": false,
+   "pescatarian": false,
+   "glutenFree": true,
+   "glutenFreeAdaptable": false,
+   "dairyFree": false,
+   "nutFree": true,
+   "eggFree": true
+  },
+  "allergens": [
+   "dairy"
+  ],
+  "gmo": {
+   "risk": "high",
+   "sources": [
+    "corn",
+    "grain-fed-meat",
+    "grain-fed-dairy",
+    "processed-cheese"
+   ]
+  },
+  "nutrition": {
+   "calories": 782,
+   "proteinG": 42,
+   "carbsG": 42,
+   "fiberG": 5,
+   "sugarG": 5,
+   "fatG": 48,
+   "satFatG": 24,
+   "sodiumMg": 1680,
+   "cholesterolMg": 138
+  },
+  "tags": [
+   "mexican",
+   "appetizer",
+   "party",
+   "authentic",
+   "gluten-free",
+   "quick",
+   "easy",
+   "crowd-pleaser",
+   "game-day",
+   "indulgent"
+  ],
+  "image": {
+   "file": "rb-cheese-queso-fundido.jpg",
+   "source": "commons-file",
+   "match": "dish",
+   "commonsFile": "Queso fundido con chorizo.jpg"
+  }
+ },
+ {
+  "id": "ch-rb-019",
+  "slug": "rb-tinga-de-pollo",
+  "title": "Tinga de Pollo",
+  "genre": "mexican",
+  "subgenre": "secondi",
+  "chef": {
+   "name": "Rick Bayless",
+   "slug": "rick-bayless"
+  },
+  "description": "Shredded chicken in smoky chipotle-tomato sauce with onions.",
+  "difficulty": "beginner",
+  "easeScore": 10,
+  "spiceScore": 6,
+  "popularity": 9,
+  "pantryScore": 8,
+  "servings": 6,
+  "prepMin": 15,
+  "cookMin": 35,
+  "totalMin": 50,
+  "equipment": [
+   "stovetop"
+  ],
+  "ingredients": [
+   "3 cups shredded cooked chicken",
+   "3 tbsp lard or vegetable oil",
+   "2 white onions, thinly sliced",
+   "5 cloves garlic, minced",
+   "1 1/2 lb tomatoes, chopped",
+   "4 chipotle chiles in adobo, chopped",
+   "2 tbsp adobo sauce",
+   "1 tsp dried Mexican oregano",
+   "1/2 tsp ground cumin",
+   "1 1/2 tsp salt",
+   "1/2 tsp sugar",
+   "1 cup chicken broth",
+   "12 tostadas",
+   "1 cup crumbled queso fresco",
+   "3/4 cup Mexican crema",
+   "1 avocado, sliced",
+   "1/3 cup chopped cilantro"
+  ],
+  "ingredientKeys": [
+   "cooked-chicken",
+   "lard",
+   "white-onion",
+   "garlic",
+   "tomato",
+   "chipotle-in-adobo",
+   "adobo-sauce",
+   "mexican-oregano",
+   "cumin",
+   "salt",
+   "sugar",
+   "chicken-broth",
+   "tostadas",
+   "queso-fresco",
+   "mexican-crema",
+   "avocado",
+   "cilantro"
+  ],
+  "specialty": [
+   "lard",
+   "chipotle-in-adobo",
+   "adobo-sauce",
+   "mexican-oregano",
+   "tostadas",
+   "queso-fresco",
+   "mexican-crema",
+   "avocado"
+  ],
+  "steps": [
+   "Cook the sliced onions in the lard over medium-high heat 10-12 minutes until genuinely browned at the edges, not just translucent. Tinga depends on that caramelization for its sweetness.",
+   "Add the garlic for 1 minute, then the tomatoes, and cook 10 minutes until they break down and the liquid reduces.",
+   "Add the chipotles with their adobo, the oregano, cumin, salt and sugar. Start with two chiles and taste - canned chipotles vary enormously in heat and these are genuinely hot.",
+   "Add the broth and simmer 8 minutes until the sauce thickens enough to cling.",
+   "Fold in the shredded chicken and simmer 5 minutes more, just to heat it through and let it absorb the sauce. Long cooking from here only dries out the chicken.",
+   "Pile onto tostadas with queso fresco, crema, avocado and cilantro. It also fills tacos and tortas, and it reheats better than almost anything."
+  ],
+  "diet": {
+   "vegetarian": false,
+   "vegan": false,
+   "pescatarian": false,
+   "glutenFree": true,
+   "glutenFreeAdaptable": false,
+   "dairyFree": false,
+   "nutFree": true,
+   "eggFree": true
+  },
+  "allergens": [
+   "dairy"
+  ],
+  "gmo": {
+   "risk": "high",
+   "sources": [
+    "corn",
+    "grain-fed-meat",
+    "grain-fed-dairy",
+    "sugar-beet"
+   ]
+  },
+  "nutrition": {
+   "calories": 612,
+   "proteinG": 38,
+   "carbsG": 42,
+   "fiberG": 7,
+   "sugarG": 11,
+   "fatG": 32,
+   "satFatG": 11,
+   "sodiumMg": 1480,
+   "cholesterolMg": 118
+  },
+  "tags": [
+   "mexican",
+   "authentic",
+   "quick",
+   "spicy",
+   "gluten-free",
+   "make-ahead",
+   "family",
+   "weeknight",
+   "easy",
+   "leftovers",
+   "party"
+  ],
+  "image": {
+   "file": "rb-tinga-de-pollo.jpg",
+   "source": "commons-file",
+   "match": "dish",
+   "commonsFile": "Tinga de pollo.JPG"
+  }
+ },
+ {
+  "id": "ch-rb-020",
+  "slug": "rb-flan-napolitano",
+  "title": "Flan Napolitano",
+  "genre": "mexican",
+  "subgenre": "desserts",
+  "chef": {
+   "name": "Rick Bayless",
+   "slug": "rick-bayless"
+  },
+  "description": "Dense cream-cheese flan under a dark caramel, baked in a water bath.",
+  "difficulty": "intermediate",
+  "easeScore": 7,
+  "spiceScore": 0,
+  "popularity": 9,
+  "pantryScore": 8,
+  "servings": 10,
+  "prepMin": 20,
+  "cookMin": 310,
+  "totalMin": 330,
+  "equipment": [
+   "oven",
+   "stovetop",
+   "blender"
+  ],
+  "ingredients": [
+   "1 1/4 cups sugar",
+   "2 tbsp water",
+   "1 can (14 oz) sweetened condensed milk",
+   "1 can (12 oz) evaporated milk",
+   "8 oz cream cheese, softened",
+   "6 eggs",
+   "1 tbsp vanilla extract",
+   "1/4 tsp salt",
+   "1 tbsp orange zest"
+  ],
+  "ingredientKeys": [
+   "sugar",
+   "water",
+   "sweetened-condensed-milk",
+   "evaporated-milk",
+   "cream-cheese",
+   "egg",
+   "vanilla-extract",
+   "salt",
+   "orange-zest"
+  ],
+  "specialty": [
+   "sweetened-condensed-milk",
+   "evaporated-milk",
+   "cream-cheese"
+  ],
+  "steps": [
+   "Melt the sugar with the water in a dry heavy pan over medium heat without stirring - swirl the pan instead. Stirring makes it crystallize.",
+   "Cook it to a deep amber, just short of smoking. Pale caramel tastes only sweet; dark caramel is what gives flan its slight bitterness and keeps it from cloying. Pour it immediately into a 9-inch round pan and tilt to coat the bottom; it sets hard in seconds.",
+   "Blend the condensed milk, evaporated milk, cream cheese, eggs, vanilla, salt and orange zest until perfectly smooth, then let the foam settle a few minutes. The cream cheese is what makes this the dense napolitano style rather than a trembling light flan.",
+   "Pour the custard through a fine sieve over the hardened caramel.",
+   "Set the pan in a larger roasting pan and pour in hot water to come halfway up the sides. The water bath keeps the custard below the temperature at which eggs curdle - without it you get a grainy flan with a crust.",
+   "Bake at 325F for about 1 hour, until the center jiggles as one mass rather than rippling. Cool, then refrigerate at least 4 hours or overnight. Run a knife around the edge and invert onto a rimmed platter; the caramel will have turned to sauce."
+  ],
+  "diet": {
+   "vegetarian": true,
+   "vegan": false,
+   "pescatarian": true,
+   "glutenFree": true,
+   "glutenFreeAdaptable": false,
+   "dairyFree": false,
+   "nutFree": true,
+   "eggFree": false
+  },
+  "allergens": [
+   "dairy",
+   "egg"
+  ],
+  "gmo": {
+   "risk": "moderate",
+   "sources": [
+    "sugar-beet",
+    "grain-fed-dairy"
+   ]
+  },
+  "nutrition": {
+   "calories": 448,
+   "proteinG": 11,
+   "carbsG": 58,
+   "fiberG": 0,
+   "sugarG": 56,
+   "fatG": 18,
+   "satFatG": 11,
+   "sodiumMg": 220,
+   "cholesterolMg": 158
+  },
+  "tags": [
+   "mexican",
+   "dessert",
+   "authentic",
+   "gluten-free",
+   "make-ahead",
+   "classic",
+   "family",
+   "holiday",
+   "technique",
+   "party"
+  ],
+  "image": {
+   "file": "rb-flan-napolitano.jpg",
+   "source": "commons-file",
+   "match": "dish",
+   "commonsFile": "Flan napolitano.png"
+  }
+ },
+ {
+  "id": "ch-rb-021",
+  "slug": "rb-barbacoa-de-res",
+  "title": "Barbacoa de Res",
+  "genre": "mexican",
+  "subgenre": "secondi",
+  "chef": {
+   "name": "Rick Bayless",
+   "slug": "rick-bayless"
+  },
+  "description": "Beef cheeks or chuck braised with chiles, avocado leaves and cloves.",
+  "difficulty": "intermediate",
+  "easeScore": 7,
+  "spiceScore": 4,
+  "popularity": 9,
+  "pantryScore": 5,
+  "servings": 10,
+  "prepMin": 25,
+  "cookMin": 255,
+  "totalMin": 280,
+  "equipment": [
+   "oven",
+   "blender"
+  ],
+  "ingredients": [
+   "5 lb beef chuck or cheeks, cut in large pieces",
+   "8 dried guajillo chiles",
+   "4 dried ancho chiles",
+   "3 dried chipotle chiles",
+   "1 white onion, quartered",
+   "8 cloves garlic",
+   "2 tbsp white vinegar",
+   "1 tsp ground cumin",
+   "1 tsp dried Mexican oregano",
+   "1/2 tsp ground cloves",
+   "1/2 tsp ground cinnamon",
+   "1 tbsp salt",
+   "6 dried avocado leaves",
+   "3 bay leaves",
+   "2 cups beef broth",
+   "30 corn tortillas",
+   "1 white onion, finely diced",
+   "1 1/2 cups chopped cilantro",
+   "4 limes, cut in wedges",
+   "2 cups salsa roja"
+  ],
+  "ingredientKeys": [
+   "beef-chuck",
+   "guajillo-chile",
+   "ancho-chile",
+   "chipotle-chile",
+   "white-onion",
+   "garlic",
+   "white-vinegar",
+   "cumin",
+   "mexican-oregano",
+   "cloves",
+   "cinnamon",
+   "salt",
+   "avocado-leaves",
+   "bay-leaf",
+   "beef-broth",
+   "corn-tortilla",
+   "white-onion",
+   "cilantro",
+   "lime",
+   "salsa-roja"
+  ],
+  "specialty": [
+   "beef-chuck",
+   "guajillo-chile",
+   "ancho-chile",
+   "chipotle-chile",
+   "mexican-oregano",
+   "avocado-leaves",
+   "beef-broth",
+   "corn-tortilla",
+   "salsa-roja"
+  ],
+  "steps": [
+   "Toast the stemmed, seeded chiles 20 seconds per side, soak them 25 minutes, then blend with the onion, garlic, vinegar, cumin, oregano, cloves, cinnamon and salt into a thick paste.",
+   "Rub the paste all over the beef and leave it at least 4 hours or overnight.",
+   "Toast the avocado leaves briefly over a flame until fragrant. They taste faintly of anise and are the signature of central Mexican barbacoa - if you cannot find them, a little anise seed is closer than nothing.",
+   "Put the beef and all its marinade in a Dutch oven with the avocado leaves, bay leaves and broth. Cover tightly, sealing with foil under the lid if it does not fit well. Trapping the steam is what approximates the earth pit.",
+   "Braise at 300F for 4 hours, until the meat shreds with no resistance at all. Beef cheeks are the traditional cut and give the silkiest result; chuck is easier to find.",
+   "Shred the meat, pull out the leaves, and moisten it well with the strained cooking liquid - dry barbacoa is a sad thing. Serve on corn tortillas with onion, cilantro, lime and salsa, with the remaining broth as consommé on the side."
+  ],
+  "diet": {
+   "vegetarian": false,
+   "vegan": false,
+   "pescatarian": false,
+   "glutenFree": true,
+   "glutenFreeAdaptable": false,
+   "dairyFree": true,
+   "nutFree": true,
+   "eggFree": true
+  },
+  "allergens": [],
+  "gmo": {
+   "risk": "high",
+   "sources": [
+    "corn",
+    "grain-fed-meat"
+   ]
+  },
+  "nutrition": {
+   "calories": 712,
+   "proteinG": 58,
+   "carbsG": 48,
+   "fiberG": 8,
+   "sugarG": 7,
+   "fatG": 32,
+   "satFatG": 12,
+   "sodiumMg": 1680,
+   "cholesterolMg": 168
+  },
+  "tags": [
+   "mexican",
+   "authentic",
+   "regional",
+   "tacos",
+   "make-ahead",
+   "party",
+   "gluten-free",
+   "dairy-free",
+   "technique",
+   "weekend",
+   "crowd-pleaser"
+  ],
+  "image": {
+   "file": "rb-barbacoa-de-res.jpg",
+   "source": "commons-file",
+   "match": "dish",
+   "commonsFile": "Barbacoa de res.jpg"
+  }
+ },
+ {
+  "id": "ch-rb-022",
+  "slug": "rb-salsa-macha",
+  "title": "Salsa Macha",
+  "genre": "mexican",
+  "subgenre": "salsas",
+  "chef": {
+   "name": "Rick Bayless",
+   "slug": "rick-bayless"
+  },
+  "description": "A Veracruz chile oil with peanuts, sesame and garlic. Keeps for months.",
+  "difficulty": "beginner",
+  "easeScore": 9,
+  "spiceScore": 8,
+  "popularity": 8,
+  "pantryScore": 6,
+  "servings": 16,
+  "prepMin": 10,
+  "cookMin": 25,
+  "totalMin": 35,
+  "equipment": [
+   "stovetop",
+   "blender"
+  ],
+  "ingredients": [
+   "2 cups vegetable oil",
+   "10 dried chiles de arbol, stemmed",
+   "4 dried morita chiles, stemmed",
+   "4 dried guajillo chiles, stemmed and torn",
+   "12 cloves garlic, peeled",
+   "3/4 cup peanuts",
+   "1/3 cup sesame seeds",
+   "2 tbsp apple cider vinegar",
+   "1 1/2 tsp salt",
+   "1 tsp sugar"
+  ],
+  "ingredientKeys": [
+   "vegetable-oil",
+   "chile-de-arbol",
+   "morita-chile",
+   "guajillo-chile",
+   "garlic",
+   "peanuts",
+   "sesame-seeds",
+   "apple-cider-vinegar",
+   "salt",
+   "sugar"
+  ],
+  "specialty": [
+   "chile-de-arbol",
+   "morita-chile",
+   "guajillo-chile",
+   "peanuts",
+   "sesame-seeds"
+  ],
+  "steps": [
+   "Heat the oil to about 250F - warm, not hot. Everything here is fried gently in sequence, and the order is by how fast each thing burns.",
+   "Fry the garlic and peanuts first, 4-5 minutes, until pale gold, then lift them out with a slotted spoon.",
+   "Add the sesame seeds for 30 seconds only, until they just turn color, and remove them.",
+   "Turn off the heat and add all the chiles to the hot oil for 30-45 seconds, pushing them under. They need only to darken slightly and smell toasty. Any scorching here makes the whole batch acrid and it cannot be salvaged.",
+   "Let everything cool, then blend the chiles, garlic, peanuts and half the sesame seeds with the vinegar, salt, sugar and about half the oil. Pulse to a coarse, chunky texture - this is not a smooth sauce.",
+   "Stir in the remaining oil and sesame seeds. Store it in a jar at room temperature, keeping the solids under the oil; it lasts for months and improves after a week. Spoon it over eggs, tacos, grilled meat or vegetables."
+  ],
+  "diet": {
+   "vegetarian": true,
+   "vegan": true,
+   "pescatarian": true,
+   "glutenFree": true,
+   "glutenFreeAdaptable": false,
+   "dairyFree": true,
+   "nutFree": false,
+   "eggFree": true
+  },
+  "allergens": [
+   "peanut",
+   "sesame"
+  ],
+  "gmo": {
+   "risk": "high",
+   "sources": [
+    "seed-oil",
+    "sugar-beet"
+   ]
+  },
+  "nutrition": {
+   "calories": 242,
+   "proteinG": 4,
+   "carbsG": 5,
+   "fiberG": 2,
+   "sugarG": 1,
+   "fatG": 24,
+   "satFatG": 3,
+   "sodiumMg": 220,
+   "cholesterolMg": 0
+  },
+  "tags": [
+   "mexican",
+   "salsa",
+   "authentic",
+   "regional",
+   "vegan",
+   "vegetarian",
+   "gluten-free",
+   "dairy-free",
+   "spicy",
+   "make-ahead",
+   "pantry",
+   "gift"
+  ],
+  "image": {
+   "file": "rb-salsa-macha.jpg",
+   "source": "commons-file",
+   "match": "dish",
+   "commonsFile": "Salsa macha.jpg"
+  }
+ },
+ {
+  "id": "ch-rb-023",
+  "slug": "rb-sopes",
+  "title": "Sopes",
+  "genre": "mexican",
+  "subgenre": "antojitos",
+  "chef": {
+   "name": "Rick Bayless",
+   "slug": "rick-bayless"
+  },
+  "description": "Thick masa cakes with pinched rims, topped with beans, meat and salsa.",
+  "difficulty": "intermediate",
+  "easeScore": 7,
+  "spiceScore": 4,
+  "popularity": 8,
+  "pantryScore": 7,
+  "servings": 6,
+  "prepMin": 35,
+  "cookMin": 35,
+  "totalMin": 70,
+  "equipment": [
+   "stovetop"
+  ],
+  "ingredients": [
+   "2 cups masa harina",
+   "1 1/2 cups warm water",
+   "1 tsp salt",
+   "1/2 cup vegetable oil",
+   "2 cups refried beans, warm",
+   "2 cups shredded cooked chicken",
+   "1 1/2 cups salsa verde",
+   "1 1/2 cups shredded lettuce",
+   "1 cup crumbled queso fresco",
+   "3/4 cup Mexican crema",
+   "1/2 white onion, finely diced",
+   "1 avocado, sliced",
+   "1/3 cup chopped cilantro"
+  ],
+  "ingredientKeys": [
+   "masa-harina",
+   "water",
+   "salt",
+   "vegetable-oil",
+   "refried-beans",
+   "cooked-chicken",
+   "salsa-verde",
+   "lettuce",
+   "queso-fresco",
+   "mexican-crema",
+   "white-onion",
+   "avocado",
+   "cilantro"
+  ],
+  "specialty": [
+   "masa-harina",
+   "refried-beans",
+   "salsa-verde",
+   "queso-fresco",
+   "mexican-crema",
+   "avocado"
+  ],
+  "steps": [
+   "Mix the masa harina, warm water and salt into a dough like soft modeling clay and let it rest 10 minutes. If it cracks when you press it, add water a tablespoon at a time; dry masa is the usual problem.",
+   "Divide into 12 balls and press each into a 3-inch disk about 1/3 inch thick - noticeably thicker than a tortilla.",
+   "Griddle the disks on a dry comal over medium heat, 1 1/2 minutes per side, until they look dry and lightly freckled but are not yet cooked through.",
+   "Take them off one at a time and, while they are hot enough to hurt slightly, pinch up a rim around the edge with your fingers. They must be pinched hot - cooled sopes crack instead of pinching. Use a towel to protect your fingers.",
+   "Shallow-fry the pinched sopes in the oil, 1 minute per side, until the base is crisp and golden. That rim is what holds the toppings and their juices.",
+   "Fill while hot: beans first, then chicken, salsa, lettuce, queso fresco, crema, onion, avocado and cilantro. Serve at once."
+  ],
+  "diet": {
+   "vegetarian": false,
+   "vegan": false,
+   "pescatarian": false,
+   "glutenFree": true,
+   "glutenFreeAdaptable": false,
+   "dairyFree": false,
+   "nutFree": true,
+   "eggFree": true
+  },
+  "allergens": [
+   "dairy"
+  ],
+  "gmo": {
+   "risk": "high",
+   "sources": [
+    "corn",
+    "seed-oil",
+    "grain-fed-meat",
+    "grain-fed-dairy"
+   ]
+  },
+  "nutrition": {
+   "calories": 682,
+   "proteinG": 32,
+   "carbsG": 62,
+   "fiberG": 11,
+   "sugarG": 7,
+   "fatG": 34,
+   "satFatG": 10,
+   "sodiumMg": 1480,
+   "cholesterolMg": 88
+  },
+  "tags": [
+   "mexican",
+   "antojitos",
+   "authentic",
+   "technique",
+   "party",
+   "gluten-free",
+   "family",
+   "street-food",
+   "crowd-pleaser"
+  ],
+  "image": {
+   "file": "rb-sopes.jpg",
+   "source": "commons-file",
+   "match": "dish",
+   "commonsFile": "Sopes (3589464443).jpg"
+  }
+ },
+ {
+  "id": "ch-rb-024",
+  "slug": "rb-agua-de-jamaica",
+  "title": "Agua de Jamaica",
+  "genre": "mexican",
+  "subgenre": "drinks",
+  "chef": {
+   "name": "Rick Bayless",
+   "slug": "rick-bayless"
+  },
+  "description": "Hibiscus flowers steeped and sweetened into a tart ruby cooler.",
+  "difficulty": "beginner",
+  "easeScore": 10,
+  "spiceScore": 0,
+  "popularity": 8,
+  "pantryScore": 6,
+  "servings": 8,
+  "prepMin": 10,
+  "cookMin": 80,
+  "totalMin": 90,
+  "equipment": [
+   "stovetop"
+  ],
+  "ingredients": [
+   "1 1/2 cups dried hibiscus flowers",
+   "8 cups water",
+   "3/4 cup sugar",
+   "2 tbsp lime juice",
+   "1 cinnamon stick",
+   "2 cups ice",
+   "1 lime, sliced"
+  ],
+  "ingredientKeys": [
+   "dried-hibiscus",
+   "water",
+   "sugar",
+   "lime-juice",
+   "cinnamon-stick",
+   "ice",
+   "lime"
+  ],
+  "specialty": [
+   "dried-hibiscus",
+   "cinnamon-stick"
+  ],
+  "steps": [
+   "Rinse the hibiscus flowers briefly in cold water - they are dried in the open and often dusty.",
+   "Bring 4 cups of the water to a boil with the cinnamon stick, add the flowers, and take it off the heat immediately.",
+   "Steep 15-20 minutes, no longer. Boiling hibiscus or steeping it too long pulls out tannins and the drink turns astringent and faintly bitter instead of clean and tart.",
+   "Strain, pressing lightly on the flowers, and stir the sugar into the hot liquid until it dissolves completely.",
+   "Add the remaining 4 cups of cold water and the lime juice, then taste. Hibiscus is genuinely sour and needs more sugar than you expect, but it should still bite.",
+   "Chill thoroughly and serve over plenty of ice with lime slices. The steeped flowers can be chopped and used as a taco filling rather than thrown out."
+  ],
+  "diet": {
+   "vegetarian": true,
+   "vegan": true,
+   "pescatarian": true,
+   "glutenFree": true,
+   "glutenFreeAdaptable": false,
+   "dairyFree": true,
+   "nutFree": true,
+   "eggFree": true
+  },
+  "allergens": [],
+  "gmo": {
+   "risk": "moderate",
+   "sources": [
+    "sugar-beet"
+   ]
+  },
+  "nutrition": {
+   "calories": 82,
+   "proteinG": 0,
+   "carbsG": 20,
+   "fiberG": 0,
+   "sugarG": 19,
+   "fatG": 0,
+   "satFatG": 0,
+   "sodiumMg": 8,
+   "cholesterolMg": 0
+  },
+  "tags": [
+   "mexican",
+   "drink",
+   "authentic",
+   "vegan",
+   "vegetarian",
+   "gluten-free",
+   "dairy-free",
+   "summer",
+   "make-ahead",
+   "easy",
+   "budget",
+   "kid-friendly"
+  ],
+  "image": {
+   "file": "rb-agua-de-jamaica.jpg",
+   "source": "commons-file",
+   "match": "dish",
+   "commonsFile": "Agua de jamaica.jpg"
+  }
+ },
+ {
+  "id": "ch-rb-025",
+  "slug": "rb-pescado-a-la-veracruzana",
+  "title": "Pescado a la Veracruzana",
+  "genre": "mexican",
+  "subgenre": "seafood",
+  "chef": {
+   "name": "Rick Bayless",
+   "slug": "rick-bayless"
+  },
+  "description": "Snapper poached in a tomato sauce with olives, capers and pickled chiles.",
+  "difficulty": "beginner",
+  "easeScore": 9,
+  "spiceScore": 4,
+  "popularity": 8,
+  "pantryScore": 7,
+  "servings": 4,
+  "prepMin": 20,
+  "cookMin": 35,
+  "totalMin": 55,
+  "equipment": [
+   "stovetop"
+  ],
+  "ingredients": [
+   "4 red snapper fillets (7 oz each)",
+   "1 1/2 tsp salt",
+   "2 tbsp lime juice",
+   "1/4 cup olive oil",
+   "1 white onion, sliced",
+   "6 cloves garlic, sliced",
+   "2 lb ripe tomatoes, chopped",
+   "2 bay leaves",
+   "1 tsp dried Mexican oregano",
+   "1/2 tsp ground cinnamon",
+   "3/4 cup green olives, pitted and halved",
+   "1/3 cup capers, rinsed",
+   "4 pickled jalapenos, sliced",
+   "2 tbsp pickled jalapeno brine",
+   "1/2 tsp sugar",
+   "1/3 cup chopped parsley"
+  ],
+  "ingredientKeys": [
+   "red-snapper",
+   "salt",
+   "lime-juice",
+   "olive-oil",
+   "white-onion",
+   "garlic",
+   "tomato",
+   "bay-leaf",
+   "mexican-oregano",
+   "cinnamon",
+   "green-olives",
+   "capers",
+   "pickled-jalapeno",
+   "jalapeno-brine",
+   "sugar",
+   "parsley"
+  ],
+  "specialty": [
+   "red-snapper",
+   "mexican-oregano",
+   "green-olives",
+   "capers",
+   "pickled-jalapeno",
+   "jalapeno-brine"
+  ],
+  "steps": [
+   "Season the fillets with salt and lime juice and leave them 15 minutes while you make the sauce.",
+   "Cook the onion in the olive oil 8 minutes until soft, then add the garlic for 1 minute.",
+   "Add the tomatoes, bay leaves, oregano and cinnamon and simmer 15 minutes until the sauce thickens and the tomatoes break down. The cinnamon and olives are the Spanish inheritance in this dish - Veracruz was the colonial port, and the sauce is Mediterranean grafted onto Mexican ingredients.",
+   "Add the olives, capers, pickled jalapenos and their brine and the sugar, and simmer 3 minutes. Taste - it should be salty, sour and faintly sweet all at once, and it probably needs no extra salt.",
+   "Nestle the fillets into the sauce, spoon some over them, cover, and poach gently 8-10 minutes, depending on thickness.",
+   "The fish is done when it flakes at the thickest point but still looks moist. Poaching in sauce is forgiving, but overcooked snapper still turns cottony. Finish with parsley and serve with white rice."
+  ],
+  "diet": {
+   "vegetarian": false,
+   "vegan": false,
+   "pescatarian": true,
+   "glutenFree": true,
+   "glutenFreeAdaptable": false,
+   "dairyFree": true,
+   "nutFree": true,
+   "eggFree": true
+  },
+  "allergens": [
+   "fish"
+  ],
+  "gmo": {
+   "risk": "low",
+   "sources": [
+    "sugar-beet"
+   ]
+  },
+  "nutrition": {
+   "calories": 448,
+   "proteinG": 42,
+   "carbsG": 22,
+   "fiberG": 5,
+   "sugarG": 11,
+   "fatG": 24,
+   "satFatG": 4,
+   "sodiumMg": 1680,
+   "cholesterolMg": 78
+  },
+  "tags": [
+   "mexican",
+   "seafood",
+   "authentic",
+   "regional",
+   "pescatarian",
+   "gluten-free",
+   "dairy-free",
+   "healthy",
+   "high-protein",
+   "easy",
+   "weeknight"
+  ],
+  "image": {
+   "file": "rb-pescado-a-la-veracruzana.jpg",
+   "source": "commons-file",
+   "match": "dish",
+   "commonsFile": "Pescado a la veracruzana.jpg"
+  }
+ }
 ]

@@ -287,6 +287,10 @@
   },
   "pantryPerfect": 67,
   "imagesPresent": 900,
+  "imageMatch": {
+    "dish": 497,
+    "representative": 403
+  },
   "medians": {
     "totalMin": 60,
     "calories": 586,

@@ -96,6 +96,8 @@
   ],
   "image": {
    "file": "pasta-al-limone.jpg",
+   "source": "wikipedia-lead",
+   "match": "representative",
    "wikipedia": "Pasta"
   }
  },
@@ -217,6 +219,8 @@
   ],
   "image": {
    "file": "bolognese.jpg",
+   "source": "wikipedia-lead",
+   "match": "representative",
    "wikipedia": "Bolognese sauce"
   }
  },
@@ -335,6 +339,8 @@
   ],
   "image": {
    "file": "lasagna.jpg",
+   "source": "wikipedia-lead",
+   "match": "representative",
    "wikipedia": "Lasagne"
   }
  },
@@ -460,6 +466,8 @@
   ],
   "image": {
    "file": "chicken-tetrazzini.jpg",
+   "source": "wikipedia-lead",
+   "match": "representative",
    "wikipedia": "Tetrazzini"
   }
  },
@@ -578,6 +586,8 @@
   ],
   "image": {
    "file": "chicken-cacciatore.jpg",
+   "source": "wikipedia-lead",
+   "match": "representative",
    "wikipedia": "Roman cuisine"
   }
  },
@@ -691,6 +701,8 @@
   ],
   "image": {
    "file": "pasta-e-fagioli.jpg",
+   "source": "wikipedia-lead",
+   "match": "representative",
    "wikipedia": "Escarole"
   }
  },
@@ -812,6 +824,8 @@
   ],
   "image": {
    "file": "italian-pasta-salad.jpg",
+   "source": "wikipedia-lead",
+   "match": "representative",
    "wikipedia": "Chopped salad"
   }
  },
@@ -934,6 +948,8 @@
   ],
   "image": {
    "file": "baked-ziti.jpg",
+   "source": "wikipedia-lead",
+   "match": "representative",
    "wikipedia": "Pasta al forno"
   }
  },
@@ -1040,8 +1056,10 @@
    "entertaining"
   ],
   "image": {
-   "file": "zucchini-salad.jpg",
-   "wikipedia": "Zucchini"
+   "file": "gd-zucchini-carpaccio.jpg",
+   "source": "commons-file",
+   "match": "dish",
+   "commonsFile": "Zucchini Carpaccio (6905387516).jpg"
   }
  },
  {
@@ -1151,6 +1169,8 @@
   ],
   "image": {
    "file": "ricotta-cookies.jpg",
+   "source": "wikipedia-lead",
+   "match": "representative",
    "wikipedia": "Ricotta"
   }
  },
@@ -1264,6 +1284,8 @@
   ],
   "image": {
    "file": "cheesecake.jpg",
+   "source": "wikipedia-lead",
+   "match": "representative",
    "wikipedia": "Cheesecake"
   }
  },
@@ -1372,8 +1394,10 @@
    "coffee"
   ],
   "image": {
-   "file": "biscotti.jpg",
-   "wikipedia": "Biscotti"
+   "file": "gd-chocolate-hazelnut-biscotti.jpg",
+   "source": "commons-file",
+   "match": "dish",
+   "commonsFile": "Chocolate Hazelnut Biscotti (140491123).jpeg"
   }
  },
  {
@@ -1491,6 +1515,8 @@
   ],
   "image": {
    "file": "orecchiette.jpg",
+   "source": "wikipedia-lead",
+   "match": "representative",
    "wikipedia": "Orecchiette"
   }
  },
@@ -1612,8 +1638,10 @@
    "special-occasion"
   ],
   "image": {
-   "file": "risotto-milanese.jpg",
-   "wikipedia": "Risotto"
+   "file": "gd-seafood-risotto.jpg",
+   "source": "commons-file",
+   "match": "dish",
+   "commonsFile": "Seafood Risotto.jpg"
   }
  },
  {
@@ -1716,6 +1744,8 @@
   ],
   "image": {
    "file": "prosciutto-asparagus.jpg",
+   "source": "wikipedia-lead",
+   "match": "representative",
    "wikipedia": "Prosciutto"
   }
  },
@@ -1833,6 +1863,8 @@
   ],
   "image": {
    "file": "chicken-florentine.jpg",
+   "source": "wikipedia-lead",
+   "match": "representative",
    "wikipedia": "Florentine (culinary term)"
   }
  },
@@ -1943,6 +1975,8 @@
   ],
   "image": {
    "file": "orecchiette.jpg",
+   "source": "wikipedia-lead",
+   "match": "representative",
    "wikipedia": "Farfalle"
   }
  },
@@ -2064,6 +2098,8 @@
   ],
   "image": {
    "file": "pasta-e-fagioli.jpg",
+   "source": "wikipedia-lead",
+   "match": "representative",
    "wikipedia": "Cannellini bean"
   }
  },
@@ -2172,8 +2208,10 @@
    "low-carb"
   ],
   "image": {
-   "file": "greek-lemon-chicken.jpg",
-   "wikipedia": "Chicken as food"
+   "file": "gd-grilled-lemon-herb-chicken.jpg",
+   "source": "commons-file",
+   "match": "dish",
+   "commonsFile": "Roasted Lemon Herb Chicken.jpg"
   }
  },
  {
@@ -2294,6 +2332,8 @@
   ],
   "image": {
    "file": "greek-salad.jpg",
+   "source": "wikipedia-lead",
+   "match": "representative",
    "wikipedia": "Greek salad"
   }
  },
@@ -2418,6 +2458,8 @@
   ],
   "image": {
    "file": "bolognese.jpg",
+   "source": "wikipedia-lead",
+   "match": "representative",
    "wikipedia": "Bolognese sauce"
   }
  },
@@ -2530,6 +2572,8 @@
   ],
   "image": {
    "file": "torta-caprese.jpg",
+   "source": "wikipedia-lead",
+   "match": "representative",
    "wikipedia": "Torta caprese"
   }
  },
@@ -2648,6 +2692,8 @@
   ],
   "image": {
    "file": "antipasto.jpg",
+   "source": "wikipedia-lead",
+   "match": "representative",
    "wikipedia": "Antipasto"
   }
  },
@@ -2778,6 +2824,8 @@
   ],
   "image": {
    "file": "pot-roast.jpg",
+   "source": "wikipedia-lead",
+   "match": "representative",
    "wikipedia": "Pot roast"
   }
  },
@@ -2876,8 +2924,10 @@
    "vegan"
   ],
   "image": {
-   "file": "sgroppino.jpg",
-   "wikipedia": "Sgroppino"
+   "file": "gd-sgroppino.jpg",
+   "source": "commons-file",
+   "match": "dish",
+   "commonsFile": "Sgroppino.jpg"
   }
  }
 ]

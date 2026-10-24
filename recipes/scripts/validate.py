@@ -77,6 +77,7 @@ def main() -> int:
         all_recipes += recipes
 
     ids, slugs = Counter(), Counter()
+    dish_images = {}
     for r in all_recipes:
         where = f"{r.get('_file')}:{r.get('id', '?')}"
         body = {k: v for k, v in r.items() if k != "_file"}
@@ -154,6 +155,14 @@ def main() -> int:
         img = r.get("image", {})
         if img and not (IMAGES / img.get("file", "")).exists():
             warnings.append(f"{where}: image {img.get('file')} not downloaded yet")
+        if img.get("match") == "dish":
+            dish_images.setdefault(img.get("file"), []).append(r["id"])
+
+    # A photo claiming to show one specific dish must not be reused elsewhere.
+    for f, owners in dish_images.items():
+        if len(owners) > 1:
+            errors.append(f"image {f} is marked match=dish but shared by "
+                          f"{len(owners)} recipes: {', '.join(sorted(owners))}")
 
     for label, counter in (("id", ids), ("slug", slugs)):
         for value, count in counter.items():

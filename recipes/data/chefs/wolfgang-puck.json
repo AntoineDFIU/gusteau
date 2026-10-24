@@ -115,8 +115,10 @@
    "iconic"
   ],
   "image": {
-   "file": "smoked-salmon-pizza.jpg",
-   "wikipedia": "Pizza"
+   "file": "wp-smoked-salmon-pizza.jpg",
+   "source": "commons-file",
+   "match": "dish",
+   "commonsFile": "Smoked salmon and brie pizza.jpg"
   }
  },
  {
@@ -254,6 +256,8 @@
   ],
   "image": {
    "file": "chinese-chicken-salad.jpg",
+   "source": "wikipedia-lead",
+   "match": "representative",
    "wikipedia": "Chinese chicken salad"
   }
  },
@@ -372,8 +376,10 @@
    "iconic"
   ],
   "image": {
-   "file": "schnitzel.jpg",
-   "wikipedia": "Wiener schnitzel"
+   "file": "wp-wiener-schnitzel.jpg",
+   "source": "commons-file",
+   "match": "dish",
+   "commonsFile": "02023 1226 Wiener Schnitzel.jpg"
   }
  },
  {
@@ -495,8 +501,10 @@
    "freezer"
   ],
   "image": {
-   "file": "butternut-squash-soup.jpg",
-   "wikipedia": "Squash soup"
+   "file": "wp-butternut-squash-soup.jpg",
+   "source": "commons-file",
+   "match": "dish",
+   "commonsFile": "Butternut Squash Soup.jpg"
   }
  },
  {
@@ -596,6 +604,8 @@
   ],
   "image": {
    "file": "pizza-dough.jpg",
+   "source": "wikipedia-lead",
+   "match": "representative",
    "wikipedia": "Pizza dough"
   }
  },
@@ -709,8 +719,10 @@
    "easy"
   ],
   "image": {
-   "file": "roast-chicken.jpg",
-   "wikipedia": "Roast chicken"
+   "file": "wp-roast-chicken-herbs.jpg",
+   "source": "commons-file",
+   "match": "dish",
+   "commonsFile": "Roasted Chicken with herbes de Provence 01.jpg"
   }
  },
  {
@@ -818,8 +830,10 @@
    "freezer"
   ],
   "image": {
-   "file": "potato-leek-soup.jpg",
-   "wikipedia": "Leek soup"
+   "file": "wp-potato-leek-soup.jpg",
+   "source": "commons-file",
+   "match": "dish",
+   "commonsFile": "Potato Leek Soup (4257988225).jpg"
   }
  },
  {
@@ -955,6 +969,8 @@
   ],
   "image": {
    "file": "tuna-tartare.jpg",
+   "source": "wikipedia-lead",
+   "match": "representative",
    "wikipedia": "Sashimi"
   }
  },
@@ -1081,6 +1097,8 @@
   ],
   "image": {
    "file": "mushroom-risotto.jpg",
+   "source": "wikipedia-lead",
+   "match": "representative",
    "wikipedia": "Risotto"
   }
  },
@@ -1202,6 +1220,8 @@
   ],
   "image": {
    "file": "filet-mignon.jpg",
+   "source": "wikipedia-lead",
+   "match": "representative",
    "wikipedia": "Filet mignon"
   }
  },
@@ -1325,6 +1345,8 @@
   ],
   "image": {
    "file": "chicken-schnitzel-sandwich.jpg",
+   "source": "wikipedia-lead",
+   "match": "representative",
    "wikipedia": "Schnitzel"
   }
  },
@@ -1444,6 +1466,8 @@
   ],
   "image": {
    "file": "seared-scallops.jpg",
+   "source": "wikipedia-lead",
+   "match": "representative",
    "wikipedia": "Scallop"
   }
  },
@@ -1563,6 +1587,8 @@
   ],
   "image": {
    "file": "cauliflower-steak.jpg",
+   "source": "wikipedia-lead",
+   "match": "representative",
    "wikipedia": "Cauliflower"
   }
  },
@@ -1668,6 +1694,8 @@
   ],
   "image": {
    "file": "spatzle.jpg",
+   "source": "wikipedia-lead",
+   "match": "representative",
    "wikipedia": "Spätzle"
   }
  },
@@ -1793,8 +1821,10 @@
    "entertaining"
   ],
   "image": {
-   "file": "apple-strudel.jpg",
-   "wikipedia": "Apple strudel"
+   "file": "wp-apple-strudel.jpg",
+   "source": "commons-file",
+   "match": "dish",
+   "commonsFile": "Apple Strudel.png"
   }
  },
  {
@@ -1919,6 +1949,8 @@
   ],
   "image": {
    "file": "lobster-roll.jpg",
+   "source": "wikipedia-lead",
+   "match": "representative",
    "wikipedia": "Club sandwich"
   }
  },
@@ -2048,6 +2080,8 @@
   ],
   "image": {
    "file": "ravioli.jpg",
+   "source": "wikipedia-lead",
+   "match": "representative",
    "wikipedia": "Ravioli"
   }
  },
@@ -2172,8 +2206,10 @@
    "easy"
   ],
   "image": {
-   "file": "beet-salad.jpg",
-   "wikipedia": "Beetroot"
+   "file": "wp-beet-goat-cheese-salad.jpg",
+   "source": "commons-file",
+   "match": "dish",
+   "commonsFile": "Goat cheese and beet salad in Hungary.jpg"
   }
  },
  {
@@ -2300,8 +2336,10 @@
    "one-pot"
   ],
   "image": {
-   "file": "braised-short-ribs.jpg",
-   "wikipedia": "Short ribs"
+   "file": "wp-short-ribs-red-wine.jpg",
+   "source": "commons-file",
+   "match": "dish",
+   "commonsFile": "Braised Short Ribs low (18135093106).jpg"
   }
  },
  {
@@ -2417,6 +2455,8 @@
   ],
   "image": {
    "file": "baked-salmon.jpg",
+   "source": "wikipedia-lead",
+   "match": "representative",
    "wikipedia": "Salmon as food"
   }
  },
@@ -2541,8 +2581,10 @@
    "indulgent"
   ],
   "image": {
-   "file": "mac-and-cheese.jpg",
-   "wikipedia": "Macaroni and cheese"
+   "file": "wp-truffled-mac-cheese.jpg",
+   "source": "commons-file",
+   "match": "dish",
+   "commonsFile": "Truffled Mac & Cheese (28216521765).jpg"
   }
  },
  {
@@ -2658,6 +2700,8 @@
   ],
   "image": {
    "file": "gazpacho.jpg",
+   "source": "wikipedia-lead",
+   "match": "representative",
    "wikipedia": "Gazpacho"
   }
  },
@@ -2779,8 +2823,10 @@
    "entertaining"
   ],
   "image": {
-   "file": "sachertorte.jpg",
-   "wikipedia": "Sachertorte"
+   "file": "wp-sachertorte.jpg",
+   "source": "commons-file",
+   "match": "dish",
+   "commonsFile": "Sachertorte 2.jpg"
   }
  },
  {
@@ -2902,6 +2948,8 @@
   ],
   "image": {
    "file": "rack-of-lamb.jpg",
+   "source": "wikipedia-lead",
+   "match": "representative",
    "wikipedia": "Rack of lamb"
   }
  },
@@ -3014,6 +3062,8 @@
   ],
   "image": {
    "file": "creamed-spinach.jpg",
+   "source": "wikipedia-lead",
+   "match": "representative",
    "wikipedia": "Creamed spinach"
   }
  }

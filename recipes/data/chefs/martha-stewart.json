@@ -1,301 +1,2786 @@
 [
-{"id":"ch-ms-001","slug":"ms-perfect-roast-turkey","title":"Perfect Roast Turkey","genre":"american","subgenre":"comfort","chef":{"name":"Martha Stewart","slug":"martha-stewart"},"description":"A turkey roasted under butter-soaked cheesecloth, basted every half hour.","difficulty":"advanced","easeScore":3,"spiceScore":0,"popularity":9,"pantryScore":6,"servings":12,"prepMin":45,"cookMin":255,"totalMin":300,"equipment":["oven","stovetop"],
-"ingredients":["1 whole turkey (20 lb), thawed","1 1/2 cups butter, melted","1 bottle (750 ml) dry white wine","2 tbsp kosher salt","1 tbsp black pepper","2 yellow onions, quartered","4 carrots, cut in chunks","4 celery stalks, cut in chunks","1 bunch fresh thyme","1 bunch fresh sage","1 bunch fresh rosemary","1 yard cheesecloth","4 cups chicken broth"],
-"ingredientKeys":["whole-turkey","butter","white-wine","kosher-salt","black-pepper","yellow-onion","carrot","celery","fresh-thyme","fresh-sage","fresh-rosemary","cheesecloth","chicken-broth"],
-"specialty":["whole-turkey","white-wine","fresh-thyme","fresh-sage","fresh-rosemary","cheesecloth"],
-"steps":["Heat the oven to 450F. Pat the turkey bone dry and season the cavity heavily, then fill it with a quarter of the onions, carrots, celery and herbs.","Scatter the rest of the vegetables and herbs in a large roasting pan, add the broth, and set the turkey breast-side up on a rack over them.","Soak the cheesecloth in the melted butter mixed with 2 cups of the wine until completely saturated, then drape it over the breast and legs in a double layer. The soaked cloth is the whole method: it bastes continuously and shields the breast while the legs catch up.","Roast 30 minutes at 450F, then lower to 350F and roast about 3 1/2 hours more, basting the cheesecloth with the butter-wine mixture every 30 minutes.","Remove the cheesecloth for the last 45 minutes so the skin browns. Cook until the thigh reads 170F and the breast 160F.","Rest at least 30 minutes before carving. The breast coasts up to a safe 165F as it rests, and the juices redistribute."],
-"diet":{"vegetarian":false,"vegan":false,"pescatarian":false,"glutenFree":true,"glutenFreeAdaptable":false,"dairyFree":false,"nutFree":true,"eggFree":true},
-"allergens":["dairy","sulfites"],
-"gmo":{"risk":"moderate","sources":["grain-fed-meat","grain-fed-dairy"]},
-"nutrition":{"calories":712,"proteinG":72,"carbsG":5,"fiberG":1,"sugarG":2,"fatG":44,"satFatG":20,"sodiumMg":1280,"cholesterolMg":286},
-"tags":["thanksgiving","holiday","project","family","gluten-free","high-protein","technique","entertaining"],
-"image":{"file":"roast-turkey.jpg","wikipedia":"Roast turkey"}},
-
-{"id":"ch-ms-002","slug":"ms-chocolate-chip-cookies","title":"Soft and Chewy Chocolate Chip Cookies","genre":"american","subgenre":"desserts","chef":{"name":"Martha Stewart","slug":"martha-stewart"},"description":"Chewy cookies with crisp edges from creaming the butter properly.","difficulty":"beginner","easeScore":9,"spiceScore":0,"popularity":10,"pantryScore":10,"servings":36,"prepMin":20,"cookMin":45,"totalMin":65,"equipment":["oven"],
-"ingredients":["2 1/4 cups all-purpose flour","1 tsp baking soda","1 tsp salt","1 cup butter, softened","3/4 cup granulated sugar","3/4 cup packed light brown sugar","2 tsp vanilla extract","2 eggs","2 cups semisweet chocolate chips","1 tsp flaky sea salt"],
-"ingredientKeys":["flour","baking-soda","salt","butter","sugar","brown-sugar","vanilla-extract","egg","chocolate-chips","flaky-salt"],
-"specialty":["flaky-salt"],
-"steps":["Heat the oven to 350F. Whisk the flour, baking soda and salt together.","Cream the softened butter with both sugars on medium-high for a full 3 minutes, until noticeably pale and fluffy. This step aerates the dough and is what separates thick, chewy cookies from flat greasy ones.","Beat in the vanilla and then the eggs, one at a time, scraping the bowl between additions.","Add the flour mixture on low speed and mix only until the flour disappears. Fold in the chocolate chips by hand.","Chill the dough 30 minutes. Cold dough spreads less and tastes deeper.","Scoop rounded tablespoons onto lined sheets, well apart, and bake 10-12 minutes until the edges are set but the centers still look underdone. Sprinkle with flaky salt and cool on the pan 5 minutes - they finish baking there."],
-"diet":{"vegetarian":true,"vegan":false,"pescatarian":true,"glutenFree":false,"glutenFreeAdaptable":true,"dairyFree":false,"nutFree":true,"eggFree":false},
-"allergens":["gluten","dairy","egg","soy"],
-"gmo":{"risk":"moderate","sources":["sugar-beet","soy","grain-fed-dairy"]},
-"nutrition":{"calories":168,"proteinG":2,"carbsG":22,"fiberG":1,"sugarG":14,"fatG":9,"satFatG":5,"sodiumMg":140,"cholesterolMg":26},
-"tags":["dessert","baking","vegetarian","kid-friendly","make-ahead","classic","budget","party"],
-"image":{"file":"chocolate-chip-cookie.jpg","wikipedia":"Chocolate chip cookie"}},
-
-{"id":"ch-ms-003","slug":"ms-macaroni-and-cheese","title":"Creamy Macaroni and Cheese","genre":"american","subgenre":"comfort","chef":{"name":"Martha Stewart","slug":"martha-stewart"},"description":"Sharp cheddar and Gruyere sauce under a buttered breadcrumb crust.","difficulty":"beginner","easeScore":8,"spiceScore":1,"popularity":10,"pantryScore":8,"servings":8,"prepMin":25,"cookMin":35,"totalMin":60,"equipment":["stovetop","oven"],
-"ingredients":["1 lb elbow macaroni","8 tbsp butter","6 tbsp all-purpose flour","5 1/2 cups whole milk, warmed","1/4 tsp ground nutmeg","1/4 tsp cayenne pepper","2 tsp salt","1 tsp black pepper","4 1/2 cups grated sharp white cheddar","2 cups grated Gruyere","3 cups fresh breadcrumbs"],
-"ingredientKeys":["elbow-macaroni","butter","flour","whole-milk","nutmeg","cayenne","salt","black-pepper","cheddar","gruyere","breadcrumbs"],
-"specialty":["gruyere"],
-"steps":["Heat the oven to 375F. Boil the macaroni 2 minutes short of the package time, since it finishes in the oven, then drain.","Melt 6 tbsp butter in a large pot, whisk in the flour and cook 1 minute - it should bubble but stay pale.","Whisk in the warm milk in a slow stream and cook 8-12 minutes, whisking, until the sauce is thick enough to coat the back of a spoon. Warm milk is what keeps it lump-free.","Take the pot off the heat before stirring in the nutmeg, cayenne, salt, pepper, 3 cups of the cheddar and 1 1/2 cups of the Gruyere. Cheese melted over direct heat turns grainy.","Fold in the pasta and pour into a buttered 3-quart dish.","Toss the breadcrumbs with the remaining melted butter and cheeses, scatter over the top, and bake 30 minutes until browned and bubbling. Rest 10 minutes."],
-"diet":{"vegetarian":true,"vegan":false,"pescatarian":true,"glutenFree":false,"glutenFreeAdaptable":true,"dairyFree":false,"nutFree":true,"eggFree":true},
-"allergens":["gluten","dairy"],
-"gmo":{"risk":"moderate","sources":["grain-fed-dairy","processed-bread"]},
-"nutrition":{"calories":982,"proteinG":44,"carbsG":72,"fiberG":3,"sugarG":12,"fatG":56,"satFatG":33,"sodiumMg":1280,"cholesterolMg":168},
-"tags":["comfort","family","vegetarian","holiday","make-ahead","kid-friendly","classic","crowd-pleaser"],
-"image":{"file":"macaroni-and-cheese.jpg","wikipedia":"Macaroni and cheese"}},
-
-{"id":"ch-ms-004","slug":"ms-pate-brisee","title":"Pate Brisee Pie Crust","genre":"french","subgenre":"baking","chef":{"name":"Martha Stewart","slug":"martha-stewart"},"description":"The all-butter pastry that underpins every pie and tart.","difficulty":"intermediate","easeScore":6,"spiceScore":0,"popularity":8,"pantryScore":10,"servings":8,"prepMin":20,"cookMin":60,"totalMin":80,"equipment":["food-processor"],
-"ingredients":["2 1/2 cups all-purpose flour","1 tsp salt","1 tsp sugar","1 cup cold butter, cut in small pieces","1/4 to 1/2 cup ice water"],
-"ingredientKeys":["flour","salt","sugar","butter","ice-water"],
-"specialty":[],
-"steps":["Pulse the flour, salt and sugar in a food processor to combine.","Add the cold butter and pulse 10 times, until the largest pieces are the size of peas. Those visible butter pieces turn to steam in the oven and are exactly what makes the pastry flaky - do not blend them in.","With the machine running, add ice water in a slow dribble, stopping the moment the dough holds together when you squeeze a handful. It should not form a ball in the bowl.","Turn it out, divide in two, and flatten each half into a disk. Wrap and refrigerate at least 1 hour.","Roll from the center outward on a lightly floured surface, turning the dough a quarter turn between rolls to keep it round and even.","If the dough softens or the butter starts to smear at any point, stop and chill it. Warm dough is the main cause of tough, shrunken crusts."],
-"diet":{"vegetarian":true,"vegan":false,"pescatarian":true,"glutenFree":false,"glutenFreeAdaptable":false,"dairyFree":false,"nutFree":true,"eggFree":true},
-"allergens":["gluten","dairy"],
-"gmo":{"risk":"low","sources":["grain-fed-dairy","sugar-beet"]},
-"nutrition":{"calories":342,"proteinG":4,"carbsG":30,"fiberG":1,"sugarG":1,"fatG":23,"satFatG":15,"sodiumMg":320,"cholesterolMg":62},
-"tags":["baking","technique","vegetarian","make-ahead","classic","french","foundation"],
-"image":{"file":"pie-crust.jpg","wikipedia":"Shortcrust pastry"}},
-
-{"id":"ch-ms-005","slug":"ms-apple-pie","title":"Old-Fashioned Apple Pie","genre":"american","subgenre":"desserts","chef":{"name":"Martha Stewart","slug":"martha-stewart"},"description":"A double-crust pie with two apple varieties and a lattice top.","difficulty":"advanced","easeScore":4,"spiceScore":0,"popularity":10,"pantryScore":8,"servings":8,"prepMin":50,"cookMin":190,"totalMin":240,"equipment":["oven"],
-"ingredients":["2 disks pate brisee dough, chilled","2 lb Granny Smith apples, peeled and sliced","1 1/2 lb Honeycrisp apples, peeled and sliced","3/4 cup sugar","1/4 cup all-purpose flour","2 tbsp lemon juice","1 1/2 tsp ground cinnamon","1/4 tsp ground nutmeg","1/4 tsp ground allspice","1/2 tsp salt","2 tbsp butter, cut in pieces","1 egg, beaten","2 tbsp coarse sugar"],
-"ingredientKeys":["pie-dough","granny-smith-apple","honeycrisp-apple","sugar","flour","lemon-juice","cinnamon","nutmeg","allspice","salt","butter","egg","coarse-sugar"],
-"specialty":["pie-dough","granny-smith-apple","honeycrisp-apple","allspice","coarse-sugar"],
-"steps":["Use two kinds of apple: tart firm ones that hold their shape and sweeter ones that break down slightly. A single variety gives you either mush or crunch, never both.","Toss the slices with the sugar, flour, lemon juice, spices and salt and let them macerate 30 minutes, then drain off half the liquid that collects. This is the step that prevents a soupy pie.","Roll one disk and line a 9-inch pie plate, leaving an overhang. Chill it while you roll the second disk and cut it into strips.","Mound the filling high in the shell - the apples shrink considerably - and dot with the butter.","Weave the strips into a lattice over the top, then trim and crimp the edges firmly against the rim. Brush with the beaten egg and sprinkle with coarse sugar.","Bake at 425F for 20 minutes, then at 375F for 55-65 minutes, until the juices bubble thickly through the lattice. Cool at least 3 hours - cutting it warm means it runs."],
-"diet":{"vegetarian":true,"vegan":false,"pescatarian":true,"glutenFree":false,"glutenFreeAdaptable":false,"dairyFree":false,"nutFree":true,"eggFree":false},
-"allergens":["gluten","dairy","egg"],
-"gmo":{"risk":"moderate","sources":["sugar-beet","grain-fed-dairy"]},
-"nutrition":{"calories":586,"proteinG":5,"carbsG":82,"fiberG":5,"sugarG":48,"fatG":26,"satFatG":16,"sodiumMg":380,"cholesterolMg":88},
-"tags":["dessert","thanksgiving","holiday","project","baking","classic","vegetarian","fall"],
-"image":{"file":"apple-pie.jpg","wikipedia":"Apple pie"}},
-
-{"id":"ch-ms-006","slug":"ms-lemon-meringue-pie","title":"Lemon Meringue Pie","genre":"american","subgenre":"desserts","chef":{"name":"Martha Stewart","slug":"martha-stewart"},"description":"Tart lemon curd under a tall Swiss meringue, browned in the oven.","difficulty":"advanced","easeScore":4,"spiceScore":0,"popularity":8,"pantryScore":7,"servings":8,"prepMin":45,"cookMin":200,"totalMin":245,"equipment":["oven","stovetop"],
-"ingredients":["1 disk pate brisee dough, chilled","1 1/2 cups sugar","1/3 cup cornstarch","1/4 tsp salt","1 1/2 cups water","5 egg yolks","1/2 cup lemon juice","2 tbsp lemon zest","4 tbsp butter","5 egg whites","1 cup sugar, for the meringue","1/4 tsp cream of tartar","1 tsp vanilla extract"],
-"ingredientKeys":["pie-dough","sugar","cornstarch","salt","water","egg-yolk","lemon-juice","lemon-zest","butter","egg-white","sugar","cream-of-tartar","vanilla-extract"],
-"specialty":["pie-dough","cornstarch","cream-of-tartar"],
-"steps":["Roll the dough into a 9-inch pie plate, crimp the edge, chill 30 minutes, then line with parchment and pie weights and blind-bake at 375F for 25 minutes until golden and dry. A fully baked shell is the only defense against a soggy bottom under wet curd.","Whisk the 1 1/2 cups sugar, cornstarch and salt in a saucepan, then whisk in the water. Cook over medium heat, whisking constantly, until it thickens and boils.","Temper the yolks: whisk a cup of the hot mixture into them in a thin stream, then return it all to the pan and cook 2 minutes more. Rushing this scrambles the yolks.","Take it off the heat, stir in the lemon juice, zest and butter, then pour the curd into the warm shell.","Make the meringue: beat the whites with the cream of tartar to soft peaks, then add the 1 cup sugar a spoonful at a time and beat to stiff, glossy peaks that hold their shape.","Spread the meringue over the hot filling, sealing it to the crust all the way around so it cannot shrink, and swirl peaks with a spatula. Bake at 375F for 12-15 minutes until browned. Cool 3 hours before slicing."],
-"diet":{"vegetarian":true,"vegan":false,"pescatarian":true,"glutenFree":false,"glutenFreeAdaptable":false,"dairyFree":false,"nutFree":true,"eggFree":false},
-"allergens":["gluten","dairy","egg"],
-"gmo":{"risk":"moderate","sources":["sugar-beet","cornstarch","grain-fed-dairy"]},
-"nutrition":{"calories":512,"proteinG":6,"carbsG":82,"fiberG":1,"sugarG":62,"fatG":18,"satFatG":10,"sodiumMg":220,"cholesterolMg":158},
-"tags":["dessert","project","baking","holiday","classic","technique","vegetarian","spring"],
-"image":{"file":"lemon-meringue-pie.jpg","wikipedia":"Lemon meringue pie"}},
-
-{"id":"ch-ms-007","slug":"ms-pound-cake","title":"Classic Pound Cake","genre":"american","subgenre":"desserts","chef":{"name":"Martha Stewart","slug":"martha-stewart"},"description":"A dense, buttery loaf leavened almost entirely by creaming.","difficulty":"beginner","easeScore":8,"spiceScore":0,"popularity":8,"pantryScore":10,"servings":10,"prepMin":20,"cookMin":75,"totalMin":95,"equipment":["oven"],
-"ingredients":["1 cup butter, softened","1 3/4 cups sugar","4 eggs, at room temperature","2 tsp vanilla extract","1 tbsp lemon zest","2 cups all-purpose flour","1 tsp baking powder","1/2 tsp salt","1/2 cup whole milk, at room temperature","2 tbsp powdered sugar"],
-"ingredientKeys":["butter","sugar","egg","vanilla-extract","lemon-zest","flour","baking-powder","salt","whole-milk","powdered-sugar"],
-"specialty":[],
-"steps":["Heat the oven to 325F and butter and flour a 9x5 loaf pan. Have the butter, eggs and milk all at room temperature - cold ingredients will cause the batter to split.","Cream the butter and sugar on medium-high for a full 5 minutes, scraping down twice, until very pale and fluffy. This is the only real leavening in a pound cake, so the time matters.","Beat in the eggs one at a time, waiting until each is fully incorporated before adding the next. Then add the vanilla and lemon zest.","Whisk the flour, baking powder and salt together, then add it alternately with the milk in three additions, mixing on low just until smooth.","Pour into the pan and smooth the top. Bake 65-75 minutes until a skewer in the center comes out clean and the top has cracked.","Cool in the pan 15 minutes, then turn out onto a rack. Dust with powdered sugar once completely cool."],
-"diet":{"vegetarian":true,"vegan":false,"pescatarian":true,"glutenFree":false,"glutenFreeAdaptable":true,"dairyFree":false,"nutFree":true,"eggFree":false},
-"allergens":["gluten","dairy","egg"],
-"gmo":{"risk":"moderate","sources":["sugar-beet","grain-fed-dairy"]},
-"nutrition":{"calories":448,"proteinG":6,"carbsG":58,"fiberG":1,"sugarG":38,"fatG":22,"satFatG":13,"sodiumMg":220,"cholesterolMg":128},
-"tags":["dessert","baking","vegetarian","make-ahead","classic","easy","family"],
-"image":{"file":"pound-cake.jpg","wikipedia":"Pound cake"}},
-
-{"id":"ch-ms-008","slug":"ms-fudgy-brownies","title":"Fudgy Brownies","genre":"american","subgenre":"desserts","chef":{"name":"Martha Stewart","slug":"martha-stewart"},"description":"One-pan brownies with a shiny crackled top and a dense middle.","difficulty":"beginner","easeScore":9,"spiceScore":0,"popularity":10,"pantryScore":9,"servings":16,"prepMin":15,"cookMin":35,"totalMin":50,"equipment":["oven","stovetop"],
-"ingredients":["10 tbsp butter","8 oz bittersweet chocolate, chopped","1 1/4 cups sugar","3 eggs, at room temperature","1 tsp vanilla extract","3/4 cup all-purpose flour","1/3 cup cocoa powder","1 tsp salt"],
-"ingredientKeys":["butter","bittersweet-chocolate","sugar","egg","vanilla-extract","flour","cocoa-powder","salt"],
-"specialty":["bittersweet-chocolate","cocoa-powder"],
-"steps":["Heat the oven to 350F and line an 8-inch square pan with parchment, leaving an overhang so you can lift the brownies out whole.","Melt the butter and chocolate together over low heat, then let it cool 5 minutes. Pouring hot chocolate onto eggs scrambles them.","Whisk in the sugar hard for a full minute, then the eggs one at a time and the vanilla. That vigorous whisking is what creates the thin shiny crust on top.","Fold in the flour, cocoa and salt with a spatula, stopping the instant it comes together. Overmixing develops gluten and makes them cakey.","Spread in the pan and bake 30-35 minutes. A toothpick should come out with moist crumbs clinging to it - clean means overbaked.","Cool completely in the pan before lifting out and cutting with a hot, dry knife."],
-"diet":{"vegetarian":true,"vegan":false,"pescatarian":true,"glutenFree":false,"glutenFreeAdaptable":true,"dairyFree":false,"nutFree":true,"eggFree":false},
-"allergens":["gluten","dairy","egg","soy"],
-"gmo":{"risk":"moderate","sources":["sugar-beet","soy","grain-fed-dairy"]},
-"nutrition":{"calories":286,"proteinG":4,"carbsG":32,"fiberG":2,"sugarG":24,"fatG":17,"satFatG":10,"sodiumMg":180,"cholesterolMg":58},
-"tags":["dessert","baking","quick","vegetarian","kid-friendly","party","budget","easy"],
-"image":{"file":"brownie.jpg","wikipedia":"Chocolate brownie"}},
-
-{"id":"ch-ms-009","slug":"ms-popovers","title":"Popovers","genre":"american","subgenre":"breads","chef":{"name":"Martha Stewart","slug":"martha-stewart"},"description":"Hollow, dramatic rolls leavened entirely by steam.","difficulty":"intermediate","easeScore":6,"spiceScore":0,"popularity":7,"pantryScore":10,"servings":6,"prepMin":15,"cookMin":90,"totalMin":105,"equipment":["oven"],
-"ingredients":["1 1/2 cups all-purpose flour","1 tsp salt","3 eggs, at room temperature","1 1/2 cups whole milk, at room temperature","3 tbsp butter, melted","2 tbsp butter, for the pan"],
-"ingredientKeys":["flour","salt","egg","whole-milk","butter","butter"],
-"specialty":[],
-"steps":["Whisk the flour, salt, eggs, milk and melted butter until completely smooth, then let the batter rest at room temperature for 1 hour. Rested room-temperature batter rises dramatically higher than cold batter straight from the bowl.","Heat the oven to 450F with the popover or muffin pan inside for 10 minutes.","Take the hot pan out, brush each cup generously with butter, and fill them halfway with batter. The hot, greased pan is what forces the immediate rise.","Bake 20 minutes at 450F without opening the oven door once. Every peek lets out the steam that is doing all the work.","Lower the heat to 350F and bake 15-20 minutes more, until deep golden brown and dry to the touch.","Pierce each popover with a knife tip to release the steam, then serve immediately. They deflate within minutes of leaving the oven."],
-"diet":{"vegetarian":true,"vegan":false,"pescatarian":true,"glutenFree":false,"glutenFreeAdaptable":false,"dairyFree":false,"nutFree":true,"eggFree":false},
-"allergens":["gluten","dairy","egg"],
-"gmo":{"risk":"low","sources":["grain-fed-dairy"]},
-"nutrition":{"calories":218,"proteinG":8,"carbsG":26,"fiberG":1,"sugarG":3,"fatG":9,"satFatG":5,"sodiumMg":420,"cholesterolMg":112},
-"tags":["bread","baking","technique","vegetarian","holiday","brunch","side","classic"],
-"image":{"file":"popover.jpg","wikipedia":"Popover"}},
-
-{"id":"ch-ms-010","slug":"ms-roast-chicken","title":"Lemon and Herb Roast Chicken","genre":"american","subgenre":"comfort","chef":{"name":"Martha Stewart","slug":"martha-stewart"},"description":"A whole chicken with herb butter under the skin, roasted hot.","difficulty":"beginner","easeScore":9,"spiceScore":0,"popularity":10,"pantryScore":8,"servings":4,"prepMin":20,"cookMin":80,"totalMin":100,"equipment":["oven"],
-"ingredients":["1 whole chicken (4 1/2 lb)","6 tbsp butter, softened","2 tbsp chopped fresh thyme","2 tbsp chopped fresh parsley","1 tbsp chopped fresh rosemary","1 tbsp lemon zest","4 cloves garlic, minced","1 tbsp kosher salt","2 tsp black pepper","1 lemon, halved","1 yellow onion, quartered","2 cups chicken broth"],
-"ingredientKeys":["whole-chicken","butter","fresh-thyme","parsley","fresh-rosemary","lemon-zest","garlic","kosher-salt","black-pepper","lemon","yellow-onion","chicken-broth"],
-"specialty":["whole-chicken","fresh-thyme","fresh-rosemary"],
-"steps":["Heat the oven to 425F. Pat the chicken completely dry, inside and out.","Mash the butter with the herbs, lemon zest, garlic, half the salt and the pepper.","Slide your fingers under the breast skin to loosen it, then push two thirds of the herb butter directly onto the meat. Butter under the skin flavors the meat itself rather than just the surface, and it bastes the breast as it melts.","Rub the rest over the outside and season the skin with the remaining salt. Put the lemon halves and onion in the cavity and tie the legs.","Set the chicken on a rack in a roasting pan and pour the broth into the pan below.","Roast 70-80 minutes, until the thigh reads 175F and the juices run clear. Rest 15 minutes before carving, and serve with the pan juices."],
-"diet":{"vegetarian":false,"vegan":false,"pescatarian":false,"glutenFree":true,"glutenFreeAdaptable":false,"dairyFree":false,"nutFree":true,"eggFree":true},
-"allergens":["dairy"],
-"gmo":{"risk":"low","sources":["grain-fed-meat","grain-fed-dairy"]},
-"nutrition":{"calories":682,"proteinG":58,"carbsG":5,"fiberG":1,"sugarG":2,"fatG":48,"satFatG":19,"sodiumMg":1480,"cholesterolMg":228},
-"tags":["sunday","family","gluten-free","high-protein","classic","entertaining","easy"],
-"image":{"file":"roast-chicken.jpg","wikipedia":"Roast chicken"}},
-
-{"id":"ch-ms-011","slug":"ms-meatloaf","title":"Classic Meatloaf","genre":"american","subgenre":"comfort","chef":{"name":"Martha Stewart","slug":"martha-stewart"},"description":"A three-meat loaf with a ketchup glaze and a soft, moist crumb.","difficulty":"beginner","easeScore":9,"spiceScore":1,"popularity":9,"pantryScore":9,"servings":8,"prepMin":20,"cookMin":75,"totalMin":95,"equipment":["oven","stovetop"],
-"ingredients":["1 lb ground beef (85/15)","1/2 lb ground pork","1/2 lb ground veal","1 1/2 cups fresh breadcrumbs","3/4 cup whole milk","2 eggs","2 tbsp butter","1 yellow onion, finely diced","2 celery stalks, finely diced","4 cloves garlic, minced","2 tbsp Worcestershire sauce","1/3 cup chopped parsley","2 tsp salt","1 tsp black pepper","3/4 cup ketchup","2 tbsp brown sugar","1 tbsp cider vinegar"],
-"ingredientKeys":["ground-beef","ground-pork","ground-veal","breadcrumbs","whole-milk","egg","butter","yellow-onion","celery","garlic","worcestershire","parsley","salt","black-pepper","ketchup","brown-sugar","apple-cider-vinegar"],
-"specialty":["ground-pork","ground-veal"],
-"steps":["Soak the breadcrumbs in the milk for 10 minutes. This panade is the single reason good meatloaf is moist rather than dense.","Cook the onion and celery in the butter 8 minutes until soft, add the garlic for 1 minute, then cool. Raw onion in the mix stays crunchy and releases water.","Mix the three meats with the soaked breadcrumbs, eggs, cooked vegetables, Worcestershire, parsley, salt and pepper using your hands, stopping the moment it comes together.","Shape into a free-form loaf on a foil-lined sheet pan rather than packing it into a loaf pan - more surface area means more browning.","Stir the ketchup, brown sugar and vinegar together and brush a third over the loaf.","Bake at 375F for 50 minutes, glaze again, then bake 20-25 minutes more to 160F internal. Rest 15 minutes before slicing or it falls apart."],
-"diet":{"vegetarian":false,"vegan":false,"pescatarian":false,"glutenFree":false,"glutenFreeAdaptable":true,"dairyFree":false,"nutFree":true,"eggFree":false},
-"allergens":["gluten","dairy","egg"],
-"gmo":{"risk":"high","sources":["grain-fed-meat","processed-bread","corn-syrup","grain-fed-dairy"]},
-"nutrition":{"calories":512,"proteinG":34,"carbsG":32,"fiberG":2,"sugarG":16,"fatG":28,"satFatG":11,"sodiumMg":1280,"cholesterolMg":138},
-"tags":["comfort","family","classic","make-ahead","leftovers","budget","kid-friendly"],
-"image":{"file":"meatloaf.jpg","wikipedia":"Meatloaf"}},
-
-{"id":"ch-ms-012","slug":"ms-mashed-potatoes","title":"Perfect Mashed Potatoes","genre":"american","subgenre":"sides","chef":{"name":"Martha Stewart","slug":"martha-stewart"},"description":"Riced potatoes folded with warm cream and a great deal of butter.","difficulty":"beginner","easeScore":9,"spiceScore":0,"popularity":10,"pantryScore":10,"servings":8,"prepMin":15,"cookMin":30,"totalMin":45,"equipment":["stovetop"],
-"ingredients":["4 lb Yukon gold potatoes, peeled and quartered","2 tbsp kosher salt, for the water","1 1/2 cups heavy cream, warmed","12 tbsp butter, cut in pieces","2 tsp salt","1 tsp white pepper","3 tbsp chopped chives"],
-"ingredientKeys":["yukon-potato","kosher-salt","heavy-cream","butter","salt","white-pepper","chives"],
-"specialty":["white-pepper"],
-"steps":["Put the potatoes in cold, heavily salted water and bring to a boil. Starting them cold cooks them evenly all the way through instead of turning the outsides to mush.","Simmer 20-25 minutes until a knife meets no resistance at all. Undercooked potatoes will not mash smooth no matter what you do.","Drain and return them to the dry pot over low heat for a full minute, shaking, to drive off the surface moisture.","Pass them through a ricer or food mill while hot. Never use a blender or food processor - it overworks the starch into glue.","Fold in the butter a few pieces at a time, then the warm cream in stages. Cold cream makes gluey, cool mash.","Season with the salt and white pepper and finish with chives. Serve immediately, or hold over a pan of barely simmering water."],
-"diet":{"vegetarian":true,"vegan":false,"pescatarian":true,"glutenFree":true,"glutenFreeAdaptable":false,"dairyFree":false,"nutFree":true,"eggFree":true},
-"allergens":["dairy"],
-"gmo":{"risk":"low","sources":["grain-fed-dairy"]},
-"nutrition":{"calories":512,"proteinG":7,"carbsG":44,"fiberG":4,"sugarG":4,"fatG":34,"satFatG":21,"sodiumMg":780,"cholesterolMg":98},
-"tags":["side","vegetarian","gluten-free","thanksgiving","holiday","comfort","classic","family"],
-"image":{"file":"mashed-potato.jpg","wikipedia":"Mashed potato"}},
-
-{"id":"ch-ms-013","slug":"ms-cranberry-sauce","title":"Cranberry Sauce","genre":"american","subgenre":"sides","chef":{"name":"Martha Stewart","slug":"martha-stewart"},"description":"Fresh cranberries cooked with orange zest until they burst. Twelve minutes.","difficulty":"beginner","easeScore":10,"spiceScore":0,"popularity":9,"pantryScore":8,"servings":10,"prepMin":5,"cookMin":135,"totalMin":140,"equipment":["stovetop"],
-"ingredients":["24 oz fresh cranberries","1 1/4 cups sugar","3/4 cup water","1/4 cup orange juice","1 tbsp orange zest","1 cinnamon stick","1/4 tsp salt"],
-"ingredientKeys":["cranberries","sugar","water","orange-juice","orange-zest","cinnamon-stick","salt"],
-"specialty":["cranberries","cinnamon-stick"],
-"steps":["Combine the sugar, water, orange juice, zest, cinnamon stick and salt in a saucepan and bring to a boil, stirring until the sugar dissolves.","Add the cranberries and return to a simmer.","Cook 10-12 minutes, stirring occasionally, until most of the berries have burst and the liquid is syrupy. Leave some berries whole for texture - cooking until it is uniformly smooth gives you jam, not sauce.","Take it off the heat while it still looks slightly loose. Cranberries are full of natural pectin and the sauce sets considerably as it cools.","Discard the cinnamon stick and cool to room temperature, then refrigerate at least 2 hours.","It keeps two weeks refrigerated and the flavor improves after a day."],
-"diet":{"vegetarian":true,"vegan":true,"pescatarian":true,"glutenFree":true,"glutenFreeAdaptable":false,"dairyFree":true,"nutFree":true,"eggFree":true},
-"allergens":[],
-"gmo":{"risk":"moderate","sources":["sugar-beet"]},
-"nutrition":{"calories":128,"proteinG":0,"carbsG":32,"fiberG":3,"sugarG":27,"fatG":0,"satFatG":0,"sodiumMg":62,"cholesterolMg":0},
-"tags":["side","thanksgiving","holiday","vegan","vegetarian","gluten-free","dairy-free","make-ahead","easy","quick"],
-"image":{"file":"cranberry-sauce.jpg","wikipedia":"Cranberry sauce"}},
-
-{"id":"ch-ms-014","slug":"ms-herb-stuffing","title":"Classic Herb Stuffing","genre":"american","subgenre":"sides","chef":{"name":"Martha Stewart","slug":"martha-stewart"},"description":"Dried bread cubes with sausage, celery and sage, baked crisp on top.","difficulty":"beginner","easeScore":8,"spiceScore":1,"popularity":9,"pantryScore":8,"servings":10,"prepMin":25,"cookMin":60,"totalMin":85,"equipment":["oven","stovetop"],
-"ingredients":["1 1/2 lb country bread, cut in cubes and dried","1 lb pork sausage, casings removed","8 tbsp butter","2 yellow onions, diced","4 celery stalks, diced","6 cloves garlic, minced","3 tbsp chopped fresh sage","2 tbsp chopped fresh thyme","1/2 cup chopped parsley","2 tsp salt","1 1/2 tsp black pepper","4 cups chicken broth","3 eggs, beaten"],
-"ingredientKeys":["country-bread","pork-sausage","butter","yellow-onion","celery","garlic","fresh-sage","fresh-thyme","parsley","salt","black-pepper","chicken-broth","egg"],
-"specialty":["country-bread","pork-sausage","fresh-sage","fresh-thyme"],
-"steps":["Dry the bread cubes on sheet pans in a 250F oven for 45 minutes, or leave them out overnight. Fresh bread turns to paste - the cubes must be genuinely dry and hard.","Brown the sausage, breaking it up, then lift it out leaving the fat.","Add the butter, onions and celery and cook 10 minutes until soft, then the garlic and herbs for 2 minutes.","Combine the bread, sausage and vegetables in a large bowl. Whisk the broth with the eggs and pour it over, tossing until evenly moistened. The eggs bind the stuffing so it holds together when served.","Let it sit 10 minutes so the bread absorbs the liquid, then add more broth if any cubes are still dry.","Pack into a buttered 9x13 dish, cover with foil and bake at 375F for 35 minutes, then uncover for 20-25 minutes until the top is crisp and browned."],
-"diet":{"vegetarian":false,"vegan":false,"pescatarian":false,"glutenFree":false,"glutenFreeAdaptable":false,"dairyFree":false,"nutFree":true,"eggFree":false},
-"allergens":["gluten","dairy","egg"],
-"gmo":{"risk":"moderate","sources":["grain-fed-meat","processed-bread","grain-fed-dairy"]},
-"nutrition":{"calories":512,"proteinG":20,"carbsG":42,"fiberG":3,"sugarG":5,"fatG":30,"satFatG":14,"sodiumMg":1480,"cholesterolMg":112},
-"tags":["side","thanksgiving","holiday","family","make-ahead","comfort","classic","crowd-pleaser"],
-"image":{"file":"stuffing.jpg","wikipedia":"Stuffing"}},
-
-{"id":"ch-ms-015","slug":"ms-pumpkin-pie","title":"Pumpkin Pie","genre":"american","subgenre":"desserts","chef":{"name":"Martha Stewart","slug":"martha-stewart"},"description":"Spiced pumpkin custard in a blind-baked all-butter shell.","difficulty":"beginner","easeScore":8,"spiceScore":1,"popularity":9,"pantryScore":8,"servings":8,"prepMin":25,"cookMin":80,"totalMin":105,"equipment":["oven"],
-"ingredients":["1 disk pate brisee dough, chilled","1 can (15 oz) pumpkin puree","3/4 cup packed brown sugar","3 eggs","1 cup heavy cream","1/4 cup whole milk","2 tsp ground cinnamon","1 tsp ground ginger","1/2 tsp ground nutmeg","1/4 tsp ground cloves","1 tsp salt","1 tbsp vanilla extract","1 1/2 cups whipped cream"],
-"ingredientKeys":["pie-dough","pumpkin-puree","brown-sugar","egg","heavy-cream","whole-milk","cinnamon","ground-ginger","nutmeg","ground-cloves","salt","vanilla-extract","whipped-cream"],
-"specialty":["pie-dough","pumpkin-puree","ground-cloves"],
-"steps":["Roll the dough into a 9-inch pie plate, crimp the edge, and chill 30 minutes. Line with parchment and weights and blind-bake at 375F for 20 minutes, then remove the weights and bake 5 minutes more. Blind-baking is what stops the crust going soggy under the wet custard.","Whisk the pumpkin, brown sugar, eggs, cream, milk, spices, salt and vanilla until completely uniform, but do not beat air into it.","Pour the filling into the warm shell.","Bake at 375F for 45-55 minutes. It is ready when the outer two inches are set and the center two inches still wobble as one piece.","Resist baking until the middle is firm - that is how you get a cracked, grainy pie. The residual heat finishes it.","Cool completely at room temperature, then chill 2 hours before serving with whipped cream."],
-"diet":{"vegetarian":true,"vegan":false,"pescatarian":true,"glutenFree":false,"glutenFreeAdaptable":false,"dairyFree":false,"nutFree":true,"eggFree":false},
-"allergens":["gluten","dairy","egg"],
-"gmo":{"risk":"moderate","sources":["sugar-beet","grain-fed-dairy"]},
-"nutrition":{"calories":448,"proteinG":7,"carbsG":48,"fiberG":3,"sugarG":30,"fatG":26,"satFatG":15,"sodiumMg":380,"cholesterolMg":128},
-"tags":["dessert","thanksgiving","holiday","baking","vegetarian","make-ahead","classic","fall"],
-"image":{"file":"pumpkin-pie.jpg","wikipedia":"Pumpkin pie"}},
-
-{"id":"ch-ms-016","slug":"ms-angel-food-cake","title":"Angel Food Cake","genre":"american","subgenre":"desserts","chef":{"name":"Martha Stewart","slug":"martha-stewart"},"description":"A fat-free cake raised entirely by whipped egg whites.","difficulty":"intermediate","easeScore":6,"spiceScore":0,"popularity":7,"pantryScore":9,"servings":12,"prepMin":25,"cookMin":105,"totalMin":130,"equipment":["oven"],
-"ingredients":["1 cup cake flour","1 1/2 cups sugar","12 egg whites, at room temperature","1 1/2 tsp cream of tartar","1/4 tsp salt","1 1/2 tsp vanilla extract","1/2 tsp almond extract","2 cups mixed berries"],
-"ingredientKeys":["cake-flour","sugar","egg-white","cream-of-tartar","salt","vanilla-extract","almond-extract","mixed-berries"],
-"specialty":["cake-flour","cream-of-tartar","almond-extract","mixed-berries"],
-"steps":["Heat the oven to 350F. Make sure your bowl and whisk are spotlessly clean and completely free of grease - the smallest trace of fat or yolk will stop the whites whipping.","Sift the cake flour with 1/2 cup of the sugar four times. Four times sounds excessive and is what makes the crumb this light.","Beat the room-temperature whites with the cream of tartar and salt to soft peaks, then add the remaining sugar a tablespoon at a time and beat to firm, glossy peaks. Add the extracts.","Sift the flour mixture over the whites in four additions, folding gently with a spatula after each. Every unnecessary stroke deflates the batter.","Pour into an ungreased tube pan - the batter needs to grip the sides to climb - and run a knife through it to pop large air pockets.","Bake 40-45 minutes until the top springs back. Invert the pan immediately and cool completely upside down, which keeps the cake from collapsing under its own weight. Serve with berries."],
-"diet":{"vegetarian":true,"vegan":false,"pescatarian":true,"glutenFree":false,"glutenFreeAdaptable":false,"dairyFree":true,"nutFree":true,"eggFree":false},
-"allergens":["gluten","egg"],
-"gmo":{"risk":"moderate","sources":["sugar-beet"]},
-"nutrition":{"calories":186,"proteinG":5,"carbsG":42,"fiberG":1,"sugarG":32,"fatG":0,"satFatG":0,"sodiumMg":120,"cholesterolMg":0},
-"tags":["dessert","baking","technique","vegetarian","dairy-free","spring","classic","lighter"],
-"image":{"file":"angel-food-cake.jpg","wikipedia":"Angel food cake"}},
-
-{"id":"ch-ms-017","slug":"ms-buttermilk-pancakes","title":"Buttermilk Pancakes","genre":"american","subgenre":"breakfast","chef":{"name":"Martha Stewart","slug":"martha-stewart"},"description":"Tall, tender pancakes from a lumpy batter and a rested griddle.","difficulty":"beginner","easeScore":9,"spiceScore":0,"popularity":10,"pantryScore":9,"servings":4,"prepMin":10,"cookMin":20,"totalMin":30,"equipment":["stovetop"],
-"ingredients":["2 cups all-purpose flour","2 tbsp sugar","2 tsp baking powder","1 tsp baking soda","1 tsp salt","2 1/2 cups buttermilk","2 eggs","4 tbsp butter, melted","3 tbsp butter, for the griddle","1 cup maple syrup"],
-"ingredientKeys":["flour","sugar","baking-powder","baking-soda","salt","buttermilk","egg","butter","butter","maple-syrup"],
-"specialty":["buttermilk"],
-"steps":["Whisk the flour, sugar, baking powder, baking soda and salt in a large bowl.","Beat the buttermilk, eggs and melted butter together in another bowl.","Pour the wet into the dry and fold about ten strokes with a spatula. Stop while the batter is still visibly lumpy - overmixing develops gluten and gives you flat, rubbery pancakes.","Let the batter rest 5 minutes while the griddle heats over medium-low. The rest hydrates the flour and lets the leavening start working.","Butter the griddle and ladle in 1/3 cup portions. Cook until bubbles break across the surface and the edges look dry, 2-3 minutes, then flip once and cook 1-2 minutes more.","Flip only once - pressing or re-flipping knocks the air out. Serve with butter and warm maple syrup."],
-"diet":{"vegetarian":true,"vegan":false,"pescatarian":true,"glutenFree":false,"glutenFreeAdaptable":true,"dairyFree":false,"nutFree":true,"eggFree":false},
-"allergens":["gluten","dairy","egg"],
-"gmo":{"risk":"moderate","sources":["grain-fed-dairy","sugar-beet"]},
-"nutrition":{"calories":682,"proteinG":16,"carbsG":104,"fiberG":2,"sugarG":56,"fatG":22,"satFatG":12,"sodiumMg":1280,"cholesterolMg":138},
-"tags":["breakfast","quick","vegetarian","family","kid-friendly","classic","budget","weekend"],
-"image":{"file":"pancakes.jpg","wikipedia":"Pancake"}},
-
-{"id":"ch-ms-018","slug":"ms-quiche-lorraine","title":"Quiche Lorraine","genre":"french","subgenre":"baking","chef":{"name":"Martha Stewart","slug":"martha-stewart"},"description":"Bacon and Gruyere custard in a blind-baked butter crust.","difficulty":"intermediate","easeScore":7,"spiceScore":1,"popularity":8,"pantryScore":7,"servings":8,"prepMin":30,"cookMin":75,"totalMin":105,"equipment":["oven","stovetop"],
-"ingredients":["1 disk pate brisee dough, chilled","8 oz bacon, diced","1 yellow onion, thinly sliced","4 eggs","2 egg yolks","1 1/2 cups heavy cream","3/4 cup whole milk","1/4 tsp ground nutmeg","1 1/2 tsp salt","1 tsp white pepper","2 cups grated Gruyere","2 tbsp chopped chives"],
-"ingredientKeys":["pie-dough","bacon","yellow-onion","egg","egg-yolk","heavy-cream","whole-milk","nutmeg","salt","white-pepper","gruyere","chives"],
-"specialty":["pie-dough","gruyere","white-pepper"],
-"steps":["Roll the dough into a 9-inch deep tart pan, chill 30 minutes, then line with parchment and weights and blind-bake at 375F for 25 minutes until pale gold and dry. A raw crust under wet custard is always soggy.","Render the bacon until crisp, then cook the onion in the fat 10 minutes until soft and golden. Drain both.","Whisk the eggs, yolks, cream, milk, nutmeg, salt and white pepper until smooth but not frothy. Beaten-in air makes the custard puff and then crack.","Scatter the bacon, onion and Gruyere over the base of the warm shell, then pour the custard over.","Bake at 350F for 40-50 minutes, until the edges are set and the center still has a slight wobble.","Cool at least 20 minutes before cutting - the custard sets as it cools. Serve warm or at room temperature with chives."],
-"diet":{"vegetarian":false,"vegan":false,"pescatarian":false,"glutenFree":false,"glutenFreeAdaptable":false,"dairyFree":false,"nutFree":true,"eggFree":false},
-"allergens":["gluten","dairy","egg"],
-"gmo":{"risk":"moderate","sources":["grain-fed-meat","grain-fed-dairy"]},
-"nutrition":{"calories":682,"proteinG":24,"carbsG":28,"fiberG":1,"sugarG":5,"fatG":52,"satFatG":29,"sodiumMg":1180,"cholesterolMg":286},
-"tags":["brunch","french","baking","entertaining","make-ahead","classic","high-protein","holiday"],
-"image":{"file":"quiche-lorraine.jpg","wikipedia":"Quiche"}},
-
-{"id":"ch-ms-019","slug":"ms-gougeres","title":"Gougeres","genre":"french","subgenre":"appetizers","chef":{"name":"Martha Stewart","slug":"martha-stewart"},"description":"Gruyere choux puffs that come out hollow and crisp.","difficulty":"intermediate","easeScore":6,"spiceScore":1,"popularity":7,"pantryScore":8,"servings":30,"prepMin":25,"cookMin":35,"totalMin":60,"equipment":["oven","stovetop"],
-"ingredients":["1 cup water","8 tbsp butter","1 tsp salt","1/2 tsp black pepper","1/4 tsp ground nutmeg","1 cup all-purpose flour","4 eggs","1 1/2 cups grated Gruyere","1/4 cup grated Parmesan","1 egg, beaten, for the wash"],
-"ingredientKeys":["water","butter","salt","black-pepper","nutmeg","flour","egg","gruyere","parmesan","egg"],
-"specialty":["gruyere"],
-"steps":["Bring the water, butter, salt, pepper and nutmeg to a full boil. Dump in all the flour at once and stir hard over the heat for 2 minutes until it forms a smooth ball that pulls away from the pan sides.","Move the dough to a bowl and let it cool 5 minutes. Adding eggs to hot dough scrambles them.","Beat in the eggs one at a time, waiting until each is fully absorbed. The dough looks slippery and broken after each addition and then comes back together - keep going.","Beat in the Gruyere and Parmesan. The dough should hold a soft peak and fall slowly from the spoon.","Pipe or spoon walnut-sized mounds onto lined sheets, well apart, and brush with the beaten egg.","Bake at 425F for 10 minutes, then at 375F for 20-25 minutes until deep golden and light. Do not open the oven in the first 20 minutes or they collapse. Pierce each one to let the steam out."],
-"diet":{"vegetarian":true,"vegan":false,"pescatarian":true,"glutenFree":false,"glutenFreeAdaptable":false,"dairyFree":false,"nutFree":true,"eggFree":false},
-"allergens":["gluten","dairy","egg"],
-"gmo":{"risk":"low","sources":["grain-fed-dairy"]},
-"nutrition":{"calories":82,"proteinG":4,"carbsG":4,"fiberG":0,"sugarG":0,"fatG":6,"satFatG":3,"sodiumMg":120,"cholesterolMg":38},
-"tags":["appetizer","french","baking","party","entertaining","technique","vegetarian","holiday"],
-"image":{"file":"gougeres.jpg","wikipedia":"Gougère"}},
-
-{"id":"ch-ms-020","slug":"ms-lasagna","title":"Classic Lasagna","genre":"italian","subgenre":"pasta","chef":{"name":"Martha Stewart","slug":"martha-stewart"},"description":"Meat sauce, bechamel and noodles in five careful layers.","difficulty":"intermediate","easeScore":6,"spiceScore":1,"popularity":10,"pantryScore":7,"servings":10,"prepMin":45,"cookMin":120,"totalMin":165,"equipment":["stovetop","oven"],
-"ingredients":["1 lb ground beef (85/15)","1/2 lb ground pork","3 tbsp olive oil","1 yellow onion, finely diced","2 carrots, finely diced","5 cloves garlic, minced","1/4 cup tomato paste","1 cup dry red wine","2 cans (28 oz each) crushed tomatoes","2 tsp dried oregano","2 tsp salt","1 tsp black pepper","8 tbsp butter","1/2 cup all-purpose flour","4 cups whole milk, warmed","1/4 tsp ground nutmeg","1 lb lasagna noodles","2 1/2 cups grated Parmesan","1 lb mozzarella, shredded","1/2 cup fresh basil"],
-"ingredientKeys":["ground-beef","ground-pork","olive-oil","yellow-onion","carrot","garlic","tomato-paste","red-wine","crushed-tomatoes","dried-oregano","salt","black-pepper","butter","flour","whole-milk","nutmeg","lasagna-noodles","parmesan","mozzarella","fresh-basil"],
-"specialty":["ground-pork","red-wine","lasagna-noodles","mozzarella"],
-"steps":["Brown both meats in the oil, then add the onion and carrots for 10 minutes and the garlic for 1. Add the tomato paste and cook 2 minutes, then the wine and reduce by half.","Add the tomatoes, oregano, salt and pepper and simmer 1 hour until thick and dark. A watery sauce is what makes lasagna collapse on the plate.","Make the bechamel: melt the butter, whisk in the flour and cook 2 minutes, then add the warm milk gradually and simmer 6 minutes until it coats a spoon. Season with nutmeg.","Boil the noodles 2 minutes short of the package time and lay them flat on oiled sheets so they do not weld together.","Build in a 9x13 dish: meat sauce, noodles, bechamel, Parmesan, mozzarella. Repeat four times, finishing with bechamel and both cheeses.","Bake at 375F for 50-60 minutes until deeply browned and bubbling at the edges. Rest 30 minutes before cutting - this is the step that lets it hold a square."],
-"diet":{"vegetarian":false,"vegan":false,"pescatarian":false,"glutenFree":false,"glutenFreeAdaptable":true,"dairyFree":false,"nutFree":true,"eggFree":true},
-"allergens":["gluten","dairy","sulfites"],
-"gmo":{"risk":"moderate","sources":["grain-fed-meat","grain-fed-dairy","processed-bread"]},
-"nutrition":{"calories":782,"proteinG":48,"carbsG":58,"fiberG":6,"sugarG":14,"fatG":40,"satFatG":21,"sodiumMg":1480,"cholesterolMg":138},
-"tags":["family","comfort","make-ahead","holiday","party","classic","sunday","crowd-pleaser"],
-"image":{"file":"lasagna.jpg","wikipedia":"Lasagne"}},
-
-{"id":"ch-ms-021","slug":"ms-parmesan-risotto","title":"Parmesan Risotto","genre":"italian","subgenre":"risotto","chef":{"name":"Martha Stewart","slug":"martha-stewart"},"description":"A plain risotto done properly - the base for anything you want to add.","difficulty":"intermediate","easeScore":6,"spiceScore":0,"popularity":8,"pantryScore":7,"servings":4,"prepMin":10,"cookMin":35,"totalMin":45,"equipment":["stovetop"],
-"ingredients":["1 1/2 cups arborio rice","6 cups chicken broth","1 shallot, finely diced","6 tbsp butter","2 tbsp olive oil","3/4 cup dry white wine","1 1/2 cups finely grated Parmesan","1 1/2 tsp salt","1 tsp white pepper","2 tbsp chopped chives"],
-"ingredientKeys":["arborio-rice","chicken-broth","shallot","butter","olive-oil","white-wine","parmesan","salt","white-pepper","chives"],
-"specialty":["arborio-rice","shallot","white-wine","white-pepper"],
-"steps":["Keep the broth at a bare simmer in a separate pot the whole time. Cold broth added to risotto stops the cooking dead and makes the grains gluey.","Sweat the shallot in 2 tbsp butter and the oil over medium heat 4 minutes without letting it color.","Add the rice and toast 2 minutes, stirring, until the grains are translucent at the edges with a white dot at the center.","Add the wine and stir until it has been fully absorbed.","Add the hot broth one ladle at a time, stirring often and waiting until each addition is nearly absorbed before the next. This takes 18-20 minutes, and the stirring is what coaxes out the starch that makes it creamy.","Off the heat, beat in the remaining butter and the Parmesan vigorously until it ripples when you shake the pan. Season and serve immediately with chives."],
-"diet":{"vegetarian":false,"vegan":false,"pescatarian":false,"glutenFree":true,"glutenFreeAdaptable":false,"dairyFree":false,"nutFree":true,"eggFree":true},
-"allergens":["dairy","sulfites"],
-"gmo":{"risk":"low","sources":["grain-fed-dairy","grain-fed-meat"]},
-"nutrition":{"calories":682,"proteinG":22,"carbsG":64,"fiberG":2,"sugarG":3,"fatG":34,"satFatG":20,"sodiumMg":1480,"cholesterolMg":98},
-"tags":["italian","technique","gluten-free","classic","date-night","foundation","comfort"],
-"image":{"file":"risotto-milanese.jpg","wikipedia":"Risotto"}},
-
-{"id":"ch-ms-022","slug":"ms-chicken-pot-pie","title":"Chicken Pot Pie","genre":"american","subgenre":"comfort","chef":{"name":"Martha Stewart","slug":"martha-stewart"},"description":"Creamy chicken and vegetables under an all-butter pastry lid.","difficulty":"intermediate","easeScore":7,"spiceScore":1,"popularity":9,"pantryScore":8,"servings":6,"prepMin":35,"cookMin":60,"totalMin":95,"equipment":["oven","stovetop"],
-"ingredients":["1 disk pate brisee dough, chilled","2 lb boneless chicken thighs, cubed","6 tbsp butter","1 yellow onion, diced","3 carrots, diced","3 celery stalks, diced","8 oz cremini mushrooms, quartered","1/2 cup all-purpose flour","3 cups chicken broth","1 cup heavy cream","1 tbsp fresh thyme leaves","2 tsp salt","1 tsp black pepper","1 cup frozen peas","1/3 cup chopped parsley","1 egg, beaten"],
-"ingredientKeys":["pie-dough","chicken-thighs","butter","yellow-onion","carrot","celery","mushroom","flour","chicken-broth","heavy-cream","fresh-thyme","salt","black-pepper","frozen-peas","parsley","egg"],
-"specialty":["pie-dough","fresh-thyme"],
-"steps":["Brown the chicken in 2 tbsp butter over high heat 6 minutes and set aside. Add the remaining butter and cook the onion, carrots, celery and mushrooms 10 minutes until the mushrooms have given up their water.","Stir in the flour and cook 2 minutes, then add the broth gradually, whisking, and simmer until thick.","Add the cream, thyme, salt and pepper, then return the chicken with the peas and parsley. Simmer 5 minutes.","Cool the filling at least 20 minutes. Hot filling melts the butter in the pastry before it reaches the oven, and you lose the flakiness.","Pour into a deep dish, roll the dough over the top, trim and crimp the edge to the rim, and cut several generous steam vents.","Brush with the beaten egg and bake at 400F for 40-45 minutes until deep golden and bubbling through the vents. Rest 15 minutes before serving."],
-"diet":{"vegetarian":false,"vegan":false,"pescatarian":false,"glutenFree":false,"glutenFreeAdaptable":false,"dairyFree":false,"nutFree":true,"eggFree":false},
-"allergens":["gluten","dairy","egg"],
-"gmo":{"risk":"moderate","sources":["grain-fed-meat","grain-fed-dairy"]},
-"nutrition":{"calories":882,"proteinG":48,"carbsG":52,"fiberG":5,"sugarG":9,"fatG":52,"satFatG":27,"sodiumMg":1480,"cholesterolMg":268},
-"tags":["comfort","family","make-ahead","winter","classic","baking","high-protein"],
-"image":{"file":"chicken-pot-pie.jpg","wikipedia":"Chicken pot pie"}},
-
-{"id":"ch-ms-023","slug":"ms-shortbread-cookies","title":"Shortbread Cookies","genre":"american","subgenre":"desserts","chef":{"name":"Martha Stewart","slug":"martha-stewart"},"description":"Three ingredients plus salt, baked until barely golden.","difficulty":"beginner","easeScore":9,"spiceScore":0,"popularity":8,"pantryScore":10,"servings":24,"prepMin":15,"cookMin":80,"totalMin":95,"equipment":["oven"],
-"ingredients":["1 cup butter, softened","3/4 cup powdered sugar","1 tsp vanilla extract","1/2 tsp salt","2 1/4 cups all-purpose flour","2 tbsp coarse sugar"],
-"ingredientKeys":["butter","powdered-sugar","vanilla-extract","salt","flour","coarse-sugar"],
-"specialty":["coarse-sugar"],
-"steps":["Beat the butter with the powdered sugar, vanilla and salt for 2 minutes until smooth but not aerated. Shortbread should be dense, so do not whip air into it the way you would for a cake.","Add the flour on low speed and mix only until it just comes together into a crumbly dough.","Press and roll the dough to 1/2 inch thick between sheets of parchment, then chill 1 hour until firm.","Cut into rectangles or rounds, prick each one with a fork, and set them on lined sheets. Chill another 15 minutes - cold dough holds its shape and does not spread.","Sprinkle with coarse sugar and bake at 325F for 18-22 minutes, until the edges are just barely golden. Shortbread should stay pale; browning makes it bitter.","Cool on the pan 10 minutes before moving. They keep two weeks in a tin."],
-"diet":{"vegetarian":true,"vegan":false,"pescatarian":true,"glutenFree":false,"glutenFreeAdaptable":false,"dairyFree":false,"nutFree":true,"eggFree":true},
-"allergens":["gluten","dairy"],
-"gmo":{"risk":"low","sources":["sugar-beet","grain-fed-dairy"]},
-"nutrition":{"calories":142,"proteinG":1,"carbsG":14,"fiberG":0,"sugarG":5,"fatG":9,"satFatG":5,"sodiumMg":82,"cholesterolMg":21},
-"tags":["dessert","baking","vegetarian","holiday","christmas","make-ahead","easy","classic","budget"],
-"image":{"file":"shortbread.jpg","wikipedia":"Shortbread"}},
-
-{"id":"ch-ms-024","slug":"ms-chocolate-layer-cake","title":"Chocolate Layer Cake","genre":"american","subgenre":"desserts","chef":{"name":"Martha Stewart","slug":"martha-stewart"},"description":"Three tender cocoa layers under glossy chocolate buttercream.","difficulty":"intermediate","easeScore":6,"spiceScore":0,"popularity":9,"pantryScore":8,"servings":12,"prepMin":40,"cookMin":90,"totalMin":130,"equipment":["oven","stovetop"],
-"ingredients":["2 1/4 cups all-purpose flour","1 cup cocoa powder","2 1/2 tsp baking soda","1 tsp salt","1 cup butter, softened","2 1/4 cups sugar","4 eggs, at room temperature","1 tbsp vanilla extract","1 1/2 cups buttermilk, at room temperature","1 cup hot brewed coffee","1 1/2 cups butter, softened, for the frosting","4 cups powdered sugar","1 cup cocoa powder, for the frosting","1/2 cup heavy cream","1 tsp vanilla extract, for the frosting","1/2 tsp salt, for the frosting"],
-"ingredientKeys":["flour","cocoa-powder","baking-soda","salt","butter","sugar","egg","vanilla-extract","buttermilk","brewed-coffee","butter","powdered-sugar","cocoa-powder","heavy-cream","vanilla-extract","salt"],
-"specialty":["cocoa-powder","buttermilk"],
-"steps":["Heat the oven to 350F and line three 8-inch round pans. Sift the flour, cocoa, baking soda and salt together.","Cream the butter and sugar 4 minutes until pale and fluffy, then beat in the eggs one at a time and the vanilla.","Add the dry ingredients alternately with the buttermilk in three additions, mixing on low just until smooth.","Stir in the hot coffee last. The batter will be very thin, which is correct - the coffee is there to deepen the chocolate, not to taste of coffee.","Divide between the pans and bake 30-35 minutes until a skewer comes out clean. Cool 15 minutes in the pans, then turn out and cool completely. Frosting a warm cake makes it slide apart.","Beat the frosting butter 3 minutes, then add the powdered sugar and cocoa alternately with the cream, plus the vanilla and salt, and beat 3 minutes until glossy. Stack the layers with frosting between, then coat the top and sides."],
-"diet":{"vegetarian":true,"vegan":false,"pescatarian":true,"glutenFree":false,"glutenFreeAdaptable":true,"dairyFree":false,"nutFree":true,"eggFree":false},
-"allergens":["gluten","dairy","egg"],
-"gmo":{"risk":"moderate","sources":["sugar-beet","grain-fed-dairy"]},
-"nutrition":{"calories":882,"proteinG":9,"carbsG":112,"fiberG":6,"sugarG":88,"fatG":48,"satFatG":29,"sodiumMg":680,"cholesterolMg":158},
-"tags":["dessert","birthday","baking","party","special-occasion","vegetarian","classic","crowd-pleaser"],
-"image":{"file":"chocolate-cake.jpg","wikipedia":"Chocolate cake"}},
-
-{"id":"ch-ms-025","slug":"ms-cheese-souffle","title":"Cheese Souffle","genre":"french","subgenre":"baking","chef":{"name":"Martha Stewart","slug":"martha-stewart"},"description":"A Gruyere souffle that rises high and must be served the moment it leaves the oven.","difficulty":"advanced","easeScore":3,"spiceScore":1,"popularity":6,"pantryScore":7,"servings":4,"prepMin":25,"cookMin":35,"totalMin":60,"equipment":["oven","stovetop"],
-"ingredients":["3 tbsp butter, plus more for the dish","1/4 cup grated Parmesan, for the dish","1/4 cup all-purpose flour","1 1/4 cups whole milk, warmed","1/2 tsp mustard powder","1/4 tsp ground nutmeg","1/4 tsp cayenne pepper","1 1/2 tsp salt","4 egg yolks","1 1/2 cups grated Gruyere","6 egg whites","1/4 tsp cream of tartar"],
-"ingredientKeys":["butter","parmesan","flour","whole-milk","mustard-powder","nutmeg","cayenne","salt","egg-yolk","gruyere","egg-white","cream-of-tartar"],
-"specialty":["mustard-powder","gruyere","cream-of-tartar"],
-"steps":["Heat the oven to 400F. Butter a 1 1/2-quart souffle dish with upward strokes and coat it with the Parmesan. Those upward strokes give the batter something to climb.","Melt the butter, whisk in the flour and cook 2 minutes, then add the warm milk gradually and cook until very thick. Season with the mustard powder, nutmeg, cayenne and salt.","Take it off the heat, whisk in the yolks one at a time, then the Gruyere. Let it cool to just warm.","Beat the whites with the cream of tartar to firm, glossy peaks - stiff but not dry and crumbly.","Stir a quarter of the whites into the base to loosen it, then fold in the rest in two additions, cutting down through the middle and lifting over. Stop while a few streaks remain; every extra stroke costs you height.","Pour into the dish, run your thumb around the rim to make a shallow groove, and bake 30-35 minutes without opening the door. Serve immediately - a souffle starts falling within two minutes."],
-"diet":{"vegetarian":true,"vegan":false,"pescatarian":true,"glutenFree":false,"glutenFreeAdaptable":false,"dairyFree":false,"nutFree":true,"eggFree":false},
-"allergens":["gluten","dairy","egg"],
-"gmo":{"risk":"low","sources":["grain-fed-dairy"]},
-"nutrition":{"calories":448,"proteinG":26,"carbsG":16,"fiberG":1,"sugarG":5,"fatG":32,"satFatG":18,"sodiumMg":1180,"cholesterolMg":286},
-"tags":["french","project","technique","vegetarian","entertaining","brunch","special-occasion","classic"],
-"image":{"file":"cheese-souffle.jpg","wikipedia":"Soufflé"}}
+ {
+  "id": "ch-ms-001",
+  "slug": "ms-perfect-roast-turkey",
+  "title": "Perfect Roast Turkey",
+  "genre": "american",
+  "subgenre": "comfort",
+  "chef": {
+   "name": "Martha Stewart",
+   "slug": "martha-stewart"
+  },
+  "description": "A turkey roasted under butter-soaked cheesecloth, basted every half hour.",
+  "difficulty": "advanced",
+  "easeScore": 3,
+  "spiceScore": 0,
+  "popularity": 9,
+  "pantryScore": 6,
+  "servings": 12,
+  "prepMin": 45,
+  "cookMin": 255,
+  "totalMin": 300,
+  "equipment": [
+   "oven",
+   "stovetop"
+  ],
+  "ingredients": [
+   "1 whole turkey (20 lb), thawed",
+   "1 1/2 cups butter, melted",
+   "1 bottle (750 ml) dry white wine",
+   "2 tbsp kosher salt",
+   "1 tbsp black pepper",
+   "2 yellow onions, quartered",
+   "4 carrots, cut in chunks",
+   "4 celery stalks, cut in chunks",
+   "1 bunch fresh thyme",
+   "1 bunch fresh sage",
+   "1 bunch fresh rosemary",
+   "1 yard cheesecloth",
+   "4 cups chicken broth"
+  ],
+  "ingredientKeys": [
+   "whole-turkey",
+   "butter",
+   "white-wine",
+   "kosher-salt",
+   "black-pepper",
+   "yellow-onion",
+   "carrot",
+   "celery",
+   "fresh-thyme",
+   "fresh-sage",
+   "fresh-rosemary",
+   "cheesecloth",
+   "chicken-broth"
+  ],
+  "specialty": [
+   "whole-turkey",
+   "white-wine",
+   "fresh-thyme",
+   "fresh-sage",
+   "fresh-rosemary",
+   "cheesecloth"
+  ],
+  "steps": [
+   "Heat the oven to 450F. Pat the turkey bone dry and season the cavity heavily, then fill it with a quarter of the onions, carrots, celery and herbs.",
+   "Scatter the rest of the vegetables and herbs in a large roasting pan, add the broth, and set the turkey breast-side up on a rack over them.",
+   "Soak the cheesecloth in the melted butter mixed with 2 cups of the wine until completely saturated, then drape it over the breast and legs in a double layer. The soaked cloth is the whole method: it bastes continuously and shields the breast while the legs catch up.",
+   "Roast 30 minutes at 450F, then lower to 350F and roast about 3 1/2 hours more, basting the cheesecloth with the butter-wine mixture every 30 minutes.",
+   "Remove the cheesecloth for the last 45 minutes so the skin browns. Cook until the thigh reads 170F and the breast 160F.",
+   "Rest at least 30 minutes before carving. The breast coasts up to a safe 165F as it rests, and the juices redistribute."
+  ],
+  "diet": {
+   "vegetarian": false,
+   "vegan": false,
+   "pescatarian": false,
+   "glutenFree": true,
+   "glutenFreeAdaptable": false,
+   "dairyFree": false,
+   "nutFree": true,
+   "eggFree": true
+  },
+  "allergens": [
+   "dairy",
+   "sulfites"
+  ],
+  "gmo": {
+   "risk": "moderate",
+   "sources": [
+    "grain-fed-meat",
+    "grain-fed-dairy"
+   ]
+  },
+  "nutrition": {
+   "calories": 712,
+   "proteinG": 72,
+   "carbsG": 5,
+   "fiberG": 1,
+   "sugarG": 2,
+   "fatG": 44,
+   "satFatG": 20,
+   "sodiumMg": 1280,
+   "cholesterolMg": 286
+  },
+  "tags": [
+   "thanksgiving",
+   "holiday",
+   "project",
+   "family",
+   "gluten-free",
+   "high-protein",
+   "technique",
+   "entertaining"
+  ],
+  "image": {
+   "file": "roast-turkey.jpg",
+   "source": "wikipedia-lead",
+   "match": "representative",
+   "wikipedia": "Roast turkey"
+  }
+ },
+ {
+  "id": "ch-ms-002",
+  "slug": "ms-chocolate-chip-cookies",
+  "title": "Soft and Chewy Chocolate Chip Cookies",
+  "genre": "american",
+  "subgenre": "desserts",
+  "chef": {
+   "name": "Martha Stewart",
+   "slug": "martha-stewart"
+  },
+  "description": "Chewy cookies with crisp edges from creaming the butter properly.",
+  "difficulty": "beginner",
+  "easeScore": 9,
+  "spiceScore": 0,
+  "popularity": 10,
+  "pantryScore": 10,
+  "servings": 36,
+  "prepMin": 20,
+  "cookMin": 45,
+  "totalMin": 65,
+  "equipment": [
+   "oven"
+  ],
+  "ingredients": [
+   "2 1/4 cups all-purpose flour",
+   "1 tsp baking soda",
+   "1 tsp salt",
+   "1 cup butter, softened",
+   "3/4 cup granulated sugar",
+   "3/4 cup packed light brown sugar",
+   "2 tsp vanilla extract",
+   "2 eggs",
+   "2 cups semisweet chocolate chips",
+   "1 tsp flaky sea salt"
+  ],
+  "ingredientKeys": [
+   "flour",
+   "baking-soda",
+   "salt",
+   "butter",
+   "sugar",
+   "brown-sugar",
+   "vanilla-extract",
+   "egg",
+   "chocolate-chips",
+   "flaky-salt"
+  ],
+  "specialty": [
+   "flaky-salt"
+  ],
+  "steps": [
+   "Heat the oven to 350F. Whisk the flour, baking soda and salt together.",
+   "Cream the softened butter with both sugars on medium-high for a full 3 minutes, until noticeably pale and fluffy. This step aerates the dough and is what separates thick, chewy cookies from flat greasy ones.",
+   "Beat in the vanilla and then the eggs, one at a time, scraping the bowl between additions.",
+   "Add the flour mixture on low speed and mix only until the flour disappears. Fold in the chocolate chips by hand.",
+   "Chill the dough 30 minutes. Cold dough spreads less and tastes deeper.",
+   "Scoop rounded tablespoons onto lined sheets, well apart, and bake 10-12 minutes until the edges are set but the centers still look underdone. Sprinkle with flaky salt and cool on the pan 5 minutes - they finish baking there."
+  ],
+  "diet": {
+   "vegetarian": true,
+   "vegan": false,
+   "pescatarian": true,
+   "glutenFree": false,
+   "glutenFreeAdaptable": true,
+   "dairyFree": false,
+   "nutFree": true,
+   "eggFree": false
+  },
+  "allergens": [
+   "gluten",
+   "dairy",
+   "egg",
+   "soy"
+  ],
+  "gmo": {
+   "risk": "moderate",
+   "sources": [
+    "sugar-beet",
+    "soy",
+    "grain-fed-dairy"
+   ]
+  },
+  "nutrition": {
+   "calories": 168,
+   "proteinG": 2,
+   "carbsG": 22,
+   "fiberG": 1,
+   "sugarG": 14,
+   "fatG": 9,
+   "satFatG": 5,
+   "sodiumMg": 140,
+   "cholesterolMg": 26
+  },
+  "tags": [
+   "dessert",
+   "baking",
+   "vegetarian",
+   "kid-friendly",
+   "make-ahead",
+   "classic",
+   "budget",
+   "party"
+  ],
+  "image": {
+   "file": "chocolate-chip-cookie.jpg",
+   "source": "wikipedia-lead",
+   "match": "representative",
+   "wikipedia": "Chocolate chip cookie"
+  }
+ },
+ {
+  "id": "ch-ms-003",
+  "slug": "ms-macaroni-and-cheese",
+  "title": "Creamy Macaroni and Cheese",
+  "genre": "american",
+  "subgenre": "comfort",
+  "chef": {
+   "name": "Martha Stewart",
+   "slug": "martha-stewart"
+  },
+  "description": "Sharp cheddar and Gruyere sauce under a buttered breadcrumb crust.",
+  "difficulty": "beginner",
+  "easeScore": 8,
+  "spiceScore": 1,
+  "popularity": 10,
+  "pantryScore": 8,
+  "servings": 8,
+  "prepMin": 25,
+  "cookMin": 35,
+  "totalMin": 60,
+  "equipment": [
+   "stovetop",
+   "oven"
+  ],
+  "ingredients": [
+   "1 lb elbow macaroni",
+   "8 tbsp butter",
+   "6 tbsp all-purpose flour",
+   "5 1/2 cups whole milk, warmed",
+   "1/4 tsp ground nutmeg",
+   "1/4 tsp cayenne pepper",
+   "2 tsp salt",
+   "1 tsp black pepper",
+   "4 1/2 cups grated sharp white cheddar",
+   "2 cups grated Gruyere",
+   "3 cups fresh breadcrumbs"
+  ],
+  "ingredientKeys": [
+   "elbow-macaroni",
+   "butter",
+   "flour",
+   "whole-milk",
+   "nutmeg",
+   "cayenne",
+   "salt",
+   "black-pepper",
+   "cheddar",
+   "gruyere",
+   "breadcrumbs"
+  ],
+  "specialty": [
+   "gruyere"
+  ],
+  "steps": [
+   "Heat the oven to 375F. Boil the macaroni 2 minutes short of the package time, since it finishes in the oven, then drain.",
+   "Melt 6 tbsp butter in a large pot, whisk in the flour and cook 1 minute - it should bubble but stay pale.",
+   "Whisk in the warm milk in a slow stream and cook 8-12 minutes, whisking, until the sauce is thick enough to coat the back of a spoon. Warm milk is what keeps it lump-free.",
+   "Take the pot off the heat before stirring in the nutmeg, cayenne, salt, pepper, 3 cups of the cheddar and 1 1/2 cups of the Gruyere. Cheese melted over direct heat turns grainy.",
+   "Fold in the pasta and pour into a buttered 3-quart dish.",
+   "Toss the breadcrumbs with the remaining melted butter and cheeses, scatter over the top, and bake 30 minutes until browned and bubbling. Rest 10 minutes."
+  ],
+  "diet": {
+   "vegetarian": true,
+   "vegan": false,
+   "pescatarian": true,
+   "glutenFree": false,
+   "glutenFreeAdaptable": true,
+   "dairyFree": false,
+   "nutFree": true,
+   "eggFree": true
+  },
+  "allergens": [
+   "gluten",
+   "dairy"
+  ],
+  "gmo": {
+   "risk": "moderate",
+   "sources": [
+    "grain-fed-dairy",
+    "processed-bread"
+   ]
+  },
+  "nutrition": {
+   "calories": 982,
+   "proteinG": 44,
+   "carbsG": 72,
+   "fiberG": 3,
+   "sugarG": 12,
+   "fatG": 56,
+   "satFatG": 33,
+   "sodiumMg": 1280,
+   "cholesterolMg": 168
+  },
+  "tags": [
+   "comfort",
+   "family",
+   "vegetarian",
+   "holiday",
+   "make-ahead",
+   "kid-friendly",
+   "classic",
+   "crowd-pleaser"
+  ],
+  "image": {
+   "file": "ms-macaroni-and-cheese.jpg",
+   "source": "commons-file",
+   "match": "dish",
+   "commonsFile": "Macaroni & Cheese (4999894711).jpg"
+  }
+ },
+ {
+  "id": "ch-ms-004",
+  "slug": "ms-pate-brisee",
+  "title": "Pate Brisee Pie Crust",
+  "genre": "french",
+  "subgenre": "baking",
+  "chef": {
+   "name": "Martha Stewart",
+   "slug": "martha-stewart"
+  },
+  "description": "The all-butter pastry that underpins every pie and tart.",
+  "difficulty": "intermediate",
+  "easeScore": 6,
+  "spiceScore": 0,
+  "popularity": 8,
+  "pantryScore": 10,
+  "servings": 8,
+  "prepMin": 20,
+  "cookMin": 60,
+  "totalMin": 80,
+  "equipment": [
+   "food-processor"
+  ],
+  "ingredients": [
+   "2 1/2 cups all-purpose flour",
+   "1 tsp salt",
+   "1 tsp sugar",
+   "1 cup cold butter, cut in small pieces",
+   "1/4 to 1/2 cup ice water"
+  ],
+  "ingredientKeys": [
+   "flour",
+   "salt",
+   "sugar",
+   "butter",
+   "ice-water"
+  ],
+  "specialty": [],
+  "steps": [
+   "Pulse the flour, salt and sugar in a food processor to combine.",
+   "Add the cold butter and pulse 10 times, until the largest pieces are the size of peas. Those visible butter pieces turn to steam in the oven and are exactly what makes the pastry flaky - do not blend them in.",
+   "With the machine running, add ice water in a slow dribble, stopping the moment the dough holds together when you squeeze a handful. It should not form a ball in the bowl.",
+   "Turn it out, divide in two, and flatten each half into a disk. Wrap and refrigerate at least 1 hour.",
+   "Roll from the center outward on a lightly floured surface, turning the dough a quarter turn between rolls to keep it round and even.",
+   "If the dough softens or the butter starts to smear at any point, stop and chill it. Warm dough is the main cause of tough, shrunken crusts."
+  ],
+  "diet": {
+   "vegetarian": true,
+   "vegan": false,
+   "pescatarian": true,
+   "glutenFree": false,
+   "glutenFreeAdaptable": false,
+   "dairyFree": false,
+   "nutFree": true,
+   "eggFree": true
+  },
+  "allergens": [
+   "gluten",
+   "dairy"
+  ],
+  "gmo": {
+   "risk": "low",
+   "sources": [
+    "grain-fed-dairy",
+    "sugar-beet"
+   ]
+  },
+  "nutrition": {
+   "calories": 342,
+   "proteinG": 4,
+   "carbsG": 30,
+   "fiberG": 1,
+   "sugarG": 1,
+   "fatG": 23,
+   "satFatG": 15,
+   "sodiumMg": 320,
+   "cholesterolMg": 62
+  },
+  "tags": [
+   "baking",
+   "technique",
+   "vegetarian",
+   "make-ahead",
+   "classic",
+   "french",
+   "foundation"
+  ],
+  "image": {
+   "file": "pie-crust.jpg",
+   "source": "wikipedia-lead",
+   "match": "representative",
+   "wikipedia": "Shortcrust pastry"
+  }
+ },
+ {
+  "id": "ch-ms-005",
+  "slug": "ms-apple-pie",
+  "title": "Old-Fashioned Apple Pie",
+  "genre": "american",
+  "subgenre": "desserts",
+  "chef": {
+   "name": "Martha Stewart",
+   "slug": "martha-stewart"
+  },
+  "description": "A double-crust pie with two apple varieties and a lattice top.",
+  "difficulty": "advanced",
+  "easeScore": 4,
+  "spiceScore": 0,
+  "popularity": 10,
+  "pantryScore": 8,
+  "servings": 8,
+  "prepMin": 50,
+  "cookMin": 190,
+  "totalMin": 240,
+  "equipment": [
+   "oven"
+  ],
+  "ingredients": [
+   "2 disks pate brisee dough, chilled",
+   "2 lb Granny Smith apples, peeled and sliced",
+   "1 1/2 lb Honeycrisp apples, peeled and sliced",
+   "3/4 cup sugar",
+   "1/4 cup all-purpose flour",
+   "2 tbsp lemon juice",
+   "1 1/2 tsp ground cinnamon",
+   "1/4 tsp ground nutmeg",
+   "1/4 tsp ground allspice",
+   "1/2 tsp salt",
+   "2 tbsp butter, cut in pieces",
+   "1 egg, beaten",
+   "2 tbsp coarse sugar"
+  ],
+  "ingredientKeys": [
+   "pie-dough",
+   "granny-smith-apple",
+   "honeycrisp-apple",
+   "sugar",
+   "flour",
+   "lemon-juice",
+   "cinnamon",
+   "nutmeg",
+   "allspice",
+   "salt",
+   "butter",
+   "egg",
+   "coarse-sugar"
+  ],
+  "specialty": [
+   "pie-dough",
+   "granny-smith-apple",
+   "honeycrisp-apple",
+   "allspice",
+   "coarse-sugar"
+  ],
+  "steps": [
+   "Use two kinds of apple: tart firm ones that hold their shape and sweeter ones that break down slightly. A single variety gives you either mush or crunch, never both.",
+   "Toss the slices with the sugar, flour, lemon juice, spices and salt and let them macerate 30 minutes, then drain off half the liquid that collects. This is the step that prevents a soupy pie.",
+   "Roll one disk and line a 9-inch pie plate, leaving an overhang. Chill it while you roll the second disk and cut it into strips.",
+   "Mound the filling high in the shell - the apples shrink considerably - and dot with the butter.",
+   "Weave the strips into a lattice over the top, then trim and crimp the edges firmly against the rim. Brush with the beaten egg and sprinkle with coarse sugar.",
+   "Bake at 425F for 20 minutes, then at 375F for 55-65 minutes, until the juices bubble thickly through the lattice. Cool at least 3 hours - cutting it warm means it runs."
+  ],
+  "diet": {
+   "vegetarian": true,
+   "vegan": false,
+   "pescatarian": true,
+   "glutenFree": false,
+   "glutenFreeAdaptable": false,
+   "dairyFree": false,
+   "nutFree": true,
+   "eggFree": false
+  },
+  "allergens": [
+   "gluten",
+   "dairy",
+   "egg"
+  ],
+  "gmo": {
+   "risk": "moderate",
+   "sources": [
+    "sugar-beet",
+    "grain-fed-dairy"
+   ]
+  },
+  "nutrition": {
+   "calories": 586,
+   "proteinG": 5,
+   "carbsG": 82,
+   "fiberG": 5,
+   "sugarG": 48,
+   "fatG": 26,
+   "satFatG": 16,
+   "sodiumMg": 380,
+   "cholesterolMg": 88
+  },
+  "tags": [
+   "dessert",
+   "thanksgiving",
+   "holiday",
+   "project",
+   "baking",
+   "classic",
+   "vegetarian",
+   "fall"
+  ],
+  "image": {
+   "file": "ms-apple-pie.jpg",
+   "source": "commons-file",
+   "match": "dish",
+   "commonsFile": "Old Fashioned Apple Pie 01.jpg"
+  }
+ },
+ {
+  "id": "ch-ms-006",
+  "slug": "ms-lemon-meringue-pie",
+  "title": "Lemon Meringue Pie",
+  "genre": "american",
+  "subgenre": "desserts",
+  "chef": {
+   "name": "Martha Stewart",
+   "slug": "martha-stewart"
+  },
+  "description": "Tart lemon curd under a tall Swiss meringue, browned in the oven.",
+  "difficulty": "advanced",
+  "easeScore": 4,
+  "spiceScore": 0,
+  "popularity": 8,
+  "pantryScore": 7,
+  "servings": 8,
+  "prepMin": 45,
+  "cookMin": 200,
+  "totalMin": 245,
+  "equipment": [
+   "oven",
+   "stovetop"
+  ],
+  "ingredients": [
+   "1 disk pate brisee dough, chilled",
+   "1 1/2 cups sugar",
+   "1/3 cup cornstarch",
+   "1/4 tsp salt",
+   "1 1/2 cups water",
+   "5 egg yolks",
+   "1/2 cup lemon juice",
+   "2 tbsp lemon zest",
+   "4 tbsp butter",
+   "5 egg whites",
+   "1 cup sugar, for the meringue",
+   "1/4 tsp cream of tartar",
+   "1 tsp vanilla extract"
+  ],
+  "ingredientKeys": [
+   "pie-dough",
+   "sugar",
+   "cornstarch",
+   "salt",
+   "water",
+   "egg-yolk",
+   "lemon-juice",
+   "lemon-zest",
+   "butter",
+   "egg-white",
+   "sugar",
+   "cream-of-tartar",
+   "vanilla-extract"
+  ],
+  "specialty": [
+   "pie-dough",
+   "cornstarch",
+   "cream-of-tartar"
+  ],
+  "steps": [
+   "Roll the dough into a 9-inch pie plate, crimp the edge, chill 30 minutes, then line with parchment and pie weights and blind-bake at 375F for 25 minutes until golden and dry. A fully baked shell is the only defense against a soggy bottom under wet curd.",
+   "Whisk the 1 1/2 cups sugar, cornstarch and salt in a saucepan, then whisk in the water. Cook over medium heat, whisking constantly, until it thickens and boils.",
+   "Temper the yolks: whisk a cup of the hot mixture into them in a thin stream, then return it all to the pan and cook 2 minutes more. Rushing this scrambles the yolks.",
+   "Take it off the heat, stir in the lemon juice, zest and butter, then pour the curd into the warm shell.",
+   "Make the meringue: beat the whites with the cream of tartar to soft peaks, then add the 1 cup sugar a spoonful at a time and beat to stiff, glossy peaks that hold their shape.",
+   "Spread the meringue over the hot filling, sealing it to the crust all the way around so it cannot shrink, and swirl peaks with a spatula. Bake at 375F for 12-15 minutes until browned. Cool 3 hours before slicing."
+  ],
+  "diet": {
+   "vegetarian": true,
+   "vegan": false,
+   "pescatarian": true,
+   "glutenFree": false,
+   "glutenFreeAdaptable": false,
+   "dairyFree": false,
+   "nutFree": true,
+   "eggFree": false
+  },
+  "allergens": [
+   "gluten",
+   "dairy",
+   "egg"
+  ],
+  "gmo": {
+   "risk": "moderate",
+   "sources": [
+    "sugar-beet",
+    "cornstarch",
+    "grain-fed-dairy"
+   ]
+  },
+  "nutrition": {
+   "calories": 512,
+   "proteinG": 6,
+   "carbsG": 82,
+   "fiberG": 1,
+   "sugarG": 62,
+   "fatG": 18,
+   "satFatG": 10,
+   "sodiumMg": 220,
+   "cholesterolMg": 158
+  },
+  "tags": [
+   "dessert",
+   "project",
+   "baking",
+   "holiday",
+   "classic",
+   "technique",
+   "vegetarian",
+   "spring"
+  ],
+  "image": {
+   "file": "ms-lemon-meringue-pie.jpg",
+   "source": "commons-file",
+   "match": "dish",
+   "commonsFile": "Lemon Meringue Pie on a Stove.jpg"
+  }
+ },
+ {
+  "id": "ch-ms-007",
+  "slug": "ms-pound-cake",
+  "title": "Classic Pound Cake",
+  "genre": "american",
+  "subgenre": "desserts",
+  "chef": {
+   "name": "Martha Stewart",
+   "slug": "martha-stewart"
+  },
+  "description": "A dense, buttery loaf leavened almost entirely by creaming.",
+  "difficulty": "beginner",
+  "easeScore": 8,
+  "spiceScore": 0,
+  "popularity": 8,
+  "pantryScore": 10,
+  "servings": 10,
+  "prepMin": 20,
+  "cookMin": 75,
+  "totalMin": 95,
+  "equipment": [
+   "oven"
+  ],
+  "ingredients": [
+   "1 cup butter, softened",
+   "1 3/4 cups sugar",
+   "4 eggs, at room temperature",
+   "2 tsp vanilla extract",
+   "1 tbsp lemon zest",
+   "2 cups all-purpose flour",
+   "1 tsp baking powder",
+   "1/2 tsp salt",
+   "1/2 cup whole milk, at room temperature",
+   "2 tbsp powdered sugar"
+  ],
+  "ingredientKeys": [
+   "butter",
+   "sugar",
+   "egg",
+   "vanilla-extract",
+   "lemon-zest",
+   "flour",
+   "baking-powder",
+   "salt",
+   "whole-milk",
+   "powdered-sugar"
+  ],
+  "specialty": [],
+  "steps": [
+   "Heat the oven to 325F and butter and flour a 9x5 loaf pan. Have the butter, eggs and milk all at room temperature - cold ingredients will cause the batter to split.",
+   "Cream the butter and sugar on medium-high for a full 5 minutes, scraping down twice, until very pale and fluffy. This is the only real leavening in a pound cake, so the time matters.",
+   "Beat in the eggs one at a time, waiting until each is fully incorporated before adding the next. Then add the vanilla and lemon zest.",
+   "Whisk the flour, baking powder and salt together, then add it alternately with the milk in three additions, mixing on low just until smooth.",
+   "Pour into the pan and smooth the top. Bake 65-75 minutes until a skewer in the center comes out clean and the top has cracked.",
+   "Cool in the pan 15 minutes, then turn out onto a rack. Dust with powdered sugar once completely cool."
+  ],
+  "diet": {
+   "vegetarian": true,
+   "vegan": false,
+   "pescatarian": true,
+   "glutenFree": false,
+   "glutenFreeAdaptable": true,
+   "dairyFree": false,
+   "nutFree": true,
+   "eggFree": false
+  },
+  "allergens": [
+   "gluten",
+   "dairy",
+   "egg"
+  ],
+  "gmo": {
+   "risk": "moderate",
+   "sources": [
+    "sugar-beet",
+    "grain-fed-dairy"
+   ]
+  },
+  "nutrition": {
+   "calories": 448,
+   "proteinG": 6,
+   "carbsG": 58,
+   "fiberG": 1,
+   "sugarG": 38,
+   "fatG": 22,
+   "satFatG": 13,
+   "sodiumMg": 220,
+   "cholesterolMg": 128
+  },
+  "tags": [
+   "dessert",
+   "baking",
+   "vegetarian",
+   "make-ahead",
+   "classic",
+   "easy",
+   "family"
+  ],
+  "image": {
+   "file": "ms-pound-cake.jpg",
+   "source": "commons-file",
+   "match": "dish",
+   "commonsFile": "Pound cake 1.jpg"
+  }
+ },
+ {
+  "id": "ch-ms-008",
+  "slug": "ms-fudgy-brownies",
+  "title": "Fudgy Brownies",
+  "genre": "american",
+  "subgenre": "desserts",
+  "chef": {
+   "name": "Martha Stewart",
+   "slug": "martha-stewart"
+  },
+  "description": "One-pan brownies with a shiny crackled top and a dense middle.",
+  "difficulty": "beginner",
+  "easeScore": 9,
+  "spiceScore": 0,
+  "popularity": 10,
+  "pantryScore": 9,
+  "servings": 16,
+  "prepMin": 15,
+  "cookMin": 35,
+  "totalMin": 50,
+  "equipment": [
+   "oven",
+   "stovetop"
+  ],
+  "ingredients": [
+   "10 tbsp butter",
+   "8 oz bittersweet chocolate, chopped",
+   "1 1/4 cups sugar",
+   "3 eggs, at room temperature",
+   "1 tsp vanilla extract",
+   "3/4 cup all-purpose flour",
+   "1/3 cup cocoa powder",
+   "1 tsp salt"
+  ],
+  "ingredientKeys": [
+   "butter",
+   "bittersweet-chocolate",
+   "sugar",
+   "egg",
+   "vanilla-extract",
+   "flour",
+   "cocoa-powder",
+   "salt"
+  ],
+  "specialty": [
+   "bittersweet-chocolate",
+   "cocoa-powder"
+  ],
+  "steps": [
+   "Heat the oven to 350F and line an 8-inch square pan with parchment, leaving an overhang so you can lift the brownies out whole.",
+   "Melt the butter and chocolate together over low heat, then let it cool 5 minutes. Pouring hot chocolate onto eggs scrambles them.",
+   "Whisk in the sugar hard for a full minute, then the eggs one at a time and the vanilla. That vigorous whisking is what creates the thin shiny crust on top.",
+   "Fold in the flour, cocoa and salt with a spatula, stopping the instant it comes together. Overmixing develops gluten and makes them cakey.",
+   "Spread in the pan and bake 30-35 minutes. A toothpick should come out with moist crumbs clinging to it - clean means overbaked.",
+   "Cool completely in the pan before lifting out and cutting with a hot, dry knife."
+  ],
+  "diet": {
+   "vegetarian": true,
+   "vegan": false,
+   "pescatarian": true,
+   "glutenFree": false,
+   "glutenFreeAdaptable": true,
+   "dairyFree": false,
+   "nutFree": true,
+   "eggFree": false
+  },
+  "allergens": [
+   "gluten",
+   "dairy",
+   "egg",
+   "soy"
+  ],
+  "gmo": {
+   "risk": "moderate",
+   "sources": [
+    "sugar-beet",
+    "soy",
+    "grain-fed-dairy"
+   ]
+  },
+  "nutrition": {
+   "calories": 286,
+   "proteinG": 4,
+   "carbsG": 32,
+   "fiberG": 2,
+   "sugarG": 24,
+   "fatG": 17,
+   "satFatG": 10,
+   "sodiumMg": 180,
+   "cholesterolMg": 58
+  },
+  "tags": [
+   "dessert",
+   "baking",
+   "quick",
+   "vegetarian",
+   "kid-friendly",
+   "party",
+   "budget",
+   "easy"
+  ],
+  "image": {
+   "file": "brownie.jpg",
+   "source": "wikipedia-lead",
+   "match": "representative",
+   "wikipedia": "Chocolate brownie"
+  }
+ },
+ {
+  "id": "ch-ms-009",
+  "slug": "ms-popovers",
+  "title": "Popovers",
+  "genre": "american",
+  "subgenre": "breads",
+  "chef": {
+   "name": "Martha Stewart",
+   "slug": "martha-stewart"
+  },
+  "description": "Hollow, dramatic rolls leavened entirely by steam.",
+  "difficulty": "intermediate",
+  "easeScore": 6,
+  "spiceScore": 0,
+  "popularity": 7,
+  "pantryScore": 10,
+  "servings": 6,
+  "prepMin": 15,
+  "cookMin": 90,
+  "totalMin": 105,
+  "equipment": [
+   "oven"
+  ],
+  "ingredients": [
+   "1 1/2 cups all-purpose flour",
+   "1 tsp salt",
+   "3 eggs, at room temperature",
+   "1 1/2 cups whole milk, at room temperature",
+   "3 tbsp butter, melted",
+   "2 tbsp butter, for the pan"
+  ],
+  "ingredientKeys": [
+   "flour",
+   "salt",
+   "egg",
+   "whole-milk",
+   "butter",
+   "butter"
+  ],
+  "specialty": [],
+  "steps": [
+   "Whisk the flour, salt, eggs, milk and melted butter until completely smooth, then let the batter rest at room temperature for 1 hour. Rested room-temperature batter rises dramatically higher than cold batter straight from the bowl.",
+   "Heat the oven to 450F with the popover or muffin pan inside for 10 minutes.",
+   "Take the hot pan out, brush each cup generously with butter, and fill them halfway with batter. The hot, greased pan is what forces the immediate rise.",
+   "Bake 20 minutes at 450F without opening the oven door once. Every peek lets out the steam that is doing all the work.",
+   "Lower the heat to 350F and bake 15-20 minutes more, until deep golden brown and dry to the touch.",
+   "Pierce each popover with a knife tip to release the steam, then serve immediately. They deflate within minutes of leaving the oven."
+  ],
+  "diet": {
+   "vegetarian": true,
+   "vegan": false,
+   "pescatarian": true,
+   "glutenFree": false,
+   "glutenFreeAdaptable": false,
+   "dairyFree": false,
+   "nutFree": true,
+   "eggFree": false
+  },
+  "allergens": [
+   "gluten",
+   "dairy",
+   "egg"
+  ],
+  "gmo": {
+   "risk": "low",
+   "sources": [
+    "grain-fed-dairy"
+   ]
+  },
+  "nutrition": {
+   "calories": 218,
+   "proteinG": 8,
+   "carbsG": 26,
+   "fiberG": 1,
+   "sugarG": 3,
+   "fatG": 9,
+   "satFatG": 5,
+   "sodiumMg": 420,
+   "cholesterolMg": 112
+  },
+  "tags": [
+   "bread",
+   "baking",
+   "technique",
+   "vegetarian",
+   "holiday",
+   "brunch",
+   "side",
+   "classic"
+  ],
+  "image": {
+   "file": "ms-popovers.jpg",
+   "source": "commons-file",
+   "match": "dish",
+   "commonsFile": "Popover (14506323110).jpg"
+  }
+ },
+ {
+  "id": "ch-ms-010",
+  "slug": "ms-roast-chicken",
+  "title": "Lemon and Herb Roast Chicken",
+  "genre": "american",
+  "subgenre": "comfort",
+  "chef": {
+   "name": "Martha Stewart",
+   "slug": "martha-stewart"
+  },
+  "description": "A whole chicken with herb butter under the skin, roasted hot.",
+  "difficulty": "beginner",
+  "easeScore": 9,
+  "spiceScore": 0,
+  "popularity": 10,
+  "pantryScore": 8,
+  "servings": 4,
+  "prepMin": 20,
+  "cookMin": 80,
+  "totalMin": 100,
+  "equipment": [
+   "oven"
+  ],
+  "ingredients": [
+   "1 whole chicken (4 1/2 lb)",
+   "6 tbsp butter, softened",
+   "2 tbsp chopped fresh thyme",
+   "2 tbsp chopped fresh parsley",
+   "1 tbsp chopped fresh rosemary",
+   "1 tbsp lemon zest",
+   "4 cloves garlic, minced",
+   "1 tbsp kosher salt",
+   "2 tsp black pepper",
+   "1 lemon, halved",
+   "1 yellow onion, quartered",
+   "2 cups chicken broth"
+  ],
+  "ingredientKeys": [
+   "whole-chicken",
+   "butter",
+   "fresh-thyme",
+   "parsley",
+   "fresh-rosemary",
+   "lemon-zest",
+   "garlic",
+   "kosher-salt",
+   "black-pepper",
+   "lemon",
+   "yellow-onion",
+   "chicken-broth"
+  ],
+  "specialty": [
+   "whole-chicken",
+   "fresh-thyme",
+   "fresh-rosemary"
+  ],
+  "steps": [
+   "Heat the oven to 425F. Pat the chicken completely dry, inside and out.",
+   "Mash the butter with the herbs, lemon zest, garlic, half the salt and the pepper.",
+   "Slide your fingers under the breast skin to loosen it, then push two thirds of the herb butter directly onto the meat. Butter under the skin flavors the meat itself rather than just the surface, and it bastes the breast as it melts.",
+   "Rub the rest over the outside and season the skin with the remaining salt. Put the lemon halves and onion in the cavity and tie the legs.",
+   "Set the chicken on a rack in a roasting pan and pour the broth into the pan below.",
+   "Roast 70-80 minutes, until the thigh reads 175F and the juices run clear. Rest 15 minutes before carving, and serve with the pan juices."
+  ],
+  "diet": {
+   "vegetarian": false,
+   "vegan": false,
+   "pescatarian": false,
+   "glutenFree": true,
+   "glutenFreeAdaptable": false,
+   "dairyFree": false,
+   "nutFree": true,
+   "eggFree": true
+  },
+  "allergens": [
+   "dairy"
+  ],
+  "gmo": {
+   "risk": "low",
+   "sources": [
+    "grain-fed-meat",
+    "grain-fed-dairy"
+   ]
+  },
+  "nutrition": {
+   "calories": 682,
+   "proteinG": 58,
+   "carbsG": 5,
+   "fiberG": 1,
+   "sugarG": 2,
+   "fatG": 48,
+   "satFatG": 19,
+   "sodiumMg": 1480,
+   "cholesterolMg": 228
+  },
+  "tags": [
+   "sunday",
+   "family",
+   "gluten-free",
+   "high-protein",
+   "classic",
+   "entertaining",
+   "easy"
+  ],
+  "image": {
+   "file": "ms-roast-chicken.jpg",
+   "source": "commons-file",
+   "match": "dish",
+   "commonsFile": "Roasted Lemon Herb Chicken.jpg"
+  }
+ },
+ {
+  "id": "ch-ms-011",
+  "slug": "ms-meatloaf",
+  "title": "Classic Meatloaf",
+  "genre": "american",
+  "subgenre": "comfort",
+  "chef": {
+   "name": "Martha Stewart",
+   "slug": "martha-stewart"
+  },
+  "description": "A three-meat loaf with a ketchup glaze and a soft, moist crumb.",
+  "difficulty": "beginner",
+  "easeScore": 9,
+  "spiceScore": 1,
+  "popularity": 9,
+  "pantryScore": 9,
+  "servings": 8,
+  "prepMin": 20,
+  "cookMin": 75,
+  "totalMin": 95,
+  "equipment": [
+   "oven",
+   "stovetop"
+  ],
+  "ingredients": [
+   "1 lb ground beef (85/15)",
+   "1/2 lb ground pork",
+   "1/2 lb ground veal",
+   "1 1/2 cups fresh breadcrumbs",
+   "3/4 cup whole milk",
+   "2 eggs",
+   "2 tbsp butter",
+   "1 yellow onion, finely diced",
+   "2 celery stalks, finely diced",
+   "4 cloves garlic, minced",
+   "2 tbsp Worcestershire sauce",
+   "1/3 cup chopped parsley",
+   "2 tsp salt",
+   "1 tsp black pepper",
+   "3/4 cup ketchup",
+   "2 tbsp brown sugar",
+   "1 tbsp cider vinegar"
+  ],
+  "ingredientKeys": [
+   "ground-beef",
+   "ground-pork",
+   "ground-veal",
+   "breadcrumbs",
+   "whole-milk",
+   "egg",
+   "butter",
+   "yellow-onion",
+   "celery",
+   "garlic",
+   "worcestershire",
+   "parsley",
+   "salt",
+   "black-pepper",
+   "ketchup",
+   "brown-sugar",
+   "apple-cider-vinegar"
+  ],
+  "specialty": [
+   "ground-pork",
+   "ground-veal"
+  ],
+  "steps": [
+   "Soak the breadcrumbs in the milk for 10 minutes. This panade is the single reason good meatloaf is moist rather than dense.",
+   "Cook the onion and celery in the butter 8 minutes until soft, add the garlic for 1 minute, then cool. Raw onion in the mix stays crunchy and releases water.",
+   "Mix the three meats with the soaked breadcrumbs, eggs, cooked vegetables, Worcestershire, parsley, salt and pepper using your hands, stopping the moment it comes together.",
+   "Shape into a free-form loaf on a foil-lined sheet pan rather than packing it into a loaf pan - more surface area means more browning.",
+   "Stir the ketchup, brown sugar and vinegar together and brush a third over the loaf.",
+   "Bake at 375F for 50 minutes, glaze again, then bake 20-25 minutes more to 160F internal. Rest 15 minutes before slicing or it falls apart."
+  ],
+  "diet": {
+   "vegetarian": false,
+   "vegan": false,
+   "pescatarian": false,
+   "glutenFree": false,
+   "glutenFreeAdaptable": true,
+   "dairyFree": false,
+   "nutFree": true,
+   "eggFree": false
+  },
+  "allergens": [
+   "gluten",
+   "dairy",
+   "egg"
+  ],
+  "gmo": {
+   "risk": "high",
+   "sources": [
+    "grain-fed-meat",
+    "processed-bread",
+    "corn-syrup",
+    "grain-fed-dairy"
+   ]
+  },
+  "nutrition": {
+   "calories": 512,
+   "proteinG": 34,
+   "carbsG": 32,
+   "fiberG": 2,
+   "sugarG": 16,
+   "fatG": 28,
+   "satFatG": 11,
+   "sodiumMg": 1280,
+   "cholesterolMg": 138
+  },
+  "tags": [
+   "comfort",
+   "family",
+   "classic",
+   "make-ahead",
+   "leftovers",
+   "budget",
+   "kid-friendly"
+  ],
+  "image": {
+   "file": "ms-meatloaf.jpg",
+   "source": "commons-file",
+   "match": "dish",
+   "commonsFile": "Classic Meatloaf recipe.JPG"
+  }
+ },
+ {
+  "id": "ch-ms-012",
+  "slug": "ms-mashed-potatoes",
+  "title": "Perfect Mashed Potatoes",
+  "genre": "american",
+  "subgenre": "sides",
+  "chef": {
+   "name": "Martha Stewart",
+   "slug": "martha-stewart"
+  },
+  "description": "Riced potatoes folded with warm cream and a great deal of butter.",
+  "difficulty": "beginner",
+  "easeScore": 9,
+  "spiceScore": 0,
+  "popularity": 10,
+  "pantryScore": 10,
+  "servings": 8,
+  "prepMin": 15,
+  "cookMin": 30,
+  "totalMin": 45,
+  "equipment": [
+   "stovetop"
+  ],
+  "ingredients": [
+   "4 lb Yukon gold potatoes, peeled and quartered",
+   "2 tbsp kosher salt, for the water",
+   "1 1/2 cups heavy cream, warmed",
+   "12 tbsp butter, cut in pieces",
+   "2 tsp salt",
+   "1 tsp white pepper",
+   "3 tbsp chopped chives"
+  ],
+  "ingredientKeys": [
+   "yukon-potato",
+   "kosher-salt",
+   "heavy-cream",
+   "butter",
+   "salt",
+   "white-pepper",
+   "chives"
+  ],
+  "specialty": [
+   "white-pepper"
+  ],
+  "steps": [
+   "Put the potatoes in cold, heavily salted water and bring to a boil. Starting them cold cooks them evenly all the way through instead of turning the outsides to mush.",
+   "Simmer 20-25 minutes until a knife meets no resistance at all. Undercooked potatoes will not mash smooth no matter what you do.",
+   "Drain and return them to the dry pot over low heat for a full minute, shaking, to drive off the surface moisture.",
+   "Pass them through a ricer or food mill while hot. Never use a blender or food processor - it overworks the starch into glue.",
+   "Fold in the butter a few pieces at a time, then the warm cream in stages. Cold cream makes gluey, cool mash.",
+   "Season with the salt and white pepper and finish with chives. Serve immediately, or hold over a pan of barely simmering water."
+  ],
+  "diet": {
+   "vegetarian": true,
+   "vegan": false,
+   "pescatarian": true,
+   "glutenFree": true,
+   "glutenFreeAdaptable": false,
+   "dairyFree": false,
+   "nutFree": true,
+   "eggFree": true
+  },
+  "allergens": [
+   "dairy"
+  ],
+  "gmo": {
+   "risk": "low",
+   "sources": [
+    "grain-fed-dairy"
+   ]
+  },
+  "nutrition": {
+   "calories": 512,
+   "proteinG": 7,
+   "carbsG": 44,
+   "fiberG": 4,
+   "sugarG": 4,
+   "fatG": 34,
+   "satFatG": 21,
+   "sodiumMg": 780,
+   "cholesterolMg": 98
+  },
+  "tags": [
+   "side",
+   "vegetarian",
+   "gluten-free",
+   "thanksgiving",
+   "holiday",
+   "comfort",
+   "classic",
+   "family"
+  ],
+  "image": {
+   "file": "ms-mashed-potatoes.jpg",
+   "source": "commons-file",
+   "match": "dish",
+   "commonsFile": "Mashed potatoes 27.jpg"
+  }
+ },
+ {
+  "id": "ch-ms-013",
+  "slug": "ms-cranberry-sauce",
+  "title": "Cranberry Sauce",
+  "genre": "american",
+  "subgenre": "sides",
+  "chef": {
+   "name": "Martha Stewart",
+   "slug": "martha-stewart"
+  },
+  "description": "Fresh cranberries cooked with orange zest until they burst. Twelve minutes.",
+  "difficulty": "beginner",
+  "easeScore": 10,
+  "spiceScore": 0,
+  "popularity": 9,
+  "pantryScore": 8,
+  "servings": 10,
+  "prepMin": 5,
+  "cookMin": 135,
+  "totalMin": 140,
+  "equipment": [
+   "stovetop"
+  ],
+  "ingredients": [
+   "24 oz fresh cranberries",
+   "1 1/4 cups sugar",
+   "3/4 cup water",
+   "1/4 cup orange juice",
+   "1 tbsp orange zest",
+   "1 cinnamon stick",
+   "1/4 tsp salt"
+  ],
+  "ingredientKeys": [
+   "cranberries",
+   "sugar",
+   "water",
+   "orange-juice",
+   "orange-zest",
+   "cinnamon-stick",
+   "salt"
+  ],
+  "specialty": [
+   "cranberries",
+   "cinnamon-stick"
+  ],
+  "steps": [
+   "Combine the sugar, water, orange juice, zest, cinnamon stick and salt in a saucepan and bring to a boil, stirring until the sugar dissolves.",
+   "Add the cranberries and return to a simmer.",
+   "Cook 10-12 minutes, stirring occasionally, until most of the berries have burst and the liquid is syrupy. Leave some berries whole for texture - cooking until it is uniformly smooth gives you jam, not sauce.",
+   "Take it off the heat while it still looks slightly loose. Cranberries are full of natural pectin and the sauce sets considerably as it cools.",
+   "Discard the cinnamon stick and cool to room temperature, then refrigerate at least 2 hours.",
+   "It keeps two weeks refrigerated and the flavor improves after a day."
+  ],
+  "diet": {
+   "vegetarian": true,
+   "vegan": true,
+   "pescatarian": true,
+   "glutenFree": true,
+   "glutenFreeAdaptable": false,
+   "dairyFree": true,
+   "nutFree": true,
+   "eggFree": true
+  },
+  "allergens": [],
+  "gmo": {
+   "risk": "moderate",
+   "sources": [
+    "sugar-beet"
+   ]
+  },
+  "nutrition": {
+   "calories": 128,
+   "proteinG": 0,
+   "carbsG": 32,
+   "fiberG": 3,
+   "sugarG": 27,
+   "fatG": 0,
+   "satFatG": 0,
+   "sodiumMg": 62,
+   "cholesterolMg": 0
+  },
+  "tags": [
+   "side",
+   "thanksgiving",
+   "holiday",
+   "vegan",
+   "vegetarian",
+   "gluten-free",
+   "dairy-free",
+   "make-ahead",
+   "easy",
+   "quick"
+  ],
+  "image": {
+   "file": "ms-cranberry-sauce.jpg",
+   "source": "commons-file",
+   "match": "dish",
+   "commonsFile": "Cranberry Sauce (140491549).jpeg"
+  }
+ },
+ {
+  "id": "ch-ms-014",
+  "slug": "ms-herb-stuffing",
+  "title": "Classic Herb Stuffing",
+  "genre": "american",
+  "subgenre": "sides",
+  "chef": {
+   "name": "Martha Stewart",
+   "slug": "martha-stewart"
+  },
+  "description": "Dried bread cubes with sausage, celery and sage, baked crisp on top.",
+  "difficulty": "beginner",
+  "easeScore": 8,
+  "spiceScore": 1,
+  "popularity": 9,
+  "pantryScore": 8,
+  "servings": 10,
+  "prepMin": 25,
+  "cookMin": 60,
+  "totalMin": 85,
+  "equipment": [
+   "oven",
+   "stovetop"
+  ],
+  "ingredients": [
+   "1 1/2 lb country bread, cut in cubes and dried",
+   "1 lb pork sausage, casings removed",
+   "8 tbsp butter",
+   "2 yellow onions, diced",
+   "4 celery stalks, diced",
+   "6 cloves garlic, minced",
+   "3 tbsp chopped fresh sage",
+   "2 tbsp chopped fresh thyme",
+   "1/2 cup chopped parsley",
+   "2 tsp salt",
+   "1 1/2 tsp black pepper",
+   "4 cups chicken broth",
+   "3 eggs, beaten"
+  ],
+  "ingredientKeys": [
+   "country-bread",
+   "pork-sausage",
+   "butter",
+   "yellow-onion",
+   "celery",
+   "garlic",
+   "fresh-sage",
+   "fresh-thyme",
+   "parsley",
+   "salt",
+   "black-pepper",
+   "chicken-broth",
+   "egg"
+  ],
+  "specialty": [
+   "country-bread",
+   "pork-sausage",
+   "fresh-sage",
+   "fresh-thyme"
+  ],
+  "steps": [
+   "Dry the bread cubes on sheet pans in a 250F oven for 45 minutes, or leave them out overnight. Fresh bread turns to paste - the cubes must be genuinely dry and hard.",
+   "Brown the sausage, breaking it up, then lift it out leaving the fat.",
+   "Add the butter, onions and celery and cook 10 minutes until soft, then the garlic and herbs for 2 minutes.",
+   "Combine the bread, sausage and vegetables in a large bowl. Whisk the broth with the eggs and pour it over, tossing until evenly moistened. The eggs bind the stuffing so it holds together when served.",
+   "Let it sit 10 minutes so the bread absorbs the liquid, then add more broth if any cubes are still dry.",
+   "Pack into a buttered 9x13 dish, cover with foil and bake at 375F for 35 minutes, then uncover for 20-25 minutes until the top is crisp and browned."
+  ],
+  "diet": {
+   "vegetarian": false,
+   "vegan": false,
+   "pescatarian": false,
+   "glutenFree": false,
+   "glutenFreeAdaptable": false,
+   "dairyFree": false,
+   "nutFree": true,
+   "eggFree": false
+  },
+  "allergens": [
+   "gluten",
+   "dairy",
+   "egg"
+  ],
+  "gmo": {
+   "risk": "moderate",
+   "sources": [
+    "grain-fed-meat",
+    "processed-bread",
+    "grain-fed-dairy"
+   ]
+  },
+  "nutrition": {
+   "calories": 512,
+   "proteinG": 20,
+   "carbsG": 42,
+   "fiberG": 3,
+   "sugarG": 5,
+   "fatG": 30,
+   "satFatG": 14,
+   "sodiumMg": 1480,
+   "cholesterolMg": 112
+  },
+  "tags": [
+   "side",
+   "thanksgiving",
+   "holiday",
+   "family",
+   "make-ahead",
+   "comfort",
+   "classic",
+   "crowd-pleaser"
+  ],
+  "image": {
+   "file": "stuffing.jpg",
+   "source": "wikipedia-lead",
+   "match": "representative",
+   "wikipedia": "Stuffing"
+  }
+ },
+ {
+  "id": "ch-ms-015",
+  "slug": "ms-pumpkin-pie",
+  "title": "Pumpkin Pie",
+  "genre": "american",
+  "subgenre": "desserts",
+  "chef": {
+   "name": "Martha Stewart",
+   "slug": "martha-stewart"
+  },
+  "description": "Spiced pumpkin custard in a blind-baked all-butter shell.",
+  "difficulty": "beginner",
+  "easeScore": 8,
+  "spiceScore": 1,
+  "popularity": 9,
+  "pantryScore": 8,
+  "servings": 8,
+  "prepMin": 25,
+  "cookMin": 80,
+  "totalMin": 105,
+  "equipment": [
+   "oven"
+  ],
+  "ingredients": [
+   "1 disk pate brisee dough, chilled",
+   "1 can (15 oz) pumpkin puree",
+   "3/4 cup packed brown sugar",
+   "3 eggs",
+   "1 cup heavy cream",
+   "1/4 cup whole milk",
+   "2 tsp ground cinnamon",
+   "1 tsp ground ginger",
+   "1/2 tsp ground nutmeg",
+   "1/4 tsp ground cloves",
+   "1 tsp salt",
+   "1 tbsp vanilla extract",
+   "1 1/2 cups whipped cream"
+  ],
+  "ingredientKeys": [
+   "pie-dough",
+   "pumpkin-puree",
+   "brown-sugar",
+   "egg",
+   "heavy-cream",
+   "whole-milk",
+   "cinnamon",
+   "ground-ginger",
+   "nutmeg",
+   "ground-cloves",
+   "salt",
+   "vanilla-extract",
+   "whipped-cream"
+  ],
+  "specialty": [
+   "pie-dough",
+   "pumpkin-puree",
+   "ground-cloves"
+  ],
+  "steps": [
+   "Roll the dough into a 9-inch pie plate, crimp the edge, and chill 30 minutes. Line with parchment and weights and blind-bake at 375F for 20 minutes, then remove the weights and bake 5 minutes more. Blind-baking is what stops the crust going soggy under the wet custard.",
+   "Whisk the pumpkin, brown sugar, eggs, cream, milk, spices, salt and vanilla until completely uniform, but do not beat air into it.",
+   "Pour the filling into the warm shell.",
+   "Bake at 375F for 45-55 minutes. It is ready when the outer two inches are set and the center two inches still wobble as one piece.",
+   "Resist baking until the middle is firm - that is how you get a cracked, grainy pie. The residual heat finishes it.",
+   "Cool completely at room temperature, then chill 2 hours before serving with whipped cream."
+  ],
+  "diet": {
+   "vegetarian": true,
+   "vegan": false,
+   "pescatarian": true,
+   "glutenFree": false,
+   "glutenFreeAdaptable": false,
+   "dairyFree": false,
+   "nutFree": true,
+   "eggFree": false
+  },
+  "allergens": [
+   "gluten",
+   "dairy",
+   "egg"
+  ],
+  "gmo": {
+   "risk": "moderate",
+   "sources": [
+    "sugar-beet",
+    "grain-fed-dairy"
+   ]
+  },
+  "nutrition": {
+   "calories": 448,
+   "proteinG": 7,
+   "carbsG": 48,
+   "fiberG": 3,
+   "sugarG": 30,
+   "fatG": 26,
+   "satFatG": 15,
+   "sodiumMg": 380,
+   "cholesterolMg": 128
+  },
+  "tags": [
+   "dessert",
+   "thanksgiving",
+   "holiday",
+   "baking",
+   "vegetarian",
+   "make-ahead",
+   "classic",
+   "fall"
+  ],
+  "image": {
+   "file": "ms-pumpkin-pie.jpg",
+   "source": "commons-file",
+   "match": "dish",
+   "commonsFile": "Pumpkin Pie.jpg"
+  }
+ },
+ {
+  "id": "ch-ms-016",
+  "slug": "ms-angel-food-cake",
+  "title": "Angel Food Cake",
+  "genre": "american",
+  "subgenre": "desserts",
+  "chef": {
+   "name": "Martha Stewart",
+   "slug": "martha-stewart"
+  },
+  "description": "A fat-free cake raised entirely by whipped egg whites.",
+  "difficulty": "intermediate",
+  "easeScore": 6,
+  "spiceScore": 0,
+  "popularity": 7,
+  "pantryScore": 9,
+  "servings": 12,
+  "prepMin": 25,
+  "cookMin": 105,
+  "totalMin": 130,
+  "equipment": [
+   "oven"
+  ],
+  "ingredients": [
+   "1 cup cake flour",
+   "1 1/2 cups sugar",
+   "12 egg whites, at room temperature",
+   "1 1/2 tsp cream of tartar",
+   "1/4 tsp salt",
+   "1 1/2 tsp vanilla extract",
+   "1/2 tsp almond extract",
+   "2 cups mixed berries"
+  ],
+  "ingredientKeys": [
+   "cake-flour",
+   "sugar",
+   "egg-white",
+   "cream-of-tartar",
+   "salt",
+   "vanilla-extract",
+   "almond-extract",
+   "mixed-berries"
+  ],
+  "specialty": [
+   "cake-flour",
+   "cream-of-tartar",
+   "almond-extract",
+   "mixed-berries"
+  ],
+  "steps": [
+   "Heat the oven to 350F. Make sure your bowl and whisk are spotlessly clean and completely free of grease - the smallest trace of fat or yolk will stop the whites whipping.",
+   "Sift the cake flour with 1/2 cup of the sugar four times. Four times sounds excessive and is what makes the crumb this light.",
+   "Beat the room-temperature whites with the cream of tartar and salt to soft peaks, then add the remaining sugar a tablespoon at a time and beat to firm, glossy peaks. Add the extracts.",
+   "Sift the flour mixture over the whites in four additions, folding gently with a spatula after each. Every unnecessary stroke deflates the batter.",
+   "Pour into an ungreased tube pan - the batter needs to grip the sides to climb - and run a knife through it to pop large air pockets.",
+   "Bake 40-45 minutes until the top springs back. Invert the pan immediately and cool completely upside down, which keeps the cake from collapsing under its own weight. Serve with berries."
+  ],
+  "diet": {
+   "vegetarian": true,
+   "vegan": false,
+   "pescatarian": true,
+   "glutenFree": false,
+   "glutenFreeAdaptable": false,
+   "dairyFree": true,
+   "nutFree": true,
+   "eggFree": false
+  },
+  "allergens": [
+   "gluten",
+   "egg"
+  ],
+  "gmo": {
+   "risk": "moderate",
+   "sources": [
+    "sugar-beet"
+   ]
+  },
+  "nutrition": {
+   "calories": 186,
+   "proteinG": 5,
+   "carbsG": 42,
+   "fiberG": 1,
+   "sugarG": 32,
+   "fatG": 0,
+   "satFatG": 0,
+   "sodiumMg": 120,
+   "cholesterolMg": 0
+  },
+  "tags": [
+   "dessert",
+   "baking",
+   "technique",
+   "vegetarian",
+   "dairy-free",
+   "spring",
+   "classic",
+   "lighter"
+  ],
+  "image": {
+   "file": "ms-angel-food-cake.jpg",
+   "source": "commons-file",
+   "match": "dish",
+   "commonsFile": "Angel Food Cake Pan.JPG"
+  }
+ },
+ {
+  "id": "ch-ms-017",
+  "slug": "ms-buttermilk-pancakes",
+  "title": "Buttermilk Pancakes",
+  "genre": "american",
+  "subgenre": "breakfast",
+  "chef": {
+   "name": "Martha Stewart",
+   "slug": "martha-stewart"
+  },
+  "description": "Tall, tender pancakes from a lumpy batter and a rested griddle.",
+  "difficulty": "beginner",
+  "easeScore": 9,
+  "spiceScore": 0,
+  "popularity": 10,
+  "pantryScore": 9,
+  "servings": 4,
+  "prepMin": 10,
+  "cookMin": 20,
+  "totalMin": 30,
+  "equipment": [
+   "stovetop"
+  ],
+  "ingredients": [
+   "2 cups all-purpose flour",
+   "2 tbsp sugar",
+   "2 tsp baking powder",
+   "1 tsp baking soda",
+   "1 tsp salt",
+   "2 1/2 cups buttermilk",
+   "2 eggs",
+   "4 tbsp butter, melted",
+   "3 tbsp butter, for the griddle",
+   "1 cup maple syrup"
+  ],
+  "ingredientKeys": [
+   "flour",
+   "sugar",
+   "baking-powder",
+   "baking-soda",
+   "salt",
+   "buttermilk",
+   "egg",
+   "butter",
+   "butter",
+   "maple-syrup"
+  ],
+  "specialty": [
+   "buttermilk"
+  ],
+  "steps": [
+   "Whisk the flour, sugar, baking powder, baking soda and salt in a large bowl.",
+   "Beat the buttermilk, eggs and melted butter together in another bowl.",
+   "Pour the wet into the dry and fold about ten strokes with a spatula. Stop while the batter is still visibly lumpy - overmixing develops gluten and gives you flat, rubbery pancakes.",
+   "Let the batter rest 5 minutes while the griddle heats over medium-low. The rest hydrates the flour and lets the leavening start working.",
+   "Butter the griddle and ladle in 1/3 cup portions. Cook until bubbles break across the surface and the edges look dry, 2-3 minutes, then flip once and cook 1-2 minutes more.",
+   "Flip only once - pressing or re-flipping knocks the air out. Serve with butter and warm maple syrup."
+  ],
+  "diet": {
+   "vegetarian": true,
+   "vegan": false,
+   "pescatarian": true,
+   "glutenFree": false,
+   "glutenFreeAdaptable": true,
+   "dairyFree": false,
+   "nutFree": true,
+   "eggFree": false
+  },
+  "allergens": [
+   "gluten",
+   "dairy",
+   "egg"
+  ],
+  "gmo": {
+   "risk": "moderate",
+   "sources": [
+    "grain-fed-dairy",
+    "sugar-beet"
+   ]
+  },
+  "nutrition": {
+   "calories": 682,
+   "proteinG": 16,
+   "carbsG": 104,
+   "fiberG": 2,
+   "sugarG": 56,
+   "fatG": 22,
+   "satFatG": 12,
+   "sodiumMg": 1280,
+   "cholesterolMg": 138
+  },
+  "tags": [
+   "breakfast",
+   "quick",
+   "vegetarian",
+   "family",
+   "kid-friendly",
+   "classic",
+   "budget",
+   "weekend"
+  ],
+  "image": {
+   "file": "pancakes.jpg",
+   "source": "wikipedia-lead",
+   "match": "representative",
+   "wikipedia": "Pancake"
+  }
+ },
+ {
+  "id": "ch-ms-018",
+  "slug": "ms-quiche-lorraine",
+  "title": "Quiche Lorraine",
+  "genre": "french",
+  "subgenre": "baking",
+  "chef": {
+   "name": "Martha Stewart",
+   "slug": "martha-stewart"
+  },
+  "description": "Bacon and Gruyere custard in a blind-baked butter crust.",
+  "difficulty": "intermediate",
+  "easeScore": 7,
+  "spiceScore": 1,
+  "popularity": 8,
+  "pantryScore": 7,
+  "servings": 8,
+  "prepMin": 30,
+  "cookMin": 75,
+  "totalMin": 105,
+  "equipment": [
+   "oven",
+   "stovetop"
+  ],
+  "ingredients": [
+   "1 disk pate brisee dough, chilled",
+   "8 oz bacon, diced",
+   "1 yellow onion, thinly sliced",
+   "4 eggs",
+   "2 egg yolks",
+   "1 1/2 cups heavy cream",
+   "3/4 cup whole milk",
+   "1/4 tsp ground nutmeg",
+   "1 1/2 tsp salt",
+   "1 tsp white pepper",
+   "2 cups grated Gruyere",
+   "2 tbsp chopped chives"
+  ],
+  "ingredientKeys": [
+   "pie-dough",
+   "bacon",
+   "yellow-onion",
+   "egg",
+   "egg-yolk",
+   "heavy-cream",
+   "whole-milk",
+   "nutmeg",
+   "salt",
+   "white-pepper",
+   "gruyere",
+   "chives"
+  ],
+  "specialty": [
+   "pie-dough",
+   "gruyere",
+   "white-pepper"
+  ],
+  "steps": [
+   "Roll the dough into a 9-inch deep tart pan, chill 30 minutes, then line with parchment and weights and blind-bake at 375F for 25 minutes until pale gold and dry. A raw crust under wet custard is always soggy.",
+   "Render the bacon until crisp, then cook the onion in the fat 10 minutes until soft and golden. Drain both.",
+   "Whisk the eggs, yolks, cream, milk, nutmeg, salt and white pepper until smooth but not frothy. Beaten-in air makes the custard puff and then crack.",
+   "Scatter the bacon, onion and Gruyere over the base of the warm shell, then pour the custard over.",
+   "Bake at 350F for 40-50 minutes, until the edges are set and the center still has a slight wobble.",
+   "Cool at least 20 minutes before cutting - the custard sets as it cools. Serve warm or at room temperature with chives."
+  ],
+  "diet": {
+   "vegetarian": false,
+   "vegan": false,
+   "pescatarian": false,
+   "glutenFree": false,
+   "glutenFreeAdaptable": false,
+   "dairyFree": false,
+   "nutFree": true,
+   "eggFree": false
+  },
+  "allergens": [
+   "gluten",
+   "dairy",
+   "egg"
+  ],
+  "gmo": {
+   "risk": "moderate",
+   "sources": [
+    "grain-fed-meat",
+    "grain-fed-dairy"
+   ]
+  },
+  "nutrition": {
+   "calories": 682,
+   "proteinG": 24,
+   "carbsG": 28,
+   "fiberG": 1,
+   "sugarG": 5,
+   "fatG": 52,
+   "satFatG": 29,
+   "sodiumMg": 1180,
+   "cholesterolMg": 286
+  },
+  "tags": [
+   "brunch",
+   "french",
+   "baking",
+   "entertaining",
+   "make-ahead",
+   "classic",
+   "high-protein",
+   "holiday"
+  ],
+  "image": {
+   "file": "ms-quiche-lorraine.jpg",
+   "source": "commons-file",
+   "match": "dish",
+   "commonsFile": "54. Quiche lorraine.jpg"
+  }
+ },
+ {
+  "id": "ch-ms-019",
+  "slug": "ms-gougeres",
+  "title": "Gougeres",
+  "genre": "french",
+  "subgenre": "appetizers",
+  "chef": {
+   "name": "Martha Stewart",
+   "slug": "martha-stewart"
+  },
+  "description": "Gruyere choux puffs that come out hollow and crisp.",
+  "difficulty": "intermediate",
+  "easeScore": 6,
+  "spiceScore": 1,
+  "popularity": 7,
+  "pantryScore": 8,
+  "servings": 30,
+  "prepMin": 25,
+  "cookMin": 35,
+  "totalMin": 60,
+  "equipment": [
+   "oven",
+   "stovetop"
+  ],
+  "ingredients": [
+   "1 cup water",
+   "8 tbsp butter",
+   "1 tsp salt",
+   "1/2 tsp black pepper",
+   "1/4 tsp ground nutmeg",
+   "1 cup all-purpose flour",
+   "4 eggs",
+   "1 1/2 cups grated Gruyere",
+   "1/4 cup grated Parmesan",
+   "1 egg, beaten, for the wash"
+  ],
+  "ingredientKeys": [
+   "water",
+   "butter",
+   "salt",
+   "black-pepper",
+   "nutmeg",
+   "flour",
+   "egg",
+   "gruyere",
+   "parmesan",
+   "egg"
+  ],
+  "specialty": [
+   "gruyere"
+  ],
+  "steps": [
+   "Bring the water, butter, salt, pepper and nutmeg to a full boil. Dump in all the flour at once and stir hard over the heat for 2 minutes until it forms a smooth ball that pulls away from the pan sides.",
+   "Move the dough to a bowl and let it cool 5 minutes. Adding eggs to hot dough scrambles them.",
+   "Beat in the eggs one at a time, waiting until each is fully absorbed. The dough looks slippery and broken after each addition and then comes back together - keep going.",
+   "Beat in the Gruyere and Parmesan. The dough should hold a soft peak and fall slowly from the spoon.",
+   "Pipe or spoon walnut-sized mounds onto lined sheets, well apart, and brush with the beaten egg.",
+   "Bake at 425F for 10 minutes, then at 375F for 20-25 minutes until deep golden and light. Do not open the oven in the first 20 minutes or they collapse. Pierce each one to let the steam out."
+  ],
+  "diet": {
+   "vegetarian": true,
+   "vegan": false,
+   "pescatarian": true,
+   "glutenFree": false,
+   "glutenFreeAdaptable": false,
+   "dairyFree": false,
+   "nutFree": true,
+   "eggFree": false
+  },
+  "allergens": [
+   "gluten",
+   "dairy",
+   "egg"
+  ],
+  "gmo": {
+   "risk": "low",
+   "sources": [
+    "grain-fed-dairy"
+   ]
+  },
+  "nutrition": {
+   "calories": 82,
+   "proteinG": 4,
+   "carbsG": 4,
+   "fiberG": 0,
+   "sugarG": 0,
+   "fatG": 6,
+   "satFatG": 3,
+   "sodiumMg": 120,
+   "cholesterolMg": 38
+  },
+  "tags": [
+   "appetizer",
+   "french",
+   "baking",
+   "party",
+   "entertaining",
+   "technique",
+   "vegetarian",
+   "holiday"
+  ],
+  "image": {
+   "file": "ms-gougeres.jpg",
+   "source": "commons-file",
+   "match": "dish",
+   "commonsFile": "Gougeres (4202800536).jpg"
+  }
+ },
+ {
+  "id": "ch-ms-020",
+  "slug": "ms-lasagna",
+  "title": "Classic Lasagna",
+  "genre": "italian",
+  "subgenre": "pasta",
+  "chef": {
+   "name": "Martha Stewart",
+   "slug": "martha-stewart"
+  },
+  "description": "Meat sauce, bechamel and noodles in five careful layers.",
+  "difficulty": "intermediate",
+  "easeScore": 6,
+  "spiceScore": 1,
+  "popularity": 10,
+  "pantryScore": 7,
+  "servings": 10,
+  "prepMin": 45,
+  "cookMin": 120,
+  "totalMin": 165,
+  "equipment": [
+   "stovetop",
+   "oven"
+  ],
+  "ingredients": [
+   "1 lb ground beef (85/15)",
+   "1/2 lb ground pork",
+   "3 tbsp olive oil",
+   "1 yellow onion, finely diced",
+   "2 carrots, finely diced",
+   "5 cloves garlic, minced",
+   "1/4 cup tomato paste",
+   "1 cup dry red wine",
+   "2 cans (28 oz each) crushed tomatoes",
+   "2 tsp dried oregano",
+   "2 tsp salt",
+   "1 tsp black pepper",
+   "8 tbsp butter",
+   "1/2 cup all-purpose flour",
+   "4 cups whole milk, warmed",
+   "1/4 tsp ground nutmeg",
+   "1 lb lasagna noodles",
+   "2 1/2 cups grated Parmesan",
+   "1 lb mozzarella, shredded",
+   "1/2 cup fresh basil"
+  ],
+  "ingredientKeys": [
+   "ground-beef",
+   "ground-pork",
+   "olive-oil",
+   "yellow-onion",
+   "carrot",
+   "garlic",
+   "tomato-paste",
+   "red-wine",
+   "crushed-tomatoes",
+   "dried-oregano",
+   "salt",
+   "black-pepper",
+   "butter",
+   "flour",
+   "whole-milk",
+   "nutmeg",
+   "lasagna-noodles",
+   "parmesan",
+   "mozzarella",
+   "fresh-basil"
+  ],
+  "specialty": [
+   "ground-pork",
+   "red-wine",
+   "lasagna-noodles",
+   "mozzarella"
+  ],
+  "steps": [
+   "Brown both meats in the oil, then add the onion and carrots for 10 minutes and the garlic for 1. Add the tomato paste and cook 2 minutes, then the wine and reduce by half.",
+   "Add the tomatoes, oregano, salt and pepper and simmer 1 hour until thick and dark. A watery sauce is what makes lasagna collapse on the plate.",
+   "Make the bechamel: melt the butter, whisk in the flour and cook 2 minutes, then add the warm milk gradually and simmer 6 minutes until it coats a spoon. Season with nutmeg.",
+   "Boil the noodles 2 minutes short of the package time and lay them flat on oiled sheets so they do not weld together.",
+   "Build in a 9x13 dish: meat sauce, noodles, bechamel, Parmesan, mozzarella. Repeat four times, finishing with bechamel and both cheeses.",
+   "Bake at 375F for 50-60 minutes until deeply browned and bubbling at the edges. Rest 30 minutes before cutting - this is the step that lets it hold a square."
+  ],
+  "diet": {
+   "vegetarian": false,
+   "vegan": false,
+   "pescatarian": false,
+   "glutenFree": false,
+   "glutenFreeAdaptable": true,
+   "dairyFree": false,
+   "nutFree": true,
+   "eggFree": true
+  },
+  "allergens": [
+   "gluten",
+   "dairy",
+   "sulfites"
+  ],
+  "gmo": {
+   "risk": "moderate",
+   "sources": [
+    "grain-fed-meat",
+    "grain-fed-dairy",
+    "processed-bread"
+   ]
+  },
+  "nutrition": {
+   "calories": 782,
+   "proteinG": 48,
+   "carbsG": 58,
+   "fiberG": 6,
+   "sugarG": 14,
+   "fatG": 40,
+   "satFatG": 21,
+   "sodiumMg": 1480,
+   "cholesterolMg": 138
+  },
+  "tags": [
+   "family",
+   "comfort",
+   "make-ahead",
+   "holiday",
+   "party",
+   "classic",
+   "sunday",
+   "crowd-pleaser"
+  ],
+  "image": {
+   "file": "ms-lasagna.jpg",
+   "source": "commons-file",
+   "match": "dish",
+   "commonsFile": "Lasagna Classico.jpg"
+  }
+ },
+ {
+  "id": "ch-ms-021",
+  "slug": "ms-parmesan-risotto",
+  "title": "Parmesan Risotto",
+  "genre": "italian",
+  "subgenre": "risotto",
+  "chef": {
+   "name": "Martha Stewart",
+   "slug": "martha-stewart"
+  },
+  "description": "A plain risotto done properly - the base for anything you want to add.",
+  "difficulty": "intermediate",
+  "easeScore": 6,
+  "spiceScore": 0,
+  "popularity": 8,
+  "pantryScore": 7,
+  "servings": 4,
+  "prepMin": 10,
+  "cookMin": 35,
+  "totalMin": 45,
+  "equipment": [
+   "stovetop"
+  ],
+  "ingredients": [
+   "1 1/2 cups arborio rice",
+   "6 cups chicken broth",
+   "1 shallot, finely diced",
+   "6 tbsp butter",
+   "2 tbsp olive oil",
+   "3/4 cup dry white wine",
+   "1 1/2 cups finely grated Parmesan",
+   "1 1/2 tsp salt",
+   "1 tsp white pepper",
+   "2 tbsp chopped chives"
+  ],
+  "ingredientKeys": [
+   "arborio-rice",
+   "chicken-broth",
+   "shallot",
+   "butter",
+   "olive-oil",
+   "white-wine",
+   "parmesan",
+   "salt",
+   "white-pepper",
+   "chives"
+  ],
+  "specialty": [
+   "arborio-rice",
+   "shallot",
+   "white-wine",
+   "white-pepper"
+  ],
+  "steps": [
+   "Keep the broth at a bare simmer in a separate pot the whole time. Cold broth added to risotto stops the cooking dead and makes the grains gluey.",
+   "Sweat the shallot in 2 tbsp butter and the oil over medium heat 4 minutes without letting it color.",
+   "Add the rice and toast 2 minutes, stirring, until the grains are translucent at the edges with a white dot at the center.",
+   "Add the wine and stir until it has been fully absorbed.",
+   "Add the hot broth one ladle at a time, stirring often and waiting until each addition is nearly absorbed before the next. This takes 18-20 minutes, and the stirring is what coaxes out the starch that makes it creamy.",
+   "Off the heat, beat in the remaining butter and the Parmesan vigorously until it ripples when you shake the pan. Season and serve immediately with chives."
+  ],
+  "diet": {
+   "vegetarian": false,
+   "vegan": false,
+   "pescatarian": false,
+   "glutenFree": true,
+   "glutenFreeAdaptable": false,
+   "dairyFree": false,
+   "nutFree": true,
+   "eggFree": true
+  },
+  "allergens": [
+   "dairy",
+   "sulfites"
+  ],
+  "gmo": {
+   "risk": "low",
+   "sources": [
+    "grain-fed-dairy",
+    "grain-fed-meat"
+   ]
+  },
+  "nutrition": {
+   "calories": 682,
+   "proteinG": 22,
+   "carbsG": 64,
+   "fiberG": 2,
+   "sugarG": 3,
+   "fatG": 34,
+   "satFatG": 20,
+   "sodiumMg": 1480,
+   "cholesterolMg": 98
+  },
+  "tags": [
+   "italian",
+   "technique",
+   "gluten-free",
+   "classic",
+   "date-night",
+   "foundation",
+   "comfort"
+  ],
+  "image": {
+   "file": "risotto-milanese.jpg",
+   "source": "wikipedia-lead",
+   "match": "representative",
+   "wikipedia": "Risotto"
+  }
+ },
+ {
+  "id": "ch-ms-022",
+  "slug": "ms-chicken-pot-pie",
+  "title": "Chicken Pot Pie",
+  "genre": "american",
+  "subgenre": "comfort",
+  "chef": {
+   "name": "Martha Stewart",
+   "slug": "martha-stewart"
+  },
+  "description": "Creamy chicken and vegetables under an all-butter pastry lid.",
+  "difficulty": "intermediate",
+  "easeScore": 7,
+  "spiceScore": 1,
+  "popularity": 9,
+  "pantryScore": 8,
+  "servings": 6,
+  "prepMin": 35,
+  "cookMin": 60,
+  "totalMin": 95,
+  "equipment": [
+   "oven",
+   "stovetop"
+  ],
+  "ingredients": [
+   "1 disk pate brisee dough, chilled",
+   "2 lb boneless chicken thighs, cubed",
+   "6 tbsp butter",
+   "1 yellow onion, diced",
+   "3 carrots, diced",
+   "3 celery stalks, diced",
+   "8 oz cremini mushrooms, quartered",
+   "1/2 cup all-purpose flour",
+   "3 cups chicken broth",
+   "1 cup heavy cream",
+   "1 tbsp fresh thyme leaves",
+   "2 tsp salt",
+   "1 tsp black pepper",
+   "1 cup frozen peas",
+   "1/3 cup chopped parsley",
+   "1 egg, beaten"
+  ],
+  "ingredientKeys": [
+   "pie-dough",
+   "chicken-thighs",
+   "butter",
+   "yellow-onion",
+   "carrot",
+   "celery",
+   "mushroom",
+   "flour",
+   "chicken-broth",
+   "heavy-cream",
+   "fresh-thyme",
+   "salt",
+   "black-pepper",
+   "frozen-peas",
+   "parsley",
+   "egg"
+  ],
+  "specialty": [
+   "pie-dough",
+   "fresh-thyme"
+  ],
+  "steps": [
+   "Brown the chicken in 2 tbsp butter over high heat 6 minutes and set aside. Add the remaining butter and cook the onion, carrots, celery and mushrooms 10 minutes until the mushrooms have given up their water.",
+   "Stir in the flour and cook 2 minutes, then add the broth gradually, whisking, and simmer until thick.",
+   "Add the cream, thyme, salt and pepper, then return the chicken with the peas and parsley. Simmer 5 minutes.",
+   "Cool the filling at least 20 minutes. Hot filling melts the butter in the pastry before it reaches the oven, and you lose the flakiness.",
+   "Pour into a deep dish, roll the dough over the top, trim and crimp the edge to the rim, and cut several generous steam vents.",
+   "Brush with the beaten egg and bake at 400F for 40-45 minutes until deep golden and bubbling through the vents. Rest 15 minutes before serving."
+  ],
+  "diet": {
+   "vegetarian": false,
+   "vegan": false,
+   "pescatarian": false,
+   "glutenFree": false,
+   "glutenFreeAdaptable": false,
+   "dairyFree": false,
+   "nutFree": true,
+   "eggFree": false
+  },
+  "allergens": [
+   "gluten",
+   "dairy",
+   "egg"
+  ],
+  "gmo": {
+   "risk": "moderate",
+   "sources": [
+    "grain-fed-meat",
+    "grain-fed-dairy"
+   ]
+  },
+  "nutrition": {
+   "calories": 882,
+   "proteinG": 48,
+   "carbsG": 52,
+   "fiberG": 5,
+   "sugarG": 9,
+   "fatG": 52,
+   "satFatG": 27,
+   "sodiumMg": 1480,
+   "cholesterolMg": 268
+  },
+  "tags": [
+   "comfort",
+   "family",
+   "make-ahead",
+   "winter",
+   "classic",
+   "baking",
+   "high-protein"
+  ],
+  "image": {
+   "file": "ms-chicken-pot-pie.jpg",
+   "source": "commons-file",
+   "match": "dish",
+   "commonsFile": "191-365 Chicken Pot Pie.jpg"
+  }
+ },
+ {
+  "id": "ch-ms-023",
+  "slug": "ms-shortbread-cookies",
+  "title": "Shortbread Cookies",
+  "genre": "american",
+  "subgenre": "desserts",
+  "chef": {
+   "name": "Martha Stewart",
+   "slug": "martha-stewart"
+  },
+  "description": "Three ingredients plus salt, baked until barely golden.",
+  "difficulty": "beginner",
+  "easeScore": 9,
+  "spiceScore": 0,
+  "popularity": 8,
+  "pantryScore": 10,
+  "servings": 24,
+  "prepMin": 15,
+  "cookMin": 80,
+  "totalMin": 95,
+  "equipment": [
+   "oven"
+  ],
+  "ingredients": [
+   "1 cup butter, softened",
+   "3/4 cup powdered sugar",
+   "1 tsp vanilla extract",
+   "1/2 tsp salt",
+   "2 1/4 cups all-purpose flour",
+   "2 tbsp coarse sugar"
+  ],
+  "ingredientKeys": [
+   "butter",
+   "powdered-sugar",
+   "vanilla-extract",
+   "salt",
+   "flour",
+   "coarse-sugar"
+  ],
+  "specialty": [
+   "coarse-sugar"
+  ],
+  "steps": [
+   "Beat the butter with the powdered sugar, vanilla and salt for 2 minutes until smooth but not aerated. Shortbread should be dense, so do not whip air into it the way you would for a cake.",
+   "Add the flour on low speed and mix only until it just comes together into a crumbly dough.",
+   "Press and roll the dough to 1/2 inch thick between sheets of parchment, then chill 1 hour until firm.",
+   "Cut into rectangles or rounds, prick each one with a fork, and set them on lined sheets. Chill another 15 minutes - cold dough holds its shape and does not spread.",
+   "Sprinkle with coarse sugar and bake at 325F for 18-22 minutes, until the edges are just barely golden. Shortbread should stay pale; browning makes it bitter.",
+   "Cool on the pan 10 minutes before moving. They keep two weeks in a tin."
+  ],
+  "diet": {
+   "vegetarian": true,
+   "vegan": false,
+   "pescatarian": true,
+   "glutenFree": false,
+   "glutenFreeAdaptable": false,
+   "dairyFree": false,
+   "nutFree": true,
+   "eggFree": true
+  },
+  "allergens": [
+   "gluten",
+   "dairy"
+  ],
+  "gmo": {
+   "risk": "low",
+   "sources": [
+    "sugar-beet",
+    "grain-fed-dairy"
+   ]
+  },
+  "nutrition": {
+   "calories": 142,
+   "proteinG": 1,
+   "carbsG": 14,
+   "fiberG": 0,
+   "sugarG": 5,
+   "fatG": 9,
+   "satFatG": 5,
+   "sodiumMg": 82,
+   "cholesterolMg": 21
+  },
+  "tags": [
+   "dessert",
+   "baking",
+   "vegetarian",
+   "holiday",
+   "christmas",
+   "make-ahead",
+   "easy",
+   "classic",
+   "budget"
+  ],
+  "image": {
+   "file": "shortbread.jpg",
+   "source": "wikipedia-lead",
+   "match": "representative",
+   "wikipedia": "Shortbread"
+  }
+ },
+ {
+  "id": "ch-ms-024",
+  "slug": "ms-chocolate-layer-cake",
+  "title": "Chocolate Layer Cake",
+  "genre": "american",
+  "subgenre": "desserts",
+  "chef": {
+   "name": "Martha Stewart",
+   "slug": "martha-stewart"
+  },
+  "description": "Three tender cocoa layers under glossy chocolate buttercream.",
+  "difficulty": "intermediate",
+  "easeScore": 6,
+  "spiceScore": 0,
+  "popularity": 9,
+  "pantryScore": 8,
+  "servings": 12,
+  "prepMin": 40,
+  "cookMin": 90,
+  "totalMin": 130,
+  "equipment": [
+   "oven",
+   "stovetop"
+  ],
+  "ingredients": [
+   "2 1/4 cups all-purpose flour",
+   "1 cup cocoa powder",
+   "2 1/2 tsp baking soda",
+   "1 tsp salt",
+   "1 cup butter, softened",
+   "2 1/4 cups sugar",
+   "4 eggs, at room temperature",
+   "1 tbsp vanilla extract",
+   "1 1/2 cups buttermilk, at room temperature",
+   "1 cup hot brewed coffee",
+   "1 1/2 cups butter, softened, for the frosting",
+   "4 cups powdered sugar",
+   "1 cup cocoa powder, for the frosting",
+   "1/2 cup heavy cream",
+   "1 tsp vanilla extract, for the frosting",
+   "1/2 tsp salt, for the frosting"
+  ],
+  "ingredientKeys": [
+   "flour",
+   "cocoa-powder",
+   "baking-soda",
+   "salt",
+   "butter",
+   "sugar",
+   "egg",
+   "vanilla-extract",
+   "buttermilk",
+   "brewed-coffee",
+   "butter",
+   "powdered-sugar",
+   "cocoa-powder",
+   "heavy-cream",
+   "vanilla-extract",
+   "salt"
+  ],
+  "specialty": [
+   "cocoa-powder",
+   "buttermilk"
+  ],
+  "steps": [
+   "Heat the oven to 350F and line three 8-inch round pans. Sift the flour, cocoa, baking soda and salt together.",
+   "Cream the butter and sugar 4 minutes until pale and fluffy, then beat in the eggs one at a time and the vanilla.",
+   "Add the dry ingredients alternately with the buttermilk in three additions, mixing on low just until smooth.",
+   "Stir in the hot coffee last. The batter will be very thin, which is correct - the coffee is there to deepen the chocolate, not to taste of coffee.",
+   "Divide between the pans and bake 30-35 minutes until a skewer comes out clean. Cool 15 minutes in the pans, then turn out and cool completely. Frosting a warm cake makes it slide apart.",
+   "Beat the frosting butter 3 minutes, then add the powdered sugar and cocoa alternately with the cream, plus the vanilla and salt, and beat 3 minutes until glossy. Stack the layers with frosting between, then coat the top and sides."
+  ],
+  "diet": {
+   "vegetarian": true,
+   "vegan": false,
+   "pescatarian": true,
+   "glutenFree": false,
+   "glutenFreeAdaptable": true,
+   "dairyFree": false,
+   "nutFree": true,
+   "eggFree": false
+  },
+  "allergens": [
+   "gluten",
+   "dairy",
+   "egg"
+  ],
+  "gmo": {
+   "risk": "moderate",
+   "sources": [
+    "sugar-beet",
+    "grain-fed-dairy"
+   ]
+  },
+  "nutrition": {
+   "calories": 882,
+   "proteinG": 9,
+   "carbsG": 112,
+   "fiberG": 6,
+   "sugarG": 88,
+   "fatG": 48,
+   "satFatG": 29,
+   "sodiumMg": 680,
+   "cholesterolMg": 158
+  },
+  "tags": [
+   "dessert",
+   "birthday",
+   "baking",
+   "party",
+   "special-occasion",
+   "vegetarian",
+   "classic",
+   "crowd-pleaser"
+  ],
+  "image": {
+   "file": "ms-chocolate-layer-cake.jpg",
+   "source": "commons-file",
+   "match": "dish",
+   "commonsFile": "Chocolate layer cake.jpg"
+  }
+ },
+ {
+  "id": "ch-ms-025",
+  "slug": "ms-cheese-souffle",
+  "title": "Cheese Souffle",
+  "genre": "french",
+  "subgenre": "baking",
+  "chef": {
+   "name": "Martha Stewart",
+   "slug": "martha-stewart"
+  },
+  "description": "A Gruyere souffle that rises high and must be served the moment it leaves the oven.",
+  "difficulty": "advanced",
+  "easeScore": 3,
+  "spiceScore": 1,
+  "popularity": 6,
+  "pantryScore": 7,
+  "servings": 4,
+  "prepMin": 25,
+  "cookMin": 35,
+  "totalMin": 60,
+  "equipment": [
+   "oven",
+   "stovetop"
+  ],
+  "ingredients": [
+   "3 tbsp butter, plus more for the dish",
+   "1/4 cup grated Parmesan, for the dish",
+   "1/4 cup all-purpose flour",
+   "1 1/4 cups whole milk, warmed",
+   "1/2 tsp mustard powder",
+   "1/4 tsp ground nutmeg",
+   "1/4 tsp cayenne pepper",
+   "1 1/2 tsp salt",
+   "4 egg yolks",
+   "1 1/2 cups grated Gruyere",
+   "6 egg whites",
+   "1/4 tsp cream of tartar"
+  ],
+  "ingredientKeys": [
+   "butter",
+   "parmesan",
+   "flour",
+   "whole-milk",
+   "mustard-powder",
+   "nutmeg",
+   "cayenne",
+   "salt",
+   "egg-yolk",
+   "gruyere",
+   "egg-white",
+   "cream-of-tartar"
+  ],
+  "specialty": [
+   "mustard-powder",
+   "gruyere",
+   "cream-of-tartar"
+  ],
+  "steps": [
+   "Heat the oven to 400F. Butter a 1 1/2-quart souffle dish with upward strokes and coat it with the Parmesan. Those upward strokes give the batter something to climb.",
+   "Melt the butter, whisk in the flour and cook 2 minutes, then add the warm milk gradually and cook until very thick. Season with the mustard powder, nutmeg, cayenne and salt.",
+   "Take it off the heat, whisk in the yolks one at a time, then the Gruyere. Let it cool to just warm.",
+   "Beat the whites with the cream of tartar to firm, glossy peaks - stiff but not dry and crumbly.",
+   "Stir a quarter of the whites into the base to loosen it, then fold in the rest in two additions, cutting down through the middle and lifting over. Stop while a few streaks remain; every extra stroke costs you height.",
+   "Pour into the dish, run your thumb around the rim to make a shallow groove, and bake 30-35 minutes without opening the door. Serve immediately - a souffle starts falling within two minutes."
+  ],
+  "diet": {
+   "vegetarian": true,
+   "vegan": false,
+   "pescatarian": true,
+   "glutenFree": false,
+   "glutenFreeAdaptable": false,
+   "dairyFree": false,
+   "nutFree": true,
+   "eggFree": false
+  },
+  "allergens": [
+   "gluten",
+   "dairy",
+   "egg"
+  ],
+  "gmo": {
+   "risk": "low",
+   "sources": [
+    "grain-fed-dairy"
+   ]
+  },
+  "nutrition": {
+   "calories": 448,
+   "proteinG": 26,
+   "carbsG": 16,
+   "fiberG": 1,
+   "sugarG": 5,
+   "fatG": 32,
+   "satFatG": 18,
+   "sodiumMg": 1180,
+   "cholesterolMg": 286
+  },
+  "tags": [
+   "french",
+   "project",
+   "technique",
+   "vegetarian",
+   "entertaining",
+   "brunch",
+   "special-occasion",
+   "classic"
+  ],
+  "image": {
+   "file": "ms-cheese-souffle.jpg",
+   "source": "commons-file",
+   "match": "dish",
+   "commonsFile": "01 Cheese souffle.jpg"
+  }
+ }
 ]

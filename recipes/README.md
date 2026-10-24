@@ -1,7 +1,32 @@
 # Gusteau Recipe Repository
 
-900 recipes with structured metadata and Wikipedia images, built for filtering,
-browsing and thumbnail/preview generation in the Gusteau app.
+900 recipes with structured metadata and freely-licensed photography, built for
+filtering, browsing and thumbnail/preview generation in the Gusteau app.
+
+## Provenance — read this before writing any product copy
+
+**The dishes are real. The recipe text is original. None of it has been cooked.**
+
+- **Selection is drawn from the real world.** These are genuinely popular dishes, and
+  the chef-tagged ones are genuinely the dishes each chef is known for — Beef
+  Wellington for Ramsay, the smoked salmon pizza for Puck, mole poblano for Bayless.
+- **Every ingredient quantity, step, timing and nutrition figure was written for this
+  repository.** Nothing was scraped, retrieved, licensed or reproduced from a cookbook,
+  a chef's published recipe, or a recipe site. This applies to all 900 — the 400 base
+  recipes exactly as much as the 500 chef ones.
+- **Zero recipes are kitchen-tested.** No one has cooked any of these and reported
+  back. Quantities, timings, temperatures and yields are reasoned estimates grounded in
+  standard technique, not observed results. Expect a tail of recipes with ratio or
+  timing errors that only cooking will surface.
+
+Supportable product claim: *popular and signature dishes, with original instructions
+written for Gusteau.* **Not** supportable: "recipes from celebrity chefs", "tested",
+"kitchen-tested", "chef-approved", or any rating implying cooks have made these.
+
+The legal reason the text is original rather than sourced: an ingredient list is a
+statement of fact and is not copyrightable, but the expressive instruction text in a
+published cookbook is. Reproducing a chef's method verbatim into a shipped product
+would infringe; writing fresh instructions for the dish they are known for does not.
 
 | Collection | Count | Layout |
 | --- | --- | --- |
@@ -124,43 +149,72 @@ namespaced `ch-<initials>-NNN`, and `genre` on these records may also be `french
 `international` (Wolfgang Puck's Austrian dishes, Jacques Pépin's French ones), which
 the base four-genre collection never uses.
 
-**Provenance.** These are *Gusteau's own instructions for dishes each chef is known
-for* — not reproductions of their published recipe text. Recipe lists of ingredients
-are not copyrightable, but the expressive instructions in a published cookbook are, so
-every method here is written from scratch. Present these as "in the style of" /
-"the dish X is known for", never as X's recipe, and do not add quoted headnotes or
-instruction text from their books.
+**Provenance.** See the Provenance section at the top — it applies to the whole
+library, not just this collection. For the chef recipes specifically: present them as
+"the dish X is known for" or "in the style of X", never as X's recipe, and never add
+quoted headnotes or instruction text from their books.
 
 ## Images and attribution
 
-Dish images are ~800px Wikipedia lead images; chef portraits are ~500px. Every file
-has a record in the sibling `attribution.json` with `artist`, `licence`, `credit` and
-`file_page`.
+Every image is freely licensed, from Wikimedia Commons or Wikipedia, and every file has
+a record in the sibling `attribution.json` with `artist`, `licence`, `credit` and
+`file_page`. Dish photos are ~800px; chef portraits ~500px.
 
-**Wikipedia images are not public domain by default.** Most are CC BY-SA or CC BY and
-require visible credit to the photographer and a link to the licence. Render the
-`credit` string wherever an image is displayed at any meaningful size, or in an
-accessible info panel on the enlarged preview. Public-domain files are marked as such
-in `attribution.json` and need no credit.
+### Two tiers, and the UI must tell them apart
 
-Two caveats to carry into the UI:
+`image.match` says how much to trust the photo:
 
-- **A few dish images are representative rather than exact.** Seventeen dishes had no
-  usable lead image on their own Wikipedia page and were mapped to the closest
-  accurate article — e.g. *tinga* and *carne en su jugo* to `Mexican cuisine`,
-  *chicken française* to `Schnitzel`, *stuffed shells* to `Conchiglie`. The photo shows
-  the right kind of food, not necessarily that exact dish. The mapping is visible in
-  each recipe's `image.wikipedia` field.
+| `match` | `source` | What it means | Filename |
+| --- | --- | --- | --- |
+| `dish` | `commons-file` | A Commons photo whose own filename names this dish. Shows this dish. | `<recipe-slug>.jpg`, unique to that recipe |
+| `representative` | `wikipedia-lead` | A Wikipedia article's lead image. Shows the right *kind* of food, not necessarily this preparation. | shared between variants of one dish |
+
+`index.json` carries `imageMatch` per recipe and `facets.json` totals both tiers.
+**Caption or de-emphasise `representative` photos** — do not present them as a picture
+of that recipe. A `representative` photo is deliberately shared: several chili variants
+point at one chili photograph, because Commons has no picture of "Cocoa and Chipotle
+Chili" and a confident wrong image is worse than an obviously generic one.
+
+`validate.py` errors if a `match: "dish"` file is ever shared by two recipes, so this
+distinction cannot silently erode.
+
+### Licensing is not optional
+
+**These images are not public domain by default.** Most are CC BY-SA or CC BY and
+legally require visible credit to the photographer plus a link to the licence. Render
+the `credit` string wherever an image appears at any meaningful size, or in an
+accessible info panel on the enlarged preview. Files marked `CC0` or `Public domain` in
+`attribution.json` need no credit.
+
+Matches were rejected rather than used where the licence was impractical (GFDL, which
+requires shipping the full licence text) or where Commons had no artist metadata to
+credit under a BY/BY-SA licence. Those recipes fell back to `representative`.
+
+### Known gaps
+
+- **Recipes on `representative` photos.** Mostly invented variants and compound titles
+  that no photographer has captioned — "Chicken Scarpariello", "Cocoa and Chipotle
+  Chili". This is the honest ceiling of free-licence coverage, not a bug to fix by
+  loosening the matcher.
 - **19 of 20 chef portraits.** Alex Guarnaschelli has no freely-licensed photograph on
-  Wikipedia. Her entry has no `images/chefs/*.jpg` file and the UI should fall back to
-  initials or a placeholder. No substitute photo of another person was used.
+  Wikipedia. She has no `images/chefs/*.jpg` and the UI should fall back to initials or
+  a placeholder. No substitute photo of another person was used.
 
-To re-fetch (existing files are skipped unless `--force`):
+### Re-running the pipeline
 
 ```sh
-python3 scripts/fetch_images.py            # dish images, all data/**/*.json
-python3 scripts/fetch_chef_images.py       # chef portraits
+python3 scripts/match_commons.py --out /tmp/proposal.json   # propose; edits nothing
+python3 scripts/match_commons.py --sample 30 --out /tmp/s.json   # quick probe
+python3 scripts/apply_commons.py --proposal /tmp/proposal.json   # download + rewrite
+python3 scripts/fetch_images.py                             # wikipedia-lead fallbacks
+python3 scripts/fetch_chef_images.py                        # chef portraits
 ```
 
-Both honour `Retry-After` and back off on HTTP 429; Wikipedia rate-limits a bulk run
-of several hundred images, so expect the full sweep to take a while.
+`match_commons.py` is deliberately strict: a candidate is accepted only if its filename
+contains every core word of the dish, its leading noun is one of those words, and it
+adds no more than two extra words. Loosening any of those three rules reintroduces
+wrong-but-confident photos — it was rejecting a croissant for cheesecake and mushroom
+risotto for parmesan risotto.
+
+All scripts honour `Retry-After` and back off on HTTP 429. A full 900-recipe match plus
+download takes well over an hour.

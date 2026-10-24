@@ -1,301 +1,2835 @@
 [
-{"id":"ch-nl-001","slug":"nl-chocolate-guinness-cake","title":"Chocolate Guinness Cake","genre":"international","subgenre":"desserts","chef":{"name":"Nigella Lawson","slug":"nigella-lawson"},"description":"A dark, damp stout cake under a cream cheese topping that looks like a pint.","difficulty":"beginner","easeScore":9,"spiceScore":0,"popularity":9,"pantryScore":8,"servings":12,"prepMin":20,"cookMin":60,"totalMin":80,"equipment":["oven","stovetop"],
-"ingredients":["1 cup Guinness stout","1 cup butter","3/4 cup cocoa powder","2 cups sugar","3/4 cup sour cream","2 eggs","1 tbsp vanilla extract","2 cups all-purpose flour","2 1/2 tsp baking soda","1/2 tsp salt","1 1/4 cups cream cheese, softened","3/4 cup powdered sugar","1/2 cup heavy cream"],
-"ingredientKeys":["guinness","butter","cocoa-powder","sugar","sour-cream","egg","vanilla-extract","flour","baking-soda","salt","cream-cheese","powdered-sugar","heavy-cream"],
-"specialty":["guinness","cocoa-powder","cream-cheese"],
-"steps":["Heat the oven to 350F and line a 9-inch springform pan. Warm the Guinness and butter together in a large saucepan until the butter melts.","Whisk the cocoa and sugar into the warm beer mixture. The stout is not there to taste of beer - its slight bitterness and acidity deepen the cocoa and keep the crumb damp.","Beat the sour cream with the eggs and vanilla, then whisk that into the pan.","Fold in the flour, baking soda and salt until just smooth. The batter will be very loose, which is correct.","Pour into the pan and bake 45-50 minutes until a skewer comes out clean. Cool completely in the pan - this is a wet cake and will break if moved warm.","Beat the cream cheese smooth, add the powdered sugar, then the cream, and beat to a spreadable icing. Spread it over the top only, not the sides, so the cake looks like a pint of stout."],
-"diet":{"vegetarian":true,"vegan":false,"pescatarian":true,"glutenFree":false,"glutenFreeAdaptable":false,"dairyFree":false,"nutFree":true,"eggFree":false},
-"allergens":["gluten","dairy","egg"],
-"gmo":{"risk":"moderate","sources":["sugar-beet","grain-fed-dairy"]},
-"nutrition":{"calories":586,"proteinG":7,"carbsG":72,"fiberG":3,"sugarG":52,"fatG":30,"satFatG":18,"sodiumMg":480,"cholesterolMg":98},
-"tags":["dessert","baking","vegetarian","party","st-patricks-day","make-ahead","crowd-pleaser","british"],
-"image":{"file":"chocolate-guinness-cake.jpg","wikipedia":"Chocolate cake"}},
-
-{"id":"ch-nl-002","slug":"nl-clementine-cake","title":"Clementine Cake","genre":"international","subgenre":"desserts","chef":{"name":"Nigella Lawson","slug":"nigella-lawson"},"description":"Whole boiled clementines blitzed into a flourless almond cake.","difficulty":"intermediate","easeScore":7,"spiceScore":0,"popularity":7,"pantryScore":6,"servings":10,"prepMin":20,"cookMin":180,"totalMin":200,"equipment":["oven","stovetop","food-processor"],
-"ingredients":["4 clementines","6 eggs","1 cup sugar","2 1/2 cups almond flour","1 tsp baking powder","1/2 tsp salt","2 tbsp powdered sugar","1 cup creme fraiche"],
-"ingredientKeys":["clementines","egg","sugar","almond-flour","baking-powder","salt","powdered-sugar","creme-fraiche"],
-"specialty":["clementines","almond-flour","creme-fraiche"],
-"steps":["Put the whole clementines, skin and all, in a pan of cold water and boil them for 2 hours, topping up the water as needed. Then drain and cool.","Boiling whole is the entire trick: it softens the peel completely and cooks out the bitterness, so the finished cake tastes of the whole fruit rather than just the juice.","Cut the cooled clementines open, pick out any pips, then blitz the whole fruit - peel, pith and flesh - to a smooth pulp.","Beat the eggs with the sugar, then fold in the almond flour, baking powder, salt and the clementine pulp.","Pour into a lined 8-inch springform pan and bake at 375F for 55-60 minutes until a skewer comes out clean. Cover loosely with foil if the top browns early.","Cool completely in the pan. It is naturally gluten-free and improves after a day. Dust with powdered sugar and serve with creme fraiche."],
-"diet":{"vegetarian":true,"vegan":false,"pescatarian":true,"glutenFree":true,"glutenFreeAdaptable":false,"dairyFree":false,"nutFree":false,"eggFree":false},
-"allergens":["dairy","egg","tree-nut"],
-"gmo":{"risk":"moderate","sources":["sugar-beet","grain-fed-dairy"]},
-"nutrition":{"calories":386,"proteinG":12,"carbsG":32,"fiberG":4,"sugarG":26,"fatG":24,"satFatG":5,"sodiumMg":220,"cholesterolMg":138},
-"tags":["dessert","baking","gluten-free","vegetarian","make-ahead","technique","winter","entertaining"],
-"image":{"file":"clementine-cake.jpg","wikipedia":"Clementine"}},
-
-{"id":"ch-nl-003","slug":"nl-chocolate-olive-oil-cake","title":"Chocolate Olive Oil Cake","genre":"international","subgenre":"desserts","chef":{"name":"Nigella Lawson","slug":"nigella-lawson"},"description":"A dairy-free chocolate cake made with olive oil and almond flour.","difficulty":"beginner","easeScore":10,"spiceScore":0,"popularity":8,"pantryScore":7,"servings":10,"prepMin":15,"cookMin":45,"totalMin":60,"equipment":["oven"],
-"ingredients":["2/3 cup olive oil","1/2 cup cocoa powder","1/3 cup boiling water","2 tsp vanilla extract","1 1/2 cups almond flour","1/2 tsp baking soda","1/2 tsp salt","1 cup sugar","3 eggs","2 tbsp powdered sugar"],
-"ingredientKeys":["olive-oil","cocoa-powder","water","vanilla-extract","almond-flour","baking-soda","salt","sugar","egg","powdered-sugar"],
-"specialty":["cocoa-powder","almond-flour"],
-"steps":["Heat the oven to 325F and line a 9-inch springform pan.","Whisk the cocoa with the boiling water into a smooth paste, then add the vanilla. Blooming cocoa in boiling water rather than stirring it into the batter dry gives a much deeper chocolate flavor.","Whisk the almond flour, baking soda and salt together in another bowl.","Beat the sugar, olive oil and eggs for 3 minutes until pale and thickened, then beat in the cocoa paste.","Fold in the almond flour mixture until just combined.","Bake 40-45 minutes until the edges are set and the center is just firm. Cool completely in the pan - it is a damp cake and will crack if moved warm. Dust with powdered sugar."],
-"diet":{"vegetarian":true,"vegan":false,"pescatarian":true,"glutenFree":true,"glutenFreeAdaptable":false,"dairyFree":true,"nutFree":false,"eggFree":false},
-"allergens":["egg","tree-nut"],
-"gmo":{"risk":"moderate","sources":["sugar-beet"]},
-"nutrition":{"calories":386,"proteinG":8,"carbsG":32,"fiberG":4,"sugarG":24,"fatG":26,"satFatG":4,"sodiumMg":220,"cholesterolMg":58},
-"tags":["dessert","baking","gluten-free","dairy-free","vegetarian","easy","make-ahead","one-bowl"],
-"image":{"file":"chocolate-cake.jpg","wikipedia":"Chocolate cake"}},
-
-{"id":"ch-nl-004","slug":"nl-no-churn-coffee-ice-cream","title":"No-Churn Coffee Ice Cream","genre":"international","subgenre":"desserts","chef":{"name":"Nigella Lawson","slug":"nigella-lawson"},"description":"Three ingredients whipped together and frozen. No machine.","difficulty":"beginner","easeScore":10,"spiceScore":0,"popularity":8,"pantryScore":8,"servings":8,"prepMin":10,"cookMin":360,"totalMin":370,"equipment":["no-cook"],
-"ingredients":["1 1/4 cups heavy cream","1 can (14 oz) sweetened condensed milk","3 tbsp instant espresso powder","2 tbsp coffee liqueur","1/2 tsp salt","1 tsp vanilla extract"],
-"ingredientKeys":["heavy-cream","condensed-milk","instant-espresso","coffee-liqueur","salt","vanilla-extract"],
-"specialty":["condensed-milk","instant-espresso","coffee-liqueur"],
-"steps":["Dissolve the espresso powder in the coffee liqueur, stirring until no grains remain. Undissolved powder gives gritty ice cream.","Whisk the condensed milk with the coffee mixture, salt and vanilla.","Whip the cream to soft peaks in a separate bowl - stop while it still slumps, since you will be folding it and overwhipped cream turns grainy.","Fold the cream into the coffee mixture in three additions.","The condensed milk is doing two jobs here: its sugar lowers the freezing point and its milk solids interfere with ice crystals, which is why this sets smooth without churning.","Pour into a loaf pan, cover, and freeze at least 6 hours. It scoops straight from the freezer with no softening time."],
-"diet":{"vegetarian":true,"vegan":false,"pescatarian":true,"glutenFree":true,"glutenFreeAdaptable":false,"dairyFree":false,"nutFree":true,"eggFree":true},
-"allergens":["dairy"],
-"gmo":{"risk":"moderate","sources":["grain-fed-dairy","sugar-beet"]},
-"nutrition":{"calories":342,"proteinG":6,"carbsG":38,"fiberG":0,"sugarG":36,"fatG":19,"satFatG":12,"sodiumMg":180,"cholesterolMg":62},
-"tags":["dessert","no-churn","make-ahead","easy","gluten-free","vegetarian","summer","party","adults-only"],
-"image":{"file":"coffee-ice-cream.jpg","wikipedia":"Ice cream"}},
-
-{"id":"ch-nl-005","slug":"nl-salted-caramel-sauce","title":"Salted Caramel Sauce","genre":"international","subgenre":"desserts","chef":{"name":"Nigella Lawson","slug":"nigella-lawson"},"description":"A dark caramel finished with cream, butter and flaky salt.","difficulty":"beginner","easeScore":8,"spiceScore":0,"popularity":9,"pantryScore":9,"servings":16,"prepMin":5,"cookMin":15,"totalMin":20,"equipment":["stovetop"],
-"ingredients":["1 1/2 cups sugar","1/3 cup water","3/4 cup heavy cream, warmed","6 tbsp butter, cubed","1 1/2 tsp flaky sea salt","1 tsp vanilla extract"],
-"ingredientKeys":["sugar","water","heavy-cream","butter","flaky-salt","vanilla-extract"],
-"specialty":["flaky-salt"],
-"steps":["Put the sugar and water in a heavy saucepan over medium heat and stir only until the sugar dissolves. After that, do not stir again - swirl the pan instead. Stirring crystallizing sugar is what turns caramel grainy.","Cook 8-10 minutes until it turns deep amber, the color of an old penny. Go by color, not time, and stay with it; the gap between amber and burnt is about twenty seconds.","Take the pan off the heat and pour in the warmed cream. It will bubble up violently, which is why the cream must be warm and the pan tall.","Whisk in the butter a few cubes at a time, then the flaky salt and vanilla.","If it seizes into a lump, return it to low heat and whisk until it comes back together.","Cool to room temperature - it thickens considerably. It keeps three weeks refrigerated and loosens with a few seconds in the microwave."],
-"diet":{"vegetarian":true,"vegan":false,"pescatarian":true,"glutenFree":true,"glutenFreeAdaptable":false,"dairyFree":false,"nutFree":true,"eggFree":true},
-"allergens":["dairy"],
-"gmo":{"risk":"moderate","sources":["sugar-beet","grain-fed-dairy"]},
-"nutrition":{"calories":142,"proteinG":0,"carbsG":19,"fiberG":0,"sugarG":19,"fatG":8,"satFatG":5,"sodiumMg":180,"cholesterolMg":21},
-"tags":["dessert","sauce","technique","make-ahead","gluten-free","vegetarian","gift","quick","foundation"],
-"image":{"file":"caramel-sauce.jpg","wikipedia":"Caramel"}},
-
-{"id":"ch-nl-006","slug":"nl-chicken-chorizo-traybake","title":"Chicken and Chorizo Traybake","genre":"mediterranean","subgenre":"mains","chef":{"name":"Nigella Lawson","slug":"nigella-lawson"},"description":"One tray of chicken thighs, chorizo and potatoes with oregano and lemon.","difficulty":"beginner","easeScore":10,"spiceScore":4,"popularity":9,"pantryScore":8,"servings":6,"prepMin":15,"cookMin":55,"totalMin":70,"equipment":["oven"],
-"ingredients":["8 bone-in chicken thighs","10 oz Spanish chorizo, cut in thick coins","2 lb baby potatoes, halved","2 red onions, cut in wedges","1 head garlic, cloves separated and unpeeled","1/3 cup olive oil","2 tbsp dried oregano","1 tbsp smoked paprika","2 tsp salt","1 tsp black pepper","2 lemons, one juiced one sliced","1/3 cup chopped parsley"],
-"ingredientKeys":["chicken-thighs","spanish-chorizo","baby-potato","red-onion","garlic","olive-oil","dried-oregano","smoked-paprika","salt","black-pepper","lemon","parsley"],
-"specialty":["spanish-chorizo","baby-potato"],
-"steps":["Heat the oven to 425F. Toss the potatoes, onions and unpeeled garlic cloves with the oil, oregano, paprika, salt and pepper in a large roasting tray.","Tuck the chorizo coins in among the vegetables. As it roasts it releases paprika-red fat that seasons everything in the tray - that is the whole mechanism of the dish.","Set the chicken thighs on top, skin-side up, so the skin sits clear of the juices and crisps.","Pour the lemon juice over and tuck the lemon slices in.","Roast 50-55 minutes without turning, until the chicken skin is dark and the thighs read 175F.","Rest 5 minutes, squeeze a few of the soft garlic cloves out of their skins and mash them through the pan juices, then finish with parsley."],
-"diet":{"vegetarian":false,"vegan":false,"pescatarian":false,"glutenFree":true,"glutenFreeAdaptable":false,"dairyFree":true,"nutFree":true,"eggFree":true},
-"allergens":[],
-"gmo":{"risk":"moderate","sources":["grain-fed-meat"]},
-"nutrition":{"calories":782,"proteinG":48,"carbsG":42,"fiberG":5,"sugarG":7,"fatG":46,"satFatG":14,"sodiumMg":1480,"cholesterolMg":198},
-"tags":["one-pan","weeknight","gluten-free","dairy-free","family","easy","high-protein","spicy","entertaining"],
-"image":{"file":"spanish-chicken.jpg","wikipedia":"Chorizo"}},
-
-{"id":"ch-nl-007","slug":"nl-marmite-spaghetti","title":"Spaghetti with Marmite","genre":"italian","subgenre":"pasta","chef":{"name":"Nigella Lawson","slug":"nigella-lawson"},"description":"Butter, Marmite and pasta water in the most divisive five-minute supper there is.","difficulty":"beginner","easeScore":10,"spiceScore":1,"popularity":6,"pantryScore":4,"servings":2,"prepMin":2,"cookMin":12,"totalMin":14,"equipment":["stovetop"],
-"ingredients":["8 oz spaghetti","4 tbsp butter","2 tsp Marmite","1 tbsp salt, for the water","1/2 cup grated Parmesan","1/2 tsp black pepper"],
-"ingredientKeys":["spaghetti","butter","marmite","salt","parmesan","black-pepper"],
-"specialty":["marmite"],
-"steps":["Boil the spaghetti in well-salted water and reserve a cup of the cooking water before draining.","Melt the butter in a small pan over low heat and whisk in the Marmite until it dissolves completely into a glossy dark paste.","Keep the heat low. Marmite is intensely salty and scorches easily, and burnt yeast extract is genuinely unpleasant.","Add 3-4 tbsp of the starchy pasta water and whisk until the sauce emulsifies into something smooth and silky.","Toss the drained spaghetti through the sauce until every strand is coated, adding more pasta water if it tightens.","Serve with Parmesan and black pepper. Start with less Marmite than you think - it is a seasoning here, not a sauce base, and it does not need salt added."],
-"diet":{"vegetarian":true,"vegan":false,"pescatarian":true,"glutenFree":false,"glutenFreeAdaptable":true,"dairyFree":false,"nutFree":true,"eggFree":true},
-"allergens":["gluten","dairy"],
-"gmo":{"risk":"low","sources":["grain-fed-dairy"]},
-"nutrition":{"calories":682,"proteinG":22,"carbsG":86,"fiberG":4,"sugarG":3,"fatG":28,"satFatG":17,"sodiumMg":1480,"cholesterolMg":68},
-"tags":["quick","vegetarian","budget","pantry","weeknight","easy","british","comfort"],
-"image":{"file":"aglio-e-olio.jpg","wikipedia":"Marmite"}},
-
-{"id":"ch-nl-008","slug":"nl-lemon-garlic-mushroom-linguine","title":"Lemon and Garlic Mushroom Linguine","genre":"italian","subgenre":"pasta","chef":{"name":"Nigella Lawson","slug":"nigella-lawson"},"description":"Mushrooms browned hard with thyme, lemon and a little cream.","difficulty":"beginner","easeScore":9,"spiceScore":2,"popularity":8,"pantryScore":8,"servings":4,"prepMin":10,"cookMin":20,"totalMin":30,"equipment":["stovetop"],
-"ingredients":["1 lb linguine","1 1/2 lb mixed mushrooms, torn","1/4 cup olive oil","3 tbsp butter","6 cloves garlic, sliced","1 tsp red pepper flakes","2 tbsp fresh thyme leaves","1/2 cup dry white wine","1/2 cup heavy cream","2 tbsp lemon juice","1 tbsp lemon zest","1 1/2 tsp salt","1 tsp black pepper","1 cup grated Parmesan","1/3 cup chopped parsley"],
-"ingredientKeys":["linguine","mushroom","olive-oil","butter","garlic","red-pepper-flakes","fresh-thyme","white-wine","heavy-cream","lemon-juice","lemon-zest","salt","black-pepper","parmesan","parsley"],
-"specialty":["fresh-thyme","white-wine"],
-"steps":["Tear the mushrooms rather than slicing them. Ragged edges brown far better than clean cuts.","Heat the oil in a wide pan until it shimmers, add the mushrooms in a single layer, and leave them undisturbed for 4 minutes. Crowding or stirring early makes them release water and steam instead of browning.","Stir and cook 4 minutes more until deeply colored, then add the butter, garlic, pepper flakes and thyme for 1 minute.","Add the wine and reduce by half, scraping the pan.","Stir in the cream and simmer 2 minutes, then take the pan off the heat and add the lemon juice and zest. Adding acid off the heat keeps the cream from splitting.","Toss with the cooked linguine and a splash of pasta water, then finish with Parmesan and parsley."],
-"diet":{"vegetarian":true,"vegan":false,"pescatarian":true,"glutenFree":false,"glutenFreeAdaptable":true,"dairyFree":false,"nutFree":true,"eggFree":true},
-"allergens":["gluten","dairy","sulfites"],
-"gmo":{"risk":"low","sources":["grain-fed-dairy"]},
-"nutrition":{"calories":712,"proteinG":24,"carbsG":86,"fiberG":6,"sugarG":5,"fatG":30,"satFatG":14,"sodiumMg":980,"cholesterolMg":62},
-"tags":["quick","vegetarian","weeknight","italian","date-night","easy","comfort"],
-"image":{"file":"mushroom-pasta.jpg","wikipedia":"Linguine"}},
-
-{"id":"ch-nl-009","slug":"nl-meatzza","title":"Meatzza","genre":"italian","subgenre":"secondi","chef":{"name":"Nigella Lawson","slug":"nigella-lawson"},"description":"A pizza whose base is seasoned ground beef instead of dough.","difficulty":"beginner","easeScore":10,"spiceScore":2,"popularity":8,"pantryScore":9,"servings":4,"prepMin":15,"cookMin":35,"totalMin":50,"equipment":["oven"],
-"ingredients":["1 1/2 lb ground beef (85/15)","1 egg","1/2 cup grated Parmesan","3 tbsp breadcrumbs","3 cloves garlic, minced","2 tsp dried oregano","2 tsp salt","1 tsp black pepper","1 tbsp olive oil","1 cup passata or tomato puree","8 oz fresh mozzarella, torn","1/4 cup grated Parmesan, for the top","1/2 cup fresh basil","1 tsp red pepper flakes"],
-"ingredientKeys":["ground-beef","egg","parmesan","breadcrumbs","garlic","dried-oregano","salt","black-pepper","olive-oil","passata","fresh-mozzarella","parmesan","fresh-basil","red-pepper-flakes"],
-"specialty":["passata","fresh-mozzarella"],
-"steps":["Heat the oven to 425F. Mix the beef with the egg, Parmesan, breadcrumbs, garlic, oregano, salt and pepper, handling it just enough to combine.","Oil a 9-inch pie dish or round pan and press the mixture into it in an even layer, right to the edges, like a crust.","Press it thin - about 1/2 inch. A thick meat base steams rather than browns and the whole thing turns greasy.","Bake the base alone for 20 minutes, then pour off the fat that has collected. This step is what keeps the finished dish from swimming.","Spread the passata over, then scatter the torn mozzarella and extra Parmesan.","Bake 12-15 minutes more until the cheese is melted and blistered. Rest 5 minutes, then finish with basil and pepper flakes and cut into wedges."],
-"diet":{"vegetarian":false,"vegan":false,"pescatarian":false,"glutenFree":false,"glutenFreeAdaptable":true,"dairyFree":false,"nutFree":true,"eggFree":false},
-"allergens":["gluten","dairy","egg"],
-"gmo":{"risk":"moderate","sources":["grain-fed-meat","processed-bread","grain-fed-dairy"]},
-"nutrition":{"calories":682,"proteinG":52,"carbsG":14,"fiberG":2,"sugarG":6,"fatG":46,"satFatG":21,"sodiumMg":1480,"cholesterolMg":198},
-"tags":["low-carb","family","kid-friendly","weeknight","high-protein","easy","quick","italian"],
-"image":{"file":"meatzza.jpg","wikipedia":"Meatloaf"}},
-
-{"id":"ch-nl-010","slug":"nl-slow-cooked-lamb-beans","title":"Slow-Cooked Lamb with Beans","genre":"mediterranean","subgenre":"mains","chef":{"name":"Nigella Lawson","slug":"nigella-lawson"},"description":"Lamb shoulder cooked for hours over white beans and rosemary.","difficulty":"intermediate","easeScore":7,"spiceScore":2,"popularity":7,"pantryScore":7,"servings":8,"prepMin":20,"cookMin":270,"totalMin":290,"equipment":["oven"],
-"ingredients":["1 bone-in lamb shoulder (5 lb)","2 tbsp salt","1 tbsp black pepper","1/4 cup olive oil","3 yellow onions, thickly sliced","1 head garlic, cloves separated and peeled","4 sprigs fresh rosemary","2 tbsp fresh thyme leaves","3 cans (15 oz each) cannellini beans, drained","1 can (14 oz) diced tomatoes","2 cups chicken broth","1 cup dry white wine","2 tbsp lemon zest","1/3 cup chopped parsley"],
-"ingredientKeys":["lamb-shoulder","salt","black-pepper","olive-oil","yellow-onion","garlic","fresh-rosemary","fresh-thyme","cannellini-beans","diced-tomatoes","chicken-broth","white-wine","lemon-zest","parsley"],
-"specialty":["lamb-shoulder","fresh-rosemary","fresh-thyme","cannellini-beans","white-wine"],
-"steps":["Heat the oven to 450F. Score the lamb fat in a crosshatch, rub it all over with the oil, salt and pepper, and push rosemary sprigs into the slashes.","Roast it alone for 30 minutes to brown the outside.","Scatter the onions, whole garlic cloves, beans, tomatoes and thyme around the lamb, then pour in the broth and wine - around the meat, not over the crisped fat.","Cover tightly with foil, drop the oven to 300F, and cook 4 hours. Do not keep checking; each time you lift the foil you lose the steam doing the work.","It is ready when the meat pulls away from the bone with no resistance at all. If it resists, give it another 30 minutes - this cut cannot be hurried.","Uncover and roast 20 minutes at 425F to re-crisp the top. Shred the lamb into the beans and finish with lemon zest and parsley."],
-"diet":{"vegetarian":false,"vegan":false,"pescatarian":false,"glutenFree":true,"glutenFreeAdaptable":false,"dairyFree":true,"nutFree":true,"eggFree":true},
-"allergens":["sulfites"],
-"gmo":{"risk":"low","sources":["grain-fed-meat"]},
-"nutrition":{"calories":782,"proteinG":58,"carbsG":38,"fiberG":10,"sugarG":7,"fatG":44,"satFatG":17,"sodiumMg":1480,"cholesterolMg":178},
-"tags":["special-occasion","sunday","gluten-free","dairy-free","make-ahead","one-pot","high-protein","winter","entertaining"],
-"image":{"file":"roast-lamb.jpg","wikipedia":"Lamb and mutton"}},
-
-{"id":"ch-nl-011","slug":"nl-ham-in-coca-cola","title":"Ham in Coca-Cola","genre":"international","subgenre":"mains","chef":{"name":"Nigella Lawson","slug":"nigella-lawson"},"description":"Gammon simmered in cola then glazed and blasted in a hot oven.","difficulty":"intermediate","easeScore":7,"spiceScore":2,"popularity":8,"pantryScore":7,"servings":12,"prepMin":15,"cookMin":180,"totalMin":195,"equipment":["stovetop","oven"],
-"ingredients":["1 boneless gammon or uncured ham (6 lb)","2 liters Coca-Cola","1 yellow onion, quartered","2 bay leaves","1 tbsp black peppercorns","1/4 cup dark mustard","1/2 cup packed brown sugar","1 tbsp black treacle or molasses","1 tsp ground cloves","1 tbsp cider vinegar"],
-"ingredientKeys":["gammon","coca-cola","yellow-onion","bay-leaf","black-peppercorns","dark-mustard","brown-sugar","molasses","ground-cloves","apple-cider-vinegar"],
-"specialty":["gammon","coca-cola","dark-mustard","molasses","ground-cloves","black-peppercorns"],
-"steps":["Put the ham in a snug pot with the onion, bay leaves and peppercorns and pour over enough cola to cover it completely.","Bring to a boil, then lower to a bare simmer and cook 2 1/2 hours, about 25 minutes per pound. The cola is not a gimmick: its acidity tenderizes the meat and its sugar and caramel give the finished glaze its dark color.","Lift the ham out and let it cool slightly, then cut the skin off, leaving a layer of fat. Score the fat in a diamond crosshatch.","Heat the oven to 475F. Mix the mustard, brown sugar, treacle, cloves and vinegar into a thick paste.","Spread the glaze thickly over the scored fat and set the ham in a roasting pan.","Roast 20-30 minutes until the glaze is dark, bubbling and lacquered. Watch it closely - the sugar goes from caramelized to burnt quickly. Rest 20 minutes before carving."],
-"diet":{"vegetarian":false,"vegan":false,"pescatarian":false,"glutenFree":true,"glutenFreeAdaptable":false,"dairyFree":true,"nutFree":true,"eggFree":true},
-"allergens":[],
-"gmo":{"risk":"high","sources":["grain-fed-meat","corn-syrup","sugar-beet"]},
-"nutrition":{"calories":512,"proteinG":48,"carbsG":28,"fiberG":0,"sugarG":26,"fatG":22,"satFatG":8,"sodiumMg":2380,"cholesterolMg":128},
-"tags":["holiday","christmas","british","technique","gluten-free","dairy-free","party","make-ahead","leftovers"],
-"image":{"file":"glazed-ham.jpg","wikipedia":"Gammon (meat)"}},
-
-{"id":"ch-nl-012","slug":"nl-chicken-garlic-lemon","title":"Chicken with Garlic and Lemon","genre":"international","subgenre":"mains","chef":{"name":"Nigella Lawson","slug":"nigella-lawson"},"description":"Chicken thighs roasted over whole garlic cloves and lemon halves.","difficulty":"beginner","easeScore":10,"spiceScore":1,"popularity":8,"pantryScore":9,"servings":6,"prepMin":10,"cookMin":60,"totalMin":70,"equipment":["oven"],
-"ingredients":["10 bone-in chicken thighs","2 heads garlic, cloves separated and unpeeled","3 lemons, cut in wedges","1/3 cup olive oil","2 tbsp dried oregano","2 tsp salt","1 tsp black pepper","1 cup dry white wine","4 sprigs fresh thyme","1/3 cup chopped parsley"],
-"ingredientKeys":["chicken-thighs","garlic","lemon","olive-oil","dried-oregano","salt","black-pepper","white-wine","fresh-thyme","parsley"],
-"specialty":["white-wine","fresh-thyme"],
-"steps":["Heat the oven to 425F. Scatter the unpeeled garlic cloves and lemon wedges across a large roasting tray.","Leave the garlic in its skins. Roasted in the papery skin it steams into something sweet and spreadable instead of burning the way peeled cloves would over an hour.","Pat the chicken dry, rub with the oil, oregano, salt and pepper, and set it skin-side up on top of the garlic and lemon.","Pour the wine into the tray around the chicken, not over the skin, and tuck in the thyme sprigs.","Roast 55-60 minutes without turning, until the skin is deep brown and the thighs read 175F.","Squeeze several of the soft garlic cloves out of their skins and mash them into the pan juices, then spoon everything over the chicken with parsley."],
-"diet":{"vegetarian":false,"vegan":false,"pescatarian":false,"glutenFree":true,"glutenFreeAdaptable":false,"dairyFree":true,"nutFree":true,"eggFree":true},
-"allergens":["sulfites"],
-"gmo":{"risk":"low","sources":["grain-fed-meat"]},
-"nutrition":{"calories":586,"proteinG":48,"carbsG":11,"fiberG":2,"sugarG":3,"fatG":38,"satFatG":9,"sodiumMg":1080,"cholesterolMg":198},
-"tags":["one-pan","easy","weeknight","gluten-free","dairy-free","family","high-protein","entertaining"],
-"image":{"file":"lemon-chicken.jpg","wikipedia":"Chicken as food"}},
-
-{"id":"ch-nl-013","slug":"nl-moroccan-lamb-meatballs","title":"Moroccan Lamb Meatballs","genre":"mediterranean","subgenre":"north-african","chef":{"name":"Nigella Lawson","slug":"nigella-lawson"},"description":"Spiced lamb meatballs simmered in tomato sauce with couscous.","difficulty":"beginner","easeScore":9,"spiceScore":4,"popularity":8,"pantryScore":7,"servings":6,"prepMin":20,"cookMin":35,"totalMin":55,"equipment":["stovetop"],
-"ingredients":["2 lb ground lamb","1 yellow onion, grated and squeezed dry","4 cloves garlic, minced","1/2 cup chopped mint","1/3 cup chopped cilantro","1 tbsp ground cumin","1 tbsp ground coriander","2 tsp ground cinnamon","1 tsp cayenne pepper","2 tsp salt","3 tbsp olive oil","1 can (28 oz) crushed tomatoes","1 cup chicken broth","2 tbsp honey","2 cups couscous","2 1/2 cups boiling water","1/2 cup Greek yogurt","1/3 cup toasted almonds"],
-"ingredientKeys":["ground-lamb","yellow-onion","garlic","fresh-mint","cilantro","cumin","ground-coriander","cinnamon","cayenne","salt","olive-oil","crushed-tomatoes","chicken-broth","honey","couscous","water","greek-yogurt","almonds"],
-"specialty":["ground-lamb","fresh-mint","ground-coriander","couscous","greek-yogurt","almonds"],
-"steps":["Squeeze the grated onion bone dry in a towel. Wet onion makes a mixture too loose to roll.","Knead the lamb with the onion, garlic, herbs, spices and salt for 2-3 minutes until it turns tacky, then roll into 24 walnut-sized balls.","Brown them in the oil over medium-high, turning gently, about 6 minutes. They do not need to cook through.","Add the tomatoes, broth and honey to the pan, scraping up the browned bits.","Simmer 20-25 minutes until the meatballs are cooked through and the sauce has thickened around them.","Pour the boiling water over the couscous, cover 10 minutes, then fork it through thoroughly, breaking up every clump. Serve the meatballs over the couscous with yogurt and toasted almonds."],
-"diet":{"vegetarian":false,"vegan":false,"pescatarian":false,"glutenFree":false,"glutenFreeAdaptable":false,"dairyFree":false,"nutFree":false,"eggFree":true},
-"allergens":["gluten","dairy","tree-nut"],
-"gmo":{"risk":"low","sources":["grain-fed-meat","grain-fed-dairy"]},
-"nutrition":{"calories":782,"proteinG":48,"carbsG":72,"fiberG":7,"sugarG":16,"fatG":34,"satFatG":12,"sodiumMg":1280,"cholesterolMg":128},
-"tags":["weeknight","family","high-protein","make-ahead","spicy","comfort","mediterranean"],
-"image":{"file":"lamb-kofta.jpg","wikipedia":"Kofta"}},
-
-{"id":"ch-nl-014","slug":"nl-breakfast-bars","title":"Breakfast Bars","genre":"international","subgenre":"breakfast","chef":{"name":"Nigella Lawson","slug":"nigella-lawson"},"description":"Oats, dried fruit and nuts bound with condensed milk and baked.","difficulty":"beginner","easeScore":10,"spiceScore":0,"popularity":8,"pantryScore":7,"servings":16,"prepMin":10,"cookMin":60,"totalMin":70,"equipment":["oven"],
-"ingredients":["1 can (14 oz) sweetened condensed milk","2 1/2 cups rolled oats","1 cup shredded coconut","1 cup dried cranberries","1 cup chopped dried apricots","1 cup sliced almonds","1/2 cup pumpkin seeds","1/2 cup sunflower seeds","1 tsp ground cinnamon","1/2 tsp salt"],
-"ingredientKeys":["condensed-milk","rolled-oats","shredded-coconut","dried-cranberries","dried-apricots","almonds","pumpkin-seeds","sunflower-seeds","cinnamon","salt"],
-"specialty":["condensed-milk","rolled-oats","shredded-coconut","dried-cranberries","dried-apricots","almonds","pumpkin-seeds","sunflower-seeds"],
-"steps":["Heat the oven to 250F and line a 9x13 pan with parchment, leaving an overhang.","Warm the condensed milk slightly so it pours and coats easily.","Mix all the dry ingredients in a large bowl, then pour the condensed milk over and stir until every piece is coated. It will be very stiff - keep working it.","The condensed milk is the only binder here. There is no butter, egg or extra sugar, and it both glues the bars and sweetens them.","Press the mixture firmly into the pan with the back of a spoon or damp hands. Press hard; loosely packed bars crumble.","Bake 1 hour at the low temperature, until set and lightly golden. Cool completely in the pan before lifting out and cutting - cutting warm gives you granola, not bars."],
-"diet":{"vegetarian":true,"vegan":false,"pescatarian":true,"glutenFree":true,"glutenFreeAdaptable":false,"dairyFree":false,"nutFree":false,"eggFree":true},
-"allergens":["dairy","tree-nut"],
-"gmo":{"risk":"moderate","sources":["grain-fed-dairy","sugar-beet"]},
-"nutrition":{"calories":342,"proteinG":8,"carbsG":48,"fiberG":5,"sugarG":32,"fatG":14,"satFatG":5,"sodiumMg":120,"cholesterolMg":12},
-"tags":["breakfast","snack","make-ahead","easy","vegetarian","gluten-free","high-fiber","kid-friendly","meal-prep"],
-"image":{"file":"granola-bars.jpg","wikipedia":"Flapjack (oat bar)"}},
-
-{"id":"ch-nl-015","slug":"nl-egg-and-bacon-pie","title":"Egg and Bacon Pie","genre":"international","subgenre":"baking","chef":{"name":"Nigella Lawson","slug":"nigella-lawson"},"description":"Whole eggs cracked into a bacon-lined pastry case and baked.","difficulty":"intermediate","easeScore":7,"spiceScore":1,"popularity":7,"pantryScore":7,"servings":8,"prepMin":25,"cookMin":55,"totalMin":80,"equipment":["oven","stovetop"],
-"ingredients":["2 sheets shortcrust pastry, thawed","12 oz bacon, diced","1 yellow onion, diced","8 eggs","1/2 cup heavy cream","1 cup grated sharp cheddar","2 tbsp chopped chives","1 tsp mustard powder","1 1/2 tsp salt","1 tsp black pepper","1/4 tsp ground nutmeg","1 egg, beaten, for the wash"],
-"ingredientKeys":["shortcrust-pastry","bacon","yellow-onion","egg","heavy-cream","cheddar","chives","mustard-powder","salt","black-pepper","nutmeg","egg"],
-"specialty":["shortcrust-pastry","mustard-powder"],
-"steps":["Line a 9-inch pie dish with one sheet of pastry and chill it 20 minutes.","Render the bacon until crisp, then cook the onion in the fat 8 minutes. Drain both well - excess fat makes the base greasy and soggy.","Scatter the bacon, onion and cheddar over the pastry base, then make eight shallow wells in the filling.","Crack a whole egg into each well. Whole eggs rather than a beaten custard is the point - you get set whites and soft yolks in every slice.","Whisk the cream with the mustard powder, salt, pepper, nutmeg and chives and pour it carefully around the eggs without breaking them.","Lay the second pastry sheet over, crimp the edges, cut steam vents, brush with the beaten egg, and bake at 400F for 45-50 minutes until deep golden. Rest 20 minutes before cutting."],
-"diet":{"vegetarian":false,"vegan":false,"pescatarian":false,"glutenFree":false,"glutenFreeAdaptable":false,"dairyFree":false,"nutFree":true,"eggFree":false},
-"allergens":["gluten","dairy","egg"],
-"gmo":{"risk":"high","sources":["processed-bread","grain-fed-meat","grain-fed-dairy","seed-oil"]},
-"nutrition":{"calories":682,"proteinG":28,"carbsG":38,"fiberG":2,"sugarG":4,"fatG":46,"satFatG":19,"sodiumMg":1480,"cholesterolMg":298},
-"tags":["brunch","british","picnic","make-ahead","high-protein","baking","family","entertaining"],
-"image":{"file":"bacon-egg-pie.jpg","wikipedia":"Bacon and egg pie"}},
-
-{"id":"ch-nl-016","slug":"nl-praised-chicken","title":"Praised Chicken","genre":"international","subgenre":"mains","chef":{"name":"Nigella Lawson","slug":"nigella-lawson"},"description":"A whole chicken poached gently with vegetables, yielding meat and broth at once.","difficulty":"beginner","easeScore":9,"spiceScore":1,"popularity":7,"pantryScore":8,"servings":6,"prepMin":20,"cookMin":105,"totalMin":125,"equipment":["stovetop"],
-"ingredients":["1 whole chicken (4 lb)","4 carrots, cut in chunks","4 celery stalks, cut in chunks","2 leeks, sliced thick","1 head garlic, halved crosswise","2 cups small pasta or orzo","8 cups water","2 bay leaves","6 sprigs fresh thyme","1 tbsp black peppercorns","2 tsp salt","1/3 cup chopped parsley","1 cup grated Parmesan","3 tbsp olive oil"],
-"ingredientKeys":["whole-chicken","carrot","celery","leek","garlic","orzo","water","bay-leaf","fresh-thyme","black-peppercorns","salt","parsley","parmesan","olive-oil"],
-"specialty":["whole-chicken","leek","orzo","fresh-thyme","black-peppercorns"],
-"steps":["Put the chicken in a snug pot with the carrots, celery, leeks, halved garlic, bay leaves, thyme and peppercorns, and add the water. It should come most of the way up the bird.","Bring it up to the barest simmer - a bubble breaking every second or two - and skim the foam off for the first 15 minutes.","Never let it boil. Poaching keeps the breast meat silky; boiling makes it stringy and clouds the broth.","Cook 1 1/2 hours, until the leg pulls away easily and the thigh reads 175F.","Lift the chicken out and let it cool enough to handle, then pull the meat into large pieces and discard the skin and bones.","Season the broth with the salt, add the pasta and cook until tender, then return the chicken. Serve in bowls with parsley, Parmesan and a drizzle of olive oil."],
-"diet":{"vegetarian":false,"vegan":false,"pescatarian":false,"glutenFree":false,"glutenFreeAdaptable":true,"dairyFree":false,"nutFree":true,"eggFree":true},
-"allergens":["gluten","dairy"],
-"gmo":{"risk":"low","sources":["grain-fed-meat","grain-fed-dairy"]},
-"nutrition":{"calories":612,"proteinG":52,"carbsG":48,"fiberG":4,"sugarG":6,"fatG":22,"satFatG":7,"sodiumMg":1180,"cholesterolMg":158},
-"tags":["comfort","one-pot","family","technique","healthy","winter","high-protein","budget","leftovers"],
-"image":{"file":"chicken-soup.jpg","wikipedia":"Poaching (cooking)"}},
-
-{"id":"ch-nl-017","slug":"nl-lemon-polenta-cake","title":"Lemon Polenta Cake","genre":"italian","subgenre":"desserts","chef":{"name":"Nigella Lawson","slug":"nigella-lawson"},"description":"A gluten-free almond and polenta cake soaked in lemon syrup.","difficulty":"intermediate","easeScore":7,"spiceScore":0,"popularity":8,"pantryScore":6,"servings":12,"prepMin":20,"cookMin":60,"totalMin":80,"equipment":["oven","stovetop"],
-"ingredients":["1 cup butter, softened","1 cup sugar","3 cups almond flour","3/4 cup fine polenta","1 1/2 tsp baking powder","1/2 tsp salt","3 eggs","2 tbsp lemon zest","1/2 cup lemon juice","1/2 cup sugar, for the syrup","1/4 cup lemon juice, for the syrup","1 cup creme fraiche"],
-"ingredientKeys":["butter","sugar","almond-flour","polenta","baking-powder","salt","egg","lemon-zest","lemon-juice","sugar","lemon-juice","creme-fraiche"],
-"specialty":["almond-flour","polenta","creme-fraiche"],
-"steps":["Heat the oven to 350F and line an 8-inch springform pan.","Cream the butter and 1 cup sugar for 3 minutes until pale and fluffy.","Whisk the almond flour, polenta, baking powder and salt together, then add to the butter alternately with the eggs, one at a time.","Stir in the lemon zest and the 1/2 cup lemon juice. The batter will look slightly split, which is normal with this much liquid and no wheat flour.","Bake 45-50 minutes until the edges are set and the center is just firm. Cover loosely with foil if the top colors early.","Heat the 1/2 cup sugar with the 1/4 cup lemon juice until dissolved, then prick the hot cake all over with a skewer and pour the syrup over. Pouring hot syrup onto a hot cake is what lets it soak all the way through. Cool in the pan and serve with creme fraiche."],
-"diet":{"vegetarian":true,"vegan":false,"pescatarian":true,"glutenFree":true,"glutenFreeAdaptable":false,"dairyFree":false,"nutFree":false,"eggFree":false},
-"allergens":["dairy","egg","tree-nut"],
-"gmo":{"risk":"high","sources":["corn","sugar-beet","grain-fed-dairy"]},
-"nutrition":{"calories":586,"proteinG":11,"carbsG":48,"fiberG":4,"sugarG":34,"fatG":40,"satFatG":15,"sodiumMg":280,"cholesterolMg":112},
-"tags":["dessert","gluten-free","baking","vegetarian","make-ahead","italian","entertaining","technique"],
-"image":{"file":"lemon-polenta-cake.jpg","wikipedia":"Polenta"}},
-
-{"id":"ch-nl-018","slug":"nl-dense-chocolate-loaf","title":"Dense Chocolate Loaf Cake","genre":"international","subgenre":"desserts","chef":{"name":"Nigella Lawson","slug":"nigella-lawson"},"description":"A damp, almost fudgy loaf that is better on the second day.","difficulty":"intermediate","easeScore":7,"spiceScore":0,"popularity":8,"pantryScore":8,"servings":10,"prepMin":20,"cookMin":90,"totalMin":110,"equipment":["oven","stovetop"],
-"ingredients":["1 cup butter, softened","1 2/3 cups packed dark brown sugar","2 eggs","1 tbsp vanilla extract","4 oz dark chocolate, melted","1 1/3 cups all-purpose flour","1 tsp baking soda","1/2 tsp salt","1 cup boiling water","2 tsp instant espresso powder"],
-"ingredientKeys":["butter","brown-sugar","egg","vanilla-extract","dark-chocolate","flour","baking-soda","salt","water","instant-espresso"],
-"specialty":["dark-chocolate","instant-espresso"],
-"steps":["Heat the oven to 375F and line a 9x5 loaf pan with parchment, leaving a generous overhang - this cake is too soft to turn out of a bare pan.","Cream the butter and dark brown sugar 3 minutes, then beat in the eggs one at a time and the vanilla.","Fold in the melted chocolate, then the flour, baking soda and salt.","Dissolve the espresso powder in the boiling water and stir it into the batter. It will be alarmingly thin - closer to a sauce than a cake batter - and that is exactly right.","Pour into the pan and bake 30 minutes, then lower the oven to 325F and bake 30 minutes more. The center will still look slightly damp when tested.","Cool completely in the pan before lifting out. It is meant to be dense and sticky, not springy, and it genuinely improves after a day wrapped at room temperature."],
-"diet":{"vegetarian":true,"vegan":false,"pescatarian":true,"glutenFree":false,"glutenFreeAdaptable":false,"dairyFree":false,"nutFree":true,"eggFree":false},
-"allergens":["gluten","dairy","egg","soy"],
-"gmo":{"risk":"moderate","sources":["sugar-beet","soy","grain-fed-dairy"]},
-"nutrition":{"calories":512,"proteinG":5,"carbsG":62,"fiberG":2,"sugarG":48,"fatG":28,"satFatG":17,"sodiumMg":320,"cholesterolMg":88},
-"tags":["dessert","baking","vegetarian","make-ahead","british","comfort","party","technique"],
-"image":{"file":"chocolate-loaf.jpg","wikipedia":"Chocolate cake"}},
-
-{"id":"ch-nl-019","slug":"nl-mustard-pork-chops","title":"Mustard Pork Chops","genre":"international","subgenre":"mains","chef":{"name":"Nigella Lawson","slug":"nigella-lawson"},"description":"Chops seared and finished in a cream and grain mustard pan sauce.","difficulty":"beginner","easeScore":9,"spiceScore":3,"popularity":8,"pantryScore":8,"servings":4,"prepMin":10,"cookMin":25,"totalMin":35,"equipment":["stovetop"],
-"ingredients":["4 bone-in pork chops, 1 inch thick","2 tsp salt","1 tsp black pepper","2 tbsp olive oil","3 tbsp butter","2 shallots, minced","3 cloves garlic, minced","1/2 cup dry white wine","1 cup chicken broth","3/4 cup heavy cream","3 tbsp whole-grain mustard","1 tbsp Dijon mustard","1 tbsp fresh thyme leaves","2 tbsp chopped parsley"],
-"ingredientKeys":["pork-chops","salt","black-pepper","olive-oil","butter","shallot","garlic","white-wine","chicken-broth","heavy-cream","whole-grain-mustard","dijon-mustard","fresh-thyme","parsley"],
-"specialty":["pork-chops","shallot","white-wine","whole-grain-mustard","fresh-thyme"],
-"steps":["Pat the chops very dry and season them well. Dry surface, hot pan - that is the whole formula for a crust.","Sear them in the oil over high heat 4 minutes per side until deeply browned, then move to a plate. They are not cooked through yet.","Lower the heat, add the butter and cook the shallots 3 minutes, then the garlic for 1 minute.","Add the wine and reduce by half, scraping up the browned bits, then the broth and reduce 3 minutes.","Stir in the cream and both mustards and simmer 3 minutes. Add the mustard off the boil - high heat makes mustard bitter and dulls its sharpness.","Return the chops with their juices and simmer 6-8 minutes, turning once, to 145F internal. Rest 5 minutes, then finish with thyme and parsley."],
-"diet":{"vegetarian":false,"vegan":false,"pescatarian":false,"glutenFree":true,"glutenFreeAdaptable":false,"dairyFree":false,"nutFree":true,"eggFree":true},
-"allergens":["dairy","sulfites"],
-"gmo":{"risk":"moderate","sources":["grain-fed-meat","grain-fed-dairy"]},
-"nutrition":{"calories":712,"proteinG":48,"carbsG":9,"fiberG":1,"sugarG":3,"fatG":52,"satFatG":24,"sodiumMg":1280,"cholesterolMg":198},
-"tags":["quick","weeknight","gluten-free","low-carb","high-protein","date-night","easy","comfort"],
-"image":{"file":"pork-chop.jpg","wikipedia":"Pork chop"}},
-
-{"id":"ch-nl-020","slug":"nl-chickpea-pasta-soup","title":"Chickpea and Pasta Soup","genre":"italian","subgenre":"soups","chef":{"name":"Nigella Lawson","slug":"nigella-lawson"},"description":"A thick store-cupboard soup of chickpeas, small pasta and rosemary.","difficulty":"beginner","easeScore":10,"spiceScore":2,"popularity":7,"pantryScore":10,"servings":6,"prepMin":10,"cookMin":35,"totalMin":45,"equipment":["stovetop"],
-"ingredients":["1/4 cup olive oil","1 yellow onion, diced","4 cloves garlic, sliced","1 tsp red pepper flakes","3 tbsp tomato paste","3 cans (15 oz each) chickpeas, drained","6 cups vegetable broth","2 sprigs fresh rosemary","1 Parmesan rind","1 1/2 cups small pasta","2 tsp salt","1 tsp black pepper","1 cup grated Parmesan","1/3 cup chopped parsley"],
-"ingredientKeys":["olive-oil","yellow-onion","garlic","red-pepper-flakes","tomato-paste","chickpeas","vegetable-broth","fresh-rosemary","parmesan-rind","small-pasta","salt","black-pepper","parmesan","parsley"],
-"specialty":["fresh-rosemary","parmesan-rind"],
-"steps":["Cook the onion in the oil over medium heat 8 minutes, then add the garlic and pepper flakes for 1 minute.","Add the tomato paste and fry it 3 minutes until it darkens from bright red to brick. This caramelization is what gives a pantry soup real depth.","Blend or mash one can of the chickpeas with a cup of the broth and add it to the pot along with the whole chickpeas, the rest of the broth, the rosemary and the Parmesan rind. The puree is what thickens the soup without cream.","Simmer 15 minutes, then pull out the rosemary stems and rind.","Add the pasta and cook until al dente, stirring often since the soup is thick and can catch on the bottom.","Season and let it stand 5 minutes - it should be thick enough that a spoon stands up briefly. Serve with Parmesan, parsley and plenty of olive oil."],
-"diet":{"vegetarian":false,"vegan":false,"pescatarian":false,"glutenFree":false,"glutenFreeAdaptable":true,"dairyFree":false,"nutFree":true,"eggFree":true},
-"allergens":["gluten","dairy"],
-"gmo":{"risk":"low","sources":["grain-fed-dairy"]},
-"nutrition":{"calories":512,"proteinG":22,"carbsG":68,"fiberG":12,"sugarG":9,"fatG":18,"satFatG":5,"sodiumMg":1280,"cholesterolMg":18},
-"tags":["soup","pantry","budget","quick","high-fiber","vegetarian-adaptable","comfort","weeknight","italian"],
-"image":{"file":"pasta-e-ceci.jpg","wikipedia":"Pasta e ceci"}},
-
-{"id":"ch-nl-021","slug":"nl-sweet-potato-mac-cheese","title":"Sweet Potato Macaroni Cheese","genre":"international","subgenre":"comfort","chef":{"name":"Nigella Lawson","slug":"nigella-lawson"},"description":"Macaroni cheese with pureed sweet potato in the sauce.","difficulty":"beginner","easeScore":9,"spiceScore":3,"popularity":7,"pantryScore":8,"servings":8,"prepMin":20,"cookMin":50,"totalMin":70,"equipment":["stovetop","oven"],
-"ingredients":["1 lb macaroni","2 lb sweet potatoes, peeled and cubed","4 tbsp butter","1/3 cup all-purpose flour","3 cups whole milk, warmed","1 tsp mustard powder","1/2 tsp ground nutmeg","1/2 tsp cayenne pepper","2 tsp salt","1 tsp black pepper","3 cups shredded sharp cheddar","1 cup grated Parmesan","1 cup panko breadcrumbs","2 tbsp butter, melted"],
-"ingredientKeys":["elbow-macaroni","sweet-potato","butter","flour","whole-milk","mustard-powder","nutmeg","cayenne","salt","black-pepper","cheddar","parmesan","panko","butter"],
-"specialty":["sweet-potato","mustard-powder","panko"],
-"steps":["Boil the sweet potatoes until completely tender, 15 minutes, then drain well and mash or puree them smooth.","Boil the macaroni 2 minutes short of the package time, since it finishes in the oven.","Melt the 4 tbsp butter, whisk in the flour and cook 2 minutes, then add the warm milk gradually and simmer until it coats a spoon.","Whisk the sweet potato puree into the sauce along with the mustard powder, nutmeg, cayenne, salt and pepper. The sweet potato adds body and a faint sweetness that plays against the sharp cheddar.","Take the pan off the heat before stirring in the cheddar and half the Parmesan - cheese melted over direct heat turns grainy.","Fold in the pasta, pour into a buttered dish, top with the panko tossed with melted butter and the rest of the Parmesan, and bake at 400F for 25-30 minutes until browned."],
-"diet":{"vegetarian":true,"vegan":false,"pescatarian":true,"glutenFree":false,"glutenFreeAdaptable":true,"dairyFree":false,"nutFree":true,"eggFree":true},
-"allergens":["gluten","dairy"],
-"gmo":{"risk":"moderate","sources":["grain-fed-dairy","processed-bread"]},
-"nutrition":{"calories":782,"proteinG":32,"carbsG":82,"fiberG":6,"sugarG":16,"fatG":36,"satFatG":21,"sodiumMg":1180,"cholesterolMg":98},
-"tags":["comfort","family","vegetarian","kid-friendly","make-ahead","healthier","crowd-pleaser"],
-"image":{"file":"macaroni-and-cheese.jpg","wikipedia":"Macaroni and cheese"}},
-
-{"id":"ch-nl-022","slug":"nl-pistachio-rose-cake","title":"Pistachio and Rose Water Cake","genre":"mediterranean","subgenre":"desserts","chef":{"name":"Nigella Lawson","slug":"nigella-lawson"},"description":"A ground pistachio cake scented with rose water and cardamom.","difficulty":"intermediate","easeScore":7,"spiceScore":0,"popularity":7,"pantryScore":5,"servings":12,"prepMin":25,"cookMin":55,"totalMin":80,"equipment":["oven","food-processor"],
-"ingredients":["2 cups shelled pistachios","1 cup butter, softened","1 1/4 cups sugar","4 eggs","1 1/2 cups almond flour","1/2 cup all-purpose flour","1 1/2 tsp baking powder","1/2 tsp salt","1 tsp ground cardamom","2 tbsp rose water","1 tbsp lemon zest","1 cup powdered sugar","2 tbsp lemon juice","1 tsp rose water, for the icing","1/4 cup chopped pistachios","1 tbsp dried rose petals"],
-"ingredientKeys":["pistachios","butter","sugar","egg","almond-flour","flour","baking-powder","salt","cardamom","rose-water","lemon-zest","powdered-sugar","lemon-juice","rose-water","pistachios","rose-petals"],
-"specialty":["pistachios","almond-flour","cardamom","rose-water","rose-petals"],
-"steps":["Heat the oven to 350F and line a 9-inch springform pan. Grind the 2 cups pistachios to a coarse meal in a food processor - stop before they turn to butter.","Cream the butter and sugar 3 minutes, then beat in the eggs one at a time.","Fold in the ground pistachios, almond flour, all-purpose flour, baking powder, salt and cardamom.","Stir in the rose water and lemon zest. Go carefully with rose water - it is powerful, and a heavy hand makes the cake taste like perfume rather than dessert.","Bake 50-55 minutes until a skewer comes out clean. Cool completely in the pan.","Whisk the powdered sugar with the lemon juice and the extra teaspoon of rose water into a thin icing, pour it over, and scatter the chopped pistachios and rose petals."],
-"diet":{"vegetarian":true,"vegan":false,"pescatarian":true,"glutenFree":false,"glutenFreeAdaptable":true,"dairyFree":false,"nutFree":false,"eggFree":false},
-"allergens":["gluten","dairy","egg","tree-nut"],
-"gmo":{"risk":"moderate","sources":["sugar-beet","grain-fed-dairy"]},
-"nutrition":{"calories":586,"proteinG":12,"carbsG":52,"fiberG":4,"sugarG":38,"fatG":38,"satFatG":14,"sodiumMg":280,"cholesterolMg":112},
-"tags":["dessert","baking","entertaining","special-occasion","vegetarian","mediterranean","make-ahead","party"],
-"image":{"file":"pistachio-cake.jpg","wikipedia":"Pistachio"}},
-
-{"id":"ch-nl-023","slug":"nl-spiced-apple-cake","title":"Spiced Apple Cake","genre":"international","subgenre":"desserts","chef":{"name":"Nigella Lawson","slug":"nigella-lawson"},"description":"An easy one-bowl cake packed with apple chunks and warm spice.","difficulty":"beginner","easeScore":10,"spiceScore":1,"popularity":8,"pantryScore":9,"servings":10,"prepMin":15,"cookMin":60,"totalMin":75,"equipment":["oven"],
-"ingredients":["2 cups all-purpose flour","1 1/2 cups packed brown sugar","2 tsp baking powder","1 tsp baking soda","1 tbsp ground cinnamon","1 tsp ground ginger","1/2 tsp ground nutmeg","1/4 tsp ground cloves","1 tsp salt","3/4 cup vegetable oil","3 eggs","1 tsp vanilla extract","1/2 cup sour cream","4 baking apples, peeled and cut in chunks","2 tbsp demerara sugar"],
-"ingredientKeys":["flour","brown-sugar","baking-powder","baking-soda","cinnamon","ground-ginger","nutmeg","ground-cloves","salt","vegetable-oil","egg","vanilla-extract","sour-cream","baking-apples","demerara-sugar"],
-"specialty":["ground-cloves","baking-apples","demerara-sugar"],
-"steps":["Heat the oven to 350F and line a 9-inch springform pan.","Whisk all the dry ingredients and spices together in a large bowl.","Add the oil, eggs, vanilla and sour cream and stir just until smooth. Oil rather than butter is why this cake stays moist for days.","Fold in the apple chunks. Cut them generously - chunks rather than slices so they keep their shape and you get pockets of soft fruit.","Scrape into the pan, level the top, and scatter the demerara sugar over for a crunchy crust.","Bake 55-60 minutes until a skewer comes out clean. Tent with foil if it browns early. Cool in the pan at least 20 minutes before releasing."],
-"diet":{"vegetarian":true,"vegan":false,"pescatarian":true,"glutenFree":false,"glutenFreeAdaptable":true,"dairyFree":false,"nutFree":true,"eggFree":false},
-"allergens":["gluten","dairy","egg"],
-"gmo":{"risk":"high","sources":["seed-oil","sugar-beet","grain-fed-dairy"]},
-"nutrition":{"calories":512,"proteinG":6,"carbsG":72,"fiberG":3,"sugarG":48,"fatG":23,"satFatG":5,"sodiumMg":480,"cholesterolMg":62},
-"tags":["dessert","baking","easy","one-bowl","vegetarian","fall","make-ahead","family","comfort"],
-"image":{"file":"apple-cake.jpg","wikipedia":"Apple cake"}},
-
-{"id":"ch-nl-024","slug":"nl-lemon-posset","title":"Lemon Posset","genre":"international","subgenre":"desserts","chef":{"name":"Nigella Lawson","slug":"nigella-lawson"},"description":"Cream, sugar and lemon juice set without gelatin. Three ingredients.","difficulty":"beginner","easeScore":10,"spiceScore":0,"popularity":8,"pantryScore":9,"servings":6,"prepMin":10,"cookMin":250,"totalMin":260,"equipment":["stovetop"],
-"ingredients":["2 1/2 cups heavy cream","3/4 cup sugar","1/2 cup lemon juice","1 tbsp lemon zest","1/4 tsp salt","1 cup raspberries","6 shortbread cookies"],
-"ingredientKeys":["heavy-cream","sugar","lemon-juice","lemon-zest","salt","raspberries","shortbread-cookies"],
-"specialty":["raspberries","shortbread-cookies"],
-"steps":["Bring the cream and sugar to a boil in a saucepan, stirring to dissolve the sugar, and let it boil for a full 3 minutes. It will rise up, so use a pan with room.","Those 3 minutes of boiling matter: they concentrate the cream slightly, and the set depends on it.","Take the pan off the heat and whisk in the lemon juice, zest and salt.","There is no gelatin here. The acid in the lemon juice denatures the cream proteins and sets the posset on its own as it chills.","Pour through a fine sieve into 6 small glasses and leave them at room temperature 20 minutes.","Chill at least 4 hours until firmly set. Serve with raspberries and shortbread."],
-"diet":{"vegetarian":true,"vegan":false,"pescatarian":true,"glutenFree":false,"glutenFreeAdaptable":true,"dairyFree":false,"nutFree":true,"eggFree":true},
-"allergens":["gluten","dairy"],
-"gmo":{"risk":"moderate","sources":["grain-fed-dairy","sugar-beet"]},
-"nutrition":{"calories":448,"proteinG":3,"carbsG":38,"fiberG":2,"sugarG":32,"fatG":32,"satFatG":20,"sodiumMg":120,"cholesterolMg":98},
-"tags":["dessert","easy","make-ahead","british","vegetarian","technique","entertaining","no-bake","quick"],
-"image":{"file":"lemon-posset.jpg","wikipedia":"Posset"}},
-
-{"id":"ch-nl-025","slug":"nl-mulled-wine","title":"Mulled Wine","genre":"international","subgenre":"drinks","chef":{"name":"Nigella Lawson","slug":"nigella-lawson"},"description":"Red wine warmed with citrus and whole spices. Never boiled.","difficulty":"beginner","easeScore":10,"spiceScore":2,"popularity":8,"pantryScore":7,"servings":8,"prepMin":10,"cookMin":30,"totalMin":40,"equipment":["stovetop"],
-"ingredients":["2 bottles (750 ml each) fruity red wine","1/2 cup sugar","1 orange, sliced","1 lemon, sliced","3 cinnamon sticks","8 whole cloves","4 star anise","1 tsp allspice berries","1 vanilla bean, split","1/2 cup brandy"],
-"ingredientKeys":["red-wine","sugar","orange","lemon","cinnamon-stick","whole-cloves","star-anise","allspice-berries","vanilla-bean","brandy"],
-"specialty":["red-wine","cinnamon-stick","whole-cloves","star-anise","allspice-berries","vanilla-bean","brandy"],
-"steps":["Put the sugar, citrus slices and all the whole spices in a large pan with about 1 cup of the wine.","Heat gently until the sugar dissolves, then simmer 5 minutes to make a spiced syrup. Starting with a small amount of liquid extracts far more from the spices than warming everything at once would.","Use whole spices, not ground. Ground spices turn the wine cloudy and gritty.","Add the rest of the wine and warm it over low heat for 20 minutes.","Never let it boil. Above about 175F the alcohol starts evaporating and the wine turns harsh and stewed - you want it steaming, not bubbling.","Stir in the brandy off the heat and ladle into heatproof glasses, with a slice of orange in each."],
-"diet":{"vegetarian":true,"vegan":true,"pescatarian":true,"glutenFree":true,"glutenFreeAdaptable":false,"dairyFree":true,"nutFree":true,"eggFree":true},
-"allergens":["sulfites"],
-"gmo":{"risk":"moderate","sources":["sugar-beet"]},
-"nutrition":{"calories":242,"proteinG":0,"carbsG":22,"fiberG":1,"sugarG":20,"fatG":0,"satFatG":0,"sodiumMg":12,"cholesterolMg":0},
-"tags":["drink","holiday","christmas","winter","party","adults-only","easy","vegan","gluten-free","technique"],
-"image":{"file":"mulled-wine.jpg","wikipedia":"Mulled wine"}}
+ {
+  "id": "ch-nl-001",
+  "slug": "nl-chocolate-guinness-cake",
+  "title": "Chocolate Guinness Cake",
+  "genre": "international",
+  "subgenre": "desserts",
+  "chef": {
+   "name": "Nigella Lawson",
+   "slug": "nigella-lawson"
+  },
+  "description": "A dark, damp stout cake under a cream cheese topping that looks like a pint.",
+  "difficulty": "beginner",
+  "easeScore": 9,
+  "spiceScore": 0,
+  "popularity": 9,
+  "pantryScore": 8,
+  "servings": 12,
+  "prepMin": 20,
+  "cookMin": 60,
+  "totalMin": 80,
+  "equipment": [
+   "oven",
+   "stovetop"
+  ],
+  "ingredients": [
+   "1 cup Guinness stout",
+   "1 cup butter",
+   "3/4 cup cocoa powder",
+   "2 cups sugar",
+   "3/4 cup sour cream",
+   "2 eggs",
+   "1 tbsp vanilla extract",
+   "2 cups all-purpose flour",
+   "2 1/2 tsp baking soda",
+   "1/2 tsp salt",
+   "1 1/4 cups cream cheese, softened",
+   "3/4 cup powdered sugar",
+   "1/2 cup heavy cream"
+  ],
+  "ingredientKeys": [
+   "guinness",
+   "butter",
+   "cocoa-powder",
+   "sugar",
+   "sour-cream",
+   "egg",
+   "vanilla-extract",
+   "flour",
+   "baking-soda",
+   "salt",
+   "cream-cheese",
+   "powdered-sugar",
+   "heavy-cream"
+  ],
+  "specialty": [
+   "guinness",
+   "cocoa-powder",
+   "cream-cheese"
+  ],
+  "steps": [
+   "Heat the oven to 350F and line a 9-inch springform pan. Warm the Guinness and butter together in a large saucepan until the butter melts.",
+   "Whisk the cocoa and sugar into the warm beer mixture. The stout is not there to taste of beer - its slight bitterness and acidity deepen the cocoa and keep the crumb damp.",
+   "Beat the sour cream with the eggs and vanilla, then whisk that into the pan.",
+   "Fold in the flour, baking soda and salt until just smooth. The batter will be very loose, which is correct.",
+   "Pour into the pan and bake 45-50 minutes until a skewer comes out clean. Cool completely in the pan - this is a wet cake and will break if moved warm.",
+   "Beat the cream cheese smooth, add the powdered sugar, then the cream, and beat to a spreadable icing. Spread it over the top only, not the sides, so the cake looks like a pint of stout."
+  ],
+  "diet": {
+   "vegetarian": true,
+   "vegan": false,
+   "pescatarian": true,
+   "glutenFree": false,
+   "glutenFreeAdaptable": false,
+   "dairyFree": false,
+   "nutFree": true,
+   "eggFree": false
+  },
+  "allergens": [
+   "gluten",
+   "dairy",
+   "egg"
+  ],
+  "gmo": {
+   "risk": "moderate",
+   "sources": [
+    "sugar-beet",
+    "grain-fed-dairy"
+   ]
+  },
+  "nutrition": {
+   "calories": 586,
+   "proteinG": 7,
+   "carbsG": 72,
+   "fiberG": 3,
+   "sugarG": 52,
+   "fatG": 30,
+   "satFatG": 18,
+   "sodiumMg": 480,
+   "cholesterolMg": 98
+  },
+  "tags": [
+   "dessert",
+   "baking",
+   "vegetarian",
+   "party",
+   "st-patricks-day",
+   "make-ahead",
+   "crowd-pleaser",
+   "british"
+  ],
+  "image": {
+   "file": "nl-chocolate-guinness-cake.jpg",
+   "source": "commons-file",
+   "match": "dish",
+   "commonsFile": "Chocolate Guinness cake (26063287595).jpg"
+  }
+ },
+ {
+  "id": "ch-nl-002",
+  "slug": "nl-clementine-cake",
+  "title": "Clementine Cake",
+  "genre": "international",
+  "subgenre": "desserts",
+  "chef": {
+   "name": "Nigella Lawson",
+   "slug": "nigella-lawson"
+  },
+  "description": "Whole boiled clementines blitzed into a flourless almond cake.",
+  "difficulty": "intermediate",
+  "easeScore": 7,
+  "spiceScore": 0,
+  "popularity": 7,
+  "pantryScore": 6,
+  "servings": 10,
+  "prepMin": 20,
+  "cookMin": 180,
+  "totalMin": 200,
+  "equipment": [
+   "oven",
+   "stovetop",
+   "food-processor"
+  ],
+  "ingredients": [
+   "4 clementines",
+   "6 eggs",
+   "1 cup sugar",
+   "2 1/2 cups almond flour",
+   "1 tsp baking powder",
+   "1/2 tsp salt",
+   "2 tbsp powdered sugar",
+   "1 cup creme fraiche"
+  ],
+  "ingredientKeys": [
+   "clementines",
+   "egg",
+   "sugar",
+   "almond-flour",
+   "baking-powder",
+   "salt",
+   "powdered-sugar",
+   "creme-fraiche"
+  ],
+  "specialty": [
+   "clementines",
+   "almond-flour",
+   "creme-fraiche"
+  ],
+  "steps": [
+   "Put the whole clementines, skin and all, in a pan of cold water and boil them for 2 hours, topping up the water as needed. Then drain and cool.",
+   "Boiling whole is the entire trick: it softens the peel completely and cooks out the bitterness, so the finished cake tastes of the whole fruit rather than just the juice.",
+   "Cut the cooled clementines open, pick out any pips, then blitz the whole fruit - peel, pith and flesh - to a smooth pulp.",
+   "Beat the eggs with the sugar, then fold in the almond flour, baking powder, salt and the clementine pulp.",
+   "Pour into a lined 8-inch springform pan and bake at 375F for 55-60 minutes until a skewer comes out clean. Cover loosely with foil if the top browns early.",
+   "Cool completely in the pan. It is naturally gluten-free and improves after a day. Dust with powdered sugar and serve with creme fraiche."
+  ],
+  "diet": {
+   "vegetarian": true,
+   "vegan": false,
+   "pescatarian": true,
+   "glutenFree": true,
+   "glutenFreeAdaptable": false,
+   "dairyFree": false,
+   "nutFree": false,
+   "eggFree": false
+  },
+  "allergens": [
+   "dairy",
+   "egg",
+   "tree-nut"
+  ],
+  "gmo": {
+   "risk": "moderate",
+   "sources": [
+    "sugar-beet",
+    "grain-fed-dairy"
+   ]
+  },
+  "nutrition": {
+   "calories": 386,
+   "proteinG": 12,
+   "carbsG": 32,
+   "fiberG": 4,
+   "sugarG": 26,
+   "fatG": 24,
+   "satFatG": 5,
+   "sodiumMg": 220,
+   "cholesterolMg": 138
+  },
+  "tags": [
+   "dessert",
+   "baking",
+   "gluten-free",
+   "vegetarian",
+   "make-ahead",
+   "technique",
+   "winter",
+   "entertaining"
+  ],
+  "image": {
+   "file": "nl-clementine-cake.jpg",
+   "source": "commons-file",
+   "match": "dish",
+   "commonsFile": "Clementine cake.png"
+  }
+ },
+ {
+  "id": "ch-nl-003",
+  "slug": "nl-chocolate-olive-oil-cake",
+  "title": "Chocolate Olive Oil Cake",
+  "genre": "international",
+  "subgenre": "desserts",
+  "chef": {
+   "name": "Nigella Lawson",
+   "slug": "nigella-lawson"
+  },
+  "description": "A dairy-free chocolate cake made with olive oil and almond flour.",
+  "difficulty": "beginner",
+  "easeScore": 10,
+  "spiceScore": 0,
+  "popularity": 8,
+  "pantryScore": 7,
+  "servings": 10,
+  "prepMin": 15,
+  "cookMin": 45,
+  "totalMin": 60,
+  "equipment": [
+   "oven"
+  ],
+  "ingredients": [
+   "2/3 cup olive oil",
+   "1/2 cup cocoa powder",
+   "1/3 cup boiling water",
+   "2 tsp vanilla extract",
+   "1 1/2 cups almond flour",
+   "1/2 tsp baking soda",
+   "1/2 tsp salt",
+   "1 cup sugar",
+   "3 eggs",
+   "2 tbsp powdered sugar"
+  ],
+  "ingredientKeys": [
+   "olive-oil",
+   "cocoa-powder",
+   "water",
+   "vanilla-extract",
+   "almond-flour",
+   "baking-soda",
+   "salt",
+   "sugar",
+   "egg",
+   "powdered-sugar"
+  ],
+  "specialty": [
+   "cocoa-powder",
+   "almond-flour"
+  ],
+  "steps": [
+   "Heat the oven to 325F and line a 9-inch springform pan.",
+   "Whisk the cocoa with the boiling water into a smooth paste, then add the vanilla. Blooming cocoa in boiling water rather than stirring it into the batter dry gives a much deeper chocolate flavor.",
+   "Whisk the almond flour, baking soda and salt together in another bowl.",
+   "Beat the sugar, olive oil and eggs for 3 minutes until pale and thickened, then beat in the cocoa paste.",
+   "Fold in the almond flour mixture until just combined.",
+   "Bake 40-45 minutes until the edges are set and the center is just firm. Cool completely in the pan - it is a damp cake and will crack if moved warm. Dust with powdered sugar."
+  ],
+  "diet": {
+   "vegetarian": true,
+   "vegan": false,
+   "pescatarian": true,
+   "glutenFree": true,
+   "glutenFreeAdaptable": false,
+   "dairyFree": true,
+   "nutFree": false,
+   "eggFree": false
+  },
+  "allergens": [
+   "egg",
+   "tree-nut"
+  ],
+  "gmo": {
+   "risk": "moderate",
+   "sources": [
+    "sugar-beet"
+   ]
+  },
+  "nutrition": {
+   "calories": 386,
+   "proteinG": 8,
+   "carbsG": 32,
+   "fiberG": 4,
+   "sugarG": 24,
+   "fatG": 26,
+   "satFatG": 4,
+   "sodiumMg": 220,
+   "cholesterolMg": 58
+  },
+  "tags": [
+   "dessert",
+   "baking",
+   "gluten-free",
+   "dairy-free",
+   "vegetarian",
+   "easy",
+   "make-ahead",
+   "one-bowl"
+  ],
+  "image": {
+   "file": "chocolate-cake.jpg",
+   "source": "wikipedia-lead",
+   "match": "representative",
+   "wikipedia": "Chocolate cake"
+  }
+ },
+ {
+  "id": "ch-nl-004",
+  "slug": "nl-no-churn-coffee-ice-cream",
+  "title": "No-Churn Coffee Ice Cream",
+  "genre": "international",
+  "subgenre": "desserts",
+  "chef": {
+   "name": "Nigella Lawson",
+   "slug": "nigella-lawson"
+  },
+  "description": "Three ingredients whipped together and frozen. No machine.",
+  "difficulty": "beginner",
+  "easeScore": 10,
+  "spiceScore": 0,
+  "popularity": 8,
+  "pantryScore": 8,
+  "servings": 8,
+  "prepMin": 10,
+  "cookMin": 360,
+  "totalMin": 370,
+  "equipment": [
+   "no-cook"
+  ],
+  "ingredients": [
+   "1 1/4 cups heavy cream",
+   "1 can (14 oz) sweetened condensed milk",
+   "3 tbsp instant espresso powder",
+   "2 tbsp coffee liqueur",
+   "1/2 tsp salt",
+   "1 tsp vanilla extract"
+  ],
+  "ingredientKeys": [
+   "heavy-cream",
+   "condensed-milk",
+   "instant-espresso",
+   "coffee-liqueur",
+   "salt",
+   "vanilla-extract"
+  ],
+  "specialty": [
+   "condensed-milk",
+   "instant-espresso",
+   "coffee-liqueur"
+  ],
+  "steps": [
+   "Dissolve the espresso powder in the coffee liqueur, stirring until no grains remain. Undissolved powder gives gritty ice cream.",
+   "Whisk the condensed milk with the coffee mixture, salt and vanilla.",
+   "Whip the cream to soft peaks in a separate bowl - stop while it still slumps, since you will be folding it and overwhipped cream turns grainy.",
+   "Fold the cream into the coffee mixture in three additions.",
+   "The condensed milk is doing two jobs here: its sugar lowers the freezing point and its milk solids interfere with ice crystals, which is why this sets smooth without churning.",
+   "Pour into a loaf pan, cover, and freeze at least 6 hours. It scoops straight from the freezer with no softening time."
+  ],
+  "diet": {
+   "vegetarian": true,
+   "vegan": false,
+   "pescatarian": true,
+   "glutenFree": true,
+   "glutenFreeAdaptable": false,
+   "dairyFree": false,
+   "nutFree": true,
+   "eggFree": true
+  },
+  "allergens": [
+   "dairy"
+  ],
+  "gmo": {
+   "risk": "moderate",
+   "sources": [
+    "grain-fed-dairy",
+    "sugar-beet"
+   ]
+  },
+  "nutrition": {
+   "calories": 342,
+   "proteinG": 6,
+   "carbsG": 38,
+   "fiberG": 0,
+   "sugarG": 36,
+   "fatG": 19,
+   "satFatG": 12,
+   "sodiumMg": 180,
+   "cholesterolMg": 62
+  },
+  "tags": [
+   "dessert",
+   "no-churn",
+   "make-ahead",
+   "easy",
+   "gluten-free",
+   "vegetarian",
+   "summer",
+   "party",
+   "adults-only"
+  ],
+  "image": {
+   "file": "coffee-ice-cream.jpg",
+   "source": "wikipedia-lead",
+   "match": "representative",
+   "wikipedia": "Ice cream"
+  }
+ },
+ {
+  "id": "ch-nl-005",
+  "slug": "nl-salted-caramel-sauce",
+  "title": "Salted Caramel Sauce",
+  "genre": "international",
+  "subgenre": "desserts",
+  "chef": {
+   "name": "Nigella Lawson",
+   "slug": "nigella-lawson"
+  },
+  "description": "A dark caramel finished with cream, butter and flaky salt.",
+  "difficulty": "beginner",
+  "easeScore": 8,
+  "spiceScore": 0,
+  "popularity": 9,
+  "pantryScore": 9,
+  "servings": 16,
+  "prepMin": 5,
+  "cookMin": 15,
+  "totalMin": 20,
+  "equipment": [
+   "stovetop"
+  ],
+  "ingredients": [
+   "1 1/2 cups sugar",
+   "1/3 cup water",
+   "3/4 cup heavy cream, warmed",
+   "6 tbsp butter, cubed",
+   "1 1/2 tsp flaky sea salt",
+   "1 tsp vanilla extract"
+  ],
+  "ingredientKeys": [
+   "sugar",
+   "water",
+   "heavy-cream",
+   "butter",
+   "flaky-salt",
+   "vanilla-extract"
+  ],
+  "specialty": [
+   "flaky-salt"
+  ],
+  "steps": [
+   "Put the sugar and water in a heavy saucepan over medium heat and stir only until the sugar dissolves. After that, do not stir again - swirl the pan instead. Stirring crystallizing sugar is what turns caramel grainy.",
+   "Cook 8-10 minutes until it turns deep amber, the color of an old penny. Go by color, not time, and stay with it; the gap between amber and burnt is about twenty seconds.",
+   "Take the pan off the heat and pour in the warmed cream. It will bubble up violently, which is why the cream must be warm and the pan tall.",
+   "Whisk in the butter a few cubes at a time, then the flaky salt and vanilla.",
+   "If it seizes into a lump, return it to low heat and whisk until it comes back together.",
+   "Cool to room temperature - it thickens considerably. It keeps three weeks refrigerated and loosens with a few seconds in the microwave."
+  ],
+  "diet": {
+   "vegetarian": true,
+   "vegan": false,
+   "pescatarian": true,
+   "glutenFree": true,
+   "glutenFreeAdaptable": false,
+   "dairyFree": false,
+   "nutFree": true,
+   "eggFree": true
+  },
+  "allergens": [
+   "dairy"
+  ],
+  "gmo": {
+   "risk": "moderate",
+   "sources": [
+    "sugar-beet",
+    "grain-fed-dairy"
+   ]
+  },
+  "nutrition": {
+   "calories": 142,
+   "proteinG": 0,
+   "carbsG": 19,
+   "fiberG": 0,
+   "sugarG": 19,
+   "fatG": 8,
+   "satFatG": 5,
+   "sodiumMg": 180,
+   "cholesterolMg": 21
+  },
+  "tags": [
+   "dessert",
+   "sauce",
+   "technique",
+   "make-ahead",
+   "gluten-free",
+   "vegetarian",
+   "gift",
+   "quick",
+   "foundation"
+  ],
+  "image": {
+   "file": "caramel-sauce.jpg",
+   "source": "wikipedia-lead",
+   "match": "representative",
+   "wikipedia": "Caramel"
+  }
+ },
+ {
+  "id": "ch-nl-006",
+  "slug": "nl-chicken-chorizo-traybake",
+  "title": "Chicken and Chorizo Traybake",
+  "genre": "mediterranean",
+  "subgenre": "mains",
+  "chef": {
+   "name": "Nigella Lawson",
+   "slug": "nigella-lawson"
+  },
+  "description": "One tray of chicken thighs, chorizo and potatoes with oregano and lemon.",
+  "difficulty": "beginner",
+  "easeScore": 10,
+  "spiceScore": 4,
+  "popularity": 9,
+  "pantryScore": 8,
+  "servings": 6,
+  "prepMin": 15,
+  "cookMin": 55,
+  "totalMin": 70,
+  "equipment": [
+   "oven"
+  ],
+  "ingredients": [
+   "8 bone-in chicken thighs",
+   "10 oz Spanish chorizo, cut in thick coins",
+   "2 lb baby potatoes, halved",
+   "2 red onions, cut in wedges",
+   "1 head garlic, cloves separated and unpeeled",
+   "1/3 cup olive oil",
+   "2 tbsp dried oregano",
+   "1 tbsp smoked paprika",
+   "2 tsp salt",
+   "1 tsp black pepper",
+   "2 lemons, one juiced one sliced",
+   "1/3 cup chopped parsley"
+  ],
+  "ingredientKeys": [
+   "chicken-thighs",
+   "spanish-chorizo",
+   "baby-potato",
+   "red-onion",
+   "garlic",
+   "olive-oil",
+   "dried-oregano",
+   "smoked-paprika",
+   "salt",
+   "black-pepper",
+   "lemon",
+   "parsley"
+  ],
+  "specialty": [
+   "spanish-chorizo",
+   "baby-potato"
+  ],
+  "steps": [
+   "Heat the oven to 425F. Toss the potatoes, onions and unpeeled garlic cloves with the oil, oregano, paprika, salt and pepper in a large roasting tray.",
+   "Tuck the chorizo coins in among the vegetables. As it roasts it releases paprika-red fat that seasons everything in the tray - that is the whole mechanism of the dish.",
+   "Set the chicken thighs on top, skin-side up, so the skin sits clear of the juices and crisps.",
+   "Pour the lemon juice over and tuck the lemon slices in.",
+   "Roast 50-55 minutes without turning, until the chicken skin is dark and the thighs read 175F.",
+   "Rest 5 minutes, squeeze a few of the soft garlic cloves out of their skins and mash them through the pan juices, then finish with parsley."
+  ],
+  "diet": {
+   "vegetarian": false,
+   "vegan": false,
+   "pescatarian": false,
+   "glutenFree": true,
+   "glutenFreeAdaptable": false,
+   "dairyFree": true,
+   "nutFree": true,
+   "eggFree": true
+  },
+  "allergens": [],
+  "gmo": {
+   "risk": "moderate",
+   "sources": [
+    "grain-fed-meat"
+   ]
+  },
+  "nutrition": {
+   "calories": 782,
+   "proteinG": 48,
+   "carbsG": 42,
+   "fiberG": 5,
+   "sugarG": 7,
+   "fatG": 46,
+   "satFatG": 14,
+   "sodiumMg": 1480,
+   "cholesterolMg": 198
+  },
+  "tags": [
+   "one-pan",
+   "weeknight",
+   "gluten-free",
+   "dairy-free",
+   "family",
+   "easy",
+   "high-protein",
+   "spicy",
+   "entertaining"
+  ],
+  "image": {
+   "file": "spanish-chicken.jpg",
+   "source": "wikipedia-lead",
+   "match": "representative",
+   "wikipedia": "Chorizo"
+  }
+ },
+ {
+  "id": "ch-nl-007",
+  "slug": "nl-marmite-spaghetti",
+  "title": "Spaghetti with Marmite",
+  "genre": "italian",
+  "subgenre": "pasta",
+  "chef": {
+   "name": "Nigella Lawson",
+   "slug": "nigella-lawson"
+  },
+  "description": "Butter, Marmite and pasta water in the most divisive five-minute supper there is.",
+  "difficulty": "beginner",
+  "easeScore": 10,
+  "spiceScore": 1,
+  "popularity": 6,
+  "pantryScore": 4,
+  "servings": 2,
+  "prepMin": 2,
+  "cookMin": 12,
+  "totalMin": 14,
+  "equipment": [
+   "stovetop"
+  ],
+  "ingredients": [
+   "8 oz spaghetti",
+   "4 tbsp butter",
+   "2 tsp Marmite",
+   "1 tbsp salt, for the water",
+   "1/2 cup grated Parmesan",
+   "1/2 tsp black pepper"
+  ],
+  "ingredientKeys": [
+   "spaghetti",
+   "butter",
+   "marmite",
+   "salt",
+   "parmesan",
+   "black-pepper"
+  ],
+  "specialty": [
+   "marmite"
+  ],
+  "steps": [
+   "Boil the spaghetti in well-salted water and reserve a cup of the cooking water before draining.",
+   "Melt the butter in a small pan over low heat and whisk in the Marmite until it dissolves completely into a glossy dark paste.",
+   "Keep the heat low. Marmite is intensely salty and scorches easily, and burnt yeast extract is genuinely unpleasant.",
+   "Add 3-4 tbsp of the starchy pasta water and whisk until the sauce emulsifies into something smooth and silky.",
+   "Toss the drained spaghetti through the sauce until every strand is coated, adding more pasta water if it tightens.",
+   "Serve with Parmesan and black pepper. Start with less Marmite than you think - it is a seasoning here, not a sauce base, and it does not need salt added."
+  ],
+  "diet": {
+   "vegetarian": true,
+   "vegan": false,
+   "pescatarian": true,
+   "glutenFree": false,
+   "glutenFreeAdaptable": true,
+   "dairyFree": false,
+   "nutFree": true,
+   "eggFree": true
+  },
+  "allergens": [
+   "gluten",
+   "dairy"
+  ],
+  "gmo": {
+   "risk": "low",
+   "sources": [
+    "grain-fed-dairy"
+   ]
+  },
+  "nutrition": {
+   "calories": 682,
+   "proteinG": 22,
+   "carbsG": 86,
+   "fiberG": 4,
+   "sugarG": 3,
+   "fatG": 28,
+   "satFatG": 17,
+   "sodiumMg": 1480,
+   "cholesterolMg": 68
+  },
+  "tags": [
+   "quick",
+   "vegetarian",
+   "budget",
+   "pantry",
+   "weeknight",
+   "easy",
+   "british",
+   "comfort"
+  ],
+  "image": {
+   "file": "aglio-e-olio.jpg",
+   "source": "wikipedia-lead",
+   "match": "representative",
+   "wikipedia": "Marmite"
+  }
+ },
+ {
+  "id": "ch-nl-008",
+  "slug": "nl-lemon-garlic-mushroom-linguine",
+  "title": "Lemon and Garlic Mushroom Linguine",
+  "genre": "italian",
+  "subgenre": "pasta",
+  "chef": {
+   "name": "Nigella Lawson",
+   "slug": "nigella-lawson"
+  },
+  "description": "Mushrooms browned hard with thyme, lemon and a little cream.",
+  "difficulty": "beginner",
+  "easeScore": 9,
+  "spiceScore": 2,
+  "popularity": 8,
+  "pantryScore": 8,
+  "servings": 4,
+  "prepMin": 10,
+  "cookMin": 20,
+  "totalMin": 30,
+  "equipment": [
+   "stovetop"
+  ],
+  "ingredients": [
+   "1 lb linguine",
+   "1 1/2 lb mixed mushrooms, torn",
+   "1/4 cup olive oil",
+   "3 tbsp butter",
+   "6 cloves garlic, sliced",
+   "1 tsp red pepper flakes",
+   "2 tbsp fresh thyme leaves",
+   "1/2 cup dry white wine",
+   "1/2 cup heavy cream",
+   "2 tbsp lemon juice",
+   "1 tbsp lemon zest",
+   "1 1/2 tsp salt",
+   "1 tsp black pepper",
+   "1 cup grated Parmesan",
+   "1/3 cup chopped parsley"
+  ],
+  "ingredientKeys": [
+   "linguine",
+   "mushroom",
+   "olive-oil",
+   "butter",
+   "garlic",
+   "red-pepper-flakes",
+   "fresh-thyme",
+   "white-wine",
+   "heavy-cream",
+   "lemon-juice",
+   "lemon-zest",
+   "salt",
+   "black-pepper",
+   "parmesan",
+   "parsley"
+  ],
+  "specialty": [
+   "fresh-thyme",
+   "white-wine"
+  ],
+  "steps": [
+   "Tear the mushrooms rather than slicing them. Ragged edges brown far better than clean cuts.",
+   "Heat the oil in a wide pan until it shimmers, add the mushrooms in a single layer, and leave them undisturbed for 4 minutes. Crowding or stirring early makes them release water and steam instead of browning.",
+   "Stir and cook 4 minutes more until deeply colored, then add the butter, garlic, pepper flakes and thyme for 1 minute.",
+   "Add the wine and reduce by half, scraping the pan.",
+   "Stir in the cream and simmer 2 minutes, then take the pan off the heat and add the lemon juice and zest. Adding acid off the heat keeps the cream from splitting.",
+   "Toss with the cooked linguine and a splash of pasta water, then finish with Parmesan and parsley."
+  ],
+  "diet": {
+   "vegetarian": true,
+   "vegan": false,
+   "pescatarian": true,
+   "glutenFree": false,
+   "glutenFreeAdaptable": true,
+   "dairyFree": false,
+   "nutFree": true,
+   "eggFree": true
+  },
+  "allergens": [
+   "gluten",
+   "dairy",
+   "sulfites"
+  ],
+  "gmo": {
+   "risk": "low",
+   "sources": [
+    "grain-fed-dairy"
+   ]
+  },
+  "nutrition": {
+   "calories": 712,
+   "proteinG": 24,
+   "carbsG": 86,
+   "fiberG": 6,
+   "sugarG": 5,
+   "fatG": 30,
+   "satFatG": 14,
+   "sodiumMg": 980,
+   "cholesterolMg": 62
+  },
+  "tags": [
+   "quick",
+   "vegetarian",
+   "weeknight",
+   "italian",
+   "date-night",
+   "easy",
+   "comfort"
+  ],
+  "image": {
+   "file": "mushroom-pasta.jpg",
+   "source": "wikipedia-lead",
+   "match": "representative",
+   "wikipedia": "Linguine"
+  }
+ },
+ {
+  "id": "ch-nl-009",
+  "slug": "nl-meatzza",
+  "title": "Meatzza",
+  "genre": "italian",
+  "subgenre": "secondi",
+  "chef": {
+   "name": "Nigella Lawson",
+   "slug": "nigella-lawson"
+  },
+  "description": "A pizza whose base is seasoned ground beef instead of dough.",
+  "difficulty": "beginner",
+  "easeScore": 10,
+  "spiceScore": 2,
+  "popularity": 8,
+  "pantryScore": 9,
+  "servings": 4,
+  "prepMin": 15,
+  "cookMin": 35,
+  "totalMin": 50,
+  "equipment": [
+   "oven"
+  ],
+  "ingredients": [
+   "1 1/2 lb ground beef (85/15)",
+   "1 egg",
+   "1/2 cup grated Parmesan",
+   "3 tbsp breadcrumbs",
+   "3 cloves garlic, minced",
+   "2 tsp dried oregano",
+   "2 tsp salt",
+   "1 tsp black pepper",
+   "1 tbsp olive oil",
+   "1 cup passata or tomato puree",
+   "8 oz fresh mozzarella, torn",
+   "1/4 cup grated Parmesan, for the top",
+   "1/2 cup fresh basil",
+   "1 tsp red pepper flakes"
+  ],
+  "ingredientKeys": [
+   "ground-beef",
+   "egg",
+   "parmesan",
+   "breadcrumbs",
+   "garlic",
+   "dried-oregano",
+   "salt",
+   "black-pepper",
+   "olive-oil",
+   "passata",
+   "fresh-mozzarella",
+   "parmesan",
+   "fresh-basil",
+   "red-pepper-flakes"
+  ],
+  "specialty": [
+   "passata",
+   "fresh-mozzarella"
+  ],
+  "steps": [
+   "Heat the oven to 425F. Mix the beef with the egg, Parmesan, breadcrumbs, garlic, oregano, salt and pepper, handling it just enough to combine.",
+   "Oil a 9-inch pie dish or round pan and press the mixture into it in an even layer, right to the edges, like a crust.",
+   "Press it thin - about 1/2 inch. A thick meat base steams rather than browns and the whole thing turns greasy.",
+   "Bake the base alone for 20 minutes, then pour off the fat that has collected. This step is what keeps the finished dish from swimming.",
+   "Spread the passata over, then scatter the torn mozzarella and extra Parmesan.",
+   "Bake 12-15 minutes more until the cheese is melted and blistered. Rest 5 minutes, then finish with basil and pepper flakes and cut into wedges."
+  ],
+  "diet": {
+   "vegetarian": false,
+   "vegan": false,
+   "pescatarian": false,
+   "glutenFree": false,
+   "glutenFreeAdaptable": true,
+   "dairyFree": false,
+   "nutFree": true,
+   "eggFree": false
+  },
+  "allergens": [
+   "gluten",
+   "dairy",
+   "egg"
+  ],
+  "gmo": {
+   "risk": "moderate",
+   "sources": [
+    "grain-fed-meat",
+    "processed-bread",
+    "grain-fed-dairy"
+   ]
+  },
+  "nutrition": {
+   "calories": 682,
+   "proteinG": 52,
+   "carbsG": 14,
+   "fiberG": 2,
+   "sugarG": 6,
+   "fatG": 46,
+   "satFatG": 21,
+   "sodiumMg": 1480,
+   "cholesterolMg": 198
+  },
+  "tags": [
+   "low-carb",
+   "family",
+   "kid-friendly",
+   "weeknight",
+   "high-protein",
+   "easy",
+   "quick",
+   "italian"
+  ],
+  "image": {
+   "file": "meatzza.jpg",
+   "source": "wikipedia-lead",
+   "match": "representative",
+   "wikipedia": "Meatloaf"
+  }
+ },
+ {
+  "id": "ch-nl-010",
+  "slug": "nl-slow-cooked-lamb-beans",
+  "title": "Slow-Cooked Lamb with Beans",
+  "genre": "mediterranean",
+  "subgenre": "mains",
+  "chef": {
+   "name": "Nigella Lawson",
+   "slug": "nigella-lawson"
+  },
+  "description": "Lamb shoulder cooked for hours over white beans and rosemary.",
+  "difficulty": "intermediate",
+  "easeScore": 7,
+  "spiceScore": 2,
+  "popularity": 7,
+  "pantryScore": 7,
+  "servings": 8,
+  "prepMin": 20,
+  "cookMin": 270,
+  "totalMin": 290,
+  "equipment": [
+   "oven"
+  ],
+  "ingredients": [
+   "1 bone-in lamb shoulder (5 lb)",
+   "2 tbsp salt",
+   "1 tbsp black pepper",
+   "1/4 cup olive oil",
+   "3 yellow onions, thickly sliced",
+   "1 head garlic, cloves separated and peeled",
+   "4 sprigs fresh rosemary",
+   "2 tbsp fresh thyme leaves",
+   "3 cans (15 oz each) cannellini beans, drained",
+   "1 can (14 oz) diced tomatoes",
+   "2 cups chicken broth",
+   "1 cup dry white wine",
+   "2 tbsp lemon zest",
+   "1/3 cup chopped parsley"
+  ],
+  "ingredientKeys": [
+   "lamb-shoulder",
+   "salt",
+   "black-pepper",
+   "olive-oil",
+   "yellow-onion",
+   "garlic",
+   "fresh-rosemary",
+   "fresh-thyme",
+   "cannellini-beans",
+   "diced-tomatoes",
+   "chicken-broth",
+   "white-wine",
+   "lemon-zest",
+   "parsley"
+  ],
+  "specialty": [
+   "lamb-shoulder",
+   "fresh-rosemary",
+   "fresh-thyme",
+   "cannellini-beans",
+   "white-wine"
+  ],
+  "steps": [
+   "Heat the oven to 450F. Score the lamb fat in a crosshatch, rub it all over with the oil, salt and pepper, and push rosemary sprigs into the slashes.",
+   "Roast it alone for 30 minutes to brown the outside.",
+   "Scatter the onions, whole garlic cloves, beans, tomatoes and thyme around the lamb, then pour in the broth and wine - around the meat, not over the crisped fat.",
+   "Cover tightly with foil, drop the oven to 300F, and cook 4 hours. Do not keep checking; each time you lift the foil you lose the steam doing the work.",
+   "It is ready when the meat pulls away from the bone with no resistance at all. If it resists, give it another 30 minutes - this cut cannot be hurried.",
+   "Uncover and roast 20 minutes at 425F to re-crisp the top. Shred the lamb into the beans and finish with lemon zest and parsley."
+  ],
+  "diet": {
+   "vegetarian": false,
+   "vegan": false,
+   "pescatarian": false,
+   "glutenFree": true,
+   "glutenFreeAdaptable": false,
+   "dairyFree": true,
+   "nutFree": true,
+   "eggFree": true
+  },
+  "allergens": [
+   "sulfites"
+  ],
+  "gmo": {
+   "risk": "low",
+   "sources": [
+    "grain-fed-meat"
+   ]
+  },
+  "nutrition": {
+   "calories": 782,
+   "proteinG": 58,
+   "carbsG": 38,
+   "fiberG": 10,
+   "sugarG": 7,
+   "fatG": 44,
+   "satFatG": 17,
+   "sodiumMg": 1480,
+   "cholesterolMg": 178
+  },
+  "tags": [
+   "special-occasion",
+   "sunday",
+   "gluten-free",
+   "dairy-free",
+   "make-ahead",
+   "one-pot",
+   "high-protein",
+   "winter",
+   "entertaining"
+  ],
+  "image": {
+   "file": "roast-lamb.jpg",
+   "source": "wikipedia-lead",
+   "match": "representative",
+   "wikipedia": "Lamb and mutton"
+  }
+ },
+ {
+  "id": "ch-nl-011",
+  "slug": "nl-ham-in-coca-cola",
+  "title": "Ham in Coca-Cola",
+  "genre": "international",
+  "subgenre": "mains",
+  "chef": {
+   "name": "Nigella Lawson",
+   "slug": "nigella-lawson"
+  },
+  "description": "Gammon simmered in cola then glazed and blasted in a hot oven.",
+  "difficulty": "intermediate",
+  "easeScore": 7,
+  "spiceScore": 2,
+  "popularity": 8,
+  "pantryScore": 7,
+  "servings": 12,
+  "prepMin": 15,
+  "cookMin": 180,
+  "totalMin": 195,
+  "equipment": [
+   "stovetop",
+   "oven"
+  ],
+  "ingredients": [
+   "1 boneless gammon or uncured ham (6 lb)",
+   "2 liters Coca-Cola",
+   "1 yellow onion, quartered",
+   "2 bay leaves",
+   "1 tbsp black peppercorns",
+   "1/4 cup dark mustard",
+   "1/2 cup packed brown sugar",
+   "1 tbsp black treacle or molasses",
+   "1 tsp ground cloves",
+   "1 tbsp cider vinegar"
+  ],
+  "ingredientKeys": [
+   "gammon",
+   "coca-cola",
+   "yellow-onion",
+   "bay-leaf",
+   "black-peppercorns",
+   "dark-mustard",
+   "brown-sugar",
+   "molasses",
+   "ground-cloves",
+   "apple-cider-vinegar"
+  ],
+  "specialty": [
+   "gammon",
+   "coca-cola",
+   "dark-mustard",
+   "molasses",
+   "ground-cloves",
+   "black-peppercorns"
+  ],
+  "steps": [
+   "Put the ham in a snug pot with the onion, bay leaves and peppercorns and pour over enough cola to cover it completely.",
+   "Bring to a boil, then lower to a bare simmer and cook 2 1/2 hours, about 25 minutes per pound. The cola is not a gimmick: its acidity tenderizes the meat and its sugar and caramel give the finished glaze its dark color.",
+   "Lift the ham out and let it cool slightly, then cut the skin off, leaving a layer of fat. Score the fat in a diamond crosshatch.",
+   "Heat the oven to 475F. Mix the mustard, brown sugar, treacle, cloves and vinegar into a thick paste.",
+   "Spread the glaze thickly over the scored fat and set the ham in a roasting pan.",
+   "Roast 20-30 minutes until the glaze is dark, bubbling and lacquered. Watch it closely - the sugar goes from caramelized to burnt quickly. Rest 20 minutes before carving."
+  ],
+  "diet": {
+   "vegetarian": false,
+   "vegan": false,
+   "pescatarian": false,
+   "glutenFree": true,
+   "glutenFreeAdaptable": false,
+   "dairyFree": true,
+   "nutFree": true,
+   "eggFree": true
+  },
+  "allergens": [],
+  "gmo": {
+   "risk": "high",
+   "sources": [
+    "grain-fed-meat",
+    "corn-syrup",
+    "sugar-beet"
+   ]
+  },
+  "nutrition": {
+   "calories": 512,
+   "proteinG": 48,
+   "carbsG": 28,
+   "fiberG": 0,
+   "sugarG": 26,
+   "fatG": 22,
+   "satFatG": 8,
+   "sodiumMg": 2380,
+   "cholesterolMg": 128
+  },
+  "tags": [
+   "holiday",
+   "christmas",
+   "british",
+   "technique",
+   "gluten-free",
+   "dairy-free",
+   "party",
+   "make-ahead",
+   "leftovers"
+  ],
+  "image": {
+   "file": "glazed-ham.jpg",
+   "source": "wikipedia-lead",
+   "match": "representative",
+   "wikipedia": "Gammon (meat)"
+  }
+ },
+ {
+  "id": "ch-nl-012",
+  "slug": "nl-chicken-garlic-lemon",
+  "title": "Chicken with Garlic and Lemon",
+  "genre": "international",
+  "subgenre": "mains",
+  "chef": {
+   "name": "Nigella Lawson",
+   "slug": "nigella-lawson"
+  },
+  "description": "Chicken thighs roasted over whole garlic cloves and lemon halves.",
+  "difficulty": "beginner",
+  "easeScore": 10,
+  "spiceScore": 1,
+  "popularity": 8,
+  "pantryScore": 9,
+  "servings": 6,
+  "prepMin": 10,
+  "cookMin": 60,
+  "totalMin": 70,
+  "equipment": [
+   "oven"
+  ],
+  "ingredients": [
+   "10 bone-in chicken thighs",
+   "2 heads garlic, cloves separated and unpeeled",
+   "3 lemons, cut in wedges",
+   "1/3 cup olive oil",
+   "2 tbsp dried oregano",
+   "2 tsp salt",
+   "1 tsp black pepper",
+   "1 cup dry white wine",
+   "4 sprigs fresh thyme",
+   "1/3 cup chopped parsley"
+  ],
+  "ingredientKeys": [
+   "chicken-thighs",
+   "garlic",
+   "lemon",
+   "olive-oil",
+   "dried-oregano",
+   "salt",
+   "black-pepper",
+   "white-wine",
+   "fresh-thyme",
+   "parsley"
+  ],
+  "specialty": [
+   "white-wine",
+   "fresh-thyme"
+  ],
+  "steps": [
+   "Heat the oven to 425F. Scatter the unpeeled garlic cloves and lemon wedges across a large roasting tray.",
+   "Leave the garlic in its skins. Roasted in the papery skin it steams into something sweet and spreadable instead of burning the way peeled cloves would over an hour.",
+   "Pat the chicken dry, rub with the oil, oregano, salt and pepper, and set it skin-side up on top of the garlic and lemon.",
+   "Pour the wine into the tray around the chicken, not over the skin, and tuck in the thyme sprigs.",
+   "Roast 55-60 minutes without turning, until the skin is deep brown and the thighs read 175F.",
+   "Squeeze several of the soft garlic cloves out of their skins and mash them into the pan juices, then spoon everything over the chicken with parsley."
+  ],
+  "diet": {
+   "vegetarian": false,
+   "vegan": false,
+   "pescatarian": false,
+   "glutenFree": true,
+   "glutenFreeAdaptable": false,
+   "dairyFree": true,
+   "nutFree": true,
+   "eggFree": true
+  },
+  "allergens": [
+   "sulfites"
+  ],
+  "gmo": {
+   "risk": "low",
+   "sources": [
+    "grain-fed-meat"
+   ]
+  },
+  "nutrition": {
+   "calories": 586,
+   "proteinG": 48,
+   "carbsG": 11,
+   "fiberG": 2,
+   "sugarG": 3,
+   "fatG": 38,
+   "satFatG": 9,
+   "sodiumMg": 1080,
+   "cholesterolMg": 198
+  },
+  "tags": [
+   "one-pan",
+   "easy",
+   "weeknight",
+   "gluten-free",
+   "dairy-free",
+   "family",
+   "high-protein",
+   "entertaining"
+  ],
+  "image": {
+   "file": "nl-chicken-garlic-lemon.jpg",
+   "source": "commons-file",
+   "match": "dish",
+   "commonsFile": "Lemon & Garlic Roasted Chicken (8733072162).jpg"
+  }
+ },
+ {
+  "id": "ch-nl-013",
+  "slug": "nl-moroccan-lamb-meatballs",
+  "title": "Moroccan Lamb Meatballs",
+  "genre": "mediterranean",
+  "subgenre": "north-african",
+  "chef": {
+   "name": "Nigella Lawson",
+   "slug": "nigella-lawson"
+  },
+  "description": "Spiced lamb meatballs simmered in tomato sauce with couscous.",
+  "difficulty": "beginner",
+  "easeScore": 9,
+  "spiceScore": 4,
+  "popularity": 8,
+  "pantryScore": 7,
+  "servings": 6,
+  "prepMin": 20,
+  "cookMin": 35,
+  "totalMin": 55,
+  "equipment": [
+   "stovetop"
+  ],
+  "ingredients": [
+   "2 lb ground lamb",
+   "1 yellow onion, grated and squeezed dry",
+   "4 cloves garlic, minced",
+   "1/2 cup chopped mint",
+   "1/3 cup chopped cilantro",
+   "1 tbsp ground cumin",
+   "1 tbsp ground coriander",
+   "2 tsp ground cinnamon",
+   "1 tsp cayenne pepper",
+   "2 tsp salt",
+   "3 tbsp olive oil",
+   "1 can (28 oz) crushed tomatoes",
+   "1 cup chicken broth",
+   "2 tbsp honey",
+   "2 cups couscous",
+   "2 1/2 cups boiling water",
+   "1/2 cup Greek yogurt",
+   "1/3 cup toasted almonds"
+  ],
+  "ingredientKeys": [
+   "ground-lamb",
+   "yellow-onion",
+   "garlic",
+   "fresh-mint",
+   "cilantro",
+   "cumin",
+   "ground-coriander",
+   "cinnamon",
+   "cayenne",
+   "salt",
+   "olive-oil",
+   "crushed-tomatoes",
+   "chicken-broth",
+   "honey",
+   "couscous",
+   "water",
+   "greek-yogurt",
+   "almonds"
+  ],
+  "specialty": [
+   "ground-lamb",
+   "fresh-mint",
+   "ground-coriander",
+   "couscous",
+   "greek-yogurt",
+   "almonds"
+  ],
+  "steps": [
+   "Squeeze the grated onion bone dry in a towel. Wet onion makes a mixture too loose to roll.",
+   "Knead the lamb with the onion, garlic, herbs, spices and salt for 2-3 minutes until it turns tacky, then roll into 24 walnut-sized balls.",
+   "Brown them in the oil over medium-high, turning gently, about 6 minutes. They do not need to cook through.",
+   "Add the tomatoes, broth and honey to the pan, scraping up the browned bits.",
+   "Simmer 20-25 minutes until the meatballs are cooked through and the sauce has thickened around them.",
+   "Pour the boiling water over the couscous, cover 10 minutes, then fork it through thoroughly, breaking up every clump. Serve the meatballs over the couscous with yogurt and toasted almonds."
+  ],
+  "diet": {
+   "vegetarian": false,
+   "vegan": false,
+   "pescatarian": false,
+   "glutenFree": false,
+   "glutenFreeAdaptable": false,
+   "dairyFree": false,
+   "nutFree": false,
+   "eggFree": true
+  },
+  "allergens": [
+   "gluten",
+   "dairy",
+   "tree-nut"
+  ],
+  "gmo": {
+   "risk": "low",
+   "sources": [
+    "grain-fed-meat",
+    "grain-fed-dairy"
+   ]
+  },
+  "nutrition": {
+   "calories": 782,
+   "proteinG": 48,
+   "carbsG": 72,
+   "fiberG": 7,
+   "sugarG": 16,
+   "fatG": 34,
+   "satFatG": 12,
+   "sodiumMg": 1280,
+   "cholesterolMg": 128
+  },
+  "tags": [
+   "weeknight",
+   "family",
+   "high-protein",
+   "make-ahead",
+   "spicy",
+   "comfort",
+   "mediterranean"
+  ],
+  "image": {
+   "file": "lamb-kofta.jpg",
+   "source": "wikipedia-lead",
+   "match": "representative",
+   "wikipedia": "Kofta"
+  }
+ },
+ {
+  "id": "ch-nl-014",
+  "slug": "nl-breakfast-bars",
+  "title": "Breakfast Bars",
+  "genre": "international",
+  "subgenre": "breakfast",
+  "chef": {
+   "name": "Nigella Lawson",
+   "slug": "nigella-lawson"
+  },
+  "description": "Oats, dried fruit and nuts bound with condensed milk and baked.",
+  "difficulty": "beginner",
+  "easeScore": 10,
+  "spiceScore": 0,
+  "popularity": 8,
+  "pantryScore": 7,
+  "servings": 16,
+  "prepMin": 10,
+  "cookMin": 60,
+  "totalMin": 70,
+  "equipment": [
+   "oven"
+  ],
+  "ingredients": [
+   "1 can (14 oz) sweetened condensed milk",
+   "2 1/2 cups rolled oats",
+   "1 cup shredded coconut",
+   "1 cup dried cranberries",
+   "1 cup chopped dried apricots",
+   "1 cup sliced almonds",
+   "1/2 cup pumpkin seeds",
+   "1/2 cup sunflower seeds",
+   "1 tsp ground cinnamon",
+   "1/2 tsp salt"
+  ],
+  "ingredientKeys": [
+   "condensed-milk",
+   "rolled-oats",
+   "shredded-coconut",
+   "dried-cranberries",
+   "dried-apricots",
+   "almonds",
+   "pumpkin-seeds",
+   "sunflower-seeds",
+   "cinnamon",
+   "salt"
+  ],
+  "specialty": [
+   "condensed-milk",
+   "rolled-oats",
+   "shredded-coconut",
+   "dried-cranberries",
+   "dried-apricots",
+   "almonds",
+   "pumpkin-seeds",
+   "sunflower-seeds"
+  ],
+  "steps": [
+   "Heat the oven to 250F and line a 9x13 pan with parchment, leaving an overhang.",
+   "Warm the condensed milk slightly so it pours and coats easily.",
+   "Mix all the dry ingredients in a large bowl, then pour the condensed milk over and stir until every piece is coated. It will be very stiff - keep working it.",
+   "The condensed milk is the only binder here. There is no butter, egg or extra sugar, and it both glues the bars and sweetens them.",
+   "Press the mixture firmly into the pan with the back of a spoon or damp hands. Press hard; loosely packed bars crumble.",
+   "Bake 1 hour at the low temperature, until set and lightly golden. Cool completely in the pan before lifting out and cutting - cutting warm gives you granola, not bars."
+  ],
+  "diet": {
+   "vegetarian": true,
+   "vegan": false,
+   "pescatarian": true,
+   "glutenFree": true,
+   "glutenFreeAdaptable": false,
+   "dairyFree": false,
+   "nutFree": false,
+   "eggFree": true
+  },
+  "allergens": [
+   "dairy",
+   "tree-nut"
+  ],
+  "gmo": {
+   "risk": "moderate",
+   "sources": [
+    "grain-fed-dairy",
+    "sugar-beet"
+   ]
+  },
+  "nutrition": {
+   "calories": 342,
+   "proteinG": 8,
+   "carbsG": 48,
+   "fiberG": 5,
+   "sugarG": 32,
+   "fatG": 14,
+   "satFatG": 5,
+   "sodiumMg": 120,
+   "cholesterolMg": 12
+  },
+  "tags": [
+   "breakfast",
+   "snack",
+   "make-ahead",
+   "easy",
+   "vegetarian",
+   "gluten-free",
+   "high-fiber",
+   "kid-friendly",
+   "meal-prep"
+  ],
+  "image": {
+   "file": "granola-bars.jpg",
+   "source": "wikipedia-lead",
+   "match": "representative",
+   "wikipedia": "Flapjack (oat bar)"
+  }
+ },
+ {
+  "id": "ch-nl-015",
+  "slug": "nl-egg-and-bacon-pie",
+  "title": "Egg and Bacon Pie",
+  "genre": "international",
+  "subgenre": "baking",
+  "chef": {
+   "name": "Nigella Lawson",
+   "slug": "nigella-lawson"
+  },
+  "description": "Whole eggs cracked into a bacon-lined pastry case and baked.",
+  "difficulty": "intermediate",
+  "easeScore": 7,
+  "spiceScore": 1,
+  "popularity": 7,
+  "pantryScore": 7,
+  "servings": 8,
+  "prepMin": 25,
+  "cookMin": 55,
+  "totalMin": 80,
+  "equipment": [
+   "oven",
+   "stovetop"
+  ],
+  "ingredients": [
+   "2 sheets shortcrust pastry, thawed",
+   "12 oz bacon, diced",
+   "1 yellow onion, diced",
+   "8 eggs",
+   "1/2 cup heavy cream",
+   "1 cup grated sharp cheddar",
+   "2 tbsp chopped chives",
+   "1 tsp mustard powder",
+   "1 1/2 tsp salt",
+   "1 tsp black pepper",
+   "1/4 tsp ground nutmeg",
+   "1 egg, beaten, for the wash"
+  ],
+  "ingredientKeys": [
+   "shortcrust-pastry",
+   "bacon",
+   "yellow-onion",
+   "egg",
+   "heavy-cream",
+   "cheddar",
+   "chives",
+   "mustard-powder",
+   "salt",
+   "black-pepper",
+   "nutmeg",
+   "egg"
+  ],
+  "specialty": [
+   "shortcrust-pastry",
+   "mustard-powder"
+  ],
+  "steps": [
+   "Line a 9-inch pie dish with one sheet of pastry and chill it 20 minutes.",
+   "Render the bacon until crisp, then cook the onion in the fat 8 minutes. Drain both well - excess fat makes the base greasy and soggy.",
+   "Scatter the bacon, onion and cheddar over the pastry base, then make eight shallow wells in the filling.",
+   "Crack a whole egg into each well. Whole eggs rather than a beaten custard is the point - you get set whites and soft yolks in every slice.",
+   "Whisk the cream with the mustard powder, salt, pepper, nutmeg and chives and pour it carefully around the eggs without breaking them.",
+   "Lay the second pastry sheet over, crimp the edges, cut steam vents, brush with the beaten egg, and bake at 400F for 45-50 minutes until deep golden. Rest 20 minutes before cutting."
+  ],
+  "diet": {
+   "vegetarian": false,
+   "vegan": false,
+   "pescatarian": false,
+   "glutenFree": false,
+   "glutenFreeAdaptable": false,
+   "dairyFree": false,
+   "nutFree": true,
+   "eggFree": false
+  },
+  "allergens": [
+   "gluten",
+   "dairy",
+   "egg"
+  ],
+  "gmo": {
+   "risk": "high",
+   "sources": [
+    "processed-bread",
+    "grain-fed-meat",
+    "grain-fed-dairy",
+    "seed-oil"
+   ]
+  },
+  "nutrition": {
+   "calories": 682,
+   "proteinG": 28,
+   "carbsG": 38,
+   "fiberG": 2,
+   "sugarG": 4,
+   "fatG": 46,
+   "satFatG": 19,
+   "sodiumMg": 1480,
+   "cholesterolMg": 298
+  },
+  "tags": [
+   "brunch",
+   "british",
+   "picnic",
+   "make-ahead",
+   "high-protein",
+   "baking",
+   "family",
+   "entertaining"
+  ],
+  "image": {
+   "file": "nl-egg-and-bacon-pie.jpg",
+   "source": "commons-file",
+   "match": "dish",
+   "commonsFile": "Bacon&egg pie.jpg"
+  }
+ },
+ {
+  "id": "ch-nl-016",
+  "slug": "nl-praised-chicken",
+  "title": "Praised Chicken",
+  "genre": "international",
+  "subgenre": "mains",
+  "chef": {
+   "name": "Nigella Lawson",
+   "slug": "nigella-lawson"
+  },
+  "description": "A whole chicken poached gently with vegetables, yielding meat and broth at once.",
+  "difficulty": "beginner",
+  "easeScore": 9,
+  "spiceScore": 1,
+  "popularity": 7,
+  "pantryScore": 8,
+  "servings": 6,
+  "prepMin": 20,
+  "cookMin": 105,
+  "totalMin": 125,
+  "equipment": [
+   "stovetop"
+  ],
+  "ingredients": [
+   "1 whole chicken (4 lb)",
+   "4 carrots, cut in chunks",
+   "4 celery stalks, cut in chunks",
+   "2 leeks, sliced thick",
+   "1 head garlic, halved crosswise",
+   "2 cups small pasta or orzo",
+   "8 cups water",
+   "2 bay leaves",
+   "6 sprigs fresh thyme",
+   "1 tbsp black peppercorns",
+   "2 tsp salt",
+   "1/3 cup chopped parsley",
+   "1 cup grated Parmesan",
+   "3 tbsp olive oil"
+  ],
+  "ingredientKeys": [
+   "whole-chicken",
+   "carrot",
+   "celery",
+   "leek",
+   "garlic",
+   "orzo",
+   "water",
+   "bay-leaf",
+   "fresh-thyme",
+   "black-peppercorns",
+   "salt",
+   "parsley",
+   "parmesan",
+   "olive-oil"
+  ],
+  "specialty": [
+   "whole-chicken",
+   "leek",
+   "orzo",
+   "fresh-thyme",
+   "black-peppercorns"
+  ],
+  "steps": [
+   "Put the chicken in a snug pot with the carrots, celery, leeks, halved garlic, bay leaves, thyme and peppercorns, and add the water. It should come most of the way up the bird.",
+   "Bring it up to the barest simmer - a bubble breaking every second or two - and skim the foam off for the first 15 minutes.",
+   "Never let it boil. Poaching keeps the breast meat silky; boiling makes it stringy and clouds the broth.",
+   "Cook 1 1/2 hours, until the leg pulls away easily and the thigh reads 175F.",
+   "Lift the chicken out and let it cool enough to handle, then pull the meat into large pieces and discard the skin and bones.",
+   "Season the broth with the salt, add the pasta and cook until tender, then return the chicken. Serve in bowls with parsley, Parmesan and a drizzle of olive oil."
+  ],
+  "diet": {
+   "vegetarian": false,
+   "vegan": false,
+   "pescatarian": false,
+   "glutenFree": false,
+   "glutenFreeAdaptable": true,
+   "dairyFree": false,
+   "nutFree": true,
+   "eggFree": true
+  },
+  "allergens": [
+   "gluten",
+   "dairy"
+  ],
+  "gmo": {
+   "risk": "low",
+   "sources": [
+    "grain-fed-meat",
+    "grain-fed-dairy"
+   ]
+  },
+  "nutrition": {
+   "calories": 612,
+   "proteinG": 52,
+   "carbsG": 48,
+   "fiberG": 4,
+   "sugarG": 6,
+   "fatG": 22,
+   "satFatG": 7,
+   "sodiumMg": 1180,
+   "cholesterolMg": 158
+  },
+  "tags": [
+   "comfort",
+   "one-pot",
+   "family",
+   "technique",
+   "healthy",
+   "winter",
+   "high-protein",
+   "budget",
+   "leftovers"
+  ],
+  "image": {
+   "file": "chicken-soup.jpg",
+   "source": "wikipedia-lead",
+   "match": "representative",
+   "wikipedia": "Poaching (cooking)"
+  }
+ },
+ {
+  "id": "ch-nl-017",
+  "slug": "nl-lemon-polenta-cake",
+  "title": "Lemon Polenta Cake",
+  "genre": "italian",
+  "subgenre": "desserts",
+  "chef": {
+   "name": "Nigella Lawson",
+   "slug": "nigella-lawson"
+  },
+  "description": "A gluten-free almond and polenta cake soaked in lemon syrup.",
+  "difficulty": "intermediate",
+  "easeScore": 7,
+  "spiceScore": 0,
+  "popularity": 8,
+  "pantryScore": 6,
+  "servings": 12,
+  "prepMin": 20,
+  "cookMin": 60,
+  "totalMin": 80,
+  "equipment": [
+   "oven",
+   "stovetop"
+  ],
+  "ingredients": [
+   "1 cup butter, softened",
+   "1 cup sugar",
+   "3 cups almond flour",
+   "3/4 cup fine polenta",
+   "1 1/2 tsp baking powder",
+   "1/2 tsp salt",
+   "3 eggs",
+   "2 tbsp lemon zest",
+   "1/2 cup lemon juice",
+   "1/2 cup sugar, for the syrup",
+   "1/4 cup lemon juice, for the syrup",
+   "1 cup creme fraiche"
+  ],
+  "ingredientKeys": [
+   "butter",
+   "sugar",
+   "almond-flour",
+   "polenta",
+   "baking-powder",
+   "salt",
+   "egg",
+   "lemon-zest",
+   "lemon-juice",
+   "sugar",
+   "lemon-juice",
+   "creme-fraiche"
+  ],
+  "specialty": [
+   "almond-flour",
+   "polenta",
+   "creme-fraiche"
+  ],
+  "steps": [
+   "Heat the oven to 350F and line an 8-inch springform pan.",
+   "Cream the butter and 1 cup sugar for 3 minutes until pale and fluffy.",
+   "Whisk the almond flour, polenta, baking powder and salt together, then add to the butter alternately with the eggs, one at a time.",
+   "Stir in the lemon zest and the 1/2 cup lemon juice. The batter will look slightly split, which is normal with this much liquid and no wheat flour.",
+   "Bake 45-50 minutes until the edges are set and the center is just firm. Cover loosely with foil if the top colors early.",
+   "Heat the 1/2 cup sugar with the 1/4 cup lemon juice until dissolved, then prick the hot cake all over with a skewer and pour the syrup over. Pouring hot syrup onto a hot cake is what lets it soak all the way through. Cool in the pan and serve with creme fraiche."
+  ],
+  "diet": {
+   "vegetarian": true,
+   "vegan": false,
+   "pescatarian": true,
+   "glutenFree": true,
+   "glutenFreeAdaptable": false,
+   "dairyFree": false,
+   "nutFree": false,
+   "eggFree": false
+  },
+  "allergens": [
+   "dairy",
+   "egg",
+   "tree-nut"
+  ],
+  "gmo": {
+   "risk": "high",
+   "sources": [
+    "corn",
+    "sugar-beet",
+    "grain-fed-dairy"
+   ]
+  },
+  "nutrition": {
+   "calories": 586,
+   "proteinG": 11,
+   "carbsG": 48,
+   "fiberG": 4,
+   "sugarG": 34,
+   "fatG": 40,
+   "satFatG": 15,
+   "sodiumMg": 280,
+   "cholesterolMg": 112
+  },
+  "tags": [
+   "dessert",
+   "gluten-free",
+   "baking",
+   "vegetarian",
+   "make-ahead",
+   "italian",
+   "entertaining",
+   "technique"
+  ],
+  "image": {
+   "file": "nl-lemon-polenta-cake.jpg",
+   "source": "commons-file",
+   "match": "dish",
+   "commonsFile": "Lemon and polenta cake.jpg"
+  }
+ },
+ {
+  "id": "ch-nl-018",
+  "slug": "nl-dense-chocolate-loaf",
+  "title": "Dense Chocolate Loaf Cake",
+  "genre": "international",
+  "subgenre": "desserts",
+  "chef": {
+   "name": "Nigella Lawson",
+   "slug": "nigella-lawson"
+  },
+  "description": "A damp, almost fudgy loaf that is better on the second day.",
+  "difficulty": "intermediate",
+  "easeScore": 7,
+  "spiceScore": 0,
+  "popularity": 8,
+  "pantryScore": 8,
+  "servings": 10,
+  "prepMin": 20,
+  "cookMin": 90,
+  "totalMin": 110,
+  "equipment": [
+   "oven",
+   "stovetop"
+  ],
+  "ingredients": [
+   "1 cup butter, softened",
+   "1 2/3 cups packed dark brown sugar",
+   "2 eggs",
+   "1 tbsp vanilla extract",
+   "4 oz dark chocolate, melted",
+   "1 1/3 cups all-purpose flour",
+   "1 tsp baking soda",
+   "1/2 tsp salt",
+   "1 cup boiling water",
+   "2 tsp instant espresso powder"
+  ],
+  "ingredientKeys": [
+   "butter",
+   "brown-sugar",
+   "egg",
+   "vanilla-extract",
+   "dark-chocolate",
+   "flour",
+   "baking-soda",
+   "salt",
+   "water",
+   "instant-espresso"
+  ],
+  "specialty": [
+   "dark-chocolate",
+   "instant-espresso"
+  ],
+  "steps": [
+   "Heat the oven to 375F and line a 9x5 loaf pan with parchment, leaving a generous overhang - this cake is too soft to turn out of a bare pan.",
+   "Cream the butter and dark brown sugar 3 minutes, then beat in the eggs one at a time and the vanilla.",
+   "Fold in the melted chocolate, then the flour, baking soda and salt.",
+   "Dissolve the espresso powder in the boiling water and stir it into the batter. It will be alarmingly thin - closer to a sauce than a cake batter - and that is exactly right.",
+   "Pour into the pan and bake 30 minutes, then lower the oven to 325F and bake 30 minutes more. The center will still look slightly damp when tested.",
+   "Cool completely in the pan before lifting out. It is meant to be dense and sticky, not springy, and it genuinely improves after a day wrapped at room temperature."
+  ],
+  "diet": {
+   "vegetarian": true,
+   "vegan": false,
+   "pescatarian": true,
+   "glutenFree": false,
+   "glutenFreeAdaptable": false,
+   "dairyFree": false,
+   "nutFree": true,
+   "eggFree": false
+  },
+  "allergens": [
+   "gluten",
+   "dairy",
+   "egg",
+   "soy"
+  ],
+  "gmo": {
+   "risk": "moderate",
+   "sources": [
+    "sugar-beet",
+    "soy",
+    "grain-fed-dairy"
+   ]
+  },
+  "nutrition": {
+   "calories": 512,
+   "proteinG": 5,
+   "carbsG": 62,
+   "fiberG": 2,
+   "sugarG": 48,
+   "fatG": 28,
+   "satFatG": 17,
+   "sodiumMg": 320,
+   "cholesterolMg": 88
+  },
+  "tags": [
+   "dessert",
+   "baking",
+   "vegetarian",
+   "make-ahead",
+   "british",
+   "comfort",
+   "party",
+   "technique"
+  ],
+  "image": {
+   "file": "chocolate-loaf.jpg",
+   "source": "wikipedia-lead",
+   "match": "representative",
+   "wikipedia": "Chocolate cake"
+  }
+ },
+ {
+  "id": "ch-nl-019",
+  "slug": "nl-mustard-pork-chops",
+  "title": "Mustard Pork Chops",
+  "genre": "international",
+  "subgenre": "mains",
+  "chef": {
+   "name": "Nigella Lawson",
+   "slug": "nigella-lawson"
+  },
+  "description": "Chops seared and finished in a cream and grain mustard pan sauce.",
+  "difficulty": "beginner",
+  "easeScore": 9,
+  "spiceScore": 3,
+  "popularity": 8,
+  "pantryScore": 8,
+  "servings": 4,
+  "prepMin": 10,
+  "cookMin": 25,
+  "totalMin": 35,
+  "equipment": [
+   "stovetop"
+  ],
+  "ingredients": [
+   "4 bone-in pork chops, 1 inch thick",
+   "2 tsp salt",
+   "1 tsp black pepper",
+   "2 tbsp olive oil",
+   "3 tbsp butter",
+   "2 shallots, minced",
+   "3 cloves garlic, minced",
+   "1/2 cup dry white wine",
+   "1 cup chicken broth",
+   "3/4 cup heavy cream",
+   "3 tbsp whole-grain mustard",
+   "1 tbsp Dijon mustard",
+   "1 tbsp fresh thyme leaves",
+   "2 tbsp chopped parsley"
+  ],
+  "ingredientKeys": [
+   "pork-chops",
+   "salt",
+   "black-pepper",
+   "olive-oil",
+   "butter",
+   "shallot",
+   "garlic",
+   "white-wine",
+   "chicken-broth",
+   "heavy-cream",
+   "whole-grain-mustard",
+   "dijon-mustard",
+   "fresh-thyme",
+   "parsley"
+  ],
+  "specialty": [
+   "pork-chops",
+   "shallot",
+   "white-wine",
+   "whole-grain-mustard",
+   "fresh-thyme"
+  ],
+  "steps": [
+   "Pat the chops very dry and season them well. Dry surface, hot pan - that is the whole formula for a crust.",
+   "Sear them in the oil over high heat 4 minutes per side until deeply browned, then move to a plate. They are not cooked through yet.",
+   "Lower the heat, add the butter and cook the shallots 3 minutes, then the garlic for 1 minute.",
+   "Add the wine and reduce by half, scraping up the browned bits, then the broth and reduce 3 minutes.",
+   "Stir in the cream and both mustards and simmer 3 minutes. Add the mustard off the boil - high heat makes mustard bitter and dulls its sharpness.",
+   "Return the chops with their juices and simmer 6-8 minutes, turning once, to 145F internal. Rest 5 minutes, then finish with thyme and parsley."
+  ],
+  "diet": {
+   "vegetarian": false,
+   "vegan": false,
+   "pescatarian": false,
+   "glutenFree": true,
+   "glutenFreeAdaptable": false,
+   "dairyFree": false,
+   "nutFree": true,
+   "eggFree": true
+  },
+  "allergens": [
+   "dairy",
+   "sulfites"
+  ],
+  "gmo": {
+   "risk": "moderate",
+   "sources": [
+    "grain-fed-meat",
+    "grain-fed-dairy"
+   ]
+  },
+  "nutrition": {
+   "calories": 712,
+   "proteinG": 48,
+   "carbsG": 9,
+   "fiberG": 1,
+   "sugarG": 3,
+   "fatG": 52,
+   "satFatG": 24,
+   "sodiumMg": 1280,
+   "cholesterolMg": 198
+  },
+  "tags": [
+   "quick",
+   "weeknight",
+   "gluten-free",
+   "low-carb",
+   "high-protein",
+   "date-night",
+   "easy",
+   "comfort"
+  ],
+  "image": {
+   "file": "pork-chop.jpg",
+   "source": "wikipedia-lead",
+   "match": "representative",
+   "wikipedia": "Pork chop"
+  }
+ },
+ {
+  "id": "ch-nl-020",
+  "slug": "nl-chickpea-pasta-soup",
+  "title": "Chickpea and Pasta Soup",
+  "genre": "italian",
+  "subgenre": "soups",
+  "chef": {
+   "name": "Nigella Lawson",
+   "slug": "nigella-lawson"
+  },
+  "description": "A thick store-cupboard soup of chickpeas, small pasta and rosemary.",
+  "difficulty": "beginner",
+  "easeScore": 10,
+  "spiceScore": 2,
+  "popularity": 7,
+  "pantryScore": 10,
+  "servings": 6,
+  "prepMin": 10,
+  "cookMin": 35,
+  "totalMin": 45,
+  "equipment": [
+   "stovetop"
+  ],
+  "ingredients": [
+   "1/4 cup olive oil",
+   "1 yellow onion, diced",
+   "4 cloves garlic, sliced",
+   "1 tsp red pepper flakes",
+   "3 tbsp tomato paste",
+   "3 cans (15 oz each) chickpeas, drained",
+   "6 cups vegetable broth",
+   "2 sprigs fresh rosemary",
+   "1 Parmesan rind",
+   "1 1/2 cups small pasta",
+   "2 tsp salt",
+   "1 tsp black pepper",
+   "1 cup grated Parmesan",
+   "1/3 cup chopped parsley"
+  ],
+  "ingredientKeys": [
+   "olive-oil",
+   "yellow-onion",
+   "garlic",
+   "red-pepper-flakes",
+   "tomato-paste",
+   "chickpeas",
+   "vegetable-broth",
+   "fresh-rosemary",
+   "parmesan-rind",
+   "small-pasta",
+   "salt",
+   "black-pepper",
+   "parmesan",
+   "parsley"
+  ],
+  "specialty": [
+   "fresh-rosemary",
+   "parmesan-rind"
+  ],
+  "steps": [
+   "Cook the onion in the oil over medium heat 8 minutes, then add the garlic and pepper flakes for 1 minute.",
+   "Add the tomato paste and fry it 3 minutes until it darkens from bright red to brick. This caramelization is what gives a pantry soup real depth.",
+   "Blend or mash one can of the chickpeas with a cup of the broth and add it to the pot along with the whole chickpeas, the rest of the broth, the rosemary and the Parmesan rind. The puree is what thickens the soup without cream.",
+   "Simmer 15 minutes, then pull out the rosemary stems and rind.",
+   "Add the pasta and cook until al dente, stirring often since the soup is thick and can catch on the bottom.",
+   "Season and let it stand 5 minutes - it should be thick enough that a spoon stands up briefly. Serve with Parmesan, parsley and plenty of olive oil."
+  ],
+  "diet": {
+   "vegetarian": false,
+   "vegan": false,
+   "pescatarian": false,
+   "glutenFree": false,
+   "glutenFreeAdaptable": true,
+   "dairyFree": false,
+   "nutFree": true,
+   "eggFree": true
+  },
+  "allergens": [
+   "gluten",
+   "dairy"
+  ],
+  "gmo": {
+   "risk": "low",
+   "sources": [
+    "grain-fed-dairy"
+   ]
+  },
+  "nutrition": {
+   "calories": 512,
+   "proteinG": 22,
+   "carbsG": 68,
+   "fiberG": 12,
+   "sugarG": 9,
+   "fatG": 18,
+   "satFatG": 5,
+   "sodiumMg": 1280,
+   "cholesterolMg": 18
+  },
+  "tags": [
+   "soup",
+   "pantry",
+   "budget",
+   "quick",
+   "high-fiber",
+   "vegetarian-adaptable",
+   "comfort",
+   "weeknight",
+   "italian"
+  ],
+  "image": {
+   "file": "pasta-e-ceci.jpg",
+   "source": "wikipedia-lead",
+   "match": "representative",
+   "wikipedia": "Pasta e ceci"
+  }
+ },
+ {
+  "id": "ch-nl-021",
+  "slug": "nl-sweet-potato-mac-cheese",
+  "title": "Sweet Potato Macaroni Cheese",
+  "genre": "international",
+  "subgenre": "comfort",
+  "chef": {
+   "name": "Nigella Lawson",
+   "slug": "nigella-lawson"
+  },
+  "description": "Macaroni cheese with pureed sweet potato in the sauce.",
+  "difficulty": "beginner",
+  "easeScore": 9,
+  "spiceScore": 3,
+  "popularity": 7,
+  "pantryScore": 8,
+  "servings": 8,
+  "prepMin": 20,
+  "cookMin": 50,
+  "totalMin": 70,
+  "equipment": [
+   "stovetop",
+   "oven"
+  ],
+  "ingredients": [
+   "1 lb macaroni",
+   "2 lb sweet potatoes, peeled and cubed",
+   "4 tbsp butter",
+   "1/3 cup all-purpose flour",
+   "3 cups whole milk, warmed",
+   "1 tsp mustard powder",
+   "1/2 tsp ground nutmeg",
+   "1/2 tsp cayenne pepper",
+   "2 tsp salt",
+   "1 tsp black pepper",
+   "3 cups shredded sharp cheddar",
+   "1 cup grated Parmesan",
+   "1 cup panko breadcrumbs",
+   "2 tbsp butter, melted"
+  ],
+  "ingredientKeys": [
+   "elbow-macaroni",
+   "sweet-potato",
+   "butter",
+   "flour",
+   "whole-milk",
+   "mustard-powder",
+   "nutmeg",
+   "cayenne",
+   "salt",
+   "black-pepper",
+   "cheddar",
+   "parmesan",
+   "panko",
+   "butter"
+  ],
+  "specialty": [
+   "sweet-potato",
+   "mustard-powder",
+   "panko"
+  ],
+  "steps": [
+   "Boil the sweet potatoes until completely tender, 15 minutes, then drain well and mash or puree them smooth.",
+   "Boil the macaroni 2 minutes short of the package time, since it finishes in the oven.",
+   "Melt the 4 tbsp butter, whisk in the flour and cook 2 minutes, then add the warm milk gradually and simmer until it coats a spoon.",
+   "Whisk the sweet potato puree into the sauce along with the mustard powder, nutmeg, cayenne, salt and pepper. The sweet potato adds body and a faint sweetness that plays against the sharp cheddar.",
+   "Take the pan off the heat before stirring in the cheddar and half the Parmesan - cheese melted over direct heat turns grainy.",
+   "Fold in the pasta, pour into a buttered dish, top with the panko tossed with melted butter and the rest of the Parmesan, and bake at 400F for 25-30 minutes until browned."
+  ],
+  "diet": {
+   "vegetarian": true,
+   "vegan": false,
+   "pescatarian": true,
+   "glutenFree": false,
+   "glutenFreeAdaptable": true,
+   "dairyFree": false,
+   "nutFree": true,
+   "eggFree": true
+  },
+  "allergens": [
+   "gluten",
+   "dairy"
+  ],
+  "gmo": {
+   "risk": "moderate",
+   "sources": [
+    "grain-fed-dairy",
+    "processed-bread"
+   ]
+  },
+  "nutrition": {
+   "calories": 782,
+   "proteinG": 32,
+   "carbsG": 82,
+   "fiberG": 6,
+   "sugarG": 16,
+   "fatG": 36,
+   "satFatG": 21,
+   "sodiumMg": 1180,
+   "cholesterolMg": 98
+  },
+  "tags": [
+   "comfort",
+   "family",
+   "vegetarian",
+   "kid-friendly",
+   "make-ahead",
+   "healthier",
+   "crowd-pleaser"
+  ],
+  "image": {
+   "file": "macaroni-and-cheese.jpg",
+   "source": "wikipedia-lead",
+   "match": "representative",
+   "wikipedia": "Macaroni and cheese"
+  }
+ },
+ {
+  "id": "ch-nl-022",
+  "slug": "nl-pistachio-rose-cake",
+  "title": "Pistachio and Rose Water Cake",
+  "genre": "mediterranean",
+  "subgenre": "desserts",
+  "chef": {
+   "name": "Nigella Lawson",
+   "slug": "nigella-lawson"
+  },
+  "description": "A ground pistachio cake scented with rose water and cardamom.",
+  "difficulty": "intermediate",
+  "easeScore": 7,
+  "spiceScore": 0,
+  "popularity": 7,
+  "pantryScore": 5,
+  "servings": 12,
+  "prepMin": 25,
+  "cookMin": 55,
+  "totalMin": 80,
+  "equipment": [
+   "oven",
+   "food-processor"
+  ],
+  "ingredients": [
+   "2 cups shelled pistachios",
+   "1 cup butter, softened",
+   "1 1/4 cups sugar",
+   "4 eggs",
+   "1 1/2 cups almond flour",
+   "1/2 cup all-purpose flour",
+   "1 1/2 tsp baking powder",
+   "1/2 tsp salt",
+   "1 tsp ground cardamom",
+   "2 tbsp rose water",
+   "1 tbsp lemon zest",
+   "1 cup powdered sugar",
+   "2 tbsp lemon juice",
+   "1 tsp rose water, for the icing",
+   "1/4 cup chopped pistachios",
+   "1 tbsp dried rose petals"
+  ],
+  "ingredientKeys": [
+   "pistachios",
+   "butter",
+   "sugar",
+   "egg",
+   "almond-flour",
+   "flour",
+   "baking-powder",
+   "salt",
+   "cardamom",
+   "rose-water",
+   "lemon-zest",
+   "powdered-sugar",
+   "lemon-juice",
+   "rose-water",
+   "pistachios",
+   "rose-petals"
+  ],
+  "specialty": [
+   "pistachios",
+   "almond-flour",
+   "cardamom",
+   "rose-water",
+   "rose-petals"
+  ],
+  "steps": [
+   "Heat the oven to 350F and line a 9-inch springform pan. Grind the 2 cups pistachios to a coarse meal in a food processor - stop before they turn to butter.",
+   "Cream the butter and sugar 3 minutes, then beat in the eggs one at a time.",
+   "Fold in the ground pistachios, almond flour, all-purpose flour, baking powder, salt and cardamom.",
+   "Stir in the rose water and lemon zest. Go carefully with rose water - it is powerful, and a heavy hand makes the cake taste like perfume rather than dessert.",
+   "Bake 50-55 minutes until a skewer comes out clean. Cool completely in the pan.",
+   "Whisk the powdered sugar with the lemon juice and the extra teaspoon of rose water into a thin icing, pour it over, and scatter the chopped pistachios and rose petals."
+  ],
+  "diet": {
+   "vegetarian": true,
+   "vegan": false,
+   "pescatarian": true,
+   "glutenFree": false,
+   "glutenFreeAdaptable": true,
+   "dairyFree": false,
+   "nutFree": false,
+   "eggFree": false
+  },
+  "allergens": [
+   "gluten",
+   "dairy",
+   "egg",
+   "tree-nut"
+  ],
+  "gmo": {
+   "risk": "moderate",
+   "sources": [
+    "sugar-beet",
+    "grain-fed-dairy"
+   ]
+  },
+  "nutrition": {
+   "calories": 586,
+   "proteinG": 12,
+   "carbsG": 52,
+   "fiberG": 4,
+   "sugarG": 38,
+   "fatG": 38,
+   "satFatG": 14,
+   "sodiumMg": 280,
+   "cholesterolMg": 112
+  },
+  "tags": [
+   "dessert",
+   "baking",
+   "entertaining",
+   "special-occasion",
+   "vegetarian",
+   "mediterranean",
+   "make-ahead",
+   "party"
+  ],
+  "image": {
+   "file": "pistachio-cake.jpg",
+   "source": "wikipedia-lead",
+   "match": "representative",
+   "wikipedia": "Pistachio"
+  }
+ },
+ {
+  "id": "ch-nl-023",
+  "slug": "nl-spiced-apple-cake",
+  "title": "Spiced Apple Cake",
+  "genre": "international",
+  "subgenre": "desserts",
+  "chef": {
+   "name": "Nigella Lawson",
+   "slug": "nigella-lawson"
+  },
+  "description": "An easy one-bowl cake packed with apple chunks and warm spice.",
+  "difficulty": "beginner",
+  "easeScore": 10,
+  "spiceScore": 1,
+  "popularity": 8,
+  "pantryScore": 9,
+  "servings": 10,
+  "prepMin": 15,
+  "cookMin": 60,
+  "totalMin": 75,
+  "equipment": [
+   "oven"
+  ],
+  "ingredients": [
+   "2 cups all-purpose flour",
+   "1 1/2 cups packed brown sugar",
+   "2 tsp baking powder",
+   "1 tsp baking soda",
+   "1 tbsp ground cinnamon",
+   "1 tsp ground ginger",
+   "1/2 tsp ground nutmeg",
+   "1/4 tsp ground cloves",
+   "1 tsp salt",
+   "3/4 cup vegetable oil",
+   "3 eggs",
+   "1 tsp vanilla extract",
+   "1/2 cup sour cream",
+   "4 baking apples, peeled and cut in chunks",
+   "2 tbsp demerara sugar"
+  ],
+  "ingredientKeys": [
+   "flour",
+   "brown-sugar",
+   "baking-powder",
+   "baking-soda",
+   "cinnamon",
+   "ground-ginger",
+   "nutmeg",
+   "ground-cloves",
+   "salt",
+   "vegetable-oil",
+   "egg",
+   "vanilla-extract",
+   "sour-cream",
+   "baking-apples",
+   "demerara-sugar"
+  ],
+  "specialty": [
+   "ground-cloves",
+   "baking-apples",
+   "demerara-sugar"
+  ],
+  "steps": [
+   "Heat the oven to 350F and line a 9-inch springform pan.",
+   "Whisk all the dry ingredients and spices together in a large bowl.",
+   "Add the oil, eggs, vanilla and sour cream and stir just until smooth. Oil rather than butter is why this cake stays moist for days.",
+   "Fold in the apple chunks. Cut them generously - chunks rather than slices so they keep their shape and you get pockets of soft fruit.",
+   "Scrape into the pan, level the top, and scatter the demerara sugar over for a crunchy crust.",
+   "Bake 55-60 minutes until a skewer comes out clean. Tent with foil if it browns early. Cool in the pan at least 20 minutes before releasing."
+  ],
+  "diet": {
+   "vegetarian": true,
+   "vegan": false,
+   "pescatarian": true,
+   "glutenFree": false,
+   "glutenFreeAdaptable": true,
+   "dairyFree": false,
+   "nutFree": true,
+   "eggFree": false
+  },
+  "allergens": [
+   "gluten",
+   "dairy",
+   "egg"
+  ],
+  "gmo": {
+   "risk": "high",
+   "sources": [
+    "seed-oil",
+    "sugar-beet",
+    "grain-fed-dairy"
+   ]
+  },
+  "nutrition": {
+   "calories": 512,
+   "proteinG": 6,
+   "carbsG": 72,
+   "fiberG": 3,
+   "sugarG": 48,
+   "fatG": 23,
+   "satFatG": 5,
+   "sodiumMg": 480,
+   "cholesterolMg": 62
+  },
+  "tags": [
+   "dessert",
+   "baking",
+   "easy",
+   "one-bowl",
+   "vegetarian",
+   "fall",
+   "make-ahead",
+   "family",
+   "comfort"
+  ],
+  "image": {
+   "file": "apple-cake.jpg",
+   "source": "wikipedia-lead",
+   "match": "representative",
+   "wikipedia": "Apple cake"
+  }
+ },
+ {
+  "id": "ch-nl-024",
+  "slug": "nl-lemon-posset",
+  "title": "Lemon Posset",
+  "genre": "international",
+  "subgenre": "desserts",
+  "chef": {
+   "name": "Nigella Lawson",
+   "slug": "nigella-lawson"
+  },
+  "description": "Cream, sugar and lemon juice set without gelatin. Three ingredients.",
+  "difficulty": "beginner",
+  "easeScore": 10,
+  "spiceScore": 0,
+  "popularity": 8,
+  "pantryScore": 9,
+  "servings": 6,
+  "prepMin": 10,
+  "cookMin": 250,
+  "totalMin": 260,
+  "equipment": [
+   "stovetop"
+  ],
+  "ingredients": [
+   "2 1/2 cups heavy cream",
+   "3/4 cup sugar",
+   "1/2 cup lemon juice",
+   "1 tbsp lemon zest",
+   "1/4 tsp salt",
+   "1 cup raspberries",
+   "6 shortbread cookies"
+  ],
+  "ingredientKeys": [
+   "heavy-cream",
+   "sugar",
+   "lemon-juice",
+   "lemon-zest",
+   "salt",
+   "raspberries",
+   "shortbread-cookies"
+  ],
+  "specialty": [
+   "raspberries",
+   "shortbread-cookies"
+  ],
+  "steps": [
+   "Bring the cream and sugar to a boil in a saucepan, stirring to dissolve the sugar, and let it boil for a full 3 minutes. It will rise up, so use a pan with room.",
+   "Those 3 minutes of boiling matter: they concentrate the cream slightly, and the set depends on it.",
+   "Take the pan off the heat and whisk in the lemon juice, zest and salt.",
+   "There is no gelatin here. The acid in the lemon juice denatures the cream proteins and sets the posset on its own as it chills.",
+   "Pour through a fine sieve into 6 small glasses and leave them at room temperature 20 minutes.",
+   "Chill at least 4 hours until firmly set. Serve with raspberries and shortbread."
+  ],
+  "diet": {
+   "vegetarian": true,
+   "vegan": false,
+   "pescatarian": true,
+   "glutenFree": false,
+   "glutenFreeAdaptable": true,
+   "dairyFree": false,
+   "nutFree": true,
+   "eggFree": true
+  },
+  "allergens": [
+   "gluten",
+   "dairy"
+  ],
+  "gmo": {
+   "risk": "moderate",
+   "sources": [
+    "grain-fed-dairy",
+    "sugar-beet"
+   ]
+  },
+  "nutrition": {
+   "calories": 448,
+   "proteinG": 3,
+   "carbsG": 38,
+   "fiberG": 2,
+   "sugarG": 32,
+   "fatG": 32,
+   "satFatG": 20,
+   "sodiumMg": 120,
+   "cholesterolMg": 98
+  },
+  "tags": [
+   "dessert",
+   "easy",
+   "make-ahead",
+   "british",
+   "vegetarian",
+   "technique",
+   "entertaining",
+   "no-bake",
+   "quick"
+  ],
+  "image": {
+   "file": "nl-lemon-posset.jpg",
+   "source": "commons-file",
+   "match": "dish",
+   "commonsFile": "Lemon Posset.jpg"
+  }
+ },
+ {
+  "id": "ch-nl-025",
+  "slug": "nl-mulled-wine",
+  "title": "Mulled Wine",
+  "genre": "international",
+  "subgenre": "drinks",
+  "chef": {
+   "name": "Nigella Lawson",
+   "slug": "nigella-lawson"
+  },
+  "description": "Red wine warmed with citrus and whole spices. Never boiled.",
+  "difficulty": "beginner",
+  "easeScore": 10,
+  "spiceScore": 2,
+  "popularity": 8,
+  "pantryScore": 7,
+  "servings": 8,
+  "prepMin": 10,
+  "cookMin": 30,
+  "totalMin": 40,
+  "equipment": [
+   "stovetop"
+  ],
+  "ingredients": [
+   "2 bottles (750 ml each) fruity red wine",
+   "1/2 cup sugar",
+   "1 orange, sliced",
+   "1 lemon, sliced",
+   "3 cinnamon sticks",
+   "8 whole cloves",
+   "4 star anise",
+   "1 tsp allspice berries",
+   "1 vanilla bean, split",
+   "1/2 cup brandy"
+  ],
+  "ingredientKeys": [
+   "red-wine",
+   "sugar",
+   "orange",
+   "lemon",
+   "cinnamon-stick",
+   "whole-cloves",
+   "star-anise",
+   "allspice-berries",
+   "vanilla-bean",
+   "brandy"
+  ],
+  "specialty": [
+   "red-wine",
+   "cinnamon-stick",
+   "whole-cloves",
+   "star-anise",
+   "allspice-berries",
+   "vanilla-bean",
+   "brandy"
+  ],
+  "steps": [
+   "Put the sugar, citrus slices and all the whole spices in a large pan with about 1 cup of the wine.",
+   "Heat gently until the sugar dissolves, then simmer 5 minutes to make a spiced syrup. Starting with a small amount of liquid extracts far more from the spices than warming everything at once would.",
+   "Use whole spices, not ground. Ground spices turn the wine cloudy and gritty.",
+   "Add the rest of the wine and warm it over low heat for 20 minutes.",
+   "Never let it boil. Above about 175F the alcohol starts evaporating and the wine turns harsh and stewed - you want it steaming, not bubbling.",
+   "Stir in the brandy off the heat and ladle into heatproof glasses, with a slice of orange in each."
+  ],
+  "diet": {
+   "vegetarian": true,
+   "vegan": true,
+   "pescatarian": true,
+   "glutenFree": true,
+   "glutenFreeAdaptable": false,
+   "dairyFree": true,
+   "nutFree": true,
+   "eggFree": true
+  },
+  "allergens": [
+   "sulfites"
+  ],
+  "gmo": {
+   "risk": "moderate",
+   "sources": [
+    "sugar-beet"
+   ]
+  },
+  "nutrition": {
+   "calories": 242,
+   "proteinG": 0,
+   "carbsG": 22,
+   "fiberG": 1,
+   "sugarG": 20,
+   "fatG": 0,
+   "satFatG": 0,
+   "sodiumMg": 12,
+   "cholesterolMg": 0
+  },
+  "tags": [
+   "drink",
+   "holiday",
+   "christmas",
+   "winter",
+   "party",
+   "adults-only",
+   "easy",
+   "vegan",
+   "gluten-free",
+   "technique"
+  ],
+  "image": {
+   "file": "nl-mulled-wine.jpg",
+   "source": "commons-file",
+   "match": "dish",
+   "commonsFile": "Mulled wine 01.jpg"
+  }
+ }
 ]

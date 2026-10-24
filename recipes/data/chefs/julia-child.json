@@ -1,301 +1,2811 @@
 [
-{"id":"ch-jc-001","slug":"jc-boeuf-bourguignon","title":"Boeuf Bourguignon","genre":"french","subgenre":"braises","chef":{"name":"Julia Child","slug":"julia-child"},"description":"Beef braised in Burgundy with lardons, pearl onions and mushrooms.","difficulty":"advanced","easeScore":4,"spiceScore":1,"popularity":9,"pantryScore":5,"servings":6,"prepMin":45,"cookMin":210,"totalMin":255,"equipment":["oven","stovetop"],
-"ingredients":["3 lb beef chuck, cut in 2-inch cubes","6 oz bacon, cut in lardons","2 tbsp olive oil","1 carrot, sliced","1 yellow onion, sliced","2 tsp salt","1 tsp black pepper","2 tbsp all-purpose flour","3 cups full-bodied red Burgundy","2 cups beef broth","1 tbsp tomato paste","2 cloves garlic, mashed","1/2 tsp dried thyme","1 bay leaf","18 pearl onions","3 tbsp butter","1 lb cremini mushrooms, quartered","1/3 cup chopped parsley"],
-"ingredientKeys":["beef-chuck","bacon","olive-oil","carrot","yellow-onion","salt","black-pepper","flour","red-wine","beef-broth","tomato-paste","garlic","dried-thyme","bay-leaf","pearl-onions","butter","mushroom","parsley"],
-"specialty":["beef-chuck","red-wine","pearl-onions"],
-"steps":["Simmer the lardons in water for 10 minutes, then drain and dry them. Blanching removes the smoky harshness so the bacon supports the wine rather than fighting it.","Brown the lardons in the oil, lift them out, then pat the beef completely dry and brown it on all sides in batches. Dry meat and an uncrowded pan are the two conditions for browning - without them you steam the beef and lose everything.","Brown the sliced carrot and onion, pour off the fat, then return the beef and lardons, season, and sprinkle the flour over. Toss and set the pot uncovered in a 450F oven for 4 minutes, toss again, and 4 minutes more. This sears the flour into a light crust that thickens the sauce.","Lower the oven to 325F. Add the wine, enough broth to barely cover, the tomato paste, garlic, thyme and bay leaf. Bring to a simmer on the stovetop, cover, and braise 3 to 3 1/2 hours.","Braise the pearl onions separately in butter and a little broth for 40 minutes, and sauté the mushrooms in butter over high heat until browned. Cooking them apart keeps each one distinct instead of dissolving into the stew.","Strain the sauce, skim the fat, and reduce it until it coats a spoon. Combine everything, add the parsley, and serve with boiled potatoes or noodles."],
-"diet":{"vegetarian":false,"vegan":false,"pescatarian":false,"glutenFree":false,"glutenFreeAdaptable":true,"dairyFree":false,"nutFree":true,"eggFree":true},
-"allergens":["gluten","dairy","sulfites"],
-"gmo":{"risk":"moderate","sources":["grain-fed-meat","grain-fed-dairy"]},
-"nutrition":{"calories":782,"proteinG":58,"carbsG":22,"fiberG":3,"sugarG":8,"fatG":44,"satFatG":17,"sodiumMg":1280,"cholesterolMg":178},
-"tags":["french","project","classic","technique","special-occasion","make-ahead","winter","entertaining","high-protein"],
-"image":{"file":"beef-bourguignon.jpg","wikipedia":"Beef bourguignon"}},
-
-{"id":"ch-jc-002","slug":"jc-coq-au-vin","title":"Coq au Vin","genre":"french","subgenre":"braises","chef":{"name":"Julia Child","slug":"julia-child"},"description":"Chicken braised in red wine with lardons, flamed with cognac.","difficulty":"intermediate","easeScore":6,"spiceScore":1,"popularity":9,"pantryScore":5,"servings":6,"prepMin":35,"cookMin":75,"totalMin":110,"equipment":["stovetop"],
-"ingredients":["1 whole chicken (4 lb), cut in 8 pieces","4 oz bacon, cut in lardons","2 tbsp butter","2 tsp salt","1 tsp black pepper","1/4 cup cognac","3 cups young red wine","2 cups chicken broth","1 tbsp tomato paste","3 cloves garlic, mashed","1/2 tsp dried thyme","1 bay leaf","18 pearl onions","3 tbsp butter, for the garnish","1 lb cremini mushrooms, quartered","3 tbsp all-purpose flour","1/3 cup chopped parsley"],
-"ingredientKeys":["whole-chicken","bacon","butter","salt","black-pepper","cognac","red-wine","chicken-broth","tomato-paste","garlic","dried-thyme","bay-leaf","pearl-onions","butter","mushroom","flour","parsley"],
-"specialty":["whole-chicken","cognac","red-wine","pearl-onions"],
-"steps":["Simmer the lardons in water 10 minutes, drain and dry, then brown them in the butter. Lift them out.","Pat the chicken thoroughly dry, season, and brown it in the fat, skin-side down first, until golden on both sides.","Pour the cognac over the chicken and flame it: stand back, touch a long match to the edge of the pan, and let it burn out on its own, shaking the pan. The flame burns off raw alcohol and leaves the cognac's depth behind.","Add the wine, enough broth to almost cover, the tomato paste, garlic, thyme and bay leaf. Cover and simmer 25-30 minutes until the chicken is cooked through, then lift the pieces out.","Braise the pearl onions in butter and broth 40 minutes and brown the mushrooms separately in butter. Cooking the garnishes apart is what keeps them intact.","Skim the braising liquid and reduce it to about 2 cups. Mash the flour with 3 tbsp butter into a beurre manie and whisk it in bit by bit - this thickens the sauce at the end without lumps. Return everything, warm through, and finish with parsley."],
-"diet":{"vegetarian":false,"vegan":false,"pescatarian":false,"glutenFree":false,"glutenFreeAdaptable":true,"dairyFree":false,"nutFree":true,"eggFree":true},
-"allergens":["gluten","dairy","sulfites"],
-"gmo":{"risk":"moderate","sources":["grain-fed-meat","grain-fed-dairy"]},
-"nutrition":{"calories":712,"proteinG":52,"carbsG":22,"fiberG":3,"sugarG":9,"fatG":42,"satFatG":16,"sodiumMg":1380,"cholesterolMg":212},
-"tags":["french","classic","technique","special-occasion","entertaining","make-ahead","winter","high-protein"],
-"image":{"file":"coq-au-vin.jpg","wikipedia":"Coq au vin"}},
-
-{"id":"ch-jc-003","slug":"jc-sole-meuniere","title":"Sole Meuniere","genre":"french","subgenre":"seafood","chef":{"name":"Julia Child","slug":"julia-child"},"description":"Sole dusted in flour, fried in butter, finished with lemon and parsley.","difficulty":"beginner","easeScore":8,"spiceScore":0,"popularity":8,"pantryScore":6,"servings":2,"prepMin":10,"cookMin":12,"totalMin":22,"equipment":["stovetop"],
-"ingredients":["2 whole sole or 4 sole fillets","1/2 cup whole milk","1/2 cup all-purpose flour","1 1/2 tsp salt","1/2 tsp white pepper","4 tbsp clarified butter","4 tbsp butter","2 tbsp lemon juice","1/3 cup chopped parsley","1 lemon, cut in wedges"],
-"ingredientKeys":["sole","whole-milk","flour","salt","white-pepper","clarified-butter","butter","lemon-juice","parsley","lemon"],
-"specialty":["sole","clarified-butter","white-pepper"],
-"steps":["Meuniere means miller's wife, and the whole dish is named for its one essential step: a light dusting of flour.","Dip the fish briefly in the milk, then dredge it in the seasoned flour and shake off every bit of excess. A heavy coating turns gummy; a bare whisper of flour is what browns.","Use clarified butter for the frying. Whole butter has milk solids that burn at this heat, and clarified butter lets you get the pan properly hot.","Fry the fish 2-3 minutes per side until golden, turning only once with a thin spatula. Sole is delicate and falls apart if handled twice.","Move it to warm plates. Wipe the pan, add the whole butter, and cook it until it foams and turns light brown and smells nutty - 60-90 seconds, no more.","Take the pan off the heat, add the lemon juice and parsley - it will hiss and foam - and pour it over the fish immediately. Serve with lemon wedges."],
-"diet":{"vegetarian":false,"vegan":false,"pescatarian":true,"glutenFree":false,"glutenFreeAdaptable":false,"dairyFree":false,"nutFree":true,"eggFree":true},
-"allergens":["gluten","dairy","fish"],
-"gmo":{"risk":"low","sources":["grain-fed-dairy"]},
-"nutrition":{"calories":586,"proteinG":38,"carbsG":22,"fiberG":1,"sugarG":3,"fatG":40,"satFatG":24,"sodiumMg":1180,"cholesterolMg":178},
-"tags":["french","classic","technique","seafood","pescatarian","quick","date-night","restaurant-style"],
-"image":{"file":"sole-meuniere.jpg","wikipedia":"Sole meunière"}},
-
-{"id":"ch-jc-004","slug":"jc-french-omelette","title":"French Omelette","genre":"french","subgenre":"breakfast","chef":{"name":"Julia Child","slug":"julia-child"},"description":"A pale, rolled omelette made in under a minute by shaking the pan.","difficulty":"intermediate","easeScore":6,"spiceScore":0,"popularity":8,"pantryScore":10,"servings":1,"prepMin":3,"cookMin":3,"totalMin":6,"equipment":["stovetop"],
-"ingredients":["3 eggs","1/4 tsp salt","1/8 tsp white pepper","2 tbsp butter","1 tbsp chopped chives"],
-"ingredientKeys":["egg","salt","white-pepper","butter","chives"],
-"specialty":["white-pepper"],
-"steps":["Beat the eggs with the salt and pepper for 20-30 seconds, just until uniform in color. Overbeating thins them and you lose the body.","Have everything ready before you start. The entire cooking time is under a minute, and there is no pausing once it begins.","Heat the butter in an 8-inch nonstick or well-seasoned pan over high heat until it foams and just begins to subside - not until it browns.","Pour in the eggs and count to three, then start shaking the pan back and forth, sharply and continuously, while jerking it toward you. The eggs gather into soft curds at the far edge.","After about 20-25 seconds the omelette should be set on the bottom and still slightly creamy on top. A French omelette is pale yellow with no browning at all - if it has color, the pan was too hot or it stayed too long.","Tilt the pan hard and roll the omelette over onto itself, then turn it out seam-side down onto a plate. Smear the top with a little butter and add the chives."],
-"diet":{"vegetarian":true,"vegan":false,"pescatarian":true,"glutenFree":true,"glutenFreeAdaptable":false,"dairyFree":false,"nutFree":true,"eggFree":false},
-"allergens":["dairy","egg"],
-"gmo":{"risk":"low","sources":["grain-fed-dairy"]},
-"nutrition":{"calories":386,"proteinG":19,"carbsG":2,"fiberG":0,"sugarG":1,"fatG":34,"satFatG":18,"sodiumMg":680,"cholesterolMg":618},
-"tags":["french","breakfast","technique","classic","quick","vegetarian","gluten-free","high-protein","low-carb","budget"],
-"image":{"file":"omelette.jpg","wikipedia":"Omelette"}},
-
-{"id":"ch-jc-005","slug":"jc-potage-parmentier","title":"Potage Parmentier","genre":"french","subgenre":"soups","chef":{"name":"Julia Child","slug":"julia-child"},"description":"Leek and potato soup with three ingredients. The first recipe in the book.","difficulty":"beginner","easeScore":10,"spiceScore":0,"popularity":8,"pantryScore":8,"servings":6,"prepMin":15,"cookMin":45,"totalMin":60,"equipment":["stovetop"],
-"ingredients":["4 cups peeled and diced potatoes","4 cups thinly sliced leeks","2 quarts water","2 tsp salt","1/2 cup heavy cream","4 tbsp butter","1/2 tsp white pepper","3 tbsp chopped chives"],
-"ingredientKeys":["potato","leek","water","salt","heavy-cream","butter","white-pepper","chives"],
-"specialty":["leek","white-pepper"],
-"steps":["Wash the sliced leeks thoroughly in a bowl of water, lifting them out rather than pouring - grit settles to the bottom and pouring tips it back over them.","Simmer the potatoes and leeks in the water with the salt, partially covered, for 40-50 minutes until everything is completely tender.","The ingredient list really is this short. There is no stock, no herbs, no garlic - the leeks and potatoes make their own broth, and that restraint is the point.","Mash the vegetables directly in the pot with a fork or a masher, or pass them through a food mill for a smoother result. Do not use a blender; it turns potato starch gluey.","Taste and correct the salt now, before the enrichment goes in.","Off the heat, stir in the cream and swirl in the butter a tablespoon at a time. Season with white pepper and serve with chives. Chilled and thinned with more cream, this same soup becomes vichyssoise."],
-"diet":{"vegetarian":true,"vegan":false,"pescatarian":true,"glutenFree":true,"glutenFreeAdaptable":false,"dairyFree":false,"nutFree":true,"eggFree":true},
-"allergens":["dairy"],
-"gmo":{"risk":"low","sources":["grain-fed-dairy"]},
-"nutrition":{"calories":286,"proteinG":5,"carbsG":32,"fiberG":4,"sugarG":5,"fatG":16,"satFatG":10,"sodiumMg":780,"cholesterolMg":42},
-"tags":["french","soup","classic","technique","vegetarian","gluten-free","budget","foundation","easy","winter"],
-"image":{"file":"potato-leek-soup.jpg","wikipedia":"Potato soup"}},
-
-{"id":"ch-jc-006","slug":"jc-ratatouille","title":"Ratatouille","genre":"french","subgenre":"mains","chef":{"name":"Julia Child","slug":"julia-child"},"description":"Each vegetable cooked separately, then layered and baked together.","difficulty":"intermediate","easeScore":6,"spiceScore":1,"popularity":8,"pantryScore":8,"servings":6,"prepMin":35,"cookMin":60,"totalMin":95,"equipment":["stovetop","oven"],
-"ingredients":["1 lb eggplant, peeled and cut in strips","1 lb zucchini, cut in strips","1 tsp salt, for draining","1/2 cup olive oil","2 yellow onions, thinly sliced","2 green bell peppers, sliced","4 cloves garlic, minced","1 lb ripe tomatoes, peeled, seeded and sliced","2 tsp salt","1 tsp black pepper","3 tbsp chopped parsley","1 tbsp chopped fresh basil"],
-"ingredientKeys":["eggplant","zucchini","salt","olive-oil","yellow-onion","green-bell-pepper","garlic","tomato","salt","black-pepper","parsley","fresh-basil"],
-"specialty":["eggplant"],
-"steps":["Salt the eggplant and zucchini strips and leave them in a towel for 30 minutes, then pat them dry. This draws out water that would otherwise dilute the finished dish.","Sauté the eggplant in oil a few pieces at a time until lightly browned, and set aside. Then do the same with the zucchini.","Cook the onions and peppers slowly in the same pan for 10 minutes until tender, then add the garlic.","Lay the tomato slices over the onions and peppers, cover, and cook 5 minutes, then uncover and baste with the juices until the liquid has almost evaporated.","Now layer: a third of the tomato mixture in a casserole, then half the eggplant and zucchini, a third more tomato, the rest of the eggplant and zucchini, and the last of the tomato. Cooking each vegetable separately and then layering is the whole method - it keeps every element tasting of itself rather than reducing everything to a uniform stew.","Cover and simmer gently 10 minutes, then uncover and cook 15 minutes more, basting several times, until the juices have reduced. Serve warm or at room temperature with the herbs."],
-"diet":{"vegetarian":true,"vegan":true,"pescatarian":true,"glutenFree":true,"glutenFreeAdaptable":false,"dairyFree":true,"nutFree":true,"eggFree":true},
-"allergens":[],
-"gmo":{"risk":"low","sources":["none"]},
-"nutrition":{"calories":242,"proteinG":4,"carbsG":18,"fiberG":6,"sugarG":11,"fatG":18,"satFatG":3,"sodiumMg":880,"cholesterolMg":0},
-"tags":["french","vegan","vegetarian","gluten-free","dairy-free","classic","technique","summer","make-ahead","healthy"],
-"image":{"file":"ratatouille.jpg","wikipedia":"Ratatouille"}},
-
-{"id":"ch-jc-007","slug":"jc-reine-de-saba","title":"Reine de Saba","genre":"french","subgenre":"desserts","chef":{"name":"Julia Child","slug":"julia-child"},"description":"A chocolate almond cake deliberately underbaked in the middle.","difficulty":"intermediate","easeScore":6,"spiceScore":0,"popularity":7,"pantryScore":7,"servings":10,"prepMin":30,"cookMin":60,"totalMin":90,"equipment":["oven","stovetop"],
-"ingredients":["4 oz semisweet chocolate, chopped","2 tbsp strong coffee","1/2 cup butter, softened","2/3 cup sugar","3 eggs, separated","1/4 tsp salt","1 tbsp sugar, for the whites","3/4 cup almond flour","1/4 tsp almond extract","1/2 cup cake flour","2 oz semisweet chocolate, for the glaze","2 tbsp butter, for the glaze","1/4 cup sliced almonds"],
-"ingredientKeys":["semisweet-chocolate","brewed-coffee","butter","sugar","egg","salt","sugar","almond-flour","almond-extract","cake-flour","semisweet-chocolate","butter","almonds"],
-"specialty":["semisweet-chocolate","almond-flour","almond-extract","cake-flour"],
-"steps":["Heat the oven to 350F and butter and flour an 8-inch round pan. Melt the 4 oz chocolate with the coffee over barely simmering water, then set aside.","Cream the butter and 2/3 cup sugar until pale and fluffy, then beat in the egg yolks one at a time.","Beat the egg whites with the salt to soft peaks, add the 1 tbsp sugar, and beat to stiff glossy peaks.","Fold the melted chocolate into the butter mixture, then the almond flour and almond extract. Fold in a quarter of the whites to lighten it, then alternate the remaining whites with the sifted cake flour in thirds.","Bake 25 minutes. The cake is done when the outer 2-3 inches test clean but a skewer in the center still comes out oily. Baking it until the middle is set gives you an ordinary dry cake - the whole character of Reine de Saba is that underdone center.","Cool in the pan 10 minutes, then turn out and cool completely. Melt the glaze chocolate with the butter, spread it over the top, and press the sliced almonds around the edge."],
-"diet":{"vegetarian":true,"vegan":false,"pescatarian":true,"glutenFree":false,"glutenFreeAdaptable":false,"dairyFree":false,"nutFree":false,"eggFree":false},
-"allergens":["gluten","dairy","egg","tree-nut","soy"],
-"gmo":{"risk":"moderate","sources":["sugar-beet","soy","grain-fed-dairy"]},
-"nutrition":{"calories":386,"proteinG":7,"carbsG":32,"fiberG":3,"sugarG":24,"fatG":26,"satFatG":13,"sodiumMg":180,"cholesterolMg":98},
-"tags":["french","dessert","classic","technique","baking","special-occasion","entertaining","vegetarian"],
-"image":{"file":"chocolate-almond-cake.jpg","wikipedia":"Chocolate cake"}},
-
-{"id":"ch-jc-008","slug":"jc-hollandaise","title":"Hollandaise Sauce","genre":"french","subgenre":"sauces","chef":{"name":"Julia Child","slug":"julia-child"},"description":"Egg yolks and butter emulsified over gentle heat. One of the mother sauces.","difficulty":"intermediate","easeScore":5,"spiceScore":1,"popularity":8,"pantryScore":9,"servings":6,"prepMin":10,"cookMin":15,"totalMin":25,"equipment":["stovetop"],
-"ingredients":["3 egg yolks","1 tbsp lemon juice","1 tbsp cold water","1/4 tsp salt","3/4 cup butter, melted and warm","1 tbsp lemon juice, for finishing","1/8 tsp white pepper","pinch cayenne pepper"],
-"ingredientKeys":["egg-yolk","lemon-juice","water","salt","butter","lemon-juice","white-pepper","cayenne"],
-"specialty":["white-pepper"],
-"steps":["Whisk the yolks with 1 tbsp lemon juice, the cold water and the salt in a heavy saucepan until thick and pale.","Set the pan over low heat and whisk constantly, lifting it off the burner every few seconds. You are looking for the yolks to thicken into a cream that coats the whisk - this happens around 160F. A degree or two further and they scramble.","Pull the pan off the heat the instant it thickens and whisk in 2 tbsp of the butter to cool it down and stop the cooking.","Now add the warm melted butter in a very thin, slow stream, whisking constantly. Pouring too fast is the single reason hollandaise breaks - the yolks can only absorb so much fat at a time.","Once it has all gone in, the sauce should be thick enough to hold soft ribbons. Finish with the remaining lemon juice, white pepper and cayenne.","If it breaks, whisk a fresh yolk with a teaspoon of water in a clean bowl and dribble the broken sauce into it as though it were butter. Hold hollandaise lukewarm, never hot."],
-"diet":{"vegetarian":true,"vegan":false,"pescatarian":true,"glutenFree":true,"glutenFreeAdaptable":false,"dairyFree":false,"nutFree":true,"eggFree":false},
-"allergens":["dairy","egg"],
-"gmo":{"risk":"low","sources":["grain-fed-dairy"]},
-"nutrition":{"calories":242,"proteinG":2,"carbsG":1,"fiberG":0,"sugarG":0,"fatG":26,"satFatG":15,"sodiumMg":220,"cholesterolMg":158},
-"tags":["french","sauce","technique","classic","foundation","gluten-free","vegetarian","brunch","low-carb"],
-"image":{"file":"hollandaise.jpg","wikipedia":"Hollandaise sauce"}},
-
-{"id":"ch-jc-009","slug":"jc-bearnaise","title":"Bearnaise Sauce","genre":"french","subgenre":"sauces","chef":{"name":"Julia Child","slug":"julia-child"},"description":"Hollandaise built on a tarragon and shallot vinegar reduction.","difficulty":"intermediate","easeScore":5,"spiceScore":2,"popularity":7,"pantryScore":6,"servings":6,"prepMin":10,"cookMin":20,"totalMin":30,"equipment":["stovetop"],
-"ingredients":["1/4 cup white wine vinegar","1/4 cup dry white wine","1 shallot, minced","2 tbsp chopped fresh tarragon","1/2 tsp black pepper","3 egg yolks","1/4 tsp salt","3/4 cup butter, melted and warm","1 tbsp chopped fresh tarragon, for finishing","1 tbsp chopped parsley"],
-"ingredientKeys":["white-wine-vinegar","white-wine","shallot","fresh-tarragon","black-pepper","egg-yolk","salt","butter","fresh-tarragon","parsley"],
-"specialty":["white-wine-vinegar","white-wine","shallot","fresh-tarragon"],
-"steps":["Simmer the vinegar, wine, shallot, 2 tbsp tarragon and the pepper in a small saucepan until reduced to about 2 tablespoons. This reduction is what distinguishes bearnaise from hollandaise - the acid and tarragon are concentrated into the base rather than added at the end.","Strain it, pressing the solids, and let it cool slightly.","Whisk the yolks and salt into the reduction, then set the pan over low heat and whisk constantly, lifting it off the burner every few seconds until the yolks thicken to a cream.","Pull it off the heat and whisk in 2 tbsp of the butter to arrest the cooking.","Add the warm melted butter in a very thin stream, whisking constantly. Rushing this breaks the emulsion.","Finish with the remaining fresh tarragon and the parsley. Serve lukewarm with steak - it cannot be reheated without splitting."],
-"diet":{"vegetarian":true,"vegan":false,"pescatarian":true,"glutenFree":true,"glutenFreeAdaptable":false,"dairyFree":false,"nutFree":true,"eggFree":false},
-"allergens":["dairy","egg","sulfites"],
-"gmo":{"risk":"low","sources":["grain-fed-dairy"]},
-"nutrition":{"calories":242,"proteinG":2,"carbsG":2,"fiberG":0,"sugarG":1,"fatG":26,"satFatG":15,"sodiumMg":220,"cholesterolMg":158},
-"tags":["french","sauce","technique","classic","foundation","gluten-free","vegetarian","steakhouse","low-carb"],
-"image":{"file":"bearnaise.jpg","wikipedia":"Béarnaise sauce"}},
-
-{"id":"ch-jc-010","slug":"jc-vichyssoise","title":"Vichyssoise","genre":"french","subgenre":"soups","chef":{"name":"Julia Child","slug":"julia-child"},"description":"Chilled leek and potato soup, sieved smooth and enriched with cream.","difficulty":"beginner","easeScore":9,"spiceScore":0,"popularity":7,"pantryScore":8,"servings":6,"prepMin":15,"cookMin":260,"totalMin":275,"equipment":["stovetop"],
-"ingredients":["4 cups thinly sliced leeks","4 cups peeled and diced potatoes","6 cups chicken broth","2 tsp salt","1 cup heavy cream","1/2 tsp white pepper","1 tbsp lemon juice","3 tbsp chopped chives"],
-"ingredientKeys":["leek","potato","chicken-broth","salt","heavy-cream","white-pepper","lemon-juice","chives"],
-"specialty":["leek","white-pepper"],
-"steps":["Wash the sliced leeks in a bowl of water and lift them out, leaving the grit behind. Use only the white and pale green parts for a properly pale soup.","Simmer the leeks and potatoes in the broth with the salt, partially covered, 40-45 minutes until completely tender.","Pass the soup through a food mill or fine sieve. Do not use a blender - potato starch turns gluey when whipped, and a cold soup shows that texture far more than a hot one.","Chill the puree thoroughly, at least 4 hours.","Stir in the cream only once the soup is cold, then season with the white pepper and lemon juice.","Taste again cold. Chilled food needs noticeably more salt and acid than warm food, so correct it at this stage, not before. Serve very cold with chives."],
-"diet":{"vegetarian":false,"vegan":false,"pescatarian":false,"glutenFree":true,"glutenFreeAdaptable":false,"dairyFree":false,"nutFree":true,"eggFree":true},
-"allergens":["dairy"],
-"gmo":{"risk":"low","sources":["grain-fed-meat","grain-fed-dairy"]},
-"nutrition":{"calories":286,"proteinG":6,"carbsG":32,"fiberG":4,"sugarG":6,"fatG":16,"satFatG":10,"sodiumMg":1080,"cholesterolMg":48},
-"tags":["french","soup","classic","chilled","summer","make-ahead","gluten-free","elegant","entertaining","technique"],
-"image":{"file":"vichyssoise.jpg","wikipedia":"Vichyssoise"}},
-
-{"id":"ch-jc-011","slug":"jc-crepes","title":"Crepes","genre":"french","subgenre":"breakfast","chef":{"name":"Julia Child","slug":"julia-child"},"description":"A thin batter rested two hours and cooked paper-thin in a small pan.","difficulty":"intermediate","easeScore":7,"spiceScore":0,"popularity":9,"pantryScore":10,"servings":6,"prepMin":10,"cookMin":140,"totalMin":150,"equipment":["stovetop","blender"],
-"ingredients":["1 cup all-purpose flour","2/3 cup cold water","2/3 cup cold whole milk","3 eggs","1/2 tsp salt","3 tbsp butter, melted","4 tbsp butter, for the pan","1/4 cup sugar","2 lemons, cut in wedges"],
-"ingredientKeys":["flour","water","whole-milk","egg","salt","butter","butter","sugar","lemon"],
-"specialty":[],
-"steps":["Blend the flour, water, milk, eggs, salt and melted butter for 1 minute until completely smooth.","Refrigerate the batter at least 2 hours. The rest lets the flour fully absorb the liquid and relaxes the gluten, which is what makes crepes tender rather than rubbery. Skipping it is the most common mistake.","Heat a 6 or 7-inch pan over medium-high and brush it with butter. The pan should be hot enough that a drop of batter sets on contact.","Pour in a scant 1/4 cup, immediately lift the pan off the heat and tilt it in all directions so the batter runs out in a thin even layer, then pour any excess back.","Cook about 60 seconds until the edges lift and the underside is browned in patches, then flip and cook 30 seconds more. The second side always looks spotty - that side goes inward.","The first crepe is almost always a failure that tells you the right heat and quantity. Stack the rest on a plate as you go and serve with sugar and lemon."],
-"diet":{"vegetarian":true,"vegan":false,"pescatarian":true,"glutenFree":false,"glutenFreeAdaptable":false,"dairyFree":false,"nutFree":true,"eggFree":false},
-"allergens":["gluten","dairy","egg"],
-"gmo":{"risk":"moderate","sources":["grain-fed-dairy","sugar-beet"]},
-"nutrition":{"calories":286,"proteinG":8,"carbsG":28,"fiberG":1,"sugarG":11,"fatG":15,"satFatG":9,"sodiumMg":320,"cholesterolMg":138},
-"tags":["french","breakfast","technique","classic","vegetarian","foundation","budget","make-ahead","brunch"],
-"image":{"file":"crepes.jpg","wikipedia":"Crêpe"}},
-
-{"id":"ch-jc-012","slug":"jc-clafoutis","title":"Cherry Clafoutis","genre":"french","subgenre":"desserts","chef":{"name":"Julia Child","slug":"julia-child"},"description":"Cherries baked in a thin custard batter that puffs and then settles.","difficulty":"beginner","easeScore":9,"spiceScore":0,"popularity":7,"pantryScore":8,"servings":6,"prepMin":15,"cookMin":60,"totalMin":75,"equipment":["oven","blender"],
-"ingredients":["3 cups sweet cherries, pitted","1 1/4 cups whole milk","2/3 cup sugar","3 eggs","1 tbsp vanilla extract","1/8 tsp salt","2/3 cup all-purpose flour","1/3 cup sugar, for the pan","2 tbsp powdered sugar"],
-"ingredientKeys":["cherries","whole-milk","sugar","egg","vanilla-extract","salt","flour","sugar","powdered-sugar"],
-"specialty":["cherries"],
-"steps":["Heat the oven to 350F. Blend the milk, 1/3 cup of the sugar, the eggs, vanilla, salt and flour for 1 minute until smooth.","Pour a 1/4-inch layer of batter into a buttered baking dish and set it over moderate heat on the stovetop for a minute or two, until a film of batter has set in the bottom.","That set film is the trick: it stops the cherries sinking straight to the bottom and gives the clafoutis a base.","Spread the cherries over the set batter, sprinkle with the 1/3 cup sugar, and pour the rest of the batter over.","Bake 50-60 minutes until puffed, browned and a skewer in the center comes out clean.","It will deflate as it cools, which is expected rather than a failure. Dust with powdered sugar and serve warm."],
-"diet":{"vegetarian":true,"vegan":false,"pescatarian":true,"glutenFree":false,"glutenFreeAdaptable":false,"dairyFree":false,"nutFree":true,"eggFree":false},
-"allergens":["gluten","dairy","egg"],
-"gmo":{"risk":"moderate","sources":["grain-fed-dairy","sugar-beet"]},
-"nutrition":{"calories":342,"proteinG":8,"carbsG":62,"fiberG":2,"sugarG":48,"fatG":7,"satFatG":3,"sodiumMg":120,"cholesterolMg":112},
-"tags":["french","dessert","classic","easy","summer","vegetarian","baking","technique","family"],
-"image":{"file":"clafoutis.jpg","wikipedia":"Clafoutis"}},
-
-{"id":"ch-jc-013","slug":"jc-blanquette-de-veau","title":"Blanquette de Veau","genre":"french","subgenre":"braises","chef":{"name":"Julia Child","slug":"julia-child"},"description":"Veal poached without browning, in a velvety egg-enriched white sauce.","difficulty":"advanced","easeScore":3,"spiceScore":1,"popularity":6,"pantryScore":4,"servings":6,"prepMin":35,"cookMin":135,"totalMin":170,"equipment":["stovetop"],
-"ingredients":["3 lb veal shoulder, cut in 2-inch cubes","6 cups chicken broth","1 yellow onion, quartered","2 carrots, cut in chunks","1 bouquet garni of parsley, thyme and bay leaf","2 tsp salt","18 pearl onions","1 lb button mushrooms","3 tbsp butter","1 tbsp lemon juice","4 tbsp butter, for the roux","5 tbsp all-purpose flour","2 egg yolks","3/4 cup heavy cream","1 tbsp lemon juice, for finishing","1/2 tsp white pepper","3 tbsp chopped parsley"],
-"ingredientKeys":["veal-shoulder","chicken-broth","yellow-onion","carrot","bouquet-garni","salt","pearl-onions","mushroom","butter","lemon-juice","butter","flour","egg-yolk","heavy-cream","lemon-juice","white-pepper","parsley"],
-"specialty":["veal-shoulder","bouquet-garni","pearl-onions","white-pepper"],
-"steps":["Blanch the veal: cover it with cold water, bring to a boil, simmer 2 minutes, then drain and rinse the pieces. This removes the scum that would otherwise cloud the sauce, and a blanquette must stay pale.","Simmer the veal in the broth with the onion, carrots, bouquet garni and salt, partially covered, for 1 1/2 hours. Never let it boil and never brown the meat - the whiteness of the dish is the whole point.","Braise the pearl onions in butter and a little broth, and cook the mushrooms in butter with the lemon juice. Keep both aside.","Strain the cooking liquid and reduce it to about 4 cups. Make a roux with the 4 tbsp butter and the flour, cook it 2 minutes without coloring, then whisk in the hot liquid and simmer 10 minutes.","Make the liaison: whisk the yolks with the cream, then whisk a ladle of hot sauce into them very slowly before returning it all to the pan. Rushing this scrambles the yolks.","Heat gently, never boiling, until the sauce thickens. Add the lemon juice and white pepper, fold in the veal, onions and mushrooms, and finish with parsley."],
-"diet":{"vegetarian":false,"vegan":false,"pescatarian":false,"glutenFree":false,"glutenFreeAdaptable":false,"dairyFree":false,"nutFree":true,"eggFree":false},
-"allergens":["gluten","dairy","egg"],
-"gmo":{"risk":"moderate","sources":["grain-fed-meat","grain-fed-dairy"]},
-"nutrition":{"calories":682,"proteinG":52,"carbsG":22,"fiberG":3,"sugarG":7,"fatG":42,"satFatG":22,"sodiumMg":1480,"cholesterolMg":286},
-"tags":["french","project","classic","technique","special-occasion","entertaining","restaurant-style"],
-"image":{"file":"blanquette.jpg","wikipedia":"Blanquette de veau"}},
-
-{"id":"ch-jc-014","slug":"jc-poulet-roti","title":"Poulet Roti","genre":"french","subgenre":"mains","chef":{"name":"Julia Child","slug":"julia-child"},"description":"A chicken roasted on its sides then its back, basted throughout.","difficulty":"beginner","easeScore":8,"spiceScore":0,"popularity":9,"pantryScore":9,"servings":4,"prepMin":20,"cookMin":80,"totalMin":100,"equipment":["oven","stovetop"],
-"ingredients":["1 whole chicken (3 1/2 lb)","1 tsp salt","1/2 tsp black pepper","4 tbsp butter, softened","1 carrot, sliced","1 yellow onion, sliced","2 tbsp butter, melted, for basting","1 tbsp vegetable oil","1/2 cup chicken broth","1/4 cup dry white wine","2 tbsp butter, for the sauce","2 tbsp chopped parsley"],
-"ingredientKeys":["whole-chicken","salt","black-pepper","butter","carrot","yellow-onion","butter","vegetable-oil","chicken-broth","white-wine","butter","parsley"],
-"specialty":["whole-chicken","white-wine"],
-"steps":["Heat the oven to 425F. Season the cavity, smear 2 tbsp of the softened butter inside, truss the bird, and rub the rest of the butter over the skin.","Set the chicken on one side in a roasting pan with the carrot and onion scattered around it, and roast 15 minutes, basting once with the melted butter and oil.","Turn it onto its other side and roast another 15 minutes, basting again. Roasting on the sides first exposes the thighs, which need more heat, while the breast stays shielded.","Turn it breast-up, lower the oven to 350F, salt the breast, and roast about 40-45 minutes more, basting every 10 minutes.","It is done when the juices from the thigh run clear and the leg moves easily in its socket. Rest it 15 minutes on a board.","Pour off the fat, add the broth and wine to the pan, and boil hard while scraping, reducing to about 1/3 cup. Off the heat, swirl in the last butter, add the parsley, and spoon it over the carved chicken."],
-"diet":{"vegetarian":false,"vegan":false,"pescatarian":false,"glutenFree":true,"glutenFreeAdaptable":false,"dairyFree":false,"nutFree":true,"eggFree":true},
-"allergens":["dairy","sulfites"],
-"gmo":{"risk":"moderate","sources":["grain-fed-meat","grain-fed-dairy","seed-oil"]},
-"nutrition":{"calories":712,"proteinG":52,"carbsG":5,"fiberG":1,"sugarG":2,"fatG":52,"satFatG":24,"sodiumMg":880,"cholesterolMg":248},
-"tags":["french","classic","technique","sunday","family","gluten-free","high-protein","entertaining","foundation"],
-"image":{"file":"roast-chicken.jpg","wikipedia":"Roast chicken"}},
-
-{"id":"ch-jc-015","slug":"jc-gratin-dauphinois","title":"Gratin Dauphinois","genre":"french","subgenre":"sides","chef":{"name":"Julia Child","slug":"julia-child"},"description":"Sliced potatoes baked in garlic-rubbed cream with Gruyere.","difficulty":"intermediate","easeScore":7,"spiceScore":0,"popularity":8,"pantryScore":7,"servings":6,"prepMin":25,"cookMin":60,"totalMin":85,"equipment":["oven","stovetop"],
-"ingredients":["2 lb boiling potatoes, sliced 1/8 inch thick","1 clove garlic, halved","4 tbsp butter","1 tsp salt","1/2 tsp white pepper","1/4 tsp ground nutmeg","1 cup grated Gruyere","2 cups whole milk, scalded","1/2 cup heavy cream"],
-"ingredientKeys":["potato","garlic","butter","salt","white-pepper","nutmeg","gruyere","whole-milk","heavy-cream"],
-"specialty":["gruyere","white-pepper"],
-"steps":["Heat the oven to 425F. Rub the inside of a shallow baking dish hard with the cut garlic clove, then butter it generously. Rubbing rather than adding chopped garlic gives a background perfume instead of distinct bites.","Slice the potatoes thinly and evenly - a mandoline helps. Do not rinse them: the surface starch is what thickens the cream, and washing it off leaves you with a watery gratin.","Layer the slices in the dish, seasoning each layer with salt, white pepper and nutmeg and scattering two thirds of the Gruyere between them.","Pour over the scalded milk and the cream. The liquid should just come to the top of the potatoes without covering them.","Dot with the remaining butter and scatter the rest of the Gruyere over.","Bake 50-60 minutes, until the top is deeply browned and a knife slides through with no resistance. Rest 15 minutes before serving so it sets enough to cut."],
-"diet":{"vegetarian":true,"vegan":false,"pescatarian":true,"glutenFree":true,"glutenFreeAdaptable":false,"dairyFree":false,"nutFree":true,"eggFree":true},
-"allergens":["dairy"],
-"gmo":{"risk":"low","sources":["grain-fed-dairy"]},
-"nutrition":{"calories":386,"proteinG":12,"carbsG":32,"fiberG":3,"sugarG":7,"fatG":24,"satFatG":15,"sodiumMg":580,"cholesterolMg":68},
-"tags":["french","side","classic","technique","vegetarian","gluten-free","holiday","comfort","entertaining"],
-"image":{"file":"potato-gratin.jpg","wikipedia":"Gratin dauphinois"}},
-
-{"id":"ch-jc-016","slug":"jc-pissaladiere","title":"Pissaladiere","genre":"french","subgenre":"baking","chef":{"name":"Julia Child","slug":"julia-child"},"description":"A Provencal tart of slow-cooked onions, anchovies and olives.","difficulty":"intermediate","easeScore":7,"spiceScore":2,"popularity":6,"pantryScore":6,"servings":8,"prepMin":30,"cookMin":90,"totalMin":120,"equipment":["oven","stovetop"],
-"ingredients":["1 lb store-bought pizza dough","3 lb yellow onions, thinly sliced","1/3 cup olive oil","4 cloves garlic, minced","1 tsp dried thyme","1 bay leaf","1 1/2 tsp salt","1/2 tsp black pepper","12 anchovy fillets","1 cup Nicoise olives, pitted","2 tbsp olive oil, for finishing","1 tbsp chopped fresh thyme"],
-"ingredientKeys":["pizza-dough","yellow-onion","olive-oil","garlic","dried-thyme","bay-leaf","salt","black-pepper","anchovy","nicoise-olives","olive-oil","fresh-thyme"],
-"specialty":["pizza-dough","anchovy","nicoise-olives","fresh-thyme"],
-"steps":["Cook the onions in the olive oil with the garlic, dried thyme, bay leaf, salt and pepper over very low heat, covered, for 45-60 minutes, stirring occasionally.","They should collapse into a sweet golden jam without browning much. The quantity looks absurd at the start and reduces to about a quarter - that slow sweating is the entire dish.","Uncover for the last 10 minutes to drive off any remaining liquid. Wet onions make a soggy base. Discard the bay leaf and cool slightly.","Heat the oven to 425F. Stretch the dough into a rectangle on an oiled sheet pan and push it to the edges.","Spread the onions over the dough in an even layer, leaving a thin border.","Arrange the anchovies in a lattice over the onions and dot the olives in the diamonds. Drizzle with the remaining oil and bake 25-30 minutes until the crust is browned. Finish with fresh thyme and serve warm or at room temperature."],
-"diet":{"vegetarian":false,"vegan":false,"pescatarian":true,"glutenFree":false,"glutenFreeAdaptable":false,"dairyFree":true,"nutFree":true,"eggFree":true},
-"allergens":["gluten","fish"],
-"gmo":{"risk":"moderate","sources":["processed-bread"]},
-"nutrition":{"calories":386,"proteinG":9,"carbsG":42,"fiberG":4,"sugarG":11,"fatG":20,"satFatG":3,"sodiumMg":1180,"cholesterolMg":8},
-"tags":["french","appetizer","classic","technique","pescatarian","dairy-free","party","make-ahead","regional"],
-"image":{"file":"pissaladiere.jpg","wikipedia":"Pissaladière"}},
-
-{"id":"ch-jc-017","slug":"jc-mousse-au-chocolat","title":"Mousse au Chocolat","genre":"french","subgenre":"desserts","chef":{"name":"Julia Child","slug":"julia-child"},"description":"Chocolate mousse lightened with a sabayon and whipped egg whites.","difficulty":"intermediate","easeScore":6,"spiceScore":0,"popularity":9,"pantryScore":7,"servings":8,"prepMin":30,"cookMin":250,"totalMin":280,"equipment":["stovetop"],
-"ingredients":["4 egg yolks","3/4 cup sugar","1/4 cup dark rum","6 oz semisweet chocolate, chopped","4 tbsp strong coffee","3/4 cup butter, softened","4 egg whites","1 tbsp sugar, for the whites","1/8 tsp salt","1 cup heavy cream","2 tbsp powdered sugar"],
-"ingredientKeys":["egg-yolk","sugar","dark-rum","semisweet-chocolate","brewed-coffee","butter","egg-white","sugar","salt","heavy-cream","powdered-sugar"],
-"specialty":["dark-rum","semisweet-chocolate"],
-"steps":["Beat the yolks with the 3/4 cup sugar and the rum in a bowl set over barely simmering water, whisking constantly, until the mixture is foamy, hot to the touch and thick enough to form a ribbon - about 160F. Then set the bowl in cold water and beat until cool and thick.","Melt the chocolate with the coffee over the same water bath, then beat in the softened butter a piece at a time until smooth. Combine this with the yolk sabayon.","Beat the egg whites with the salt to soft peaks, add the 1 tbsp sugar, and beat to stiff glossy peaks that hold their shape.","Stir a quarter of the whites into the chocolate to loosen it, then fold in the rest in two additions, cutting down through the middle and lifting over.","Stop folding while a few streaks remain. Every unnecessary stroke deflates the mousse, and the air you just whipped in is the only thing giving it structure.","Spoon into glasses and chill at least 4 hours. Whip the cream with the powdered sugar and spoon it over to serve."],
-"diet":{"vegetarian":true,"vegan":false,"pescatarian":true,"glutenFree":true,"glutenFreeAdaptable":false,"dairyFree":false,"nutFree":true,"eggFree":false},
-"allergens":["dairy","egg","soy"],
-"gmo":{"risk":"moderate","sources":["sugar-beet","soy","grain-fed-dairy"]},
-"nutrition":{"calories":512,"proteinG":7,"carbsG":38,"fiberG":2,"sugarG":34,"fatG":38,"satFatG":23,"sodiumMg":180,"cholesterolMg":178},
-"tags":["french","dessert","classic","technique","make-ahead","entertaining","special-occasion","gluten-free","vegetarian"],
-"image":{"file":"chocolate-mousse.jpg","wikipedia":"Chocolate mousse"}},
-
-{"id":"ch-jc-018","slug":"jc-creme-brulee","title":"Creme Brulee","genre":"french","subgenre":"desserts","chef":{"name":"Julia Child","slug":"julia-child"},"description":"Vanilla custard baked in a water bath under a cracked sugar crust.","difficulty":"intermediate","easeScore":6,"spiceScore":0,"popularity":10,"pantryScore":8,"servings":6,"prepMin":20,"cookMin":270,"totalMin":290,"equipment":["oven","stovetop"],
-"ingredients":["3 cups heavy cream","1 vanilla bean, split","6 egg yolks","1/2 cup sugar","1/4 tsp salt","6 tbsp superfine sugar, for the tops"],
-"ingredientKeys":["heavy-cream","vanilla-bean","egg-yolk","sugar","salt","superfine-sugar"],
-"specialty":["vanilla-bean","superfine-sugar"],
-"steps":["Heat the oven to 325F. Warm the cream with the scraped vanilla bean until steaming but not boiling, then let it infuse 15 minutes.","Whisk the yolks, sugar and salt together, then temper: pour the warm cream in in a thin stream while whisking constantly. Adding it all at once scrambles the yolks.","Strain the custard through a fine sieve and skim off any foam. Foam bakes into unsightly bubbles on the surface.","Divide between six shallow ramekins, set them in a roasting pan, and pour boiling water halfway up their sides. The water bath is what keeps the custard silky rather than curdled - direct oven heat cooks the edges long before the center sets.","Bake 35-45 minutes until the custards are set at the edges and still wobble in the middle. Cool, then chill at least 4 hours.","Just before serving, blot the surfaces dry, sprinkle each with 1 tbsp superfine sugar in an even layer, and caramelize with a torch or under a very hot broiler. Let the sugar set for 2 minutes so it hardens into a crust you can crack."],
-"diet":{"vegetarian":true,"vegan":false,"pescatarian":true,"glutenFree":true,"glutenFreeAdaptable":false,"dairyFree":false,"nutFree":true,"eggFree":false},
-"allergens":["dairy","egg"],
-"gmo":{"risk":"moderate","sources":["grain-fed-dairy","sugar-beet"]},
-"nutrition":{"calories":586,"proteinG":6,"carbsG":32,"fiberG":0,"sugarG":31,"fatG":48,"satFatG":29,"sodiumMg":180,"cholesterolMg":338},
-"tags":["french","dessert","classic","technique","gluten-free","make-ahead","special-occasion","restaurant-style","date-night"],
-"image":{"file":"creme-brulee.jpg","wikipedia":"Crème brûlée"}},
-
-{"id":"ch-jc-019","slug":"jc-pate-a-choux","title":"Pate a Choux Profiteroles","genre":"french","subgenre":"desserts","chef":{"name":"Julia Child","slug":"julia-child"},"description":"Choux puffs filled with cream and served under warm chocolate sauce.","difficulty":"advanced","easeScore":4,"spiceScore":0,"popularity":8,"pantryScore":8,"servings":8,"prepMin":35,"cookMin":55,"totalMin":90,"equipment":["oven","stovetop"],
-"ingredients":["1 cup water","6 tbsp butter","1/2 tsp salt","1 tsp sugar","1 cup all-purpose flour","4 eggs","1 egg, beaten, for the wash","2 cups heavy cream","1/3 cup powdered sugar","1 tbsp vanilla extract","6 oz semisweet chocolate, chopped","3/4 cup heavy cream, for the sauce"],
-"ingredientKeys":["water","butter","salt","sugar","flour","egg","egg","heavy-cream","powdered-sugar","vanilla-extract","semisweet-chocolate","heavy-cream"],
-"specialty":["semisweet-chocolate"],
-"steps":["Bring the water, butter, salt and sugar to a full boil. Dump in all the flour at once and beat hard over the heat for 2 minutes, until the dough forms a smooth ball that pulls away from the pan and a film forms on the bottom. That drying step is what lets the dough absorb the eggs.","Move the dough to a bowl and let it cool 5 minutes - hot dough will scramble the eggs.","Beat in the eggs one at a time, waiting until each is completely absorbed. The dough looks slippery and broken after each addition and then comes back together. It is ready when it falls slowly from the spoon in a thick ribbon.","Pipe walnut-sized mounds onto lined sheets, well apart, and brush with the beaten egg without letting it run down the sides, which would glue them to the pan.","Bake at 425F for 15 minutes, then at 375F for 20-25 minutes until deep golden and light. Do not open the oven in the first 20 minutes - the puffs are raised entirely by steam and will collapse.","Pierce each one to release steam and cool completely. Whip the cream with the powdered sugar and vanilla, fill the puffs, and serve under a warm ganache made from the chocolate and heated cream."],
-"diet":{"vegetarian":true,"vegan":false,"pescatarian":true,"glutenFree":false,"glutenFreeAdaptable":false,"dairyFree":false,"nutFree":true,"eggFree":false},
-"allergens":["gluten","dairy","egg","soy"],
-"gmo":{"risk":"moderate","sources":["grain-fed-dairy","sugar-beet","soy"]},
-"nutrition":{"calories":682,"proteinG":10,"carbsG":42,"fiberG":2,"sugarG":26,"fatG":52,"satFatG":31,"sodiumMg":280,"cholesterolMg":286},
-"tags":["french","dessert","project","technique","classic","special-occasion","entertaining","baking","foundation"],
-"image":{"file":"profiteroles.jpg","wikipedia":"Profiterole"}},
-
-{"id":"ch-jc-020","slug":"jc-sauce-bechamel","title":"Sauce Bechamel","genre":"french","subgenre":"sauces","chef":{"name":"Julia Child","slug":"julia-child"},"description":"The white mother sauce: a butter-flour roux and milk, nothing more.","difficulty":"beginner","easeScore":9,"spiceScore":0,"popularity":8,"pantryScore":10,"servings":8,"prepMin":5,"cookMin":15,"totalMin":20,"equipment":["stovetop"],
-"ingredients":["4 tbsp butter","5 tbsp all-purpose flour","3 cups whole milk, warmed","1/2 tsp salt","1/4 tsp white pepper","1/8 tsp ground nutmeg"],
-"ingredientKeys":["butter","flour","whole-milk","salt","white-pepper","nutmeg"],
-"specialty":["white-pepper"],
-"steps":["Melt the butter over medium-low heat, whisk in the flour, and cook 2 minutes. The roux should bubble and smell faintly of biscuits but stay completely pale - this is a white roux, and any color changes the sauce.","Take the pan off the heat for a moment and add the warmed milk in a thin stream, whisking hard. Warm milk against a warm roux is the reliable way to avoid lumps.","Return to the heat and bring to a simmer, whisking constantly, until it thickens - about 2 minutes.","Then keep simmering gently for 10 more minutes, stirring often. This cooks out the raw flour taste, and skipping it is why homemade white sauce often tastes pasty.","Season with the salt, white pepper and nutmeg. Use white pepper rather than black so there are no dark specks.","This is the base for countless dishes: add Gruyere for mornay, use it in lasagna, moussaka, gratins and souffles. Press plastic wrap onto the surface if holding it, to stop a skin forming."],
-"diet":{"vegetarian":true,"vegan":false,"pescatarian":true,"glutenFree":false,"glutenFreeAdaptable":false,"dairyFree":false,"nutFree":true,"eggFree":true},
-"allergens":["gluten","dairy"],
-"gmo":{"risk":"low","sources":["grain-fed-dairy"]},
-"nutrition":{"calories":112,"proteinG":4,"carbsG":8,"fiberG":0,"sugarG":5,"fatG":8,"satFatG":5,"sodiumMg":180,"cholesterolMg":24},
-"tags":["french","sauce","foundation","technique","classic","vegetarian","budget","easy","quick"],
-"image":{"file":"bechamel.jpg","wikipedia":"Béchamel sauce"}},
-
-{"id":"ch-jc-021","slug":"jc-beurre-blanc","title":"Beurre Blanc","genre":"french","subgenre":"sauces","chef":{"name":"Julia Child","slug":"julia-child"},"description":"A shallot wine reduction emulsified with a great deal of cold butter.","difficulty":"intermediate","easeScore":6,"spiceScore":1,"popularity":7,"pantryScore":7,"servings":6,"prepMin":10,"cookMin":15,"totalMin":25,"equipment":["stovetop"],
-"ingredients":["3 shallots, very finely minced","1/3 cup white wine vinegar","1/3 cup dry white wine","2 tbsp heavy cream","1 1/2 cups cold butter, cut in small cubes","1/2 tsp salt","1/4 tsp white pepper","1 tbsp lemon juice"],
-"ingredientKeys":["shallot","white-wine-vinegar","white-wine","heavy-cream","butter","salt","white-pepper","lemon-juice"],
-"specialty":["shallot","white-wine-vinegar","white-wine","white-pepper"],
-"steps":["Simmer the shallots, vinegar and wine in a heavy saucepan until reduced to about 2 tablespoons of syrupy liquid. This concentrated base is what the butter will hang on.","Add the cream and simmer 1 minute. The cream is not traditional but it stabilizes the emulsion considerably and makes the sauce far less likely to break.","Lower the heat as far as it will go. Start whisking in the cold butter two or three cubes at a time, waiting until each addition has almost disappeared before adding more.","The butter must be cold and must go in gradually. Beurre blanc is an emulsion of butterfat in a small amount of liquid, and adding warm butter or rushing it makes the fat separate out into an oily puddle.","Keep the pan below a simmer throughout - if the sauce boils, it breaks.","Season with the salt, white pepper and lemon juice. Serve immediately with fish or vegetables; it cannot be reheated, though it holds about 30 minutes in a warm spot."],
-"diet":{"vegetarian":true,"vegan":false,"pescatarian":true,"glutenFree":true,"glutenFreeAdaptable":false,"dairyFree":false,"nutFree":true,"eggFree":true},
-"allergens":["dairy","sulfites"],
-"gmo":{"risk":"low","sources":["grain-fed-dairy"]},
-"nutrition":{"calories":412,"proteinG":1,"carbsG":3,"fiberG":0,"sugarG":1,"fatG":46,"satFatG":29,"sodiumMg":380,"cholesterolMg":124},
-"tags":["french","sauce","technique","classic","foundation","gluten-free","vegetarian","restaurant-style","low-carb"],
-"image":{"file":"beurre-blanc.jpg","wikipedia":"Beurre blanc"}},
-
-{"id":"ch-jc-022","slug":"jc-cassoulet","title":"Cassoulet","genre":"french","subgenre":"braises","chef":{"name":"Julia Child","slug":"julia-child"},"description":"White beans baked for hours with pork, lamb and sausage under a crust.","difficulty":"advanced","easeScore":2,"spiceScore":1,"popularity":6,"pantryScore":4,"servings":10,"prepMin":60,"cookMin":300,"totalMin":360,"equipment":["oven","stovetop"],
-"ingredients":["2 lb dried white beans, soaked overnight","8 oz salt pork, diced","2 lb boneless pork shoulder, cubed","2 lb lamb shoulder, cubed","1 lb garlic sausage, sliced thick","4 duck legs confit","3 yellow onions, diced","3 carrots, diced","8 cloves garlic, minced","1/4 cup tomato paste","2 cups dry white wine","8 cups chicken broth","1 bouquet garni of parsley, thyme and bay leaf","2 tsp salt","1 tsp black pepper","2 cups fresh breadcrumbs","1/3 cup chopped parsley"],
-"ingredientKeys":["white-beans","salt-pork","pork-shoulder","lamb-shoulder","garlic-sausage","duck-confit","yellow-onion","carrot","garlic","tomato-paste","white-wine","chicken-broth","bouquet-garni","salt","black-pepper","breadcrumbs","parsley"],
-"specialty":["white-beans","salt-pork","pork-shoulder","lamb-shoulder","garlic-sausage","duck-confit","white-wine","bouquet-garni"],
-"steps":["Simmer the soaked beans with the salt pork, one onion, a carrot and the bouquet garni for 1 hour until barely tender. Do not salt them yet - salt early keeps the skins from softening. Reserve the cooking liquid.","Brown the pork and lamb hard in batches, then brown the sausage. Cook the remaining onions, carrots and garlic, add the tomato paste, then deglaze with the wine and reduce by half.","Combine the meats with the vegetables and enough bean liquid and broth to cover, and braise at 325F for 1 1/2 hours until the meat is tender.","Now assemble in a deep earthenware pot: alternate layers of beans and meats, tucking the duck confit in, and add liquid until it just reaches the top layer of beans.","Bake uncovered at 325F for 1 1/2 to 2 hours. As a crust forms on the surface, break it and press it down into the beans with the back of a spoon, then let another form. Traditionally this is done seven times, and each broken crust thickens the cassoulet.","Scatter the breadcrumbs over for the final 30 minutes to form the last crust, and let it brown undisturbed. Rest 20 minutes and finish with parsley."],
-"diet":{"vegetarian":false,"vegan":false,"pescatarian":false,"glutenFree":false,"glutenFreeAdaptable":false,"dairyFree":true,"nutFree":true,"eggFree":true},
-"allergens":["gluten","sulfites"],
-"gmo":{"risk":"moderate","sources":["grain-fed-meat","processed-bread"]},
-"nutrition":{"calories":982,"proteinG":72,"carbsG":62,"fiberG":16,"sugarG":9,"fatG":48,"satFatG":17,"sodiumMg":1880,"cholesterolMg":198},
-"tags":["french","project","classic","special-occasion","winter","high-fiber","make-ahead","entertaining","technique"],
-"image":{"file":"cassoulet.jpg","wikipedia":"Cassoulet"}},
-
-{"id":"ch-jc-023","slug":"jc-pate-de-campagne","title":"Pate de Campagne","genre":"french","subgenre":"appetizers","chef":{"name":"Julia Child","slug":"julia-child"},"description":"A coarse country pork terrine baked in a water bath and pressed overnight.","difficulty":"advanced","easeScore":3,"spiceScore":2,"popularity":6,"pantryScore":4,"servings":12,"prepMin":45,"cookMin":1200,"totalMin":1245,"equipment":["oven","food-processor"],
-"ingredients":["1 1/2 lb ground pork shoulder","8 oz pork liver, chopped","8 oz pork fatback, diced","1 yellow onion, finely diced","4 cloves garlic, minced","2 tbsp butter","1/4 cup cognac","1/4 cup dry white wine","2 eggs","1/3 cup heavy cream","1/3 cup all-purpose flour","2 tsp salt","1 1/2 tsp black pepper","1/2 tsp ground allspice","1/4 tsp ground cloves","1 tsp dried thyme","8 oz bacon strips","2 bay leaves","1 baguette, sliced","1/2 cup cornichons","1/4 cup Dijon mustard"],
-"ingredientKeys":["ground-pork","pork-liver","pork-fatback","yellow-onion","garlic","butter","cognac","white-wine","egg","heavy-cream","flour","salt","black-pepper","allspice","ground-cloves","dried-thyme","bacon","bay-leaf","baguette","cornichons","dijon-mustard"],
-"specialty":["ground-pork","pork-liver","pork-fatback","cognac","white-wine","allspice","ground-cloves","baguette","cornichons"],
-"steps":["Cook the onion and garlic in the butter until soft, add the cognac and wine and reduce almost completely, then cool. Raw alcohol in a terrine tastes harsh after baking.","Puree the liver with the eggs and cream, then mix it with the ground pork, diced fatback, the cooled onion mixture, flour, salt, pepper, allspice, cloves and thyme.","Fry a teaspoon of the mixture and taste it. This is the only chance to correct the seasoning, and a terrine needs to taste assertively seasoned warm because it is served cold, when flavors read as muted.","Line a loaf pan crosswise with the bacon strips, letting the ends overhang. Pack the mixture in, rapping the pan on the counter to settle it, then fold the bacon over the top and lay the bay leaves on.","Cover with foil, set in a roasting pan, and add boiling water halfway up the sides. Bake at 325F for about 1 1/2 hours, to 160F internal.","Take it out, set a weight on top - a foil-wrapped brick or a pan with cans - and refrigerate overnight. Pressing compacts the terrine so it slices rather than crumbles. Serve cold with baguette, cornichons and mustard."],
-"diet":{"vegetarian":false,"vegan":false,"pescatarian":false,"glutenFree":false,"glutenFreeAdaptable":false,"dairyFree":false,"nutFree":true,"eggFree":false},
-"allergens":["gluten","dairy","egg","sulfites"],
-"gmo":{"risk":"moderate","sources":["grain-fed-meat","grain-fed-dairy","processed-bread"]},
-"nutrition":{"calories":512,"proteinG":28,"carbsG":22,"fiberG":1,"sugarG":3,"fatG":34,"satFatG":13,"sodiumMg":1180,"cholesterolMg":228},
-"tags":["french","appetizer","project","classic","technique","make-ahead","entertaining","charcuterie","special-occasion"],
-"image":{"file":"pate.jpg","wikipedia":"Pâté"}},
-
-{"id":"ch-jc-024","slug":"jc-madeleines","title":"Madeleines","genre":"french","subgenre":"desserts","chef":{"name":"Julia Child","slug":"julia-child"},"description":"Shell-shaped butter cakes with the characteristic humped back.","difficulty":"intermediate","easeScore":7,"spiceScore":0,"popularity":7,"pantryScore":8,"servings":24,"prepMin":20,"cookMin":80,"totalMin":100,"equipment":["oven"],
-"ingredients":["3/4 cup butter","2 eggs","2/3 cup sugar","1/8 tsp salt","1 tbsp lemon zest","1 tsp vanilla extract","1 cup cake flour","1/2 tsp baking powder","2 tbsp butter, softened, for the molds","2 tbsp flour, for the molds","2 tbsp powdered sugar"],
-"ingredientKeys":["butter","egg","sugar","salt","lemon-zest","vanilla-extract","cake-flour","baking-powder","butter","flour","powdered-sugar"],
-"specialty":["cake-flour"],
-"steps":["Melt the 3/4 cup butter and cook it until the milk solids just turn golden and it smells nutty, then cool it to room temperature. Brown butter gives madeleines their depth.","Whisk the eggs, sugar and salt for 3-4 minutes until pale and thick, then stir in the lemon zest and vanilla.","Fold in the sifted cake flour and baking powder, then the cooled brown butter.","Refrigerate the batter at least 1 hour, and up to overnight. The cold batter hitting a hot mold is what creates the sudden rise that forms the hump on the back - skip the chill and you get flat cookies.","Brush the madeleine molds with softened butter and dust with flour, getting into every ridge, then chill the molds too.","Fill each mold three quarters full and bake at 425F for 4 minutes, then drop to 375F for 5-7 minutes, until the edges are golden and the humps have risen. Turn them out immediately and dust with powdered sugar. They are best within hours of baking."],
-"diet":{"vegetarian":true,"vegan":false,"pescatarian":true,"glutenFree":false,"glutenFreeAdaptable":false,"dairyFree":false,"nutFree":true,"eggFree":false},
-"allergens":["gluten","dairy","egg"],
-"gmo":{"risk":"moderate","sources":["sugar-beet","grain-fed-dairy"]},
-"nutrition":{"calories":112,"proteinG":1,"carbsG":11,"fiberG":0,"sugarG":7,"fatG":7,"satFatG":4,"sodiumMg":42,"cholesterolMg":32},
-"tags":["french","dessert","baking","technique","classic","vegetarian","party","tea-time","make-ahead"],
-"image":{"file":"madeleines.jpg","wikipedia":"Madeleine (cake)"}},
-
-{"id":"ch-jc-025","slug":"jc-french-bread","title":"French Bread","genre":"french","subgenre":"breads","chef":{"name":"Julia Child","slug":"julia-child"},"description":"Flour, water, yeast and salt, given three long rises and a steamed oven.","difficulty":"advanced","easeScore":3,"spiceScore":0,"popularity":8,"pantryScore":10,"servings":12,"prepMin":45,"cookMin":420,"totalMin":465,"equipment":["oven"],
-"ingredients":["6 cups bread flour","2 1/4 cups water at 70F","1 tsp active dry yeast","2 1/2 tsp salt","2 tbsp cornmeal, for the pan","1 cup boiling water, for steam"],
-"ingredientKeys":["bread-flour","water","active-dry-yeast","salt","cornmeal","water"],
-"specialty":["bread-flour","active-dry-yeast","cornmeal"],
-"steps":["Dissolve the yeast in 1/4 cup of the water. Mix the flour and salt, add the yeast and remaining water, and stir to a rough dough. Knead 10 minutes until smooth and elastic - it should spring back when pressed.","First rise: cover and leave at cool room temperature, about 70F, for 3 to 4 hours until tripled. The very small amount of yeast and the long slow rise are what develop the flavor; a fast warm rise gives you bread that tastes of nothing.","Deflate the dough by pulling it from the sides of the bowl into the center, then let it rise again 1 1/2 to 2 hours until doubled.","Divide and shape into long loaves, rolling and stretching the dough rather than pressing it flat, and set them on a cornmeal-dusted pan. Third rise: 1 1/2 hours until not quite doubled.","Heat the oven to 450F with a pan on the lower shelf. Slash each loaf diagonally three times with a razor, then pour the boiling water into the hot pan and shut the door fast.","Steam is what gives the crust its gloss and crackle - it keeps the surface elastic so the loaf can expand before it sets. Bake 25 minutes, then remove the water pan and bake 10 minutes more until deeply browned and hollow-sounding. Cool on a rack so the bottom does not go soft."],
-"diet":{"vegetarian":true,"vegan":true,"pescatarian":true,"glutenFree":false,"glutenFreeAdaptable":false,"dairyFree":true,"nutFree":true,"eggFree":true},
-"allergens":["gluten"],
-"gmo":{"risk":"moderate","sources":["corn"]},
-"nutrition":{"calories":242,"proteinG":8,"carbsG":48,"fiberG":2,"sugarG":0,"fatG":1,"satFatG":0,"sodiumMg":480,"cholesterolMg":0},
-"tags":["french","bread","project","technique","classic","vegan","vegetarian","dairy-free","budget","baking","foundation"],
-"image":{"file":"french-bread.jpg","wikipedia":"Baguette"}}
+ {
+  "id": "ch-jc-001",
+  "slug": "jc-boeuf-bourguignon",
+  "title": "Boeuf Bourguignon",
+  "genre": "french",
+  "subgenre": "braises",
+  "chef": {
+   "name": "Julia Child",
+   "slug": "julia-child"
+  },
+  "description": "Beef braised in Burgundy with lardons, pearl onions and mushrooms.",
+  "difficulty": "advanced",
+  "easeScore": 4,
+  "spiceScore": 1,
+  "popularity": 9,
+  "pantryScore": 5,
+  "servings": 6,
+  "prepMin": 45,
+  "cookMin": 210,
+  "totalMin": 255,
+  "equipment": [
+   "oven",
+   "stovetop"
+  ],
+  "ingredients": [
+   "3 lb beef chuck, cut in 2-inch cubes",
+   "6 oz bacon, cut in lardons",
+   "2 tbsp olive oil",
+   "1 carrot, sliced",
+   "1 yellow onion, sliced",
+   "2 tsp salt",
+   "1 tsp black pepper",
+   "2 tbsp all-purpose flour",
+   "3 cups full-bodied red Burgundy",
+   "2 cups beef broth",
+   "1 tbsp tomato paste",
+   "2 cloves garlic, mashed",
+   "1/2 tsp dried thyme",
+   "1 bay leaf",
+   "18 pearl onions",
+   "3 tbsp butter",
+   "1 lb cremini mushrooms, quartered",
+   "1/3 cup chopped parsley"
+  ],
+  "ingredientKeys": [
+   "beef-chuck",
+   "bacon",
+   "olive-oil",
+   "carrot",
+   "yellow-onion",
+   "salt",
+   "black-pepper",
+   "flour",
+   "red-wine",
+   "beef-broth",
+   "tomato-paste",
+   "garlic",
+   "dried-thyme",
+   "bay-leaf",
+   "pearl-onions",
+   "butter",
+   "mushroom",
+   "parsley"
+  ],
+  "specialty": [
+   "beef-chuck",
+   "red-wine",
+   "pearl-onions"
+  ],
+  "steps": [
+   "Simmer the lardons in water for 10 minutes, then drain and dry them. Blanching removes the smoky harshness so the bacon supports the wine rather than fighting it.",
+   "Brown the lardons in the oil, lift them out, then pat the beef completely dry and brown it on all sides in batches. Dry meat and an uncrowded pan are the two conditions for browning - without them you steam the beef and lose everything.",
+   "Brown the sliced carrot and onion, pour off the fat, then return the beef and lardons, season, and sprinkle the flour over. Toss and set the pot uncovered in a 450F oven for 4 minutes, toss again, and 4 minutes more. This sears the flour into a light crust that thickens the sauce.",
+   "Lower the oven to 325F. Add the wine, enough broth to barely cover, the tomato paste, garlic, thyme and bay leaf. Bring to a simmer on the stovetop, cover, and braise 3 to 3 1/2 hours.",
+   "Braise the pearl onions separately in butter and a little broth for 40 minutes, and sauté the mushrooms in butter over high heat until browned. Cooking them apart keeps each one distinct instead of dissolving into the stew.",
+   "Strain the sauce, skim the fat, and reduce it until it coats a spoon. Combine everything, add the parsley, and serve with boiled potatoes or noodles."
+  ],
+  "diet": {
+   "vegetarian": false,
+   "vegan": false,
+   "pescatarian": false,
+   "glutenFree": false,
+   "glutenFreeAdaptable": true,
+   "dairyFree": false,
+   "nutFree": true,
+   "eggFree": true
+  },
+  "allergens": [
+   "gluten",
+   "dairy",
+   "sulfites"
+  ],
+  "gmo": {
+   "risk": "moderate",
+   "sources": [
+    "grain-fed-meat",
+    "grain-fed-dairy"
+   ]
+  },
+  "nutrition": {
+   "calories": 782,
+   "proteinG": 58,
+   "carbsG": 22,
+   "fiberG": 3,
+   "sugarG": 8,
+   "fatG": 44,
+   "satFatG": 17,
+   "sodiumMg": 1280,
+   "cholesterolMg": 178
+  },
+  "tags": [
+   "french",
+   "project",
+   "classic",
+   "technique",
+   "special-occasion",
+   "make-ahead",
+   "winter",
+   "entertaining",
+   "high-protein"
+  ],
+  "image": {
+   "file": "jc-boeuf-bourguignon.jpg",
+   "source": "commons-file",
+   "match": "dish",
+   "commonsFile": "Boeuf Bourguignon.JPG"
+  }
+ },
+ {
+  "id": "ch-jc-002",
+  "slug": "jc-coq-au-vin",
+  "title": "Coq au Vin",
+  "genre": "french",
+  "subgenre": "braises",
+  "chef": {
+   "name": "Julia Child",
+   "slug": "julia-child"
+  },
+  "description": "Chicken braised in red wine with lardons, flamed with cognac.",
+  "difficulty": "intermediate",
+  "easeScore": 6,
+  "spiceScore": 1,
+  "popularity": 9,
+  "pantryScore": 5,
+  "servings": 6,
+  "prepMin": 35,
+  "cookMin": 75,
+  "totalMin": 110,
+  "equipment": [
+   "stovetop"
+  ],
+  "ingredients": [
+   "1 whole chicken (4 lb), cut in 8 pieces",
+   "4 oz bacon, cut in lardons",
+   "2 tbsp butter",
+   "2 tsp salt",
+   "1 tsp black pepper",
+   "1/4 cup cognac",
+   "3 cups young red wine",
+   "2 cups chicken broth",
+   "1 tbsp tomato paste",
+   "3 cloves garlic, mashed",
+   "1/2 tsp dried thyme",
+   "1 bay leaf",
+   "18 pearl onions",
+   "3 tbsp butter, for the garnish",
+   "1 lb cremini mushrooms, quartered",
+   "3 tbsp all-purpose flour",
+   "1/3 cup chopped parsley"
+  ],
+  "ingredientKeys": [
+   "whole-chicken",
+   "bacon",
+   "butter",
+   "salt",
+   "black-pepper",
+   "cognac",
+   "red-wine",
+   "chicken-broth",
+   "tomato-paste",
+   "garlic",
+   "dried-thyme",
+   "bay-leaf",
+   "pearl-onions",
+   "butter",
+   "mushroom",
+   "flour",
+   "parsley"
+  ],
+  "specialty": [
+   "whole-chicken",
+   "cognac",
+   "red-wine",
+   "pearl-onions"
+  ],
+  "steps": [
+   "Simmer the lardons in water 10 minutes, drain and dry, then brown them in the butter. Lift them out.",
+   "Pat the chicken thoroughly dry, season, and brown it in the fat, skin-side down first, until golden on both sides.",
+   "Pour the cognac over the chicken and flame it: stand back, touch a long match to the edge of the pan, and let it burn out on its own, shaking the pan. The flame burns off raw alcohol and leaves the cognac's depth behind.",
+   "Add the wine, enough broth to almost cover, the tomato paste, garlic, thyme and bay leaf. Cover and simmer 25-30 minutes until the chicken is cooked through, then lift the pieces out.",
+   "Braise the pearl onions in butter and broth 40 minutes and brown the mushrooms separately in butter. Cooking the garnishes apart is what keeps them intact.",
+   "Skim the braising liquid and reduce it to about 2 cups. Mash the flour with 3 tbsp butter into a beurre manie and whisk it in bit by bit - this thickens the sauce at the end without lumps. Return everything, warm through, and finish with parsley."
+  ],
+  "diet": {
+   "vegetarian": false,
+   "vegan": false,
+   "pescatarian": false,
+   "glutenFree": false,
+   "glutenFreeAdaptable": true,
+   "dairyFree": false,
+   "nutFree": true,
+   "eggFree": true
+  },
+  "allergens": [
+   "gluten",
+   "dairy",
+   "sulfites"
+  ],
+  "gmo": {
+   "risk": "moderate",
+   "sources": [
+    "grain-fed-meat",
+    "grain-fed-dairy"
+   ]
+  },
+  "nutrition": {
+   "calories": 712,
+   "proteinG": 52,
+   "carbsG": 22,
+   "fiberG": 3,
+   "sugarG": 9,
+   "fatG": 42,
+   "satFatG": 16,
+   "sodiumMg": 1380,
+   "cholesterolMg": 212
+  },
+  "tags": [
+   "french",
+   "classic",
+   "technique",
+   "special-occasion",
+   "entertaining",
+   "make-ahead",
+   "winter",
+   "high-protein"
+  ],
+  "image": {
+   "file": "jc-coq-au-vin.jpg",
+   "source": "commons-file",
+   "match": "dish",
+   "commonsFile": "Coq au vin 1.jpg"
+  }
+ },
+ {
+  "id": "ch-jc-003",
+  "slug": "jc-sole-meuniere",
+  "title": "Sole Meuniere",
+  "genre": "french",
+  "subgenre": "seafood",
+  "chef": {
+   "name": "Julia Child",
+   "slug": "julia-child"
+  },
+  "description": "Sole dusted in flour, fried in butter, finished with lemon and parsley.",
+  "difficulty": "beginner",
+  "easeScore": 8,
+  "spiceScore": 0,
+  "popularity": 8,
+  "pantryScore": 6,
+  "servings": 2,
+  "prepMin": 10,
+  "cookMin": 12,
+  "totalMin": 22,
+  "equipment": [
+   "stovetop"
+  ],
+  "ingredients": [
+   "2 whole sole or 4 sole fillets",
+   "1/2 cup whole milk",
+   "1/2 cup all-purpose flour",
+   "1 1/2 tsp salt",
+   "1/2 tsp white pepper",
+   "4 tbsp clarified butter",
+   "4 tbsp butter",
+   "2 tbsp lemon juice",
+   "1/3 cup chopped parsley",
+   "1 lemon, cut in wedges"
+  ],
+  "ingredientKeys": [
+   "sole",
+   "whole-milk",
+   "flour",
+   "salt",
+   "white-pepper",
+   "clarified-butter",
+   "butter",
+   "lemon-juice",
+   "parsley",
+   "lemon"
+  ],
+  "specialty": [
+   "sole",
+   "clarified-butter",
+   "white-pepper"
+  ],
+  "steps": [
+   "Meuniere means miller's wife, and the whole dish is named for its one essential step: a light dusting of flour.",
+   "Dip the fish briefly in the milk, then dredge it in the seasoned flour and shake off every bit of excess. A heavy coating turns gummy; a bare whisper of flour is what browns.",
+   "Use clarified butter for the frying. Whole butter has milk solids that burn at this heat, and clarified butter lets you get the pan properly hot.",
+   "Fry the fish 2-3 minutes per side until golden, turning only once with a thin spatula. Sole is delicate and falls apart if handled twice.",
+   "Move it to warm plates. Wipe the pan, add the whole butter, and cook it until it foams and turns light brown and smells nutty - 60-90 seconds, no more.",
+   "Take the pan off the heat, add the lemon juice and parsley - it will hiss and foam - and pour it over the fish immediately. Serve with lemon wedges."
+  ],
+  "diet": {
+   "vegetarian": false,
+   "vegan": false,
+   "pescatarian": true,
+   "glutenFree": false,
+   "glutenFreeAdaptable": false,
+   "dairyFree": false,
+   "nutFree": true,
+   "eggFree": true
+  },
+  "allergens": [
+   "gluten",
+   "dairy",
+   "fish"
+  ],
+  "gmo": {
+   "risk": "low",
+   "sources": [
+    "grain-fed-dairy"
+   ]
+  },
+  "nutrition": {
+   "calories": 586,
+   "proteinG": 38,
+   "carbsG": 22,
+   "fiberG": 1,
+   "sugarG": 3,
+   "fatG": 40,
+   "satFatG": 24,
+   "sodiumMg": 1180,
+   "cholesterolMg": 178
+  },
+  "tags": [
+   "french",
+   "classic",
+   "technique",
+   "seafood",
+   "pescatarian",
+   "quick",
+   "date-night",
+   "restaurant-style"
+  ],
+  "image": {
+   "file": "jc-sole-meuniere.jpg",
+   "source": "commons-file",
+   "match": "dish",
+   "commonsFile": "Sole meuniere (4689490702).jpg"
+  }
+ },
+ {
+  "id": "ch-jc-004",
+  "slug": "jc-french-omelette",
+  "title": "French Omelette",
+  "genre": "french",
+  "subgenre": "breakfast",
+  "chef": {
+   "name": "Julia Child",
+   "slug": "julia-child"
+  },
+  "description": "A pale, rolled omelette made in under a minute by shaking the pan.",
+  "difficulty": "intermediate",
+  "easeScore": 6,
+  "spiceScore": 0,
+  "popularity": 8,
+  "pantryScore": 10,
+  "servings": 1,
+  "prepMin": 3,
+  "cookMin": 3,
+  "totalMin": 6,
+  "equipment": [
+   "stovetop"
+  ],
+  "ingredients": [
+   "3 eggs",
+   "1/4 tsp salt",
+   "1/8 tsp white pepper",
+   "2 tbsp butter",
+   "1 tbsp chopped chives"
+  ],
+  "ingredientKeys": [
+   "egg",
+   "salt",
+   "white-pepper",
+   "butter",
+   "chives"
+  ],
+  "specialty": [
+   "white-pepper"
+  ],
+  "steps": [
+   "Beat the eggs with the salt and pepper for 20-30 seconds, just until uniform in color. Overbeating thins them and you lose the body.",
+   "Have everything ready before you start. The entire cooking time is under a minute, and there is no pausing once it begins.",
+   "Heat the butter in an 8-inch nonstick or well-seasoned pan over high heat until it foams and just begins to subside - not until it browns.",
+   "Pour in the eggs and count to three, then start shaking the pan back and forth, sharply and continuously, while jerking it toward you. The eggs gather into soft curds at the far edge.",
+   "After about 20-25 seconds the omelette should be set on the bottom and still slightly creamy on top. A French omelette is pale yellow with no browning at all - if it has color, the pan was too hot or it stayed too long.",
+   "Tilt the pan hard and roll the omelette over onto itself, then turn it out seam-side down onto a plate. Smear the top with a little butter and add the chives."
+  ],
+  "diet": {
+   "vegetarian": true,
+   "vegan": false,
+   "pescatarian": true,
+   "glutenFree": true,
+   "glutenFreeAdaptable": false,
+   "dairyFree": false,
+   "nutFree": true,
+   "eggFree": false
+  },
+  "allergens": [
+   "dairy",
+   "egg"
+  ],
+  "gmo": {
+   "risk": "low",
+   "sources": [
+    "grain-fed-dairy"
+   ]
+  },
+  "nutrition": {
+   "calories": 386,
+   "proteinG": 19,
+   "carbsG": 2,
+   "fiberG": 0,
+   "sugarG": 1,
+   "fatG": 34,
+   "satFatG": 18,
+   "sodiumMg": 680,
+   "cholesterolMg": 618
+  },
+  "tags": [
+   "french",
+   "breakfast",
+   "technique",
+   "classic",
+   "quick",
+   "vegetarian",
+   "gluten-free",
+   "high-protein",
+   "low-carb",
+   "budget"
+  ],
+  "image": {
+   "file": "omelette.jpg",
+   "source": "wikipedia-lead",
+   "match": "representative",
+   "wikipedia": "Omelette"
+  }
+ },
+ {
+  "id": "ch-jc-005",
+  "slug": "jc-potage-parmentier",
+  "title": "Potage Parmentier",
+  "genre": "french",
+  "subgenre": "soups",
+  "chef": {
+   "name": "Julia Child",
+   "slug": "julia-child"
+  },
+  "description": "Leek and potato soup with three ingredients. The first recipe in the book.",
+  "difficulty": "beginner",
+  "easeScore": 10,
+  "spiceScore": 0,
+  "popularity": 8,
+  "pantryScore": 8,
+  "servings": 6,
+  "prepMin": 15,
+  "cookMin": 45,
+  "totalMin": 60,
+  "equipment": [
+   "stovetop"
+  ],
+  "ingredients": [
+   "4 cups peeled and diced potatoes",
+   "4 cups thinly sliced leeks",
+   "2 quarts water",
+   "2 tsp salt",
+   "1/2 cup heavy cream",
+   "4 tbsp butter",
+   "1/2 tsp white pepper",
+   "3 tbsp chopped chives"
+  ],
+  "ingredientKeys": [
+   "potato",
+   "leek",
+   "water",
+   "salt",
+   "heavy-cream",
+   "butter",
+   "white-pepper",
+   "chives"
+  ],
+  "specialty": [
+   "leek",
+   "white-pepper"
+  ],
+  "steps": [
+   "Wash the sliced leeks thoroughly in a bowl of water, lifting them out rather than pouring - grit settles to the bottom and pouring tips it back over them.",
+   "Simmer the potatoes and leeks in the water with the salt, partially covered, for 40-50 minutes until everything is completely tender.",
+   "The ingredient list really is this short. There is no stock, no herbs, no garlic - the leeks and potatoes make their own broth, and that restraint is the point.",
+   "Mash the vegetables directly in the pot with a fork or a masher, or pass them through a food mill for a smoother result. Do not use a blender; it turns potato starch gluey.",
+   "Taste and correct the salt now, before the enrichment goes in.",
+   "Off the heat, stir in the cream and swirl in the butter a tablespoon at a time. Season with white pepper and serve with chives. Chilled and thinned with more cream, this same soup becomes vichyssoise."
+  ],
+  "diet": {
+   "vegetarian": true,
+   "vegan": false,
+   "pescatarian": true,
+   "glutenFree": true,
+   "glutenFreeAdaptable": false,
+   "dairyFree": false,
+   "nutFree": true,
+   "eggFree": true
+  },
+  "allergens": [
+   "dairy"
+  ],
+  "gmo": {
+   "risk": "low",
+   "sources": [
+    "grain-fed-dairy"
+   ]
+  },
+  "nutrition": {
+   "calories": 286,
+   "proteinG": 5,
+   "carbsG": 32,
+   "fiberG": 4,
+   "sugarG": 5,
+   "fatG": 16,
+   "satFatG": 10,
+   "sodiumMg": 780,
+   "cholesterolMg": 42
+  },
+  "tags": [
+   "french",
+   "soup",
+   "classic",
+   "technique",
+   "vegetarian",
+   "gluten-free",
+   "budget",
+   "foundation",
+   "easy",
+   "winter"
+  ],
+  "image": {
+   "file": "potato-leek-soup.jpg",
+   "source": "wikipedia-lead",
+   "match": "representative",
+   "wikipedia": "Potato soup"
+  }
+ },
+ {
+  "id": "ch-jc-006",
+  "slug": "jc-ratatouille",
+  "title": "Ratatouille",
+  "genre": "french",
+  "subgenre": "mains",
+  "chef": {
+   "name": "Julia Child",
+   "slug": "julia-child"
+  },
+  "description": "Each vegetable cooked separately, then layered and baked together.",
+  "difficulty": "intermediate",
+  "easeScore": 6,
+  "spiceScore": 1,
+  "popularity": 8,
+  "pantryScore": 8,
+  "servings": 6,
+  "prepMin": 35,
+  "cookMin": 60,
+  "totalMin": 95,
+  "equipment": [
+   "stovetop",
+   "oven"
+  ],
+  "ingredients": [
+   "1 lb eggplant, peeled and cut in strips",
+   "1 lb zucchini, cut in strips",
+   "1 tsp salt, for draining",
+   "1/2 cup olive oil",
+   "2 yellow onions, thinly sliced",
+   "2 green bell peppers, sliced",
+   "4 cloves garlic, minced",
+   "1 lb ripe tomatoes, peeled, seeded and sliced",
+   "2 tsp salt",
+   "1 tsp black pepper",
+   "3 tbsp chopped parsley",
+   "1 tbsp chopped fresh basil"
+  ],
+  "ingredientKeys": [
+   "eggplant",
+   "zucchini",
+   "salt",
+   "olive-oil",
+   "yellow-onion",
+   "green-bell-pepper",
+   "garlic",
+   "tomato",
+   "salt",
+   "black-pepper",
+   "parsley",
+   "fresh-basil"
+  ],
+  "specialty": [
+   "eggplant"
+  ],
+  "steps": [
+   "Salt the eggplant and zucchini strips and leave them in a towel for 30 minutes, then pat them dry. This draws out water that would otherwise dilute the finished dish.",
+   "Sauté the eggplant in oil a few pieces at a time until lightly browned, and set aside. Then do the same with the zucchini.",
+   "Cook the onions and peppers slowly in the same pan for 10 minutes until tender, then add the garlic.",
+   "Lay the tomato slices over the onions and peppers, cover, and cook 5 minutes, then uncover and baste with the juices until the liquid has almost evaporated.",
+   "Now layer: a third of the tomato mixture in a casserole, then half the eggplant and zucchini, a third more tomato, the rest of the eggplant and zucchini, and the last of the tomato. Cooking each vegetable separately and then layering is the whole method - it keeps every element tasting of itself rather than reducing everything to a uniform stew.",
+   "Cover and simmer gently 10 minutes, then uncover and cook 15 minutes more, basting several times, until the juices have reduced. Serve warm or at room temperature with the herbs."
+  ],
+  "diet": {
+   "vegetarian": true,
+   "vegan": true,
+   "pescatarian": true,
+   "glutenFree": true,
+   "glutenFreeAdaptable": false,
+   "dairyFree": true,
+   "nutFree": true,
+   "eggFree": true
+  },
+  "allergens": [],
+  "gmo": {
+   "risk": "low",
+   "sources": [
+    "none"
+   ]
+  },
+  "nutrition": {
+   "calories": 242,
+   "proteinG": 4,
+   "carbsG": 18,
+   "fiberG": 6,
+   "sugarG": 11,
+   "fatG": 18,
+   "satFatG": 3,
+   "sodiumMg": 880,
+   "cholesterolMg": 0
+  },
+  "tags": [
+   "french",
+   "vegan",
+   "vegetarian",
+   "gluten-free",
+   "dairy-free",
+   "classic",
+   "technique",
+   "summer",
+   "make-ahead",
+   "healthy"
+  ],
+  "image": {
+   "file": "jc-ratatouille.jpg",
+   "source": "commons-file",
+   "match": "dish",
+   "commonsFile": "Ratatouille 001.jpg"
+  }
+ },
+ {
+  "id": "ch-jc-007",
+  "slug": "jc-reine-de-saba",
+  "title": "Reine de Saba",
+  "genre": "french",
+  "subgenre": "desserts",
+  "chef": {
+   "name": "Julia Child",
+   "slug": "julia-child"
+  },
+  "description": "A chocolate almond cake deliberately underbaked in the middle.",
+  "difficulty": "intermediate",
+  "easeScore": 6,
+  "spiceScore": 0,
+  "popularity": 7,
+  "pantryScore": 7,
+  "servings": 10,
+  "prepMin": 30,
+  "cookMin": 60,
+  "totalMin": 90,
+  "equipment": [
+   "oven",
+   "stovetop"
+  ],
+  "ingredients": [
+   "4 oz semisweet chocolate, chopped",
+   "2 tbsp strong coffee",
+   "1/2 cup butter, softened",
+   "2/3 cup sugar",
+   "3 eggs, separated",
+   "1/4 tsp salt",
+   "1 tbsp sugar, for the whites",
+   "3/4 cup almond flour",
+   "1/4 tsp almond extract",
+   "1/2 cup cake flour",
+   "2 oz semisweet chocolate, for the glaze",
+   "2 tbsp butter, for the glaze",
+   "1/4 cup sliced almonds"
+  ],
+  "ingredientKeys": [
+   "semisweet-chocolate",
+   "brewed-coffee",
+   "butter",
+   "sugar",
+   "egg",
+   "salt",
+   "sugar",
+   "almond-flour",
+   "almond-extract",
+   "cake-flour",
+   "semisweet-chocolate",
+   "butter",
+   "almonds"
+  ],
+  "specialty": [
+   "semisweet-chocolate",
+   "almond-flour",
+   "almond-extract",
+   "cake-flour"
+  ],
+  "steps": [
+   "Heat the oven to 350F and butter and flour an 8-inch round pan. Melt the 4 oz chocolate with the coffee over barely simmering water, then set aside.",
+   "Cream the butter and 2/3 cup sugar until pale and fluffy, then beat in the egg yolks one at a time.",
+   "Beat the egg whites with the salt to soft peaks, add the 1 tbsp sugar, and beat to stiff glossy peaks.",
+   "Fold the melted chocolate into the butter mixture, then the almond flour and almond extract. Fold in a quarter of the whites to lighten it, then alternate the remaining whites with the sifted cake flour in thirds.",
+   "Bake 25 minutes. The cake is done when the outer 2-3 inches test clean but a skewer in the center still comes out oily. Baking it until the middle is set gives you an ordinary dry cake - the whole character of Reine de Saba is that underdone center.",
+   "Cool in the pan 10 minutes, then turn out and cool completely. Melt the glaze chocolate with the butter, spread it over the top, and press the sliced almonds around the edge."
+  ],
+  "diet": {
+   "vegetarian": true,
+   "vegan": false,
+   "pescatarian": true,
+   "glutenFree": false,
+   "glutenFreeAdaptable": false,
+   "dairyFree": false,
+   "nutFree": false,
+   "eggFree": false
+  },
+  "allergens": [
+   "gluten",
+   "dairy",
+   "egg",
+   "tree-nut",
+   "soy"
+  ],
+  "gmo": {
+   "risk": "moderate",
+   "sources": [
+    "sugar-beet",
+    "soy",
+    "grain-fed-dairy"
+   ]
+  },
+  "nutrition": {
+   "calories": 386,
+   "proteinG": 7,
+   "carbsG": 32,
+   "fiberG": 3,
+   "sugarG": 24,
+   "fatG": 26,
+   "satFatG": 13,
+   "sodiumMg": 180,
+   "cholesterolMg": 98
+  },
+  "tags": [
+   "french",
+   "dessert",
+   "classic",
+   "technique",
+   "baking",
+   "special-occasion",
+   "entertaining",
+   "vegetarian"
+  ],
+  "image": {
+   "file": "chocolate-almond-cake.jpg",
+   "source": "wikipedia-lead",
+   "match": "representative",
+   "wikipedia": "Chocolate cake"
+  }
+ },
+ {
+  "id": "ch-jc-008",
+  "slug": "jc-hollandaise",
+  "title": "Hollandaise Sauce",
+  "genre": "french",
+  "subgenre": "sauces",
+  "chef": {
+   "name": "Julia Child",
+   "slug": "julia-child"
+  },
+  "description": "Egg yolks and butter emulsified over gentle heat. One of the mother sauces.",
+  "difficulty": "intermediate",
+  "easeScore": 5,
+  "spiceScore": 1,
+  "popularity": 8,
+  "pantryScore": 9,
+  "servings": 6,
+  "prepMin": 10,
+  "cookMin": 15,
+  "totalMin": 25,
+  "equipment": [
+   "stovetop"
+  ],
+  "ingredients": [
+   "3 egg yolks",
+   "1 tbsp lemon juice",
+   "1 tbsp cold water",
+   "1/4 tsp salt",
+   "3/4 cup butter, melted and warm",
+   "1 tbsp lemon juice, for finishing",
+   "1/8 tsp white pepper",
+   "pinch cayenne pepper"
+  ],
+  "ingredientKeys": [
+   "egg-yolk",
+   "lemon-juice",
+   "water",
+   "salt",
+   "butter",
+   "lemon-juice",
+   "white-pepper",
+   "cayenne"
+  ],
+  "specialty": [
+   "white-pepper"
+  ],
+  "steps": [
+   "Whisk the yolks with 1 tbsp lemon juice, the cold water and the salt in a heavy saucepan until thick and pale.",
+   "Set the pan over low heat and whisk constantly, lifting it off the burner every few seconds. You are looking for the yolks to thicken into a cream that coats the whisk - this happens around 160F. A degree or two further and they scramble.",
+   "Pull the pan off the heat the instant it thickens and whisk in 2 tbsp of the butter to cool it down and stop the cooking.",
+   "Now add the warm melted butter in a very thin, slow stream, whisking constantly. Pouring too fast is the single reason hollandaise breaks - the yolks can only absorb so much fat at a time.",
+   "Once it has all gone in, the sauce should be thick enough to hold soft ribbons. Finish with the remaining lemon juice, white pepper and cayenne.",
+   "If it breaks, whisk a fresh yolk with a teaspoon of water in a clean bowl and dribble the broken sauce into it as though it were butter. Hold hollandaise lukewarm, never hot."
+  ],
+  "diet": {
+   "vegetarian": true,
+   "vegan": false,
+   "pescatarian": true,
+   "glutenFree": true,
+   "glutenFreeAdaptable": false,
+   "dairyFree": false,
+   "nutFree": true,
+   "eggFree": false
+  },
+  "allergens": [
+   "dairy",
+   "egg"
+  ],
+  "gmo": {
+   "risk": "low",
+   "sources": [
+    "grain-fed-dairy"
+   ]
+  },
+  "nutrition": {
+   "calories": 242,
+   "proteinG": 2,
+   "carbsG": 1,
+   "fiberG": 0,
+   "sugarG": 0,
+   "fatG": 26,
+   "satFatG": 15,
+   "sodiumMg": 220,
+   "cholesterolMg": 158
+  },
+  "tags": [
+   "french",
+   "sauce",
+   "technique",
+   "classic",
+   "foundation",
+   "gluten-free",
+   "vegetarian",
+   "brunch",
+   "low-carb"
+  ],
+  "image": {
+   "file": "jc-hollandaise.jpg",
+   "source": "commons-file",
+   "match": "dish",
+   "commonsFile": "Hollandaise sauce.jpg"
+  }
+ },
+ {
+  "id": "ch-jc-009",
+  "slug": "jc-bearnaise",
+  "title": "Bearnaise Sauce",
+  "genre": "french",
+  "subgenre": "sauces",
+  "chef": {
+   "name": "Julia Child",
+   "slug": "julia-child"
+  },
+  "description": "Hollandaise built on a tarragon and shallot vinegar reduction.",
+  "difficulty": "intermediate",
+  "easeScore": 5,
+  "spiceScore": 2,
+  "popularity": 7,
+  "pantryScore": 6,
+  "servings": 6,
+  "prepMin": 10,
+  "cookMin": 20,
+  "totalMin": 30,
+  "equipment": [
+   "stovetop"
+  ],
+  "ingredients": [
+   "1/4 cup white wine vinegar",
+   "1/4 cup dry white wine",
+   "1 shallot, minced",
+   "2 tbsp chopped fresh tarragon",
+   "1/2 tsp black pepper",
+   "3 egg yolks",
+   "1/4 tsp salt",
+   "3/4 cup butter, melted and warm",
+   "1 tbsp chopped fresh tarragon, for finishing",
+   "1 tbsp chopped parsley"
+  ],
+  "ingredientKeys": [
+   "white-wine-vinegar",
+   "white-wine",
+   "shallot",
+   "fresh-tarragon",
+   "black-pepper",
+   "egg-yolk",
+   "salt",
+   "butter",
+   "fresh-tarragon",
+   "parsley"
+  ],
+  "specialty": [
+   "white-wine-vinegar",
+   "white-wine",
+   "shallot",
+   "fresh-tarragon"
+  ],
+  "steps": [
+   "Simmer the vinegar, wine, shallot, 2 tbsp tarragon and the pepper in a small saucepan until reduced to about 2 tablespoons. This reduction is what distinguishes bearnaise from hollandaise - the acid and tarragon are concentrated into the base rather than added at the end.",
+   "Strain it, pressing the solids, and let it cool slightly.",
+   "Whisk the yolks and salt into the reduction, then set the pan over low heat and whisk constantly, lifting it off the burner every few seconds until the yolks thicken to a cream.",
+   "Pull it off the heat and whisk in 2 tbsp of the butter to arrest the cooking.",
+   "Add the warm melted butter in a very thin stream, whisking constantly. Rushing this breaks the emulsion.",
+   "Finish with the remaining fresh tarragon and the parsley. Serve lukewarm with steak - it cannot be reheated without splitting."
+  ],
+  "diet": {
+   "vegetarian": true,
+   "vegan": false,
+   "pescatarian": true,
+   "glutenFree": true,
+   "glutenFreeAdaptable": false,
+   "dairyFree": false,
+   "nutFree": true,
+   "eggFree": false
+  },
+  "allergens": [
+   "dairy",
+   "egg",
+   "sulfites"
+  ],
+  "gmo": {
+   "risk": "low",
+   "sources": [
+    "grain-fed-dairy"
+   ]
+  },
+  "nutrition": {
+   "calories": 242,
+   "proteinG": 2,
+   "carbsG": 2,
+   "fiberG": 0,
+   "sugarG": 1,
+   "fatG": 26,
+   "satFatG": 15,
+   "sodiumMg": 220,
+   "cholesterolMg": 158
+  },
+  "tags": [
+   "french",
+   "sauce",
+   "technique",
+   "classic",
+   "foundation",
+   "gluten-free",
+   "vegetarian",
+   "steakhouse",
+   "low-carb"
+  ],
+  "image": {
+   "file": "jc-bearnaise.jpg",
+   "source": "commons-file",
+   "match": "dish",
+   "commonsFile": "Sauce Bearnaise 2.jpg"
+  }
+ },
+ {
+  "id": "ch-jc-010",
+  "slug": "jc-vichyssoise",
+  "title": "Vichyssoise",
+  "genre": "french",
+  "subgenre": "soups",
+  "chef": {
+   "name": "Julia Child",
+   "slug": "julia-child"
+  },
+  "description": "Chilled leek and potato soup, sieved smooth and enriched with cream.",
+  "difficulty": "beginner",
+  "easeScore": 9,
+  "spiceScore": 0,
+  "popularity": 7,
+  "pantryScore": 8,
+  "servings": 6,
+  "prepMin": 15,
+  "cookMin": 260,
+  "totalMin": 275,
+  "equipment": [
+   "stovetop"
+  ],
+  "ingredients": [
+   "4 cups thinly sliced leeks",
+   "4 cups peeled and diced potatoes",
+   "6 cups chicken broth",
+   "2 tsp salt",
+   "1 cup heavy cream",
+   "1/2 tsp white pepper",
+   "1 tbsp lemon juice",
+   "3 tbsp chopped chives"
+  ],
+  "ingredientKeys": [
+   "leek",
+   "potato",
+   "chicken-broth",
+   "salt",
+   "heavy-cream",
+   "white-pepper",
+   "lemon-juice",
+   "chives"
+  ],
+  "specialty": [
+   "leek",
+   "white-pepper"
+  ],
+  "steps": [
+   "Wash the sliced leeks in a bowl of water and lift them out, leaving the grit behind. Use only the white and pale green parts for a properly pale soup.",
+   "Simmer the leeks and potatoes in the broth with the salt, partially covered, 40-45 minutes until completely tender.",
+   "Pass the soup through a food mill or fine sieve. Do not use a blender - potato starch turns gluey when whipped, and a cold soup shows that texture far more than a hot one.",
+   "Chill the puree thoroughly, at least 4 hours.",
+   "Stir in the cream only once the soup is cold, then season with the white pepper and lemon juice.",
+   "Taste again cold. Chilled food needs noticeably more salt and acid than warm food, so correct it at this stage, not before. Serve very cold with chives."
+  ],
+  "diet": {
+   "vegetarian": false,
+   "vegan": false,
+   "pescatarian": false,
+   "glutenFree": true,
+   "glutenFreeAdaptable": false,
+   "dairyFree": false,
+   "nutFree": true,
+   "eggFree": true
+  },
+  "allergens": [
+   "dairy"
+  ],
+  "gmo": {
+   "risk": "low",
+   "sources": [
+    "grain-fed-meat",
+    "grain-fed-dairy"
+   ]
+  },
+  "nutrition": {
+   "calories": 286,
+   "proteinG": 6,
+   "carbsG": 32,
+   "fiberG": 4,
+   "sugarG": 6,
+   "fatG": 16,
+   "satFatG": 10,
+   "sodiumMg": 1080,
+   "cholesterolMg": 48
+  },
+  "tags": [
+   "french",
+   "soup",
+   "classic",
+   "chilled",
+   "summer",
+   "make-ahead",
+   "gluten-free",
+   "elegant",
+   "entertaining",
+   "technique"
+  ],
+  "image": {
+   "file": "jc-vichyssoise.jpg",
+   "source": "commons-file",
+   "match": "dish",
+   "commonsFile": "Vichyssoise.jpg"
+  }
+ },
+ {
+  "id": "ch-jc-011",
+  "slug": "jc-crepes",
+  "title": "Crepes",
+  "genre": "french",
+  "subgenre": "breakfast",
+  "chef": {
+   "name": "Julia Child",
+   "slug": "julia-child"
+  },
+  "description": "A thin batter rested two hours and cooked paper-thin in a small pan.",
+  "difficulty": "intermediate",
+  "easeScore": 7,
+  "spiceScore": 0,
+  "popularity": 9,
+  "pantryScore": 10,
+  "servings": 6,
+  "prepMin": 10,
+  "cookMin": 140,
+  "totalMin": 150,
+  "equipment": [
+   "stovetop",
+   "blender"
+  ],
+  "ingredients": [
+   "1 cup all-purpose flour",
+   "2/3 cup cold water",
+   "2/3 cup cold whole milk",
+   "3 eggs",
+   "1/2 tsp salt",
+   "3 tbsp butter, melted",
+   "4 tbsp butter, for the pan",
+   "1/4 cup sugar",
+   "2 lemons, cut in wedges"
+  ],
+  "ingredientKeys": [
+   "flour",
+   "water",
+   "whole-milk",
+   "egg",
+   "salt",
+   "butter",
+   "butter",
+   "sugar",
+   "lemon"
+  ],
+  "specialty": [],
+  "steps": [
+   "Blend the flour, water, milk, eggs, salt and melted butter for 1 minute until completely smooth.",
+   "Refrigerate the batter at least 2 hours. The rest lets the flour fully absorb the liquid and relaxes the gluten, which is what makes crepes tender rather than rubbery. Skipping it is the most common mistake.",
+   "Heat a 6 or 7-inch pan over medium-high and brush it with butter. The pan should be hot enough that a drop of batter sets on contact.",
+   "Pour in a scant 1/4 cup, immediately lift the pan off the heat and tilt it in all directions so the batter runs out in a thin even layer, then pour any excess back.",
+   "Cook about 60 seconds until the edges lift and the underside is browned in patches, then flip and cook 30 seconds more. The second side always looks spotty - that side goes inward.",
+   "The first crepe is almost always a failure that tells you the right heat and quantity. Stack the rest on a plate as you go and serve with sugar and lemon."
+  ],
+  "diet": {
+   "vegetarian": true,
+   "vegan": false,
+   "pescatarian": true,
+   "glutenFree": false,
+   "glutenFreeAdaptable": false,
+   "dairyFree": false,
+   "nutFree": true,
+   "eggFree": false
+  },
+  "allergens": [
+   "gluten",
+   "dairy",
+   "egg"
+  ],
+  "gmo": {
+   "risk": "moderate",
+   "sources": [
+    "grain-fed-dairy",
+    "sugar-beet"
+   ]
+  },
+  "nutrition": {
+   "calories": 286,
+   "proteinG": 8,
+   "carbsG": 28,
+   "fiberG": 1,
+   "sugarG": 11,
+   "fatG": 15,
+   "satFatG": 9,
+   "sodiumMg": 320,
+   "cholesterolMg": 138
+  },
+  "tags": [
+   "french",
+   "breakfast",
+   "technique",
+   "classic",
+   "vegetarian",
+   "foundation",
+   "budget",
+   "make-ahead",
+   "brunch"
+  ],
+  "image": {
+   "file": "jc-crepes.jpg",
+   "source": "commons-file",
+   "match": "dish",
+   "commonsFile": "Crepes dsc07085.jpg"
+  }
+ },
+ {
+  "id": "ch-jc-012",
+  "slug": "jc-clafoutis",
+  "title": "Cherry Clafoutis",
+  "genre": "french",
+  "subgenre": "desserts",
+  "chef": {
+   "name": "Julia Child",
+   "slug": "julia-child"
+  },
+  "description": "Cherries baked in a thin custard batter that puffs and then settles.",
+  "difficulty": "beginner",
+  "easeScore": 9,
+  "spiceScore": 0,
+  "popularity": 7,
+  "pantryScore": 8,
+  "servings": 6,
+  "prepMin": 15,
+  "cookMin": 60,
+  "totalMin": 75,
+  "equipment": [
+   "oven",
+   "blender"
+  ],
+  "ingredients": [
+   "3 cups sweet cherries, pitted",
+   "1 1/4 cups whole milk",
+   "2/3 cup sugar",
+   "3 eggs",
+   "1 tbsp vanilla extract",
+   "1/8 tsp salt",
+   "2/3 cup all-purpose flour",
+   "1/3 cup sugar, for the pan",
+   "2 tbsp powdered sugar"
+  ],
+  "ingredientKeys": [
+   "cherries",
+   "whole-milk",
+   "sugar",
+   "egg",
+   "vanilla-extract",
+   "salt",
+   "flour",
+   "sugar",
+   "powdered-sugar"
+  ],
+  "specialty": [
+   "cherries"
+  ],
+  "steps": [
+   "Heat the oven to 350F. Blend the milk, 1/3 cup of the sugar, the eggs, vanilla, salt and flour for 1 minute until smooth.",
+   "Pour a 1/4-inch layer of batter into a buttered baking dish and set it over moderate heat on the stovetop for a minute or two, until a film of batter has set in the bottom.",
+   "That set film is the trick: it stops the cherries sinking straight to the bottom and gives the clafoutis a base.",
+   "Spread the cherries over the set batter, sprinkle with the 1/3 cup sugar, and pour the rest of the batter over.",
+   "Bake 50-60 minutes until puffed, browned and a skewer in the center comes out clean.",
+   "It will deflate as it cools, which is expected rather than a failure. Dust with powdered sugar and serve warm."
+  ],
+  "diet": {
+   "vegetarian": true,
+   "vegan": false,
+   "pescatarian": true,
+   "glutenFree": false,
+   "glutenFreeAdaptable": false,
+   "dairyFree": false,
+   "nutFree": true,
+   "eggFree": false
+  },
+  "allergens": [
+   "gluten",
+   "dairy",
+   "egg"
+  ],
+  "gmo": {
+   "risk": "moderate",
+   "sources": [
+    "grain-fed-dairy",
+    "sugar-beet"
+   ]
+  },
+  "nutrition": {
+   "calories": 342,
+   "proteinG": 8,
+   "carbsG": 62,
+   "fiberG": 2,
+   "sugarG": 48,
+   "fatG": 7,
+   "satFatG": 3,
+   "sodiumMg": 120,
+   "cholesterolMg": 112
+  },
+  "tags": [
+   "french",
+   "dessert",
+   "classic",
+   "easy",
+   "summer",
+   "vegetarian",
+   "baking",
+   "technique",
+   "family"
+  ],
+  "image": {
+   "file": "clafoutis.jpg",
+   "source": "wikipedia-lead",
+   "match": "representative",
+   "wikipedia": "Clafoutis"
+  }
+ },
+ {
+  "id": "ch-jc-013",
+  "slug": "jc-blanquette-de-veau",
+  "title": "Blanquette de Veau",
+  "genre": "french",
+  "subgenre": "braises",
+  "chef": {
+   "name": "Julia Child",
+   "slug": "julia-child"
+  },
+  "description": "Veal poached without browning, in a velvety egg-enriched white sauce.",
+  "difficulty": "advanced",
+  "easeScore": 3,
+  "spiceScore": 1,
+  "popularity": 6,
+  "pantryScore": 4,
+  "servings": 6,
+  "prepMin": 35,
+  "cookMin": 135,
+  "totalMin": 170,
+  "equipment": [
+   "stovetop"
+  ],
+  "ingredients": [
+   "3 lb veal shoulder, cut in 2-inch cubes",
+   "6 cups chicken broth",
+   "1 yellow onion, quartered",
+   "2 carrots, cut in chunks",
+   "1 bouquet garni of parsley, thyme and bay leaf",
+   "2 tsp salt",
+   "18 pearl onions",
+   "1 lb button mushrooms",
+   "3 tbsp butter",
+   "1 tbsp lemon juice",
+   "4 tbsp butter, for the roux",
+   "5 tbsp all-purpose flour",
+   "2 egg yolks",
+   "3/4 cup heavy cream",
+   "1 tbsp lemon juice, for finishing",
+   "1/2 tsp white pepper",
+   "3 tbsp chopped parsley"
+  ],
+  "ingredientKeys": [
+   "veal-shoulder",
+   "chicken-broth",
+   "yellow-onion",
+   "carrot",
+   "bouquet-garni",
+   "salt",
+   "pearl-onions",
+   "mushroom",
+   "butter",
+   "lemon-juice",
+   "butter",
+   "flour",
+   "egg-yolk",
+   "heavy-cream",
+   "lemon-juice",
+   "white-pepper",
+   "parsley"
+  ],
+  "specialty": [
+   "veal-shoulder",
+   "bouquet-garni",
+   "pearl-onions",
+   "white-pepper"
+  ],
+  "steps": [
+   "Blanch the veal: cover it with cold water, bring to a boil, simmer 2 minutes, then drain and rinse the pieces. This removes the scum that would otherwise cloud the sauce, and a blanquette must stay pale.",
+   "Simmer the veal in the broth with the onion, carrots, bouquet garni and salt, partially covered, for 1 1/2 hours. Never let it boil and never brown the meat - the whiteness of the dish is the whole point.",
+   "Braise the pearl onions in butter and a little broth, and cook the mushrooms in butter with the lemon juice. Keep both aside.",
+   "Strain the cooking liquid and reduce it to about 4 cups. Make a roux with the 4 tbsp butter and the flour, cook it 2 minutes without coloring, then whisk in the hot liquid and simmer 10 minutes.",
+   "Make the liaison: whisk the yolks with the cream, then whisk a ladle of hot sauce into them very slowly before returning it all to the pan. Rushing this scrambles the yolks.",
+   "Heat gently, never boiling, until the sauce thickens. Add the lemon juice and white pepper, fold in the veal, onions and mushrooms, and finish with parsley."
+  ],
+  "diet": {
+   "vegetarian": false,
+   "vegan": false,
+   "pescatarian": false,
+   "glutenFree": false,
+   "glutenFreeAdaptable": false,
+   "dairyFree": false,
+   "nutFree": true,
+   "eggFree": false
+  },
+  "allergens": [
+   "gluten",
+   "dairy",
+   "egg"
+  ],
+  "gmo": {
+   "risk": "moderate",
+   "sources": [
+    "grain-fed-meat",
+    "grain-fed-dairy"
+   ]
+  },
+  "nutrition": {
+   "calories": 682,
+   "proteinG": 52,
+   "carbsG": 22,
+   "fiberG": 3,
+   "sugarG": 7,
+   "fatG": 42,
+   "satFatG": 22,
+   "sodiumMg": 1480,
+   "cholesterolMg": 286
+  },
+  "tags": [
+   "french",
+   "project",
+   "classic",
+   "technique",
+   "special-occasion",
+   "entertaining",
+   "restaurant-style"
+  ],
+  "image": {
+   "file": "jc-blanquette-de-veau.jpg",
+   "source": "commons-file",
+   "match": "dish",
+   "commonsFile": "Blanquette de Veau (3).JPG"
+  }
+ },
+ {
+  "id": "ch-jc-014",
+  "slug": "jc-poulet-roti",
+  "title": "Poulet Roti",
+  "genre": "french",
+  "subgenre": "mains",
+  "chef": {
+   "name": "Julia Child",
+   "slug": "julia-child"
+  },
+  "description": "A chicken roasted on its sides then its back, basted throughout.",
+  "difficulty": "beginner",
+  "easeScore": 8,
+  "spiceScore": 0,
+  "popularity": 9,
+  "pantryScore": 9,
+  "servings": 4,
+  "prepMin": 20,
+  "cookMin": 80,
+  "totalMin": 100,
+  "equipment": [
+   "oven",
+   "stovetop"
+  ],
+  "ingredients": [
+   "1 whole chicken (3 1/2 lb)",
+   "1 tsp salt",
+   "1/2 tsp black pepper",
+   "4 tbsp butter, softened",
+   "1 carrot, sliced",
+   "1 yellow onion, sliced",
+   "2 tbsp butter, melted, for basting",
+   "1 tbsp vegetable oil",
+   "1/2 cup chicken broth",
+   "1/4 cup dry white wine",
+   "2 tbsp butter, for the sauce",
+   "2 tbsp chopped parsley"
+  ],
+  "ingredientKeys": [
+   "whole-chicken",
+   "salt",
+   "black-pepper",
+   "butter",
+   "carrot",
+   "yellow-onion",
+   "butter",
+   "vegetable-oil",
+   "chicken-broth",
+   "white-wine",
+   "butter",
+   "parsley"
+  ],
+  "specialty": [
+   "whole-chicken",
+   "white-wine"
+  ],
+  "steps": [
+   "Heat the oven to 425F. Season the cavity, smear 2 tbsp of the softened butter inside, truss the bird, and rub the rest of the butter over the skin.",
+   "Set the chicken on one side in a roasting pan with the carrot and onion scattered around it, and roast 15 minutes, basting once with the melted butter and oil.",
+   "Turn it onto its other side and roast another 15 minutes, basting again. Roasting on the sides first exposes the thighs, which need more heat, while the breast stays shielded.",
+   "Turn it breast-up, lower the oven to 350F, salt the breast, and roast about 40-45 minutes more, basting every 10 minutes.",
+   "It is done when the juices from the thigh run clear and the leg moves easily in its socket. Rest it 15 minutes on a board.",
+   "Pour off the fat, add the broth and wine to the pan, and boil hard while scraping, reducing to about 1/3 cup. Off the heat, swirl in the last butter, add the parsley, and spoon it over the carved chicken."
+  ],
+  "diet": {
+   "vegetarian": false,
+   "vegan": false,
+   "pescatarian": false,
+   "glutenFree": true,
+   "glutenFreeAdaptable": false,
+   "dairyFree": false,
+   "nutFree": true,
+   "eggFree": true
+  },
+  "allergens": [
+   "dairy",
+   "sulfites"
+  ],
+  "gmo": {
+   "risk": "moderate",
+   "sources": [
+    "grain-fed-meat",
+    "grain-fed-dairy",
+    "seed-oil"
+   ]
+  },
+  "nutrition": {
+   "calories": 712,
+   "proteinG": 52,
+   "carbsG": 5,
+   "fiberG": 1,
+   "sugarG": 2,
+   "fatG": 52,
+   "satFatG": 24,
+   "sodiumMg": 880,
+   "cholesterolMg": 248
+  },
+  "tags": [
+   "french",
+   "classic",
+   "technique",
+   "sunday",
+   "family",
+   "gluten-free",
+   "high-protein",
+   "entertaining",
+   "foundation"
+  ],
+  "image": {
+   "file": "roast-chicken.jpg",
+   "source": "wikipedia-lead",
+   "match": "representative",
+   "wikipedia": "Roast chicken"
+  }
+ },
+ {
+  "id": "ch-jc-015",
+  "slug": "jc-gratin-dauphinois",
+  "title": "Gratin Dauphinois",
+  "genre": "french",
+  "subgenre": "sides",
+  "chef": {
+   "name": "Julia Child",
+   "slug": "julia-child"
+  },
+  "description": "Sliced potatoes baked in garlic-rubbed cream with Gruyere.",
+  "difficulty": "intermediate",
+  "easeScore": 7,
+  "spiceScore": 0,
+  "popularity": 8,
+  "pantryScore": 7,
+  "servings": 6,
+  "prepMin": 25,
+  "cookMin": 60,
+  "totalMin": 85,
+  "equipment": [
+   "oven",
+   "stovetop"
+  ],
+  "ingredients": [
+   "2 lb boiling potatoes, sliced 1/8 inch thick",
+   "1 clove garlic, halved",
+   "4 tbsp butter",
+   "1 tsp salt",
+   "1/2 tsp white pepper",
+   "1/4 tsp ground nutmeg",
+   "1 cup grated Gruyere",
+   "2 cups whole milk, scalded",
+   "1/2 cup heavy cream"
+  ],
+  "ingredientKeys": [
+   "potato",
+   "garlic",
+   "butter",
+   "salt",
+   "white-pepper",
+   "nutmeg",
+   "gruyere",
+   "whole-milk",
+   "heavy-cream"
+  ],
+  "specialty": [
+   "gruyere",
+   "white-pepper"
+  ],
+  "steps": [
+   "Heat the oven to 425F. Rub the inside of a shallow baking dish hard with the cut garlic clove, then butter it generously. Rubbing rather than adding chopped garlic gives a background perfume instead of distinct bites.",
+   "Slice the potatoes thinly and evenly - a mandoline helps. Do not rinse them: the surface starch is what thickens the cream, and washing it off leaves you with a watery gratin.",
+   "Layer the slices in the dish, seasoning each layer with salt, white pepper and nutmeg and scattering two thirds of the Gruyere between them.",
+   "Pour over the scalded milk and the cream. The liquid should just come to the top of the potatoes without covering them.",
+   "Dot with the remaining butter and scatter the rest of the Gruyere over.",
+   "Bake 50-60 minutes, until the top is deeply browned and a knife slides through with no resistance. Rest 15 minutes before serving so it sets enough to cut."
+  ],
+  "diet": {
+   "vegetarian": true,
+   "vegan": false,
+   "pescatarian": true,
+   "glutenFree": true,
+   "glutenFreeAdaptable": false,
+   "dairyFree": false,
+   "nutFree": true,
+   "eggFree": true
+  },
+  "allergens": [
+   "dairy"
+  ],
+  "gmo": {
+   "risk": "low",
+   "sources": [
+    "grain-fed-dairy"
+   ]
+  },
+  "nutrition": {
+   "calories": 386,
+   "proteinG": 12,
+   "carbsG": 32,
+   "fiberG": 3,
+   "sugarG": 7,
+   "fatG": 24,
+   "satFatG": 15,
+   "sodiumMg": 580,
+   "cholesterolMg": 68
+  },
+  "tags": [
+   "french",
+   "side",
+   "classic",
+   "technique",
+   "vegetarian",
+   "gluten-free",
+   "holiday",
+   "comfort",
+   "entertaining"
+  ],
+  "image": {
+   "file": "jc-gratin-dauphinois.jpg",
+   "source": "commons-file",
+   "match": "dish",
+   "commonsFile": "Gratin dauphinois.jpg"
+  }
+ },
+ {
+  "id": "ch-jc-016",
+  "slug": "jc-pissaladiere",
+  "title": "Pissaladiere",
+  "genre": "french",
+  "subgenre": "baking",
+  "chef": {
+   "name": "Julia Child",
+   "slug": "julia-child"
+  },
+  "description": "A Provencal tart of slow-cooked onions, anchovies and olives.",
+  "difficulty": "intermediate",
+  "easeScore": 7,
+  "spiceScore": 2,
+  "popularity": 6,
+  "pantryScore": 6,
+  "servings": 8,
+  "prepMin": 30,
+  "cookMin": 90,
+  "totalMin": 120,
+  "equipment": [
+   "oven",
+   "stovetop"
+  ],
+  "ingredients": [
+   "1 lb store-bought pizza dough",
+   "3 lb yellow onions, thinly sliced",
+   "1/3 cup olive oil",
+   "4 cloves garlic, minced",
+   "1 tsp dried thyme",
+   "1 bay leaf",
+   "1 1/2 tsp salt",
+   "1/2 tsp black pepper",
+   "12 anchovy fillets",
+   "1 cup Nicoise olives, pitted",
+   "2 tbsp olive oil, for finishing",
+   "1 tbsp chopped fresh thyme"
+  ],
+  "ingredientKeys": [
+   "pizza-dough",
+   "yellow-onion",
+   "olive-oil",
+   "garlic",
+   "dried-thyme",
+   "bay-leaf",
+   "salt",
+   "black-pepper",
+   "anchovy",
+   "nicoise-olives",
+   "olive-oil",
+   "fresh-thyme"
+  ],
+  "specialty": [
+   "pizza-dough",
+   "anchovy",
+   "nicoise-olives",
+   "fresh-thyme"
+  ],
+  "steps": [
+   "Cook the onions in the olive oil with the garlic, dried thyme, bay leaf, salt and pepper over very low heat, covered, for 45-60 minutes, stirring occasionally.",
+   "They should collapse into a sweet golden jam without browning much. The quantity looks absurd at the start and reduces to about a quarter - that slow sweating is the entire dish.",
+   "Uncover for the last 10 minutes to drive off any remaining liquid. Wet onions make a soggy base. Discard the bay leaf and cool slightly.",
+   "Heat the oven to 425F. Stretch the dough into a rectangle on an oiled sheet pan and push it to the edges.",
+   "Spread the onions over the dough in an even layer, leaving a thin border.",
+   "Arrange the anchovies in a lattice over the onions and dot the olives in the diamonds. Drizzle with the remaining oil and bake 25-30 minutes until the crust is browned. Finish with fresh thyme and serve warm or at room temperature."
+  ],
+  "diet": {
+   "vegetarian": false,
+   "vegan": false,
+   "pescatarian": true,
+   "glutenFree": false,
+   "glutenFreeAdaptable": false,
+   "dairyFree": true,
+   "nutFree": true,
+   "eggFree": true
+  },
+  "allergens": [
+   "gluten",
+   "fish"
+  ],
+  "gmo": {
+   "risk": "moderate",
+   "sources": [
+    "processed-bread"
+   ]
+  },
+  "nutrition": {
+   "calories": 386,
+   "proteinG": 9,
+   "carbsG": 42,
+   "fiberG": 4,
+   "sugarG": 11,
+   "fatG": 20,
+   "satFatG": 3,
+   "sodiumMg": 1180,
+   "cholesterolMg": 8
+  },
+  "tags": [
+   "french",
+   "appetizer",
+   "classic",
+   "technique",
+   "pescatarian",
+   "dairy-free",
+   "party",
+   "make-ahead",
+   "regional"
+  ],
+  "image": {
+   "file": "pissaladiere.jpg",
+   "source": "wikipedia-lead",
+   "match": "representative",
+   "wikipedia": "Pissaladière"
+  }
+ },
+ {
+  "id": "ch-jc-017",
+  "slug": "jc-mousse-au-chocolat",
+  "title": "Mousse au Chocolat",
+  "genre": "french",
+  "subgenre": "desserts",
+  "chef": {
+   "name": "Julia Child",
+   "slug": "julia-child"
+  },
+  "description": "Chocolate mousse lightened with a sabayon and whipped egg whites.",
+  "difficulty": "intermediate",
+  "easeScore": 6,
+  "spiceScore": 0,
+  "popularity": 9,
+  "pantryScore": 7,
+  "servings": 8,
+  "prepMin": 30,
+  "cookMin": 250,
+  "totalMin": 280,
+  "equipment": [
+   "stovetop"
+  ],
+  "ingredients": [
+   "4 egg yolks",
+   "3/4 cup sugar",
+   "1/4 cup dark rum",
+   "6 oz semisweet chocolate, chopped",
+   "4 tbsp strong coffee",
+   "3/4 cup butter, softened",
+   "4 egg whites",
+   "1 tbsp sugar, for the whites",
+   "1/8 tsp salt",
+   "1 cup heavy cream",
+   "2 tbsp powdered sugar"
+  ],
+  "ingredientKeys": [
+   "egg-yolk",
+   "sugar",
+   "dark-rum",
+   "semisweet-chocolate",
+   "brewed-coffee",
+   "butter",
+   "egg-white",
+   "sugar",
+   "salt",
+   "heavy-cream",
+   "powdered-sugar"
+  ],
+  "specialty": [
+   "dark-rum",
+   "semisweet-chocolate"
+  ],
+  "steps": [
+   "Beat the yolks with the 3/4 cup sugar and the rum in a bowl set over barely simmering water, whisking constantly, until the mixture is foamy, hot to the touch and thick enough to form a ribbon - about 160F. Then set the bowl in cold water and beat until cool and thick.",
+   "Melt the chocolate with the coffee over the same water bath, then beat in the softened butter a piece at a time until smooth. Combine this with the yolk sabayon.",
+   "Beat the egg whites with the salt to soft peaks, add the 1 tbsp sugar, and beat to stiff glossy peaks that hold their shape.",
+   "Stir a quarter of the whites into the chocolate to loosen it, then fold in the rest in two additions, cutting down through the middle and lifting over.",
+   "Stop folding while a few streaks remain. Every unnecessary stroke deflates the mousse, and the air you just whipped in is the only thing giving it structure.",
+   "Spoon into glasses and chill at least 4 hours. Whip the cream with the powdered sugar and spoon it over to serve."
+  ],
+  "diet": {
+   "vegetarian": true,
+   "vegan": false,
+   "pescatarian": true,
+   "glutenFree": true,
+   "glutenFreeAdaptable": false,
+   "dairyFree": false,
+   "nutFree": true,
+   "eggFree": false
+  },
+  "allergens": [
+   "dairy",
+   "egg",
+   "soy"
+  ],
+  "gmo": {
+   "risk": "moderate",
+   "sources": [
+    "sugar-beet",
+    "soy",
+    "grain-fed-dairy"
+   ]
+  },
+  "nutrition": {
+   "calories": 512,
+   "proteinG": 7,
+   "carbsG": 38,
+   "fiberG": 2,
+   "sugarG": 34,
+   "fatG": 38,
+   "satFatG": 23,
+   "sodiumMg": 180,
+   "cholesterolMg": 178
+  },
+  "tags": [
+   "french",
+   "dessert",
+   "classic",
+   "technique",
+   "make-ahead",
+   "entertaining",
+   "special-occasion",
+   "gluten-free",
+   "vegetarian"
+  ],
+  "image": {
+   "file": "jc-mousse-au-chocolat.jpg",
+   "source": "commons-file",
+   "match": "dish",
+   "commonsFile": "Mousse au Chocolat 2010 001.JPG"
+  }
+ },
+ {
+  "id": "ch-jc-018",
+  "slug": "jc-creme-brulee",
+  "title": "Creme Brulee",
+  "genre": "french",
+  "subgenre": "desserts",
+  "chef": {
+   "name": "Julia Child",
+   "slug": "julia-child"
+  },
+  "description": "Vanilla custard baked in a water bath under a cracked sugar crust.",
+  "difficulty": "intermediate",
+  "easeScore": 6,
+  "spiceScore": 0,
+  "popularity": 10,
+  "pantryScore": 8,
+  "servings": 6,
+  "prepMin": 20,
+  "cookMin": 270,
+  "totalMin": 290,
+  "equipment": [
+   "oven",
+   "stovetop"
+  ],
+  "ingredients": [
+   "3 cups heavy cream",
+   "1 vanilla bean, split",
+   "6 egg yolks",
+   "1/2 cup sugar",
+   "1/4 tsp salt",
+   "6 tbsp superfine sugar, for the tops"
+  ],
+  "ingredientKeys": [
+   "heavy-cream",
+   "vanilla-bean",
+   "egg-yolk",
+   "sugar",
+   "salt",
+   "superfine-sugar"
+  ],
+  "specialty": [
+   "vanilla-bean",
+   "superfine-sugar"
+  ],
+  "steps": [
+   "Heat the oven to 325F. Warm the cream with the scraped vanilla bean until steaming but not boiling, then let it infuse 15 minutes.",
+   "Whisk the yolks, sugar and salt together, then temper: pour the warm cream in in a thin stream while whisking constantly. Adding it all at once scrambles the yolks.",
+   "Strain the custard through a fine sieve and skim off any foam. Foam bakes into unsightly bubbles on the surface.",
+   "Divide between six shallow ramekins, set them in a roasting pan, and pour boiling water halfway up their sides. The water bath is what keeps the custard silky rather than curdled - direct oven heat cooks the edges long before the center sets.",
+   "Bake 35-45 minutes until the custards are set at the edges and still wobble in the middle. Cool, then chill at least 4 hours.",
+   "Just before serving, blot the surfaces dry, sprinkle each with 1 tbsp superfine sugar in an even layer, and caramelize with a torch or under a very hot broiler. Let the sugar set for 2 minutes so it hardens into a crust you can crack."
+  ],
+  "diet": {
+   "vegetarian": true,
+   "vegan": false,
+   "pescatarian": true,
+   "glutenFree": true,
+   "glutenFreeAdaptable": false,
+   "dairyFree": false,
+   "nutFree": true,
+   "eggFree": false
+  },
+  "allergens": [
+   "dairy",
+   "egg"
+  ],
+  "gmo": {
+   "risk": "moderate",
+   "sources": [
+    "grain-fed-dairy",
+    "sugar-beet"
+   ]
+  },
+  "nutrition": {
+   "calories": 586,
+   "proteinG": 6,
+   "carbsG": 32,
+   "fiberG": 0,
+   "sugarG": 31,
+   "fatG": 48,
+   "satFatG": 29,
+   "sodiumMg": 180,
+   "cholesterolMg": 338
+  },
+  "tags": [
+   "french",
+   "dessert",
+   "classic",
+   "technique",
+   "gluten-free",
+   "make-ahead",
+   "special-occasion",
+   "restaurant-style",
+   "date-night"
+  ],
+  "image": {
+   "file": "jc-creme-brulee.jpg",
+   "source": "commons-file",
+   "match": "dish",
+   "commonsFile": "Creme brulee (2).jpg"
+  }
+ },
+ {
+  "id": "ch-jc-019",
+  "slug": "jc-pate-a-choux",
+  "title": "Pate a Choux Profiteroles",
+  "genre": "french",
+  "subgenre": "desserts",
+  "chef": {
+   "name": "Julia Child",
+   "slug": "julia-child"
+  },
+  "description": "Choux puffs filled with cream and served under warm chocolate sauce.",
+  "difficulty": "advanced",
+  "easeScore": 4,
+  "spiceScore": 0,
+  "popularity": 8,
+  "pantryScore": 8,
+  "servings": 8,
+  "prepMin": 35,
+  "cookMin": 55,
+  "totalMin": 90,
+  "equipment": [
+   "oven",
+   "stovetop"
+  ],
+  "ingredients": [
+   "1 cup water",
+   "6 tbsp butter",
+   "1/2 tsp salt",
+   "1 tsp sugar",
+   "1 cup all-purpose flour",
+   "4 eggs",
+   "1 egg, beaten, for the wash",
+   "2 cups heavy cream",
+   "1/3 cup powdered sugar",
+   "1 tbsp vanilla extract",
+   "6 oz semisweet chocolate, chopped",
+   "3/4 cup heavy cream, for the sauce"
+  ],
+  "ingredientKeys": [
+   "water",
+   "butter",
+   "salt",
+   "sugar",
+   "flour",
+   "egg",
+   "egg",
+   "heavy-cream",
+   "powdered-sugar",
+   "vanilla-extract",
+   "semisweet-chocolate",
+   "heavy-cream"
+  ],
+  "specialty": [
+   "semisweet-chocolate"
+  ],
+  "steps": [
+   "Bring the water, butter, salt and sugar to a full boil. Dump in all the flour at once and beat hard over the heat for 2 minutes, until the dough forms a smooth ball that pulls away from the pan and a film forms on the bottom. That drying step is what lets the dough absorb the eggs.",
+   "Move the dough to a bowl and let it cool 5 minutes - hot dough will scramble the eggs.",
+   "Beat in the eggs one at a time, waiting until each is completely absorbed. The dough looks slippery and broken after each addition and then comes back together. It is ready when it falls slowly from the spoon in a thick ribbon.",
+   "Pipe walnut-sized mounds onto lined sheets, well apart, and brush with the beaten egg without letting it run down the sides, which would glue them to the pan.",
+   "Bake at 425F for 15 minutes, then at 375F for 20-25 minutes until deep golden and light. Do not open the oven in the first 20 minutes - the puffs are raised entirely by steam and will collapse.",
+   "Pierce each one to release steam and cool completely. Whip the cream with the powdered sugar and vanilla, fill the puffs, and serve under a warm ganache made from the chocolate and heated cream."
+  ],
+  "diet": {
+   "vegetarian": true,
+   "vegan": false,
+   "pescatarian": true,
+   "glutenFree": false,
+   "glutenFreeAdaptable": false,
+   "dairyFree": false,
+   "nutFree": true,
+   "eggFree": false
+  },
+  "allergens": [
+   "gluten",
+   "dairy",
+   "egg",
+   "soy"
+  ],
+  "gmo": {
+   "risk": "moderate",
+   "sources": [
+    "grain-fed-dairy",
+    "sugar-beet",
+    "soy"
+   ]
+  },
+  "nutrition": {
+   "calories": 682,
+   "proteinG": 10,
+   "carbsG": 42,
+   "fiberG": 2,
+   "sugarG": 26,
+   "fatG": 52,
+   "satFatG": 31,
+   "sodiumMg": 280,
+   "cholesterolMg": 286
+  },
+  "tags": [
+   "french",
+   "dessert",
+   "project",
+   "technique",
+   "classic",
+   "special-occasion",
+   "entertaining",
+   "baking",
+   "foundation"
+  ],
+  "image": {
+   "file": "profiteroles.jpg",
+   "source": "wikipedia-lead",
+   "match": "representative",
+   "wikipedia": "Profiterole"
+  }
+ },
+ {
+  "id": "ch-jc-020",
+  "slug": "jc-sauce-bechamel",
+  "title": "Sauce Bechamel",
+  "genre": "french",
+  "subgenre": "sauces",
+  "chef": {
+   "name": "Julia Child",
+   "slug": "julia-child"
+  },
+  "description": "The white mother sauce: a butter-flour roux and milk, nothing more.",
+  "difficulty": "beginner",
+  "easeScore": 9,
+  "spiceScore": 0,
+  "popularity": 8,
+  "pantryScore": 10,
+  "servings": 8,
+  "prepMin": 5,
+  "cookMin": 15,
+  "totalMin": 20,
+  "equipment": [
+   "stovetop"
+  ],
+  "ingredients": [
+   "4 tbsp butter",
+   "5 tbsp all-purpose flour",
+   "3 cups whole milk, warmed",
+   "1/2 tsp salt",
+   "1/4 tsp white pepper",
+   "1/8 tsp ground nutmeg"
+  ],
+  "ingredientKeys": [
+   "butter",
+   "flour",
+   "whole-milk",
+   "salt",
+   "white-pepper",
+   "nutmeg"
+  ],
+  "specialty": [
+   "white-pepper"
+  ],
+  "steps": [
+   "Melt the butter over medium-low heat, whisk in the flour, and cook 2 minutes. The roux should bubble and smell faintly of biscuits but stay completely pale - this is a white roux, and any color changes the sauce.",
+   "Take the pan off the heat for a moment and add the warmed milk in a thin stream, whisking hard. Warm milk against a warm roux is the reliable way to avoid lumps.",
+   "Return to the heat and bring to a simmer, whisking constantly, until it thickens - about 2 minutes.",
+   "Then keep simmering gently for 10 more minutes, stirring often. This cooks out the raw flour taste, and skipping it is why homemade white sauce often tastes pasty.",
+   "Season with the salt, white pepper and nutmeg. Use white pepper rather than black so there are no dark specks.",
+   "This is the base for countless dishes: add Gruyere for mornay, use it in lasagna, moussaka, gratins and souffles. Press plastic wrap onto the surface if holding it, to stop a skin forming."
+  ],
+  "diet": {
+   "vegetarian": true,
+   "vegan": false,
+   "pescatarian": true,
+   "glutenFree": false,
+   "glutenFreeAdaptable": false,
+   "dairyFree": false,
+   "nutFree": true,
+   "eggFree": true
+  },
+  "allergens": [
+   "gluten",
+   "dairy"
+  ],
+  "gmo": {
+   "risk": "low",
+   "sources": [
+    "grain-fed-dairy"
+   ]
+  },
+  "nutrition": {
+   "calories": 112,
+   "proteinG": 4,
+   "carbsG": 8,
+   "fiberG": 0,
+   "sugarG": 5,
+   "fatG": 8,
+   "satFatG": 5,
+   "sodiumMg": 180,
+   "cholesterolMg": 24
+  },
+  "tags": [
+   "french",
+   "sauce",
+   "foundation",
+   "technique",
+   "classic",
+   "vegetarian",
+   "budget",
+   "easy",
+   "quick"
+  ],
+  "image": {
+   "file": "jc-sauce-bechamel.jpg",
+   "source": "commons-file",
+   "match": "dish",
+   "commonsFile": "Bechamel sauce (2428653187).jpg"
+  }
+ },
+ {
+  "id": "ch-jc-021",
+  "slug": "jc-beurre-blanc",
+  "title": "Beurre Blanc",
+  "genre": "french",
+  "subgenre": "sauces",
+  "chef": {
+   "name": "Julia Child",
+   "slug": "julia-child"
+  },
+  "description": "A shallot wine reduction emulsified with a great deal of cold butter.",
+  "difficulty": "intermediate",
+  "easeScore": 6,
+  "spiceScore": 1,
+  "popularity": 7,
+  "pantryScore": 7,
+  "servings": 6,
+  "prepMin": 10,
+  "cookMin": 15,
+  "totalMin": 25,
+  "equipment": [
+   "stovetop"
+  ],
+  "ingredients": [
+   "3 shallots, very finely minced",
+   "1/3 cup white wine vinegar",
+   "1/3 cup dry white wine",
+   "2 tbsp heavy cream",
+   "1 1/2 cups cold butter, cut in small cubes",
+   "1/2 tsp salt",
+   "1/4 tsp white pepper",
+   "1 tbsp lemon juice"
+  ],
+  "ingredientKeys": [
+   "shallot",
+   "white-wine-vinegar",
+   "white-wine",
+   "heavy-cream",
+   "butter",
+   "salt",
+   "white-pepper",
+   "lemon-juice"
+  ],
+  "specialty": [
+   "shallot",
+   "white-wine-vinegar",
+   "white-wine",
+   "white-pepper"
+  ],
+  "steps": [
+   "Simmer the shallots, vinegar and wine in a heavy saucepan until reduced to about 2 tablespoons of syrupy liquid. This concentrated base is what the butter will hang on.",
+   "Add the cream and simmer 1 minute. The cream is not traditional but it stabilizes the emulsion considerably and makes the sauce far less likely to break.",
+   "Lower the heat as far as it will go. Start whisking in the cold butter two or three cubes at a time, waiting until each addition has almost disappeared before adding more.",
+   "The butter must be cold and must go in gradually. Beurre blanc is an emulsion of butterfat in a small amount of liquid, and adding warm butter or rushing it makes the fat separate out into an oily puddle.",
+   "Keep the pan below a simmer throughout - if the sauce boils, it breaks.",
+   "Season with the salt, white pepper and lemon juice. Serve immediately with fish or vegetables; it cannot be reheated, though it holds about 30 minutes in a warm spot."
+  ],
+  "diet": {
+   "vegetarian": true,
+   "vegan": false,
+   "pescatarian": true,
+   "glutenFree": true,
+   "glutenFreeAdaptable": false,
+   "dairyFree": false,
+   "nutFree": true,
+   "eggFree": true
+  },
+  "allergens": [
+   "dairy",
+   "sulfites"
+  ],
+  "gmo": {
+   "risk": "low",
+   "sources": [
+    "grain-fed-dairy"
+   ]
+  },
+  "nutrition": {
+   "calories": 412,
+   "proteinG": 1,
+   "carbsG": 3,
+   "fiberG": 0,
+   "sugarG": 1,
+   "fatG": 46,
+   "satFatG": 29,
+   "sodiumMg": 380,
+   "cholesterolMg": 124
+  },
+  "tags": [
+   "french",
+   "sauce",
+   "technique",
+   "classic",
+   "foundation",
+   "gluten-free",
+   "vegetarian",
+   "restaurant-style",
+   "low-carb"
+  ],
+  "image": {
+   "file": "beurre-blanc.jpg",
+   "source": "wikipedia-lead",
+   "match": "representative",
+   "wikipedia": "Beurre blanc"
+  }
+ },
+ {
+  "id": "ch-jc-022",
+  "slug": "jc-cassoulet",
+  "title": "Cassoulet",
+  "genre": "french",
+  "subgenre": "braises",
+  "chef": {
+   "name": "Julia Child",
+   "slug": "julia-child"
+  },
+  "description": "White beans baked for hours with pork, lamb and sausage under a crust.",
+  "difficulty": "advanced",
+  "easeScore": 2,
+  "spiceScore": 1,
+  "popularity": 6,
+  "pantryScore": 4,
+  "servings": 10,
+  "prepMin": 60,
+  "cookMin": 300,
+  "totalMin": 360,
+  "equipment": [
+   "oven",
+   "stovetop"
+  ],
+  "ingredients": [
+   "2 lb dried white beans, soaked overnight",
+   "8 oz salt pork, diced",
+   "2 lb boneless pork shoulder, cubed",
+   "2 lb lamb shoulder, cubed",
+   "1 lb garlic sausage, sliced thick",
+   "4 duck legs confit",
+   "3 yellow onions, diced",
+   "3 carrots, diced",
+   "8 cloves garlic, minced",
+   "1/4 cup tomato paste",
+   "2 cups dry white wine",
+   "8 cups chicken broth",
+   "1 bouquet garni of parsley, thyme and bay leaf",
+   "2 tsp salt",
+   "1 tsp black pepper",
+   "2 cups fresh breadcrumbs",
+   "1/3 cup chopped parsley"
+  ],
+  "ingredientKeys": [
+   "white-beans",
+   "salt-pork",
+   "pork-shoulder",
+   "lamb-shoulder",
+   "garlic-sausage",
+   "duck-confit",
+   "yellow-onion",
+   "carrot",
+   "garlic",
+   "tomato-paste",
+   "white-wine",
+   "chicken-broth",
+   "bouquet-garni",
+   "salt",
+   "black-pepper",
+   "breadcrumbs",
+   "parsley"
+  ],
+  "specialty": [
+   "white-beans",
+   "salt-pork",
+   "pork-shoulder",
+   "lamb-shoulder",
+   "garlic-sausage",
+   "duck-confit",
+   "white-wine",
+   "bouquet-garni"
+  ],
+  "steps": [
+   "Simmer the soaked beans with the salt pork, one onion, a carrot and the bouquet garni for 1 hour until barely tender. Do not salt them yet - salt early keeps the skins from softening. Reserve the cooking liquid.",
+   "Brown the pork and lamb hard in batches, then brown the sausage. Cook the remaining onions, carrots and garlic, add the tomato paste, then deglaze with the wine and reduce by half.",
+   "Combine the meats with the vegetables and enough bean liquid and broth to cover, and braise at 325F for 1 1/2 hours until the meat is tender.",
+   "Now assemble in a deep earthenware pot: alternate layers of beans and meats, tucking the duck confit in, and add liquid until it just reaches the top layer of beans.",
+   "Bake uncovered at 325F for 1 1/2 to 2 hours. As a crust forms on the surface, break it and press it down into the beans with the back of a spoon, then let another form. Traditionally this is done seven times, and each broken crust thickens the cassoulet.",
+   "Scatter the breadcrumbs over for the final 30 minutes to form the last crust, and let it brown undisturbed. Rest 20 minutes and finish with parsley."
+  ],
+  "diet": {
+   "vegetarian": false,
+   "vegan": false,
+   "pescatarian": false,
+   "glutenFree": false,
+   "glutenFreeAdaptable": false,
+   "dairyFree": true,
+   "nutFree": true,
+   "eggFree": true
+  },
+  "allergens": [
+   "gluten",
+   "sulfites"
+  ],
+  "gmo": {
+   "risk": "moderate",
+   "sources": [
+    "grain-fed-meat",
+    "processed-bread"
+   ]
+  },
+  "nutrition": {
+   "calories": 982,
+   "proteinG": 72,
+   "carbsG": 62,
+   "fiberG": 16,
+   "sugarG": 9,
+   "fatG": 48,
+   "satFatG": 17,
+   "sodiumMg": 1880,
+   "cholesterolMg": 198
+  },
+  "tags": [
+   "french",
+   "project",
+   "classic",
+   "special-occasion",
+   "winter",
+   "high-fiber",
+   "make-ahead",
+   "entertaining",
+   "technique"
+  ],
+  "image": {
+   "file": "jc-cassoulet.jpg",
+   "source": "commons-file",
+   "match": "dish",
+   "commonsFile": "Cassoulet, Carcassonne.jpg"
+  }
+ },
+ {
+  "id": "ch-jc-023",
+  "slug": "jc-pate-de-campagne",
+  "title": "Pate de Campagne",
+  "genre": "french",
+  "subgenre": "appetizers",
+  "chef": {
+   "name": "Julia Child",
+   "slug": "julia-child"
+  },
+  "description": "A coarse country pork terrine baked in a water bath and pressed overnight.",
+  "difficulty": "advanced",
+  "easeScore": 3,
+  "spiceScore": 2,
+  "popularity": 6,
+  "pantryScore": 4,
+  "servings": 12,
+  "prepMin": 45,
+  "cookMin": 1200,
+  "totalMin": 1245,
+  "equipment": [
+   "oven",
+   "food-processor"
+  ],
+  "ingredients": [
+   "1 1/2 lb ground pork shoulder",
+   "8 oz pork liver, chopped",
+   "8 oz pork fatback, diced",
+   "1 yellow onion, finely diced",
+   "4 cloves garlic, minced",
+   "2 tbsp butter",
+   "1/4 cup cognac",
+   "1/4 cup dry white wine",
+   "2 eggs",
+   "1/3 cup heavy cream",
+   "1/3 cup all-purpose flour",
+   "2 tsp salt",
+   "1 1/2 tsp black pepper",
+   "1/2 tsp ground allspice",
+   "1/4 tsp ground cloves",
+   "1 tsp dried thyme",
+   "8 oz bacon strips",
+   "2 bay leaves",
+   "1 baguette, sliced",
+   "1/2 cup cornichons",
+   "1/4 cup Dijon mustard"
+  ],
+  "ingredientKeys": [
+   "ground-pork",
+   "pork-liver",
+   "pork-fatback",
+   "yellow-onion",
+   "garlic",
+   "butter",
+   "cognac",
+   "white-wine",
+   "egg",
+   "heavy-cream",
+   "flour",
+   "salt",
+   "black-pepper",
+   "allspice",
+   "ground-cloves",
+   "dried-thyme",
+   "bacon",
+   "bay-leaf",
+   "baguette",
+   "cornichons",
+   "dijon-mustard"
+  ],
+  "specialty": [
+   "ground-pork",
+   "pork-liver",
+   "pork-fatback",
+   "cognac",
+   "white-wine",
+   "allspice",
+   "ground-cloves",
+   "baguette",
+   "cornichons"
+  ],
+  "steps": [
+   "Cook the onion and garlic in the butter until soft, add the cognac and wine and reduce almost completely, then cool. Raw alcohol in a terrine tastes harsh after baking.",
+   "Puree the liver with the eggs and cream, then mix it with the ground pork, diced fatback, the cooled onion mixture, flour, salt, pepper, allspice, cloves and thyme.",
+   "Fry a teaspoon of the mixture and taste it. This is the only chance to correct the seasoning, and a terrine needs to taste assertively seasoned warm because it is served cold, when flavors read as muted.",
+   "Line a loaf pan crosswise with the bacon strips, letting the ends overhang. Pack the mixture in, rapping the pan on the counter to settle it, then fold the bacon over the top and lay the bay leaves on.",
+   "Cover with foil, set in a roasting pan, and add boiling water halfway up the sides. Bake at 325F for about 1 1/2 hours, to 160F internal.",
+   "Take it out, set a weight on top - a foil-wrapped brick or a pan with cans - and refrigerate overnight. Pressing compacts the terrine so it slices rather than crumbles. Serve cold with baguette, cornichons and mustard."
+  ],
+  "diet": {
+   "vegetarian": false,
+   "vegan": false,
+   "pescatarian": false,
+   "glutenFree": false,
+   "glutenFreeAdaptable": false,
+   "dairyFree": false,
+   "nutFree": true,
+   "eggFree": false
+  },
+  "allergens": [
+   "gluten",
+   "dairy",
+   "egg",
+   "sulfites"
+  ],
+  "gmo": {
+   "risk": "moderate",
+   "sources": [
+    "grain-fed-meat",
+    "grain-fed-dairy",
+    "processed-bread"
+   ]
+  },
+  "nutrition": {
+   "calories": 512,
+   "proteinG": 28,
+   "carbsG": 22,
+   "fiberG": 1,
+   "sugarG": 3,
+   "fatG": 34,
+   "satFatG": 13,
+   "sodiumMg": 1180,
+   "cholesterolMg": 228
+  },
+  "tags": [
+   "french",
+   "appetizer",
+   "project",
+   "classic",
+   "technique",
+   "make-ahead",
+   "entertaining",
+   "charcuterie",
+   "special-occasion"
+  ],
+  "image": {
+   "file": "jc-pate-de-campagne.jpg",
+   "source": "commons-file",
+   "match": "dish",
+   "commonsFile": "Pate de campagne-01.jpg"
+  }
+ },
+ {
+  "id": "ch-jc-024",
+  "slug": "jc-madeleines",
+  "title": "Madeleines",
+  "genre": "french",
+  "subgenre": "desserts",
+  "chef": {
+   "name": "Julia Child",
+   "slug": "julia-child"
+  },
+  "description": "Shell-shaped butter cakes with the characteristic humped back.",
+  "difficulty": "intermediate",
+  "easeScore": 7,
+  "spiceScore": 0,
+  "popularity": 7,
+  "pantryScore": 8,
+  "servings": 24,
+  "prepMin": 20,
+  "cookMin": 80,
+  "totalMin": 100,
+  "equipment": [
+   "oven"
+  ],
+  "ingredients": [
+   "3/4 cup butter",
+   "2 eggs",
+   "2/3 cup sugar",
+   "1/8 tsp salt",
+   "1 tbsp lemon zest",
+   "1 tsp vanilla extract",
+   "1 cup cake flour",
+   "1/2 tsp baking powder",
+   "2 tbsp butter, softened, for the molds",
+   "2 tbsp flour, for the molds",
+   "2 tbsp powdered sugar"
+  ],
+  "ingredientKeys": [
+   "butter",
+   "egg",
+   "sugar",
+   "salt",
+   "lemon-zest",
+   "vanilla-extract",
+   "cake-flour",
+   "baking-powder",
+   "butter",
+   "flour",
+   "powdered-sugar"
+  ],
+  "specialty": [
+   "cake-flour"
+  ],
+  "steps": [
+   "Melt the 3/4 cup butter and cook it until the milk solids just turn golden and it smells nutty, then cool it to room temperature. Brown butter gives madeleines their depth.",
+   "Whisk the eggs, sugar and salt for 3-4 minutes until pale and thick, then stir in the lemon zest and vanilla.",
+   "Fold in the sifted cake flour and baking powder, then the cooled brown butter.",
+   "Refrigerate the batter at least 1 hour, and up to overnight. The cold batter hitting a hot mold is what creates the sudden rise that forms the hump on the back - skip the chill and you get flat cookies.",
+   "Brush the madeleine molds with softened butter and dust with flour, getting into every ridge, then chill the molds too.",
+   "Fill each mold three quarters full and bake at 425F for 4 minutes, then drop to 375F for 5-7 minutes, until the edges are golden and the humps have risen. Turn them out immediately and dust with powdered sugar. They are best within hours of baking."
+  ],
+  "diet": {
+   "vegetarian": true,
+   "vegan": false,
+   "pescatarian": true,
+   "glutenFree": false,
+   "glutenFreeAdaptable": false,
+   "dairyFree": false,
+   "nutFree": true,
+   "eggFree": false
+  },
+  "allergens": [
+   "gluten",
+   "dairy",
+   "egg"
+  ],
+  "gmo": {
+   "risk": "moderate",
+   "sources": [
+    "sugar-beet",
+    "grain-fed-dairy"
+   ]
+  },
+  "nutrition": {
+   "calories": 112,
+   "proteinG": 1,
+   "carbsG": 11,
+   "fiberG": 0,
+   "sugarG": 7,
+   "fatG": 7,
+   "satFatG": 4,
+   "sodiumMg": 42,
+   "cholesterolMg": 32
+  },
+  "tags": [
+   "french",
+   "dessert",
+   "baking",
+   "technique",
+   "classic",
+   "vegetarian",
+   "party",
+   "tea-time",
+   "make-ahead"
+  ],
+  "image": {
+   "file": "jc-madeleines.jpg",
+   "source": "commons-file",
+   "match": "dish",
+   "commonsFile": "Madeleines pan.jpg"
+  }
+ },
+ {
+  "id": "ch-jc-025",
+  "slug": "jc-french-bread",
+  "title": "French Bread",
+  "genre": "french",
+  "subgenre": "breads",
+  "chef": {
+   "name": "Julia Child",
+   "slug": "julia-child"
+  },
+  "description": "Flour, water, yeast and salt, given three long rises and a steamed oven.",
+  "difficulty": "advanced",
+  "easeScore": 3,
+  "spiceScore": 0,
+  "popularity": 8,
+  "pantryScore": 10,
+  "servings": 12,
+  "prepMin": 45,
+  "cookMin": 420,
+  "totalMin": 465,
+  "equipment": [
+   "oven"
+  ],
+  "ingredients": [
+   "6 cups bread flour",
+   "2 1/4 cups water at 70F",
+   "1 tsp active dry yeast",
+   "2 1/2 tsp salt",
+   "2 tbsp cornmeal, for the pan",
+   "1 cup boiling water, for steam"
+  ],
+  "ingredientKeys": [
+   "bread-flour",
+   "water",
+   "active-dry-yeast",
+   "salt",
+   "cornmeal",
+   "water"
+  ],
+  "specialty": [
+   "bread-flour",
+   "active-dry-yeast",
+   "cornmeal"
+  ],
+  "steps": [
+   "Dissolve the yeast in 1/4 cup of the water. Mix the flour and salt, add the yeast and remaining water, and stir to a rough dough. Knead 10 minutes until smooth and elastic - it should spring back when pressed.",
+   "First rise: cover and leave at cool room temperature, about 70F, for 3 to 4 hours until tripled. The very small amount of yeast and the long slow rise are what develop the flavor; a fast warm rise gives you bread that tastes of nothing.",
+   "Deflate the dough by pulling it from the sides of the bowl into the center, then let it rise again 1 1/2 to 2 hours until doubled.",
+   "Divide and shape into long loaves, rolling and stretching the dough rather than pressing it flat, and set them on a cornmeal-dusted pan. Third rise: 1 1/2 hours until not quite doubled.",
+   "Heat the oven to 450F with a pan on the lower shelf. Slash each loaf diagonally three times with a razor, then pour the boiling water into the hot pan and shut the door fast.",
+   "Steam is what gives the crust its gloss and crackle - it keeps the surface elastic so the loaf can expand before it sets. Bake 25 minutes, then remove the water pan and bake 10 minutes more until deeply browned and hollow-sounding. Cool on a rack so the bottom does not go soft."
+  ],
+  "diet": {
+   "vegetarian": true,
+   "vegan": true,
+   "pescatarian": true,
+   "glutenFree": false,
+   "glutenFreeAdaptable": false,
+   "dairyFree": true,
+   "nutFree": true,
+   "eggFree": true
+  },
+  "allergens": [
+   "gluten"
+  ],
+  "gmo": {
+   "risk": "moderate",
+   "sources": [
+    "corn"
+   ]
+  },
+  "nutrition": {
+   "calories": 242,
+   "proteinG": 8,
+   "carbsG": 48,
+   "fiberG": 2,
+   "sugarG": 0,
+   "fatG": 1,
+   "satFatG": 0,
+   "sodiumMg": 480,
+   "cholesterolMg": 0
+  },
+  "tags": [
+   "french",
+   "bread",
+   "project",
+   "technique",
+   "classic",
+   "vegan",
+   "vegetarian",
+   "dairy-free",
+   "budget",
+   "baking",
+   "foundation"
+  ],
+  "image": {
+   "file": "jc-french-bread.jpg",
+   "source": "commons-file",
+   "match": "dish",
+   "commonsFile": "French baguette - bread art.jpg"
+  }
+ }
 ]

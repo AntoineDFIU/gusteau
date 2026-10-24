@@ -122,6 +122,8 @@
   ],
   "image": {
    "file": "gumbo.jpg",
+   "source": "wikipedia-lead",
+   "match": "representative",
    "wikipedia": "Gumbo"
   }
  },
@@ -245,6 +247,8 @@
   ],
   "image": {
    "file": "jambalaya.jpg",
+   "source": "wikipedia-lead",
+   "match": "representative",
    "wikipedia": "Jambalaya"
   }
  },
@@ -367,8 +371,10 @@
    "comfort"
   ],
   "image": {
-   "file": "etouffee.jpg",
-   "wikipedia": "Étouffée"
+   "file": "el-shrimp-etouffee.jpg",
+   "source": "commons-file",
+   "match": "dish",
+   "commonsFile": "Shrimp Etouffee .jpg"
   }
  },
  {
@@ -490,8 +496,10 @@
    "comfort"
   ],
   "image": {
-   "file": "red-beans-rice.jpg",
-   "wikipedia": "Red beans and rice"
+   "file": "el-red-beans-and-rice.jpg",
+   "source": "commons-file",
+   "match": "dish",
+   "commonsFile": "Red Beans and Rice.jpg"
   }
  },
  {
@@ -603,8 +611,10 @@
    "party"
   ],
   "image": {
-   "file": "bbq-shrimp.jpg",
-   "wikipedia": "Shrimp"
+   "file": "el-bbq-shrimp.jpg",
+   "source": "commons-file",
+   "match": "dish",
+   "commonsFile": "New Orleans bbq shrimp -nolafood -bourbonhouse.jpg"
   }
  },
  {
@@ -729,8 +739,10 @@
    "one-pot"
   ],
   "image": {
-   "file": "shrimp-creole.jpg",
-   "wikipedia": "Shrimp creole"
+   "file": "el-shrimp-creole.jpg",
+   "source": "commons-file",
+   "match": "dish",
+   "commonsFile": "Shrimp creole (1).jpg"
   }
  },
  {
@@ -854,8 +866,10 @@
    "holiday"
   ],
   "image": {
-   "file": "oysters-rockefeller.jpg",
-   "wikipedia": "Oysters Rockefeller"
+   "file": "el-oysters-rockefeller.jpg",
+   "source": "commons-file",
+   "match": "dish",
+   "commonsFile": "Oysters Rockefeller.jpg"
   }
  },
  {
@@ -957,6 +971,8 @@
   ],
   "image": {
    "file": "creole-seasoning.jpg",
+   "source": "wikipedia-lead",
+   "match": "representative",
    "wikipedia": "Cajun cuisine"
   }
  },
@@ -1074,6 +1090,8 @@
   ],
   "image": {
    "file": "dirty-rice.jpg",
+   "source": "wikipedia-lead",
+   "match": "representative",
    "wikipedia": "Dirty rice"
   }
  },
@@ -1186,6 +1204,8 @@
   ],
   "image": {
    "file": "blackened-fish.jpg",
+   "source": "wikipedia-lead",
+   "match": "representative",
    "wikipedia": "Blackening (cooking)"
   }
  },
@@ -1317,6 +1337,8 @@
   ],
   "image": {
    "file": "grillades-grits.jpg",
+   "source": "wikipedia-lead",
+   "match": "representative",
    "wikipedia": "Grits"
   }
  },
@@ -1423,8 +1445,10 @@
    "adults-only"
   ],
   "image": {
-   "file": "bananas-foster.jpg",
-   "wikipedia": "Bananas Foster"
+   "file": "el-bananas-foster.jpg",
+   "source": "commons-file",
+   "match": "dish",
+   "commonsFile": "Bananas Foster.jpg"
   }
  },
  {
@@ -1533,8 +1557,10 @@
    "crowd-pleaser"
   ],
   "image": {
-   "file": "beignets.jpg",
-   "wikipedia": "Beignet"
+   "file": "el-beignets.jpg",
+   "source": "commons-file",
+   "match": "dish",
+   "commonsFile": "Beignets 2.jpg"
   }
  },
  {
@@ -1634,6 +1660,8 @@
   ],
   "image": {
    "file": "pralines.jpg",
+   "source": "wikipedia-lead",
+   "match": "representative",
    "wikipedia": "Fudge"
   }
  },
@@ -1756,8 +1784,10 @@
    "crowd-pleaser"
   ],
   "image": {
-   "file": "king-cake.jpg",
-   "wikipedia": "King cake"
+   "file": "el-king-cake.jpg",
+   "source": "commons-file",
+   "match": "dish",
+   "commonsFile": "King Cake with two babies.jpg"
   }
  },
  {
@@ -1875,6 +1905,8 @@
   ],
   "image": {
    "file": "penne-alla-vodka.jpg",
+   "source": "wikipedia-lead",
+   "match": "representative",
    "wikipedia": "Penne"
   }
  },
@@ -1997,6 +2029,8 @@
   ],
   "image": {
    "file": "jambalaya.jpg",
+   "source": "wikipedia-lead",
+   "match": "representative",
    "wikipedia": "Jambalaya"
   }
  },
@@ -2108,8 +2142,10 @@
    "weeknight"
   ],
   "image": {
-   "file": "pork-chop.jpg",
-   "wikipedia": "Smothered"
+   "file": "el-smothered-pork-chops.jpg",
+   "source": "commons-file",
+   "match": "dish",
+   "commonsFile": "Smothered pork chops, onion rings.jpg"
   }
  },
  {
@@ -2237,6 +2273,8 @@
   ],
   "image": {
    "file": "fried-catfish.jpg",
+   "source": "wikipedia-lead",
+   "match": "representative",
    "wikipedia": "Catfish"
   }
  },
@@ -2351,6 +2389,8 @@
   ],
   "image": {
    "file": "succotash.jpg",
+   "source": "wikipedia-lead",
+   "match": "representative",
    "wikipedia": "Maque choux"
   }
  },
@@ -2465,6 +2505,8 @@
   ],
   "image": {
    "file": "tomato-salad.jpg",
+   "source": "wikipedia-lead",
+   "match": "representative",
    "wikipedia": "Tomato"
   }
  },
@@ -2589,8 +2631,10 @@
    "party"
   ],
   "image": {
-   "file": "shrimp-remoulade.jpg",
-   "wikipedia": "Remoulade"
+   "file": "el-shrimp-remoulade.jpg",
+   "source": "commons-file",
+   "match": "dish",
+   "commonsFile": "Shrimp remoulade.jpg"
   }
  },
  {
@@ -2717,6 +2761,8 @@
   ],
   "image": {
    "file": "crab-bisque.jpg",
+   "source": "wikipedia-lead",
+   "match": "representative",
    "wikipedia": "Bisque (food)"
   }
  },
@@ -2847,6 +2893,8 @@
   ],
   "image": {
    "file": "meatloaf.jpg",
+   "source": "wikipedia-lead",
+   "match": "representative",
    "wikipedia": "Meatloaf"
   }
  },
@@ -2949,8 +2997,10 @@
    "party"
   ],
   "image": {
-   "file": "sazerac.jpg",
-   "wikipedia": "Sazerac"
+   "file": "el-sazerac.jpg",
+   "source": "commons-file",
+   "match": "dish",
+   "commonsFile": "Sazerac.jpg"
   }
  }
 ]

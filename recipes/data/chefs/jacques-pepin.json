@@ -98,6 +98,8 @@
   ],
   "image": {
    "file": "omelette.jpg",
+   "source": "wikipedia-lead",
+   "match": "representative",
    "wikipedia": "Omelette"
   }
  },
@@ -214,6 +216,8 @@
   ],
   "image": {
    "file": "chicken-jardiniere.jpg",
+   "source": "wikipedia-lead",
+   "match": "representative",
    "wikipedia": "Chicken as food"
   }
  },
@@ -323,6 +327,8 @@
   ],
   "image": {
    "file": "deviled-eggs.jpg",
+   "source": "wikipedia-lead",
+   "match": "representative",
    "wikipedia": "Stuffed egg"
   }
  },
@@ -432,6 +438,8 @@
   ],
   "image": {
    "file": "roast-chicken.jpg",
+   "source": "wikipedia-lead",
+   "match": "representative",
    "wikipedia": "Roast chicken"
   }
  },
@@ -526,6 +534,8 @@
   ],
   "image": {
    "file": "hash-browns.jpg",
+   "source": "wikipedia-lead",
+   "match": "representative",
    "wikipedia": "Potato pancake"
   }
  },
@@ -635,6 +645,8 @@
   ],
   "image": {
    "file": "mushroom-pasta.jpg",
+   "source": "wikipedia-lead",
+   "match": "representative",
    "wikipedia": "Fricassee"
   }
  },
@@ -739,8 +751,10 @@
    "budget"
   ],
   "image": {
-   "file": "flan.jpg",
-   "wikipedia": "Crème caramel"
+   "file": "jp-creme-caramel.jpg",
+   "source": "commons-file",
+   "match": "dish",
+   "commonsFile": "Creme Caramel India.JPG"
   }
  },
  {
@@ -855,6 +869,8 @@
   ],
   "image": {
    "file": "chicken-supreme.jpg",
+   "source": "wikipedia-lead",
+   "match": "representative",
    "wikipedia": "Supreme (cookery)"
   }
  },
@@ -968,6 +984,8 @@
   ],
   "image": {
    "file": "pasta-gratin.jpg",
+   "source": "wikipedia-lead",
+   "match": "representative",
    "wikipedia": "Gratin"
   }
  },
@@ -1082,6 +1100,8 @@
   ],
   "image": {
    "file": "salmon-fillet.jpg",
+   "source": "wikipedia-lead",
+   "match": "representative",
    "wikipedia": "Salmon as food"
   }
  },
@@ -1195,6 +1215,8 @@
   ],
   "image": {
    "file": "salmon-tartare.jpg",
+   "source": "wikipedia-lead",
+   "match": "representative",
    "wikipedia": "Steak tartare"
   }
  },
@@ -1297,6 +1319,8 @@
   ],
   "image": {
    "file": "cheese-spread.jpg",
+   "source": "wikipedia-lead",
+   "match": "representative",
    "wikipedia": "Fromage fort"
   }
  },
@@ -1408,8 +1432,10 @@
    "classic"
   ],
   "image": {
-   "file": "garlic-soup.jpg",
-   "wikipedia": "Garlic soup"
+   "file": "jp-garlic-soup.jpg",
+   "source": "commons-file",
+   "match": "dish",
+   "commonsFile": "Garlic Soup - Main ingredients.jpg"
   }
  },
  {
@@ -1518,6 +1544,8 @@
   ],
   "image": {
    "file": "strip-steak.jpg",
+   "source": "wikipedia-lead",
+   "match": "representative",
    "wikipedia": "Strip steak"
   }
  },
@@ -1651,8 +1679,10 @@
    "high-protein"
   ],
   "image": {
-   "file": "ballotine.jpg",
-   "wikipedia": "Ballotine"
+   "file": "jp-chicken-ballotine.jpg",
+   "source": "commons-file",
+   "match": "dish",
+   "commonsFile": "Chicken ballotine (28307937236).jpg"
   }
  },
  {
@@ -1763,6 +1793,8 @@
   ],
   "image": {
    "file": "apple-tart.jpg",
+   "source": "wikipedia-lead",
+   "match": "representative",
    "wikipedia": "Galette"
   }
  },
@@ -1872,6 +1904,8 @@
   ],
   "image": {
    "file": "poached-pears.jpg",
+   "source": "wikipedia-lead",
+   "match": "representative",
    "wikipedia": "Pear"
   }
  },
@@ -1976,6 +2010,8 @@
   ],
   "image": {
    "file": "green-beans.jpg",
+   "source": "wikipedia-lead",
+   "match": "representative",
    "wikipedia": "Green bean"
   }
  },
@@ -2102,8 +2138,10 @@
    "one-pot"
   ],
   "image": {
-   "file": "choucroute.jpg",
-   "wikipedia": "Choucroute garnie"
+   "file": "jp-choucroute.jpg",
+   "source": "commons-file",
+   "match": "dish",
+   "commonsFile": "Choucroute garnie.jpg"
   }
  },
  {
@@ -2227,8 +2265,10 @@
    "comfort"
   ],
   "image": {
-   "file": "lamb-stew.jpg",
-   "wikipedia": "Irish stew"
+   "file": "jp-lamb-navarin.jpg",
+   "source": "commons-file",
+   "match": "dish",
+   "commonsFile": "Navarin of lamb.jpg"
   }
  },
  {
@@ -2352,6 +2392,8 @@
   ],
   "image": {
    "file": "rillettes.jpg",
+   "source": "wikipedia-lead",
+   "match": "representative",
    "wikipedia": "Rillettes"
   }
  },
@@ -2464,8 +2506,10 @@
    "restaurant-style"
   ],
   "image": {
-   "file": "salade-lyonnaise.jpg",
-   "wikipedia": "Frisée"
+   "file": "jp-salade-lyonnaise.jpg",
+   "source": "commons-file",
+   "match": "dish",
+   "commonsFile": "Salade lyonnaise.JPG"
   }
  },
  {
@@ -2580,6 +2624,8 @@
   ],
   "image": {
    "file": "gnocchi-parisienne.jpg",
+   "source": "wikipedia-lead",
+   "match": "representative",
    "wikipedia": "Gnocchi"
   }
  },
@@ -2687,6 +2733,8 @@
   ],
   "image": {
    "file": "carrot-salad.jpg",
+   "source": "wikipedia-lead",
+   "match": "representative",
    "wikipedia": "Carrot salad"
   }
  },
@@ -2815,6 +2863,8 @@
   ],
   "image": {
    "file": "liver-mousse.jpg",
+   "source": "wikipedia-lead",
+   "match": "representative",
    "wikipedia": "Pâté"
   }
  }
