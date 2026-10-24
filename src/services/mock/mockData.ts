@@ -1,66 +1,53 @@
-import type { Constraints, DetectedIngredient, InventoryItem } from '../../types';
+import type { CookRules, DetectedIngredient, PantryItem } from '../../types';
 
 // ─────────────────────────────────────────────────────────────
 // MOCK DATA ONLY. Nothing in this file talks to a model.
-// Replace with real detections by enabling the Nebius service.
 // ─────────────────────────────────────────────────────────────
 
 /** What the mock "vision model" sees in a fridge photo. */
 export const MOCK_FRIDGE_DETECTIONS: DetectedIngredient[] = [
-  { name: 'Chicken breast', key: 'chicken', confidence: 0.94, quantityNote: '~1 lb pack' },
-  { name: 'Eggs', key: 'eggs', confidence: 0.97, quantityNote: '6 eggs' },
-  { name: 'Baby spinach', key: 'spinach', confidence: 0.86, quantityNote: 'half a bag' },
-  { name: 'Tomatoes', key: 'tomatoes', confidence: 0.91, quantityNote: '3 tomatoes' },
-  { name: 'Shredded cheese', key: 'cheese', confidence: 0.82, quantityNote: '' },
-  { name: 'Salsa', key: 'salsa', confidence: 0.68, quantityNote: 'jar, half full' },
-  { name: 'Lemon', key: 'lemon', confidence: 0.63, quantityNote: '1 lemon' },
+  { name: 'Chicken breast', confidence: 0.94, quantityNote: '~1 lb pack' },
+  { name: 'Eggs', confidence: 0.97, quantityNote: '6 eggs' },
+  { name: 'Baby spinach', confidence: 0.86, quantityNote: 'half a bag' },
+  { name: 'Tomatoes', confidence: 0.91, quantityNote: '3 tomatoes' },
+  { name: 'Shredded cheese', confidence: 0.82, quantityNote: '' },
+  { name: 'Salsa', confidence: 0.68, quantityNote: 'jar, half full' },
+  { name: 'Lemon', confidence: 0.63, quantityNote: '1 lemon' },
+  { name: 'Scallions', confidence: 0.58, quantityNote: '' },
 ];
 
 /** What the mock "vision model" sees in a pantry photo. */
 export const MOCK_PANTRY_DETECTIONS: DetectedIngredient[] = [
-  { name: 'Rice', key: 'rice', confidence: 0.9, quantityNote: '' },
-  { name: 'Canned black beans', key: 'beans', confidence: 0.88, quantityNote: '2 cans' },
-  { name: 'Flour tortillas', key: 'tortillas', confidence: 0.84, quantityNote: '8 tortillas' },
-  { name: 'Onion', key: 'onion', confidence: 0.79, quantityNote: '' },
-  { name: 'Garlic', key: 'garlic', confidence: 0.72, quantityNote: '' },
+  { name: 'Rice', confidence: 0.9, quantityNote: '' },
+  { name: 'Canned black beans', confidence: 0.88, quantityNote: '2 cans' },
+  { name: 'Flour tortillas', confidence: 0.84, quantityNote: '8 tortillas' },
+  { name: 'Onion', confidence: 0.79, quantityNote: '' },
+  { name: 'Garlic', confidence: 0.72, quantityNote: '' },
+  { name: 'Spaghetti', confidence: 0.81, quantityNote: '' },
+  { name: 'Soy sauce', confidence: 0.66, quantityNote: '' },
 ];
 
-/** The scripted "no rice" demo kitchen. */
-export const DEMO_INVENTORY: Omit<InventoryItem, 'id'>[] = [
-  { name: 'Rice', key: 'rice', quantityNote: '', source: 'manual' },
-  { name: 'Canned black beans', key: 'beans', quantityNote: '1 can', source: 'manual' },
-  { name: 'Flour tortillas', key: 'tortillas', quantityNote: '4 tortillas', source: 'manual' },
-  { name: 'Shredded cheese', key: 'cheese', quantityNote: '', source: 'manual' },
-  { name: 'Salsa', key: 'salsa', quantityNote: '', source: 'manual' },
+/** The scripted "out of rice" demo kitchen. */
+export const DEMO_PANTRY: Omit<PantryItem, 'id'>[] = [
+  { name: 'Rice', source: 'manual' },
+  { name: 'Canned black beans', source: 'manual', quantityNote: '1 can' },
+  { name: 'Flour tortillas', source: 'manual', quantityNote: '4 tortillas' },
+  { name: 'Shredded cheese', source: 'manual' },
+  { name: 'Salsa', source: 'manual' },
 ];
 
-export const DEMO_CONSTRAINTS: Constraints = {
+export const DEMO_RECIPE_ID = 'mx-microwave-burrito-bowl';
+
+export const DEMO_RULES: CookRules = {
   hardExclusions: ['vegetarian'],
-  customExclusions: [],
-  preferences: [],
-  dislikes: [],
+  allergies: [],
   equipment: ['microwave'],
-  timeMinutes: 15,
-  servings: 2,
-  budget: 10,
+  timeLimit: 15,
   purchasesAllowed: false,
-  pantryBasics: true,
+  servings: 2,
 };
 
-export const DEFAULT_CONSTRAINTS: Constraints = {
-  hardExclusions: [],
-  customExclusions: [],
-  preferences: [],
-  dislikes: [],
-  equipment: ['stovetop', 'microwave'],
-  timeMinutes: 30,
-  servings: 2,
-  budget: 10,
-  purchasesAllowed: false,
-  pantryBasics: true,
-};
-
-/** An illustrated "fridge photo" so the demo works with zero files. */
+/** An illustrated "fridge photo" so the photo path works with zero files. */
 export const SAMPLE_FRIDGE_SVG = `data:image/svg+xml;utf8,${encodeURIComponent(`
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" width="800" height="600">
   <defs>
@@ -73,6 +60,6 @@ export const SAMPLE_FRIDGE_SVG = `data:image/svg+xml;utf8,${encodeURIComponent(`
   <g font-size="44" font-family="Apple Color Emoji,Segoe UI Emoji,Noto Color Emoji,sans-serif">
     <text x="34" y="80">🍗</text><text x="104" y="80">🥚</text><text x="174" y="80">🥬</text><text x="244" y="80">🍅</text><text x="314" y="80">🧀</text>
     <text x="34" y="170">🫙</text><text x="104" y="170">🍋</text><text x="174" y="170">🧅</text><text x="244" y="170">🧄</text><text x="314" y="170">🍚</text>
-    <text x="64" y="262">🥫</text><text x="154" y="262">🫓</text><text x="244" y="262">🥫</text>
+    <text x="64" y="262">🥫</text><text x="154" y="262">🫓</text><text x="244" y="262">🍝</text>
   </g>
 </svg>`)}`;

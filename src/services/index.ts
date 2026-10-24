@@ -35,8 +35,9 @@ export const modelService: ChefModelService = {
     return current.label;
   },
   analyzePhotos: (photos) => current.analyzePhotos(photos),
-  planRecipe: (state, previous) => current.planRecipe(state, previous),
-  interpretMessage: (message, state) => current.interpretMessage(message, state),
+  interpretMessage: (message, session) => current.interpretMessage(message, session),
+  stageRecipe: (recipe) => current.stageRecipe(recipe),
+  adaptPlan: (session, draft, prior) => current.adaptPlan(session, draft, prior),
 };
 
 export type { ChefModelService } from './modelService';
