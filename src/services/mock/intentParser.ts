@@ -4,6 +4,7 @@ import { EQUIPMENT_IDS } from '../../data/rules';
 import { techniqueById, techniqueFor, techniqueFromQuestion } from '../../data/techniques';
 import type { CookSession, DietRuleId, SessionChange } from '../../types';
 import type { InterpretResult } from '../modelService';
+import { answerOffer, kitchenHelp } from './kitchenHelp';
 
 // ─────────────────────────────────────────────────────────────
 // MOCK conversational agent: a rule-based intent parser.
@@ -52,6 +53,8 @@ export function parseIntent(raw: string, s: CookSession): InterpretResult {
   const m = clean(raw);
   const cmd = parseCommand(m);
   if (cmd) return cmd;
+  const help = answerOffer(raw, s) ?? kitchenHelp(raw, s);
+  if (help) return help;
 
   const changes: SessionChange[] = [];
   const r = s.rules;

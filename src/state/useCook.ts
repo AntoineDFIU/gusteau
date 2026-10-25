@@ -5,6 +5,7 @@ import { techniqueFor } from '../data/techniques';
 import { beep, formatClock } from '../lib/sound';
 import { modelService } from '../services';
 import type { InterpretResult } from '../services/modelService';
+import { vetChanges } from '../services/mock/kitchenHelp';
 import type { ActiveTimer, CookCommand, CookRules, CookSession, PantryItem, Recipe, SessionChange } from '../types';
 
 export const timerLeft = (t: ActiveTimer, now: number) => (t.endsAt === null ? t.pausedLeft : Math.max(0, (t.endsAt - now) / 1000));
@@ -14,7 +15,15 @@ export const timerLeft = (t: ActiveTimer, now: number) => (t.endsAt === null ? t
  * `session`; the cooking screens are a view over it. Every change goes
  * through update() → applyChanges → adaptRecipe → model help → finalizeReplan.
  */
-export function useCook(onFinish: (s: CookSession) => void) {
+export interface CookEvents {
+  onFinish(s: CookSession): void;
+  /** A timer just ran out (it has already beeped). */
+  onTimerDone?(label: string): void;
+}
+
+export function useCook(events: CookEvents) {
+  const on = useRef(events);
+  on.current = events;
   const [session, setSessionRaw] = useState<CookSession | null>(null);
   const [busy, setBusy] = useState<null | 'starting' | 'thinking' | 'replanning'>(null);
   const [bannerId, setBannerId] = useState<string | null>(null);
@@ -47,6 +56,7 @@ export function useCook(onFinish: (s: CookSession) => void) {
       if (t.endsAt !== null && t.endsAt <= now && !rung.current.has(t.id)) {
         rung.current.add(t.id);
         beep();
+        on.current.onTimerDone?.(t.label);
       }
     }
   }, [now, session?.timers]);
@@ -63,6 +73,8 @@ export function useCook(onFinish: (s: CookSession) => void) {
       pantryBasics,
       unavailable: [],
       leaveOut,
+      preferredSwaps: [],
+      additions: [],
       stepIndex: 0,
       completedStepKeys: [],
       substitutions: [],
@@ -73,7 +85,7 @@ export function useCook(onFinish: (s: CookSession) => void) {
     };
     const first = adaptRecipe(original, contextOf(blank));
     const adapted: CookSession = { ...blank, recipe: first.violations.length ? original : first.recipe, substitutions: first.violations.length ? [] : first.substitutions };
-    const swaps = adapted.substitutions.map((x) => (x.kind === 'swap' ? `${x.from.toLowerCase()} → ${x.to.toLowerCase()}` : x.kind === 'drop' ? `no ${x.from.toLowerCase()}` : `buy ${x.from.toLowerCase()}`));
+    const swaps = adapted.substitutions.map((x) => (x.kind === 'swap' ? `${x.from.toLowerCase()} → ${x.to.toLowerCase()}` : x.kind === 'drop' ? `no ${x.from.toLowerCase()}` : x.kind === 'add' ? `plus ${x.from.toLowerCase()}` : `buy ${x.from.toLowerCase()}`));
     setSession(
       say(
         adapted,
@@ -87,10 +99,10 @@ export function useCook(onFinish: (s: CookSession) => void) {
     setBusy(null);
   };
 
-  const update = async (changes: SessionChange[], trigger: string, userText?: string) => {
+  const update = async (changes: SessionChange[], trigger: string, userText?: string, via?: 'voice') => {
     const before = ref.current;
     if (!before || !changes.length) return;
-    const withUser: CookSession = userText ? { ...before, chat: [...before.chat, { id: uid(), from: 'user', text: userText }] } : before;
+    const withUser: CookSession = userText ? { ...before, chat: [...before.chat, { id: uid(), from: 'user', text: userText, via }] } : before;
     setSession(withUser);
     setBusy('replanning');
     try {
@@ -121,7 +133,7 @@ export function useCook(onFinish: (s: CookSession) => void) {
     setSession(ns);
     setTechniqueOpen(false);
     requestRead();
-    if (ns.stepIndex >= ns.recipe.steps.length) onFinish(ns);
+    if (ns.stepIndex >= ns.recipe.steps.length) on.current.onFinish(ns);
   };
 
   const back = () => {
@@ -190,39 +202,63 @@ export function useCook(onFinish: (s: CookSession) => void) {
     }
   };
 
-  const handleInterpretation = async (text: string, r: InterpretResult, before: CookSession) => {
+  const handleInterpretation = async (text: string, input: InterpretResult, before: CookSession, via: 'voice' | undefined, streamed: string) => {
+    let r = input;
+    if (r.changes.length) {
+      const vetted = vetChanges(r.changes, before);
+      if (vetted.refusals.length && !vetted.changes.length) r = { ...r, changes: [], reply: vetted.refusals.join(' ') };
+      else r = { ...r, changes: vetted.changes };
+    }
     if (r.command) {
-      const withUser = { ...before, chat: [...before.chat, { id: uid(), from: 'user' as const, text }] };
+      const withUser = { ...before, pendingOffer: undefined, chat: [...before.chat, { id: uid(), from: 'user' as const, text, via }] };
       setSession(withUser);
       runCommand(r.command, withUser);
     } else if (r.changes.length) {
-      await update(r.changes, r.trigger ?? text, text);
+      await update(r.changes, r.trigger ?? text, text, via);
     } else {
+      const reply = r.reply ?? 'I’m here. Tell me what changed and I’ll replan.';
       setSession({
         ...before,
+        // Anything offered ("want me to switch?") waits for a yes on the next message.
+        pendingOffer: r.offer?.length ? r.offer : undefined,
         chat: [
           ...before.chat,
-          { id: uid(), from: 'user', text },
-          { id: uid(), from: 'gusteau', text: r.reply ?? 'I’m here. Tell me what changed and I’ll replan.', techniqueId: r.techniqueId },
+          { id: uid(), from: 'user', text, via },
+          // A reply that was already read aloud while it streamed isn't read again.
+          { id: uid(), from: 'gusteau', text: reply, techniqueId: r.techniqueId, spoken: !!streamed && reply.trim() === streamed.trim() },
         ],
       });
       if (r.techniqueId) setTechniqueOpen(true);
+      // A fix like "give it one more minute" comes with its timer.
+      if (r.timerSeconds) addTimer(r.timerSeconds, `${before.recipe.steps[before.stepIndex]?.title ?? 'Extra'} (extra time)`);
     }
   };
 
-  const sendChat = async (text: string) => {
+  /**
+   * A typed or spoken message. `onReply` gets a plain answer while the model is
+   * still writing it, so a voice can start reading before it's finished.
+   */
+  const sendChat = async (text: string, opts: { via?: 'voice'; onReply?(textSoFar: string): void } = {}) => {
     const before = ref.current;
     if (!before) return;
     setBusy('thinking');
     let r: InterpretResult;
+    let streamed = '';
     try {
-      r = await modelService.interpretMessage(text, before);
+      r = await modelService.interpretMessage(text, before, {
+        onReply: opts.onReply
+          ? (sofar) => {
+              streamed = sofar;
+              opts.onReply!(sofar);
+            }
+          : undefined,
+      });
     } catch (err) {
       console.warn('[Gusteau] Chat failed', err);
       r = { reply: 'Sorry, I lost that one. Could you say it again?', changes: [] };
     }
     setBusy(null);
-    await handleInterpretation(text, r, ref.current ?? before);
+    await handleInterpretation(text, r, ref.current ?? before, opts.via, streamed);
   };
 
   const undo = () => {

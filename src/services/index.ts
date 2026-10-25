@@ -35,7 +35,8 @@ export const modelService: ChefModelService = {
     return current.label;
   },
   analyzePhotos: (photos) => current.analyzePhotos(photos),
-  interpretMessage: (message, session) => current.interpretMessage(message, session),
+  interpretMessage: (message, session, opts) => current.interpretMessage(message, session, opts),
+  warmUp: () => current.warmUp(),
   stageRecipe: (recipe) => current.stageRecipe(recipe),
   adaptPlan: (session, draft, prior) => current.adaptPlan(session, draft, prior),
 };

@@ -6,7 +6,7 @@ import { EQUIPMENT } from '../../data/rules';
 import { techniqueFor } from '../../data/techniques';
 import { formatClock } from '../../lib/sound';
 import type { Cook } from '../../state/useCook';
-import { ttsSupported, type Speech } from '../../voice/useSpeech';
+import type { Voice } from '../../voice/useVoice';
 import { RecipeArt, StageIcon } from '../RecipeCard';
 import { Button, Card, GusteauAvatar, Modal, SectionTitle, cx } from '../ui';
 import { ChatPanel } from './ChatPanel';
@@ -15,7 +15,7 @@ import { PlanUpdatedBanner } from './PlanUpdatedBanner';
 import { StatusBar } from './StatusBar';
 import { TechniqueCard } from './TechniqueCard';
 
-export function CookingWorkspace({ cook, speech, onExit }: { cook: Cook; speech: Speech; onExit: () => void }) {
+export function CookingWorkspace({ cook, voice, onHandsFree, onExit }: { cook: Cook; voice: Voice; onHandsFree: (on: boolean) => void; onExit: () => void }) {
   const s = cook.session!;
   const r = s.recipe;
   const finished = s.stepIndex >= r.steps.length;
@@ -42,7 +42,7 @@ export function CookingWorkspace({ cook, speech, onExit }: { cook: Cook; speech:
 
   return (
     <div className="mx-auto max-w-7xl">
-      <StatusBar cook={cook} speech={speech} />
+      <StatusBar cook={cook} voice={voice} onHandsFree={onHandsFree} />
 
       <div className="mb-5 flex flex-wrap items-center justify-between gap-3">
         <div className="flex min-w-0 items-center gap-3">
@@ -177,7 +177,7 @@ export function CookingWorkspace({ cook, speech, onExit }: { cook: Cook; speech:
                     🎬 Show me how
                   </Button>
                 )}
-                <Button size="sm" variant="ghost" onClick={cook.repeat} disabled={!ttsSupported}>
+                <Button size="sm" variant="ghost" onClick={cook.repeat}>
                   🔊 Read aloud
                 </Button>
               </div>
@@ -216,7 +216,7 @@ export function CookingWorkspace({ cook, speech, onExit }: { cook: Cook; speech:
             </Card>
           )}
 
-          <ChatPanel cook={cook} onMic={speech.listenOnce} micActive={speech.state === 'listening' && !speech.handsFree} micSupported={speech.supported} />
+          <ChatPanel cook={cook} onMic={() => void voice.listenOnce()} micActive={(voice.state === 'listening' || voice.state === 'connecting') && !voice.handsFree} micSupported={voice.supported} />
         </div>
 
         <aside className="min-w-0 space-y-6">

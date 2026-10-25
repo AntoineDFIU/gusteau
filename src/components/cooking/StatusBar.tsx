@@ -2,11 +2,11 @@ import { remainingMinutes } from '../../agent/kitchen';
 import { stageIndexOf } from '../../agent/stages';
 import { formatClock } from '../../lib/sound';
 import { timerLeft, type Cook } from '../../state/useCook';
-import type { Speech } from '../../voice/useSpeech';
+import type { Voice } from '../../voice/useVoice';
 import { StageIcon } from '../RecipeCard';
 import { cx } from '../ui';
 
-export function StatusBar({ cook, speech }: { cook: Cook; speech: Speech }) {
+export function StatusBar({ cook, voice, onHandsFree }: { cook: Cook; voice: Voice; onHandsFree: (on: boolean) => void }) {
   const s = cook.session!;
   const r = s.recipe;
   const finished = s.stepIndex >= r.steps.length;
@@ -68,20 +68,32 @@ export function StatusBar({ cook, speech }: { cook: Cook; speech: Speech }) {
           </div>
         )}
 
+        {/* Gusteau talking: one tap (or Esc) silences him */}
+        {voice.talking && (
+          <button onClick={voice.stopTalking} className="flex shrink-0 items-center gap-2 rounded-full bg-saffron-100 px-3 py-1.5 text-xs font-semibold text-charcoal-700 hover:bg-saffron-400/40">
+            <span aria-hidden>🔊</span> Gusteau is talking · Stop
+          </button>
+        )}
+
         {/* Hands-free */}
-        {speech.supported ? (
+        {voice.supported ? (
           <button
-            onClick={() => speech.setHandsFree(!speech.handsFree)}
-            aria-pressed={speech.handsFree}
+            onClick={() => onHandsFree(!voice.handsFree)}
+            aria-pressed={voice.handsFree}
+            title={voice.label}
             className={cx(
               'flex shrink-0 items-center gap-2 rounded-full px-3 py-1.5 text-xs font-semibold transition-colors',
-              speech.handsFree ? 'bg-tomato-500 text-white' : 'border border-cream-300 bg-white text-charcoal-700 hover:border-tomato-400',
+              voice.handsFree ? 'bg-tomato-500 text-white' : 'border border-cream-300 bg-white text-charcoal-700 hover:border-tomato-400',
             )}
           >
-            {speech.handsFree ? (
+            {voice.handsFree ? (
               <>
-                <span className={cx('h-2 w-2 rounded-full bg-white', speech.state === 'listening' && 'animate-pulse')} />
-                {speech.state === 'paused-for-speech' ? 'Gusteau is talking…' : 'Hands-free on · Pause'}
+                <span
+                  className={cx('h-2 w-2 rounded-full bg-white transition-transform', voice.state === 'listening' && !voice.level && 'animate-pulse')}
+                  style={voice.state === 'listening' && voice.level ? { transform: `scale(${1 + voice.level * 1.6})` } : undefined}
+                  aria-hidden
+                />
+                {voice.state === 'connecting' ? 'Connecting the mic…' : voice.state === 'paused-for-speech' ? 'Mic paused while Gusteau talks' : 'Listening · Pause'}
               </>
             ) : (
               <>🎙 Hands-free</>
@@ -89,7 +101,15 @@ export function StatusBar({ cook, speech }: { cook: Cook; speech: Speech }) {
           </button>
         ) : null}
       </div>
-      {speech.handsFree && speech.interim && <p className="mx-auto mt-1 max-w-7xl truncate text-xs italic text-charcoal-500">“{speech.interim}”</p>}
+      {voice.handsFree && voice.interim && <p className="mx-auto mt-1 max-w-7xl truncate text-xs italic text-charcoal-500">“{voice.interim}”</p>}
+      {voice.notice && (
+        <p className="mx-auto mt-1 flex max-w-7xl items-center gap-2 text-xs text-tomato-700">
+          {voice.notice}
+          <button onClick={voice.clearNotice} className="font-semibold underline-offset-2 hover:underline">
+            Dismiss
+          </button>
+        </p>
+      )}
     </div>
   );
 }
