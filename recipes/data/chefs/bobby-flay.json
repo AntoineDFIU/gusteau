@@ -1,0 +1,2977 @@
+[
+ {
+  "id": "ch-bf-001",
+  "slug": "bf-ribeye-chipotle-butter",
+  "title": "Grilled Ribeye with Chipotle Butter",
+  "genre": "american",
+  "subgenre": "steaks",
+  "chef": {
+   "name": "Bobby Flay",
+   "slug": "bobby-flay"
+  },
+  "description": "Thick ribeyes grilled over high heat under melting chipotle-lime butter.",
+  "difficulty": "intermediate",
+  "easeScore": 7,
+  "spiceScore": 5,
+  "popularity": 9,
+  "pantryScore": 7,
+  "servings": 4,
+  "prepMin": 45,
+  "cookMin": 20,
+  "totalMin": 65,
+  "equipment": [
+   "grill"
+  ],
+  "ingredients": [
+   "4 ribeye steaks, 1 1/2 inch thick",
+   "2 tbsp kosher salt",
+   "1 tbsp coarse black pepper",
+   "2 tbsp canola oil",
+   "1 cup butter, softened",
+   "3 chipotle peppers in adobo, minced",
+   "2 tbsp adobo sauce",
+   "2 cloves garlic, minced",
+   "1 tbsp lime juice",
+   "1 tsp lime zest",
+   "2 tbsp chopped cilantro",
+   "1 tsp honey"
+  ],
+  "ingredientKeys": [
+   "ribeye-steak",
+   "kosher-salt",
+   "black-pepper",
+   "canola-oil",
+   "butter",
+   "chipotle-in-adobo",
+   "adobo-sauce",
+   "garlic",
+   "lime-juice",
+   "lime-zest",
+   "cilantro",
+   "honey"
+  ],
+  "specialty": [
+   "ribeye-steak",
+   "chipotle-in-adobo",
+   "adobo-sauce"
+  ],
+  "steps": [
+   "Mash the butter with the chipotles, adobo, garlic, lime juice and zest, cilantro and honey. Roll it in parchment into a log and chill until firm - compound butter needs to be cold enough to slice.",
+   "Salt the steaks and leave them on a rack at room temperature 40 minutes, then pat dry and add the pepper and oil.",
+   "Build a hot fire with a cooler zone. Clean and oil the grates.",
+   "Sear the steaks over the hot side 4 minutes per side, moving them only once, until well charred.",
+   "Shift them to the cooler zone and finish to 125F internal for medium-rare, 4-6 minutes depending on thickness.",
+   "Rest 8 minutes with a thick disc of the chipotle butter melting on each steak, then slice against the grain."
+  ],
+  "diet": {
+   "vegetarian": false,
+   "vegan": false,
+   "pescatarian": false,
+   "glutenFree": true,
+   "glutenFreeAdaptable": false,
+   "dairyFree": false,
+   "nutFree": true,
+   "eggFree": true
+  },
+  "allergens": [
+   "dairy"
+  ],
+  "gmo": {
+   "risk": "moderate",
+   "sources": [
+    "grain-fed-meat",
+    "seed-oil",
+    "grain-fed-dairy"
+   ]
+  },
+  "nutrition": {
+   "calories": 982,
+   "proteinG": 62,
+   "carbsG": 4,
+   "fiberG": 1,
+   "sugarG": 2,
+   "fatG": 82,
+   "satFatG": 38,
+   "sodiumMg": 1680,
+   "cholesterolMg": 286
+  },
+  "tags": [
+   "grill",
+   "bbq",
+   "high-protein",
+   "low-carb",
+   "gluten-free",
+   "date-night",
+   "spicy",
+   "summer"
+  ],
+  "image": {
+   "file": "ribeye-steak.jpg",
+   "source": "wikipedia-lead",
+   "match": "representative",
+   "wikipedia": "Rib eye steak"
+  }
+ },
+ {
+  "id": "ch-bf-002",
+  "slug": "bf-crunchburger",
+  "title": "Crunchburger",
+  "genre": "american",
+  "subgenre": "burgers",
+  "chef": {
+   "name": "Bobby Flay",
+   "slug": "bobby-flay"
+  },
+  "description": "A double cheeseburger with potato chips inside for crunch.",
+  "difficulty": "beginner",
+  "easeScore": 9,
+  "spiceScore": 2,
+  "popularity": 9,
+  "pantryScore": 9,
+  "servings": 4,
+  "prepMin": 15,
+  "cookMin": 15,
+  "totalMin": 30,
+  "equipment": [
+   "stovetop",
+   "grill"
+  ],
+  "ingredients": [
+   "1 1/2 lb ground chuck (80/20)",
+   "2 tsp kosher salt",
+   "1 tsp black pepper",
+   "2 tbsp canola oil",
+   "8 slices American cheese",
+   "4 brioche buns",
+   "3 tbsp butter, softened",
+   "2 cups kettle-cooked potato chips",
+   "1/3 cup mayonnaise",
+   "2 tbsp Dijon mustard",
+   "1 tbsp ketchup",
+   "1 tsp hot sauce"
+  ],
+  "ingredientKeys": [
+   "ground-beef",
+   "kosher-salt",
+   "black-pepper",
+   "canola-oil",
+   "american-cheese",
+   "brioche-bun",
+   "butter",
+   "potato-chips",
+   "mayonnaise",
+   "dijon-mustard",
+   "ketchup",
+   "hot-sauce"
+  ],
+  "specialty": [
+   "brioche-bun",
+   "potato-chips"
+  ],
+  "steps": [
+   "Stir the mayonnaise, Dijon, ketchup and hot sauce together for the sauce.",
+   "Divide the beef into 8 loose balls and flatten them into thin patties slightly wider than the buns. Handle the meat as little as possible.",
+   "Season both sides only as they hit the pan. Cook in the oil over high heat 2 minutes per side.",
+   "Lay a slice of cheese on each patty in the last 30 seconds and cover briefly to melt.",
+   "Butter and toast the buns, then spread both halves with the sauce.",
+   "Stack two patties per bun and pile a generous handful of potato chips right inside the burger before closing it. The chips go in, not alongside - that is the whole idea, and they have to be added at the last second to stay crunchy."
+  ],
+  "diet": {
+   "vegetarian": false,
+   "vegan": false,
+   "pescatarian": false,
+   "glutenFree": false,
+   "glutenFreeAdaptable": false,
+   "dairyFree": false,
+   "nutFree": true,
+   "eggFree": false
+  },
+  "allergens": [
+   "gluten",
+   "dairy",
+   "egg"
+  ],
+  "gmo": {
+   "risk": "high",
+   "sources": [
+    "grain-fed-meat",
+    "processed-bread",
+    "seed-oil",
+    "processed-cheese",
+    "corn-syrup"
+   ]
+  },
+  "nutrition": {
+   "calories": 982,
+   "proteinG": 48,
+   "carbsG": 52,
+   "fiberG": 3,
+   "sugarG": 9,
+   "fatG": 64,
+   "satFatG": 24,
+   "sodiumMg": 1880,
+   "cholesterolMg": 178
+  },
+  "tags": [
+   "grill",
+   "burgers",
+   "quick",
+   "comfort",
+   "game-day",
+   "family",
+   "high-protein"
+  ],
+  "image": {
+   "file": "cheeseburger.jpg",
+   "source": "wikipedia-lead",
+   "match": "representative",
+   "wikipedia": "Cheeseburger"
+  }
+ },
+ {
+  "id": "ch-bf-003",
+  "slug": "bf-chile-lime-chicken-thighs",
+  "title": "Chile-Lime Grilled Chicken Thighs",
+  "genre": "american",
+  "subgenre": "bbq",
+  "chef": {
+   "name": "Bobby Flay",
+   "slug": "bobby-flay"
+  },
+  "description": "Thighs in an ancho-lime marinade, grilled until the skin blackens.",
+  "difficulty": "beginner",
+  "easeScore": 9,
+  "spiceScore": 5,
+  "popularity": 8,
+  "pantryScore": 7,
+  "servings": 6,
+  "prepMin": 20,
+  "cookMin": 155,
+  "totalMin": 175,
+  "equipment": [
+   "grill"
+  ],
+  "ingredients": [
+   "8 bone-in skin-on chicken thighs",
+   "1/3 cup canola oil",
+   "1/3 cup lime juice",
+   "3 tbsp ancho chile powder",
+   "1 tbsp ground cumin",
+   "1 tbsp smoked paprika",
+   "2 tsp dried oregano",
+   "1 tsp cayenne pepper",
+   "6 cloves garlic, minced",
+   "2 tbsp honey",
+   "1 tbsp kosher salt",
+   "1 tsp black pepper",
+   "1/2 cup chopped cilantro",
+   "2 limes, cut in wedges"
+  ],
+  "ingredientKeys": [
+   "chicken-thighs",
+   "canola-oil",
+   "lime-juice",
+   "ancho-chile-powder",
+   "cumin",
+   "smoked-paprika",
+   "dried-oregano",
+   "cayenne",
+   "garlic",
+   "honey",
+   "kosher-salt",
+   "black-pepper",
+   "cilantro",
+   "lime"
+  ],
+  "specialty": [
+   "ancho-chile-powder"
+  ],
+  "steps": [
+   "Whisk the oil, lime juice, ancho powder, cumin, paprika, oregano, cayenne, garlic, honey, salt and pepper into a marinade.",
+   "Coat the thighs and refrigerate at least 2 hours. Ancho gives smoky depth rather than raw heat, which is why it takes this much of it.",
+   "Set up a two-zone fire. Pat the thighs so they are not dripping - excess marinade flares up and gives you soot rather than char.",
+   "Cook skin-side down over the cooler zone, lid closed, 25 minutes, so the fat renders out slowly.",
+   "Flip and move over the hot zone for 5-8 minutes until the skin is blackened in spots and the thigh reads 175F.",
+   "Rest 5 minutes and serve with cilantro and lime wedges."
+  ],
+  "diet": {
+   "vegetarian": false,
+   "vegan": false,
+   "pescatarian": false,
+   "glutenFree": true,
+   "glutenFreeAdaptable": false,
+   "dairyFree": true,
+   "nutFree": true,
+   "eggFree": true
+  },
+  "allergens": [],
+  "gmo": {
+   "risk": "moderate",
+   "sources": [
+    "grain-fed-meat",
+    "seed-oil"
+   ]
+  },
+  "nutrition": {
+   "calories": 586,
+   "proteinG": 42,
+   "carbsG": 11,
+   "fiberG": 2,
+   "sugarG": 7,
+   "fatG": 42,
+   "satFatG": 10,
+   "sodiumMg": 1280,
+   "cholesterolMg": 178
+  },
+  "tags": [
+   "grill",
+   "bbq",
+   "spicy",
+   "gluten-free",
+   "dairy-free",
+   "high-protein",
+   "summer",
+   "make-ahead",
+   "family"
+  ],
+  "image": {
+   "file": "barbecue-chicken.jpg",
+   "source": "wikipedia-lead",
+   "match": "representative",
+   "wikipedia": "Barbecue chicken"
+  }
+ },
+ {
+  "id": "ch-bf-004",
+  "slug": "bf-grilled-baby-back-ribs",
+  "title": "Grilled Baby Back Ribs",
+  "genre": "american",
+  "subgenre": "bbq",
+  "chef": {
+   "name": "Bobby Flay",
+   "slug": "bobby-flay"
+  },
+  "description": "Dry-rubbed ribs cooked low over indirect heat, mopped at the end.",
+  "difficulty": "intermediate",
+  "easeScore": 7,
+  "spiceScore": 4,
+  "popularity": 9,
+  "pantryScore": 7,
+  "servings": 4,
+  "prepMin": 25,
+  "cookMin": 165,
+  "totalMin": 190,
+  "equipment": [
+   "grill"
+  ],
+  "ingredients": [
+   "2 racks baby back ribs (4 lb)",
+   "3 tbsp ancho chile powder",
+   "2 tbsp dark brown sugar",
+   "2 tbsp smoked paprika",
+   "1 tbsp kosher salt",
+   "1 tbsp ground cumin",
+   "2 tsp mustard powder",
+   "2 tsp black pepper",
+   "1 tsp cayenne pepper",
+   "1 cup ketchup",
+   "1/4 cup apple cider vinegar",
+   "3 tbsp molasses",
+   "2 tbsp Dijon mustard",
+   "1 tbsp Worcestershire sauce",
+   "2 chipotle peppers in adobo, minced"
+  ],
+  "ingredientKeys": [
+   "pork-ribs",
+   "ancho-chile-powder",
+   "brown-sugar",
+   "smoked-paprika",
+   "kosher-salt",
+   "cumin",
+   "mustard-powder",
+   "black-pepper",
+   "cayenne",
+   "ketchup",
+   "apple-cider-vinegar",
+   "molasses",
+   "dijon-mustard",
+   "worcestershire",
+   "chipotle-in-adobo"
+  ],
+  "specialty": [
+   "pork-ribs",
+   "ancho-chile-powder",
+   "mustard-powder",
+   "molasses",
+   "chipotle-in-adobo"
+  ],
+  "steps": [
+   "Pull the thin membrane off the bone side of each rack with a paper towel - it never becomes tender and blocks the rub.",
+   "Mix the ancho powder, brown sugar, paprika, salt, cumin, mustard powder, pepper and cayenne and massage it into both sides. Rest 30 minutes.",
+   "Set up the grill for indirect cooking at around 275F, with a drip pan of water under the ribs.",
+   "Cook bone-side down with the lid closed for 2 1/2 hours, until the meat pulls back from the bone ends and a toothpick slides into it easily.",
+   "Simmer the ketchup, vinegar, molasses, Dijon, Worcestershire and chipotles for 10 minutes to make the mop sauce.",
+   "Brush the ribs with sauce and move them over direct heat for 3-4 minutes per side, watching constantly. The sugar in the sauce burns fast, which is why it only goes on at the end."
+  ],
+  "diet": {
+   "vegetarian": false,
+   "vegan": false,
+   "pescatarian": false,
+   "glutenFree": false,
+   "glutenFreeAdaptable": true,
+   "dairyFree": true,
+   "nutFree": true,
+   "eggFree": true
+  },
+  "allergens": [
+   "gluten"
+  ],
+  "gmo": {
+   "risk": "high",
+   "sources": [
+    "grain-fed-meat",
+    "corn-syrup",
+    "sugar-beet",
+    "processed-sauce"
+   ]
+  },
+  "nutrition": {
+   "calories": 882,
+   "proteinG": 58,
+   "carbsG": 48,
+   "fiberG": 3,
+   "sugarG": 38,
+   "fatG": 52,
+   "satFatG": 18,
+   "sodiumMg": 1880,
+   "cholesterolMg": 196
+  },
+  "tags": [
+   "grill",
+   "bbq",
+   "weekend",
+   "party",
+   "high-protein",
+   "dairy-free",
+   "spicy",
+   "summer"
+  ],
+  "image": {
+   "file": "bf-grilled-baby-back-ribs.jpg",
+   "source": "commons-file",
+   "match": "dish",
+   "commonsFile": "Baby back ribs - hickory smoked.jpg"
+  }
+ },
+ {
+  "id": "ch-bf-005",
+  "slug": "bf-green-chile-cheeseburger",
+  "title": "Green Chile Cheeseburger",
+  "genre": "american",
+  "subgenre": "burgers",
+  "chef": {
+   "name": "Bobby Flay",
+   "slug": "bobby-flay"
+  },
+  "description": "A New Mexico classic: roasted green chiles and Monterey Jack on a grilled patty.",
+  "difficulty": "beginner",
+  "easeScore": 9,
+  "spiceScore": 6,
+  "popularity": 8,
+  "pantryScore": 7,
+  "servings": 4,
+  "prepMin": 20,
+  "cookMin": 20,
+  "totalMin": 40,
+  "equipment": [
+   "grill",
+   "broiler"
+  ],
+  "ingredients": [
+   "1 1/2 lb ground chuck (80/20)",
+   "2 tsp kosher salt",
+   "1 tsp black pepper",
+   "6 Hatch or Anaheim green chiles",
+   "8 slices Monterey Jack",
+   "4 hamburger buns",
+   "3 tbsp butter, softened",
+   "1/3 cup mayonnaise",
+   "1 tbsp lime juice",
+   "1 tsp ancho chile powder",
+   "4 leaves lettuce",
+   "1 tomato, sliced"
+  ],
+  "ingredientKeys": [
+   "ground-beef",
+   "kosher-salt",
+   "black-pepper",
+   "hatch-chiles",
+   "monterey-jack",
+   "hamburger-bun",
+   "butter",
+   "mayonnaise",
+   "lime-juice",
+   "ancho-chile-powder",
+   "lettuce",
+   "tomato"
+  ],
+  "specialty": [
+   "hatch-chiles",
+   "ancho-chile-powder"
+  ],
+  "steps": [
+   "Char the green chiles directly over the grill or under the broiler until blackened all over, 8-10 minutes, then seal them in a bowl 10 minutes. The steam loosens the skins so they rub right off. Peel, seed and roughly chop them.",
+   "Stir the mayonnaise with the lime juice and ancho powder.",
+   "Form 4 loose patties wider than the buns and dimple the centers. Season just before cooking.",
+   "Grill over high heat 3-4 minutes per side for medium.",
+   "Pile the chopped green chiles onto each patty, top with two slices of Monterey Jack and close the lid for 1 minute to melt.",
+   "Butter and toast the buns, spread with the ancho mayo, and build with lettuce, the patty and tomato."
+  ],
+  "diet": {
+   "vegetarian": false,
+   "vegan": false,
+   "pescatarian": false,
+   "glutenFree": false,
+   "glutenFreeAdaptable": true,
+   "dairyFree": false,
+   "nutFree": true,
+   "eggFree": false
+  },
+  "allergens": [
+   "gluten",
+   "dairy",
+   "egg"
+  ],
+  "gmo": {
+   "risk": "high",
+   "sources": [
+    "grain-fed-meat",
+    "processed-bread",
+    "seed-oil",
+    "grain-fed-dairy"
+   ]
+  },
+  "nutrition": {
+   "calories": 882,
+   "proteinG": 48,
+   "carbsG": 38,
+   "fiberG": 4,
+   "sugarG": 7,
+   "fatG": 60,
+   "satFatG": 24,
+   "sodiumMg": 1480,
+   "cholesterolMg": 178
+  },
+  "tags": [
+   "grill",
+   "burgers",
+   "spicy",
+   "regional",
+   "southwestern",
+   "high-protein",
+   "summer",
+   "family"
+  ],
+  "image": {
+   "file": "cheeseburger.jpg",
+   "source": "wikipedia-lead",
+   "match": "representative",
+   "wikipedia": "Green chile cheeseburger"
+  }
+ },
+ {
+  "id": "ch-bf-006",
+  "slug": "bf-grilled-corn-lime-butter",
+  "title": "Grilled Corn with Lime Butter",
+  "genre": "american",
+  "subgenre": "sides",
+  "chef": {
+   "name": "Bobby Flay",
+   "slug": "bobby-flay"
+  },
+  "description": "Charred corn rolled in chile-lime butter and cotija.",
+  "difficulty": "beginner",
+  "easeScore": 10,
+  "spiceScore": 4,
+  "popularity": 9,
+  "pantryScore": 7,
+  "servings": 6,
+  "prepMin": 10,
+  "cookMin": 15,
+  "totalMin": 25,
+  "equipment": [
+   "grill"
+  ],
+  "ingredients": [
+   "6 ears corn, husked",
+   "1/2 cup butter, softened",
+   "2 tbsp lime juice",
+   "1 tsp lime zest",
+   "1 tbsp ancho chile powder",
+   "1 tsp cayenne pepper",
+   "1 1/2 tsp kosher salt",
+   "1/2 cup crumbled cotija cheese",
+   "1/3 cup chopped cilantro",
+   "2 limes, cut in wedges"
+  ],
+  "ingredientKeys": [
+   "corn",
+   "butter",
+   "lime-juice",
+   "lime-zest",
+   "ancho-chile-powder",
+   "cayenne",
+   "kosher-salt",
+   "cotija",
+   "cilantro",
+   "lime"
+  ],
+  "specialty": [
+   "ancho-chile-powder",
+   "cotija"
+  ],
+  "steps": [
+   "Mash the butter with the lime juice, zest, ancho powder, cayenne and salt.",
+   "Heat the grill to high and put the corn directly on the grate with nothing on it. Butter applied now would just burn off.",
+   "Grill 12-15 minutes, turning every 3 minutes, until charred in spots on every side and the kernels are glossy.",
+   "Roll each hot ear in the chile-lime butter so it melts down into the kernels.",
+   "Roll in the cotija, pressing it on, then scatter the cilantro.",
+   "Serve with lime wedges to squeeze over."
+  ],
+  "diet": {
+   "vegetarian": true,
+   "vegan": false,
+   "pescatarian": true,
+   "glutenFree": true,
+   "glutenFreeAdaptable": false,
+   "dairyFree": false,
+   "nutFree": true,
+   "eggFree": true
+  },
+  "allergens": [
+   "dairy"
+  ],
+  "gmo": {
+   "risk": "high",
+   "sources": [
+    "corn",
+    "grain-fed-dairy"
+   ]
+  },
+  "nutrition": {
+   "calories": 286,
+   "proteinG": 7,
+   "carbsG": 26,
+   "fiberG": 3,
+   "sugarG": 8,
+   "fatG": 19,
+   "satFatG": 11,
+   "sodiumMg": 680,
+   "cholesterolMg": 48
+  },
+  "tags": [
+   "grill",
+   "side",
+   "vegetarian",
+   "gluten-free",
+   "summer",
+   "bbq",
+   "party",
+   "spicy",
+   "quick"
+  ],
+  "image": {
+   "file": "corn-on-the-cob.jpg",
+   "source": "wikipedia-lead",
+   "match": "representative",
+   "wikipedia": "Corn on the cob"
+  }
+ },
+ {
+  "id": "ch-bf-007",
+  "slug": "bf-chipotle-bbq-sauce",
+  "title": "Chipotle Barbecue Sauce",
+  "genre": "american",
+  "subgenre": "bbq",
+  "chef": {
+   "name": "Bobby Flay",
+   "slug": "bobby-flay"
+  },
+  "description": "A smoky, tangy barbecue sauce built on chipotle and molasses.",
+  "difficulty": "beginner",
+  "easeScore": 9,
+  "spiceScore": 6,
+  "popularity": 8,
+  "pantryScore": 8,
+  "servings": 16,
+  "prepMin": 10,
+  "cookMin": 40,
+  "totalMin": 50,
+  "equipment": [
+   "stovetop",
+   "blender"
+  ],
+  "ingredients": [
+   "2 tbsp canola oil",
+   "1 yellow onion, finely diced",
+   "4 cloves garlic, minced",
+   "1 1/2 cups ketchup",
+   "1/2 cup water",
+   "1/3 cup apple cider vinegar",
+   "1/4 cup molasses",
+   "1/4 cup dark brown sugar",
+   "4 chipotle peppers in adobo, plus 2 tbsp sauce",
+   "2 tbsp Dijon mustard",
+   "1 tbsp Worcestershire sauce",
+   "1 tbsp ancho chile powder",
+   "1 tsp smoked paprika",
+   "1 1/2 tsp kosher salt",
+   "1 tsp black pepper"
+  ],
+  "ingredientKeys": [
+   "canola-oil",
+   "yellow-onion",
+   "garlic",
+   "ketchup",
+   "water",
+   "apple-cider-vinegar",
+   "molasses",
+   "brown-sugar",
+   "chipotle-in-adobo",
+   "dijon-mustard",
+   "worcestershire",
+   "ancho-chile-powder",
+   "smoked-paprika",
+   "kosher-salt",
+   "black-pepper"
+  ],
+  "specialty": [
+   "molasses",
+   "chipotle-in-adobo",
+   "ancho-chile-powder"
+  ],
+  "steps": [
+   "Cook the onion in the oil over medium heat 8 minutes until soft, then add the garlic for 1 minute.",
+   "Add everything else and bring to a simmer.",
+   "Cook at a low bubble 30 minutes, stirring often. It spatters, so use a tall pot and a lid held ajar.",
+   "Blend until completely smooth, working in batches and venting the lid.",
+   "Taste and balance: it should hit sweet, sour, smoky and hot in that order. Add vinegar if it is cloying, brown sugar if it is sharp.",
+   "Cool and refrigerate. It keeps three weeks and improves after a day or two."
+  ],
+  "diet": {
+   "vegetarian": false,
+   "vegan": false,
+   "pescatarian": true,
+   "glutenFree": false,
+   "glutenFreeAdaptable": true,
+   "dairyFree": true,
+   "nutFree": true,
+   "eggFree": true
+  },
+  "allergens": [
+   "gluten",
+   "fish"
+  ],
+  "gmo": {
+   "risk": "high",
+   "sources": [
+    "corn-syrup",
+    "sugar-beet",
+    "seed-oil",
+    "processed-sauce"
+   ]
+  },
+  "nutrition": {
+   "calories": 82,
+   "proteinG": 1,
+   "carbsG": 18,
+   "fiberG": 1,
+   "sugarG": 15,
+   "fatG": 2,
+   "satFatG": 0,
+   "sodiumMg": 480,
+   "cholesterolMg": 0
+  },
+  "tags": [
+   "bbq",
+   "sauce",
+   "make-ahead",
+   "spicy",
+   "dairy-free",
+   "grill",
+   "pantry",
+   "budget"
+  ],
+  "image": {
+   "file": "barbecue-sauce.jpg",
+   "source": "wikipedia-lead",
+   "match": "representative",
+   "wikipedia": "Barbecue sauce"
+  }
+ },
+ {
+  "id": "ch-bf-008",
+  "slug": "bf-grilled-shrimp-tacos",
+  "title": "Grilled Shrimp Tacos",
+  "genre": "mexican",
+  "subgenre": "tacos",
+  "chef": {
+   "name": "Bobby Flay",
+   "slug": "bobby-flay"
+  },
+  "description": "Ancho-rubbed shrimp grilled fast, with avocado crema and cabbage slaw.",
+  "difficulty": "beginner",
+  "easeScore": 9,
+  "spiceScore": 5,
+  "popularity": 8,
+  "pantryScore": 7,
+  "servings": 4,
+  "prepMin": 20,
+  "cookMin": 10,
+  "totalMin": 30,
+  "equipment": [
+   "grill",
+   "blender"
+  ],
+  "ingredients": [
+   "2 lb large shrimp, peeled",
+   "3 tbsp canola oil",
+   "2 tbsp ancho chile powder",
+   "1 tbsp ground cumin",
+   "1 tsp cayenne pepper",
+   "2 tsp kosher salt",
+   "2 avocados",
+   "1/2 cup sour cream",
+   "1/4 cup lime juice",
+   "1/2 cup cilantro",
+   "3 cups shredded red cabbage",
+   "1/4 cup rice vinegar",
+   "12 corn tortillas",
+   "2 limes, cut in wedges"
+  ],
+  "ingredientKeys": [
+   "shrimp",
+   "canola-oil",
+   "ancho-chile-powder",
+   "cumin",
+   "cayenne",
+   "kosher-salt",
+   "avocado",
+   "sour-cream",
+   "lime-juice",
+   "cilantro",
+   "red-cabbage",
+   "rice-vinegar",
+   "corn-tortilla",
+   "lime"
+  ],
+  "specialty": [
+   "shrimp",
+   "ancho-chile-powder",
+   "red-cabbage",
+   "rice-vinegar"
+  ],
+  "steps": [
+   "Toss the cabbage with the rice vinegar and a pinch of salt and leave it to soften while you cook.",
+   "Blend the avocados, sour cream, lime juice, cilantro and a pinch of salt into a loose crema, thinning with water if needed.",
+   "Pat the shrimp completely dry and toss with the oil, ancho powder, cumin, cayenne and salt. Dry shrimp char; wet ones steam.",
+   "Thread them on skewers so they are easy to turn, and grill over high heat 90 seconds per side.",
+   "Pull them the moment they curl into a loose C and turn opaque. A tight O means they are overdone.",
+   "Char the tortillas directly on the grate for 20 seconds a side, then fill with cabbage, shrimp and crema. Serve with lime."
+  ],
+  "diet": {
+   "vegetarian": false,
+   "vegan": false,
+   "pescatarian": true,
+   "glutenFree": true,
+   "glutenFreeAdaptable": false,
+   "dairyFree": false,
+   "nutFree": true,
+   "eggFree": true
+  },
+  "allergens": [
+   "dairy",
+   "shellfish"
+  ],
+  "gmo": {
+   "risk": "moderate",
+   "sources": [
+    "corn",
+    "seed-oil",
+    "grain-fed-dairy"
+   ]
+  },
+  "nutrition": {
+   "calories": 612,
+   "proteinG": 48,
+   "carbsG": 48,
+   "fiberG": 11,
+   "sugarG": 6,
+   "fatG": 26,
+   "satFatG": 6,
+   "sodiumMg": 1280,
+   "cholesterolMg": 286
+  },
+  "tags": [
+   "grill",
+   "seafood",
+   "pescatarian",
+   "gluten-free",
+   "quick",
+   "spicy",
+   "weeknight",
+   "high-protein",
+   "summer"
+  ],
+  "image": {
+   "file": "shrimp-taco.jpg",
+   "source": "wikipedia-lead",
+   "match": "representative",
+   "wikipedia": "Taco"
+  }
+ },
+ {
+  "id": "ch-bf-009",
+  "slug": "bf-skirt-steak-fajitas",
+  "title": "Grilled Skirt Steak Fajitas",
+  "genre": "mexican",
+  "subgenre": "tex-mex",
+  "chef": {
+   "name": "Bobby Flay",
+   "slug": "bobby-flay"
+  },
+  "description": "Skirt steak grilled hard with blistered peppers and onions.",
+  "difficulty": "beginner",
+  "easeScore": 8,
+  "spiceScore": 4,
+  "popularity": 9,
+  "pantryScore": 8,
+  "servings": 6,
+  "prepMin": 20,
+  "cookMin": 135,
+  "totalMin": 155,
+  "equipment": [
+   "grill"
+  ],
+  "ingredients": [
+   "2 1/2 lb skirt steak",
+   "1/3 cup canola oil",
+   "1/3 cup lime juice",
+   "1/4 cup tequila",
+   "2 tbsp ancho chile powder",
+   "1 tbsp ground cumin",
+   "6 cloves garlic, minced",
+   "1 jalapeno, minced",
+   "2 tsp kosher salt",
+   "1 tsp black pepper",
+   "3 bell peppers, halved",
+   "2 red onions, cut in thick rounds",
+   "12 flour tortillas",
+   "1 cup pico de gallo",
+   "1 cup guacamole",
+   "1 cup sour cream"
+  ],
+  "ingredientKeys": [
+   "skirt-steak",
+   "canola-oil",
+   "lime-juice",
+   "tequila",
+   "ancho-chile-powder",
+   "cumin",
+   "garlic",
+   "jalapeno",
+   "kosher-salt",
+   "black-pepper",
+   "bell-pepper",
+   "red-onion",
+   "flour-tortilla",
+   "pico-de-gallo",
+   "guacamole",
+   "sour-cream"
+  ],
+  "specialty": [
+   "skirt-steak",
+   "tequila",
+   "ancho-chile-powder",
+   "guacamole"
+  ],
+  "steps": [
+   "Whisk the oil, lime juice, tequila, ancho powder, cumin, garlic, jalapeno, salt and pepper and marinate the steak 2 hours. Not much longer - the acid starts curing the surface and turns it mealy.",
+   "Grill the pepper halves and onion rounds over high heat 8-10 minutes until blistered and charred, then slice them.",
+   "Pat the steak dry. A wet steak will not char no matter how hot the fire is.",
+   "Grill over the hottest part of the fire 3-4 minutes per side. Skirt steak is thin and wants fierce, fast heat.",
+   "Rest it 10 minutes on a board, then find the direction of the long fibers and slice thinly straight across them. Slicing with the grain makes even perfectly cooked skirt steak chewy.",
+   "Warm the tortillas on the grill and serve everything family-style with pico, guacamole and sour cream."
+  ],
+  "diet": {
+   "vegetarian": false,
+   "vegan": false,
+   "pescatarian": false,
+   "glutenFree": false,
+   "glutenFreeAdaptable": true,
+   "dairyFree": false,
+   "nutFree": true,
+   "eggFree": true
+  },
+  "allergens": [
+   "gluten",
+   "dairy",
+   "sulfites"
+  ],
+  "gmo": {
+   "risk": "high",
+   "sources": [
+    "grain-fed-meat",
+    "processed-bread",
+    "seed-oil",
+    "grain-fed-dairy"
+   ]
+  },
+  "nutrition": {
+   "calories": 812,
+   "proteinG": 52,
+   "carbsG": 52,
+   "fiberG": 7,
+   "sugarG": 8,
+   "fatG": 42,
+   "satFatG": 13,
+   "sodiumMg": 1280,
+   "cholesterolMg": 148
+  },
+  "tags": [
+   "grill",
+   "party",
+   "high-protein",
+   "family",
+   "summer",
+   "tex-mex",
+   "make-ahead",
+   "spicy"
+  ],
+  "image": {
+   "file": "fajitas.jpg",
+   "source": "wikipedia-lead",
+   "match": "representative",
+   "wikipedia": "Fajita"
+  }
+ },
+ {
+  "id": "ch-bf-010",
+  "slug": "bf-pork-chops-peach-bbq",
+  "title": "Pork Chops with Peach Barbecue Sauce",
+  "genre": "american",
+  "subgenre": "bbq",
+  "chef": {
+   "name": "Bobby Flay",
+   "slug": "bobby-flay"
+  },
+  "description": "Thick brined chops grilled and glazed with peach-bourbon barbecue sauce.",
+  "difficulty": "intermediate",
+  "easeScore": 7,
+  "spiceScore": 4,
+  "popularity": 8,
+  "pantryScore": 6,
+  "servings": 4,
+  "prepMin": 25,
+  "cookMin": 60,
+  "totalMin": 85,
+  "equipment": [
+   "grill",
+   "stovetop"
+  ],
+  "ingredients": [
+   "4 bone-in pork chops, 1 1/2 inch thick",
+   "4 cups water",
+   "1/4 cup kosher salt",
+   "3 tbsp brown sugar",
+   "2 tbsp canola oil",
+   "1 tbsp black pepper",
+   "3 ripe peaches, pitted and chopped",
+   "1 shallot, minced",
+   "2 cloves garlic, minced",
+   "1/4 cup bourbon",
+   "1/2 cup ketchup",
+   "3 tbsp apple cider vinegar",
+   "2 tbsp honey",
+   "2 chipotle peppers in adobo, minced",
+   "1 tsp smoked paprika"
+  ],
+  "ingredientKeys": [
+   "pork-chops",
+   "water",
+   "kosher-salt",
+   "brown-sugar",
+   "canola-oil",
+   "black-pepper",
+   "peaches",
+   "shallot",
+   "garlic",
+   "bourbon",
+   "ketchup",
+   "apple-cider-vinegar",
+   "honey",
+   "chipotle-in-adobo",
+   "smoked-paprika"
+  ],
+  "specialty": [
+   "pork-chops",
+   "peaches",
+   "shallot",
+   "bourbon",
+   "chipotle-in-adobo"
+  ],
+  "steps": [
+   "Dissolve the salt and 1 tbsp brown sugar in the water and brine the chops 45 minutes. A short brine is what keeps thick lean chops from drying out on the grill.",
+   "Rinse, pat very dry, then rub with the oil and pepper.",
+   "Make the sauce: cook the shallot and garlic 3 minutes, add the bourbon off the heat then return it and reduce by half, then add the peaches, ketchup, vinegar, honey, chipotles, paprika and remaining brown sugar. Simmer 20 minutes and blend smooth.",
+   "Set up a two-zone fire. Sear the chops over the hot side 2-3 minutes per side.",
+   "Move them to the cool side, close the lid and cook to 145F internal, 8-12 minutes.",
+   "Brush with the sauce in the last 3 minutes only - the sugar burns if it goes on earlier. Rest 8 minutes and serve with more sauce."
+  ],
+  "diet": {
+   "vegetarian": false,
+   "vegan": false,
+   "pescatarian": false,
+   "glutenFree": true,
+   "glutenFreeAdaptable": false,
+   "dairyFree": true,
+   "nutFree": true,
+   "eggFree": true
+  },
+  "allergens": [
+   "sulfites"
+  ],
+  "gmo": {
+   "risk": "high",
+   "sources": [
+    "grain-fed-meat",
+    "seed-oil",
+    "corn-syrup",
+    "sugar-beet"
+   ]
+  },
+  "nutrition": {
+   "calories": 682,
+   "proteinG": 48,
+   "carbsG": 48,
+   "fiberG": 3,
+   "sugarG": 42,
+   "fatG": 30,
+   "satFatG": 8,
+   "sodiumMg": 1480,
+   "cholesterolMg": 138
+  },
+  "tags": [
+   "grill",
+   "bbq",
+   "summer",
+   "gluten-free",
+   "dairy-free",
+   "high-protein",
+   "entertaining",
+   "spicy"
+  ],
+  "image": {
+   "file": "pork-chop.jpg",
+   "source": "wikipedia-lead",
+   "match": "representative",
+   "wikipedia": "Pork chop"
+  }
+ },
+ {
+  "id": "ch-bf-011",
+  "slug": "bf-southwestern-potato-salad",
+  "title": "Southwestern Potato Salad",
+  "genre": "american",
+  "subgenre": "sides",
+  "chef": {
+   "name": "Bobby Flay",
+   "slug": "bobby-flay"
+  },
+  "description": "Potato salad with chipotle, lime and cilantro instead of mayonnaise alone.",
+  "difficulty": "beginner",
+  "easeScore": 9,
+  "spiceScore": 5,
+  "popularity": 7,
+  "pantryScore": 8,
+  "servings": 8,
+  "prepMin": 20,
+  "cookMin": 80,
+  "totalMin": 100,
+  "equipment": [
+   "stovetop"
+  ],
+  "ingredients": [
+   "3 lb baby red potatoes, halved",
+   "1 tbsp kosher salt, for the water",
+   "3/4 cup mayonnaise",
+   "3 chipotle peppers in adobo, minced",
+   "2 tbsp adobo sauce",
+   "1/3 cup lime juice",
+   "2 tbsp Dijon mustard",
+   "1 red onion, finely diced",
+   "1 red bell pepper, diced",
+   "1 cup corn kernels, charred",
+   "3 scallions, sliced",
+   "3/4 cup chopped cilantro",
+   "2 tsp kosher salt",
+   "1 tsp black pepper"
+  ],
+  "ingredientKeys": [
+   "red-potato",
+   "kosher-salt",
+   "mayonnaise",
+   "chipotle-in-adobo",
+   "adobo-sauce",
+   "lime-juice",
+   "dijon-mustard",
+   "red-onion",
+   "red-bell-pepper",
+   "corn",
+   "scallion",
+   "cilantro",
+   "kosher-salt",
+   "black-pepper"
+  ],
+  "specialty": [
+   "chipotle-in-adobo",
+   "adobo-sauce"
+  ],
+  "steps": [
+   "Start the potatoes in cold, heavily salted water and simmer 15-18 minutes until a knife slides in easily. Cooking them from cold means the outsides do not disintegrate before the centers are done.",
+   "Char the corn in a dry hot skillet 5 minutes until spotted black.",
+   "Whisk the mayonnaise, chipotles, adobo, lime juice and Dijon into a dressing.",
+   "Drain the potatoes and, while they are still hot, toss them with a third of the dressing. Hot potatoes absorb it; cold ones only get coated.",
+   "Let them cool 20 minutes, then fold in the rest of the dressing, the onion, bell pepper, charred corn and scallions.",
+   "Chill 1 hour, then stir in the cilantro and taste again for salt and lime before serving."
+  ],
+  "diet": {
+   "vegetarian": true,
+   "vegan": false,
+   "pescatarian": true,
+   "glutenFree": true,
+   "glutenFreeAdaptable": false,
+   "dairyFree": true,
+   "nutFree": true,
+   "eggFree": false
+  },
+  "allergens": [
+   "egg"
+  ],
+  "gmo": {
+   "risk": "high",
+   "sources": [
+    "seed-oil",
+    "corn"
+   ]
+  },
+  "nutrition": {
+   "calories": 342,
+   "proteinG": 5,
+   "carbsG": 38,
+   "fiberG": 5,
+   "sugarG": 5,
+   "fatG": 19,
+   "satFatG": 3,
+   "sodiumMg": 880,
+   "cholesterolMg": 9
+  },
+  "tags": [
+   "side",
+   "bbq",
+   "make-ahead",
+   "party",
+   "vegetarian",
+   "gluten-free",
+   "spicy",
+   "summer",
+   "picnic"
+  ],
+  "image": {
+   "file": "potato-salad.jpg",
+   "source": "wikipedia-lead",
+   "match": "representative",
+   "wikipedia": "Potato salad"
+  }
+ },
+ {
+  "id": "ch-bf-012",
+  "slug": "bf-red-chile-enchiladas",
+  "title": "Red Chile Chicken Enchiladas",
+  "genre": "mexican",
+  "subgenre": "enchiladas",
+  "chef": {
+   "name": "Bobby Flay",
+   "slug": "bobby-flay"
+  },
+  "description": "Enchiladas in a sauce built from toasted dried chiles, not powder.",
+  "difficulty": "intermediate",
+  "easeScore": 7,
+  "spiceScore": 6,
+  "popularity": 8,
+  "pantryScore": 5,
+  "servings": 6,
+  "prepMin": 30,
+  "cookMin": 50,
+  "totalMin": 80,
+  "equipment": [
+   "stovetop",
+   "oven",
+   "blender"
+  ],
+  "ingredients": [
+   "6 dried ancho chiles, stemmed and seeded",
+   "4 dried guajillo chiles, stemmed and seeded",
+   "2 chipotle peppers in adobo",
+   "1 yellow onion, quartered",
+   "6 cloves garlic",
+   "2 tbsp canola oil",
+   "1 tbsp ground cumin",
+   "1 tsp dried oregano",
+   "1 tbsp honey",
+   "3 cups chicken broth",
+   "2 tsp kosher salt",
+   "4 cups shredded cooked chicken",
+   "12 corn tortillas",
+   "3 cups shredded Monterey Jack",
+   "1/2 cup crumbled cotija",
+   "1/2 cup sour cream",
+   "1/2 cup chopped cilantro",
+   "1/2 red onion, diced"
+  ],
+  "ingredientKeys": [
+   "ancho-chile",
+   "guajillo-chile",
+   "chipotle-in-adobo",
+   "yellow-onion",
+   "garlic",
+   "canola-oil",
+   "cumin",
+   "dried-oregano",
+   "honey",
+   "chicken-broth",
+   "kosher-salt",
+   "cooked-chicken",
+   "corn-tortilla",
+   "monterey-jack",
+   "cotija",
+   "sour-cream",
+   "cilantro",
+   "red-onion"
+  ],
+  "specialty": [
+   "ancho-chile",
+   "guajillo-chile",
+   "chipotle-in-adobo",
+   "cotija"
+  ],
+  "steps": [
+   "Toast the dried chiles in a dry skillet 30 seconds per side until fragrant, then soak in hot water 20 minutes. Pull them the instant they smell toasty - scorched chiles make a bitter sauce you cannot fix.",
+   "Blend the drained chiles with the chipotles, onion, garlic, cumin, oregano, honey and 1 cup of the broth until completely smooth, then strain it.",
+   "Fry the strained sauce in the oil over medium heat 8 minutes, stirring, until it darkens and thickens. Add the rest of the broth and the salt and simmer 10 minutes.",
+   "Toss the chicken with a cup of the sauce.",
+   "Dip each tortilla briefly in the warm sauce, fill with chicken and cheese, roll up, and pack them seam-side down in a baking dish.",
+   "Pour the remaining sauce over, top with the rest of the Monterey Jack, and bake at 375F for 25 minutes. Finish with cotija, sour cream, cilantro and red onion."
+  ],
+  "diet": {
+   "vegetarian": false,
+   "vegan": false,
+   "pescatarian": false,
+   "glutenFree": true,
+   "glutenFreeAdaptable": false,
+   "dairyFree": false,
+   "nutFree": true,
+   "eggFree": true
+  },
+  "allergens": [
+   "dairy"
+  ],
+  "gmo": {
+   "risk": "moderate",
+   "sources": [
+    "corn",
+    "seed-oil",
+    "grain-fed-meat",
+    "grain-fed-dairy"
+   ]
+  },
+  "nutrition": {
+   "calories": 712,
+   "proteinG": 48,
+   "carbsG": 48,
+   "fiberG": 8,
+   "sugarG": 11,
+   "fatG": 36,
+   "satFatG": 16,
+   "sodiumMg": 1480,
+   "cholesterolMg": 148
+  },
+  "tags": [
+   "southwestern",
+   "spicy",
+   "gluten-free",
+   "family",
+   "make-ahead",
+   "high-protein",
+   "comfort",
+   "authentic"
+  ],
+  "image": {
+   "file": "enchiladas.jpg",
+   "source": "wikipedia-lead",
+   "match": "representative",
+   "wikipedia": "Enchilada"
+  }
+ },
+ {
+  "id": "ch-bf-013",
+  "slug": "bf-ancho-honey-salmon",
+  "title": "Ancho-Honey Glazed Salmon",
+  "genre": "american",
+  "subgenre": "seafood",
+  "chef": {
+   "name": "Bobby Flay",
+   "slug": "bobby-flay"
+  },
+  "description": "Salmon grilled and brushed with a sweet, smoky ancho glaze.",
+  "difficulty": "beginner",
+  "easeScore": 9,
+  "spiceScore": 4,
+  "popularity": 8,
+  "pantryScore": 7,
+  "servings": 4,
+  "prepMin": 10,
+  "cookMin": 15,
+  "totalMin": 25,
+  "equipment": [
+   "grill"
+  ],
+  "ingredients": [
+   "4 salmon fillets (6 oz each)",
+   "2 tbsp canola oil",
+   "2 tsp kosher salt",
+   "1 tsp black pepper",
+   "3 tbsp ancho chile powder",
+   "1/3 cup honey",
+   "2 tbsp Dijon mustard",
+   "2 tbsp lime juice",
+   "1 tbsp apple cider vinegar",
+   "1/2 tsp cayenne pepper",
+   "1/4 cup chopped cilantro",
+   "2 limes, cut in wedges"
+  ],
+  "ingredientKeys": [
+   "salmon",
+   "canola-oil",
+   "kosher-salt",
+   "black-pepper",
+   "ancho-chile-powder",
+   "honey",
+   "dijon-mustard",
+   "lime-juice",
+   "apple-cider-vinegar",
+   "cayenne",
+   "cilantro",
+   "lime"
+  ],
+  "specialty": [
+   "salmon",
+   "ancho-chile-powder"
+  ],
+  "steps": [
+   "Whisk the ancho powder, honey, Dijon, lime juice, vinegar and cayenne into a glaze.",
+   "Pat the salmon dry, rub with the oil and season with salt and pepper.",
+   "Clean and oil the grates well and heat the grill to medium-high. Fish sticks to a dirty grate more than anything else you will cook on it.",
+   "Grill the salmon skin-side up first for 4 minutes without moving it, then flip.",
+   "Brush the glaze on generously and cook 4-5 minutes more, to 125F internal for medium. Glazing only after the flip keeps the honey from burning.",
+   "Rest 3 minutes, then finish with cilantro and lime wedges."
+  ],
+  "diet": {
+   "vegetarian": false,
+   "vegan": false,
+   "pescatarian": true,
+   "glutenFree": true,
+   "glutenFreeAdaptable": false,
+   "dairyFree": true,
+   "nutFree": true,
+   "eggFree": true
+  },
+  "allergens": [
+   "fish"
+  ],
+  "gmo": {
+   "risk": "moderate",
+   "sources": [
+    "seed-oil"
+   ]
+  },
+  "nutrition": {
+   "calories": 512,
+   "proteinG": 38,
+   "carbsG": 28,
+   "fiberG": 2,
+   "sugarG": 24,
+   "fatG": 28,
+   "satFatG": 5,
+   "sodiumMg": 1180,
+   "cholesterolMg": 98
+  },
+  "tags": [
+   "grill",
+   "seafood",
+   "pescatarian",
+   "gluten-free",
+   "dairy-free",
+   "quick",
+   "healthy",
+   "high-protein",
+   "weeknight"
+  ],
+  "image": {
+   "file": "salmon-fillet.jpg",
+   "source": "wikipedia-lead",
+   "match": "representative",
+   "wikipedia": "Salmon as food"
+  }
+ },
+ {
+  "id": "ch-bf-014",
+  "slug": "bf-chipotle-wings",
+  "title": "Grilled Chipotle Wings",
+  "genre": "american",
+  "subgenre": "bbq",
+  "chef": {
+   "name": "Bobby Flay",
+   "slug": "bobby-flay"
+  },
+  "description": "Wings grilled over indirect heat then tossed in chipotle-honey butter.",
+  "difficulty": "beginner",
+  "easeScore": 9,
+  "spiceScore": 7,
+  "popularity": 9,
+  "pantryScore": 7,
+  "servings": 6,
+  "prepMin": 15,
+  "cookMin": 40,
+  "totalMin": 55,
+  "equipment": [
+   "grill",
+   "stovetop"
+  ],
+  "ingredients": [
+   "4 lb chicken wings, split",
+   "2 tbsp canola oil",
+   "1 tbsp kosher salt",
+   "2 tsp black pepper",
+   "1 tbsp ancho chile powder",
+   "6 tbsp butter",
+   "4 chipotle peppers in adobo, minced",
+   "3 tbsp adobo sauce",
+   "3 tbsp honey",
+   "2 tbsp lime juice",
+   "1 tbsp apple cider vinegar",
+   "1/2 cup crumbled blue cheese",
+   "1/3 cup chopped cilantro"
+  ],
+  "ingredientKeys": [
+   "chicken-wings",
+   "canola-oil",
+   "kosher-salt",
+   "black-pepper",
+   "ancho-chile-powder",
+   "butter",
+   "chipotle-in-adobo",
+   "adobo-sauce",
+   "honey",
+   "lime-juice",
+   "apple-cider-vinegar",
+   "blue-cheese",
+   "cilantro"
+  ],
+  "specialty": [
+   "chicken-wings",
+   "ancho-chile-powder",
+   "chipotle-in-adobo",
+   "adobo-sauce",
+   "blue-cheese"
+  ],
+  "steps": [
+   "Pat the wings thoroughly dry and toss with the oil, salt, pepper and ancho powder.",
+   "Set up a two-zone fire. Cook the wings over the cooler zone with the lid closed for 25-30 minutes, turning a few times, so the fat renders without flaring.",
+   "Melt the butter with the chipotles, adobo, honey, lime juice and vinegar and keep it warm.",
+   "Move the wings over the hot zone for 5-8 minutes, turning often, until the skin is crisp and blistered.",
+   "Toss them in the warm chipotle butter immediately out of the fire - hot wings absorb the sauce, cooled ones just wear it.",
+   "Serve with blue cheese and cilantro scattered over."
+  ],
+  "diet": {
+   "vegetarian": false,
+   "vegan": false,
+   "pescatarian": false,
+   "glutenFree": true,
+   "glutenFreeAdaptable": false,
+   "dairyFree": false,
+   "nutFree": true,
+   "eggFree": true
+  },
+  "allergens": [
+   "dairy"
+  ],
+  "gmo": {
+   "risk": "moderate",
+   "sources": [
+    "grain-fed-meat",
+    "seed-oil",
+    "grain-fed-dairy"
+   ]
+  },
+  "nutrition": {
+   "calories": 812,
+   "proteinG": 52,
+   "carbsG": 16,
+   "fiberG": 1,
+   "sugarG": 13,
+   "fatG": 60,
+   "satFatG": 22,
+   "sodiumMg": 1680,
+   "cholesterolMg": 248
+  },
+  "tags": [
+   "grill",
+   "bbq",
+   "party",
+   "game-day",
+   "spicy",
+   "gluten-free",
+   "high-protein",
+   "summer"
+  ],
+  "image": {
+   "file": "buffalo-wings.jpg",
+   "source": "wikipedia-lead",
+   "match": "representative",
+   "wikipedia": "Chicken wings"
+  }
+ },
+ {
+  "id": "ch-bf-015",
+  "slug": "bf-carne-asada-salsa-verde",
+  "title": "Carne Asada with Salsa Verde",
+  "genre": "mexican",
+  "subgenre": "tacos",
+  "chef": {
+   "name": "Bobby Flay",
+   "slug": "bobby-flay"
+  },
+  "description": "Grilled marinated steak with a charred tomatillo salsa.",
+  "difficulty": "intermediate",
+  "easeScore": 7,
+  "spiceScore": 5,
+  "popularity": 8,
+  "pantryScore": 6,
+  "servings": 6,
+  "prepMin": 25,
+  "cookMin": 135,
+  "totalMin": 160,
+  "equipment": [
+   "grill",
+   "blender"
+  ],
+  "ingredients": [
+   "2 1/2 lb flank or skirt steak",
+   "1/3 cup canola oil",
+   "1/2 cup orange juice",
+   "1/3 cup lime juice",
+   "6 cloves garlic, minced",
+   "2 tbsp ancho chile powder",
+   "1 tbsp ground cumin",
+   "2 tsp kosher salt",
+   "1 tsp black pepper",
+   "1 1/2 lb tomatillos, husked",
+   "3 serrano peppers",
+   "1 white onion, halved",
+   "1 cup cilantro",
+   "18 corn tortillas",
+   "1 white onion, diced",
+   "2 limes, cut in wedges"
+  ],
+  "ingredientKeys": [
+   "flank-steak",
+   "canola-oil",
+   "orange-juice",
+   "lime-juice",
+   "garlic",
+   "ancho-chile-powder",
+   "cumin",
+   "kosher-salt",
+   "black-pepper",
+   "tomatillo",
+   "serrano-pepper",
+   "white-onion",
+   "cilantro",
+   "corn-tortilla",
+   "white-onion",
+   "lime"
+  ],
+  "specialty": [
+   "flank-steak",
+   "ancho-chile-powder",
+   "tomatillo",
+   "serrano-pepper"
+  ],
+  "steps": [
+   "Whisk the oil, orange juice, lime juice, garlic, ancho powder, cumin, salt and pepper and marinate the steak 2 hours.",
+   "Grill the tomatillos, serranos and halved onion over high heat until blackened in patches, 10 minutes, then blend them with the cilantro and a pinch of salt. Char rather than boil - it is the difference between a smoky salsa and a sour one.",
+   "Pat the steak dry and grill over the hottest fire 4 minutes per side for medium-rare.",
+   "Rest it 10 minutes on a board.",
+   "Slice thinly against the grain, then chop into small pieces.",
+   "Char the tortillas on the grate and serve the meat with the salsa verde, diced onion and lime."
+  ],
+  "diet": {
+   "vegetarian": false,
+   "vegan": false,
+   "pescatarian": false,
+   "glutenFree": true,
+   "glutenFreeAdaptable": false,
+   "dairyFree": true,
+   "nutFree": true,
+   "eggFree": true
+  },
+  "allergens": [],
+  "gmo": {
+   "risk": "moderate",
+   "sources": [
+    "grain-fed-meat",
+    "seed-oil",
+    "corn"
+   ]
+  },
+  "nutrition": {
+   "calories": 682,
+   "proteinG": 52,
+   "carbsG": 48,
+   "fiberG": 7,
+   "sugarG": 8,
+   "fatG": 30,
+   "satFatG": 8,
+   "sodiumMg": 1180,
+   "cholesterolMg": 138
+  },
+  "tags": [
+   "grill",
+   "party",
+   "gluten-free",
+   "dairy-free",
+   "high-protein",
+   "summer",
+   "authentic",
+   "spicy",
+   "make-ahead"
+  ],
+  "image": {
+   "file": "carne-asada.jpg",
+   "source": "wikipedia-lead",
+   "match": "representative",
+   "wikipedia": "Carne asada"
+  }
+ },
+ {
+  "id": "ch-bf-016",
+  "slug": "bf-cornbread-honey-butter",
+  "title": "Skillet Cornbread with Honey Butter",
+  "genre": "american",
+  "subgenre": "sides",
+  "chef": {
+   "name": "Bobby Flay",
+   "slug": "bobby-flay"
+  },
+  "description": "Cast-iron cornbread with jalapeno and cheddar, served with honey butter.",
+  "difficulty": "beginner",
+  "easeScore": 9,
+  "spiceScore": 4,
+  "popularity": 8,
+  "pantryScore": 8,
+  "servings": 8,
+  "prepMin": 15,
+  "cookMin": 30,
+  "totalMin": 45,
+  "equipment": [
+   "oven"
+  ],
+  "ingredients": [
+   "1 1/2 cups yellow cornmeal",
+   "1 cup all-purpose flour",
+   "3 tbsp sugar",
+   "1 tbsp baking powder",
+   "1 1/2 tsp kosher salt",
+   "1 1/2 cups buttermilk",
+   "3 eggs",
+   "6 tbsp butter, melted",
+   "1 cup shredded sharp cheddar",
+   "2 jalapenos, minced",
+   "1 cup corn kernels",
+   "1/2 cup butter, softened",
+   "3 tbsp honey",
+   "1/2 tsp flaky sea salt"
+  ],
+  "ingredientKeys": [
+   "cornmeal",
+   "flour",
+   "sugar",
+   "baking-powder",
+   "kosher-salt",
+   "buttermilk",
+   "egg",
+   "butter",
+   "cheddar",
+   "jalapeno",
+   "corn",
+   "butter",
+   "honey",
+   "flaky-salt"
+  ],
+  "specialty": [
+   "cornmeal",
+   "buttermilk",
+   "flaky-salt"
+  ],
+  "steps": [
+   "Put a 10-inch cast-iron skillet in the oven and heat to 425F. A ripping-hot pan is what gives cornbread its crust, so give it a full 15 minutes.",
+   "Whisk the cornmeal, flour, sugar, baking powder and salt together.",
+   "Beat the buttermilk, eggs and 4 tbsp of the melted butter, then stir into the dry ingredients just until combined. Lumps are fine; overmixing makes it tough.",
+   "Fold in the cheddar, jalapenos and corn.",
+   "Take the hot skillet out, swirl in the remaining melted butter, then pour in the batter - it should sizzle audibly.",
+   "Bake 25-28 minutes until golden and a toothpick comes out clean. Whip the softened butter with the honey and flaky salt and serve alongside."
+  ],
+  "diet": {
+   "vegetarian": true,
+   "vegan": false,
+   "pescatarian": true,
+   "glutenFree": false,
+   "glutenFreeAdaptable": true,
+   "dairyFree": false,
+   "nutFree": true,
+   "eggFree": false
+  },
+  "allergens": [
+   "gluten",
+   "dairy",
+   "egg"
+  ],
+  "gmo": {
+   "risk": "high",
+   "sources": [
+    "corn",
+    "grain-fed-dairy",
+    "sugar-beet"
+   ]
+  },
+  "nutrition": {
+   "calories": 512,
+   "proteinG": 13,
+   "carbsG": 52,
+   "fiberG": 3,
+   "sugarG": 16,
+   "fatG": 28,
+   "satFatG": 16,
+   "sodiumMg": 780,
+   "cholesterolMg": 128
+  },
+  "tags": [
+   "side",
+   "bbq",
+   "vegetarian",
+   "southwestern",
+   "family",
+   "quick",
+   "spicy",
+   "baking"
+  ],
+  "image": {
+   "file": "cornbread.jpg",
+   "source": "wikipedia-lead",
+   "match": "representative",
+   "wikipedia": "Cornbread"
+  }
+ },
+ {
+  "id": "ch-bf-017",
+  "slug": "bf-black-bean-soup",
+  "title": "Black Bean Soup",
+  "genre": "mexican",
+  "subgenre": "soups",
+  "chef": {
+   "name": "Bobby Flay",
+   "slug": "bobby-flay"
+  },
+  "description": "Smoky black bean soup with chipotle, lime and all the garnishes.",
+  "difficulty": "beginner",
+  "easeScore": 9,
+  "spiceScore": 5,
+  "popularity": 8,
+  "pantryScore": 9,
+  "servings": 8,
+  "prepMin": 20,
+  "cookMin": 45,
+  "totalMin": 65,
+  "equipment": [
+   "stovetop",
+   "blender"
+  ],
+  "ingredients": [
+   "3 tbsp canola oil",
+   "2 yellow onions, diced",
+   "1 red bell pepper, diced",
+   "6 cloves garlic, minced",
+   "2 tbsp ground cumin",
+   "1 tbsp ancho chile powder",
+   "1 tsp dried oregano",
+   "3 chipotle peppers in adobo, minced",
+   "4 cans (15 oz each) black beans, drained",
+   "8 cups chicken broth",
+   "2 tsp kosher salt",
+   "1/3 cup lime juice",
+   "1 cup sour cream",
+   "1 avocado, diced",
+   "1/2 cup crumbled cotija",
+   "1/2 cup chopped cilantro",
+   "1/2 red onion, diced"
+  ],
+  "ingredientKeys": [
+   "canola-oil",
+   "yellow-onion",
+   "red-bell-pepper",
+   "garlic",
+   "cumin",
+   "ancho-chile-powder",
+   "dried-oregano",
+   "chipotle-in-adobo",
+   "black-beans",
+   "chicken-broth",
+   "kosher-salt",
+   "lime-juice",
+   "sour-cream",
+   "avocado",
+   "cotija",
+   "cilantro",
+   "red-onion"
+  ],
+  "specialty": [
+   "ancho-chile-powder",
+   "chipotle-in-adobo",
+   "cotija"
+  ],
+  "steps": [
+   "Cook the onions and bell pepper in the oil 10 minutes, then add the garlic for 1 minute.",
+   "Add the cumin, ancho powder and oregano and stir for a full minute in the hot fat. Blooming the spices this way tastes nothing like stirring them into liquid.",
+   "Add the chipotles, beans, broth and salt and simmer 30 minutes.",
+   "Blend about half the soup and stir it back in. Half-blending gives you a thick base with whole beans still in it.",
+   "Add the lime juice off the heat and taste - black beans need a lot of acid and salt to come alive.",
+   "Serve with bowls of sour cream, avocado, cotija, cilantro and red onion so everyone builds their own."
+  ],
+  "diet": {
+   "vegetarian": false,
+   "vegan": false,
+   "pescatarian": false,
+   "glutenFree": true,
+   "glutenFreeAdaptable": false,
+   "dairyFree": false,
+   "nutFree": true,
+   "eggFree": true
+  },
+  "allergens": [
+   "dairy"
+  ],
+  "gmo": {
+   "risk": "moderate",
+   "sources": [
+    "seed-oil",
+    "grain-fed-meat",
+    "grain-fed-dairy"
+   ]
+  },
+  "nutrition": {
+   "calories": 448,
+   "proteinG": 20,
+   "carbsG": 48,
+   "fiberG": 15,
+   "sugarG": 7,
+   "fatG": 21,
+   "satFatG": 7,
+   "sodiumMg": 1480,
+   "cholesterolMg": 28
+  },
+  "tags": [
+   "soup",
+   "budget",
+   "healthy",
+   "high-fiber",
+   "make-ahead",
+   "spicy",
+   "gluten-free",
+   "pantry",
+   "family"
+  ],
+  "image": {
+   "file": "bf-black-bean-soup.jpg",
+   "source": "commons-file",
+   "match": "dish",
+   "commonsFile": "Black Bean Soup (140491813).jpeg"
+  }
+ },
+ {
+  "id": "ch-bf-018",
+  "slug": "bf-grilled-vegetable-quesadilla",
+  "title": "Grilled Vegetable Quesadilla",
+  "genre": "mexican",
+  "subgenre": "antojitos",
+  "chef": {
+   "name": "Bobby Flay",
+   "slug": "bobby-flay"
+  },
+  "description": "Charred vegetables and goat cheese folded into crisp tortillas.",
+  "difficulty": "beginner",
+  "easeScore": 9,
+  "spiceScore": 3,
+  "popularity": 7,
+  "pantryScore": 7,
+  "servings": 4,
+  "prepMin": 20,
+  "cookMin": 25,
+  "totalMin": 45,
+  "equipment": [
+   "grill",
+   "stovetop"
+  ],
+  "ingredients": [
+   "2 zucchini, sliced lengthwise",
+   "2 red bell peppers, halved",
+   "1 red onion, cut in thick rounds",
+   "8 oz cremini mushrooms",
+   "1/4 cup canola oil",
+   "2 tsp kosher salt",
+   "1 tsp black pepper",
+   "1 tbsp ancho chile powder",
+   "8 flour tortillas",
+   "2 cups shredded Monterey Jack",
+   "6 oz goat cheese, crumbled",
+   "1/2 cup chopped cilantro",
+   "1 cup salsa verde",
+   "1/2 cup sour cream"
+  ],
+  "ingredientKeys": [
+   "zucchini",
+   "red-bell-pepper",
+   "red-onion",
+   "mushroom",
+   "canola-oil",
+   "kosher-salt",
+   "black-pepper",
+   "ancho-chile-powder",
+   "flour-tortilla",
+   "monterey-jack",
+   "goat-cheese",
+   "cilantro",
+   "salsa-verde",
+   "sour-cream"
+  ],
+  "specialty": [
+   "ancho-chile-powder",
+   "goat-cheese",
+   "salsa-verde"
+  ],
+  "steps": [
+   "Toss the vegetables with the oil, salt, pepper and ancho powder and grill over high heat until charred and tender - 8 minutes for the zucchini and onion, 10 for the peppers and mushrooms.",
+   "Chop everything coarsely and let it cool for 5 minutes. Steaming-hot filling makes a soggy quesadilla.",
+   "Lay a tortilla in a dry skillet over medium heat, scatter Monterey Jack over half, then the vegetables, the goat cheese, cilantro and more Jack.",
+   "Fold the empty half over and press down with a spatula.",
+   "Cook 2-3 minutes per side until crisp with golden-brown spots. Medium heat matters - too hot and the tortilla burns before the cheese melts.",
+   "Rest 1 minute, cut into wedges, and serve with salsa verde and sour cream."
+  ],
+  "diet": {
+   "vegetarian": true,
+   "vegan": false,
+   "pescatarian": true,
+   "glutenFree": false,
+   "glutenFreeAdaptable": true,
+   "dairyFree": false,
+   "nutFree": true,
+   "eggFree": true
+  },
+  "allergens": [
+   "gluten",
+   "dairy"
+  ],
+  "gmo": {
+   "risk": "moderate",
+   "sources": [
+    "processed-bread",
+    "seed-oil",
+    "grain-fed-dairy"
+   ]
+  },
+  "nutrition": {
+   "calories": 682,
+   "proteinG": 28,
+   "carbsG": 52,
+   "fiberG": 6,
+   "sugarG": 9,
+   "fatG": 40,
+   "satFatG": 18,
+   "sodiumMg": 1380,
+   "cholesterolMg": 78
+  },
+  "tags": [
+   "grill",
+   "vegetarian",
+   "weeknight",
+   "quick",
+   "party",
+   "summer",
+   "southwestern",
+   "family"
+  ],
+  "image": {
+   "file": "bf-grilled-vegetable-quesadilla.jpg",
+   "source": "commons-file",
+   "match": "dish",
+   "commonsFile": "Vegetable quesadilla.jpg"
+  }
+ },
+ {
+  "id": "ch-bf-019",
+  "slug": "bf-chorizo-breakfast-hash",
+  "title": "Chorizo Breakfast Hash",
+  "genre": "american",
+  "subgenre": "breakfast",
+  "chef": {
+   "name": "Bobby Flay",
+   "slug": "bobby-flay"
+  },
+  "description": "Crisped potatoes with chorizo, poblano and eggs baked right in.",
+  "difficulty": "beginner",
+  "easeScore": 9,
+  "spiceScore": 5,
+  "popularity": 8,
+  "pantryScore": 8,
+  "servings": 4,
+  "prepMin": 15,
+  "cookMin": 35,
+  "totalMin": 50,
+  "equipment": [
+   "stovetop",
+   "oven"
+  ],
+  "ingredients": [
+   "1 1/2 lb russet potatoes, diced small",
+   "1 lb Mexican chorizo, casings removed",
+   "2 tbsp canola oil",
+   "1 yellow onion, diced",
+   "2 poblano peppers, diced",
+   "4 cloves garlic, minced",
+   "1 tbsp ancho chile powder",
+   "2 tsp kosher salt",
+   "1 tsp black pepper",
+   "6 eggs",
+   "1 cup shredded Monterey Jack",
+   "1/2 cup chopped cilantro",
+   "1 avocado, sliced",
+   "1 cup salsa roja"
+  ],
+  "ingredientKeys": [
+   "russet-potato",
+   "mexican-chorizo",
+   "canola-oil",
+   "yellow-onion",
+   "poblano-pepper",
+   "garlic",
+   "ancho-chile-powder",
+   "kosher-salt",
+   "black-pepper",
+   "egg",
+   "monterey-jack",
+   "cilantro",
+   "avocado",
+   "salsa-roja"
+  ],
+  "specialty": [
+   "mexican-chorizo",
+   "poblano-pepper",
+   "ancho-chile-powder",
+   "salsa-roja"
+  ],
+  "steps": [
+   "Parboil the diced potatoes 5 minutes in salted water, then drain and let them steam dry. This gets them tender before they ever hit the pan.",
+   "Cook the chorizo in a cast-iron skillet over medium-high 7 minutes, breaking it up. It renders a lot of orange fat - leave all of it in the pan, since that fat is the seasoning.",
+   "Push the chorizo to one side, add the oil and the potatoes in a single layer, and leave them undisturbed 6 minutes to crisp.",
+   "Stir, add the onion, poblanos, garlic, ancho powder, salt and pepper and cook 6 minutes more.",
+   "Make 6 wells with the back of a spoon, crack an egg into each and scatter the cheese over.",
+   "Bake at 400F for 8-10 minutes, until the whites are just set and the yolks still run. Finish with cilantro, avocado and salsa."
+  ],
+  "diet": {
+   "vegetarian": false,
+   "vegan": false,
+   "pescatarian": false,
+   "glutenFree": true,
+   "glutenFreeAdaptable": false,
+   "dairyFree": false,
+   "nutFree": true,
+   "eggFree": false
+  },
+  "allergens": [
+   "dairy",
+   "egg"
+  ],
+  "gmo": {
+   "risk": "moderate",
+   "sources": [
+    "grain-fed-meat",
+    "seed-oil",
+    "grain-fed-dairy"
+   ]
+  },
+  "nutrition": {
+   "calories": 812,
+   "proteinG": 42,
+   "carbsG": 42,
+   "fiberG": 8,
+   "sugarG": 7,
+   "fatG": 52,
+   "satFatG": 19,
+   "sodiumMg": 1680,
+   "cholesterolMg": 398
+  },
+  "tags": [
+   "breakfast",
+   "brunch",
+   "one-pan",
+   "spicy",
+   "gluten-free",
+   "high-protein",
+   "southwestern",
+   "weekend"
+  ],
+  "image": {
+   "file": "corned-beef-hash.jpg",
+   "source": "wikipedia-lead",
+   "match": "representative",
+   "wikipedia": "Hash (food)"
+  }
+ },
+ {
+  "id": "ch-bf-020",
+  "slug": "bf-grilled-flatbread-goat-cheese",
+  "title": "Grilled Flatbread with Goat Cheese",
+  "genre": "american",
+  "subgenre": "appetizers",
+  "chef": {
+   "name": "Bobby Flay",
+   "slug": "bobby-flay"
+  },
+  "description": "Pizza dough grilled directly over coals, topped with goat cheese and herbs.",
+  "difficulty": "intermediate",
+  "easeScore": 7,
+  "spiceScore": 3,
+  "popularity": 7,
+  "pantryScore": 6,
+  "servings": 6,
+  "prepMin": 20,
+  "cookMin": 20,
+  "totalMin": 40,
+  "equipment": [
+   "grill"
+  ],
+  "ingredients": [
+   "1 1/2 lb store-bought pizza dough",
+   "1/3 cup olive oil",
+   "2 tsp kosher salt",
+   "8 oz goat cheese, crumbled",
+   "1 cup roasted red peppers, sliced",
+   "1/2 cup Kalamata olives, halved",
+   "2 cloves garlic, minced",
+   "1 tsp red pepper flakes",
+   "1/2 cup chopped basil",
+   "2 tbsp chopped fresh thyme",
+   "2 tbsp honey",
+   "1 lemon, zested"
+  ],
+  "ingredientKeys": [
+   "pizza-dough",
+   "olive-oil",
+   "kosher-salt",
+   "goat-cheese",
+   "roasted-red-peppers",
+   "kalamata-olives",
+   "garlic",
+   "red-pepper-flakes",
+   "fresh-basil",
+   "fresh-thyme",
+   "honey",
+   "lemon-zest"
+  ],
+  "specialty": [
+   "pizza-dough",
+   "goat-cheese",
+   "roasted-red-peppers",
+   "kalamata-olives",
+   "fresh-thyme"
+  ],
+  "steps": [
+   "Let the dough come to room temperature, then divide it into 6 and stretch each piece by hand into a rough oval about 1/4 inch thick.",
+   "Brush both sides generously with olive oil and season. Oil is what stops the dough welding itself to the grate.",
+   "Get the grill hot and the grates clean. Lay the dough directly on the grate and cook 2-3 minutes, until it puffs and the underside is marked.",
+   "Flip, then work fast: scatter the goat cheese, peppers, olives, garlic and pepper flakes over the cooked side.",
+   "Close the lid for 2-3 minutes, just long enough to soften the cheese and finish the base. Any longer and the bottom burns.",
+   "Slide onto a board, drizzle with honey and finish with basil, thyme and lemon zest. Cut into strips."
+  ],
+  "diet": {
+   "vegetarian": true,
+   "vegan": false,
+   "pescatarian": true,
+   "glutenFree": false,
+   "glutenFreeAdaptable": false,
+   "dairyFree": false,
+   "nutFree": true,
+   "eggFree": true
+  },
+  "allergens": [
+   "gluten",
+   "dairy",
+   "sulfites"
+  ],
+  "gmo": {
+   "risk": "moderate",
+   "sources": [
+    "processed-bread",
+    "grain-fed-dairy"
+   ]
+  },
+  "nutrition": {
+   "calories": 512,
+   "proteinG": 16,
+   "carbsG": 52,
+   "fiberG": 3,
+   "sugarG": 9,
+   "fatG": 28,
+   "satFatG": 10,
+   "sodiumMg": 1180,
+   "cholesterolMg": 28
+  },
+  "tags": [
+   "grill",
+   "appetizer",
+   "vegetarian",
+   "party",
+   "summer",
+   "entertaining",
+   "technique",
+   "sharing"
+  ],
+  "image": {
+   "file": "flatbread.jpg",
+   "source": "wikipedia-lead",
+   "match": "representative",
+   "wikipedia": "Flatbread"
+  }
+ },
+ {
+  "id": "ch-bf-021",
+  "slug": "bf-tortilla-soup",
+  "title": "Tortilla Soup",
+  "genre": "mexican",
+  "subgenre": "soups",
+  "chef": {
+   "name": "Bobby Flay",
+   "slug": "bobby-flay"
+  },
+  "description": "Chile-tomato broth with crisp tortilla strips and plenty of toppings.",
+  "difficulty": "beginner",
+  "easeScore": 9,
+  "spiceScore": 5,
+  "popularity": 9,
+  "pantryScore": 8,
+  "servings": 6,
+  "prepMin": 20,
+  "cookMin": 40,
+  "totalMin": 60,
+  "equipment": [
+   "stovetop",
+   "oven",
+   "blender"
+  ],
+  "ingredients": [
+   "8 corn tortillas, cut in strips",
+   "1/4 cup canola oil",
+   "2 yellow onions, diced",
+   "6 cloves garlic, minced",
+   "2 ancho chiles, stemmed and seeded",
+   "3 chipotle peppers in adobo",
+   "1 can (28 oz) fire-roasted tomatoes",
+   "8 cups chicken broth",
+   "1 tbsp ground cumin",
+   "1 tbsp ancho chile powder",
+   "2 tsp kosher salt",
+   "4 cups shredded cooked chicken",
+   "1/3 cup lime juice",
+   "1 avocado, diced",
+   "1 cup crumbled cotija",
+   "1/2 cup chopped cilantro",
+   "1 cup sour cream"
+  ],
+  "ingredientKeys": [
+   "corn-tortilla",
+   "canola-oil",
+   "yellow-onion",
+   "garlic",
+   "ancho-chile",
+   "chipotle-in-adobo",
+   "fire-roasted-tomatoes",
+   "chicken-broth",
+   "cumin",
+   "ancho-chile-powder",
+   "kosher-salt",
+   "cooked-chicken",
+   "lime-juice",
+   "avocado",
+   "cotija",
+   "cilantro",
+   "sour-cream"
+  ],
+  "specialty": [
+   "ancho-chile",
+   "chipotle-in-adobo",
+   "fire-roasted-tomatoes",
+   "ancho-chile-powder",
+   "cotija"
+  ],
+  "steps": [
+   "Toss the tortilla strips with a little of the oil and salt and bake at 400F for 12 minutes until crisp. Do these first so they are cool and dry when the soup is ready.",
+   "Toast the ancho chiles in a dry pan 30 seconds per side, then soak in hot water 15 minutes.",
+   "Cook the onions in the remaining oil 8 minutes, add the garlic, cumin and ancho powder for 1 minute.",
+   "Blend the soaked anchos, chipotles and tomatoes until smooth and add to the pot. Fry the puree for 5 minutes - this concentrates it before any liquid goes in.",
+   "Add the broth and salt and simmer 20 minutes, then stir in the chicken and heat through.",
+   "Add the lime juice off the heat. Serve with the tortilla strips, avocado, cotija, cilantro and sour cream added at the table so the strips stay crisp."
+  ],
+  "diet": {
+   "vegetarian": false,
+   "vegan": false,
+   "pescatarian": false,
+   "glutenFree": true,
+   "glutenFreeAdaptable": false,
+   "dairyFree": false,
+   "nutFree": true,
+   "eggFree": true
+  },
+  "allergens": [
+   "dairy"
+  ],
+  "gmo": {
+   "risk": "moderate",
+   "sources": [
+    "corn",
+    "seed-oil",
+    "grain-fed-meat",
+    "grain-fed-dairy"
+   ]
+  },
+  "nutrition": {
+   "calories": 586,
+   "proteinG": 42,
+   "carbsG": 42,
+   "fiberG": 9,
+   "sugarG": 9,
+   "fatG": 28,
+   "satFatG": 9,
+   "sodiumMg": 1480,
+   "cholesterolMg": 118
+  },
+  "tags": [
+   "soup",
+   "spicy",
+   "gluten-free",
+   "leftovers",
+   "family",
+   "southwestern",
+   "healthy",
+   "high-protein"
+  ],
+  "image": {
+   "file": "bf-tortilla-soup.jpg",
+   "source": "commons-file",
+   "match": "dish",
+   "commonsFile": "Tortilla Soup.jpg"
+  }
+ },
+ {
+  "id": "ch-bf-022",
+  "slug": "bf-grilled-fish-tacos",
+  "title": "Grilled Fish Tacos",
+  "genre": "mexican",
+  "subgenre": "tacos",
+  "chef": {
+   "name": "Bobby Flay",
+   "slug": "bobby-flay"
+  },
+  "description": "Chile-rubbed white fish grilled, not fried, with cabbage and chipotle crema.",
+  "difficulty": "beginner",
+  "easeScore": 9,
+  "spiceScore": 5,
+  "popularity": 9,
+  "pantryScore": 7,
+  "servings": 6,
+  "prepMin": 20,
+  "cookMin": 12,
+  "totalMin": 32,
+  "equipment": [
+   "grill"
+  ],
+  "ingredients": [
+   "2 lb mahi-mahi or cod fillets",
+   "3 tbsp canola oil",
+   "2 tbsp ancho chile powder",
+   "1 tbsp ground cumin",
+   "1 tsp cayenne pepper",
+   "2 tsp kosher salt",
+   "1 tsp black pepper",
+   "4 cups shredded green cabbage",
+   "1/4 cup lime juice",
+   "1/2 cup mayonnaise",
+   "1/2 cup sour cream",
+   "3 chipotle peppers in adobo, minced",
+   "18 corn tortillas",
+   "1/2 cup chopped cilantro",
+   "1/2 red onion, thinly sliced",
+   "2 limes, cut in wedges"
+  ],
+  "ingredientKeys": [
+   "white-fish",
+   "canola-oil",
+   "ancho-chile-powder",
+   "cumin",
+   "cayenne",
+   "kosher-salt",
+   "black-pepper",
+   "green-cabbage",
+   "lime-juice",
+   "mayonnaise",
+   "sour-cream",
+   "chipotle-in-adobo",
+   "corn-tortilla",
+   "cilantro",
+   "red-onion",
+   "lime"
+  ],
+  "specialty": [
+   "white-fish",
+   "ancho-chile-powder",
+   "chipotle-in-adobo"
+  ],
+  "steps": [
+   "Toss the cabbage with half the lime juice and a pinch of salt and set aside to soften.",
+   "Stir the mayonnaise, sour cream, chipotles and remaining lime juice into a crema.",
+   "Pat the fish completely dry, rub with the oil, and coat with the ancho powder, cumin, cayenne, salt and pepper.",
+   "Clean and oil the grates and heat the grill to high. Grill the fillets 3-4 minutes per side, turning once only - fish falls apart if you fuss with it.",
+   "Pull the fish when it flakes at the thickest point, then break it into large chunks.",
+   "Char the tortillas on the grate, double them up, and fill with cabbage, fish, crema, cilantro and red onion. Serve with lime."
+  ],
+  "diet": {
+   "vegetarian": false,
+   "vegan": false,
+   "pescatarian": true,
+   "glutenFree": true,
+   "glutenFreeAdaptable": false,
+   "dairyFree": false,
+   "nutFree": true,
+   "eggFree": false
+  },
+  "allergens": [
+   "dairy",
+   "egg",
+   "fish"
+  ],
+  "gmo": {
+   "risk": "moderate",
+   "sources": [
+    "corn",
+    "seed-oil",
+    "grain-fed-dairy"
+   ]
+  },
+  "nutrition": {
+   "calories": 612,
+   "proteinG": 42,
+   "carbsG": 48,
+   "fiberG": 8,
+   "sugarG": 6,
+   "fatG": 28,
+   "satFatG": 7,
+   "sodiumMg": 1280,
+   "cholesterolMg": 138
+  },
+  "tags": [
+   "grill",
+   "seafood",
+   "pescatarian",
+   "gluten-free",
+   "quick",
+   "healthy",
+   "summer",
+   "spicy",
+   "weeknight"
+  ],
+  "image": {
+   "file": "bf-grilled-fish-tacos.jpg",
+   "source": "commons-file",
+   "match": "dish",
+   "commonsFile": "Fish Taco Lunch (12097226334).jpg"
+  }
+ },
+ {
+  "id": "ch-bf-023",
+  "slug": "bf-smoked-chicken-nachos",
+  "title": "Smoked Chicken Nachos",
+  "genre": "mexican",
+  "subgenre": "tex-mex",
+  "chef": {
+   "name": "Bobby Flay",
+   "slug": "bobby-flay"
+  },
+  "description": "Layered nachos with grilled chicken, black beans and a real cheese sauce.",
+  "difficulty": "beginner",
+  "easeScore": 9,
+  "spiceScore": 5,
+  "popularity": 9,
+  "pantryScore": 8,
+  "servings": 8,
+  "prepMin": 20,
+  "cookMin": 25,
+  "totalMin": 45,
+  "equipment": [
+   "oven",
+   "stovetop"
+  ],
+  "ingredients": [
+   "1 1/2 lb boneless chicken thighs",
+   "2 tbsp canola oil",
+   "2 tbsp ancho chile powder",
+   "1 tbsp ground cumin",
+   "2 tsp kosher salt",
+   "3 tbsp butter",
+   "3 tbsp all-purpose flour",
+   "2 cups whole milk",
+   "3 cups shredded Monterey Jack",
+   "2 chipotle peppers in adobo, minced",
+   "1 bag (13 oz) tortilla chips",
+   "1 can (15 oz) black beans, drained",
+   "1 cup pickled jalapenos",
+   "1 cup pico de gallo",
+   "1 cup sour cream",
+   "1 avocado, diced",
+   "1/2 cup chopped cilantro"
+  ],
+  "ingredientKeys": [
+   "chicken-thighs",
+   "canola-oil",
+   "ancho-chile-powder",
+   "cumin",
+   "kosher-salt",
+   "butter",
+   "flour",
+   "whole-milk",
+   "monterey-jack",
+   "chipotle-in-adobo",
+   "tortilla-chips",
+   "black-beans",
+   "pickled-jalapenos",
+   "pico-de-gallo",
+   "sour-cream",
+   "avocado",
+   "cilantro"
+  ],
+  "specialty": [
+   "ancho-chile-powder",
+   "chipotle-in-adobo",
+   "tortilla-chips",
+   "pickled-jalapenos"
+  ],
+  "steps": [
+   "Rub the chicken with the oil, ancho powder, cumin and salt and grill or sear over high heat 5-6 minutes per side to 175F. Rest, then chop.",
+   "Make the cheese sauce: melt the butter, whisk in the flour and cook 2 minutes, then add the milk gradually and simmer until thick.",
+   "Take the pan off the heat before adding the Monterey Jack and chipotles. Cheese added over direct heat goes grainy and oily.",
+   "Spread half the chips on a sheet pan, then half the chicken, beans and cheese sauce. Repeat with a second layer. Two layers rather than one pile is what keeps the bottom chips from being bare.",
+   "Bake at 400F for 10 minutes until bubbling.",
+   "Add the jalapenos, pico, sour cream, avocado and cilantro after baking, never before, and serve straight from the pan."
+  ],
+  "diet": {
+   "vegetarian": false,
+   "vegan": false,
+   "pescatarian": false,
+   "glutenFree": false,
+   "glutenFreeAdaptable": true,
+   "dairyFree": false,
+   "nutFree": true,
+   "eggFree": true
+  },
+  "allergens": [
+   "gluten",
+   "dairy"
+  ],
+  "gmo": {
+   "risk": "high",
+   "sources": [
+    "corn",
+    "seed-oil",
+    "grain-fed-meat",
+    "grain-fed-dairy"
+   ]
+  },
+  "nutrition": {
+   "calories": 882,
+   "proteinG": 48,
+   "carbsG": 62,
+   "fiberG": 10,
+   "sugarG": 9,
+   "fatG": 50,
+   "satFatG": 21,
+   "sodiumMg": 1680,
+   "cholesterolMg": 148
+  },
+  "tags": [
+   "party",
+   "game-day",
+   "spicy",
+   "sharing",
+   "family",
+   "tex-mex",
+   "crowd-pleaser"
+  ],
+  "image": {
+   "file": "bf-smoked-chicken-nachos.jpg",
+   "source": "commons-file",
+   "match": "dish",
+   "commonsFile": "Classic Nachos with Fajita Chicken.jpg"
+  }
+ },
+ {
+  "id": "ch-bf-024",
+  "slug": "bf-sweet-potato-gratin",
+  "title": "Sweet Potato Gratin",
+  "genre": "american",
+  "subgenre": "sides",
+  "chef": {
+   "name": "Bobby Flay",
+   "slug": "bobby-flay"
+  },
+  "description": "Sweet potatoes layered with chipotle cream and Gruyere.",
+  "difficulty": "intermediate",
+  "easeScore": 7,
+  "spiceScore": 4,
+  "popularity": 7,
+  "pantryScore": 6,
+  "servings": 8,
+  "prepMin": 25,
+  "cookMin": 80,
+  "totalMin": 105,
+  "equipment": [
+   "oven",
+   "stovetop"
+  ],
+  "ingredients": [
+   "4 lb sweet potatoes, peeled and sliced 1/8 inch thick",
+   "3 cups heavy cream",
+   "4 chipotle peppers in adobo, minced",
+   "3 tbsp adobo sauce",
+   "6 cloves garlic, minced",
+   "2 tbsp maple syrup",
+   "1 tbsp kosher salt",
+   "2 tsp black pepper",
+   "1/2 tsp ground nutmeg",
+   "2 cups grated Gruyere",
+   "1/2 cup grated Parmesan",
+   "1/4 cup chopped cilantro"
+  ],
+  "ingredientKeys": [
+   "sweet-potato",
+   "heavy-cream",
+   "chipotle-in-adobo",
+   "adobo-sauce",
+   "garlic",
+   "maple-syrup",
+   "kosher-salt",
+   "black-pepper",
+   "nutmeg",
+   "gruyere",
+   "parmesan",
+   "cilantro"
+  ],
+  "specialty": [
+   "sweet-potato",
+   "chipotle-in-adobo",
+   "adobo-sauce",
+   "gruyere"
+  ],
+  "steps": [
+   "Slice the sweet potatoes thinly and evenly - a mandoline is worth using here, because uneven slices cook at different rates and leave crunchy pockets.",
+   "Warm the cream with the chipotles, adobo, garlic, maple syrup, salt, pepper and nutmeg for 5 minutes, then take it off the heat.",
+   "Layer a third of the potatoes in a buttered 9x13 dish, pour over a third of the cream and scatter a third of the Gruyere. Repeat twice.",
+   "Press the top layer down firmly so everything sits under the cream.",
+   "Cover with foil and bake at 375F for 50 minutes.",
+   "Uncover, scatter the Parmesan over and bake 25-30 minutes more until browned and a knife passes through with no resistance. Rest 20 minutes, then finish with cilantro."
+  ],
+  "diet": {
+   "vegetarian": true,
+   "vegan": false,
+   "pescatarian": true,
+   "glutenFree": true,
+   "glutenFreeAdaptable": false,
+   "dairyFree": false,
+   "nutFree": true,
+   "eggFree": true
+  },
+  "allergens": [
+   "dairy"
+  ],
+  "gmo": {
+   "risk": "low",
+   "sources": [
+    "grain-fed-dairy"
+   ]
+  },
+  "nutrition": {
+   "calories": 612,
+   "proteinG": 16,
+   "carbsG": 52,
+   "fiberG": 7,
+   "sugarG": 18,
+   "fatG": 40,
+   "satFatG": 24,
+   "sodiumMg": 1080,
+   "cholesterolMg": 118
+  },
+  "tags": [
+   "side",
+   "thanksgiving",
+   "holiday",
+   "vegetarian",
+   "gluten-free",
+   "spicy",
+   "entertaining",
+   "make-ahead",
+   "southwestern"
+  ],
+  "image": {
+   "file": "potato-gratin.jpg",
+   "source": "wikipedia-lead",
+   "match": "representative",
+   "wikipedia": "Potatoes au gratin"
+  }
+ },
+ {
+  "id": "ch-bf-025",
+  "slug": "bf-prickly-pear-margarita",
+  "title": "Prickly Pear Margarita",
+  "genre": "mexican",
+  "subgenre": "drinks",
+  "chef": {
+   "name": "Bobby Flay",
+   "slug": "bobby-flay"
+  },
+  "description": "A bright magenta margarita with prickly pear and a chile-salt rim.",
+  "difficulty": "beginner",
+  "easeScore": 10,
+  "spiceScore": 3,
+  "popularity": 7,
+  "pantryScore": 5,
+  "servings": 4,
+  "prepMin": 10,
+  "cookMin": 0,
+  "totalMin": 10,
+  "equipment": [
+   "no-cook"
+  ],
+  "ingredients": [
+   "8 oz blanco tequila",
+   "4 oz prickly pear puree",
+   "3 oz lime juice",
+   "2 oz orange liqueur",
+   "1 oz agave syrup",
+   "2 tbsp kosher salt",
+   "1 tbsp ancho chile powder",
+   "1 lime, cut in wedges",
+   "ice"
+  ],
+  "ingredientKeys": [
+   "tequila",
+   "prickly-pear-puree",
+   "lime-juice",
+   "orange-liqueur",
+   "agave-syrup",
+   "kosher-salt",
+   "ancho-chile-powder",
+   "lime",
+   "ice"
+  ],
+  "specialty": [
+   "tequila",
+   "prickly-pear-puree",
+   "orange-liqueur",
+   "agave-syrup",
+   "ancho-chile-powder"
+  ],
+  "steps": [
+   "Mix the kosher salt and ancho chile powder on a small plate.",
+   "Rub a lime wedge around the outer rim of each glass and roll it in the chile salt. Salting only the outside keeps it from dissolving into the drink.",
+   "Fill a shaker with ice and add the tequila, prickly pear puree, lime juice, orange liqueur and agave.",
+   "Shake hard for 15 seconds until the shaker frosts over. You are chilling and diluting at the same time, and both matter.",
+   "Strain into the rimmed glasses over fresh ice.",
+   "Garnish with a lime wedge. Use fresh lime juice only - bottled mix is what ruins most margaritas."
+  ],
+  "diet": {
+   "vegetarian": true,
+   "vegan": true,
+   "pescatarian": true,
+   "glutenFree": true,
+   "glutenFreeAdaptable": false,
+   "dairyFree": true,
+   "nutFree": true,
+   "eggFree": true
+  },
+  "allergens": [
+   "sulfites"
+  ],
+  "gmo": {
+   "risk": "low",
+   "sources": [
+    "none"
+   ]
+  },
+  "nutrition": {
+   "calories": 268,
+   "proteinG": 0,
+   "carbsG": 22,
+   "fiberG": 1,
+   "sugarG": 20,
+   "fatG": 0,
+   "satFatG": 0,
+   "sodiumMg": 680,
+   "cholesterolMg": 0
+  },
+  "tags": [
+   "drink",
+   "cocktail",
+   "no-cook",
+   "quick",
+   "party",
+   "southwestern",
+   "vegan",
+   "gluten-free",
+   "adults-only",
+   "summer"
+  ],
+  "image": {
+   "file": "margarita.jpg",
+   "source": "wikipedia-lead",
+   "match": "representative",
+   "wikipedia": "Margarita"
+  }
+ }
+]

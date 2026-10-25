@@ -1,0 +1,25 @@
+{
+  "note": "Recipes tagged with a chef are dishes that chef is known for. The instructions in this repository are Gusteau's own writing, not reproductions of any chef's published recipe text.",
+  "chefs": [
+    {"slug":"gordon-ramsay","name":"Gordon Ramsay","rank":1,"cuisine":"British, international","knownFor":"Beef Wellington, steak, scrambled eggs","wikipedia":"Gordon Ramsay","image":"gordon-ramsay.jpg","genres":["international","french","american","italian"]},
+    {"slug":"ina-garten","name":"Ina Garten","rank":2,"cuisine":"American, French-inspired","knownFor":"Roast chicken, comfort food, entertaining","wikipedia":"Ina Garten","image":"ina-garten.jpg","genres":["american","french","italian"]},
+    {"slug":"jamie-oliver","name":"Jamie Oliver","rank":3,"cuisine":"Italian, Mediterranean, British","knownFor":"Simple pastas, healthy family meals","wikipedia":"Jamie Oliver","image":"jamie-oliver.jpg","genres":["italian","mediterranean","international"]},
+    {"slug":"bobby-flay","name":"Bobby Flay","rank":4,"cuisine":"American, Southwestern, Mexican-inspired","knownFor":"Grilling, burgers, steak, BBQ","wikipedia":"Bobby Flay","image":"bobby-flay.jpg","genres":["american","mexican"]},
+    {"slug":"rachael-ray","name":"Rachael Ray","rank":5,"cuisine":"American, Italian-American","knownFor":"30-minute meals, easy pasta","wikipedia":"Rachael Ray","image":"rachael-ray.jpg","genres":["american","italian"]},
+    {"slug":"martha-stewart","name":"Martha Stewart","rank":6,"cuisine":"American, international","knownFor":"Baking, holiday meals, everyday cooking","wikipedia":"Martha Stewart","image":"martha-stewart.jpg","genres":["american","italian","french"]},
+    {"slug":"ree-drummond","name":"Ree Drummond","rank":7,"cuisine":"American comfort food","knownFor":"Casseroles, chicken, family dinners","wikipedia":"Ree Drummond","image":"ree-drummond.jpg","genres":["american","mexican"]},
+    {"slug":"giada-de-laurentiis","name":"Giada De Laurentiis","rank":8,"cuisine":"Italian, Italian-American","knownFor":"Pasta, lasagna, Italian desserts","wikipedia":"Giada De Laurentiis","image":"giada-de-laurentiis.jpg","genres":["italian","mediterranean"]},
+    {"slug":"guy-fieri","name":"Guy Fieri","rank":9,"cuisine":"American diner, BBQ","knownFor":"Burgers, wings, sandwiches","wikipedia":"Guy Fieri","image":"guy-fieri.jpg","genres":["american","mexican"]},
+    {"slug":"alton-brown","name":"Alton Brown","rank":10,"cuisine":"American, cooking science","knownFor":"Perfect eggs, roast turkey, baking","wikipedia":"Alton Brown","image":"alton-brown.jpg","genres":["american","international"]},
+    {"slug":"emeril-lagasse","name":"Emeril Lagasse","rank":11,"cuisine":"Cajun, Creole, American","knownFor":"Gumbo, jambalaya, shrimp dishes","wikipedia":"Emeril Lagasse","image":"emeril-lagasse.jpg","genres":["american","italian"]},
+    {"slug":"nigella-lawson","name":"Nigella Lawson","rank":12,"cuisine":"British, international","knownFor":"Chocolate desserts, comfort food","wikipedia":"Nigella Lawson","image":"nigella-lawson.jpg","genres":["international","italian","mediterranean"]},
+    {"slug":"paula-deen","name":"Paula Deen","rank":13,"cuisine":"Southern American","knownFor":"Fried chicken, biscuits, pies","wikipedia":"Paula Deen","image":"paula-deen.jpg","genres":["american"]},
+    {"slug":"julia-child","name":"Julia Child","rank":14,"cuisine":"Classical French","knownFor":"Boeuf Bourguignon, Coq au Vin","wikipedia":"Julia Child","image":"julia-child.jpg","genres":["french","american"]},
+    {"slug":"jacques-pepin","name":"Jacques Pepin","rank":15,"cuisine":"French, American","knownFor":"Omelets, chicken, classic techniques","wikipedia":"Jacques Pépin","image":"jacques-pepin.jpg","genres":["french","american"]},
+    {"slug":"lidia-bastianich","name":"Lidia Bastianich","rank":16,"cuisine":"Authentic Italian","knownFor":"Pasta sauces, risotto, regional Italian","wikipedia":"Lidia Bastianich","image":"lidia-bastianich.jpg","genres":["italian","mediterranean"]},
+    {"slug":"wolfgang-puck","name":"Wolfgang Puck","rank":17,"cuisine":"California, French fusion","knownFor":"Pizza, soups, gourmet meals","wikipedia":"Wolfgang Puck","image":"wolfgang-puck.jpg","genres":["international","italian","french","american"]},
+    {"slug":"rick-bayless","name":"Rick Bayless","rank":18,"cuisine":"Authentic Mexican","knownFor":"Tacos, enchiladas, mole, salsa","wikipedia":"Rick Bayless","image":"rick-bayless.jpg","genres":["mexican"]},
+    {"slug":"alex-guarnaschelli","name":"Alex Guarnaschelli","rank":19,"cuisine":"American, French","knownFor":"Restaurant-style comfort food","wikipedia":"Alex Guarnaschelli","image":"alex-guarnaschelli.jpg","genres":["american","french","italian"]},
+    {"slug":"michael-symon","name":"Michael Symon","rank":20,"cuisine":"American, Mediterranean","knownFor":"Meat, grilling, BBQ","wikipedia":"Michael Symon","image":"michael-symon.jpg","genres":["american","mediterranean"]}
+  ]
+}

@@ -1,0 +1,2694 @@
+[
+ {
+  "id": "ch-ab-001",
+  "slug": "ab-brined-roast-turkey",
+  "title": "Brined Roast Turkey",
+  "genre": "american",
+  "subgenre": "comfort",
+  "chef": {
+   "name": "Alton Brown",
+   "slug": "alton-brown"
+  },
+  "description": "A wet-brined turkey blasted hot then roasted low, with a foil breast shield.",
+  "difficulty": "advanced",
+  "easeScore": 3,
+  "spiceScore": 1,
+  "popularity": 9,
+  "pantryScore": 6,
+  "servings": 12,
+  "prepMin": 45,
+  "cookMin": 1200,
+  "totalMin": 1245,
+  "equipment": [
+   "oven",
+   "stovetop"
+  ],
+  "ingredients": [
+   "1 whole turkey (16 lb), thawed",
+   "1 cup kosher salt",
+   "1/2 cup packed brown sugar",
+   "1 gallon vegetable broth",
+   "1 tbsp black peppercorns",
+   "1 tbsp allspice berries",
+   "1 tbsp candied ginger, chopped",
+   "1 gallon ice water",
+   "1 red apple, quartered",
+   "1 yellow onion, quartered",
+   "1 cinnamon stick",
+   "1 cup water",
+   "4 sprigs fresh rosemary",
+   "6 leaves fresh sage",
+   "1/4 cup canola oil"
+  ],
+  "ingredientKeys": [
+   "whole-turkey",
+   "kosher-salt",
+   "brown-sugar",
+   "vegetable-broth",
+   "black-peppercorns",
+   "allspice-berries",
+   "candied-ginger",
+   "ice-water",
+   "apple",
+   "yellow-onion",
+   "cinnamon-stick",
+   "water",
+   "fresh-rosemary",
+   "fresh-sage",
+   "canola-oil"
+  ],
+  "specialty": [
+   "whole-turkey",
+   "allspice-berries",
+   "candied-ginger",
+   "cinnamon-stick",
+   "fresh-rosemary",
+   "fresh-sage"
+  ],
+  "steps": [
+   "Make the brine: simmer the broth with the salt, brown sugar, peppercorns, allspice and candied ginger until dissolved, then cool completely and combine with the ice water. Never put a turkey into warm brine - it is a food safety problem, not a shortcut.",
+   "Submerge the turkey and refrigerate 8-16 hours. Brining works by osmosis and by denaturing proteins so they hold water; the result is a breast that stays juicy at a safe temperature.",
+   "Remove the turkey, discard the brine, and rinse it well. Pat it bone dry inside and out.",
+   "Microwave the apple, onion, cinnamon stick and water for 5 minutes, then put them in the cavity. The warm aromatics help bring the interior up to temperature faster. Tuck the rosemary and sage in, and rub the skin with oil.",
+   "Roast at 500F for 30 minutes. Then make a triangular foil shield, set it over the breast, lower the oven to 350F and continue until the thigh reads 170F and the breast 161F, about 2 to 2 1/2 hours.",
+   "Rest at least 30 minutes before carving. The breast coasts past 165F while resting and the juices redistribute."
+  ],
+  "diet": {
+   "vegetarian": false,
+   "vegan": false,
+   "pescatarian": false,
+   "glutenFree": true,
+   "glutenFreeAdaptable": false,
+   "dairyFree": true,
+   "nutFree": true,
+   "eggFree": true
+  },
+  "allergens": [],
+  "gmo": {
+   "risk": "moderate",
+   "sources": [
+    "grain-fed-meat",
+    "sugar-beet",
+    "seed-oil"
+   ]
+  },
+  "nutrition": {
+   "calories": 586,
+   "proteinG": 72,
+   "carbsG": 5,
+   "fiberG": 1,
+   "sugarG": 3,
+   "fatG": 30,
+   "satFatG": 8,
+   "sodiumMg": 1680,
+   "cholesterolMg": 238
+  },
+  "tags": [
+   "thanksgiving",
+   "holiday",
+   "project",
+   "technique",
+   "gluten-free",
+   "dairy-free",
+   "high-protein",
+   "family"
+  ],
+  "image": {
+   "file": "roast-turkey.jpg",
+   "source": "wikipedia-lead",
+   "match": "representative",
+   "wikipedia": "Roast turkey"
+  }
+ },
+ {
+  "id": "ch-ab-002",
+  "slug": "ab-baked-macaroni-and-cheese",
+  "title": "Baked Macaroni and Cheese",
+  "genre": "american",
+  "subgenre": "comfort",
+  "chef": {
+   "name": "Alton Brown",
+   "slug": "alton-brown"
+  },
+  "description": "A mustard-spiked cheddar sauce bound with egg and baked under crumbs.",
+  "difficulty": "beginner",
+  "easeScore": 8,
+  "spiceScore": 2,
+  "popularity": 10,
+  "pantryScore": 9,
+  "servings": 8,
+  "prepMin": 20,
+  "cookMin": 40,
+  "totalMin": 60,
+  "equipment": [
+   "stovetop",
+   "oven"
+  ],
+  "ingredients": [
+   "1 lb elbow macaroni",
+   "6 tbsp butter",
+   "6 tbsp all-purpose flour",
+   "1 tbsp mustard powder",
+   "3 cups whole milk, warmed",
+   "1 yellow onion, finely diced",
+   "1 bay leaf",
+   "1/2 tsp paprika",
+   "1/2 tsp cayenne pepper",
+   "2 tsp salt",
+   "1 tsp black pepper",
+   "1 egg",
+   "4 cups shredded sharp cheddar",
+   "1 cup panko breadcrumbs",
+   "3 tbsp butter, melted"
+  ],
+  "ingredientKeys": [
+   "elbow-macaroni",
+   "butter",
+   "flour",
+   "mustard-powder",
+   "whole-milk",
+   "yellow-onion",
+   "bay-leaf",
+   "paprika",
+   "cayenne",
+   "salt",
+   "black-pepper",
+   "egg",
+   "cheddar",
+   "panko",
+   "butter"
+  ],
+  "specialty": [
+   "mustard-powder",
+   "panko"
+  ],
+  "steps": [
+   "Boil the macaroni 2 minutes short of the package time, since it finishes in the oven, then drain.",
+   "Melt the 6 tbsp butter, whisk in the flour and mustard powder, and cook 2 minutes. The mustard powder is not for mustard flavor - it sharpens the perception of the cheese.",
+   "Add the warm milk gradually along with the onion and bay leaf, and simmer 10 minutes. Then fish out the bay leaf.",
+   "Season with the paprika, cayenne, salt and pepper. Temper the egg by whisking a ladle of the hot sauce into it, then stir it back into the pot. The egg sets slightly in the oven and keeps the sauce from breaking.",
+   "Take the pot off the heat before stirring in the cheddar - above about 170F the proteins tighten and squeeze out fat, which is what makes grainy, oily mac.",
+   "Fold in the pasta, pour into a buttered dish, top with the panko tossed in melted butter, and bake at 350F for 30 minutes."
+  ],
+  "diet": {
+   "vegetarian": true,
+   "vegan": false,
+   "pescatarian": true,
+   "glutenFree": false,
+   "glutenFreeAdaptable": true,
+   "dairyFree": false,
+   "nutFree": true,
+   "eggFree": false
+  },
+  "allergens": [
+   "gluten",
+   "dairy",
+   "egg"
+  ],
+  "gmo": {
+   "risk": "moderate",
+   "sources": [
+    "grain-fed-dairy",
+    "processed-bread"
+   ]
+  },
+  "nutrition": {
+   "calories": 782,
+   "proteinG": 34,
+   "carbsG": 62,
+   "fiberG": 3,
+   "sugarG": 9,
+   "fatG": 44,
+   "satFatG": 25,
+   "sodiumMg": 1180,
+   "cholesterolMg": 138
+  },
+  "tags": [
+   "comfort",
+   "family",
+   "vegetarian",
+   "technique",
+   "kid-friendly",
+   "classic",
+   "make-ahead"
+  ],
+  "image": {
+   "file": "ab-baked-macaroni-and-cheese.jpg",
+   "source": "commons-file",
+   "match": "dish",
+   "commonsFile": "Baked macaroni and cheese.jpg"
+  }
+ },
+ {
+  "id": "ch-ab-003",
+  "slug": "ab-buttermilk-biscuits",
+  "title": "Buttermilk Biscuits",
+  "genre": "american",
+  "subgenre": "breads",
+  "chef": {
+   "name": "Alton Brown",
+   "slug": "alton-brown"
+  },
+  "description": "Tall, flaky biscuits from cold fat, soft flour and almost no handling.",
+  "difficulty": "intermediate",
+  "easeScore": 7,
+  "spiceScore": 0,
+  "popularity": 9,
+  "pantryScore": 9,
+  "servings": 12,
+  "prepMin": 20,
+  "cookMin": 20,
+  "totalMin": 40,
+  "equipment": [
+   "oven"
+  ],
+  "ingredients": [
+   "2 cups all-purpose flour",
+   "4 tsp baking powder",
+   "1/4 tsp baking soda",
+   "1 tsp salt",
+   "4 tbsp cold butter, cubed",
+   "4 tbsp cold shortening, cubed",
+   "1 cup cold buttermilk",
+   "2 tbsp butter, melted"
+  ],
+  "ingredientKeys": [
+   "flour",
+   "baking-powder",
+   "baking-soda",
+   "salt",
+   "butter",
+   "shortening",
+   "buttermilk",
+   "butter"
+  ],
+  "specialty": [
+   "shortening",
+   "buttermilk"
+  ],
+  "steps": [
+   "Heat the oven to 450F. Whisk the flour, baking powder, baking soda and salt together.",
+   "Cut the cold butter and shortening into the flour with your fingertips until the largest pieces are pea-sized. Butter supplies flavor and steam for lift; shortening supplies tenderness. Keep everything cold - warm fat smears instead of layering.",
+   "Add the cold buttermilk all at once and stir just until a shaggy dough forms. Every extra stir develops gluten and costs you tenderness.",
+   "Turn it onto a floured surface, pat it out, then fold it over on itself five or six times. Those folds become the flaky layers.",
+   "Pat to 1 inch thick and cut rounds straight down with a sharp cutter. Do not twist the cutter - twisting seals the edges and the biscuits cannot rise.",
+   "Set them on a pan with the sides touching so they climb each other, brush with melted butter, and bake 15-18 minutes until deep golden."
+  ],
+  "diet": {
+   "vegetarian": true,
+   "vegan": false,
+   "pescatarian": true,
+   "glutenFree": false,
+   "glutenFreeAdaptable": false,
+   "dairyFree": false,
+   "nutFree": true,
+   "eggFree": true
+  },
+  "allergens": [
+   "gluten",
+   "dairy"
+  ],
+  "gmo": {
+   "risk": "moderate",
+   "sources": [
+    "seed-oil",
+    "grain-fed-dairy"
+   ]
+  },
+  "nutrition": {
+   "calories": 218,
+   "proteinG": 4,
+   "carbsG": 22,
+   "fiberG": 1,
+   "sugarG": 2,
+   "fatG": 13,
+   "satFatG": 6,
+   "sodiumMg": 480,
+   "cholesterolMg": 16
+  },
+  "tags": [
+   "bread",
+   "breakfast",
+   "technique",
+   "vegetarian",
+   "southern",
+   "family",
+   "classic",
+   "quick"
+  ],
+  "image": {
+   "file": "ab-buttermilk-biscuits.jpg",
+   "source": "commons-file",
+   "match": "dish",
+   "commonsFile": "Buttermilk biscuit.jpg"
+  }
+ },
+ {
+  "id": "ch-ab-004",
+  "slug": "ab-chewy-chocolate-chip-cookies",
+  "title": "The Chewy Chocolate Chip Cookie",
+  "genre": "american",
+  "subgenre": "desserts",
+  "chef": {
+   "name": "Alton Brown",
+   "slug": "alton-brown"
+  },
+  "description": "Bread flour, melted butter and extra yolk engineered for chew.",
+  "difficulty": "beginner",
+  "easeScore": 8,
+  "spiceScore": 0,
+  "popularity": 10,
+  "pantryScore": 9,
+  "servings": 24,
+  "prepMin": 20,
+  "cookMin": 55,
+  "totalMin": 75,
+  "equipment": [
+   "oven",
+   "stovetop"
+  ],
+  "ingredients": [
+   "2 1/4 cups bread flour",
+   "1 tsp salt",
+   "1 tsp baking soda",
+   "1 cup butter, melted and cooled",
+   "1/4 cup granulated sugar",
+   "1 1/4 cups packed brown sugar",
+   "1 egg",
+   "1 egg yolk",
+   "2 tbsp whole milk",
+   "1 1/2 tsp vanilla extract",
+   "2 cups semisweet chocolate chips"
+  ],
+  "ingredientKeys": [
+   "bread-flour",
+   "salt",
+   "baking-soda",
+   "butter",
+   "sugar",
+   "brown-sugar",
+   "egg",
+   "egg-yolk",
+   "whole-milk",
+   "vanilla-extract",
+   "chocolate-chips"
+  ],
+  "specialty": [
+   "bread-flour"
+  ],
+  "steps": [
+   "Three choices here all serve chew rather than crispness: bread flour for its higher protein, mostly brown sugar because it is hygroscopic and holds moisture, and melted butter instead of creamed.",
+   "Whisk the bread flour, salt and baking soda together.",
+   "Whisk the cooled melted butter with both sugars, then beat in the egg, extra yolk, milk and vanilla. The extra yolk adds fat and emulsifier without adding more water.",
+   "Stir in the dry ingredients just until combined, then fold in the chips.",
+   "Chill the dough at least 1 hour. Cold dough spreads less and the flavor deepens.",
+   "Scoop golf-ball portions onto lined sheets, well apart, and bake at 375F for 12-14 minutes until the edges are set and the centers still look slightly underdone. Cool on the pan 5 minutes - they finish there."
+  ],
+  "diet": {
+   "vegetarian": true,
+   "vegan": false,
+   "pescatarian": true,
+   "glutenFree": false,
+   "glutenFreeAdaptable": false,
+   "dairyFree": false,
+   "nutFree": true,
+   "eggFree": false
+  },
+  "allergens": [
+   "gluten",
+   "dairy",
+   "egg",
+   "soy"
+  ],
+  "gmo": {
+   "risk": "moderate",
+   "sources": [
+    "sugar-beet",
+    "soy",
+    "grain-fed-dairy"
+   ]
+  },
+  "nutrition": {
+   "calories": 242,
+   "proteinG": 3,
+   "carbsG": 32,
+   "fiberG": 1,
+   "sugarG": 22,
+   "fatG": 12,
+   "satFatG": 7,
+   "sodiumMg": 180,
+   "cholesterolMg": 32
+  },
+  "tags": [
+   "dessert",
+   "baking",
+   "technique",
+   "vegetarian",
+   "kid-friendly",
+   "make-ahead",
+   "classic",
+   "party"
+  ],
+  "image": {
+   "file": "chocolate-chip-cookie.jpg",
+   "source": "wikipedia-lead",
+   "match": "representative",
+   "wikipedia": "Chocolate chip cookie"
+  }
+ },
+ {
+  "id": "ch-ab-005",
+  "slug": "ab-pan-seared-ribeye",
+  "title": "Pan-Seared Rib Eye",
+  "genre": "american",
+  "subgenre": "steaks",
+  "chef": {
+   "name": "Alton Brown",
+   "slug": "alton-brown"
+  },
+  "description": "A steak seared in a cast-iron pan preheated in the oven.",
+  "difficulty": "intermediate",
+  "easeScore": 7,
+  "spiceScore": 1,
+  "popularity": 9,
+  "pantryScore": 9,
+  "servings": 2,
+  "prepMin": 35,
+  "cookMin": 15,
+  "totalMin": 50,
+  "equipment": [
+   "oven",
+   "stovetop"
+  ],
+  "ingredients": [
+   "2 ribeye steaks, 1 1/2 inch thick",
+   "1 tbsp kosher salt",
+   "2 tsp coarse black pepper",
+   "1 tbsp canola oil",
+   "2 tbsp butter"
+  ],
+  "ingredientKeys": [
+   "ribeye-steak",
+   "kosher-salt",
+   "black-pepper",
+   "canola-oil",
+   "butter"
+  ],
+  "specialty": [
+   "ribeye-steak"
+  ],
+  "steps": [
+   "Salt the steaks and leave them on a rack at room temperature 30 minutes. Surface moisture has to evaporate before browning can begin, because the Maillard reaction needs a dry surface above about 300F.",
+   "Put a cast-iron skillet in the oven and heat to 500F for 20 minutes. Preheating in the oven gets the whole pan, not just the center, up to temperature.",
+   "Pat the steaks completely dry and coat them very lightly with the oil, then add the pepper.",
+   "Move the hot skillet to the stovetop over high heat and lay the steaks in. Sear 2 minutes without moving them, then flip.",
+   "Return the skillet to the oven and roast 6-8 minutes to 125F internal for medium-rare. Use a thermometer - thickness varies far more than timing guides admit.",
+   "Add the butter for the last 30 seconds, then rest the steaks 8 minutes on a board. Resting lets the muscle fibers reabsorb liquid instead of dumping it on the plate."
+  ],
+  "diet": {
+   "vegetarian": false,
+   "vegan": false,
+   "pescatarian": false,
+   "glutenFree": true,
+   "glutenFreeAdaptable": false,
+   "dairyFree": false,
+   "nutFree": true,
+   "eggFree": true
+  },
+  "allergens": [
+   "dairy"
+  ],
+  "gmo": {
+   "risk": "moderate",
+   "sources": [
+    "grain-fed-meat",
+    "seed-oil",
+    "grain-fed-dairy"
+   ]
+  },
+  "nutrition": {
+   "calories": 782,
+   "proteinG": 66,
+   "carbsG": 1,
+   "fiberG": 0,
+   "sugarG": 0,
+   "fatG": 58,
+   "satFatG": 25,
+   "sodiumMg": 1480,
+   "cholesterolMg": 212
+  },
+  "tags": [
+   "steaks",
+   "technique",
+   "gluten-free",
+   "low-carb",
+   "high-protein",
+   "date-night",
+   "quick"
+  ],
+  "image": {
+   "file": "ab-pan-seared-ribeye.jpg",
+   "source": "commons-file",
+   "match": "dish",
+   "commonsFile": "Rib eye steak - 400 gr.JPG"
+  }
+ },
+ {
+  "id": "ch-ab-006",
+  "slug": "ab-city-ham",
+  "title": "Glazed City Ham",
+  "genre": "american",
+  "subgenre": "comfort",
+  "chef": {
+   "name": "Alton Brown",
+   "slug": "alton-brown"
+  },
+  "description": "A cured ham glazed with mustard, brown sugar and crushed ginger snaps.",
+  "difficulty": "beginner",
+  "easeScore": 9,
+  "spiceScore": 2,
+  "popularity": 8,
+  "pantryScore": 7,
+  "servings": 12,
+  "prepMin": 20,
+  "cookMin": 135,
+  "totalMin": 155,
+  "equipment": [
+   "oven"
+  ],
+  "ingredients": [
+   "1 city ham (8 lb), fully cooked",
+   "1 cup packed brown sugar",
+   "1/4 cup dark mustard",
+   "1/4 cup bourbon",
+   "1 1/2 cups crushed ginger snap cookies",
+   "2 tsp black pepper",
+   "1 tsp ground cloves",
+   "1 cup water"
+  ],
+  "ingredientKeys": [
+   "city-ham",
+   "brown-sugar",
+   "dark-mustard",
+   "bourbon",
+   "ginger-snaps",
+   "black-pepper",
+   "ground-cloves",
+   "water"
+  ],
+  "specialty": [
+   "city-ham",
+   "dark-mustard",
+   "bourbon",
+   "ginger-snaps",
+   "ground-cloves"
+  ],
+  "steps": [
+   "Heat the oven to 250F. Trim the ham's skin and most of the fat, leaving about 1/4 inch, then score the surface in a crosshatch.",
+   "Set it in a roasting pan with the water and cover tightly with foil. A city ham is already cooked - you are only warming it, so gentle covered heat keeps it from drying out.",
+   "Bake until the center reads 130F, about 1 1/2 hours. Figure roughly 12 minutes per pound at this temperature.",
+   "Mix the brown sugar, mustard, bourbon, pepper and cloves into a thick paste and brush it over the scored surface.",
+   "Press the crushed ginger snaps on in an even layer. The cookie crumbs absorb the glaze and form a crust rather than running off the way a liquid glaze does.",
+   "Raise the oven to 425F and bake 15-20 minutes, until the crust is set and darkened, to 140F internal. Rest 20 minutes before slicing."
+  ],
+  "diet": {
+   "vegetarian": false,
+   "vegan": false,
+   "pescatarian": false,
+   "glutenFree": false,
+   "glutenFreeAdaptable": false,
+   "dairyFree": true,
+   "nutFree": true,
+   "eggFree": true
+  },
+  "allergens": [
+   "gluten"
+  ],
+  "gmo": {
+   "risk": "moderate",
+   "sources": [
+    "grain-fed-meat",
+    "sugar-beet",
+    "processed-bread"
+   ]
+  },
+  "nutrition": {
+   "calories": 512,
+   "proteinG": 48,
+   "carbsG": 32,
+   "fiberG": 1,
+   "sugarG": 26,
+   "fatG": 21,
+   "satFatG": 8,
+   "sodiumMg": 2380,
+   "cholesterolMg": 128
+  },
+  "tags": [
+   "holiday",
+   "easter",
+   "christmas",
+   "technique",
+   "high-protein",
+   "family",
+   "entertaining",
+   "leftovers"
+  ],
+  "image": {
+   "file": "glazed-ham.jpg",
+   "source": "wikipedia-lead",
+   "match": "representative",
+   "wikipedia": "Ham"
+  }
+ },
+ {
+  "id": "ch-ab-007",
+  "slug": "ab-baked-hard-cooked-eggs",
+  "title": "Oven Hard-Cooked Eggs",
+  "genre": "american",
+  "subgenre": "breakfast",
+  "chef": {
+   "name": "Alton Brown",
+   "slug": "alton-brown"
+  },
+  "description": "Eggs cooked in a muffin tin in the oven, then shocked in ice water.",
+  "difficulty": "beginner",
+  "easeScore": 10,
+  "spiceScore": 0,
+  "popularity": 7,
+  "pantryScore": 10,
+  "servings": 6,
+  "prepMin": 5,
+  "cookMin": 35,
+  "totalMin": 40,
+  "equipment": [
+   "oven"
+  ],
+  "ingredients": [
+   "12 eggs",
+   "4 cups ice water",
+   "1 tsp salt",
+   "1/2 tsp black pepper"
+  ],
+  "ingredientKeys": [
+   "egg",
+   "ice-water",
+   "salt",
+   "black-pepper"
+  ],
+  "specialty": [],
+  "steps": [
+   "Heat the oven to 325F. Set each egg in a cup of a muffin tin so they cannot roll around.",
+   "Bake 30 minutes. Dry oven heat cooks them just as effectively as boiling water and you can do two dozen at once without crowding a pot.",
+   "Move the eggs immediately into the ice water with tongs and leave them 10 minutes. The shock stops the cooking dead and contracts the egg away from the shell, which is what makes them peel cleanly.",
+   "Skipping the ice bath gives you a green-grey ring around the yolk, which is iron and sulfur reacting from overcooking.",
+   "Peel by cracking the wide end first, where the air pocket is, and rolling gently.",
+   "Season with salt and pepper. They keep a week refrigerated in the shell."
+  ],
+  "diet": {
+   "vegetarian": true,
+   "vegan": false,
+   "pescatarian": true,
+   "glutenFree": true,
+   "glutenFreeAdaptable": false,
+   "dairyFree": true,
+   "nutFree": true,
+   "eggFree": false
+  },
+  "allergens": [
+   "egg"
+  ],
+  "gmo": {
+   "risk": "low",
+   "sources": [
+    "none"
+   ]
+  },
+  "nutrition": {
+   "calories": 142,
+   "proteinG": 13,
+   "carbsG": 1,
+   "fiberG": 0,
+   "sugarG": 1,
+   "fatG": 10,
+   "satFatG": 3,
+   "sodiumMg": 320,
+   "cholesterolMg": 372
+  },
+  "tags": [
+   "breakfast",
+   "technique",
+   "meal-prep",
+   "gluten-free",
+   "dairy-free",
+   "high-protein",
+   "low-carb",
+   "budget",
+   "easy"
+  ],
+  "image": {
+   "file": "deviled-eggs.jpg",
+   "source": "wikipedia-lead",
+   "match": "representative",
+   "wikipedia": "Boiled egg"
+  }
+ },
+ {
+  "id": "ch-ab-008",
+  "slug": "ab-french-onion-soup",
+  "title": "French Onion Soup",
+  "genre": "french",
+  "subgenre": "soups",
+  "chef": {
+   "name": "Alton Brown",
+   "slug": "alton-brown"
+  },
+  "description": "Onions cooked down for an hour, then broth, sherry and a Gruyere crust.",
+  "difficulty": "intermediate",
+  "easeScore": 6,
+  "spiceScore": 1,
+  "popularity": 9,
+  "pantryScore": 7,
+  "servings": 6,
+  "prepMin": 20,
+  "cookMin": 105,
+  "totalMin": 125,
+  "equipment": [
+   "stovetop",
+   "broiler"
+  ],
+  "ingredients": [
+   "4 lb yellow onions, thinly sliced",
+   "4 tbsp butter",
+   "2 tbsp olive oil",
+   "2 tsp salt",
+   "1 tsp sugar",
+   "1/4 cup dry sherry",
+   "1/2 cup dry white wine",
+   "8 cups beef broth",
+   "2 sprigs fresh thyme",
+   "1 bay leaf",
+   "1 tsp black pepper",
+   "1 baguette, sliced and toasted",
+   "3 cups grated Gruyere",
+   "1/2 cup grated Parmesan"
+  ],
+  "ingredientKeys": [
+   "yellow-onion",
+   "butter",
+   "olive-oil",
+   "salt",
+   "sugar",
+   "dry-sherry",
+   "white-wine",
+   "beef-broth",
+   "fresh-thyme",
+   "bay-leaf",
+   "black-pepper",
+   "baguette",
+   "gruyere",
+   "parmesan"
+  ],
+  "specialty": [
+   "dry-sherry",
+   "white-wine",
+   "fresh-thyme",
+   "baguette",
+   "gruyere"
+  ],
+  "steps": [
+   "Cook the onions in the butter and oil with the salt and sugar over medium-low heat for 50-60 minutes, stirring every 10 minutes. You are after deep mahogany, not golden - this is caramelization of the onions' own sugars, and nothing shortens it.",
+   "Scrape the browned film off the bottom of the pot as you go and stir it back in. That fond is concentrated flavor.",
+   "Add the sherry and wine and reduce almost completely, scraping the pot clean.",
+   "Add the broth, thyme, bay leaf and pepper and simmer 30 minutes. Fish out the thyme stems and bay leaf and season.",
+   "Ladle into oven-safe bowls, float a slice or two of toasted baguette on each, and cover generously with Gruyere and Parmesan. The bread has to be toasted or it dissolves.",
+   "Broil 3-5 minutes until the cheese is molten, browned and bubbling over the rim. Serve immediately and warn people the bowls are extremely hot."
+  ],
+  "diet": {
+   "vegetarian": false,
+   "vegan": false,
+   "pescatarian": false,
+   "glutenFree": false,
+   "glutenFreeAdaptable": false,
+   "dairyFree": false,
+   "nutFree": true,
+   "eggFree": true
+  },
+  "allergens": [
+   "gluten",
+   "dairy",
+   "sulfites"
+  ],
+  "gmo": {
+   "risk": "moderate",
+   "sources": [
+    "grain-fed-meat",
+    "grain-fed-dairy",
+    "processed-bread",
+    "sugar-beet"
+   ]
+  },
+  "nutrition": {
+   "calories": 586,
+   "proteinG": 28,
+   "carbsG": 48,
+   "fiberG": 5,
+   "sugarG": 16,
+   "fatG": 32,
+   "satFatG": 17,
+   "sodiumMg": 1880,
+   "cholesterolMg": 82
+  },
+  "tags": [
+   "soup",
+   "french",
+   "technique",
+   "comfort",
+   "winter",
+   "classic",
+   "entertaining"
+  ],
+  "image": {
+   "file": "ab-french-onion-soup.jpg",
+   "source": "commons-file",
+   "match": "dish",
+   "commonsFile": "French Onion Soup..JPG"
+  }
+ },
+ {
+  "id": "ch-ab-009",
+  "slug": "ab-chicken-stock",
+  "title": "Homemade Chicken Stock",
+  "genre": "american",
+  "subgenre": "soups",
+  "chef": {
+   "name": "Alton Brown",
+   "slug": "alton-brown"
+  },
+  "description": "Bones and aromatics simmered without ever boiling, for clear stock.",
+  "difficulty": "beginner",
+  "easeScore": 9,
+  "spiceScore": 0,
+  "popularity": 8,
+  "pantryScore": 9,
+  "servings": 12,
+  "prepMin": 15,
+  "cookMin": 270,
+  "totalMin": 285,
+  "equipment": [
+   "stovetop"
+  ],
+  "ingredients": [
+   "4 lb chicken backs, wings and bones",
+   "2 yellow onions, quartered",
+   "3 carrots, cut in chunks",
+   "4 celery stalks, cut in chunks",
+   "1 head garlic, halved",
+   "2 bay leaves",
+   "1 tbsp black peppercorns",
+   "6 sprigs fresh thyme",
+   "1 bunch parsley stems",
+   "16 cups cold water"
+  ],
+  "ingredientKeys": [
+   "chicken-bones",
+   "yellow-onion",
+   "carrot",
+   "celery",
+   "garlic",
+   "bay-leaf",
+   "black-peppercorns",
+   "fresh-thyme",
+   "parsley",
+   "water"
+  ],
+  "specialty": [
+   "chicken-bones",
+   "black-peppercorns",
+   "fresh-thyme"
+  ],
+  "steps": [
+   "Put the bones in a tall pot and cover with the cold water. Starting cold draws proteins out slowly so they can be skimmed; starting hot locks them in and clouds the stock.",
+   "Bring it up to a bare simmer - a bubble breaking the surface every second or two - and skim the grey foam off for the first 20 minutes.",
+   "Never let it boil. Boiling emulsifies the fat into the liquid and permanently clouds it.",
+   "Add the vegetables, garlic, bay leaves, peppercorns, thyme and parsley stems and simmer 4 hours, topping up with hot water if the bones emerge.",
+   "Do not add salt. Stock gets reduced in later dishes, and salting now means an unusable, oversalted base.",
+   "Strain through a fine sieve without pressing the solids, then cool quickly in an ice bath and refrigerate. Lift the solidified fat off the top the next day. It keeps 5 days refrigerated or 6 months frozen."
+  ],
+  "diet": {
+   "vegetarian": false,
+   "vegan": false,
+   "pescatarian": false,
+   "glutenFree": true,
+   "glutenFreeAdaptable": false,
+   "dairyFree": true,
+   "nutFree": true,
+   "eggFree": true
+  },
+  "allergens": [],
+  "gmo": {
+   "risk": "low",
+   "sources": [
+    "grain-fed-meat"
+   ]
+  },
+  "nutrition": {
+   "calories": 42,
+   "proteinG": 5,
+   "carbsG": 2,
+   "fiberG": 0,
+   "sugarG": 1,
+   "fatG": 1,
+   "satFatG": 0,
+   "sodiumMg": 62,
+   "cholesterolMg": 5
+  },
+  "tags": [
+   "technique",
+   "foundation",
+   "make-ahead",
+   "gluten-free",
+   "dairy-free",
+   "budget",
+   "freezer",
+   "low-carb"
+  ],
+  "image": {
+   "file": "ab-chicken-stock.jpg",
+   "source": "commons-file",
+   "match": "dish",
+   "commonsFile": "Chicken Stock.jpg"
+  }
+ },
+ {
+  "id": "ch-ab-010",
+  "slug": "ab-overnight-waffles",
+  "title": "Overnight Yeast Waffles",
+  "genre": "american",
+  "subgenre": "breakfast",
+  "chef": {
+   "name": "Alton Brown",
+   "slug": "alton-brown"
+  },
+  "description": "A yeast-risen batter mixed the night before for deep flavor and crisp edges.",
+  "difficulty": "intermediate",
+  "easeScore": 7,
+  "spiceScore": 0,
+  "popularity": 8,
+  "pantryScore": 9,
+  "servings": 6,
+  "prepMin": 15,
+  "cookMin": 500,
+  "totalMin": 515,
+  "equipment": [
+   "stovetop"
+  ],
+  "ingredients": [
+   "2 cups all-purpose flour",
+   "1 tbsp sugar",
+   "1 tsp salt",
+   "1 1/2 tsp active dry yeast",
+   "2 cups whole milk, warmed to 110F",
+   "6 tbsp butter, melted",
+   "2 eggs",
+   "1 tsp vanilla extract",
+   "1/4 tsp baking soda",
+   "1/2 cup maple syrup"
+  ],
+  "ingredientKeys": [
+   "flour",
+   "sugar",
+   "salt",
+   "active-dry-yeast",
+   "whole-milk",
+   "butter",
+   "egg",
+   "vanilla-extract",
+   "baking-soda",
+   "maple-syrup"
+  ],
+  "specialty": [
+   "active-dry-yeast"
+  ],
+  "steps": [
+   "Whisk the flour, sugar, salt and yeast together. Add the warm milk and melted butter and whisk smooth. Milk hotter than about 115F will kill the yeast.",
+   "Cover and refrigerate overnight, 8 to 12 hours. The long cold ferment produces the flavor compounds that make these taste nothing like a baking-powder waffle.",
+   "In the morning the batter will be bubbly and smell faintly of beer. That is exactly right.",
+   "Whisk in the eggs, vanilla and baking soda. The soda neutralizes some of the acidity the yeast produced and gives a final burst of lift.",
+   "Heat the waffle iron thoroughly and cook about 1/2 cup of batter per waffle until the iron stops steaming and the waffle is deep golden, 4-5 minutes.",
+   "Hold finished waffles on a rack in a 200F oven rather than stacking them, so trapped steam does not soften the crust. Serve with maple syrup."
+  ],
+  "diet": {
+   "vegetarian": true,
+   "vegan": false,
+   "pescatarian": true,
+   "glutenFree": false,
+   "glutenFreeAdaptable": false,
+   "dairyFree": false,
+   "nutFree": true,
+   "eggFree": false
+  },
+  "allergens": [
+   "gluten",
+   "dairy",
+   "egg"
+  ],
+  "gmo": {
+   "risk": "moderate",
+   "sources": [
+    "grain-fed-dairy",
+    "sugar-beet"
+   ]
+  },
+  "nutrition": {
+   "calories": 448,
+   "proteinG": 11,
+   "carbsG": 62,
+   "fiberG": 2,
+   "sugarG": 28,
+   "fatG": 17,
+   "satFatG": 10,
+   "sodiumMg": 580,
+   "cholesterolMg": 112
+  },
+  "tags": [
+   "breakfast",
+   "brunch",
+   "technique",
+   "make-ahead",
+   "vegetarian",
+   "weekend",
+   "family"
+  ],
+  "image": {
+   "file": "waffle.jpg",
+   "source": "wikipedia-lead",
+   "match": "representative",
+   "wikipedia": "Waffle"
+  }
+ },
+ {
+  "id": "ch-ab-011",
+  "slug": "ab-steel-cut-oatmeal",
+  "title": "Steel-Cut Oatmeal",
+  "genre": "american",
+  "subgenre": "breakfast",
+  "chef": {
+   "name": "Alton Brown",
+   "slug": "alton-brown"
+  },
+  "description": "Oats toasted in butter before liquid goes in, cooked low for creaminess.",
+  "difficulty": "beginner",
+  "easeScore": 9,
+  "spiceScore": 0,
+  "popularity": 8,
+  "pantryScore": 10,
+  "servings": 4,
+  "prepMin": 5,
+  "cookMin": 35,
+  "totalMin": 40,
+  "equipment": [
+   "stovetop"
+  ],
+  "ingredients": [
+   "1 cup steel-cut oats",
+   "2 tbsp butter",
+   "3 cups water",
+   "1 cup whole milk",
+   "1/2 tsp salt",
+   "2 tbsp packed brown sugar",
+   "1 tsp ground cinnamon",
+   "1 cup mixed berries",
+   "1/4 cup chopped toasted pecans"
+  ],
+  "ingredientKeys": [
+   "steel-cut-oats",
+   "butter",
+   "water",
+   "whole-milk",
+   "salt",
+   "brown-sugar",
+   "cinnamon",
+   "mixed-berries",
+   "pecans"
+  ],
+  "specialty": [
+   "steel-cut-oats",
+   "mixed-berries",
+   "pecans"
+  ],
+  "steps": [
+   "Toast the dry oats in the butter over medium heat for 3-4 minutes, stirring, until they smell nutty and darken slightly. This step costs four minutes and is the difference between oatmeal that tastes of something and oatmeal that tastes of paste.",
+   "Add the water and bring to a boil, then reduce to the barest simmer.",
+   "Cook 25 minutes, stirring only occasionally. Steel-cut oats need the time; they are the whole groat cut in pieces, not rolled flat.",
+   "Add the milk and salt and cook 10 minutes more, stirring more often now as it thickens and can catch on the bottom.",
+   "Salt matters here. Unsalted oatmeal tastes flat no matter how much sugar you add.",
+   "Stir in the brown sugar and cinnamon and serve topped with berries and pecans. It thickens considerably as it sits - loosen with milk."
+  ],
+  "diet": {
+   "vegetarian": true,
+   "vegan": false,
+   "pescatarian": true,
+   "glutenFree": true,
+   "glutenFreeAdaptable": false,
+   "dairyFree": false,
+   "nutFree": false,
+   "eggFree": true
+  },
+  "allergens": [
+   "dairy",
+   "tree-nut"
+  ],
+  "gmo": {
+   "risk": "low",
+   "sources": [
+    "grain-fed-dairy",
+    "sugar-beet"
+   ]
+  },
+  "nutrition": {
+   "calories": 342,
+   "proteinG": 10,
+   "carbsG": 48,
+   "fiberG": 7,
+   "sugarG": 16,
+   "fatG": 14,
+   "satFatG": 5,
+   "sodiumMg": 320,
+   "cholesterolMg": 21
+  },
+  "tags": [
+   "breakfast",
+   "healthy",
+   "high-fiber",
+   "budget",
+   "technique",
+   "vegetarian",
+   "gluten-free",
+   "meal-prep"
+  ],
+  "image": {
+   "file": "oatmeal.jpg",
+   "source": "wikipedia-lead",
+   "match": "representative",
+   "wikipedia": "Steel-cut oats"
+  }
+ },
+ {
+  "id": "ch-ab-012",
+  "slug": "ab-stovetop-popcorn",
+  "title": "Stovetop Popcorn",
+  "genre": "american",
+  "subgenre": "snacks",
+  "chef": {
+   "name": "Alton Brown",
+   "slug": "alton-brown"
+  },
+  "description": "Popcorn popped in a covered pot with the lid cracked to vent steam.",
+  "difficulty": "beginner",
+  "easeScore": 10,
+  "spiceScore": 1,
+  "popularity": 9,
+  "pantryScore": 10,
+  "servings": 4,
+  "prepMin": 3,
+  "cookMin": 7,
+  "totalMin": 10,
+  "equipment": [
+   "stovetop"
+  ],
+  "ingredients": [
+   "1/2 cup popcorn kernels",
+   "3 tbsp canola oil",
+   "4 tbsp butter, melted",
+   "1 1/2 tsp fine salt",
+   "1/2 tsp smoked paprika",
+   "1/4 cup grated Parmesan"
+  ],
+  "ingredientKeys": [
+   "popcorn-kernels",
+   "canola-oil",
+   "butter",
+   "salt",
+   "smoked-paprika",
+   "parmesan"
+  ],
+  "specialty": [
+   "popcorn-kernels"
+  ],
+  "steps": [
+   "Put the oil and 3 kernels in a large pot over medium-high heat and cover. When those 3 kernels pop, the oil is at the right temperature - roughly 400F, hot enough to flash the moisture inside each kernel into steam.",
+   "Add the rest of the kernels, shake the pot to coat them in one layer, and cover with the lid slightly ajar.",
+   "That gap is the key. Popcorn is 14 percent water by weight, and letting the steam escape is what keeps the popped corn crisp rather than chewy.",
+   "Shake the pot every 15-20 seconds to keep the unpopped kernels in contact with the oil and the popped ones from scorching.",
+   "When the popping slows to a few seconds between pops, pull the pot off the heat immediately. Waiting for silence means burnt popcorn.",
+   "Tip into a bowl, drizzle with the melted butter, and toss with the salt, paprika and Parmesan. Use fine salt - coarse grains fall straight to the bottom."
+  ],
+  "diet": {
+   "vegetarian": true,
+   "vegan": false,
+   "pescatarian": true,
+   "glutenFree": true,
+   "glutenFreeAdaptable": false,
+   "dairyFree": false,
+   "nutFree": true,
+   "eggFree": true
+  },
+  "allergens": [
+   "dairy"
+  ],
+  "gmo": {
+   "risk": "high",
+   "sources": [
+    "corn",
+    "seed-oil",
+    "grain-fed-dairy"
+   ]
+  },
+  "nutrition": {
+   "calories": 286,
+   "proteinG": 5,
+   "carbsG": 22,
+   "fiberG": 4,
+   "sugarG": 0,
+   "fatG": 21,
+   "satFatG": 9,
+   "sodiumMg": 780,
+   "cholesterolMg": 32
+  },
+  "tags": [
+   "snack",
+   "quick",
+   "technique",
+   "vegetarian",
+   "gluten-free",
+   "budget",
+   "family",
+   "kid-friendly",
+   "movie-night"
+  ],
+  "image": {
+   "file": "ab-stovetop-popcorn.jpg",
+   "source": "commons-file",
+   "match": "dish",
+   "commonsFile": "Stovetop popcorn in Revere Ware.jpg"
+  }
+ },
+ {
+  "id": "ch-ab-013",
+  "slug": "ab-chewy-brownies",
+  "title": "Cocoa Brownies",
+  "genre": "american",
+  "subgenre": "desserts",
+  "chef": {
+   "name": "Alton Brown",
+   "slug": "alton-brown"
+  },
+  "description": "Brownies built on cocoa powder rather than bar chocolate for a chewier crumb.",
+  "difficulty": "beginner",
+  "easeScore": 9,
+  "spiceScore": 0,
+  "popularity": 9,
+  "pantryScore": 10,
+  "servings": 16,
+  "prepMin": 15,
+  "cookMin": 35,
+  "totalMin": 50,
+  "equipment": [
+   "oven",
+   "stovetop"
+  ],
+  "ingredients": [
+   "10 tbsp butter",
+   "1 1/4 cups sugar",
+   "3/4 cup cocoa powder",
+   "1/2 tsp salt",
+   "2 tsp vanilla extract",
+   "2 eggs",
+   "1 egg yolk",
+   "1/2 cup all-purpose flour",
+   "1/2 cup chopped walnuts"
+  ],
+  "ingredientKeys": [
+   "butter",
+   "sugar",
+   "cocoa-powder",
+   "salt",
+   "vanilla-extract",
+   "egg",
+   "egg-yolk",
+   "flour",
+   "walnuts"
+  ],
+  "specialty": [
+   "cocoa-powder",
+   "walnuts"
+  ],
+  "steps": [
+   "Heat the oven to 325F and line an 8-inch square pan with parchment.",
+   "Melt the butter, then whisk in the sugar, cocoa and salt and cook over low heat 1 minute. Heating the cocoa in fat blooms it - the flavor compounds are fat-soluble, so this produces a deeper chocolate taste than cocoa stirred into batter cold.",
+   "Cool the mixture 5 minutes, then whisk in the vanilla, eggs and extra yolk hard for a full minute. That vigorous whisking creates the thin shiny crust on top.",
+   "Fold in the flour with a spatula, stopping the instant it disappears. Cocoa brownies have little flour to begin with, and overmixing is what turns them cakey.",
+   "Fold in the walnuts and spread in the pan.",
+   "Bake 30-35 minutes until a toothpick comes out with moist crumbs. Clean means overbaked. Cool completely before cutting."
+  ],
+  "diet": {
+   "vegetarian": true,
+   "vegan": false,
+   "pescatarian": true,
+   "glutenFree": false,
+   "glutenFreeAdaptable": true,
+   "dairyFree": false,
+   "nutFree": false,
+   "eggFree": false
+  },
+  "allergens": [
+   "gluten",
+   "dairy",
+   "egg",
+   "tree-nut"
+  ],
+  "gmo": {
+   "risk": "moderate",
+   "sources": [
+    "sugar-beet",
+    "grain-fed-dairy"
+   ]
+  },
+  "nutrition": {
+   "calories": 242,
+   "proteinG": 4,
+   "carbsG": 26,
+   "fiberG": 2,
+   "sugarG": 18,
+   "fatG": 15,
+   "satFatG": 8,
+   "sodiumMg": 120,
+   "cholesterolMg": 58
+  },
+  "tags": [
+   "dessert",
+   "baking",
+   "technique",
+   "vegetarian",
+   "quick",
+   "pantry",
+   "family",
+   "budget"
+  ],
+  "image": {
+   "file": "ab-chewy-brownies.jpg",
+   "source": "commons-file",
+   "match": "dish",
+   "commonsFile": "Cocoa Avocado Brownies, June 2010.jpg"
+  }
+ },
+ {
+  "id": "ch-ab-014",
+  "slug": "ab-cold-ferment-pizza-dough",
+  "title": "Cold-Ferment Pizza Dough",
+  "genre": "italian",
+  "subgenre": "pizza",
+  "chef": {
+   "name": "Alton Brown",
+   "slug": "alton-brown"
+  },
+  "description": "A high-hydration dough fermented three days in the refrigerator.",
+  "difficulty": "intermediate",
+  "easeScore": 7,
+  "spiceScore": 0,
+  "popularity": 8,
+  "pantryScore": 10,
+  "servings": 4,
+  "prepMin": 20,
+  "cookMin": 2900,
+  "totalMin": 2920,
+  "equipment": [
+   "oven"
+  ],
+  "ingredients": [
+   "4 cups bread flour",
+   "1 1/2 cups cool water",
+   "1/2 tsp instant yeast",
+   "2 1/2 tsp salt",
+   "1 tsp sugar",
+   "2 tbsp olive oil",
+   "2 tbsp semolina, for dusting"
+  ],
+  "ingredientKeys": [
+   "bread-flour",
+   "water",
+   "instant-yeast",
+   "salt",
+   "sugar",
+   "olive-oil",
+   "semolina"
+  ],
+  "specialty": [
+   "bread-flour",
+   "instant-yeast",
+   "semolina"
+  ],
+  "steps": [
+   "Mix the flour, cool water, yeast, salt, sugar and oil until no dry flour remains. It will look rough and shaggy. Do not knead.",
+   "Cover and rest 20 minutes, then fold the dough over on itself four times in the bowl. Repeat the fold twice more at 20-minute intervals. These folds build gluten structure without kneading.",
+   "Refrigerate 48 to 72 hours. The tiny amount of yeast and the cold are deliberate: fermentation slows, but enzymes keep breaking starch into sugars and producing flavor compounds. A same-day dough cannot taste like this.",
+   "Divide into 4 balls, set them on an oiled tray, cover, and let them come fully to room temperature - about 2 hours. Cold dough will not stretch; it snaps back.",
+   "Heat the oven as hot as it goes with a steel or stone inside for a full hour.",
+   "Stretch each ball by hand on a semolina-dusted surface, never with a rolling pin, which crushes out the gas you spent three days building. Top and bake 7-10 minutes."
+  ],
+  "diet": {
+   "vegetarian": true,
+   "vegan": true,
+   "pescatarian": true,
+   "glutenFree": false,
+   "glutenFreeAdaptable": false,
+   "dairyFree": true,
+   "nutFree": true,
+   "eggFree": true
+  },
+  "allergens": [
+   "gluten"
+  ],
+  "gmo": {
+   "risk": "low",
+   "sources": [
+    "sugar-beet"
+   ]
+  },
+  "nutrition": {
+   "calories": 512,
+   "proteinG": 16,
+   "carbsG": 96,
+   "fiberG": 4,
+   "sugarG": 2,
+   "fatG": 8,
+   "satFatG": 1,
+   "sodiumMg": 1480,
+   "cholesterolMg": 0
+  },
+  "tags": [
+   "bread",
+   "technique",
+   "vegan",
+   "vegetarian",
+   "dairy-free",
+   "make-ahead",
+   "project",
+   "baking",
+   "foundation"
+  ],
+  "image": {
+   "file": "pizza-dough.jpg",
+   "source": "wikipedia-lead",
+   "match": "representative",
+   "wikipedia": "Pizza"
+  }
+ },
+ {
+  "id": "ch-ab-015",
+  "slug": "ab-broiled-salmon",
+  "title": "Broiled Salmon with Mustard Glaze",
+  "genre": "american",
+  "subgenre": "seafood",
+  "chef": {
+   "name": "Alton Brown",
+   "slug": "alton-brown"
+  },
+  "description": "Salmon cooked under the broiler in eight minutes with a mustard crust.",
+  "difficulty": "beginner",
+  "easeScore": 9,
+  "spiceScore": 2,
+  "popularity": 8,
+  "pantryScore": 9,
+  "servings": 4,
+  "prepMin": 10,
+  "cookMin": 10,
+  "totalMin": 20,
+  "equipment": [
+   "broiler"
+  ],
+  "ingredients": [
+   "4 salmon fillets (6 oz each), skin on",
+   "3 tbsp Dijon mustard",
+   "2 tbsp whole-grain mustard",
+   "2 tbsp maple syrup",
+   "1 tbsp soy sauce",
+   "1 tsp black pepper",
+   "1 1/2 tsp salt",
+   "2 tbsp canola oil",
+   "2 tbsp chopped chives",
+   "1 lemon, cut in wedges"
+  ],
+  "ingredientKeys": [
+   "salmon",
+   "dijon-mustard",
+   "whole-grain-mustard",
+   "maple-syrup",
+   "soy-sauce",
+   "black-pepper",
+   "salt",
+   "canola-oil",
+   "chives",
+   "lemon"
+  ],
+  "specialty": [
+   "salmon",
+   "whole-grain-mustard"
+  ],
+  "steps": [
+   "Position an oven rack about 6 inches from the broiler element and preheat the broiler for 10 minutes. A broiler is just an upside-down grill, and it needs to be fully hot.",
+   "Whisk both mustards with the maple syrup, soy sauce and pepper.",
+   "Pat the salmon completely dry, season with the salt, and rub with the oil.",
+   "Set the fillets skin-side down on a foil-lined pan and spread the glaze thickly over the tops.",
+   "Broil 7-9 minutes without turning. The glaze caramelizes and the fish cooks through from the top down, so there is no need to flip it.",
+   "Pull the salmon at 125F internal for medium - it keeps cooking after it leaves the oven. Finish with chives and lemon."
+  ],
+  "diet": {
+   "vegetarian": false,
+   "vegan": false,
+   "pescatarian": true,
+   "glutenFree": false,
+   "glutenFreeAdaptable": true,
+   "dairyFree": true,
+   "nutFree": true,
+   "eggFree": true
+  },
+  "allergens": [
+   "gluten",
+   "soy",
+   "fish"
+  ],
+  "gmo": {
+   "risk": "moderate",
+   "sources": [
+    "soy",
+    "seed-oil"
+   ]
+  },
+  "nutrition": {
+   "calories": 448,
+   "proteinG": 38,
+   "carbsG": 11,
+   "fiberG": 1,
+   "sugarG": 9,
+   "fatG": 28,
+   "satFatG": 5,
+   "sodiumMg": 1180,
+   "cholesterolMg": 98
+  },
+  "tags": [
+   "seafood",
+   "pescatarian",
+   "quick",
+   "dairy-free",
+   "healthy",
+   "high-protein",
+   "weeknight",
+   "technique"
+  ],
+  "image": {
+   "file": "salmon-fillet.jpg",
+   "source": "wikipedia-lead",
+   "match": "representative",
+   "wikipedia": "Salmon as food"
+  }
+ },
+ {
+  "id": "ch-ab-016",
+  "slug": "ab-cocoa-chili",
+  "title": "Cocoa and Chipotle Chili",
+  "genre": "american",
+  "subgenre": "comfort",
+  "chef": {
+   "name": "Alton Brown",
+   "slug": "alton-brown"
+  },
+  "description": "Chuck steak chili with cocoa powder and chipotle instead of ground beef.",
+  "difficulty": "beginner",
+  "easeScore": 8,
+  "spiceScore": 6,
+  "popularity": 8,
+  "pantryScore": 8,
+  "servings": 8,
+  "prepMin": 25,
+  "cookMin": 135,
+  "totalMin": 160,
+  "equipment": [
+   "stovetop",
+   "oven"
+  ],
+  "ingredients": [
+   "3 lb beef chuck, cut in 1/2-inch cubes",
+   "2 tbsp canola oil",
+   "2 tsp salt",
+   "1 tsp black pepper",
+   "2 yellow onions, diced",
+   "6 cloves garlic, minced",
+   "3 chipotle peppers in adobo, minced",
+   "1/4 cup chili powder",
+   "2 tbsp ground cumin",
+   "2 tbsp cocoa powder",
+   "1 tbsp dried oregano",
+   "1 can (28 oz) crushed tomatoes",
+   "1 bottle (12 oz) dark beer",
+   "2 cups beef broth",
+   "2 tbsp masa harina",
+   "2 cups shredded cheddar",
+   "1 cup sour cream",
+   "4 scallions, sliced"
+  ],
+  "ingredientKeys": [
+   "beef-chuck",
+   "canola-oil",
+   "salt",
+   "black-pepper",
+   "yellow-onion",
+   "garlic",
+   "chipotle-in-adobo",
+   "chili-powder",
+   "cumin",
+   "cocoa-powder",
+   "dried-oregano",
+   "crushed-tomatoes",
+   "dark-beer",
+   "beef-broth",
+   "masa-harina",
+   "cheddar",
+   "sour-cream",
+   "scallion"
+  ],
+  "specialty": [
+   "beef-chuck",
+   "chipotle-in-adobo",
+   "cocoa-powder",
+   "dark-beer",
+   "masa-harina"
+  ],
+  "steps": [
+   "Use cubed chuck rather than ground beef. The connective tissue breaks down into gelatin over a long cook, which gives the chili body that ground meat cannot.",
+   "Pat the beef dry, season, and brown it hard in the oil in batches. Crowding the pot steams the meat and you lose the fond.",
+   "Cook the onions 8 minutes, then the garlic and chipotles for 1 minute.",
+   "Add the chili powder, cumin, cocoa and oregano and stir a full minute in the hot fat. The cocoa reads as depth and faint bitterness, not chocolate - it works the same way it does in mole.",
+   "Add the tomatoes, beer and broth, return the beef, and simmer covered 2 hours until the meat is completely tender.",
+   "Whisk the masa harina with 1/2 cup water and stir it in, then simmer 10 minutes to thicken. Serve with cheddar, sour cream and scallions."
+  ],
+  "diet": {
+   "vegetarian": false,
+   "vegan": false,
+   "pescatarian": false,
+   "glutenFree": false,
+   "glutenFreeAdaptable": true,
+   "dairyFree": false,
+   "nutFree": true,
+   "eggFree": true
+  },
+  "allergens": [
+   "gluten",
+   "dairy"
+  ],
+  "gmo": {
+   "risk": "high",
+   "sources": [
+    "grain-fed-meat",
+    "corn",
+    "seed-oil",
+    "grain-fed-dairy"
+   ]
+  },
+  "nutrition": {
+   "calories": 782,
+   "proteinG": 58,
+   "carbsG": 32,
+   "fiberG": 8,
+   "sugarG": 9,
+   "fatG": 46,
+   "satFatG": 19,
+   "sodiumMg": 1480,
+   "cholesterolMg": 186
+  },
+  "tags": [
+   "comfort",
+   "game-day",
+   "make-ahead",
+   "technique",
+   "spicy",
+   "high-protein",
+   "leftovers",
+   "one-pot"
+  ],
+  "image": {
+   "file": "chili-con-carne.jpg",
+   "source": "wikipedia-lead",
+   "match": "representative",
+   "wikipedia": "Chili con carne"
+  }
+ },
+ {
+  "id": "ch-ab-017",
+  "slug": "ab-standing-rib-roast",
+  "title": "Standing Rib Roast",
+  "genre": "american",
+  "subgenre": "steaks",
+  "chef": {
+   "name": "Alton Brown",
+   "slug": "alton-brown"
+  },
+  "description": "A dry-brined prime rib roasted low and finished with a hot blast.",
+  "difficulty": "advanced",
+  "easeScore": 4,
+  "spiceScore": 1,
+  "popularity": 8,
+  "pantryScore": 6,
+  "servings": 10,
+  "prepMin": 30,
+  "cookMin": 1500,
+  "totalMin": 1530,
+  "equipment": [
+   "oven"
+  ],
+  "ingredients": [
+   "1 standing rib roast (6 lb), 3 bones",
+   "3 tbsp kosher salt",
+   "2 tbsp coarse black pepper",
+   "2 tbsp garlic powder",
+   "1 tbsp onion powder",
+   "2 tbsp canola oil",
+   "4 sprigs fresh rosemary",
+   "6 sprigs fresh thyme",
+   "1 cup beef broth"
+  ],
+  "ingredientKeys": [
+   "rib-roast",
+   "kosher-salt",
+   "black-pepper",
+   "garlic-powder",
+   "onion-powder",
+   "canola-oil",
+   "fresh-rosemary",
+   "fresh-thyme",
+   "beef-broth"
+  ],
+  "specialty": [
+   "rib-roast",
+   "fresh-rosemary",
+   "fresh-thyme"
+  ],
+  "steps": [
+   "Mix the salt, pepper, garlic powder and onion powder and rub it over the entire roast. Set it on a rack over a sheet pan and refrigerate uncovered 24 hours. This dry brine seasons the interior and dries the surface so it can brown.",
+   "Take it out 2 hours before cooking. A cold roast cooks unevenly - the outside overshoots while the center lags.",
+   "Heat the oven to 250F. Rub the roast with the oil, tie the rosemary and thyme against it with twine, and set it bone-side down on a rack with the broth in the pan.",
+   "Roast until the center reads 118F, about 3 1/2 to 4 hours for a 6-pound roast. Go by the thermometer, not the clock.",
+   "Rest it 30 minutes, loosely tented. During the rest the temperature climbs another several degrees from carryover cooking.",
+   "Raise the oven to 500F and return the roast for 8-10 minutes to crust the outside. Slice between the bones, or cut the bones off and carve the roast across the grain."
+  ],
+  "diet": {
+   "vegetarian": false,
+   "vegan": false,
+   "pescatarian": false,
+   "glutenFree": true,
+   "glutenFreeAdaptable": false,
+   "dairyFree": true,
+   "nutFree": true,
+   "eggFree": true
+  },
+  "allergens": [],
+  "gmo": {
+   "risk": "moderate",
+   "sources": [
+    "grain-fed-meat",
+    "seed-oil"
+   ]
+  },
+  "nutrition": {
+   "calories": 682,
+   "proteinG": 52,
+   "carbsG": 2,
+   "fiberG": 0,
+   "sugarG": 0,
+   "fatG": 52,
+   "satFatG": 21,
+   "sodiumMg": 1480,
+   "cholesterolMg": 178
+  },
+  "tags": [
+   "holiday",
+   "christmas",
+   "special-occasion",
+   "technique",
+   "gluten-free",
+   "dairy-free",
+   "high-protein",
+   "entertaining",
+   "project"
+  ],
+  "image": {
+   "file": "ab-standing-rib-roast.jpg",
+   "source": "commons-file",
+   "match": "dish",
+   "commonsFile": "Standing-rib-roast.jpg"
+  }
+ },
+ {
+  "id": "ch-ab-018",
+  "slug": "ab-baked-potato",
+  "title": "The Perfect Baked Potato",
+  "genre": "american",
+  "subgenre": "sides",
+  "chef": {
+   "name": "Alton Brown",
+   "slug": "alton-brown"
+  },
+  "description": "A russet baked directly on the rack for crisp skin and fluffy interior.",
+  "difficulty": "beginner",
+  "easeScore": 10,
+  "spiceScore": 1,
+  "popularity": 9,
+  "pantryScore": 10,
+  "servings": 4,
+  "prepMin": 5,
+  "cookMin": 60,
+  "totalMin": 65,
+  "equipment": [
+   "oven"
+  ],
+  "ingredients": [
+   "4 large russet potatoes",
+   "2 tbsp canola oil",
+   "1 tbsp kosher salt",
+   "4 tbsp butter",
+   "1/2 cup sour cream",
+   "1 tsp black pepper",
+   "4 scallions, sliced"
+  ],
+  "ingredientKeys": [
+   "russet-potato",
+   "canola-oil",
+   "kosher-salt",
+   "butter",
+   "sour-cream",
+   "black-pepper",
+   "scallion"
+  ],
+  "specialty": [],
+  "steps": [
+   "Heat the oven to 350F. Scrub the potatoes and dry them completely, then pierce each one 8 times with a fork so steam can escape.",
+   "Rub them all over with the oil and roll them in the kosher salt. The oil conducts heat into the skin and the coarse salt draws moisture out of it - together they are what makes the skin crisp.",
+   "Set them directly on the oven rack with a pan on the shelf below to catch drips. Do not wrap them in foil. Foil traps steam and you get a steamed potato with limp skin.",
+   "Bake 55-65 minutes. They are done when a skewer slides through with no resistance and the internal temperature is about 210F - high enough for the starch granules to fully gelatinize.",
+   "Cut each one open immediately and squeeze the ends to fluff the interior. Trapped steam turns a fluffy potato gummy within minutes.",
+   "Top with butter, sour cream, pepper and scallions."
+  ],
+  "diet": {
+   "vegetarian": true,
+   "vegan": false,
+   "pescatarian": true,
+   "glutenFree": true,
+   "glutenFreeAdaptable": false,
+   "dairyFree": false,
+   "nutFree": true,
+   "eggFree": true
+  },
+  "allergens": [
+   "dairy"
+  ],
+  "gmo": {
+   "risk": "moderate",
+   "sources": [
+    "seed-oil",
+    "grain-fed-dairy"
+   ]
+  },
+  "nutrition": {
+   "calories": 386,
+   "proteinG": 7,
+   "carbsG": 48,
+   "fiberG": 5,
+   "sugarG": 3,
+   "fatG": 19,
+   "satFatG": 10,
+   "sodiumMg": 880,
+   "cholesterolMg": 42
+  },
+  "tags": [
+   "side",
+   "technique",
+   "vegetarian",
+   "gluten-free",
+   "budget",
+   "easy",
+   "family",
+   "classic"
+  ],
+  "image": {
+   "file": "baked-potato.jpg",
+   "source": "wikipedia-lead",
+   "match": "representative",
+   "wikipedia": "Baked potato"
+  }
+ },
+ {
+  "id": "ch-ab-019",
+  "slug": "ab-sauerkraut",
+  "title": "Homemade Sauerkraut",
+  "genre": "international",
+  "subgenre": "ferments",
+  "chef": {
+   "name": "Alton Brown",
+   "slug": "alton-brown"
+  },
+  "description": "Cabbage and salt fermented for a month in its own brine.",
+  "difficulty": "intermediate",
+  "easeScore": 7,
+  "spiceScore": 1,
+  "popularity": 6,
+  "pantryScore": 10,
+  "servings": 16,
+  "prepMin": 30,
+  "cookMin": 2880,
+  "totalMin": 2910,
+  "equipment": [
+   "no-cook"
+  ],
+  "ingredients": [
+   "5 lb green cabbage, cored and shredded",
+   "3 tbsp kosher salt",
+   "1 tbsp caraway seeds",
+   "1 tsp black peppercorns",
+   "2 bay leaves"
+  ],
+  "ingredientKeys": [
+   "green-cabbage",
+   "kosher-salt",
+   "caraway-seeds",
+   "black-peppercorns",
+   "bay-leaf"
+  ],
+  "specialty": [
+   "caraway-seeds",
+   "black-peppercorns"
+  ],
+  "steps": [
+   "Weigh the shredded cabbage and use 2 percent of its weight in salt - about 3 tbsp for 5 pounds. This ratio is not arbitrary: it inhibits spoilage organisms while letting the salt-tolerant lactobacillus that lives on the cabbage take over.",
+   "Toss the cabbage with the salt in a large bowl and massage it hard for 10 minutes. It will wilt and release a surprising amount of liquid. That liquid is the brine, and you need it.",
+   "Mix in the caraway, peppercorns and bay leaves and pack everything tightly into a clean jar or crock, pressing down firmly to eliminate air pockets.",
+   "The cabbage must stay fully submerged under its own brine. Weight it down with a smaller jar or a brine-filled bag. Anything above the liquid will mold.",
+   "Cover loosely so carbon dioxide can escape and leave it at cool room temperature, around 65F, for 3 to 4 weeks.",
+   "Taste it weekly. It will go from salty cabbage to sharply sour. When you like it, cap it and refrigerate - the cold slows fermentation almost to a stop. It keeps months."
+  ],
+  "diet": {
+   "vegetarian": true,
+   "vegan": true,
+   "pescatarian": true,
+   "glutenFree": true,
+   "glutenFreeAdaptable": false,
+   "dairyFree": true,
+   "nutFree": true,
+   "eggFree": true
+  },
+  "allergens": [],
+  "gmo": {
+   "risk": "low",
+   "sources": [
+    "none"
+   ]
+  },
+  "nutrition": {
+   "calories": 28,
+   "proteinG": 1,
+   "carbsG": 6,
+   "fiberG": 3,
+   "sugarG": 3,
+   "fatG": 0,
+   "satFatG": 0,
+   "sodiumMg": 780,
+   "cholesterolMg": 0
+  },
+  "tags": [
+   "technique",
+   "vegan",
+   "vegetarian",
+   "gluten-free",
+   "dairy-free",
+   "make-ahead",
+   "budget",
+   "project",
+   "fermented",
+   "healthy"
+  ],
+  "image": {
+   "file": "ab-sauerkraut.jpg",
+   "source": "commons-file",
+   "match": "dish",
+   "commonsFile": "Homemade Sauerkraut.jpg"
+  }
+ },
+ {
+  "id": "ch-ab-020",
+  "slug": "ab-granola",
+  "title": "Granola",
+  "genre": "american",
+  "subgenre": "breakfast",
+  "chef": {
+   "name": "Alton Brown",
+   "slug": "alton-brown"
+  },
+  "description": "Oats, nuts and maple baked low and slow, stirred for even toasting.",
+  "difficulty": "beginner",
+  "easeScore": 10,
+  "spiceScore": 0,
+  "popularity": 8,
+  "pantryScore": 8,
+  "servings": 16,
+  "prepMin": 10,
+  "cookMin": 80,
+  "totalMin": 90,
+  "equipment": [
+   "oven"
+  ],
+  "ingredients": [
+   "6 cups rolled oats",
+   "2 cups sliced almonds",
+   "1 cup chopped pecans",
+   "1 cup shredded coconut",
+   "1/2 cup packed brown sugar",
+   "1/2 cup maple syrup",
+   "1/3 cup canola oil",
+   "1 tbsp vanilla extract",
+   "2 tsp ground cinnamon",
+   "1 1/2 tsp salt",
+   "1 1/2 cups raisins",
+   "1 cup dried cranberries"
+  ],
+  "ingredientKeys": [
+   "rolled-oats",
+   "almonds",
+   "pecans",
+   "shredded-coconut",
+   "brown-sugar",
+   "maple-syrup",
+   "canola-oil",
+   "vanilla-extract",
+   "cinnamon",
+   "salt",
+   "raisins",
+   "dried-cranberries"
+  ],
+  "specialty": [
+   "rolled-oats",
+   "almonds",
+   "pecans",
+   "shredded-coconut",
+   "raisins",
+   "dried-cranberries"
+  ],
+  "steps": [
+   "Heat the oven to 250F. Low heat is the point - granola is a dehydration process as much as a baking one, and high heat burns the sugar before the oats dry out.",
+   "Toss the oats, almonds, pecans and coconut together in a large bowl.",
+   "Whisk the brown sugar, maple syrup, oil, vanilla, cinnamon and salt, then pour it over the dry mixture and toss until everything is evenly coated.",
+   "Spread across two sheet pans in a thin layer. Thick layers steam in the middle and never crisp.",
+   "Bake 75-80 minutes, stirring every 15 minutes so the edges do not scorch while the centers stay damp.",
+   "Add the dried fruit only after the granola comes out of the oven - baked dried fruit turns to hard pellets. Cool completely on the pans; it crisps as it cools. Keeps a month in a sealed jar."
+  ],
+  "diet": {
+   "vegetarian": true,
+   "vegan": true,
+   "pescatarian": true,
+   "glutenFree": true,
+   "glutenFreeAdaptable": false,
+   "dairyFree": true,
+   "nutFree": false,
+   "eggFree": true
+  },
+  "allergens": [
+   "tree-nut"
+  ],
+  "gmo": {
+   "risk": "moderate",
+   "sources": [
+    "seed-oil",
+    "sugar-beet"
+   ]
+  },
+  "nutrition": {
+   "calories": 448,
+   "proteinG": 9,
+   "carbsG": 58,
+   "fiberG": 7,
+   "sugarG": 28,
+   "fatG": 22,
+   "satFatG": 4,
+   "sodiumMg": 220,
+   "cholesterolMg": 0
+  },
+  "tags": [
+   "breakfast",
+   "make-ahead",
+   "vegan",
+   "vegetarian",
+   "gluten-free",
+   "dairy-free",
+   "technique",
+   "healthy",
+   "high-fiber",
+   "budget"
+  ],
+  "image": {
+   "file": "ab-granola.jpg",
+   "source": "commons-file",
+   "match": "dish",
+   "commonsFile": "Granola and Yogurt.jpg"
+  }
+ },
+ {
+  "id": "ch-ab-021",
+  "slug": "ab-dutch-baby",
+  "title": "Dutch Baby Pancake",
+  "genre": "american",
+  "subgenre": "breakfast",
+  "chef": {
+   "name": "Alton Brown",
+   "slug": "alton-brown"
+  },
+  "description": "A single oven pancake that climbs the pan walls and collapses dramatically.",
+  "difficulty": "intermediate",
+  "easeScore": 7,
+  "spiceScore": 0,
+  "popularity": 8,
+  "pantryScore": 10,
+  "servings": 4,
+  "prepMin": 10,
+  "cookMin": 25,
+  "totalMin": 35,
+  "equipment": [
+   "oven",
+   "blender"
+  ],
+  "ingredients": [
+   "3 eggs, at room temperature",
+   "1/2 cup whole milk, at room temperature",
+   "1/2 cup all-purpose flour",
+   "2 tbsp sugar",
+   "1/2 tsp salt",
+   "1 tsp vanilla extract",
+   "3 tbsp butter",
+   "2 tbsp powdered sugar",
+   "1 lemon, cut in wedges",
+   "1 cup mixed berries"
+  ],
+  "ingredientKeys": [
+   "egg",
+   "whole-milk",
+   "flour",
+   "sugar",
+   "salt",
+   "vanilla-extract",
+   "butter",
+   "powdered-sugar",
+   "lemon",
+   "mixed-berries"
+  ],
+  "specialty": [
+   "mixed-berries"
+  ],
+  "steps": [
+   "Use room-temperature eggs and milk. Cold batter hitting a hot pan produces far less steam, and steam is the only thing lifting this pancake.",
+   "Blend the eggs, milk, flour, sugar, salt and vanilla for 30 seconds until completely smooth, then let the batter rest 10 minutes so the flour hydrates.",
+   "Heat the oven to 425F with a 10-inch cast-iron skillet inside for 10 minutes.",
+   "Add the butter to the hot pan, swirl to coat, then pour the batter straight into the center.",
+   "Bake 20-22 minutes without opening the door. The pancake rises up the walls because water in the batter flashes to steam faster than the structure can set. Opening the door drops the temperature and it deflates.",
+   "It will collapse into a bowl shape within a minute of coming out - that is expected, not a failure. Dust with powdered sugar and serve immediately with lemon and berries."
+  ],
+  "diet": {
+   "vegetarian": true,
+   "vegan": false,
+   "pescatarian": true,
+   "glutenFree": false,
+   "glutenFreeAdaptable": false,
+   "dairyFree": false,
+   "nutFree": true,
+   "eggFree": false
+  },
+  "allergens": [
+   "gluten",
+   "dairy",
+   "egg"
+  ],
+  "gmo": {
+   "risk": "low",
+   "sources": [
+    "grain-fed-dairy",
+    "sugar-beet"
+   ]
+  },
+  "nutrition": {
+   "calories": 286,
+   "proteinG": 9,
+   "carbsG": 32,
+   "fiberG": 2,
+   "sugarG": 16,
+   "fatG": 14,
+   "satFatG": 8,
+   "sodiumMg": 380,
+   "cholesterolMg": 158
+  },
+  "tags": [
+   "breakfast",
+   "brunch",
+   "technique",
+   "vegetarian",
+   "quick",
+   "weekend",
+   "family",
+   "easy"
+  ],
+  "image": {
+   "file": "ab-dutch-baby.jpg",
+   "source": "commons-file",
+   "match": "dish",
+   "commonsFile": "2-22-2025 Dutch baby pancake (10 of 12).jpg"
+  }
+ },
+ {
+  "id": "ch-ab-022",
+  "slug": "ab-vanilla-ice-cream",
+  "title": "Vanilla Custard Ice Cream",
+  "genre": "american",
+  "subgenre": "desserts",
+  "chef": {
+   "name": "Alton Brown",
+   "slug": "alton-brown"
+  },
+  "description": "A cooked egg custard base aged overnight before churning.",
+  "difficulty": "intermediate",
+  "easeScore": 6,
+  "spiceScore": 0,
+  "popularity": 9,
+  "pantryScore": 8,
+  "servings": 8,
+  "prepMin": 25,
+  "cookMin": 780,
+  "totalMin": 805,
+  "equipment": [
+   "stovetop"
+  ],
+  "ingredients": [
+   "2 cups heavy cream",
+   "1 cup whole milk",
+   "3/4 cup sugar",
+   "1/4 cup light corn syrup",
+   "1/2 tsp salt",
+   "1 vanilla bean, split",
+   "6 egg yolks",
+   "1 tbsp vanilla extract"
+  ],
+  "ingredientKeys": [
+   "heavy-cream",
+   "whole-milk",
+   "sugar",
+   "corn-syrup",
+   "salt",
+   "vanilla-bean",
+   "egg-yolk",
+   "vanilla-extract"
+  ],
+  "specialty": [
+   "corn-syrup",
+   "vanilla-bean"
+  ],
+  "steps": [
+   "Warm the cream, milk, sugar, corn syrup, salt and scraped vanilla bean until steaming but not boiling. The corn syrup is there as an invert sugar - it interferes with ice crystal formation and keeps the texture smooth.",
+   "Whisk the egg yolks in a bowl, then temper them: pour in a cup of the hot dairy in a thin stream while whisking constantly. Rushing this scrambles the yolks.",
+   "Return everything to the pan and cook over medium-low, stirring constantly, until it reaches 170-175F and coats the back of a spoon. Past 180F the yolks curdle.",
+   "Strain through a fine sieve into a bowl set in an ice bath, then stir in the vanilla extract and cool completely.",
+   "Refrigerate at least 8 hours. This aging step lets the fat crystallize and the proteins hydrate, and it makes a measurable difference to the final texture.",
+   "Churn in an ice cream maker according to the manufacturer, then freeze 4 hours to harden."
+  ],
+  "diet": {
+   "vegetarian": true,
+   "vegan": false,
+   "pescatarian": true,
+   "glutenFree": true,
+   "glutenFreeAdaptable": false,
+   "dairyFree": false,
+   "nutFree": true,
+   "eggFree": false
+  },
+  "allergens": [
+   "dairy",
+   "egg"
+  ],
+  "gmo": {
+   "risk": "high",
+   "sources": [
+    "corn-syrup",
+    "sugar-beet",
+    "grain-fed-dairy"
+   ]
+  },
+  "nutrition": {
+   "calories": 448,
+   "proteinG": 6,
+   "carbsG": 38,
+   "fiberG": 0,
+   "sugarG": 36,
+   "fatG": 30,
+   "satFatG": 18,
+   "sodiumMg": 180,
+   "cholesterolMg": 238
+  },
+  "tags": [
+   "dessert",
+   "technique",
+   "make-ahead",
+   "vegetarian",
+   "gluten-free",
+   "summer",
+   "classic",
+   "project"
+  ],
+  "image": {
+   "file": "vanilla-ice-cream.jpg",
+   "source": "wikipedia-lead",
+   "match": "representative",
+   "wikipedia": "Ice cream"
+  }
+ },
+ {
+  "id": "ch-ab-023",
+  "slug": "ab-cold-brew-coffee",
+  "title": "Cold Brew Coffee",
+  "genre": "american",
+  "subgenre": "drinks",
+  "chef": {
+   "name": "Alton Brown",
+   "slug": "alton-brown"
+  },
+  "description": "Coarse grounds steeped in cold water for twelve hours, then filtered.",
+  "difficulty": "beginner",
+  "easeScore": 10,
+  "spiceScore": 0,
+  "popularity": 8,
+  "pantryScore": 9,
+  "servings": 8,
+  "prepMin": 10,
+  "cookMin": 720,
+  "totalMin": 730,
+  "equipment": [
+   "no-cook"
+  ],
+  "ingredients": [
+   "2 cups coarsely ground coffee",
+   "8 cups cold filtered water",
+   "1 cup whole milk",
+   "2 tbsp simple syrup",
+   "4 cups ice"
+  ],
+  "ingredientKeys": [
+   "ground-coffee",
+   "water",
+   "whole-milk",
+   "simple-syrup",
+   "ice"
+  ],
+  "specialty": [
+   "ground-coffee",
+   "simple-syrup"
+  ],
+  "steps": [
+   "Grind the coffee coarse, like breadcrumbs. Fine grounds over-extract during a long steep and clog the filter.",
+   "Stir the grounds into the cold water in a large jar until all of them are wet.",
+   "Steep at room temperature 12 to 16 hours. Cold water extracts caffeine and flavor compounds but barely touches the bitter chlorogenic acids and oils that hot water pulls out - that is why cold brew tastes smooth and less acidic rather than simply cold.",
+   "Strain through a fine sieve, then again through a coffee filter or cheesecloth. Do not press the grounds; squeezing them pushes bitterness through.",
+   "What you have is concentrate. Dilute it roughly one to one with water or milk to drink.",
+   "Serve over ice with milk and simple syrup. The concentrate keeps two weeks refrigerated."
+  ],
+  "diet": {
+   "vegetarian": true,
+   "vegan": false,
+   "pescatarian": true,
+   "glutenFree": true,
+   "glutenFreeAdaptable": false,
+   "dairyFree": false,
+   "nutFree": true,
+   "eggFree": true
+  },
+  "allergens": [
+   "dairy"
+  ],
+  "gmo": {
+   "risk": "moderate",
+   "sources": [
+    "sugar-beet",
+    "grain-fed-dairy"
+   ]
+  },
+  "nutrition": {
+   "calories": 48,
+   "proteinG": 2,
+   "carbsG": 7,
+   "fiberG": 0,
+   "sugarG": 6,
+   "fatG": 1,
+   "satFatG": 1,
+   "sodiumMg": 28,
+   "cholesterolMg": 5
+  },
+  "tags": [
+   "drink",
+   "technique",
+   "make-ahead",
+   "vegetarian",
+   "gluten-free",
+   "summer",
+   "budget",
+   "easy",
+   "no-cook"
+  ],
+  "image": {
+   "file": "ab-cold-brew-coffee.jpg",
+   "source": "commons-file",
+   "match": "dish",
+   "commonsFile": "Cold Brew Coffee.jpg"
+  }
+ },
+ {
+  "id": "ch-ab-024",
+  "slug": "ab-beef-jerky",
+  "title": "Beef Jerky",
+  "genre": "american",
+  "subgenre": "snacks",
+  "chef": {
+   "name": "Alton Brown",
+   "slug": "alton-brown"
+  },
+  "description": "Marinated flank steak dried low in the oven until leathery but pliable.",
+  "difficulty": "intermediate",
+  "easeScore": 7,
+  "spiceScore": 4,
+  "popularity": 7,
+  "pantryScore": 7,
+  "servings": 12,
+  "prepMin": 25,
+  "cookMin": 600,
+  "totalMin": 625,
+  "equipment": [
+   "oven"
+  ],
+  "ingredients": [
+   "3 lb flank steak",
+   "2/3 cup Worcestershire sauce",
+   "2/3 cup soy sauce",
+   "1/4 cup packed brown sugar",
+   "2 tbsp smoked paprika",
+   "2 tbsp black pepper",
+   "1 tbsp onion powder",
+   "1 tbsp garlic powder",
+   "2 tsp cayenne pepper",
+   "1 tsp red pepper flakes"
+  ],
+  "ingredientKeys": [
+   "flank-steak",
+   "worcestershire",
+   "soy-sauce",
+   "brown-sugar",
+   "smoked-paprika",
+   "black-pepper",
+   "onion-powder",
+   "garlic-powder",
+   "cayenne",
+   "red-pepper-flakes"
+  ],
+  "specialty": [
+   "flank-steak"
+  ],
+  "steps": [
+   "Freeze the flank steak 1 hour until firm, then slice it as thinly as you can - about 1/8 inch - with the grain. Slicing with the grain gives chewy jerky; against the grain gives jerky that crumbles.",
+   "Trim every bit of visible fat. Fat does not dry and will go rancid.",
+   "Whisk all the remaining ingredients into a marinade and submerge the slices. Refrigerate 3 to 8 hours.",
+   "Drain the slices and pat them dry, then lay them flat on racks set over sheet pans, not touching.",
+   "Dry in a 175F oven with the door propped open an inch for 4 to 6 hours. The propped door lets moisture escape - in a closed oven the meat steams rather than dehydrates.",
+   "It is done when a piece bends and cracks but does not snap in half. Cool completely and store in a sealed jar; it keeps two weeks at room temperature, longer refrigerated."
+  ],
+  "diet": {
+   "vegetarian": false,
+   "vegan": false,
+   "pescatarian": false,
+   "glutenFree": false,
+   "glutenFreeAdaptable": true,
+   "dairyFree": true,
+   "nutFree": true,
+   "eggFree": true
+  },
+  "allergens": [
+   "gluten",
+   "soy",
+   "fish"
+  ],
+  "gmo": {
+   "risk": "high",
+   "sources": [
+    "grain-fed-meat",
+    "soy",
+    "sugar-beet",
+    "processed-sauce"
+   ]
+  },
+  "nutrition": {
+   "calories": 168,
+   "proteinG": 24,
+   "carbsG": 6,
+   "fiberG": 0,
+   "sugarG": 5,
+   "fatG": 5,
+   "satFatG": 2,
+   "sodiumMg": 1080,
+   "cholesterolMg": 58
+  },
+  "tags": [
+   "snack",
+   "technique",
+   "make-ahead",
+   "high-protein",
+   "dairy-free",
+   "low-carb",
+   "project",
+   "camping"
+  ],
+  "image": {
+   "file": "ab-beef-jerky.jpg",
+   "source": "commons-file",
+   "match": "dish",
+   "commonsFile": "Beef jerky, 2007.jpg"
+  }
+ },
+ {
+  "id": "ch-ab-025",
+  "slug": "ab-chocolate-pudding",
+  "title": "Chocolate Pudding",
+  "genre": "american",
+  "subgenre": "desserts",
+  "chef": {
+   "name": "Alton Brown",
+   "slug": "alton-brown"
+  },
+  "description": "A cornstarch-thickened chocolate pudding cooked on the stovetop.",
+  "difficulty": "beginner",
+  "easeScore": 9,
+  "spiceScore": 0,
+  "popularity": 8,
+  "pantryScore": 9,
+  "servings": 6,
+  "prepMin": 10,
+  "cookMin": 135,
+  "totalMin": 145,
+  "equipment": [
+   "stovetop"
+  ],
+  "ingredients": [
+   "3/4 cup sugar",
+   "1/3 cup cocoa powder",
+   "3 tbsp cornstarch",
+   "1/2 tsp salt",
+   "3 cups whole milk",
+   "4 oz bittersweet chocolate, chopped",
+   "3 tbsp butter",
+   "2 tsp vanilla extract",
+   "1 cup whipped cream"
+  ],
+  "ingredientKeys": [
+   "sugar",
+   "cocoa-powder",
+   "cornstarch",
+   "salt",
+   "whole-milk",
+   "bittersweet-chocolate",
+   "butter",
+   "vanilla-extract",
+   "whipped-cream"
+  ],
+  "specialty": [
+   "cocoa-powder",
+   "cornstarch",
+   "bittersweet-chocolate"
+  ],
+  "steps": [
+   "Whisk the sugar, cocoa, cornstarch and salt together in a saucepan while completely dry. Mixing the cornstarch with the sugar first separates the granules so they hydrate without clumping.",
+   "Whisk in the milk gradually until smooth.",
+   "Cook over medium heat, whisking constantly, until it comes to a full boil and thickens visibly, about 8 minutes. Cornstarch has to actually boil to reach full thickening power - pull it early and the pudding stays loose.",
+   "Boil 1 more minute, still whisking, then take it off the heat.",
+   "Add the chopped chocolate, butter and vanilla and stir until completely smooth.",
+   "Press plastic wrap directly onto the surface to stop a skin forming, then chill at least 2 hours. Serve with whipped cream."
+  ],
+  "diet": {
+   "vegetarian": true,
+   "vegan": false,
+   "pescatarian": true,
+   "glutenFree": true,
+   "glutenFreeAdaptable": false,
+   "dairyFree": false,
+   "nutFree": true,
+   "eggFree": true
+  },
+  "allergens": [
+   "dairy",
+   "soy"
+  ],
+  "gmo": {
+   "risk": "high",
+   "sources": [
+    "cornstarch",
+    "sugar-beet",
+    "soy",
+    "grain-fed-dairy"
+   ]
+  },
+  "nutrition": {
+   "calories": 386,
+   "proteinG": 7,
+   "carbsG": 48,
+   "fiberG": 3,
+   "sugarG": 38,
+   "fatG": 19,
+   "satFatG": 12,
+   "sodiumMg": 280,
+   "cholesterolMg": 42
+  },
+  "tags": [
+   "dessert",
+   "technique",
+   "make-ahead",
+   "vegetarian",
+   "gluten-free",
+   "kid-friendly",
+   "easy",
+   "comfort",
+   "budget"
+  ],
+  "image": {
+   "file": "ab-chocolate-pudding.jpg",
+   "source": "commons-file",
+   "match": "dish",
+   "commonsFile": "Chocolate Pudding 2.jpg"
+  }
+ }
+]

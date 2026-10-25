@@ -1,0 +1,430 @@
+{
+ "$schema": "http://json-schema.org/draft-07/schema#",
+ "$id": "https://gusteau.local/recipes/schema.json",
+ "title": "Gusteau Recipe",
+ "description": "One recipe in the Gusteau repository. Genre files (data/*.json) and chef files (data/chefs/*.json) are arrays of these objects.",
+ "type": "object",
+ "required": [
+  "id",
+  "slug",
+  "title",
+  "genre",
+  "subgenre",
+  "description",
+  "difficulty",
+  "easeScore",
+  "spiceScore",
+  "popularity",
+  "pantryScore",
+  "servings",
+  "prepMin",
+  "cookMin",
+  "totalMin",
+  "equipment",
+  "ingredients",
+  "ingredientKeys",
+  "specialty",
+  "steps",
+  "diet",
+  "allergens",
+  "gmo",
+  "nutrition",
+  "tags",
+  "image"
+ ],
+ "additionalProperties": false,
+ "properties": {
+  "id": {
+   "type": "string",
+   "pattern": "^((am|mx|it|md|fr|in)-[0-9]{3}|ch-[a-z]{2,3}-[0-9]{3})$",
+   "description": "Base recipes use a genre prefix (am/mx/it/md/fr/in) plus a number. Chef-attributed recipes use ch-<chef initials>-NNN and must carry a chef object."
+  },
+  "slug": {
+   "type": "string",
+   "pattern": "^[a-z0-9-]+$"
+  },
+  "title": {
+   "type": "string"
+  },
+  "genre": {
+   "enum": [
+    "american",
+    "mexican",
+    "italian",
+    "mediterranean",
+    "french",
+    "international"
+   ],
+   "description": "The four core genres plus two that only chef-attributed recipes use: french (Julia Child, Jacques Pepin) and international (British, fusion and other dishes outside the core four)."
+  },
+  "subgenre": {
+   "type": "string",
+   "description": "Free-text grouping inside a genre, e.g. burgers, bbq, pasta, pizza, tacos, mezze."
+  },
+  "description": {
+   "type": "string",
+   "description": "One sentence shown under the title in browse cards."
+  },
+  "difficulty": {
+   "enum": [
+    "beginner",
+    "intermediate",
+    "advanced"
+   ],
+   "description": "beginner: no technique to learn, hard to ruin. intermediate: multi-component, timing or a technique like searing/emulsifying/dough. advanced: long or fussy — lamination, braise plus sauce, fry temperature control, cured or cooked-to-temp proteins."
+  },
+  "easeScore": {
+   "type": "integer",
+   "minimum": 1,
+   "maximum": 10,
+   "description": "10 = almost impossible to get wrong; 1 = demanding. Combines active attention, technique, number of steps and timing pressure. Correlates with difficulty: beginner 8-10, intermediate 5-7, advanced 1-4."
+  },
+  "spiceScore": {
+   "type": "integer",
+   "minimum": 0,
+   "maximum": 10,
+   "description": "Capsaicin heat as written. 0 = no heat, 1-2 = warmth only, 3-4 = mild, 5-6 = medium, 7-8 = hot, 9-10 = very hot."
+  },
+  "popularity": {
+   "type": "integer",
+   "minimum": 1,
+   "maximum": 10,
+   "description": "How recognizable and frequently cooked the dish is in the US. 10 = household staple."
+  },
+  "pantryScore": {
+   "type": "integer",
+   "minimum": 1,
+   "maximum": 10,
+   "description": "How likely a typical US home cook already has everything, or can get it at any supermarket in one stop. 10 = pantry and fridge staples only."
+  },
+  "servings": {
+   "type": "integer",
+   "minimum": 1
+  },
+  "prepMin": {
+   "type": "integer",
+   "minimum": 0,
+   "description": "Hands-on prep before cooking."
+  },
+  "cookMin": {
+   "type": "integer",
+   "minimum": 0,
+   "description": "Cooking, baking, resting or marinating time."
+  },
+  "totalMin": {
+   "type": "integer",
+   "minimum": 1,
+   "description": "prepMin + cookMin, wall-clock."
+  },
+  "equipment": {
+   "type": "array",
+   "minItems": 1,
+   "items": {
+    "enum": [
+     "stovetop",
+     "oven",
+     "microwave",
+     "grill",
+     "broiler",
+     "air-fryer",
+     "slow-cooker",
+     "pressure-cooker",
+     "blender",
+     "food-processor",
+     "no-cook"
+    ]
+   },
+   "description": "The app's Equipment type covers stovetop | oven | microwave; grill and broiler map to oven, air-fryer to oven, slow-cooker and pressure-cooker to stovetop. See README."
+  },
+  "ingredients": {
+   "type": "array",
+   "minItems": 1,
+   "items": {
+    "type": "string"
+   },
+   "description": "Display strings with amounts, in the order used, e.g. \"1 lb ground beef (80/20)\"."
+  },
+  "ingredientKeys": {
+   "type": "array",
+   "minItems": 1,
+   "items": {
+    "type": "string",
+    "pattern": "^[a-z0-9-]+$"
+   },
+   "description": "Canonical lowercase keys, one per ingredient line, for matching against user inventory."
+  },
+  "specialty": {
+   "type": "array",
+   "items": {
+    "type": "string"
+   },
+   "description": "Subset of ingredientKeys a typical US kitchen will NOT have on hand. Empty array means fully pantry-friendly. Drives the 'missing ingredients' count."
+  },
+  "steps": {
+   "type": "array",
+   "minItems": 2,
+   "items": {
+    "type": "string"
+   },
+   "description": "Short imperative steps, each one action a beginner can follow without reading ahead."
+  },
+  "diet": {
+   "type": "object",
+   "required": [
+    "vegetarian",
+    "vegan",
+    "pescatarian",
+    "glutenFree",
+    "glutenFreeAdaptable",
+    "dairyFree",
+    "nutFree",
+    "eggFree"
+   ],
+   "additionalProperties": false,
+   "properties": {
+    "vegetarian": {
+     "type": "boolean"
+    },
+    "vegan": {
+     "type": "boolean"
+    },
+    "pescatarian": {
+     "type": "boolean",
+     "description": "True for vegetarian recipes and for ones whose only animal protein is fish or shellfish."
+    },
+    "glutenFree": {
+     "type": "boolean",
+     "description": "True only if gluten-free as written, assuming certified GF versions of naturally GF staples (oats, soy sauce, broth)."
+    },
+    "glutenFreeAdaptable": {
+     "type": "boolean",
+     "description": "True when one swap (GF pasta, GF buns, cornstarch for flour) makes it gluten-free."
+    },
+    "dairyFree": {
+     "type": "boolean"
+    },
+    "nutFree": {
+     "type": "boolean",
+     "description": "Tree nuts and peanuts. Does not consider cross-contamination."
+    },
+    "eggFree": {
+     "type": "boolean"
+    }
+   }
+  },
+  "allergens": {
+   "type": "array",
+   "items": {
+    "enum": [
+     "gluten",
+     "dairy",
+     "egg",
+     "fish",
+     "shellfish",
+     "soy",
+     "tree-nut",
+     "peanut",
+     "sesame",
+     "sulfites"
+    ]
+   },
+   "description": "The US major allergens present as written."
+  },
+  "gmo": {
+   "type": "object",
+   "required": [
+    "risk",
+    "sources"
+   ],
+   "additionalProperties": false,
+   "description": "NOT a claim about the dish. A sourcing-risk rating: how likely conventionally-bought ingredients derive from bioengineered crops (corn, soy, canola, sugar beet, cottonseed, some papaya and squash) or from animals raised on them. Buying organic or Non-GMO Project verified lowers every rating to 'low'.",
+   "properties": {
+    "risk": {
+     "enum": [
+      "low",
+      "moderate",
+      "high"
+     ],
+     "description": "low: whole foods, no commodity-crop derivatives. moderate: seed oils, conventional meat or dairy from grain-fed animals, or refined sugar. high: multiple processed or corn/soy-derived components (tortillas, buns, sauces, breading, syrups)."
+    },
+    "sources": {
+     "type": "array",
+     "items": {
+      "enum": [
+       "seed-oil",
+       "corn",
+       "soy",
+       "sugar-beet",
+       "cottonseed",
+       "grain-fed-meat",
+       "grain-fed-dairy",
+       "processed-sauce",
+       "processed-bread",
+       "processed-cheese",
+       "cornstarch",
+       "corn-syrup",
+       "papaya",
+       "squash",
+       "none"
+      ]
+     },
+     "description": "Which ingredient families drive the rating."
+    }
+   }
+  },
+  "nutrition": {
+   "type": "object",
+   "description": "Estimated per serving. See README for method and accuracy.",
+   "required": [
+    "calories",
+    "proteinG",
+    "carbsG",
+    "fiberG",
+    "sugarG",
+    "fatG",
+    "satFatG",
+    "sodiumMg",
+    "cholesterolMg"
+   ],
+   "additionalProperties": false,
+   "properties": {
+    "calories": {
+     "type": "integer",
+     "minimum": 0
+    },
+    "proteinG": {
+     "type": "number",
+     "minimum": 0
+    },
+    "carbsG": {
+     "type": "number",
+     "minimum": 0
+    },
+    "fiberG": {
+     "type": "number",
+     "minimum": 0
+    },
+    "sugarG": {
+     "type": "number",
+     "minimum": 0
+    },
+    "fatG": {
+     "type": "number",
+     "minimum": 0
+    },
+    "satFatG": {
+     "type": "number",
+     "minimum": 0
+    },
+    "sodiumMg": {
+     "type": "integer",
+     "minimum": 0
+    },
+    "cholesterolMg": {
+     "type": "integer",
+     "minimum": 0
+    }
+   }
+  },
+  "tags": {
+   "type": "array",
+   "minItems": 1,
+   "items": {
+    "type": "string",
+    "pattern": "^[a-z0-9-]+$"
+   },
+   "description": "Free-form browse facets: quick, one-pan, kid-friendly, meal-prep, high-protein, low-carb, comfort, party, weeknight, date-night, grill, make-ahead, budget, leftovers."
+  },
+  "image": {
+   "type": "object",
+   "required": [
+    "file",
+    "source",
+    "match"
+   ],
+   "additionalProperties": false,
+   "properties": {
+    "file": {
+     "type": "string",
+     "pattern": "^[a-z0-9-]+\\.jpg$",
+     "description": "Filename inside images/. Dish-matched photos are named after the recipe slug and are unique to that recipe; representative photos are shared between variants of one dish."
+    },
+    "source": {
+     "enum": [
+      "commons-file",
+      "wikipedia-lead"
+     ],
+     "description": "commons-file: a specific Wikimedia Commons photo whose filename names this dish. wikipedia-lead: the lead image of a Wikipedia article, which illustrates the topic generally."
+    },
+    "match": {
+     "enum": [
+      "dish",
+      "representative"
+     ],
+     "description": "dish: the photo shows this dish. representative: the photo shows the right kind of food but not necessarily this preparation - caption or de-emphasise it in the UI."
+    },
+    "commonsFile": {
+     "type": "string",
+     "description": "Commons File: page title, present when source is commons-file."
+    },
+    "wikipedia": {
+     "type": "string",
+     "description": "English Wikipedia page title, present when source is wikipedia-lead."
+    }
+   },
+   "allOf": [
+    {
+     "if": {
+      "properties": {
+       "source": {
+        "const": "commons-file"
+       }
+      }
+     },
+     "then": {
+      "required": [
+       "commonsFile"
+      ]
+     }
+    },
+    {
+     "if": {
+      "properties": {
+       "source": {
+        "const": "wikipedia-lead"
+       }
+      }
+     },
+     "then": {
+      "required": [
+       "wikipedia"
+      ]
+     }
+    }
+   ]
+  },
+  "chef": {
+   "type": [
+    "object",
+    "null"
+   ],
+   "required": [
+    "name",
+    "slug"
+   ],
+   "additionalProperties": false,
+   "description": "Present when this recipe is a dish the named chef is known for. The instructions are Gusteau's own - this is an attribution of the dish, not a reproduction of the chef's published recipe text. Absent or null on base recipes.",
+   "properties": {
+    "name": {
+     "type": "string",
+     "description": "Display name, e.g. \"Gordon Ramsay\"."
+    },
+    "slug": {
+     "type": "string",
+     "pattern": "^[a-z-]+$",
+     "description": "Key into chefs.json."
+    }
+   }
+  }
+ }
+}

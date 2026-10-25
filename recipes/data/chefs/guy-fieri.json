@@ -1,0 +1,3106 @@
+[
+ {
+  "id": "ch-gf-001",
+  "slug": "gf-trash-can-nachos",
+  "title": "Trash Can Nachos",
+  "genre": "mexican",
+  "subgenre": "tex-mex",
+  "chef": {
+   "name": "Guy Fieri",
+   "slug": "guy-fieri"
+  },
+  "description": "Nachos layered in a can and inverted onto the plate, loaded with everything.",
+  "difficulty": "beginner",
+  "easeScore": 8,
+  "spiceScore": 5,
+  "popularity": 9,
+  "pantryScore": 8,
+  "servings": 8,
+  "prepMin": 25,
+  "cookMin": 30,
+  "totalMin": 55,
+  "equipment": [
+   "stovetop",
+   "oven"
+  ],
+  "ingredients": [
+   "2 lb ground beef (85/15)",
+   "1 yellow onion, diced",
+   "3 tbsp chili powder",
+   "1 tbsp ground cumin",
+   "2 tsp salt",
+   "1 bag (13 oz) tortilla chips",
+   "1 can (15 oz) black beans, drained",
+   "3 tbsp butter",
+   "3 tbsp all-purpose flour",
+   "2 cups whole milk",
+   "3 cups shredded sharp cheddar",
+   "2 chipotle peppers in adobo, minced",
+   "1 cup pickled jalapenos",
+   "1 cup pico de gallo",
+   "1 cup sour cream",
+   "1 cup guacamole",
+   "6 scallions, sliced",
+   "1/2 cup chopped cilantro"
+  ],
+  "ingredientKeys": [
+   "ground-beef",
+   "yellow-onion",
+   "chili-powder",
+   "cumin",
+   "salt",
+   "tortilla-chips",
+   "black-beans",
+   "butter",
+   "flour",
+   "whole-milk",
+   "cheddar",
+   "chipotle-in-adobo",
+   "pickled-jalapenos",
+   "pico-de-gallo",
+   "sour-cream",
+   "guacamole",
+   "scallion",
+   "cilantro"
+  ],
+  "specialty": [
+   "tortilla-chips",
+   "chipotle-in-adobo",
+   "pickled-jalapenos",
+   "guacamole"
+  ],
+  "steps": [
+   "Brown the beef with the onion, drain the fat, then add the chili powder, cumin and salt and cook 1 minute.",
+   "Make the queso: melt the butter, whisk in the flour and cook 2 minutes, then add the milk gradually and simmer until thick. Take it off the heat before stirring in the cheddar and chipotles - cheese added over direct heat turns grainy.",
+   "Pack a tall, clean can or deep container in layers: chips, beef, beans, queso. Repeat three times, pressing down lightly as you go.",
+   "Invert the can onto a platter and lift it off so the layers stand as a tower. Even if it slumps, you still get sauce on every chip, which is the real point of building it this way.",
+   "Pile the jalapenos, pico, sour cream and guacamole over the top.",
+   "Finish with scallions and cilantro and serve immediately, before the chips soften."
+  ],
+  "diet": {
+   "vegetarian": false,
+   "vegan": false,
+   "pescatarian": false,
+   "glutenFree": false,
+   "glutenFreeAdaptable": true,
+   "dairyFree": false,
+   "nutFree": true,
+   "eggFree": true
+  },
+  "allergens": [
+   "gluten",
+   "dairy"
+  ],
+  "gmo": {
+   "risk": "high",
+   "sources": [
+    "grain-fed-meat",
+    "corn",
+    "seed-oil",
+    "grain-fed-dairy"
+   ]
+  },
+  "nutrition": {
+   "calories": 982,
+   "proteinG": 48,
+   "carbsG": 62,
+   "fiberG": 10,
+   "sugarG": 9,
+   "fatG": 60,
+   "satFatG": 26,
+   "sodiumMg": 1880,
+   "cholesterolMg": 168
+  },
+  "tags": [
+   "party",
+   "game-day",
+   "sharing",
+   "tex-mex",
+   "spicy",
+   "crowd-pleaser",
+   "family",
+   "indulgent"
+  ],
+  "image": {
+   "file": "nachos.jpg",
+   "source": "wikipedia-lead",
+   "match": "representative",
+   "wikipedia": "Nachos"
+  }
+ },
+ {
+  "id": "ch-gf-002",
+  "slug": "gf-bacon-mac-and-cheese",
+  "title": "Bacon Mac and Cheese",
+  "genre": "american",
+  "subgenre": "comfort",
+  "chef": {
+   "name": "Guy Fieri",
+   "slug": "guy-fieri"
+  },
+  "description": "Three cheeses, bacon and a crushed cracker top.",
+  "difficulty": "beginner",
+  "easeScore": 8,
+  "spiceScore": 3,
+  "popularity": 10,
+  "pantryScore": 8,
+  "servings": 8,
+  "prepMin": 25,
+  "cookMin": 35,
+  "totalMin": 60,
+  "equipment": [
+   "stovetop",
+   "oven"
+  ],
+  "ingredients": [
+   "1 lb cavatappi pasta",
+   "12 oz bacon, diced",
+   "5 tbsp butter",
+   "1/3 cup all-purpose flour",
+   "4 cups whole milk, warmed",
+   "1 tbsp mustard powder",
+   "1 tsp smoked paprika",
+   "1/2 tsp cayenne pepper",
+   "2 tsp salt",
+   "1 tsp black pepper",
+   "3 cups shredded sharp cheddar",
+   "1 1/2 cups shredded smoked gouda",
+   "1 cup grated Parmesan",
+   "2 cups crushed buttery crackers",
+   "4 scallions, sliced"
+  ],
+  "ingredientKeys": [
+   "cavatappi",
+   "bacon",
+   "butter",
+   "flour",
+   "whole-milk",
+   "mustard-powder",
+   "smoked-paprika",
+   "cayenne",
+   "salt",
+   "black-pepper",
+   "cheddar",
+   "smoked-gouda",
+   "parmesan",
+   "buttery-crackers",
+   "scallion"
+  ],
+  "specialty": [
+   "cavatappi",
+   "mustard-powder",
+   "smoked-gouda",
+   "buttery-crackers"
+  ],
+  "steps": [
+   "Boil the pasta 2 minutes short of the package time, since it finishes in the oven, then drain.",
+   "Render the bacon until crisp, lift it out, and reserve 2 tbsp of the fat.",
+   "Melt 4 tbsp butter in a large pot, whisk in the flour and cook 2 minutes, then add the warm milk gradually and simmer 5 minutes until it coats a spoon.",
+   "Season with the mustard powder, paprika, cayenne, salt and pepper, then take the pot off the heat and add the cheddar, gouda and half the Parmesan in handfuls. Off-heat is what keeps the sauce smooth.",
+   "Fold in the pasta and three quarters of the bacon, then pour into a buttered 9x13 dish.",
+   "Toss the crushed crackers with the remaining melted butter, bacon fat and Parmesan, scatter over, and bake at 375F for 30 minutes until browned. Finish with the rest of the bacon and the scallions."
+  ],
+  "diet": {
+   "vegetarian": false,
+   "vegan": false,
+   "pescatarian": false,
+   "glutenFree": false,
+   "glutenFreeAdaptable": false,
+   "dairyFree": false,
+   "nutFree": true,
+   "eggFree": true
+  },
+  "allergens": [
+   "gluten",
+   "dairy"
+  ],
+  "gmo": {
+   "risk": "high",
+   "sources": [
+    "grain-fed-meat",
+    "processed-bread",
+    "grain-fed-dairy",
+    "seed-oil"
+   ]
+  },
+  "nutrition": {
+   "calories": 1086,
+   "proteinG": 48,
+   "carbsG": 82,
+   "fiberG": 3,
+   "sugarG": 12,
+   "fatG": 64,
+   "satFatG": 33,
+   "sodiumMg": 1880,
+   "cholesterolMg": 178
+  },
+  "tags": [
+   "comfort",
+   "party",
+   "family",
+   "indulgent",
+   "crowd-pleaser",
+   "game-day",
+   "kid-friendly"
+  ],
+  "image": {
+   "file": "macaroni-and-cheese.jpg",
+   "source": "wikipedia-lead",
+   "match": "representative",
+   "wikipedia": "Macaroni and cheese"
+  }
+ },
+ {
+  "id": "ch-gf-003",
+  "slug": "gf-donkey-sauce-burger",
+  "title": "Cheeseburger with Donkey Sauce",
+  "genre": "american",
+  "subgenre": "burgers",
+  "chef": {
+   "name": "Guy Fieri",
+   "slug": "guy-fieri"
+  },
+  "description": "A smashed double cheeseburger with roasted garlic aioli and crispy onions.",
+  "difficulty": "beginner",
+  "easeScore": 9,
+  "spiceScore": 3,
+  "popularity": 9,
+  "pantryScore": 8,
+  "servings": 4,
+  "prepMin": 20,
+  "cookMin": 15,
+  "totalMin": 35,
+  "equipment": [
+   "stovetop"
+  ],
+  "ingredients": [
+   "1 1/2 lb ground chuck (80/20)",
+   "2 tsp salt",
+   "1 tsp black pepper",
+   "2 tbsp canola oil",
+   "8 slices American cheese",
+   "4 brioche buns",
+   "3 tbsp butter",
+   "3/4 cup mayonnaise",
+   "6 cloves roasted garlic, mashed",
+   "1 tbsp Worcestershire sauce",
+   "1 tbsp yellow mustard",
+   "1 tsp hot sauce",
+   "1/2 tsp black pepper, for the sauce",
+   "1 cup crispy fried onions",
+   "4 leaves lettuce",
+   "1 tomato, sliced"
+  ],
+  "ingredientKeys": [
+   "ground-beef",
+   "salt",
+   "black-pepper",
+   "canola-oil",
+   "american-cheese",
+   "brioche-bun",
+   "butter",
+   "mayonnaise",
+   "roasted-garlic",
+   "worcestershire",
+   "yellow-mustard",
+   "hot-sauce",
+   "black-pepper",
+   "fried-onions",
+   "lettuce",
+   "tomato"
+  ],
+  "specialty": [
+   "brioche-bun",
+   "roasted-garlic",
+   "fried-onions"
+  ],
+  "steps": [
+   "Make the sauce first: mash the roasted garlic into a paste, then whisk it with the mayonnaise, Worcestershire, mustard, hot sauce and pepper. Roasted garlic rather than raw is what makes it sweet and mellow instead of harsh.",
+   "Roll the beef into 8 loose balls. Do not compact them - looseness is what gives you a lacy crust.",
+   "Heat a cast-iron skillet over high until lightly smoking. Add 2 balls and smash each flat with a sturdy spatula, pressing hard for 10 seconds.",
+   "Season, cook 90 seconds until the edges are deep brown and crisp, then scrape up and flip. Add cheese and cook 45 seconds. Repeat with the rest.",
+   "Butter and toast the buns, then spread both halves generously with the sauce.",
+   "Stack two patties per bun with lettuce, tomato and a big handful of crispy onions."
+  ],
+  "diet": {
+   "vegetarian": false,
+   "vegan": false,
+   "pescatarian": false,
+   "glutenFree": false,
+   "glutenFreeAdaptable": false,
+   "dairyFree": false,
+   "nutFree": true,
+   "eggFree": false
+  },
+  "allergens": [
+   "gluten",
+   "dairy",
+   "egg",
+   "fish"
+  ],
+  "gmo": {
+   "risk": "high",
+   "sources": [
+    "grain-fed-meat",
+    "processed-bread",
+    "seed-oil",
+    "processed-cheese"
+   ]
+  },
+  "nutrition": {
+   "calories": 1086,
+   "proteinG": 48,
+   "carbsG": 52,
+   "fiberG": 3,
+   "sugarG": 11,
+   "fatG": 74,
+   "satFatG": 26,
+   "sodiumMg": 1880,
+   "cholesterolMg": 198
+  },
+  "tags": [
+   "burgers",
+   "comfort",
+   "game-day",
+   "indulgent",
+   "family",
+   "quick",
+   "high-protein"
+  ],
+  "image": {
+   "file": "cheeseburger.jpg",
+   "source": "wikipedia-lead",
+   "match": "representative",
+   "wikipedia": "Cheeseburger"
+  }
+ },
+ {
+  "id": "ch-gf-004",
+  "slug": "gf-dragons-breath-chili",
+  "title": "Dragon's Breath Chili",
+  "genre": "american",
+  "subgenre": "comfort",
+  "chef": {
+   "name": "Guy Fieri",
+   "slug": "guy-fieri"
+  },
+  "description": "A loud chili with three chiles, beer and chorizo alongside the beef.",
+  "difficulty": "beginner",
+  "easeScore": 9,
+  "spiceScore": 8,
+  "popularity": 8,
+  "pantryScore": 8,
+  "servings": 8,
+  "prepMin": 20,
+  "cookMin": 90,
+  "totalMin": 110,
+  "equipment": [
+   "stovetop"
+  ],
+  "ingredients": [
+   "2 lb ground beef (85/15)",
+   "1 lb Mexican chorizo, casings removed",
+   "2 yellow onions, diced",
+   "1 red bell pepper, diced",
+   "3 jalapenos, minced",
+   "2 serrano peppers, minced",
+   "6 cloves garlic, minced",
+   "1/4 cup chili powder",
+   "2 tbsp ground cumin",
+   "1 tbsp smoked paprika",
+   "2 tsp cayenne pepper",
+   "1 tbsp dried oregano",
+   "2 tsp salt",
+   "3 chipotle peppers in adobo, minced",
+   "1 bottle (12 oz) dark beer",
+   "1 can (28 oz) crushed tomatoes",
+   "2 cups beef broth",
+   "2 cans (15 oz each) kidney beans, drained",
+   "2 cups shredded cheddar",
+   "1 cup sour cream",
+   "6 scallions, sliced"
+  ],
+  "ingredientKeys": [
+   "ground-beef",
+   "mexican-chorizo",
+   "yellow-onion",
+   "red-bell-pepper",
+   "jalapeno",
+   "serrano-pepper",
+   "garlic",
+   "chili-powder",
+   "cumin",
+   "smoked-paprika",
+   "cayenne",
+   "dried-oregano",
+   "salt",
+   "chipotle-in-adobo",
+   "dark-beer",
+   "crushed-tomatoes",
+   "beef-broth",
+   "kidney-beans",
+   "cheddar",
+   "sour-cream",
+   "scallion"
+  ],
+  "specialty": [
+   "mexican-chorizo",
+   "serrano-pepper",
+   "chipotle-in-adobo",
+   "dark-beer"
+  ],
+  "steps": [
+   "Brown the chorizo first in a dry pot - it renders a lot of orange fat, and that fat is the base of the whole chili. Then add the beef and brown it in that fat.",
+   "Add the onions, bell pepper, jalapenos and serranos and cook 8 minutes, then the garlic for 1 minute.",
+   "Add all the dried spices and the salt and stir a full minute in the hot fat. Blooming them this way tastes completely different from dumping them into liquid.",
+   "Add the chipotles and the beer and let it bubble hard 5 minutes to cook off the raw alcohol.",
+   "Add the tomatoes, broth and beans and simmer, partially covered, 70-75 minutes until thick enough that a spoon leaves a trail.",
+   "Taste for heat and salt. Serve with cheddar, sour cream and scallions - all three are there to cool it down, so do not skip them."
+  ],
+  "diet": {
+   "vegetarian": false,
+   "vegan": false,
+   "pescatarian": false,
+   "glutenFree": false,
+   "glutenFreeAdaptable": true,
+   "dairyFree": false,
+   "nutFree": true,
+   "eggFree": true
+  },
+  "allergens": [
+   "gluten",
+   "dairy"
+  ],
+  "gmo": {
+   "risk": "high",
+   "sources": [
+    "grain-fed-meat",
+    "corn",
+    "grain-fed-dairy"
+   ]
+  },
+  "nutrition": {
+   "calories": 882,
+   "proteinG": 58,
+   "carbsG": 42,
+   "fiberG": 11,
+   "sugarG": 9,
+   "fatG": 52,
+   "satFatG": 21,
+   "sodiumMg": 1880,
+   "cholesterolMg": 178
+  },
+  "tags": [
+   "spicy",
+   "game-day",
+   "party",
+   "comfort",
+   "make-ahead",
+   "one-pot",
+   "high-protein",
+   "leftovers"
+  ],
+  "image": {
+   "file": "chili-con-carne.jpg",
+   "source": "wikipedia-lead",
+   "match": "representative",
+   "wikipedia": "Chili con carne"
+  }
+ },
+ {
+  "id": "ch-gf-005",
+  "slug": "gf-pulled-pork-sandwich",
+  "title": "BBQ Pulled Pork Sandwich",
+  "genre": "american",
+  "subgenre": "bbq",
+  "chef": {
+   "name": "Guy Fieri",
+   "slug": "guy-fieri"
+  },
+  "description": "Dry-rubbed pork shoulder cooked low, piled on a bun with slaw.",
+  "difficulty": "beginner",
+  "easeScore": 9,
+  "spiceScore": 4,
+  "popularity": 10,
+  "pantryScore": 8,
+  "servings": 10,
+  "prepMin": 25,
+  "cookMin": 420,
+  "totalMin": 445,
+  "equipment": [
+   "oven"
+  ],
+  "ingredients": [
+   "5 lb boneless pork shoulder",
+   "1/4 cup brown sugar",
+   "2 tbsp smoked paprika",
+   "2 tbsp kosher salt",
+   "1 tbsp black pepper",
+   "1 tbsp garlic powder",
+   "1 tbsp onion powder",
+   "2 tsp cayenne pepper",
+   "1 tbsp mustard powder",
+   "1 cup apple cider",
+   "1 1/2 cups barbecue sauce",
+   "4 cups shredded green cabbage",
+   "1/2 cup mayonnaise",
+   "3 tbsp apple cider vinegar",
+   "1 tbsp sugar",
+   "10 brioche buns",
+   "1 cup pickle slices"
+  ],
+  "ingredientKeys": [
+   "pork-shoulder",
+   "brown-sugar",
+   "smoked-paprika",
+   "kosher-salt",
+   "black-pepper",
+   "garlic-powder",
+   "onion-powder",
+   "cayenne",
+   "mustard-powder",
+   "apple-cider",
+   "barbecue-sauce",
+   "green-cabbage",
+   "mayonnaise",
+   "apple-cider-vinegar",
+   "sugar",
+   "brioche-bun",
+   "pickle"
+  ],
+  "specialty": [
+   "pork-shoulder",
+   "mustard-powder",
+   "apple-cider",
+   "brioche-bun"
+  ],
+  "steps": [
+   "Mix all the dry rub ingredients and massage them into every surface of the pork. Refrigerate uncovered at least 4 hours, or overnight if you can.",
+   "Set the pork fat-side up in a roasting pan and pour the cider around it, not over it, so the rub stays put.",
+   "Cover tightly with foil and cook at 275F for 6 hours.",
+   "Uncover and cook 1 hour more to dry and darken the bark. It is done when a fork twists in the meat with no resistance at all - time matters less than that test.",
+   "Rest 30 minutes, then shred with two forks, discarding large pieces of fat. Skim the pan juices and toss a cup of them back through the meat with the barbecue sauce.",
+   "Toss the cabbage with the mayonnaise, vinegar, sugar and a pinch of salt for the slaw, and build the sandwiches with pork, slaw and pickles."
+  ],
+  "diet": {
+   "vegetarian": false,
+   "vegan": false,
+   "pescatarian": false,
+   "glutenFree": false,
+   "glutenFreeAdaptable": true,
+   "dairyFree": true,
+   "nutFree": true,
+   "eggFree": false
+  },
+  "allergens": [
+   "gluten",
+   "egg"
+  ],
+  "gmo": {
+   "risk": "high",
+   "sources": [
+    "grain-fed-meat",
+    "processed-bread",
+    "corn-syrup",
+    "sugar-beet",
+    "seed-oil"
+   ]
+  },
+  "nutrition": {
+   "calories": 782,
+   "proteinG": 48,
+   "carbsG": 58,
+   "fiberG": 3,
+   "sugarG": 28,
+   "fatG": 40,
+   "satFatG": 12,
+   "sodiumMg": 1880,
+   "cholesterolMg": 158
+  },
+  "tags": [
+   "bbq",
+   "party",
+   "make-ahead",
+   "crowd-pleaser",
+   "high-protein",
+   "leftovers",
+   "game-day",
+   "family"
+  ],
+  "image": {
+   "file": "gf-pulled-pork-sandwich.jpg",
+   "source": "commons-file",
+   "match": "dish",
+   "commonsFile": "Pulled pork BBQ sandwich.jpg"
+  }
+ },
+ {
+  "id": "ch-gf-006",
+  "slug": "gf-dry-rub-smoked-wings",
+  "title": "Dry-Rub Smoked Wings",
+  "genre": "american",
+  "subgenre": "bbq",
+  "chef": {
+   "name": "Guy Fieri",
+   "slug": "guy-fieri"
+  },
+  "description": "Wings smoked low then blasted hot, finished with rub rather than sauce.",
+  "difficulty": "beginner",
+  "easeScore": 9,
+  "spiceScore": 6,
+  "popularity": 9,
+  "pantryScore": 8,
+  "servings": 6,
+  "prepMin": 15,
+  "cookMin": 60,
+  "totalMin": 75,
+  "equipment": [
+   "grill",
+   "oven"
+  ],
+  "ingredients": [
+   "4 lb chicken wings, split",
+   "1 tbsp baking powder",
+   "2 tbsp smoked paprika",
+   "1 tbsp brown sugar",
+   "1 tbsp kosher salt",
+   "1 tbsp garlic powder",
+   "2 tsp onion powder",
+   "2 tsp black pepper",
+   "2 tsp cayenne pepper",
+   "1 tsp mustard powder",
+   "1 tsp celery salt",
+   "1/2 cup blue cheese dressing",
+   "4 celery stalks, cut in sticks"
+  ],
+  "ingredientKeys": [
+   "chicken-wings",
+   "baking-powder",
+   "smoked-paprika",
+   "brown-sugar",
+   "kosher-salt",
+   "garlic-powder",
+   "onion-powder",
+   "black-pepper",
+   "cayenne",
+   "mustard-powder",
+   "celery-salt",
+   "blue-cheese-dressing",
+   "celery"
+  ],
+  "specialty": [
+   "chicken-wings",
+   "mustard-powder",
+   "celery-salt",
+   "blue-cheese-dressing"
+  ],
+  "steps": [
+   "Pat the wings bone dry and toss them with the baking powder. Use baking powder, not soda - it raises the skin's pH so it browns and crisps far better.",
+   "Mix all the spices and reserve a third of the blend for finishing. Toss the wings with the rest.",
+   "Smoke or cook over indirect heat at 250F for 35-40 minutes to render the fat out of the skin.",
+   "Raise the heat to 425F, or move the wings over direct heat, and cook 15-20 minutes more, turning, until blistered and deep brown.",
+   "Toss the hot wings with the reserved dry rub. Because there is no sauce, that final dusting is what carries the flavor - and the wings stay crisp.",
+   "Serve with blue cheese dressing and celery."
+  ],
+  "diet": {
+   "vegetarian": false,
+   "vegan": false,
+   "pescatarian": false,
+   "glutenFree": true,
+   "glutenFreeAdaptable": false,
+   "dairyFree": false,
+   "nutFree": true,
+   "eggFree": false
+  },
+  "allergens": [
+   "dairy",
+   "egg"
+  ],
+  "gmo": {
+   "risk": "moderate",
+   "sources": [
+    "grain-fed-meat",
+    "seed-oil",
+    "sugar-beet"
+   ]
+  },
+  "nutrition": {
+   "calories": 682,
+   "proteinG": 52,
+   "carbsG": 11,
+   "fiberG": 1,
+   "sugarG": 6,
+   "fatG": 48,
+   "satFatG": 14,
+   "sodiumMg": 1880,
+   "cholesterolMg": 228
+  },
+  "tags": [
+   "bbq",
+   "party",
+   "game-day",
+   "spicy",
+   "gluten-free",
+   "high-protein",
+   "grill",
+   "sharing"
+  ],
+  "image": {
+   "file": "buffalo-wings.jpg",
+   "source": "wikipedia-lead",
+   "match": "representative",
+   "wikipedia": "Chicken wings"
+  }
+ },
+ {
+  "id": "ch-gf-007",
+  "slug": "gf-fried-chicken-sandwich",
+  "title": "Fried Chicken Sandwich",
+  "genre": "american",
+  "subgenre": "sandwiches",
+  "chef": {
+   "name": "Guy Fieri",
+   "slug": "guy-fieri"
+  },
+  "description": "Buttermilk-brined thigh fried crisp, with spicy mayo and pickles.",
+  "difficulty": "intermediate",
+  "easeScore": 6,
+  "spiceScore": 6,
+  "popularity": 10,
+  "pantryScore": 8,
+  "servings": 4,
+  "prepMin": 25,
+  "cookMin": 155,
+  "totalMin": 180,
+  "equipment": [
+   "stovetop"
+  ],
+  "ingredients": [
+   "4 boneless chicken thighs",
+   "2 cups buttermilk",
+   "3 tbsp hot sauce",
+   "1 tbsp kosher salt, for the brine",
+   "2 cups all-purpose flour",
+   "1/4 cup cornstarch",
+   "1 tbsp smoked paprika",
+   "2 tsp garlic powder",
+   "2 tsp black pepper",
+   "2 tsp cayenne pepper",
+   "1 tsp celery salt",
+   "6 cups peanut oil, for frying",
+   "1/2 cup mayonnaise",
+   "2 tbsp hot sauce, for the mayo",
+   "1 tbsp honey",
+   "4 brioche buns",
+   "3 tbsp butter",
+   "1 cup dill pickle slices",
+   "1 cup shredded iceberg lettuce"
+  ],
+  "ingredientKeys": [
+   "chicken-thighs",
+   "buttermilk",
+   "hot-sauce",
+   "kosher-salt",
+   "flour",
+   "cornstarch",
+   "smoked-paprika",
+   "garlic-powder",
+   "black-pepper",
+   "cayenne",
+   "celery-salt",
+   "peanut-oil",
+   "mayonnaise",
+   "hot-sauce",
+   "honey",
+   "brioche-bun",
+   "butter",
+   "pickle",
+   "lettuce"
+  ],
+  "specialty": [
+   "buttermilk",
+   "cornstarch",
+   "celery-salt",
+   "peanut-oil",
+   "brioche-bun"
+  ],
+  "steps": [
+   "Brine the thighs in the buttermilk, 3 tbsp hot sauce and kosher salt for at least 2 hours, ideally overnight.",
+   "Mix the flour, cornstarch and all the spices. The cornstarch is what makes the crust shatter rather than soften.",
+   "Add 3 tbsp of the buttermilk brine to the flour and rub it in with your fingers - those shaggy clumps fry into the crunchiest parts of the crust.",
+   "Lift each thigh from the brine, let it drip, and press it hard into the flour. Rest on a rack 15 minutes so the coating grips.",
+   "Heat 2 inches of oil to 340F and fry the thighs 7-9 minutes, turning once, to 175F internal. Use a thermometer for the oil; this is where it goes wrong.",
+   "Stir the mayonnaise with the 2 tbsp hot sauce and honey. Butter and toast the buns, spread with the spicy mayo, and build with lettuce, chicken and a thick layer of pickles."
+  ],
+  "diet": {
+   "vegetarian": false,
+   "vegan": false,
+   "pescatarian": false,
+   "glutenFree": false,
+   "glutenFreeAdaptable": false,
+   "dairyFree": false,
+   "nutFree": false,
+   "eggFree": false
+  },
+  "allergens": [
+   "gluten",
+   "dairy",
+   "egg",
+   "peanut"
+  ],
+  "gmo": {
+   "risk": "high",
+   "sources": [
+    "grain-fed-meat",
+    "seed-oil",
+    "cornstarch",
+    "processed-bread",
+    "grain-fed-dairy"
+   ]
+  },
+  "nutrition": {
+   "calories": 982,
+   "proteinG": 48,
+   "carbsG": 72,
+   "fiberG": 3,
+   "sugarG": 12,
+   "fatG": 54,
+   "satFatG": 14,
+   "sodiumMg": 1880,
+   "cholesterolMg": 198
+  },
+  "tags": [
+   "sandwiches",
+   "comfort",
+   "spicy",
+   "indulgent",
+   "weekend",
+   "high-protein",
+   "game-day"
+  ],
+  "image": {
+   "file": "gf-fried-chicken-sandwich.jpg",
+   "source": "commons-file",
+   "match": "dish",
+   "commonsFile": "Fried chicken sandwich.jpg"
+  }
+ },
+ {
+  "id": "ch-gf-008",
+  "slug": "gf-chili-cheese-fries",
+  "title": "Chili Cheese Fries",
+  "genre": "american",
+  "subgenre": "sides",
+  "chef": {
+   "name": "Guy Fieri",
+   "slug": "guy-fieri"
+  },
+  "description": "Twice-fried potatoes buried under beef chili and real queso.",
+  "difficulty": "beginner",
+  "easeScore": 8,
+  "spiceScore": 5,
+  "popularity": 9,
+  "pantryScore": 8,
+  "servings": 6,
+  "prepMin": 25,
+  "cookMin": 55,
+  "totalMin": 80,
+  "equipment": [
+   "stovetop"
+  ],
+  "ingredients": [
+   "3 lb russet potatoes, cut in thick batons",
+   "6 cups canola oil, for frying",
+   "1 tbsp kosher salt",
+   "1 1/2 lb ground beef (85/15)",
+   "1 yellow onion, diced",
+   "3 tbsp chili powder",
+   "1 tbsp ground cumin",
+   "1 can (8 oz) tomato sauce",
+   "1 cup beef broth",
+   "3 tbsp butter",
+   "3 tbsp all-purpose flour",
+   "2 cups whole milk",
+   "3 cups shredded sharp cheddar",
+   "2 chipotle peppers in adobo, minced",
+   "1 cup pickled jalapenos",
+   "6 scallions, sliced",
+   "1 cup sour cream"
+  ],
+  "ingredientKeys": [
+   "russet-potato",
+   "canola-oil",
+   "kosher-salt",
+   "ground-beef",
+   "yellow-onion",
+   "chili-powder",
+   "cumin",
+   "tomato-sauce",
+   "beef-broth",
+   "butter",
+   "flour",
+   "whole-milk",
+   "cheddar",
+   "chipotle-in-adobo",
+   "pickled-jalapenos",
+   "scallion",
+   "sour-cream"
+  ],
+  "specialty": [
+   "chipotle-in-adobo",
+   "pickled-jalapenos"
+  ],
+  "steps": [
+   "Soak the cut potatoes in cold water 15 minutes, then drain and dry them thoroughly. Surface starch and water both prevent crisping.",
+   "Fry them at 275F for 8 minutes until tender but pale, then lift out and cool 10 minutes. This first low fry cooks the inside.",
+   "Make the chili: brown the beef with the onion, drain, add the chili powder and cumin for 1 minute, then the tomato sauce and broth. Simmer 25 minutes until thick enough to sit on a fry.",
+   "Make the queso: melt the butter, whisk in the flour for 2 minutes, add the milk and simmer until thick, then take it off the heat before adding the cheddar and chipotles.",
+   "Raise the oil to 375F and fry the potatoes again 3-4 minutes until deep golden and genuinely crunchy. Drain and salt immediately - they need to be crisp enough to survive the toppings.",
+   "Pile the fries on a platter, spoon the chili over, then the queso, then the jalapenos, scallions and sour cream. Eat immediately."
+  ],
+  "diet": {
+   "vegetarian": false,
+   "vegan": false,
+   "pescatarian": false,
+   "glutenFree": false,
+   "glutenFreeAdaptable": true,
+   "dairyFree": false,
+   "nutFree": true,
+   "eggFree": true
+  },
+  "allergens": [
+   "gluten",
+   "dairy"
+  ],
+  "gmo": {
+   "risk": "high",
+   "sources": [
+    "grain-fed-meat",
+    "seed-oil",
+    "grain-fed-dairy",
+    "processed-sauce"
+   ]
+  },
+  "nutrition": {
+   "calories": 982,
+   "proteinG": 42,
+   "carbsG": 72,
+   "fiberG": 6,
+   "sugarG": 11,
+   "fatG": 58,
+   "satFatG": 26,
+   "sodiumMg": 1680,
+   "cholesterolMg": 168
+  },
+  "tags": [
+   "game-day",
+   "party",
+   "sharing",
+   "comfort",
+   "indulgent",
+   "spicy",
+   "crowd-pleaser"
+  ],
+  "image": {
+   "file": "gf-chili-cheese-fries.jpg",
+   "source": "commons-file",
+   "match": "dish",
+   "commonsFile": "Chili Cheese Fries (3566109614).jpg"
+  }
+ },
+ {
+  "id": "ch-gf-009",
+  "slug": "gf-brisket-tacos",
+  "title": "Smoked Brisket Tacos",
+  "genre": "mexican",
+  "subgenre": "tacos",
+  "chef": {
+   "name": "Guy Fieri",
+   "slug": "guy-fieri"
+  },
+  "description": "Leftover smoked brisket chopped into tacos with pickled onion and crema.",
+  "difficulty": "intermediate",
+  "easeScore": 7,
+  "spiceScore": 5,
+  "popularity": 8,
+  "pantryScore": 6,
+  "servings": 8,
+  "prepMin": 25,
+  "cookMin": 30,
+  "totalMin": 55,
+  "equipment": [
+   "stovetop"
+  ],
+  "ingredients": [
+   "2 lb smoked brisket, chopped",
+   "2 tbsp canola oil",
+   "1 yellow onion, diced",
+   "4 cloves garlic, minced",
+   "2 chipotle peppers in adobo, minced",
+   "2 tbsp ancho chile powder",
+   "1 tbsp ground cumin",
+   "1/2 cup beef broth",
+   "1/4 cup barbecue sauce",
+   "2 tsp salt",
+   "2 red onions, thinly sliced",
+   "1 cup lime juice",
+   "1 cup Mexican crema",
+   "24 corn tortillas",
+   "1 cup chopped cilantro",
+   "2 avocados, sliced",
+   "3 limes, cut in wedges"
+  ],
+  "ingredientKeys": [
+   "brisket",
+   "canola-oil",
+   "yellow-onion",
+   "garlic",
+   "chipotle-in-adobo",
+   "ancho-chile-powder",
+   "cumin",
+   "beef-broth",
+   "barbecue-sauce",
+   "salt",
+   "red-onion",
+   "lime-juice",
+   "mexican-crema",
+   "corn-tortilla",
+   "cilantro",
+   "avocado",
+   "lime"
+  ],
+  "specialty": [
+   "brisket",
+   "chipotle-in-adobo",
+   "ancho-chile-powder",
+   "mexican-crema"
+  ],
+  "steps": [
+   "Pickle the red onion first: toss the slices with the lime juice and a big pinch of salt and leave them 20 minutes. They turn bright pink and cut through all the fat in the brisket.",
+   "Cook the yellow onion in the oil over medium-high 6 minutes, then add the garlic, chipotles, ancho powder and cumin for 1 minute.",
+   "Add the chopped brisket, broth, barbecue sauce and salt and cook 12-15 minutes, pressing the meat down so some of it crisps against the pan.",
+   "Those crisp edges are the whole point - do not stir constantly or you just get stew.",
+   "Char the tortillas directly over a flame or in a dry skillet 20 seconds a side, then double them up.",
+   "Fill with brisket, pickled onion, crema, cilantro and avocado, and serve with lime."
+  ],
+  "diet": {
+   "vegetarian": false,
+   "vegan": false,
+   "pescatarian": false,
+   "glutenFree": false,
+   "glutenFreeAdaptable": true,
+   "dairyFree": false,
+   "nutFree": true,
+   "eggFree": true
+  },
+  "allergens": [
+   "gluten",
+   "dairy"
+  ],
+  "gmo": {
+   "risk": "high",
+   "sources": [
+    "grain-fed-meat",
+    "corn",
+    "seed-oil",
+    "processed-sauce",
+    "grain-fed-dairy"
+   ]
+  },
+  "nutrition": {
+   "calories": 712,
+   "proteinG": 48,
+   "carbsG": 48,
+   "fiberG": 9,
+   "sugarG": 11,
+   "fatG": 36,
+   "satFatG": 13,
+   "sodiumMg": 1480,
+   "cholesterolMg": 148
+  },
+  "tags": [
+   "leftovers",
+   "party",
+   "bbq",
+   "tex-mex",
+   "spicy",
+   "high-protein",
+   "family",
+   "sharing"
+  ],
+  "image": {
+   "file": "brisket.jpg",
+   "source": "wikipedia-lead",
+   "match": "representative",
+   "wikipedia": "Brisket"
+  }
+ },
+ {
+  "id": "ch-gf-010",
+  "slug": "gf-italian-beef-sandwich",
+  "title": "Italian Beef Sandwich",
+  "genre": "american",
+  "subgenre": "sandwiches",
+  "chef": {
+   "name": "Guy Fieri",
+   "slug": "guy-fieri"
+  },
+  "description": "Chicago-style slow-roasted beef sliced thin, dipped in its own jus with giardiniera.",
+  "difficulty": "beginner",
+  "easeScore": 8,
+  "spiceScore": 5,
+  "popularity": 8,
+  "pantryScore": 7,
+  "servings": 8,
+  "prepMin": 25,
+  "cookMin": 225,
+  "totalMin": 250,
+  "equipment": [
+   "oven",
+   "stovetop"
+  ],
+  "ingredients": [
+   "4 lb beef top round roast",
+   "2 tbsp kosher salt",
+   "1 tbsp black pepper",
+   "2 tbsp dried oregano",
+   "1 tbsp garlic powder",
+   "1 tbsp onion powder",
+   "2 tsp red pepper flakes",
+   "3 tbsp olive oil",
+   "2 yellow onions, sliced",
+   "8 cloves garlic, smashed",
+   "6 cups beef broth",
+   "2 bay leaves",
+   "8 hoagie rolls",
+   "2 cups hot giardiniera",
+   "8 slices provolone"
+  ],
+  "ingredientKeys": [
+   "beef-top-round",
+   "kosher-salt",
+   "black-pepper",
+   "dried-oregano",
+   "garlic-powder",
+   "onion-powder",
+   "red-pepper-flakes",
+   "olive-oil",
+   "yellow-onion",
+   "garlic",
+   "beef-broth",
+   "bay-leaf",
+   "hoagie-roll",
+   "giardiniera",
+   "provolone"
+  ],
+  "specialty": [
+   "beef-top-round",
+   "hoagie-roll",
+   "giardiniera"
+  ],
+  "steps": [
+   "Rub the roast with the salt, pepper, oregano, garlic powder, onion powder and pepper flakes and leave it at room temperature 1 hour.",
+   "Sear it hard in the oil on all sides, then set aside. Cook the onions 8 minutes, add the garlic, then the broth and bay leaves.",
+   "Return the roast, cover, and cook at 300F for about 3 hours, to 145F internal. You want it cooked through but not falling apart - this gets sliced, not shredded.",
+   "Cool the roast in its liquid for at least 1 hour, then refrigerate if you have time. Cold beef slices paper-thin; warm beef shreds.",
+   "Slice as thinly as you possibly can and return the slices to the hot strained jus for 30 seconds only - any longer and they toughen.",
+   "Pile into rolls with provolone and giardiniera, and ladle extra jus over the top or serve it alongside for dipping."
+  ],
+  "diet": {
+   "vegetarian": false,
+   "vegan": false,
+   "pescatarian": false,
+   "glutenFree": false,
+   "glutenFreeAdaptable": true,
+   "dairyFree": false,
+   "nutFree": true,
+   "eggFree": true
+  },
+  "allergens": [
+   "gluten",
+   "dairy"
+  ],
+  "gmo": {
+   "risk": "moderate",
+   "sources": [
+    "grain-fed-meat",
+    "processed-bread",
+    "grain-fed-dairy"
+   ]
+  },
+  "nutrition": {
+   "calories": 712,
+   "proteinG": 58,
+   "carbsG": 48,
+   "fiberG": 4,
+   "sugarG": 7,
+   "fatG": 32,
+   "satFatG": 12,
+   "sodiumMg": 1880,
+   "cholesterolMg": 158
+  },
+  "tags": [
+   "sandwiches",
+   "regional",
+   "party",
+   "make-ahead",
+   "spicy",
+   "high-protein",
+   "game-day",
+   "crowd-pleaser"
+  ],
+  "image": {
+   "file": "gf-italian-beef-sandwich.jpg",
+   "source": "commons-file",
+   "match": "dish",
+   "commonsFile": "Italian beef sandwich with au jus.jpg"
+  }
+ },
+ {
+  "id": "ch-gf-011",
+  "slug": "gf-pork-belly-burnt-ends",
+  "title": "Pork Belly Burnt Ends",
+  "genre": "american",
+  "subgenre": "bbq",
+  "chef": {
+   "name": "Guy Fieri",
+   "slug": "guy-fieri"
+  },
+  "description": "Cubed pork belly smoked, then glazed and caramelized into candy.",
+  "difficulty": "intermediate",
+  "easeScore": 6,
+  "spiceScore": 4,
+  "popularity": 8,
+  "pantryScore": 6,
+  "servings": 8,
+  "prepMin": 25,
+  "cookMin": 225,
+  "totalMin": 250,
+  "equipment": [
+   "grill",
+   "oven"
+  ],
+  "ingredients": [
+   "4 lb skinless pork belly, cut in 1 1/2-inch cubes",
+   "1/4 cup brown sugar",
+   "2 tbsp smoked paprika",
+   "2 tbsp kosher salt",
+   "1 tbsp black pepper",
+   "1 tbsp garlic powder",
+   "2 tsp cayenne pepper",
+   "1 tsp mustard powder",
+   "1 cup barbecue sauce",
+   "1/3 cup honey",
+   "4 tbsp butter, cut in pieces",
+   "1/4 cup apple cider vinegar",
+   "2 tbsp hot sauce"
+  ],
+  "ingredientKeys": [
+   "pork-belly",
+   "brown-sugar",
+   "smoked-paprika",
+   "kosher-salt",
+   "black-pepper",
+   "garlic-powder",
+   "cayenne",
+   "mustard-powder",
+   "barbecue-sauce",
+   "honey",
+   "butter",
+   "apple-cider-vinegar",
+   "hot-sauce"
+  ],
+  "specialty": [
+   "pork-belly",
+   "mustard-powder"
+  ],
+  "steps": [
+   "Mix the brown sugar, paprika, salt, pepper, garlic powder, cayenne and mustard powder and toss the pork belly cubes until coated on every side.",
+   "Arrange them on a rack with space between - crowded cubes steam instead of rendering - and smoke or cook over indirect heat at 250F for 2 1/2 hours, until the fat has rendered and the outsides are mahogany.",
+   "Transfer the cubes to a foil pan. Add the barbecue sauce, honey, butter, vinegar and hot sauce and toss to coat.",
+   "Cover tightly with foil and cook 1 more hour. This covered stage is what makes them tender all the way through.",
+   "Uncover and cook 20-30 minutes, tossing once, until the glaze has thickened and clings to each cube like candy.",
+   "Rest 10 minutes. They should be sticky and jiggly, not dry - if the glaze has gone past syrup to hard, add a splash of vinegar and toss."
+  ],
+  "diet": {
+   "vegetarian": false,
+   "vegan": false,
+   "pescatarian": false,
+   "glutenFree": false,
+   "glutenFreeAdaptable": true,
+   "dairyFree": false,
+   "nutFree": true,
+   "eggFree": true
+  },
+  "allergens": [
+   "gluten",
+   "dairy"
+  ],
+  "gmo": {
+   "risk": "high",
+   "sources": [
+    "grain-fed-meat",
+    "corn-syrup",
+    "sugar-beet",
+    "processed-sauce",
+    "grain-fed-dairy"
+   ]
+  },
+  "nutrition": {
+   "calories": 982,
+   "proteinG": 32,
+   "carbsG": 42,
+   "fiberG": 1,
+   "sugarG": 38,
+   "fatG": 78,
+   "satFatG": 29,
+   "sodiumMg": 1880,
+   "cholesterolMg": 158
+  },
+  "tags": [
+   "bbq",
+   "party",
+   "game-day",
+   "indulgent",
+   "weekend",
+   "sharing",
+   "spicy",
+   "technique"
+  ],
+  "image": {
+   "file": "burnt-ends.jpg",
+   "source": "wikipedia-lead",
+   "match": "representative",
+   "wikipedia": "Burnt ends"
+  }
+ },
+ {
+  "id": "ch-gf-012",
+  "slug": "gf-pretzel-chicken-tenders",
+  "title": "Pretzel-Crusted Chicken Tenders",
+  "genre": "american",
+  "subgenre": "comfort",
+  "chef": {
+   "name": "Guy Fieri",
+   "slug": "guy-fieri"
+  },
+  "description": "Tenders breaded in crushed pretzels with a beer cheese dip.",
+  "difficulty": "beginner",
+  "easeScore": 9,
+  "spiceScore": 3,
+  "popularity": 8,
+  "pantryScore": 7,
+  "servings": 4,
+  "prepMin": 20,
+  "cookMin": 25,
+  "totalMin": 45,
+  "equipment": [
+   "oven",
+   "stovetop"
+  ],
+  "ingredients": [
+   "2 lb chicken tenders",
+   "2 tsp salt",
+   "1 tsp black pepper",
+   "1 tbsp garlic powder",
+   "1/2 cup all-purpose flour",
+   "3 eggs, beaten",
+   "4 cups crushed pretzels",
+   "1/4 cup canola oil",
+   "3 tbsp butter",
+   "3 tbsp all-purpose flour, for the sauce",
+   "1 cup whole milk",
+   "3/4 cup dark beer",
+   "3 cups shredded sharp cheddar",
+   "1 tbsp Dijon mustard",
+   "1 tsp hot sauce"
+  ],
+  "ingredientKeys": [
+   "chicken-tenders",
+   "salt",
+   "black-pepper",
+   "garlic-powder",
+   "flour",
+   "egg",
+   "pretzels",
+   "canola-oil",
+   "butter",
+   "flour",
+   "whole-milk",
+   "dark-beer",
+   "cheddar",
+   "dijon-mustard",
+   "hot-sauce"
+  ],
+  "specialty": [
+   "pretzels",
+   "dark-beer"
+  ],
+  "steps": [
+   "Heat the oven to 425F with a rack set in a sheet pan. Crush the pretzels to a coarse crumb, not a powder - you want some texture left.",
+   "Toss the crushed pretzels with the oil until evenly moistened. Dry crumbs bake pale; oiled ones brown like fried.",
+   "Season the chicken, then coat each tender in flour, egg, then the pretzel crumbs, pressing firmly.",
+   "Arrange on the rack with space between and bake 18-20 minutes until deep golden and 165F inside.",
+   "Make the dip: melt the butter, whisk in the flour and cook 2 minutes, then add the milk and beer gradually and simmer until thick.",
+   "Take the pan off the heat before adding the cheddar, Dijon and hot sauce - cheese melted over direct heat goes stringy and oily. Serve the tenders hot with the dip."
+  ],
+  "diet": {
+   "vegetarian": false,
+   "vegan": false,
+   "pescatarian": false,
+   "glutenFree": false,
+   "glutenFreeAdaptable": false,
+   "dairyFree": false,
+   "nutFree": true,
+   "eggFree": false
+  },
+  "allergens": [
+   "gluten",
+   "dairy",
+   "egg"
+  ],
+  "gmo": {
+   "risk": "high",
+   "sources": [
+    "grain-fed-meat",
+    "processed-bread",
+    "seed-oil",
+    "grain-fed-dairy"
+   ]
+  },
+  "nutrition": {
+   "calories": 982,
+   "proteinG": 72,
+   "carbsG": 72,
+   "fiberG": 3,
+   "sugarG": 9,
+   "fatG": 44,
+   "satFatG": 21,
+   "sodiumMg": 2180,
+   "cholesterolMg": 286
+  },
+  "tags": [
+   "kid-friendly",
+   "party",
+   "game-day",
+   "family",
+   "weeknight",
+   "high-protein",
+   "crowd-pleaser"
+  ],
+  "image": {
+   "file": "chicken-fingers.jpg",
+   "source": "wikipedia-lead",
+   "match": "representative",
+   "wikipedia": "Chicken fingers"
+  }
+ },
+ {
+  "id": "ch-gf-013",
+  "slug": "gf-shrimp-po-boy",
+  "title": "Shrimp Po' Boy",
+  "genre": "american",
+  "subgenre": "sandwiches",
+  "chef": {
+   "name": "Guy Fieri",
+   "slug": "guy-fieri"
+  },
+  "description": "Cornmeal-fried shrimp in a French roll with remoulade and pickles.",
+  "difficulty": "beginner",
+  "easeScore": 8,
+  "spiceScore": 5,
+  "popularity": 8,
+  "pantryScore": 7,
+  "servings": 4,
+  "prepMin": 25,
+  "cookMin": 20,
+  "totalMin": 45,
+  "equipment": [
+   "stovetop"
+  ],
+  "ingredients": [
+   "2 lb large shrimp, peeled",
+   "1 cup buttermilk",
+   "2 tbsp hot sauce",
+   "1 cup all-purpose flour",
+   "1 cup yellow cornmeal",
+   "1 tbsp Cajun seasoning",
+   "2 tsp garlic powder",
+   "1 tsp cayenne pepper",
+   "2 tsp salt",
+   "6 cups canola oil, for frying",
+   "3/4 cup mayonnaise",
+   "2 tbsp Creole mustard",
+   "1 tbsp hot sauce, for the remoulade",
+   "1 tbsp lemon juice",
+   "2 tsp smoked paprika",
+   "4 French rolls",
+   "2 cups shredded iceberg lettuce",
+   "2 tomatoes, sliced",
+   "1 cup dill pickle slices"
+  ],
+  "ingredientKeys": [
+   "shrimp",
+   "buttermilk",
+   "hot-sauce",
+   "flour",
+   "cornmeal",
+   "cajun-seasoning",
+   "garlic-powder",
+   "cayenne",
+   "salt",
+   "canola-oil",
+   "mayonnaise",
+   "creole-mustard",
+   "hot-sauce",
+   "lemon-juice",
+   "smoked-paprika",
+   "french-bread",
+   "lettuce",
+   "tomato",
+   "pickle"
+  ],
+  "specialty": [
+   "shrimp",
+   "buttermilk",
+   "cornmeal",
+   "cajun-seasoning",
+   "creole-mustard",
+   "french-bread"
+  ],
+  "steps": [
+   "Soak the shrimp in the buttermilk and 2 tbsp hot sauce for 15 minutes.",
+   "Stir the mayonnaise, Creole mustard, 1 tbsp hot sauce, lemon juice and smoked paprika into the remoulade and chill it.",
+   "Mix the flour, cornmeal, Cajun seasoning, garlic powder, cayenne and salt. The cornmeal is what gives a po' boy its sandy crunch, so do not swap it for all flour.",
+   "Heat 2 inches of oil to 365F. Lift the shrimp from the buttermilk, dredge in the cornmeal mixture, and shake off the excess.",
+   "Fry in batches 2-3 minutes until golden and floating. Shrimp cook fast - any longer and they go rubbery inside the crust.",
+   "Drain on a rack and salt immediately. Split and lightly toast the rolls, spread both sides with remoulade, and build with lettuce, tomato, shrimp and pickles."
+  ],
+  "diet": {
+   "vegetarian": false,
+   "vegan": false,
+   "pescatarian": true,
+   "glutenFree": false,
+   "glutenFreeAdaptable": false,
+   "dairyFree": false,
+   "nutFree": true,
+   "eggFree": false
+  },
+  "allergens": [
+   "gluten",
+   "dairy",
+   "egg",
+   "shellfish"
+  ],
+  "gmo": {
+   "risk": "high",
+   "sources": [
+    "seed-oil",
+    "corn",
+    "processed-bread",
+    "grain-fed-dairy"
+   ]
+  },
+  "nutrition": {
+   "calories": 982,
+   "proteinG": 52,
+   "carbsG": 82,
+   "fiberG": 5,
+   "sugarG": 9,
+   "fatG": 46,
+   "satFatG": 8,
+   "sodiumMg": 2180,
+   "cholesterolMg": 312
+  },
+  "tags": [
+   "sandwiches",
+   "seafood",
+   "pescatarian",
+   "southern",
+   "spicy",
+   "party",
+   "high-protein",
+   "regional"
+  ],
+  "image": {
+   "file": "po-boy.jpg",
+   "source": "wikipedia-lead",
+   "match": "representative",
+   "wikipedia": "Po' boy"
+  }
+ },
+ {
+  "id": "ch-gf-014",
+  "slug": "gf-cuban-sandwich",
+  "title": "Cuban Sandwich",
+  "genre": "american",
+  "subgenre": "sandwiches",
+  "chef": {
+   "name": "Guy Fieri",
+   "slug": "guy-fieri"
+  },
+  "description": "Roast pork, ham, Swiss and pickles pressed until the bread shatters.",
+  "difficulty": "intermediate",
+  "easeScore": 7,
+  "spiceScore": 2,
+  "popularity": 8,
+  "pantryScore": 6,
+  "servings": 4,
+  "prepMin": 25,
+  "cookMin": 200,
+  "totalMin": 225,
+  "equipment": [
+   "oven",
+   "stovetop"
+  ],
+  "ingredients": [
+   "2 lb boneless pork shoulder",
+   "1/2 cup orange juice",
+   "1/4 cup lime juice",
+   "8 cloves garlic, minced",
+   "2 tbsp ground cumin",
+   "1 tbsp dried oregano",
+   "2 tsp salt",
+   "1 tsp black pepper",
+   "3 tbsp olive oil",
+   "4 Cuban or French rolls",
+   "1/3 cup yellow mustard",
+   "1/2 lb sliced Black Forest ham",
+   "8 slices Swiss cheese",
+   "1 1/2 cups dill pickle slices",
+   "4 tbsp butter, softened"
+  ],
+  "ingredientKeys": [
+   "pork-shoulder",
+   "orange-juice",
+   "lime-juice",
+   "garlic",
+   "cumin",
+   "dried-oregano",
+   "salt",
+   "black-pepper",
+   "olive-oil",
+   "cuban-roll",
+   "yellow-mustard",
+   "deli-ham",
+   "swiss-cheese",
+   "pickle",
+   "butter"
+  ],
+  "specialty": [
+   "pork-shoulder",
+   "cuban-roll",
+   "deli-ham"
+  ],
+  "steps": [
+   "Blend the orange juice, lime juice, garlic, cumin, oregano, salt, pepper and oil into a mojo and marinate the pork at least 4 hours.",
+   "Roast it covered at 300F for about 3 hours, until a fork twists in it easily. Cool completely, then slice thinly - cold pork slices cleanly, warm pork shreds.",
+   "Split the rolls and spread mustard on both cut sides.",
+   "Layer in this order: Swiss, roast pork, ham, pickles, Swiss again. Cheese on both the top and bottom is what glues the sandwich together under pressure.",
+   "Butter the outsides of the rolls generously.",
+   "Press in a hot pan with a heavy skillet or foil-wrapped brick on top for 4-5 minutes per side, until the bread is flattened to about half its height and the cheese has fully melted. The pressing is the defining step - a Cuban that is not compressed is just a ham sandwich."
+  ],
+  "diet": {
+   "vegetarian": false,
+   "vegan": false,
+   "pescatarian": false,
+   "glutenFree": false,
+   "glutenFreeAdaptable": false,
+   "dairyFree": false,
+   "nutFree": true,
+   "eggFree": true
+  },
+  "allergens": [
+   "gluten",
+   "dairy"
+  ],
+  "gmo": {
+   "risk": "high",
+   "sources": [
+    "grain-fed-meat",
+    "processed-bread",
+    "grain-fed-dairy"
+   ]
+  },
+  "nutrition": {
+   "calories": 882,
+   "proteinG": 58,
+   "carbsG": 52,
+   "fiberG": 3,
+   "sugarG": 9,
+   "fatG": 48,
+   "satFatG": 21,
+   "sodiumMg": 2380,
+   "cholesterolMg": 178
+  },
+  "tags": [
+   "sandwiches",
+   "regional",
+   "make-ahead",
+   "high-protein",
+   "party",
+   "weekend",
+   "technique"
+  ],
+  "image": {
+   "file": "gf-cuban-sandwich.jpg",
+   "source": "commons-file",
+   "match": "dish",
+   "commonsFile": "Cuban Sandwich (18196090911).jpg"
+  }
+ },
+ {
+  "id": "ch-gf-015",
+  "slug": "gf-tri-tip-chimichurri",
+  "title": "Grilled Tri-Tip with Chimichurri",
+  "genre": "american",
+  "subgenre": "steaks",
+  "chef": {
+   "name": "Guy Fieri",
+   "slug": "guy-fieri"
+  },
+  "description": "Santa Maria style tri-tip grilled over two zones with a sharp herb sauce.",
+  "difficulty": "intermediate",
+  "easeScore": 7,
+  "spiceScore": 4,
+  "popularity": 8,
+  "pantryScore": 7,
+  "servings": 8,
+  "prepMin": 20,
+  "cookMin": 50,
+  "totalMin": 70,
+  "equipment": [
+   "grill"
+  ],
+  "ingredients": [
+   "1 tri-tip roast (3 lb), fat cap trimmed to 1/4 inch",
+   "2 tbsp kosher salt",
+   "1 tbsp coarse black pepper",
+   "1 tbsp garlic powder",
+   "1 tbsp onion powder",
+   "2 tsp smoked paprika",
+   "2 tbsp canola oil",
+   "1 1/2 cups parsley, finely chopped",
+   "1/2 cup cilantro, finely chopped",
+   "6 cloves garlic, minced",
+   "1/3 cup red wine vinegar",
+   "3/4 cup olive oil",
+   "1 tbsp dried oregano",
+   "1 tsp red pepper flakes",
+   "1 1/2 tsp salt"
+  ],
+  "ingredientKeys": [
+   "tri-tip",
+   "kosher-salt",
+   "black-pepper",
+   "garlic-powder",
+   "onion-powder",
+   "smoked-paprika",
+   "canola-oil",
+   "parsley",
+   "cilantro",
+   "garlic",
+   "red-wine-vinegar",
+   "olive-oil",
+   "dried-oregano",
+   "red-pepper-flakes",
+   "salt"
+  ],
+  "specialty": [
+   "tri-tip"
+  ],
+  "steps": [
+   "Mix the kosher salt, pepper, garlic powder, onion powder and paprika and rub it over the whole roast. Rest at room temperature 45 minutes, then coat with the canola oil.",
+   "Stir the parsley, cilantro, garlic, vinegar, olive oil, oregano, pepper flakes and salt into the chimichurri and let it sit - it improves as it stands.",
+   "Build a two-zone fire. Sear the tri-tip over the hot side 5 minutes per side until well charred.",
+   "Move it to the cool side, close the lid, and cook to 130F internal for medium-rare, 25-35 minutes depending on thickness.",
+   "Rest a full 15 minutes. Tri-tip is a large muscle and loses a lot of juice if cut early.",
+   "Tri-tip has two grain directions. Cut the roast in half where the grain changes, then slice each half thinly against its own grain. Getting this wrong is the main reason people find tri-tip chewy. Serve with chimichurri."
+  ],
+  "diet": {
+   "vegetarian": false,
+   "vegan": false,
+   "pescatarian": false,
+   "glutenFree": true,
+   "glutenFreeAdaptable": false,
+   "dairyFree": true,
+   "nutFree": true,
+   "eggFree": true
+  },
+  "allergens": [
+   "sulfites"
+  ],
+  "gmo": {
+   "risk": "moderate",
+   "sources": [
+    "grain-fed-meat",
+    "seed-oil"
+   ]
+  },
+  "nutrition": {
+   "calories": 682,
+   "proteinG": 48,
+   "carbsG": 4,
+   "fiberG": 1,
+   "sugarG": 1,
+   "fatG": 54,
+   "satFatG": 12,
+   "sodiumMg": 1480,
+   "cholesterolMg": 138
+  },
+  "tags": [
+   "grill",
+   "bbq",
+   "gluten-free",
+   "dairy-free",
+   "high-protein",
+   "low-carb",
+   "party",
+   "summer",
+   "technique"
+  ],
+  "image": {
+   "file": "flank-steak.jpg",
+   "source": "wikipedia-lead",
+   "match": "representative",
+   "wikipedia": "Tri-tip"
+  }
+ },
+ {
+  "id": "ch-gf-016",
+  "slug": "gf-jalapeno-poppers",
+  "title": "Bacon-Wrapped Jalapeno Poppers",
+  "genre": "american",
+  "subgenre": "appetizers",
+  "chef": {
+   "name": "Guy Fieri",
+   "slug": "guy-fieri"
+  },
+  "description": "Jalapenos filled with three cheeses, wrapped in bacon and baked.",
+  "difficulty": "beginner",
+  "easeScore": 9,
+  "spiceScore": 6,
+  "popularity": 9,
+  "pantryScore": 8,
+  "servings": 8,
+  "prepMin": 25,
+  "cookMin": 30,
+  "totalMin": 55,
+  "equipment": [
+   "oven"
+  ],
+  "ingredients": [
+   "16 large jalapenos, halved lengthwise and seeded",
+   "12 oz cream cheese, softened",
+   "1 1/2 cups shredded sharp cheddar",
+   "1/2 cup grated Parmesan",
+   "4 scallions, sliced",
+   "2 cloves garlic, minced",
+   "1 tsp smoked paprika",
+   "1 tsp garlic powder",
+   "1/2 tsp salt",
+   "16 slices thin-cut bacon, halved",
+   "2 tbsp brown sugar",
+   "1/4 cup chopped cilantro"
+  ],
+  "ingredientKeys": [
+   "jalapeno",
+   "cream-cheese",
+   "cheddar",
+   "parmesan",
+   "scallion",
+   "garlic",
+   "smoked-paprika",
+   "garlic-powder",
+   "salt",
+   "bacon",
+   "brown-sugar",
+   "cilantro"
+  ],
+  "specialty": [
+   "cream-cheese"
+  ],
+  "steps": [
+   "Halve the jalapenos and scrape out the seeds and white ribs with a spoon. That is where most of the heat lives, so leave some in if you want them fierce.",
+   "Mix the cream cheese, cheddar, Parmesan, scallions, garlic, paprika, garlic powder and salt into a thick filling.",
+   "Fill each jalapeno half, mounding it slightly but not overflowing - overfilled poppers leak everywhere.",
+   "Wrap each one in a half slice of thin-cut bacon, tucking the ends underneath. Thin-cut matters: thick bacon will not crisp in the time the peppers need.",
+   "Set them on a rack over a sheet pan so the fat drips away, and sprinkle the brown sugar over.",
+   "Bake at 400F for 25-30 minutes until the bacon is crisp and the filling is bubbling. Rest 5 minutes and finish with cilantro."
+  ],
+  "diet": {
+   "vegetarian": false,
+   "vegan": false,
+   "pescatarian": false,
+   "glutenFree": true,
+   "glutenFreeAdaptable": false,
+   "dairyFree": false,
+   "nutFree": true,
+   "eggFree": true
+  },
+  "allergens": [
+   "dairy"
+  ],
+  "gmo": {
+   "risk": "moderate",
+   "sources": [
+    "grain-fed-meat",
+    "grain-fed-dairy",
+    "sugar-beet"
+   ]
+  },
+  "nutrition": {
+   "calories": 386,
+   "proteinG": 16,
+   "carbsG": 9,
+   "fiberG": 2,
+   "sugarG": 6,
+   "fatG": 32,
+   "satFatG": 15,
+   "sodiumMg": 880,
+   "cholesterolMg": 78
+  },
+  "tags": [
+   "appetizer",
+   "party",
+   "game-day",
+   "spicy",
+   "gluten-free",
+   "low-carb",
+   "make-ahead",
+   "sharing",
+   "crowd-pleaser"
+  ],
+  "image": {
+   "file": "jalapeno-poppers.jpg",
+   "source": "wikipedia-lead",
+   "match": "representative",
+   "wikipedia": "Jalapeño popper"
+  }
+ },
+ {
+  "id": "ch-gf-017",
+  "slug": "gf-buffalo-chicken-dip",
+  "title": "Buffalo Chicken Dip",
+  "genre": "american",
+  "subgenre": "appetizers",
+  "chef": {
+   "name": "Guy Fieri",
+   "slug": "guy-fieri"
+  },
+  "description": "Shredded chicken, cream cheese and hot sauce baked until bubbling.",
+  "difficulty": "beginner",
+  "easeScore": 10,
+  "spiceScore": 6,
+  "popularity": 10,
+  "pantryScore": 9,
+  "servings": 10,
+  "prepMin": 10,
+  "cookMin": 30,
+  "totalMin": 40,
+  "equipment": [
+   "oven",
+   "stovetop"
+  ],
+  "ingredients": [
+   "4 cups shredded cooked chicken",
+   "16 oz cream cheese, softened",
+   "3/4 cup hot sauce",
+   "1/2 cup ranch dressing",
+   "1/2 cup blue cheese dressing",
+   "2 cups shredded sharp cheddar",
+   "1 cup crumbled blue cheese",
+   "4 scallions, sliced",
+   "2 tsp garlic powder",
+   "1 tsp smoked paprika",
+   "4 celery stalks, cut in sticks",
+   "1 bag (13 oz) tortilla chips"
+  ],
+  "ingredientKeys": [
+   "cooked-chicken",
+   "cream-cheese",
+   "hot-sauce",
+   "ranch-dressing",
+   "blue-cheese-dressing",
+   "cheddar",
+   "blue-cheese",
+   "scallion",
+   "garlic-powder",
+   "smoked-paprika",
+   "celery",
+   "tortilla-chips"
+  ],
+  "specialty": [
+   "cream-cheese",
+   "ranch-dressing",
+   "blue-cheese-dressing",
+   "blue-cheese",
+   "tortilla-chips"
+  ],
+  "steps": [
+   "Beat the softened cream cheese until completely smooth before adding anything else. Cold cream cheese leaves lumps that never melt out.",
+   "Stir in the hot sauce, both dressings, garlic powder and paprika.",
+   "Fold in the chicken, half the cheddar and half the blue cheese.",
+   "Spread in a baking dish and scatter the remaining cheeses over the top.",
+   "Bake at 350F for 25-30 minutes until bubbling at the edges and browned on top.",
+   "Rest 5 minutes, finish with scallions, and serve hot with celery sticks and chips. It firms up as it cools, so keep it warm if you can."
+  ],
+  "diet": {
+   "vegetarian": false,
+   "vegan": false,
+   "pescatarian": false,
+   "glutenFree": true,
+   "glutenFreeAdaptable": false,
+   "dairyFree": false,
+   "nutFree": true,
+   "eggFree": false
+  },
+  "allergens": [
+   "dairy",
+   "egg"
+  ],
+  "gmo": {
+   "risk": "high",
+   "sources": [
+    "grain-fed-meat",
+    "grain-fed-dairy",
+    "seed-oil",
+    "corn",
+    "processed-sauce"
+   ]
+  },
+  "nutrition": {
+   "calories": 682,
+   "proteinG": 32,
+   "carbsG": 32,
+   "fiberG": 3,
+   "sugarG": 5,
+   "fatG": 48,
+   "satFatG": 21,
+   "sodiumMg": 1880,
+   "cholesterolMg": 138
+  },
+  "tags": [
+   "appetizer",
+   "party",
+   "game-day",
+   "spicy",
+   "gluten-free",
+   "make-ahead",
+   "crowd-pleaser",
+   "sharing",
+   "easy"
+  ],
+  "image": {
+   "file": "buffalo-chicken-dip.jpg",
+   "source": "wikipedia-lead",
+   "match": "representative",
+   "wikipedia": "Buffalo wing"
+  }
+ },
+ {
+  "id": "ch-gf-018",
+  "slug": "gf-onion-rings-chipotle-ranch",
+  "title": "Beer-Battered Onion Rings",
+  "genre": "american",
+  "subgenre": "sides",
+  "chef": {
+   "name": "Guy Fieri",
+   "slug": "guy-fieri"
+  },
+  "description": "Thick sweet onion rings in cold beer batter with chipotle ranch.",
+  "difficulty": "intermediate",
+  "easeScore": 6,
+  "spiceScore": 5,
+  "popularity": 9,
+  "pantryScore": 8,
+  "servings": 6,
+  "prepMin": 20,
+  "cookMin": 25,
+  "totalMin": 45,
+  "equipment": [
+   "stovetop"
+  ],
+  "ingredients": [
+   "3 large sweet onions, cut in 1/2-inch rings",
+   "2 cups all-purpose flour",
+   "1/2 cup cornstarch",
+   "1 tbsp baking powder",
+   "2 tsp salt",
+   "1 tbsp smoked paprika",
+   "2 tsp garlic powder",
+   "1 tsp cayenne pepper",
+   "1 1/2 cups cold beer",
+   "6 cups canola oil, for frying",
+   "3/4 cup ranch dressing",
+   "3 chipotle peppers in adobo, minced",
+   "1 tbsp lime juice"
+  ],
+  "ingredientKeys": [
+   "sweet-onion",
+   "flour",
+   "cornstarch",
+   "baking-powder",
+   "salt",
+   "smoked-paprika",
+   "garlic-powder",
+   "cayenne",
+   "beer",
+   "canola-oil",
+   "ranch-dressing",
+   "chipotle-in-adobo",
+   "lime-juice"
+  ],
+  "specialty": [
+   "sweet-onion",
+   "cornstarch",
+   "beer",
+   "ranch-dressing",
+   "chipotle-in-adobo"
+  ],
+  "steps": [
+   "Separate the onion rings and toss them with 1/2 cup of the flour. A dry floured surface is what the wet batter grips onto.",
+   "Stir the ranch with the chipotles and lime juice and chill.",
+   "Whisk the remaining flour with the cornstarch, baking powder, salt, paprika, garlic powder and cayenne, then stir in the cold beer until just combined. Lumps are fine - cold, barely-mixed batter fries crispest.",
+   "Heat 2 inches of oil to 360F.",
+   "Dip each ring, let the excess run off, and lower it into the oil. Fry 4 or 5 at a time for 2-3 minutes, turning once, until golden.",
+   "Drain on a rack and salt immediately. Let the oil come back to 360F between batches or the next round turns greasy. Serve with the chipotle ranch."
+  ],
+  "diet": {
+   "vegetarian": true,
+   "vegan": false,
+   "pescatarian": true,
+   "glutenFree": false,
+   "glutenFreeAdaptable": false,
+   "dairyFree": false,
+   "nutFree": true,
+   "eggFree": false
+  },
+  "allergens": [
+   "gluten",
+   "dairy",
+   "egg"
+  ],
+  "gmo": {
+   "risk": "high",
+   "sources": [
+    "seed-oil",
+    "cornstarch",
+    "corn",
+    "grain-fed-dairy"
+   ]
+  },
+  "nutrition": {
+   "calories": 586,
+   "proteinG": 9,
+   "carbsG": 62,
+   "fiberG": 4,
+   "sugarG": 9,
+   "fatG": 32,
+   "satFatG": 5,
+   "sodiumMg": 1280,
+   "cholesterolMg": 18
+  },
+  "tags": [
+   "side",
+   "party",
+   "game-day",
+   "vegetarian",
+   "spicy",
+   "sharing",
+   "indulgent",
+   "technique"
+  ],
+  "image": {
+   "file": "gf-onion-rings-chipotle-ranch.jpg",
+   "source": "commons-file",
+   "match": "dish",
+   "commonsFile": "Beer Battered Onion Rings (4957953795).jpg"
+  }
+ },
+ {
+  "id": "ch-gf-019",
+  "slug": "gf-coffee-rub-ribs",
+  "title": "Coffee-Rubbed Baby Back Ribs",
+  "genre": "american",
+  "subgenre": "bbq",
+  "chef": {
+   "name": "Guy Fieri",
+   "slug": "guy-fieri"
+  },
+  "description": "Ribs with a ground coffee and ancho rub, cooked low and glazed at the end.",
+  "difficulty": "intermediate",
+  "easeScore": 7,
+  "spiceScore": 5,
+  "popularity": 8,
+  "pantryScore": 7,
+  "servings": 4,
+  "prepMin": 20,
+  "cookMin": 190,
+  "totalMin": 210,
+  "equipment": [
+   "oven",
+   "broiler"
+  ],
+  "ingredients": [
+   "2 racks baby back ribs (4 lb)",
+   "3 tbsp finely ground coffee",
+   "2 tbsp ancho chile powder",
+   "3 tbsp dark brown sugar",
+   "2 tbsp smoked paprika",
+   "1 tbsp kosher salt",
+   "2 tsp black pepper",
+   "2 tsp garlic powder",
+   "2 tsp mustard powder",
+   "1 tsp cayenne pepper",
+   "1 cup barbecue sauce",
+   "1/4 cup strong brewed coffee",
+   "2 tbsp apple cider vinegar",
+   "2 tbsp molasses"
+  ],
+  "ingredientKeys": [
+   "pork-ribs",
+   "ground-coffee",
+   "ancho-chile-powder",
+   "brown-sugar",
+   "smoked-paprika",
+   "kosher-salt",
+   "black-pepper",
+   "garlic-powder",
+   "mustard-powder",
+   "cayenne",
+   "barbecue-sauce",
+   "brewed-coffee",
+   "apple-cider-vinegar",
+   "molasses"
+  ],
+  "specialty": [
+   "pork-ribs",
+   "ground-coffee",
+   "ancho-chile-powder",
+   "mustard-powder",
+   "molasses"
+  ],
+  "steps": [
+   "Slide a knife under the thin membrane on the bone side of each rack and pull it off with a paper towel. It never becomes tender and blocks the rub.",
+   "Mix the ground coffee, ancho powder, brown sugar, paprika, salt, pepper, garlic powder, mustard powder and cayenne and massage it into both sides. The coffee reads as bitter depth rather than coffee flavor once it cooks.",
+   "Wrap each rack tightly in foil, set on a sheet pan, and bake at 275F for 2 1/2 hours until the meat pulls back from the bone ends.",
+   "Simmer the barbecue sauce with the brewed coffee, vinegar and molasses for 8 minutes to make the glaze.",
+   "Open the foil carefully - the steam is scalding - and pour off the liquid.",
+   "Brush the ribs with glaze and broil 4-6 inches from the element for 4-6 minutes, watching constantly, until the glaze bubbles and chars at the edges. Rest 10 minutes before cutting."
+  ],
+  "diet": {
+   "vegetarian": false,
+   "vegan": false,
+   "pescatarian": false,
+   "glutenFree": false,
+   "glutenFreeAdaptable": true,
+   "dairyFree": true,
+   "nutFree": true,
+   "eggFree": true
+  },
+  "allergens": [
+   "gluten"
+  ],
+  "gmo": {
+   "risk": "high",
+   "sources": [
+    "grain-fed-meat",
+    "corn-syrup",
+    "sugar-beet",
+    "processed-sauce"
+   ]
+  },
+  "nutrition": {
+   "calories": 882,
+   "proteinG": 58,
+   "carbsG": 42,
+   "fiberG": 3,
+   "sugarG": 32,
+   "fatG": 52,
+   "satFatG": 18,
+   "sodiumMg": 1880,
+   "cholesterolMg": 196
+  },
+  "tags": [
+   "bbq",
+   "weekend",
+   "party",
+   "high-protein",
+   "dairy-free",
+   "spicy",
+   "technique",
+   "game-day"
+  ],
+  "image": {
+   "file": "pork-ribs.jpg",
+   "source": "wikipedia-lead",
+   "match": "representative",
+   "wikipedia": "Pork ribs"
+  }
+ },
+ {
+  "id": "ch-gf-020",
+  "slug": "gf-meatball-sliders",
+  "title": "Meatball Sliders",
+  "genre": "american",
+  "subgenre": "sandwiches",
+  "chef": {
+   "name": "Guy Fieri",
+   "slug": "guy-fieri"
+  },
+  "description": "Mini meatball subs baked as a tray with garlic butter on top.",
+  "difficulty": "beginner",
+  "easeScore": 9,
+  "spiceScore": 3,
+  "popularity": 9,
+  "pantryScore": 8,
+  "servings": 12,
+  "prepMin": 25,
+  "cookMin": 45,
+  "totalMin": 70,
+  "equipment": [
+   "stovetop",
+   "oven"
+  ],
+  "ingredients": [
+   "1 lb ground beef (85/15)",
+   "1/2 lb ground pork",
+   "3/4 cup Italian breadcrumbs",
+   "1/2 cup whole milk",
+   "1 egg",
+   "1 cup grated Parmesan",
+   "4 cloves garlic, minced",
+   "1/3 cup chopped parsley",
+   "2 tsp salt",
+   "1 tsp black pepper",
+   "1 tsp red pepper flakes",
+   "3 cups marinara sauce",
+   "12 slider buns, attached in a tray",
+   "3 cups shredded mozzarella",
+   "6 tbsp butter, melted",
+   "2 cloves garlic, minced, for the butter",
+   "1 tbsp dried oregano",
+   "2 tbsp grated Parmesan, for the top"
+  ],
+  "ingredientKeys": [
+   "ground-beef",
+   "ground-pork",
+   "italian-breadcrumbs",
+   "whole-milk",
+   "egg",
+   "parmesan",
+   "garlic",
+   "parsley",
+   "salt",
+   "black-pepper",
+   "red-pepper-flakes",
+   "marinara-sauce",
+   "slider-buns",
+   "mozzarella",
+   "butter",
+   "garlic",
+   "dried-oregano",
+   "parmesan"
+  ],
+  "specialty": [
+   "ground-pork",
+   "italian-breadcrumbs",
+   "slider-buns",
+   "mozzarella"
+  ],
+  "steps": [
+   "Soak the breadcrumbs in the milk 5 minutes, then mix with both meats, the egg, 1 cup Parmesan, the garlic, parsley, salt, pepper and pepper flakes. Stop as soon as it comes together.",
+   "Roll into 12 small meatballs sized to fit the buns and bake at 400F for 15 minutes.",
+   "Simmer them in the marinara for 10 minutes so they absorb some sauce.",
+   "Slice the whole tray of buns horizontally and keep it in one piece. Set the bottom half in a baking dish, add the meatballs with a little sauce, then the mozzarella, then the top half.",
+   "Mix the melted butter with the garlic and oregano and brush it all over the top, then scatter the extra Parmesan.",
+   "Cover with foil and bake at 350F for 15 minutes, then uncover for 8-10 minutes until the tops are golden. Cut into individual sliders."
+  ],
+  "diet": {
+   "vegetarian": false,
+   "vegan": false,
+   "pescatarian": false,
+   "glutenFree": false,
+   "glutenFreeAdaptable": false,
+   "dairyFree": false,
+   "nutFree": true,
+   "eggFree": false
+  },
+  "allergens": [
+   "gluten",
+   "dairy",
+   "egg"
+  ],
+  "gmo": {
+   "risk": "high",
+   "sources": [
+    "grain-fed-meat",
+    "processed-bread",
+    "processed-sauce",
+    "grain-fed-dairy"
+   ]
+  },
+  "nutrition": {
+   "calories": 512,
+   "proteinG": 28,
+   "carbsG": 38,
+   "fiberG": 3,
+   "sugarG": 8,
+   "fatG": 28,
+   "satFatG": 13,
+   "sodiumMg": 1180,
+   "cholesterolMg": 98
+  },
+  "tags": [
+   "party",
+   "game-day",
+   "sharing",
+   "family",
+   "kid-friendly",
+   "make-ahead",
+   "crowd-pleaser"
+  ],
+  "image": {
+   "file": "gf-meatball-sliders.jpg",
+   "source": "commons-file",
+   "match": "dish",
+   "commonsFile": "Meatball Sliders (30880786817).jpg"
+  }
+ },
+ {
+  "id": "ch-gf-021",
+  "slug": "gf-short-rib-grilled-cheese",
+  "title": "Short Rib Grilled Cheese",
+  "genre": "american",
+  "subgenre": "sandwiches",
+  "chef": {
+   "name": "Guy Fieri",
+   "slug": "guy-fieri"
+  },
+  "description": "Braised short rib and two cheeses griddled between buttered sourdough.",
+  "difficulty": "intermediate",
+  "easeScore": 6,
+  "spiceScore": 3,
+  "popularity": 8,
+  "pantryScore": 6,
+  "servings": 4,
+  "prepMin": 25,
+  "cookMin": 215,
+  "totalMin": 240,
+  "equipment": [
+   "oven",
+   "stovetop"
+  ],
+  "ingredients": [
+   "3 lb bone-in beef short ribs",
+   "2 tsp salt",
+   "1 tsp black pepper",
+   "3 tbsp canola oil",
+   "1 yellow onion, chopped",
+   "4 cloves garlic, minced",
+   "2 tbsp tomato paste",
+   "1 cup dry red wine",
+   "3 cups beef broth",
+   "2 sprigs fresh thyme",
+   "2 yellow onions, thinly sliced",
+   "3 tbsp butter",
+   "8 slices sourdough bread",
+   "2 cups shredded sharp cheddar",
+   "2 cups shredded smoked gouda",
+   "1/3 cup mayonnaise",
+   "1 tbsp Dijon mustard"
+  ],
+  "ingredientKeys": [
+   "short-ribs",
+   "salt",
+   "black-pepper",
+   "canola-oil",
+   "yellow-onion",
+   "garlic",
+   "tomato-paste",
+   "red-wine",
+   "beef-broth",
+   "fresh-thyme",
+   "yellow-onion",
+   "butter",
+   "sourdough-bread",
+   "cheddar",
+   "smoked-gouda",
+   "mayonnaise",
+   "dijon-mustard"
+  ],
+  "specialty": [
+   "short-ribs",
+   "red-wine",
+   "fresh-thyme",
+   "smoked-gouda"
+  ],
+  "steps": [
+   "Season the short ribs and brown them hard in the oil on all sides, 10 minutes. Set aside, then cook the chopped onion 8 minutes, add the garlic and tomato paste for 2 minutes, and deglaze with the wine.",
+   "Return the ribs with the broth and thyme, cover, and braise at 325F for 3 hours until the meat falls off the bone. Shred it and moisten with a few spoonfuls of the strained braising liquid.",
+   "Caramelize the sliced onions in the butter over medium-low for 25 minutes until jammy. High heat will not do it - this needs the time.",
+   "Stir the mayonnaise with the Dijon and spread it on the outside of each bread slice. Mayo browns more evenly than butter and will not burn.",
+   "Build each sandwich with cheddar, short rib, caramelized onions, gouda. Cheese against both slices is what holds everything together.",
+   "Griddle over medium-low 4-5 minutes per side, pressing gently, until deep golden and fully melted. Rest 1 minute before cutting."
+  ],
+  "diet": {
+   "vegetarian": false,
+   "vegan": false,
+   "pescatarian": false,
+   "glutenFree": false,
+   "glutenFreeAdaptable": false,
+   "dairyFree": false,
+   "nutFree": true,
+   "eggFree": false
+  },
+  "allergens": [
+   "gluten",
+   "dairy",
+   "egg",
+   "sulfites"
+  ],
+  "gmo": {
+   "risk": "high",
+   "sources": [
+    "grain-fed-meat",
+    "processed-bread",
+    "seed-oil",
+    "grain-fed-dairy"
+   ]
+  },
+  "nutrition": {
+   "calories": 1086,
+   "proteinG": 58,
+   "carbsG": 52,
+   "fiberG": 4,
+   "sugarG": 11,
+   "fatG": 70,
+   "satFatG": 31,
+   "sodiumMg": 1680,
+   "cholesterolMg": 218
+  },
+  "tags": [
+   "sandwiches",
+   "comfort",
+   "indulgent",
+   "weekend",
+   "make-ahead",
+   "high-protein",
+   "leftovers"
+  ],
+  "image": {
+   "file": "grilled-cheese.jpg",
+   "source": "wikipedia-lead",
+   "match": "representative",
+   "wikipedia": "Cheese sandwich"
+  }
+ },
+ {
+  "id": "ch-gf-022",
+  "slug": "gf-pozole-verde",
+  "title": "Pozole Verde",
+  "genre": "mexican",
+  "subgenre": "soups",
+  "chef": {
+   "name": "Guy Fieri",
+   "slug": "guy-fieri"
+  },
+  "description": "Green pozole with chicken, tomatillos and hominy, loaded with raw garnishes.",
+  "difficulty": "intermediate",
+  "easeScore": 7,
+  "spiceScore": 6,
+  "popularity": 7,
+  "pantryScore": 6,
+  "servings": 8,
+  "prepMin": 25,
+  "cookMin": 60,
+  "totalMin": 85,
+  "equipment": [
+   "stovetop",
+   "blender",
+   "broiler"
+  ],
+  "ingredients": [
+   "3 lb boneless chicken thighs",
+   "1 1/2 lb tomatillos, husked",
+   "4 poblano peppers",
+   "3 serrano peppers",
+   "1 white onion, quartered",
+   "8 cloves garlic",
+   "2 cups cilantro",
+   "1 cup pumpkin seeds, toasted",
+   "2 tbsp ground cumin",
+   "1 tbsp dried oregano",
+   "3 tbsp canola oil",
+   "8 cups chicken broth",
+   "2 cans (29 oz each) hominy, drained",
+   "1 tbsp salt",
+   "3 cups shredded cabbage",
+   "1 bunch radishes, sliced",
+   "1 white onion, diced",
+   "2 avocados, diced",
+   "3 limes, cut in wedges"
+  ],
+  "ingredientKeys": [
+   "chicken-thighs",
+   "tomatillo",
+   "poblano-pepper",
+   "serrano-pepper",
+   "white-onion",
+   "garlic",
+   "cilantro",
+   "pumpkin-seeds",
+   "cumin",
+   "dried-oregano",
+   "canola-oil",
+   "chicken-broth",
+   "hominy",
+   "salt",
+   "green-cabbage",
+   "radish",
+   "white-onion",
+   "avocado",
+   "lime"
+  ],
+  "specialty": [
+   "tomatillo",
+   "poblano-pepper",
+   "serrano-pepper",
+   "pumpkin-seeds",
+   "hominy",
+   "radish"
+  ],
+  "steps": [
+   "Broil the tomatillos, poblanos, serranos, quartered onion and garlic until blackened in patches, about 12 minutes, then peel the poblanos.",
+   "Blend the roasted vegetables with the cilantro, toasted pumpkin seeds, cumin and oregano until smooth. The pumpkin seeds are what thicken the broth and give pozole verde its body.",
+   "Fry the puree in the oil over medium heat for 8 minutes, stirring - it will spit. This concentrates it before any liquid goes in.",
+   "Add the broth and chicken and simmer 30 minutes until the chicken is tender, then shred it and return it to the pot.",
+   "Add the hominy and salt and simmer 15 minutes more.",
+   "Serve with bowls of cabbage, radish, onion, avocado and lime. The raw garnishes are not optional - the crunch and acid against the rich broth is the whole dish."
+  ],
+  "diet": {
+   "vegetarian": false,
+   "vegan": false,
+   "pescatarian": false,
+   "glutenFree": true,
+   "glutenFreeAdaptable": false,
+   "dairyFree": true,
+   "nutFree": true,
+   "eggFree": true
+  },
+  "allergens": [],
+  "gmo": {
+   "risk": "high",
+   "sources": [
+    "grain-fed-meat",
+    "corn",
+    "seed-oil"
+   ]
+  },
+  "nutrition": {
+   "calories": 682,
+   "proteinG": 48,
+   "carbsG": 48,
+   "fiberG": 11,
+   "sugarG": 9,
+   "fatG": 34,
+   "satFatG": 7,
+   "sodiumMg": 1680,
+   "cholesterolMg": 158
+  },
+  "tags": [
+   "soup",
+   "spicy",
+   "gluten-free",
+   "dairy-free",
+   "party",
+   "authentic",
+   "make-ahead",
+   "high-protein",
+   "weekend"
+  ],
+  "image": {
+   "file": "gf-pozole-verde.jpg",
+   "source": "commons-file",
+   "match": "dish",
+   "commonsFile": "Pozole Verde.jpg"
+  }
+ },
+ {
+  "id": "ch-gf-023",
+  "slug": "gf-bourbon-bread-pudding",
+  "title": "Bourbon Bread Pudding",
+  "genre": "american",
+  "subgenre": "desserts",
+  "chef": {
+   "name": "Guy Fieri",
+   "slug": "guy-fieri"
+  },
+  "description": "Brioche soaked in custard and baked, with a bourbon caramel sauce.",
+  "difficulty": "beginner",
+  "easeScore": 9,
+  "spiceScore": 0,
+  "popularity": 8,
+  "pantryScore": 7,
+  "servings": 10,
+  "prepMin": 20,
+  "cookMin": 75,
+  "totalMin": 95,
+  "equipment": [
+   "oven",
+   "stovetop"
+  ],
+  "ingredients": [
+   "1 loaf brioche, cut in cubes and dried",
+   "6 eggs",
+   "2 cups whole milk",
+   "2 cups heavy cream",
+   "1 cup packed brown sugar",
+   "2 tbsp vanilla extract",
+   "1 tbsp ground cinnamon",
+   "1/2 tsp ground nutmeg",
+   "1 tsp salt",
+   "1 cup raisins",
+   "1/4 cup bourbon, for soaking",
+   "1/2 cup butter",
+   "1 cup packed brown sugar, for the sauce",
+   "1/2 cup heavy cream, for the sauce",
+   "1/3 cup bourbon",
+   "1/2 tsp flaky sea salt"
+  ],
+  "ingredientKeys": [
+   "brioche-bread",
+   "egg",
+   "whole-milk",
+   "heavy-cream",
+   "brown-sugar",
+   "vanilla-extract",
+   "cinnamon",
+   "nutmeg",
+   "salt",
+   "raisins",
+   "bourbon",
+   "butter",
+   "brown-sugar",
+   "heavy-cream",
+   "bourbon",
+   "flaky-salt"
+  ],
+  "specialty": [
+   "brioche-bread",
+   "raisins",
+   "bourbon",
+   "flaky-salt"
+  ],
+  "steps": [
+   "Soak the raisins in the 1/4 cup bourbon while you work.",
+   "Dry the brioche cubes in a 250F oven for 30 minutes, or leave them out overnight. Fresh bread turns to paste - the cubes must be dry enough to drink the custard.",
+   "Whisk the eggs, milk, 2 cups cream, 1 cup brown sugar, vanilla, cinnamon, nutmeg and salt until completely smooth.",
+   "Combine the bread and drained raisins in a buttered 9x13 dish, pour the custard over, and press the bread down. Let it soak 30 minutes - this is what makes the inside custardy rather than dry.",
+   "Bake at 350F for 45-55 minutes until puffed, set in the center and golden on top.",
+   "Make the sauce: melt the butter with the 1 cup brown sugar and 1/2 cup cream, simmer 5 minutes, then take it off the heat and add the 1/3 cup bourbon and the flaky salt. Pour over the warm pudding."
+  ],
+  "diet": {
+   "vegetarian": true,
+   "vegan": false,
+   "pescatarian": true,
+   "glutenFree": false,
+   "glutenFreeAdaptable": false,
+   "dairyFree": false,
+   "nutFree": true,
+   "eggFree": false
+  },
+  "allergens": [
+   "gluten",
+   "dairy",
+   "egg"
+  ],
+  "gmo": {
+   "risk": "moderate",
+   "sources": [
+    "processed-bread",
+    "sugar-beet",
+    "grain-fed-dairy"
+   ]
+  },
+  "nutrition": {
+   "calories": 782,
+   "proteinG": 13,
+   "carbsG": 82,
+   "fiberG": 2,
+   "sugarG": 62,
+   "fatG": 44,
+   "satFatG": 26,
+   "sodiumMg": 480,
+   "cholesterolMg": 248
+  },
+  "tags": [
+   "dessert",
+   "comfort",
+   "party",
+   "make-ahead",
+   "southern",
+   "indulgent",
+   "holiday",
+   "crowd-pleaser"
+  ],
+  "image": {
+   "file": "bread-and-butter-pudding.jpg",
+   "source": "wikipedia-lead",
+   "match": "representative",
+   "wikipedia": "Bread pudding"
+  }
+ },
+ {
+  "id": "ch-gf-024",
+  "slug": "gf-peanut-butter-chocolate-pie",
+  "title": "Peanut Butter Chocolate Pie",
+  "genre": "american",
+  "subgenre": "desserts",
+  "chef": {
+   "name": "Guy Fieri",
+   "slug": "guy-fieri"
+  },
+  "description": "A no-bake peanut butter mousse pie in a chocolate cookie crust.",
+  "difficulty": "beginner",
+  "easeScore": 9,
+  "spiceScore": 0,
+  "popularity": 9,
+  "pantryScore": 8,
+  "servings": 10,
+  "prepMin": 25,
+  "cookMin": 250,
+  "totalMin": 275,
+  "equipment": [
+   "stovetop",
+   "no-cook"
+  ],
+  "ingredients": [
+   "2 1/2 cups crushed chocolate sandwich cookies",
+   "7 tbsp butter, melted",
+   "12 oz cream cheese, softened",
+   "1 1/2 cups creamy peanut butter",
+   "1 1/4 cups powdered sugar",
+   "1 tbsp vanilla extract",
+   "1/2 tsp salt",
+   "2 cups heavy cream",
+   "6 oz dark chocolate, chopped",
+   "1/2 cup heavy cream, for the ganache",
+   "1/2 cup chopped roasted peanuts",
+   "1/4 tsp flaky sea salt"
+  ],
+  "ingredientKeys": [
+   "chocolate-cookies",
+   "butter",
+   "cream-cheese",
+   "peanut-butter",
+   "powdered-sugar",
+   "vanilla-extract",
+   "salt",
+   "heavy-cream",
+   "dark-chocolate",
+   "heavy-cream",
+   "peanuts",
+   "flaky-salt"
+  ],
+  "specialty": [
+   "chocolate-cookies",
+   "cream-cheese",
+   "peanut-butter",
+   "dark-chocolate",
+   "peanuts",
+   "flaky-salt"
+  ],
+  "steps": [
+   "Mix the crushed cookies with the melted butter and press firmly into a 9-inch pie plate, up the sides as well. Freeze 20 minutes to set - there is no baking, so the freezer does the work.",
+   "Beat the cream cheese until completely smooth, then add the peanut butter, powdered sugar, vanilla and salt and beat 2 minutes.",
+   "Whip the 2 cups cream to stiff peaks in a separate bowl.",
+   "Fold the whipped cream into the peanut butter mixture in three additions. Folding rather than beating is what keeps it a mousse instead of a dense paste.",
+   "Pile it into the crust, smooth the top, and chill 3 hours.",
+   "Heat the 1/2 cup cream, pour it over the chopped chocolate, wait 2 minutes, then stir smooth. Pour the ganache over the chilled pie and finish with peanuts and flaky salt. Chill 1 more hour."
+  ],
+  "diet": {
+   "vegetarian": true,
+   "vegan": false,
+   "pescatarian": true,
+   "glutenFree": false,
+   "glutenFreeAdaptable": false,
+   "dairyFree": false,
+   "nutFree": false,
+   "eggFree": true
+  },
+  "allergens": [
+   "gluten",
+   "dairy",
+   "peanut",
+   "soy"
+  ],
+  "gmo": {
+   "risk": "high",
+   "sources": [
+    "sugar-beet",
+    "soy",
+    "processed-bread",
+    "grain-fed-dairy",
+    "seed-oil"
+   ]
+  },
+  "nutrition": {
+   "calories": 882,
+   "proteinG": 16,
+   "carbsG": 62,
+   "fiberG": 4,
+   "sugarG": 44,
+   "fatG": 66,
+   "satFatG": 30,
+   "sodiumMg": 580,
+   "cholesterolMg": 112
+  },
+  "tags": [
+   "dessert",
+   "no-bake",
+   "party",
+   "make-ahead",
+   "indulgent",
+   "crowd-pleaser",
+   "family",
+   "easy"
+  ],
+  "image": {
+   "file": "gf-peanut-butter-chocolate-pie.jpg",
+   "source": "commons-file",
+   "match": "dish",
+   "commonsFile": "Peanut Butter Chocolate Pie.jpg"
+  }
+ },
+ {
+  "id": "ch-gf-025",
+  "slug": "gf-carne-asada-burrito",
+  "title": "Carne Asada Burrito",
+  "genre": "mexican",
+  "subgenre": "burritos",
+  "chef": {
+   "name": "Guy Fieri",
+   "slug": "guy-fieri"
+  },
+  "description": "Grilled marinated steak rolled with rice, beans, cheese and salsa.",
+  "difficulty": "beginner",
+  "easeScore": 8,
+  "spiceScore": 5,
+  "popularity": 9,
+  "pantryScore": 8,
+  "servings": 6,
+  "prepMin": 25,
+  "cookMin": 135,
+  "totalMin": 160,
+  "equipment": [
+   "grill",
+   "stovetop"
+  ],
+  "ingredients": [
+   "2 1/2 lb skirt steak",
+   "1/3 cup canola oil",
+   "1/3 cup lime juice",
+   "1/4 cup orange juice",
+   "6 cloves garlic, minced",
+   "2 tbsp ancho chile powder",
+   "1 tbsp ground cumin",
+   "2 tsp salt",
+   "1 tsp black pepper",
+   "3 cups cooked Mexican rice",
+   "2 cans (15 oz each) black beans, drained and warmed",
+   "6 large flour tortillas",
+   "3 cups shredded Monterey Jack",
+   "1 1/2 cups pico de gallo",
+   "1 1/2 cups guacamole",
+   "1 cup Mexican crema",
+   "1 cup salsa roja"
+  ],
+  "ingredientKeys": [
+   "skirt-steak",
+   "canola-oil",
+   "lime-juice",
+   "orange-juice",
+   "garlic",
+   "ancho-chile-powder",
+   "cumin",
+   "salt",
+   "black-pepper",
+   "mexican-rice",
+   "black-beans",
+   "flour-tortilla",
+   "monterey-jack",
+   "pico-de-gallo",
+   "guacamole",
+   "mexican-crema",
+   "salsa-roja"
+  ],
+  "specialty": [
+   "skirt-steak",
+   "ancho-chile-powder",
+   "mexican-rice",
+   "guacamole",
+   "mexican-crema",
+   "salsa-roja"
+  ],
+  "steps": [
+   "Whisk the oil, lime juice, orange juice, garlic, ancho powder, cumin, salt and pepper and marinate the steak 2 hours. Longer than that and the citrus starts curing the surface.",
+   "Pat the steak dry - wet meat will not char - and grill over the hottest fire 3-4 minutes per side.",
+   "Rest 10 minutes, then slice thinly against the grain and chop. Slicing with the grain makes skirt steak chewy no matter how well you cooked it.",
+   "Warm the tortillas until fully pliable, 20 seconds a side in a dry pan.",
+   "Layer down the center third of each tortilla: cheese first so it melts against the hot fillings, then rice, beans, steak, pico and guacamole. Do not overfill or it will not close.",
+   "Fold the two short sides in, then roll tightly from the bottom. Griddle seam-side down 2 minutes to seal, and serve with crema and salsa."
+  ],
+  "diet": {
+   "vegetarian": false,
+   "vegan": false,
+   "pescatarian": false,
+   "glutenFree": false,
+   "glutenFreeAdaptable": false,
+   "dairyFree": false,
+   "nutFree": true,
+   "eggFree": true
+  },
+  "allergens": [
+   "gluten",
+   "dairy"
+  ],
+  "gmo": {
+   "risk": "high",
+   "sources": [
+    "grain-fed-meat",
+    "processed-bread",
+    "seed-oil",
+    "grain-fed-dairy"
+   ]
+  },
+  "nutrition": {
+   "calories": 1086,
+   "proteinG": 62,
+   "carbsG": 92,
+   "fiberG": 14,
+   "sugarG": 9,
+   "fatG": 52,
+   "satFatG": 19,
+   "sodiumMg": 1880,
+   "cholesterolMg": 168
+  },
+  "tags": [
+   "grill",
+   "party",
+   "filling",
+   "high-protein",
+   "family",
+   "tex-mex",
+   "weekend",
+   "crowd-pleaser"
+  ],
+  "image": {
+   "file": "gf-carne-asada-burrito.jpg",
+   "source": "commons-file",
+   "match": "dish",
+   "commonsFile": "Carne-asada-burrito.jpg"
+  }
+ }
+]

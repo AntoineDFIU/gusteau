@@ -1,0 +1,3006 @@
+[
+ {
+  "id": "ch-el-001",
+  "slug": "el-chicken-andouille-gumbo",
+  "title": "Chicken and Andouille Gumbo",
+  "genre": "american",
+  "subgenre": "southern",
+  "chef": {
+   "name": "Emeril Lagasse",
+   "slug": "emeril-lagasse"
+  },
+  "description": "A dark roux gumbo stirred for forty minutes, with chicken and andouille.",
+  "difficulty": "advanced",
+  "easeScore": 3,
+  "spiceScore": 6,
+  "popularity": 8,
+  "pantryScore": 6,
+  "servings": 8,
+  "prepMin": 25,
+  "cookMin": 150,
+  "totalMin": 175,
+  "equipment": [
+   "stovetop"
+  ],
+  "ingredients": [
+   "1 cup vegetable oil",
+   "1 cup all-purpose flour",
+   "2 yellow onions, diced",
+   "1 green bell pepper, diced",
+   "4 celery stalks, diced",
+   "6 cloves garlic, minced",
+   "1 lb andouille sausage, sliced",
+   "2 lb boneless chicken thighs, cubed",
+   "8 cups chicken broth",
+   "2 tbsp Creole seasoning",
+   "2 bay leaves",
+   "1 tsp cayenne pepper",
+   "1 tsp dried thyme",
+   "2 tsp salt",
+   "1 lb okra, sliced",
+   "6 scallions, sliced",
+   "1/3 cup chopped parsley",
+   "4 cups cooked white rice",
+   "1 tbsp file powder"
+  ],
+  "ingredientKeys": [
+   "vegetable-oil",
+   "flour",
+   "yellow-onion",
+   "green-bell-pepper",
+   "celery",
+   "garlic",
+   "andouille-sausage",
+   "chicken-thighs",
+   "chicken-broth",
+   "creole-seasoning",
+   "bay-leaf",
+   "cayenne",
+   "dried-thyme",
+   "salt",
+   "okra",
+   "scallion",
+   "parsley",
+   "white-rice",
+   "file-powder"
+  ],
+  "specialty": [
+   "andouille-sausage",
+   "creole-seasoning",
+   "okra",
+   "file-powder"
+  ],
+  "steps": [
+   "Make the roux first and give it nothing but your attention. Whisk the oil and flour together in a heavy pot over medium-low and stir constantly for 35-45 minutes until it reaches the color of milk chocolate. If it smells burnt or shows black flecks, throw it out and start again - burnt roux ruins the whole pot and cannot be fixed.",
+   "Add the onion, bell pepper and celery straight into the hot roux. It will hiss hard. Cook 8 minutes, then add the garlic for 1 minute.",
+   "Whisk in the broth a cup at a time, keeping it smooth, then add the Creole seasoning, bay leaves, cayenne, thyme and salt.",
+   "Add the andouille and chicken and simmer uncovered 1 hour, skimming any oil that rises to the surface.",
+   "Add the okra and cook 30 minutes more, until the gumbo coats a spoon.",
+   "Fish out the bay leaves. Take the pot off the heat before stirring in the file powder - boiling file turns it stringy. Serve over rice with scallions and parsley."
+  ],
+  "diet": {
+   "vegetarian": false,
+   "vegan": false,
+   "pescatarian": false,
+   "glutenFree": false,
+   "glutenFreeAdaptable": false,
+   "dairyFree": true,
+   "nutFree": true,
+   "eggFree": true
+  },
+  "allergens": [
+   "gluten"
+  ],
+  "gmo": {
+   "risk": "high",
+   "sources": [
+    "seed-oil",
+    "grain-fed-meat"
+   ]
+  },
+  "nutrition": {
+   "calories": 782,
+   "proteinG": 44,
+   "carbsG": 52,
+   "fiberG": 4,
+   "sugarG": 6,
+   "fatG": 44,
+   "satFatG": 11,
+   "sodiumMg": 1880,
+   "cholesterolMg": 168
+  },
+  "tags": [
+   "southern",
+   "cajun",
+   "project",
+   "technique",
+   "spicy",
+   "dairy-free",
+   "party",
+   "leftovers",
+   "one-pot"
+  ],
+  "image": {
+   "file": "gumbo.jpg",
+   "source": "wikipedia-lead",
+   "match": "representative",
+   "wikipedia": "Gumbo"
+  }
+ },
+ {
+  "id": "ch-el-002",
+  "slug": "el-jambalaya",
+  "title": "Creole Jambalaya",
+  "genre": "american",
+  "subgenre": "southern",
+  "chef": {
+   "name": "Emeril Lagasse",
+   "slug": "emeril-lagasse"
+  },
+  "description": "Rice cooked with andouille, chicken and shrimp in one pot.",
+  "difficulty": "intermediate",
+  "easeScore": 7,
+  "spiceScore": 6,
+  "popularity": 9,
+  "pantryScore": 7,
+  "servings": 8,
+  "prepMin": 20,
+  "cookMin": 50,
+  "totalMin": 70,
+  "equipment": [
+   "stovetop"
+  ],
+  "ingredients": [
+   "3 tbsp vegetable oil",
+   "1 lb andouille sausage, sliced",
+   "1 1/2 lb boneless chicken thighs, cubed",
+   "2 yellow onions, diced",
+   "1 green bell pepper, diced",
+   "4 celery stalks, diced",
+   "6 cloves garlic, minced",
+   "2 tbsp Creole seasoning",
+   "1 tsp cayenne pepper",
+   "1 tsp dried thyme",
+   "2 bay leaves",
+   "1 can (14 oz) diced tomatoes",
+   "3 tbsp tomato paste",
+   "2 1/2 cups long-grain white rice",
+   "5 cups chicken broth",
+   "1 1/2 lb large shrimp, peeled",
+   "6 scallions, sliced",
+   "1/3 cup chopped parsley"
+  ],
+  "ingredientKeys": [
+   "vegetable-oil",
+   "andouille-sausage",
+   "chicken-thighs",
+   "yellow-onion",
+   "green-bell-pepper",
+   "celery",
+   "garlic",
+   "creole-seasoning",
+   "cayenne",
+   "dried-thyme",
+   "bay-leaf",
+   "diced-tomatoes",
+   "tomato-paste",
+   "white-rice",
+   "chicken-broth",
+   "shrimp",
+   "scallion",
+   "parsley"
+  ],
+  "specialty": [
+   "andouille-sausage",
+   "creole-seasoning",
+   "shrimp"
+  ],
+  "steps": [
+   "Brown the andouille in the oil in a wide heavy pot 5 minutes, then the chicken for 6 minutes. Lift both out, leaving the rendered fat - that fat is the foundation.",
+   "Cook the onion, bell pepper and celery 8 minutes until soft. This trinity is the base of nearly everything Creole.",
+   "Add the garlic, Creole seasoning, cayenne, thyme and bay leaves for 1 minute, then the tomatoes and tomato paste for 3 minutes.",
+   "Stir in the rice and toast it 2 minutes, then return the meats and add the broth. Bring to a boil.",
+   "Lower to the barest simmer, cover, and cook 20 minutes without lifting the lid or stirring. Stirring rice releases starch and turns jambalaya into porridge.",
+   "Scatter the shrimp over the surface, cover again, and cook 6-8 minutes until pink. Rest 5 minutes off the heat, then fluff with a fork and fold in the scallions and parsley."
+  ],
+  "diet": {
+   "vegetarian": false,
+   "vegan": false,
+   "pescatarian": false,
+   "glutenFree": true,
+   "glutenFreeAdaptable": false,
+   "dairyFree": true,
+   "nutFree": true,
+   "eggFree": true
+  },
+  "allergens": [
+   "shellfish"
+  ],
+  "gmo": {
+   "risk": "moderate",
+   "sources": [
+    "grain-fed-meat",
+    "seed-oil"
+   ]
+  },
+  "nutrition": {
+   "calories": 712,
+   "proteinG": 52,
+   "carbsG": 62,
+   "fiberG": 4,
+   "sugarG": 7,
+   "fatG": 28,
+   "satFatG": 9,
+   "sodiumMg": 1880,
+   "cholesterolMg": 248
+  },
+  "tags": [
+   "southern",
+   "cajun",
+   "one-pot",
+   "spicy",
+   "gluten-free",
+   "dairy-free",
+   "party",
+   "high-protein",
+   "leftovers"
+  ],
+  "image": {
+   "file": "jambalaya.jpg",
+   "source": "wikipedia-lead",
+   "match": "representative",
+   "wikipedia": "Jambalaya"
+  }
+ },
+ {
+  "id": "ch-el-003",
+  "slug": "el-shrimp-etouffee",
+  "title": "Shrimp Etouffee",
+  "genre": "american",
+  "subgenre": "southern",
+  "chef": {
+   "name": "Emeril Lagasse",
+   "slug": "emeril-lagasse"
+  },
+  "description": "Shrimp smothered in a blond roux gravy over rice.",
+  "difficulty": "intermediate",
+  "easeScore": 7,
+  "spiceScore": 5,
+  "popularity": 8,
+  "pantryScore": 7,
+  "servings": 6,
+  "prepMin": 20,
+  "cookMin": 40,
+  "totalMin": 60,
+  "equipment": [
+   "stovetop"
+  ],
+  "ingredients": [
+   "2 lb large shrimp, peeled, shells reserved",
+   "6 tbsp butter",
+   "1/2 cup all-purpose flour",
+   "2 yellow onions, diced",
+   "1 green bell pepper, diced",
+   "3 celery stalks, diced",
+   "6 cloves garlic, minced",
+   "2 tbsp Creole seasoning",
+   "1 tsp cayenne pepper",
+   "1 tsp dried thyme",
+   "2 bay leaves",
+   "4 cups shrimp or chicken broth",
+   "2 tbsp tomato paste",
+   "2 tbsp lemon juice",
+   "6 scallions, sliced",
+   "1/3 cup chopped parsley",
+   "4 cups cooked white rice",
+   "1 tsp hot sauce"
+  ],
+  "ingredientKeys": [
+   "shrimp",
+   "butter",
+   "flour",
+   "yellow-onion",
+   "green-bell-pepper",
+   "celery",
+   "garlic",
+   "creole-seasoning",
+   "cayenne",
+   "dried-thyme",
+   "bay-leaf",
+   "shrimp-broth",
+   "tomato-paste",
+   "lemon-juice",
+   "scallion",
+   "parsley",
+   "white-rice",
+   "hot-sauce"
+  ],
+  "specialty": [
+   "shrimp",
+   "creole-seasoning",
+   "shrimp-broth"
+  ],
+  "steps": [
+   "If you have the shells, simmer them in water 20 minutes to make a quick shrimp broth. It is the single biggest upgrade to this dish.",
+   "Make a blond roux: melt the butter, whisk in the flour, and cook over medium heat 10-12 minutes, stirring constantly, until it is the color of peanut butter. Etouffee uses a lighter roux than gumbo - stop well before chocolate.",
+   "Add the onion, bell pepper and celery and cook 8 minutes, then the garlic, Creole seasoning, cayenne, thyme and bay leaves for 1 minute.",
+   "Whisk in the broth a cup at a time, then the tomato paste, and simmer 20 minutes until it coats a spoon.",
+   "Add the shrimp and cook 3-4 minutes only, just until pink and curled into a loose C. Etouffee means smothered, and the shrimp should be gently smothered, not boiled.",
+   "Take it off the heat, add the lemon juice and hot sauce, and serve over rice with scallions and parsley."
+  ],
+  "diet": {
+   "vegetarian": false,
+   "vegan": false,
+   "pescatarian": true,
+   "glutenFree": false,
+   "glutenFreeAdaptable": false,
+   "dairyFree": false,
+   "nutFree": true,
+   "eggFree": true
+  },
+  "allergens": [
+   "gluten",
+   "dairy",
+   "shellfish"
+  ],
+  "gmo": {
+   "risk": "moderate",
+   "sources": [
+    "grain-fed-dairy"
+   ]
+  },
+  "nutrition": {
+   "calories": 612,
+   "proteinG": 42,
+   "carbsG": 58,
+   "fiberG": 3,
+   "sugarG": 6,
+   "fatG": 22,
+   "satFatG": 11,
+   "sodiumMg": 1880,
+   "cholesterolMg": 286
+  },
+  "tags": [
+   "southern",
+   "cajun",
+   "seafood",
+   "pescatarian",
+   "spicy",
+   "technique",
+   "high-protein",
+   "comfort"
+  ],
+  "image": {
+   "file": "el-shrimp-etouffee.jpg",
+   "source": "commons-file",
+   "match": "dish",
+   "commonsFile": "Shrimp Etouffee .jpg"
+  }
+ },
+ {
+  "id": "ch-el-004",
+  "slug": "el-red-beans-and-rice",
+  "title": "Red Beans and Rice",
+  "genre": "american",
+  "subgenre": "southern",
+  "chef": {
+   "name": "Emeril Lagasse",
+   "slug": "emeril-lagasse"
+  },
+  "description": "Red beans simmered with ham hock and andouille until creamy. Monday food.",
+  "difficulty": "beginner",
+  "easeScore": 9,
+  "spiceScore": 5,
+  "popularity": 9,
+  "pantryScore": 8,
+  "servings": 8,
+  "prepMin": 20,
+  "cookMin": 165,
+  "totalMin": 185,
+  "equipment": [
+   "stovetop"
+  ],
+  "ingredients": [
+   "1 lb dried red kidney beans, soaked overnight",
+   "3 tbsp vegetable oil",
+   "1 lb andouille sausage, sliced",
+   "2 smoked ham hocks",
+   "2 yellow onions, diced",
+   "1 green bell pepper, diced",
+   "4 celery stalks, diced",
+   "8 cloves garlic, minced",
+   "2 tbsp Creole seasoning",
+   "1 tsp cayenne pepper",
+   "2 tsp dried thyme",
+   "3 bay leaves",
+   "10 cups water",
+   "2 tsp salt",
+   "6 scallions, sliced",
+   "1/3 cup chopped parsley",
+   "4 cups cooked white rice",
+   "1 tbsp hot sauce"
+  ],
+  "ingredientKeys": [
+   "kidney-beans",
+   "vegetable-oil",
+   "andouille-sausage",
+   "ham-hock",
+   "yellow-onion",
+   "green-bell-pepper",
+   "celery",
+   "garlic",
+   "creole-seasoning",
+   "cayenne",
+   "dried-thyme",
+   "bay-leaf",
+   "water",
+   "salt",
+   "scallion",
+   "parsley",
+   "white-rice",
+   "hot-sauce"
+  ],
+  "specialty": [
+   "kidney-beans",
+   "andouille-sausage",
+   "ham-hock",
+   "creole-seasoning"
+  ],
+  "steps": [
+   "Soak the dried beans overnight. Brown the andouille in the oil, then set it aside.",
+   "Cook the onion, bell pepper and celery in the rendered fat 10 minutes, then the garlic and all the dried seasonings for 1 minute.",
+   "Add the drained beans, the ham hocks and the water. Do not salt yet - salt added early keeps bean skins from softening.",
+   "Simmer partially covered 2 hours, stirring occasionally and topping up with hot water if the beans emerge.",
+   "Once the beans are completely tender, mash about a quarter of them against the side of the pot with a spoon. That is what makes the pot creamy without any dairy.",
+   "Return the andouille, add the salt, and simmer 30 minutes more. Pull the meat off the hocks and stir it back in. Serve over rice with scallions, parsley and hot sauce."
+  ],
+  "diet": {
+   "vegetarian": false,
+   "vegan": false,
+   "pescatarian": false,
+   "glutenFree": true,
+   "glutenFreeAdaptable": false,
+   "dairyFree": true,
+   "nutFree": true,
+   "eggFree": true
+  },
+  "allergens": [],
+  "gmo": {
+   "risk": "moderate",
+   "sources": [
+    "grain-fed-meat",
+    "seed-oil"
+   ]
+  },
+  "nutrition": {
+   "calories": 682,
+   "proteinG": 38,
+   "carbsG": 82,
+   "fiberG": 16,
+   "sugarG": 6,
+   "fatG": 22,
+   "satFatG": 7,
+   "sodiumMg": 1680,
+   "cholesterolMg": 68
+  },
+  "tags": [
+   "southern",
+   "cajun",
+   "budget",
+   "high-fiber",
+   "make-ahead",
+   "gluten-free",
+   "dairy-free",
+   "one-pot",
+   "leftovers",
+   "comfort"
+  ],
+  "image": {
+   "file": "el-red-beans-and-rice.jpg",
+   "source": "commons-file",
+   "match": "dish",
+   "commonsFile": "Red Beans and Rice.jpg"
+  }
+ },
+ {
+  "id": "ch-el-005",
+  "slug": "el-bbq-shrimp",
+  "title": "New Orleans BBQ Shrimp",
+  "genre": "american",
+  "subgenre": "seafood",
+  "chef": {
+   "name": "Emeril Lagasse",
+   "slug": "emeril-lagasse"
+  },
+  "description": "Head-on shrimp in a black pepper Worcestershire butter. No barbecue involved.",
+  "difficulty": "beginner",
+  "easeScore": 9,
+  "spiceScore": 6,
+  "popularity": 8,
+  "pantryScore": 7,
+  "servings": 4,
+  "prepMin": 10,
+  "cookMin": 15,
+  "totalMin": 25,
+  "equipment": [
+   "stovetop"
+  ],
+  "ingredients": [
+   "2 lb large head-on shrimp",
+   "1 cup butter, cut in pieces",
+   "1/3 cup Worcestershire sauce",
+   "2 tbsp coarse black pepper",
+   "6 cloves garlic, minced",
+   "2 tbsp Creole seasoning",
+   "1 tsp cayenne pepper",
+   "2 tbsp lemon juice",
+   "1 tsp hot sauce",
+   "2 sprigs fresh rosemary",
+   "1 loaf French bread"
+  ],
+  "ingredientKeys": [
+   "shrimp",
+   "butter",
+   "worcestershire",
+   "black-pepper",
+   "garlic",
+   "creole-seasoning",
+   "cayenne",
+   "lemon-juice",
+   "hot-sauce",
+   "fresh-rosemary",
+   "french-bread"
+  ],
+  "specialty": [
+   "shrimp",
+   "creole-seasoning",
+   "fresh-rosemary",
+   "french-bread"
+  ],
+  "steps": [
+   "Despite the name there is no barbecue and no grill here - the name comes from the dark, peppery sauce.",
+   "Use head-on shrimp if you can find them. The heads release fat and flavor into the butter and are the whole reason the sauce tastes like it does.",
+   "Melt 2 tbsp of the butter in a large skillet, add the garlic and cook 1 minute, then the Worcestershire, black pepper, Creole seasoning, cayenne, hot sauce and rosemary. Simmer 3 minutes.",
+   "Add the shrimp and cook 2 minutes per side, just until pink.",
+   "Lower the heat and whisk in the remaining cold butter a few pieces at a time, swirling the pan. Off low heat and added gradually, it emulsifies into a glossy sauce; dumped in hot, it splits into oil.",
+   "Add the lemon juice and serve immediately in bowls with lots of French bread. The sauce is the point - do not leave it in the pan."
+  ],
+  "diet": {
+   "vegetarian": false,
+   "vegan": false,
+   "pescatarian": true,
+   "glutenFree": false,
+   "glutenFreeAdaptable": true,
+   "dairyFree": false,
+   "nutFree": true,
+   "eggFree": true
+  },
+  "allergens": [
+   "gluten",
+   "dairy",
+   "shellfish",
+   "fish"
+  ],
+  "gmo": {
+   "risk": "moderate",
+   "sources": [
+    "grain-fed-dairy",
+    "processed-bread",
+    "processed-sauce"
+   ]
+  },
+  "nutrition": {
+   "calories": 882,
+   "proteinG": 42,
+   "carbsG": 38,
+   "fiberG": 2,
+   "sugarG": 7,
+   "fatG": 62,
+   "satFatG": 34,
+   "sodiumMg": 2180,
+   "cholesterolMg": 398
+  },
+  "tags": [
+   "southern",
+   "seafood",
+   "pescatarian",
+   "quick",
+   "spicy",
+   "restaurant-style",
+   "high-protein",
+   "party"
+  ],
+  "image": {
+   "file": "el-bbq-shrimp.jpg",
+   "source": "commons-file",
+   "match": "dish",
+   "commonsFile": "New Orleans bbq shrimp -nolafood -bourbonhouse.jpg"
+  }
+ },
+ {
+  "id": "ch-el-006",
+  "slug": "el-shrimp-creole",
+  "title": "Shrimp Creole",
+  "genre": "american",
+  "subgenre": "southern",
+  "chef": {
+   "name": "Emeril Lagasse",
+   "slug": "emeril-lagasse"
+  },
+  "description": "Shrimp in a tomato trinity sauce over rice - no roux.",
+  "difficulty": "beginner",
+  "easeScore": 9,
+  "spiceScore": 5,
+  "popularity": 8,
+  "pantryScore": 8,
+  "servings": 6,
+  "prepMin": 15,
+  "cookMin": 35,
+  "totalMin": 50,
+  "equipment": [
+   "stovetop"
+  ],
+  "ingredients": [
+   "2 lb large shrimp, peeled",
+   "3 tbsp vegetable oil",
+   "2 yellow onions, diced",
+   "1 green bell pepper, diced",
+   "4 celery stalks, diced",
+   "6 cloves garlic, minced",
+   "2 tbsp Creole seasoning",
+   "1 tsp cayenne pepper",
+   "1 tsp dried thyme",
+   "2 bay leaves",
+   "1 can (28 oz) crushed tomatoes",
+   "1 can (8 oz) tomato sauce",
+   "1 1/2 cups chicken broth",
+   "2 tbsp Worcestershire sauce",
+   "2 tsp salt",
+   "2 tbsp lemon juice",
+   "6 scallions, sliced",
+   "1/3 cup chopped parsley",
+   "4 cups cooked white rice"
+  ],
+  "ingredientKeys": [
+   "shrimp",
+   "vegetable-oil",
+   "yellow-onion",
+   "green-bell-pepper",
+   "celery",
+   "garlic",
+   "creole-seasoning",
+   "cayenne",
+   "dried-thyme",
+   "bay-leaf",
+   "crushed-tomatoes",
+   "tomato-sauce",
+   "chicken-broth",
+   "worcestershire",
+   "salt",
+   "lemon-juice",
+   "scallion",
+   "parsley",
+   "white-rice"
+  ],
+  "specialty": [
+   "shrimp",
+   "creole-seasoning"
+  ],
+  "steps": [
+   "Creole differs from Cajun partly in this: there is no roux here, and tomatoes carry the sauce instead.",
+   "Cook the onion, bell pepper and celery in the oil over medium heat 10 minutes until completely soft.",
+   "Add the garlic, Creole seasoning, cayenne, thyme and bay leaves and stir 1 minute to bloom them in the hot fat.",
+   "Add the crushed tomatoes, tomato sauce, broth and Worcestershire and simmer 20 minutes until thickened and no longer tasting raw.",
+   "Add the shrimp and cook 3-4 minutes, just until pink and curled. Pull them the moment they turn - residual heat finishes them.",
+   "Fish out the bay leaves, add the salt and lemon juice, and serve over rice with scallions and parsley."
+  ],
+  "diet": {
+   "vegetarian": false,
+   "vegan": false,
+   "pescatarian": true,
+   "glutenFree": false,
+   "glutenFreeAdaptable": true,
+   "dairyFree": true,
+   "nutFree": true,
+   "eggFree": true
+  },
+  "allergens": [
+   "gluten",
+   "shellfish",
+   "fish"
+  ],
+  "gmo": {
+   "risk": "moderate",
+   "sources": [
+    "seed-oil",
+    "processed-sauce"
+   ]
+  },
+  "nutrition": {
+   "calories": 512,
+   "proteinG": 42,
+   "carbsG": 62,
+   "fiberG": 6,
+   "sugarG": 11,
+   "fatG": 11,
+   "satFatG": 2,
+   "sodiumMg": 1880,
+   "cholesterolMg": 228
+  },
+  "tags": [
+   "southern",
+   "seafood",
+   "pescatarian",
+   "spicy",
+   "dairy-free",
+   "weeknight",
+   "high-protein",
+   "healthy",
+   "one-pot"
+  ],
+  "image": {
+   "file": "el-shrimp-creole.jpg",
+   "source": "commons-file",
+   "match": "dish",
+   "commonsFile": "Shrimp creole (1).jpg"
+  }
+ },
+ {
+  "id": "ch-el-007",
+  "slug": "el-oysters-rockefeller",
+  "title": "Oysters Rockefeller",
+  "genre": "american",
+  "subgenre": "seafood",
+  "chef": {
+   "name": "Emeril Lagasse",
+   "slug": "emeril-lagasse"
+  },
+  "description": "Oysters on the half shell under a spinach herb butter, broiled.",
+  "difficulty": "intermediate",
+  "easeScore": 6,
+  "spiceScore": 3,
+  "popularity": 7,
+  "pantryScore": 5,
+  "servings": 6,
+  "prepMin": 30,
+  "cookMin": 15,
+  "totalMin": 45,
+  "equipment": [
+   "broiler",
+   "stovetop"
+  ],
+  "ingredients": [
+   "24 oysters on the half shell",
+   "8 tbsp butter",
+   "4 oz bacon, finely diced",
+   "1 shallot, minced",
+   "4 cloves garlic, minced",
+   "10 oz fresh spinach, chopped",
+   "1/3 cup chopped parsley",
+   "4 scallions, sliced",
+   "2 tbsp Pernod",
+   "1 tbsp Creole seasoning",
+   "1 tsp cayenne pepper",
+   "1/2 cup panko breadcrumbs",
+   "1/2 cup grated Parmesan",
+   "4 cups rock salt",
+   "1 lemon, cut in wedges"
+  ],
+  "ingredientKeys": [
+   "oysters",
+   "butter",
+   "bacon",
+   "shallot",
+   "garlic",
+   "fresh-spinach",
+   "parsley",
+   "scallion",
+   "pernod",
+   "creole-seasoning",
+   "cayenne",
+   "panko",
+   "parmesan",
+   "rock-salt",
+   "lemon"
+  ],
+  "specialty": [
+   "oysters",
+   "shallot",
+   "fresh-spinach",
+   "pernod",
+   "creole-seasoning",
+   "panko",
+   "rock-salt"
+  ],
+  "steps": [
+   "Render the bacon until crisp, then add the butter, shallot and garlic and cook 3 minutes.",
+   "Add the spinach in handfuls and cook until it collapses and its water evaporates, 5 minutes. Wet spinach will slide off the oysters, so cook it genuinely dry.",
+   "Add the parsley, scallions, Pernod, Creole seasoning and cayenne and cook 2 minutes. The anise note from the Pernod is the signature of the dish.",
+   "Spread the rock salt over a sheet pan and nestle the oyster shells into it. The salt holds them level so none of the liquor spills - that is its only job.",
+   "Spoon the spinach mixture over each oyster, then top with the panko mixed with the Parmesan.",
+   "Broil 4-6 inches from the element for 5-7 minutes until the tops are browned and bubbling. Serve immediately with lemon - overcooked oysters turn rubbery fast."
+  ],
+  "diet": {
+   "vegetarian": false,
+   "vegan": false,
+   "pescatarian": false,
+   "glutenFree": false,
+   "glutenFreeAdaptable": false,
+   "dairyFree": false,
+   "nutFree": true,
+   "eggFree": true
+  },
+  "allergens": [
+   "gluten",
+   "dairy",
+   "shellfish",
+   "sulfites"
+  ],
+  "gmo": {
+   "risk": "moderate",
+   "sources": [
+    "grain-fed-meat",
+    "grain-fed-dairy",
+    "processed-bread"
+   ]
+  },
+  "nutrition": {
+   "calories": 386,
+   "proteinG": 18,
+   "carbsG": 14,
+   "fiberG": 3,
+   "sugarG": 3,
+   "fatG": 28,
+   "satFatG": 15,
+   "sodiumMg": 1180,
+   "cholesterolMg": 112
+  },
+  "tags": [
+   "appetizer",
+   "seafood",
+   "southern",
+   "special-occasion",
+   "restaurant-style",
+   "technique",
+   "entertaining",
+   "holiday"
+  ],
+  "image": {
+   "file": "el-oysters-rockefeller.jpg",
+   "source": "commons-file",
+   "match": "dish",
+   "commonsFile": "Oysters Rockefeller.jpg"
+  }
+ },
+ {
+  "id": "ch-el-008",
+  "slug": "el-creole-seasoning",
+  "title": "Creole Seasoning Blend",
+  "genre": "american",
+  "subgenre": "southern",
+  "chef": {
+   "name": "Emeril Lagasse",
+   "slug": "emeril-lagasse"
+  },
+  "description": "The all-purpose spice blend that seasons almost everything Creole.",
+  "difficulty": "beginner",
+  "easeScore": 10,
+  "spiceScore": 6,
+  "popularity": 8,
+  "pantryScore": 9,
+  "servings": 24,
+  "prepMin": 5,
+  "cookMin": 0,
+  "totalMin": 5,
+  "equipment": [
+   "no-cook"
+  ],
+  "ingredients": [
+   "2 1/2 tbsp paprika",
+   "2 tbsp garlic powder",
+   "1 tbsp onion powder",
+   "1 tbsp black pepper",
+   "1 tbsp dried oregano",
+   "1 tbsp dried thyme",
+   "2 tbsp salt",
+   "1 tbsp cayenne pepper",
+   "1 tsp white pepper"
+  ],
+  "ingredientKeys": [
+   "paprika",
+   "garlic-powder",
+   "onion-powder",
+   "black-pepper",
+   "dried-oregano",
+   "dried-thyme",
+   "salt",
+   "cayenne",
+   "white-pepper"
+  ],
+  "specialty": [
+   "white-pepper"
+  ],
+  "steps": [
+   "Combine everything in a bowl and whisk thoroughly, breaking up any clumps of garlic or onion powder with your fingers.",
+   "Both paprika and cayenne are in here for a reason - paprika supplies color and sweetness, cayenne supplies the heat. They are not interchangeable.",
+   "Use white pepper alongside black. White pepper has a different, more floral heat that is characteristic of Creole cooking.",
+   "Transfer to a sealed jar and store away from light and heat.",
+   "It keeps six months, though the paprika fades first - when the color dulls, the flavor has gone with it.",
+   "Use it on chicken, shrimp, fish, pork, in gumbo and jambalaya, or anywhere you would reach for salt and pepper."
+  ],
+  "diet": {
+   "vegetarian": true,
+   "vegan": true,
+   "pescatarian": true,
+   "glutenFree": true,
+   "glutenFreeAdaptable": false,
+   "dairyFree": true,
+   "nutFree": true,
+   "eggFree": true
+  },
+  "allergens": [],
+  "gmo": {
+   "risk": "low",
+   "sources": [
+    "none"
+   ]
+  },
+  "nutrition": {
+   "calories": 8,
+   "proteinG": 0,
+   "carbsG": 2,
+   "fiberG": 1,
+   "sugarG": 0,
+   "fatG": 0,
+   "satFatG": 0,
+   "sodiumMg": 580,
+   "cholesterolMg": 0
+  },
+  "tags": [
+   "southern",
+   "cajun",
+   "pantry",
+   "make-ahead",
+   "vegan",
+   "vegetarian",
+   "gluten-free",
+   "dairy-free",
+   "budget",
+   "foundation",
+   "spicy"
+  ],
+  "image": {
+   "file": "creole-seasoning.jpg",
+   "source": "wikipedia-lead",
+   "match": "representative",
+   "wikipedia": "Cajun cuisine"
+  }
+ },
+ {
+  "id": "ch-el-009",
+  "slug": "el-dirty-rice",
+  "title": "Dirty Rice",
+  "genre": "american",
+  "subgenre": "southern",
+  "chef": {
+   "name": "Emeril Lagasse",
+   "slug": "emeril-lagasse"
+  },
+  "description": "Rice cooked with ground pork and chicken livers, which give it the color.",
+  "difficulty": "beginner",
+  "easeScore": 8,
+  "spiceScore": 5,
+  "popularity": 7,
+  "pantryScore": 7,
+  "servings": 6,
+  "prepMin": 20,
+  "cookMin": 40,
+  "totalMin": 60,
+  "equipment": [
+   "stovetop"
+  ],
+  "ingredients": [
+   "1 lb ground pork",
+   "8 oz chicken livers, finely chopped",
+   "3 tbsp vegetable oil",
+   "1 yellow onion, diced",
+   "1 green bell pepper, diced",
+   "3 celery stalks, diced",
+   "6 cloves garlic, minced",
+   "2 tbsp Creole seasoning",
+   "1 tsp cayenne pepper",
+   "1 tsp dried thyme",
+   "2 bay leaves",
+   "2 cups long-grain white rice",
+   "4 cups chicken broth",
+   "2 tsp salt",
+   "6 scallions, sliced",
+   "1/3 cup chopped parsley"
+  ],
+  "ingredientKeys": [
+   "ground-pork",
+   "chicken-livers",
+   "vegetable-oil",
+   "yellow-onion",
+   "green-bell-pepper",
+   "celery",
+   "garlic",
+   "creole-seasoning",
+   "cayenne",
+   "dried-thyme",
+   "bay-leaf",
+   "white-rice",
+   "chicken-broth",
+   "salt",
+   "scallion",
+   "parsley"
+  ],
+  "specialty": [
+   "ground-pork",
+   "chicken-livers",
+   "creole-seasoning"
+  ],
+  "steps": [
+   "The livers are what make it dirty - they break down completely and give the rice its brown color and deep savory flavor. Chop them very fine so they disappear into the dish.",
+   "Brown the pork in the oil over high heat 8 minutes, then add the chopped livers and cook 5 minutes more until no pink remains.",
+   "Add the onion, bell pepper and celery and cook 8 minutes, then the garlic, Creole seasoning, cayenne, thyme and bay leaves for 1 minute.",
+   "Stir in the rice and toast 2 minutes so every grain is coated in fat.",
+   "Add the broth and salt, bring to a boil, then cover and cook on the lowest heat 20 minutes without lifting the lid or stirring.",
+   "Rest 10 minutes off the heat, discard the bay leaves, then fluff with a fork and fold in the scallions and parsley."
+  ],
+  "diet": {
+   "vegetarian": false,
+   "vegan": false,
+   "pescatarian": false,
+   "glutenFree": true,
+   "glutenFreeAdaptable": false,
+   "dairyFree": true,
+   "nutFree": true,
+   "eggFree": true
+  },
+  "allergens": [],
+  "gmo": {
+   "risk": "moderate",
+   "sources": [
+    "grain-fed-meat",
+    "seed-oil"
+   ]
+  },
+  "nutrition": {
+   "calories": 586,
+   "proteinG": 32,
+   "carbsG": 58,
+   "fiberG": 3,
+   "sugarG": 5,
+   "fatG": 24,
+   "satFatG": 7,
+   "sodiumMg": 1680,
+   "cholesterolMg": 286
+  },
+  "tags": [
+   "southern",
+   "cajun",
+   "budget",
+   "one-pot",
+   "gluten-free",
+   "dairy-free",
+   "spicy",
+   "side",
+   "authentic"
+  ],
+  "image": {
+   "file": "dirty-rice.jpg",
+   "source": "wikipedia-lead",
+   "match": "representative",
+   "wikipedia": "Dirty rice"
+  }
+ },
+ {
+  "id": "ch-el-010",
+  "slug": "el-blackened-redfish",
+  "title": "Blackened Redfish",
+  "genre": "american",
+  "subgenre": "seafood",
+  "chef": {
+   "name": "Emeril Lagasse",
+   "slug": "emeril-lagasse"
+  },
+  "description": "Fish dipped in butter and spice, seared in a cast-iron pan heated white-hot.",
+  "difficulty": "intermediate",
+  "easeScore": 6,
+  "spiceScore": 7,
+  "popularity": 8,
+  "pantryScore": 6,
+  "servings": 4,
+  "prepMin": 15,
+  "cookMin": 15,
+  "totalMin": 30,
+  "equipment": [
+   "stovetop"
+  ],
+  "ingredients": [
+   "4 redfish or red snapper fillets (8 oz each)",
+   "1 cup butter, melted",
+   "3 tbsp paprika",
+   "1 tbsp garlic powder",
+   "1 tbsp onion powder",
+   "1 tbsp dried thyme",
+   "1 tbsp dried oregano",
+   "2 tsp cayenne pepper",
+   "2 tsp black pepper",
+   "1 tsp white pepper",
+   "2 tsp salt",
+   "2 lemons, cut in wedges",
+   "1/3 cup chopped parsley"
+  ],
+  "ingredientKeys": [
+   "redfish",
+   "butter",
+   "paprika",
+   "garlic-powder",
+   "onion-powder",
+   "dried-thyme",
+   "dried-oregano",
+   "cayenne",
+   "black-pepper",
+   "white-pepper",
+   "salt",
+   "lemon",
+   "parsley"
+  ],
+  "specialty": [
+   "redfish",
+   "white-pepper"
+  ],
+  "steps": [
+   "Mix all the dry spices into a blackening blend. Blackened does not mean burnt - the dark crust comes from the spices and milk solids in the butter toasting, not from char.",
+   "Heat a dry cast-iron skillet over the highest heat for a full 10 minutes until it is lightly smoking and almost white-hot. Do this with the range hood on, or outdoors on a burner if you can. It will smoke heavily.",
+   "Dip each fillet in the melted butter, letting the excess run off, then press both sides into the spice blend.",
+   "Lay the fillets in the dry hot pan - no oil. Cook 2-3 minutes per side, depending on thickness.",
+   "Spoon a little more melted butter over each fillet as it cooks; it sizzles and helps form the crust.",
+   "The fish is done when it flakes at the thickest point. Serve immediately with lemon and parsley."
+  ],
+  "diet": {
+   "vegetarian": false,
+   "vegan": false,
+   "pescatarian": true,
+   "glutenFree": true,
+   "glutenFreeAdaptable": false,
+   "dairyFree": false,
+   "nutFree": true,
+   "eggFree": true
+  },
+  "allergens": [
+   "dairy",
+   "fish"
+  ],
+  "gmo": {
+   "risk": "low",
+   "sources": [
+    "grain-fed-dairy"
+   ]
+  },
+  "nutrition": {
+   "calories": 712,
+   "proteinG": 48,
+   "carbsG": 7,
+   "fiberG": 3,
+   "sugarG": 1,
+   "fatG": 56,
+   "satFatG": 31,
+   "sodiumMg": 1480,
+   "cholesterolMg": 286
+  },
+  "tags": [
+   "southern",
+   "cajun",
+   "seafood",
+   "pescatarian",
+   "spicy",
+   "gluten-free",
+   "technique",
+   "quick",
+   "high-protein"
+  ],
+  "image": {
+   "file": "blackened-fish.jpg",
+   "source": "wikipedia-lead",
+   "match": "representative",
+   "wikipedia": "Blackening (cooking)"
+  }
+ },
+ {
+  "id": "ch-el-011",
+  "slug": "el-grillades-and-grits",
+  "title": "Grillades and Grits",
+  "genre": "american",
+  "subgenre": "southern",
+  "chef": {
+   "name": "Emeril Lagasse",
+   "slug": "emeril-lagasse"
+  },
+  "description": "Braised beef medallions in Creole gravy over cheese grits.",
+  "difficulty": "intermediate",
+  "easeScore": 7,
+  "spiceScore": 5,
+  "popularity": 7,
+  "pantryScore": 7,
+  "servings": 6,
+  "prepMin": 25,
+  "cookMin": 105,
+  "totalMin": 130,
+  "equipment": [
+   "stovetop"
+  ],
+  "ingredients": [
+   "2 1/2 lb beef round, pounded thin and cut in medallions",
+   "1/2 cup all-purpose flour",
+   "2 tbsp Creole seasoning",
+   "1/4 cup vegetable oil",
+   "2 yellow onions, diced",
+   "1 green bell pepper, diced",
+   "3 celery stalks, diced",
+   "6 cloves garlic, minced",
+   "3 tbsp tomato paste",
+   "1 cup dry red wine",
+   "3 cups beef broth",
+   "2 bay leaves",
+   "1 tsp dried thyme",
+   "1 tsp cayenne pepper",
+   "1 1/2 cups stone-ground grits",
+   "6 cups water",
+   "4 tbsp butter",
+   "1 1/2 cups shredded sharp cheddar",
+   "2 tsp salt",
+   "6 scallions, sliced"
+  ],
+  "ingredientKeys": [
+   "beef-round",
+   "flour",
+   "creole-seasoning",
+   "vegetable-oil",
+   "yellow-onion",
+   "green-bell-pepper",
+   "celery",
+   "garlic",
+   "tomato-paste",
+   "red-wine",
+   "beef-broth",
+   "bay-leaf",
+   "dried-thyme",
+   "cayenne",
+   "grits",
+   "water",
+   "butter",
+   "cheddar",
+   "salt",
+   "scallion"
+  ],
+  "specialty": [
+   "beef-round",
+   "creole-seasoning",
+   "red-wine",
+   "grits"
+  ],
+  "steps": [
+   "Pound the beef to about 1/4 inch and cut into medallions. Toss them with the flour mixed with the Creole seasoning.",
+   "Brown the medallions in the oil in batches, 2 minutes per side, then set aside. Crowding the pan steams them and you lose the crust.",
+   "Cook the onion, bell pepper and celery 10 minutes, then the garlic and tomato paste for 2 minutes.",
+   "Add the wine and reduce by half, then the broth, bay leaves, thyme and cayenne. Return the beef.",
+   "Cover and simmer very gently 1 1/2 hours until the beef is fork-tender and the gravy has thickened.",
+   "Meanwhile cook the grits in the salted water for 25-30 minutes, stirring often, then beat in the butter and cheddar. Serve the grillades and gravy over the grits with scallions."
+  ],
+  "diet": {
+   "vegetarian": false,
+   "vegan": false,
+   "pescatarian": false,
+   "glutenFree": false,
+   "glutenFreeAdaptable": false,
+   "dairyFree": false,
+   "nutFree": true,
+   "eggFree": true
+  },
+  "allergens": [
+   "gluten",
+   "dairy",
+   "sulfites"
+  ],
+  "gmo": {
+   "risk": "high",
+   "sources": [
+    "grain-fed-meat",
+    "corn",
+    "seed-oil",
+    "grain-fed-dairy"
+   ]
+  },
+  "nutrition": {
+   "calories": 782,
+   "proteinG": 58,
+   "carbsG": 52,
+   "fiberG": 4,
+   "sugarG": 7,
+   "fatG": 36,
+   "satFatG": 16,
+   "sodiumMg": 1880,
+   "cholesterolMg": 178
+  },
+  "tags": [
+   "southern",
+   "brunch",
+   "comfort",
+   "make-ahead",
+   "spicy",
+   "high-protein",
+   "classic",
+   "weekend"
+  ],
+  "image": {
+   "file": "grillades-grits.jpg",
+   "source": "wikipedia-lead",
+   "match": "representative",
+   "wikipedia": "Grits"
+  }
+ },
+ {
+  "id": "ch-el-012",
+  "slug": "el-bananas-foster",
+  "title": "Bananas Foster",
+  "genre": "american",
+  "subgenre": "desserts",
+  "chef": {
+   "name": "Emeril Lagasse",
+   "slug": "emeril-lagasse"
+  },
+  "description": "Bananas in brown sugar rum caramel, flambeed and spooned over ice cream.",
+  "difficulty": "intermediate",
+  "easeScore": 7,
+  "spiceScore": 0,
+  "popularity": 8,
+  "pantryScore": 8,
+  "servings": 4,
+  "prepMin": 10,
+  "cookMin": 10,
+  "totalMin": 20,
+  "equipment": [
+   "stovetop"
+  ],
+  "ingredients": [
+   "4 firm bananas, halved lengthwise",
+   "6 tbsp butter",
+   "3/4 cup packed brown sugar",
+   "1 tsp ground cinnamon",
+   "1/4 tsp ground nutmeg",
+   "1/4 cup banana liqueur",
+   "1/3 cup dark rum",
+   "4 cups vanilla ice cream",
+   "1/4 cup chopped toasted pecans"
+  ],
+  "ingredientKeys": [
+   "banana",
+   "butter",
+   "brown-sugar",
+   "cinnamon",
+   "nutmeg",
+   "banana-liqueur",
+   "dark-rum",
+   "vanilla-ice-cream",
+   "pecans"
+  ],
+  "specialty": [
+   "banana-liqueur",
+   "dark-rum",
+   "pecans"
+  ],
+  "steps": [
+   "Use firm, barely ripe bananas. Soft ones disintegrate in the pan.",
+   "Melt the butter with the brown sugar, cinnamon and nutmeg over medium heat and cook 2-3 minutes until it bubbles into a smooth caramel.",
+   "Add the bananas cut-side down and cook 1-2 minutes per side, spooning sauce over them.",
+   "Add the banana liqueur, then pull the pan off the heat before adding the rum. Adding spirits to a pan still over the flame can send fire up the bottle.",
+   "Return the pan to the heat and tilt it slightly toward the flame, or touch a long match to the edge. It will ignite and burn for 20-30 seconds - let it burn out on its own rather than blowing it out. The flame cooks off the raw alcohol and caramelizes the sugar further.",
+   "Spoon the bananas and sauce over bowls of vanilla ice cream and scatter the pecans. Serve immediately, while the contrast between hot sauce and cold ice cream is at its sharpest."
+  ],
+  "diet": {
+   "vegetarian": true,
+   "vegan": false,
+   "pescatarian": true,
+   "glutenFree": true,
+   "glutenFreeAdaptable": false,
+   "dairyFree": false,
+   "nutFree": false,
+   "eggFree": true
+  },
+  "allergens": [
+   "dairy",
+   "tree-nut",
+   "sulfites"
+  ],
+  "gmo": {
+   "risk": "moderate",
+   "sources": [
+    "sugar-beet",
+    "grain-fed-dairy",
+    "corn-syrup"
+   ]
+  },
+  "nutrition": {
+   "calories": 882,
+   "proteinG": 7,
+   "carbsG": 112,
+   "fiberG": 4,
+   "sugarG": 92,
+   "fatG": 42,
+   "satFatG": 24,
+   "sodiumMg": 220,
+   "cholesterolMg": 128
+  },
+  "tags": [
+   "dessert",
+   "southern",
+   "restaurant-style",
+   "technique",
+   "quick",
+   "entertaining",
+   "special-occasion",
+   "adults-only"
+  ],
+  "image": {
+   "file": "el-bananas-foster.jpg",
+   "source": "commons-file",
+   "match": "dish",
+   "commonsFile": "Bananas Foster.jpg"
+  }
+ },
+ {
+  "id": "ch-el-013",
+  "slug": "el-beignets",
+  "title": "Beignets",
+  "genre": "american",
+  "subgenre": "desserts",
+  "chef": {
+   "name": "Emeril Lagasse",
+   "slug": "emeril-lagasse"
+  },
+  "description": "Yeasted squares fried until hollow and buried in powdered sugar.",
+  "difficulty": "intermediate",
+  "easeScore": 6,
+  "spiceScore": 0,
+  "popularity": 9,
+  "pantryScore": 9,
+  "servings": 24,
+  "prepMin": 25,
+  "cookMin": 155,
+  "totalMin": 180,
+  "equipment": [
+   "stovetop"
+  ],
+  "ingredients": [
+   "1 1/2 cups warm water",
+   "2 1/4 tsp active dry yeast",
+   "1/2 cup sugar",
+   "2 eggs",
+   "1 tsp salt",
+   "1 cup evaporated milk",
+   "7 cups bread flour",
+   "1/4 cup shortening",
+   "6 cups vegetable oil, for frying",
+   "2 cups powdered sugar"
+  ],
+  "ingredientKeys": [
+   "water",
+   "active-dry-yeast",
+   "sugar",
+   "egg",
+   "salt",
+   "evaporated-milk",
+   "bread-flour",
+   "shortening",
+   "vegetable-oil",
+   "powdered-sugar"
+  ],
+  "specialty": [
+   "active-dry-yeast",
+   "evaporated-milk",
+   "bread-flour",
+   "shortening"
+  ],
+  "steps": [
+   "Sprinkle the yeast over the warm water with a pinch of the sugar and wait 10 minutes until foamy. No foam means dead yeast and no beignets.",
+   "Whisk in the remaining sugar, the eggs, salt and evaporated milk, then add 4 cups of the flour and beat smooth.",
+   "Work in the shortening, then the remaining flour, until you have a soft, slightly sticky dough. Knead 5 minutes.",
+   "Cover and refrigerate at least 2 hours, or overnight. Chilling makes this very soft dough workable.",
+   "Roll to 1/4 inch thick and cut into 2-inch squares. Do not re-roll scraps more than once.",
+   "Fry in 360F oil, 2 or 3 at a time, for 1-2 minutes per side. They should puff and go hollow almost immediately - if they stay flat the oil is too cool. Drain briefly and bury them in powdered sugar while still hot."
+  ],
+  "diet": {
+   "vegetarian": true,
+   "vegan": false,
+   "pescatarian": true,
+   "glutenFree": false,
+   "glutenFreeAdaptable": false,
+   "dairyFree": false,
+   "nutFree": true,
+   "eggFree": false
+  },
+  "allergens": [
+   "gluten",
+   "dairy",
+   "egg"
+  ],
+  "gmo": {
+   "risk": "high",
+   "sources": [
+    "seed-oil",
+    "sugar-beet",
+    "grain-fed-dairy"
+   ]
+  },
+  "nutrition": {
+   "calories": 286,
+   "proteinG": 6,
+   "carbsG": 48,
+   "fiberG": 1,
+   "sugarG": 20,
+   "fatG": 9,
+   "satFatG": 2,
+   "sodiumMg": 120,
+   "cholesterolMg": 21
+  },
+  "tags": [
+   "dessert",
+   "breakfast",
+   "southern",
+   "technique",
+   "party",
+   "make-ahead",
+   "vegetarian",
+   "crowd-pleaser"
+  ],
+  "image": {
+   "file": "el-beignets.jpg",
+   "source": "commons-file",
+   "match": "dish",
+   "commonsFile": "Beignets 2.jpg"
+  }
+ },
+ {
+  "id": "ch-el-014",
+  "slug": "el-pralines",
+  "title": "Pecan Pralines",
+  "genre": "american",
+  "subgenre": "desserts",
+  "chef": {
+   "name": "Emeril Lagasse",
+   "slug": "emeril-lagasse"
+  },
+  "description": "Pecan candies beaten until they set to a fudgy, matte finish.",
+  "difficulty": "beginner",
+  "easeScore": 8,
+  "spiceScore": 0,
+  "popularity": 7,
+  "pantryScore": 7,
+  "servings": 24,
+  "prepMin": 10,
+  "cookMin": 35,
+  "totalMin": 45,
+  "equipment": [
+   "stovetop"
+  ],
+  "ingredients": [
+   "1 1/2 cups granulated sugar",
+   "1 1/2 cups packed brown sugar",
+   "1 cup heavy cream",
+   "4 tbsp butter",
+   "1/2 tsp salt",
+   "1 tbsp vanilla extract",
+   "3 cups pecan halves, toasted"
+  ],
+  "ingredientKeys": [
+   "sugar",
+   "brown-sugar",
+   "heavy-cream",
+   "butter",
+   "salt",
+   "vanilla-extract",
+   "pecans"
+  ],
+  "specialty": [
+   "pecans"
+  ],
+  "steps": [
+   "Toast the pecans at 350F for 8 minutes and set aside. Line two sheet pans with parchment and have them ready - once the candy is set you have about 90 seconds to work.",
+   "Combine both sugars, the cream, butter and salt in a heavy saucepan and cook over medium heat, stirring, until the sugar dissolves.",
+   "Clip on a candy thermometer and cook without stirring to 236F, the soft-ball stage. This temperature is not approximate - a few degrees low and they never set, a few high and they turn hard and crumbly.",
+   "Take the pan off the heat, add the vanilla and pecans, and let it cool for 2 minutes undisturbed.",
+   "Now beat the mixture vigorously with a wooden spoon for 2-3 minutes. It will go from glossy and translucent to thick, opaque and matte. That change is sugar crystallizing, and it is what gives pralines their texture.",
+   "Working fast, drop spoonfuls onto the parchment. They set firm in about 20 minutes and keep two weeks in a tin."
+  ],
+  "diet": {
+   "vegetarian": true,
+   "vegan": false,
+   "pescatarian": true,
+   "glutenFree": true,
+   "glutenFreeAdaptable": false,
+   "dairyFree": false,
+   "nutFree": false,
+   "eggFree": true
+  },
+  "allergens": [
+   "dairy",
+   "tree-nut"
+  ],
+  "gmo": {
+   "risk": "moderate",
+   "sources": [
+    "sugar-beet",
+    "grain-fed-dairy"
+   ]
+  },
+  "nutrition": {
+   "calories": 242,
+   "proteinG": 2,
+   "carbsG": 28,
+   "fiberG": 1,
+   "sugarG": 26,
+   "fatG": 14,
+   "satFatG": 4,
+   "sodiumMg": 82,
+   "cholesterolMg": 16
+  },
+  "tags": [
+   "dessert",
+   "southern",
+   "candy",
+   "make-ahead",
+   "gluten-free",
+   "holiday",
+   "technique",
+   "gift",
+   "party"
+  ],
+  "image": {
+   "file": "pralines.jpg",
+   "source": "wikipedia-lead",
+   "match": "representative",
+   "wikipedia": "Fudge"
+  }
+ },
+ {
+  "id": "ch-el-015",
+  "slug": "el-king-cake",
+  "title": "King Cake",
+  "genre": "american",
+  "subgenre": "desserts",
+  "chef": {
+   "name": "Emeril Lagasse",
+   "slug": "emeril-lagasse"
+  },
+  "description": "A braided cinnamon brioche ring iced in purple, green and gold.",
+  "difficulty": "advanced",
+  "easeScore": 4,
+  "spiceScore": 0,
+  "popularity": 7,
+  "pantryScore": 7,
+  "servings": 16,
+  "prepMin": 60,
+  "cookMin": 180,
+  "totalMin": 240,
+  "equipment": [
+   "oven"
+  ],
+  "ingredients": [
+   "1/2 cup warm whole milk",
+   "2 1/4 tsp active dry yeast",
+   "1/2 cup sugar",
+   "4 cups all-purpose flour",
+   "1 tsp salt",
+   "1 tsp ground nutmeg",
+   "4 egg yolks",
+   "1/2 cup butter, softened",
+   "1 tbsp lemon zest",
+   "8 oz cream cheese, softened",
+   "1/2 cup packed brown sugar",
+   "2 tbsp ground cinnamon",
+   "4 tbsp butter, melted",
+   "3 cups powdered sugar",
+   "1/4 cup whole milk, for the icing",
+   "1 tsp vanilla extract",
+   "3 tbsp colored sugars in purple, green and gold"
+  ],
+  "ingredientKeys": [
+   "whole-milk",
+   "active-dry-yeast",
+   "sugar",
+   "flour",
+   "salt",
+   "nutmeg",
+   "egg-yolk",
+   "butter",
+   "lemon-zest",
+   "cream-cheese",
+   "brown-sugar",
+   "cinnamon",
+   "butter",
+   "powdered-sugar",
+   "whole-milk",
+   "vanilla-extract",
+   "colored-sugar"
+  ],
+  "specialty": [
+   "active-dry-yeast",
+   "cream-cheese",
+   "colored-sugar"
+  ],
+  "steps": [
+   "Dissolve the yeast in the warm milk with a spoonful of the sugar and wait 10 minutes until foamy.",
+   "Mix in the remaining sugar, the flour, salt, nutmeg, egg yolks and lemon zest, then knead 10 minutes, working in the softened butter a little at a time. The dough will look broken before it comes together - keep going.",
+   "Rise 1 1/2 hours until doubled.",
+   "Roll into a large rectangle. Beat the cream cheese with the brown sugar and cinnamon and spread it over, leaving a border, then brush the edges with melted butter.",
+   "Roll it up from the long side, then bring the ends together to form a ring on a lined sheet pan and pinch the seam closed firmly. Rise 45 minutes.",
+   "Bake at 350F for 30-35 minutes until deep golden. Cool completely, then whisk the icing and pour it over. Sprinkle the three colored sugars in alternating bands - purple for justice, green for faith, gold for power."
+  ],
+  "diet": {
+   "vegetarian": true,
+   "vegan": false,
+   "pescatarian": true,
+   "glutenFree": false,
+   "glutenFreeAdaptable": false,
+   "dairyFree": false,
+   "nutFree": true,
+   "eggFree": false
+  },
+  "allergens": [
+   "gluten",
+   "dairy",
+   "egg"
+  ],
+  "gmo": {
+   "risk": "moderate",
+   "sources": [
+    "sugar-beet",
+    "grain-fed-dairy"
+   ]
+  },
+  "nutrition": {
+   "calories": 512,
+   "proteinG": 7,
+   "carbsG": 78,
+   "fiberG": 2,
+   "sugarG": 48,
+   "fatG": 19,
+   "satFatG": 11,
+   "sodiumMg": 280,
+   "cholesterolMg": 82
+  },
+  "tags": [
+   "dessert",
+   "southern",
+   "holiday",
+   "mardi-gras",
+   "project",
+   "baking",
+   "party",
+   "vegetarian",
+   "crowd-pleaser"
+  ],
+  "image": {
+   "file": "el-king-cake.jpg",
+   "source": "commons-file",
+   "match": "dish",
+   "commonsFile": "King Cake with two babies.jpg"
+  }
+ },
+ {
+  "id": "ch-el-016",
+  "slug": "el-andouille-chicken-pasta",
+  "title": "Andouille and Chicken Pasta",
+  "genre": "italian",
+  "subgenre": "pasta",
+  "chef": {
+   "name": "Emeril Lagasse",
+   "slug": "emeril-lagasse"
+  },
+  "description": "Creole-spiced chicken and sausage in a cream sauce over penne.",
+  "difficulty": "beginner",
+  "easeScore": 9,
+  "spiceScore": 6,
+  "popularity": 8,
+  "pantryScore": 7,
+  "servings": 6,
+  "prepMin": 15,
+  "cookMin": 30,
+  "totalMin": 45,
+  "equipment": [
+   "stovetop"
+  ],
+  "ingredients": [
+   "1 lb penne",
+   "1 lb boneless chicken thighs, cubed",
+   "12 oz andouille sausage, sliced",
+   "3 tbsp olive oil",
+   "2 tbsp Creole seasoning",
+   "1 yellow onion, diced",
+   "1 red bell pepper, sliced",
+   "4 cloves garlic, minced",
+   "1/2 cup dry white wine",
+   "1 1/2 cups heavy cream",
+   "1 cup chicken broth",
+   "1 tsp cayenne pepper",
+   "1 1/2 cups grated Parmesan",
+   "6 scallions, sliced",
+   "1/3 cup chopped parsley"
+  ],
+  "ingredientKeys": [
+   "penne",
+   "chicken-thighs",
+   "andouille-sausage",
+   "olive-oil",
+   "creole-seasoning",
+   "yellow-onion",
+   "red-bell-pepper",
+   "garlic",
+   "white-wine",
+   "heavy-cream",
+   "chicken-broth",
+   "cayenne",
+   "parmesan",
+   "scallion",
+   "parsley"
+  ],
+  "specialty": [
+   "andouille-sausage",
+   "creole-seasoning",
+   "white-wine"
+  ],
+  "steps": [
+   "Toss the chicken with half the Creole seasoning. Brown the andouille in the oil 5 minutes, then the chicken for 6 minutes, and set both aside.",
+   "Cook the onion and bell pepper in the rendered fat 6 minutes, then the garlic and remaining Creole seasoning for 1 minute.",
+   "Add the wine and reduce by half, scraping up the browned bits.",
+   "Add the broth and reduce 3 minutes, then stir in the cream and cayenne and simmer 5 minutes until it coats a spoon.",
+   "Return the chicken and andouille and simmer 5 minutes until the chicken is cooked through.",
+   "Toss with the cooked penne and a splash of pasta water, then finish off the heat with the Parmesan, scallions and parsley."
+  ],
+  "diet": {
+   "vegetarian": false,
+   "vegan": false,
+   "pescatarian": false,
+   "glutenFree": false,
+   "glutenFreeAdaptable": true,
+   "dairyFree": false,
+   "nutFree": true,
+   "eggFree": true
+  },
+  "allergens": [
+   "gluten",
+   "dairy",
+   "sulfites"
+  ],
+  "gmo": {
+   "risk": "moderate",
+   "sources": [
+    "grain-fed-meat",
+    "grain-fed-dairy"
+   ]
+  },
+  "nutrition": {
+   "calories": 982,
+   "proteinG": 52,
+   "carbsG": 82,
+   "fiberG": 4,
+   "sugarG": 7,
+   "fatG": 52,
+   "satFatG": 26,
+   "sodiumMg": 1880,
+   "cholesterolMg": 198
+  },
+  "tags": [
+   "southern",
+   "spicy",
+   "weeknight",
+   "family",
+   "comfort",
+   "high-protein",
+   "quick",
+   "fusion"
+  ],
+  "image": {
+   "file": "penne-alla-vodka.jpg",
+   "source": "wikipedia-lead",
+   "match": "representative",
+   "wikipedia": "Penne"
+  }
+ },
+ {
+  "id": "ch-el-017",
+  "slug": "el-jambalaya-pasta",
+  "title": "Jambalaya Pasta",
+  "genre": "italian",
+  "subgenre": "pasta",
+  "chef": {
+   "name": "Emeril Lagasse",
+   "slug": "emeril-lagasse"
+  },
+  "description": "All the flavors of jambalaya tossed with linguine instead of rice.",
+  "difficulty": "beginner",
+  "easeScore": 9,
+  "spiceScore": 6,
+  "popularity": 8,
+  "pantryScore": 7,
+  "servings": 6,
+  "prepMin": 15,
+  "cookMin": 30,
+  "totalMin": 45,
+  "equipment": [
+   "stovetop"
+  ],
+  "ingredients": [
+   "1 lb linguine",
+   "12 oz andouille sausage, sliced",
+   "1 lb boneless chicken thighs, cubed",
+   "1 lb large shrimp, peeled",
+   "3 tbsp olive oil",
+   "2 tbsp Creole seasoning",
+   "1 yellow onion, diced",
+   "1 green bell pepper, diced",
+   "3 celery stalks, diced",
+   "5 cloves garlic, minced",
+   "1 can (14 oz) diced tomatoes",
+   "1 1/2 cups chicken broth",
+   "1 cup heavy cream",
+   "1 tsp cayenne pepper",
+   "1 cup grated Parmesan",
+   "6 scallions, sliced",
+   "1/3 cup chopped parsley"
+  ],
+  "ingredientKeys": [
+   "linguine",
+   "andouille-sausage",
+   "chicken-thighs",
+   "shrimp",
+   "olive-oil",
+   "creole-seasoning",
+   "yellow-onion",
+   "green-bell-pepper",
+   "celery",
+   "garlic",
+   "diced-tomatoes",
+   "chicken-broth",
+   "heavy-cream",
+   "cayenne",
+   "parmesan",
+   "scallion",
+   "parsley"
+  ],
+  "specialty": [
+   "andouille-sausage",
+   "shrimp",
+   "creole-seasoning"
+  ],
+  "steps": [
+   "Season the chicken and shrimp separately with the Creole seasoning.",
+   "Brown the andouille in the oil 5 minutes, then the chicken for 6 minutes. Lift both out. Sear the shrimp 1 minute per side and pull them too - they will go back in at the very end.",
+   "Cook the onion, bell pepper and celery in the rendered fat 8 minutes, then the garlic for 1 minute.",
+   "Add the tomatoes and broth and simmer 8 minutes, then stir in the cream and cayenne and simmer 5 minutes.",
+   "Return the andouille and chicken and cook 4 minutes, then toss in the cooked linguine with a splash of pasta water.",
+   "Add the shrimp back for the last minute only - any longer and they turn rubbery. Finish off the heat with Parmesan, scallions and parsley."
+  ],
+  "diet": {
+   "vegetarian": false,
+   "vegan": false,
+   "pescatarian": false,
+   "glutenFree": false,
+   "glutenFreeAdaptable": true,
+   "dairyFree": false,
+   "nutFree": true,
+   "eggFree": true
+  },
+  "allergens": [
+   "gluten",
+   "dairy",
+   "shellfish"
+  ],
+  "gmo": {
+   "risk": "moderate",
+   "sources": [
+    "grain-fed-meat",
+    "grain-fed-dairy"
+   ]
+  },
+  "nutrition": {
+   "calories": 1086,
+   "proteinG": 72,
+   "carbsG": 82,
+   "fiberG": 5,
+   "sugarG": 9,
+   "fatG": 52,
+   "satFatG": 24,
+   "sodiumMg": 1880,
+   "cholesterolMg": 398
+  },
+  "tags": [
+   "southern",
+   "spicy",
+   "family",
+   "comfort",
+   "high-protein",
+   "weeknight",
+   "fusion",
+   "party"
+  ],
+  "image": {
+   "file": "jambalaya.jpg",
+   "source": "wikipedia-lead",
+   "match": "representative",
+   "wikipedia": "Jambalaya"
+  }
+ },
+ {
+  "id": "ch-el-018",
+  "slug": "el-smothered-pork-chops",
+  "title": "Smothered Pork Chops",
+  "genre": "american",
+  "subgenre": "southern",
+  "chef": {
+   "name": "Emeril Lagasse",
+   "slug": "emeril-lagasse"
+  },
+  "description": "Chops braised under a thick onion gravy until fork-tender.",
+  "difficulty": "beginner",
+  "easeScore": 9,
+  "spiceScore": 4,
+  "popularity": 8,
+  "pantryScore": 8,
+  "servings": 4,
+  "prepMin": 15,
+  "cookMin": 60,
+  "totalMin": 75,
+  "equipment": [
+   "stovetop"
+  ],
+  "ingredients": [
+   "4 bone-in pork chops, 3/4 inch thick",
+   "1/2 cup all-purpose flour",
+   "2 tbsp Creole seasoning",
+   "1 tsp black pepper",
+   "1/4 cup vegetable oil",
+   "3 yellow onions, thinly sliced",
+   "6 cloves garlic, minced",
+   "3 cups chicken broth",
+   "1 tsp dried thyme",
+   "2 bay leaves",
+   "1 tsp cayenne pepper",
+   "1/3 cup chopped parsley",
+   "4 cups cooked white rice"
+  ],
+  "ingredientKeys": [
+   "pork-chops",
+   "flour",
+   "creole-seasoning",
+   "black-pepper",
+   "vegetable-oil",
+   "yellow-onion",
+   "garlic",
+   "chicken-broth",
+   "dried-thyme",
+   "bay-leaf",
+   "cayenne",
+   "parsley",
+   "white-rice"
+  ],
+  "specialty": [
+   "pork-chops",
+   "creole-seasoning"
+  ],
+  "steps": [
+   "Mix the flour with the Creole seasoning and pepper. Dredge the chops, reserving 3 tbsp of the seasoned flour.",
+   "Brown the chops in the oil over medium-high 4 minutes per side, then set them aside. They are not cooked through.",
+   "Add the onions to the pan and cook 15 minutes until deeply browned and soft. Smothered means cooked under a lot of onion gravy, so do not rush these.",
+   "Add the garlic, then sprinkle the reserved flour over and stir 2 minutes to cook out the raw taste.",
+   "Whisk in the broth gradually, then add the thyme, bay leaves and cayenne.",
+   "Return the chops, cover, and simmer very gently 35-40 minutes until the gravy is thick and the chops are tender enough to cut with a fork. Serve over rice with parsley."
+  ],
+  "diet": {
+   "vegetarian": false,
+   "vegan": false,
+   "pescatarian": false,
+   "glutenFree": false,
+   "glutenFreeAdaptable": false,
+   "dairyFree": true,
+   "nutFree": true,
+   "eggFree": true
+  },
+  "allergens": [
+   "gluten"
+  ],
+  "gmo": {
+   "risk": "moderate",
+   "sources": [
+    "grain-fed-meat",
+    "seed-oil"
+   ]
+  },
+  "nutrition": {
+   "calories": 712,
+   "proteinG": 48,
+   "carbsG": 62,
+   "fiberG": 4,
+   "sugarG": 9,
+   "fatG": 28,
+   "satFatG": 8,
+   "sodiumMg": 1680,
+   "cholesterolMg": 138
+  },
+  "tags": [
+   "southern",
+   "comfort",
+   "family",
+   "budget",
+   "dairy-free",
+   "one-pan",
+   "spicy",
+   "high-protein",
+   "weeknight"
+  ],
+  "image": {
+   "file": "el-smothered-pork-chops.jpg",
+   "source": "commons-file",
+   "match": "dish",
+   "commonsFile": "Smothered pork chops, onion rings.jpg"
+  }
+ },
+ {
+  "id": "ch-el-019",
+  "slug": "el-fried-catfish",
+  "title": "Fried Catfish with Remoulade",
+  "genre": "american",
+  "subgenre": "seafood",
+  "chef": {
+   "name": "Emeril Lagasse",
+   "slug": "emeril-lagasse"
+  },
+  "description": "Cornmeal-crusted catfish fried crisp, with a Creole remoulade.",
+  "difficulty": "beginner",
+  "easeScore": 8,
+  "spiceScore": 5,
+  "popularity": 8,
+  "pantryScore": 7,
+  "servings": 4,
+  "prepMin": 20,
+  "cookMin": 20,
+  "totalMin": 40,
+  "equipment": [
+   "stovetop"
+  ],
+  "ingredients": [
+   "4 catfish fillets (7 oz each)",
+   "2 cups buttermilk",
+   "1 tbsp hot sauce",
+   "1 1/2 cups yellow cornmeal",
+   "1/2 cup all-purpose flour",
+   "2 tbsp Creole seasoning",
+   "1 tsp cayenne pepper",
+   "1 tsp black pepper",
+   "6 cups vegetable oil, for frying",
+   "3/4 cup mayonnaise",
+   "2 tbsp Creole mustard",
+   "1 tbsp ketchup",
+   "1 tbsp lemon juice",
+   "2 tsp horseradish",
+   "2 scallions, minced",
+   "1 tsp paprika",
+   "2 lemons, cut in wedges"
+  ],
+  "ingredientKeys": [
+   "catfish",
+   "buttermilk",
+   "hot-sauce",
+   "cornmeal",
+   "flour",
+   "creole-seasoning",
+   "cayenne",
+   "black-pepper",
+   "vegetable-oil",
+   "mayonnaise",
+   "creole-mustard",
+   "ketchup",
+   "lemon-juice",
+   "horseradish",
+   "scallion",
+   "paprika",
+   "lemon"
+  ],
+  "specialty": [
+   "catfish",
+   "buttermilk",
+   "cornmeal",
+   "creole-seasoning",
+   "creole-mustard",
+   "horseradish"
+  ],
+  "steps": [
+   "Soak the catfish in the buttermilk and hot sauce for 15 minutes.",
+   "Stir the mayonnaise, Creole mustard, ketchup, lemon juice, horseradish, scallions and paprika into the remoulade and chill it.",
+   "Mix the cornmeal, flour, Creole seasoning, cayenne and black pepper. The cornmeal is what gives catfish its characteristic sandy crunch - all-flour breading is a different dish.",
+   "Heat 2 inches of oil to 350F.",
+   "Lift each fillet from the buttermilk, let it drip briefly, then press it firmly into the cornmeal mixture on both sides.",
+   "Fry 4-5 minutes per side until deep golden and the fish flakes at the thickest point. Drain on a rack, salt immediately, and serve with the remoulade and lemon."
+  ],
+  "diet": {
+   "vegetarian": false,
+   "vegan": false,
+   "pescatarian": true,
+   "glutenFree": false,
+   "glutenFreeAdaptable": false,
+   "dairyFree": false,
+   "nutFree": true,
+   "eggFree": false
+  },
+  "allergens": [
+   "gluten",
+   "dairy",
+   "egg",
+   "fish"
+  ],
+  "gmo": {
+   "risk": "high",
+   "sources": [
+    "seed-oil",
+    "corn",
+    "grain-fed-dairy",
+    "corn-syrup"
+   ]
+  },
+  "nutrition": {
+   "calories": 882,
+   "proteinG": 48,
+   "carbsG": 62,
+   "fiberG": 4,
+   "sugarG": 9,
+   "fatG": 46,
+   "satFatG": 8,
+   "sodiumMg": 1880,
+   "cholesterolMg": 158
+  },
+  "tags": [
+   "southern",
+   "seafood",
+   "pescatarian",
+   "spicy",
+   "family",
+   "comfort",
+   "high-protein",
+   "weeknight"
+  ],
+  "image": {
+   "file": "fried-catfish.jpg",
+   "source": "wikipedia-lead",
+   "match": "representative",
+   "wikipedia": "Catfish"
+  }
+ },
+ {
+  "id": "ch-el-020",
+  "slug": "el-maque-choux",
+  "title": "Corn Maque Choux",
+  "genre": "american",
+  "subgenre": "southern",
+  "chef": {
+   "name": "Emeril Lagasse",
+   "slug": "emeril-lagasse"
+  },
+  "description": "Corn smothered with the trinity, tomato and cream.",
+  "difficulty": "beginner",
+  "easeScore": 10,
+  "spiceScore": 4,
+  "popularity": 7,
+  "pantryScore": 8,
+  "servings": 6,
+  "prepMin": 15,
+  "cookMin": 30,
+  "totalMin": 45,
+  "equipment": [
+   "stovetop"
+  ],
+  "ingredients": [
+   "6 cups corn kernels, fresh or frozen",
+   "4 oz bacon, diced",
+   "3 tbsp butter",
+   "1 yellow onion, diced",
+   "1 green bell pepper, diced",
+   "3 celery stalks, diced",
+   "4 cloves garlic, minced",
+   "2 tomatoes, diced",
+   "1 tbsp Creole seasoning",
+   "1 tsp cayenne pepper",
+   "3/4 cup heavy cream",
+   "2 tsp salt",
+   "6 scallions, sliced",
+   "1/3 cup chopped parsley"
+  ],
+  "ingredientKeys": [
+   "corn",
+   "bacon",
+   "butter",
+   "yellow-onion",
+   "green-bell-pepper",
+   "celery",
+   "garlic",
+   "tomato",
+   "creole-seasoning",
+   "cayenne",
+   "heavy-cream",
+   "salt",
+   "scallion",
+   "parsley"
+  ],
+  "specialty": [
+   "creole-seasoning"
+  ],
+  "steps": [
+   "Render the bacon in a large skillet until crisp, then lift it out, leaving the fat.",
+   "Add the butter and cook the onion, bell pepper and celery 8 minutes until soft. The trinity goes into almost everything in Louisiana cooking, and this dish is no exception.",
+   "Add the garlic for 1 minute, then the corn, and cook over medium-high 8 minutes, stirring occasionally, until some kernels start to brown.",
+   "Add the tomatoes, Creole seasoning and cayenne and cook 5 minutes until the tomatoes slump and their liquid cooks off.",
+   "Stir in the cream and simmer 4 minutes until it thickens around the corn. Smothering is the method here - the vegetables cook down together in fat and liquid.",
+   "Season with the salt, return the bacon, and finish with scallions and parsley."
+  ],
+  "diet": {
+   "vegetarian": false,
+   "vegan": false,
+   "pescatarian": false,
+   "glutenFree": true,
+   "glutenFreeAdaptable": false,
+   "dairyFree": false,
+   "nutFree": true,
+   "eggFree": true
+  },
+  "allergens": [
+   "dairy"
+  ],
+  "gmo": {
+   "risk": "high",
+   "sources": [
+    "corn",
+    "grain-fed-meat",
+    "grain-fed-dairy"
+   ]
+  },
+  "nutrition": {
+   "calories": 386,
+   "proteinG": 9,
+   "carbsG": 38,
+   "fiberG": 5,
+   "sugarG": 11,
+   "fatG": 24,
+   "satFatG": 13,
+   "sodiumMg": 1180,
+   "cholesterolMg": 62
+  },
+  "tags": [
+   "side",
+   "southern",
+   "cajun",
+   "gluten-free",
+   "summer",
+   "spicy",
+   "family",
+   "quick",
+   "comfort"
+  ],
+  "image": {
+   "file": "succotash.jpg",
+   "source": "wikipedia-lead",
+   "match": "representative",
+   "wikipedia": "Maque choux"
+  }
+ },
+ {
+  "id": "ch-el-021",
+  "slug": "el-creole-tomato-salad",
+  "title": "Creole Tomato Salad",
+  "genre": "american",
+  "subgenre": "salads",
+  "chef": {
+   "name": "Emeril Lagasse",
+   "slug": "emeril-lagasse"
+  },
+  "description": "Ripe summer tomatoes with red onion in a mustard vinaigrette.",
+  "difficulty": "beginner",
+  "easeScore": 10,
+  "spiceScore": 3,
+  "popularity": 7,
+  "pantryScore": 8,
+  "servings": 6,
+  "prepMin": 15,
+  "cookMin": 20,
+  "totalMin": 35,
+  "equipment": [
+   "no-cook"
+  ],
+  "ingredients": [
+   "3 lb ripe tomatoes, cut in thick wedges",
+   "1 red onion, thinly sliced",
+   "1/3 cup olive oil",
+   "3 tbsp red wine vinegar",
+   "2 tbsp Creole mustard",
+   "2 cloves garlic, minced",
+   "1 tbsp Creole seasoning",
+   "1 tsp sugar",
+   "1/2 tsp cayenne pepper",
+   "1 1/2 tsp flaky sea salt",
+   "1 tsp black pepper",
+   "1/3 cup chopped basil",
+   "1/4 cup chopped parsley"
+  ],
+  "ingredientKeys": [
+   "tomato",
+   "red-onion",
+   "olive-oil",
+   "red-wine-vinegar",
+   "creole-mustard",
+   "garlic",
+   "creole-seasoning",
+   "sugar",
+   "cayenne",
+   "flaky-salt",
+   "black-pepper",
+   "fresh-basil",
+   "parsley"
+  ],
+  "specialty": [
+   "creole-mustard",
+   "creole-seasoning",
+   "flaky-salt"
+  ],
+  "steps": [
+   "This dish lives entirely on the tomatoes, so make it only when they are genuinely ripe and in season. Never refrigerate them beforehand - cold destroys both texture and flavor.",
+   "Cut the tomatoes into thick wedges and salt them directly with the flaky salt. Seasoning the fruit itself, rather than just the dressing, is what makes the difference.",
+   "Rinse the sliced red onion under cold water and pat it dry to take the harsh raw bite off.",
+   "Whisk the oil, vinegar, Creole mustard, garlic, Creole seasoning, sugar, cayenne and black pepper into a vinaigrette.",
+   "Combine the tomatoes and onion in a wide bowl, pour the dressing over, and toss gently.",
+   "Let it stand 20 minutes at room temperature so the tomatoes release their juices into the dressing, then fold in the basil and parsley just before serving."
+  ],
+  "diet": {
+   "vegetarian": true,
+   "vegan": true,
+   "pescatarian": true,
+   "glutenFree": true,
+   "glutenFreeAdaptable": false,
+   "dairyFree": true,
+   "nutFree": true,
+   "eggFree": true
+  },
+  "allergens": [
+   "sulfites"
+  ],
+  "gmo": {
+   "risk": "low",
+   "sources": [
+    "sugar-beet"
+   ]
+  },
+  "nutrition": {
+   "calories": 168,
+   "proteinG": 2,
+   "carbsG": 11,
+   "fiberG": 3,
+   "sugarG": 7,
+   "fatG": 13,
+   "satFatG": 2,
+   "sodiumMg": 780,
+   "cholesterolMg": 0
+  },
+  "tags": [
+   "salad",
+   "side",
+   "no-cook",
+   "vegan",
+   "vegetarian",
+   "gluten-free",
+   "dairy-free",
+   "summer",
+   "southern",
+   "healthy",
+   "quick"
+  ],
+  "image": {
+   "file": "tomato-salad.jpg",
+   "source": "wikipedia-lead",
+   "match": "representative",
+   "wikipedia": "Tomato"
+  }
+ },
+ {
+  "id": "ch-el-022",
+  "slug": "el-shrimp-remoulade",
+  "title": "Shrimp Remoulade",
+  "genre": "american",
+  "subgenre": "seafood",
+  "chef": {
+   "name": "Emeril Lagasse",
+   "slug": "emeril-lagasse"
+  },
+  "description": "Chilled poached shrimp in a sharp Creole mustard sauce over lettuce.",
+  "difficulty": "beginner",
+  "easeScore": 9,
+  "spiceScore": 5,
+  "popularity": 7,
+  "pantryScore": 7,
+  "servings": 6,
+  "prepMin": 20,
+  "cookMin": 70,
+  "totalMin": 90,
+  "equipment": [
+   "stovetop",
+   "no-cook"
+  ],
+  "ingredients": [
+   "2 lb large shrimp, peeled",
+   "8 cups water",
+   "2 tbsp Creole seasoning, for poaching",
+   "2 bay leaves",
+   "1 lemon, halved",
+   "3/4 cup mayonnaise",
+   "1/3 cup Creole mustard",
+   "3 tbsp ketchup",
+   "2 tbsp prepared horseradish",
+   "3 tbsp lemon juice",
+   "2 tbsp olive oil",
+   "4 scallions, minced",
+   "2 celery stalks, minced",
+   "2 cloves garlic, minced",
+   "1 tbsp paprika",
+   "1 tsp cayenne pepper",
+   "1 head iceberg lettuce, shredded"
+  ],
+  "ingredientKeys": [
+   "shrimp",
+   "water",
+   "creole-seasoning",
+   "bay-leaf",
+   "lemon",
+   "mayonnaise",
+   "creole-mustard",
+   "ketchup",
+   "horseradish",
+   "lemon-juice",
+   "olive-oil",
+   "scallion",
+   "celery",
+   "garlic",
+   "paprika",
+   "cayenne",
+   "lettuce"
+  ],
+  "specialty": [
+   "shrimp",
+   "creole-seasoning",
+   "creole-mustard",
+   "horseradish"
+  ],
+  "steps": [
+   "Bring the water to a boil with the Creole seasoning, bay leaves and lemon halves, then lower it to a bare simmer.",
+   "Add the shrimp and poach 2-3 minutes, just until pink and curled into a loose C. Boiling them hard is what makes poached shrimp rubbery.",
+   "Drain and plunge them straight into ice water to stop the cooking, then drain again and pat dry.",
+   "Whisk the mayonnaise, Creole mustard, ketchup, horseradish, lemon juice, olive oil, scallions, celery, garlic, paprika and cayenne into the remoulade. Creole mustard is coarse and sharp - Dijon is the nearest substitute but it is not the same.",
+   "Fold the cold shrimp through the sauce and refrigerate at least 1 hour so they absorb it.",
+   "Serve over shredded iceberg lettuce, well chilled."
+  ],
+  "diet": {
+   "vegetarian": false,
+   "vegan": false,
+   "pescatarian": true,
+   "glutenFree": true,
+   "glutenFreeAdaptable": false,
+   "dairyFree": true,
+   "nutFree": true,
+   "eggFree": false
+  },
+  "allergens": [
+   "egg",
+   "shellfish"
+  ],
+  "gmo": {
+   "risk": "moderate",
+   "sources": [
+    "seed-oil",
+    "corn-syrup"
+   ]
+  },
+  "nutrition": {
+   "calories": 386,
+   "proteinG": 32,
+   "carbsG": 9,
+   "fiberG": 2,
+   "sugarG": 5,
+   "fatG": 26,
+   "satFatG": 4,
+   "sodiumMg": 1680,
+   "cholesterolMg": 286
+  },
+  "tags": [
+   "appetizer",
+   "seafood",
+   "pescatarian",
+   "southern",
+   "no-cook",
+   "make-ahead",
+   "spicy",
+   "gluten-free",
+   "high-protein",
+   "party"
+  ],
+  "image": {
+   "file": "el-shrimp-remoulade.jpg",
+   "source": "commons-file",
+   "match": "dish",
+   "commonsFile": "Shrimp remoulade.jpg"
+  }
+ },
+ {
+  "id": "ch-el-023",
+  "slug": "el-crab-corn-bisque",
+  "title": "Crab and Corn Bisque",
+  "genre": "american",
+  "subgenre": "soups",
+  "chef": {
+   "name": "Emeril Lagasse",
+   "slug": "emeril-lagasse"
+  },
+  "description": "A rich Creole bisque with lump crab and sweet corn.",
+  "difficulty": "intermediate",
+  "easeScore": 7,
+  "spiceScore": 4,
+  "popularity": 7,
+  "pantryScore": 6,
+  "servings": 6,
+  "prepMin": 20,
+  "cookMin": 45,
+  "totalMin": 65,
+  "equipment": [
+   "stovetop"
+  ],
+  "ingredients": [
+   "1 lb lump crab meat, picked over",
+   "6 tbsp butter",
+   "1/2 cup all-purpose flour",
+   "1 yellow onion, diced",
+   "1 green bell pepper, diced",
+   "3 celery stalks, diced",
+   "5 cloves garlic, minced",
+   "2 tbsp Creole seasoning",
+   "1 tsp cayenne pepper",
+   "1 tsp dried thyme",
+   "2 bay leaves",
+   "4 cups seafood or chicken broth",
+   "4 cups corn kernels",
+   "2 cups heavy cream",
+   "1/4 cup dry sherry",
+   "2 tsp salt",
+   "6 scallions, sliced",
+   "1/3 cup chopped parsley"
+  ],
+  "ingredientKeys": [
+   "crab-meat",
+   "butter",
+   "flour",
+   "yellow-onion",
+   "green-bell-pepper",
+   "celery",
+   "garlic",
+   "creole-seasoning",
+   "cayenne",
+   "dried-thyme",
+   "bay-leaf",
+   "seafood-broth",
+   "corn",
+   "heavy-cream",
+   "dry-sherry",
+   "salt",
+   "scallion",
+   "parsley"
+  ],
+  "specialty": [
+   "crab-meat",
+   "creole-seasoning",
+   "seafood-broth",
+   "dry-sherry"
+  ],
+  "steps": [
+   "Make a blond roux: melt the butter, whisk in the flour, and cook over medium heat 8 minutes until it is the color of peanut butter. Stop well short of dark - a bisque wants body, not the toasted bitterness of a gumbo roux.",
+   "Add the onion, bell pepper and celery and cook 8 minutes, then the garlic, Creole seasoning, cayenne, thyme and bay leaves for 1 minute.",
+   "Whisk in the broth a cup at a time, keeping it smooth, and simmer 15 minutes.",
+   "Add the corn and simmer 10 minutes. Puree about a third of the soup and stir it back in for body while leaving whole kernels.",
+   "Lower the heat and stir in the cream and sherry. Do not let it boil after the cream goes in.",
+   "Fold in the crab as gently as you can and heat through for 3 minutes only - stirring hard breaks up the lumps you paid for. Season and finish with scallions and parsley."
+  ],
+  "diet": {
+   "vegetarian": false,
+   "vegan": false,
+   "pescatarian": true,
+   "glutenFree": false,
+   "glutenFreeAdaptable": false,
+   "dairyFree": false,
+   "nutFree": true,
+   "eggFree": true
+  },
+  "allergens": [
+   "gluten",
+   "dairy",
+   "shellfish",
+   "sulfites"
+  ],
+  "gmo": {
+   "risk": "high",
+   "sources": [
+    "corn",
+    "grain-fed-dairy"
+   ]
+  },
+  "nutrition": {
+   "calories": 682,
+   "proteinG": 28,
+   "carbsG": 42,
+   "fiberG": 4,
+   "sugarG": 12,
+   "fatG": 46,
+   "satFatG": 26,
+   "sodiumMg": 1880,
+   "cholesterolMg": 198
+  },
+  "tags": [
+   "soup",
+   "seafood",
+   "pescatarian",
+   "southern",
+   "special-occasion",
+   "restaurant-style",
+   "spicy",
+   "entertaining",
+   "holiday"
+  ],
+  "image": {
+   "file": "crab-bisque.jpg",
+   "source": "wikipedia-lead",
+   "match": "representative",
+   "wikipedia": "Bisque (food)"
+  }
+ },
+ {
+  "id": "ch-el-024",
+  "slug": "el-cajun-meatloaf",
+  "title": "Cajun Meatloaf",
+  "genre": "american",
+  "subgenre": "southern",
+  "chef": {
+   "name": "Emeril Lagasse",
+   "slug": "emeril-lagasse"
+  },
+  "description": "A trinity-packed meatloaf with Creole seasoning and a spicy glaze.",
+  "difficulty": "beginner",
+  "easeScore": 9,
+  "spiceScore": 5,
+  "popularity": 7,
+  "pantryScore": 8,
+  "servings": 8,
+  "prepMin": 20,
+  "cookMin": 75,
+  "totalMin": 95,
+  "equipment": [
+   "oven",
+   "stovetop"
+  ],
+  "ingredients": [
+   "1 1/2 lb ground beef (85/15)",
+   "1/2 lb ground pork",
+   "3 tbsp butter",
+   "1 yellow onion, finely diced",
+   "1 green bell pepper, finely diced",
+   "3 celery stalks, finely diced",
+   "6 cloves garlic, minced",
+   "2 tbsp Creole seasoning",
+   "1 tsp cayenne pepper",
+   "1 1/2 cups breadcrumbs",
+   "3/4 cup whole milk",
+   "2 eggs",
+   "2 tbsp Worcestershire sauce",
+   "1/3 cup chopped parsley",
+   "2 tsp salt",
+   "3/4 cup ketchup",
+   "2 tbsp brown sugar",
+   "1 tbsp hot sauce",
+   "1 tbsp Creole mustard"
+  ],
+  "ingredientKeys": [
+   "ground-beef",
+   "ground-pork",
+   "butter",
+   "yellow-onion",
+   "green-bell-pepper",
+   "celery",
+   "garlic",
+   "creole-seasoning",
+   "cayenne",
+   "breadcrumbs",
+   "whole-milk",
+   "egg",
+   "worcestershire",
+   "parsley",
+   "salt",
+   "ketchup",
+   "brown-sugar",
+   "hot-sauce",
+   "creole-mustard"
+  ],
+  "specialty": [
+   "ground-pork",
+   "creole-seasoning",
+   "creole-mustard"
+  ],
+  "steps": [
+   "Cook the onion, bell pepper and celery in the butter 10 minutes until soft, then add the garlic, Creole seasoning and cayenne for 1 minute. Cool completely - raw trinity stays crunchy and releases water into the loaf.",
+   "Soak the breadcrumbs in the milk for 10 minutes. This panade is why good meatloaf is moist rather than dense.",
+   "Mix both meats with the soaked breadcrumbs, cooled vegetables, eggs, Worcestershire, parsley and salt using your hands, stopping the moment it comes together.",
+   "Shape into a free-form loaf on a foil-lined sheet pan rather than packing it into a pan - more surface area means more browning.",
+   "Whisk the ketchup, brown sugar, hot sauce and Creole mustard and brush a third over the loaf.",
+   "Bake at 375F for 50 minutes, glaze again, then bake 25 minutes more to 160F internal. Rest 15 minutes before slicing."
+  ],
+  "diet": {
+   "vegetarian": false,
+   "vegan": false,
+   "pescatarian": false,
+   "glutenFree": false,
+   "glutenFreeAdaptable": true,
+   "dairyFree": false,
+   "nutFree": true,
+   "eggFree": false
+  },
+  "allergens": [
+   "gluten",
+   "dairy",
+   "egg",
+   "fish"
+  ],
+  "gmo": {
+   "risk": "high",
+   "sources": [
+    "grain-fed-meat",
+    "processed-bread",
+    "corn-syrup",
+    "grain-fed-dairy"
+   ]
+  },
+  "nutrition": {
+   "calories": 586,
+   "proteinG": 34,
+   "carbsG": 38,
+   "fiberG": 3,
+   "sugarG": 18,
+   "fatG": 32,
+   "satFatG": 13,
+   "sodiumMg": 1680,
+   "cholesterolMg": 158
+  },
+  "tags": [
+   "southern",
+   "cajun",
+   "comfort",
+   "family",
+   "spicy",
+   "make-ahead",
+   "leftovers",
+   "budget"
+  ],
+  "image": {
+   "file": "meatloaf.jpg",
+   "source": "wikipedia-lead",
+   "match": "representative",
+   "wikipedia": "Meatloaf"
+  }
+ },
+ {
+  "id": "ch-el-025",
+  "slug": "el-sazerac",
+  "title": "Sazerac",
+  "genre": "american",
+  "subgenre": "drinks",
+  "chef": {
+   "name": "Emeril Lagasse",
+   "slug": "emeril-lagasse"
+  },
+  "description": "New Orleans' official cocktail: rye, bitters and an absinthe-rinsed glass.",
+  "difficulty": "beginner",
+  "easeScore": 9,
+  "spiceScore": 1,
+  "popularity": 7,
+  "pantryScore": 4,
+  "servings": 2,
+  "prepMin": 5,
+  "cookMin": 0,
+  "totalMin": 5,
+  "equipment": [
+   "no-cook"
+  ],
+  "ingredients": [
+   "4 oz rye whiskey",
+   "1/2 oz simple syrup",
+   "6 dashes Peychaud's bitters",
+   "2 dashes Angostura bitters",
+   "1/4 oz absinthe",
+   "2 lemon peel twists",
+   "2 cups ice"
+  ],
+  "ingredientKeys": [
+   "rye-whiskey",
+   "simple-syrup",
+   "peychauds-bitters",
+   "angostura-bitters",
+   "absinthe",
+   "lemon-peel",
+   "ice"
+  ],
+  "specialty": [
+   "rye-whiskey",
+   "simple-syrup",
+   "peychauds-bitters",
+   "angostura-bitters",
+   "absinthe",
+   "lemon-peel"
+  ],
+  "steps": [
+   "Chill two rocks glasses in the freezer while you work.",
+   "Pour the absinthe into one chilled glass, swirl it to coat the entire interior, then discard the excess - or pour it into the second glass and repeat. The absinthe is a rinse, not an ingredient; the aroma is the point.",
+   "Stir the rye, simple syrup and both bitters with ice in a mixing glass for 30 seconds. Stir, never shake - shaking aerates and clouds a spirit-forward drink.",
+   "Strain into the absinthe-rinsed glasses with no ice. A Sazerac is served neat.",
+   "Twist a lemon peel over each glass to express the oils across the surface, then rub it around the rim.",
+   "Discard the peel rather than dropping it in, which is the traditional service. Drink cold."
+  ],
+  "diet": {
+   "vegetarian": true,
+   "vegan": true,
+   "pescatarian": true,
+   "glutenFree": false,
+   "glutenFreeAdaptable": false,
+   "dairyFree": true,
+   "nutFree": true,
+   "eggFree": true
+  },
+  "allergens": [
+   "gluten"
+  ],
+  "gmo": {
+   "risk": "moderate",
+   "sources": [
+    "sugar-beet"
+   ]
+  },
+  "nutrition": {
+   "calories": 186,
+   "proteinG": 0,
+   "carbsG": 7,
+   "fiberG": 0,
+   "sugarG": 7,
+   "fatG": 0,
+   "satFatG": 0,
+   "sodiumMg": 5,
+   "cholesterolMg": 0
+  },
+  "tags": [
+   "drink",
+   "cocktail",
+   "southern",
+   "no-cook",
+   "quick",
+   "adults-only",
+   "classic",
+   "technique",
+   "party"
+  ],
+  "image": {
+   "file": "el-sazerac.jpg",
+   "source": "commons-file",
+   "match": "dish",
+   "commonsFile": "Sazerac.jpg"
+  }
+ }
+]

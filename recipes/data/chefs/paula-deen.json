@@ -1,0 +1,2849 @@
+[
+ {
+  "id": "ch-pd-001",
+  "slug": "pd-southern-fried-chicken",
+  "title": "Southern Fried Chicken",
+  "genre": "american",
+  "subgenre": "southern",
+  "chef": {
+   "name": "Paula Deen",
+   "slug": "paula-deen"
+  },
+  "description": "Chicken soaked in seasoned egg wash and fried in a cast-iron skillet.",
+  "difficulty": "intermediate",
+  "easeScore": 5,
+  "spiceScore": 3,
+  "popularity": 10,
+  "pantryScore": 8,
+  "servings": 6,
+  "prepMin": 25,
+  "cookMin": 155,
+  "totalMin": 180,
+  "equipment": [
+   "stovetop"
+  ],
+  "ingredients": [
+   "4 lb chicken pieces, bone-in",
+   "3 eggs",
+   "1/3 cup water",
+   "1 tbsp hot sauce",
+   "2 cups all-purpose flour",
+   "1 tbsp seasoned salt",
+   "2 tsp black pepper",
+   "1 tsp garlic powder",
+   "1 tsp paprika",
+   "1/2 tsp cayenne pepper",
+   "6 cups peanut oil, for frying",
+   "1 tsp salt, for finishing"
+  ],
+  "ingredientKeys": [
+   "chicken-pieces",
+   "egg",
+   "water",
+   "hot-sauce",
+   "flour",
+   "seasoned-salt",
+   "black-pepper",
+   "garlic-powder",
+   "paprika",
+   "cayenne",
+   "peanut-oil",
+   "salt"
+  ],
+  "specialty": [
+   "chicken-pieces",
+   "seasoned-salt",
+   "peanut-oil"
+  ],
+  "steps": [
+   "Beat the eggs with the water and hot sauce and soak the chicken in it for at least 2 hours in the refrigerator.",
+   "Mix the flour with the seasoned salt, pepper, garlic powder, paprika and cayenne in a paper bag or large bowl.",
+   "Lift each piece from the egg wash, let it drip briefly, then shake it in the seasoned flour until thoroughly coated. Rest on a rack 15 minutes so the coating hydrates and grips.",
+   "Heat 1 1/2 inches of oil in a heavy cast-iron skillet to 350F. A thermometer is not optional here - this is the step that separates crisp chicken from greasy chicken.",
+   "Fry in batches of 3 or 4, never crowding, 14-18 minutes total, turning once. Keep the burner adjusted so the oil holds 300-325F.",
+   "Breasts come out at 160F, thighs and drumsticks at 175F. Drain on a rack, salt immediately, and let the oil recover between batches."
+  ],
+  "diet": {
+   "vegetarian": false,
+   "vegan": false,
+   "pescatarian": false,
+   "glutenFree": false,
+   "glutenFreeAdaptable": false,
+   "dairyFree": true,
+   "nutFree": false,
+   "eggFree": false
+  },
+  "allergens": [
+   "gluten",
+   "egg",
+   "peanut"
+  ],
+  "gmo": {
+   "risk": "high",
+   "sources": [
+    "grain-fed-meat",
+    "seed-oil"
+   ]
+  },
+  "nutrition": {
+   "calories": 712,
+   "proteinG": 52,
+   "carbsG": 32,
+   "fiberG": 2,
+   "sugarG": 2,
+   "fatG": 42,
+   "satFatG": 9,
+   "sodiumMg": 1480,
+   "cholesterolMg": 228
+  },
+  "tags": [
+   "southern",
+   "comfort",
+   "classic",
+   "party",
+   "weekend",
+   "high-protein",
+   "family",
+   "technique"
+  ],
+  "image": {
+   "file": "pd-southern-fried-chicken.jpg",
+   "source": "commons-file",
+   "match": "dish",
+   "commonsFile": "Southern Fried Chicken (17571213826).jpg"
+  }
+ },
+ {
+  "id": "ch-pd-002",
+  "slug": "pd-hoecakes",
+  "title": "Hoecakes",
+  "genre": "american",
+  "subgenre": "southern",
+  "chef": {
+   "name": "Paula Deen",
+   "slug": "paula-deen"
+  },
+  "description": "Thin cornmeal griddle cakes fried in butter and oil, served with syrup.",
+  "difficulty": "beginner",
+  "easeScore": 9,
+  "spiceScore": 0,
+  "popularity": 7,
+  "pantryScore": 9,
+  "servings": 6,
+  "prepMin": 10,
+  "cookMin": 20,
+  "totalMin": 30,
+  "equipment": [
+   "stovetop"
+  ],
+  "ingredients": [
+   "1 cup self-rising cornmeal",
+   "1/2 cup self-rising flour",
+   "2 tsp sugar",
+   "3/4 cup buttermilk",
+   "1/3 cup water",
+   "1 egg",
+   "3 tbsp bacon grease, melted",
+   "4 tbsp butter",
+   "3 tbsp vegetable oil",
+   "1/2 cup maple syrup"
+  ],
+  "ingredientKeys": [
+   "self-rising-cornmeal",
+   "self-rising-flour",
+   "sugar",
+   "buttermilk",
+   "water",
+   "egg",
+   "bacon-fat",
+   "butter",
+   "vegetable-oil",
+   "maple-syrup"
+  ],
+  "specialty": [
+   "self-rising-cornmeal",
+   "self-rising-flour",
+   "buttermilk",
+   "bacon-fat"
+  ],
+  "steps": [
+   "Whisk the cornmeal, flour and sugar together, then stir in the buttermilk, water, egg and melted bacon grease to a thin batter. It should pour, not drop.",
+   "Let the batter rest 5 minutes so the cornmeal hydrates - otherwise the finished cakes are gritty.",
+   "Heat equal parts butter and oil in a cast-iron skillet over medium heat. The butter is for flavor and the oil keeps it from burning, which is why both go in.",
+   "Pour 1/4 cup of batter per cake, leaving room to spread. They should sizzle on contact.",
+   "Cook 2-3 minutes until the edges are set and lacy and bubbles break the surface, then flip and cook 2 minutes more.",
+   "Add fresh butter and oil between batches and serve hot with syrup."
+  ],
+  "diet": {
+   "vegetarian": false,
+   "vegan": false,
+   "pescatarian": false,
+   "glutenFree": false,
+   "glutenFreeAdaptable": false,
+   "dairyFree": false,
+   "nutFree": true,
+   "eggFree": false
+  },
+  "allergens": [
+   "gluten",
+   "dairy",
+   "egg"
+  ],
+  "gmo": {
+   "risk": "high",
+   "sources": [
+    "corn",
+    "seed-oil",
+    "grain-fed-meat",
+    "grain-fed-dairy"
+   ]
+  },
+  "nutrition": {
+   "calories": 386,
+   "proteinG": 7,
+   "carbsG": 52,
+   "fiberG": 2,
+   "sugarG": 22,
+   "fatG": 16,
+   "satFatG": 7,
+   "sodiumMg": 580,
+   "cholesterolMg": 58
+  },
+  "tags": [
+   "southern",
+   "breakfast",
+   "quick",
+   "budget",
+   "family",
+   "classic",
+   "easy"
+  ],
+  "image": {
+   "file": "hoecakes.jpg",
+   "source": "wikipedia-lead",
+   "match": "representative",
+   "wikipedia": "Hoecake"
+  }
+ },
+ {
+  "id": "ch-pd-003",
+  "slug": "pd-gooey-butter-cake",
+  "title": "Gooey Butter Cake",
+  "genre": "american",
+  "subgenre": "desserts",
+  "chef": {
+   "name": "Paula Deen",
+   "slug": "paula-deen"
+  },
+  "description": "A cake-mix base under a cream cheese layer that stays deliberately underbaked.",
+  "difficulty": "beginner",
+  "easeScore": 10,
+  "spiceScore": 0,
+  "popularity": 8,
+  "pantryScore": 8,
+  "servings": 16,
+  "prepMin": 15,
+  "cookMin": 45,
+  "totalMin": 60,
+  "equipment": [
+   "oven"
+  ],
+  "ingredients": [
+   "1 box (15 oz) yellow cake mix",
+   "1/2 cup butter, melted",
+   "1 egg",
+   "8 oz cream cheese, softened",
+   "2 eggs, for the topping",
+   "1 tsp vanilla extract",
+   "1/2 cup butter, melted, for the topping",
+   "4 cups powdered sugar",
+   "1/2 tsp salt",
+   "2 tbsp powdered sugar, for dusting"
+  ],
+  "ingredientKeys": [
+   "cake-mix",
+   "butter",
+   "egg",
+   "cream-cheese",
+   "egg",
+   "vanilla-extract",
+   "butter",
+   "powdered-sugar",
+   "salt",
+   "powdered-sugar"
+  ],
+  "specialty": [
+   "cake-mix",
+   "cream-cheese"
+  ],
+  "steps": [
+   "Heat the oven to 350F and butter a 9x13 pan.",
+   "Mix the cake mix, the 1/2 cup melted butter and one egg into a stiff dough and press it evenly into the pan to form the base.",
+   "Beat the cream cheese until completely smooth before adding anything else. Cold or lumpy cream cheese leaves streaks that never disappear.",
+   "Add the 2 eggs, vanilla, the second 1/2 cup melted butter, the powdered sugar and salt and beat 2 minutes until pourable.",
+   "Pour the topping over the base and spread it level.",
+   "Bake 40-45 minutes. The center should still be visibly loose and wobbly when you pull it out - this cake is meant to be underbaked, and baking until a toothpick comes out clean gives you a dry, ordinary sheet cake. Cool completely, then dust with powdered sugar."
+  ],
+  "diet": {
+   "vegetarian": true,
+   "vegan": false,
+   "pescatarian": true,
+   "glutenFree": false,
+   "glutenFreeAdaptable": false,
+   "dairyFree": false,
+   "nutFree": true,
+   "eggFree": false
+  },
+  "allergens": [
+   "gluten",
+   "dairy",
+   "egg",
+   "soy"
+  ],
+  "gmo": {
+   "risk": "high",
+   "sources": [
+    "processed-bread",
+    "sugar-beet",
+    "soy",
+    "grain-fed-dairy",
+    "seed-oil"
+   ]
+  },
+  "nutrition": {
+   "calories": 512,
+   "proteinG": 4,
+   "carbsG": 68,
+   "fiberG": 0,
+   "sugarG": 56,
+   "fatG": 26,
+   "satFatG": 15,
+   "sodiumMg": 380,
+   "cholesterolMg": 82
+  },
+  "tags": [
+   "dessert",
+   "southern",
+   "easy",
+   "party",
+   "potluck",
+   "crowd-pleaser",
+   "vegetarian",
+   "baking"
+  ],
+  "image": {
+   "file": "pd-gooey-butter-cake.jpg",
+   "source": "commons-file",
+   "match": "dish",
+   "commonsFile": "182365 Gooey Butter Cake.jpg"
+  }
+ },
+ {
+  "id": "ch-pd-004",
+  "slug": "pd-banana-pudding",
+  "title": "Banana Pudding",
+  "genre": "american",
+  "subgenre": "desserts",
+  "chef": {
+   "name": "Paula Deen",
+   "slug": "paula-deen"
+  },
+  "description": "Layers of vanilla wafers, bananas and cream, chilled until the cookies soften.",
+  "difficulty": "beginner",
+  "easeScore": 10,
+  "spiceScore": 0,
+  "popularity": 9,
+  "pantryScore": 8,
+  "servings": 12,
+  "prepMin": 25,
+  "cookMin": 250,
+  "totalMin": 275,
+  "equipment": [
+   "no-cook"
+  ],
+  "ingredients": [
+   "2 boxes (11 oz each) vanilla wafers",
+   "6 ripe bananas, sliced",
+   "8 oz cream cheese, softened",
+   "1 can (14 oz) sweetened condensed milk",
+   "2 boxes (3.4 oz each) instant vanilla pudding mix",
+   "3 cups whole milk",
+   "2 cups heavy cream",
+   "1/3 cup powdered sugar",
+   "1 tbsp vanilla extract",
+   "1/2 tsp salt"
+  ],
+  "ingredientKeys": [
+   "vanilla-wafers",
+   "banana",
+   "cream-cheese",
+   "condensed-milk",
+   "vanilla-pudding-mix",
+   "whole-milk",
+   "heavy-cream",
+   "powdered-sugar",
+   "vanilla-extract",
+   "salt"
+  ],
+  "specialty": [
+   "vanilla-wafers",
+   "cream-cheese",
+   "condensed-milk",
+   "vanilla-pudding-mix"
+  ],
+  "steps": [
+   "Whisk the pudding mix with the 3 cups whole milk and let it set 5 minutes.",
+   "Beat the cream cheese smooth, then beat in the condensed milk, vanilla and salt. Starting with smooth cream cheese is the only way to avoid lumps in the finished pudding.",
+   "Whip the heavy cream with the powdered sugar to stiff peaks.",
+   "Fold the set pudding into the cream cheese mixture, then fold in two thirds of the whipped cream.",
+   "Layer in a large glass dish: wafers, banana slices, pudding mixture. Repeat three times, overlapping the wafers so there are no gaps.",
+   "Top with the remaining whipped cream and chill at least 4 hours. That time is what softens the wafers into cake-like layers - served immediately it is just cookies and pudding."
+  ],
+  "diet": {
+   "vegetarian": true,
+   "vegan": false,
+   "pescatarian": true,
+   "glutenFree": false,
+   "glutenFreeAdaptable": false,
+   "dairyFree": false,
+   "nutFree": true,
+   "eggFree": true
+  },
+  "allergens": [
+   "gluten",
+   "dairy",
+   "soy"
+  ],
+  "gmo": {
+   "risk": "high",
+   "sources": [
+    "processed-bread",
+    "sugar-beet",
+    "corn-syrup",
+    "soy",
+    "grain-fed-dairy"
+   ]
+  },
+  "nutrition": {
+   "calories": 682,
+   "proteinG": 10,
+   "carbsG": 92,
+   "fiberG": 2,
+   "sugarG": 62,
+   "fatG": 32,
+   "satFatG": 19,
+   "sodiumMg": 580,
+   "cholesterolMg": 82
+  },
+  "tags": [
+   "dessert",
+   "southern",
+   "no-bake",
+   "make-ahead",
+   "potluck",
+   "party",
+   "crowd-pleaser",
+   "family",
+   "classic"
+  ],
+  "image": {
+   "file": "banana-pudding.jpg",
+   "source": "wikipedia-lead",
+   "match": "representative",
+   "wikipedia": "Banana pudding"
+  }
+ },
+ {
+  "id": "ch-pd-005",
+  "slug": "pd-squash-casserole",
+  "title": "Squash Casserole",
+  "genre": "american",
+  "subgenre": "sides",
+  "chef": {
+   "name": "Paula Deen",
+   "slug": "paula-deen"
+  },
+  "description": "Yellow squash baked with cheddar under a buttery cracker crust.",
+  "difficulty": "beginner",
+  "easeScore": 9,
+  "spiceScore": 1,
+  "popularity": 8,
+  "pantryScore": 8,
+  "servings": 8,
+  "prepMin": 20,
+  "cookMin": 45,
+  "totalMin": 65,
+  "equipment": [
+   "stovetop",
+   "oven"
+  ],
+  "ingredients": [
+   "3 lb yellow squash, sliced",
+   "1 yellow onion, diced",
+   "4 tbsp butter",
+   "1 cup sour cream",
+   "2 eggs",
+   "2 cups shredded sharp cheddar",
+   "2 tsp salt",
+   "1 tsp black pepper",
+   "1/2 tsp cayenne pepper",
+   "2 cups crushed buttery crackers",
+   "4 tbsp butter, melted"
+  ],
+  "ingredientKeys": [
+   "yellow-squash",
+   "yellow-onion",
+   "butter",
+   "sour-cream",
+   "egg",
+   "cheddar",
+   "salt",
+   "black-pepper",
+   "cayenne",
+   "buttery-crackers",
+   "butter"
+  ],
+  "specialty": [
+   "yellow-squash",
+   "buttery-crackers"
+  ],
+  "steps": [
+   "Cook the sliced squash and onion in the 4 tbsp butter over medium heat 15 minutes until completely tender.",
+   "Drain them in a colander and press gently to release the liquid. Then let them sit 10 minutes. Summer squash is mostly water, and this is the step that decides whether you get a casserole or a soup.",
+   "Mash the squash coarsely, then stir in the sour cream, eggs, 1 1/2 cups of the cheddar, the salt, pepper and cayenne.",
+   "Spread in a buttered 9x13 dish and scatter the remaining cheddar over.",
+   "Toss the crushed crackers with the melted butter and spread them over the top.",
+   "Bake at 350F for 35-40 minutes until set in the center and deeply golden on top. Rest 10 minutes before serving."
+  ],
+  "diet": {
+   "vegetarian": true,
+   "vegan": false,
+   "pescatarian": true,
+   "glutenFree": false,
+   "glutenFreeAdaptable": false,
+   "dairyFree": false,
+   "nutFree": true,
+   "eggFree": false
+  },
+  "allergens": [
+   "gluten",
+   "dairy",
+   "egg"
+  ],
+  "gmo": {
+   "risk": "moderate",
+   "sources": [
+    "grain-fed-dairy",
+    "processed-bread",
+    "seed-oil"
+   ]
+  },
+  "nutrition": {
+   "calories": 448,
+   "proteinG": 14,
+   "carbsG": 28,
+   "fiberG": 3,
+   "sugarG": 8,
+   "fatG": 32,
+   "satFatG": 18,
+   "sodiumMg": 980,
+   "cholesterolMg": 112
+  },
+  "tags": [
+   "side",
+   "southern",
+   "vegetarian",
+   "potluck",
+   "holiday",
+   "comfort",
+   "family",
+   "summer",
+   "make-ahead"
+  ],
+  "image": {
+   "file": "squash-casserole.jpg",
+   "source": "wikipedia-lead",
+   "match": "representative",
+   "wikipedia": "Casserole"
+  }
+ },
+ {
+  "id": "ch-pd-006",
+  "slug": "pd-southern-green-beans",
+  "title": "Southern Green Beans with Bacon",
+  "genre": "american",
+  "subgenre": "sides",
+  "chef": {
+   "name": "Paula Deen",
+   "slug": "paula-deen"
+  },
+  "description": "Green beans simmered slowly with bacon until completely soft.",
+  "difficulty": "beginner",
+  "easeScore": 10,
+  "spiceScore": 2,
+  "popularity": 8,
+  "pantryScore": 9,
+  "servings": 8,
+  "prepMin": 15,
+  "cookMin": 60,
+  "totalMin": 75,
+  "equipment": [
+   "stovetop"
+  ],
+  "ingredients": [
+   "2 lb green beans, trimmed",
+   "8 oz bacon, diced",
+   "1 yellow onion, diced",
+   "4 cloves garlic, minced",
+   "3 cups chicken broth",
+   "1 tbsp sugar",
+   "1 tbsp apple cider vinegar",
+   "2 tsp salt",
+   "1 tsp black pepper",
+   "1/2 tsp red pepper flakes",
+   "1 lb small red potatoes, halved"
+  ],
+  "ingredientKeys": [
+   "green-beans",
+   "bacon",
+   "yellow-onion",
+   "garlic",
+   "chicken-broth",
+   "sugar",
+   "apple-cider-vinegar",
+   "salt",
+   "black-pepper",
+   "red-pepper-flakes",
+   "red-potato"
+  ],
+  "specialty": [],
+  "steps": [
+   "Render the bacon in a large pot until the fat has melted out and the pieces are browning, about 8 minutes.",
+   "Add the onion and cook 6 minutes, then the garlic for 1 minute.",
+   "Add the green beans, broth, sugar, vinegar, salt, pepper and pepper flakes.",
+   "Simmer covered 30 minutes, then add the potatoes and cook 25-30 minutes more.",
+   "Do not aim for bright green and snappy. Southern green beans are meant to be olive-colored and completely tender, which takes the better part of an hour.",
+   "Uncover for the last 10 minutes to reduce the liquid, then taste for salt and vinegar. Serve with some of the pot liquor spooned over."
+  ],
+  "diet": {
+   "vegetarian": false,
+   "vegan": false,
+   "pescatarian": false,
+   "glutenFree": true,
+   "glutenFreeAdaptable": false,
+   "dairyFree": true,
+   "nutFree": true,
+   "eggFree": true
+  },
+  "allergens": [],
+  "gmo": {
+   "risk": "moderate",
+   "sources": [
+    "grain-fed-meat",
+    "sugar-beet"
+   ]
+  },
+  "nutrition": {
+   "calories": 286,
+   "proteinG": 11,
+   "carbsG": 28,
+   "fiberG": 6,
+   "sugarG": 9,
+   "fatG": 15,
+   "satFatG": 5,
+   "sodiumMg": 1180,
+   "cholesterolMg": 28
+  },
+  "tags": [
+   "side",
+   "southern",
+   "gluten-free",
+   "dairy-free",
+   "holiday",
+   "family",
+   "budget",
+   "comfort",
+   "make-ahead"
+  ],
+  "image": {
+   "file": "green-beans.jpg",
+   "source": "wikipedia-lead",
+   "match": "representative",
+   "wikipedia": "Green bean"
+  }
+ },
+ {
+  "id": "ch-pd-007",
+  "slug": "pd-sweet-potato-casserole",
+  "title": "Sweet Potato Casserole",
+  "genre": "american",
+  "subgenre": "sides",
+  "chef": {
+   "name": "Paula Deen",
+   "slug": "paula-deen"
+  },
+  "description": "Mashed sweet potatoes under a brown sugar pecan streusel.",
+  "difficulty": "beginner",
+  "easeScore": 9,
+  "spiceScore": 0,
+  "popularity": 9,
+  "pantryScore": 8,
+  "servings": 10,
+  "prepMin": 20,
+  "cookMin": 60,
+  "totalMin": 80,
+  "equipment": [
+   "stovetop",
+   "oven"
+  ],
+  "ingredients": [
+   "4 lb sweet potatoes, peeled and cubed",
+   "1/2 cup butter, melted",
+   "1/2 cup packed brown sugar",
+   "1/2 cup whole milk",
+   "2 eggs",
+   "1 tbsp vanilla extract",
+   "1 tsp ground cinnamon",
+   "1/2 tsp ground nutmeg",
+   "1 tsp salt",
+   "1 cup packed brown sugar, for the topping",
+   "1/3 cup all-purpose flour",
+   "1/3 cup butter, softened",
+   "1 1/2 cups chopped pecans"
+  ],
+  "ingredientKeys": [
+   "sweet-potato",
+   "butter",
+   "brown-sugar",
+   "whole-milk",
+   "egg",
+   "vanilla-extract",
+   "cinnamon",
+   "nutmeg",
+   "salt",
+   "brown-sugar",
+   "flour",
+   "butter",
+   "pecans"
+  ],
+  "specialty": [
+   "sweet-potato",
+   "pecans"
+  ],
+  "steps": [
+   "Boil the sweet potatoes until completely tender, 15-20 minutes, then drain well and let them steam dry for a minute.",
+   "Mash them with the melted butter, 1/2 cup brown sugar, milk, eggs, vanilla, cinnamon, nutmeg and salt until smooth.",
+   "Do not use a blender or food processor. Sweet potatoes turn gluey when overworked the same way regular potatoes do.",
+   "Spread in a buttered 9x13 dish.",
+   "Rub the 1 cup brown sugar, flour and softened butter together with your fingertips until crumbly, then stir in the pecans and scatter it over the top.",
+   "Bake at 350F for 50-55 minutes until the topping is set and deeply browned. Rest 10 minutes before serving."
+  ],
+  "diet": {
+   "vegetarian": true,
+   "vegan": false,
+   "pescatarian": true,
+   "glutenFree": false,
+   "glutenFreeAdaptable": true,
+   "dairyFree": false,
+   "nutFree": false,
+   "eggFree": false
+  },
+  "allergens": [
+   "gluten",
+   "dairy",
+   "egg",
+   "tree-nut"
+  ],
+  "gmo": {
+   "risk": "moderate",
+   "sources": [
+    "sugar-beet",
+    "grain-fed-dairy"
+   ]
+  },
+  "nutrition": {
+   "calories": 586,
+   "proteinG": 7,
+   "carbsG": 82,
+   "fiberG": 6,
+   "sugarG": 58,
+   "fatG": 28,
+   "satFatG": 12,
+   "sodiumMg": 380,
+   "cholesterolMg": 82
+  },
+  "tags": [
+   "side",
+   "southern",
+   "thanksgiving",
+   "holiday",
+   "vegetarian",
+   "potluck",
+   "family",
+   "crowd-pleaser",
+   "make-ahead"
+  ],
+  "image": {
+   "file": "sweet-potato-casserole.jpg",
+   "source": "wikipedia-lead",
+   "match": "representative",
+   "wikipedia": "Sweet potato casserole"
+  }
+ },
+ {
+  "id": "ch-pd-008",
+  "slug": "pd-chess-pie",
+  "title": "Chess Pie",
+  "genre": "american",
+  "subgenre": "desserts",
+  "chef": {
+   "name": "Paula Deen",
+   "slug": "paula-deen"
+  },
+  "description": "A simple Southern custard pie thickened with cornmeal.",
+  "difficulty": "beginner",
+  "easeScore": 9,
+  "spiceScore": 0,
+  "popularity": 7,
+  "pantryScore": 9,
+  "servings": 8,
+  "prepMin": 15,
+  "cookMin": 60,
+  "totalMin": 75,
+  "equipment": [
+   "oven"
+  ],
+  "ingredients": [
+   "1 refrigerated pie crust",
+   "2 cups sugar",
+   "2 tbsp yellow cornmeal",
+   "1 tbsp all-purpose flour",
+   "1/2 tsp salt",
+   "4 eggs",
+   "1/2 cup butter, melted",
+   "1/4 cup whole milk",
+   "1 tbsp white vinegar",
+   "1 tbsp vanilla extract"
+  ],
+  "ingredientKeys": [
+   "pie-crust",
+   "sugar",
+   "cornmeal",
+   "flour",
+   "salt",
+   "egg",
+   "butter",
+   "whole-milk",
+   "white-vinegar",
+   "vanilla-extract"
+  ],
+  "specialty": [
+   "pie-crust",
+   "cornmeal"
+  ],
+  "steps": [
+   "Heat the oven to 350F and fit the crust into a 9-inch pie plate, crimping the edge.",
+   "Whisk the sugar, cornmeal, flour and salt together while dry. The cornmeal is the traditional thickener and gives chess pie its slightly gritty, chewy top layer.",
+   "Whisk in the eggs, melted butter, milk, vinegar and vanilla until smooth. Do not beat in air - it makes the custard puff and crack.",
+   "The vinegar is there to cut the sweetness. This is a very sweet pie and the acid keeps it from being cloying.",
+   "Pour into the shell and bake 50-60 minutes, until the edges are set and the center has just a slight wobble.",
+   "Cool completely, at least 3 hours. The custard sets as it cools, and a warm chess pie will not slice."
+  ],
+  "diet": {
+   "vegetarian": true,
+   "vegan": false,
+   "pescatarian": true,
+   "glutenFree": false,
+   "glutenFreeAdaptable": false,
+   "dairyFree": false,
+   "nutFree": true,
+   "eggFree": false
+  },
+  "allergens": [
+   "gluten",
+   "dairy",
+   "egg"
+  ],
+  "gmo": {
+   "risk": "high",
+   "sources": [
+    "corn",
+    "sugar-beet",
+    "processed-bread",
+    "grain-fed-dairy",
+    "seed-oil"
+   ]
+  },
+  "nutrition": {
+   "calories": 512,
+   "proteinG": 6,
+   "carbsG": 72,
+   "fiberG": 1,
+   "sugarG": 58,
+   "fatG": 24,
+   "satFatG": 12,
+   "sodiumMg": 380,
+   "cholesterolMg": 138
+  },
+  "tags": [
+   "dessert",
+   "southern",
+   "baking",
+   "easy",
+   "classic",
+   "holiday",
+   "vegetarian",
+   "make-ahead",
+   "budget"
+  ],
+  "image": {
+   "file": "pd-chess-pie.jpg",
+   "source": "commons-file",
+   "match": "dish",
+   "commonsFile": "Baked chess pie.jpg"
+  }
+ },
+ {
+  "id": "ch-pd-009",
+  "slug": "pd-red-velvet-cake",
+  "title": "Red Velvet Cake",
+  "genre": "american",
+  "subgenre": "desserts",
+  "chef": {
+   "name": "Paula Deen",
+   "slug": "paula-deen"
+  },
+  "description": "Three cocoa-buttermilk layers with cream cheese frosting.",
+  "difficulty": "intermediate",
+  "easeScore": 6,
+  "spiceScore": 0,
+  "popularity": 9,
+  "pantryScore": 7,
+  "servings": 12,
+  "prepMin": 35,
+  "cookMin": 90,
+  "totalMin": 125,
+  "equipment": [
+   "oven"
+  ],
+  "ingredients": [
+   "2 1/2 cups all-purpose flour",
+   "1 1/2 cups sugar",
+   "1 tsp baking soda",
+   "1 tsp salt",
+   "1 tbsp cocoa powder",
+   "1 1/2 cups vegetable oil",
+   "1 cup buttermilk",
+   "2 eggs",
+   "2 tbsp red food coloring",
+   "1 tsp white vinegar",
+   "1 tsp vanilla extract",
+   "16 oz cream cheese, softened",
+   "1 cup butter, softened",
+   "4 cups powdered sugar",
+   "1 tbsp vanilla extract, for the frosting",
+   "1/2 tsp salt, for the frosting",
+   "1 cup chopped pecans"
+  ],
+  "ingredientKeys": [
+   "flour",
+   "sugar",
+   "baking-soda",
+   "salt",
+   "cocoa-powder",
+   "vegetable-oil",
+   "buttermilk",
+   "egg",
+   "red-food-coloring",
+   "white-vinegar",
+   "vanilla-extract",
+   "cream-cheese",
+   "butter",
+   "powdered-sugar",
+   "vanilla-extract",
+   "salt",
+   "pecans"
+  ],
+  "specialty": [
+   "cocoa-powder",
+   "buttermilk",
+   "red-food-coloring",
+   "cream-cheese",
+   "pecans"
+  ],
+  "steps": [
+   "Heat the oven to 350F and line three 9-inch round pans. Sift the flour, sugar, baking soda, salt and cocoa together.",
+   "Whisk the oil, buttermilk, eggs, food coloring, vinegar and vanilla in another bowl.",
+   "Combine the two and mix just until smooth. The vinegar and buttermilk react with the baking soda for lift, and together with the small amount of cocoa they give the cake its characteristic tang.",
+   "Divide between the pans and bake 25-30 minutes until a toothpick comes out clean.",
+   "Cool in the pans 10 minutes, then turn out onto racks and cool completely. Frosting a warm cake makes it slide apart.",
+   "Beat the cream cheese and butter smooth, add the powdered sugar, vanilla and salt, and beat 3 minutes. Stack the layers with frosting between, coat the top and sides, and press the pecans around the base."
+  ],
+  "diet": {
+   "vegetarian": true,
+   "vegan": false,
+   "pescatarian": true,
+   "glutenFree": false,
+   "glutenFreeAdaptable": false,
+   "dairyFree": false,
+   "nutFree": false,
+   "eggFree": false
+  },
+  "allergens": [
+   "gluten",
+   "dairy",
+   "egg",
+   "tree-nut"
+  ],
+  "gmo": {
+   "risk": "high",
+   "sources": [
+    "seed-oil",
+    "sugar-beet",
+    "grain-fed-dairy"
+   ]
+  },
+  "nutrition": {
+   "calories": 882,
+   "proteinG": 8,
+   "carbsG": 92,
+   "fiberG": 2,
+   "sugarG": 74,
+   "fatG": 56,
+   "satFatG": 19,
+   "sodiumMg": 580,
+   "cholesterolMg": 112
+  },
+  "tags": [
+   "dessert",
+   "southern",
+   "baking",
+   "party",
+   "birthday",
+   "special-occasion",
+   "crowd-pleaser",
+   "classic"
+  ],
+  "image": {
+   "file": "red-velvet-cake.jpg",
+   "source": "wikipedia-lead",
+   "match": "representative",
+   "wikipedia": "Red velvet cake"
+  }
+ },
+ {
+  "id": "ch-pd-010",
+  "slug": "pd-low-country-boil",
+  "title": "Low Country Boil",
+  "genre": "american",
+  "subgenre": "southern",
+  "chef": {
+   "name": "Paula Deen",
+   "slug": "paula-deen"
+  },
+  "description": "Shrimp, sausage, corn and potatoes boiled together and poured out on the table.",
+  "difficulty": "intermediate",
+  "easeScore": 7,
+  "spiceScore": 5,
+  "popularity": 8,
+  "pantryScore": 7,
+  "servings": 8,
+  "prepMin": 15,
+  "cookMin": 40,
+  "totalMin": 55,
+  "equipment": [
+   "stovetop"
+  ],
+  "ingredients": [
+   "3 lb large shrimp, shell on",
+   "2 lb smoked sausage, cut in thick coins",
+   "3 lb small red potatoes",
+   "8 ears corn, cut in thirds",
+   "2 yellow onions, quartered",
+   "6 quarts water",
+   "1/2 cup Old Bay seasoning",
+   "2 tbsp salt",
+   "4 lemons, halved",
+   "1 head garlic, halved",
+   "1/2 cup butter, melted",
+   "1 cup cocktail sauce",
+   "1/3 cup chopped parsley"
+  ],
+  "ingredientKeys": [
+   "shrimp",
+   "smoked-sausage",
+   "red-potato",
+   "corn",
+   "yellow-onion",
+   "water",
+   "old-bay",
+   "salt",
+   "lemon",
+   "garlic",
+   "butter",
+   "cocktail-sauce",
+   "parsley"
+  ],
+  "specialty": [
+   "shrimp",
+   "smoked-sausage",
+   "old-bay",
+   "cocktail-sauce"
+  ],
+  "steps": [
+   "Bring the water to a rolling boil in a very large pot with the Old Bay, salt, lemon halves and garlic. Taste it - the water should be aggressively seasoned, because that is all the seasoning the food gets.",
+   "Add the potatoes and onions and boil 15 minutes.",
+   "Add the sausage and corn and boil 10 minutes more.",
+   "Add the shrimp last and cook 3 minutes only, until they turn pink and curl. Everything goes in by cooking time, longest first - that staggering is the whole technique.",
+   "Turn off the heat and let it all sit in the hot water 2 minutes, then drain immediately. Leaving it to sit longer overcooks the shrimp.",
+   "Pour it out onto a newspaper-covered table or a big platter and serve with melted butter, cocktail sauce and parsley."
+  ],
+  "diet": {
+   "vegetarian": false,
+   "vegan": false,
+   "pescatarian": false,
+   "glutenFree": true,
+   "glutenFreeAdaptable": false,
+   "dairyFree": false,
+   "nutFree": true,
+   "eggFree": true
+  },
+  "allergens": [
+   "dairy",
+   "shellfish"
+  ],
+  "gmo": {
+   "risk": "high",
+   "sources": [
+    "grain-fed-meat",
+    "corn",
+    "corn-syrup",
+    "grain-fed-dairy"
+   ]
+  },
+  "nutrition": {
+   "calories": 882,
+   "proteinG": 62,
+   "carbsG": 62,
+   "fiberG": 7,
+   "sugarG": 12,
+   "fatG": 42,
+   "satFatG": 18,
+   "sodiumMg": 2380,
+   "cholesterolMg": 398
+  },
+  "tags": [
+   "southern",
+   "party",
+   "seafood",
+   "one-pot",
+   "gluten-free",
+   "summer",
+   "crowd-pleaser",
+   "sharing",
+   "high-protein"
+  ],
+  "image": {
+   "file": "pd-low-country-boil.jpg",
+   "source": "commons-file",
+   "match": "dish",
+   "commonsFile": "Low country boil.jpg"
+  }
+ },
+ {
+  "id": "ch-pd-011",
+  "slug": "pd-hot-crab-dip",
+  "title": "Hot Crab Dip",
+  "genre": "american",
+  "subgenre": "appetizers",
+  "chef": {
+   "name": "Paula Deen",
+   "slug": "paula-deen"
+  },
+  "description": "Lump crab baked with cream cheese, Old Bay and sharp cheddar.",
+  "difficulty": "beginner",
+  "easeScore": 10,
+  "spiceScore": 4,
+  "popularity": 8,
+  "pantryScore": 6,
+  "servings": 10,
+  "prepMin": 15,
+  "cookMin": 30,
+  "totalMin": 45,
+  "equipment": [
+   "oven"
+  ],
+  "ingredients": [
+   "1 lb lump crab meat, picked over",
+   "16 oz cream cheese, softened",
+   "1/2 cup mayonnaise",
+   "1/2 cup sour cream",
+   "2 tbsp Old Bay seasoning",
+   "1 tbsp Worcestershire sauce",
+   "2 tbsp lemon juice",
+   "1 tsp hot sauce",
+   "4 scallions, sliced",
+   "2 cloves garlic, minced",
+   "2 cups shredded sharp cheddar",
+   "1/2 cup grated Parmesan",
+   "1/3 cup chopped parsley",
+   "1 baguette, sliced and toasted"
+  ],
+  "ingredientKeys": [
+   "crab-meat",
+   "cream-cheese",
+   "mayonnaise",
+   "sour-cream",
+   "old-bay",
+   "worcestershire",
+   "lemon-juice",
+   "hot-sauce",
+   "scallion",
+   "garlic",
+   "cheddar",
+   "parmesan",
+   "parsley",
+   "baguette"
+  ],
+  "specialty": [
+   "crab-meat",
+   "cream-cheese",
+   "old-bay",
+   "baguette"
+  ],
+  "steps": [
+   "Beat the softened cream cheese until completely smooth before adding anything else. Cold cream cheese leaves lumps that never melt out.",
+   "Mix in the mayonnaise, sour cream, Old Bay, Worcestershire, lemon juice, hot sauce, scallions and garlic.",
+   "Fold in 1 1/2 cups of the cheddar, then the crab - and fold it gently, just a few strokes. Stirring hard breaks up the lumps you paid for.",
+   "Spread in a baking dish and scatter the remaining cheddar and the Parmesan over.",
+   "Bake at 350F for 25-30 minutes until bubbling at the edges and browned on top.",
+   "Rest 5 minutes, finish with parsley, and serve hot with toasted baguette. It firms up as it cools, so keep it warm if you can."
+  ],
+  "diet": {
+   "vegetarian": false,
+   "vegan": false,
+   "pescatarian": true,
+   "glutenFree": false,
+   "glutenFreeAdaptable": true,
+   "dairyFree": false,
+   "nutFree": true,
+   "eggFree": false
+  },
+  "allergens": [
+   "gluten",
+   "dairy",
+   "egg",
+   "shellfish",
+   "fish"
+  ],
+  "gmo": {
+   "risk": "moderate",
+   "sources": [
+    "grain-fed-dairy",
+    "seed-oil",
+    "processed-bread"
+   ]
+  },
+  "nutrition": {
+   "calories": 512,
+   "proteinG": 24,
+   "carbsG": 22,
+   "fiberG": 1,
+   "sugarG": 5,
+   "fatG": 38,
+   "satFatG": 19,
+   "sodiumMg": 1480,
+   "cholesterolMg": 138
+  },
+  "tags": [
+   "appetizer",
+   "southern",
+   "party",
+   "holiday",
+   "seafood",
+   "make-ahead",
+   "easy",
+   "crowd-pleaser",
+   "sharing"
+  ],
+  "image": {
+   "file": "crab-dip.jpg",
+   "source": "wikipedia-lead",
+   "match": "representative",
+   "wikipedia": "Crab dip"
+  }
+ },
+ {
+  "id": "ch-pd-012",
+  "slug": "pd-smothered-chicken",
+  "title": "Smothered Chicken",
+  "genre": "american",
+  "subgenre": "southern",
+  "chef": {
+   "name": "Paula Deen",
+   "slug": "paula-deen"
+  },
+  "description": "Browned chicken braised under a thick onion gravy over rice.",
+  "difficulty": "beginner",
+  "easeScore": 9,
+  "spiceScore": 3,
+  "popularity": 8,
+  "pantryScore": 9,
+  "servings": 6,
+  "prepMin": 15,
+  "cookMin": 60,
+  "totalMin": 75,
+  "equipment": [
+   "stovetop"
+  ],
+  "ingredients": [
+   "8 bone-in chicken thighs",
+   "3/4 cup all-purpose flour",
+   "1 tbsp seasoned salt",
+   "2 tsp black pepper",
+   "1 tsp paprika",
+   "1/2 tsp cayenne pepper",
+   "1/3 cup vegetable oil",
+   "3 yellow onions, thinly sliced",
+   "6 cloves garlic, minced",
+   "4 cups chicken broth",
+   "1 tsp dried thyme",
+   "2 bay leaves",
+   "1/3 cup chopped parsley",
+   "4 cups cooked white rice"
+  ],
+  "ingredientKeys": [
+   "chicken-thighs",
+   "flour",
+   "seasoned-salt",
+   "black-pepper",
+   "paprika",
+   "cayenne",
+   "vegetable-oil",
+   "yellow-onion",
+   "garlic",
+   "chicken-broth",
+   "dried-thyme",
+   "bay-leaf",
+   "parsley",
+   "white-rice"
+  ],
+  "specialty": [
+   "seasoned-salt"
+  ],
+  "steps": [
+   "Mix the flour with the seasoned salt, pepper, paprika and cayenne. Dredge the chicken, reserving 1/4 cup of the seasoned flour.",
+   "Brown the chicken skin-side down in the oil 7 minutes, then 4 minutes on the other side. Set it aside - it is not cooked through.",
+   "Add the onions to the pan and cook 15 minutes until deeply browned and soft. Smothered means cooked under a great deal of onion gravy, so give these the full time.",
+   "Add the garlic, then sprinkle the reserved flour over and stir 2 minutes to cook out the raw taste.",
+   "Whisk in the broth gradually, then add the thyme and bay leaves.",
+   "Return the chicken, cover, and simmer very gently 35-40 minutes until the gravy is thick and the meat is falling off the bone. Discard the bay leaves and serve over rice with parsley."
+  ],
+  "diet": {
+   "vegetarian": false,
+   "vegan": false,
+   "pescatarian": false,
+   "glutenFree": false,
+   "glutenFreeAdaptable": false,
+   "dairyFree": true,
+   "nutFree": true,
+   "eggFree": true
+  },
+  "allergens": [
+   "gluten"
+  ],
+  "gmo": {
+   "risk": "moderate",
+   "sources": [
+    "grain-fed-meat",
+    "seed-oil"
+   ]
+  },
+  "nutrition": {
+   "calories": 712,
+   "proteinG": 48,
+   "carbsG": 62,
+   "fiberG": 4,
+   "sugarG": 9,
+   "fatG": 30,
+   "satFatG": 8,
+   "sodiumMg": 1680,
+   "cholesterolMg": 198
+  },
+  "tags": [
+   "southern",
+   "comfort",
+   "family",
+   "budget",
+   "dairy-free",
+   "one-pan",
+   "high-protein",
+   "weeknight",
+   "classic"
+  ],
+  "image": {
+   "file": "smothered-chicken.jpg",
+   "source": "wikipedia-lead",
+   "match": "representative",
+   "wikipedia": "Smothered"
+  }
+ },
+ {
+  "id": "ch-pd-013",
+  "slug": "pd-cornbread-dressing",
+  "title": "Cornbread Dressing",
+  "genre": "american",
+  "subgenre": "sides",
+  "chef": {
+   "name": "Paula Deen",
+   "slug": "paula-deen"
+  },
+  "description": "Crumbled cornbread baked with sage, celery and broth into a soft dressing.",
+  "difficulty": "beginner",
+  "easeScore": 8,
+  "spiceScore": 1,
+  "popularity": 9,
+  "pantryScore": 8,
+  "servings": 12,
+  "prepMin": 25,
+  "cookMin": 60,
+  "totalMin": 85,
+  "equipment": [
+   "oven",
+   "stovetop"
+  ],
+  "ingredients": [
+   "1 pan (9-inch) day-old cornbread, crumbled",
+   "6 slices white bread, torn and dried",
+   "1/2 cup butter",
+   "2 yellow onions, diced",
+   "5 celery stalks, diced",
+   "1 lb breakfast sausage",
+   "1 tbsp chopped fresh sage",
+   "2 tsp dried thyme",
+   "2 tsp salt",
+   "1 1/2 tsp black pepper",
+   "5 cups chicken broth",
+   "3 eggs, beaten",
+   "1/3 cup chopped parsley"
+  ],
+  "ingredientKeys": [
+   "cornbread",
+   "white-bread",
+   "butter",
+   "yellow-onion",
+   "celery",
+   "breakfast-sausage",
+   "fresh-sage",
+   "dried-thyme",
+   "salt",
+   "black-pepper",
+   "chicken-broth",
+   "egg",
+   "parsley"
+  ],
+  "specialty": [
+   "cornbread",
+   "breakfast-sausage",
+   "fresh-sage"
+  ],
+  "steps": [
+   "Use cornbread that is at least a day old and dry the white bread out too. Fresh bread turns to paste, and this dish is all about texture.",
+   "Brown the sausage, breaking it up, then lift it out leaving the fat.",
+   "Add the butter, onions and celery and cook 10 minutes until soft, then stir in the sage, thyme, salt and pepper.",
+   "Combine the crumbled cornbread, torn white bread, sausage and cooked vegetables in a very large bowl.",
+   "Whisk the broth with the beaten eggs and pour it over, tossing until evenly moistened. Southern cornbread dressing should be distinctly wetter than Northern stuffing - almost like a thick batter. The eggs set it so it holds together when spooned.",
+   "Spread in a buttered 9x13 dish and bake at 375F for 50-60 minutes until set and golden on top. Finish with parsley."
+  ],
+  "diet": {
+   "vegetarian": false,
+   "vegan": false,
+   "pescatarian": false,
+   "glutenFree": false,
+   "glutenFreeAdaptable": false,
+   "dairyFree": false,
+   "nutFree": true,
+   "eggFree": false
+  },
+  "allergens": [
+   "gluten",
+   "dairy",
+   "egg"
+  ],
+  "gmo": {
+   "risk": "high",
+   "sources": [
+    "corn",
+    "grain-fed-meat",
+    "processed-bread",
+    "grain-fed-dairy"
+   ]
+  },
+  "nutrition": {
+   "calories": 448,
+   "proteinG": 16,
+   "carbsG": 42,
+   "fiberG": 3,
+   "sugarG": 7,
+   "fatG": 24,
+   "satFatG": 11,
+   "sodiumMg": 1280,
+   "cholesterolMg": 98
+  },
+  "tags": [
+   "side",
+   "southern",
+   "thanksgiving",
+   "holiday",
+   "family",
+   "make-ahead",
+   "comfort",
+   "crowd-pleaser"
+  ],
+  "image": {
+   "file": "cornbread-dressing.jpg",
+   "source": "wikipedia-lead",
+   "match": "representative",
+   "wikipedia": "Stuffing"
+  }
+ },
+ {
+  "id": "ch-pd-014",
+  "slug": "pd-okra-and-tomatoes",
+  "title": "Okra and Tomatoes",
+  "genre": "american",
+  "subgenre": "sides",
+  "chef": {
+   "name": "Paula Deen",
+   "slug": "paula-deen"
+  },
+  "description": "Okra stewed with tomatoes, onion and bacon until thickened.",
+  "difficulty": "beginner",
+  "easeScore": 9,
+  "spiceScore": 3,
+  "popularity": 7,
+  "pantryScore": 7,
+  "servings": 6,
+  "prepMin": 15,
+  "cookMin": 35,
+  "totalMin": 50,
+  "equipment": [
+   "stovetop"
+  ],
+  "ingredients": [
+   "2 lb okra, sliced in rounds",
+   "6 oz bacon, diced",
+   "1 yellow onion, diced",
+   "1 green bell pepper, diced",
+   "4 cloves garlic, minced",
+   "1 can (28 oz) diced tomatoes",
+   "1 tbsp apple cider vinegar",
+   "1 tsp sugar",
+   "2 tsp salt",
+   "1 tsp black pepper",
+   "1/2 tsp cayenne pepper",
+   "1/3 cup chopped parsley"
+  ],
+  "ingredientKeys": [
+   "okra",
+   "bacon",
+   "yellow-onion",
+   "green-bell-pepper",
+   "garlic",
+   "diced-tomatoes",
+   "apple-cider-vinegar",
+   "sugar",
+   "salt",
+   "black-pepper",
+   "cayenne",
+   "parsley"
+  ],
+  "specialty": [
+   "okra"
+  ],
+  "steps": [
+   "Render the bacon in a large skillet until crisp, then lift it out, leaving the fat.",
+   "Add the okra to the hot fat and cook over medium-high heat 10 minutes without stirring much. Browning the okra first is what cuts the sliminess - the mucilage breaks down with dry heat and acid.",
+   "Add the onion and bell pepper and cook 6 minutes, then the garlic for 1 minute.",
+   "Add the tomatoes, vinegar, sugar, salt, pepper and cayenne. The acid from both the tomatoes and the vinegar does the rest of the work on the texture.",
+   "Simmer uncovered 15-18 minutes until the okra is tender and the liquid has thickened around it.",
+   "Return the bacon, taste for salt, and finish with parsley. Serve with cornbread or over rice."
+  ],
+  "diet": {
+   "vegetarian": false,
+   "vegan": false,
+   "pescatarian": false,
+   "glutenFree": true,
+   "glutenFreeAdaptable": false,
+   "dairyFree": true,
+   "nutFree": true,
+   "eggFree": true
+  },
+  "allergens": [],
+  "gmo": {
+   "risk": "moderate",
+   "sources": [
+    "grain-fed-meat",
+    "sugar-beet"
+   ]
+  },
+  "nutrition": {
+   "calories": 242,
+   "proteinG": 9,
+   "carbsG": 22,
+   "fiberG": 7,
+   "sugarG": 11,
+   "fatG": 14,
+   "satFatG": 5,
+   "sodiumMg": 1080,
+   "cholesterolMg": 21
+  },
+  "tags": [
+   "side",
+   "southern",
+   "gluten-free",
+   "dairy-free",
+   "summer",
+   "budget",
+   "healthy",
+   "high-fiber",
+   "technique"
+  ],
+  "image": {
+   "file": "okra-tomatoes.jpg",
+   "source": "wikipedia-lead",
+   "match": "representative",
+   "wikipedia": "Okra"
+  }
+ },
+ {
+  "id": "ch-pd-015",
+  "slug": "pd-sweet-tea",
+  "title": "Southern Sweet Tea",
+  "genre": "american",
+  "subgenre": "drinks",
+  "chef": {
+   "name": "Paula Deen",
+   "slug": "paula-deen"
+  },
+  "description": "Strong black tea sweetened while hot and served over a mountain of ice.",
+  "difficulty": "beginner",
+  "easeScore": 10,
+  "spiceScore": 0,
+  "popularity": 9,
+  "pantryScore": 10,
+  "servings": 8,
+  "prepMin": 5,
+  "cookMin": 135,
+  "totalMin": 140,
+  "equipment": [
+   "stovetop"
+  ],
+  "ingredients": [
+   "8 family-size black tea bags",
+   "4 cups water, for brewing",
+   "1 1/4 cups sugar",
+   "1/8 tsp baking soda",
+   "8 cups cold water",
+   "2 lemons, sliced",
+   "1 cup fresh mint leaves",
+   "ice"
+  ],
+  "ingredientKeys": [
+   "black-tea",
+   "water",
+   "sugar",
+   "baking-soda",
+   "water",
+   "lemon",
+   "fresh-mint",
+   "ice"
+  ],
+  "specialty": [
+   "black-tea",
+   "fresh-mint"
+  ],
+  "steps": [
+   "Bring the 4 cups of water to a boil, take it off the heat, and add the tea bags with the pinch of baking soda.",
+   "The baking soda is the Southern grandmother's trick: it neutralizes some of the tannins, so the tea does not turn bitter or cloudy as it cools.",
+   "Steep 10 minutes, no longer. Over-steeped tea is harsh and no amount of sugar fixes it.",
+   "Lift the bags out without squeezing them - squeezing pushes bitter tannins into the tea.",
+   "Stir the sugar into the hot concentrate until it completely dissolves. Sugar added to cold tea sinks and never fully dissolves, which is why sweet tea is sweetened hot.",
+   "Add the 8 cups of cold water, then chill at least 2 hours. Serve over a lot of ice with lemon and mint."
+  ],
+  "diet": {
+   "vegetarian": true,
+   "vegan": true,
+   "pescatarian": true,
+   "glutenFree": true,
+   "glutenFreeAdaptable": false,
+   "dairyFree": true,
+   "nutFree": true,
+   "eggFree": true
+  },
+  "allergens": [],
+  "gmo": {
+   "risk": "moderate",
+   "sources": [
+    "sugar-beet"
+   ]
+  },
+  "nutrition": {
+   "calories": 128,
+   "proteinG": 0,
+   "carbsG": 32,
+   "fiberG": 0,
+   "sugarG": 31,
+   "fatG": 0,
+   "satFatG": 0,
+   "sodiumMg": 18,
+   "cholesterolMg": 0
+  },
+  "tags": [
+   "drink",
+   "southern",
+   "summer",
+   "easy",
+   "make-ahead",
+   "vegan",
+   "gluten-free",
+   "dairy-free",
+   "budget",
+   "technique"
+  ],
+  "image": {
+   "file": "pd-sweet-tea.jpg",
+   "source": "commons-file",
+   "match": "dish",
+   "commonsFile": "Southern Sweet Tea (14888897979).jpg"
+  }
+ },
+ {
+  "id": "ch-pd-016",
+  "slug": "pd-hummingbird-cake",
+  "title": "Hummingbird Cake",
+  "genre": "american",
+  "subgenre": "desserts",
+  "chef": {
+   "name": "Paula Deen",
+   "slug": "paula-deen"
+  },
+  "description": "A banana-pineapple layer cake with pecans and cream cheese frosting.",
+  "difficulty": "intermediate",
+  "easeScore": 7,
+  "spiceScore": 0,
+  "popularity": 8,
+  "pantryScore": 7,
+  "servings": 12,
+  "prepMin": 30,
+  "cookMin": 90,
+  "totalMin": 120,
+  "equipment": [
+   "oven"
+  ],
+  "ingredients": [
+   "3 cups all-purpose flour",
+   "2 cups sugar",
+   "1 tsp baking soda",
+   "1 tsp salt",
+   "1 tbsp ground cinnamon",
+   "3 eggs",
+   "1 1/4 cups vegetable oil",
+   "1 1/2 tsp vanilla extract",
+   "1 can (8 oz) crushed pineapple with juice",
+   "2 cups chopped pecans",
+   "3 ripe bananas, mashed",
+   "16 oz cream cheese, softened",
+   "1 cup butter, softened",
+   "4 cups powdered sugar",
+   "1 tbsp vanilla extract, for the frosting"
+  ],
+  "ingredientKeys": [
+   "flour",
+   "sugar",
+   "baking-soda",
+   "salt",
+   "cinnamon",
+   "egg",
+   "vegetable-oil",
+   "vanilla-extract",
+   "crushed-pineapple",
+   "pecans",
+   "banana",
+   "cream-cheese",
+   "butter",
+   "powdered-sugar",
+   "vanilla-extract"
+  ],
+  "specialty": [
+   "crushed-pineapple",
+   "pecans",
+   "cream-cheese"
+  ],
+  "steps": [
+   "Heat the oven to 350F and line three 9-inch round pans. Whisk the flour, sugar, baking soda, salt and cinnamon together.",
+   "Add the eggs, oil and vanilla and stir by hand - do not use a mixer. This is a stir-together cake, and beating it develops gluten and toughens the crumb.",
+   "Fold in the pineapple with all its juice, 1 1/2 cups of the pecans and the mashed bananas. The batter will be thick and lumpy, which is correct.",
+   "Divide between the pans and bake 25-30 minutes until a toothpick comes out clean. Cool in the pans 10 minutes, then turn out and cool completely.",
+   "Beat the cream cheese and butter until smooth, then add the powdered sugar a cup at a time and the vanilla, and beat 3 minutes.",
+   "Stack the layers with frosting between, coat the top and sides, and press the remaining pecans around the sides."
+  ],
+  "diet": {
+   "vegetarian": true,
+   "vegan": false,
+   "pescatarian": true,
+   "glutenFree": false,
+   "glutenFreeAdaptable": false,
+   "dairyFree": false,
+   "nutFree": false,
+   "eggFree": false
+  },
+  "allergens": [
+   "gluten",
+   "dairy",
+   "egg",
+   "tree-nut"
+  ],
+  "gmo": {
+   "risk": "high",
+   "sources": [
+    "seed-oil",
+    "sugar-beet",
+    "grain-fed-dairy"
+   ]
+  },
+  "nutrition": {
+   "calories": 982,
+   "proteinG": 10,
+   "carbsG": 112,
+   "fiberG": 3,
+   "sugarG": 88,
+   "fatG": 58,
+   "satFatG": 19,
+   "sodiumMg": 480,
+   "cholesterolMg": 112
+  },
+  "tags": [
+   "dessert",
+   "southern",
+   "baking",
+   "party",
+   "special-occasion",
+   "crowd-pleaser",
+   "classic",
+   "potluck"
+  ],
+  "image": {
+   "file": "pd-hummingbird-cake.jpg",
+   "source": "commons-file",
+   "match": "dish",
+   "commonsFile": "Hummingbird cake.jpg"
+  }
+ },
+ {
+  "id": "ch-pd-017",
+  "slug": "pd-fried-okra",
+  "title": "Fried Okra",
+  "genre": "american",
+  "subgenre": "sides",
+  "chef": {
+   "name": "Paula Deen",
+   "slug": "paula-deen"
+  },
+  "description": "Okra rounds in buttermilk and cornmeal, fried crisp.",
+  "difficulty": "beginner",
+  "easeScore": 8,
+  "spiceScore": 3,
+  "popularity": 8,
+  "pantryScore": 7,
+  "servings": 6,
+  "prepMin": 15,
+  "cookMin": 20,
+  "totalMin": 35,
+  "equipment": [
+   "stovetop"
+  ],
+  "ingredients": [
+   "2 lb okra, sliced in 1/2-inch rounds",
+   "1 1/2 cups buttermilk",
+   "1 egg",
+   "1 1/2 cups yellow cornmeal",
+   "1/2 cup all-purpose flour",
+   "1 tbsp seasoned salt",
+   "2 tsp black pepper",
+   "1 tsp cayenne pepper",
+   "4 cups peanut oil, for frying",
+   "1 tsp salt, for finishing"
+  ],
+  "ingredientKeys": [
+   "okra",
+   "buttermilk",
+   "egg",
+   "cornmeal",
+   "flour",
+   "seasoned-salt",
+   "black-pepper",
+   "cayenne",
+   "peanut-oil",
+   "salt"
+  ],
+  "specialty": [
+   "okra",
+   "buttermilk",
+   "cornmeal",
+   "seasoned-salt",
+   "peanut-oil"
+  ],
+  "steps": [
+   "Beat the buttermilk with the egg and soak the okra rounds in it for 10 minutes.",
+   "Mix the cornmeal, flour, seasoned salt, pepper and cayenne. Cornmeal rather than all flour is what gives fried okra its sandy, crunchy shell.",
+   "Lift the okra from the buttermilk in handfuls, letting the excess drip off, then toss it in the cornmeal mixture until every piece is coated.",
+   "Heat 1 1/2 inches of oil to 365F. Hot oil is what keeps the okra from turning slimy - low heat lets the mucilage take over.",
+   "Fry in batches, never crowding, 3-4 minutes until deep golden and floating. Crowding drops the oil temperature.",
+   "Drain on a rack, not paper towels, and salt immediately. Serve right away; fried okra does not keep."
+  ],
+  "diet": {
+   "vegetarian": true,
+   "vegan": false,
+   "pescatarian": true,
+   "glutenFree": false,
+   "glutenFreeAdaptable": false,
+   "dairyFree": false,
+   "nutFree": false,
+   "eggFree": false
+  },
+  "allergens": [
+   "gluten",
+   "dairy",
+   "egg",
+   "peanut"
+  ],
+  "gmo": {
+   "risk": "high",
+   "sources": [
+    "corn",
+    "seed-oil",
+    "grain-fed-dairy"
+   ]
+  },
+  "nutrition": {
+   "calories": 386,
+   "proteinG": 10,
+   "carbsG": 48,
+   "fiberG": 7,
+   "sugarG": 7,
+   "fatG": 17,
+   "satFatG": 3,
+   "sodiumMg": 1180,
+   "cholesterolMg": 42
+  },
+  "tags": [
+   "side",
+   "southern",
+   "party",
+   "vegetarian",
+   "summer",
+   "comfort",
+   "technique",
+   "budget"
+  ],
+  "image": {
+   "file": "pd-fried-okra.jpg",
+   "source": "commons-file",
+   "match": "dish",
+   "commonsFile": "Fried okra.jpg"
+  }
+ },
+ {
+  "id": "ch-pd-018",
+  "slug": "pd-she-crab-soup",
+  "title": "Charleston She-Crab Soup",
+  "genre": "american",
+  "subgenre": "soups",
+  "chef": {
+   "name": "Paula Deen",
+   "slug": "paula-deen"
+  },
+  "description": "A sherry-finished cream soup with lump crab and Old Bay.",
+  "difficulty": "intermediate",
+  "easeScore": 7,
+  "spiceScore": 3,
+  "popularity": 7,
+  "pantryScore": 6,
+  "servings": 6,
+  "prepMin": 15,
+  "cookMin": 35,
+  "totalMin": 50,
+  "equipment": [
+   "stovetop"
+  ],
+  "ingredients": [
+   "1 lb lump crab meat, picked over",
+   "6 tbsp butter",
+   "1 yellow onion, finely diced",
+   "3 celery stalks, finely diced",
+   "1/3 cup all-purpose flour",
+   "4 cups whole milk, warmed",
+   "1 1/2 cups heavy cream",
+   "2 tbsp Old Bay seasoning",
+   "1 tsp cayenne pepper",
+   "1/4 tsp ground nutmeg",
+   "2 tsp salt",
+   "1 tsp white pepper",
+   "1/2 cup dry sherry",
+   "1 tbsp lemon juice",
+   "1/3 cup chopped parsley",
+   "4 hard-boiled eggs, grated"
+  ],
+  "ingredientKeys": [
+   "crab-meat",
+   "butter",
+   "yellow-onion",
+   "celery",
+   "flour",
+   "whole-milk",
+   "heavy-cream",
+   "old-bay",
+   "cayenne",
+   "nutmeg",
+   "salt",
+   "white-pepper",
+   "dry-sherry",
+   "lemon-juice",
+   "parsley",
+   "egg"
+  ],
+  "specialty": [
+   "crab-meat",
+   "old-bay",
+   "white-pepper",
+   "dry-sherry"
+  ],
+  "steps": [
+   "Cook the onion and celery in the butter over medium-low heat 10 minutes until soft but not browned - this soup should stay pale.",
+   "Stir in the flour and cook 2 minutes, then add the warm milk gradually, whisking, and simmer 8 minutes until it coats a spoon. Warm milk is what keeps it lump-free.",
+   "Add the cream, Old Bay, cayenne, nutmeg, salt and white pepper and simmer 5 minutes without boiling.",
+   "Fold in the crab as gently as you can and heat through for 3 minutes. Stirring hard breaks up the lumps.",
+   "Add the sherry and lemon juice off the heat. Sherry is the signature of the dish, and adding it at the end keeps its aroma - simmered in, it cooks away.",
+   "Serve with grated hard-boiled egg and parsley on top, which is the traditional Charleston garnish."
+  ],
+  "diet": {
+   "vegetarian": false,
+   "vegan": false,
+   "pescatarian": true,
+   "glutenFree": false,
+   "glutenFreeAdaptable": false,
+   "dairyFree": false,
+   "nutFree": true,
+   "eggFree": false
+  },
+  "allergens": [
+   "gluten",
+   "dairy",
+   "egg",
+   "shellfish",
+   "sulfites"
+  ],
+  "gmo": {
+   "risk": "moderate",
+   "sources": [
+    "grain-fed-dairy"
+   ]
+  },
+  "nutrition": {
+   "calories": 682,
+   "proteinG": 32,
+   "carbsG": 22,
+   "fiberG": 1,
+   "sugarG": 11,
+   "fatG": 48,
+   "satFatG": 28,
+   "sodiumMg": 1680,
+   "cholesterolMg": 286
+  },
+  "tags": [
+   "soup",
+   "southern",
+   "seafood",
+   "special-occasion",
+   "restaurant-style",
+   "regional",
+   "entertaining",
+   "holiday"
+  ],
+  "image": {
+   "file": "crab-bisque.jpg",
+   "source": "wikipedia-lead",
+   "match": "representative",
+   "wikipedia": "She-crab soup"
+  }
+ },
+ {
+  "id": "ch-pd-019",
+  "slug": "pd-country-ham-red-eye-gravy",
+  "title": "Country Ham with Red-Eye Gravy",
+  "genre": "american",
+  "subgenre": "southern",
+  "chef": {
+   "name": "Paula Deen",
+   "slug": "paula-deen"
+  },
+  "description": "Salt-cured ham fried in a skillet, with gravy made from coffee and drippings.",
+  "difficulty": "beginner",
+  "easeScore": 9,
+  "spiceScore": 2,
+  "popularity": 7,
+  "pantryScore": 6,
+  "servings": 4,
+  "prepMin": 5,
+  "cookMin": 20,
+  "totalMin": 25,
+  "equipment": [
+   "stovetop"
+  ],
+  "ingredients": [
+   "4 slices country ham, 1/4 inch thick",
+   "2 tbsp bacon grease",
+   "1 cup strong brewed coffee",
+   "1/4 cup water",
+   "1 tbsp packed brown sugar",
+   "1 tsp black pepper",
+   "4 buttermilk biscuits",
+   "2 tbsp butter"
+  ],
+  "ingredientKeys": [
+   "country-ham",
+   "bacon-fat",
+   "brewed-coffee",
+   "water",
+   "brown-sugar",
+   "black-pepper",
+   "biscuits",
+   "butter"
+  ],
+  "specialty": [
+   "country-ham",
+   "bacon-fat",
+   "biscuits"
+  ],
+  "steps": [
+   "Country ham is salt-cured and intensely salty. If yours is very dry, soak the slices in water for 30 minutes first and pat them dry.",
+   "Fry the ham in the bacon grease in a cast-iron skillet over medium heat, 3-4 minutes per side, until browned at the edges. Do not overcook it - country ham turns leathery fast.",
+   "Move the ham to plates and keep it warm. There should be dark browned bits stuck to the bottom of the skillet - that fond is the entire gravy.",
+   "Pour the coffee and water into the hot skillet and scrape the bottom hard with a wooden spoon to lift everything off.",
+   "Add the brown sugar and pepper and boil 4-5 minutes until it reduces slightly. It stays thin - red-eye gravy is never thickened with flour, and that is the point.",
+   "Pour the gravy over the ham and serve with split biscuits and butter to soak it up."
+  ],
+  "diet": {
+   "vegetarian": false,
+   "vegan": false,
+   "pescatarian": false,
+   "glutenFree": false,
+   "glutenFreeAdaptable": false,
+   "dairyFree": false,
+   "nutFree": true,
+   "eggFree": true
+  },
+  "allergens": [
+   "gluten",
+   "dairy"
+  ],
+  "gmo": {
+   "risk": "moderate",
+   "sources": [
+    "grain-fed-meat",
+    "sugar-beet",
+    "processed-bread"
+   ]
+  },
+  "nutrition": {
+   "calories": 448,
+   "proteinG": 28,
+   "carbsG": 32,
+   "fiberG": 1,
+   "sugarG": 7,
+   "fatG": 24,
+   "satFatG": 10,
+   "sodiumMg": 2380,
+   "cholesterolMg": 82
+  },
+  "tags": [
+   "southern",
+   "breakfast",
+   "quick",
+   "technique",
+   "regional",
+   "classic",
+   "high-protein",
+   "easy"
+  ],
+  "image": {
+   "file": "pd-country-ham-red-eye-gravy.jpg",
+   "source": "commons-file",
+   "match": "dish",
+   "commonsFile": "Country Red-Eye Gravy with Vegetarian Ham.jpg"
+  }
+ },
+ {
+  "id": "ch-pd-020",
+  "slug": "pd-butter-beans",
+  "title": "Butter Beans with Ham",
+  "genre": "american",
+  "subgenre": "sides",
+  "chef": {
+   "name": "Paula Deen",
+   "slug": "paula-deen"
+  },
+  "description": "Lima beans simmered with a ham hock until creamy and soft.",
+  "difficulty": "beginner",
+  "easeScore": 9,
+  "spiceScore": 2,
+  "popularity": 7,
+  "pantryScore": 8,
+  "servings": 8,
+  "prepMin": 15,
+  "cookMin": 120,
+  "totalMin": 135,
+  "equipment": [
+   "stovetop"
+  ],
+  "ingredients": [
+   "1 lb dried butter beans or lima beans, soaked overnight",
+   "2 smoked ham hocks",
+   "1 yellow onion, diced",
+   "4 cloves garlic, minced",
+   "3 tbsp bacon grease",
+   "8 cups water",
+   "2 bay leaves",
+   "1 tsp dried thyme",
+   "1/2 tsp red pepper flakes",
+   "2 tsp salt",
+   "1 tsp black pepper",
+   "3 tbsp butter",
+   "1/3 cup chopped parsley"
+  ],
+  "ingredientKeys": [
+   "butter-beans",
+   "ham-hock",
+   "yellow-onion",
+   "garlic",
+   "bacon-fat",
+   "water",
+   "bay-leaf",
+   "dried-thyme",
+   "red-pepper-flakes",
+   "salt",
+   "black-pepper",
+   "butter",
+   "parsley"
+  ],
+  "specialty": [
+   "butter-beans",
+   "ham-hock",
+   "bacon-fat"
+  ],
+  "steps": [
+   "Soak the dried beans overnight in plenty of cold water, then drain.",
+   "Cook the onion in the bacon grease 8 minutes, then add the garlic for 1 minute.",
+   "Add the drained beans, ham hocks, water, bay leaves, thyme and pepper flakes. Do not salt yet - salting early keeps bean skins from softening.",
+   "Simmer partially covered 1 1/2 to 2 hours, topping up with hot water if the beans emerge. Never add cold water; it toughens the skins.",
+   "Once the beans are completely tender, mash a cup of them against the side of the pot. That is what makes the pot creamy without any dairy.",
+   "Add the salt, pepper and butter, pull the meat off the hocks and stir it back in, and simmer 10 minutes more. Finish with parsley."
+  ],
+  "diet": {
+   "vegetarian": false,
+   "vegan": false,
+   "pescatarian": false,
+   "glutenFree": true,
+   "glutenFreeAdaptable": false,
+   "dairyFree": false,
+   "nutFree": true,
+   "eggFree": true
+  },
+  "allergens": [
+   "dairy"
+  ],
+  "gmo": {
+   "risk": "moderate",
+   "sources": [
+    "grain-fed-meat",
+    "grain-fed-dairy"
+   ]
+  },
+  "nutrition": {
+   "calories": 386,
+   "proteinG": 22,
+   "carbsG": 42,
+   "fiberG": 13,
+   "sugarG": 4,
+   "fatG": 14,
+   "satFatG": 6,
+   "sodiumMg": 1180,
+   "cholesterolMg": 42
+  },
+  "tags": [
+   "side",
+   "southern",
+   "budget",
+   "high-fiber",
+   "gluten-free",
+   "make-ahead",
+   "comfort",
+   "family",
+   "classic"
+  ],
+  "image": {
+   "file": "pd-butter-beans.jpg",
+   "source": "commons-file",
+   "match": "dish",
+   "commonsFile": "Ham & butter beans (122092545).jpg"
+  }
+ },
+ {
+  "id": "ch-pd-021",
+  "slug": "pd-buttermilk-pie",
+  "title": "Buttermilk Pie",
+  "genre": "american",
+  "subgenre": "desserts",
+  "chef": {
+   "name": "Paula Deen",
+   "slug": "paula-deen"
+  },
+  "description": "A tangy custard pie with a lightly browned, cracked top.",
+  "difficulty": "beginner",
+  "easeScore": 9,
+  "spiceScore": 0,
+  "popularity": 7,
+  "pantryScore": 9,
+  "servings": 8,
+  "prepMin": 15,
+  "cookMin": 60,
+  "totalMin": 75,
+  "equipment": [
+   "oven"
+  ],
+  "ingredients": [
+   "1 refrigerated pie crust",
+   "1 1/2 cups sugar",
+   "3 tbsp all-purpose flour",
+   "1/2 tsp salt",
+   "3 eggs",
+   "1 cup buttermilk",
+   "1/2 cup butter, melted",
+   "1 tbsp vanilla extract",
+   "1 tbsp lemon juice",
+   "1/2 tsp ground nutmeg"
+  ],
+  "ingredientKeys": [
+   "pie-crust",
+   "sugar",
+   "flour",
+   "salt",
+   "egg",
+   "buttermilk",
+   "butter",
+   "vanilla-extract",
+   "lemon-juice",
+   "nutmeg"
+  ],
+  "specialty": [
+   "pie-crust",
+   "buttermilk"
+  ],
+  "steps": [
+   "Heat the oven to 350F and fit the crust into a 9-inch pie plate, crimping the edge.",
+   "Whisk the sugar, flour and salt together while dry so the flour disperses without lumping.",
+   "Whisk in the eggs, then the buttermilk, melted butter, vanilla and lemon juice until smooth. Do not beat in air.",
+   "Buttermilk is doing the real work here. Its acidity cuts what would otherwise be a cloyingly sweet custard, which is why this pie tastes tangy rather than just sugary.",
+   "Pour into the shell, dust the top with nutmeg, and bake 50-60 minutes until the edges are set and the center has just a slight wobble.",
+   "Cool completely, at least 3 hours. The custard sets as it cools and a warm buttermilk pie will not slice."
+  ],
+  "diet": {
+   "vegetarian": true,
+   "vegan": false,
+   "pescatarian": true,
+   "glutenFree": false,
+   "glutenFreeAdaptable": false,
+   "dairyFree": false,
+   "nutFree": true,
+   "eggFree": false
+  },
+  "allergens": [
+   "gluten",
+   "dairy",
+   "egg"
+  ],
+  "gmo": {
+   "risk": "moderate",
+   "sources": [
+    "sugar-beet",
+    "processed-bread",
+    "grain-fed-dairy",
+    "seed-oil"
+   ]
+  },
+  "nutrition": {
+   "calories": 448,
+   "proteinG": 6,
+   "carbsG": 58,
+   "fiberG": 1,
+   "sugarG": 44,
+   "fatG": 22,
+   "satFatG": 11,
+   "sodiumMg": 380,
+   "cholesterolMg": 112
+  },
+  "tags": [
+   "dessert",
+   "southern",
+   "baking",
+   "easy",
+   "classic",
+   "holiday",
+   "vegetarian",
+   "budget",
+   "make-ahead"
+  ],
+  "image": {
+   "file": "pd-buttermilk-pie.jpg",
+   "source": "commons-file",
+   "match": "dish",
+   "commonsFile": "Buttermilk Pie.jpg"
+  }
+ },
+ {
+  "id": "ch-pd-022",
+  "slug": "pd-cheese-straws",
+  "title": "Cheese Straws",
+  "genre": "american",
+  "subgenre": "appetizers",
+  "chef": {
+   "name": "Paula Deen",
+   "slug": "paula-deen"
+  },
+  "description": "Sharp cheddar shortbread piped into ridged straws and baked crisp.",
+  "difficulty": "beginner",
+  "easeScore": 8,
+  "spiceScore": 4,
+  "popularity": 7,
+  "pantryScore": 9,
+  "servings": 40,
+  "prepMin": 20,
+  "cookMin": 60,
+  "totalMin": 80,
+  "equipment": [
+   "oven"
+  ],
+  "ingredients": [
+   "1 lb extra-sharp cheddar, finely grated",
+   "1 cup butter, softened",
+   "2 cups all-purpose flour",
+   "1 1/2 tsp salt",
+   "1 1/2 tsp cayenne pepper",
+   "1 tsp mustard powder",
+   "1/2 tsp black pepper",
+   "1/2 tsp paprika"
+  ],
+  "ingredientKeys": [
+   "cheddar",
+   "butter",
+   "flour",
+   "salt",
+   "cayenne",
+   "mustard-powder",
+   "black-pepper",
+   "paprika"
+  ],
+  "specialty": [
+   "mustard-powder"
+  ],
+  "steps": [
+   "Grate the cheddar yourself from a block and let it come to room temperature. Pre-shredded cheese is coated in starch and the straws will not hold together.",
+   "Beat the butter and cheese together for 3 minutes until completely combined and fluffy.",
+   "Add the flour, salt, cayenne, mustard powder, black pepper and paprika and mix until a stiff dough forms.",
+   "Pipe the dough through a cookie press or a piping bag with a large star tip into 3-inch lengths on lined sheets. The ridges from the star tip are not decorative - they increase surface area and are what makes the straws snap.",
+   "Chill the piped straws 20 minutes before baking so they hold their shape.",
+   "Bake at 350F for 15-18 minutes until set and just barely golden at the edges. They should stay pale; browning makes them bitter. Cool completely on the pans - they crisp as they cool."
+  ],
+  "diet": {
+   "vegetarian": true,
+   "vegan": false,
+   "pescatarian": true,
+   "glutenFree": false,
+   "glutenFreeAdaptable": false,
+   "dairyFree": false,
+   "nutFree": true,
+   "eggFree": true
+  },
+  "allergens": [
+   "gluten",
+   "dairy"
+  ],
+  "gmo": {
+   "risk": "low",
+   "sources": [
+    "grain-fed-dairy"
+   ]
+  },
+  "nutrition": {
+   "calories": 112,
+   "proteinG": 4,
+   "carbsG": 5,
+   "fiberG": 0,
+   "sugarG": 0,
+   "fatG": 9,
+   "satFatG": 5,
+   "sodiumMg": 180,
+   "cholesterolMg": 24
+  },
+  "tags": [
+   "appetizer",
+   "southern",
+   "party",
+   "holiday",
+   "make-ahead",
+   "vegetarian",
+   "baking",
+   "spicy",
+   "gift",
+   "sharing"
+  ],
+  "image": {
+   "file": "pd-cheese-straws.jpg",
+   "source": "commons-file",
+   "match": "dish",
+   "commonsFile": "Cheese straws (78098634).jpg"
+  }
+ },
+ {
+  "id": "ch-pd-023",
+  "slug": "pd-caramel-cake",
+  "title": "Caramel Cake",
+  "genre": "american",
+  "subgenre": "desserts",
+  "chef": {
+   "name": "Paula Deen",
+   "slug": "paula-deen"
+  },
+  "description": "Yellow layer cake under a cooked caramel icing that sets as it cools.",
+  "difficulty": "advanced",
+  "easeScore": 4,
+  "spiceScore": 0,
+  "popularity": 7,
+  "pantryScore": 8,
+  "servings": 12,
+  "prepMin": 35,
+  "cookMin": 80,
+  "totalMin": 115,
+  "equipment": [
+   "oven",
+   "stovetop"
+  ],
+  "ingredients": [
+   "3 cups all-purpose flour",
+   "1 tbsp baking powder",
+   "1 tsp salt",
+   "1 cup butter, softened",
+   "2 cups sugar",
+   "4 eggs",
+   "1 tbsp vanilla extract",
+   "1 1/4 cups whole milk",
+   "3 cups packed brown sugar",
+   "1 cup butter, for the icing",
+   "1 cup heavy cream",
+   "1/2 tsp salt, for the icing",
+   "2 tsp vanilla extract, for the icing"
+  ],
+  "ingredientKeys": [
+   "flour",
+   "baking-powder",
+   "salt",
+   "butter",
+   "sugar",
+   "egg",
+   "vanilla-extract",
+   "whole-milk",
+   "brown-sugar",
+   "butter",
+   "heavy-cream",
+   "salt",
+   "vanilla-extract"
+  ],
+  "specialty": [],
+  "steps": [
+   "Heat the oven to 350F and line three 9-inch round pans. Cream the butter and sugar 4 minutes, then beat in the eggs one at a time and the vanilla.",
+   "Add the flour, baking powder and salt alternately with the milk in three additions, mixing on low just until smooth.",
+   "Divide between the pans and bake 25-30 minutes until a toothpick comes out clean. Cool completely.",
+   "Make the icing: combine the brown sugar, butter, cream and salt in a heavy saucepan and bring to a boil, stirring.",
+   "Clip on a candy thermometer and cook to 238F, the soft-ball stage. This temperature is the whole recipe - a few degrees low and the icing never sets, a few high and it turns to candy before you can spread it.",
+   "Take it off the heat, add the vanilla, and beat with a wooden spoon for 2-3 minutes until it thickens and loses its gloss. Then work fast: it sets within a couple of minutes, so frost the stacked layers immediately."
+  ],
+  "diet": {
+   "vegetarian": true,
+   "vegan": false,
+   "pescatarian": true,
+   "glutenFree": false,
+   "glutenFreeAdaptable": false,
+   "dairyFree": false,
+   "nutFree": true,
+   "eggFree": false
+  },
+  "allergens": [
+   "gluten",
+   "dairy",
+   "egg"
+  ],
+  "gmo": {
+   "risk": "moderate",
+   "sources": [
+    "sugar-beet",
+    "grain-fed-dairy"
+   ]
+  },
+  "nutrition": {
+   "calories": 982,
+   "proteinG": 8,
+   "carbsG": 132,
+   "fiberG": 1,
+   "sugarG": 108,
+   "fatG": 48,
+   "satFatG": 30,
+   "sodiumMg": 580,
+   "cholesterolMg": 158
+  },
+  "tags": [
+   "dessert",
+   "southern",
+   "baking",
+   "project",
+   "technique",
+   "special-occasion",
+   "classic",
+   "party"
+  ],
+  "image": {
+   "file": "pd-caramel-cake.jpg",
+   "source": "commons-file",
+   "match": "dish",
+   "commonsFile": "Caramel Cake.jpg"
+  }
+ },
+ {
+  "id": "ch-pd-024",
+  "slug": "pd-tomato-pie",
+  "title": "Tomato Pie",
+  "genre": "american",
+  "subgenre": "southern",
+  "chef": {
+   "name": "Paula Deen",
+   "slug": "paula-deen"
+  },
+  "description": "Summer tomatoes baked in a pie shell under a cheddar mayonnaise topping.",
+  "difficulty": "beginner",
+  "easeScore": 9,
+  "spiceScore": 2,
+  "popularity": 7,
+  "pantryScore": 8,
+  "servings": 8,
+  "prepMin": 25,
+  "cookMin": 45,
+  "totalMin": 70,
+  "equipment": [
+   "oven"
+  ],
+  "ingredients": [
+   "1 refrigerated pie crust",
+   "3 lb ripe tomatoes, sliced",
+   "1 tbsp salt, for draining",
+   "1 yellow onion, thinly sliced",
+   "1/2 cup chopped basil",
+   "2 tbsp chopped chives",
+   "1 cup mayonnaise",
+   "2 cups shredded sharp cheddar",
+   "1/2 cup grated Parmesan",
+   "1 tsp black pepper",
+   "1/2 tsp cayenne pepper"
+  ],
+  "ingredientKeys": [
+   "pie-crust",
+   "tomato",
+   "salt",
+   "yellow-onion",
+   "fresh-basil",
+   "chives",
+   "mayonnaise",
+   "cheddar",
+   "parmesan",
+   "black-pepper",
+   "cayenne"
+  ],
+  "specialty": [
+   "pie-crust"
+  ],
+  "steps": [
+   "Slice the tomatoes, lay them on paper towels in a single layer, salt them generously, and leave them 30 minutes. Then blot them dry.",
+   "This draining step is the entire difference between tomato pie and tomato soup in a crust. Do not skip it, and do not rush it.",
+   "Blind-bake the crust at 400F for 15 minutes until pale gold and dry, then cool slightly.",
+   "Layer the drained tomatoes and onion slices in the shell, scattering the basil and chives between layers.",
+   "Mix the mayonnaise with the cheddar, Parmesan, pepper and cayenne into a thick paste and spread it over the top, sealing it to the crust edges.",
+   "Bake at 350F for 30-35 minutes until the topping is browned and bubbling. Rest 20 minutes before cutting - this pie needs to set to slice cleanly."
+  ],
+  "diet": {
+   "vegetarian": true,
+   "vegan": false,
+   "pescatarian": true,
+   "glutenFree": false,
+   "glutenFreeAdaptable": false,
+   "dairyFree": false,
+   "nutFree": true,
+   "eggFree": false
+  },
+  "allergens": [
+   "gluten",
+   "dairy",
+   "egg"
+  ],
+  "gmo": {
+   "risk": "high",
+   "sources": [
+    "processed-bread",
+    "seed-oil",
+    "grain-fed-dairy"
+   ]
+  },
+  "nutrition": {
+   "calories": 512,
+   "proteinG": 14,
+   "carbsG": 28,
+   "fiberG": 3,
+   "sugarG": 7,
+   "fatG": 40,
+   "satFatG": 13,
+   "sodiumMg": 980,
+   "cholesterolMg": 52
+  },
+  "tags": [
+   "southern",
+   "vegetarian",
+   "summer",
+   "baking",
+   "potluck",
+   "family",
+   "regional",
+   "classic",
+   "entertaining"
+  ],
+  "image": {
+   "file": "pd-tomato-pie.jpg",
+   "source": "commons-file",
+   "match": "dish",
+   "commonsFile": "The Tomato Pie.jpg"
+  }
+ },
+ {
+  "id": "ch-pd-025",
+  "slug": "pd-sausage-balls",
+  "title": "Sausage Balls",
+  "genre": "american",
+  "subgenre": "appetizers",
+  "chef": {
+   "name": "Paula Deen",
+   "slug": "paula-deen"
+  },
+  "description": "Three ingredients rolled into balls and baked. A Southern party staple.",
+  "difficulty": "beginner",
+  "easeScore": 10,
+  "spiceScore": 3,
+  "popularity": 8,
+  "pantryScore": 8,
+  "servings": 36,
+  "prepMin": 15,
+  "cookMin": 25,
+  "totalMin": 40,
+  "equipment": [
+   "oven"
+  ],
+  "ingredients": [
+   "1 lb hot breakfast sausage",
+   "3 cups shredded sharp cheddar",
+   "2 cups biscuit baking mix",
+   "1/2 cup whole milk",
+   "1 tsp cayenne pepper",
+   "1 tsp black pepper",
+   "1/2 tsp garlic powder"
+  ],
+  "ingredientKeys": [
+   "breakfast-sausage",
+   "cheddar",
+   "biscuit-mix",
+   "whole-milk",
+   "cayenne",
+   "black-pepper",
+   "garlic-powder"
+  ],
+  "specialty": [
+   "breakfast-sausage",
+   "biscuit-mix"
+  ],
+  "steps": [
+   "Let the sausage and cheese come to room temperature. Cold ingredients will not combine and you will fight the mixture the whole way.",
+   "Mix the raw sausage, cheddar, biscuit mix, milk, cayenne, pepper and garlic powder in a large bowl with your hands. It takes a few minutes of real work before it comes together.",
+   "Add the milk gradually - you want the mixture just moist enough to hold a ball. Too wet and they spread, too dry and they crumble.",
+   "Roll into 1-inch balls and set them on lined sheet pans an inch apart.",
+   "Bake at 375F for 20-25 minutes until browned and cooked through. The sausage goes in raw and cooks in the oven, so make sure they reach 160F inside.",
+   "Serve warm. They can be rolled ahead and frozen raw, then baked straight from frozen with a few extra minutes."
+  ],
+  "diet": {
+   "vegetarian": false,
+   "vegan": false,
+   "pescatarian": false,
+   "glutenFree": false,
+   "glutenFreeAdaptable": false,
+   "dairyFree": false,
+   "nutFree": true,
+   "eggFree": true
+  },
+  "allergens": [
+   "gluten",
+   "dairy"
+  ],
+  "gmo": {
+   "risk": "high",
+   "sources": [
+    "grain-fed-meat",
+    "processed-bread",
+    "grain-fed-dairy",
+    "seed-oil"
+   ]
+  },
+  "nutrition": {
+   "calories": 112,
+   "proteinG": 5,
+   "carbsG": 6,
+   "fiberG": 0,
+   "sugarG": 1,
+   "fatG": 8,
+   "satFatG": 3,
+   "sodiumMg": 280,
+   "cholesterolMg": 18
+  },
+  "tags": [
+   "appetizer",
+   "southern",
+   "party",
+   "holiday",
+   "easy",
+   "freezer",
+   "make-ahead",
+   "game-day",
+   "crowd-pleaser",
+   "kid-friendly"
+  ],
+  "image": {
+   "file": "sausage-balls.jpg",
+   "source": "wikipedia-lead",
+   "match": "representative",
+   "wikipedia": "Meatball"
+  }
+ }
+]

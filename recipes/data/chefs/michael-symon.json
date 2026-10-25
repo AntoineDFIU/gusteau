@@ -1,0 +1,3139 @@
+[
+ {
+  "id": "ch-msy-001",
+  "slug": "msy-lola-burger",
+  "title": "The Lola Burger",
+  "genre": "american",
+  "subgenre": "burgers",
+  "chef": {
+   "name": "Michael Symon",
+   "slug": "michael-symon"
+  },
+  "description": "A griddled burger with bacon, fried egg, cheddar and pickled onion.",
+  "difficulty": "beginner",
+  "easeScore": 9,
+  "spiceScore": 2,
+  "popularity": 9,
+  "pantryScore": 8,
+  "servings": 4,
+  "prepMin": 20,
+  "cookMin": 25,
+  "totalMin": 45,
+  "equipment": [
+   "stovetop"
+  ],
+  "ingredients": [
+   "1 1/2 lb ground beef (80/20)",
+   "2 tsp salt",
+   "1 tsp black pepper",
+   "8 slices bacon",
+   "4 slices sharp cheddar",
+   "4 eggs",
+   "4 brioche buns",
+   "4 tbsp butter",
+   "1 red onion, thinly sliced",
+   "1/2 cup red wine vinegar",
+   "1 tbsp sugar",
+   "1 tsp salt",
+   "1/4 cup mayonnaise",
+   "1 tbsp Dijon mustard"
+  ],
+  "ingredientKeys": [
+   "ground-beef",
+   "salt",
+   "black-pepper",
+   "bacon",
+   "cheddar",
+   "egg",
+   "brioche-bun",
+   "butter",
+   "red-onion",
+   "red-wine-vinegar",
+   "sugar",
+   "salt",
+   "mayonnaise",
+   "dijon-mustard"
+  ],
+  "specialty": [
+   "ground-beef",
+   "brioche-bun"
+  ],
+  "steps": [
+   "Pickle the onion first: bring the vinegar, sugar and salt to a boil, pour it over the sliced onion, and leave it at least 30 minutes. It turns bright pink and cuts straight through the richness of everything else.",
+   "Divide the beef into four loose balls and do not pack them. Compressed patties cook up dense; loosely formed meat stays tender.",
+   "Render the bacon crisp and keep the fat in the pan.",
+   "Press the balls flat onto the hot griddle, season heavily, and leave them alone 3 minutes. One press, one flip - moving a burger around prevents the crust from forming at all.",
+   "Flip, add the cheddar, and cook 2-3 minutes more. Fry the eggs in the bacon fat until the whites are set and the yolks still runny.",
+   "Butter and toast the buns cut-side down. Build with mayonnaise mixed with the Dijon, then the patty, bacon, the fried egg, and the pickled onion on top."
+  ],
+  "diet": {
+   "vegetarian": false,
+   "vegan": false,
+   "pescatarian": false,
+   "glutenFree": false,
+   "glutenFreeAdaptable": false,
+   "dairyFree": false,
+   "nutFree": true,
+   "eggFree": false
+  },
+  "allergens": [
+   "gluten",
+   "dairy",
+   "egg"
+  ],
+  "gmo": {
+   "risk": "high",
+   "sources": [
+    "grain-fed-meat",
+    "processed-bread",
+    "grain-fed-dairy",
+    "seed-oil",
+    "sugar-beet"
+   ]
+  },
+  "nutrition": {
+   "calories": 982,
+   "proteinG": 58,
+   "carbsG": 42,
+   "fiberG": 2,
+   "sugarG": 11,
+   "fatG": 62,
+   "satFatG": 26,
+   "sodiumMg": 1880,
+   "cholesterolMg": 398
+  },
+  "tags": [
+   "american",
+   "burgers",
+   "signature",
+   "high-protein",
+   "game-day",
+   "easy",
+   "crowd-pleaser",
+   "restaurant-style",
+   "indulgent"
+  ],
+  "image": {
+   "file": "cheeseburger.jpg",
+   "source": "wikipedia-lead",
+   "match": "representative",
+   "wikipedia": "Hamburger"
+  }
+ },
+ {
+  "id": "ch-msy-002",
+  "slug": "msy-grilled-pork-chops",
+  "title": "Grilled Pork Chops with Peaches",
+  "genre": "american",
+  "subgenre": "grilling",
+  "chef": {
+   "name": "Michael Symon",
+   "slug": "michael-symon"
+  },
+  "description": "Brined chops grilled over coals with charred peaches and basil.",
+  "difficulty": "beginner",
+  "easeScore": 9,
+  "spiceScore": 3,
+  "popularity": 8,
+  "pantryScore": 7,
+  "servings": 4,
+  "prepMin": 20,
+  "cookMin": 135,
+  "totalMin": 155,
+  "equipment": [
+   "grill"
+  ],
+  "ingredients": [
+   "4 bone-in pork chops (1 1/4 inch thick)",
+   "1/4 cup kosher salt",
+   "1/4 cup brown sugar",
+   "4 cups water",
+   "4 cloves garlic, smashed",
+   "2 sprigs fresh rosemary",
+   "1 tbsp black pepper",
+   "3 ripe peaches, halved",
+   "3 tbsp olive oil",
+   "2 tbsp balsamic vinegar",
+   "1 tbsp honey",
+   "1/2 tsp red pepper flakes",
+   "1/3 cup torn basil",
+   "1 tsp flaky sea salt"
+  ],
+  "ingredientKeys": [
+   "pork-chop",
+   "kosher-salt",
+   "brown-sugar",
+   "water",
+   "garlic",
+   "fresh-rosemary",
+   "black-pepper",
+   "peach",
+   "olive-oil",
+   "balsamic-vinegar",
+   "honey",
+   "red-pepper-flakes",
+   "fresh-basil",
+   "flaky-sea-salt"
+  ],
+  "specialty": [
+   "pork-chop",
+   "kosher-salt",
+   "fresh-rosemary",
+   "peach",
+   "flaky-sea-salt"
+  ],
+  "steps": [
+   "Dissolve the salt and brown sugar in the water with the garlic and rosemary and brine the chops 2 hours, no longer. Over-brined pork turns spongy and tastes like ham.",
+   "Pull them out, rinse, and dry them thoroughly. Wet meat will not take grill marks.",
+   "Build a two-zone fire - coals banked on one side, nothing on the other. This is the single most useful thing you can do on a grill, because it gives you somewhere to move food that is browning too fast.",
+   "Grill the chops over the hot side 3 minutes per side for color, then move them to the cool side, cover, and cook to 140F internal.",
+   "Brush the peach halves with oil and grill them cut-side down 3 minutes until charred and softened.",
+   "Rest the chops 8 minutes. Whisk the balsamic, honey and pepper flakes, spoon it over the chops and peaches, and finish with basil and flaky salt."
+  ],
+  "diet": {
+   "vegetarian": false,
+   "vegan": false,
+   "pescatarian": false,
+   "glutenFree": true,
+   "glutenFreeAdaptable": false,
+   "dairyFree": true,
+   "nutFree": true,
+   "eggFree": true
+  },
+  "allergens": [
+   "sulfites"
+  ],
+  "gmo": {
+   "risk": "moderate",
+   "sources": [
+    "grain-fed-meat",
+    "sugar-beet"
+   ]
+  },
+  "nutrition": {
+   "calories": 582,
+   "proteinG": 48,
+   "carbsG": 28,
+   "fiberG": 3,
+   "sugarG": 24,
+   "fatG": 30,
+   "satFatG": 9,
+   "sodiumMg": 1280,
+   "cholesterolMg": 128
+  },
+  "tags": [
+   "american",
+   "grilling",
+   "summer",
+   "gluten-free",
+   "dairy-free",
+   "high-protein",
+   "technique",
+   "easy",
+   "family",
+   "cookout"
+  ],
+  "image": {
+   "file": "grilled-pork-chops.jpg",
+   "source": "wikipedia-lead",
+   "match": "representative",
+   "wikipedia": "Pork chop"
+  }
+ },
+ {
+  "id": "ch-msy-003",
+  "slug": "msy-greek-chicken-souvlaki",
+  "title": "Chicken Souvlaki",
+  "genre": "mediterranean",
+  "subgenre": "grilling",
+  "chef": {
+   "name": "Michael Symon",
+   "slug": "michael-symon"
+  },
+  "description": "Lemon-oregano chicken skewers with tzatziki and warm pita.",
+  "difficulty": "beginner",
+  "easeScore": 9,
+  "spiceScore": 3,
+  "popularity": 9,
+  "pantryScore": 7,
+  "servings": 6,
+  "prepMin": 25,
+  "cookMin": 135,
+  "totalMin": 160,
+  "equipment": [
+   "grill"
+  ],
+  "ingredients": [
+   "2 1/2 lb boneless chicken thighs, cut in chunks",
+   "1/2 cup olive oil",
+   "1/3 cup lemon juice",
+   "2 tbsp red wine vinegar",
+   "8 cloves garlic, minced",
+   "2 tbsp dried oregano",
+   "1 tbsp salt",
+   "1 tsp black pepper",
+   "1/2 tsp cinnamon",
+   "2 cups Greek yogurt",
+   "1 cucumber, grated and squeezed dry",
+   "3 cloves garlic, minced",
+   "2 tbsp lemon juice",
+   "2 tbsp chopped fresh dill",
+   "1 tsp salt",
+   "8 pita breads",
+   "2 tomatoes, sliced",
+   "1 red onion, thinly sliced",
+   "1 cup crumbled feta"
+  ],
+  "ingredientKeys": [
+   "chicken-thighs",
+   "olive-oil",
+   "lemon-juice",
+   "red-wine-vinegar",
+   "garlic",
+   "dried-oregano",
+   "salt",
+   "black-pepper",
+   "cinnamon",
+   "greek-yogurt",
+   "cucumber",
+   "garlic",
+   "lemon-juice",
+   "fresh-dill",
+   "salt",
+   "pita-bread",
+   "tomato",
+   "red-onion",
+   "feta"
+  ],
+  "specialty": [
+   "chicken-thighs",
+   "dried-oregano",
+   "greek-yogurt",
+   "fresh-dill",
+   "pita-bread",
+   "feta"
+  ],
+  "steps": [
+   "Use thighs, not breasts. Skewered breast meat dries out over live fire in about ninety seconds of inattention; thighs are forgiving and taste better.",
+   "Whisk the oil, lemon juice, vinegar, garlic, oregano, salt, pepper and cinnamon and marinate the chicken 2 hours. Longer than four hours and the lemon juice starts to cure the meat and turn the surface pasty.",
+   "Make the tzatziki: grate the cucumber and squeeze it hard in a towel until it stops dripping, then fold it into the yogurt with the garlic, lemon juice, dill and salt. Unsqueezed cucumber turns the sauce into soup within an hour.",
+   "Thread the chicken onto skewers, packing the pieces snugly but not compressed.",
+   "Grill over medium-high, turning every 3 minutes, for about 12 minutes, until charred in spots and 175F inside. Thighs are better taken past 165F - the connective tissue needs it.",
+   "Warm the pitas directly on the grill for 30 seconds a side. Serve the skewers with tzatziki, tomato, red onion and feta."
+  ],
+  "diet": {
+   "vegetarian": false,
+   "vegan": false,
+   "pescatarian": false,
+   "glutenFree": false,
+   "glutenFreeAdaptable": true,
+   "dairyFree": false,
+   "nutFree": true,
+   "eggFree": true
+  },
+  "allergens": [
+   "gluten",
+   "dairy",
+   "sulfites"
+  ],
+  "gmo": {
+   "risk": "moderate",
+   "sources": [
+    "grain-fed-meat",
+    "grain-fed-dairy",
+    "processed-bread"
+   ]
+  },
+  "nutrition": {
+   "calories": 712,
+   "proteinG": 52,
+   "carbsG": 48,
+   "fiberG": 4,
+   "sugarG": 9,
+   "fatG": 36,
+   "satFatG": 12,
+   "sodiumMg": 1680,
+   "cholesterolMg": 188
+  },
+  "tags": [
+   "mediterranean",
+   "greek",
+   "grilling",
+   "summer",
+   "high-protein",
+   "family",
+   "easy",
+   "cookout",
+   "healthy",
+   "crowd-pleaser"
+  ],
+  "image": {
+   "file": "msy-greek-chicken-souvlaki.jpg",
+   "source": "commons-file",
+   "match": "dish",
+   "commonsFile": "Chicken souvlaki at Hellenic 2.jpg"
+  }
+ },
+ {
+  "id": "ch-msy-004",
+  "slug": "msy-beef-brisket",
+  "title": "Smoked Beef Brisket",
+  "genre": "american",
+  "subgenre": "bbq",
+  "chef": {
+   "name": "Michael Symon",
+   "slug": "michael-symon"
+  },
+  "description": "Salt-and-pepper brisket smoked low and slow, wrapped at the stall.",
+  "difficulty": "advanced",
+  "easeScore": 3,
+  "spiceScore": 3,
+  "popularity": 9,
+  "pantryScore": 8,
+  "servings": 12,
+  "prepMin": 30,
+  "cookMin": 720,
+  "totalMin": 750,
+  "equipment": [
+   "grill"
+  ],
+  "ingredients": [
+   "1 whole packer brisket (14 lb)",
+   "1/2 cup coarse black pepper",
+   "1/2 cup kosher salt",
+   "2 tbsp garlic powder",
+   "1 tbsp onion powder",
+   "1/4 cup yellow mustard",
+   "2 cups beef broth",
+   "1/4 cup apple cider vinegar",
+   "8 cups wood chunks (oak or hickory)",
+   "1/4 cup butter",
+   "2 tbsp beef tallow"
+  ],
+  "ingredientKeys": [
+   "brisket",
+   "black-pepper",
+   "kosher-salt",
+   "garlic-powder",
+   "onion-powder",
+   "yellow-mustard",
+   "beef-broth",
+   "apple-cider-vinegar",
+   "wood-chunks",
+   "butter",
+   "beef-tallow"
+  ],
+  "specialty": [
+   "brisket",
+   "kosher-salt",
+   "wood-chunks",
+   "beef-tallow"
+  ],
+  "steps": [
+   "Trim the fat cap to about 1/4 inch and square off the thin edges so nothing burns. Leave the thick fat seam between the point and flat alone - it renders and bastes the meat.",
+   "Smear a thin coat of mustard on as a binder, then apply the salt, pepper, garlic and onion powder in a heavy even layer. You will feel like you are using too much; you are not, on a piece of meat this size.",
+   "Smoke at 250F, fat-side up, until the bark is dark and set and the internal temperature reaches about 165F - roughly 6 hours.",
+   "It will then stall at 160-170F for hours as moisture evaporates off the surface. This is normal and is not a problem with your fire. Wrap it in butcher paper with the butter and tallow to push through.",
+   "Continue to 203F internal, another 4-5 hours. From here, stop watching temperature and start probing: it is done when a thermometer slides into the flat like warm butter, which can happen anywhere from 198F to 208F.",
+   "Rest it wrapped in a cooler for at least 2 hours, and preferably 4. Slice the flat against the grain pencil-thick, then turn the point 90 degrees - the grain runs differently - and cube it. Serve the broth and vinegar mixed as a thin sauce."
+  ],
+  "diet": {
+   "vegetarian": false,
+   "vegan": false,
+   "pescatarian": false,
+   "glutenFree": true,
+   "glutenFreeAdaptable": false,
+   "dairyFree": false,
+   "nutFree": true,
+   "eggFree": true
+  },
+  "allergens": [
+   "dairy"
+  ],
+  "gmo": {
+   "risk": "moderate",
+   "sources": [
+    "grain-fed-meat",
+    "grain-fed-dairy"
+   ]
+  },
+  "nutrition": {
+   "calories": 682,
+   "proteinG": 58,
+   "carbsG": 4,
+   "fiberG": 1,
+   "sugarG": 1,
+   "fatG": 48,
+   "satFatG": 19,
+   "sodiumMg": 1880,
+   "cholesterolMg": 198
+  },
+  "tags": [
+   "american",
+   "bbq",
+   "grilling",
+   "project",
+   "technique",
+   "gluten-free",
+   "party",
+   "high-protein",
+   "low-carb",
+   "weekend",
+   "crowd-pleaser"
+  ],
+  "image": {
+   "file": "msy-beef-brisket.jpg",
+   "source": "commons-file",
+   "match": "dish",
+   "commonsFile": "Beef Brisket Udon 2026-10-08.jpg"
+  }
+ },
+ {
+  "id": "ch-msy-005",
+  "slug": "msy-pierogi",
+  "title": "Potato and Cheese Pierogi",
+  "genre": "american",
+  "subgenre": "comfort",
+  "chef": {
+   "name": "Michael Symon",
+   "slug": "michael-symon"
+  },
+  "description": "Cleveland-style pierogi boiled then fried in butter with onions.",
+  "difficulty": "intermediate",
+  "easeScore": 6,
+  "spiceScore": 1,
+  "popularity": 8,
+  "pantryScore": 8,
+  "servings": 6,
+  "prepMin": 50,
+  "cookMin": 60,
+  "totalMin": 110,
+  "equipment": [
+   "stovetop"
+  ],
+  "ingredients": [
+   "3 cups all-purpose flour",
+   "1 tsp salt",
+   "1 egg",
+   "1/2 cup sour cream",
+   "4 tbsp melted butter",
+   "1/3 cup water",
+   "2 lb russet potatoes, peeled and cubed",
+   "1 1/2 cups shredded sharp cheddar",
+   "4 tbsp butter",
+   "1 yellow onion, finely diced",
+   "2 tsp salt",
+   "1 tsp white pepper",
+   "6 tbsp butter, for frying",
+   "2 yellow onions, sliced",
+   "1 cup sour cream",
+   "1/4 cup chopped chives"
+  ],
+  "ingredientKeys": [
+   "flour",
+   "salt",
+   "egg",
+   "sour-cream",
+   "butter",
+   "water",
+   "russet-potato",
+   "cheddar",
+   "butter",
+   "yellow-onion",
+   "salt",
+   "white-pepper",
+   "butter",
+   "yellow-onion",
+   "sour-cream",
+   "chives"
+  ],
+  "specialty": [
+   "white-pepper"
+  ],
+  "steps": [
+   "Mix the flour, salt, egg, sour cream, melted butter and water into a soft dough, knead 5 minutes, then rest it covered 30 minutes. The rest makes it rollable; worked immediately it springs back and tears.",
+   "Boil the potatoes until completely soft, drain them well, and mash them with the cheddar while hot so the cheese melts in. Add the butter-cooked diced onion, salt and white pepper and cool the filling fully.",
+   "Roll the dough thin, about 1/16 inch, and cut 3-inch rounds. Keep the scraps under a towel.",
+   "Put a tablespoon of filling on each round, fold it over, and press the edge firmly, pushing out all the air. Trapped air makes pierogi burst in the water.",
+   "Boil them in batches in well-salted water. They are done about 2 minutes after they float.",
+   "Meanwhile cook the sliced onions in the butter 20 minutes until deeply browned. Fry the drained pierogi in that same pan until blistered and golden on both sides - boiled-only pierogi are fine, fried ones are the point. Serve with the onions, sour cream and chives."
+  ],
+  "diet": {
+   "vegetarian": true,
+   "vegan": false,
+   "pescatarian": true,
+   "glutenFree": false,
+   "glutenFreeAdaptable": false,
+   "dairyFree": false,
+   "nutFree": true,
+   "eggFree": false
+  },
+  "allergens": [
+   "gluten",
+   "dairy",
+   "egg"
+  ],
+  "gmo": {
+   "risk": "moderate",
+   "sources": [
+    "grain-fed-dairy"
+   ]
+  },
+  "nutrition": {
+   "calories": 782,
+   "proteinG": 22,
+   "carbsG": 72,
+   "fiberG": 4,
+   "sugarG": 7,
+   "fatG": 46,
+   "satFatG": 27,
+   "sodiumMg": 1280,
+   "cholesterolMg": 158
+  },
+  "tags": [
+   "american",
+   "comfort",
+   "project",
+   "vegetarian",
+   "technique",
+   "budget",
+   "family",
+   "make-ahead",
+   "freezer",
+   "regional"
+  ],
+  "image": {
+   "file": "msy-pierogi.jpg",
+   "source": "commons-file",
+   "match": "dish",
+   "commonsFile": "Cheese, potato, and onion pierogi.jpg"
+  }
+ },
+ {
+  "id": "ch-msy-006",
+  "slug": "msy-grilled-ribeye-chimichurri",
+  "title": "Grilled Ribeye with Chimichurri",
+  "genre": "american",
+  "subgenre": "grilling",
+  "chef": {
+   "name": "Michael Symon",
+   "slug": "michael-symon"
+  },
+  "description": "Thick ribeyes over hot coals with a sharp herb and vinegar sauce.",
+  "difficulty": "beginner",
+  "easeScore": 9,
+  "spiceScore": 4,
+  "popularity": 9,
+  "pantryScore": 7,
+  "servings": 4,
+  "prepMin": 20,
+  "cookMin": 25,
+  "totalMin": 45,
+  "equipment": [
+   "grill"
+  ],
+  "ingredients": [
+   "2 bone-in ribeye steaks (1 1/2 lb each)",
+   "1 tbsp kosher salt",
+   "1 tbsp coarse black pepper",
+   "2 tbsp olive oil",
+   "1 1/2 cups chopped parsley",
+   "1/2 cup chopped cilantro",
+   "6 cloves garlic, minced",
+   "1 shallot, minced",
+   "1/3 cup red wine vinegar",
+   "3/4 cup olive oil",
+   "1 tbsp dried oregano",
+   "1 1/2 tsp red pepper flakes",
+   "1 1/2 tsp salt",
+   "1 tsp flaky sea salt"
+  ],
+  "ingredientKeys": [
+   "ribeye-steak",
+   "kosher-salt",
+   "black-pepper",
+   "olive-oil",
+   "parsley",
+   "cilantro",
+   "garlic",
+   "shallot",
+   "red-wine-vinegar",
+   "olive-oil",
+   "dried-oregano",
+   "red-pepper-flakes",
+   "salt",
+   "flaky-sea-salt"
+  ],
+  "specialty": [
+   "ribeye-steak",
+   "kosher-salt",
+   "shallot",
+   "dried-oregano",
+   "flaky-sea-salt"
+  ],
+  "steps": [
+   "Salt the steaks an hour ahead and leave them out at room temperature. Cold steak on a hot grill cooks unevenly - a grey band around a cold center.",
+   "Make the chimichurri by hand with a knife, not a blender. Blended chimichurri turns into a dark green paste; chopped, it stays loose and bright with distinct herbs.",
+   "Combine the parsley, cilantro, garlic, shallot, vinegar, oil, oregano, pepper flakes and salt and let it sit 30 minutes so the garlic mellows into the vinegar.",
+   "Build a hot two-zone fire. Grill the steaks over direct heat 4-5 minutes per side for deep char, moving them to the cool side if the fat flares up.",
+   "Finish over indirect heat to 125F for medium-rare. A steak this thick needs that cool zone; direct heat alone burns the outside long before the middle is ready.",
+   "Rest 10 minutes on a board, then slice thick against the grain, off the bone. Scatter flaky salt and spoon the chimichurri over at the table."
+  ],
+  "diet": {
+   "vegetarian": false,
+   "vegan": false,
+   "pescatarian": false,
+   "glutenFree": true,
+   "glutenFreeAdaptable": false,
+   "dairyFree": true,
+   "nutFree": true,
+   "eggFree": true
+  },
+  "allergens": [
+   "sulfites"
+  ],
+  "gmo": {
+   "risk": "moderate",
+   "sources": [
+    "grain-fed-meat"
+   ]
+  },
+  "nutrition": {
+   "calories": 882,
+   "proteinG": 62,
+   "carbsG": 5,
+   "fiberG": 2,
+   "sugarG": 1,
+   "fatG": 68,
+   "satFatG": 21,
+   "sodiumMg": 1480,
+   "cholesterolMg": 188
+  },
+  "tags": [
+   "american",
+   "grilling",
+   "steak",
+   "summer",
+   "gluten-free",
+   "dairy-free",
+   "high-protein",
+   "low-carb",
+   "cookout",
+   "easy",
+   "entertaining"
+  ],
+  "image": {
+   "file": "ribeye.jpg",
+   "source": "wikipedia-lead",
+   "match": "representative",
+   "wikipedia": "Rib eye steak"
+  }
+ },
+ {
+  "id": "ch-msy-007",
+  "slug": "msy-greek-salad",
+  "title": "Greek Salad",
+  "genre": "mediterranean",
+  "subgenre": "salads",
+  "chef": {
+   "name": "Michael Symon",
+   "slug": "michael-symon"
+  },
+  "description": "Tomato, cucumber, pepper and feta with oregano and good olive oil.",
+  "difficulty": "beginner",
+  "easeScore": 10,
+  "spiceScore": 1,
+  "popularity": 9,
+  "pantryScore": 7,
+  "servings": 6,
+  "prepMin": 15,
+  "cookMin": 15,
+  "totalMin": 30,
+  "equipment": [
+   "no-cook"
+  ],
+  "ingredients": [
+   "2 lb ripe tomatoes, cut in wedges",
+   "2 cucumbers, cut in thick half-moons",
+   "1 green bell pepper, sliced in rings",
+   "1 red onion, thinly sliced",
+   "1 cup Kalamata olives",
+   "8 oz feta cheese, in a slab",
+   "1/2 cup olive oil",
+   "3 tbsp red wine vinegar",
+   "1 tbsp dried oregano",
+   "1 1/2 tsp salt",
+   "1 tsp black pepper",
+   "2 tbsp capers",
+   "1/4 cup fresh mint leaves"
+  ],
+  "ingredientKeys": [
+   "tomato",
+   "cucumber",
+   "green-bell-pepper",
+   "red-onion",
+   "kalamata-olives",
+   "feta",
+   "olive-oil",
+   "red-wine-vinegar",
+   "dried-oregano",
+   "salt",
+   "black-pepper",
+   "capers",
+   "fresh-mint"
+  ],
+  "specialty": [
+   "kalamata-olives",
+   "feta",
+   "dried-oregano",
+   "capers",
+   "fresh-mint"
+  ],
+  "steps": [
+   "There is no lettuce in a Greek salad. What makes it work is ripe summer tomatoes cut thick, so nothing here will save you in February.",
+   "Salt the tomato wedges and let them sit 10 minutes in the serving bowl. The juice they release becomes part of the dressing.",
+   "Cut the cucumber thick, in half-moons rather than thin slices, so it stays crunchy against the soft tomato.",
+   "Rinse the sliced onion briefly in cold water and dry it to take off the raw bite.",
+   "Add the cucumber, pepper rings, onion and olives to the tomatoes and dress with the oil, vinegar, oregano, salt and pepper, tossing gently.",
+   "Lay the feta over the top as one whole slab rather than crumbling it in, which is how it is served in Greece, and finish with the capers and mint. Serve with bread for the juices at the bottom."
+  ],
+  "diet": {
+   "vegetarian": true,
+   "vegan": false,
+   "pescatarian": true,
+   "glutenFree": true,
+   "glutenFreeAdaptable": false,
+   "dairyFree": false,
+   "nutFree": true,
+   "eggFree": true
+  },
+  "allergens": [
+   "dairy",
+   "sulfites"
+  ],
+  "gmo": {
+   "risk": "low",
+   "sources": [
+    "grain-fed-dairy"
+   ]
+  },
+  "nutrition": {
+   "calories": 382,
+   "proteinG": 11,
+   "carbsG": 16,
+   "fiberG": 4,
+   "sugarG": 9,
+   "fatG": 32,
+   "satFatG": 10,
+   "sodiumMg": 1480,
+   "cholesterolMg": 38
+  },
+  "tags": [
+   "mediterranean",
+   "greek",
+   "salad",
+   "no-cook",
+   "vegetarian",
+   "gluten-free",
+   "summer",
+   "healthy",
+   "quick",
+   "easy",
+   "low-carb"
+  ],
+  "image": {
+   "file": "msy-greek-salad.jpg",
+   "source": "commons-file",
+   "match": "dish",
+   "commonsFile": "Greek salad (5178297958).jpg"
+  }
+ },
+ {
+  "id": "ch-msy-008",
+  "slug": "msy-pork-shoulder-roast",
+  "title": "Slow-Roasted Pork Shoulder",
+  "genre": "american",
+  "subgenre": "mains",
+  "chef": {
+   "name": "Michael Symon",
+   "slug": "michael-symon"
+  },
+  "description": "A shoulder roasted overnight at low heat until the skin shatters.",
+  "difficulty": "beginner",
+  "easeScore": 8,
+  "spiceScore": 3,
+  "popularity": 9,
+  "pantryScore": 8,
+  "servings": 10,
+  "prepMin": 25,
+  "cookMin": 540,
+  "totalMin": 565,
+  "equipment": [
+   "oven"
+  ],
+  "ingredients": [
+   "1 bone-in pork shoulder (8 lb), skin on",
+   "1/3 cup kosher salt",
+   "2 tbsp coarse black pepper",
+   "2 tbsp brown sugar",
+   "2 tbsp smoked paprika",
+   "1 tbsp garlic powder",
+   "1 tbsp dried oregano",
+   "1 tsp cayenne pepper",
+   "2 yellow onions, quartered",
+   "1 head garlic, halved",
+   "2 cups chicken broth",
+   "1/4 cup apple cider vinegar"
+  ],
+  "ingredientKeys": [
+   "pork-shoulder",
+   "kosher-salt",
+   "black-pepper",
+   "brown-sugar",
+   "smoked-paprika",
+   "garlic-powder",
+   "dried-oregano",
+   "cayenne",
+   "yellow-onion",
+   "garlic",
+   "chicken-broth",
+   "apple-cider-vinegar"
+  ],
+  "specialty": [
+   "pork-shoulder",
+   "kosher-salt",
+   "smoked-paprika",
+   "dried-oregano"
+  ],
+  "steps": [
+   "Score the skin in a crosshatch about 1/4 inch deep, cutting through the fat but not into the meat.",
+   "Mix all the dry seasonings and rub them everywhere, working the mixture into the scores. Do this the night before if you can and leave it uncovered in the refrigerator - the skin needs to dry out to crisp later.",
+   "Set it on the onions and garlic in a roasting pan with the broth, and roast at 275F for 8 hours. Low and slow is the only way: the collagen needs hours above 160F to turn to gelatin, and a hot oven would burn the skin long before that happens.",
+   "It is done when the bone wiggles loose and a fork twists in the meat with no resistance.",
+   "Now raise the oven to 500F for 15-20 minutes to blister the skin. Watch it the entire time - it goes from golden to black fast.",
+   "Rest 30 minutes. Pull the meat in large pieces, break the crackling into shards, and skim the pan juices and sharpen them with the vinegar to spoon over."
+  ],
+  "diet": {
+   "vegetarian": false,
+   "vegan": false,
+   "pescatarian": false,
+   "glutenFree": true,
+   "glutenFreeAdaptable": false,
+   "dairyFree": true,
+   "nutFree": true,
+   "eggFree": true
+  },
+  "allergens": [],
+  "gmo": {
+   "risk": "moderate",
+   "sources": [
+    "grain-fed-meat",
+    "sugar-beet"
+   ]
+  },
+  "nutrition": {
+   "calories": 712,
+   "proteinG": 58,
+   "carbsG": 9,
+   "fiberG": 1,
+   "sugarG": 5,
+   "fatG": 48,
+   "satFatG": 17,
+   "sodiumMg": 1880,
+   "cholesterolMg": 198
+  },
+  "tags": [
+   "american",
+   "roast",
+   "party",
+   "gluten-free",
+   "dairy-free",
+   "high-protein",
+   "make-ahead",
+   "crowd-pleaser",
+   "weekend",
+   "easy",
+   "technique"
+  ],
+  "image": {
+   "file": "msy-pork-shoulder-roast.jpg",
+   "source": "commons-file",
+   "match": "dish",
+   "commonsFile": "Roast shoulder of pork and root vegetables (10295022073).jpg"
+  }
+ },
+ {
+  "id": "ch-msy-009",
+  "slug": "msy-mac-and-cheese-bacon",
+  "title": "Bacon Mac and Cheese",
+  "genre": "american",
+  "subgenre": "comfort",
+  "chef": {
+   "name": "Michael Symon",
+   "slug": "michael-symon"
+  },
+  "description": "Stovetop-then-baked macaroni with three cheeses and crisp bacon.",
+  "difficulty": "beginner",
+  "easeScore": 9,
+  "spiceScore": 3,
+  "popularity": 9,
+  "pantryScore": 8,
+  "servings": 8,
+  "prepMin": 20,
+  "cookMin": 45,
+  "totalMin": 65,
+  "equipment": [
+   "stovetop",
+   "oven"
+  ],
+  "ingredients": [
+   "1 lb elbow macaroni",
+   "12 oz bacon, diced",
+   "5 tbsp butter",
+   "1/3 cup all-purpose flour",
+   "4 cups whole milk",
+   "1 cup heavy cream",
+   "2 1/2 cups shredded sharp cheddar",
+   "1 1/2 cups shredded Gruyere",
+   "1 cup grated Parmesan",
+   "2 tbsp Dijon mustard",
+   "1 tsp smoked paprika",
+   "1/2 tsp cayenne pepper",
+   "2 tsp salt",
+   "1 tsp black pepper",
+   "1 1/2 cups panko breadcrumbs",
+   "3 tbsp melted butter",
+   "1/4 cup chopped chives"
+  ],
+  "ingredientKeys": [
+   "elbow-macaroni",
+   "bacon",
+   "butter",
+   "flour",
+   "whole-milk",
+   "heavy-cream",
+   "cheddar",
+   "gruyere",
+   "parmesan",
+   "dijon-mustard",
+   "smoked-paprika",
+   "cayenne",
+   "salt",
+   "black-pepper",
+   "panko",
+   "butter",
+   "chives"
+  ],
+  "specialty": [
+   "gruyere",
+   "smoked-paprika",
+   "panko"
+  ],
+  "steps": [
+   "Boil the macaroni 2 minutes shy of al dente. It keeps cooking in the sauce and in the oven, and fully cooked pasta ends up as paste.",
+   "Render the bacon crisp and set it aside, leaving a few tablespoons of fat in the pot.",
+   "Make a roux with the butter and flour, cook it 2 minutes, then whisk in the milk and cream gradually and simmer until it thickens.",
+   "Pull the pot off the heat before the cheese goes in, and add it in handfuls. Cheese melted into a boiling sauce breaks into a grainy, oily mess - this is where most mac and cheese goes wrong.",
+   "Season with the Dijon, paprika, cayenne, salt and pepper, then fold in the pasta and most of the bacon. The sauce should look too loose.",
+   "Spread it in a baking dish, top with the panko tossed in melted butter and the rest of the bacon, and bake at 375F for 25 minutes until bubbling and browned. Rest 10 minutes, finish with chives."
+  ],
+  "diet": {
+   "vegetarian": false,
+   "vegan": false,
+   "pescatarian": false,
+   "glutenFree": false,
+   "glutenFreeAdaptable": false,
+   "dairyFree": false,
+   "nutFree": true,
+   "eggFree": true
+  },
+  "allergens": [
+   "gluten",
+   "dairy"
+  ],
+  "gmo": {
+   "risk": "high",
+   "sources": [
+    "grain-fed-meat",
+    "grain-fed-dairy",
+    "processed-bread",
+    "processed-cheese"
+   ]
+  },
+  "nutrition": {
+   "calories": 982,
+   "proteinG": 42,
+   "carbsG": 72,
+   "fiberG": 3,
+   "sugarG": 9,
+   "fatG": 58,
+   "satFatG": 31,
+   "sodiumMg": 1680,
+   "cholesterolMg": 168
+  },
+  "tags": [
+   "american",
+   "comfort",
+   "family",
+   "crowd-pleaser",
+   "make-ahead",
+   "game-day",
+   "holiday",
+   "easy",
+   "indulgent"
+  ],
+  "image": {
+   "file": "mac-and-cheese.jpg",
+   "source": "wikipedia-lead",
+   "match": "representative",
+   "wikipedia": "Macaroni and cheese"
+  }
+ },
+ {
+  "id": "ch-msy-010",
+  "slug": "msy-lamb-gyro",
+  "title": "Lamb Gyro",
+  "genre": "mediterranean",
+  "subgenre": "sandwiches",
+  "chef": {
+   "name": "Michael Symon",
+   "slug": "michael-symon"
+  },
+  "description": "A ground lamb and beef loaf, sliced thin and crisped, in warm pita.",
+  "difficulty": "intermediate",
+  "easeScore": 7,
+  "spiceScore": 4,
+  "popularity": 9,
+  "pantryScore": 6,
+  "servings": 8,
+  "prepMin": 30,
+  "cookMin": 90,
+  "totalMin": 120,
+  "equipment": [
+   "oven",
+   "stovetop",
+   "food-processor"
+  ],
+  "ingredients": [
+   "1 1/2 lb ground lamb",
+   "1 lb ground beef",
+   "1 yellow onion, grated and squeezed dry",
+   "8 cloves garlic, minced",
+   "2 tbsp dried oregano",
+   "1 tbsp ground cumin",
+   "2 tsp dried marjoram",
+   "2 tsp salt",
+   "1 1/2 tsp black pepper",
+   "1/2 tsp ground cinnamon",
+   "2 cups Greek yogurt",
+   "1 cucumber, grated and squeezed dry",
+   "3 cloves garlic, minced",
+   "2 tbsp lemon juice",
+   "2 tbsp chopped fresh dill",
+   "1 tsp salt",
+   "8 pita breads",
+   "2 tomatoes, sliced",
+   "1 red onion, thinly sliced",
+   "2 tbsp olive oil"
+  ],
+  "ingredientKeys": [
+   "ground-lamb",
+   "ground-beef",
+   "yellow-onion",
+   "garlic",
+   "dried-oregano",
+   "cumin",
+   "dried-marjoram",
+   "salt",
+   "black-pepper",
+   "cinnamon",
+   "greek-yogurt",
+   "cucumber",
+   "garlic",
+   "lemon-juice",
+   "fresh-dill",
+   "salt",
+   "pita-bread",
+   "tomato",
+   "red-onion",
+   "olive-oil"
+  ],
+  "specialty": [
+   "ground-lamb",
+   "dried-oregano",
+   "dried-marjoram",
+   "greek-yogurt",
+   "fresh-dill",
+   "pita-bread"
+  ],
+  "steps": [
+   "Grate the onion and squeeze it bone dry in a towel. Wet onion steams the loaf from inside and keeps it from holding together.",
+   "Process both meats with the onion, garlic, oregano, cumin, marjoram, salt, pepper and cinnamon in a food processor for a full 2 minutes, in batches, until it becomes a smooth paste.",
+   "That over-processing is deliberate and is the whole secret. Gyro meat is an emulsified sausage, not a meatloaf, and a loose mixture will crumble instead of slicing.",
+   "Pack it tightly into a loaf pan, pressing out air pockets, and bake at 325F in a water bath for about 1 hour, to 165F internal.",
+   "Weight the loaf down with something heavy while it cools, then refrigerate it until cold and firm. You cannot slice it thin while warm.",
+   "Slice it as thin as you can and crisp the slices in olive oil in a hot pan, 1 minute per side. Serve in warm pita with tzatziki made from the yogurt, cucumber, garlic, lemon, dill and salt, plus tomato and red onion."
+  ],
+  "diet": {
+   "vegetarian": false,
+   "vegan": false,
+   "pescatarian": false,
+   "glutenFree": false,
+   "glutenFreeAdaptable": true,
+   "dairyFree": false,
+   "nutFree": true,
+   "eggFree": true
+  },
+  "allergens": [
+   "gluten",
+   "dairy"
+  ],
+  "gmo": {
+   "risk": "moderate",
+   "sources": [
+    "grain-fed-meat",
+    "grain-fed-dairy",
+    "processed-bread"
+   ]
+  },
+  "nutrition": {
+   "calories": 782,
+   "proteinG": 48,
+   "carbsG": 48,
+   "fiberG": 4,
+   "sugarG": 9,
+   "fatG": 42,
+   "satFatG": 17,
+   "sodiumMg": 1680,
+   "cholesterolMg": 158
+  },
+  "tags": [
+   "mediterranean",
+   "greek",
+   "sandwich",
+   "technique",
+   "make-ahead",
+   "high-protein",
+   "family",
+   "party",
+   "restaurant-style",
+   "project"
+  ],
+  "image": {
+   "file": "msy-lamb-gyro.jpg",
+   "source": "commons-file",
+   "match": "dish",
+   "commonsFile": "Lamb Gyros Sydney.jpg"
+  }
+ },
+ {
+  "id": "ch-msy-011",
+  "slug": "msy-grilled-wings",
+  "title": "Grilled Chicken Wings",
+  "genre": "american",
+  "subgenre": "grilling",
+  "chef": {
+   "name": "Michael Symon",
+   "slug": "michael-symon"
+  },
+  "description": "Dry-brined wings grilled crisp, tossed in garlic butter and hot sauce.",
+  "difficulty": "beginner",
+  "easeScore": 9,
+  "spiceScore": 6,
+  "popularity": 9,
+  "pantryScore": 8,
+  "servings": 6,
+  "prepMin": 15,
+  "cookMin": 270,
+  "totalMin": 285,
+  "equipment": [
+   "grill"
+  ],
+  "ingredients": [
+   "4 lb chicken wings, split",
+   "2 tbsp kosher salt",
+   "1 tbsp baking powder",
+   "1 tbsp garlic powder",
+   "1 tsp black pepper",
+   "6 tbsp butter",
+   "6 cloves garlic, minced",
+   "2/3 cup hot sauce",
+   "2 tbsp honey",
+   "1 tbsp apple cider vinegar",
+   "1 tsp smoked paprika",
+   "1/4 cup chopped chives",
+   "1 cup blue cheese dressing",
+   "4 celery stalks, cut in sticks"
+  ],
+  "ingredientKeys": [
+   "chicken-wings",
+   "kosher-salt",
+   "baking-powder",
+   "garlic-powder",
+   "black-pepper",
+   "butter",
+   "garlic",
+   "hot-sauce",
+   "honey",
+   "apple-cider-vinegar",
+   "smoked-paprika",
+   "chives",
+   "blue-cheese-dressing",
+   "celery"
+  ],
+  "specialty": [
+   "chicken-wings",
+   "kosher-salt",
+   "hot-sauce",
+   "smoked-paprika",
+   "blue-cheese-dressing"
+  ],
+  "steps": [
+   "Toss the wings with the salt, baking powder, garlic powder and pepper and leave them on a rack uncovered in the refrigerator at least 4 hours.",
+   "The baking powder is not a typo. It raises the skin's pH so the proteins brown faster and the surface dries out - it is what gives you crisp skin without a deep fryer. Use baking powder, not soda.",
+   "Build a two-zone fire. Start the wings over the cool side, covered, for 20 minutes to render the fat under the skin.",
+   "Then move them over direct heat for 6-8 minutes, turning often, until the skin is blistered and crisp. Starting over direct heat burns the skin while the fat is still soft and rubbery.",
+   "Melt the butter with the garlic, then whisk in the hot sauce, honey, vinegar and paprika and keep it warm.",
+   "Toss the hot wings in the sauce right off the grill and serve immediately with chives, blue cheese dressing and celery."
+  ],
+  "diet": {
+   "vegetarian": false,
+   "vegan": false,
+   "pescatarian": false,
+   "glutenFree": true,
+   "glutenFreeAdaptable": false,
+   "dairyFree": false,
+   "nutFree": true,
+   "eggFree": false
+  },
+  "allergens": [
+   "dairy",
+   "egg"
+  ],
+  "gmo": {
+   "risk": "moderate",
+   "sources": [
+    "grain-fed-meat",
+    "grain-fed-dairy",
+    "seed-oil"
+   ]
+  },
+  "nutrition": {
+   "calories": 782,
+   "proteinG": 48,
+   "carbsG": 11,
+   "fiberG": 1,
+   "sugarG": 9,
+   "fatG": 60,
+   "satFatG": 22,
+   "sodiumMg": 1880,
+   "cholesterolMg": 238
+  },
+  "tags": [
+   "american",
+   "grilling",
+   "game-day",
+   "party",
+   "spicy",
+   "gluten-free",
+   "high-protein",
+   "low-carb",
+   "crowd-pleaser",
+   "technique",
+   "easy"
+  ],
+  "image": {
+   "file": "msy-grilled-wings.jpg",
+   "source": "commons-file",
+   "match": "dish",
+   "commonsFile": "Grilled chicken wings.jpg"
+  }
+ },
+ {
+  "id": "ch-msy-012",
+  "slug": "msy-beef-stroganoff",
+  "title": "Beef Stroganoff",
+  "genre": "american",
+  "subgenre": "comfort",
+  "chef": {
+   "name": "Michael Symon",
+   "slug": "michael-symon"
+  },
+  "description": "Seared beef and mushrooms in a sour cream sauce over egg noodles.",
+  "difficulty": "beginner",
+  "easeScore": 9,
+  "spiceScore": 2,
+  "popularity": 8,
+  "pantryScore": 8,
+  "servings": 6,
+  "prepMin": 20,
+  "cookMin": 35,
+  "totalMin": 55,
+  "equipment": [
+   "stovetop"
+  ],
+  "ingredients": [
+   "2 lb beef sirloin, sliced thin",
+   "2 tsp salt",
+   "1 tsp black pepper",
+   "3 tbsp vegetable oil",
+   "4 tbsp butter",
+   "1 lb cremini mushrooms, sliced",
+   "1 yellow onion, sliced",
+   "4 cloves garlic, minced",
+   "3 tbsp all-purpose flour",
+   "1 tbsp tomato paste",
+   "1/2 cup dry white wine",
+   "3 cups beef broth",
+   "1 tbsp Dijon mustard",
+   "1 tbsp Worcestershire sauce",
+   "1 1/4 cups sour cream",
+   "1 lb egg noodles",
+   "1/3 cup chopped parsley",
+   "1 tbsp chopped fresh dill"
+  ],
+  "ingredientKeys": [
+   "beef-sirloin",
+   "salt",
+   "black-pepper",
+   "vegetable-oil",
+   "butter",
+   "mushroom",
+   "yellow-onion",
+   "garlic",
+   "flour",
+   "tomato-paste",
+   "white-wine",
+   "beef-broth",
+   "dijon-mustard",
+   "worcestershire",
+   "sour-cream",
+   "egg-noodles",
+   "parsley",
+   "fresh-dill"
+  ],
+  "specialty": [
+   "beef-sirloin",
+   "beef-broth",
+   "egg-noodles",
+   "fresh-dill"
+  ],
+  "steps": [
+   "Slice the beef thin against the grain and dry it well. Sear it in the hot oil in two or three batches, 60 seconds per side, and take it out immediately - it finishes in the sauce.",
+   "Searing in batches matters here more than anywhere: a crowded pan drops below browning temperature and the beef grey-steams in its own juice.",
+   "Cook the mushrooms in the butter over high heat 8 minutes until browned, then the onion for 5 minutes and the garlic for 1.",
+   "Stir in the flour and tomato paste for 2 minutes, then deglaze with the wine.",
+   "Add the broth, Dijon and Worcestershire and simmer 10 minutes until it coats a spoon.",
+   "Take the pan off the heat before stirring in the sour cream - boiled sour cream curdles and separates. Return the beef and its juices, warm through for 1 minute, and serve over the egg noodles with parsley and dill."
+  ],
+  "diet": {
+   "vegetarian": false,
+   "vegan": false,
+   "pescatarian": false,
+   "glutenFree": false,
+   "glutenFreeAdaptable": false,
+   "dairyFree": false,
+   "nutFree": true,
+   "eggFree": false
+  },
+  "allergens": [
+   "gluten",
+   "dairy",
+   "egg",
+   "fish",
+   "sulfites"
+  ],
+  "gmo": {
+   "risk": "high",
+   "sources": [
+    "seed-oil",
+    "grain-fed-meat",
+    "grain-fed-dairy"
+   ]
+  },
+  "nutrition": {
+   "calories": 782,
+   "proteinG": 52,
+   "carbsG": 62,
+   "fiberG": 4,
+   "sugarG": 7,
+   "fatG": 36,
+   "satFatG": 15,
+   "sodiumMg": 1480,
+   "cholesterolMg": 198
+  },
+  "tags": [
+   "american",
+   "comfort",
+   "weeknight",
+   "family",
+   "quick",
+   "high-protein",
+   "classic",
+   "easy",
+   "winter"
+  ],
+  "image": {
+   "file": "msy-beef-stroganoff.jpg",
+   "source": "commons-file",
+   "match": "dish",
+   "commonsFile": "Beef Stroganoff-01.jpg"
+  }
+ },
+ {
+  "id": "ch-msy-013",
+  "slug": "msy-smoked-ribs",
+  "title": "Smoked Pork Ribs",
+  "genre": "american",
+  "subgenre": "bbq",
+  "chef": {
+   "name": "Michael Symon",
+   "slug": "michael-symon"
+  },
+  "description": "St. Louis ribs with a paprika rub, smoked until they bend and crack.",
+  "difficulty": "intermediate",
+  "easeScore": 7,
+  "spiceScore": 5,
+  "popularity": 9,
+  "pantryScore": 7,
+  "servings": 6,
+  "prepMin": 25,
+  "cookMin": 330,
+  "totalMin": 355,
+  "equipment": [
+   "grill"
+  ],
+  "ingredients": [
+   "3 racks St. Louis cut pork ribs",
+   "1/4 cup kosher salt",
+   "1/4 cup brown sugar",
+   "3 tbsp smoked paprika",
+   "2 tbsp coarse black pepper",
+   "1 tbsp garlic powder",
+   "1 tbsp onion powder",
+   "2 tsp cayenne pepper",
+   "2 tsp dried mustard",
+   "1/4 cup yellow mustard",
+   "1 cup apple cider",
+   "1/2 cup apple cider vinegar",
+   "4 tbsp butter",
+   "1 1/2 cups ketchup",
+   "1/3 cup molasses",
+   "2 tbsp Worcestershire sauce",
+   "6 cups wood chunks (apple or cherry)"
+  ],
+  "ingredientKeys": [
+   "pork-ribs",
+   "kosher-salt",
+   "brown-sugar",
+   "smoked-paprika",
+   "black-pepper",
+   "garlic-powder",
+   "onion-powder",
+   "cayenne",
+   "dried-mustard",
+   "yellow-mustard",
+   "apple-cider",
+   "apple-cider-vinegar",
+   "butter",
+   "ketchup",
+   "molasses",
+   "worcestershire",
+   "wood-chunks"
+  ],
+  "specialty": [
+   "pork-ribs",
+   "kosher-salt",
+   "smoked-paprika",
+   "dried-mustard",
+   "molasses",
+   "wood-chunks"
+  ],
+  "steps": [
+   "Pull the thin membrane off the bone side with a paper towel for grip. Left on, it turns leathery and blocks the rub from reaching the meat.",
+   "Smear a thin layer of yellow mustard on as a binder - you will not taste it - then coat heavily with the mixed dry rub.",
+   "Smoke at 250F for 3 hours, bone-side down, spritzing with the cider and vinegar every 45 minutes.",
+   "Wrap each rack in foil with a splash of cider and some butter and cook 1 1/2 hours more. The foil steams the connective tissue soft; this is the stage that makes ribs tender.",
+   "Unwrap, brush with the ketchup, molasses and Worcestershire mixed into a sauce, and smoke 30-45 minutes uncovered to set the glaze.",
+   "They are not done at a temperature - they are done when you lift a rack with tongs and the surface cracks and it bends almost to breaking. Meat that falls off the bone is overcooked; it should pull cleanly with a bite. Rest 15 minutes before cutting."
+  ],
+  "diet": {
+   "vegetarian": false,
+   "vegan": false,
+   "pescatarian": false,
+   "glutenFree": true,
+   "glutenFreeAdaptable": false,
+   "dairyFree": false,
+   "nutFree": true,
+   "eggFree": true
+  },
+  "allergens": [
+   "dairy",
+   "fish"
+  ],
+  "gmo": {
+   "risk": "high",
+   "sources": [
+    "grain-fed-meat",
+    "corn-syrup",
+    "sugar-beet",
+    "grain-fed-dairy"
+   ]
+  },
+  "nutrition": {
+   "calories": 882,
+   "proteinG": 52,
+   "carbsG": 42,
+   "fiberG": 2,
+   "sugarG": 36,
+   "fatG": 58,
+   "satFatG": 21,
+   "sodiumMg": 1880,
+   "cholesterolMg": 188
+  },
+  "tags": [
+   "american",
+   "bbq",
+   "grilling",
+   "technique",
+   "party",
+   "gluten-free",
+   "high-protein",
+   "weekend",
+   "crowd-pleaser",
+   "summer",
+   "signature"
+  ],
+  "image": {
+   "file": "msy-smoked-ribs.jpg",
+   "source": "commons-file",
+   "match": "dish",
+   "commonsFile": "Pork Ribs (32852871933).jpg"
+  }
+ },
+ {
+  "id": "ch-msy-014",
+  "slug": "msy-roasted-beet-feta-salad",
+  "title": "Roasted Beet and Feta Salad",
+  "genre": "mediterranean",
+  "subgenre": "salads",
+  "chef": {
+   "name": "Michael Symon",
+   "slug": "michael-symon"
+  },
+  "description": "Warm roasted beets with feta, mint and a lemon-honey dressing.",
+  "difficulty": "beginner",
+  "easeScore": 9,
+  "spiceScore": 2,
+  "popularity": 7,
+  "pantryScore": 6,
+  "servings": 6,
+  "prepMin": 20,
+  "cookMin": 70,
+  "totalMin": 90,
+  "equipment": [
+   "oven",
+   "no-cook"
+  ],
+  "ingredients": [
+   "2 1/2 lb beets",
+   "3 tbsp olive oil",
+   "2 tsp salt",
+   "1/3 cup lemon juice",
+   "1 tbsp honey",
+   "1 tsp Dijon mustard",
+   "1/2 cup olive oil",
+   "1 shallot, minced",
+   "1 tsp dried oregano",
+   "1 tsp black pepper",
+   "8 oz feta cheese, crumbled",
+   "1/2 cup chopped mint",
+   "1/2 cup chopped dill",
+   "1/2 cup toasted pistachios",
+   "2 cups arugula"
+  ],
+  "ingredientKeys": [
+   "beets",
+   "olive-oil",
+   "salt",
+   "lemon-juice",
+   "honey",
+   "dijon-mustard",
+   "olive-oil",
+   "shallot",
+   "dried-oregano",
+   "black-pepper",
+   "feta",
+   "fresh-mint",
+   "fresh-dill",
+   "pistachios",
+   "arugula"
+  ],
+  "specialty": [
+   "beets",
+   "shallot",
+   "dried-oregano",
+   "feta",
+   "fresh-mint",
+   "fresh-dill",
+   "pistachios",
+   "arugula"
+  ],
+  "steps": [
+   "Wrap the beets in foil with the oil and salt - separate packets by color so the red does not bleed into the gold - and roast at 400F for 60-70 minutes until a skewer meets no resistance.",
+   "Peel them while still warm. The skins slip off under a paper towel at that point and fight you once they are cold. Cut them into wedges.",
+   "Whisk the lemon juice, honey, Dijon, olive oil, shallot, oregano and pepper into a dressing.",
+   "Dress the beets while they are still warm and let them sit 15 minutes. Warm beets absorb dressing; cold ones just get coated in it, and that difference is most of the dish.",
+   "Fold in the feta, mint, dill and pistachios.",
+   "Add the arugula last, right before serving, so it stays upright rather than wilting into the warm beets."
+  ],
+  "diet": {
+   "vegetarian": true,
+   "vegan": false,
+   "pescatarian": true,
+   "glutenFree": true,
+   "glutenFreeAdaptable": false,
+   "dairyFree": false,
+   "nutFree": false,
+   "eggFree": true
+  },
+  "allergens": [
+   "dairy",
+   "tree-nut"
+  ],
+  "gmo": {
+   "risk": "low",
+   "sources": [
+    "grain-fed-dairy"
+   ]
+  },
+  "nutrition": {
+   "calories": 448,
+   "proteinG": 12,
+   "carbsG": 28,
+   "fiberG": 7,
+   "sugarG": 20,
+   "fatG": 34,
+   "satFatG": 9,
+   "sodiumMg": 1180,
+   "cholesterolMg": 32
+  },
+  "tags": [
+   "mediterranean",
+   "salad",
+   "vegetarian",
+   "gluten-free",
+   "healthy",
+   "make-ahead",
+   "high-fiber",
+   "easy",
+   "entertaining",
+   "side"
+  ],
+  "image": {
+   "file": "beet-salad.jpg",
+   "source": "wikipedia-lead",
+   "match": "representative",
+   "wikipedia": "Beetroot"
+  }
+ },
+ {
+  "id": "ch-msy-015",
+  "slug": "msy-chicken-paprikash",
+  "title": "Chicken Paprikash",
+  "genre": "american",
+  "subgenre": "comfort",
+  "chef": {
+   "name": "Michael Symon",
+   "slug": "michael-symon"
+  },
+  "description": "Hungarian braised chicken in sweet paprika and sour cream, over noodles.",
+  "difficulty": "beginner",
+  "easeScore": 9,
+  "spiceScore": 4,
+  "popularity": 8,
+  "pantryScore": 7,
+  "servings": 6,
+  "prepMin": 20,
+  "cookMin": 55,
+  "totalMin": 75,
+  "equipment": [
+   "stovetop"
+  ],
+  "ingredients": [
+   "8 bone-in chicken thighs",
+   "2 tsp salt",
+   "1 tsp black pepper",
+   "3 tbsp lard or vegetable oil",
+   "2 yellow onions, diced",
+   "4 cloves garlic, minced",
+   "1 red bell pepper, diced",
+   "1/3 cup sweet Hungarian paprika",
+   "1 tsp hot paprika",
+   "3 tbsp all-purpose flour",
+   "3 cups chicken broth",
+   "1 can (14 oz) diced tomatoes",
+   "2 bay leaves",
+   "1 1/4 cups sour cream",
+   "1 lb egg noodles",
+   "1/3 cup chopped parsley"
+  ],
+  "ingredientKeys": [
+   "chicken-thighs",
+   "salt",
+   "black-pepper",
+   "lard",
+   "yellow-onion",
+   "garlic",
+   "red-bell-pepper",
+   "hungarian-paprika",
+   "hot-paprika",
+   "flour",
+   "chicken-broth",
+   "diced-tomatoes",
+   "bay-leaf",
+   "sour-cream",
+   "egg-noodles",
+   "parsley"
+  ],
+  "specialty": [
+   "chicken-thighs",
+   "lard",
+   "hungarian-paprika",
+   "hot-paprika",
+   "egg-noodles"
+  ],
+  "steps": [
+   "Season and brown the chicken skin-side down in the lard 7 minutes, then set it aside.",
+   "Cook the onions in the fat 10 minutes until soft and golden, then the garlic and bell pepper for 3 minutes.",
+   "Take the pot off the heat before adding the paprika. A third of a cup of it goes in, and paprika scorches in about fifteen seconds over direct heat and turns the whole dish bitter.",
+   "Stir the paprika into the warm fat until it blooms into a deep red paste, then add the flour and return to low heat for 2 minutes.",
+   "Add the broth, tomatoes and bay leaves, return the chicken skin-side up, and simmer covered 35 minutes until the thighs read 175F.",
+   "Take the pot off the heat, then temper the sour cream with a ladle of the hot sauce before stirring it in - added cold and straight it will curdle. Serve over egg noodles with parsley."
+  ],
+  "diet": {
+   "vegetarian": false,
+   "vegan": false,
+   "pescatarian": false,
+   "glutenFree": false,
+   "glutenFreeAdaptable": false,
+   "dairyFree": false,
+   "nutFree": true,
+   "eggFree": false
+  },
+  "allergens": [
+   "gluten",
+   "dairy",
+   "egg"
+  ],
+  "gmo": {
+   "risk": "moderate",
+   "sources": [
+    "grain-fed-meat",
+    "grain-fed-dairy"
+   ]
+  },
+  "nutrition": {
+   "calories": 782,
+   "proteinG": 48,
+   "carbsG": 62,
+   "fiberG": 5,
+   "sugarG": 11,
+   "fatG": 38,
+   "satFatG": 15,
+   "sodiumMg": 1280,
+   "cholesterolMg": 228
+  },
+  "tags": [
+   "american",
+   "comfort",
+   "family",
+   "regional",
+   "technique",
+   "weeknight",
+   "high-protein",
+   "winter",
+   "easy",
+   "classic"
+  ],
+  "image": {
+   "file": "msy-chicken-paprikash.jpg",
+   "source": "commons-file",
+   "match": "dish",
+   "commonsFile": "Chicken paprikash.jpg"
+  }
+ },
+ {
+  "id": "ch-msy-016",
+  "slug": "msy-grilled-octopus",
+  "title": "Grilled Octopus",
+  "genre": "mediterranean",
+  "subgenre": "seafood",
+  "chef": {
+   "name": "Michael Symon",
+   "slug": "michael-symon"
+  },
+  "description": "Octopus braised tender then charred over coals with lemon and oregano.",
+  "difficulty": "intermediate",
+  "easeScore": 6,
+  "spiceScore": 3,
+  "popularity": 7,
+  "pantryScore": 4,
+  "servings": 6,
+  "prepMin": 20,
+  "cookMin": 105,
+  "totalMin": 125,
+  "equipment": [
+   "stovetop",
+   "grill"
+  ],
+  "ingredients": [
+   "3 lb octopus, cleaned",
+   "1 wine cork",
+   "1 yellow onion, halved",
+   "6 cloves garlic, smashed",
+   "2 bay leaves",
+   "1 cup dry white wine",
+   "1 tbsp black peppercorns",
+   "1 tbsp salt",
+   "1/2 cup olive oil",
+   "1/3 cup lemon juice",
+   "2 tbsp red wine vinegar",
+   "1 tbsp dried oregano",
+   "1 tsp red pepper flakes",
+   "4 cloves garlic, minced",
+   "1 1/2 tsp flaky sea salt",
+   "1/3 cup chopped parsley",
+   "1 lemon, cut in wedges"
+  ],
+  "ingredientKeys": [
+   "octopus",
+   "wine-cork",
+   "yellow-onion",
+   "garlic",
+   "bay-leaf",
+   "white-wine",
+   "black-peppercorns",
+   "salt",
+   "olive-oil",
+   "lemon-juice",
+   "red-wine-vinegar",
+   "dried-oregano",
+   "red-pepper-flakes",
+   "garlic",
+   "flaky-sea-salt",
+   "parsley",
+   "lemon"
+  ],
+  "specialty": [
+   "octopus",
+   "wine-cork",
+   "white-wine",
+   "dried-oregano",
+   "flaky-sea-salt"
+  ],
+  "steps": [
+   "Put the octopus in a pot with the onion, garlic, bay leaves, wine, peppercorns, salt and the wine cork, and add water to cover. The cork is a Greek fisherman's superstition and harmless either way - the real tenderizer is time.",
+   "Simmer gently, never boiling hard, for 60-75 minutes. Test it with a knife at the thickest part of a tentacle: it should slide in with no resistance.",
+   "This is the step that decides everything. Undercooked octopus is rubber, and no amount of grilling fixes it. Overcooked, it goes mushy and falls apart on the grill.",
+   "Let it cool in its own liquid for 30 minutes, which keeps it from tightening, then cut the tentacles apart and pat them very dry.",
+   "Whisk the oil, lemon juice, vinegar, oregano, pepper flakes and minced garlic. Toss the tentacles in half of it.",
+   "Grill over a hot fire 2-3 minutes per side, until the edges char and crisp. Dress with the remaining marinade, flaky salt, parsley and lemon."
+  ],
+  "diet": {
+   "vegetarian": false,
+   "vegan": false,
+   "pescatarian": true,
+   "glutenFree": true,
+   "glutenFreeAdaptable": false,
+   "dairyFree": true,
+   "nutFree": true,
+   "eggFree": true
+  },
+  "allergens": [
+   "shellfish",
+   "sulfites"
+  ],
+  "gmo": {
+   "risk": "low",
+   "sources": [
+    "none"
+   ]
+  },
+  "nutrition": {
+   "calories": 382,
+   "proteinG": 32,
+   "carbsG": 7,
+   "fiberG": 1,
+   "sugarG": 2,
+   "fatG": 24,
+   "satFatG": 4,
+   "sodiumMg": 1280,
+   "cholesterolMg": 98
+  },
+  "tags": [
+   "mediterranean",
+   "greek",
+   "seafood",
+   "grilling",
+   "technique",
+   "pescatarian",
+   "gluten-free",
+   "dairy-free",
+   "high-protein",
+   "restaurant-style",
+   "entertaining"
+  ],
+  "image": {
+   "file": "msy-grilled-octopus.jpg",
+   "source": "commons-file",
+   "match": "dish",
+   "commonsFile": "Grilled octopus.jpg"
+  }
+ },
+ {
+  "id": "ch-msy-017",
+  "slug": "msy-breakfast-hash",
+  "title": "Potato and Sausage Hash",
+  "genre": "american",
+  "subgenre": "breakfast",
+  "chef": {
+   "name": "Michael Symon",
+   "slug": "michael-symon"
+  },
+  "description": "Crisp potatoes with sausage, peppers and eggs cooked right in the pan.",
+  "difficulty": "beginner",
+  "easeScore": 9,
+  "spiceScore": 4,
+  "popularity": 8,
+  "pantryScore": 9,
+  "servings": 4,
+  "prepMin": 15,
+  "cookMin": 35,
+  "totalMin": 50,
+  "equipment": [
+   "stovetop",
+   "oven"
+  ],
+  "ingredients": [
+   "2 lb Yukon Gold potatoes, diced small",
+   "1 lb breakfast sausage",
+   "3 tbsp vegetable oil",
+   "1 yellow onion, diced",
+   "1 red bell pepper, diced",
+   "1 jalapeno, minced",
+   "4 cloves garlic, minced",
+   "2 tsp smoked paprika",
+   "1 1/2 tsp salt",
+   "1 tsp black pepper",
+   "6 eggs",
+   "1 cup shredded cheddar",
+   "1/4 cup chopped chives",
+   "1/2 cup hot sauce"
+  ],
+  "ingredientKeys": [
+   "yukon-gold-potato",
+   "breakfast-sausage",
+   "vegetable-oil",
+   "yellow-onion",
+   "red-bell-pepper",
+   "jalapeno",
+   "garlic",
+   "smoked-paprika",
+   "salt",
+   "black-pepper",
+   "egg",
+   "cheddar",
+   "chives",
+   "hot-sauce"
+  ],
+  "specialty": [
+   "breakfast-sausage",
+   "smoked-paprika",
+   "hot-sauce"
+  ],
+  "steps": [
+   "Parboil the diced potatoes 6 minutes in salted water, then drain them and let them steam dry for 5 minutes. Dry starchy surfaces are what crisp; raw diced potato in a pan either burns outside or stays hard inside.",
+   "Brown the sausage in a large cast-iron skillet, breaking it up, then remove it and leave the fat.",
+   "Add the oil and the potatoes in one layer and leave them alone for 6 minutes. Stirring hash constantly is why most hash is pale and soft - it needs long undisturbed contact with the pan.",
+   "Flip them in sections, cook another 5 minutes, then add the onion, bell pepper and jalapeno for 6 minutes and the garlic for 1.",
+   "Return the sausage, season with the paprika, salt and pepper, and make six wells in the surface.",
+   "Crack an egg into each well, scatter the cheddar over, and bake at 400F for 8-10 minutes until the whites set and the yolks are still soft. Finish with chives and pass the hot sauce."
+  ],
+  "diet": {
+   "vegetarian": false,
+   "vegan": false,
+   "pescatarian": false,
+   "glutenFree": true,
+   "glutenFreeAdaptable": false,
+   "dairyFree": false,
+   "nutFree": true,
+   "eggFree": false
+  },
+  "allergens": [
+   "dairy",
+   "egg"
+  ],
+  "gmo": {
+   "risk": "high",
+   "sources": [
+    "seed-oil",
+    "grain-fed-meat",
+    "grain-fed-dairy"
+   ]
+  },
+  "nutrition": {
+   "calories": 782,
+   "proteinG": 38,
+   "carbsG": 48,
+   "fiberG": 5,
+   "sugarG": 7,
+   "fatG": 48,
+   "satFatG": 17,
+   "sodiumMg": 1680,
+   "cholesterolMg": 338
+  },
+  "tags": [
+   "american",
+   "breakfast",
+   "brunch",
+   "one-pan",
+   "gluten-free",
+   "family",
+   "high-protein",
+   "easy",
+   "comfort",
+   "budget"
+  ],
+  "image": {
+   "file": "breakfast-hash.jpg",
+   "source": "wikipedia-lead",
+   "match": "representative",
+   "wikipedia": "Hash (food)"
+  }
+ },
+ {
+  "id": "ch-msy-018",
+  "slug": "msy-grilled-corn-feta",
+  "title": "Grilled Corn with Feta and Lime",
+  "genre": "american",
+  "subgenre": "sides",
+  "chef": {
+   "name": "Michael Symon",
+   "slug": "michael-symon"
+  },
+  "description": "Charred corn rolled in herb butter, feta and chile.",
+  "difficulty": "beginner",
+  "easeScore": 10,
+  "spiceScore": 4,
+  "popularity": 9,
+  "pantryScore": 7,
+  "servings": 6,
+  "prepMin": 10,
+  "cookMin": 20,
+  "totalMin": 30,
+  "equipment": [
+   "grill"
+  ],
+  "ingredients": [
+   "6 ears corn, husked",
+   "6 tbsp softened butter",
+   "2 cloves garlic, minced",
+   "1 tbsp lime zest",
+   "1 tsp smoked paprika",
+   "1/2 tsp cayenne pepper",
+   "1 1/2 tsp salt",
+   "1 cup crumbled feta cheese",
+   "1/3 cup chopped cilantro",
+   "2 tbsp chopped mint",
+   "3 tbsp lime juice",
+   "2 limes, cut in wedges"
+  ],
+  "ingredientKeys": [
+   "corn",
+   "butter",
+   "garlic",
+   "lime-zest",
+   "smoked-paprika",
+   "cayenne",
+   "salt",
+   "feta",
+   "cilantro",
+   "fresh-mint",
+   "lime-juice",
+   "lime"
+  ],
+  "specialty": [
+   "corn",
+   "smoked-paprika",
+   "feta",
+   "fresh-mint"
+  ],
+  "steps": [
+   "Mash the butter with the garlic, lime zest, paprika, cayenne and salt and keep it at room temperature so it spreads.",
+   "Grill the husked corn directly over a hot fire, turning every 2 minutes, for 10-12 minutes, until charred in patches on every side.",
+   "Char is the point. Corn that is merely heated through tastes like boiled corn; the blackened kernels are where the flavor comes from, so take it further than feels right.",
+   "Brush the hot ears with the seasoned butter so it melts straight into the kernels.",
+   "Roll each ear in the crumbled feta on a plate, pressing so it sticks to the butter.",
+   "Finish with the cilantro, mint and a squeeze of lime juice, and serve with more wedges. Works just as well with the kernels cut off into a bowl as a salad."
+  ],
+  "diet": {
+   "vegetarian": true,
+   "vegan": false,
+   "pescatarian": true,
+   "glutenFree": true,
+   "glutenFreeAdaptable": false,
+   "dairyFree": false,
+   "nutFree": true,
+   "eggFree": true
+  },
+  "allergens": [
+   "dairy"
+  ],
+  "gmo": {
+   "risk": "high",
+   "sources": [
+    "corn",
+    "grain-fed-dairy"
+   ]
+  },
+  "nutrition": {
+   "calories": 286,
+   "proteinG": 9,
+   "carbsG": 22,
+   "fiberG": 3,
+   "sugarG": 7,
+   "fatG": 20,
+   "satFatG": 11,
+   "sodiumMg": 780,
+   "cholesterolMg": 48
+  },
+  "tags": [
+   "american",
+   "grilling",
+   "side",
+   "summer",
+   "vegetarian",
+   "gluten-free",
+   "cookout",
+   "quick",
+   "easy",
+   "crowd-pleaser"
+  ],
+  "image": {
+   "file": "elote.jpg",
+   "source": "wikipedia-lead",
+   "match": "representative",
+   "wikipedia": "Corn on the cob"
+  }
+ },
+ {
+  "id": "ch-msy-019",
+  "slug": "msy-braised-lamb-shanks-orzo",
+  "title": "Lamb Shanks with Orzo",
+  "genre": "mediterranean",
+  "subgenre": "mains",
+  "chef": {
+   "name": "Michael Symon",
+   "slug": "michael-symon"
+  },
+  "description": "Greek-style shanks braised with cinnamon and tomato, orzo cooked in.",
+  "difficulty": "intermediate",
+  "easeScore": 7,
+  "spiceScore": 3,
+  "popularity": 8,
+  "pantryScore": 6,
+  "servings": 6,
+  "prepMin": 25,
+  "cookMin": 180,
+  "totalMin": 205,
+  "equipment": [
+   "oven",
+   "stovetop"
+  ],
+  "ingredients": [
+   "6 lamb shanks",
+   "2 tbsp salt",
+   "1 tbsp black pepper",
+   "1/4 cup olive oil",
+   "2 yellow onions, diced",
+   "6 cloves garlic, smashed",
+   "3 tbsp tomato paste",
+   "1 cup dry red wine",
+   "1 can (28 oz) crushed tomatoes",
+   "3 cups chicken broth",
+   "1 cinnamon stick",
+   "2 bay leaves",
+   "1 tbsp dried oregano",
+   "1 tsp ground allspice",
+   "1 1/2 cups orzo",
+   "1 1/2 cups crumbled feta",
+   "1/3 cup chopped parsley",
+   "1 tbsp lemon zest"
+  ],
+  "ingredientKeys": [
+   "lamb-shank",
+   "salt",
+   "black-pepper",
+   "olive-oil",
+   "yellow-onion",
+   "garlic",
+   "tomato-paste",
+   "red-wine",
+   "crushed-tomatoes",
+   "chicken-broth",
+   "cinnamon-stick",
+   "bay-leaf",
+   "dried-oregano",
+   "allspice",
+   "orzo",
+   "feta",
+   "parsley",
+   "lemon-zest"
+  ],
+  "specialty": [
+   "lamb-shank",
+   "red-wine",
+   "cinnamon-stick",
+   "dried-oregano",
+   "orzo",
+   "feta"
+  ],
+  "steps": [
+   "Season the shanks heavily and brown them in the oil on every surface, in batches, 10 minutes. Skipping or rushing this leaves the braise tasting thin.",
+   "Cook the onions 8 minutes, then the garlic, then the tomato paste for 2 minutes until it darkens.",
+   "Add the wine and reduce by half, then the crushed tomatoes, broth, cinnamon stick, bay leaves, oregano and allspice. The cinnamon and allspice are what make this read as Greek rather than Italian - a whole stick, not ground, so it perfumes without dominating.",
+   "Return the shanks, cover, and braise at 325F for 2 1/2 hours until the meat pulls from the bone.",
+   "Lift the shanks out, skim the fat, and stir the orzo into the braising liquid. Cook on the stove 10-12 minutes, stirring often so it does not catch on the bottom.",
+   "The orzo absorbs the liquid and should end up loose and creamy, not dry. Add broth if it tightens too much. Return the shanks, then finish with feta, parsley and lemon zest."
+  ],
+  "diet": {
+   "vegetarian": false,
+   "vegan": false,
+   "pescatarian": false,
+   "glutenFree": false,
+   "glutenFreeAdaptable": false,
+   "dairyFree": false,
+   "nutFree": true,
+   "eggFree": true
+  },
+  "allergens": [
+   "gluten",
+   "dairy",
+   "sulfites"
+  ],
+  "gmo": {
+   "risk": "moderate",
+   "sources": [
+    "grain-fed-meat",
+    "grain-fed-dairy"
+   ]
+  },
+  "nutrition": {
+   "calories": 882,
+   "proteinG": 62,
+   "carbsG": 52,
+   "fiberG": 6,
+   "sugarG": 11,
+   "fatG": 46,
+   "satFatG": 17,
+   "sodiumMg": 1880,
+   "cholesterolMg": 198
+  },
+  "tags": [
+   "mediterranean",
+   "greek",
+   "braise",
+   "special-occasion",
+   "make-ahead",
+   "high-protein",
+   "winter",
+   "one-pot",
+   "entertaining",
+   "easter"
+  ],
+  "image": {
+   "file": "lamb-shanks.jpg",
+   "source": "wikipedia-lead",
+   "match": "representative",
+   "wikipedia": "Lamb and mutton"
+  }
+ },
+ {
+  "id": "ch-msy-020",
+  "slug": "msy-pulled-pork-sandwich",
+  "title": "Pulled Pork Sandwich",
+  "genre": "american",
+  "subgenre": "bbq",
+  "chef": {
+   "name": "Michael Symon",
+   "slug": "michael-symon"
+  },
+  "description": "Smoked pork shoulder on a bun with vinegar slaw and pickles.",
+  "difficulty": "intermediate",
+  "easeScore": 7,
+  "spiceScore": 4,
+  "popularity": 9,
+  "pantryScore": 8,
+  "servings": 10,
+  "prepMin": 30,
+  "cookMin": 540,
+  "totalMin": 570,
+  "equipment": [
+   "grill"
+  ],
+  "ingredients": [
+   "1 bone-in pork shoulder (8 lb)",
+   "1/4 cup kosher salt",
+   "1/4 cup brown sugar",
+   "3 tbsp smoked paprika",
+   "2 tbsp black pepper",
+   "1 tbsp garlic powder",
+   "1 tbsp dried mustard",
+   "2 tsp cayenne pepper",
+   "1 cup apple cider vinegar",
+   "1/2 cup water",
+   "1 1/2 cups ketchup",
+   "1/3 cup molasses",
+   "2 tbsp Worcestershire sauce",
+   "6 cups wood chunks (hickory)",
+   "1 small cabbage, shredded",
+   "2 carrots, grated",
+   "1/2 cup apple cider vinegar",
+   "2 tbsp sugar",
+   "1 tbsp celery seed",
+   "1 1/2 tsp salt",
+   "10 brioche buns",
+   "1 1/2 cups dill pickle slices"
+  ],
+  "ingredientKeys": [
+   "pork-shoulder",
+   "kosher-salt",
+   "brown-sugar",
+   "smoked-paprika",
+   "black-pepper",
+   "garlic-powder",
+   "dried-mustard",
+   "cayenne",
+   "apple-cider-vinegar",
+   "water",
+   "ketchup",
+   "molasses",
+   "worcestershire",
+   "wood-chunks",
+   "cabbage",
+   "carrot",
+   "apple-cider-vinegar",
+   "sugar",
+   "celery-seed",
+   "salt",
+   "brioche-bun",
+   "dill-pickle"
+  ],
+  "specialty": [
+   "pork-shoulder",
+   "kosher-salt",
+   "smoked-paprika",
+   "dried-mustard",
+   "molasses",
+   "wood-chunks",
+   "celery-seed",
+   "brioche-bun"
+  ],
+  "steps": [
+   "Mix the salt, brown sugar, paprika, pepper, garlic powder, dried mustard and cayenne and coat the shoulder heavily. Leave it overnight in the refrigerator if you can.",
+   "Smoke at 250F, fat-side up, spritzing with the vinegar and water mixture every hour after the first three.",
+   "Pull it when the bark is dark and set and the internal temperature is about 165F, then wrap it in foil and continue.",
+   "Cook to 203F internal, roughly 9 hours total for this size. Like brisket, judge it by feel: the bone should wiggle free and a probe should slide in with no resistance.",
+   "Rest it wrapped for at least an hour before pulling, then shred it, discarding only the hard gristle - mix the bark back through so every portion has some.",
+   "Dress the slaw with the vinegar, sugar, celery seed and salt rather than mayonnaise; the acid is there to cut the fat. Mix the ketchup, molasses and Worcestershire into a sauce, toss it lightly with the pork, and pile it on toasted brioche buns with slaw and pickles."
+  ],
+  "diet": {
+   "vegetarian": false,
+   "vegan": false,
+   "pescatarian": false,
+   "glutenFree": false,
+   "glutenFreeAdaptable": false,
+   "dairyFree": true,
+   "nutFree": true,
+   "eggFree": false
+  },
+  "allergens": [
+   "gluten",
+   "egg",
+   "fish"
+  ],
+  "gmo": {
+   "risk": "high",
+   "sources": [
+    "grain-fed-meat",
+    "corn-syrup",
+    "sugar-beet",
+    "processed-bread"
+   ]
+  },
+  "nutrition": {
+   "calories": 782,
+   "proteinG": 52,
+   "carbsG": 62,
+   "fiberG": 4,
+   "sugarG": 32,
+   "fatG": 36,
+   "satFatG": 12,
+   "sodiumMg": 1880,
+   "cholesterolMg": 168
+  },
+  "tags": [
+   "american",
+   "bbq",
+   "grilling",
+   "party",
+   "make-ahead",
+   "high-protein",
+   "crowd-pleaser",
+   "game-day",
+   "weekend",
+   "technique",
+   "sandwich"
+  ],
+  "image": {
+   "file": "msy-pulled-pork-sandwich.jpg",
+   "source": "commons-file",
+   "match": "dish",
+   "commonsFile": "Pulled-pork-sandwiches.jpg"
+  }
+ },
+ {
+  "id": "ch-msy-021",
+  "slug": "msy-spanakopita",
+  "title": "Spanakopita",
+  "genre": "mediterranean",
+  "subgenre": "baking",
+  "chef": {
+   "name": "Michael Symon",
+   "slug": "michael-symon"
+  },
+  "description": "Spinach and feta between layers of buttered phyllo, baked crisp.",
+  "difficulty": "intermediate",
+  "easeScore": 7,
+  "spiceScore": 1,
+  "popularity": 8,
+  "pantryScore": 6,
+  "servings": 12,
+  "prepMin": 40,
+  "cookMin": 60,
+  "totalMin": 100,
+  "equipment": [
+   "oven",
+   "stovetop"
+  ],
+  "ingredients": [
+   "2 lb fresh spinach",
+   "1/4 cup olive oil",
+   "2 yellow onions, finely diced",
+   "6 scallions, sliced",
+   "4 cloves garlic, minced",
+   "1 lb feta cheese, crumbled",
+   "1 cup ricotta cheese",
+   "3 eggs",
+   "1/2 cup chopped dill",
+   "1/3 cup chopped parsley",
+   "1/4 cup chopped mint",
+   "1/2 tsp ground nutmeg",
+   "1 tsp black pepper",
+   "1 tsp salt",
+   "1 lb phyllo dough, thawed",
+   "1 1/4 cups melted butter"
+  ],
+  "ingredientKeys": [
+   "fresh-spinach",
+   "olive-oil",
+   "yellow-onion",
+   "scallion",
+   "garlic",
+   "feta",
+   "ricotta",
+   "egg",
+   "fresh-dill",
+   "parsley",
+   "fresh-mint",
+   "nutmeg",
+   "black-pepper",
+   "salt",
+   "phyllo-dough",
+   "butter"
+  ],
+  "specialty": [
+   "fresh-spinach",
+   "feta",
+   "ricotta",
+   "fresh-dill",
+   "fresh-mint",
+   "phyllo-dough"
+  ],
+  "steps": [
+   "Wilt the spinach in batches, then squeeze it absolutely dry in a towel and chop it. This is the step that makes or breaks spanakopita - any water left behind steams the phyllo from inside and you get a soggy middle no matter how crisp the top looks.",
+   "Cook the onions in the oil 10 minutes, add the scallions and garlic for 3, and cool completely.",
+   "Mix the dried spinach with the onions, feta, ricotta, eggs, dill, parsley, mint, nutmeg, pepper and salt. Taste before adding salt - feta brands vary enormously.",
+   "Keep the phyllo under a damp towel while you work. Exposed to air it dries into something that cracks at a touch, and you have maybe a minute per sheet.",
+   "Butter a 9x13 pan and layer 8 sheets, brushing each with melted butter. Spread the filling, then layer 8-10 more sheets on top, buttering as you go, and tuck the edges down inside.",
+   "Score the top layers into portions before baking - cutting through after baking shatters the whole surface. Bake at 375F for 45-50 minutes until deep golden. Rest 20 minutes before cutting."
+  ],
+  "diet": {
+   "vegetarian": true,
+   "vegan": false,
+   "pescatarian": true,
+   "glutenFree": false,
+   "glutenFreeAdaptable": false,
+   "dairyFree": false,
+   "nutFree": true,
+   "eggFree": false
+  },
+  "allergens": [
+   "gluten",
+   "dairy",
+   "egg"
+  ],
+  "gmo": {
+   "risk": "moderate",
+   "sources": [
+    "grain-fed-dairy",
+    "processed-bread"
+   ]
+  },
+  "nutrition": {
+   "calories": 512,
+   "proteinG": 18,
+   "carbsG": 32,
+   "fiberG": 4,
+   "sugarG": 5,
+   "fatG": 34,
+   "satFatG": 18,
+   "sodiumMg": 1180,
+   "cholesterolMg": 118
+  },
+  "tags": [
+   "mediterranean",
+   "greek",
+   "baking",
+   "vegetarian",
+   "party",
+   "make-ahead",
+   "technique",
+   "appetizer",
+   "holiday",
+   "entertaining"
+  ],
+  "image": {
+   "file": "msy-spanakopita.jpg",
+   "source": "commons-file",
+   "match": "dish",
+   "commonsFile": "Spanakopita.jpg"
+  }
+ },
+ {
+  "id": "ch-msy-022",
+  "slug": "msy-grilled-whole-fish",
+  "title": "Grilled Whole Branzino",
+  "genre": "mediterranean",
+  "subgenre": "seafood",
+  "chef": {
+   "name": "Michael Symon",
+   "slug": "michael-symon"
+  },
+  "description": "Whole fish grilled over coals, dressed with lemon, oil and oregano.",
+  "difficulty": "intermediate",
+  "easeScore": 7,
+  "spiceScore": 2,
+  "popularity": 8,
+  "pantryScore": 6,
+  "servings": 4,
+  "prepMin": 20,
+  "cookMin": 25,
+  "totalMin": 45,
+  "equipment": [
+   "grill"
+  ],
+  "ingredients": [
+   "2 whole branzino (1 1/2 lb each), scaled and gutted",
+   "1 tbsp salt",
+   "1 tsp black pepper",
+   "3 tbsp olive oil",
+   "2 lemons, sliced",
+   "8 sprigs fresh oregano",
+   "6 sprigs fresh thyme",
+   "4 cloves garlic, sliced",
+   "1/2 cup olive oil",
+   "1/3 cup lemon juice",
+   "1 tbsp dried oregano",
+   "3 cloves garlic, minced",
+   "1 tsp red pepper flakes",
+   "1 1/2 tsp flaky sea salt",
+   "1/3 cup chopped parsley"
+  ],
+  "ingredientKeys": [
+   "branzino",
+   "salt",
+   "black-pepper",
+   "olive-oil",
+   "lemon",
+   "fresh-oregano",
+   "fresh-thyme",
+   "garlic",
+   "olive-oil",
+   "lemon-juice",
+   "dried-oregano",
+   "garlic",
+   "red-pepper-flakes",
+   "flaky-sea-salt",
+   "parsley"
+  ],
+  "specialty": [
+   "branzino",
+   "fresh-oregano",
+   "fresh-thyme",
+   "dried-oregano",
+   "flaky-sea-salt"
+  ],
+  "steps": [
+   "Score the fish three times on each side down to the bone. The scores let heat into the thickest part so the fish cooks evenly and the skin does not balloon.",
+   "Season inside and out, including the cavity, and stuff it with the lemon slices, fresh oregano, thyme and sliced garlic.",
+   "Oil the fish itself rather than the grates, and make sure the grates are blazing hot and scraped clean. A clean hot grill releases fish skin; a dirty or lukewarm one tears it off every time.",
+   "Grill 6-7 minutes on the first side without touching it. Only move it when the skin has set and releases on its own.",
+   "Flip once with two spatulas and grill 5-6 minutes more, until the flesh at the backbone is opaque and a skewer slides in easily.",
+   "Whisk the olive oil, lemon juice, dried oregano, garlic and pepper flakes into a ladolemono and pour it over the hot fish so it sizzles. Finish with flaky salt and parsley, and fillet it at the table."
+  ],
+  "diet": {
+   "vegetarian": false,
+   "vegan": false,
+   "pescatarian": true,
+   "glutenFree": true,
+   "glutenFreeAdaptable": false,
+   "dairyFree": true,
+   "nutFree": true,
+   "eggFree": true
+  },
+  "allergens": [
+   "fish"
+  ],
+  "gmo": {
+   "risk": "low",
+   "sources": [
+    "none"
+   ]
+  },
+  "nutrition": {
+   "calories": 512,
+   "proteinG": 42,
+   "carbsG": 5,
+   "fiberG": 1,
+   "sugarG": 1,
+   "fatG": 36,
+   "satFatG": 6,
+   "sodiumMg": 1280,
+   "cholesterolMg": 118
+  },
+  "tags": [
+   "mediterranean",
+   "greek",
+   "seafood",
+   "grilling",
+   "technique",
+   "pescatarian",
+   "gluten-free",
+   "dairy-free",
+   "healthy",
+   "high-protein",
+   "low-carb",
+   "restaurant-style"
+  ],
+  "image": {
+   "file": "grilled-branzino.jpg",
+   "source": "wikipedia-lead",
+   "match": "representative",
+   "wikipedia": "European seabass"
+  }
+ },
+ {
+  "id": "ch-msy-023",
+  "slug": "msy-city-chicken",
+  "title": "City Chicken",
+  "genre": "american",
+  "subgenre": "comfort",
+  "chef": {
+   "name": "Michael Symon",
+   "slug": "michael-symon"
+  },
+  "description": "A Rust Belt classic: breaded pork cubes on skewers, fried then baked.",
+  "difficulty": "beginner",
+  "easeScore": 8,
+  "spiceScore": 2,
+  "popularity": 6,
+  "pantryScore": 8,
+  "servings": 6,
+  "prepMin": 25,
+  "cookMin": 55,
+  "totalMin": 80,
+  "equipment": [
+   "stovetop",
+   "oven"
+  ],
+  "ingredients": [
+   "2 1/2 lb pork shoulder, cut in 1 1/2-inch cubes",
+   "2 tsp salt",
+   "1 tsp black pepper",
+   "1 cup all-purpose flour",
+   "3 eggs",
+   "2 tbsp whole milk",
+   "2 1/2 cups fine dry breadcrumbs",
+   "1 tsp garlic powder",
+   "1 tsp paprika",
+   "1 cup vegetable oil",
+   "1 1/2 cups chicken broth",
+   "2 tbsp butter",
+   "2 tbsp all-purpose flour",
+   "1/4 cup chopped parsley",
+   "12 wooden skewers"
+  ],
+  "ingredientKeys": [
+   "pork-shoulder",
+   "salt",
+   "black-pepper",
+   "flour",
+   "egg",
+   "whole-milk",
+   "breadcrumbs",
+   "garlic-powder",
+   "paprika",
+   "vegetable-oil",
+   "chicken-broth",
+   "butter",
+   "flour",
+   "parsley",
+   "wooden-skewers"
+  ],
+  "specialty": [
+   "pork-shoulder",
+   "wooden-skewers"
+  ],
+  "steps": [
+   "There is no chicken in city chicken. It is a Depression-era Cleveland and Pittsburgh dish from when pork was cheaper than poultry, and the skewers were there to mimic a drumstick.",
+   "Thread 3-4 pork cubes onto each skewer, leaving small gaps so the breading crisps between them, and season well.",
+   "Set up flour, the eggs beaten with milk, and the breadcrumbs mixed with garlic powder and paprika. Coat each skewer in that order, pressing the crumbs on.",
+   "Let the breaded skewers rest 15 minutes before frying. The coating hydrates slightly and stops sliding off in the pan.",
+   "Fry in 1/2 inch of 350F oil, turning, 6-8 minutes total until golden all over, then transfer to a baking dish.",
+   "Pour in the broth, cover, and bake at 350F for 40 minutes - shoulder meat needs that braise to go tender, and frying alone would leave it chewy. Make a quick gravy from the pan juices with the butter and flour, and serve with parsley."
+  ],
+  "diet": {
+   "vegetarian": false,
+   "vegan": false,
+   "pescatarian": false,
+   "glutenFree": false,
+   "glutenFreeAdaptable": false,
+   "dairyFree": false,
+   "nutFree": true,
+   "eggFree": false
+  },
+  "allergens": [
+   "gluten",
+   "dairy",
+   "egg"
+  ],
+  "gmo": {
+   "risk": "high",
+   "sources": [
+    "seed-oil",
+    "processed-bread",
+    "grain-fed-meat",
+    "grain-fed-dairy"
+   ]
+  },
+  "nutrition": {
+   "calories": 682,
+   "proteinG": 42,
+   "carbsG": 48,
+   "fiberG": 3,
+   "sugarG": 3,
+   "fatG": 34,
+   "satFatG": 10,
+   "sodiumMg": 1280,
+   "cholesterolMg": 188
+  },
+  "tags": [
+   "american",
+   "comfort",
+   "regional",
+   "family",
+   "budget",
+   "classic",
+   "easy",
+   "sunday",
+   "technique"
+  ],
+  "image": {
+   "file": "city-chicken.jpg",
+   "source": "wikipedia-lead",
+   "match": "representative",
+   "wikipedia": "City chicken"
+  }
+ },
+ {
+  "id": "ch-msy-024",
+  "slug": "msy-grilled-vegetable-platter",
+  "title": "Grilled Vegetable Platter",
+  "genre": "mediterranean",
+  "subgenre": "vegetables",
+  "chef": {
+   "name": "Michael Symon",
+   "slug": "michael-symon"
+  },
+  "description": "Zucchini, peppers, eggplant and onions charred and dressed warm.",
+  "difficulty": "beginner",
+  "easeScore": 10,
+  "spiceScore": 2,
+  "popularity": 8,
+  "pantryScore": 7,
+  "servings": 8,
+  "prepMin": 20,
+  "cookMin": 30,
+  "totalMin": 50,
+  "equipment": [
+   "grill"
+  ],
+  "ingredients": [
+   "2 zucchini, cut lengthwise in planks",
+   "2 yellow squash, cut lengthwise",
+   "1 eggplant, cut in rounds",
+   "3 bell peppers, quartered",
+   "2 red onions, cut in thick rounds",
+   "1 bunch asparagus",
+   "1/2 cup olive oil",
+   "2 tsp salt",
+   "1 tsp black pepper",
+   "1/3 cup lemon juice",
+   "1/4 cup red wine vinegar",
+   "4 cloves garlic, minced",
+   "1 tbsp dried oregano",
+   "1 tsp red pepper flakes",
+   "1/3 cup olive oil",
+   "1/2 cup crumbled feta",
+   "1/3 cup torn basil",
+   "1/4 cup chopped mint"
+  ],
+  "ingredientKeys": [
+   "zucchini",
+   "yellow-squash",
+   "eggplant",
+   "bell-pepper",
+   "red-onion",
+   "asparagus",
+   "olive-oil",
+   "salt",
+   "black-pepper",
+   "lemon-juice",
+   "red-wine-vinegar",
+   "garlic",
+   "dried-oregano",
+   "red-pepper-flakes",
+   "olive-oil",
+   "feta",
+   "fresh-basil",
+   "fresh-mint"
+  ],
+  "specialty": [
+   "yellow-squash",
+   "eggplant",
+   "asparagus",
+   "dried-oregano",
+   "feta",
+   "fresh-mint"
+  ],
+  "steps": [
+   "Cut everything in large flat pieces, lengthwise where possible. Small chunks fall through the grates and cook unevenly; big planks char properly and are easy to turn.",
+   "Brush the pieces with olive oil and season them. Oil the vegetables, not the grill.",
+   "Keep the pieces in groups by type as you grill, since they cook at different rates - peppers and onions want 10-12 minutes, zucchini and eggplant 6-8, asparagus 4.",
+   "Pull each piece when it has real char marks and is just tender, with some bite left. Vegetables grilled to complete softness collapse and go watery on the platter.",
+   "Whisk the lemon juice, vinegar, garlic, oregano, pepper flakes and the remaining olive oil into a dressing.",
+   "Dress the vegetables while still hot so they absorb it, pile them on a platter, and finish with feta, basil and mint. Just as good at room temperature an hour later."
+  ],
+  "diet": {
+   "vegetarian": true,
+   "vegan": false,
+   "pescatarian": true,
+   "glutenFree": true,
+   "glutenFreeAdaptable": false,
+   "dairyFree": false,
+   "nutFree": true,
+   "eggFree": true
+  },
+  "allergens": [
+   "dairy",
+   "sulfites"
+  ],
+  "gmo": {
+   "risk": "low",
+   "sources": [
+    "grain-fed-dairy"
+   ]
+  },
+  "nutrition": {
+   "calories": 286,
+   "proteinG": 5,
+   "carbsG": 18,
+   "fiberG": 6,
+   "sugarG": 9,
+   "fatG": 24,
+   "satFatG": 5,
+   "sodiumMg": 780,
+   "cholesterolMg": 11
+  },
+  "tags": [
+   "mediterranean",
+   "grilling",
+   "vegetarian",
+   "gluten-free",
+   "summer",
+   "healthy",
+   "side",
+   "make-ahead",
+   "cookout",
+   "easy",
+   "high-fiber"
+  ],
+  "image": {
+   "file": "msy-grilled-vegetable-platter.jpg",
+   "source": "commons-file",
+   "match": "dish",
+   "commonsFile": "Vegetable platter.jpg"
+  }
+ },
+ {
+  "id": "ch-msy-025",
+  "slug": "msy-baklava",
+  "title": "Baklava",
+  "genre": "mediterranean",
+  "subgenre": "desserts",
+  "chef": {
+   "name": "Michael Symon",
+   "slug": "michael-symon"
+  },
+  "description": "Layered phyllo and walnuts soaked in honey-lemon syrup.",
+  "difficulty": "intermediate",
+  "easeScore": 6,
+  "spiceScore": 0,
+  "popularity": 8,
+  "pantryScore": 6,
+  "servings": 24,
+  "prepMin": 45,
+  "cookMin": 315,
+  "totalMin": 360,
+  "equipment": [
+   "oven",
+   "stovetop",
+   "food-processor"
+  ],
+  "ingredients": [
+   "1 lb phyllo dough, thawed",
+   "1 1/2 cups melted butter",
+   "4 cups walnuts",
+   "1 cup shelled pistachios",
+   "1/2 cup sugar",
+   "2 tsp ground cinnamon",
+   "1/4 tsp ground cloves",
+   "1/4 tsp salt",
+   "1 1/2 cups sugar",
+   "1 1/4 cups water",
+   "1 cup honey",
+   "3 tbsp lemon juice",
+   "1 strip lemon peel",
+   "1 cinnamon stick",
+   "3 whole cloves"
+  ],
+  "ingredientKeys": [
+   "phyllo-dough",
+   "butter",
+   "walnuts",
+   "pistachios",
+   "sugar",
+   "cinnamon",
+   "cloves",
+   "salt",
+   "sugar",
+   "water",
+   "honey",
+   "lemon-juice",
+   "lemon-peel",
+   "cinnamon-stick",
+   "whole-cloves"
+  ],
+  "specialty": [
+   "phyllo-dough",
+   "walnuts",
+   "pistachios",
+   "lemon-peel",
+   "cinnamon-stick",
+   "whole-cloves"
+  ],
+  "steps": [
+   "Pulse the walnuts and pistachios to a coarse chop with the sugar, cinnamon, cloves and salt. Leave texture - nuts ground to powder turn the layers into paste.",
+   "Keep the phyllo under a damp towel at all times. It dries out and cracks within a minute of being exposed.",
+   "Butter a 9x13 pan and layer 10 sheets, brushing each with melted butter. Then alternate: a third of the nuts, 5 sheets, nuts, 5 sheets, nuts, and 10 sheets on top.",
+   "Cut all the way through into diamonds BEFORE baking. Phyllo shatters if you try to cut it after, and the cuts are also how the syrup gets in.",
+   "Bake at 325F for about 1 hour 15 minutes until deep golden all the way through, not just on top.",
+   "Simmer the syrup ingredients 10 minutes, strain, and pour the hot syrup over the baklava the moment it leaves the oven. One of the two must be hot and the other warm; two cold things give you a soggy top and dry middle. Let it absorb for at least 4 hours, uncovered, before serving."
+  ],
+  "diet": {
+   "vegetarian": true,
+   "vegan": false,
+   "pescatarian": true,
+   "glutenFree": false,
+   "glutenFreeAdaptable": false,
+   "dairyFree": false,
+   "nutFree": false,
+   "eggFree": true
+  },
+  "allergens": [
+   "gluten",
+   "dairy",
+   "tree-nut"
+  ],
+  "gmo": {
+   "risk": "moderate",
+   "sources": [
+    "sugar-beet",
+    "grain-fed-dairy",
+    "processed-bread"
+   ]
+  },
+  "nutrition": {
+   "calories": 448,
+   "proteinG": 7,
+   "carbsG": 42,
+   "fiberG": 3,
+   "sugarG": 32,
+   "fatG": 30,
+   "satFatG": 9,
+   "sodiumMg": 180,
+   "cholesterolMg": 32
+  },
+  "tags": [
+   "mediterranean",
+   "greek",
+   "dessert",
+   "baking",
+   "project",
+   "make-ahead",
+   "holiday",
+   "party",
+   "technique",
+   "gift",
+   "vegetarian"
+  ],
+  "image": {
+   "file": "msy-baklava.jpg",
+   "source": "commons-file",
+   "match": "dish",
+   "commonsFile": "Baklava 2.jpg"
+  }
+ }
+]

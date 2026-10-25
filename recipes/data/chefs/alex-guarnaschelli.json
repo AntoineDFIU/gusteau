@@ -1,0 +1,3043 @@
+[
+ {
+  "id": "ch-ag-001",
+  "slug": "ag-roast-chicken-bread-salad",
+  "title": "Roast Chicken over Bread Salad",
+  "genre": "american",
+  "subgenre": "mains",
+  "chef": {
+   "name": "Alex Guarnaschelli",
+   "slug": "alex-guarnaschelli"
+  },
+  "description": "A whole chicken roasted over torn bread that soaks up all the drippings.",
+  "difficulty": "beginner",
+  "easeScore": 9,
+  "spiceScore": 2,
+  "popularity": 9,
+  "pantryScore": 8,
+  "servings": 4,
+  "prepMin": 20,
+  "cookMin": 80,
+  "totalMin": 100,
+  "equipment": [
+   "oven"
+  ],
+  "ingredients": [
+   "1 whole chicken (4 lb)",
+   "1 tbsp salt",
+   "1 tsp black pepper",
+   "4 tbsp olive oil",
+   "1 lemon, halved",
+   "6 cloves garlic, smashed",
+   "4 sprigs fresh thyme",
+   "6 cups torn country bread",
+   "1 red onion, sliced",
+   "1/3 cup golden raisins",
+   "1/4 cup pine nuts",
+   "2 tbsp red wine vinegar",
+   "4 cups arugula",
+   "1 tbsp Dijon mustard"
+  ],
+  "ingredientKeys": [
+   "whole-chicken",
+   "salt",
+   "black-pepper",
+   "olive-oil",
+   "lemon",
+   "garlic",
+   "fresh-thyme",
+   "country-bread",
+   "red-onion",
+   "golden-raisins",
+   "pine-nuts",
+   "red-wine-vinegar",
+   "arugula",
+   "dijon-mustard"
+  ],
+  "specialty": [
+   "whole-chicken",
+   "fresh-thyme",
+   "country-bread",
+   "golden-raisins",
+   "pine-nuts",
+   "arugula"
+  ],
+  "steps": [
+   "Salt the chicken generously and let it sit uncovered in the refrigerator a few hours or overnight if you have the time. Dry skin is the only route to crisp skin.",
+   "Stuff the cavity with the lemon halves, garlic and thyme and tie the legs.",
+   "Toss the torn bread with the onion, raisins, pine nuts and half the oil and spread it in a roasting pan. Tear the bread rather than cubing it - the ragged edges crisp and the soft middles drink up the fat.",
+   "Set the chicken directly on the bread, rub it with the remaining oil, and roast at 425F for 20 minutes, then 375F for about 50 minutes, to 165F in the thigh.",
+   "Toss the hot bread in the pan drippings as soon as the chicken comes out, scraping up everything stuck to the pan.",
+   "Rest the chicken 15 minutes, then whisk the vinegar and Dijon into the warm bread, fold in the arugula so it wilts slightly, and carve the chicken over the top."
+  ],
+  "diet": {
+   "vegetarian": false,
+   "vegan": false,
+   "pescatarian": false,
+   "glutenFree": false,
+   "glutenFreeAdaptable": false,
+   "dairyFree": true,
+   "nutFree": false,
+   "eggFree": true
+  },
+  "allergens": [
+   "gluten",
+   "tree-nut",
+   "sulfites"
+  ],
+  "gmo": {
+   "risk": "moderate",
+   "sources": [
+    "grain-fed-meat",
+    "processed-bread"
+   ]
+  },
+  "nutrition": {
+   "calories": 782,
+   "proteinG": 58,
+   "carbsG": 48,
+   "fiberG": 4,
+   "sugarG": 14,
+   "fatG": 42,
+   "satFatG": 10,
+   "sodiumMg": 1480,
+   "cholesterolMg": 188
+  },
+  "tags": [
+   "american",
+   "one-pan",
+   "sunday",
+   "family",
+   "high-protein",
+   "dairy-free",
+   "restaurant-style",
+   "easy",
+   "signature"
+  ],
+  "image": {
+   "file": "roast-chicken.jpg",
+   "source": "wikipedia-lead",
+   "match": "representative",
+   "wikipedia": "Roast chicken"
+  }
+ },
+ {
+  "id": "ch-ag-002",
+  "slug": "ag-caramelized-onion-dip",
+  "title": "Caramelized Onion Dip",
+  "genre": "american",
+  "subgenre": "appetizers",
+  "chef": {
+   "name": "Alex Guarnaschelli",
+   "slug": "alex-guarnaschelli"
+  },
+  "description": "Deeply browned onions folded into sour cream and cream cheese.",
+  "difficulty": "beginner",
+  "easeScore": 9,
+  "spiceScore": 2,
+  "popularity": 9,
+  "pantryScore": 8,
+  "servings": 8,
+  "prepMin": 15,
+  "cookMin": 60,
+  "totalMin": 75,
+  "equipment": [
+   "stovetop"
+  ],
+  "ingredients": [
+   "4 large yellow onions, thinly sliced",
+   "4 tbsp butter",
+   "2 tbsp olive oil",
+   "2 tsp salt",
+   "1 tsp sugar",
+   "2 tbsp sherry vinegar",
+   "8 oz cream cheese, softened",
+   "1 1/4 cups sour cream",
+   "1/4 cup mayonnaise",
+   "1 tsp Worcestershire sauce",
+   "1/2 tsp cayenne pepper",
+   "1 tsp black pepper",
+   "1/3 cup chopped chives",
+   "8 oz potato chips"
+  ],
+  "ingredientKeys": [
+   "yellow-onion",
+   "butter",
+   "olive-oil",
+   "salt",
+   "sugar",
+   "sherry-vinegar",
+   "cream-cheese",
+   "sour-cream",
+   "mayonnaise",
+   "worcestershire",
+   "cayenne",
+   "black-pepper",
+   "chives",
+   "potato-chips"
+  ],
+  "specialty": [
+   "sherry-vinegar",
+   "cream-cheese",
+   "potato-chips"
+  ],
+  "steps": [
+   "Cook the onions in the butter and oil over medium-low heat with the salt and sugar, stirring every few minutes, for 45-50 minutes.",
+   "Do not rush this. Onions browned fast over high heat taste scorched and bitter; the slow route turns them jammy and genuinely sweet, and that sweetness is the entire dip.",
+   "Deglaze the pan with the sherry vinegar, scraping up every brown bit, and let the onions cool completely.",
+   "Beat the cream cheese smooth, then fold in the sour cream, mayonnaise, Worcestershire, cayenne and black pepper.",
+   "Chop the cooled onions coarsely and fold them in. Adding them warm would thin the base into soup.",
+   "Refrigerate at least 2 hours so it firms up and the flavors settle. Finish with chives and serve with potato chips - thick-cut ones, which hold up to a dip this heavy."
+  ],
+  "diet": {
+   "vegetarian": false,
+   "vegan": false,
+   "pescatarian": true,
+   "glutenFree": true,
+   "glutenFreeAdaptable": false,
+   "dairyFree": false,
+   "nutFree": true,
+   "eggFree": false
+  },
+  "allergens": [
+   "dairy",
+   "egg",
+   "fish",
+   "sulfites"
+  ],
+  "gmo": {
+   "risk": "high",
+   "sources": [
+    "seed-oil",
+    "grain-fed-dairy",
+    "sugar-beet"
+   ]
+  },
+  "nutrition": {
+   "calories": 512,
+   "proteinG": 7,
+   "carbsG": 32,
+   "fiberG": 3,
+   "sugarG": 9,
+   "fatG": 40,
+   "satFatG": 17,
+   "sodiumMg": 1180,
+   "cholesterolMg": 62
+  },
+  "tags": [
+   "american",
+   "appetizer",
+   "party",
+   "pescatarian",
+   "gluten-free",
+   "make-ahead",
+   "game-day",
+   "crowd-pleaser",
+   "easy",
+   "signature"
+  ],
+  "image": {
+   "file": "onion-dip.jpg",
+   "source": "wikipedia-lead",
+   "match": "representative",
+   "wikipedia": "French onion dip"
+  }
+ },
+ {
+  "id": "ch-ag-003",
+  "slug": "ag-braised-short-ribs-horseradish",
+  "title": "Short Ribs with Horseradish Cream",
+  "genre": "american",
+  "subgenre": "mains",
+  "chef": {
+   "name": "Alex Guarnaschelli",
+   "slug": "alex-guarnaschelli"
+  },
+  "description": "Red wine braised short ribs with a sharp horseradish cream to cut them.",
+  "difficulty": "intermediate",
+  "easeScore": 7,
+  "spiceScore": 3,
+  "popularity": 9,
+  "pantryScore": 6,
+  "servings": 6,
+  "prepMin": 30,
+  "cookMin": 195,
+  "totalMin": 225,
+  "equipment": [
+   "oven",
+   "stovetop"
+  ],
+  "ingredients": [
+   "6 lb bone-in short ribs",
+   "2 tbsp salt",
+   "1 tbsp black pepper",
+   "1/4 cup vegetable oil",
+   "2 yellow onions, diced",
+   "3 carrots, diced",
+   "2 celery stalks, diced",
+   "8 cloves garlic, smashed",
+   "1/4 cup tomato paste",
+   "1 bottle (750 ml) dry red wine",
+   "4 cups beef broth",
+   "4 sprigs fresh thyme",
+   "2 bay leaves",
+   "1 cup sour cream",
+   "1/4 cup prepared horseradish",
+   "1 tbsp lemon juice",
+   "1/2 tsp salt",
+   "1/4 cup chopped chives"
+  ],
+  "ingredientKeys": [
+   "short-ribs",
+   "salt",
+   "black-pepper",
+   "vegetable-oil",
+   "yellow-onion",
+   "carrot",
+   "celery",
+   "garlic",
+   "tomato-paste",
+   "red-wine",
+   "beef-broth",
+   "fresh-thyme",
+   "bay-leaf",
+   "sour-cream",
+   "prepared-horseradish",
+   "lemon-juice",
+   "salt",
+   "chives"
+  ],
+  "specialty": [
+   "short-ribs",
+   "red-wine",
+   "beef-broth",
+   "fresh-thyme",
+   "prepared-horseradish"
+  ],
+  "steps": [
+   "Season the ribs heavily and brown them in the oil on all sides in batches, about 12 minutes total. Crowding the pot is the one mistake that costs you everything here - without a real crust the braise tastes flat.",
+   "Cook the onions, carrots and celery 10 minutes, then the garlic and tomato paste for 3 minutes until the paste turns brick colored.",
+   "Add the wine and reduce by half, scraping the pan clean.",
+   "Return the ribs with the broth, thyme and bay leaves, bringing the liquid two thirds up the meat. Cover and braise at 325F for 3 hours until a fork meets no resistance.",
+   "Strain the sauce, skim the fat hard, and reduce it on the stove until it coats a spoon. Skimming is tedious and it is the difference between glossy and greasy.",
+   "Whisk the sour cream with the horseradish, lemon juice and salt. Serve the ribs with the reduced sauce and a spoonful of the cold horseradish cream, which is there to cut through three hours of richness. Finish with chives."
+  ],
+  "diet": {
+   "vegetarian": false,
+   "vegan": false,
+   "pescatarian": false,
+   "glutenFree": true,
+   "glutenFreeAdaptable": false,
+   "dairyFree": false,
+   "nutFree": true,
+   "eggFree": true
+  },
+  "allergens": [
+   "dairy",
+   "sulfites"
+  ],
+  "gmo": {
+   "risk": "high",
+   "sources": [
+    "seed-oil",
+    "grain-fed-meat",
+    "grain-fed-dairy"
+   ]
+  },
+  "nutrition": {
+   "calories": 882,
+   "proteinG": 62,
+   "carbsG": 18,
+   "fiberG": 3,
+   "sugarG": 9,
+   "fatG": 58,
+   "satFatG": 25,
+   "sodiumMg": 1680,
+   "cholesterolMg": 228
+  },
+  "tags": [
+   "american",
+   "braise",
+   "special-occasion",
+   "make-ahead",
+   "gluten-free",
+   "high-protein",
+   "winter",
+   "restaurant-style",
+   "entertaining",
+   "technique"
+  ],
+  "image": {
+   "file": "braised-short-ribs.jpg",
+   "source": "wikipedia-lead",
+   "match": "representative",
+   "wikipedia": "Short ribs"
+  }
+ },
+ {
+  "id": "ch-ag-004",
+  "slug": "ag-potato-gratin",
+  "title": "Potato Gratin",
+  "genre": "french",
+  "subgenre": "sides",
+  "chef": {
+   "name": "Alex Guarnaschelli",
+   "slug": "alex-guarnaschelli"
+  },
+  "description": "Thin potatoes baked in cream and Gruyere until the top is burnished.",
+  "difficulty": "beginner",
+  "easeScore": 8,
+  "spiceScore": 1,
+  "popularity": 9,
+  "pantryScore": 8,
+  "servings": 8,
+  "prepMin": 25,
+  "cookMin": 85,
+  "totalMin": 110,
+  "equipment": [
+   "oven",
+   "stovetop"
+  ],
+  "ingredients": [
+   "4 lb Yukon Gold potatoes, peeled",
+   "3 cups heavy cream",
+   "1 cup whole milk",
+   "6 cloves garlic, smashed",
+   "3 sprigs fresh thyme",
+   "1 bay leaf",
+   "1/4 tsp ground nutmeg",
+   "2 1/2 tsp salt",
+   "1 tsp white pepper",
+   "2 tbsp butter",
+   "2 cups shredded Gruyere",
+   "1/2 cup grated Parmesan"
+  ],
+  "ingredientKeys": [
+   "yukon-gold-potato",
+   "heavy-cream",
+   "whole-milk",
+   "garlic",
+   "fresh-thyme",
+   "bay-leaf",
+   "nutmeg",
+   "salt",
+   "white-pepper",
+   "butter",
+   "gruyere",
+   "parmesan"
+  ],
+  "specialty": [
+   "fresh-thyme",
+   "white-pepper",
+   "gruyere"
+  ],
+  "steps": [
+   "Warm the cream and milk with the garlic, thyme, bay leaf, nutmeg, salt and white pepper for 10 minutes, then strain it.",
+   "Slice the potatoes 1/8 inch thick on a mandoline if you have one. Even thickness is what makes a gratin cook uniformly rather than giving you raw layers next to collapsed ones.",
+   "Do not rinse the sliced potatoes. The surface starch is what thickens the cream into a sauce, and washing it away leaves a watery gratin.",
+   "Butter a baking dish and layer the potatoes with the infused cream and most of the cheese, seasoning as you go and pressing each layer flat.",
+   "Pour the remaining cream over - it should just reach the top layer, not submerge it - and finish with the rest of the Gruyere and the Parmesan.",
+   "Bake covered at 375F for 45 minutes, then uncovered for 30-40 minutes until a knife slides through easily and the top is deeply browned. Rest 20 minutes before cutting, or it will not hold its shape."
+  ],
+  "diet": {
+   "vegetarian": true,
+   "vegan": false,
+   "pescatarian": true,
+   "glutenFree": true,
+   "glutenFreeAdaptable": false,
+   "dairyFree": false,
+   "nutFree": true,
+   "eggFree": true
+  },
+  "allergens": [
+   "dairy"
+  ],
+  "gmo": {
+   "risk": "low",
+   "sources": [
+    "grain-fed-dairy"
+   ]
+  },
+  "nutrition": {
+   "calories": 612,
+   "proteinG": 18,
+   "carbsG": 42,
+   "fiberG": 4,
+   "sugarG": 7,
+   "fatG": 42,
+   "satFatG": 26,
+   "sodiumMg": 1080,
+   "cholesterolMg": 138
+  },
+  "tags": [
+   "french",
+   "side",
+   "vegetarian",
+   "gluten-free",
+   "holiday",
+   "thanksgiving",
+   "make-ahead",
+   "comfort",
+   "classic",
+   "entertaining"
+  ],
+  "image": {
+   "file": "ag-potato-gratin.jpg",
+   "source": "commons-file",
+   "match": "dish",
+   "commonsFile": "Potato gratin (7620845914).jpg"
+  }
+ },
+ {
+  "id": "ch-ag-005",
+  "slug": "ag-pork-chops-apples",
+  "title": "Pork Chops with Apples and Mustard",
+  "genre": "american",
+  "subgenre": "mains",
+  "chef": {
+   "name": "Alex Guarnaschelli",
+   "slug": "alex-guarnaschelli"
+  },
+  "description": "Thick chops seared and finished in a cider-mustard pan sauce with apples.",
+  "difficulty": "beginner",
+  "easeScore": 9,
+  "spiceScore": 2,
+  "popularity": 8,
+  "pantryScore": 8,
+  "servings": 4,
+  "prepMin": 15,
+  "cookMin": 30,
+  "totalMin": 45,
+  "equipment": [
+   "stovetop",
+   "oven"
+  ],
+  "ingredients": [
+   "4 bone-in pork chops (1 1/4 inch thick)",
+   "2 tsp salt",
+   "1 tsp black pepper",
+   "2 tbsp vegetable oil",
+   "4 tbsp butter",
+   "2 shallots, sliced",
+   "2 Honeycrisp apples, cut in wedges",
+   "4 sprigs fresh thyme",
+   "1 cup apple cider",
+   "1/2 cup chicken broth",
+   "3 tbsp whole-grain mustard",
+   "1 tbsp apple cider vinegar",
+   "1 tbsp honey"
+  ],
+  "ingredientKeys": [
+   "pork-chop",
+   "salt",
+   "black-pepper",
+   "vegetable-oil",
+   "butter",
+   "shallot",
+   "honeycrisp-apple",
+   "fresh-thyme",
+   "apple-cider",
+   "chicken-broth",
+   "whole-grain-mustard",
+   "apple-cider-vinegar",
+   "honey"
+  ],
+  "specialty": [
+   "pork-chop",
+   "shallot",
+   "honeycrisp-apple",
+   "fresh-thyme",
+   "apple-cider",
+   "whole-grain-mustard"
+  ],
+  "steps": [
+   "Buy chops at least 1 1/4 inches thick. Thin chops are dry before they are brown, and no technique rescues them.",
+   "Season them well and let them sit out 30 minutes, then dry them again before they hit the pan.",
+   "Sear in the oil in a very hot ovenproof skillet, 4 minutes per side, until deeply crusted. Add 2 tbsp of the butter and the thyme and baste for a minute.",
+   "Transfer the pan to a 400F oven and roast to 140F internal, about 5 minutes, then rest the chops on a board.",
+   "In the same pan cook the shallots and apple wedges 5 minutes, then add the cider, broth, mustard, vinegar and honey and reduce by half.",
+   "Swirl in the remaining butter off the heat so the sauce emulsifies glossy rather than greasy. Pour any juices from the resting board back into the sauce and spoon everything over the chops."
+  ],
+  "diet": {
+   "vegetarian": false,
+   "vegan": false,
+   "pescatarian": false,
+   "glutenFree": true,
+   "glutenFreeAdaptable": false,
+   "dairyFree": false,
+   "nutFree": true,
+   "eggFree": true
+  },
+  "allergens": [
+   "dairy"
+  ],
+  "gmo": {
+   "risk": "high",
+   "sources": [
+    "seed-oil",
+    "grain-fed-meat",
+    "grain-fed-dairy"
+   ]
+  },
+  "nutrition": {
+   "calories": 682,
+   "proteinG": 48,
+   "carbsG": 32,
+   "fiberG": 4,
+   "sugarG": 24,
+   "fatG": 38,
+   "satFatG": 16,
+   "sodiumMg": 1280,
+   "cholesterolMg": 168
+  },
+  "tags": [
+   "american",
+   "quick",
+   "weeknight",
+   "gluten-free",
+   "fall",
+   "high-protein",
+   "one-pan",
+   "easy",
+   "family",
+   "technique"
+  ],
+  "image": {
+   "file": "pork-chops.jpg",
+   "source": "wikipedia-lead",
+   "match": "representative",
+   "wikipedia": "Pork chop"
+  }
+ },
+ {
+  "id": "ch-ag-006",
+  "slug": "ag-cacio-e-pepe",
+  "title": "Cacio e Pepe",
+  "genre": "italian",
+  "subgenre": "pasta",
+  "chef": {
+   "name": "Alex Guarnaschelli",
+   "slug": "alex-guarnaschelli"
+  },
+  "description": "Three ingredients, one emulsion: pasta, Pecorino and a lot of black pepper.",
+  "difficulty": "intermediate",
+  "easeScore": 6,
+  "spiceScore": 3,
+  "popularity": 9,
+  "pantryScore": 9,
+  "servings": 4,
+  "prepMin": 5,
+  "cookMin": 20,
+  "totalMin": 25,
+  "equipment": [
+   "stovetop"
+  ],
+  "ingredients": [
+   "1 lb spaghetti or tonnarelli",
+   "2 1/2 cups finely grated Pecorino Romano",
+   "2 tbsp whole black peppercorns, coarsely cracked",
+   "2 tbsp butter",
+   "2 tsp salt, for the water"
+  ],
+  "ingredientKeys": [
+   "spaghetti",
+   "pecorino",
+   "black-peppercorns",
+   "butter",
+   "salt"
+  ],
+  "specialty": [
+   "pecorino",
+   "black-peppercorns"
+  ],
+  "steps": [
+   "Crack the peppercorns coarsely yourself rather than using pre-ground pepper. Pepper is one of only three ingredients here and stale ground pepper tastes of dust.",
+   "Toast the cracked pepper in a dry wide pan 1 minute until fragrant, then add the butter and let it melt.",
+   "Boil the pasta in less water than usual and salt it lightly - the Pecorino is very salty, and the starchier the water the better your sauce. Pull the pasta 2 minutes before al dente.",
+   "Ladle a cup of the starchy water into the pepper pan, add the pasta, and finish cooking it there, tossing constantly.",
+   "Take the pan off the heat and let it cool for about 30 seconds, then add the Pecorino in handfuls while tossing hard. Cheese added to a boiling pan seizes into stringy clumps, and that is the only real failure mode of this dish.",
+   "Keep tossing and adding splashes of pasta water until the sauce turns glossy and clings to every strand. Serve immediately in warmed bowls - it tightens as it cools."
+  ],
+  "diet": {
+   "vegetarian": true,
+   "vegan": false,
+   "pescatarian": true,
+   "glutenFree": false,
+   "glutenFreeAdaptable": false,
+   "dairyFree": false,
+   "nutFree": true,
+   "eggFree": true
+  },
+  "allergens": [
+   "gluten",
+   "dairy"
+  ],
+  "gmo": {
+   "risk": "low",
+   "sources": [
+    "grain-fed-dairy"
+   ]
+  },
+  "nutrition": {
+   "calories": 712,
+   "proteinG": 32,
+   "carbsG": 82,
+   "fiberG": 4,
+   "sugarG": 3,
+   "fatG": 28,
+   "satFatG": 17,
+   "sodiumMg": 1480,
+   "cholesterolMg": 82
+  },
+  "tags": [
+   "italian",
+   "quick",
+   "vegetarian",
+   "budget",
+   "pantry",
+   "technique",
+   "weeknight",
+   "classic",
+   "date-night"
+  ],
+  "image": {
+   "file": "ag-cacio-e-pepe.jpg",
+   "source": "commons-file",
+   "match": "dish",
+   "commonsFile": "Cacio e pepe.jpg"
+  }
+ },
+ {
+  "id": "ch-ag-007",
+  "slug": "ag-crab-cakes",
+  "title": "Crab Cakes",
+  "genre": "american",
+  "subgenre": "seafood",
+  "chef": {
+   "name": "Alex Guarnaschelli",
+   "slug": "alex-guarnaschelli"
+  },
+  "description": "Lump crab barely bound, pan-fried crisp, with lemon aioli.",
+  "difficulty": "intermediate",
+  "easeScore": 7,
+  "spiceScore": 3,
+  "popularity": 9,
+  "pantryScore": 5,
+  "servings": 4,
+  "prepMin": 25,
+  "cookMin": 50,
+  "totalMin": 75,
+  "equipment": [
+   "stovetop"
+  ],
+  "ingredients": [
+   "1 lb jumbo lump crabmeat",
+   "1/3 cup mayonnaise",
+   "1 egg",
+   "1 tbsp Dijon mustard",
+   "1 tsp Worcestershire sauce",
+   "1/2 tsp Old Bay seasoning",
+   "1/4 tsp cayenne pepper",
+   "1 tbsp lemon juice",
+   "2 tbsp chopped chives",
+   "2 tbsp chopped parsley",
+   "3/4 cup panko breadcrumbs",
+   "1 tsp salt",
+   "1/2 cup panko, for coating",
+   "3 tbsp butter",
+   "2 tbsp vegetable oil",
+   "1/2 cup mayonnaise, for the aioli",
+   "1 tbsp lemon juice",
+   "1 tsp lemon zest",
+   "1 clove garlic, minced",
+   "2 lemons, cut in wedges"
+  ],
+  "ingredientKeys": [
+   "lump-crabmeat",
+   "mayonnaise",
+   "egg",
+   "dijon-mustard",
+   "worcestershire",
+   "old-bay",
+   "cayenne",
+   "lemon-juice",
+   "chives",
+   "parsley",
+   "panko",
+   "salt",
+   "panko",
+   "butter",
+   "vegetable-oil",
+   "mayonnaise",
+   "lemon-juice",
+   "lemon-zest",
+   "garlic",
+   "lemon"
+  ],
+  "specialty": [
+   "lump-crabmeat",
+   "old-bay",
+   "panko"
+  ],
+  "steps": [
+   "Pick through the crab for shell fragments but handle it as little as possible. Those big lumps are what you are paying for and stirring breaks them into shreds.",
+   "Whisk the mayonnaise, egg, Dijon, Worcestershire, Old Bay, cayenne, lemon juice, herbs and salt into a binder, then stir in the 3/4 cup of panko.",
+   "Fold the crab in with a rubber spatula in a few gentle strokes. The mixture should look barely held together - if it looks like a smooth batter you have added too much binder.",
+   "Form four thick cakes, coat them lightly in the extra panko, and chill them at least 30 minutes. Chilling is what keeps them from falling apart in the pan.",
+   "Fry in the butter and oil over medium heat, 4-5 minutes per side, undisturbed, until deeply golden. Flip once only, with a wide spatula.",
+   "Whisk the aioli ingredients together and serve alongside with lemon wedges."
+  ],
+  "diet": {
+   "vegetarian": false,
+   "vegan": false,
+   "pescatarian": true,
+   "glutenFree": false,
+   "glutenFreeAdaptable": false,
+   "dairyFree": false,
+   "nutFree": true,
+   "eggFree": false
+  },
+  "allergens": [
+   "shellfish",
+   "gluten",
+   "egg",
+   "dairy",
+   "fish"
+  ],
+  "gmo": {
+   "risk": "high",
+   "sources": [
+    "seed-oil",
+    "processed-bread",
+    "grain-fed-dairy"
+   ]
+  },
+  "nutrition": {
+   "calories": 682,
+   "proteinG": 32,
+   "carbsG": 28,
+   "fiberG": 2,
+   "sugarG": 3,
+   "fatG": 52,
+   "satFatG": 12,
+   "sodiumMg": 1680,
+   "cholesterolMg": 228
+  },
+  "tags": [
+   "american",
+   "seafood",
+   "pescatarian",
+   "restaurant-style",
+   "entertaining",
+   "high-protein",
+   "technique",
+   "date-night",
+   "classic"
+  ],
+  "image": {
+   "file": "ag-crab-cakes.jpg",
+   "source": "commons-file",
+   "match": "dish",
+   "commonsFile": "Crab cakes (4817381966).jpg"
+  }
+ },
+ {
+  "id": "ch-ag-008",
+  "slug": "ag-french-onion-soup",
+  "title": "French Onion Soup",
+  "genre": "french",
+  "subgenre": "soups",
+  "chef": {
+   "name": "Alex Guarnaschelli",
+   "slug": "alex-guarnaschelli"
+  },
+  "description": "Onions cooked down for an hour, beef broth, and a Gruyere crust.",
+  "difficulty": "intermediate",
+  "easeScore": 7,
+  "spiceScore": 1,
+  "popularity": 9,
+  "pantryScore": 7,
+  "servings": 6,
+  "prepMin": 20,
+  "cookMin": 105,
+  "totalMin": 125,
+  "equipment": [
+   "stovetop",
+   "broiler"
+  ],
+  "ingredients": [
+   "5 lb yellow onions, thinly sliced",
+   "6 tbsp butter",
+   "2 tbsp olive oil",
+   "2 tsp salt",
+   "1 tsp sugar",
+   "1/4 cup all-purpose flour",
+   "1 cup dry sherry",
+   "8 cups beef broth",
+   "4 sprigs fresh thyme",
+   "2 bay leaves",
+   "2 tbsp sherry vinegar",
+   "1 tsp black pepper",
+   "12 slices baguette",
+   "3 cups shredded Gruyere",
+   "1/2 cup grated Parmesan"
+  ],
+  "ingredientKeys": [
+   "yellow-onion",
+   "butter",
+   "olive-oil",
+   "salt",
+   "sugar",
+   "flour",
+   "dry-sherry",
+   "beef-broth",
+   "fresh-thyme",
+   "bay-leaf",
+   "sherry-vinegar",
+   "black-pepper",
+   "baguette",
+   "gruyere",
+   "parmesan"
+  ],
+  "specialty": [
+   "dry-sherry",
+   "beef-broth",
+   "fresh-thyme",
+   "sherry-vinegar",
+   "baguette",
+   "gruyere"
+  ],
+  "steps": [
+   "Cook the onions in the butter and oil with the salt and sugar over medium heat, stirring every few minutes, for a full hour. They reduce to about a fifth of their volume.",
+   "There is no shortcut to this. The color of the finished soup is the color of your onions, and onions rushed on high heat taste acrid instead of sweet.",
+   "When they are mahogany brown and jammy, stir in the flour and cook 2 minutes.",
+   "Add the sherry and reduce it almost dry, scraping up the glaze stuck to the pot - that fond is concentrated flavor.",
+   "Add the broth, thyme and bay leaves and simmer 30 minutes. Finish with the sherry vinegar and pepper, which keep it from tasting flat and heavy.",
+   "Toast the baguette slices, ladle the soup into ovenproof bowls, float the bread, and pile on the Gruyere and Parmesan. Broil until bubbling and browned in spots. Warn people the bowls are molten."
+  ],
+  "diet": {
+   "vegetarian": false,
+   "vegan": false,
+   "pescatarian": false,
+   "glutenFree": false,
+   "glutenFreeAdaptable": false,
+   "dairyFree": false,
+   "nutFree": true,
+   "eggFree": true
+  },
+  "allergens": [
+   "gluten",
+   "dairy",
+   "sulfites"
+  ],
+  "gmo": {
+   "risk": "moderate",
+   "sources": [
+    "grain-fed-meat",
+    "grain-fed-dairy",
+    "processed-bread",
+    "sugar-beet"
+   ]
+  },
+  "nutrition": {
+   "calories": 682,
+   "proteinG": 28,
+   "carbsG": 62,
+   "fiberG": 6,
+   "sugarG": 20,
+   "fatG": 36,
+   "satFatG": 19,
+   "sodiumMg": 1880,
+   "cholesterolMg": 98
+  },
+  "tags": [
+   "french",
+   "soup",
+   "technique",
+   "classic",
+   "winter",
+   "comfort",
+   "restaurant-style",
+   "entertaining",
+   "make-ahead"
+  ],
+  "image": {
+   "file": "ag-french-onion-soup.jpg",
+   "source": "commons-file",
+   "match": "dish",
+   "commonsFile": "French Onion Soup..JPG"
+  }
+ },
+ {
+  "id": "ch-ag-009",
+  "slug": "ag-butter-poached-cod",
+  "title": "Butter-Poached Cod",
+  "genre": "french",
+  "subgenre": "seafood",
+  "chef": {
+   "name": "Alex Guarnaschelli",
+   "slug": "alex-guarnaschelli"
+  },
+  "description": "Cod cooked gently in barely-simmering butter with lemon and thyme.",
+  "difficulty": "intermediate",
+  "easeScore": 7,
+  "spiceScore": 1,
+  "popularity": 8,
+  "pantryScore": 6,
+  "servings": 4,
+  "prepMin": 15,
+  "cookMin": 25,
+  "totalMin": 40,
+  "equipment": [
+   "stovetop"
+  ],
+  "ingredients": [
+   "4 thick cod fillets (6 oz each)",
+   "2 tsp salt",
+   "1/2 tsp white pepper",
+   "2 cups butter",
+   "6 cloves garlic, smashed",
+   "6 sprigs fresh thyme",
+   "1 lemon, sliced",
+   "2 bay leaves",
+   "2 tbsp lemon juice",
+   "2 tbsp capers, rinsed",
+   "2 tbsp chopped parsley",
+   "2 tbsp chopped chives"
+  ],
+  "ingredientKeys": [
+   "cod-fillet",
+   "salt",
+   "white-pepper",
+   "butter",
+   "garlic",
+   "fresh-thyme",
+   "lemon",
+   "bay-leaf",
+   "lemon-juice",
+   "capers",
+   "parsley",
+   "chives"
+  ],
+  "specialty": [
+   "cod-fillet",
+   "white-pepper",
+   "fresh-thyme",
+   "capers"
+  ],
+  "steps": [
+   "Salt the cod 20 minutes ahead and then blot it dry. Salting firms the flesh so it holds together in the poaching liquid.",
+   "Melt the butter in a pan just wide enough to hold the fillets, with the garlic, thyme, lemon slices and bay leaves.",
+   "Bring the butter to 160-170F - it should barely shimmer with no bubbling at all. Butter that simmers will fry the fish and break the emulsion; a thermometer is genuinely useful here.",
+   "Slide the fillets in so they are mostly submerged and poach 10-12 minutes, spooning butter over any exposed tops.",
+   "The cod is done when it just begins to flake at the thickest part and reads 130F. It goes from silky to chalky in about ninety seconds, so check early.",
+   "Lift the fish out with a slotted spatula and let it drain a moment. Whisk the lemon juice and capers into a few spoonfuls of the poaching butter, pour it over, and finish with the herbs. Strain and refrigerate the rest of the butter - it will poach another meal."
+  ],
+  "diet": {
+   "vegetarian": false,
+   "vegan": false,
+   "pescatarian": true,
+   "glutenFree": true,
+   "glutenFreeAdaptable": false,
+   "dairyFree": false,
+   "nutFree": true,
+   "eggFree": true
+  },
+  "allergens": [
+   "fish",
+   "dairy"
+  ],
+  "gmo": {
+   "risk": "low",
+   "sources": [
+    "grain-fed-dairy"
+   ]
+  },
+  "nutrition": {
+   "calories": 512,
+   "proteinG": 38,
+   "carbsG": 4,
+   "fiberG": 1,
+   "sugarG": 1,
+   "fatG": 38,
+   "satFatG": 23,
+   "sodiumMg": 1280,
+   "cholesterolMg": 158
+  },
+  "tags": [
+   "french",
+   "seafood",
+   "technique",
+   "restaurant-style",
+   "pescatarian",
+   "gluten-free",
+   "low-carb",
+   "date-night",
+   "high-protein",
+   "entertaining"
+  ],
+  "image": {
+   "file": "poached-cod.jpg",
+   "source": "wikipedia-lead",
+   "match": "representative",
+   "wikipedia": "Cod as food"
+  }
+ },
+ {
+  "id": "ch-ag-010",
+  "slug": "ag-blue-cheese-wedge",
+  "title": "Wedge Salad with Blue Cheese",
+  "genre": "american",
+  "subgenre": "salads",
+  "chef": {
+   "name": "Alex Guarnaschelli",
+   "slug": "alex-guarnaschelli"
+  },
+  "description": "Cold iceberg quarters with chunky blue cheese dressing and bacon.",
+  "difficulty": "beginner",
+  "easeScore": 10,
+  "spiceScore": 2,
+  "popularity": 9,
+  "pantryScore": 7,
+  "servings": 4,
+  "prepMin": 15,
+  "cookMin": 15,
+  "totalMin": 30,
+  "equipment": [
+   "stovetop",
+   "no-cook"
+  ],
+  "ingredients": [
+   "1 head iceberg lettuce, quartered",
+   "8 oz bacon, diced",
+   "6 oz blue cheese, crumbled",
+   "1/2 cup sour cream",
+   "1/3 cup mayonnaise",
+   "1/4 cup buttermilk",
+   "2 tbsp lemon juice",
+   "1 tsp Worcestershire sauce",
+   "1/2 tsp garlic powder",
+   "1 tsp black pepper",
+   "1/2 tsp salt",
+   "1 cup cherry tomatoes, halved",
+   "1/2 red onion, thinly sliced",
+   "1/4 cup chopped chives"
+  ],
+  "ingredientKeys": [
+   "iceberg-lettuce",
+   "bacon",
+   "blue-cheese",
+   "sour-cream",
+   "mayonnaise",
+   "buttermilk",
+   "lemon-juice",
+   "worcestershire",
+   "garlic-powder",
+   "black-pepper",
+   "salt",
+   "cherry-tomato",
+   "red-onion",
+   "chives"
+  ],
+  "specialty": [
+   "iceberg-lettuce",
+   "blue-cheese",
+   "buttermilk"
+  ],
+  "steps": [
+   "Keep the iceberg in the refrigerator until the moment you cut it, then cut it into quarters through the core so each wedge holds together. Lukewarm iceberg is limp and watery; the whole appeal is that it is ice cold and loud to eat.",
+   "Render the bacon until crisp and drain it on paper towels.",
+   "Mash two thirds of the blue cheese with the sour cream, mayonnaise and buttermilk, leaving it lumpy. A smooth blue cheese dressing is a worse dressing - you want pockets of cheese.",
+   "Season the dressing with the lemon juice, Worcestershire, garlic powder, pepper and salt and refrigerate it until needed.",
+   "Pat the cut wedges dry so the dressing clings instead of sliding off.",
+   "Spoon the dressing generously over each wedge and top with the bacon, the reserved crumbled blue cheese, the tomatoes, red onion and chives. Serve with a knife and fork."
+  ],
+  "diet": {
+   "vegetarian": false,
+   "vegan": false,
+   "pescatarian": false,
+   "glutenFree": true,
+   "glutenFreeAdaptable": false,
+   "dairyFree": false,
+   "nutFree": true,
+   "eggFree": false
+  },
+  "allergens": [
+   "dairy",
+   "egg",
+   "fish"
+  ],
+  "gmo": {
+   "risk": "high",
+   "sources": [
+    "seed-oil",
+    "grain-fed-meat",
+    "grain-fed-dairy"
+   ]
+  },
+  "nutrition": {
+   "calories": 612,
+   "proteinG": 22,
+   "carbsG": 14,
+   "fiberG": 3,
+   "sugarG": 7,
+   "fatG": 52,
+   "satFatG": 20,
+   "sodiumMg": 1480,
+   "cholesterolMg": 98
+  },
+  "tags": [
+   "american",
+   "salad",
+   "steakhouse",
+   "quick",
+   "gluten-free",
+   "low-carb",
+   "classic",
+   "easy",
+   "entertaining"
+  ],
+  "image": {
+   "file": "wedge-salad.jpg",
+   "source": "wikipedia-lead",
+   "match": "representative",
+   "wikipedia": "Wedge salad"
+  }
+ },
+ {
+  "id": "ch-ag-011",
+  "slug": "ag-chicken-pot-pie",
+  "title": "Chicken Pot Pie",
+  "genre": "american",
+  "subgenre": "mains",
+  "chef": {
+   "name": "Alex Guarnaschelli",
+   "slug": "alex-guarnaschelli"
+  },
+  "description": "Chicken and vegetables in a thick velouté under an all-butter crust.",
+  "difficulty": "intermediate",
+  "easeScore": 6,
+  "spiceScore": 2,
+  "popularity": 9,
+  "pantryScore": 7,
+  "servings": 8,
+  "prepMin": 45,
+  "cookMin": 90,
+  "totalMin": 135,
+  "equipment": [
+   "oven",
+   "stovetop"
+  ],
+  "ingredients": [
+   "2 1/2 cups all-purpose flour",
+   "1 tsp salt",
+   "1 cup cold butter, cubed",
+   "1/2 cup ice water",
+   "6 tbsp butter",
+   "1 yellow onion, diced",
+   "3 carrots, diced",
+   "3 celery stalks, diced",
+   "8 oz cremini mushrooms, quartered",
+   "4 cloves garlic, minced",
+   "1/2 cup all-purpose flour",
+   "4 cups chicken broth",
+   "1 cup heavy cream",
+   "4 cups shredded cooked chicken",
+   "1 cup frozen peas",
+   "2 tbsp chopped fresh thyme",
+   "2 tsp salt",
+   "1 tsp black pepper",
+   "1/4 tsp ground nutmeg",
+   "1 tbsp lemon juice",
+   "1 egg, beaten"
+  ],
+  "ingredientKeys": [
+   "flour",
+   "salt",
+   "butter",
+   "ice-water",
+   "butter",
+   "yellow-onion",
+   "carrot",
+   "celery",
+   "mushroom",
+   "garlic",
+   "flour",
+   "chicken-broth",
+   "heavy-cream",
+   "cooked-chicken",
+   "frozen-peas",
+   "fresh-thyme",
+   "salt",
+   "black-pepper",
+   "nutmeg",
+   "lemon-juice",
+   "egg"
+  ],
+  "specialty": [
+   "fresh-thyme"
+  ],
+  "steps": [
+   "Make the crust: cut the cold butter into the flour and salt until there are still pea-sized pieces, add the ice water, and bring it together without kneading. Visible butter is what makes it flaky. Chill it 1 hour.",
+   "Cook the onion, carrots, celery and mushrooms in the butter 12 minutes until the mushrooms have given up their water, then add the garlic.",
+   "Stir in the flour and cook 2 minutes, then whisk in the broth gradually and simmer until it thickens to the consistency of thick gravy.",
+   "The filling must be noticeably thicker than you think it should be, and completely cool before the crust goes on. Warm, loose filling makes the pastry soggy and the pie weeps.",
+   "Stir in the cream, chicken, peas, thyme, salt, pepper, nutmeg and lemon juice, then cool it fully - spread it on a tray to speed that up.",
+   "Fill a deep dish, lay the rolled pastry over, crimp the edge, cut generous vents, and brush with the beaten egg. Bake at 400F for 40-45 minutes until deep golden. Rest 15 minutes before serving."
+  ],
+  "diet": {
+   "vegetarian": false,
+   "vegan": false,
+   "pescatarian": false,
+   "glutenFree": false,
+   "glutenFreeAdaptable": false,
+   "dairyFree": false,
+   "nutFree": true,
+   "eggFree": false
+  },
+  "allergens": [
+   "gluten",
+   "dairy",
+   "egg"
+  ],
+  "gmo": {
+   "risk": "moderate",
+   "sources": [
+    "grain-fed-meat",
+    "grain-fed-dairy"
+   ]
+  },
+  "nutrition": {
+   "calories": 782,
+   "proteinG": 38,
+   "carbsG": 52,
+   "fiberG": 4,
+   "sugarG": 7,
+   "fatG": 48,
+   "satFatG": 27,
+   "sodiumMg": 1480,
+   "cholesterolMg": 198
+  },
+  "tags": [
+   "american",
+   "comfort",
+   "family",
+   "make-ahead",
+   "technique",
+   "winter",
+   "classic",
+   "crowd-pleaser",
+   "leftovers"
+  ],
+  "image": {
+   "file": "ag-chicken-pot-pie.jpg",
+   "source": "commons-file",
+   "match": "dish",
+   "commonsFile": "191-365 Chicken Pot Pie.jpg"
+  }
+ },
+ {
+  "id": "ch-ag-012",
+  "slug": "ag-salted-caramel-brownies",
+  "title": "Salted Caramel Brownies",
+  "genre": "american",
+  "subgenre": "desserts",
+  "chef": {
+   "name": "Alex Guarnaschelli",
+   "slug": "alex-guarnaschelli"
+  },
+  "description": "Fudgy brownies with a ribbon of salted caramel through the middle.",
+  "difficulty": "intermediate",
+  "easeScore": 7,
+  "spiceScore": 0,
+  "popularity": 9,
+  "pantryScore": 8,
+  "servings": 16,
+  "prepMin": 30,
+  "cookMin": 90,
+  "totalMin": 120,
+  "equipment": [
+   "oven",
+   "stovetop"
+  ],
+  "ingredients": [
+   "1 1/4 cups sugar",
+   "1/4 cup water",
+   "3/4 cup heavy cream",
+   "4 tbsp butter",
+   "1 1/2 tsp flaky sea salt",
+   "8 oz bittersweet chocolate, chopped",
+   "1 cup butter",
+   "1 1/2 cups granulated sugar",
+   "1/2 cup packed brown sugar",
+   "4 eggs",
+   "2 tsp vanilla extract",
+   "1 cup all-purpose flour",
+   "1/2 cup cocoa powder",
+   "1/2 tsp salt",
+   "1 tsp flaky sea salt, to finish"
+  ],
+  "ingredientKeys": [
+   "sugar",
+   "water",
+   "heavy-cream",
+   "butter",
+   "flaky-sea-salt",
+   "bittersweet-chocolate",
+   "butter",
+   "sugar",
+   "brown-sugar",
+   "egg",
+   "vanilla-extract",
+   "flour",
+   "cocoa-powder",
+   "salt",
+   "flaky-sea-salt"
+  ],
+  "specialty": [
+   "flaky-sea-salt",
+   "bittersweet-chocolate",
+   "cocoa-powder"
+  ],
+  "steps": [
+   "Make the caramel: cook the sugar and water without stirring, swirling the pan, until deep amber. Stop before it smells burnt, but take it darker than looks comfortable - pale caramel disappears under chocolate.",
+   "Off the heat, add the cream carefully; it will erupt and spatter. Whisk in the butter and flaky salt and cool it completely.",
+   "Melt the chocolate with the butter, then whisk in both sugars, the eggs one at a time, and the vanilla.",
+   "Fold in the flour, cocoa and salt just until combined. Overmixing brownie batter develops gluten and makes them cakey rather than dense.",
+   "Spread half the batter in a lined 9x13 pan, drizzle two thirds of the cooled caramel over, add the remaining batter, then swirl in the last of the caramel with a knife. Do not over-swirl or it blends in and vanishes.",
+   "Bake at 350F for 32-38 minutes - a tester should come out with moist crumbs, not clean. Sprinkle with flaky salt, cool completely in the pan, then refrigerate an hour before cutting for clean edges."
+  ],
+  "diet": {
+   "vegetarian": true,
+   "vegan": false,
+   "pescatarian": true,
+   "glutenFree": false,
+   "glutenFreeAdaptable": false,
+   "dairyFree": false,
+   "nutFree": true,
+   "eggFree": false
+  },
+  "allergens": [
+   "gluten",
+   "dairy",
+   "egg"
+  ],
+  "gmo": {
+   "risk": "moderate",
+   "sources": [
+    "sugar-beet",
+    "grain-fed-dairy"
+   ]
+  },
+  "nutrition": {
+   "calories": 448,
+   "proteinG": 5,
+   "carbsG": 52,
+   "fiberG": 3,
+   "sugarG": 42,
+   "fatG": 26,
+   "satFatG": 16,
+   "sodiumMg": 280,
+   "cholesterolMg": 82
+  },
+  "tags": [
+   "american",
+   "dessert",
+   "baking",
+   "vegetarian",
+   "make-ahead",
+   "party",
+   "crowd-pleaser",
+   "technique",
+   "indulgent"
+  ],
+  "image": {
+   "file": "ag-salted-caramel-brownies.jpg",
+   "source": "commons-file",
+   "match": "dish",
+   "commonsFile": "Salted Caramel Brownies (25618670394).jpg"
+  }
+ },
+ {
+  "id": "ch-ag-013",
+  "slug": "ag-roasted-brussels-sprouts",
+  "title": "Roasted Brussels Sprouts with Bacon",
+  "genre": "american",
+  "subgenre": "sides",
+  "chef": {
+   "name": "Alex Guarnaschelli",
+   "slug": "alex-guarnaschelli"
+  },
+  "description": "Halved sprouts roasted hard with bacon, finished with vinegar and honey.",
+  "difficulty": "beginner",
+  "easeScore": 10,
+  "spiceScore": 2,
+  "popularity": 9,
+  "pantryScore": 8,
+  "servings": 6,
+  "prepMin": 15,
+  "cookMin": 35,
+  "totalMin": 50,
+  "equipment": [
+   "oven"
+  ],
+  "ingredients": [
+   "2 lb Brussels sprouts, halved",
+   "8 oz bacon, diced",
+   "3 tbsp olive oil",
+   "2 tsp salt",
+   "1 tsp black pepper",
+   "3 tbsp apple cider vinegar",
+   "2 tbsp honey",
+   "1/2 tsp red pepper flakes",
+   "1/3 cup chopped walnuts",
+   "2 tbsp chopped parsley"
+  ],
+  "ingredientKeys": [
+   "brussels-sprouts",
+   "bacon",
+   "olive-oil",
+   "salt",
+   "black-pepper",
+   "apple-cider-vinegar",
+   "honey",
+   "red-pepper-flakes",
+   "walnuts",
+   "parsley"
+  ],
+  "specialty": [
+   "brussels-sprouts",
+   "walnuts"
+  ],
+  "steps": [
+   "Trim and halve the sprouts through the stem and toss them with the oil, salt and pepper.",
+   "Lay them cut-side down in a single layer on a hot sheet pan with the diced bacon scattered around. Cut-side down is the whole trick - that flat face is where the browning happens.",
+   "Give them real space. Crowded sprouts steam in their own moisture and come out army green and sulfurous instead of brown and sweet.",
+   "Roast at 425F for 25-30 minutes without stirring for the first 20, until the cut faces are deeply caramelized and the outer leaves have gone crisp and almost black.",
+   "Whisk the vinegar, honey and pepper flakes together and toss it with the hot sprouts right on the pan so it sizzles and glazes.",
+   "Finish with the walnuts and parsley. Serve immediately - they lose their crispness within fifteen minutes."
+  ],
+  "diet": {
+   "vegetarian": false,
+   "vegan": false,
+   "pescatarian": false,
+   "glutenFree": true,
+   "glutenFreeAdaptable": false,
+   "dairyFree": true,
+   "nutFree": false,
+   "eggFree": true
+  },
+  "allergens": [
+   "tree-nut"
+  ],
+  "gmo": {
+   "risk": "moderate",
+   "sources": [
+    "grain-fed-meat"
+   ]
+  },
+  "nutrition": {
+   "calories": 382,
+   "proteinG": 14,
+   "carbsG": 22,
+   "fiberG": 7,
+   "sugarG": 11,
+   "fatG": 28,
+   "satFatG": 7,
+   "sodiumMg": 1080,
+   "cholesterolMg": 32
+  },
+  "tags": [
+   "american",
+   "side",
+   "gluten-free",
+   "dairy-free",
+   "thanksgiving",
+   "holiday",
+   "high-fiber",
+   "easy",
+   "quick",
+   "family"
+  ],
+  "image": {
+   "file": "brussels-sprouts.jpg",
+   "source": "wikipedia-lead",
+   "match": "representative",
+   "wikipedia": "Brussels sprout"
+  }
+ },
+ {
+  "id": "ch-ag-014",
+  "slug": "ag-meatloaf",
+  "title": "Meatloaf with Tomato Glaze",
+  "genre": "american",
+  "subgenre": "mains",
+  "chef": {
+   "name": "Alex Guarnaschelli",
+   "slug": "alex-guarnaschelli"
+  },
+  "description": "Beef and pork meatloaf with a sweet-tart glaze baked on in layers.",
+  "difficulty": "beginner",
+  "easeScore": 9,
+  "spiceScore": 2,
+  "popularity": 9,
+  "pantryScore": 9,
+  "servings": 8,
+  "prepMin": 25,
+  "cookMin": 80,
+  "totalMin": 105,
+  "equipment": [
+   "oven",
+   "stovetop"
+  ],
+  "ingredients": [
+   "1 1/2 lb ground beef (80/20)",
+   "1 lb ground pork",
+   "2 tbsp butter",
+   "1 yellow onion, finely diced",
+   "3 celery stalks, finely diced",
+   "5 cloves garlic, minced",
+   "1 1/2 cups fresh breadcrumbs",
+   "3/4 cup whole milk",
+   "2 eggs",
+   "1/4 cup ketchup",
+   "2 tbsp Worcestershire sauce",
+   "2 tbsp Dijon mustard",
+   "1/3 cup chopped parsley",
+   "2 1/2 tsp salt",
+   "1 1/2 tsp black pepper",
+   "3/4 cup ketchup, for the glaze",
+   "3 tbsp brown sugar",
+   "2 tbsp apple cider vinegar",
+   "1 tsp smoked paprika"
+  ],
+  "ingredientKeys": [
+   "ground-beef",
+   "ground-pork",
+   "butter",
+   "yellow-onion",
+   "celery",
+   "garlic",
+   "breadcrumbs",
+   "whole-milk",
+   "egg",
+   "ketchup",
+   "worcestershire",
+   "dijon-mustard",
+   "parsley",
+   "salt",
+   "black-pepper",
+   "ketchup",
+   "brown-sugar",
+   "apple-cider-vinegar",
+   "smoked-paprika"
+  ],
+  "specialty": [
+   "ground-pork",
+   "smoked-paprika"
+  ],
+  "steps": [
+   "Cook the onion, celery and garlic in the butter 8 minutes until soft, then cool them completely. Raw onion in meatloaf stays crunchy and releases water as it bakes.",
+   "Soak the breadcrumbs in the milk for 5 minutes until they turn to paste. This panade is what keeps the loaf tender - without it ground meat packs into a dense brick.",
+   "Mix the soaked crumbs, eggs, ketchup, Worcestershire, Dijon, parsley, salt, pepper and the cooled vegetables, then add both meats and combine with your hands just until uniform.",
+   "Stop mixing the moment it comes together. Working ground meat develops the proteins and makes the texture springy and sausage-like.",
+   "Shape it into a free-form loaf on a lined sheet pan rather than packing it into a loaf pan, so the sides brown and the fat drains away.",
+   "Whisk the glaze ingredients and brush on a third of it. Bake at 350F for 50 minutes, brush again, then bake 20-25 minutes more to 160F internal. Rest 15 minutes before slicing or it crumbles."
+  ],
+  "diet": {
+   "vegetarian": false,
+   "vegan": false,
+   "pescatarian": false,
+   "glutenFree": false,
+   "glutenFreeAdaptable": false,
+   "dairyFree": false,
+   "nutFree": true,
+   "eggFree": false
+  },
+  "allergens": [
+   "gluten",
+   "dairy",
+   "egg",
+   "fish"
+  ],
+  "gmo": {
+   "risk": "high",
+   "sources": [
+    "grain-fed-meat",
+    "processed-bread",
+    "corn-syrup",
+    "sugar-beet",
+    "grain-fed-dairy"
+   ]
+  },
+  "nutrition": {
+   "calories": 612,
+   "proteinG": 38,
+   "carbsG": 32,
+   "fiberG": 2,
+   "sugarG": 16,
+   "fatG": 36,
+   "satFatG": 14,
+   "sodiumMg": 1480,
+   "cholesterolMg": 158
+  },
+  "tags": [
+   "american",
+   "comfort",
+   "family",
+   "budget",
+   "make-ahead",
+   "leftovers",
+   "classic",
+   "easy",
+   "sunday"
+  ],
+  "image": {
+   "file": "meatloaf.jpg",
+   "source": "wikipedia-lead",
+   "match": "representative",
+   "wikipedia": "Meatloaf"
+  }
+ },
+ {
+  "id": "ch-ag-015",
+  "slug": "ag-shrimp-scampi",
+  "title": "Shrimp Scampi",
+  "genre": "italian",
+  "subgenre": "pasta",
+  "chef": {
+   "name": "Alex Guarnaschelli",
+   "slug": "alex-guarnaschelli"
+  },
+  "description": "Shrimp in garlic, white wine and butter over linguine.",
+  "difficulty": "beginner",
+  "easeScore": 9,
+  "spiceScore": 3,
+  "popularity": 9,
+  "pantryScore": 8,
+  "servings": 4,
+  "prepMin": 15,
+  "cookMin": 20,
+  "totalMin": 35,
+  "equipment": [
+   "stovetop"
+  ],
+  "ingredients": [
+   "1 1/2 lb large shrimp, peeled",
+   "1 lb linguine",
+   "2 tsp salt",
+   "1/2 tsp black pepper",
+   "1/4 cup olive oil",
+   "10 cloves garlic, thinly sliced",
+   "1 tsp red pepper flakes",
+   "1 cup dry white wine",
+   "6 tbsp butter",
+   "3 tbsp lemon juice",
+   "1 tbsp lemon zest",
+   "1/2 cup chopped parsley",
+   "1/2 cup grated Parmesan"
+  ],
+  "ingredientKeys": [
+   "shrimp",
+   "linguine",
+   "salt",
+   "black-pepper",
+   "olive-oil",
+   "garlic",
+   "red-pepper-flakes",
+   "white-wine",
+   "butter",
+   "lemon-juice",
+   "lemon-zest",
+   "parsley",
+   "parmesan"
+  ],
+  "specialty": [
+   "shrimp",
+   "white-wine"
+  ],
+  "steps": [
+   "Pat the shrimp completely dry and season them. Wet shrimp will not sear, and this dish is only two minutes of cooking, so there is no time to recover.",
+   "Boil the linguine to just under al dente and save a cup of the water.",
+   "Sear the shrimp in the hot olive oil in a single layer, 1 minute per side, then take them out. They finish in the sauce - leaving them in the pan the whole time is how scampi ends up rubbery.",
+   "Lower the heat and cook the sliced garlic with the pepper flakes 2 minutes, until pale gold and no further. Burnt garlic cannot be hidden in a sauce this simple.",
+   "Add the wine and reduce by half, then whisk in the butter a piece at a time off the heat so it emulsifies into a creamy sauce instead of separating.",
+   "Return the shrimp with the pasta, lemon juice, zest and a splash of pasta water and toss hard until the sauce clings. Finish with parsley and Parmesan."
+  ],
+  "diet": {
+   "vegetarian": false,
+   "vegan": false,
+   "pescatarian": true,
+   "glutenFree": false,
+   "glutenFreeAdaptable": true,
+   "dairyFree": false,
+   "nutFree": true,
+   "eggFree": true
+  },
+  "allergens": [
+   "shellfish",
+   "gluten",
+   "dairy",
+   "sulfites"
+  ],
+  "gmo": {
+   "risk": "low",
+   "sources": [
+    "grain-fed-dairy"
+   ]
+  },
+  "nutrition": {
+   "calories": 782,
+   "proteinG": 48,
+   "carbsG": 82,
+   "fiberG": 4,
+   "sugarG": 3,
+   "fatG": 32,
+   "satFatG": 15,
+   "sodiumMg": 1480,
+   "cholesterolMg": 288
+  },
+  "tags": [
+   "italian",
+   "seafood",
+   "quick",
+   "weeknight",
+   "pescatarian",
+   "high-protein",
+   "date-night",
+   "easy",
+   "classic",
+   "restaurant-style"
+  ],
+  "image": {
+   "file": "ag-shrimp-scampi.jpg",
+   "source": "commons-file",
+   "match": "dish",
+   "commonsFile": "Shrimp Scampi.jpg"
+  }
+ },
+ {
+  "id": "ch-ag-016",
+  "slug": "ag-brined-roast-turkey",
+  "title": "Brined Roast Turkey",
+  "genre": "american",
+  "subgenre": "mains",
+  "chef": {
+   "name": "Alex Guarnaschelli",
+   "slug": "alex-guarnaschelli"
+  },
+  "description": "A dry-brined turkey roasted breast-down, then flipped to brown.",
+  "difficulty": "intermediate",
+  "easeScore": 6,
+  "spiceScore": 2,
+  "popularity": 9,
+  "pantryScore": 7,
+  "servings": 12,
+  "prepMin": 40,
+  "cookMin": 1620,
+  "totalMin": 1660,
+  "equipment": [
+   "oven"
+  ],
+  "ingredients": [
+   "1 whole turkey (14 lb)",
+   "1/2 cup kosher salt",
+   "2 tbsp brown sugar",
+   "2 tbsp black pepper",
+   "2 tbsp dried thyme",
+   "1 tbsp garlic powder",
+   "1 cup softened butter",
+   "1/4 cup chopped fresh sage",
+   "1/4 cup chopped fresh thyme",
+   "2 tbsp lemon zest",
+   "2 yellow onions, quartered",
+   "4 carrots, cut in chunks",
+   "4 celery stalks, cut in chunks",
+   "2 lemons, halved",
+   "1 head garlic, halved",
+   "3 cups chicken broth"
+  ],
+  "ingredientKeys": [
+   "whole-turkey",
+   "kosher-salt",
+   "brown-sugar",
+   "black-pepper",
+   "dried-thyme",
+   "garlic-powder",
+   "butter",
+   "fresh-sage",
+   "fresh-thyme",
+   "lemon-zest",
+   "yellow-onion",
+   "carrot",
+   "celery",
+   "lemon",
+   "garlic",
+   "chicken-broth"
+  ],
+  "specialty": [
+   "whole-turkey",
+   "kosher-salt",
+   "fresh-sage",
+   "fresh-thyme"
+  ],
+  "steps": [
+   "Mix the salt, brown sugar, pepper, dried thyme and garlic powder and rub it all over the turkey, inside and out. Set it on a rack over a tray, uncovered, in the refrigerator for 24 to 48 hours.",
+   "A dry brine seasons the meat as deeply as a wet one and dries the skin at the same time, which a wet brine cannot do. Do not rinse it afterwards - just blot it.",
+   "Mash the butter with the sage, fresh thyme and lemon zest and push most of it under the breast skin, smoothing it flat from outside. Rub the rest over the bird.",
+   "Spread the onions, carrots, celery, lemons and garlic in the roasting pan, add the broth, and set the turkey on top breast-side DOWN.",
+   "Roast at 425F for 45 minutes, then reduce to 350F and continue 1 1/2 hours. Roasting breast-down first lets the legs take the direct heat and shields the breast, which otherwise dries out long before the thighs are safe.",
+   "Flip the bird breast-up - two people and wads of paper towels - and roast 45-60 minutes more to 160F in the breast and 175F in the thigh. Rest a full 40 minutes before carving; a bird this size needs it."
+  ],
+  "diet": {
+   "vegetarian": false,
+   "vegan": false,
+   "pescatarian": false,
+   "glutenFree": true,
+   "glutenFreeAdaptable": false,
+   "dairyFree": false,
+   "nutFree": true,
+   "eggFree": true
+  },
+  "allergens": [
+   "dairy"
+  ],
+  "gmo": {
+   "risk": "moderate",
+   "sources": [
+    "grain-fed-meat",
+    "grain-fed-dairy",
+    "sugar-beet"
+   ]
+  },
+  "nutrition": {
+   "calories": 682,
+   "proteinG": 78,
+   "carbsG": 7,
+   "fiberG": 1,
+   "sugarG": 3,
+   "fatG": 36,
+   "satFatG": 16,
+   "sodiumMg": 1680,
+   "cholesterolMg": 288
+  },
+  "tags": [
+   "american",
+   "thanksgiving",
+   "holiday",
+   "technique",
+   "high-protein",
+   "gluten-free",
+   "make-ahead",
+   "crowd-pleaser",
+   "special-occasion"
+  ],
+  "image": {
+   "file": "roast-turkey.jpg",
+   "source": "wikipedia-lead",
+   "match": "representative",
+   "wikipedia": "Roast turkey"
+  }
+ },
+ {
+  "id": "ch-ag-017",
+  "slug": "ag-mushroom-toast",
+  "title": "Mushroom Toast",
+  "genre": "american",
+  "subgenre": "appetizers",
+  "chef": {
+   "name": "Alex Guarnaschelli",
+   "slug": "alex-guarnaschelli"
+  },
+  "description": "Seared mushrooms with garlic and thyme piled on buttered toast.",
+  "difficulty": "beginner",
+  "easeScore": 10,
+  "spiceScore": 2,
+  "popularity": 8,
+  "pantryScore": 8,
+  "servings": 4,
+  "prepMin": 10,
+  "cookMin": 20,
+  "totalMin": 30,
+  "equipment": [
+   "stovetop"
+  ],
+  "ingredients": [
+   "1 1/2 lb mixed mushrooms, torn",
+   "4 tbsp butter",
+   "2 tbsp olive oil",
+   "4 cloves garlic, minced",
+   "1 shallot, minced",
+   "2 tbsp chopped fresh thyme",
+   "1/4 cup dry sherry",
+   "1 1/2 tsp salt",
+   "1 tsp black pepper",
+   "1 tbsp lemon juice",
+   "4 thick slices country bread",
+   "2 tbsp butter, for the bread",
+   "4 oz ricotta cheese",
+   "1/4 cup grated Parmesan",
+   "2 tbsp chopped parsley"
+  ],
+  "ingredientKeys": [
+   "mushroom",
+   "butter",
+   "olive-oil",
+   "garlic",
+   "shallot",
+   "fresh-thyme",
+   "dry-sherry",
+   "salt",
+   "black-pepper",
+   "lemon-juice",
+   "country-bread",
+   "butter",
+   "ricotta",
+   "parmesan",
+   "parsley"
+  ],
+  "specialty": [
+   "mushroom",
+   "shallot",
+   "fresh-thyme",
+   "dry-sherry",
+   "country-bread",
+   "ricotta"
+  ],
+  "steps": [
+   "Tear the mushrooms rather than slicing them. Torn edges have more surface area and brown far better.",
+   "Get the pan very hot with the oil and add the mushrooms in a single layer. Do not touch them for 3 minutes, do not salt them yet, and do not crowd the pan - salt and crowding both pull out water, and mushrooms sitting in water will never brown.",
+   "Once they are well colored, add the butter, garlic, shallot and thyme and cook 3 minutes more.",
+   "Deglaze with the sherry, scraping up the fond, and cook until nearly dry.",
+   "Season now, off the heat, and add the lemon juice.",
+   "Butter and toast the bread until crisp, spread it with ricotta, pile the mushrooms on, and finish with Parmesan and parsley."
+  ],
+  "diet": {
+   "vegetarian": true,
+   "vegan": false,
+   "pescatarian": true,
+   "glutenFree": false,
+   "glutenFreeAdaptable": false,
+   "dairyFree": false,
+   "nutFree": true,
+   "eggFree": true
+  },
+  "allergens": [
+   "gluten",
+   "dairy",
+   "sulfites"
+  ],
+  "gmo": {
+   "risk": "moderate",
+   "sources": [
+    "processed-bread",
+    "grain-fed-dairy"
+   ]
+  },
+  "nutrition": {
+   "calories": 448,
+   "proteinG": 16,
+   "carbsG": 32,
+   "fiberG": 4,
+   "sugarG": 5,
+   "fatG": 30,
+   "satFatG": 15,
+   "sodiumMg": 1080,
+   "cholesterolMg": 68
+  },
+  "tags": [
+   "american",
+   "appetizer",
+   "vegetarian",
+   "quick",
+   "technique",
+   "easy",
+   "lunch",
+   "party",
+   "restaurant-style"
+  ],
+  "image": {
+   "file": "ag-mushroom-toast.jpg",
+   "source": "commons-file",
+   "match": "dish",
+   "commonsFile": "Mushroom on Toast - The Canopy 2025-06-08.jpg"
+  }
+ },
+ {
+  "id": "ch-ag-018",
+  "slug": "ag-braised-lamb-shoulder",
+  "title": "Braised Lamb Shoulder",
+  "genre": "mediterranean",
+  "subgenre": "mains",
+  "chef": {
+   "name": "Alex Guarnaschelli",
+   "slug": "alex-guarnaschelli"
+  },
+  "description": "Lamb shoulder braised with white beans, rosemary and anchovy.",
+  "difficulty": "intermediate",
+  "easeScore": 7,
+  "spiceScore": 2,
+  "popularity": 8,
+  "pantryScore": 6,
+  "servings": 8,
+  "prepMin": 25,
+  "cookMin": 215,
+  "totalMin": 240,
+  "equipment": [
+   "oven",
+   "stovetop"
+  ],
+  "ingredients": [
+   "5 lb bone-in lamb shoulder",
+   "2 tbsp salt",
+   "1 tbsp black pepper",
+   "1/4 cup olive oil",
+   "2 yellow onions, diced",
+   "3 carrots, diced",
+   "1 head garlic, cloves smashed",
+   "6 anchovy fillets",
+   "3 tbsp tomato paste",
+   "1 1/2 cups dry white wine",
+   "4 cups chicken broth",
+   "4 sprigs fresh rosemary",
+   "2 bay leaves",
+   "2 cans (15 oz each) cannellini beans, drained",
+   "1 tbsp lemon zest",
+   "1/3 cup chopped parsley",
+   "2 tbsp red wine vinegar"
+  ],
+  "ingredientKeys": [
+   "lamb-shoulder",
+   "salt",
+   "black-pepper",
+   "olive-oil",
+   "yellow-onion",
+   "carrot",
+   "garlic",
+   "anchovy",
+   "tomato-paste",
+   "white-wine",
+   "chicken-broth",
+   "fresh-rosemary",
+   "bay-leaf",
+   "cannellini-beans",
+   "lemon-zest",
+   "parsley",
+   "red-wine-vinegar"
+  ],
+  "specialty": [
+   "lamb-shoulder",
+   "anchovy",
+   "white-wine",
+   "fresh-rosemary",
+   "cannellini-beans"
+  ],
+  "steps": [
+   "Season the lamb heavily and brown it in the oil on all sides, 12 minutes. A shoulder is awkward in the pot - turn it with tongs and take your time getting color everywhere.",
+   "Cook the onions and carrots 10 minutes, then the garlic, then the anchovies, mashing them until they dissolve. They will not taste fishy; they make the lamb taste more like lamb.",
+   "Add the tomato paste for 2 minutes, then the wine, and reduce by half.",
+   "Return the lamb with the broth, rosemary and bay leaves, cover, and braise at 325F for 3 hours until the meat pulls from the bone.",
+   "Add the beans for the last 30 minutes so they warm through and absorb the braise without turning to mush.",
+   "Pull the lamb into large pieces, skim the fat, and finish the pot with the lemon zest, parsley and vinegar stirred in raw. That brightness at the end is what keeps a long braise from tasting heavy."
+  ],
+  "diet": {
+   "vegetarian": false,
+   "vegan": false,
+   "pescatarian": false,
+   "glutenFree": true,
+   "glutenFreeAdaptable": false,
+   "dairyFree": true,
+   "nutFree": true,
+   "eggFree": true
+  },
+  "allergens": [
+   "fish",
+   "sulfites"
+  ],
+  "gmo": {
+   "risk": "moderate",
+   "sources": [
+    "grain-fed-meat"
+   ]
+  },
+  "nutrition": {
+   "calories": 712,
+   "proteinG": 58,
+   "carbsG": 32,
+   "fiberG": 9,
+   "sugarG": 7,
+   "fatG": 38,
+   "satFatG": 13,
+   "sodiumMg": 1680,
+   "cholesterolMg": 178
+  },
+  "tags": [
+   "mediterranean",
+   "braise",
+   "special-occasion",
+   "make-ahead",
+   "gluten-free",
+   "dairy-free",
+   "high-protein",
+   "easter",
+   "entertaining",
+   "one-pot"
+  ],
+  "image": {
+   "file": "ag-braised-lamb-shoulder.jpg",
+   "source": "commons-file",
+   "match": "dish",
+   "commonsFile": "Roasted lamb shoulder in a pot, Brisbane, 2025, 01.jpg"
+  }
+ },
+ {
+  "id": "ch-ag-019",
+  "slug": "ag-corn-chowder",
+  "title": "Corn Chowder",
+  "genre": "american",
+  "subgenre": "soups",
+  "chef": {
+   "name": "Alex Guarnaschelli",
+   "slug": "alex-guarnaschelli"
+  },
+  "description": "Sweet corn chowder built on a broth made from the stripped cobs.",
+  "difficulty": "beginner",
+  "easeScore": 9,
+  "spiceScore": 2,
+  "popularity": 8,
+  "pantryScore": 7,
+  "servings": 6,
+  "prepMin": 20,
+  "cookMin": 45,
+  "totalMin": 65,
+  "equipment": [
+   "stovetop",
+   "blender"
+  ],
+  "ingredients": [
+   "8 ears corn",
+   "6 oz bacon, diced",
+   "3 tbsp butter",
+   "1 yellow onion, diced",
+   "2 celery stalks, diced",
+   "4 cloves garlic, minced",
+   "1 1/2 lb Yukon Gold potatoes, diced",
+   "3 tbsp all-purpose flour",
+   "4 cups chicken broth",
+   "1 1/2 cups heavy cream",
+   "2 sprigs fresh thyme",
+   "1 bay leaf",
+   "2 tsp salt",
+   "1 tsp black pepper",
+   "1/4 tsp cayenne pepper",
+   "2 tbsp chopped chives"
+  ],
+  "ingredientKeys": [
+   "corn",
+   "bacon",
+   "butter",
+   "yellow-onion",
+   "celery",
+   "garlic",
+   "yukon-gold-potato",
+   "flour",
+   "chicken-broth",
+   "heavy-cream",
+   "fresh-thyme",
+   "bay-leaf",
+   "salt",
+   "black-pepper",
+   "cayenne",
+   "chives"
+  ],
+  "specialty": [
+   "corn",
+   "fresh-thyme"
+  ],
+  "steps": [
+   "Cut the kernels off the cobs, then snap the bare cobs in half and simmer them in the chicken broth for 20 minutes.",
+   "Those stripped cobs are full of starch and sweetness, and simmering them is free flavor most people throw in the bin. Pull them out before building the soup.",
+   "Render the bacon, remove it, and cook the onion, celery and garlic in the fat and butter 8 minutes.",
+   "Stir in the flour and cook 2 minutes, then whisk in the cob broth gradually. Add the potatoes, thyme and bay leaf and simmer 15 minutes until tender.",
+   "Blend about 2 cups of the soup and stir it back in. That gives you body without flour-thickening it into paste or adding more cream.",
+   "Add the corn kernels and the cream and simmer just 5 minutes - fresh corn needs almost no cooking and goes starchy if boiled. Season with salt, pepper and cayenne and serve with the bacon and chives."
+  ],
+  "diet": {
+   "vegetarian": false,
+   "vegan": false,
+   "pescatarian": false,
+   "glutenFree": false,
+   "glutenFreeAdaptable": true,
+   "dairyFree": false,
+   "nutFree": true,
+   "eggFree": true
+  },
+  "allergens": [
+   "gluten",
+   "dairy"
+  ],
+  "gmo": {
+   "risk": "high",
+   "sources": [
+    "corn",
+    "grain-fed-meat",
+    "grain-fed-dairy"
+   ]
+  },
+  "nutrition": {
+   "calories": 612,
+   "proteinG": 16,
+   "carbsG": 52,
+   "fiberG": 6,
+   "sugarG": 14,
+   "fatG": 40,
+   "satFatG": 21,
+   "sodiumMg": 1280,
+   "cholesterolMg": 108
+  },
+  "tags": [
+   "american",
+   "soup",
+   "summer",
+   "comfort",
+   "family",
+   "technique",
+   "make-ahead",
+   "easy",
+   "zero-waste"
+  ],
+  "image": {
+   "file": "corn-chowder.jpg",
+   "source": "wikipedia-lead",
+   "match": "representative",
+   "wikipedia": "Chowder"
+  }
+ },
+ {
+  "id": "ch-ag-020",
+  "slug": "ag-apple-crumb-pie",
+  "title": "Apple Crumb Pie",
+  "genre": "american",
+  "subgenre": "desserts",
+  "chef": {
+   "name": "Alex Guarnaschelli",
+   "slug": "alex-guarnaschelli"
+  },
+  "description": "Deep-dish apple pie with a brown sugar crumb topping instead of a lid.",
+  "difficulty": "intermediate",
+  "easeScore": 7,
+  "spiceScore": 0,
+  "popularity": 9,
+  "pantryScore": 8,
+  "servings": 10,
+  "prepMin": 40,
+  "cookMin": 135,
+  "totalMin": 175,
+  "equipment": [
+   "oven",
+   "stovetop"
+  ],
+  "ingredients": [
+   "1 1/2 cups all-purpose flour",
+   "1 tbsp sugar",
+   "1/2 tsp salt",
+   "3/4 cup cold butter, cubed",
+   "1/4 cup ice water",
+   "4 lb mixed apples, peeled and sliced",
+   "3/4 cup granulated sugar",
+   "1/4 cup packed brown sugar",
+   "3 tbsp cornstarch",
+   "2 tsp ground cinnamon",
+   "1/4 tsp ground nutmeg",
+   "1/2 tsp salt",
+   "2 tbsp lemon juice",
+   "2 tbsp butter",
+   "1 cup all-purpose flour",
+   "3/4 cup packed brown sugar",
+   "1/2 cup rolled oats",
+   "1/2 tsp ground cinnamon",
+   "1/2 cup cold butter, cubed",
+   "1/4 tsp salt"
+  ],
+  "ingredientKeys": [
+   "flour",
+   "sugar",
+   "salt",
+   "butter",
+   "ice-water",
+   "apple",
+   "sugar",
+   "brown-sugar",
+   "cornstarch",
+   "cinnamon",
+   "nutmeg",
+   "salt",
+   "lemon-juice",
+   "butter",
+   "flour",
+   "brown-sugar",
+   "rolled-oats",
+   "cinnamon",
+   "butter",
+   "salt"
+  ],
+  "specialty": [
+   "rolled-oats"
+  ],
+  "steps": [
+   "Make the crust with cold butter cut into the flour until pea-sized, add ice water, and press it together without kneading. Chill 1 hour, then roll and line a deep 9-inch pie dish and freeze it 20 minutes.",
+   "Use at least two kinds of apple - some that hold their shape like Honeycrisp and some that break down like McIntosh. One variety alone gives you either a crunchy pie or applesauce.",
+   "Toss the apples with both sugars, the cornstarch, spices, salt and lemon juice and let them sit 30 minutes, then cook the released juices down with the butter to a syrup and pour it back. Precooking the juice is what prevents the soupy gap under the top.",
+   "Rub the crumb ingredients together with your fingers until clumpy, leaving pea-to-marble sized pieces. Crumb worked too fine bakes into a sandy layer rather than distinct crumbs.",
+   "Mound the apples high in the shell - they shrink by a third - and press the crumb over the top.",
+   "Bake at 425F for 20 minutes, then 350F for about 55 minutes, until the juices bubble thickly at the edge. Tent the crumb with foil if it browns early. Cool at least 4 hours before cutting, or it will run."
+  ],
+  "diet": {
+   "vegetarian": true,
+   "vegan": false,
+   "pescatarian": true,
+   "glutenFree": false,
+   "glutenFreeAdaptable": false,
+   "dairyFree": false,
+   "nutFree": true,
+   "eggFree": true
+  },
+  "allergens": [
+   "gluten",
+   "dairy"
+  ],
+  "gmo": {
+   "risk": "moderate",
+   "sources": [
+    "cornstarch",
+    "sugar-beet",
+    "grain-fed-dairy"
+   ]
+  },
+  "nutrition": {
+   "calories": 612,
+   "proteinG": 5,
+   "carbsG": 88,
+   "fiberG": 5,
+   "sugarG": 52,
+   "fatG": 28,
+   "satFatG": 17,
+   "sodiumMg": 380,
+   "cholesterolMg": 72
+  },
+  "tags": [
+   "american",
+   "dessert",
+   "baking",
+   "thanksgiving",
+   "holiday",
+   "fall",
+   "vegetarian",
+   "classic",
+   "technique",
+   "crowd-pleaser"
+  ],
+  "image": {
+   "file": "ag-apple-crumb-pie.jpg",
+   "source": "commons-file",
+   "match": "dish",
+   "commonsFile": "Apple Crumb Pie (25619772963).jpg"
+  }
+ },
+ {
+  "id": "ch-ag-021",
+  "slug": "ag-steak-au-poivre",
+  "title": "Steak au Poivre",
+  "genre": "french",
+  "subgenre": "mains",
+  "chef": {
+   "name": "Alex Guarnaschelli",
+   "slug": "alex-guarnaschelli"
+  },
+  "description": "Peppercorn-crusted steak with a brandy cream pan sauce.",
+  "difficulty": "intermediate",
+  "easeScore": 7,
+  "spiceScore": 5,
+  "popularity": 9,
+  "pantryScore": 7,
+  "servings": 4,
+  "prepMin": 15,
+  "cookMin": 30,
+  "totalMin": 45,
+  "equipment": [
+   "stovetop"
+  ],
+  "ingredients": [
+   "4 New York strip steaks (10 oz each)",
+   "1/3 cup whole black peppercorns, coarsely cracked",
+   "2 tsp salt",
+   "2 tbsp vegetable oil",
+   "5 tbsp butter",
+   "2 shallots, minced",
+   "1/3 cup brandy or Cognac",
+   "1 cup beef broth",
+   "3/4 cup heavy cream",
+   "1 tbsp Dijon mustard",
+   "1 tbsp green peppercorns in brine",
+   "2 tbsp chopped chives"
+  ],
+  "ingredientKeys": [
+   "new-york-strip",
+   "black-peppercorns",
+   "salt",
+   "vegetable-oil",
+   "butter",
+   "shallot",
+   "brandy",
+   "beef-broth",
+   "heavy-cream",
+   "dijon-mustard",
+   "green-peppercorns",
+   "chives"
+  ],
+  "specialty": [
+   "new-york-strip",
+   "black-peppercorns",
+   "shallot",
+   "brandy",
+   "beef-broth",
+   "green-peppercorns"
+  ],
+  "steps": [
+   "Crack the peppercorns coarsely under a heavy pan - not ground, not whole. Ground pepper burns and tastes bitter; whole peppercorns fall off.",
+   "Salt the steaks, then press the cracked pepper firmly onto both flat faces. Leave the edges bare.",
+   "Sear in the oil in a heavy pan over high heat, 4 minutes per side, then add 2 tbsp butter and baste 1 minute. Pull at 125F for medium-rare and rest on a board.",
+   "Pour off most of the fat, cook the shallots 2 minutes, then add the brandy off the heat - a pan this hot can ignite it. Return it to the heat and reduce almost dry.",
+   "Add the broth and reduce by half, then the cream, Dijon and green peppercorns, and simmer until it coats a spoon.",
+   "Whisk in the remaining butter off the heat, add any juices from the resting board, and spoon over the steaks with chives."
+  ],
+  "diet": {
+   "vegetarian": false,
+   "vegan": false,
+   "pescatarian": false,
+   "glutenFree": true,
+   "glutenFreeAdaptable": false,
+   "dairyFree": false,
+   "nutFree": true,
+   "eggFree": true
+  },
+  "allergens": [
+   "dairy"
+  ],
+  "gmo": {
+   "risk": "high",
+   "sources": [
+    "seed-oil",
+    "grain-fed-meat",
+    "grain-fed-dairy"
+   ]
+  },
+  "nutrition": {
+   "calories": 882,
+   "proteinG": 58,
+   "carbsG": 9,
+   "fiberG": 2,
+   "sugarG": 3,
+   "fatG": 68,
+   "satFatG": 32,
+   "sodiumMg": 1280,
+   "cholesterolMg": 238
+  },
+  "tags": [
+   "french",
+   "steak",
+   "restaurant-style",
+   "date-night",
+   "gluten-free",
+   "low-carb",
+   "high-protein",
+   "technique",
+   "special-occasion",
+   "classic"
+  ],
+  "image": {
+   "file": "ag-steak-au-poivre.jpg",
+   "source": "commons-file",
+   "match": "dish",
+   "commonsFile": "Steak Au Poivre.jpg"
+  }
+ },
+ {
+  "id": "ch-ag-022",
+  "slug": "ag-kale-caesar",
+  "title": "Kale Caesar",
+  "genre": "american",
+  "subgenre": "salads",
+  "chef": {
+   "name": "Alex Guarnaschelli",
+   "slug": "alex-guarnaschelli"
+  },
+  "description": "Massaged kale with an anchovy-heavy Caesar and garlic croutons.",
+  "difficulty": "beginner",
+  "easeScore": 9,
+  "spiceScore": 2,
+  "popularity": 8,
+  "pantryScore": 7,
+  "servings": 6,
+  "prepMin": 20,
+  "cookMin": 20,
+  "totalMin": 40,
+  "equipment": [
+   "oven",
+   "no-cook"
+  ],
+  "ingredients": [
+   "2 bunches lacinato kale, stemmed and shredded",
+   "4 cups cubed country bread",
+   "1/4 cup olive oil",
+   "2 cloves garlic, minced",
+   "1 tsp salt",
+   "8 anchovy fillets",
+   "4 cloves garlic",
+   "2 egg yolks",
+   "2 tbsp lemon juice",
+   "1 tbsp Dijon mustard",
+   "1 tsp Worcestershire sauce",
+   "3/4 cup olive oil",
+   "1 cup grated Parmesan",
+   "1 tsp black pepper",
+   "1/2 tsp salt",
+   "1/4 cup shaved Parmesan"
+  ],
+  "ingredientKeys": [
+   "lacinato-kale",
+   "country-bread",
+   "olive-oil",
+   "garlic",
+   "salt",
+   "anchovy",
+   "garlic",
+   "egg-yolk",
+   "lemon-juice",
+   "dijon-mustard",
+   "worcestershire",
+   "olive-oil",
+   "parmesan",
+   "black-pepper",
+   "salt",
+   "parmesan"
+  ],
+  "specialty": [
+   "lacinato-kale",
+   "country-bread",
+   "anchovy",
+   "egg-yolk"
+  ],
+  "steps": [
+   "Toss the bread cubes with 1/4 cup oil, the minced garlic and salt and bake at 375F for 15 minutes until golden and crisp outside but still chewy at the center.",
+   "Strip the kale off its ribs and shred it finely. Then massage it with a pinch of salt for a full minute until it darkens and softens. Unmassaged raw kale is tough and squeaky, and this one minute changes the whole salad.",
+   "Mash the anchovies and garlic to a paste. Use all eight fillets - a Caesar without enough anchovy just tastes like garlic mayonnaise.",
+   "Whisk in the egg yolks, lemon juice, Dijon and Worcestershire, then stream in the 3/4 cup olive oil slowly to emulsify into a thick dressing.",
+   "Stir in the grated Parmesan, pepper and salt. Note the dressing contains raw yolk; use pasteurized eggs if serving anyone who should avoid that.",
+   "Dress the massaged kale generously - it can take far more dressing than lettuce - and let it sit 10 minutes. Add the croutons and shaved Parmesan at the table."
+  ],
+  "diet": {
+   "vegetarian": false,
+   "vegan": false,
+   "pescatarian": true,
+   "glutenFree": false,
+   "glutenFreeAdaptable": false,
+   "dairyFree": false,
+   "nutFree": true,
+   "eggFree": false
+  },
+  "allergens": [
+   "fish",
+   "egg",
+   "dairy",
+   "gluten"
+  ],
+  "gmo": {
+   "risk": "moderate",
+   "sources": [
+    "processed-bread",
+    "grain-fed-dairy"
+   ]
+  },
+  "nutrition": {
+   "calories": 512,
+   "proteinG": 18,
+   "carbsG": 28,
+   "fiberG": 4,
+   "sugarG": 3,
+   "fatG": 38,
+   "satFatG": 9,
+   "sodiumMg": 1280,
+   "cholesterolMg": 98
+  },
+  "tags": [
+   "american",
+   "salad",
+   "healthy",
+   "restaurant-style",
+   "technique",
+   "lunch",
+   "make-ahead",
+   "easy",
+   "classic"
+  ],
+  "image": {
+   "file": "caesar-salad.jpg",
+   "source": "wikipedia-lead",
+   "match": "representative",
+   "wikipedia": "Caesar salad"
+  }
+ },
+ {
+  "id": "ch-ag-023",
+  "slug": "ag-sticky-toffee-pudding",
+  "title": "Sticky Toffee Pudding",
+  "genre": "international",
+  "subgenre": "desserts",
+  "chef": {
+   "name": "Alex Guarnaschelli",
+   "slug": "alex-guarnaschelli"
+  },
+  "description": "Date sponge soaked in hot toffee sauce, served with cream.",
+  "difficulty": "intermediate",
+  "easeScore": 7,
+  "spiceScore": 0,
+  "popularity": 8,
+  "pantryScore": 7,
+  "servings": 10,
+  "prepMin": 25,
+  "cookMin": 60,
+  "totalMin": 85,
+  "equipment": [
+   "oven",
+   "stovetop"
+  ],
+  "ingredients": [
+   "10 oz pitted Medjool dates, chopped",
+   "1 1/4 cups boiling water",
+   "1 1/2 tsp baking soda",
+   "1/2 cup butter, softened",
+   "3/4 cup packed brown sugar",
+   "3 eggs",
+   "1 tsp vanilla extract",
+   "1 3/4 cups all-purpose flour",
+   "1 1/2 tsp baking powder",
+   "1/2 tsp salt",
+   "1 cup butter",
+   "1 1/2 cups packed brown sugar",
+   "1 1/4 cups heavy cream",
+   "1 tsp flaky sea salt",
+   "1 tbsp dark rum",
+   "1 1/2 cups heavy cream, for serving"
+  ],
+  "ingredientKeys": [
+   "medjool-dates",
+   "water",
+   "baking-soda",
+   "butter",
+   "brown-sugar",
+   "egg",
+   "vanilla-extract",
+   "flour",
+   "baking-powder",
+   "salt",
+   "butter",
+   "brown-sugar",
+   "heavy-cream",
+   "flaky-sea-salt",
+   "dark-rum",
+   "heavy-cream"
+  ],
+  "specialty": [
+   "medjool-dates",
+   "flaky-sea-salt",
+   "dark-rum"
+  ],
+  "steps": [
+   "Pour the boiling water over the chopped dates with the baking soda and leave them 20 minutes. The soda breaks the dates down into a dark pulp - this is what gives the pudding its color and its almost caramel flavor, and without it you get fruity lumps.",
+   "Mash the softened dates with their liquid into a rough puree.",
+   "Cream the butter and brown sugar, beat in the eggs one at a time and the vanilla, then fold in the flour, baking powder and salt alternately with the date mixture.",
+   "Bake in a buttered 9x13 pan at 350F for 30-35 minutes, until a tester comes out clean and the top springs back.",
+   "Make the sauce: melt the butter with the brown sugar, add the cream, and simmer 5 minutes until smooth and slightly thickened. Stir in the flaky salt and rum.",
+   "Poke the warm cake all over with a skewer and pour a third of the hot sauce over it so it soaks in. Serve warm with more sauce and pouring cream. It reheats well, which is rare for a sponge."
+  ],
+  "diet": {
+   "vegetarian": true,
+   "vegan": false,
+   "pescatarian": true,
+   "glutenFree": false,
+   "glutenFreeAdaptable": false,
+   "dairyFree": false,
+   "nutFree": true,
+   "eggFree": false
+  },
+  "allergens": [
+   "gluten",
+   "dairy",
+   "egg"
+  ],
+  "gmo": {
+   "risk": "moderate",
+   "sources": [
+    "sugar-beet",
+    "grain-fed-dairy"
+   ]
+  },
+  "nutrition": {
+   "calories": 782,
+   "proteinG": 7,
+   "carbsG": 92,
+   "fiberG": 4,
+   "sugarG": 72,
+   "fatG": 46,
+   "satFatG": 28,
+   "sodiumMg": 480,
+   "cholesterolMg": 158
+  },
+  "tags": [
+   "dessert",
+   "baking",
+   "british",
+   "comfort",
+   "make-ahead",
+   "winter",
+   "holiday",
+   "indulgent",
+   "crowd-pleaser"
+  ],
+  "image": {
+   "file": "ag-sticky-toffee-pudding.jpg",
+   "source": "commons-file",
+   "match": "dish",
+   "commonsFile": "Sticky Toffee Pudding.jpg"
+  }
+ },
+ {
+  "id": "ch-ag-024",
+  "slug": "ag-pan-roasted-cauliflower-anchovy",
+  "title": "Cauliflower with Anchovy Breadcrumbs",
+  "genre": "italian",
+  "subgenre": "sides",
+  "chef": {
+   "name": "Alex Guarnaschelli",
+   "slug": "alex-guarnaschelli"
+  },
+  "description": "Charred cauliflower tossed with anchovy, garlic and crisp breadcrumbs.",
+  "difficulty": "beginner",
+  "easeScore": 9,
+  "spiceScore": 3,
+  "popularity": 7,
+  "pantryScore": 7,
+  "servings": 6,
+  "prepMin": 15,
+  "cookMin": 30,
+  "totalMin": 45,
+  "equipment": [
+   "oven",
+   "stovetop"
+  ],
+  "ingredients": [
+   "2 heads cauliflower, cut in florets",
+   "1/3 cup olive oil",
+   "2 tsp salt",
+   "1 tsp black pepper",
+   "6 anchovy fillets",
+   "6 cloves garlic, minced",
+   "1 tsp red pepper flakes",
+   "1 1/2 cups fresh breadcrumbs",
+   "3 tbsp butter",
+   "2 tbsp capers, rinsed",
+   "2 tbsp lemon juice",
+   "1 tbsp lemon zest",
+   "1/3 cup chopped parsley",
+   "1/2 cup grated Parmesan"
+  ],
+  "ingredientKeys": [
+   "cauliflower",
+   "olive-oil",
+   "salt",
+   "black-pepper",
+   "anchovy",
+   "garlic",
+   "red-pepper-flakes",
+   "breadcrumbs",
+   "butter",
+   "capers",
+   "lemon-juice",
+   "lemon-zest",
+   "parsley",
+   "parmesan"
+  ],
+  "specialty": [
+   "cauliflower",
+   "anchovy",
+   "capers"
+  ],
+  "steps": [
+   "Toss the florets with the oil, salt and pepper and spread them in one layer on a hot sheet pan, flat sides down where possible.",
+   "Roast at 450F for 25 minutes without stirring for the first 18, until the flat faces are genuinely charred in places. Pale cauliflower is the whole problem with most roasted cauliflower - it needs to go further than looks right.",
+   "Meanwhile melt the butter and cook the anchovies, mashing them until they dissolve completely, then add the garlic and pepper flakes for 1 minute.",
+   "Add the breadcrumbs and toast 4-5 minutes, stirring, until deep golden and crisp.",
+   "Stir in the capers, lemon juice and zest off the heat.",
+   "Toss the hot cauliflower with the breadcrumb mixture, the parsley and the Parmesan, and serve right away before the crumbs soften."
+  ],
+  "diet": {
+   "vegetarian": false,
+   "vegan": false,
+   "pescatarian": true,
+   "glutenFree": false,
+   "glutenFreeAdaptable": false,
+   "dairyFree": false,
+   "nutFree": true,
+   "eggFree": true
+  },
+  "allergens": [
+   "fish",
+   "gluten",
+   "dairy"
+  ],
+  "gmo": {
+   "risk": "moderate",
+   "sources": [
+    "processed-bread",
+    "grain-fed-dairy"
+   ]
+  },
+  "nutrition": {
+   "calories": 318,
+   "proteinG": 11,
+   "carbsG": 22,
+   "fiberG": 5,
+   "sugarG": 5,
+   "fatG": 22,
+   "satFatG": 7,
+   "sodiumMg": 1180,
+   "cholesterolMg": 28
+  },
+  "tags": [
+   "italian",
+   "side",
+   "technique",
+   "pescatarian",
+   "healthy",
+   "high-fiber",
+   "easy",
+   "restaurant-style",
+   "quick"
+  ],
+  "image": {
+   "file": "roasted-cauliflower.jpg",
+   "source": "wikipedia-lead",
+   "match": "representative",
+   "wikipedia": "Cauliflower"
+  }
+ },
+ {
+  "id": "ch-ag-025",
+  "slug": "ag-buttermilk-biscuits",
+  "title": "Buttermilk Biscuits",
+  "genre": "american",
+  "subgenre": "baking",
+  "chef": {
+   "name": "Alex Guarnaschelli",
+   "slug": "alex-guarnaschelli"
+  },
+  "description": "Tall flaky biscuits made by folding the dough over itself.",
+  "difficulty": "beginner",
+  "easeScore": 8,
+  "spiceScore": 0,
+  "popularity": 9,
+  "pantryScore": 9,
+  "servings": 10,
+  "prepMin": 20,
+  "cookMin": 25,
+  "totalMin": 45,
+  "equipment": [
+   "oven"
+  ],
+  "ingredients": [
+   "4 cups all-purpose flour",
+   "2 tbsp baking powder",
+   "1 tbsp sugar",
+   "1 1/2 tsp baking soda",
+   "1 1/2 tsp salt",
+   "1 cup very cold butter, cubed",
+   "1 3/4 cups cold buttermilk",
+   "3 tbsp melted butter",
+   "1/2 tsp flaky sea salt"
+  ],
+  "ingredientKeys": [
+   "flour",
+   "baking-powder",
+   "sugar",
+   "baking-soda",
+   "salt",
+   "butter",
+   "buttermilk",
+   "butter",
+   "flaky-sea-salt"
+  ],
+  "specialty": [
+   "buttermilk",
+   "flaky-sea-salt"
+  ],
+  "steps": [
+   "Keep everything cold. Cut the frozen-hard butter into the dry ingredients until there are flat, flaky pieces the size of nickels - not crumbs. Those sheets of butter turn to steam in the oven and push the layers apart.",
+   "Add the cold buttermilk and stir just until a shaggy dough forms. It should look undermixed and a bit dry.",
+   "Turn it out and pat it into a rectangle, then fold it in thirds like a letter. Pat and fold twice more. This laminating is what gives you pull-apart layers rather than a round scone.",
+   "Pat to 1 inch thick and cut straight down with a sharp cutter - never twist it, which seals the edges and stops the rise.",
+   "Set them on a sheet pan with their sides touching. Touching biscuits support each other and climb higher.",
+   "Bake at 450F for 14-16 minutes until tall and deeply golden. Brush with melted butter and sprinkle with flaky salt the moment they come out."
+  ],
+  "diet": {
+   "vegetarian": true,
+   "vegan": false,
+   "pescatarian": true,
+   "glutenFree": false,
+   "glutenFreeAdaptable": false,
+   "dairyFree": false,
+   "nutFree": true,
+   "eggFree": true
+  },
+  "allergens": [
+   "gluten",
+   "dairy"
+  ],
+  "gmo": {
+   "risk": "low",
+   "sources": [
+    "grain-fed-dairy",
+    "sugar-beet"
+   ]
+  },
+  "nutrition": {
+   "calories": 382,
+   "proteinG": 7,
+   "carbsG": 42,
+   "fiberG": 2,
+   "sugarG": 3,
+   "fatG": 20,
+   "satFatG": 12,
+   "sodiumMg": 780,
+   "cholesterolMg": 52
+  },
+  "tags": [
+   "american",
+   "baking",
+   "breakfast",
+   "vegetarian",
+   "budget",
+   "pantry",
+   "technique",
+   "family",
+   "classic",
+   "easy"
+  ],
+  "image": {
+   "file": "ag-buttermilk-biscuits.jpg",
+   "source": "commons-file",
+   "match": "dish",
+   "commonsFile": "Buttermilk biscuit.jpg"
+  }
+ }
+]
