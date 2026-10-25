@@ -1,6 +1,6 @@
-import { GENERIC_WORDS, formatAmount, normalize, roundAmount, sameIngredient, substitutesFor, type SubstituteOption } from '../data/ingredients';
+import { GENERIC_WORDS, formatAmount, normalize, parseIngredientLine, roundAmount, sameIngredient, substitutesFor, type SubstituteOption } from '../data/ingredients';
 import { DIET_RULES, EQUIPMENT } from '../data/rules';
-import type { CookRules, CookSession, PantryItem, PlanDiff, Recipe, RecipeIngredient, RecipeStep, SessionChange, Substitution } from '../types';
+import type { Addition, CookRules, CookSession, PantryItem, PlanDiff, Recipe, RecipeIngredient, RecipeStep, SessionChange, Substitution } from '../types';
 import { availability, breaksRule, describeRules, isEssential, remainingMinutes, scaleRecipe, stepEquipment } from './kitchen';
 import { validateStages } from './stages';
 
@@ -26,6 +26,8 @@ export interface AdaptContext {
   basics: boolean;
   unavailable: string[];
   leaveOut: string[];
+  preferredSwaps: { from: string; to: string }[];
+  additions: Addition[];
   completed: string[];
 }
 
@@ -54,6 +56,8 @@ export const contextOf = (s: CookSession): AdaptContext => ({
   basics: s.pantryBasics,
   unavailable: s.unavailable,
   leaveOut: s.leaveOut,
+  preferredSwaps: s.preferredSwaps,
+  additions: s.additions,
   completed: s.completedStepKeys,
 });
 
@@ -216,6 +220,73 @@ function applyDrop(r: Recipe, ing: RecipeIngredient, completed: string[]): Recip
   };
 }
 
+const titleCaseName = (s: string) => s.trim().charAt(0).toUpperCase() + s.trim().slice(1);
+
+/** A substitute the cook named that isn't in Gusteau's table: used as is, in the same amount. */
+const chosenOption = (name: string): SubstituteOption => ({ name: titleCaseName(name), inText: name.trim().toLowerCase(), note: '' });
+
+/** An extra the cook asked for becomes its own short step, before the step that was current when they asked (or before serving). */
+function applyAddition(r: Recipe, add: Addition, ctx: AdaptContext): Recipe {
+  const key = `extra~${slug(add.name)}`;
+  if (r.steps.some((s) => s.key === key)) return r;
+  const existing = r.ingredients.find((i) => sameIngredient(i.name, add.name));
+  const id = existing?.id ?? `extra-${slug(add.name)}`;
+  const parsed = add.amount ? parseIngredientLine(`${add.amount} ${add.name}`) : null;
+  const ingredients: RecipeIngredient[] = existing
+    ? r.ingredients
+    : [
+        ...r.ingredients,
+        {
+          id,
+          name: titleCaseName(add.name),
+          amount: parsed?.amount ?? null,
+          unit: parsed && parsed.amount !== null ? parsed.unit : (add.amount ?? ''),
+          note: 'your addition',
+          toBuy: hasIt(add.name, ctx) === 'no' && ctx.rules.purchasesAllowed ? true : undefined,
+        },
+      ];
+  const step: RecipeStep = { key, title: `Add the ${add.name.trim().toLowerCase()}`, text: add.how, uses: [id], minutes: 1 };
+  const open = r.steps.filter((s) => !ctx.completed.includes(s.key));
+  const target = (add.beforeKey && open.find((s) => s.key === add.beforeKey)) || open[open.length - 1];
+  if (!target) {
+    return { ...r, ingredients, steps: [...r.steps, step], stages: r.stages.map((st, i) => (i === r.stages.length - 1 ? { ...st, stepKeys: [...st.stepKeys, key] } : st)) };
+  }
+  const at = r.steps.indexOf(target);
+  return {
+    ...r,
+    ingredients,
+    steps: [...r.steps.slice(0, at), step, ...r.steps.slice(at)],
+    stages: r.stages.map((st) => (st.stepKeys.includes(target.key) ? { ...st, stepKeys: st.stepKeys.flatMap((k) => (k === target.key ? [key, k] : [k])) } : st)),
+  };
+}
+
+export interface SwapHint {
+  ingredient: string;
+  options: { name: string; status: 'have' | 'buy' | 'missing' | 'unknown'; note: string }[];
+}
+
+/**
+ * The safe swaps for every ingredient still to be used: they pass the
+ * cook's rules and equipment, and are marked with whether the cook has
+ * them. This grounds Gusteau's answers to "what can I use instead of…?".
+ */
+export function substitutionHints(s: CookSession): SwapHint[] {
+  const ctx = contextOf(s);
+  return s.recipe.ingredients
+    .filter((i) => stillNeeded(s.recipe, i, ctx.completed))
+    .map((i) => ({
+      ingredient: i.name,
+      options: substitutesFor(i.substitutedFor ?? i.name)
+        .filter((o) => !breaksRule(o.name, ctx.rules) && (!o.method || o.method.equipment.some((e) => ctx.rules.equipment.includes(e))) && !sameIngredient(o.name, i.name))
+        .map((o) => {
+          const have = hasIt(o.name, ctx);
+          const status = have === 'yes' ? 'have' : have === 'unknown' ? 'unknown' : ctx.rules.purchasesAllowed ? 'buy' : 'missing';
+          return { name: o.name, status: status as SwapHint['options'][number]['status'], note: o.note };
+        }),
+    }))
+    .filter((h) => h.options.length);
+}
+
 /**
  * Re-derive the plan from the original recipe for the current context.
  * With `prior`, swaps that finished steps rely on are kept, and finished
@@ -249,6 +320,22 @@ export function adaptRecipe(original: Recipe, ctx: AdaptContext, prior?: AdaptPr
       }
       if (ruleBroken) notes.push(`${ing.name} already went into a step you finished, and it breaks “${ruleBroken}”. I can’t take it back out, so please check before serving.`);
       continue;
+    }
+    // The cook picked the substitute themselves. It still has to pass every rule.
+    const pref = ctx.preferredSwaps.find((p) => sameIngredient(p.from, ing.name) || p.from.toLowerCase() === ing.name.toLowerCase());
+    if (pref) {
+      const option = substitutesFor(ing.name).find((o) => sameIngredient(o.name, pref.to)) ?? chosenOption(pref.to);
+      const rule = breaksRule(option.name, ctx.rules);
+      const have = hasIt(option.name, ctx);
+      const noEquipment = option.method && !option.method.equipment.some((e) => ctx.rules.equipment.includes(e));
+      if (rule) violations.push(`${option.name} breaks “${rule}”, so I can’t use it instead of ${ing.name.toLowerCase()}.`);
+      else if (have === 'no' && !ctx.rules.purchasesAllowed) violations.push(`You don’t have ${option.name.toLowerCase()} in your kitchen, and purchases are off.`);
+      else if (noEquipment) violations.push(`${option.name} needs equipment you don’t have.`);
+      else {
+        r = applySwap(r, current, option, have === 'no', ctx.completed);
+        substitutions.push({ kind: 'swap', from: ing.name, to: option.name, reason: `Your choice. ${option.note}`.trim() });
+        continue;
+      }
     }
     const missing = availability(ing.name, ctx.pantry, ctx.basics) === 'missing';
     const why: BlockerKind | 'shop' | null = isUnavailable(ing.name, ctx)
@@ -298,6 +385,12 @@ export function adaptRecipe(original: Recipe, ctx: AdaptContext, prior?: AdaptPr
       r = { ...r, ingredients: r.ingredients.map((i) => (i.id === ing.id ? { ...i, toBuy: true } : i)) };
       substitutions.push({ kind: 'buy', from: ing.name, to: '', reason: `${reasonFor}. There’s no swap you have, so it’s on your shopping list.` });
     }
+  }
+
+  for (const add of ctx.additions) {
+    if (ctx.leaveOut.some((l) => sameIngredient(l, add.name)) || isUnavailable(add.name, ctx)) continue;
+    r = applyAddition(r, add, ctx);
+    substitutions.push({ kind: 'add', from: add.name, to: '', reason: add.how });
   }
 
   if (prior) {
@@ -351,7 +444,9 @@ export function applyChanges(s: CookSession, changes: SessionChange[]): { sessio
   const rules = { ...s.rules };
   let pantry = [...s.pantry];
   let unavailable = [...s.unavailable];
-  const leaveOut = [...s.leaveOut];
+  let leaveOut = [...s.leaveOut];
+  let preferredSwaps = [...s.preferredSwaps];
+  let additions = [...s.additions];
   let original = s.original;
   const labels: string[] = [];
   for (const ch of changes) {
@@ -372,8 +467,22 @@ export function applyChanges(s: CookSession, changes: SessionChange[]): { sessio
       }
       case 'leave_out':
         if (!leaveOut.some((l) => sameIngredient(l, ch.name))) leaveOut.push(ch.name);
+        additions = additions.filter((a) => !sameIngredient(a.name, ch.name));
         labels.push(`Cooking without ${ch.name.toLowerCase()}`);
         break;
+      case 'swap_ingredient':
+        preferredSwaps = [...preferredSwaps.filter((p) => !sameIngredient(p.from, ch.from)), { from: ch.from, to: ch.to }];
+        leaveOut = leaveOut.filter((l) => !sameIngredient(l, ch.from));
+        labels.push(`Using ${ch.to.toLowerCase()} instead of ${ch.from.toLowerCase()}`);
+        break;
+      case 'add_to_recipe': {
+        const open = s.recipe.steps.filter((st) => !s.completedStepKeys.includes(st.key));
+        const beforeKey = ch.when === 'end' ? open[open.length - 1]?.key : s.recipe.steps[s.stepIndex]?.key;
+        additions = [...additions.filter((a) => !sameIngredient(a.name, ch.name)), { name: ch.name, amount: ch.amount, how: ch.how, beforeKey }];
+        leaveOut = leaveOut.filter((l) => !sameIngredient(l, ch.name));
+        labels.push(`Adding ${ch.name.toLowerCase()}`);
+        break;
+      }
       case 'set_time':
         rules.timeLimit = Math.max(1, Math.round(ch.minutes));
         labels.push(`${rules.timeLimit} minutes left`);
@@ -405,7 +514,7 @@ export function applyChanges(s: CookSession, changes: SessionChange[]): { sessio
         break;
     }
   }
-  return { session: { ...s, rules, pantry, unavailable, leaveOut, original }, labels };
+  return { session: { ...s, rules, pantry, unavailable, leaveOut, preferredSwaps, additions, original, pendingOffer: undefined }, labels };
 }
 
 /** Short label for a set of changes, e.g. "You're out of rice". */
@@ -419,6 +528,10 @@ export function describeChanges(changes: SessionChange[]): string {
       return `You found ${ch.name.toLowerCase()}`;
     case 'leave_out':
       return `Cook without ${ch.name.toLowerCase()}`;
+    case 'swap_ingredient':
+      return `${ch.to} instead of ${ch.from.toLowerCase()}`;
+    case 'add_to_recipe':
+      return `Add ${ch.name.toLowerCase()}`;
     case 'set_time':
       return `Only ${ch.minutes} minutes left`;
     case 'add_exclusion':
@@ -469,8 +582,11 @@ export function finalizeReplan(before: CookSession, after: CookSession, result: 
   return {
     ...after,
     recipe: next,
-    // An infeasible change still updates what Gusteau knows, but the plan pauses until the user decides.
+    // An infeasible change still updates what Gusteau knows (facts like "out of rice" or a new rule), but
+    // the plan pauses until the user decides. A swap or addition they asked for that didn't work is dropped.
     paused: infeasible,
+    preferredSwaps: infeasible ? before.preferredSwaps : after.preferredSwaps,
+    additions: infeasible ? before.additions : after.additions,
     substitutions: infeasible ? before.substitutions : result.substitutions,
     completedStepKeys: completed,
     stepIndex: infeasible ? before.stepIndex : stepIndex,
@@ -489,6 +605,10 @@ function opener(ch: SessionChange | undefined): string {
       return `Ooh, ${ch.name.toLowerCase()}. Let me put that to work.`;
     case 'leave_out':
       return `Okay, we’ll cook without the ${ch.name.toLowerCase()}.`;
+    case 'swap_ingredient':
+      return 'Sure thing.';
+    case 'add_to_recipe':
+      return `Good idea, let’s add the ${ch.name.toLowerCase()}.`;
     case 'set_time':
       return `${ch.minutes} minutes it is.`;
     case 'add_exclusion':
@@ -550,6 +670,7 @@ function gusteauSays(d: PlanDiff, before: CookSession, s: CookSession, changes: 
     if (sub.kind === 'swap') parts.push(`I swapped the ${sub.from.toLowerCase()} for ${sub.to.toLowerCase()}${sub.unsure ? ' (tell me if you don’t have it)' : ''}.${why ? ` ${why}` : ''}`);
     if (sub.kind === 'drop') parts.push(`I left out the ${sub.from.toLowerCase()}.`);
     if (sub.kind === 'buy') parts.push(`${sub.from} goes on your shopping list.`);
+    if (sub.kind === 'add') parts.push(`New step: ${sub.reason.replace(/\.?$/, '.')}`);
   }
   if (d.stepsRemoved.length && !d.stepsAdded.length) parts.push(`That means no “${d.stepsRemoved[0]}” step.`);
   if (d.titleAfter !== d.titleBefore) parts.push(`It’s now a ${d.titleAfter}.`);

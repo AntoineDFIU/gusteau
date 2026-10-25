@@ -57,6 +57,11 @@ export function speak(text: string, queue = false): Promise<void> {
   });
 }
 
+/** Another voice (Magpie) started or stopped talking: pause or resume the browser recognizer like for speak(). */
+export function announceSpeaking(on: boolean) {
+  speakingListeners.forEach((l) => l(on));
+}
+
 export function stopSpeaking() {
   if (!ttsSupported) return;
   window.speechSynthesis.cancel();

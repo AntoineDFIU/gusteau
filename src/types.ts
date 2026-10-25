@@ -158,7 +158,7 @@ export interface CookRules {
 }
 
 export interface Substitution {
-  kind: 'swap' | 'drop' | 'buy';
+  kind: 'swap' | 'drop' | 'buy' | 'add';
   from: string;
   /** The ingredient swapped in; empty for drops and purchases. */
   to: string;
@@ -177,7 +177,11 @@ export type SessionChange =
   | { type: 'remove_equipment'; equipment: Equipment }
   | { type: 'set_purchases'; allowed: boolean }
   /** The user agreed to cook without an ingredient Gusteau couldn't replace. */
-  | { type: 'leave_out'; name: string };
+  | { type: 'leave_out'; name: string }
+  /** The user chose what to use instead of an ingredient. */
+  | { type: 'swap_ingredient'; from: string; to: string }
+  /** Something extra goes into the dish: `how` is one instruction, `when` is now or before serving. */
+  | { type: 'add_to_recipe'; name: string; amount?: string; how: string; when?: 'now' | 'end' };
 
 /** Cooking-mode commands, typed or spoken. They never change the plan. */
 export type CookCommand =
@@ -215,6 +219,10 @@ export interface ChatMessage {
   text: string;
   diffId?: string;
   techniqueId?: string;
+  /** The user said it rather than typed it. */
+  via?: 'voice';
+  /** Already read aloud while it streamed in. */
+  spoken?: boolean;
 }
 
 export interface ActiveTimer {
@@ -225,6 +233,14 @@ export interface ActiveTimer {
   endsAt: number | null;
   /** Seconds left when paused. */
   pausedLeft: number;
+}
+
+export interface Addition {
+  name: string;
+  amount?: string;
+  how: string;
+  /** Key of the step it goes before; missing means before serving. */
+  beforeKey?: string;
 }
 
 export interface CookSession {
@@ -239,6 +255,12 @@ export interface CookSession {
   unavailable: string[];
   /** Ingredient names the user agreed to cook without. */
   leaveOut: string[];
+  /** Swaps the user asked for, kept across replans. */
+  preferredSwaps: { from: string; to: string }[];
+  /** Extras the user added, each with the step it goes before. */
+  additions: Addition[];
+  /** Changes Gusteau just offered ("want me to switch?"), applied if the user says yes. */
+  pendingOffer?: SessionChange[];
   stepIndex: number;
   completedStepKeys: string[];
   substitutions: Substitution[];

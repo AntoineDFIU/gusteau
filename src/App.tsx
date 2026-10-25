@@ -14,7 +14,7 @@ import { DEMO_PANTRY, DEMO_RECIPE_ID, DEMO_RULES } from './services/mock/mockDat
 import { useCook } from './state/useCook';
 import { useProfile } from './state/profile';
 import type { CookSession, Recipe } from './types';
-import { speak, stopSpeaking, useSpeech } from './voice/useSpeech';
+import { useVoice } from './voice/useVoice';
 
 type Screen = 'onboarding' | 'browse' | 'cooking';
 
@@ -40,11 +40,37 @@ export default function App() {
     (s: CookSession) => update((p) => ({ history: [...p.history, { recipeId: s.original.id, cuisine: s.original.cuisine, at: Date.now(), finished: true }].slice(-50) })),
     [update],
   );
-  const cook = useCook(onFinish);
+  const cook = useCook({
+    onFinish,
+    onTimerDone: (label) => {
+      if (voiceRef.current?.handsFree) voiceRef.current.say(`Time’s up: ${label.replace(/ timer$/, '')}.`, true);
+    },
+  });
 
-  // ── Voice: one mic for the whole app ──
+  // ── Voice: one mic and one voice for the whole app ──
+  // While cooking, a spoken phrase goes to Gusteau like a chat message. A plain
+  // answer is read aloud while the model is still writing it; plan changes are
+  // answered with the validated replan message. A phrase that arrives while
+  // Gusteau is still busy waits for him (only the latest one is kept).
+  const waiting = useRef<string | null>(null);
+  const askByVoice = (text: string) => {
+    if (cook.busy) {
+      waiting.current = text;
+      return;
+    }
+    let reading: ReturnType<typeof voice.stream> | null = null;
+    void cook
+      .sendChat(text, {
+        via: 'voice',
+        onReply: (sofar) => {
+          reading ??= voice.stream();
+          reading.push(sofar);
+        },
+      })
+      .finally(() => reading?.finish());
+  };
   const onPhrase = (text: string) => {
-    if (screen === 'cooking' && cook.session) return void cook.sendChat(text);
+    if (screen === 'cooking' && cook.session) return askByVoice(text);
     if (screen !== 'browse') return;
     const intent = parseBrowseIntent(text);
     if (intent.addPantry.length) update((p) => ({ pantry: mergePantry(p.pantry, intent.addPantry, 'chat') }));
@@ -52,31 +78,59 @@ export default function App() {
     setPreview(null);
     setToast(intent.summary.length ? `🎤 “${text}” → ${intent.summary.join(' · ')}` : `🎤 “${text}”`);
   };
-  const speech = useSpeech(onPhrase);
+  const voice = useVoice(onPhrase);
+  const voiceRef = useRef(voice);
+  voiceRef.current = voice;
+  useEffect(() => {
+    if (cook.busy || !waiting.current) return;
+    const text = waiting.current;
+    waiting.current = null;
+    askByVoice(text);
+  });
 
-  // Read the current step aloud on request, or automatically in hands-free mode.
   const s = cook.session;
+  // Gusteau says his replies in hands-free mode, or when he was asked out loud.
+  // This runs before the step reader below, so a replan message comes first and
+  // the step it lands on is read after it.
+  const lastSpoken = useRef<string | null>(null);
+  useEffect(() => {
+    const chat = s?.chat ?? [];
+    const last = chat[chat.length - 1];
+    if (!last || last.from !== 'gusteau' || last.id === lastSpoken.current) return;
+    lastSpoken.current = last.id;
+    const asked = chat[chat.length - 2];
+    if (!last.spoken && (voice.handsFree || asked?.via === 'voice')) voice.say(last.text);
+  }, [s?.chat, voice.handsFree]);
+  // Read the current step aloud on request, or automatically in hands-free mode.
   const lastRead = useRef(0);
   useEffect(() => {
     const req = cook.readRequest;
     if (!s || req.n === lastRead.current) return;
     lastRead.current = req.n;
-    if (!req.force && !speech.handsFree) return;
+    if (!req.force && !voice.handsFree) return;
     const step = s.recipe.steps[s.stepIndex];
-    void speak(step ? `${step.title}. ${step.text}` : 'All done. Bon appétit!', !req.force);
+    voice.say(step ? `${step.title}. ${step.text}` : 'All done. Bon appétit!', !req.force);
   }, [cook.readRequest]);
-  // In hands-free mode, Gusteau also says its replies.
-  const lastSpoken = useRef<string | null>(null);
+
+  // Esc silences Gusteau.
   useEffect(() => {
-    const last = s?.chat[s.chat.length - 1];
-    if (!last || last.from !== 'gusteau' || last.id === lastSpoken.current) return;
-    lastSpoken.current = last.id;
-    if (speech.handsFree) void speak(last.text);
-  }, [s?.chat, speech.handsFree]);
+    if (!voice.talking) return;
+    const onKey = (e: KeyboardEvent) => e.key === 'Escape' && voice.stopTalking();
+    window.addEventListener('keydown', onKey);
+    return () => window.removeEventListener('keydown', onKey);
+  }, [voice.talking]);
+
+  const setHandsFree = async (on: boolean) => {
+    await voice.setHandsFree(on);
+    if (!on || !s) return;
+    // Load the model now so the first question doesn't wait for it, and invite the cook to talk.
+    void modelService.warmUp().catch(() => {});
+    voice.say(`I’m listening. How can I help with your ${s.recipe.title}?`);
+  };
 
   const leaveCooking = () => {
-    speech.setHandsFree(false);
-    stopSpeaking();
+    void voice.setHandsFree(false);
+    voice.stopTalking();
     cook.stop();
     setScreen('browse');
     window.scrollTo({ top: 0 });
@@ -97,8 +151,8 @@ export default function App() {
   };
 
   const myKitchen: Kitchen = useMemo(() => ({ pantry: profile.pantry, basics: profile.pantryBasics }), [profile.pantry, profile.pantryBasics]);
-  const micVisible = screen !== 'onboarding' && speech.supported && !speech.handsFree;
-  const listening = speech.state === 'listening' && !speech.handsFree;
+  const micVisible = screen !== 'onboarding' && voice.supported && !voice.handsFree;
+  const listening = (voice.state === 'listening' || voice.state === 'connecting') && !voice.handsFree;
 
   return (
     <div className="min-h-screen bg-cream-100 bg-[radial-gradient(ellipse_at_top_right,rgba(242,140,56,0.12),transparent_55%),radial-gradient(ellipse_at_bottom_left,rgba(107,122,58,0.08),transparent_50%)]">
@@ -126,7 +180,7 @@ export default function App() {
             )}
             {micVisible && (
               <button
-                onClick={speech.listenOnce}
+                onClick={() => void voice.listenOnce()}
                 aria-label={listening ? 'Stop listening' : 'Talk to Gusteau'}
                 aria-pressed={listening}
                 className={cx(
@@ -138,11 +192,11 @@ export default function App() {
                 <span className="hidden sm:inline">{listening ? 'Listening… tap to stop' : 'Ask Gusteau'}</span>
               </button>
             )}
-            {screen !== 'onboarding' && speech.state === 'blocked' && <span className="text-xs text-tomato-600">Mic blocked in browser settings</span>}
+            {screen !== 'onboarding' && voice.state === 'blocked' && <span className="text-xs text-tomato-600">Mic blocked in browser settings</span>}
           </div>
         </div>
-        {listening && speech.interim && (
-          <p className="absolute inset-x-0 top-full truncate bg-charcoal-900 px-4 py-1.5 text-center text-xs italic text-white">“{speech.interim}”</p>
+        {listening && voice.interim && (
+          <p className="absolute inset-x-0 top-full truncate bg-charcoal-900 px-4 py-1.5 text-center text-xs italic text-white">“{voice.interim}”</p>
         )}
       </header>
 
@@ -169,7 +223,7 @@ export default function App() {
                 onOpen={(recipe) => setPreview({ recipe, kitchen: myKitchen })}
                 onPantry={(pantry, pantryBasics) => update({ pantry, pantryBasics })}
                 onDemo={loadDemo}
-                micHint={speech.supported}
+                micHint={voice.supported}
               />
             ) : (
               <p className="mx-auto max-w-md text-center text-charcoal-500">No recipes found. Put a recipes.json or recipes.csv export in public/recipes/ (see docs/RECIPE_FORMAT.md).</p>
@@ -180,7 +234,7 @@ export default function App() {
             </p>
           ))}
 
-        {screen === 'cooking' && cook.session && <CookingWorkspace cook={cook} speech={speech} onExit={leaveCooking} />}
+        {screen === 'cooking' && cook.session && <CookingWorkspace cook={cook} voice={voice} onHandsFree={(on) => void setHandsFree(on)} onExit={leaveCooking} />}
       </main>
 
       <Modal open={!!preview} onClose={() => setPreview(null)} label={preview?.recipe.title ?? 'Recipe'} wide>

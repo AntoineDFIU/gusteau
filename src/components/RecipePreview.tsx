@@ -49,7 +49,7 @@ export function RecipePreview({
   };
   const scaled = useMemo(() => scaleRecipe(recipe, servings), [recipe, servings]);
   // Cheap enough to recompute on every change, so the preview is always exactly what cooking will start with.
-  const plan = adaptRecipe(scaled, { rules, pantry: kitchen.pantry, basics: kitchen.basics, unavailable: [], leaveOut, completed: [] });
+  const plan = adaptRecipe(scaled, { rules, pantry: kitchen.pantry, basics: kitchen.basics, unavailable: [], leaveOut, preferredSwaps: [], additions: [], completed: [] });
   const options = pauseOptions(plan, rules);
   const known = kitchen.pantry.length > 0;
   const cuisine = cuisineById(recipe.cuisine);

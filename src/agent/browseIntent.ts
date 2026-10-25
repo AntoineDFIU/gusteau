@@ -1,4 +1,4 @@
-import { matchCuisine } from '../data/cuisines';
+import { cuisineById, matchCuisine } from '../data/cuisines';
 import { GRAINS, PROTEINS, type GrainId, type ProteinId } from '../data/ingredients';
 import { DIET_RULES, DIET_RULE_IDS } from '../data/rules';
 import type { Filters } from './kitchen';
@@ -36,7 +36,7 @@ export function parseBrowseIntent(raw: string): BrowseIntent {
   const cuisine = matchCuisine(m);
   if (cuisine) {
     filters.cuisine = cuisine;
-    summary.push(cuisine.replace(/-/g, ' '));
+    summary.push(cuisineById(cuisine).name);
   }
   const diet = DIET_RULE_IDS.filter((r) => m.includes(r.replace('-', ' ')) || m.includes(r) || m.includes(DIET_RULES[r].label.toLowerCase()));
   if (diet.length) {

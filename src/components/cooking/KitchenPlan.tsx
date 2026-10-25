@@ -26,9 +26,9 @@ export function KitchenPlan({ session: s }: { session: CookSession }) {
           <ul className="mt-2 space-y-1 text-sm text-charcoal-700">
             {s.substitutions.map((x) => (
               <li key={`${x.kind}-${x.from}`} className="flex gap-2">
-                <span aria-hidden>{x.kind === 'swap' ? '🔁' : x.kind === 'drop' ? '➖' : '🛒'}</span>
+                <span aria-hidden>{x.kind === 'swap' ? '🔁' : x.kind === 'drop' ? '➖' : x.kind === 'add' ? '➕' : '🛒'}</span>
                 <span>
-                  {x.kind === 'swap' ? `${x.from} → ${x.to}` : x.kind === 'drop' ? `No ${x.from.toLowerCase()}` : `Buy ${x.from.toLowerCase()}`}
+                  {x.kind === 'swap' ? `${x.from} → ${x.to}` : x.kind === 'drop' ? `No ${x.from.toLowerCase()}` : x.kind === 'add' ? `Added ${x.from.toLowerCase()}` : `Buy ${x.from.toLowerCase()}`}
                   <span className="block text-xs text-charcoal-400">{x.reason.split('. ')[0]}</span>
                 </span>
               </li>

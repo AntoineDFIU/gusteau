@@ -29,6 +29,8 @@ export class MockModelService implements ChefModelService {
     return parseIntent(message, session);
   }
 
+  async warmUp(): Promise<void> {}
+
   async stageRecipe(recipe: Recipe): Promise<StageResult> {
     return { stages: recipe.stages, by: recipe.stagesBy ?? 'gusteau' };
   }

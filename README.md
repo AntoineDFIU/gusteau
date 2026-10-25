@@ -115,6 +115,39 @@ Restart the server after changing them. The header badge shows the active model.
 
 Uploaded photos are downscaled to JPEG (max 1280 px) in the browser before they are sent.
 
+## Hands-free test (voice in, voice out)
+
+`npm run dev`, then open http://localhost:5173/asr.html. Press the mic (or Space) and talk to Gusteau. Your words appear as they're recognized. When you pause, the phrase goes to the text model, and the answer streams into a box while it's read aloud. The mic pauses while Gusteau speaks so he doesn't hear himself. Esc stops him, and a new phrase interrupts an answer he's still working on. Each answer shows how long the first words, the first audio and the whole reply took. The page is dev-only and isn't part of the production build.
+
+Everything runs on the M5 Max:
+
+- **Speech to text:** NVIDIA `nemotron-3.5-asr-streaming-0.6b` (Q8_0 GGUF) in [NeMo-Speech.cpp](https://github.com/NVIDIA/NeMo-Speech.cpp) with the Metal backend.
+- **Answers:** the dev server's text model (`GUSTEAU_PROVIDER` and `LLM_*` above), for example `qwen3.6:35b-mlx` on Ollama. `src/asr/assistant.ts` has the spoken-style prompt and streams replies through `/api/llm` (`src/services/llm/chatStream.ts`). The page warms the model up when it opens, because a cold load takes about 5 s.
+- **Text to speech:** Magpie TTS on the same NeMo-Speech.cpp server. `src/voice/speaker.ts` speaks each sentence as soon as it's complete and synthesizes the next one while the current one plays. The browser's voice is available as a fallback.
+
+`nemo-speech serve` listens on the Mac's `127.0.0.1:8080` only, so the dev server reaches it through an SSH tunnel:
+
+- **`ASR_SSH_TARGET=user@host`** in `.env.local` makes `npm run dev` open `ssh -N -L 127.0.0.1:8080:127.0.0.1:8080 user@host` and reconnect it if it drops, for example when the Mac sleeps or Wi-Fi changes. If port 8080 is already open, for instance from a tunnel you started yourself, it uses that instead.
+- The browser only calls `/api/asr/*`. `vite.config.ts` forwards it, including the realtime WebSocket, to `ASR_BASE_URL` (default `http://127.0.0.1:8080`) and adds `ASR_API_KEY` if the server was started with `--api-key`.
+- `src/voice/nemotronAsr.ts` streams the mic as 16-bit PCM to `/v1/audio/transcriptions/realtime` and handles partial and final transcripts. The server's endpointing is off, so the client sends `input_audio_buffer.commit` itself after a pause.
+
+### In the app
+
+The main app uses the same pipeline for **Hands-free** (in the cooking status bar) and the **🎤** buttons. `src/voice/useVoice.ts` picks the engines:
+
+- **Ears:** Nemotron ASR when the dev server can reach the speech server, otherwise the browser's Web Speech API (`useSpeech.ts`). Production builds, including the Pi, use the browser, because only the dev server proxies `/api/asr`. If the tunnel drops mid-session, hands-free retries for about 15 s, then turns itself off and says why.
+- **Voice:** Magpie (voice John) on the same server, otherwise the browser's voice. Everything Gusteau says goes through one queue (`src/voice/voiceOut.ts`). The mic is muted while he talks and reopens 300 ms after he stops. Esc or "Gusteau is talking · Stop" silences him.
+- **Brain:** a spoken phrase goes to Gusteau like a chat message, with the full recipe-aware context: rules, pantry, steps, the current step and the last few messages. Commands such as "what's next", "repeat that", "go back", "set a five-minute timer" and "show me how" are handled locally and instantly. Everything else goes to `interpretMessage()`, which asks the model for `{"changes": [...], "reply": ...}` with changes first. When there are no plan changes, the reply is read aloud while it's still being written. When there are, Gusteau speaks the validated replan message, then reads the step the plan lands on.
+- **Kitchen help** works the same typed or spoken:
+  - **Substitutions:** "What can I use instead of rice?" is answered from the safe swaps for what's left. These already fit the cook's rules and equipment, and the ones they have come first (`substitutionHints()` in `src/agent/adapt.ts`). Gusteau then offers the swap, and "yes" applies it instantly.
+  - **Changes to the recipe:** "use couscous instead of rice", "add some spinach" and "make it spicier" become `swap_ingredient` or `add_to_recipe` changes. The replanner applies them as their own steps and validates them like any other change. Requests that can't work (something not in the kitchen with purchases off, or something that breaks a rule) are answered locally with "I'd skip that", without asking the model. A failed swap or addition is never kept.
+  - **Challenges:** burning, sticking, too salty, too thin, still cold, soggy and similar get a quick fix for the current step, with a timer when more cooking helps. Something ruined can be replanned around with a "yes".
+  - **Guardrails on the model:** changes to time, servings, purchases or equipment only count when the cook's own words ask for them. When the model helps with a replan, its swaps must do the same job in the dish, and it may not drop steps the cook still needs. Otherwise Gusteau pauses and asks.
+  - **Offline:** the same help works in mock mode, and when the model can't be reached (`src/services/mock/kitchenHelp.ts`).
+- **Turning hands-free on** warms the model up and asks how Gusteau can help with the recipe. Finished timers are announced.
+
+Measured on the M5 Max through the real pipeline, from the moment a phrase is final: a plan change is spoken after about 0.4 s, a question's first sentence goes to Magpie after about 0.4 s, and "what's next" reads the next step after about 0.3 s. There's no voice barge-in yet: you can't talk over Gusteau, because the mic is muted while he speaks.
+
 ## Raspberry Pi deployment
 
 Gusteau runs on the Pi `antoineraspi` as a systemd service. It starts at boot and restarts if it crashes.
