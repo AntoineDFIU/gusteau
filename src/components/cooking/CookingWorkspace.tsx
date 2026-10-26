@@ -3,17 +3,18 @@ import { amountOf } from '../../agent/adapt';
 import { stageIndexOf } from '../../agent/stages';
 import { emojiFor } from '../../data/ingredients';
 import { EQUIPMENT } from '../../data/rules';
-import { techniqueFor } from '../../data/techniques';
+import { techniqueFor, techniqueQuery } from '../../data/techniques';
 import { formatClock } from '../../lib/sound';
 import type { Cook } from '../../state/useCook';
 import type { Voice } from '../../voice/useVoice';
 import { RecipeArt, StageIcon } from '../RecipeCard';
 import { Button, Card, GusteauAvatar, Modal, SectionTitle, cx } from '../ui';
 import { ChatPanel } from './ChatPanel';
+import { ExplainerCard } from './ExplainerCard';
 import { KitchenPlan } from './KitchenPlan';
 import { PlanUpdatedBanner } from './PlanUpdatedBanner';
 import { StatusBar } from './StatusBar';
-import { TechniqueCard } from './TechniqueCard';
+import { VideoCard } from './VideoCard';
 
 export function CookingWorkspace({ cook, voice, onHandsFree, onExit }: { cook: Cook; voice: Voice; onHandsFree: (on: boolean) => void; onExit: () => void }) {
   const s = cook.session!;
@@ -67,6 +68,9 @@ export function CookingWorkspace({ cook, voice, onHandsFree, onExit }: { cook: C
             </div>
           )}
 
+          {cook.explainer && <ExplainerCard explainer={cook.explainer} onClose={cook.closeExplainer} />}
+          {cook.videoCard && <VideoCard card={cook.videoCard} onClose={cook.closeVideos} />}
+
           {finished ? (
             <Card className="p-8 text-center sm:p-10">
               <span className="text-6xl">🎉</span>
@@ -74,7 +78,6 @@ export function CookingWorkspace({ cook, voice, onHandsFree, onExit }: { cook: C
               <p className="mx-auto mt-2 max-w-md text-charcoal-500">
                 You made the {r.title}
                 {s.history.filter((h) => !h.infeasible).length ? `, and handled ${s.history.filter((h) => !h.infeasible).length} curveball${s.history.length > 1 ? 's' : ''} along the way` : ''}.
-                {!s.rules.purchasesAllowed && ' No surprise grocery runs.'}
               </p>
               <p className="mt-2 text-xs text-charcoal-400">Gusteau will use this to suggest dishes you’ll like next time.</p>
               <div className="mt-6 flex flex-wrap justify-center gap-3">
@@ -107,11 +110,6 @@ export function CookingWorkspace({ cook, voice, onHandsFree, onExit }: { cook: C
                           Cook without {n.toLowerCase()}
                         </Button>
                       ))}
-                      {latest?.offers?.allowPurchase && (
-                        <Button size="sm" variant="secondary" onClick={() => void cook.update([{ type: 'set_purchases', allowed: true }], 'Purchases allowed')}>
-                          Allow a quick purchase
-                        </Button>
-                      )}
                       {cook.canUndo && (
                         <Button size="sm" variant="secondary" onClick={cook.undo}>
                           ↶ Undo last change
@@ -172,8 +170,8 @@ export function CookingWorkspace({ cook, voice, onHandsFree, onExit }: { cook: C
                     ⏱ {stepTimerRunning ? 'Timer running' : `Start ${formatClock(step.timerSeconds)} timer`}
                   </Button>
                 )}
-                {technique && !cook.techniqueOpen && (
-                  <Button size="sm" variant="secondary" onClick={() => cook.setTechniqueOpen(true)}>
+                {!cook.videoCard && (
+                  <Button size="sm" variant="secondary" onClick={() => cook.showVideos(technique ? techniqueQuery(technique) : step.title.toLowerCase(), technique?.howTo)}>
                     🎬 Show me how
                   </Button>
                 )}
@@ -181,7 +179,6 @@ export function CookingWorkspace({ cook, voice, onHandsFree, onExit }: { cook: C
                   🔊 Read aloud
                 </Button>
               </div>
-              {technique && cook.techniqueOpen && <TechniqueCard technique={technique} onClose={() => cook.setTechniqueOpen(false)} />}
 
               <div className="mt-8 flex items-center justify-between gap-3">
                 <Button variant="secondary" onClick={cook.back} disabled={s.stepIndex === 0 || s.paused}>
@@ -216,7 +213,7 @@ export function CookingWorkspace({ cook, voice, onHandsFree, onExit }: { cook: C
             </Card>
           )}
 
-          <ChatPanel cook={cook} onMic={() => void voice.listenOnce()} micActive={(voice.state === 'listening' || voice.state === 'connecting') && !voice.handsFree} micSupported={voice.supported} />
+          <ChatPanel cook={cook} onMic={() => void voice.listenOnce()} micActive={(voice.state === 'listening' || voice.state === 'connecting') && !voice.handsFree} micSupported={voice.supported} interim={voice.handsFree ? undefined : voice.interim} />
         </div>
 
         <aside className="min-w-0 space-y-6">
@@ -239,7 +236,7 @@ export function CookingWorkspace({ cook, voice, onHandsFree, onExit }: { cook: C
                   key={i.id}
                   onClick={() => {
                     setOutOpen(false);
-                    void cook.update([{ type: 'remove_ingredient', name: i.name }], `You're out of ${i.name.toLowerCase()}`, `I’m out of ${i.name.toLowerCase()}`);
+                    cook.tell([{ type: 'remove_ingredient', name: i.name }], `I’m out of ${i.name.toLowerCase()}`);
                   }}
                   className="flex items-center gap-2 rounded-2xl border border-cream-300 bg-white px-3 py-2.5 text-left text-sm font-medium text-charcoal-700 hover:border-tomato-400"
                 >

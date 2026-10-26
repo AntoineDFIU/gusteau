@@ -1,5 +1,5 @@
 import { cuisineById, matchCuisine } from '../data/cuisines';
-import { GENERIC_WORDS, emojiFor, normalize, parseIngredientLine, sameIngredient } from '../data/ingredients';
+import { GENERIC_WORDS, emojiFor, normalize, parseIngredientLine, sameIngredient, spellOutSpoons } from '../data/ingredients';
 import { DIFFICULTIES, EQUIPMENT_IDS, EQUIPMENT_WORDS } from '../data/rules';
 import { groupStages, validateStages } from '../agent/stages';
 import type { ChefCredit, Difficulty, Equipment, Nutrition, Recipe, RecipeIngredient, RecipeStage, RecipeStep } from '../types';
@@ -128,9 +128,9 @@ function parseSteps(raw: unknown, ingredients: RecipeIngredient[]): RecipeStep[]
   return list(raw)
     .map((item, idx): RecipeStep | null => {
       const o: Raw = typeof item === 'string' ? { text: item } : item && typeof item === 'object' ? (item as Raw) : {};
-      const text = str(pick(o, 'text', 'instruction', 'instructions', 'description', 'body', 'step'));
+      const text = spellOutSpoons(str(pick(o, 'text', 'instruction', 'instructions', 'description', 'body', 'step')));
       if (!text) return null;
-      const title = str(pick(o, 'title', 'name', 'heading')) || titleFromText(text);
+      const title = spellOutSpoons(str(pick(o, 'title', 'name', 'heading'))) || titleFromText(text);
       const givenKey = str(pick(o, 'key', 'id'));
       const usesRaw = pick(o, 'uses', 'ingredients');
       const uses = usesRaw
@@ -148,7 +148,7 @@ function parseSteps(raw: unknown, ingredients: RecipeIngredient[]): RecipeStep[]
         uses: [...new Set(uses)],
         timerSeconds: timerSecs ?? (timerMins !== null ? timerMins * 60 : timerFromText(text)),
         technique: str(pick(o, 'technique')) || undefined,
-        tip: str(pick(o, 'tip', 'note')) || undefined,
+        tip: spellOutSpoons(str(pick(o, 'tip', 'note'))) || undefined,
       };
     })
     .filter((x): x is RecipeStep => !!x);

@@ -28,18 +28,18 @@ npm run preview    # serve the production build
 
 ## The 60-second demo
 
-1. On first launch, pick a few cuisines and a diet (or skip). You land on **What are you craving?**
-2. In the sidebar, click **Load demo kitchen**. The preview opens for the **Microwave Rice & Bean Burrito Bowl** with the demo kitchen: rice, canned black beans, tortillas, cheese and salsa. The rules are vegetarian, 15 minutes, microwave only, and no purchases. The preview shows what you have, the four cooking stages, and that Gusteau will leave out the optional cumin and cilantro you don't have.
+1. On first launch, pick a few cuisines and a diet (or skip). You land on **What are you craving?** To see the welcome screen again, click **↺ Reset as new user** in the header (a prototype tool; it clears this browser's preferences, kitchen and history).
+2. In the sidebar, click **Load demo kitchen**. The preview opens for the **Microwave Rice & Bean Burrito Bowl** with the demo kitchen: rice, canned black beans, tortillas, cheese and salsa. The rules are vegetarian, 15 minutes and microwave only. The preview shows what you have, the four cooking stages, and that Gusteau will leave out the optional cumin and cilantro you don't have.
 3. Click **Cook with Gusteau**, then **Done, next step**. This finishes "Prep the beans".
-4. In the chat, type **Actually, I don't have rice.** (or tap the suggestion, or use **I'm out of an ingredient**).
-5. Watch the **Plan updated** card:
+4. In the chat, type **Actually, I don't have rice.** (or tap the suggestion, or use **I'm out of an ingredient**). Gusteau suggests tortillas, which you have, and asks before changing anything.
+5. Say **yes**, and watch the **Plan updated** card:
    - Rice → tortillas, and the dish becomes the **Microwave Tortilla & Bean Burrito Bowl**.
    - "Cook the rice" is replaced by the new step **Make tortilla cups**, and the stage bar follows. Your finished bean prep is kept.
-   - About 13 → 9 minutes to go, every rule shown as kept, and **0 new purchases**.
+   - About 13 → 9 minutes to go, and every rule shown as kept.
 6. Type **I only have 5 minutes**. Gusteau won't break the time rule, so it pauses and asks how to go on. **Undo** brings the plan back.
 7. Try **I'm allergic to dairy**. There's no dairy-free swap for the cheese, so Gusteau pauses and offers **Cook without shredded cheese**. Accepting drops the "Melt the cheese" step.
 
-Also try: **Set a 5 minute timer**, **How do I mash?** (technique card), **Hands-free** in the status bar, and the **🎤 Ask Gusteau** button while browsing ("something Thai under 20 minutes", "I have rice, eggs and spinach").
+Also try: **Set a 5 minute timer**, **How do I dice an onion?** (video card), **What is mirin?** (picture card), and **Go hands-free** in the status bar. Gusteau only listens once a recipe is under way, through hands-free or the 🎤 in the chat.
 
 With a live model, the flow is the same. The model groups recipes into stages, reads chat, and steps in when the rule-based replanner can't find a swap. Every model answer is validated before it's used.
 
@@ -55,13 +55,13 @@ onboarding (cuisines, diet, equipment) ──► browse: cuisine → popular dis
                                  cooking workspace: stage bar, one step at a time, timers, clips, chat, voice
                                                        │
                      change (chat, voice, button) ──► replan the remaining meal ──► validate ──► Plan updated
-                                                       (keeps finished steps, rules, purchase limit)
+                                                       (keeps finished steps and rules)
 ```
 
 1. **Recipes come from a database export.** `src/recipes/source.ts` loads `public/recipes/recipes.json` (or `.csv`) at runtime and normalizes it. See [docs/RECIPE_FORMAT.md](docs/RECIPE_FORMAT.md). The 51 recipes shipped across 25 cuisines are placeholders until the real database export arrives.
 2. **Stages.** Each recipe is grouped into 3–5 ordered stages, each with an icon from a fixed list (`src/data/stageIcons.ts`). The database, the model or Gusteau's heuristic may propose a grouping. `validateStages()` checks every one: all steps covered once and in order, the stage count, and known icons only. The app controls how icons look and tracks progress.
 3. **Pantry and rules.** Your pantry, diet, allergies and equipment are stored in this browser (`src/state/profile.ts`). Photo detections must be confirmed or edited before they're used, with a reminder that recognition can miss items, allergens or freshness.
-4. **Replanning** (`src/agent/adapt.ts`). Every change becomes a structured `SessionChange`. Gusteau then re-derives the remaining plan from the original recipe and everything it now knows. For each problem ingredient it swaps something you have (`SUBSTITUTES` in `src/data/ingredients.ts`), leaves out an optional garnish or seasoning, adds a purchase only when you allow purchases, or pauses and asks. Finished steps are never rewritten, and swaps they depended on stay locked. `validatePlan()` independently checks ingredients, diet and allergy rules, equipment named in the steps, the time left, and purchases.
+4. **Replanning** (`src/agent/adapt.ts`). Every change becomes a structured `SessionChange`. Gusteau then re-derives the remaining plan from the original recipe and everything it now knows. For each problem ingredient it swaps something you have (`SUBSTITUTES` in `src/data/ingredients.ts`), leaves out an optional garnish or seasoning, or pauses and asks. Finished steps are never rewritten, and swaps they depended on stay locked. `validatePlan()` independently checks ingredients, diet and allergy rules, equipment named in the steps, and the time left. Gusteau only ever cooks with what's in the kitchen.
 5. **Nutrition.** The recipe preview shows calories, protein, carbs and fat per serving, plus fiber, sugar and sodium, for the dish as Gusteau will actually make it. Figures come from the database when the export has them, shifted for any swaps. Otherwise `src/data/nutrition.ts` estimates them from the ingredient amounts, labels them as estimates, and lists anything it couldn't count.
 6. **Learning your taste.** Finished dishes are remembered, and "Picked for you" ranks recipes by favorite and cooked cuisines, proteins you've enjoyed, pantry fit and popularity.
 
@@ -133,17 +133,20 @@ Everything runs on the M5 Max:
 
 ### In the app
 
-The main app uses the same pipeline for **Hands-free** (in the cooking status bar) and the **🎤** buttons. `src/voice/useVoice.ts` picks the engines:
+The main app uses the same pipeline for **Hands-free** (in the cooking status bar) and the **🎤** in the cooking chat. `src/voice/useVoice.ts` picks the engines:
 
 - **Ears:** Nemotron ASR when the dev server can reach the speech server, otherwise the browser's Web Speech API (`useSpeech.ts`). Production builds, including the Pi, use the browser, because only the dev server proxies `/api/asr`. If the tunnel drops mid-session, hands-free retries for about 15 s, then turns itself off and says why.
 - **Voice:** Magpie (voice John) on the same server, otherwise the browser's voice. Everything Gusteau says goes through one queue (`src/voice/voiceOut.ts`). The mic is muted while he talks and reopens 300 ms after he stops. Esc or "Gusteau is talking · Stop" silences him.
 - **Brain:** a spoken phrase goes to Gusteau like a chat message, with the full recipe-aware context: rules, pantry, steps, the current step and the last few messages. Commands such as "what's next", "repeat that", "go back", "set a five-minute timer" and "show me how" are handled locally and instantly. Everything else goes to `interpretMessage()`, which asks the model for `{"changes": [...], "reply": ...}` with changes first. When there are no plan changes, the reply is read aloud while it's still being written. When there are, Gusteau speaks the validated replan message, then reads the step the plan lands on.
 - **Kitchen help** works the same typed or spoken:
   - **Substitutions:** "What can I use instead of rice?" is answered from the safe swaps for what's left. These already fit the cook's rules and equipment, and the ones they have come first (`substitutionHints()` in `src/agent/adapt.ts`). Gusteau then offers the swap, and "yes" applies it instantly.
-  - **Changes to the recipe:** "use couscous instead of rice", "add some spinach" and "make it spicier" become `swap_ingredient` or `add_to_recipe` changes. The replanner applies them as their own steps and validates them like any other change. Requests that can't work (something not in the kitchen with purchases off, or something that breaks a rule) are answered locally with "I'd skip that", without asking the model. A failed swap or addition is never kept.
+  - **Changes to the recipe:** "use couscous instead of rice", "add some spinach" and "make it spicier" become `swap_ingredient` or `add_to_recipe` changes. The replanner applies them as their own steps and validates them like any other change. Requests that can't work (something not in the kitchen, or something that breaks a rule) are answered locally with "I'd skip that", without asking the model. A failed swap or addition is never kept.
   - **Challenges:** burning, sticking, too salty, too thin, still cold, soggy and similar get a quick fix for the current step, with a timer when more cooking helps. Something ruined can be replanned around with a "yes".
-  - **Guardrails on the model:** changes to time, servings, purchases or equipment only count when the cook's own words ask for them. When the model helps with a replan, its swaps must do the same job in the dish, and it may not drop steps the cook still needs. Otherwise Gusteau pauses and asks.
+  - **Guardrails on the model:** changes to time, servings or equipment only count when the cook's own words ask for them. When the model helps with a replan, its swaps must do the same job in the dish, and it may not drop steps the cook still needs. Otherwise Gusteau pauses and asks.
   - **Offline:** the same help works in mock mode, and when the model can't be reached (`src/services/mock/kitchenHelp.ts`).
+- **Ask before changing ingredients:** "I'm out of rice" or "use couscous instead" never changes the plan straight away. Gusteau lists the swaps that fit, with what the cook has first, and asks. "Yes", naming an option ("tortillas"), or "leave it out" applies it, through the replanner and its checks. A pick that can't be used is explained, and the options stay open (`proposeIngredientChange()` and `answerOffer()` in `src/services/mock/kitchenHelp.ts`).
+- **"What's a zester?"** "What is mirin?", "what does a colander look like?" and "I don't know what a skillet is" get a short definition from Wikipedia (read aloud in hands-free mode) and a card with pictures from the same article on Wikimedia Commons, with credit links (`src/services/lookup.ts`). The browser fetches them directly; only the word leaves the app. "Got it", Esc, × or the button closes the card, and "Show pictures" in the chat brings it back.
+- **"How do I dice an onion?"** "How to brown chicken", "show me how to fold", **Show me how** on a step, and "how do I do that?" (meaning the current step) open a video card: Gusteau's written how-to plus short videos (5 minutes or less) found on YouTube. Only videos whose titles mention what was asked, and whose owners allow embedding, are kept. The server reads YouTube's public search results page (`/api/videos` in `vite.config.ts` and `deploy/gusteau_server.py`), so no API key is needed. YouTube's terms don't allow that kind of automated access, though, and it can break whenever YouTube changes the page; the official YouTube Data API (with a free key) is the robust alternative. If search fails, the card shows the how-to and a "Watch on YouTube" search link. Like the picture card, "got it", Esc, × or the button closes it, and the chat link brings it back.
 - **Turning hands-free on** warms the model up and asks how Gusteau can help with the recipe. Finished timers are announced.
 
 Measured on the M5 Max through the real pipeline, from the moment a phrase is final: a plan change is spoken after about 0.4 s, a question's first sentence goes to Magpie after about 0.4 s, and "what's next" reads the next step after about 0.3 s. There's no voice barge-in yet: you can't talk over Gusteau, because the mic is muted while he speaks.
@@ -202,7 +205,6 @@ src/
     adapt.ts                   applyChanges → adaptRecipe → validatePlan → finalizeReplan
     kitchen.ts                 Rule checks, pantry matching, filters, recommendations
     stages.ts                  Stage grouping heuristic and validator
-    browseIntent.ts            "Something Thai under 20 minutes" → filters
   data/
     cuisines.ts                The 25 cuisines
     ingredients.ts             Name matching, diet tags, categories, amounts, substitutions
@@ -221,7 +223,7 @@ deploy/
 
 ## Prototype-only features
 
-- **Technique clips.** `src/data/techniques.ts` has 22 tagged techniques with written how-tos. No video URLs are filled in yet, so the card shows the how-to and "clip coming soon". Add a vetted, embeddable public clip per technique (`youtube` id with start/end, or a file in `public/clips/`). Clips are preselected, never searched live.
+- **Technique videos** come from YouTube's public search page, not its API (see above). `src/data/techniques.ts` has 22 techniques with written how-tos and search phrases.
 - **Sample recipes.** The shipped recipes are Gusteau-written placeholders with no chef attribution.
 
 ## Known limits

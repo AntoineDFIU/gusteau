@@ -1,11 +1,13 @@
 import { useCallback, useEffect, useRef, useState } from 'react';
-import { adaptRecipe, applyChanges, contextOf, finalizeReplan, priorOf, uid } from '../agent/adapt';
+import { adaptRecipe, applyChanges, contextOf, describeChanges, finalizeReplan, priorOf, uid } from '../agent/adapt';
 import { scaleRecipe } from '../agent/kitchen';
-import { techniqueFor } from '../data/techniques';
+import { techniqueById, techniqueFor, techniqueQuery } from '../data/techniques';
 import { beep, formatClock } from '../lib/sound';
 import { modelService } from '../services';
 import type { InterpretResult } from '../services/modelService';
-import { vetChanges } from '../services/mock/kitchenHelp';
+import { LookupError, lookupTerm, type Lookup } from '../services/lookup';
+import { searchVideos, VideoError, type Video } from '../services/videos';
+import { proposeIngredientChange, vetChanges } from '../services/mock/kitchenHelp';
 import type { ActiveTimer, CookCommand, CookRules, CookSession, PantryItem, Recipe, SessionChange } from '../types';
 
 export const timerLeft = (t: ActiveTimer, now: number) => (t.endsAt === null ? t.pausedLeft : Math.max(0, (t.endsAt - now) / 1000));
@@ -15,6 +17,14 @@ export const timerLeft = (t: ActiveTimer, now: number) => (t.endsAt === null ? t
  * `session`; the cooking screens are a view over it. Every change goes
  * through update() → applyChanges → adaptRecipe → model help → finalizeReplan.
  */
+export interface VideoCard {
+  query: string;
+  /** Gusteau's written how-to, when it's a technique he knows. */
+  howTo?: string;
+  videos?: Video[];
+  error?: VideoError['reason'];
+}
+
 export interface CookEvents {
   onFinish(s: CookSession): void;
   /** A timer just ran out (it has already beeped). */
@@ -31,7 +41,10 @@ export function useCook(events: CookEvents) {
   /** Bumps whenever the current step should be read aloud: `force` for an explicit request, otherwise only in hands-free mode. */
   const [readRequest, setReadRequest] = useState({ n: 0, force: false });
   const requestRead = (force = false) => setReadRequest((r) => ({ n: r.n + 1, force }));
-  const [techniqueOpen, setTechniqueOpen] = useState(false);
+  /** Short videos for a technique ("how to dice an onion"), when the card is open. */
+  const [videoCard, setVideoCard] = useState<VideoCard | null>(null);
+  /** The definition-and-pictures card, when one is open. */
+  const [explainer, setExplainer] = useState<null | { term: string; lookup?: Lookup; error?: string }>(null);
   const [now, setNow] = useState(Date.now());
   const ref = useRef<CookSession | null>(null);
   const setSession = useCallback((s: CookSession | null) => {
@@ -85,7 +98,7 @@ export function useCook(events: CookEvents) {
     };
     const first = adaptRecipe(original, contextOf(blank));
     const adapted: CookSession = { ...blank, recipe: first.violations.length ? original : first.recipe, substitutions: first.violations.length ? [] : first.substitutions };
-    const swaps = adapted.substitutions.map((x) => (x.kind === 'swap' ? `${x.from.toLowerCase()} → ${x.to.toLowerCase()}` : x.kind === 'drop' ? `no ${x.from.toLowerCase()}` : x.kind === 'add' ? `plus ${x.from.toLowerCase()}` : `buy ${x.from.toLowerCase()}`));
+    const swaps = adapted.substitutions.map((x) => (x.kind === 'swap' ? `${x.from.toLowerCase()} → ${x.to.toLowerCase()}` : x.kind === 'drop' ? `no ${x.from.toLowerCase()}` : `plus ${x.from.toLowerCase()}`));
     setSession(
       say(
         adapted,
@@ -94,7 +107,7 @@ export function useCook(events: CookEvents) {
     );
     setUndoStack([]);
     setBannerId(null);
-    setTechniqueOpen(false);
+    setVideoCard(null);
     rung.current.clear();
     setBusy(null);
   };
@@ -131,7 +144,7 @@ export function useCook(events: CookEvents) {
     const completed = s.completedStepKeys.includes(step.key) ? s.completedStepKeys : [...s.completedStepKeys, step.key];
     const ns = { ...s, completedStepKeys: completed, stepIndex: Math.min(s.stepIndex + 1, s.recipe.steps.length) };
     setSession(ns);
-    setTechniqueOpen(false);
+    setVideoCard(null);
     requestRead();
     if (ns.stepIndex >= ns.recipe.steps.length) on.current.onFinish(ns);
   };
@@ -142,7 +155,7 @@ export function useCook(events: CookEvents) {
     const idx = s.stepIndex - 1;
     const key = s.recipe.steps[idx].key;
     setSession({ ...s, stepIndex: idx, completedStepKeys: s.completedStepKeys.filter((k) => k !== key) });
-    setTechniqueOpen(false);
+    setVideoCard(null);
     requestRead();
   };
 
@@ -193,11 +206,18 @@ export function useCook(events: CookEvents) {
       case 'timer':
         addTimer(cmd.seconds, `${formatClock(cmd.seconds)} timer`);
         return setSession(say(ref.current!, `Timer set for ${cmd.seconds >= 60 ? `${Math.round(cmd.seconds / 60)} minute${cmd.seconds >= 120 ? 's' : ''}` : `${cmd.seconds} seconds`}. I’ll beep when it’s done.`));
+      case 'dismiss':
+        setExplainer(null);
+        setVideoCard(null);
+        return;
       case 'show_technique': {
+        // "Show me how": videos for whatever this step asks the cook to do.
         const step = s.recipe.steps[s.stepIndex];
-        const t = step && techniqueFor(step);
-        if (t) setTechniqueOpen(true);
-        return setSession(say(s, t ? `Here’s how: ${t.howTo}` : 'This step doesn’t need a special technique. Just follow the instruction, and ask me if anything is unclear.', t ? { techniqueId: t.id } : {}));
+        if (!step) return;
+        const t = techniqueFor(step);
+        const query = t ? techniqueQuery(t) : step.title.toLowerCase();
+        showVideos(query, t?.howTo);
+        return setSession(say(s, t ? `Here’s how: ${t.howTo}` : `Here are some short videos on how to ${query}.`, { videoQuery: query }));
       }
     }
   };
@@ -206,8 +226,30 @@ export function useCook(events: CookEvents) {
     let r = input;
     if (r.changes.length) {
       const vetted = vetChanges(r.changes, before);
-      if (vetted.refusals.length && !vetted.changes.length) r = { ...r, changes: [], reply: vetted.refusals.join(' ') };
-      else r = { ...r, changes: vetted.changes };
+      // If part of the request can't be used, apply none of it: the rest may only make sense together
+      // ("out of rice, use couscous"). Any options Gusteau listed stay open.
+      if (vetted.refusals.length) {
+        const still = before.pendingChoice;
+        const options = still?.options.length ? ` You could still use ${still.options.map((o) => o.toLowerCase()).join(' or ')}, or I can leave it out.` : '';
+        r = { ...r, changes: [], reply: `${vetted.refusals.join(' ')}${options}`, offer: before.pendingOffer, choice: still };
+      }
+    }
+    // Running out of an ingredient or asking for a swap: suggest options and ask first.
+    const proposed = r.changes.length && !r.confirmed ? proposeIngredientChange(r.changes, before) : null;
+    if (proposed) {
+      let base = before;
+      if (proposed.rest.length) {
+        // Anything else in the same message (time, servings…) applies as usual.
+        await update(proposed.rest, describeChanges(proposed.rest), text, via);
+        base = ref.current ?? before;
+      } else base = { ...before, chat: [...before.chat, { id: uid(), from: 'user', text, via }] };
+      const p = proposed.proposal;
+      setSession({ ...base, pendingOffer: p.offer, pendingChoice: p.choice, chat: [...base.chat, { id: uid(), from: 'gusteau', text: p.reply! }] });
+      return;
+    }
+    if (r.explain) {
+      await explain(r.explain, text, via, before);
+      return;
     }
     if (r.command) {
       const withUser = { ...before, pendingOffer: undefined, chat: [...before.chat, { id: uid(), from: 'user' as const, text, via }] };
@@ -221,17 +263,63 @@ export function useCook(events: CookEvents) {
         ...before,
         // Anything offered ("want me to switch?") waits for a yes on the next message.
         pendingOffer: r.offer?.length ? r.offer : undefined,
+        pendingChoice: r.choice,
         chat: [
           ...before.chat,
           { id: uid(), from: 'user', text, via },
           // A reply that was already read aloud while it streamed isn't read again.
-          { id: uid(), from: 'gusteau', text: reply, techniqueId: r.techniqueId, spoken: !!streamed && reply.trim() === streamed.trim() },
+          { id: uid(), from: 'gusteau', text: reply, techniqueId: r.techniqueId, videoQuery: r.howTo, spoken: !!streamed && reply.trim() === streamed.trim() },
         ],
       });
-      if (r.techniqueId) setTechniqueOpen(true);
+      // "How do I dice an onion?": short videos alongside the answer.
+      if (r.howTo) showVideos(r.howTo, techniqueById(r.techniqueId)?.howTo);
       // A fix like "give it one more minute" comes with its timer.
       if (r.timerSeconds) addTimer(r.timerSeconds, `${before.recipe.steps[before.stepIndex]?.title ?? 'Extra'} (extra time)`);
     }
+  };
+
+  /** Search short videos for a technique and open the video card. */
+  const showVideos = (query: string, howTo?: string) => {
+    setExplainer(null);
+    setVideoCard({ query, howTo });
+    searchVideos(query).then(
+      (videos) => setVideoCard((c) => (c?.query === query ? { ...c, videos } : c)),
+      (err: unknown) => setVideoCard((c) => (c?.query === query ? { ...c, error: err instanceof VideoError ? err.reason : 'unavailable' } : c)),
+    );
+  };
+
+  /**
+   * Define an ingredient or tool and show pictures of it. The definition is
+   * also said in the chat (and read aloud in hands-free mode).
+   */
+  const explain = async (term: string, text?: string, via?: 'voice', base = ref.current) => {
+    if (!base) return;
+    if (text) setSession({ ...base, chat: [...base.chat, { id: uid(), from: 'user', text, via }] });
+    setVideoCard(null);
+    setExplainer({ term });
+    let reply: string;
+    try {
+      const found = await lookupTerm(term);
+      setExplainer((e) => (e?.term === term ? { term, lookup: found } : e));
+      reply = found.definition;
+    } catch (err) {
+      // Rather than show pictures of something else, say so.
+      const notFound = err instanceof LookupError && err.reason === 'not-found';
+      reply = notFound
+        ? `I couldn’t find a reliable description of ${term}, and I don’t want to show you the wrong thing. Check the label, or tell me more about it.`
+        : `I couldn’t reach Wikipedia to look up ${term} just now. Ask me again in a moment.`;
+      setExplainer((e) => (e?.term === term ? { term, error: reply } : e));
+    }
+    // Only a new question gets a new answer in the chat; reopening the pictures doesn't.
+    if (!text) return;
+    const cur = ref.current ?? base;
+    setSession({ ...cur, chat: [...cur.chat, { id: uid(), from: 'gusteau', text: reply, explainTerm: term }] });
+  };
+
+  /** Report changes directly, e.g. from a button, with the same ask-first rules as a message. */
+  const tell = (changes: SessionChange[], text: string) => {
+    const before = ref.current;
+    if (before) void handleInterpretation(text, { reply: null, changes, trigger: describeChanges(changes) }, before, undefined, '');
   };
 
   /**
@@ -282,13 +370,19 @@ export function useCook(events: CookEvents) {
     bannerId,
     now,
     readRequest,
-    techniqueOpen,
-    setTechniqueOpen,
+    videoCard,
+    showVideos,
+    closeVideos: () => setVideoCard(null),
+    explainer,
+    /** Show the pictures for a term again. */
+    showPictures: (term: string) => void explain(term),
+    closeExplainer: () => setExplainer(null),
     dismissBanner: () => setBannerId(null),
     canUndo: undoStack.length > 0,
     start,
     update,
     sendChat,
+    tell,
     next,
     back,
     undo,

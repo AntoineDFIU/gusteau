@@ -1,9 +1,10 @@
 import { useEffect, useRef, useState } from 'react';
-import { techniqueById } from '../../data/techniques';
+import { spellOutSpoons } from '../../data/ingredients';
+import { techniqueById, techniqueQuery } from '../../data/techniques';
 import type { Cook } from '../../state/useCook';
 import { Card, GusteauAvatar, Spinner, cx } from '../ui';
 
-export function ChatPanel({ cook, onMic, micActive, micSupported }: { cook: Cook; onMic: () => void; micActive: boolean; micSupported: boolean }) {
+export function ChatPanel({ cook, onMic, micActive, micSupported, interim }: { cook: Cook; onMic: () => void; micActive: boolean; micSupported: boolean; interim?: string }) {
   const s = cook.session!;
   const [text, setText] = useState('');
   const scroller = useRef<HTMLDivElement>(null);
@@ -47,9 +48,19 @@ export function ChatPanel({ cook, onMic, micActive, micSupported }: { cook: Cook
               {m.from === 'gusteau' && <GusteauAvatar size="sm" />}
               <div className={cx('max-w-[85%] rounded-2xl px-3.5 py-2.5 text-sm leading-relaxed', m.from === 'user' ? 'rounded-br-md bg-charcoal-900 text-white' : 'rounded-tl-md bg-white text-charcoal-700 shadow-sm')}>
                 {m.diffId && <span className="mb-1 block text-[10px] font-bold uppercase tracking-wider text-saffron-500">✨ Plan updated</span>}
-                {m.text}
+                {spellOutSpoons(m.text)}
+                {m.videoQuery && !tech && (
+                  <button onClick={() => cook.showVideos(m.videoQuery!)} className="mt-1.5 block text-xs font-semibold text-olive-500 hover:text-olive-700">
+                    ▶ Show videos: how to {m.videoQuery}
+                  </button>
+                )}
+                {m.explainTerm && (
+                  <button onClick={() => cook.showPictures(m.explainTerm!)} className="mt-1.5 block text-xs font-semibold text-olive-500 hover:text-olive-700">
+                    🖼 Show pictures of {m.explainTerm}
+                  </button>
+                )}
                 {tech && (
-                  <button onClick={() => cook.setTechniqueOpen(true)} className="mt-1.5 block text-xs font-semibold text-olive-500 hover:text-olive-700">
+                  <button onClick={() => cook.showVideos(techniqueQuery(tech), tech.howTo)} className="mt-1.5 block text-xs font-semibold text-olive-500 hover:text-olive-700">
                     🎬 Show me: {tech.title.toLowerCase()}
                   </button>
                 )}
@@ -67,6 +78,7 @@ export function ChatPanel({ cook, onMic, micActive, micSupported }: { cook: Cook
         )}
       </div>
       <div className="border-t border-cream-200 p-3">
+        {micActive && <p className="mb-2 truncate rounded-full bg-tomato-50 px-3 py-1.5 text-xs italic text-tomato-700">{interim ? `“${interim}”` : 'Listening… tap the mic again when you’re done'}</p>}
         <div className="mb-2 flex gap-1.5 overflow-x-auto pb-1">
           {suggestions.map((q) => (
             <button

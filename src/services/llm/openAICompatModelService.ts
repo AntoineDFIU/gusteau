@@ -4,7 +4,7 @@ import { grainOf, proteinOf, sameIngredient, substitutesFor } from '../../data/i
 import { DIET_RULE_IDS, EQUIPMENT_IDS } from '../../data/rules';
 import { STAGE_ICON_IDS } from '../../data/stageIcons';
 import type { CookSession, DetectedIngredient, DietRuleId, Equipment, Recipe, RecipeIngredient, RecipeStep, SessionChange, Substitution } from '../../types';
-import { parseCommand, parseIntent } from '../mock/intentParser';
+import { explainRequest, howToRequest, parseCommand, parseIntent } from '../mock/intentParser';
 import { answerOffer, groundedAnswer } from '../mock/kitchenHelp';
 import { streamChat } from './chatStream';
 import type { ChefModelService, InterpretResult, PhotoInput, StageResult } from '../modelService';
@@ -59,12 +59,11 @@ function sessionSummary(s: CookSession) {
     equipment: r.equipment,
     minutes_left: r.timeLimit,
     servings: r.servings,
-    purchases_allowed: r.purchasesAllowed,
     pantry_basics: s.pantryBasics ? ['salt', 'pepper', 'cooking oil', 'water'] : [],
   };
 }
 
-const HINT_STATUS = { have: 'they have it', buy: 'would need buying', missing: 'not in their kitchen', unknown: 'pantry unknown' } as const;
+const HINT_STATUS = { have: 'they have it', missing: 'not in their kitchen', unknown: 'pantry unknown' } as const;
 
 const CHEESE = /(cheese|cheddar|mozzarella|parmesan|pecorino|feta|monterey jack|queso|halloumi|paneer|ricotta|gouda|gruy[eè]re)/i;
 
@@ -128,7 +127,7 @@ const NUMBER = '(\\d+|one|two|three|four|five|six|seven|eight|nine|ten|fifteen|t
 
 /**
  * Changes to the cook's own settings only count when their words ask for
- * them: a model must not loosen a time limit or allow purchases because
+ * them: a model must not loosen a time limit or add guests because
  * someone said "it's still cold in the middle".
  */
 function grounded(c: SessionChange, message: string): boolean {
@@ -138,8 +137,6 @@ function grounded(c: SessionChange, message: string): boolean {
       return new RegExp(`\\b${NUMBER}\\s*(-\\s*)?(min|mins|minutes?|hours?|hrs?)\\b|half an hour|\\bin a (hurry|rush)\\b`).test(m);
     case 'set_servings':
       return new RegExp(`\\b${NUMBER}\\b|\\b(people|person|guests?|servings?|portions?|feed|feeding|friends|kids|family|more of us)\\b`).test(m);
-    case 'set_purchases':
-      return /\b(buy|bought|shop|shopping|store|purchase|pick up|grab|get some)\b/.test(m);
     case 'remove_equipment':
       return /\b(stove|stovetop|hob|burner|oven|microwave|blender|grill|broke|broken|working|died|busy)\b/.test(m);
     case 'add_exclusion':
@@ -184,9 +181,6 @@ function sanitizeChanges(raw: unknown): SessionChange[] {
         break;
       case 'set_servings':
         if (num(c.servings) > 0) out.push({ type: 'set_servings', servings: num(c.servings) });
-        break;
-      case 'set_purchases':
-        if (typeof c.allowed === 'boolean') out.push({ type: 'set_purchases', allowed: c.allowed });
         break;
       case 'remove_equipment':
         if (EQUIPMENT_IDS.includes(c.equipment as Equipment)) out.push({ type: 'remove_equipment', equipment: c.equipment as Equipment });
@@ -299,16 +293,16 @@ export class OpenAICompatModelService implements ChefModelService {
     try {
       const text = await this.chat(
         this.cfg.textModel,
-        `You are Gusteau, a practical chef. A cook is mid-recipe and some ingredients are a problem. Propose swaps ONLY from the pantry list${session.rules.purchasesAllowed ? ' (or something to buy, marked to_buy)' : ''}, never break a hard rule, use only the listed equipment, and rewrite ONLY the unfinished steps. Only swap in something that plays the same role in the dish (another melting cheese for cheese, another grain or bread for rice). If nothing they have fits, return {\"swaps\": [], \"steps\": []} and Gusteau will ask them what to do. Keep each unchanged step's "key". Never claim to verify allergens or food safety.`,
+        `You are Gusteau, a practical chef. A cook is mid-recipe and some ingredients are a problem. Propose swaps ONLY from the pantry list, never break a hard rule, use only the listed equipment, and rewrite ONLY the unfinished steps. Only swap in something that plays the same role in the dish (another melting cheese for cheese, another grain or bread for rice). If nothing they have fits, return {\"swaps\": [], \"steps\": []} and Gusteau will ask them what to do. Keep each unchanged step's "key". Never claim to verify allergens or food safety.`,
         `Session: ${JSON.stringify(sessionSummary(session))}
 Problems: ${JSON.stringify(draft.blockers)}
 Ingredients: ${JSON.stringify(draft.recipe.ingredients.map((i) => ({ name: i.name, amount: [i.amount, i.unit].filter(Boolean).join(' ') })))}
 Unfinished steps: ${JSON.stringify(draft.recipe.steps.filter((s) => !done.has(s.key)).map((s) => ({ key: s.key, title: s.title, text: s.text })))}
 
-Respond with ONLY JSON: {"swaps":[{"from": string, "to": string, "amount": string, "to_buy": boolean}], "steps":[{"key": string, "title": string, "text": string}]}`,
+Respond with ONLY JSON: {"swaps":[{"from": string, "to": string, "amount": string}], "steps":[{"key": string, "title": string, "text": string}]}`,
         1500,
       );
-      const parsed = extractJson<{ swaps?: { from?: string; to?: string; amount?: string; to_buy?: boolean }[]; steps?: { key?: string; title?: string; text?: string }[] }>(text);
+      const parsed = extractJson<{ swaps?: { from?: string; to?: string; amount?: string }[]; steps?: { key?: string; title?: string; text?: string }[] }>(text);
       const swaps = (parsed.swaps ?? []).filter((x) => x?.from && x?.to);
       if (!swaps.length || !Array.isArray(parsed.steps) || !parsed.steps.length) throw new Error('No swap that fits');
       const offRole = swaps.find((x) => !sameRole(x.from!, x.to!));
@@ -319,7 +313,7 @@ Respond with ONLY JSON: {"swaps":[{"from": string, "to": string, "amount": strin
       for (const sw of swaps) {
         const orig = ingredients.find((i) => sameIngredient(i.name, sw.from!));
         if (!orig) continue;
-        const swapped: RecipeIngredient = { id: `${orig.id}~model`, name: sw.to!, amount: null, unit: sw.amount ?? '', substitutedFor: orig.name, toBuy: sw.to_buy || undefined };
+        const swapped: RecipeIngredient = { id: `${orig.id}~model`, name: sw.to!, amount: null, unit: sw.amount ?? '', substitutedFor: orig.name };
         ingredients = ingredients.map((i) => (i === orig ? swapped : i));
         substitutions.push({ kind: 'swap', from: orig.name, to: sw.to!, reason: `Suggested by ${this.cfg.label}, checked by Gusteau.` });
       }
@@ -384,6 +378,9 @@ Respond with ONLY JSON: {"swaps":[{"from": string, "to": string, "amount": strin
     // "Yes" or "no" to a swap Gusteau just offered is answered instantly too.
     const answered = answerOffer(message, session) ?? groundedAnswer(message, session);
     if (answered) return answered;
+    // "What is mirin?" is answered from Wikipedia, with pictures.
+    const explain = explainRequest(message);
+    if (explain) return { reply: null, changes: [], explain };
     const step = session.recipe.steps[session.stepIndex];
     const hints = substitutionHints(session).map((h) => `${h.ingredient}: ${h.options.map((o) => `${o.name} (${HINT_STATUS[o.status]})`).join(', ')}`);
     const unused = session.pantry.filter((p) => !session.recipe.ingredients.some((i) => sameIngredient(i.name, p.name))).map((p) => p.name);
@@ -405,12 +402,12 @@ Respond with ONLY JSON: {"swaps":[{"from": string, "to": string, "amount": strin
             content: `You are Gusteau, a warm, concise chef helping someone cook. Their messages may come from speech recognition, so go with the most likely meaning. Convert the message into structured session changes. Allowed change types:
 {"type":"remove_ingredient","name":string} | {"type":"add_ingredient","name":string} | {"type":"leave_out","name":string} | {"type":"set_time","minutes":number} |
 {"type":"add_exclusion","rule"?: ${DIET_RULE_IDS.map((r) => `"${r}"`).join('|')},"custom"?:string} |
-{"type":"set_servings","servings":number} | {"type":"remove_equipment","equipment":${EQUIPMENT_IDS.map((e) => `"${e}"`).join('|')}} | {"type":"set_purchases","allowed":boolean} |
+{"type":"set_servings","servings":number} | {"type":"remove_equipment","equipment":${EQUIPMENT_IDS.map((e) => `"${e}"`).join('|')}} |
 {"type":"swap_ingredient","from": recipe ingredient name,"to":string} | {"type":"add_to_recipe","name":string,"amount"?:string,"how": one short instruction,"when":"now"|"end"}
 
 How to help:
 - Substitutions. "What can I use instead of X?": answer from the safe swaps listed (they already fit the cook's rules and equipment), preferring ones the cook has, and say why in a few words. Then ask if they want to switch, and put that swap_ingredient in "offer". "Use Y instead of X" or "yes, use Y": return swap_ingredient as a change. Never suggest anything that breaks their hard rules.
-- Changes to the recipe. "Add spinach", "make it spicier": use add_to_recipe with one practical instruction that needs no equipment they lack. Only add things that fit their rules and that they have, unless purchases are allowed. If you're only suggesting, put it in "offer" and ask. Out of something, a diet change, fewer minutes, more people or a broken appliance: use the matching change type.
+- Changes to the recipe. "Add spinach", "make it spicier": use add_to_recipe with one practical instruction that needs no equipment they lack. Only add things that fit their rules and that they have in their kitchen. If you're only suggesting, put it in "offer" and ask. Out of something, a diet change, fewer minutes, more people or a broken appliance: use the matching change type.
 - Challenges along the way: burning, too salty, too thin, sticking, not cooked through, soggy and so on. Lead with a quick, practical fix for their current step. If the fix needs more cooking time, set "timer_seconds". If an ingredient is ruined, say so and offer remove_ingredient for it, so Gusteau can rework the plan.
 - Any other question: answer about their recipe and current step.
 
@@ -448,6 +445,8 @@ ${recent ? `Recent conversation:\n${recent}\n` : ''}Cook: ${message}`,
         changes,
         trigger: changes.length ? describeChanges(changes) : undefined,
         techniqueId: changes.length ? undefined : local.techniqueId,
+        // "How do I dice an onion?": the model answers in words, and videos come with it.
+        howTo: changes.length ? undefined : (howToRequest(message, session) ?? undefined),
         offer: changes.length ? undefined : sanitizeChanges(r.offer),
         // Extra cooking time only: between 10 seconds and 30 minutes.
         timerSeconds: !changes.length && timer >= 10 && timer <= 1800 ? Math.round(timer) : undefined,

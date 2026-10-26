@@ -43,7 +43,6 @@ export const DEMO_RULES: CookRules = {
   allergies: [],
   equipment: ['microwave'],
   timeLimit: 15,
-  purchasesAllowed: false,
   servings: 2,
 };
 

@@ -68,7 +68,6 @@ export function describeRules(rules: CookRules): string[] {
     ...(rules.timeLimit ? [`${rules.timeLimit}-minute limit`] : []),
     rules.equipment.length <= 2 ? `${rules.equipment.map((e) => EQUIPMENT[e].label).join(' + ')} only` : `Your ${rules.equipment.length} appliances`,
     `${rules.servings} ${rules.servings === 1 ? 'serving' : 'servings'}`,
-    rules.purchasesAllowed ? 'Purchases OK' : 'No purchases',
   ];
 }
 

@@ -1,4 +1,5 @@
 import { ASR_BASE } from './nemotronAsr';
+import { forSpeech } from './spokenUnits';
 import { speak, stopSpeaking } from './useSpeech';
 
 // ─────────────────────────────────────────────────────────────
@@ -42,7 +43,7 @@ export function takeSentences(text: string): { sentences: string[]; rest: string
 
 /** What a voice shouldn't read out: markdown symbols and emoji. */
 const speakable = (text: string) =>
-  text
+  forSpeech(text)
     .replace(/[*_#`>~|]/g, '')
     .replace(/\p{Extended_Pictographic}/gu, '')
     .replace(/\s+/g, ' ')

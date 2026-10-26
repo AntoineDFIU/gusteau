@@ -18,7 +18,6 @@ export function Browse({
   onOpen,
   onPantry,
   onDemo,
-  micHint,
 }: {
   recipes: Recipe[];
   profile: Profile;
@@ -27,7 +26,6 @@ export function Browse({
   onOpen: (r: Recipe) => void;
   onPantry: (pantry: PantryItem[], basics: boolean) => void;
   onDemo: () => void;
-  micHint: boolean;
 }) {
   const [showAllCuisines, setShowAllCuisines] = useState(false);
   const [showFilters, setShowFilters] = useState(false);
@@ -76,7 +74,6 @@ export function Browse({
             aria-label="Search recipes"
             className="w-full rounded-full border border-cream-300 bg-white px-5 py-3 text-sm shadow-card outline-none focus:border-tomato-400"
           />
-          {micHint && <p className="mt-2 pl-4 text-xs text-charcoal-400">Or tap 🎤 and say “something Thai under 20 minutes”.</p>}
         </form>
       </div>
 
@@ -213,7 +210,7 @@ export function Browse({
           <Card className="overflow-hidden border-saffron-100 bg-gradient-to-br from-saffron-100/70 via-white to-tomato-50 p-5">
             <p className="font-display text-lg font-semibold text-charcoal-900">🎬 Try the live replanning demo</p>
             <p className="mt-1 text-sm text-charcoal-500">
-              A microwave burrito bowl with rice, beans, tortillas, cheese and salsa. Vegetarian, 15 minutes, microwave only, no purchases. Then say “Actually, I don’t have rice.”
+              A microwave burrito bowl with rice, beans, tortillas, cheese and salsa. Vegetarian, 15 minutes, microwave only. Then say “Actually, I don’t have rice.”
             </p>
             <Button variant="olive" size="sm" className="mt-3" onClick={onDemo}>
               Load demo kitchen

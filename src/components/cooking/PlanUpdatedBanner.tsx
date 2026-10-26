@@ -4,7 +4,7 @@ import { Button, GusteauAvatar } from '../ui';
 export function PlanUpdatedBanner({ diff, onDismiss, onUndo, canUndo }: { diff: PlanDiff; onDismiss: () => void; onUndo: () => void; canUndo: boolean }) {
   const rows: [string, string][] = [
     ...diff.substitutions.map((s): [string, string] =>
-      s.kind === 'swap' ? ['🔁', `${s.from} → ${s.to}${s.unsure ? ' (if you have it)' : ''}`] : s.kind === 'drop' ? ['➖', `Left out ${s.from.toLowerCase()}`] : s.kind === 'add' ? ['➕', `Added ${s.from.toLowerCase()}`] : ['🛒', `Buy ${s.from.toLowerCase()}`],
+      s.kind === 'swap' ? ['🔁', `${s.from} → ${s.to}${s.unsure ? ' (if you have it)' : ''}`] : s.kind === 'drop' ? ['➖', `Left out ${s.from.toLowerCase()}`] : ['➕', `Added ${s.from.toLowerCase()}`],
     ),
     ...diff.stepsAdded.map((t): [string, string] => ['✨', `New step: ${t}`]),
     ...diff.stepsRemoved.map((t): [string, string] => ['✕', `Removed: ${t}`]),
@@ -40,7 +40,6 @@ export function PlanUpdatedBanner({ diff, onDismiss, onUndo, canUndo }: { diff: 
                 ✓ {r}
               </span>
             ))}
-            {diff.newPurchases.length === 0 && <span className="rounded-full bg-olive-50 px-2.5 py-0.5 text-[11px] font-semibold text-olive-700">✓ 0 new purchases</span>}
           </div>
         </div>
       </div>

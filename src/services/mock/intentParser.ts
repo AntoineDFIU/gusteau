@@ -1,7 +1,7 @@
 import { describeChanges } from '../../agent/adapt';
 import { sameIngredient } from '../../data/ingredients';
 import { EQUIPMENT_IDS } from '../../data/rules';
-import { techniqueById, techniqueFor, techniqueFromQuestion } from '../../data/techniques';
+import { TECHNIQUES, techniqueById, techniqueFor, techniqueFromQuestion, techniqueQuery } from '../../data/techniques';
 import type { CookSession, DietRuleId, SessionChange } from '../../types';
 import type { InterpretResult } from '../modelService';
 import { answerOffer, kitchenHelp } from './kitchenHelp';
@@ -45,7 +45,62 @@ export function parseCommand(m: string): InterpretResult | null {
   if (/^(ok |okay )?(gusteau )?(what'?s next|next( step)?|done|i'?m done|finished|go on|continue|ready)( step)?( please)?$/.test(t)) return { reply: null, changes: [], command: { type: 'next' } };
   if (/^(repeat( that)?|say (that|it) again|what was that|come again|read (it|that) again|again)( please)?$/.test(t)) return { reply: null, changes: [], command: { type: 'repeat' } };
   if (/^(go )?(back|previous( step)?|last step)( please)?$/.test(t)) return { reply: null, changes: [], command: { type: 'back' } };
-  if (/\b(show me( how)?|video|demonstrat|clip)\b/.test(t)) return { reply: null, changes: [], command: { type: 'show_technique' } };
+  if (/^(show me how|show me|how do i do (it|that)|show me a video)$|\b(video|demonstrat\w*|clip)\b/.test(t)) return { reply: null, changes: [], command: { type: 'show_technique' } };
+  if (/^(ok |okay |thanks |thank you )?(got it|close (it|that|this|the pictures)?|close|dismiss|hide (it|that|them|the pictures)|back to (cooking|the recipe)|that's enough|i see)( thanks| thank you)?$/.test(t)) {
+    return { reply: null, changes: [], command: { type: 'dismiss' } };
+  }
+  return null;
+}
+
+// Words that follow "what's" without being an ingredient or a tool.
+const NOT_A_THING = /^(how|next|next step|step|steps|time|ingredients|options|rules|plan|recipe|this recipe|for lunch|for breakfast|left|that|this|it|happening|wrong|going on|the time|the plan|up|for dinner|the difference|the point|better|best|in it|in this|the next step|this step|my next step|done|ready|the matter|the problem|on|in)$/;
+
+/**
+ * "What is mirin?", "what's a zester?", "what does a colander look like?",
+ * "I don't know what a skillet is": the thing to define, or null.
+ */
+/**
+ * "How do I dice an onion?", "how to brown chicken", "show me how to fold",
+ * "I don't know how to julienne": the technique to show videos of. "How do I
+ * do that?" means the current step. Not "how long", "how much" or "how do I
+ * know when it's done", which are answered in words.
+ */
+export function howToRequest(raw: string, s: CookSession): string | null {
+  const t = clean(raw).replace(/[?!.,]/g, '').trim();
+  const g =
+    t.match(/^(?:so |ok |okay |and |um |sorry )?how (?:do|should|can|would|could) (?:i|you|we|one) (.+)$/) ??
+    t.match(/^(?:so |and )?how to (.+)$/) ??
+    t.match(/^(?:can you |could you |please )?(?:show|teach) me how to (.+)$/) ??
+    t.match(/^what(?:'s| is) the (?:best |right |proper )?way to (.+)$/) ??
+    t.match(/^(?:i don't know|i'm not sure|not sure|i've never learned) how to (.+)$/);
+  let task = g?.[1]?.replace(/\b(properly|correctly|exactly|again|please|right|here|for this)\b/g, '').replace(/\s+/g, ' ').trim();
+  if (!task || /^(know|tell|check|see|make sure|keep|stop|get started|start|begin|go on|continue)\b/.test(task) || /\b(done|ready|cooked|long|much|many)\b/.test(task)) return null;
+  // "do that", "do this step", "do it": whatever the current step asks for.
+  if (/^(do )?(it|that|this|this step|the step|that part)$/.test(task)) {
+    const step = s.recipe.steps[s.stepIndex];
+    if (!step) return null;
+    const tech = techniqueFor(step);
+    task = tech ? techniqueQuery(tech) : step.title.toLowerCase();
+  }
+  return task.split(' ').length <= 8 ? task : null;
+}
+
+export function explainRequest(raw: string): string | null {
+  const t = clean(raw).replace(/[?!.,]/g, '').trim();
+  const forms = [
+    /^(?:so |and |um |sorry |wait )?what(?:'s| is| are)(?: an?| the| some)? (.+?)(?: exactly| again| used for| for| anyway)?$/,
+    /^what does (?:an?|the) (.+?) look like$/,
+    /^what do(?:es)? (.+?) look like$/,
+    /^(?:i don't know|i'm not sure|not sure|i've never heard of|never heard of) what (?:an? |the |some )?\s*(.+?) (?:is|are)$/,
+    /^(?:i don't know|i've never heard of|never heard of|i've never used) (?:an? |the |some )?(.+)$/,
+    /^(?:what do you mean by|what's meant by|define|explain what) (?:an? |the |some )?(.+?)(?: is| are)?$/,
+    /^(?:show me|can you show me) (?:an? |the |some )?(?:picture of |photo of |pictures of )?(?:an?|the )?(.+)$/,
+  ];
+  for (const re of forms) {
+    const g = t.match(re);
+    const term = g?.[1]?.trim().replace(/^((an?|the|some) )?(pictures?|photos?|images?) of /, '').replace(/^(an?|the|some) /, '').trim();
+    if (term && term.split(' ').length <= 4 && !NOT_A_THING.test(term) && !/^how\b/.test(term) &&!/\b(i|you|we|my|your|it|that|this|they)\b/.test(term)) return term;
+  }
   return null;
 }
 
@@ -55,15 +110,19 @@ export function parseIntent(raw: string, s: CookSession): InterpretResult {
   if (cmd) return cmd;
   const help = answerOffer(raw, s) ?? kitchenHelp(raw, s);
   if (help) return help;
+  const explain = explainRequest(raw);
+  if (explain) return { reply: null, changes: [], explain };
+  const howTo = howToRequest(raw, s);
+  if (howTo) {
+    const tech = techniqueFromQuestion(howTo) ?? TECHNIQUES.find((x) => x.match.test(howTo));
+    return { reply: tech ? `${tech.title}: ${tech.howTo}` : `Here are some short videos on how to ${howTo}.`, changes: [], howTo, techniqueId: tech?.id };
+  }
 
   const changes: SessionChange[] = [];
   const r = s.rules;
   const ingredientNames = [...s.original.ingredients.map((i) => i.name), ...s.recipe.ingredients.map((i) => i.name), ...s.pantry.map((p) => p.name)];
   const known = (phrase: string) => ingredientNames.find((n) => sameIngredient(n, phrase) || n.toLowerCase().includes(phrase));
 
-  // ── Purchases ──
-  if (/\b(no (extra )?(purchases|shopping|buying)|can'?t (buy|shop|go to the store)|don'?t want to (buy|shop))\b/.test(m)) changes.push({ type: 'set_purchases', allowed: false });
-  else if (/\b(can (buy|shop|grab|pick up)|happy to (buy|shop)|allow (a )?(quick )?purchase|purchases? (are )?(ok|fine|allowed)|i'?ll (buy|get|pick up))\b/.test(m)) changes.push({ type: 'set_purchases', allowed: true });
 
   // ── Equipment ──
   for (const e of EQUIPMENT_IDS) {
@@ -109,7 +168,7 @@ export function parseIntent(raw: string, s: CookSession): InterpretResult {
   let rm: RegExpExecArray | null;
   while ((rm = removalRe.exec(m))) {
     const phrase = (rm[1] ?? rm[2] ?? rm[3] ?? rm[4] ?? '').replace(/\b(actually|anymore|left|either|after all|any|the)\b/g, '').trim();
-    if (!phrase || /^(time|minutes?|shopping|purchases|stove|stovetop|oven|microwave|blender|grill|meat|dairy|gluten|eggs?|nuts)$/.test(phrase)) continue;
+    if (!phrase || /^(time|minutes?|stove|stovetop|oven|microwave|blender|grill|meat|dairy|gluten|eggs?|nuts)$/.test(phrase)) continue;
     // "no X" only counts if X is an ingredient Gusteau knows about.
     const name = known(phrase) ?? (rm[4] ? null : phrase);
     if (!name || changes.some((c) => (c.type === 'remove_ingredient' || c.type === 'leave_out') && sameIngredient(c.name, name))) continue;

@@ -1,13 +1,13 @@
 import { useMemo, useState } from 'react';
 import { adaptRecipe, amountOf, pauseOptions } from '../agent/adapt';
-import { availability, describeRules, scaleRecipe } from '../agent/kitchen';
+import { availability, describeRules, scaleRecipe, stepEquipment } from '../agent/kitchen';
 import { cuisineById } from '../data/cuisines';
 import { emojiFor, isStaple } from '../data/ingredients';
 import { DIET_RULES, EQUIPMENT } from '../data/rules';
 import type { CookRules, Equipment, PantryItem, Profile, Recipe } from '../types';
 import { NutritionPanel } from './NutritionPanel';
 import { RecipeArt, StageIcon } from './RecipeCard';
-import { Badge, Button, Chip, SectionTitle, Toggle, cx } from './ui';
+import { Badge, Button, Chip, SectionTitle, cx } from './ui';
 
 const TIME_CHOICES: (number | null)[] = [null, 15, 30, 45, 60];
 
@@ -36,21 +36,24 @@ export function RecipePreview({
   const base = kitchen.rules ?? {};
   const [servings, setServings] = useState(base.servings ?? recipe.servings);
   const [timeLimit, setTimeLimit] = useState<number | null>(base.timeLimit ?? null);
-  const [purchases, setPurchases] = useState(base.purchasesAllowed ?? false);
-  const [equipment, setEquipment] = useState<Equipment[]>(base.equipment ?? profile.equipment);
+  // No equipment to confirm here: the cook starts with everything this recipe needs.
+  // If an appliance fails mid-cook ("my oven broke"), Gusteau replans around it then.
+  const equipment = useMemo<Equipment[]>(
+    () => [...new Set([...(base.equipment ?? profile.equipment), ...recipe.equipment, ...recipe.steps.flatMap(stepEquipment)])],
+    [base.equipment, profile.equipment, recipe],
+  );
   const [leaveOut, setLeaveOut] = useState<string[]>([]);
   const rules: CookRules = {
     hardExclusions: base.hardExclusions ?? profile.hardExclusions,
     allergies: base.allergies ?? profile.allergies,
     equipment,
     timeLimit,
-    purchasesAllowed: purchases,
     servings,
   };
   const scaled = useMemo(() => scaleRecipe(recipe, servings), [recipe, servings]);
   // Cheap enough to recompute on every change, so the preview is always exactly what cooking will start with.
   const plan = adaptRecipe(scaled, { rules, pantry: kitchen.pantry, basics: kitchen.basics, unavailable: [], leaveOut, preferredSwaps: [], additions: [], completed: [] });
-  const options = pauseOptions(plan, rules);
+  const options = pauseOptions(plan);
   const known = kitchen.pantry.length > 0;
   const cuisine = cuisineById(recipe.cuisine);
 
@@ -123,11 +126,10 @@ export function RecipePreview({
                     {i.optional && <span className="text-charcoal-400"> · optional</span>}
                     {sub?.kind === 'swap' && swapped && (
                       <span className="block text-xs text-charcoal-700">
-                        → Gusteau will use <span className="font-semibold">{swapped.name.toLowerCase()}</span> ({amountOf(swapped)}){swapped.toBuy ? ', to buy' : ''}. {sub.reason.split('. ').slice(1).join('. ')}
+                        → Gusteau will use <span className="font-semibold">{swapped.name.toLowerCase()}</span> ({amountOf(swapped)}). {sub.reason.split('. ').slice(1).join('. ')}
                       </span>
                     )}
                     {sub?.kind === 'drop' && <span className="block text-xs text-charcoal-500">Left out: {sub.reason.split(', so ').pop()}</span>}
-                    {sub?.kind === 'buy' && <span className="block text-xs text-charcoal-700">🛒 On your shopping list</span>}
                   </span>
                   <span className="shrink-0 pt-0.5">
                     {blocked ? (
@@ -195,23 +197,6 @@ export function RecipePreview({
                   ))}
                 </div>
               </div>
-              <div>
-                <p className="mb-1.5 text-xs font-semibold text-charcoal-700">Equipment you can use</p>
-                <div className="flex flex-wrap gap-1.5">
-                  {(Object.keys(EQUIPMENT) as Equipment[]).map((e) => (
-                    <Chip key={e} tone="olive" active={equipment.includes(e)} onClick={() => setEquipment((l) => (l.includes(e) ? l.filter((x) => x !== e) : [...l, e]))}>
-                      {EQUIPMENT[e].emoji} {EQUIPMENT[e].label}
-                    </Chip>
-                  ))}
-                </div>
-              </div>
-              <label className="flex items-center justify-between gap-3 text-sm text-charcoal-700">
-                <span>
-                  Okay to buy missing items
-                  <span className="block text-xs text-charcoal-400">{purchases ? 'Missing items go on a shopping list.' : 'Gusteau will only use what you have.'}</span>
-                </span>
-                <Toggle checked={purchases} onChange={setPurchases} label="Okay to buy missing items" />
-              </label>
             </div>
           </section>
         </div>
@@ -231,16 +216,13 @@ export function RecipePreview({
                     Cook without {n.toLowerCase()}
                   </Button>
                 ))}
-                {options.allowPurchase && (
-                  <Button size="sm" variant="secondary" onClick={() => setPurchases(true)}>
-                    Allow buying it
-                  </Button>
-                )}
               </div>
             </>
           ) : (
             <div className="flex flex-wrap gap-1.5">
-              {describeRules(rules).map((r) => (
+              {describeRules(rules)
+                .filter((r) => !/( only|appliances)$/.test(r))
+                .map((r) => (
                 <span key={r} className="rounded-full bg-white px-3 py-1 text-xs font-semibold text-olive-700">
                   ✓ {r}
                 </span>

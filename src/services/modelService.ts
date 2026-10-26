@@ -1,5 +1,5 @@
 import type { AdaptPrior, AdaptResult } from '../agent/adapt';
-import type { CookCommand, CookSession, DetectedIngredient, Recipe, RecipeStage, SessionChange } from '../types';
+import type { CookCommand, CookSession, DetectedIngredient, PendingChoice, Recipe, RecipeStage, SessionChange } from '../types';
 
 // ─────────────────────────────────────────────────────────────
 // The ONE seam between Gusteau's UI/agent loop and any model.
@@ -33,6 +33,14 @@ export interface InterpretResult {
   offer?: SessionChange[];
   /** Start a timer with the reply, e.g. "give it one more minute". */
   timerSeconds?: number;
+  /** Swap options listed in the reply; naming one picks it. */
+  choice?: PendingChoice;
+  /** An ingredient or tool to define and show pictures of. */
+  explain?: string;
+  /** A technique to show short videos of, e.g. "dice an onion". */
+  howTo?: string;
+  /** The cook already agreed to these changes (they answered an offer), so they apply without asking again. */
+  confirmed?: boolean;
 }
 
 export interface StageResult {

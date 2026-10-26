@@ -20,6 +20,10 @@ Sleeping model host (e.g. a MacBook running Ollama):
                   server wakes the host before a model request if it doesn't
                   answer, and keeps it awake while the request runs. Off by default.
   LLM_WAKE_WAIT   seconds to wait for the host to wake (default 25).
+
+Technique videos:
+  GET /api/videos?q=... returns short YouTube videos for a cooking technique, read
+  from YouTube's public search page (no key needed; see search_videos below).
 """
 
 import json
@@ -57,6 +61,82 @@ def _port_answers(host, port, timeout):
             return True
     except OSError:
         return False
+
+
+# ── Technique video search ───────────────────────────────────
+# Keyless: reads YouTube's public search results page and the data embedded
+# in it. No API key or quota, but YouTube's terms don't allow automated
+# access, and it can break whenever YouTube changes that page.
+_video_cache = {}
+_MAX_VIDEO_SECONDS = 5 * 60
+_BROWSER_HEADERS = {
+    "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0 Safari/537.36",
+    "Accept-Language": "en-US,en;q=0.9",
+    "Cookie": "SOCS=CAI; CONSENT=YES+1",
+}
+
+
+def _videos_from_search_page(page):
+    start = page.find("var ytInitialData = ")
+    end = page.find(";</script>", start)
+    if start < 0 or end < 0:
+        raise ValueError("YouTube search page changed")
+    found = []
+
+    def walk(node):
+        if isinstance(node, dict):
+            v = node.get("videoRenderer")
+            if isinstance(v, dict) and v.get("videoId"):
+                parts = (v.get("lengthText") or {}).get("simpleText", "").split(":")
+                length = 0
+                for part in parts:
+                    length = length * 60 + int(part) if part.isdigit() else length
+                # Live streams have no length; long videos aren't "short".
+                if 0 < length <= _MAX_VIDEO_SECONDS:
+                    found.append({
+                        "id": v["videoId"],
+                        "title": ((v.get("title") or {}).get("runs") or [{}])[0].get("text", ""),
+                        "channel": ((v.get("ownerText") or {}).get("runs") or [{}])[0].get("text", ""),
+                        "thumb": f"https://i.ytimg.com/vi/{v['videoId']}/mqdefault.jpg",
+                    })
+                return
+            for child in node.values():
+                walk(child)
+        elif isinstance(node, list):
+            for child in node:
+                walk(child)
+
+    walk(json.loads(page[start + len("var ytInitialData = "):end]))
+    return found[:6]
+
+
+def _embeddable(video_id):
+    """Whether the owner allows the video on other sites (oEmbed refuses the rest)."""
+    watch = urllib.parse.quote(f"https://www.youtube.com/watch?v={video_id}", safe="")
+    try:
+        with urllib.request.urlopen(f"https://www.youtube.com/oembed?format=json&url={watch}", timeout=5):
+            return True
+    except (urllib.error.URLError, TimeoutError):
+        return False
+
+
+def search_videos(query):
+    """Short YouTube videos (5 minutes or less) for a cooking technique. Cached per query."""
+    cache_key = query.lower()
+    if cache_key in _video_cache:
+        return 200, {"videos": _video_cache[cache_key]}
+    # sp=EgIYAQ%3D%3D is YouTube's "Under 4 minutes" filter.
+    url = f"https://www.youtube.com/results?search_query={urllib.parse.quote(query)}&sp=EgIYAQ%253D%253D&hl=en&gl=US"
+    try:
+        with urllib.request.urlopen(urllib.request.Request(url, headers=_BROWSER_HEADERS), timeout=10) as r:
+            videos = _videos_from_search_page(r.read().decode("utf-8", "replace"))
+    except urllib.error.HTTPError as e:
+        return 502, {"error": f"YouTube {e.code}"}
+    except (urllib.error.URLError, TimeoutError, ValueError) as e:
+        return 502, {"error": str(e)}
+    videos = [v for v in videos if _embeddable(v["id"])]
+    _video_cache[cache_key] = videos
+    return 200, {"videos": videos}
 
 
 class HostWaker:
@@ -189,6 +269,11 @@ class Handler(SimpleHTTPRequestHandler):
             return self._json(200, CONFIG["public"])
         if path == "/api/health":
             return self._json(200, {"ok": True, "provider": CONFIG["public"]["provider"]})
+        if path == "/api/videos":
+            q = urllib.parse.parse_qs(urllib.parse.urlsplit(self.path).query).get("q", [""])[0].strip()[:120]
+            if not q:
+                return self._json(400, {"error": "missing q"})
+            return self._json(*search_videos(q))
         if path.startswith("/api/"):
             return self._json(404, {"error": "not found"})
         # Single-page app: unknown non-file paths fall back to index.html.

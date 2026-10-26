@@ -48,8 +48,6 @@ export interface RecipeIngredient {
   optional?: boolean;
   /** Set when Gusteau swapped this in during a replan. */
   substitutedFor?: string;
-  /** Not in the user's kitchen and must be bought. */
-  toBuy?: boolean;
 }
 
 export interface RecipeStep {
@@ -153,14 +151,13 @@ export interface CookRules {
   equipment: Equipment[];
   /** Minutes the user has left, or null for no limit. */
   timeLimit: number | null;
-  purchasesAllowed: boolean;
   servings: number;
 }
 
 export interface Substitution {
-  kind: 'swap' | 'drop' | 'buy' | 'add';
+  kind: 'swap' | 'drop' | 'add';
   from: string;
-  /** The ingredient swapped in; empty for drops and purchases. */
+  /** The ingredient swapped in; empty for drops and additions. */
   to: string;
   reason: string;
   /** Gusteau doesn't know the pantry, so the user should confirm they have it. */
@@ -175,7 +172,6 @@ export type SessionChange =
   | { type: 'add_exclusion'; rule?: DietRuleId; custom?: string }
   | { type: 'set_servings'; servings: number }
   | { type: 'remove_equipment'; equipment: Equipment }
-  | { type: 'set_purchases'; allowed: boolean }
   /** The user agreed to cook without an ingredient Gusteau couldn't replace. */
   | { type: 'leave_out'; name: string }
   /** The user chose what to use instead of an ingredient. */
@@ -189,7 +185,9 @@ export type CookCommand =
   | { type: 'back' }
   | { type: 'repeat' }
   | { type: 'timer'; seconds: number }
-  | { type: 'show_technique' };
+  | { type: 'show_technique' }
+  /** Close the picture card and get back to cooking. */
+  | { type: 'dismiss' };
 
 export interface PlanDiff {
   id: string;
@@ -203,14 +201,13 @@ export interface PlanDiff {
   stepsAdded: string[];
   stepsRemoved: string[];
   stepsKept: number;
-  newPurchases: string[];
   rulesKept: string[];
   /** What changed in the session, e.g. "Marked rice as unavailable". */
   stateChanges: string[];
   message: string;
   infeasible: boolean;
   /** When paused: what the user can choose instead of breaking a rule. */
-  offers?: { leaveOut: string[]; allowPurchase: boolean };
+  offers?: { leaveOut: string[] };
 }
 
 export interface ChatMessage {
@@ -219,6 +216,10 @@ export interface ChatMessage {
   text: string;
   diffId?: string;
   techniqueId?: string;
+  /** An ingredient or tool Gusteau defined; the chat can show its pictures again. */
+  explainTerm?: string;
+  /** A technique Gusteau explained; the chat can show its videos again. */
+  videoQuery?: string;
   /** The user said it rather than typed it. */
   via?: 'voice';
   /** Already read aloud while it streamed in. */
@@ -233,6 +234,15 @@ export interface ActiveTimer {
   endsAt: number | null;
   /** Seconds left when paused. */
   pausedLeft: number;
+}
+
+export interface PendingChoice {
+  /** The recipe's original ingredient name, as swaps are keyed. */
+  from: string;
+  /** What the cook called it, e.g. "tortillas" after an earlier swap. */
+  current: string;
+  options: string[];
+  out: boolean;
 }
 
 export interface Addition {
@@ -261,6 +271,8 @@ export interface CookSession {
   additions: Addition[];
   /** Changes Gusteau just offered ("want me to switch?"), applied if the user says yes. */
   pendingOffer?: SessionChange[];
+  /** Swap options Gusteau just listed for an ingredient; naming one picks it. `out` means the cook ran out of it. */
+  pendingChoice?: PendingChoice;
   stepIndex: number;
   completedStepKeys: string[];
   substitutions: Substitution[];

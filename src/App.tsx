@@ -1,11 +1,9 @@
 import { useCallback, useEffect, useMemo, useRef, useState } from 'react';
 import { uid } from './agent/adapt';
-import { parseBrowseIntent } from './agent/browseIntent';
 import { EMPTY_FILTERS, type Filters } from './agent/kitchen';
 import { Browse } from './components/Browse';
 import { CookingWorkspace } from './components/cooking/CookingWorkspace';
 import { Onboarding } from './components/Onboarding';
-import { mergePantry } from './components/Pantry';
 import { RecipePreview, type Kitchen } from './components/RecipePreview';
 import { Modal, Spinner, cx } from './components/ui';
 import { recipeSource, type RecipeLibrary } from './recipes/source';
@@ -19,7 +17,7 @@ import { useVoice } from './voice/useVoice';
 type Screen = 'onboarding' | 'browse' | 'cooking';
 
 export default function App() {
-  const { profile, update } = useProfile();
+  const { profile, update, reset } = useProfile();
   const [library, setLibrary] = useState<RecipeLibrary | null>(null);
   const [screen, setScreen] = useState<Screen>(profile.onboarded ? 'browse' : 'onboarding');
   const [filters, setFilters] = useState<Filters>({ ...EMPTY_FILTERS, diet: profile.hardExclusions });
@@ -69,14 +67,9 @@ export default function App() {
       })
       .finally(() => reading?.finish());
   };
+  // Gusteau listens only once a recipe is under way.
   const onPhrase = (text: string) => {
-    if (screen === 'cooking' && cook.session) return askByVoice(text);
-    if (screen !== 'browse') return;
-    const intent = parseBrowseIntent(text);
-    if (intent.addPantry.length) update((p) => ({ pantry: mergePantry(p.pantry, intent.addPantry, 'chat') }));
-    setFilters((f) => ({ ...f, ...intent.filters }));
-    setPreview(null);
-    setToast(intent.summary.length ? `🎤 “${text}” → ${intent.summary.join(' · ')}` : `🎤 “${text}”`);
+    if (screen === 'cooking' && cook.session) askByVoice(text);
   };
   const voice = useVoice(onPhrase);
   const voiceRef = useRef(voice);
@@ -128,6 +121,20 @@ export default function App() {
     voice.say(`I’m listening. How can I help with your ${s.recipe.title}?`);
   };
 
+  // Prototype only: forget everything about this user and show the welcome screen again.
+  const startOverAsNewUser = () => {
+    if (!window.confirm('Reset Gusteau as a new user? This clears your preferences, kitchen and cooking history on this device.')) return;
+    void voice.setHandsFree(false);
+    voice.stopTalking();
+    cook.stop();
+    reset();
+    setPreview(null);
+    setEditingPrefs(false);
+    setFilters({ ...EMPTY_FILTERS });
+    setScreen('onboarding');
+    window.scrollTo({ top: 0 });
+  };
+
   const leaveCooking = () => {
     void voice.setHandsFree(false);
     voice.stopTalking();
@@ -151,8 +158,6 @@ export default function App() {
   };
 
   const myKitchen: Kitchen = useMemo(() => ({ pantry: profile.pantry, basics: profile.pantryBasics }), [profile.pantry, profile.pantryBasics]);
-  const micVisible = screen !== 'onboarding' && voice.supported && !voice.handsFree;
-  const listening = (voice.state === 'listening' || voice.state === 'connecting') && !voice.handsFree;
 
   return (
     <div className="min-h-screen bg-cream-100 bg-[radial-gradient(ellipse_at_top_right,rgba(242,140,56,0.12),transparent_55%),radial-gradient(ellipse_at_bottom_left,rgba(107,122,58,0.08),transparent_50%)]">
@@ -174,30 +179,22 @@ export default function App() {
               {modelService.label}
             </span>
             {profile.onboarded && screen !== 'cooking' && (
+              <button
+                onClick={startOverAsNewUser}
+                title="Prototype only: clears preferences, kitchen and history, then shows the new-user screen"
+                className="rounded-full border border-dashed border-charcoal-400/50 px-3 py-1.5 text-xs font-medium text-charcoal-500 hover:border-tomato-400 hover:text-tomato-600"
+              >
+                ↺ <span className="hidden sm:inline">Reset as new user</span>
+                <span className="ml-1 hidden rounded-full bg-cream-200 px-1.5 py-0.5 text-[10px] uppercase tracking-wider text-charcoal-400 lg:inline">Prototype</span>
+              </button>
+            )}
+            {profile.onboarded && screen !== 'cooking' && (
               <button onClick={() => setEditingPrefs(true)} className="rounded-full px-3 py-2 text-sm font-medium text-charcoal-500 hover:bg-cream-200 hover:text-charcoal-900">
                 ⚙︎ <span className="hidden sm:inline">Preferences</span>
               </button>
             )}
-            {micVisible && (
-              <button
-                onClick={() => void voice.listenOnce()}
-                aria-label={listening ? 'Stop listening' : 'Talk to Gusteau'}
-                aria-pressed={listening}
-                className={cx(
-                  'flex h-10 items-center gap-2 rounded-full px-3.5 text-sm font-semibold transition-colors',
-                  listening ? 'bg-tomato-500 text-white' : 'bg-charcoal-900 text-white hover:bg-charcoal-700',
-                )}
-              >
-                {listening ? <span className="h-2.5 w-2.5 animate-pulse rounded-full bg-white" /> : <span aria-hidden>🎤</span>}
-                <span className="hidden sm:inline">{listening ? 'Listening… tap to stop' : 'Ask Gusteau'}</span>
-              </button>
-            )}
-            {screen !== 'onboarding' && voice.state === 'blocked' && <span className="text-xs text-tomato-600">Mic blocked in browser settings</span>}
           </div>
         </div>
-        {listening && voice.interim && (
-          <p className="absolute inset-x-0 top-full truncate bg-charcoal-900 px-4 py-1.5 text-center text-xs italic text-white">“{voice.interim}”</p>
-        )}
       </header>
 
       <main className="px-4 pb-16 pt-8 sm:px-6 sm:pt-10">
@@ -223,7 +220,6 @@ export default function App() {
                 onOpen={(recipe) => setPreview({ recipe, kitchen: myKitchen })}
                 onPantry={(pantry, pantryBasics) => update({ pantry, pantryBasics })}
                 onDemo={loadDemo}
-                micHint={voice.supported}
               />
             ) : (
               <p className="mx-auto max-w-md text-center text-charcoal-500">No recipes found. Put a recipes.json or recipes.csv export in public/recipes/ (see docs/RECIPE_FORMAT.md).</p>
