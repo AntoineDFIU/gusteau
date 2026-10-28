@@ -1,4 +1,4 @@
-import { useMemo, useState } from 'react';
+import { useEffect, useMemo, useRef, useState } from 'react';
 import { EMPTY_FILTERS, MAX_MISSING_FOR_PANTRY, activeFilterCount, matchesFilters, recommendScore, tasteOf, type Filters } from '../agent/kitchen';
 import { CUISINES, cuisineById } from '../data/cuisines';
 import { GRAINS, PROTEINS, type GrainId, type ProteinId } from '../data/ingredients';
@@ -19,6 +19,7 @@ export function Browse({
   onPantry,
   onDemo,
   micHint,
+  onToast,
 }: {
   recipes: Recipe[];
   profile: Profile;
@@ -28,12 +29,39 @@ export function Browse({
   onPantry: (pantry: PantryItem[], basics: boolean) => void;
   onDemo: () => void;
   micHint: boolean;
+  onToast?: (message: string) => void;
 }) {
   const [showAllCuisines, setShowAllCuisines] = useState(false);
   const [showFilters, setShowFilters] = useState(false);
   const [showPantry, setShowPantry] = useState(false);
+  const [favIds, setFavIds] = useState<ReadonlySet<string>>(() => new Set());
+  const searchRef = useRef<HTMLInputElement>(null);
   const set = (patch: Partial<Filters>) => setFilters({ ...filters, ...patch });
   const toggle = <T,>(list: T[], v: T) => (list.includes(v) ? list.filter((x) => x !== v) : [...list, v]);
+  const toggleFavorite = (r: Recipe) => {
+    const wasSaved = favIds.has(r.id);
+    setFavIds((prev) => {
+      const next = new Set(prev);
+      if (next.has(r.id)) next.delete(r.id);
+      else next.add(r.id);
+      return next;
+    });
+    onToast?.(wasSaved ? `Removed ${r.title} from your favorites.` : `Saved ${r.title} for a cozy night in.`);
+  };
+
+  // "/" focuses the search box, like the sandbox (skipped while typing or with a dialog open).
+  useEffect(() => {
+    const onKey = (e: KeyboardEvent) => {
+      if (e.key !== '/') return;
+      const el = document.activeElement;
+      if (el instanceof HTMLInputElement || el instanceof HTMLTextAreaElement) return;
+      if (document.querySelector('[role="dialog"]')) return;
+      e.preventDefault();
+      searchRef.current?.focus();
+    };
+    window.addEventListener('keydown', onKey);
+    return () => window.removeEventListener('keydown', onKey);
+  }, []);
 
   const taste = useMemo(() => tasteOf(profile, recipes), [profile, recipes]);
   const scored = useMemo(() => {
@@ -67,29 +95,40 @@ export function Browse({
             What are you <span className="italic text-tomato-500">craving?</span>
           </h1>
         </div>
-        <form onSubmit={(e) => e.preventDefault()} className="w-full lg:max-w-sm">
-          <input
-            type="search"
-            value={filters.search}
-            onChange={(e) => set({ search: e.target.value })}
-            placeholder="Search dishes, ingredients or chefs"
-            aria-label="Search recipes"
-            className="w-full rounded-full border border-cream-300 bg-white px-5 py-3 text-sm shadow-card outline-none focus:border-tomato-400"
-          />
+        <form onSubmit={(e) => e.preventDefault()} className="w-full lg:max-w-[270px]">
+          <label className="dish-search">
+            <span className="dish-search-icon" aria-hidden />
+            <span className="sr-only">Find a dish</span>
+            <input
+              ref={searchRef}
+              type="search"
+              value={filters.search}
+              onChange={(e) => set({ search: e.target.value })}
+              placeholder="Find a dish…"
+              aria-label="Find a dish"
+            />
+            <kbd aria-hidden>/</kbd>
+          </label>
           {micHint && <p className="mt-2 pl-4 text-xs text-charcoal-400">Or tap 🎤 and say “something Thai under 20 minutes”.</p>}
         </form>
       </div>
 
       {/* Cuisines */}
       <div className="mt-6 flex flex-wrap items-center gap-2" role="group" aria-label="Cuisines">
-        <Chip active={!filters.cuisine} onClick={() => set({ cuisine: null })}>
-          🌍 All
-        </Chip>
+        <button type="button" className={cx('dish-pill', !filters.cuisine && 'is-active')} aria-pressed={!filters.cuisine} onClick={() => set({ cuisine: null })}>
+          🌍 All <span className="dish-pill-count">{recipes.length}</span>
+        </button>
         {cuisineChips.map((c) => (
-          <Chip key={c.id} active={filters.cuisine === c.id} onClick={() => set({ cuisine: filters.cuisine === c.id ? null : c.id })}>
+          <button
+            key={c.id}
+            type="button"
+            className={cx('dish-pill', filters.cuisine === c.id && 'is-active')}
+            aria-pressed={filters.cuisine === c.id}
+            onClick={() => set({ cuisine: filters.cuisine === c.id ? null : c.id })}
+          >
             {c.emoji} {c.name}
             {profile.favoriteCuisines.includes(c.id) && <span className="text-saffron-500" aria-label="favorite">★</span>}
-          </Chip>
+          </button>
         ))}
         {favorites.length > 0 && others.length > 0 && (
           <button onClick={() => setShowAllCuisines((v) => !v)} className="px-2 text-sm font-semibold text-olive-500 hover:text-olive-700">
@@ -110,6 +149,9 @@ export function Browse({
             Clear all
           </button>
         )}
+        <p className="dish-count ml-auto" aria-live="polite">
+          {shown.length} {shown.length === 1 ? 'dish' : 'dishes'}
+        </p>
       </div>
 
       {showFilters && (
@@ -176,9 +218,9 @@ export function Browse({
           {picks.length > 0 && (
             <section className="mb-10">
               <SectionTitle>{returning ? 'Picked for you, based on what you’ve cooked' : profile.favoriteCuisines.length ? 'Picked for you' : 'Popular right now'}</SectionTitle>
-              <div className="mt-3 grid grid-cols-1 gap-4 sm:grid-cols-2 xl:grid-cols-4">
-                {picks.map((r) => (
-                  <RecipeCard key={r.id} recipe={r} profile={profile} onOpen={() => onOpen(r)} />
+              <div className="mt-3 grid grid-cols-1 gap-[17px] sm:grid-cols-2 xl:grid-cols-4">
+                {picks.map((r, i) => (
+                  <RecipeCard key={r.id} recipe={r} profile={profile} onOpen={() => onOpen(r)} index={i} favorite={favIds.has(r.id)} onToggleFavorite={() => toggleFavorite(r)} />
                 ))}
               </div>
             </section>
@@ -190,20 +232,20 @@ export function Browse({
               {dietIsDefault && filters.diet.length > 0 && ` ${filters.diet.map((d) => DIET_RULES[d].label.toLowerCase()).join(', ')}`}
             </SectionTitle>
             {shown.length ? (
-              <div key={filters.cuisine ?? 'all'} className="mt-3 grid animate-rise grid-cols-1 gap-4 sm:grid-cols-2 xl:grid-cols-3">
-                {shown.map((r) => (
-                  <RecipeCard key={r.id} recipe={r} profile={profile} onOpen={() => onOpen(r)} />
+              <div key={filters.cuisine ?? 'all'} className="mt-3 grid grid-cols-1 gap-[17px] sm:grid-cols-2 xl:grid-cols-3">
+                {shown.map((r, i) => (
+                  <RecipeCard key={r.id} recipe={r} profile={profile} onOpen={() => onOpen(r)} index={i} favorite={favIds.has(r.id)} onToggleFavorite={() => toggleFavorite(r)} />
                 ))}
               </div>
             ) : (
-              <Card className="mt-3 p-8 text-center">
+              <div className="dish-empty mt-3">
                 <p className="text-4xl">🤔</p>
                 <p className="mt-3 font-display text-xl font-semibold text-charcoal-900">No dishes match all of that</p>
                 <p className="mt-1 text-sm text-charcoal-500">Try removing a filter or two.</p>
                 <Button className="mt-4" variant="secondary" onClick={() => setFilters({ ...base, cuisine: filters.cuisine })}>
                   Clear filters
                 </Button>
-              </Card>
+              </div>
             )}
           </section>
         </div>

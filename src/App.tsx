@@ -224,6 +224,7 @@ export default function App() {
                 onPantry={(pantry, pantryBasics) => update({ pantry, pantryBasics })}
                 onDemo={loadDemo}
                 micHint={voice.supported}
+                onToast={setToast}
               />
             ) : (
               <p className="mx-auto max-w-md text-center text-charcoal-500">No recipes found. Put a recipes.json or recipes.csv export in public/recipes/ (see docs/RECIPE_FORMAT.md).</p>
