@@ -38,35 +38,84 @@ export function StageIcon({ icon, state = 'todo', size = 'md' }: { icon: StageIc
   );
 }
 
-export function RecipeCard({ recipe, profile, onOpen }: { recipe: Recipe; profile: Profile; onOpen: () => void }) {
+/** Sandbox card tones — assigned deterministically so a dish keeps its color. */
+const TONES = ['tomato', 'sage', 'butter', 'blue', 'peach', 'rose'] as const;
+const toneFor = (id: string): (typeof TONES)[number] => {
+  let hash = 0;
+  for (let i = 0; i < id.length; i++) hash = (hash * 31 + id.charCodeAt(i)) >>> 0;
+  return TONES[hash % TONES.length];
+};
+
+export function RecipeCard({
+  recipe,
+  profile,
+  onOpen,
+  index = 0,
+  favorite = false,
+  onToggleFavorite,
+}: {
+  recipe: Recipe;
+  profile: Profile;
+  onOpen: () => void;
+  /** Position in its grid, for the staggered arrival animation. */
+  index?: number;
+  favorite?: boolean;
+  onToggleFavorite?: () => void;
+}) {
   const match = profile.pantry.length ? pantryMatch(recipe, profile.pantry, profile.pantryBasics) : null;
   const conflicts = ruleConflicts(recipe, profile);
   const cuisine = cuisineById(recipe.cuisine);
+  const tone = toneFor(recipe.id);
+  const tag = recipe.tags.find(Boolean) ?? cuisine.name;
   return (
-    <button
-      onClick={onOpen}
-      className="group flex w-full flex-col overflow-hidden rounded-3xl border border-cream-200 bg-white text-left shadow-card transition-all hover:-translate-y-0.5 hover:shadow-lift focus:outline-none focus-visible:ring-4 focus-visible:ring-tomato-100"
-    >
-      <RecipeArt recipe={recipe} className="aspect-[4/3] w-full transition-transform group-hover:scale-[1.02]" />
-      <div className="flex flex-1 flex-col p-4">
-        <p className="text-[11px] font-semibold uppercase tracking-[0.12em] text-olive-500">
-          {cuisine.emoji} {cuisine.name}
-        </p>
-        <h3 className="mt-1 font-display text-lg font-semibold leading-snug text-charcoal-900">{recipe.title}</h3>
-        {recipe.chef && <p className="mt-0.5 text-xs text-charcoal-400">{recipe.chef.relation ?? 'By'} {recipe.chef.name}</p>}
-        <div className="mt-auto flex flex-wrap items-center gap-x-3 gap-y-1 pt-3 text-xs text-charcoal-500">
-          <span>⏱ {recipe.totalMinutes} min</span>
-          <span>{recipe.difficulty}</span>
-          <span className="flex gap-0.5" aria-label={`${recipe.stages.length} stages`}>
-            {recipe.stages.map((s) => (
-              <span key={s.key} title={s.title}>
-                {STAGE_ICONS[s.icon].glyph}
-              </span>
-            ))}
+    <article className="dish-card" style={{ ['--card-delay' as string]: `${Math.min(index, 11) * 38}ms` }}>
+      <button
+        type="button"
+        onClick={onOpen}
+        className={`dish-art tone-${tone}`}
+        aria-label={`Open ${recipe.title}`}
+      >
+        <span className="dish-blob" aria-hidden />
+        <span className="dish-splash" aria-hidden>
+          <span />
+          <span />
+          <span />
+          <span />
+        </span>
+        {recipe.image ? (
+          <img className="dish-photo" src={recipe.image} alt="" loading="lazy" decoding="async" width={480} height={360} />
+        ) : (
+          <span className="dish-emoji" aria-hidden>
+            {recipe.emoji}
+          </span>
+        )}
+        <span className="dish-tag">{tag}</span>
+      </button>
+      {onToggleFavorite && (
+        <button
+          type="button"
+          className={cx('dish-save', favorite && 'is-saved')}
+          onClick={onToggleFavorite}
+          aria-pressed={favorite}
+          aria-label={favorite ? `Remove ${recipe.title} from favorites` : `Save ${recipe.title} to favorites`}
+        >
+          {favorite ? '♥' : '♡'}
+        </button>
+      )}
+      <div className="dish-card-copy">
+        <div className="dish-title-row">
+          <h3>
+            <button type="button" className="dish-title-btn" onClick={onOpen}>
+              {recipe.title}
+            </button>
+          </h3>
+          <span className="dish-time">
+            ⏱ {recipe.totalMinutes} min · {recipe.difficulty}
           </span>
         </div>
+        {recipe.description && <p>{recipe.description}</p>}
         {(match || conflicts.length > 0) && (
-          <div className="mt-2.5 flex flex-wrap gap-1.5">
+          <div className="mt-2 flex flex-wrap gap-1.5">
             {match && (
               <span
                 className={cx(
@@ -81,6 +130,6 @@ export function RecipeCard({ recipe, profile, onOpen }: { recipe: Recipe; profil
           </div>
         )}
       </div>
-    </button>
+    </article>
   );
 }
