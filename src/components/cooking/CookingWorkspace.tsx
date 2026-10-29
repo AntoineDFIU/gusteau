@@ -5,8 +5,10 @@ import { emojiFor } from '../../data/ingredients';
 import { EQUIPMENT } from '../../data/rules';
 import { techniqueFor, techniqueQuery } from '../../data/techniques';
 import { formatClock } from '../../lib/sound';
-import type { Cook } from '../../state/useCook';
+import { timerLeft, type Cook } from '../../state/useCook';
+import { stepTimers } from '../../agent/stepTimers';
 import type { Voice } from '../../voice/useVoice';
+import type { Power, Turn } from '../VoiceDock';
 import { RecipeArt, StageIcon } from '../RecipeCard';
 import { Button, Card, GusteauAvatar, Modal, SectionTitle, cx } from '../ui';
 import { ChatPanel } from './ChatPanel';
@@ -16,7 +18,7 @@ import { PlanUpdatedBanner } from './PlanUpdatedBanner';
 import { StatusBar } from './StatusBar';
 import { VideoCard } from './VideoCard';
 
-export function CookingWorkspace({ cook, voice, onHandsFree, onExit }: { cook: Cook; voice: Voice; onHandsFree: (on: boolean) => void; onExit: () => void }) {
+export function CookingWorkspace({ cook, voice, turn, power, onHandsFree, onExit }: { cook: Cook; voice: Voice; turn: Turn; power?: Power; onHandsFree: () => void; onExit: () => void }) {
   const s = cook.session!;
   const r = s.recipe;
   const finished = s.stepIndex >= r.steps.length;
@@ -39,11 +41,18 @@ export function CookingWorkspace({ cook, voice, onHandsFree, onExit }: { cook: C
     if (top < 140 || top > window.innerHeight * 0.55) el.scrollIntoView({ behavior: 'smooth', block: 'start' });
   }, [cook.bannerId]);
 
-  const stepTimerRunning = s.timers.some((t) => t.label === step.title && t.endsAt !== null);
+  // The step's timed parts ("Microwave the rice · 8:00", "Rest the rice · 2:00"), each started when the cook is ready.
+  // "Per side" ones come back as the second side once the first has rung.
+  const done = s.timersDone ?? [];
+  const timed = stepTimers(step, s.recipe).flatMap((o) => {
+    const second = { ...o, key: `${o.key}~2`, label: o.label.replace(/first side$/, 'second side') };
+    const side = o.perSide && done.includes(o.key) ? second : o;
+    return done.includes(side.key) ? [] : [{ o: side, t: s.timers.find((t) => t.key === side.key) }];
+  });
 
   return (
     <div className="mx-auto max-w-7xl">
-      <StatusBar cook={cook} voice={voice} onHandsFree={onHandsFree} />
+      <StatusBar cook={cook} voice={voice} turn={turn} power={power} onHandsFree={onHandsFree} />
 
       <div className="mb-5 flex flex-wrap items-center justify-between gap-3">
         <div className="flex min-w-0 items-center gap-3">
@@ -165,24 +174,35 @@ export function CookingWorkspace({ cook, voice, onHandsFree, onExit }: { cook: C
               </div>
 
               <div className="mt-5 flex flex-wrap gap-2">
-                {step.timerSeconds && (
-                  <Button size="sm" variant="secondary" disabled={stepTimerRunning} onClick={() => cook.addTimer(step.timerSeconds!, step.title)}>
-                    ⏱ {stepTimerRunning ? 'Timer running' : `Start ${formatClock(step.timerSeconds)} timer`}
-                  </Button>
-                )}
+                {timed.map(({ o, t }) => {
+                  const left = t ? timerLeft(t, cook.now) : o.seconds;
+                  const state = !t ? 'ready' : left <= 0 ? 'done' : t.endsAt === null ? 'paused' : 'running';
+                  return (
+                    <Button
+                      key={o.key}
+                      size="sm"
+                      variant={state === 'ready' ? 'secondary' : 'primary'}
+                      onClick={() => (!t ? cook.startStepTimer(o) : state === 'done' ? cook.removeTimer(t.id) : cook.toggleTimer(t.id))}
+                      aria-label={`${o.label}: ${state === 'ready' ? 'start the timer' : state === 'done' ? 'done, dismiss' : state === 'paused' ? 'paused, resume' : 'running, pause'}`}
+                    >
+                      {state === 'ready' ? '⏱' : state === 'done' ? '🔔' : state === 'paused' ? '▶' : '⏸'} {o.label} · <span className="tabular-nums">{state === 'done' ? 'Done' : formatClock(left)}</span>
+                      {state === 'ready' && o.range && <span className="font-normal opacity-70"> (up to {formatClock(o.range[1])})</span>}
+                    </Button>
+                  );
+                })}
                 {!cook.videoCard && (
                   <Button size="sm" variant="secondary" onClick={() => cook.showVideos(technique ? techniqueQuery(technique) : step.title.toLowerCase(), technique?.howTo)}>
                     🎬 Show me how
                   </Button>
                 )}
-                <Button size="sm" variant="ghost" onClick={cook.repeat}>
-                  🔊 Read aloud
-                </Button>
               </div>
 
-              <div className="mt-8 flex items-center justify-between gap-3">
+              <div className="mt-8 flex items-center justify-between gap-2 sm:gap-3">
                 <Button variant="secondary" onClick={cook.back} disabled={s.stepIndex === 0 || s.paused}>
                   ← Back
+                </Button>
+                <Button variant="ghost" onClick={cook.repeat} title="Hear this step again (or say “repeat that”)">
+                  🔊 Repeat
                 </Button>
                 <Button size="lg" onClick={cook.next} disabled={s.paused || busy}>
                   {s.stepIndex === r.steps.length - 1 ? 'Finish 🎉' : 'Done, next step →'}

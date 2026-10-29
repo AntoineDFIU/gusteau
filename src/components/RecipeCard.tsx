@@ -1,4 +1,4 @@
-import { pantryMatch, ruleConflicts } from '../agent/kitchen';
+import { ruleConflicts } from '../agent/kitchen';
 import { cuisineById } from '../data/cuisines';
 import { STAGE_ICONS } from '../data/stageIcons';
 import type { Profile, Recipe, StageIconId } from '../types';
@@ -39,7 +39,6 @@ export function StageIcon({ icon, state = 'todo', size = 'md' }: { icon: StageIc
 }
 
 export function RecipeCard({ recipe, profile, onOpen }: { recipe: Recipe; profile: Profile; onOpen: () => void }) {
-  const match = profile.pantry.length ? pantryMatch(recipe, profile.pantry, profile.pantryBasics) : null;
   const conflicts = ruleConflicts(recipe, profile);
   const cuisine = cuisineById(recipe.cuisine);
   return (
@@ -65,19 +64,9 @@ export function RecipeCard({ recipe, profile, onOpen }: { recipe: Recipe; profil
             ))}
           </span>
         </div>
-        {(match || conflicts.length > 0) && (
+        {conflicts.length > 0 && (
           <div className="mt-2.5 flex flex-wrap gap-1.5">
-            {match && (
-              <span
-                className={cx(
-                  'rounded-full px-2.5 py-0.5 text-[11px] font-semibold',
-                  match.missing.length === 0 ? 'bg-olive-50 text-olive-700' : match.missing.length <= 2 ? 'bg-saffron-100 text-charcoal-700' : 'bg-cream-200 text-charcoal-500',
-                )}
-              >
-                {match.missing.length === 0 ? '✓ You have everything' : `You have ${match.have}/${match.need}`}
-              </span>
-            )}
-            {conflicts.length > 0 && <span className="rounded-full bg-tomato-50 px-2.5 py-0.5 text-[11px] font-semibold text-tomato-700">Needs a swap for {conflicts[0].rule}</span>}
+            <span className="rounded-full bg-tomato-50 px-2.5 py-0.5 text-[11px] font-semibold text-tomato-700">Needs a swap for {conflicts[0].rule}</span>
           </div>
         )}
       </div>

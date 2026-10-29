@@ -30,7 +30,10 @@ const stems = (s: string) =>
     .map((w) => w.replace(/(ing|ies|es|ed|e|s)$/, ''))
     .filter((w) => w.length > 1);
 
-export const youtubeSearchUrl = (query: string) => `https://www.youtube.com/results?search_query=${encodeURIComponent(`how to ${query}`)}`;
+/** Every video search says it's about cooking, so "how to fold" finds folding egg whites, not laundry. */
+const cookingSearch = (query: string) => `how to ${query} cooking`;
+
+export const youtubeSearchUrl = (query: string) => `https://www.youtube.com/results?search_query=${encodeURIComponent(cookingSearch(query))}`;
 
 const cache = new Map<string, Promise<Video[]>>();
 
@@ -42,7 +45,7 @@ export function searchVideos(query: string): Promise<Video[]> {
     p = (async () => {
       let data: { videos?: Video[]; error?: string };
       try {
-        const res = await fetch(`${import.meta.env.BASE_URL}api/videos?q=${encodeURIComponent(`how to ${query}`)}`, { signal: AbortSignal.timeout(10000) });
+        const res = await fetch(`${import.meta.env.BASE_URL}api/videos?q=${encodeURIComponent(cookingSearch(query))}`, { signal: AbortSignal.timeout(10000) });
         data = await res.json();
       } catch {
         throw new VideoError('unavailable');

@@ -3,10 +3,12 @@ import { stageIndexOf } from '../../agent/stages';
 import { formatClock } from '../../lib/sound';
 import { timerLeft, type Cook } from '../../state/useCook';
 import type { Voice } from '../../voice/useVoice';
+import type { Power, Turn } from '../VoiceDock';
 import { StageIcon } from '../RecipeCard';
+import { VoiceControl } from '../VoiceDock';
 import { cx } from '../ui';
 
-export function StatusBar({ cook, voice, onHandsFree }: { cook: Cook; voice: Voice; onHandsFree: (on: boolean) => void }) {
+export function StatusBar({ cook, voice, turn, power, onHandsFree }: { cook: Cook; voice: Voice; turn: Turn; power?: Power; onHandsFree: () => void }) {
   const s = cook.session!;
   const r = s.recipe;
   const finished = s.stepIndex >= r.steps.length;
@@ -68,50 +70,8 @@ export function StatusBar({ cook, voice, onHandsFree }: { cook: Cook; voice: Voi
           </div>
         )}
 
-        {/* Gusteau talking: one tap (or Esc) silences him */}
-        {voice.talking && (
-          <button onClick={voice.stopTalking} className="flex shrink-0 items-center gap-2 rounded-full bg-saffron-100 px-3 py-1.5 text-xs font-semibold text-charcoal-700 hover:bg-saffron-400/40">
-            <span aria-hidden>🔊</span> Gusteau is talking · Stop
-          </button>
-        )}
-
-        {/* Hands-free */}
-        {voice.supported ? (
-          <button
-            onClick={() => onHandsFree(!voice.handsFree)}
-            aria-pressed={voice.handsFree}
-            aria-label={voice.handsFree ? 'Pause hands-free' : 'Go hands-free: talk to Gusteau while you cook'}
-            title={voice.label}
-            className={cx(
-              'relative flex shrink-0 items-center gap-3 rounded-full py-2 pl-2 pr-5 text-left text-white shadow-lift transition-all focus:outline-none focus-visible:ring-4 focus-visible:ring-tomato-100 active:scale-[.98]',
-              voice.handsFree ? 'bg-charcoal-900 hover:bg-charcoal-700' : 'bg-tomato-500 hover:bg-tomato-600',
-            )}
-          >
-            {/* The mic badge: pulses with your voice while listening. */}
-            <span
-              className={cx('relative flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-white text-lg transition-transform', voice.handsFree && voice.state === 'listening' && !voice.level && 'animate-pulse')}
-              style={voice.handsFree && voice.state === 'listening' && voice.level ? { transform: `scale(${1 + voice.level * 0.35})` } : undefined}
-              aria-hidden
-            >
-              <svg viewBox="0 0 24 24" className={cx('h-5 w-5', voice.handsFree ? 'text-charcoal-900' : 'text-tomato-500')} fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round">
-                <rect x="9" y="3" width="6" height="11" rx="3" fill="currentColor" />
-                <path d="M5.5 11a6.5 6.5 0 0 0 13 0M12 17.5V21M8.5 21h7" />
-              </svg>
-              {!voice.handsFree && (
-                <span className="absolute -right-0.5 -top-0.5 flex h-3 w-3">
-                  <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-saffron-400 opacity-75" />
-                  <span className="relative inline-flex h-3 w-3 rounded-full bg-saffron-400 ring-2 ring-tomato-500" />
-                </span>
-              )}
-            </span>
-            <span className="leading-tight">
-              <span className="block text-sm font-bold">
-                {!voice.handsFree ? 'Go hands-free' : voice.state === 'connecting' ? 'Connecting…' : voice.state === 'paused-for-speech' ? 'Gusteau is talking' : 'Listening'}
-              </span>
-              <span className="block text-[11px] font-medium text-white/80">{voice.handsFree ? 'Tap to pause' : 'Talk to Gusteau while you cook'}</span>
-            </span>
-          </button>
-        ) : null}
+        {/* Voice: "Hey Chef" or a tap; a tap while he's speaking interrupts him (so does Esc). */}
+        {voice.supported && <VoiceControl voice={voice} turn={turn} power={power} onTap={onHandsFree} className="w-full sm:w-auto" />}
       </div>
       {voice.handsFree && voice.interim && <p className="mx-auto mt-1 max-w-7xl truncate text-xs italic text-charcoal-500">“{voice.interim}”</p>}
       {voice.notice && (

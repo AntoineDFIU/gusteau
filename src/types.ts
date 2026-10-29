@@ -120,7 +120,8 @@ export interface Recipe {
 export interface PantryItem {
   id: string;
   name: string;
-  source: 'manual' | 'photo' | 'chat';
+  /** Only what the cook mentions while cooking ("I found some spinach"); there's no inventory. */
+  source: 'manual' | 'chat';
   quantityNote?: string;
   confidence?: number;
 }
@@ -138,10 +139,7 @@ export interface Profile {
   hardExclusions: DietRuleId[];
   allergies: string[];
   equipment: Equipment[];
-  pantry: PantryItem[];
   history: CookedEntry[];
-  /** Assume salt, pepper, oil and water are on hand. */
-  pantryBasics: boolean;
 }
 
 /** Hard rules for one cooking session. Gusteau never breaks these. */
@@ -184,7 +182,20 @@ export type CookCommand =
   | { type: 'next' }
   | { type: 'back' }
   | { type: 'repeat' }
+  /** "What step am I on?" */
+  | { type: 'where' }
+  /** Asks first, then moves on without doing the step. */
+  | { type: 'skip' }
+  /** Asks first, then goes back to the first step. */
+  | { type: 'restart' }
+  /** "Tell me more": the full written step, not the short spoken one. */
+  | { type: 'more' }
   | { type: 'timer'; seconds: number }
+  /**
+   * "Start the timer", "pause the rice timer", "how long is left?", "add a minute".
+   * `target`: words naming the timer ("rice"), "all", or none for the obvious one.
+   */
+  | { type: 'timer_control'; action: TimerAction; target?: string; seconds?: number }
   | { type: 'show_technique' }
   /** Close the picture card and get back to cooking. */
   | { type: 'dismiss' };
@@ -224,7 +235,11 @@ export interface ChatMessage {
   via?: 'voice';
   /** Already read aloud while it streamed in. */
   spoken?: boolean;
+  /** How Gusteau understood a spoken message, when that differs in meaning from the transcript. The text itself stays as heard. */
+  interpreted?: string;
 }
+
+export type TimerAction = 'start' | 'pause' | 'resume' | 'stop' | 'status' | 'add';
 
 export interface ActiveTimer {
   id: string;
@@ -234,6 +249,8 @@ export interface ActiveTimer {
   endsAt: number | null;
   /** Seconds left when paused. */
   pausedLeft: number;
+  /** The timed part of a step it was started from (agent/stepTimers.ts), so it isn't offered again. */
+  key?: string;
 }
 
 export interface PendingChoice {
@@ -243,6 +260,12 @@ export interface PendingChoice {
   current: string;
   options: string[];
   out: boolean;
+  /** The dish is built on it, so leaving it out isn't offered. */
+  core?: boolean;
+  /** "cheese" when any other kind would do ("another kind of cheese?"). */
+  kind?: string;
+  /** A substitute the cook named that Gusteau asked them to confirm. */
+  confirming?: string;
 }
 
 export interface Addition {
@@ -273,18 +296,17 @@ export interface CookSession {
   pendingOffer?: SessionChange[];
   /** Swap options Gusteau just listed for an ingredient; naming one picks it. `out` means the cook ran out of it. */
   pendingChoice?: PendingChoice;
+  /** Gusteau asked "skip this step?" or "start over?" and waits for a yes. */
+  pendingConfirm?: 'skip' | 'restart';
   stepIndex: number;
   completedStepKeys: string[];
   substitutions: Substitution[];
   history: PlanDiff[];
   chat: ChatMessage[];
   timers: ActiveTimer[];
+  /** Timed parts of steps that ran to the end (their `key`), so they aren't offered again. */
+  timersDone?: string[];
   /** When the plan can't be made safely, Gusteau pauses and asks. */
   paused: boolean;
 }
 
-export interface DetectedIngredient {
-  name: string;
-  confidence: number;
-  quantityNote: string;
-}

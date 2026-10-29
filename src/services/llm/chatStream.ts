@@ -4,6 +4,8 @@
 // before the model has finished writing it.
 // ─────────────────────────────────────────────────────────────
 
+import { logRequest, logResponse } from '../../debug/debugLog';
+
 const ENDPOINT = `${import.meta.env.BASE_URL}api/llm/chat/completions`;
 
 export interface ChatMessage {
@@ -21,18 +23,34 @@ export interface StreamChatOptions {
   signal?: AbortSignal;
   /** The reply so far, and the piece that just arrived. */
   onDelta?(text: string, piece: string): void;
+  /** What the request is for, shown in the debug panel ("chat", "discovery"…). */
+  purpose?: string;
 }
 
 /** Stream one reply and resolve with its full text. Reasoning, if a model sends any, is skipped. */
 export async function streamChat(opts: StreamChatOptions): Promise<string> {
+  const temperature = opts.temperature ?? 0.6;
+  const maxTokens = opts.maxTokens ?? 400;
+  const logId = logRequest(opts.purpose ?? 'chat', opts.model, opts.messages, { temperature, max_tokens: maxTokens, ...(opts.extraBody ?? {}), stream: true });
+  try {
+    const text = await streamReply(opts, temperature, maxTokens, (sofar) => logResponse(logId, sofar));
+    logResponse(logId, text, true);
+    return text;
+  } catch (e) {
+    logResponse(logId, '', true, (e as Error).message);
+    throw e;
+  }
+}
+
+async function streamReply(opts: StreamChatOptions, temperature: number, maxTokens: number, onRaw: (sofar: string) => void): Promise<string> {
   const res = await fetch(ENDPOINT, {
     method: 'POST',
     headers: { 'Content-Type': 'application/json' },
     signal: opts.signal,
     body: JSON.stringify({
       model: opts.model,
-      temperature: opts.temperature ?? 0.6,
-      max_tokens: opts.maxTokens ?? 400,
+      temperature,
+      max_tokens: maxTokens,
       ...(opts.extraBody ?? {}),
       stream: true,
       messages: opts.messages,
@@ -45,6 +63,7 @@ export async function streamChat(opts: StreamChatOptions): Promise<string> {
   let buffer = '';
   let text = '';
   let thinking = false; // inside a <think> block some models put in the content
+  let raw = ''; // everything the model sent, thinking included, for the debug panel
   for (;;) {
     const { done, value } = await reader.read();
     if (done) break;
@@ -59,6 +78,8 @@ export async function streamChat(opts: StreamChatOptions): Promise<string> {
       const event = JSON.parse(data) as { choices?: { delta?: { content?: string } }[]; error?: { message?: string } };
       if (event.error) throw new Error(event.error.message ?? 'Model error');
       let piece = event.choices?.[0]?.delta?.content ?? '';
+      raw += piece;
+      onRaw(raw);
       if (piece.includes('<think>')) thinking = true;
       if (thinking) {
         const end = piece.indexOf('</think>');

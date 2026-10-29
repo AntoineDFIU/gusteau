@@ -2,9 +2,10 @@ import { describeChanges } from '../../agent/adapt';
 import { sameIngredient } from '../../data/ingredients';
 import { EQUIPMENT_IDS } from '../../data/rules';
 import { TECHNIQUES, techniqueById, techniqueFor, techniqueFromQuestion, techniqueQuery } from '../../data/techniques';
-import type { CookSession, DietRuleId, SessionChange } from '../../types';
+import type { CookCommand, CookSession, DietRuleId, SessionChange, TimerAction } from '../../types';
 import type { InterpretResult } from '../modelService';
-import { answerOffer, kitchenHelp } from './kitchenHelp';
+import { culinary, kitchenSpelling, offTopicReply, respelled } from '../topic';
+import { answerOffer, kitchenHelp, outOfIngredient } from './kitchenHelp';
 
 // ─────────────────────────────────────────────────────────────
 // MOCK conversational agent: a rule-based intent parser.
@@ -21,9 +22,9 @@ const NUM = '(\\d+(?:\\.\\d+)?|a|an|one|two|three|four|five|six|seven|eight|nine
 /** Lowercase, with curly quotes from phones and suggestion chips made straight. */
 const clean = (s: string) => s.toLowerCase().replace(/[‘’ʼ]/g, "'").replace(/[“”]/g, '"').trim();
 
-const DIET_PATTERNS: [RegExp, DietRuleId][] = [
+export const DIET_PATTERNS: [RegExp, DietRuleId][] = [
   [/\bvegan\b/, 'vegan'],
-  [/\b(vegetarian|veggie only|no meat|meat-?free)\b/, 'vegetarian'],
+  [/\b(vegetarian|veggie only|no meat|without (?:any )?meat|meat-?free|meatless)\b/, 'vegetarian'],
   [/\bpescatarian\b/, 'pescatarian'],
   [/\b(dairy[- ]?free|no dairy|lactose)\b/, 'dairy-free'],
   [/\b(gluten[- ]?free|no gluten|celiac|coeliac)\b/, 'gluten-free'],
@@ -32,9 +33,76 @@ const DIET_PATTERNS: [RegExp, DietRuleId][] = [
   [/\b(shellfish[- ]?free|no shellfish)\b/, 'shellfish-free'],
 ];
 
+// Moving through the recipe by voice. Whole phrases only, so "next, add the
+// garlic?" or "go back to the store" aren't mistaken for a command.
+const OK = String.raw`(?:(?:ok|okay|alright|all right|right|great|good|cool|yes|yeah|so|and|gusteau|chef|done)\s+)*`;
+const PLEASE = String.raw`(?:\s+(?:please|chef|gusteau|then|now))*`;
+const STEP_COMMANDS: [RegExp, CookCommand['type']][] = [
+  [/^(what'?s next|what is next|what now|next( step| one| please)?|on to the next( step| one)?|done|i'?m done( with (this|that)( step| one)?)?|finished|go on|continue|carry on|keep going|move on|let'?s move on|i'?m ready( for the next( step| one)?)?|ready( for the next( step| one)?)?|let'?s keep going|onwards?)$/, 'next'],
+  [/^(go back( one| a step| one step| to the (last|previous) step)?|back( one| a step)?|previous( step| one)?|(the )?last step|step back|what did i just do|what was the (last|previous) step)$/, 'back'],
+  [/^(repeat( that| it| this| the step| this step| the last part)?|say (that|it) again|(can|could) you (repeat (that|it|the step)|say (that|it) again)|what was that|come again|read (it|that|the step) again|one more time|again|sorry what|pardon|what did you say)$/, 'repeat'],
+  [/^(what step (am i on|are we on|is this)|which step (am i on|are we on|is this)|where (am i|are we)( at)?|how far (along )?(am i|are we)|how many steps (are )?left|what stage (am i|are we) (in|at|on))$/, 'where'],
+  [/^(skip( this| that| it| this step| the step| ahead)?|let'?s skip( this| it| this step)?|i'?ll skip( this| it| this step)?|skip to the next( step| one)?)$/, 'skip'],
+  [/^(start over|start again|restart( the recipe)?|start from the (beginning|top|start)|go (back )?to the (beginning|start|first step)|from the top|back to (the )?(beginning|start|first step))$/, 'restart'],
+  [/^(tell me more|more( detail| details)?|more about (this|that)( step)?|how exactly|what exactly( do i do)?|give me (more|the) detail(s)?|in more detail|read (me )?the (whole|full) step|what does (it|the step|the recipe) say( exactly)?|word for word|the full instructions?|explain (this|that|the) step)$/, 'more'],
+];
+
+/** "Next", "go back", "repeat that", "what step am I on?", "skip this step", "start over", "tell me more". */
+export function stepCommand(raw: string): CookCommand | null {
+  const t = clean(raw)
+    .replace(/[?!.,]/g, '')
+    .replace(new RegExp(`^${OK}`), '')
+    .replace(new RegExp(`${PLEASE}$`), '')
+    .trim();
+  const hit = STEP_COMMANDS.find(([re]) => re.test(t));
+  return hit ? ({ type: hit[1] } as CookCommand) : null;
+}
+
+const TIMER = String.raw`(?:timers?|clock|countdown|alarm)`;
+const WHICH = String.raw`(?:(?:the|my|that|this|all(?: the)?|both(?: the)?)\s+)?(?:(.+?)\s+)?`;
+const AMOUNT: Record<string, number> = { a: 1, an: 1, another: 1, one: 1, two: 2, three: 3, four: 4, five: 5, ten: 10, fifteen: 15, thirty: 30 };
+const TIMER_COMMANDS: [RegExp, TimerAction][] = [
+  [new RegExp(String.raw`^(?:how (?:much )?(?:time|long)(?: is| do i have| have i got)? (?:left|remaining)|how long (?:is )?left|how much longer|time left|how(?:'s| is) ${WHICH}${TIMER}(?: doing| going)?|check ${WHICH}${TIMER}|what ${TIMER} (?:are|is) (?:running|on|set|going)|(?:are there )?any ${TIMER}(?: running)?)(?: (?:on|for) (?:the |my )?(.+?))?(?: ${TIMER})?$`), 'status'],
+  [new RegExp(String.raw`^(?:(?:i'?m |we'?re )?ready(?: now)?,? )?(?:go ahead and )?(?:start|begin|kick off|set off)(?: up)? ${WHICH}${TIMER}(?: now| for (?:it|that|me))?$|^start (?:it|timing|the clock|the countdown)$`), 'start'],
+  [new RegExp(String.raw`^(?:pause|hold|freeze) ${WHICH}${TIMER}(?: for (?:a (?:sec|second|minute|moment)|now))?$|^stop ${WHICH}${TIMER} for (?:a (?:sec|second|minute|moment)|now)$|^pause(?: it)?$`), 'pause'],
+  [new RegExp(String.raw`^(?:resume|unpause|continue|restart|carry on with|keep going with|start again) ${WHICH}${TIMER}$|^(?:resume|unpause)(?: it)?$`), 'resume'],
+  [new RegExp(String.raw`^(?:stop|cancel|end|kill|turn off|dismiss|clear|delete|remove|silence|reset) ${WHICH}${TIMER}$|^(?:stop|silence|turn off) (?:the )?(?:beeping|ringing|beep)$`), 'stop'],
+];
+
+/** "Start the timer", "pause the rice timer", "how long is left on the pasta?", "add a minute", "stop the alarm". */
+export function timerCommand(raw: string): CookCommand | null {
+  const t = clean(raw)
+    .replace(/[?!.,]/g, '')
+    .replace(new RegExp(`^${OK}`), '')
+    .replace(new RegExp(`${PLEASE}$`), '')
+    .trim();
+  // "At a minute", "had two minutes": how speech recognition sometimes writes "add".
+  const add = t.match(new RegExp(String.raw`^(?:add|at|had|give it|put on) (a|an|another|one|two|three|four|five|ten|fifteen|thirty|\d+)(?: more)? (second|sec|minute|min)s?(?: more)?(?: (?:to|on) ${WHICH}${TIMER})?$`));
+  if (add) {
+    const n = AMOUNT[add[1]] ?? parseInt(add[1], 10);
+    return { type: 'timer_control', action: 'add', seconds: /^s/.test(add[2]) ? n : n * 60, target: timerTarget(t, add[3]) };
+  }
+  for (const [re, action] of TIMER_COMMANDS) {
+    const m = t.match(re);
+    // "Stop the beeping", "stop the alarm": only a timer that's ringing.
+    if (m) return { type: 'timer_control', action, target: action === 'stop' && /\b(beep\w*|ringing|alarm)\b/.test(t) ? 'ringing' : timerTarget(t, m.slice(1).find(Boolean)) };
+  }
+  return null;
+}
+
+/** "rice" from "pause the rice timer"; "all" from "pause all timers"; nothing for "the timer". */
+function timerTarget(t: string, named?: string): string | undefined {
+  if (/\b(all|both|every)\b/.test(t)) return 'all';
+  const w = named?.replace(/^(?:the|my|that|this|a)\s+/, '').trim();
+  return w && !/^(it|that|this|one|the)$/.test(w) ? w : undefined;
+}
+
 /** Instant, local commands for cooking mode (typed or spoken). */
 export function parseCommand(m: string): InterpretResult | null {
   const t = clean(m).replace(/[?!.,]/g, '').trim();
+  // First, so "add a minute to the timer" isn't read as "set a one-minute timer".
+  const timing = timerCommand(t);
+  if (timing) return { reply: null, changes: [], command: timing };
   const timer = t.match(new RegExp(`\\b(?:set |start )?(?:a |an )?${NUM}[- ](second|sec|minute|min|hour)s?(?: timer)?\\b|\\btimer for ${NUM} (second|sec|minute|min|hour)s?\\b`));
   if (timer && /timer|set|start/.test(t)) {
     const n = num(timer[1] ?? timer[3]);
@@ -42,9 +110,8 @@ export function parseCommand(m: string): InterpretResult | null {
     const seconds = Math.round(unit.startsWith('s') ? n : unit.startsWith('h') ? n * 3600 : n * 60);
     return { reply: null, changes: [], command: { type: 'timer', seconds } };
   }
-  if (/^(ok |okay )?(gusteau )?(what'?s next|next( step)?|done|i'?m done|finished|go on|continue|ready)( step)?( please)?$/.test(t)) return { reply: null, changes: [], command: { type: 'next' } };
-  if (/^(repeat( that)?|say (that|it) again|what was that|come again|read (it|that) again|again)( please)?$/.test(t)) return { reply: null, changes: [], command: { type: 'repeat' } };
-  if (/^(go )?(back|previous( step)?|last step)( please)?$/.test(t)) return { reply: null, changes: [], command: { type: 'back' } };
+  const step = stepCommand(t);
+  if (step) return { reply: null, changes: [], command: step };
   if (/^(show me how|show me|how do i do (it|that)|show me a video)$|\b(video|demonstrat\w*|clip)\b/.test(t)) return { reply: null, changes: [], command: { type: 'show_technique' } };
   if (/^(ok |okay |thanks |thank you )?(got it|close (it|that|this|the pictures)?|close|dismiss|hide (it|that|them|the pictures)|back to (cooking|the recipe)|that's enough|i see)( thanks| thank you)?$/.test(t)) {
     return { reply: null, changes: [], command: { type: 'dismiss' } };
@@ -99,7 +166,7 @@ export function explainRequest(raw: string): string | null {
   for (const re of forms) {
     const g = t.match(re);
     const term = g?.[1]?.trim().replace(/^((an?|the|some) )?(pictures?|photos?|images?) of /, '').replace(/^(an?|the|some) /, '').trim();
-    if (term && term.split(' ').length <= 4 && !NOT_A_THING.test(term) && !/^how\b/.test(term) &&!/\b(i|you|we|my|your|it|that|this|they)\b/.test(term)) return term;
+    if (term && term.split(' ').length <= 4 && !NOT_A_THING.test(term) && !/^how\b/.test(term) &&!/\b(i|you|we|my|your|it|that|this|they)\b/.test(term)) return kitchenSpelling(term);
   }
   return null;
 }
@@ -108,13 +175,15 @@ export function parseIntent(raw: string, s: CookSession): InterpretResult {
   const m = clean(raw);
   const cmd = parseCommand(m);
   if (cmd) return cmd;
-  const help = answerOffer(raw, s) ?? kitchenHelp(raw, s);
+  const help = answerOffer(raw, s) ?? outOfIngredient(raw, s) ?? kitchenHelp(raw, s);
   if (help) return help;
   const explain = explainRequest(raw);
-  if (explain) return { reply: null, changes: [], explain };
+  if (explain) return { reply: null, changes: [], explain, interpreted: respelled(raw, explain) };
   const howTo = howToRequest(raw, s);
   if (howTo) {
     const tech = techniqueFromQuestion(howTo) ?? TECHNIQUES.find((x) => x.match.test(howTo));
+    // "How do I change a tire?" gets no videos: Gusteau only teaches cooking.
+    if (!tech && !culinary(howTo, s)) return { reply: offTopicReply(s.recipe.title), changes: [] };
     return { reply: tech ? `${tech.title}: ${tech.howTo}` : `Here are some short videos on how to ${howTo}.`, changes: [], howTo, techniqueId: tech?.id };
   }
 
@@ -211,6 +280,8 @@ function answerQuestion(m: string, s: CookSession): InterpretResult {
     return { reply: 'Tell me what you’re missing, like “I don’t have cheese”, and I’ll rework the rest of the plan around it without breaking your rules.', changes: [] };
   }
   if (/\b(thanks|thank you|merci|great|awesome|perfect)\b/.test(m)) return { reply: 'Avec plaisir! You’re doing great. Say “next” when this step is done.', changes: [] };
+  // A question about something other than cooking gets a polite redirect, not an answer.
+  if (/\?\s*$|^(who|what|when|where|why|how|which|can|could|do|does|is|are|will|would|tell me)\b/.test(m) && !culinary(m, s)) return { reply: offTopicReply(s.recipe.title), changes: [] };
   const t = step.technique ? techniqueById(step.technique) : tech;
   return {
     reply: `You’re on “${step.title}”. ${step.tip ?? (t ? `Need a hand? Ask me how to ${t.title.toLowerCase().replace(/^(\w+)ing\b/, '$1')}.` : 'Take it one step at a time.')} If anything changes, like an ingredient, time, equipment or servings, tell me and I’ll replan the rest.`,

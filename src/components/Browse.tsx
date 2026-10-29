@@ -1,12 +1,11 @@
 import { useMemo, useState } from 'react';
-import { EMPTY_FILTERS, MAX_MISSING_FOR_PANTRY, activeFilterCount, matchesFilters, recommendScore, tasteOf, type Filters } from '../agent/kitchen';
+import { EMPTY_FILTERS, activeFilterCount, matchesFilters, recommendScore, tasteOf, type Filters } from '../agent/kitchen';
 import { CUISINES, cuisineById } from '../data/cuisines';
 import { GRAINS, PROTEINS, type GrainId, type ProteinId } from '../data/ingredients';
 import { DIET_RULES, DIET_RULE_IDS, DIFFICULTIES, EQUIPMENT } from '../data/rules';
-import type { PantryItem, Profile, Recipe } from '../types';
-import { PantryPanel } from './Pantry';
+import type { Profile, Recipe } from '../types';
 import { RecipeCard } from './RecipeCard';
-import { Button, Card, Chip, Eyebrow, SectionTitle, Toggle, cx } from './ui';
+import { Button, Card, Chip, Eyebrow, SectionTitle, Toggle } from './ui';
 
 const TIMES = [15, 30, 45, 60];
 
@@ -16,7 +15,6 @@ export function Browse({
   filters,
   setFilters,
   onOpen,
-  onPantry,
   onDemo,
 }: {
   recipes: Recipe[];
@@ -24,12 +22,10 @@ export function Browse({
   filters: Filters;
   setFilters: (f: Filters) => void;
   onOpen: (r: Recipe) => void;
-  onPantry: (pantry: PantryItem[], basics: boolean) => void;
   onDemo: () => void;
 }) {
   const [showAllCuisines, setShowAllCuisines] = useState(false);
   const [showFilters, setShowFilters] = useState(false);
-  const [showPantry, setShowPantry] = useState(false);
   const set = (patch: Partial<Filters>) => setFilters({ ...filters, ...patch });
   const toggle = <T,>(list: T[], v: T) => (list.includes(v) ? list.filter((x) => x !== v) : [...list, v]);
 
@@ -99,9 +95,6 @@ export function Browse({
         <Button variant={showFilters || nFilters ? 'primary' : 'secondary'} size="sm" onClick={() => setShowFilters((v) => !v)} aria-expanded={showFilters}>
           ⚙︎ Filters{nFilters ? ` · ${nFilters}` : ''}
         </Button>
-        <Button variant="secondary" size="sm" className="lg:hidden" onClick={() => setShowPantry((v) => !v)} aria-expanded={showPantry}>
-          🧺 My kitchen{profile.pantry.length ? ` · ${profile.pantry.length}` : ''}
-        </Button>
         {(nFilters > 0 || filters.search || filters.cuisine) && (
           <button onClick={() => setFilters(base)} className="px-2 text-sm font-medium text-charcoal-400 hover:text-tomato-600">
             Clear all
@@ -149,20 +142,13 @@ export function Browse({
               </Chip>
             ))}
           </FilterGroup>
-          <FilterGroup title="Equipment & ingredients">
+          <FilterGroup title="Equipment">
             <label className="flex w-full items-center justify-between gap-3 text-sm text-charcoal-700">
               <span>
                 Only my equipment
                 <span className="block text-xs text-charcoal-400">{profile.equipment.map((e) => EQUIPMENT[e].label).join(', ')}</span>
               </span>
               <Toggle checked={!!filters.equipment} onChange={(v) => set({ equipment: v ? profile.equipment : null })} label="Only my equipment" />
-            </label>
-            <label className={cx('flex w-full items-center justify-between gap-3 text-sm text-charcoal-700', !profile.pantry.length && 'opacity-50')}>
-              <span>
-                Uses what I have
-                <span className="block text-xs text-charcoal-400">{profile.pantry.length ? `Missing at most ${MAX_MISSING_FOR_PANTRY} ingredients` : 'Add your ingredients first'}</span>
-              </span>
-              <Toggle checked={filters.pantryOnly} onChange={(v) => profile.pantry.length && set({ pantryOnly: v })} label="Uses what I have" />
             </label>
           </FilterGroup>
         </Card>
@@ -205,15 +191,14 @@ export function Browse({
           </section>
         </div>
 
-        <aside className={cx('space-y-4 lg:sticky lg:top-24 lg:self-start', !showPantry && 'hidden lg:block', 'order-first lg:order-none')}>
-          <PantryPanel pantry={profile.pantry} basics={profile.pantryBasics} onChange={onPantry} />
+        <aside className="space-y-4 lg:sticky lg:top-24 lg:self-start">
           <Card className="overflow-hidden border-saffron-100 bg-gradient-to-br from-saffron-100/70 via-white to-tomato-50 p-5">
             <p className="font-display text-lg font-semibold text-charcoal-900">🎬 Try the live replanning demo</p>
             <p className="mt-1 text-sm text-charcoal-500">
               A microwave burrito bowl with rice, beans, tortillas, cheese and salsa. Vegetarian, 15 minutes, microwave only. Then say “Actually, I don’t have rice.”
             </p>
             <Button variant="olive" size="sm" className="mt-3" onClick={onDemo}>
-              Load demo kitchen
+              Load the demo
             </Button>
           </Card>
         </aside>

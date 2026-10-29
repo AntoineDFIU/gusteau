@@ -13,16 +13,16 @@ export const NEW_PROFILE: Profile = {
   hardExclusions: [],
   allergies: [],
   equipment: ['stovetop', 'oven', 'microwave'],
-  pantry: [],
   history: [],
-  pantryBasics: true,
 };
 
 function load(): Profile {
   try {
     const raw = localStorage.getItem(KEY);
     if (!raw) return NEW_PROFILE;
-    return { ...NEW_PROFILE, ...(JSON.parse(raw) as Partial<Profile>) };
+    // Older profiles also kept a kitchen inventory; that's no longer used, so it's dropped.
+    const { pantry: _pantry, pantryBasics: _basics, ...saved } = JSON.parse(raw) as Partial<Profile> & { pantry?: unknown; pantryBasics?: unknown };
+    return { ...NEW_PROFILE, ...saved };
   } catch {
     return NEW_PROFILE;
   }

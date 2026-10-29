@@ -5,11 +5,15 @@
 // only the looked-up word leaves the app. Every result links back to
 // its source for attribution.
 //
-// The article must be about exactly the item asked for: a page or
-// redirect with that name ("Chilli flakes" → Crushed red pepper), or
-// a search result named after it. Anything else is rejected rather
-// than shown, so "chili flakes" never turns into chili oil.
+// The article must be about exactly the item asked for, in its
+// cooking sense: a page or redirect with that name ("Chilli flakes" →
+// Crushed red pepper; "Zest (ingredient)" before "Zest"), or a search
+// result named after it, and its intro must be about food or cooking.
+// Anything else is rejected rather than shown, so "chili flakes" never
+// turns into chili oil and "mandolin" never into the instrument.
 // ─────────────────────────────────────────────────────────────
+
+import { COOKING_WORDS } from './topic';
 
 const WIKI = 'https://en.wikipedia.org';
 const API = `${WIKI}/w/api.php?format=json&formatversion=2&origin=*`;
@@ -95,11 +99,33 @@ interface Page {
 }
 
 /**
+ * Wikipedia's own qualifiers for the cooking sense of a word: "Zest (ingredient)",
+ * "Pan (cookware)", "Fold (cooking)". Tried before the bare name.
+ */
+const COOKING_QUALIFIERS = ['food', 'cooking', 'ingredient', 'cookware', 'culinary', 'spice', 'herb', 'condiment', 'utensil', 'spoon'];
+
+/** Every article Gusteau shows must be about food or cooking: "mandolin" is never the instrument. */
+/**
+ * Checked against the opening, the part Gusteau reads out: a kitchen word in the
+ * first sentence, or two different ones in the first three. A passing mention of
+ * food in "Love" doesn't count; "Cumin is a flowering plant…" whose seeds are a spice does.
+ */
+function aboutCooking(extract: string, strict = false): boolean {
+  // Brackets first: "A mousse (French: [mus]; lit. 'foam') is a soft, prepared food…" is one sentence.
+  const text = extract.replace(/\s*\([^)]*\)/g, '');
+  const sentences = text.match(/[^.!?]+[.!?]+/g) ?? [text];
+  if (COOKING_WORDS.test(sentences[0])) return true;
+  if (strict) return false;
+  const found = sentences.slice(0, 3).join(' ').match(new RegExp(COOKING_WORDS.source, 'gi')) ?? [];
+  return new Set(found.map((w) => w.toLowerCase())).size >= 2;
+}
+
+/**
  * Several candidate titles in one request, following redirects. Returns
  * the first candidate (in order) that is a real article, not a
  * disambiguation page, with an intro to read.
  */
-async function firstArticle(candidates: string[]): Promise<Page | null> {
+async function firstArticle(candidates: string[], namedAfter?: string, strict = false): Promise<Page | null> {
   if (!candidates.length) return null;
   const data = await json<{ query?: { normalized?: { from: string; to: string }[]; redirects?: { from: string; to: string }[]; pages?: Page[] } }>(
     `${API}&action=query&redirects=1&prop=extracts|pageprops|pageimages|info&exintro=1&explaintext=1&ppprop=disambiguation&piprop=thumbnail&pithumbsize=400&inprop=url&titles=${candidates.map(encodeURIComponent).join('|')}`,
@@ -110,26 +136,37 @@ async function firstArticle(candidates: string[]): Promise<Page | null> {
     const title = follow(follow(c, q.normalized), q.redirects);
     const page = q.pages?.find((p) => p.title === title);
     // A disambiguation page ("Pan may refer to:") is never the item itself; its flag is an empty string.
-    const ambiguous = (page?.pageprops && 'disambiguation' in page.pageprops) || /may (also )?refer to/.test(page?.extract ?? '');
-    if (page && !page.missing && !ambiguous && page.extract?.trim()) return page;
+    const ambiguous = (page?.pageprops && 'disambiguation' in page.pageprops) || /\bmay (also )?refer to\b/.test(page?.extract ?? '');
+    // namedAfter: the article must carry the item's name ("Pan (food)" redirects to betel nut chewing).
+    const named = !namedAfter || matchScore(namedAfter, page?.title ?? '') > 0;
+    if (page && !page.missing && !ambiguous && named && page.extract?.trim() && aboutCooking(page.extract, strict)) return page;
   }
   return null;
 }
 
-async function articleFor(term: string): Promise<Page | null> {
-  // A page or redirect with this name, in any spelling.
-  const direct = await firstArticle(spellings(term));
+async function articleFor(asked: string): Promise<Page | null> {
+  // "Fresh thyme" is thyme (Fresh Thyme is also a supermarket chain).
+  const term = asked.replace(/^(fresh|chopped|minced|sliced|diced|some|a few)\s+/i, '') || asked;
+  // A page or redirect with this name, in any spelling: the cooking sense first ("Zest (ingredient)").
+  const names = spellings(term);
+  const qualified = names.slice(0, 3).flatMap((n) => COOKING_QUALIFIERS.map((q) => `${n} (${q})`));
+  const direct = (await firstArticle(qualified, term)) ?? (await firstArticle(names));
   if (direct) return direct;
-  // Otherwise search for the words alone, and only accept results named after them.
+  // Otherwise search with cooking context, then without, and only accept results named after the item.
   type Hit = { title: string; redirecttitle?: string };
-  const found = await json<{ query?: { search?: Hit[] } }>(`${API}&action=query&list=search&srlimit=10&srprop=redirecttitle&srsearch=${encodeURIComponent(term)}`);
-  const named = (found.query?.search ?? [])
-    .map((h, rank) => ({ title: h.title, rank, score: Math.max(matchScore(term, h.title), h.redirecttitle ? matchScore(term, h.redirecttitle) : 0) }))
-    .filter((x) => x.score > 0)
-    .sort((a, b) => b.score - a.score || a.rank - b.rank)
-    .slice(0, 5)
-    .map((x) => x.title);
-  return firstArticle(named);
+  for (const query of [`${term} cooking`, term]) {
+    const found = await json<{ query?: { search?: Hit[] } }>(`${API}&action=query&list=search&srlimit=10&srprop=redirecttitle&srsearch=${encodeURIComponent(query)}`);
+    const named = (found.query?.search ?? [])
+      .map((h, rank) => ({ title: h.title, rank, score: Math.max(matchScore(term, h.title), h.redirecttitle && matchScore(term, h.redirecttitle) === 2 ? 2 : 0) }))
+      .filter((x) => x.score > 0)
+      .sort((a, b) => b.score - a.score || a.rank - b.rank)
+      .slice(0, 5)
+      .map((x) => x.title);
+    // A search hit is only a guess, so its very first sentence must be about food: "leak" never finds "COVID-19 lab leak theory".
+    const article = await firstArticle(named, undefined, true);
+    if (article) return article;
+  }
+  return null;
 }
 
 async function imagesFor(title: string, thumbnail?: string): Promise<LookupImage[]> {

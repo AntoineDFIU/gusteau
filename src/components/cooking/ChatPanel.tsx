@@ -11,7 +11,8 @@ export function ChatPanel({ cook, onMic, micActive, micSupported, interim }: { c
 
   useEffect(() => {
     scroller.current?.scrollTo({ top: scroller.current.scrollHeight, behavior: 'smooth' });
-  }, [s.chat.length, cook.busy]);
+    // Follows the streaming reply too.
+  }, [s.chat.length, cook.busy, !!cook.pending, cook.pending?.interpreted, Math.floor((cook.pending?.reply?.length ?? 0) / 60)]);
 
   const has = (word: RegExp) => s.recipe.ingredients.find((i) => word.test(i.name.toLowerCase()));
   const rice = has(/\brice\b/);
@@ -49,6 +50,7 @@ export function ChatPanel({ cook, onMic, micActive, micSupported, interim }: { c
               <div className={cx('max-w-[85%] rounded-2xl px-3.5 py-2.5 text-sm leading-relaxed', m.from === 'user' ? 'rounded-br-md bg-charcoal-900 text-white' : 'rounded-tl-md bg-white text-charcoal-700 shadow-sm')}>
                 {m.diffId && <span className="mb-1 block text-[10px] font-bold uppercase tracking-wider text-saffron-500">✨ Plan updated</span>}
                 {spellOutSpoons(m.text)}
+                {m.interpreted && <Interpreted text={m.interpreted} />}
                 {m.videoQuery && !tech && (
                   <button onClick={() => cook.showVideos(m.videoQuery!)} className="mt-1.5 block text-xs font-semibold text-olive-500 hover:text-olive-700">
                     ▶ Show videos: how to {m.videoQuery}
@@ -68,13 +70,33 @@ export function ChatPanel({ cook, onMic, micActive, micSupported, interim }: { c
             </div>
           );
         })}
-        {cook.busy && cook.busy !== 'starting' && (
-          <div className="flex items-center gap-2 text-sm text-charcoal-500">
-            <GusteauAvatar size="sm" />
-            <span className="flex items-center gap-2 rounded-2xl bg-white px-3.5 py-2.5 shadow-sm">
-              <Spinner className="text-tomato-500" /> {cook.busy === 'replanning' ? 'Replanning the rest of your meal…' : 'Thinking…'}
-            </span>
+        {/* The message being answered: shown as heard right away, then how it was understood and the reply as it streams. */}
+        {cook.pending && (
+          <div className="flex justify-end gap-2">
+            <div className="max-w-[85%] rounded-2xl rounded-br-md bg-charcoal-900 px-3.5 py-2.5 text-sm leading-relaxed text-white">
+              {cook.pending.text}
+              {cook.pending.interpreted && <Interpreted text={cook.pending.interpreted} />}
+            </div>
           </div>
+        )}
+        {cook.pending?.reply ? (
+          <div className="flex gap-2">
+            <GusteauAvatar size="sm" />
+            <div className="max-w-[85%] rounded-2xl rounded-tl-md bg-white px-3.5 py-2.5 text-sm leading-relaxed text-charcoal-700 shadow-sm">
+              {spellOutSpoons(cook.pending.reply)}
+              <span className="ml-0.5 inline-block h-3.5 w-1.5 animate-pulse rounded-sm bg-tomato-400 align-middle" aria-hidden />
+            </div>
+          </div>
+        ) : (
+          cook.busy &&
+          cook.busy !== 'starting' && (
+            <div className="flex items-center gap-2 text-sm text-charcoal-500">
+              <GusteauAvatar size="sm" />
+              <span className="flex items-center gap-2 rounded-2xl bg-white px-3.5 py-2.5 shadow-sm">
+                <Spinner className="text-tomato-500" /> {cook.busy === 'replanning' ? 'Replanning the rest of your meal…' : 'Thinking…'}
+              </span>
+            </div>
+          )
         )}
       </div>
       <div className="border-t border-cream-200 p-3">
@@ -123,4 +145,9 @@ export function ChatPanel({ cook, onMic, micActive, micSupported, interim }: { c
       </div>
     </Card>
   );
+}
+
+/** "Interpreted as…": how Gusteau understood a spoken message. The transcript above it stays as heard. */
+function Interpreted({ text }: { text: string }) {
+  return <span className="mt-1 block text-[11px] italic text-white/60">Interpreted as “{text}”</span>;
 }

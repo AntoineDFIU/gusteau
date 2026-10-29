@@ -99,7 +99,8 @@ function removeMentions(text: string, name: string): string {
   const p = mentionPattern(name).source;
   const cleaned = text
     // "…, then scatter with the cheese." → "…."
-    .replace(new RegExp(`(,\\s*then|,?\\s+and(\\s+then)?|\\s+then)?\\s+(top(ped)?|garnish(ed)?|sprinkled?|scatter(ed)?|served?)( it| them)? with (the |some )?${p}`, 'gi'), '')
+    // "Flip, top with the cheese, and cook" → "Flip, and cook".
+    .replace(new RegExp(`(,\\s*then|,?\\s+and(\\s+then)?|\\s+then|,)?\\s+(top(ped)?|garnish(ed)?|sprinkled?|scatter(ed)?|served?)( it| them)? with (the |some )?${p}`, 'gi'), '')
     // "tomatoes, chipotle and oregano" → "tomatoes and chipotle"
     .replace(new RegExp(`,\\s*([^,.;]+?)\\s+and\\s+(the |some |a little )?${p}`, 'gi'), ' and $1')
     .replace(new RegExp(`(,\\s*|\\s+and\\s+)(the |some |a little )?${p}`, 'gi'), '')
@@ -325,7 +326,7 @@ export function adaptRecipe(original: Recipe, ctx: AdaptContext, prior?: AdaptPr
       const have = hasIt(option.name, ctx);
       const noEquipment = option.method && !option.method.equipment.some((e) => ctx.rules.equipment.includes(e));
       if (rule) violations.push(`${option.name} breaks “${rule}”, so I can’t use it instead of ${ing.name.toLowerCase()}.`);
-      else if (have === 'no') violations.push(`You don’t have ${option.name.toLowerCase()} in your kitchen.`);
+      else if (have === 'no') violations.push(`You said you don’t have ${option.name.toLowerCase()}.`);
       else if (noEquipment) violations.push(`${option.name} needs equipment you don’t have.`);
       else {
         r = applySwap(r, current, option, ctx.completed);
@@ -337,7 +338,7 @@ export function adaptRecipe(original: Recipe, ctx: AdaptContext, prior?: AdaptPr
     const why: BlockerKind | null = isUnavailable(ing.name, ctx) ? 'unavailable' : ruleBroken ? 'rule' : missing ? 'missing' : null;
     if (!why) continue;
     const choice = choose(current, r, ctx);
-    const reasonFor = why === 'unavailable' ? 'You’re out' : why === 'rule' ? `Breaks “${ruleBroken}”` : 'Not in your kitchen';
+    const reasonFor = why === 'unavailable' ? 'You’re out' : why === 'rule' ? `Breaks “${ruleBroken}”` : 'You don’t have it';
     if (!choice) {
       blockers.push({ name: ing.name, kind: why });
       violations.push(
@@ -383,7 +384,7 @@ export function validatePlan(r: Recipe, ctx: AdaptContext): string[] {
     const rule = breaksRule(i.name, ctx.rules);
     if (rule) v.push(`${i.name} breaks “${rule}”.`);
     if (isUnavailable(i.name, ctx)) v.push(`${i.name} is marked unavailable.`);
-    if (isEssential(i) && availability(i.name, ctx.pantry, ctx.basics) === 'missing') v.push(`${i.name} isn’t in your kitchen.`);
+    if (isEssential(i) && availability(i.name, ctx.pantry, ctx.basics) === 'missing') v.push(`You don’t have ${i.name.toLowerCase()}.`);
   }
   for (const s of r.steps.filter((st) => !ctx.completed.includes(st.key))) {
     for (const e of stepEquipment(s)) {
@@ -431,7 +432,7 @@ export function applyChanges(s: CookSession, changes: SessionChange[]): { sessio
         const name = titleCase(ch.name.trim());
         unavailable = unavailable.filter((u) => !sameIngredient(u, name));
         if (!pantry.some((p) => sameIngredient(p.name, name))) pantry.push({ id: uid(), name, source: 'chat' });
-        labels.push(`Added ${name.toLowerCase()} to your kitchen`);
+        labels.push(`You have ${name.toLowerCase()}`);
         break;
       }
       case 'leave_out':

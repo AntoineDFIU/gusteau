@@ -71,23 +71,20 @@ export function describeRules(rules: CookRules): string[] {
   ];
 }
 
-// ── Pantry ──────────────────────────────────────────────────
+// ── What the cook has ───────────────────────────────────────
+// Gusteau keeps no inventory. `pantry` holds only what the cook has
+// mentioned ("I found some spinach"), so anything else is unknown, never
+// missing: an ingredient is missing only once the cook says so (the
+// session's `unavailable` list).
 export type Availability = 'have' | 'staple' | 'missing' | 'unknown';
 
 export function availability(name: string, pantry: PantryItem[], basics: boolean): Availability {
   if (basics && isStaple(name)) return 'staple';
-  if (!pantry.length) return 'unknown';
-  return pantry.some((p) => sameIngredient(p.name, name)) ? 'have' : 'missing';
+  return pantry.some((p) => sameIngredient(p.name, name)) ? 'have' : 'unknown';
 }
 
 /** Ingredients that matter for "can I make this" (staples, garnishes, seasonings and optional extras don't). */
 export const isEssential = (i: RecipeIngredient) => !i.optional && !isGarnish(i.name) && !isSeasoning(i.name);
-
-export function pantryMatch(r: Recipe, pantry: PantryItem[], basics: boolean): { have: number; need: number; missing: string[] } {
-  const essentials = r.ingredients.filter((i) => isEssential(i) && !(basics && isStaple(i.name)));
-  const missing = essentials.filter((i) => availability(i.name, pantry, basics) === 'missing').map((i) => i.name);
-  return { have: essentials.length - missing.length, need: essentials.length, missing };
-}
 
 // ── Scaling and time ────────────────────────────────────────
 export function scaleRecipe(r: Recipe, servings: number): Recipe {
@@ -117,8 +114,6 @@ export interface Filters {
   maxMinutes: number | null;
   difficulty: Difficulty[];
   equipment: Equipment[] | null;
-  /** Only dishes missing at most this many essentials from the pantry. */
-  pantryOnly: boolean;
 }
 
 export const EMPTY_FILTERS: Filters = {
@@ -131,12 +126,10 @@ export const EMPTY_FILTERS: Filters = {
   maxMinutes: null,
   difficulty: [],
   equipment: null,
-  pantryOnly: false,
 };
 
-export const MAX_MISSING_FOR_PANTRY = 2;
-
-export function matchesFilters(r: Recipe, f: Filters, profile: Profile): boolean {
+// `_profile` stays for callers; no filter depends on it since the ingredient inventory was removed.
+export function matchesFilters(r: Recipe, f: Filters, _profile: Profile): boolean {
   const facts = factsOf(r);
   if (f.cuisine && r.cuisine !== f.cuisine) return false;
   if (f.search) {
@@ -152,12 +145,11 @@ export function matchesFilters(r: Recipe, f: Filters, profile: Profile): boolean
   if (f.maxMinutes && r.totalMinutes > f.maxMinutes) return false;
   if (f.difficulty.length && !f.difficulty.includes(r.difficulty)) return false;
   if (f.equipment && !r.equipment.every((e) => f.equipment!.includes(e))) return false;
-  if (f.pantryOnly && pantryMatch(r, profile.pantry, profile.pantryBasics).missing.length > MAX_MISSING_FOR_PANTRY) return false;
   return true;
 }
 
 export const activeFilterCount = (f: Filters) =>
-  f.diet.length + f.proteins.length + f.grains.length + Number(f.vegForward) + Number(!!f.maxMinutes) + f.difficulty.length + Number(!!f.equipment) + Number(f.pantryOnly);
+  f.diet.length + f.proteins.length + f.grains.length + Number(f.vegForward) + Number(!!f.maxMinutes) + f.difficulty.length + Number(!!f.equipment);
 
 // ── Recommendations ─────────────────────────────────────────
 export interface Taste {
@@ -176,17 +168,13 @@ export function tasteOf(profile: Profile, library: Recipe[]): Taste {
   return { cuisines, proteins, recent: new Set(profile.history.slice(-8).map((h) => h.recipeId)) };
 }
 
-/** Score for "Picked for you": past cooking, favorite cuisines, pantry fit, popularity. */
+/** Score for "Picked for you": past cooking, favorite cuisines, popularity. */
 export function recommendScore(r: Recipe, profile: Profile, taste: Taste): number {
   let s = r.popularity / 25;
   if (profile.favoriteCuisines.includes(r.cuisine)) s += 3;
   s += Math.min(3, taste.cuisines.get(r.cuisine) ?? 0);
   if (factsOf(r).proteins.some((p) => taste.proteins.has(p))) s += 1;
   if (taste.recent.has(r.id)) s -= 4;
-  if (profile.pantry.length) {
-    const m = pantryMatch(r, profile.pantry, profile.pantryBasics);
-    s += m.need ? (m.have / m.need) * 4 : 0;
-  }
   if (ruleConflicts(r, profile).length) s -= 10;
   if (!r.equipment.every((e) => profile.equipment.includes(e))) s -= 5;
   return s;

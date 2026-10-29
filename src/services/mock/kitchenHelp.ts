@@ -3,6 +3,8 @@ import { availability, breaksRule, isEssential } from '../../agent/kitchen';
 import { normalize, sameIngredient, substitutesFor } from '../../data/ingredients';
 import type { CookSession, RecipeIngredient, SessionChange } from '../../types';
 import type { InterpretResult } from '../modelService';
+import { missingNames } from '../../agent/discovery';
+import { answerMissing, missingQuestion } from '../../agent/missing';
 
 // ─────────────────────────────────────────────────────────────
 // Rule-based kitchen help: swap questions and requests, additions,
@@ -38,7 +40,14 @@ export function answerOffer(raw: string, s: CookSession): InterpretResult | null
   if (/^(yes|yeah|yep|yup|sure|ok|okay|please|do it|go ahead|sounds good|let's do (it|that)|switch|swap it|add it|perfect)( please| thanks| thank you)?$/.test(m) && s.pendingOffer?.length) {
     return agreed(s.pendingOffer);
   }
-  if (choice) {
+  if (choice?.out) {
+    // "Do you have another kind of cheese?": answered the same way as while choosing a dish.
+    const a = answerMissing(raw, choice, s.recipe, s.rules, 'cooking');
+    if (a?.kind === 'drop') return agreed([...outOf, { type: 'leave_out', name: choice.from }]);
+    if (a?.kind === 'swap') return agreed([...outOf, { type: 'swap_ingredient', from: choice.from, to: a.to }]);
+    if (a?.kind === 'confirm') return { reply: a.say, changes: [], offer: [...outOf, { type: 'swap_ingredient', from: choice.from, to: a.to }], choice: { ...choice, confirming: a.to } };
+    if (a?.kind === 'say') return { reply: a.say, changes: [], choice: { ...choice, confirming: undefined } };
+  } else if (choice) {
     if (/\b(leave (it|them) out|without (it|them)|skip (it|them)|cook without|drop (it|them)|go without|do without)\b/.test(m)) return agreed([...outOf, { type: 'leave_out', name: choice.from }]);
     const picked = choice.options.find((o) => m.includes(normalize(o)) || m.includes(o.toLowerCase()) || new RegExp(`\\b${normalize(o).split(' ').pop()}`).test(m));
     if (picked) return agreed([...outOf, { type: 'swap_ingredient', from: choice.from, to: picked }]);
@@ -98,6 +107,13 @@ export function proposeIngredientChange(changes: SessionChange[], s: CookSession
     };
   }
 
+  if (out) {
+    // Gusteau doesn't know what's in the kitchen: he suggests what could stand in and asks,
+    // and offers to go without only when the dish still works without it.
+    const { say, ...choice } = missingQuestion(ing, s.recipe, s.rules, 'cooking');
+    return { rest, proposal: { reply: say, changes: [], choice } };
+  }
+
   const hint = substitutionHints(s).find((h) => h.ingredient === ing.name);
   const options = hint?.options ?? [];
   const owned = options.filter((o) => o.status === 'have').map((o) => o.name);
@@ -132,6 +148,21 @@ export function proposeIngredientChange(changes: SessionChange[], s: CookSession
       choice: { from, current: ing.name, options: choices, out },
     },
   };
+}
+
+/**
+ * "I don't have cheddar", "I'm out of buns": running out of something the rest
+ * of the recipe still uses. Caught before the model, so Gusteau always asks the same way.
+ */
+export function outOfIngredient(raw: string, s: CookSession): InterpretResult | null {
+  const names = missingNames(raw);
+  if (!names) return null;
+  const changes: SessionChange[] = [];
+  for (const n of names) {
+    const ing = findIngredient(n, s);
+    if (ing && needed(s, ing)) changes.push({ type: 'remove_ingredient', name: ing.substitutedFor ?? ing.name });
+  }
+  return changes.length ? { reply: null, changes, trigger: describeChanges(changes) } : null;
 }
 
 /** The recipe ingredient a phrase refers to, preferring ones still to be used. */
@@ -208,7 +239,7 @@ const SPICY = /\b(hot sauce|chili flakes|red pepper flakes|chili|chile|jalape\w*
 function additionTalk(m: string, s: CookSession): InterpretResult | null {
   if (/\b(spic(y|ier)|more heat|more kick|hotter|some heat)\b/.test(m) && !/\btoo spicy\b/.test(m)) {
     const hot = [...s.pantry.map((p) => p.name), ...s.recipe.ingredients.map((i) => i.name)].find((n) => SPICY.test(n.toLowerCase()) && !breaksRule(n, s.rules));
-    if (!hot) return { reply: 'A pinch of chili flakes or a few dashes of hot sauce would do it, but I don’t see either in your kitchen. Tell me if you have something spicy.', changes: [] };
+    if (!hot) return { reply: 'A pinch of chili flakes or a few dashes of hot sauce would do it. Do you have either, or something else spicy?', changes: [] };
     const change: SessionChange = { type: 'add_to_recipe', name: hot.toLowerCase(), how: `Stir in a little ${hot.toLowerCase()}, taste, and add more if you want it hotter.`, when: 'end' };
     return { reply: `You could add a little ${hot.toLowerCase()} at the end, to taste. Want me to add it to the plan?`, changes: [], offer: [change] };
   }

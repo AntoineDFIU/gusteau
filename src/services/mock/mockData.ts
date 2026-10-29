@@ -1,40 +1,8 @@
-import type { CookRules, DetectedIngredient, PantryItem } from '../../types';
+import type { CookRules } from '../../types';
 
 // ─────────────────────────────────────────────────────────────
 // MOCK DATA ONLY. Nothing in this file talks to a model.
 // ─────────────────────────────────────────────────────────────
-
-/** What the mock "vision model" sees in a fridge photo. */
-export const MOCK_FRIDGE_DETECTIONS: DetectedIngredient[] = [
-  { name: 'Chicken breast', confidence: 0.94, quantityNote: '~1 lb pack' },
-  { name: 'Eggs', confidence: 0.97, quantityNote: '6 eggs' },
-  { name: 'Baby spinach', confidence: 0.86, quantityNote: 'half a bag' },
-  { name: 'Tomatoes', confidence: 0.91, quantityNote: '3 tomatoes' },
-  { name: 'Shredded cheese', confidence: 0.82, quantityNote: '' },
-  { name: 'Salsa', confidence: 0.68, quantityNote: 'jar, half full' },
-  { name: 'Lemon', confidence: 0.63, quantityNote: '1 lemon' },
-  { name: 'Scallions', confidence: 0.58, quantityNote: '' },
-];
-
-/** What the mock "vision model" sees in a pantry photo. */
-export const MOCK_PANTRY_DETECTIONS: DetectedIngredient[] = [
-  { name: 'Rice', confidence: 0.9, quantityNote: '' },
-  { name: 'Canned black beans', confidence: 0.88, quantityNote: '2 cans' },
-  { name: 'Flour tortillas', confidence: 0.84, quantityNote: '8 tortillas' },
-  { name: 'Onion', confidence: 0.79, quantityNote: '' },
-  { name: 'Garlic', confidence: 0.72, quantityNote: '' },
-  { name: 'Spaghetti', confidence: 0.81, quantityNote: '' },
-  { name: 'Soy sauce', confidence: 0.66, quantityNote: '' },
-];
-
-/** The scripted "out of rice" demo kitchen. */
-export const DEMO_PANTRY: Omit<PantryItem, 'id'>[] = [
-  { name: 'Rice', source: 'manual' },
-  { name: 'Canned black beans', source: 'manual', quantityNote: '1 can' },
-  { name: 'Flour tortillas', source: 'manual', quantityNote: '4 tortillas' },
-  { name: 'Shredded cheese', source: 'manual' },
-  { name: 'Salsa', source: 'manual' },
-];
 
 export const DEMO_RECIPE_ID = 'mx-microwave-burrito-bowl';
 
