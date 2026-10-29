@@ -651,7 +651,7 @@ export default function App() {
                 ⚙︎ <span className="hidden sm:inline">Preferences</span>
               </button>
             )}
-            {micVisible && screen !== 'browse' && (
+            {screen !== 'browse' && (
               <button
                 onClick={startOverAsNewUser}
                 title="Prototype only: clears preferences, kitchen and history, then shows the new-user screen"
