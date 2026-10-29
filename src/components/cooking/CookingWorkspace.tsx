@@ -3,19 +3,22 @@ import { amountOf } from '../../agent/adapt';
 import { stageIndexOf } from '../../agent/stages';
 import { emojiFor } from '../../data/ingredients';
 import { EQUIPMENT } from '../../data/rules';
-import { techniqueFor } from '../../data/techniques';
+import { techniqueFor, techniqueQuery } from '../../data/techniques';
 import { formatClock } from '../../lib/sound';
-import type { Cook } from '../../state/useCook';
+import { timerLeft, type Cook } from '../../state/useCook';
+import { stepTimers } from '../../agent/stepTimers';
 import type { Voice } from '../../voice/useVoice';
+import type { Power, Turn } from '../VoiceDock';
 import { RecipeArt, StageIcon } from '../RecipeCard';
 import { Button, Card, GusteauAvatar, Modal, SectionTitle, cx } from '../ui';
 import { ChatPanel } from './ChatPanel';
+import { ExplainerCard } from './ExplainerCard';
 import { KitchenPlan } from './KitchenPlan';
 import { PlanUpdatedBanner } from './PlanUpdatedBanner';
 import { StatusBar } from './StatusBar';
-import { TechniqueCard } from './TechniqueCard';
+import { VideoCard } from './VideoCard';
 
-export function CookingWorkspace({ cook, voice, onHandsFree, onExit }: { cook: Cook; voice: Voice; onHandsFree: (on: boolean) => void; onExit: () => void }) {
+export function CookingWorkspace({ cook, voice, turn, power, onHandsFree, onExit }: { cook: Cook; voice: Voice; turn: Turn; power?: Power; onHandsFree: () => void; onExit: () => void }) {
   const s = cook.session!;
   const r = s.recipe;
   const finished = s.stepIndex >= r.steps.length;
@@ -38,11 +41,18 @@ export function CookingWorkspace({ cook, voice, onHandsFree, onExit }: { cook: C
     if (top < 140 || top > window.innerHeight * 0.55) el.scrollIntoView({ behavior: 'smooth', block: 'start' });
   }, [cook.bannerId]);
 
-  const stepTimerRunning = s.timers.some((t) => t.label === step.title && t.endsAt !== null);
+  // The step's timed parts ("Microwave the rice · 8:00", "Rest the rice · 2:00"), each started when the cook is ready.
+  // "Per side" ones come back as the second side once the first has rung.
+  const done = s.timersDone ?? [];
+  const timed = stepTimers(step, s.recipe).flatMap((o) => {
+    const second = { ...o, key: `${o.key}~2`, label: o.label.replace(/first side$/, 'second side') };
+    const side = o.perSide && done.includes(o.key) ? second : o;
+    return done.includes(side.key) ? [] : [{ o: side, t: s.timers.find((t) => t.key === side.key) }];
+  });
 
   return (
     <div className="mx-auto max-w-7xl">
-      <StatusBar cook={cook} voice={voice} onHandsFree={onHandsFree} />
+      <StatusBar cook={cook} voice={voice} turn={turn} power={power} onHandsFree={onHandsFree} />
 
       <div className="mb-5 flex flex-wrap items-center justify-between gap-3">
         <div className="flex min-w-0 items-center gap-3">
@@ -67,6 +77,9 @@ export function CookingWorkspace({ cook, voice, onHandsFree, onExit }: { cook: C
             </div>
           )}
 
+          {cook.explainer && <ExplainerCard explainer={cook.explainer} onClose={cook.closeExplainer} />}
+          {cook.videoCard && <VideoCard card={cook.videoCard} onClose={cook.closeVideos} />}
+
           {finished ? (
             <Card className="p-8 text-center sm:p-10">
               <span className="text-6xl">🎉</span>
@@ -74,7 +87,6 @@ export function CookingWorkspace({ cook, voice, onHandsFree, onExit }: { cook: C
               <p className="mx-auto mt-2 max-w-md text-charcoal-500">
                 You made the {r.title}
                 {s.history.filter((h) => !h.infeasible).length ? `, and handled ${s.history.filter((h) => !h.infeasible).length} curveball${s.history.length > 1 ? 's' : ''} along the way` : ''}.
-                {!s.rules.purchasesAllowed && ' No surprise grocery runs.'}
               </p>
               <p className="mt-2 text-xs text-charcoal-400">Gusteau will use this to suggest dishes you’ll like next time.</p>
               <div className="mt-6 flex flex-wrap justify-center gap-3">
@@ -107,11 +119,6 @@ export function CookingWorkspace({ cook, voice, onHandsFree, onExit }: { cook: C
                           Cook without {n.toLowerCase()}
                         </Button>
                       ))}
-                      {latest?.offers?.allowPurchase && (
-                        <Button size="sm" variant="secondary" onClick={() => void cook.update([{ type: 'set_purchases', allowed: true }], 'Purchases allowed')}>
-                          Allow a quick purchase
-                        </Button>
-                      )}
                       {cook.canUndo && (
                         <Button size="sm" variant="secondary" onClick={cook.undo}>
                           ↶ Undo last change
@@ -167,25 +174,35 @@ export function CookingWorkspace({ cook, voice, onHandsFree, onExit }: { cook: C
               </div>
 
               <div className="mt-5 flex flex-wrap gap-2">
-                {step.timerSeconds && (
-                  <Button size="sm" variant="secondary" disabled={stepTimerRunning} onClick={() => cook.addTimer(step.timerSeconds!, step.title)}>
-                    ⏱ {stepTimerRunning ? 'Timer running' : `Start ${formatClock(step.timerSeconds)} timer`}
-                  </Button>
-                )}
-                {technique && !cook.techniqueOpen && (
-                  <Button size="sm" variant="secondary" onClick={() => cook.setTechniqueOpen(true)}>
+                {timed.map(({ o, t }) => {
+                  const left = t ? timerLeft(t, cook.now) : o.seconds;
+                  const state = !t ? 'ready' : left <= 0 ? 'done' : t.endsAt === null ? 'paused' : 'running';
+                  return (
+                    <Button
+                      key={o.key}
+                      size="sm"
+                      variant={state === 'ready' ? 'secondary' : 'primary'}
+                      onClick={() => (!t ? cook.startStepTimer(o) : state === 'done' ? cook.removeTimer(t.id) : cook.toggleTimer(t.id))}
+                      aria-label={`${o.label}: ${state === 'ready' ? 'start the timer' : state === 'done' ? 'done, dismiss' : state === 'paused' ? 'paused, resume' : 'running, pause'}`}
+                    >
+                      {state === 'ready' ? '⏱' : state === 'done' ? '🔔' : state === 'paused' ? '▶' : '⏸'} {o.label} · <span className="tabular-nums">{state === 'done' ? 'Done' : formatClock(left)}</span>
+                      {state === 'ready' && o.range && <span className="font-normal opacity-70"> (up to {formatClock(o.range[1])})</span>}
+                    </Button>
+                  );
+                })}
+                {!cook.videoCard && (
+                  <Button size="sm" variant="secondary" onClick={() => cook.showVideos(technique ? techniqueQuery(technique) : step.title.toLowerCase(), technique?.howTo)}>
                     🎬 Show me how
                   </Button>
                 )}
-                <Button size="sm" variant="ghost" onClick={cook.repeat}>
-                  🔊 Read aloud
-                </Button>
               </div>
-              {technique && cook.techniqueOpen && <TechniqueCard technique={technique} onClose={() => cook.setTechniqueOpen(false)} />}
 
-              <div className="mt-8 flex items-center justify-between gap-3">
+              <div className="mt-8 flex items-center justify-between gap-2 sm:gap-3">
                 <Button variant="secondary" onClick={cook.back} disabled={s.stepIndex === 0 || s.paused}>
                   ← Back
+                </Button>
+                <Button variant="ghost" onClick={cook.repeat} title="Hear this step again (or say “repeat that”)">
+                  🔊 Repeat
                 </Button>
                 <Button size="lg" onClick={cook.next} disabled={s.paused || busy}>
                   {s.stepIndex === r.steps.length - 1 ? 'Finish 🎉' : 'Done, next step →'}
@@ -216,7 +233,7 @@ export function CookingWorkspace({ cook, voice, onHandsFree, onExit }: { cook: C
             </Card>
           )}
 
-          <ChatPanel cook={cook} onMic={() => void voice.listenOnce()} micActive={(voice.state === 'listening' || voice.state === 'connecting') && !voice.handsFree} micSupported={voice.supported} />
+          <ChatPanel cook={cook} onMic={() => void voice.listenOnce()} micActive={(voice.state === 'listening' || voice.state === 'connecting') && !voice.handsFree} micSupported={voice.supported} interim={voice.handsFree ? undefined : voice.interim} />
         </div>
 
         <aside className="min-w-0 space-y-6">
@@ -239,7 +256,7 @@ export function CookingWorkspace({ cook, voice, onHandsFree, onExit }: { cook: C
                   key={i.id}
                   onClick={() => {
                     setOutOpen(false);
-                    void cook.update([{ type: 'remove_ingredient', name: i.name }], `You're out of ${i.name.toLowerCase()}`, `I’m out of ${i.name.toLowerCase()}`);
+                    cook.tell([{ type: 'remove_ingredient', name: i.name }], `I’m out of ${i.name.toLowerCase()}`);
                   }}
                   className="flex items-center gap-2 rounded-2xl border border-cream-300 bg-white px-3 py-2.5 text-left text-sm font-medium text-charcoal-700 hover:border-tomato-400"
                 >

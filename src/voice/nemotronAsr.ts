@@ -1,3 +1,6 @@
+import { chosenMic } from './audioDevices';
+import { trackAudio } from './audioUnlock';
+
 // ─────────────────────────────────────────────────────────────
 // Speech to text with NVIDIA Nemotron ASR, served by NeMo-Speech.cpp
 // (`nemo-speech serve`). The mic streams to the server's realtime
@@ -16,7 +19,9 @@
 //   ← input_audio_buffer.committed   the next audio starts a new utterance
 //
 // The server doesn't end utterances by itself (endpointing is off), so
-// with `pauseMs` the client commits once no new words arrive for that long.
+// with `pauseMs` the client commits once no new words arrive for that long
+// and the mic has gone quiet: words that arrive late (a slow server) don't
+// end a request mid-sentence.
 // ─────────────────────────────────────────────────────────────
 
 export const ASR_BASE = '/api/asr';
@@ -24,6 +29,19 @@ const REALTIME_PATH = '/v1/audio/transcriptions/realtime';
 const CHUNK_SECONDS = 0.1;
 const CONNECT_TIMEOUT_MS = 10000;
 const COMMIT_TIMEOUT_MS = 8000;
+/** Below this mic level (about -45 dB) the cook isn't talking. */
+const QUIET_LEVEL = 0.25;
+/** A phrase ends only after this much quiet. */
+const QUIET_MS = 600;
+/** A kitchen too loud to ever go quiet: the phrase ends anyway once no new words have come for this much longer. */
+const NOISY_EXTRA_MS = 2500;
+/**
+ * With nobody talking, a fresh utterance is started this often. The server only ends an
+ * utterance on commit, and one that grows for minutes of silence degrades until nothing
+ * is transcribed at all: "Hey Chef" after a minute came back as "Achef", after three
+ * minutes as nothing.
+ */
+const IDLE_RESET_SECONDS = 15;
 const DELTA = 'conversation.item.input_audio_transcription.delta';
 const COMPLETED = 'conversation.item.input_audio_transcription.completed';
 
@@ -137,12 +155,15 @@ function level(chunk: Int16Array) {
  * audio captured while connecting is queued, so the first words aren't lost.
  */
 export async function startAsr(opts: AsrOptions): Promise<AsrSession> {
-  const media = await navigator.mediaDevices
-    .getUserMedia({ audio: { channelCount: 1, echoCancellation: true, noiseSuppression: true, autoGainControl: true } })
+  const audio = { channelCount: 1, echoCancellation: true, noiseSuppression: true, autoGainControl: true };
+  // The microphone the cook picked; if it's been unplugged, the default one.
+  const media = await (chosenMic() ? navigator.mediaDevices.getUserMedia({ audio: { ...audio, deviceId: { exact: chosenMic() } } }).catch(() => null) : Promise.resolve(null))
+    .then((m) => m ?? navigator.mediaDevices.getUserMedia({ audio }))
     .catch((e: DOMException) => {
       throw new Error(e?.name === 'NotAllowedError' ? 'Microphone access is blocked. Allow it from the address bar and try again.' : `No microphone available (${e?.message ?? e}).`);
     });
-  const ctx = new AudioContext();
+  // Suspended until the page's first tap or key press (voice starts as the page loads); audioUnlock resumes it then.
+  const ctx = trackAudio(new AudioContext());
   const scheme = location.protocol === 'https:' ? 'wss' : 'ws';
   const ws = new WebSocket(`${scheme}://${location.host}${ASR_BASE}${REALTIME_PATH}`);
   ws.binaryType = 'arraybuffer';
@@ -157,6 +178,7 @@ export async function startAsr(opts: AsrOptions): Promise<AsrSession> {
   const queued: ArrayBuffer[] = [];
   let partial = '';
   let lastWordAt = 0;
+  let lastLoudAt = 0;
   let sentSeconds = 0; // audio sent since the last commit
   let uncommitted = false; // audio sent since the last commit
   const commits: number[] = []; // send times of commits the server hasn't confirmed
@@ -187,7 +209,15 @@ export async function startAsr(opts: AsrOptions): Promise<AsrSession> {
   };
 
   const pauseTimer = window.setInterval(() => {
-    if (opts.pauseMs && partial.trim() && !commits.length && performance.now() - lastWordAt >= opts.pauseMs) commit();
+    if (!opts.pauseMs || commits.length) return;
+    const now = performance.now();
+    // Quiet, no words: close off the silence so the next words start a short utterance.
+    if (!partial.trim()) {
+      if (sentSeconds >= IDLE_RESET_SECONDS && now - lastLoudAt >= QUIET_MS) commit();
+      return;
+    }
+    const wordless = now - lastWordAt;
+    if (wordless >= opts.pauseMs && (now - lastLoudAt >= QUIET_MS || wordless >= opts.pauseMs + NOISY_EXTRA_MS)) commit();
   }, 100);
 
   const settled = new Promise<void>((resolve, reject) => {
@@ -270,7 +300,9 @@ export async function startAsr(opts: AsrOptions): Promise<AsrSession> {
     node.port.onmessage = (e: MessageEvent<ArrayBuffer | 'flushed'>) => {
       if (e.data === 'flushed') return onFlushed?.();
       if (ended || closing) return;
-      opts.onLevel?.(muted ? 0 : level(new Int16Array(e.data)));
+      const loudness = muted ? 0 : level(new Int16Array(e.data));
+      if (loudness >= QUIET_LEVEL) lastLoudAt = performance.now();
+      opts.onLevel?.(loudness);
       if (muted) return;
       if (ready) send(e.data);
       else queued.push(e.data);

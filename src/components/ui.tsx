@@ -105,7 +105,22 @@ export function GusteauAvatar({ size = 'md' }: { size?: 'sm' | 'md' | 'lg' }) {
 }
 
 /** Full-screen sheet on phones, centered dialog on larger screens. */
-export function Modal({ open, onClose, label, children, wide = false }: { open: boolean; onClose: () => void; label: string; children: ReactNode; wide?: boolean }) {
+export function Modal({
+  open,
+  onClose,
+  label,
+  children,
+  wide = false,
+  aboveDock = false,
+}: {
+  open: boolean;
+  onClose: () => void;
+  label: string;
+  children: ReactNode;
+  wide?: boolean;
+  /** Leave room for the hands-free dock at the bottom of the screen. */
+  aboveDock?: boolean;
+}) {
   useEffect(() => {
     if (!open) return;
     const onKey = (e: KeyboardEvent) => e.key === 'Escape' && onClose();
@@ -119,15 +134,16 @@ export function Modal({ open, onClose, label, children, wide = false }: { open: 
   }, [open, onClose]);
   if (!open) return null;
   return (
-    <div className="fixed inset-0 z-50 flex items-end justify-center bg-charcoal-900/40 backdrop-blur-sm sm:items-center sm:p-6" onClick={onClose}>
+    <div className={cx('fixed inset-0 z-50 flex items-end justify-center bg-charcoal-900/40 backdrop-blur-sm sm:items-center sm:p-6', aboveDock && 'pb-40 sm:pb-28')} onClick={onClose}>
       <div
         role="dialog"
         aria-modal="true"
         aria-label={label}
         onClick={(e) => e.stopPropagation()}
         className={cx(
-          'relative max-h-[94vh] w-full animate-pop overflow-y-auto rounded-t-3xl bg-cream-50 shadow-card sm:rounded-3xl',
+          'relative w-full animate-pop overflow-y-auto rounded-t-3xl bg-cream-50 shadow-card sm:rounded-3xl',
           wide ? 'sm:max-w-4xl' : 'sm:max-w-lg',
+          aboveDock ? 'max-h-[calc(100vh-11rem)] rounded-b-3xl sm:max-h-[calc(100vh-9rem)]' : 'max-h-[94vh]',
         )}
       >
         <button

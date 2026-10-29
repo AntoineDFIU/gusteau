@@ -1,12 +1,21 @@
 import { useCallback, useEffect, useRef, useState } from 'react';
-import { adaptRecipe, applyChanges, contextOf, finalizeReplan, priorOf, uid } from '../agent/adapt';
+import { adaptRecipe, applyChanges, contextOf, describeChanges, finalizeReplan, priorOf, uid } from '../agent/adapt';
 import { scaleRecipe } from '../agent/kitchen';
-import { techniqueFor } from '../data/techniques';
+import { techniqueById, techniqueFor, techniqueQuery } from '../data/techniques';
 import { beep, formatClock } from '../lib/sound';
 import { modelService } from '../services';
 import type { InterpretResult } from '../services/modelService';
-import { vetChanges } from '../services/mock/kitchenHelp';
+import { LookupError, lookupTerm, type Lookup } from '../services/lookup';
+import { searchVideos, VideoError, type Video } from '../services/videos';
+import { proposeIngredientChange, vetChanges } from '../services/mock/kitchenHelp';
+import { ambiguousAmount } from '../agent/heardAs';
+import { lineKey, plainStepLine, stepDetail, stepSpeech, whereWeAre, withTitle, type StepArrival } from '../agent/stepSpeech';
+import { controlTimers, notStarted, sayDuration, timerName, timerOffer, type StepTimer } from '../agent/stepTimers';
 import type { ActiveTimer, CookCommand, CookRules, CookSession, PantryItem, Recipe, SessionChange } from '../types';
+
+/** A timer that's still ringing gets a reminder this often, this many times. */
+const REMIND_MS = 30_000;
+const REMINDERS = 4;
 
 export const timerLeft = (t: ActiveTimer, now: number) => (t.endsAt === null ? t.pausedLeft : Math.max(0, (t.endsAt - now) / 1000));
 
@@ -15,6 +24,14 @@ export const timerLeft = (t: ActiveTimer, now: number) => (t.endsAt === null ? t
  * `session`; the cooking screens are a view over it. Every change goes
  * through update() → applyChanges → adaptRecipe → model help → finalizeReplan.
  */
+export interface VideoCard {
+  query: string;
+  /** Gusteau's written how-to, when it's a technique he knows. */
+  howTo?: string;
+  videos?: Video[];
+  error?: VideoError['reason'];
+}
+
 export interface CookEvents {
   onFinish(s: CookSession): void;
   /** A timer just ran out (it has already beeped). */
@@ -28,10 +45,26 @@ export function useCook(events: CookEvents) {
   const [busy, setBusy] = useState<null | 'starting' | 'thinking' | 'replanning'>(null);
   const [bannerId, setBannerId] = useState<string | null>(null);
   const [undoStack, setUndoStack] = useState<CookSession[]>([]);
-  /** Bumps whenever the current step should be read aloud: `force` for an explicit request, otherwise only in hands-free mode. */
-  const [readRequest, setReadRequest] = useState({ n: 0, force: false });
-  const requestRead = (force = false) => setReadRequest((r) => ({ n: r.n + 1, force }));
-  const [techniqueOpen, setTechniqueOpen] = useState(false);
+  /**
+   * Bumps whenever the current step should be read aloud: `force` for an
+   * explicit request, otherwise only in hands-free mode. `how` is how the cook
+   * got to the step, which sets how Gusteau introduces it.
+   */
+  const [readRequest, setReadRequest] = useState<{ n: number; force: boolean; how: StepArrival }>({ n: 0, force: false, how: 'start' });
+  const requestRead = (how: StepArrival, force = false) => setReadRequest((r) => ({ n: r.n + 1, force, how }));
+  /** The model's spoken line for each step, by lineKey; Gusteau's own wording fills any gaps. */
+  const lines = useRef<Record<string, string>>({});
+  const phrase = (recipe: Recipe) =>
+    modelService.phraseSteps(recipe).then(
+      (got) => void (lines.current = { ...lines.current, ...got }),
+      () => {},
+    );
+  /** Short videos for a technique ("how to dice an onion"), when the card is open. */
+  const [videoCard, setVideoCard] = useState<VideoCard | null>(null);
+  /** The message being answered right now: shown as heard, with how it was understood and the reply as it streams in. */
+  const [pending, setPending] = useState<null | { text: string; via?: 'voice'; interpreted?: string; reply?: string }>(null);
+  /** The definition-and-pictures card, when one is open. */
+  const [explainer, setExplainer] = useState<null | { term: string; lookup?: Lookup; error?: string }>(null);
   const [now, setNow] = useState(Date.now());
   const ref = useRef<CookSession | null>(null);
   const setSession = useCallback((s: CookSession | null) => {
@@ -51,18 +84,45 @@ export function useCook(events: CookEvents) {
     return () => window.clearInterval(id);
   }, [running]);
   const rung = useRef(new Set<string>());
+  /** How many reminders each ringing timer has had. */
+  const reminded = useRef(new Map<string, number>());
   useEffect(() => {
     for (const t of session?.timers ?? []) {
       if (t.endsAt !== null && t.endsAt <= now && !rung.current.has(t.id)) {
         rung.current.add(t.id);
         beep();
         on.current.onTimerDone?.(t.label);
+        // "Time's up: the timer to microwave the rice. Next, rest the rice for two minutes…"
+        const cur = ref.current;
+        if (cur) {
+          const step = cur.recipe.steps[cur.stepIndex];
+          const next = notStarted(step, cur.timers, cur.recipe, cur.timersDone)[0];
+          const side = t.key && /first side$/.test(t.label) ? ' Flip it, and say “start the timer” for the second side.' : '';
+          const then = !side && next ? ` Next, ${timerName(next).replace(/^the timer to /, '')} for ${sayDuration(next.seconds, next.range)}. Say “start the timer” when you’re ready.` : '';
+          setSession(say(cur, `Time’s up: ${timerName(t)}.${side}${then} Say “stop the timer” to silence it.`));
+        }
+      }
+      // Still ringing: a beep and a reminder of which timer it is, every half minute, a few times.
+      if (t.endsAt !== null && rung.current.has(t.id)) {
+        const due = Math.floor((now - t.endsAt) / REMIND_MS);
+        if (due >= 1 && due <= REMINDERS && (reminded.current.get(t.id) ?? 0) < due) {
+          reminded.current.set(t.id, due);
+          beep();
+          const cur = ref.current;
+          if (cur) setSession(say(cur, `Reminder: ${timerName(t)} went off ${sayDuration((due * REMIND_MS) / 1000)} ago. Say “stop the timer” to silence it.`));
+        }
       }
     }
   }, [now, session?.timers]);
 
-  const start = async (recipe: Recipe, rules: CookRules, pantry: PantryItem[], pantryBasics: boolean, leaveOut: string[] = []) => {
+  /** `unavailable`: what the cook said they don't have while choosing ("I don't have cilantro"); `preferredSwaps`: what they agreed to use instead. */
+  const start = async (recipe: Recipe, rules: CookRules, pantry: PantryItem[], pantryBasics: boolean, leaveOut: string[] = [], unavailable: string[] = [], preferredSwaps: CookSession['preferredSwaps'] = []) => {
     setBusy('starting');
+    const began = Date.now();
+    // The steps are phrased for speaking while the stages are worked out.
+    lines.current = {};
+    const scaled = scaleRecipe(recipe, rules.servings);
+    const phrasing = phrase(scaled);
     const staged = await modelService.stageRecipe(recipe);
     const original = scaleRecipe({ ...recipe, stages: staged.stages, stagesBy: staged.by }, rules.servings);
     const blank: CookSession = {
@@ -71,9 +131,9 @@ export function useCook(events: CookEvents) {
       rules,
       pantry,
       pantryBasics,
-      unavailable: [],
+      unavailable,
       leaveOut,
-      preferredSwaps: [],
+      preferredSwaps,
       additions: [],
       stepIndex: 0,
       completedStepKeys: [],
@@ -85,16 +145,21 @@ export function useCook(events: CookEvents) {
     };
     const first = adaptRecipe(original, contextOf(blank));
     const adapted: CookSession = { ...blank, recipe: first.violations.length ? original : first.recipe, substitutions: first.violations.length ? [] : first.substitutions };
-    const swaps = adapted.substitutions.map((x) => (x.kind === 'swap' ? `${x.from.toLowerCase()} → ${x.to.toLowerCase()}` : x.kind === 'drop' ? `no ${x.from.toLowerCase()}` : x.kind === 'add' ? `plus ${x.from.toLowerCase()}` : `buy ${x.from.toLowerCase()}`));
+    // Fitting the recipe to the kitchen can reword steps (a swap); those get phrased too.
+    const known = new Set(scaled.steps.map(lineKey));
+    if (adapted.recipe.steps.some((st) => !known.has(lineKey(st)))) void phrasing.then(() => phrase(adapted.recipe));
+    // The first step is said right away: give the model a few seconds, then go on with Gusteau's own wording.
+    await Promise.race([phrasing, new Promise((r) => setTimeout(r, Math.max(0, 4000 - (Date.now() - began))))]);
+    const swaps = adapted.substitutions.map((x) => (x.kind === 'swap' ? `${x.from.toLowerCase()} → ${x.to.toLowerCase()}` : x.kind === 'drop' ? `no ${x.from.toLowerCase()}` : `plus ${x.from.toLowerCase()}`));
     setSession(
       say(
         adapted,
-        `Bonjour! Let’s make the ${adapted.recipe.title}. ${swaps.length ? `I’ve fitted it to your kitchen (${swaps.join(', ')}). ` : ''}I’m keeping track of your kitchen as we go. If anything changes, like an ingredient you’re out of, the time, the equipment or who’s eating, tell me and I’ll rework the rest of the plan.`,
+        `Bonjour! Let’s make the ${adapted.recipe.title}. ${swaps.length ? `I’ve adjusted it for you (${swaps.join(', ')}). ` : ''}If anything changes as we go, like an ingredient you don’t have, the time, the equipment or who’s eating, tell me and I’ll rework the rest of the plan.`,
       ),
     );
     setUndoStack([]);
     setBannerId(null);
-    setTechniqueOpen(false);
+    setVideoCard(null);
     rung.current.clear();
     setBusy(null);
   };
@@ -114,7 +179,8 @@ export function useCook(events: CookEvents) {
       setUndoStack((u) => [before, ...u].slice(0, 20));
       setSession(final);
       setBannerId(final.history[0]?.id ?? null);
-      if (final.stepIndex !== before.stepIndex || final.recipe.steps[final.stepIndex]?.key !== before.recipe.steps[before.stepIndex]?.key) requestRead();
+      void phrase(final.recipe);
+      if (final.stepIndex !== before.stepIndex || final.recipe.steps[final.stepIndex]?.key !== before.recipe.steps[before.stepIndex]?.key) requestRead('repeat');
     } catch (err) {
       console.warn('[Gusteau] Replanning failed', err);
       setSession(say(withUser, 'I hit a snag replanning, so I kept your current plan exactly as it was. Try that again in a moment.'));
@@ -123,16 +189,16 @@ export function useCook(events: CookEvents) {
     }
   };
 
-  const next = () => {
+  const next = (how: StepArrival = 'next') => {
     const s = ref.current;
     if (!s || s.paused) return;
     const step = s.recipe.steps[s.stepIndex];
     if (!step) return;
     const completed = s.completedStepKeys.includes(step.key) ? s.completedStepKeys : [...s.completedStepKeys, step.key];
-    const ns = { ...s, completedStepKeys: completed, stepIndex: Math.min(s.stepIndex + 1, s.recipe.steps.length) };
+    const ns = { ...s, pendingConfirm: undefined, completedStepKeys: completed, stepIndex: Math.min(s.stepIndex + 1, s.recipe.steps.length) };
     setSession(ns);
-    setTechniqueOpen(false);
-    requestRead();
+    setVideoCard(null);
+    requestRead(how);
     if (ns.stepIndex >= ns.recipe.steps.length) on.current.onFinish(ns);
   };
 
@@ -141,9 +207,29 @@ export function useCook(events: CookEvents) {
     if (!s || s.stepIndex === 0) return;
     const idx = s.stepIndex - 1;
     const key = s.recipe.steps[idx].key;
-    setSession({ ...s, stepIndex: idx, completedStepKeys: s.completedStepKeys.filter((k) => k !== key) });
-    setTechniqueOpen(false);
-    requestRead();
+    setSession({ ...s, pendingConfirm: undefined, stepIndex: idx, completedStepKeys: s.completedStepKeys.filter((k) => k !== key) });
+    setVideoCard(null);
+    requestRead('back');
+  };
+
+  /** Back to the first step, with every step to do again. */
+  const restart = () => {
+    const s = ref.current;
+    if (!s) return;
+    setSession({ ...s, pendingConfirm: undefined, stepIndex: 0, completedStepKeys: [] });
+    setVideoCard(null);
+    requestRead('restart');
+  };
+
+  /** What Gusteau says for the current step, introduced for how the cook got there. */
+  const stepLine = (how: StepArrival): string => {
+    const s = ref.current;
+    const step = s?.recipe.steps[s.stepIndex];
+    if (!s || !step) return 'All done. Bon appétit!';
+    const timerRunning = s.timers.some((t) => t.endsAt !== null && t.endsAt > Date.now());
+    const modelLine = lines.current[lineKey(step)];
+    // Timed parts are offered, never started: "I can time this for you… say “start the timer” when you're ready."
+    return stepSpeech(modelLine ? withTitle(step, modelLine) : plainStepLine(step), s.stepIndex, s.recipe.steps.length, how, timerRunning) + timerOffer(step, s.timers, s.recipe, s.timersDone);
   };
 
   // ── Timers ──
@@ -169,6 +255,7 @@ export function useCook(events: CookEvents) {
     const s = ref.current;
     if (!s) return;
     rung.current.delete(id);
+    reminded.current.delete(id);
     setSession({
       ...s,
       timers: s.timers.map((t) =>
@@ -176,28 +263,73 @@ export function useCook(events: CookEvents) {
       ),
     });
   };
+  /** One of the step's timed parts, started from its button. */
+  const startStepTimer = (o: StepTimer) => {
+    const s = ref.current;
+    if (!s || s.timers.some((t) => t.key === o.key)) return;
+    const at = Date.now();
+    setNow(at);
+    setSession({ ...s, timers: [...s.timers, { id: uid(), key: o.key, label: o.label, totalSeconds: o.seconds, endsAt: at + o.seconds * 1000, pausedLeft: o.seconds }] });
+  };
   const removeTimer = (id: string) => {
     const s = ref.current;
-    if (s) setSession({ ...s, timers: s.timers.filter((t) => t.id !== id) });
+    if (!s) return;
+    // Dismissing a timer that rang finishes that timed part, so it isn't offered again.
+    const rang = s.timers.find((t) => t.id === id && t.key && t.endsAt !== null && t.endsAt <= Date.now());
+    setSession({ ...s, timers: s.timers.filter((t) => t.id !== id), timersDone: rang ? [...new Set([...(s.timersDone ?? []), rang.key!])] : s.timersDone });
   };
 
   const runCommand = (cmd: CookCommand, s: CookSession) => {
     switch (cmd.type) {
       case 'next':
         if (s.paused) return setSession(say(s, 'We’re paused until we sort out the plan. Pick one of the options above, or tell me what changed.'));
+        if (s.stepIndex >= s.recipe.steps.length) return setSession(say(s, 'That was the last step. Bon appétit!'));
         return next();
       case 'back':
+        if (s.stepIndex === 0) return setSession(say(s, 'This is the first step, so there’s nothing before it. Say “repeat that” to hear it again.'));
         return back();
       case 'repeat':
-        return requestRead(true);
+        return requestRead('repeat', true);
+      case 'where':
+        return setSession(say(s, whereWeAre(s.recipe, s.stepIndex)));
+      case 'more': {
+        const step = s.recipe.steps[s.stepIndex];
+        return setSession(say(s, step ? `Here’s the whole step. ${stepDetail(step)}` : 'We’ve finished every step. Bon appétit!'));
+      }
+      case 'skip': {
+        const step = s.recipe.steps[s.stepIndex];
+        if (!step) return setSession(say(s, 'There’s nothing left to skip. Bon appétit!'));
+        if (s.paused) return setSession(say(s, 'We’re paused until we sort out the plan. Pick one of the options above, or tell me what changed.'));
+        return setSession(say({ ...s, pendingConfirm: 'skip' }, `Skip “${step.title}”? Say yes to move on, or no to stay here.`));
+      }
+      case 'restart':
+        return setSession(say({ ...s, pendingConfirm: 'restart' }, 'Start over from the first step? Say yes to go back to the beginning, or no to stay here.'));
+      case 'timer_control': {
+        // "Start the timer", "pause the rice timer", "how long is left?": see agent/stepTimers.ts.
+        const at = Date.now();
+        const r = controlTimers(cmd, s.timers, s.recipe.steps[s.stepIndex], s.recipe, at, uid, s.timersDone);
+        r.restarted?.forEach((id) => {
+          rung.current.delete(id);
+          reminded.current.delete(id);
+        });
+        setNow(at);
+        return setSession(say({ ...s, timers: r.timers, timersDone: r.done }, r.say));
+      }
       case 'timer':
         addTimer(cmd.seconds, `${formatClock(cmd.seconds)} timer`);
         return setSession(say(ref.current!, `Timer set for ${cmd.seconds >= 60 ? `${Math.round(cmd.seconds / 60)} minute${cmd.seconds >= 120 ? 's' : ''}` : `${cmd.seconds} seconds`}. I’ll beep when it’s done.`));
+      case 'dismiss':
+        setExplainer(null);
+        setVideoCard(null);
+        return;
       case 'show_technique': {
+        // "Show me how": videos for whatever this step asks the cook to do.
         const step = s.recipe.steps[s.stepIndex];
-        const t = step && techniqueFor(step);
-        if (t) setTechniqueOpen(true);
-        return setSession(say(s, t ? `Here’s how: ${t.howTo}` : 'This step doesn’t need a special technique. Just follow the instruction, and ask me if anything is unclear.', t ? { techniqueId: t.id } : {}));
+        if (!step) return;
+        const t = techniqueFor(step);
+        const query = t ? techniqueQuery(t) : step.title.toLowerCase();
+        showVideos(query, t?.howTo);
+        return setSession(say(s, t ? `Here’s how: ${t.howTo}` : `Here are some short videos on how to ${query}.`, { videoQuery: query }));
       }
     }
   };
@@ -206,8 +338,30 @@ export function useCook(events: CookEvents) {
     let r = input;
     if (r.changes.length) {
       const vetted = vetChanges(r.changes, before);
-      if (vetted.refusals.length && !vetted.changes.length) r = { ...r, changes: [], reply: vetted.refusals.join(' ') };
-      else r = { ...r, changes: vetted.changes };
+      // If part of the request can't be used, apply none of it: the rest may only make sense together
+      // ("out of rice, use couscous"). Any options Gusteau listed stay open.
+      if (vetted.refusals.length) {
+        const still = before.pendingChoice;
+        const options = still?.options.length ? ` You could still use ${still.options.map((o) => o.toLowerCase()).join(' or ')}, or I can leave it out.` : '';
+        r = { ...r, changes: [], reply: `${vetted.refusals.join(' ')}${options}`, offer: before.pendingOffer, choice: still };
+      }
+    }
+    // Running out of an ingredient or asking for a swap: suggest options and ask first.
+    const proposed = r.changes.length && !r.confirmed ? proposeIngredientChange(r.changes, before) : null;
+    if (proposed) {
+      let base = before;
+      if (proposed.rest.length) {
+        // Anything else in the same message (time, servings…) applies as usual.
+        await update(proposed.rest, describeChanges(proposed.rest), text, via);
+        base = ref.current ?? before;
+      } else base = { ...before, chat: [...before.chat, { id: uid(), from: 'user', text, via }] };
+      const p = proposed.proposal;
+      setSession({ ...base, pendingOffer: p.offer, pendingChoice: p.choice, chat: [...base.chat, { id: uid(), from: 'gusteau', text: p.reply! }] });
+      return;
+    }
+    if (r.explain) {
+      await explain(r.explain, text, via, before);
+      return;
     }
     if (r.command) {
       const withUser = { ...before, pendingOffer: undefined, chat: [...before.chat, { id: uid(), from: 'user' as const, text, via }] };
@@ -221,17 +375,63 @@ export function useCook(events: CookEvents) {
         ...before,
         // Anything offered ("want me to switch?") waits for a yes on the next message.
         pendingOffer: r.offer?.length ? r.offer : undefined,
+        pendingChoice: r.choice,
         chat: [
           ...before.chat,
           { id: uid(), from: 'user', text, via },
           // A reply that was already read aloud while it streamed isn't read again.
-          { id: uid(), from: 'gusteau', text: reply, techniqueId: r.techniqueId, spoken: !!streamed && reply.trim() === streamed.trim() },
+          { id: uid(), from: 'gusteau', text: reply, techniqueId: r.techniqueId, videoQuery: r.howTo, spoken: !!streamed && reply.trim() === streamed.trim() },
         ],
       });
-      if (r.techniqueId) setTechniqueOpen(true);
+      // "How do I dice an onion?": short videos alongside the answer.
+      if (r.howTo) showVideos(r.howTo, techniqueById(r.techniqueId)?.howTo);
       // A fix like "give it one more minute" comes with its timer.
       if (r.timerSeconds) addTimer(r.timerSeconds, `${before.recipe.steps[before.stepIndex]?.title ?? 'Extra'} (extra time)`);
     }
+  };
+
+  /** Search short videos for a technique and open the video card. */
+  const showVideos = (query: string, howTo?: string) => {
+    setExplainer(null);
+    setVideoCard({ query, howTo });
+    searchVideos(query).then(
+      (videos) => setVideoCard((c) => (c?.query === query ? { ...c, videos } : c)),
+      (err: unknown) => setVideoCard((c) => (c?.query === query ? { ...c, error: err instanceof VideoError ? err.reason : 'unavailable' } : c)),
+    );
+  };
+
+  /**
+   * Define an ingredient or tool and show pictures of it. The definition is
+   * also said in the chat (and read aloud in hands-free mode).
+   */
+  const explain = async (term: string, text?: string, via?: 'voice', base = ref.current) => {
+    if (!base) return;
+    if (text) setSession({ ...base, chat: [...base.chat, { id: uid(), from: 'user', text, via }] });
+    setVideoCard(null);
+    setExplainer({ term });
+    let reply: string;
+    try {
+      const found = await lookupTerm(term);
+      setExplainer((e) => (e?.term === term ? { term, lookup: found } : e));
+      reply = found.definition;
+    } catch (err) {
+      // Rather than show pictures of something else, say so.
+      const notFound = err instanceof LookupError && err.reason === 'not-found';
+      reply = notFound
+        ? `I couldn’t find ${term} as a food or kitchen item, and I only look up cooking things, so I won’t guess. If it’s an ingredient, check the label or tell me more about it.`
+        : `I couldn’t reach Wikipedia to look up ${term} just now. Ask me again in a moment.`;
+      setExplainer((e) => (e?.term === term ? { term, error: reply } : e));
+    }
+    // Only a new question gets a new answer in the chat; reopening the pictures doesn't.
+    if (!text) return;
+    const cur = ref.current ?? base;
+    setSession({ ...cur, chat: [...cur.chat, { id: uid(), from: 'gusteau', text: reply, explainTerm: term }] });
+  };
+
+  /** Report changes directly, e.g. from a button, with the same ask-first rules as a message. */
+  const tell = (changes: SessionChange[], text: string) => {
+    const before = ref.current;
+    if (before) void handleInterpretation(text, { reply: null, changes, trigger: describeChanges(changes) }, before, undefined, '');
   };
 
   /**
@@ -239,26 +439,51 @@ export function useCook(events: CookEvents) {
    * still writing it, so a voice can start reading before it's finished.
    */
   const sendChat = async (text: string, opts: { via?: 'voice'; onReply?(textSoFar: string): void } = {}) => {
-    const before = ref.current;
+    let before = ref.current;
     if (!before) return;
+    // "Skip this step?" / "Start over?": a yes does it, a no stays put, anything else drops the question.
+    if (before.pendingConfirm) {
+      const answer = confirmation(text);
+      const asked = before.pendingConfirm;
+      before = { ...before, pendingConfirm: undefined, chat: answer ? [...before.chat, { id: uid(), from: 'user', text, via: opts.via }] : before.chat };
+      setSession(before);
+      if (answer === 'yes') return asked === 'skip' ? next('skip') : restart();
+      if (answer === 'no') return setSession(say(before, `Okay, staying on “${before.recipe.steps[before.stepIndex]?.title ?? 'this step'}”.`));
+    }
+    // "Add for tablespoons of butter": a possibly misheard amount is checked before anything else.
+    const amount = ambiguousAmount(text);
+    if (amount) {
+      setSession({ ...before, chat: [...before.chat, { id: uid(), from: 'user', text, via: opts.via }, { id: uid(), from: 'gusteau', text: amount }] });
+      return;
+    }
     setBusy('thinking');
+    // The message shows at once, exactly as heard; how Gusteau understood it and his reply fill in as they stream.
+    setPending({ text, via: opts.via });
     let r: InterpretResult;
     let streamed = '';
     try {
       r = await modelService.interpretMessage(text, before, {
-        onReply: opts.onReply
-          ? (sofar) => {
-              streamed = sofar;
-              opts.onReply!(sofar);
-            }
-          : undefined,
+        onReply: (sofar) => {
+          setPending((p) => p && { ...p, reply: sofar });
+          if (!opts.onReply) return;
+          streamed = sofar;
+          opts.onReply(sofar);
+        },
+        onInterpreted: (heard) => setPending((p) => p && { ...p, interpreted: heard }),
       });
     } catch (err) {
       console.warn('[Gusteau] Chat failed', err);
       r = { reply: 'Sorry, I lost that one. Could you say it again?', changes: [] };
     }
     setBusy(null);
+    setPending(null);
     await handleInterpretation(text, r, ref.current ?? before, opts.via, streamed);
+    // Keep "Interpreted as…" under the message in the chat.
+    if (r.interpreted) {
+      const cur = ref.current;
+      const at = cur ? cur.chat.map((m) => m.from === 'user' && m.text === text && !m.interpreted).lastIndexOf(true) : -1;
+      if (cur && at >= 0) setSession({ ...cur, chat: cur.chat.map((m, i) => (i === at ? { ...m, interpreted: r.interpreted } : m)) });
+    }
   };
 
   const undo = () => {
@@ -279,26 +504,45 @@ export function useCook(events: CookEvents) {
   return {
     session,
     busy,
+    pending,
     bannerId,
     now,
     readRequest,
-    techniqueOpen,
-    setTechniqueOpen,
+    videoCard,
+    showVideos,
+    closeVideos: () => setVideoCard(null),
+    explainer,
+    /** Show the pictures for a term again. */
+    showPictures: (term: string) => void explain(term),
+    closeExplainer: () => setExplainer(null),
     dismissBanner: () => setBannerId(null),
     canUndo: undoStack.length > 0,
     start,
     update,
     sendChat,
-    next,
+    tell,
+    next: () => next(),
     back,
     undo,
     stop,
     addTimer,
+    startStepTimer,
     toggleTimer,
     addTime,
     removeTimer,
-    repeat: () => requestRead(true),
+    repeat: () => requestRead('repeat', true),
+    /** Introduce the first step in hands-free mode, after anything Gusteau is already saying. */
+    readStep: () => requestRead('start'),
+    stepLine,
   };
+}
+
+/** A yes or no to "skip this step?" or "start over?", or null when it's neither. */
+export function confirmation(text: string): 'yes' | 'no' | null {
+  const t = text.toLowerCase().replace(/[‘’]/g, "'").replace(/[?!.,]/g, '').trim();
+  if (/^(no|nope|nah|not yet|cancel|never ?mind|don'?t|wait|stay( here)?|no thanks?)\b/.test(t)) return 'no';
+  if (/^(yes|yeah|yep|yup|sure|ok|okay|do it|go ahead|please do|confirm|correct|skip it|start over|let'?s do it|absolutely|definitely)\b/.test(t)) return 'yes';
+  return null;
 }
 
 export type Cook = ReturnType<typeof useCook>;

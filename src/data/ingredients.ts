@@ -207,7 +207,23 @@ export function roundAmount(n: number, unit: string): number {
 
 export function formatAmount(amount: number | null, unit: string): string {
   if (amount === null) return unit || 'to taste';
-  return `${formatNumber(amount)}${unit ? ` ${unit}` : ''}`.trim();
+  return spellOutSpoons(`${formatNumber(amount)}${unit ? ` ${unit}` : ''}`.trim());
+}
+
+/**
+ * "1 tsp" → "1 teaspoon", "2 TBSP" → "2 tablespoons", "½ tsp" → "½ teaspoon":
+ * spoon measures are always written out, on screen and aloud.
+ */
+export function spellOutSpoons(text: string): string {
+  return text.replace(
+    /(\d+(?:\.\d+)?[½¼¾⅓⅔⅛]?|[½¼¾⅓⅔⅛]|\b(?:a|an|one|half a)\b)(\s?)(tsps?|tbsps?|tbl|tbs)\b(?:\.(?=\s+[a-z0-9]))?/gi,
+    (_, amount: string, _space: string, unit: string) => {
+      const name = /^ts/i.test(unit) ? 'teaspoon' : 'tablespoon';
+      const one = /^(1|0?\.\d+|[½¼¾⅓⅔⅛]|a|an|one|half a)$/i.test(amount);
+      if (/^an$/i.test(amount)) return `a ${name}`;
+      return `${amount} ${name}${one ? '' : 's'}`;
+    },
+  );
 }
 
 const UNITS =
@@ -258,7 +274,7 @@ export interface SubstituteRule {
 }
 
 // Matched against normalized names, first hit wins. Gusteau only offers an
-// option if it passes every hard rule and the user has it (or may buy it).
+// option if it passes every hard rule and the user has it.
 export const SUBSTITUTES: SubstituteRule[] = [
   {
     match: /\brice\b(?! (vinegar|wine|noodle|paper))/,
@@ -342,8 +358,8 @@ export const SUBSTITUTES: SubstituteRule[] = [
   { match: /\bonion\b/, options: [{ name: 'Shallot', inText: 'shallot', note: 'Shallots are milder and cook faster.' }, { name: 'Leek', inText: 'leek', note: 'Use the white and pale green parts.' }, { name: 'Scallion', inText: 'scallion', note: 'Scallions need only a minute in the pan.' }] },
   { match: /\bshallot\b/, options: [{ name: 'Onion', inText: 'onion', note: 'Use a little less onion than shallot.' }] },
   { match: /\bscallion\b/, options: [{ name: 'Chives', inText: 'chives', note: 'Chives give the same mild onion bite.' }] },
-  { match: /\bgarlic\b/, options: [{ name: 'Garlic powder', inText: 'garlic powder', ratio: 0.25, unit: 'tsp', note: 'About ¼ tsp of powder per clove.' }] },
-  { match: /\bginger\b/, options: [{ name: 'Ground ginger', inText: 'ground ginger', ratio: 0.25, unit: 'tsp', note: 'Use about ¼ tsp ground ginger per thumb of fresh.' }] },
+  { match: /\bgarlic\b/, options: [{ name: 'Garlic powder', inText: 'garlic powder', ratio: 0.25, unit: 'tsp', note: 'About ¼ teaspoon of powder per clove.' }] },
+  { match: /\bginger\b/, options: [{ name: 'Ground ginger', inText: 'ground ginger', ratio: 0.25, unit: 'tsp', note: 'Use about ¼ teaspoon of ground ginger per thumb of fresh.' }] },
   { match: /\b(spinach)\b/, options: [{ name: 'Kale', inText: 'kale', note: 'Strip the stems; kale needs a minute longer.' }, { name: 'Chard', inText: 'chard', note: 'Chard wilts just like spinach.' }] },
   { match: /\bkale\b/, options: [{ name: 'Spinach', inText: 'spinach', note: 'Spinach wilts in seconds.' }] },
   { match: /\btomato\b/, options: [{ name: 'Canned tomatoes', inText: 'canned tomatoes', note: 'Canned tomatoes are often better out of season.' }] },

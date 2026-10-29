@@ -3,10 +3,12 @@ import { stageIndexOf } from '../../agent/stages';
 import { formatClock } from '../../lib/sound';
 import { timerLeft, type Cook } from '../../state/useCook';
 import type { Voice } from '../../voice/useVoice';
+import type { Power, Turn } from '../VoiceDock';
 import { StageIcon } from '../RecipeCard';
+import { VoiceControl } from '../VoiceDock';
 import { cx } from '../ui';
 
-export function StatusBar({ cook, voice, onHandsFree }: { cook: Cook; voice: Voice; onHandsFree: (on: boolean) => void }) {
+export function StatusBar({ cook, voice, turn, power, onHandsFree }: { cook: Cook; voice: Voice; turn: Turn; power?: Power; onHandsFree: () => void }) {
   const s = cook.session!;
   const r = s.recipe;
   const finished = s.stepIndex >= r.steps.length;
@@ -68,38 +70,8 @@ export function StatusBar({ cook, voice, onHandsFree }: { cook: Cook; voice: Voi
           </div>
         )}
 
-        {/* Gusteau talking: one tap (or Esc) silences him */}
-        {voice.talking && (
-          <button onClick={voice.stopTalking} className="flex shrink-0 items-center gap-2 rounded-full bg-saffron-100 px-3 py-1.5 text-xs font-semibold text-charcoal-700 hover:bg-saffron-400/40">
-            <span aria-hidden>🔊</span> Gusteau is talking · Stop
-          </button>
-        )}
-
-        {/* Hands-free */}
-        {voice.supported ? (
-          <button
-            onClick={() => onHandsFree(!voice.handsFree)}
-            aria-pressed={voice.handsFree}
-            title={voice.label}
-            className={cx(
-              'flex shrink-0 items-center gap-2 rounded-full px-3 py-1.5 text-xs font-semibold transition-colors',
-              voice.handsFree ? 'bg-tomato-500 text-white' : 'border border-cream-300 bg-white text-charcoal-700 hover:border-tomato-400',
-            )}
-          >
-            {voice.handsFree ? (
-              <>
-                <span
-                  className={cx('h-2 w-2 rounded-full bg-white transition-transform', voice.state === 'listening' && !voice.level && 'animate-pulse')}
-                  style={voice.state === 'listening' && voice.level ? { transform: `scale(${1 + voice.level * 1.6})` } : undefined}
-                  aria-hidden
-                />
-                {voice.state === 'connecting' ? 'Connecting the mic…' : voice.state === 'paused-for-speech' ? 'Mic paused while Gusteau talks' : 'Listening · Pause'}
-              </>
-            ) : (
-              <>🎙 Hands-free</>
-            )}
-          </button>
-        ) : null}
+        {/* Voice: "Hey Chef" or a tap; a tap while he's speaking interrupts him (so does Esc). */}
+        {voice.supported && <VoiceControl voice={voice} turn={turn} power={power} onTap={onHandsFree} className="w-full sm:w-auto" />}
       </div>
       {voice.handsFree && voice.interim && <p className="mx-auto mt-1 max-w-7xl truncate text-xs italic text-charcoal-500">“{voice.interim}”</p>}
       {voice.notice && (
