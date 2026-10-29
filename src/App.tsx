@@ -2,7 +2,6 @@ import { useCallback, useEffect, useRef, useState } from 'react';
 import { EMPTY_FILTERS, activeFilterCount, matchesFilters, scaleRecipe, type Filters } from './agent/kitchen';
 import { Browse } from './components/Browse';
 import { CookingWorkspace } from './components/cooking/CookingWorkspace';
-import { GusteauIcon } from './components/GusteauIcon';
 import { GusteauPrompt } from './components/GusteauPrompt';
 import { Onboarding } from './components/Onboarding';
 import { RecipePreview, type Kitchen } from './components/RecipePreview';
@@ -533,7 +532,7 @@ export default function App() {
     if (wake) greet ? openWindow(REPLY_WINDOW_MS) : listen();
     // Load the model now so the first question doesn't wait for it, and invite the cook to talk.
     void modelService.warmUp().catch(() => { });
-    voice.say(`I’m listening. How can I help with your ${s.recipe.title}?`);
+    voice.say(`I’m listening. How can I help with your ${s?.original.title ?? preview?.recipe.title ?? 'recipe'}?`);
   };
 
   // Voice is on unless the cook stopped it. It starts as the page loads, waiting for "Hey Chef". Browsers only let the mic and speaker start after a first tap or key press,
@@ -669,7 +668,7 @@ export default function App() {
             {screen !== 'onboarding' && screen !== 'browse' && voice.state === 'blocked' && <span className="text-xs text-tomato-600">Mic blocked in browser settings</span>}
           </div>
         </div>
-        {screen !== 'browse' && listening && voice.interim && (
+        {screen !== 'browse' && (voice.state === 'listening' || voice.state === 'connecting') && voice.interim && (
           <p className="absolute inset-x-0 top-full truncate bg-charcoal-900 px-4 py-1.5 text-center text-xs italic text-white">“{voice.interim}”</p>
         )}
       </header>
@@ -718,6 +717,7 @@ export default function App() {
                   openPreview(recipe, voice.handsFree ? selectionIntro(recipe) : undefined);
                 }}
                 onDemo={loadDemo}
+                onPantry={() => {}}
                 onToast={setToast}
               />
             ) : (
