@@ -17,6 +17,21 @@ npm run dev
 
 Open http://localhost:5173. No API key is needed. The header badge reads **Demo mode · mock AI**.
 
+### Run the production server locally
+
+This verifies the same static server and API proxy used in a cloud deployment:
+
+```bash
+npm run build
+GUSTEAU_PROVIDER=mock GUSTEAU_DIST="$PWD/dist" python3 deploy/gusteau_server.py
+```
+
+Open http://localhost:8080 and check http://localhost:8080/api/health.
+
+To use Nebius Token Factory locally, create `.env.local` for Vite development or
+export the variables before starting `deploy/gusteau_server.py`. Keep
+`LLM_API_KEY` server-side and never commit it.
+
 To open it on a phone on the same Wi-Fi, run `npm run dev:lan` and visit the **Network** URL it prints. On Windows, allow inbound TCP port 5173 for your Private network if the phone can't connect.
 
 Other scripts:
@@ -156,6 +171,26 @@ The main app uses the same pipeline for **Hands-free** (in the cooking status ba
 Measured on the M5 Max through the real pipeline, from the moment a phrase is final: a plan change is spoken after about 0.4 s, a question's first sentence goes to Magpie after about 0.4 s, and "what's next" reads the next step after about 0.3 s. There's no voice barge-in yet: you can't talk over Gusteau, because the mic is muted while he speaks.
 
 ## Raspberry Pi deployment
+
+### Nebius AI Cloud deployment
+
+For the hackathon, deploy the included `Dockerfile` to a Nebius AI Cloud VM.
+The VM serves the frontend and proxies model requests, so the Token Factory key
+never reaches the browser:
+
+```bash
+docker build -t gusteau .
+docker run -d --name gusteau --restart unless-stopped \
+  -p 8080:8080 \
+  -e GUSTEAU_PROVIDER=nebius \
+  -e LLM_API_KEY='YOUR_TOKEN_FACTORY_KEY' \
+  -e LLM_MODEL='nvidia/Llama-3_3-Nemotron-Super-49B-v1_5' \
+  gusteau
+```
+
+Open port 8080 in the VM security group, then put HTTPS in front of it with a
+domain and Caddy or Nginx. Verify `/api/health` and the live model path before
+submitting the public URL.
 
 Gusteau runs on the Pi `antoineraspi` as a systemd service. It starts at boot and restarts if it crashes.
 
