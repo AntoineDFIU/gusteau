@@ -91,6 +91,14 @@ export interface ChefCredit {
   relation?: string;
 }
 
+export interface RecipeImageAttribution {
+  credit: string;
+  artist?: string;
+  licence: string;
+  filePage: string;
+  licenceUrl?: string;
+}
+
 export interface Recipe {
   id: string;
   title: string;
@@ -98,6 +106,8 @@ export interface Recipe {
   description: string;
   chef?: ChefCredit;
   image?: string;
+  imageMatch?: 'dish' | 'representative';
+  imageAttribution?: RecipeImageAttribution;
   emoji: string;
   totalMinutes: number;
   servings: number;
@@ -136,6 +146,8 @@ export interface CookedEntry {
 export interface Profile {
   onboarded: boolean;
   favoriteCuisines: string[];
+  /** Recipes the cook saved (by id), shown first when they browse. */
+  favoriteRecipes: string[];
   hardExclusions: DietRuleId[];
   allergies: string[];
   equipment: Equipment[];
@@ -190,6 +202,8 @@ export type CookCommand =
   | { type: 'restart' }
   /** "Tell me more": the full written step, not the short spoken one. */
   | { type: 'more' }
+  /** "I'm on step 3", "go to step 3": straight to that step (1-based). */
+  | { type: 'goto'; step: number }
   | { type: 'timer'; seconds: number }
   /**
    * "Start the timer", "pause the rice timer", "how long is left?", "add a minute".
@@ -296,8 +310,8 @@ export interface CookSession {
   pendingOffer?: SessionChange[];
   /** Swap options Gusteau just listed for an ingredient; naming one picks it. `out` means the cook ran out of it. */
   pendingChoice?: PendingChoice;
-  /** Gusteau asked "skip this step?" or "start over?" and waits for a yes. */
-  pendingConfirm?: 'skip' | 'restart';
+  /** Gusteau asked "skip this step?", "start over?" or, at the end, "add it to your favorites?" and waits for a yes. */
+  pendingConfirm?: 'skip' | 'restart' | 'favorite';
   stepIndex: number;
   completedStepKeys: string[];
   substitutions: Substitution[];
@@ -309,4 +323,3 @@ export interface CookSession {
   /** When the plan can't be made safely, Gusteau pauses and asks. */
   paused: boolean;
 }
-

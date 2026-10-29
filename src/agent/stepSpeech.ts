@@ -19,11 +19,27 @@ import type { Recipe, RecipeStep } from '../types';
 const ONES = 'zero one two three four five six seven eight nine ten eleven twelve thirteen fourteen fifteen sixteen seventeen eighteen nineteen'.split(' ');
 const TENS = ['', '', 'twenty', 'thirty', 'forty', 'fifty', 'sixty', 'seventy', 'eighty', 'ninety'];
 
-/** 0–99 in words; bigger numbers stay digits ("350 degrees" reads fine). */
+/**
+ * Whole numbers in words: "four", "twenty-five", "three hundred fifty", "two thousand".
+ * Gusteau's voice skips digits, so everything he says has its numbers spelled out.
+ */
 function numberWord(n: number): string | null {
-  if (!Number.isInteger(n) || n < 0 || n > 99) return null;
+  if (!Number.isInteger(n) || n < 0 || n >= 1e9) return null;
   if (n < 20) return ONES[n];
-  return TENS[Math.floor(n / 10)] + (n % 10 ? `-${ONES[n % 10]}` : '');
+  if (n < 100) return TENS[Math.floor(n / 10)] + (n % 10 ? `-${ONES[n % 10]}` : '');
+  if (n < 1000) return `${ONES[Math.floor(n / 100)]} hundred${n % 100 ? ` ${numberWord(n % 100)}` : ''}`;
+  const [size, name] = n < 1e6 ? [1e3, 'thousand'] : [1e6, 'million'];
+  return `${numberWord(Math.floor(n / size))} ${name}${n % size ? ` ${numberWord(n % size)}` : ''}`;
+}
+
+/** "1.5" → "one and a half", "0.25" → "a quarter", "2.4" → "two point four". */
+function decimalWords(n: string): string {
+  const [whole, part] = n.split('.');
+  const w = Number(whole);
+  const named: Record<string, string> = { '5': 'a half', '25': 'a quarter', '75': 'three-quarters' };
+  const frac = named[part.replace(/0+$/, '')];
+  if (frac) return w ? `${numberWord(w)} and ${frac}` : frac;
+  return `${numberWord(w) ?? whole} point ${[...part].map((d) => ONES[Number(d)]).join(' ')}`;
 }
 
 const FRACTIONS: Record<string, [string, string]> = {
@@ -60,11 +76,14 @@ const unitOf = (u: string) => UNITS.find(([re]) => re.test(u));
 /** "an inch", "a cup": the article before a unit. */
 const article = (word: string) => (/^[aeiou]/i.test(word) && !/^(one|u[^n])/i.test(word) ? 'an' : 'a');
 
-const say = (n: string) => numberWord(Number(n)) ?? n;
+const say = (n: string) => (n.includes('.') ? decimalWords(n) : (numberWord(Number(n)) ?? n));
 
 /** Written recipe text made speakable: numbers, fractions, units, temperatures and symbols said in words. */
 export function speakable(text: string): string {
   let t = text.replace(/[½⅓⅔¼¾⅛]/g, (f, i, all) => (/\d/.test(all[i - 1] ?? '') ? ' ' : '') + UNICODE_FRACTIONS[f]);
+  // "2,000" → "2000"; "1:30" on a timer → "1 minute 30 seconds".
+  t = t.replace(/(\d),(?=\d{3}\b)/g, '$1');
+  t = t.replace(/\b(\d{1,2}):([0-5]\d)\b/g, (_, m, s) => `${m} minute${m === '1' ? '' : 's'}${s === '00' ? '' : ` ${Number(s)} seconds`}`);
   // Temperatures: "160°F / 71°C" → "160 degrees Fahrenheit" (one scale is enough out loud).
   t = t.replace(/(\d+)\s*°\s*([FC])\b(?:\s*(?:\/|or|\()\s*\d+\s*°\s*[FC]\)?)?/g, (_, n, s) => `${n} degrees ${s === 'F' ? 'Fahrenheit' : 'Celsius'}`);
   t = t.replace(/°/g, ' degrees');
@@ -88,9 +107,19 @@ export function speakable(text: string): string {
   t = t.replace(new RegExp(String.raw`\b(\d+(?:\.\d+)?)(\s*-\s*|\s*)${UNIT}`, 'gi'), (_, n, gap, u) => {
     const unit = unitOf(u)!;
     if (gap.includes('-')) return `${say(n)}-${unit[1]}`;
+    // "half a teaspoon", "a quarter of a cup", "zero point two grams"
+    if (Number(n) < 1) {
+      const w = say(n);
+      if (w === 'a half') return `half ${article(unit[1])} ${unit[1]}`;
+      if (!/point/.test(w)) return `${w} of ${article(unit[1])} ${unit[1]}`;
+      return `${w} ${unit[2]}`;
+    }
     return `${say(n)} ${Number(n) === 1 ? unit[1] : unit[2]}`;
   });
-  t = t.replace(/(?<![\d.])(\d+)(?![\d.])/g, (n) => say(n));
+  // Every number left, decimals included, in words.
+  // (A full stop after a number ends the sentence: "Serves 4." is a whole number.)
+  t = t.replace(/(?<![\d.])(\d+\.\d+)(?!\.?\d)/g, (n) => decimalWords(n));
+  t = t.replace(/(?<!\d|\d\.)(\d+)(?!\.?\d)/g, (n) => say(n));
   t = t
     .replace(/\s*&\s*/g, ' and ')
     .replace(/\bw\/\s*/gi, 'with ')

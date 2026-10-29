@@ -3,7 +3,7 @@ import { EMPTY_FILTERS, activeFilterCount, matchesFilters, recommendScore, taste
 import { CUISINES, cuisineById } from '../data/cuisines';
 import { GRAINS, PROTEINS, type GrainId, type ProteinId } from '../data/ingredients';
 import { DIET_RULES, DIET_RULE_IDS, DIFFICULTIES, EQUIPMENT } from '../data/rules';
-import type { PantryItem, Profile, Recipe } from '../types';
+import type { Profile, Recipe } from '../types';
 import { RecipeCard } from './RecipeCard';
 import { Button, Card, Chip, SectionTitle, Toggle, cx } from './ui';
 
@@ -16,6 +16,7 @@ export function Browse({
   setFilters,
   onOpen,
   onToast,
+  onFavorite,
 }: {
   recipes: Recipe[];
   profile: Profile;
@@ -23,24 +24,20 @@ export function Browse({
   setFilters: (f: Filters) => void;
   onOpen: (r: Recipe) => void;
   // Retained for the temporarily commented-out kitchen and demo panels.
-  onPantry: (pantry: PantryItem[], basics: boolean) => void;
   onDemo: () => void;
   onToast?: (message: string) => void;
+  /** Save or unsave a dish in the profile's favorites. */
+  onFavorite: (recipeId: string, on: boolean) => void;
 }) {
   const [showAllCuisines, setShowAllCuisines] = useState(false);
   const [showFilters, setShowFilters] = useState(false);
-  const [favIds, setFavIds] = useState<ReadonlySet<string>>(() => new Set());
+  const favIds = useMemo(() => new Set(profile.favoriteRecipes), [profile.favoriteRecipes]);
   const searchRef = useRef<HTMLInputElement>(null);
   const set = (patch: Partial<Filters>) => setFilters({ ...filters, ...patch });
   const toggle = <T,>(list: T[], v: T) => (list.includes(v) ? list.filter((x) => x !== v) : [...list, v]);
   const toggleFavorite = (r: Recipe) => {
     const wasSaved = favIds.has(r.id);
-    setFavIds((prev) => {
-      const next = new Set(prev);
-      if (next.has(r.id)) next.delete(r.id);
-      else next.add(r.id);
-      return next;
-    });
+    onFavorite(r.id, !wasSaved);
     onToast?.(wasSaved ? `Removed ${r.title} from your favorites.` : `Saved ${r.title} for a cozy night in.`);
   };
 
@@ -78,7 +75,9 @@ export function Browse({
   const nFilters = activeFilterCount(filters) - (dietIsDefault ? filters.diet.length : 0);
   const browsingAll = !filters.cuisine && !filters.search && !nFilters;
   const returning = profile.history.some((h) => h.finished);
-  const picks = browsingAll ? scored.filter((r) => matchesFilters(r, base, profile)).slice(0, 4) : [];
+  // Saved dishes come first, most recently saved first; the picks are the best of the rest.
+  const saved = browsingAll ? [...profile.favoriteRecipes].reverse().flatMap((id) => recipes.filter((r) => r.id === id)) : [];
+  const picks = browsingAll ? scored.filter((r) => !favIds.has(r.id) && matchesFilters(r, base, profile)).slice(0, 4) : [];
   const cuisine = filters.cuisine ? cuisineById(filters.cuisine) : null;
 
   return (
@@ -196,6 +195,17 @@ export function Browse({
 
       <div className="mt-8 grid gap-8 lg:grid-cols-[1fr]">
         <div className="min-w-0">
+          {saved.length > 0 && (
+            <section className="mb-10">
+              <SectionTitle>Your favorites · {saved.length}</SectionTitle>
+              <div className="mt-3 grid grid-cols-1 gap-[17px] sm:grid-cols-2 xl:grid-cols-3">
+                {saved.map((r, i) => (
+                  <RecipeCard key={r.id} recipe={r} profile={profile} onOpen={() => onOpen(r)} index={i} favorite onToggleFavorite={() => toggleFavorite(r)} />
+                ))}
+              </div>
+            </section>
+          )}
+
           {picks.length > 0 && (
             <section className="mb-10">
               <SectionTitle>{returning ? 'Familiar Dishes' : profile.favoriteCuisines.length ? 'Picked for you' : 'Popular Dishes'}</SectionTitle>

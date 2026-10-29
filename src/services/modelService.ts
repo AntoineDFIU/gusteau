@@ -27,6 +27,8 @@ export interface InterpretResult {
   offer?: SessionChange[];
   /** Start a timer with the reply, e.g. "give it one more minute". */
   timerSeconds?: number;
+  /** The step the cook is on now (1-based), when the conversation shows they've moved, so the screen keeps up. */
+  goToStep?: number;
   /** Swap options listed in the reply; naming one picks it. */
   choice?: PendingChoice;
   /** An ingredient or tool to define and show pictures of. */

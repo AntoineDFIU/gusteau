@@ -6,7 +6,7 @@ import { sameIngredient } from '../../data/ingredients';
 import { DIET_RULE_IDS, EQUIPMENT_IDS } from '../../data/rules';
 import { STAGE_ICON_IDS } from '../../data/stageIcons';
 import type { CookSession, DietRuleId, Equipment, Recipe, RecipeIngredient, RecipeStep, SessionChange, Substitution } from '../../types';
-import { explainRequest, howToRequest, parseCommand, parseIntent } from '../mock/intentParser';
+import { explainRequest, howToRequest, parseCommand, parseIntent, progressAnswer } from '../mock/intentParser';
 import { answerOffer, groundedAnswer, outOfIngredient } from '../mock/kitchenHelp';
 import { culinary, offTopicReply, respelled } from '../topic';
 import { changesMeaning, checkFirst, partialHeardAs, riskyReading } from '../../agent/heardAs';
@@ -283,7 +283,7 @@ export class OpenAICompatModelService implements ChefModelService {
     try {
       const text = await this.chat(
         this.cfg.textModel,
-        `You organize recipes for a cooking app. Group the steps into 3 to 5 short, ordered stages. Every step key must appear exactly once, in the original order, and each stage holds consecutive steps. Give each stage a short title (max 4 words) and pick its icon ONLY from this list: ${STAGE_ICON_IDS.join(', ')}.`,
+        `You organize recipes for a cooking app. Each stage you make becomes ONE step the cook follows, so combine steps only when the later one simply continues the same action on the same food in the same pan, with no other task in between (for example, sear the patties, then flip them and melt cheese on them). Keep different tasks as separate stages (toasting buns, making a sauce, chopping, assembling, serving), and leave a step on its own when in doubt. Every step key must appear exactly once, in the original order, and each stage holds consecutive steps. Give each stage a short title written as an instruction (max 5 words, like "Sear and flip the patties") and pick its icon ONLY from this list: ${STAGE_ICON_IDS.join(', ')}.`,
         `Recipe: ${recipe.title}\nSteps:\n${recipe.steps.map((s) => `- ${s.key}: ${s.title}. ${s.text}`).join('\n')}\n\nRespond with ONLY JSON: {"stages":[{"title": string, "icon": string, "steps": [step keys]}]}`,
         800, 'stages'
       );
@@ -489,7 +489,8 @@ Respond with ONLY JSON: {"heard_as": string|null, "on_topic": boolean, "action":
     const cmd = parseCommand(message);
     if (cmd) return cmd;
     // "Yes" or "no" to a swap Gusteau just offered is answered instantly too.
-    const answered = answerOffer(message, session) ?? outOfIngredient(message, session) ?? groundedAnswer(message, session);
+    // "Done with step 1", "the patties are shaped, what's next?": the screen moves on with the conversation.
+    const answered = answerOffer(message, session) ?? progressAnswer(message, session) ?? outOfIngredient(message, session) ?? groundedAnswer(message, session);
     if (answered) return answered;
     // "What is mirin?" is answered from Wikipedia, with pictures.
     const explain = explainRequest(message);
@@ -529,7 +530,7 @@ When an ingredient is missing, a constraint changes, or something goes wrong dur
 Your response is read aloud. Normally use one to three short sentences, without markdown or emoji. Summarize lists rather than reading them by default: mention at most one or two relevant examples and offer to read the full list. When showing recipe options, invite the user to choose by name or position, or ask to hear all options. If the user explicitly asks for a full list, provide it using the supplied data, including ingredient quantities when available; for a long list, provide a manageable group and offer to continue or repeat. Never invent items or quantities. Never claim to verify allergies, food freshness, or food safety.
 
 Return only JSON in this exact shape and order:
-{"heard_as":string|null,"on_topic":boolean,"changes":[],"reply":string|null,"offer":[],"timer_seconds":number|null}
+{"heard_as":string|null,"on_topic":boolean,"changes":[],"reply":string|null,"offer":[],"timer_seconds":number|null,"step":number|null}
 
 "heard_as" is the cook's message as you understood it, only when that differs in meaning from their exact words because of a likely speech recognition error (for example "how long do I sear the stakes" → "how long do I sear the steaks"); otherwise null. Keep their wording apart from the fix. Never change a negation, number, amount, time, temperature, allergy or diet in it: if one of those is unclear, set "heard_as" to null and ask in "reply".
 
@@ -549,13 +550,13 @@ Use only the actions defined above. Never invent an action, recipe change, ingre
 Example offer, only when quinoa fits the user's constraints:
 {"heard_as":null,"on_topic":true,"changes":[],"reply":"You could use quinoa instead. Would you like to make that swap?","offer":[{"type":"swap_ingredient","from":"rice","to":"quinoa"}],"timer_seconds":null}
 
-Use "changes" only when the user clearly asks for a change. Use "offer" for a suggested change that needs their confirmation. If "changes" is not empty, set "reply" to null. Use "timer_seconds" only when extra cooking time would help with the current step.`,
+Use "changes" only when the user clearly asks for a change. Use "offer" for a suggested change that needs their confirmation. If "changes" is not empty, set "reply" to null. Use "timer_seconds" only when extra cooking time would help with the current step. Use "step" only when the cook's message shows they are now on a different step than the current one (they finished it, or they're already doing a later or earlier step): give that step's number from the recipe steps, and the app moves to it. Otherwise "step" is null.`,
           },
           {
             role: 'user',
             content: `Session: ${JSON.stringify(sessionSummary(session))}
 Recipe steps: ${JSON.stringify(session.recipe.steps.map((s, i) => `${i + 1}. ${s.title}${session.completedStepKeys.includes(s.key) ? ' (done)' : ''}`))}
-Current step: ${JSON.stringify(step ? { title: step.title, text: step.text, tip: step.tip, timer_seconds: step.timerSeconds } : 'all steps finished')}
+Current step: ${JSON.stringify(step ? { number: session.stepIndex + 1, of: session.recipe.steps.length, title: step.title, text: step.text, tip: step.tip, timer_seconds: step.timerSeconds } : 'all steps finished')}
 Ingredients: ${JSON.stringify(session.recipe.ingredients.map((i) => `${i.name}${i.amount !== null ? ` ${i.amount} ${i.unit}`.trimEnd() : ''}`))}
 Safe swaps for what's still to be used: ${hints.length ? hints.join('; ') : 'none known'}
 They've mentioned also having: ${unused.length ? unused.join(', ') : 'nothing'} (they haven't listed what they have, so never assume they lack anything they didn't say they lack)
@@ -577,7 +578,7 @@ ${recent ? `Recent conversation:\n${recent}\n` : ''}Cook: ${message}`,
           }
         },
       });
-      const r = extractJson<{ heard_as?: unknown; on_topic?: unknown; reply?: string | null; changes?: unknown; offer?: unknown; timer_seconds?: unknown }>(text);
+      const r = extractJson<{ heard_as?: unknown; on_topic?: unknown; reply?: string | null; changes?: unknown; offer?: unknown; timer_seconds?: unknown; step?: unknown }>(text);
       // "Interpreted as…" only when the reading changes the meaning; one that would change a negation, number,
       // allergy, diet, time or temperature isn't acted on: Gusteau asks.
       const reading = typeof r.heard_as === 'string' && r.heard_as.trim() && changesMeaning(message, r.heard_as) ? r.heard_as.trim() : undefined;
@@ -591,6 +592,9 @@ ${recent ? `Recent conversation:\n${recent}\n` : ''}Cook: ${message}`,
       if (!changes.length && !r.reply) return parseIntent(message, session);
       const local = parseIntent(message, session);
       const timer = Number(r.timer_seconds);
+      // Where the model says the cook is now: a real step that isn't the current one, or nothing.
+      const at = Number(r.step);
+      const goToStep = Number.isInteger(at) && at >= 1 && at <= session.recipe.steps.length && at !== session.stepIndex + 1 ? at : undefined;
       return {
         reply: typeof r.reply === 'string' ? r.reply : null,
         interpreted,
@@ -602,6 +606,7 @@ ${recent ? `Recent conversation:\n${recent}\n` : ''}Cook: ${message}`,
         offer: changes.length ? undefined : sanitizeChanges(r.offer),
         // Extra cooking time only: between 10 seconds and 30 minutes.
         timerSeconds: !changes.length && timer >= 10 && timer <= 1800 ? Math.round(timer) : undefined,
+        goToStep: changes.length ? undefined : goToStep,
       };
     } catch (err) {
       console.warn(`[Gusteau] ${this.cfg.label} chat failed, using local parser.`, err);

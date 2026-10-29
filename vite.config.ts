@@ -112,7 +112,7 @@ function videosFromSearchPage(html: string): VideoHit[] {
     for (const child of Object.values(node)) walk(child);
   };
   walk(JSON.parse(json));
-  return found.slice(0, 6);
+  return found.slice(0, 8);
 }
 
 function videoSearchPlugin(): Plugin {
@@ -127,14 +127,19 @@ function videoSearchPlugin(): Plugin {
     if (!q) return send(400, { error: 'missing q' });
     const key = q.toLowerCase();
     if (cache.has(key)) return send(200, { videos: cache.get(key) });
-    try {
-      // sp=EgIYAQ%3D%3D is YouTube's "Under 4 minutes" filter.
-      const r = await fetch(`https://www.youtube.com/results?search_query=${encodeURIComponent(q)}&sp=EgIYAQ%253D%253D&hl=en&gl=US`, {
+    const search = async (filter: string) => {
+      const r = await fetch(`https://www.youtube.com/results?search_query=${encodeURIComponent(q)}${filter}&hl=en&gl=US`, {
         signal: AbortSignal.timeout(10000),
         headers: { 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0 Safari/537.36', 'Accept-Language': 'en-US,en;q=0.9', Cookie: 'SOCS=CAI; CONSENT=YES+1' },
       });
-      if (!r.ok) return send(502, { error: `YouTube ${r.status}` });
-      const found = videosFromSearchPage(await r.text());
+      if (!r.ok) throw new Error(`YouTube ${r.status}`);
+      return videosFromSearchPage(await r.text());
+    };
+    try {
+      // sp=EgIYAQ%3D%3D is YouTube's "Under 4 minutes" filter. It can leave very few results for an
+      // unusual phrasing ("turn the meat into balls"), so then the plain search fills in, still 5 minutes or less.
+      let found = await search('&sp=EgIYAQ%253D%253D');
+      if (found.length < 3) found = [...found, ...(await search('').catch(() => []))].filter((v, i, all) => all.findIndex((x) => x.id === v.id) === i).slice(0, 8);
       // Keep only videos their owners allow on other sites (oEmbed refuses the rest).
       const embeddable = await Promise.all(
         found.map((v) =>

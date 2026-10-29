@@ -1,5 +1,6 @@
 import { useEffect, useRef, useState, useMemo } from 'react';
 import { adaptRecipe, amountOf, pauseOptions } from '../agent/adapt';
+import { mergeStages } from '../agent/stages';
 import { describeRules, scaleRecipe, stepEquipment } from '../agent/kitchen';
 import { adjustmentLine } from '../agent/discovery';
 import { cuisineById } from '../data/cuisines';
@@ -7,7 +8,7 @@ import { emojiFor, isStaple } from '../data/ingredients';
 import { DIET_RULES, EQUIPMENT } from '../data/rules';
 import type { CookRules, Equipment, PendingChoice, Profile, Recipe } from '../types';
 import { NutritionPanel } from './NutritionPanel';
-import { RecipeArt, StageIcon } from './RecipeCard';
+import { RecipeArt, RecipeImageCredit, StageIcon } from './RecipeCard';
 import { Badge, Button, SectionTitle, cx } from './ui';
 
 
@@ -36,6 +37,7 @@ export function RecipePreview({
   onAnswer,
   onAdjusted,
   onMissing,
+  stages,
 }: {
   recipe: Recipe;
   profile: Profile;
@@ -59,6 +61,8 @@ export function RecipePreview({
   onAdjusted?: (say: string) => void;
   /** The cook tapped "Don't have it?" on an ingredient (again to undo). */
   onMissing?: (name: string) => void;
+  /** How the steps will be grouped when cooking (the model's grouping), once known, so the preview shows the same steps. */
+  stages?: Recipe['stages'];
 }) {
   const base = kitchen.rules ?? {};
   const [servings, setServings] = useState(base.servings ?? recipe.servings);
@@ -80,7 +84,8 @@ export function RecipePreview({
     timeLimit,
     servings,
   };
-  const scaled = useMemo(() => scaleRecipe(recipe, servings), [recipe, servings]);
+  // The same steps cooking will have: one per stage, no sub-steps.
+  const scaled = useMemo(() => mergeStages(scaleRecipe(stages ? { ...recipe, stages } : recipe, servings)), [recipe, servings, stages]);
   // Cheap enough to recompute on every change, so the preview is always exactly what cooking will start with.
   const plan = adaptRecipe(scaled, { rules, pantry: [], basics: true, unavailable, leaveOut, preferredSwaps: swaps, additions: [], completed: [] });
   const options = pauseOptions(plan);
@@ -114,6 +119,7 @@ export function RecipePreview({
   return (
     <div>
       <RecipeArt recipe={recipe} big className="h-56 sm:h-64" />
+      <RecipeImageCredit recipe={recipe} className="px-5 pt-1 sm:px-8" />
       <div className="p-5 sm:p-8">
         <p className="text-xs font-semibold uppercase tracking-[0.14em] text-olive-500">
           {cuisine.emoji} {cuisine.name}
@@ -191,23 +197,20 @@ export function RecipePreview({
           </section>
 
           <section>
-            <SectionTitle>The plan · {plan.recipe.stages.length} stages</SectionTitle>
+            <SectionTitle>The plan · {plan.recipe.steps.length} steps</SectionTitle>
             <ol className="mt-3 space-y-2">
-              {plan.recipe.stages.map((st, n) => (
-                <li key={st.key} className="flex items-center gap-3">
-                  <StageIcon icon={st.icon} />
-                  <span className="min-w-0">
-                    <span className="block text-sm font-semibold text-charcoal-900">
-                      {n + 1}. {st.title}
+              {/* One line per step, titled as the cooking screen titles it: no sub-steps. */}
+              {plan.recipe.steps.map((step, n) => {
+                const st = plan.recipe.stages.find((x) => x.stepKeys.includes(step.key));
+                return (
+                  <li key={step.key} className="flex items-center gap-3">
+                    {st && <StageIcon icon={st.icon} />}
+                    <span className="min-w-0 text-sm font-semibold text-charcoal-900">
+                      {n + 1}. {step.title}
                     </span>
-                    {(st.stepKeys.length > 1 || plan.recipe.steps.find((s) => s.key === st.stepKeys[0])?.title !== st.title) && (
-                      <span className="block truncate text-xs text-charcoal-500">
-                        {st.stepKeys.map((k) => plan.recipe.steps.find((s) => s.key === k)?.title).filter(Boolean).join(' · ')}
-                      </span>
-                    )}
-                  </span>
-                </li>
-              ))}
+                  </li>
+                );
+              })}
             </ol>
 
             <SectionTitle className="mt-8">Your rules for this cook</SectionTitle>

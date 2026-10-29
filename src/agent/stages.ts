@@ -1,5 +1,5 @@
 import { STAGE_ICONS, isStageIcon } from '../data/stageIcons';
-import type { RecipeStage, RecipeStep, StageIconId } from '../types';
+import type { Recipe, RecipeStage, RecipeStep, StageIconId } from '../types';
 
 // ─────────────────────────────────────────────────────────────
 // Cooking stages: each recipe is grouped into roughly 3–5 short,
@@ -34,60 +34,12 @@ export function iconFromText(text: string): StageIconId {
   return ICON_WORDS.find(([, re]) => re.test(t))?.[0] ?? 'prep';
 }
 
-type Phase = 'prep' | 'cook' | 'finish';
-const PREP: StageIconId[] = ['prep', 'chop', 'mix', 'marinate'];
-const FINISH: StageIconId[] = ['assemble', 'plate', 'rest'];
-const phaseOf = (step: RecipeStep): Phase => {
-  const icon = iconFromText(`${step.title} ${step.text}`);
-  return PREP.includes(icon) ? 'prep' : FINISH.includes(icon) ? 'finish' : 'cook';
-};
-
-function titleFor(steps: RecipeStep[], phase: Phase): string {
-  if (steps.length === 1) return steps[0].title;
-  if (phase === 'prep') return 'Prep the ingredients';
-  if (phase === 'finish') return 'Finish and serve';
-  return steps[0].title;
-}
-
-/** Gusteau's own grouping: consecutive steps of the same kind, nudged into 3–5 stages. */
+/**
+ * Gusteau's own stages: one per step, so a step never holds sub-steps. Only the model may combine
+ * steps, and only ones that continue the same action on the same food (stageRecipe).
+ */
 export function groupStages(steps: RecipeStep[]): RecipeStage[] {
-  if (!steps.length) return [];
-  let groups: { phase: Phase; steps: RecipeStep[] }[] = [];
-  for (const s of steps) {
-    const p = phaseOf(s);
-    const last = groups[groups.length - 1];
-    if (last && last.phase === p) last.steps.push(s);
-    else groups.push({ phase: p, steps: [s] });
-  }
-  const target = Math.min(3, steps.length);
-  while (groups.length < target) {
-    const i = groups.reduce((best, g, j) => (g.steps.length > groups[best].steps.length ? j : best), 0);
-    const g = groups[i];
-    const half = Math.ceil(g.steps.length / 2);
-    groups.splice(i, 1, { phase: g.phase, steps: g.steps.slice(0, half) }, { phase: g.phase, steps: g.steps.slice(half) });
-  }
-  while (groups.length > 5) {
-    // Merge the adjacent pair with the fewest steps, preferring same-phase pairs.
-    let best = 0;
-    let bestCost = Infinity;
-    for (let j = 0; j < groups.length - 1; j++) {
-      const cost = groups[j].steps.length + groups[j + 1].steps.length + (groups[j].phase === groups[j + 1].phase ? 0 : 3);
-      if (cost < bestCost) {
-        bestCost = cost;
-        best = j;
-      }
-    }
-    const a = groups[best];
-    const b = groups[best + 1];
-    groups.splice(best, 2, { phase: a.phase === 'cook' || b.phase === 'cook' ? 'cook' : a.phase, steps: [...a.steps, ...b.steps] });
-  }
-  groups = groups.filter((g) => g.steps.length);
-  return groups.map((g, i) => ({
-    key: `stage-${i + 1}`,
-    title: titleFor(g.steps, g.phase),
-    icon: iconFromText(g.steps.map((s) => `${s.title} ${s.text}`).join(' ')),
-    stepKeys: g.steps.map((s) => s.key),
-  }));
+  return steps.map((s, i) => ({ key: `stage-${i + 1}`, title: s.title.replace(/[.:]$/, ''), icon: iconFromText(`${s.title} ${s.text}`), stepKeys: [s.key] }));
 }
 
 export interface StageCheck {
@@ -98,11 +50,10 @@ export interface StageCheck {
 }
 
 /**
- * Independent check on any stage grouping, whoever wrote it. `strict` enforces
- * the 3–5 stage shape for new groupings; a replan that dropped a step may
- * leave fewer stages, which is fine as long as the structure is consistent.
+ * Independent check on any stage grouping, whoever wrote it: every step once, in order,
+ * in consecutive groups (each group becomes one step for the cook, see mergeStages).
  */
-export function validateStages(steps: RecipeStep[], proposed: unknown, strict = true): StageCheck {
+export function validateStages(steps: RecipeStep[], proposed: unknown): StageCheck {
   const problems: string[] = [];
   if (!Array.isArray(proposed) || !proposed.length) return { ok: false, problems: ['No stages given'], stages: [] };
   const known = new Set(steps.map((s) => s.key));
@@ -120,8 +71,9 @@ export function validateStages(steps: RecipeStep[], proposed: unknown, strict = 
   }
   const flat = stages.flatMap((s) => s.stepKeys);
   if (flat.length !== steps.length || flat.some((k, i) => k !== steps[i].key)) problems.push('Stages must cover every step exactly once, in order');
-  const min = strict ? Math.min(3, steps.length) : 1;
-  const max = strict ? 5 : 6;
+  // Each stage becomes one step for the cook, so anything from everything-in-one to one per step is a valid shape.
+  const min = 1;
+  const max = Math.max(1, steps.length);
   if (stages.length < min || stages.length > max) problems.push(`Needs ${min}–${max} stages, got ${stages.length}`);
   return { ok: problems.length === 0, problems, stages };
 }
@@ -135,3 +87,43 @@ export function stageIndexOf(stages: RecipeStage[], stepKey: string): number {
 }
 
 export const stageGlyph = (icon: StageIconId) => STAGE_ICONS[icon].glyph;
+
+const sentence = (t: string) => (/[.!?]$/.test(t.trim()) ? t.trim() : `${t.trim()}.`);
+/** "Cook Meat" → "Cook meat": a stage name reads as a step title. */
+const titleCase = (t: string) => t.charAt(0).toUpperCase() + t.slice(1).toLowerCase();
+
+/**
+ * One step per stage. When several steps share a stage ("Smash and sear" and "Flip and melt" in
+ * "Cook meat"), they become one step, so there's a single list of steps, with no sub-steps, for the
+ * screen, Gusteau and the cook to agree on. Their timed parts stay (agent/stepTimers.ts reads them
+ * from the text), and the stage keeps its icon.
+ */
+export function mergeStages(r: Recipe): Recipe {
+  if (r.stages.every((st) => st.stepKeys.length === 1)) return r;
+  const byKey = new Map(r.steps.map((s) => [s.key, s]));
+  const steps: RecipeStep[] = [];
+  const stages: RecipeStage[] = [];
+  for (const st of r.stages) {
+    const parts = st.stepKeys.map((k) => byKey.get(k)).filter((s): s is RecipeStep => !!s);
+    if (!parts.length) continue;
+    if (parts.length === 1) {
+      steps.push(parts[0]);
+      stages.push(st);
+      continue;
+    }
+    const timed = parts.filter((p) => p.timerSeconds);
+    const step: RecipeStep = {
+      key: parts.map((p) => p.key).join('+'),
+      title: titleCase(st.title),
+      text: parts.map((p) => sentence(p.text)).join(' '),
+      uses: [...new Set(parts.flatMap((p) => p.uses))],
+      minutes: parts.reduce((m, p) => m + (p.minutes ?? 0), 0) || undefined,
+      timerSeconds: timed.length === 1 ? timed[0].timerSeconds : undefined,
+      technique: parts.find((p) => p.technique)?.technique,
+      tip: parts.map((p) => p.tip).filter(Boolean).join(' ') || undefined,
+    };
+    steps.push(step);
+    stages.push({ ...st, stepKeys: [step.key] });
+  }
+  return { ...r, steps, stages };
+}

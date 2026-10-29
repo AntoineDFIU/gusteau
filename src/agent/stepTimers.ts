@@ -77,7 +77,8 @@ export function stepTimers(step: RecipeStep, recipe?: Recipe): StepTimer[] {
   // Clauses: sentences, and "…, then …" within them.
   const clauses = step.text.split(/(?<=[.;!?])\s+|,?\s+then\s+|,\s+(?=(?:and\s+)?(?:let|leave|rest|cover)\b)/i);
   let lastObject: string | null = null;
-  const main = mainIngredient(step, recipe);
+  // A merged step ("Cook meat": sear, then flip and melt) mixes its parts' ingredients, so none of them names a timer.
+  const main = step.key.includes('+') ? null : mainIngredient(step, recipe);
   for (const clause of clauses) {
     const d = clause.match(DURATION);
     const found = verbBefore(d ? clause.slice(0, d.index) : clause);

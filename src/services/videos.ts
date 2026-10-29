@@ -45,7 +45,7 @@ export function searchVideos(query: string): Promise<Video[]> {
     p = (async () => {
       let data: { videos?: Video[]; error?: string };
       try {
-        const res = await fetch(`${import.meta.env.BASE_URL}api/videos?q=${encodeURIComponent(cookingSearch(query))}`, { signal: AbortSignal.timeout(10000) });
+        const res = await fetch(`${import.meta.env.BASE_URL}api/videos?q=${encodeURIComponent(cookingSearch(query))}`, { signal: AbortSignal.timeout(20000) });
         data = await res.json();
       } catch {
         throw new VideoError('unavailable');
