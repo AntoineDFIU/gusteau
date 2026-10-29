@@ -9,7 +9,7 @@ require.extensions['.ts'] = (mod, file) => mod._compile(ts.transpileModule(fs.re
 }).outputText, file);
 
 const { normalizeRecipe } = require('../src/recipes/normalize.ts');
-const { previewSubstitution, previewRequestsRecipes } = require('../src/agent/previewIntent.ts');
+const { previewSubstitution, previewRequestsRecipes, substitutionClarification } = require('../src/agent/previewIntent.ts');
 const { missingIn } = require('../src/agent/discovery.ts');
 const { missingQuestion, answerMissing } = require('../src/agent/missing.ts');
 const { adaptRecipe } = require('../src/agent/adapt.ts');
@@ -104,4 +104,63 @@ test('a substitute with a different cooking method replaces the original instruc
   assert.ok(plan.recipe.ingredients.some((i) => i.name === 'Couscous'));
   assert.match(plan.recipe.steps.map((s) => s.text).join(' '), /Cover for 5 minutes, then fluff with a fork/);
   assert.ok(!plan.recipe.steps.some((s) => /cook the rice/i.test(s.title)));
+});
+
+test('an unresolved substitution accepts a bare ingredient name on a later turn', () => {
+  const request = previewSubstitution('Can you replace the chazzer?', burger);
+  assert.equal(request.ingredient, undefined);
+  const pending = { recipeId: burger.id, to: request.to };
+  for (const phrase of ['cheddar cheese', 'cheddar', 'I meant cheddar cheese', 'the cheddar cheese', "I don't have cheddar cheese"]) {
+    assert.equal(previewRequestsRecipes(phrase), false);
+    const resolved = previewSubstitution(phrase, burger, pending);
+    assert.equal(resolved.ingredient.id, cheddar.id, phrase);
+    const q = missingQuestion(resolved.ingredient, burger, rules, 'preview');
+    assert.match(q.say, /Do you have another kind of cheese/);
+    const selected = answerMissing('Swiss', q, burger, rules, 'preview');
+    assert.equal(selected.kind, 'swap');
+    const plan = adapt(burger, resolved.ingredient, selected.to);
+    assert.equal(plan.recipe.id, burger.id);
+    assert.ok(plan.recipe.ingredients.some((i) => i.name === 'Swiss cheese'));
+    assert.match(plan.recipe.steps.map((s) => s.text).join(' '), /Swiss cheese/i);
+  }
+  // A bare name has no special substitution meaning outside the pending conversation.
+  assert.equal(previewSubstitution('cheddar cheese', burger), null);
+});
+
+test('transcription failures and clarification turns preserve the pending ingredient request', () => {
+  let pending = { recipeId: burger.id };
+  for (const phrase of ['chazzer', 'Could you repeat?', 'What do you mean?', 'I did not catch that', '']) {
+    const unresolved = previewSubstitution(phrase, burger, pending);
+    assert.ok(unresolved, phrase);
+    assert.equal(unresolved.ingredient, undefined, phrase);
+    pending = { recipeId: burger.id, to: unresolved.to };
+  }
+  assert.equal(previewSubstitution('cheddar cheese', burger, pending).ingredient.id, cheddar.id);
+});
+
+test('clarifying an unrecognized source ingredient retains the requested substitute', () => {
+  const first = previewSubstitution('Replace chazzer with Swiss', burger);
+  assert.equal(first.ingredient, undefined);
+  let pending = { recipeId: burger.id, to: first.to };
+  const repeat = previewSubstitution('Which ingredient?', burger, pending);
+  assert.equal(repeat.ingredient, undefined);
+  pending = { recipeId: burger.id, to: repeat.to };
+  const resolved = previewSubstitution('cheddar cheese', burger, pending);
+  assert.equal(resolved.ingredient.id, cheddar.id);
+  assert.equal(resolved.to, 'swiss');
+  assert.equal(answerMissing(`use ${resolved.to}`, question(), burger, rules, 'preview').kind, 'swap');
+});
+
+test('pending ingredient clarification is scoped to the current recipe', () => {
+  const other = recipes.find((r) => r.id !== burger.id);
+  assert.equal(previewSubstitution('cheddar cheese', other, { recipeId: burger.id }), null);
+});
+
+test('questions about a substitution are distinguished from selecting an alternative', () => {
+  for (const phrase of ['What do you mean?', 'Could you repeat?', 'Which cheese?', 'Do you mean cheese?', 'repeat']) {
+    assert.equal(substitutionClarification(phrase), true, phrase);
+  }
+  for (const phrase of ['Swiss cheese', 'what about Swiss?', 'how about provolone?', 'Can I use gouda?']) {
+    assert.equal(substitutionClarification(phrase), false, phrase);
+  }
 });
