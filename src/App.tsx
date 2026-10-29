@@ -22,6 +22,7 @@ import { VoicePanel, type Turn } from './components/VoicePanel';
 import { TextChat } from './components/TextChat';
 import { DebugPanel } from './components/DebugPanel';
 import { ModelPicker } from './components/ModelPicker';
+import { GusteauIcon } from './components/GusteauIcon';
 import { logHeard } from './debug/debugLog';
 import { speakable } from './agent/stepSpeech';
 import { changesMeaning, checkFirst, riskyReading } from './agent/heardAs';
@@ -615,23 +616,29 @@ export default function App() {
     <div className="min-h-screen bg-cream-100 bg-[radial-gradient(ellipse_at_top_right,rgba(242,140,56,0.12),transparent_55%),radial-gradient(ellipse_at_bottom_left,rgba(107,122,58,0.08),transparent_50%)]">
       <header className="sticky top-0 z-30 h-[61px] border-b border-cream-200/80 bg-cream-100/90 backdrop-blur">
         <div className="mx-auto flex h-full max-w-7xl items-center justify-between gap-3 px-4 sm:px-6">
-          {/* <button onClick={() => (screen === 'cooking' ? leaveCooking() : profile.onboarded && setScreen('browse'))} className="flex items-center gap-2.5" aria-label="Gusteau home">
-            <GusteauIcon />
-            <span className="text-left leading-none">
-              <span className="hidden font-display text-xl font-semibold text-charcoal-900 sm:block">Gusteau</span>
-              <span className="hidden text-[11px] text-charcoal-400 sm:block">Your personal chef assistant</span>
-            </span>
-          </button> */}
-
-
-          {
-
-            screen == 'cooking' ? <button onClick={() => (screen === 'cooking' ? leaveCooking() : profile.onboarded && setScreen('browse'))} className="flex items-center gap-2.5" aria-label="Gusteau home">
-              <span className="text-left leading-none">
-                <span className="block text-md font-normal text-charcoal-900">← All Dishes</span>
+          {screen === 'cooking' ? (
+            <button
+              onClick={leaveCooking}
+              className="rounded-2xl border border-cream-200 bg-white/70 px-3 py-2 text-sm font-medium text-charcoal-700 shadow-sm transition-colors hover:bg-white"
+              aria-label="Back to all dishes"
+            >
+              ← All Dishes
+            </button>
+          ) : (
+            <button
+              onClick={() => {
+                if (profile.onboarded) setScreen('browse');
+              }}
+              aria-label="Gusteau home"
+              className="group flex min-w-0 items-center gap-2.5 rounded-2xl border border-cream-200/80 bg-white/70 py-1 pl-1 pr-3 text-left shadow-sm transition-all hover:border-tomato-200 hover:bg-white hover:shadow-card focus-visible:outline focus-visible:outline-2 focus-visible:outline-tomato-400"
+            >
+              <GusteauIcon size={42} className="rounded-[14px]" />
+              <span className="min-w-0 leading-none">
+                <span className="hidden font-display text-lg font-semibold text-charcoal-900 sm:block">Gusteau</span>
+                <span className="hidden text-[10px] text-charcoal-400 sm:block">Your personal chef assistant</span>
               </span>
-            </button> : ''
-          }
+            </button>
+          )}
 
 
           <div className="flex items-center gap-2">

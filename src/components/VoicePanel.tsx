@@ -98,11 +98,20 @@ export function VoicePanel({
   return (
     <section aria-label="Talk to Gusteau" className={cx('relative z-20 rounded-3xl border border-cream-200 bg-white/85 p-4 shadow-card backdrop-blur', !compact && 'sm:p-5', className)}>
       <div className="flex flex-wrap items-center gap-3">
-        {/* His mark grows with your voice while he's listening. */}
         <GusteauIcon
           size={44}
+          state={
+            status === 'speaking'
+              ? 'speaking'
+              : status === 'listening' || status === 'hearing' || status === 'thinking' || status === 'connecting'
+                ? 'listening'
+                : status === 'muted' || status === 'off'
+                  ? 'muted'
+                  : 'idle'
+          }
+          level={voice.level}
           style={active && voice.level ? { transform: `scale(${1 + voice.level * 0.2})` } : undefined}
-          className={cx('transition-transform', active && 'ring-4 ring-olive-400/40 animate-pulse')}
+          className="transition-transform"
         />
         <div className="min-w-0 flex-1 basis-40">
           <p className="font-display text-lg font-semibold leading-tight text-charcoal-900">Gusteau</p>
