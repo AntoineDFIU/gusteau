@@ -285,6 +285,8 @@ export function useVoice(onPhrase: (text: string) => void) {
     listenOnce,
     setHandsFree,
     reopenMic,
+    /** A conversation is starting: whatever the mic is hearing right now (the room, before the cook spoke to him) is dropped. */
+    discardPending: () => session.current?.discard(),
     say: (text: string, queue = false) => {
       logHeard({ who: 'gusteau', text });
       return out.current!.say(text, queue);

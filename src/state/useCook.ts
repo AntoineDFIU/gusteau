@@ -7,10 +7,12 @@ import { modelService } from '../services';
 import type { InterpretResult } from '../services/modelService';
 import { LookupError, lookupTerm, type Lookup } from '../services/lookup';
 import { searchVideos, VideoError, type Video } from '../services/videos';
+import { stepDescribed, stepTalk } from '../services/mock/intentParser';
 import { proposeIngredientChange, vetChanges } from '../services/mock/kitchenHelp';
 import { ambiguousAmount } from '../agent/heardAs';
 import { lineKey, plainStepLine, stepDetail, stepSpeech, whereWeAre, withTitle, type StepArrival } from '../agent/stepSpeech';
-import { controlTimers, notStarted, sayDuration, timerName, timerOffer, type StepTimer } from '../agent/stepTimers';
+import { controlTimers, notStarted, sayDuration, stepTimers, timerName, timerOffer, type StepTimer } from '../agent/stepTimers';
+import { mergeStages } from '../agent/stages';
 import type { ActiveTimer, CookCommand, CookRules, CookSession, PantryItem, Recipe, SessionChange } from '../types';
 
 /** A timer that's still ringing gets a reminder this often, this many times. */
@@ -36,6 +38,10 @@ export interface CookEvents {
   onFinish(s: CookSession): void;
   /** A timer just ran out (it has already beeped). */
   onTimerDone?(label: string): void;
+  /** Whether a recipe (by its original id) is already in the cook's favorites. */
+  isFavorite?(recipeId: string): boolean;
+  /** The cook said yes to "add it to your favorites?". */
+  onFavorite?(recipeId: string): void;
 }
 
 export function useCook(events: CookEvents) {
@@ -124,7 +130,8 @@ export function useCook(events: CookEvents) {
     const scaled = scaleRecipe(recipe, rules.servings);
     const phrasing = phrase(scaled);
     const staged = await modelService.stageRecipe(recipe);
-    const original = scaleRecipe({ ...recipe, stages: staged.stages, stagesBy: staged.by }, rules.servings);
+    // One step per stage, with no sub-steps: "Smash and sear" and "Flip and melt" are one "Cook meat" step.
+    const original = scaleRecipe(mergeStages({ ...recipe, stages: staged.stages, stagesBy: staged.by }), rules.servings);
     const blank: CookSession = {
       original,
       recipe: original,
@@ -195,7 +202,11 @@ export function useCook(events: CookEvents) {
     const step = s.recipe.steps[s.stepIndex];
     if (!step) return;
     const completed = s.completedStepKeys.includes(step.key) ? s.completedStepKeys : [...s.completedStepKeys, step.key];
-    const ns = { ...s, pendingConfirm: undefined, completedStepKeys: completed, stepIndex: Math.min(s.stepIndex + 1, s.recipe.steps.length) };
+    const stepIndex = Math.min(s.stepIndex + 1, s.recipe.steps.length);
+    const finishing = stepIndex >= s.recipe.steps.length;
+    // The last step done: Gusteau congratulates the cook and asks to save the dish, unless it's already a favorite.
+    const ask = finishing && !on.current.isFavorite?.(s.original.id) ? ('favorite' as const) : undefined;
+    const ns = { ...s, pendingConfirm: ask, completedStepKeys: completed, stepIndex };
     setSession(ns);
     setVideoCard(null);
     requestRead(how);
@@ -212,6 +223,21 @@ export function useCook(events: CookEvents) {
     requestRead('back');
   };
 
+  /**
+   * To step `n` (1-based): the steps before it count as done, the ones after as still to do.
+   * `read`: say it aloud (not when Gusteau has just talked about it himself).
+   */
+  const goTo = (n: number, read: boolean) => {
+    const s = ref.current;
+    if (!s || n < 1 || n > s.recipe.steps.length || n === s.stepIndex + 1) return;
+    const idx = n - 1;
+    const before = new Set(s.recipe.steps.slice(0, idx).map((st) => st.key));
+    const completed = [...new Set([...s.completedStepKeys.filter((k) => before.has(k)), ...before])];
+    setSession({ ...s, pendingConfirm: undefined, stepIndex: idx, completedStepKeys: completed });
+    setVideoCard(null);
+    if (read) requestRead(idx > s.stepIndex ? 'next' : 'back');
+  };
+
   /** Back to the first step, with every step to do again. */
   const restart = () => {
     const s = ref.current;
@@ -225,7 +251,11 @@ export function useCook(events: CookEvents) {
   const stepLine = (how: StepArrival): string => {
     const s = ref.current;
     const step = s?.recipe.steps[s.stepIndex];
-    if (!s || !step) return 'All done. Bon appétit!';
+    if (!s) return 'All done. Bon appétit!';
+    if (!step) {
+      const saved = s.pendingConfirm === 'favorite' ? ' Would you like me to add it to your favorites, so you can find it easily next time?' : '';
+      return `Congratulations, you made the ${s.recipe.title}! Bon appétit.${saved}`;
+    }
     const timerRunning = s.timers.some((t) => t.endsAt !== null && t.endsAt > Date.now());
     const modelLine = lines.current[lineKey(step)];
     // Timed parts are offered, never started: "I can time this for you… say “start the timer” when you're ready."
@@ -290,6 +320,10 @@ export function useCook(events: CookEvents) {
         return back();
       case 'repeat':
         return requestRead('repeat', true);
+      case 'goto':
+        if (cmd.step < 1 || cmd.step > s.recipe.steps.length) return setSession(say(s, `This recipe has ${s.recipe.steps.length} steps.`));
+        if (cmd.step === s.stepIndex + 1) return setSession(say(s, whereWeAre(s.recipe, s.stepIndex)));
+        return goTo(cmd.step, true);
       case 'where':
         return setSession(say(s, whereWeAre(s.recipe, s.stepIndex)));
       case 'more': {
@@ -383,10 +417,25 @@ export function useCook(events: CookEvents) {
           { id: uid(), from: 'gusteau', text: reply, techniqueId: r.techniqueId, videoQuery: r.howTo, spoken: !!streamed && reply.trim() === streamed.trim() },
         ],
       });
+      // The screen follows the conversation: when Gusteau says "Let's move on to step 2", it moves on (and reads it).
+      // The model says which step the cook is on now ("finished flipping, the cheese is melting" → step 3);
+      // without that, its own words ("let's move on to step 2") are the cue.
+      const moved = r.goToStep ? 'goto' : stepTalk(reply, before);
+      if (r.goToStep) goTo(r.goToStep, false);
+      else if (moved === 'next') next();
+      else if (moved === 'back') back();
       // "How do I dice an onion?": short videos alongside the answer.
       if (r.howTo) showVideos(r.howTo, techniqueById(r.techniqueId)?.howTo);
-      // A fix like "give it one more minute" comes with its timer.
-      if (r.timerSeconds) addTimer(r.timerSeconds, `${before.recipe.steps[before.stepIndex]?.title ?? 'Extra'} (extra time)`);
+      // A fix like "give it one more minute" comes with its timer, but only for a step that's cooking
+      // something and when the cook said it needs longer: "done with the patties" never starts one.
+      const step = before.recipe.steps[before.stepIndex];
+      const cooking = !!step && (stepTimers(step, before.recipe).length > 0 || !!step.timerSeconds || /\b(cook|simmer|boil|bake|roast|fry|sear|steam|microwave|toast|grill|melt|brown|reduce|braise|poach)/i.test(step.text));
+      const needsLonger = /\b(not (done|ready|cooked|soft|tender|set|crisp)|isn'?t (done|ready|cooked)|aren'?t (done|ready|cooked)|still (raw|pink|hard|firm|crunchy|runny|cold|frozen)|undercooked|needs? (more|longer)|more time|longer|another minute|few more minutes|extra time|too (runny|thin|watery)|runny|watery|soupy)\b/i.test(text);
+      // A timer that matches a timed part of the step ("three minutes" for the sear) is that part's own
+      // labelled timer, so when Gusteau says "the timer is set", it is.
+      const offered = r.timerSeconds && !moved ? notStarted(step, ref.current?.timers ?? before.timers, before.recipe, before.timersDone).find((o) => Math.abs(o.seconds - r.timerSeconds!) <= 60) : undefined;
+      if (offered) startStepTimer(offered);
+      else if (r.timerSeconds && cooking && needsLonger) addTimer(r.timerSeconds, `${step?.title ?? 'Extra'} (extra time)`);
     }
   };
 
@@ -396,7 +445,25 @@ export function useCook(events: CookEvents) {
     setVideoCard({ query, howTo });
     searchVideos(query).then(
       (videos) => setVideoCard((c) => (c?.query === query ? { ...c, videos } : c)),
-      (err: unknown) => setVideoCard((c) => (c?.query === query ? { ...c, error: err instanceof VideoError ? err.reason : 'unavailable' } : c)),
+      (err: unknown) => {
+        // Nothing for the cook's own words ("turn the meat into balls")? The current step's technique
+        // ("shape burger patties") usually has plenty, and Gusteau says that's what he's showing.
+        const s = ref.current;
+        const step = s?.recipe.steps[s.stepIndex];
+        const t = step && techniqueFor(step);
+        const instead = step ? (t ? techniqueQuery(t) : step.title.toLowerCase()) : '';
+        if (!instead || instead.toLowerCase() === query.toLowerCase()) {
+          return setVideoCard((c) => (c?.query === query ? { ...c, error: err instanceof VideoError ? err.reason : 'unavailable' } : c));
+        }
+        searchVideos(instead).then(
+          (videos) => {
+            setVideoCard((c) => (c?.query === query ? { query: instead, howTo: c.howTo ?? t?.howTo, videos } : c));
+            const cur = ref.current;
+            if (cur) setSession(say(cur, `I couldn’t find short videos for exactly that, so here’s how to ${instead}.`));
+          },
+          (again: unknown) => setVideoCard((c) => (c?.query === query ? { ...c, error: again instanceof VideoError ? again.reason : 'unavailable' } : c)),
+        );
+      },
     );
   };
 
@@ -447,6 +514,13 @@ export function useCook(events: CookEvents) {
       const asked = before.pendingConfirm;
       before = { ...before, pendingConfirm: undefined, chat: answer ? [...before.chat, { id: uid(), from: 'user', text, via: opts.via }] : before.chat };
       setSession(before);
+      if (asked === 'favorite') {
+        if (answer === 'yes') {
+          on.current.onFavorite?.(before.original.id);
+          return setSession(say(before, `Done! The ${before.recipe.title} is in your favorites. You’ll find it at the top of the recipes next time.`));
+        }
+        if (answer === 'no') return setSession(say(before, 'No problem. Enjoy your meal!'));
+      }
       if (answer === 'yes') return asked === 'skip' ? next('skip') : restart();
       if (answer === 'no') return setSession(say(before, `Okay, staying on “${before.recipe.steps[before.stepIndex]?.title ?? 'this step'}”.`));
     }
@@ -455,6 +529,13 @@ export function useCook(events: CookEvents) {
     if (amount) {
       setSession({ ...before, chat: [...before.chat, { id: uid(), from: 'user', text, via: opts.via }, { id: uid(), from: 'gusteau', text: amount }] });
       return;
+    }
+    // "I flipped them and put the cheese on, how long until it melts?" on step 2: the screen moves to
+    // step 3 first, so the answer (and any timer) is about the step they're really on.
+    const described = stepDescribed(text, before);
+    if (described) {
+      goTo(described, false);
+      before = ref.current ?? before;
     }
     setBusy('thinking');
     // The message shows at once, exactly as heard; how Gusteau understood it and his reply fill in as they stream.
@@ -537,11 +618,11 @@ export function useCook(events: CookEvents) {
   };
 }
 
-/** A yes or no to "skip this step?" or "start over?", or null when it's neither. */
+/** A yes or no to "skip this step?", "start over?" or "add it to your favorites?", or null when it's neither. */
 export function confirmation(text: string): 'yes' | 'no' | null {
   const t = text.toLowerCase().replace(/[‘’]/g, "'").replace(/[?!.,]/g, '').trim();
-  if (/^(no|nope|nah|not yet|cancel|never ?mind|don'?t|wait|stay( here)?|no thanks?)\b/.test(t)) return 'no';
-  if (/^(yes|yeah|yep|yup|sure|ok|okay|do it|go ahead|please do|confirm|correct|skip it|start over|let'?s do it|absolutely|definitely)\b/.test(t)) return 'yes';
+  if (/^(no|nope|nah|not yet|not now|cancel|never ?mind|don'?t|wait|stay( here)?|no thanks?)\b/.test(t)) return 'no';
+  if (/^(yes|yeah|yep|yup|sure|ok|okay|do it|go ahead|please( do)?|confirm|correct|skip it|start over|let'?s do it|absolutely|definitely|of course|add it|save it)\b/.test(t)) return 'yes';
   return null;
 }
 

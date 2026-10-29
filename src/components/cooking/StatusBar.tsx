@@ -2,19 +2,16 @@ import { remainingMinutes } from '../../agent/kitchen';
 import { stageIndexOf } from '../../agent/stages';
 import { formatClock } from '../../lib/sound';
 import { timerLeft, type Cook } from '../../state/useCook';
-import type { Voice } from '../../voice/useVoice';
-import type { Power, Turn } from '../VoiceDock';
 import { StageIcon } from '../RecipeCard';
-import { VoiceControl } from '../VoiceDock';
 import { cx } from '../ui';
 
-export function StatusBar({ cook, voice, turn, power, onHandsFree }: { cook: Cook; voice: Voice; turn: Turn; power?: Power; onHandsFree: () => void }) {
+/** Where the cook is in the recipe, and their timers. Talking with Gusteau is in the voice panel above. */
+export function StatusBar({ cook }: { cook: Cook }) {
   const s = cook.session!;
   const r = s.recipe;
   const finished = s.stepIndex >= r.steps.length;
   const step = r.steps[Math.min(s.stepIndex, r.steps.length - 1)];
   const stageIdx = finished ? r.stages.length - 1 : stageIndexOf(r.stages, step.key);
-  const stage = r.stages[stageIdx];
   const left = remainingMinutes(r, s.completedStepKeys);
   const stageState = (i: number) => {
     const keys = r.stages[i].stepKeys;
@@ -22,26 +19,59 @@ export function StatusBar({ cook, voice, turn, power, onHandsFree }: { cook: Coo
     return i === stageIdx && !finished ? 'current' : 'todo';
   };
 
+  const done = s.completedStepKeys.filter((k) => r.steps.some((st) => st.key === k)).length;
+  const percent = Math.round((done / Math.max(1, r.steps.length)) * 100);
+  const stepState = (key: string) => (s.completedStepKeys.includes(key) ? 'done' : !finished && key === step.key ? 'current' : 'todo');
+
   return (
-    <div className="sticky top-[61px] z-20 -mx-4 mb-6 border-b border-cream-200 bg-cream-100/95 px-4 py-2.5 backdrop-blur sm:-mx-6 sm:px-6">
-      <div className="mx-auto flex max-w-7xl flex-wrap items-center gap-x-5 gap-y-2">
-        {/* Stages */}
-        <div className="flex items-center gap-1" aria-label={`Stage ${stageIdx + 1} of ${r.stages.length}`}>
+    <div className="sticky top-[61px] z-20 -mx-4 mb-6 border-b border-cream-200 bg-cream-100/95 px-4 py-3 shadow-sm backdrop-blur sm:-mx-6 sm:px-6">
+      <div className="mx-auto max-w-7xl">
+        {/* Where the cook is: the step, large, then how far along and how long is left. */}
+        <div className="flex flex-wrap items-end justify-between gap-x-4 gap-y-1">
+          <div className="min-w-0 leading-tight">
+            <p className="truncate text-[11px] font-semibold uppercase tracking-[0.14em] text-olive-500">
+              {finished ? 'Finished' : step.title}
+            </p>
+            <p className="font-display text-2xl font-semibold text-charcoal-900 sm:text-3xl">
+              {finished ? (
+                'All done! Bon appétit'
+              ) : (
+                <>
+                  Step {s.stepIndex + 1} <span className="text-charcoal-400">of {r.steps.length}</span>
+                </>
+              )}
+            </p>
+          </div>
+          <p className="text-sm font-semibold text-charcoal-700">
+            {percent}% done{!finished && <> · ~{left} min left</>}
+            {s.rules.timeLimit ? <span className="font-normal text-charcoal-500"> · limit {s.rules.timeLimit} min</span> : null}
+          </p>
+        </div>
+
+        {/* One segment per step, grouped by stage: done, the one you're on, still to do. */}
+        <div className="mt-2.5 flex items-center gap-2" role="progressbar" aria-label="Recipe progress" aria-valuemin={0} aria-valuemax={r.steps.length} aria-valuenow={done} aria-valuetext={`${done} of ${r.steps.length} steps done`}>
           {r.stages.map((st, i) => (
-            <div key={st.key} className="flex items-center gap-1">
-              <StageIcon icon={st.icon} state={stageState(i)} size="sm" />
-              {i < r.stages.length - 1 && <span className={cx('h-0.5 w-3 rounded-full sm:w-5', stageState(i) === 'done' ? 'bg-olive-500' : 'bg-cream-300')} />}
+            <div key={st.key} className="flex min-w-0 items-center gap-1.5" style={{ flexGrow: st.stepKeys.length, flexBasis: 0 }}>
+              <span className="hidden sm:inline-flex">
+                <StageIcon icon={st.icon} state={stageState(i)} size="sm" />
+              </span>
+              <div className="flex min-w-0 flex-1 gap-1">
+                {st.stepKeys.map((k) => {
+                  const state = stepState(k);
+                  return (
+                    <span
+                      key={k}
+                      title={r.steps.find((x) => x.key === k)?.title}
+                      className={cx('h-3 min-w-[6px] flex-1 rounded-full transition-colors', state === 'done' ? 'bg-olive-500' : state === 'current' ? 'animate-pulse bg-tomato-500' : 'bg-cream-300')}
+                    />
+                  );
+                })}
+              </div>
             </div>
           ))}
         </div>
-        <div className="min-w-0 flex-1 leading-tight">
-          <p className="truncate text-sm font-semibold text-charcoal-900">{finished ? 'All done!' : stage?.title}</p>
-          <p className="text-xs text-charcoal-500">
-            {finished ? `${r.steps.length} of ${r.steps.length} steps` : `Stage ${stageIdx + 1}/${r.stages.length} · Step ${s.stepIndex + 1}/${r.steps.length}`}
-            {!finished && <> · ~{left} min left</>}
-            {s.rules.timeLimit ? <> · limit {s.rules.timeLimit} min</> : null}
-          </p>
-        </div>
+      </div>
+      <div className="mx-auto mt-2 flex max-w-7xl flex-wrap items-center gap-x-5 gap-y-2 empty:hidden">
 
         {/* Timers */}
         {s.timers.length > 0 && (
@@ -69,19 +99,7 @@ export function StatusBar({ cook, voice, turn, power, onHandsFree }: { cook: Coo
             })}
           </div>
         )}
-
-        {/* Voice: "Hey Chef" or a tap; a tap while he's speaking interrupts him (so does Esc). */}
-        {voice.supported && <VoiceControl voice={voice} turn={turn} power={power} onTap={onHandsFree} className="w-full sm:w-auto" />}
       </div>
-      {voice.handsFree && voice.interim && <p className="mx-auto mt-1 max-w-7xl truncate text-xs italic text-charcoal-500">“{voice.interim}”</p>}
-      {voice.notice && (
-        <p className="mx-auto mt-1 flex max-w-7xl items-center gap-2 text-xs text-tomato-700">
-          {voice.notice}
-          <button onClick={voice.clearNotice} className="font-semibold underline-offset-2 hover:underline">
-            Dismiss
-          </button>
-        </p>
-      )}
     </div>
   );
 }

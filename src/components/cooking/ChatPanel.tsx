@@ -4,7 +4,7 @@ import { techniqueById, techniqueQuery } from '../../data/techniques';
 import type { Cook } from '../../state/useCook';
 import { Card, GusteauAvatar, Spinner, cx } from '../ui';
 
-export function ChatPanel({ cook, onMic, micActive, micSupported, interim }: { cook: Cook; onMic: () => void; micActive: boolean; micSupported: boolean; interim?: string }) {
+export function ChatPanel({ cook }: { cook: Cook }) {
   const s = cook.session!;
   const [text, setText] = useState('');
   const scroller = useRef<HTMLDivElement>(null);
@@ -100,7 +100,6 @@ export function ChatPanel({ cook, onMic, micActive, micSupported, interim }: { c
         )}
       </div>
       <div className="border-t border-cream-200 p-3">
-        {micActive && <p className="mb-2 truncate rounded-full bg-tomato-50 px-3 py-1.5 text-xs italic text-tomato-700">{interim ? `“${interim}”` : 'Listening… tap the mic again when you’re done'}</p>}
         <div className="mb-2 flex gap-1.5 overflow-x-auto pb-1">
           {suggestions.map((q) => (
             <button
@@ -120,17 +119,6 @@ export function ChatPanel({ cook, onMic, micActive, micSupported, interim }: { c
           }}
           className="flex gap-2"
         >
-          {micSupported && (
-            <button
-              type="button"
-              onClick={onMic}
-              aria-label={micActive ? 'Stop listening' : 'Speak to Gusteau'}
-              aria-pressed={micActive}
-              className={cx('flex h-10 w-10 shrink-0 items-center justify-center rounded-full text-lg transition-colors', micActive ? 'animate-pulse bg-tomato-500 text-white' : 'bg-cream-200 hover:bg-cream-300')}
-            >
-              🎤
-            </button>
-          )}
           <input
             value={text}
             onChange={(e) => setText(e.target.value)}
