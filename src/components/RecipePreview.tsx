@@ -7,7 +7,7 @@ import { emojiFor, isStaple } from '../data/ingredients';
 import { DIET_RULES, EQUIPMENT } from '../data/rules';
 import type { CookRules, Equipment, PendingChoice, Profile, Recipe } from '../types';
 import { NutritionPanel } from './NutritionPanel';
-import { RecipeArt, StageIcon } from './RecipeCard';
+import { RecipeArt, RecipeImageCredit, StageIcon } from './RecipeCard';
 import { Badge, Button, SectionTitle, cx } from './ui';
 
 
@@ -114,6 +114,7 @@ export function RecipePreview({
   return (
     <div>
       <RecipeArt recipe={recipe} big className="h-56 sm:h-64" />
+      <RecipeImageCredit recipe={recipe} className="px-5 pt-1 sm:px-8" />
       <div className="p-5 sm:p-8">
         <p className="text-xs font-semibold uppercase tracking-[0.14em] text-olive-500">
           {cuisine.emoji} {cuisine.name}

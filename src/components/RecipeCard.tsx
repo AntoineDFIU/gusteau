@@ -20,6 +20,29 @@ export function RecipeArt({ recipe, className, big = false }: { recipe: Recipe; 
   );
 }
 
+export function RecipeImageCredit({ recipe, className }: { recipe: Recipe; className?: string }) {
+  const attribution = recipe.imageAttribution;
+  if (!attribution && recipe.imageMatch !== 'representative') return null;
+  const creditUrl = attribution && /^https?:\/\//i.test(attribution.credit) ? attribution.credit : attribution?.filePage;
+  return (
+    <div className={cx('flex flex-wrap items-center gap-x-1.5 gap-y-0.5 text-[10px] leading-4 text-charcoal-500', className)}>
+      {recipe.imageMatch === 'representative' && <span className="font-semibold">Representative photo</span>}
+      {attribution && (
+        <span className="break-all">
+          Photo{attribution.artist ? ` by ${attribution.artist}` : ''} ·{' '}
+          <a href={creditUrl} target="_blank" rel="noreferrer" className="underline underline-offset-2 hover:text-charcoal-700">
+            {attribution.credit}
+          </a>
+          {' · '}
+          <a href={attribution.licenceUrl ?? attribution.filePage} target="_blank" rel="noreferrer" className="underline underline-offset-2 hover:text-charcoal-700">
+            {attribution.licence}
+          </a>
+        </span>
+      )}
+    </div>
+  );
+}
+
 export function StageIcon({ icon, state = 'todo', size = 'md' }: { icon: StageIconId; state?: 'todo' | 'current' | 'done'; size?: 'sm' | 'md' }) {
   return (
     <span
@@ -90,6 +113,7 @@ export function RecipeCard({
         )}
         <span className="dish-tag">{tag}</span>
       </button>
+      <RecipeImageCredit recipe={recipe} className="mt-1 px-1" />
       {onToggleFavorite && (
         <button
           type="button"

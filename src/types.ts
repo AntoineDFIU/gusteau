@@ -91,6 +91,14 @@ export interface ChefCredit {
   relation?: string;
 }
 
+export interface RecipeImageAttribution {
+  credit: string;
+  artist?: string;
+  licence: string;
+  filePage: string;
+  licenceUrl?: string;
+}
+
 export interface Recipe {
   id: string;
   title: string;
@@ -98,6 +106,8 @@ export interface Recipe {
   description: string;
   chef?: ChefCredit;
   image?: string;
+  imageMatch?: 'dish' | 'representative';
+  imageAttribution?: RecipeImageAttribution;
   emoji: string;
   totalMinutes: number;
   servings: number;
@@ -309,4 +319,3 @@ export interface CookSession {
   /** When the plan can't be made safely, Gusteau pauses and asks. */
   paused: boolean;
 }
-

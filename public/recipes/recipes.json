@@ -299,7 +299,16 @@
      "title": "Finish and serve",
      "text": "Toss in the parsley and serve with parmesan."
     }
-   ]
+   ],
+   "image": "recipes/images/spaghetti-aglio-e-olio.jpg",
+   "image_match": "dish",
+   "image_attribution": {
+    "artist": "10Rosso",
+    "credit": "https://www.flickr.com/photos/29768027@N07/4345843831/",
+    "licence": "CC BY 2.0",
+    "licence_url": "https://creativecommons.org/licenses/by/2.0/",
+    "file_page": "https://commons.wikimedia.org/wiki/File:Spaghetti_aglio_e_olio_1.jpg"
+   }
   },
   {
    "id": "it-chicken-piccata",
@@ -345,7 +354,16 @@
      "title": "Finish with butter",
      "text": "Swirl in the remaining butter, return the chicken to the pan for 1 minute and scatter with parsley."
     }
-   ]
+   ],
+   "image": "recipes/images/chicken-piccata-dish.jpg",
+   "image_match": "dish",
+   "image_attribution": {
+    "artist": "Ralph Daily from Birmingham, United States",
+    "credit": "Chicken Piccata",
+    "licence": "CC BY 2.0",
+    "licence_url": "https://creativecommons.org/licenses/by/2.0/",
+    "file_page": "https://commons.wikimedia.org/wiki/File:Chicken_Piccata_(6408123327).jpg"
+   }
   },
   {
    "id": "cn-egg-fried-rice",
@@ -731,7 +749,16 @@
      "title": "Rest and serve",
      "text": "Season, rest for 5 minutes and tear over the basil."
     }
-   ]
+   ],
+   "image": "recipes/images/ratatouille-dish.jpg",
+   "image_match": "dish",
+   "image_attribution": {
+    "artist": "Arnaud 25",
+    "credit": "Own work",
+    "licence": "CC BY-SA 4.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "file_page": "https://commons.wikimedia.org/wiki/File:Ratatouille_001.jpg"
+   }
   },
   {
    "id": "th-pad-krapow",
@@ -886,7 +913,16 @@
      "title": "Rest and serve",
      "text": "Rest for 5 minutes and serve warm or at room temperature."
     }
-   ]
+   ],
+   "image": "recipes/images/spanish-tortilla-dish.jpg",
+   "image_match": "dish",
+   "image_attribution": {
+    "artist": "Luca Nebuloni from Milan, Italy",
+    "credit": "Spanish Tortilla",
+    "licence": "CC BY 2.0",
+    "licence_url": "https://creativecommons.org/licenses/by/2.0/",
+    "file_page": "https://commons.wikimedia.org/wiki/File:Spanish_Tortilla_(5845088254).jpg"
+   }
   },
   {
    "id": "es-gambas-al-ajillo",
@@ -927,7 +963,16 @@
      "title": "Finish",
      "text": "Squeeze over the lemon and scatter with parsley. Serve with bread to mop up the oil."
     }
-   ]
+   ],
+   "image": "recipes/images/gambas-al-ajillo-dish.jpg",
+   "image_match": "dish",
+   "image_attribution": {
+    "artist": "Juan Emilio Prades Bel",
+    "credit": "Own work",
+    "licence": "CC BY 4.0",
+    "licence_url": "https://creativecommons.org/licenses/by/4.0/",
+    "file_page": "https://commons.wikimedia.org/wiki/File:Gambas_al_ajillo,_2024.jpg"
+   }
   },
   {
    "id": "gr-horiatiki",
@@ -969,7 +1014,16 @@
      "title": "Top and serve",
      "text": "Lay the feta on top, sprinkle with oregano and serve."
     }
-   ]
+   ],
+   "image": "recipes/images/greek-salad-dish.jpg",
+   "image_match": "dish",
+   "image_attribution": {
+    "artist": "Geoff Peters from Vancouver, BC, Canada",
+    "credit": "Greek salad",
+    "licence": "CC BY 2.0",
+    "licence_url": "https://creativecommons.org/licenses/by/2.0/",
+    "file_page": "https://commons.wikimedia.org/wiki/File:Greek_salad_(5178297958).jpg"
+   }
   },
   {
    "id": "gr-chicken-souvlaki",
@@ -1014,7 +1068,16 @@
      "title": "Warm the pita and serve",
      "text": "Grill the pita for 30 seconds per side and serve with the skewers and sauce."
     }
-   ]
+   ],
+   "image": "recipes/images/chicken-souvlaki.jpg",
+   "image_match": "dish",
+   "image_attribution": {
+    "artist": "Orderinchaos",
+    "credit": "Own work",
+    "licence": "CC BY-SA 4.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "file_page": "https://commons.wikimedia.org/wiki/File:Chicken_souvlaki_at_Hellenic_2.jpg"
+   }
   },
   {
    "id": "kr-bibimbap",
@@ -1259,7 +1322,16 @@
      "title": "Build the burgers",
      "text": "Layer the buns with lettuce, tomato, patties, onion, pickles and sauces."
     }
-   ]
+   ],
+   "image": "recipes/images/classic-cheeseburger.jpg",
+   "image_match": "dish",
+   "image_attribution": {
+    "artist": "Kjoonlee",
+    "credit": "Own work",
+    "licence": "CC BY-SA 4.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "file_page": "https://commons.wikimedia.org/wiki/File:Classic_double_cheeseburger.jpg"
+   }
   },
   {
    "id": "us-mac-and-cheese",
@@ -1349,7 +1421,16 @@
      "title": "Serve",
      "text": "Spread in a bowl, drizzle with the olive oil and dust with paprika."
     }
-   ]
+   ],
+   "image": "recipes/images/hummus-dish.jpg",
+   "image_match": "dish",
+   "image_attribution": {
+    "artist": "Satdeep Gill",
+    "credit": "Own work",
+    "licence": "CC BY-SA 4.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "file_page": "https://commons.wikimedia.org/wiki/File:Homemade_hummus_and_pita_03.jpg"
+   }
   },
   {
    "id": "lb-fattoush",
@@ -1400,7 +1481,14 @@
      "title": "Toss and serve",
      "text": "Toss with the dressing and the toasted pita just before serving."
     }
-   ]
+   ],
+   "image": "recipes/images/fattoush-dish.jpg",
+   "image_match": "dish",
+   "image_attribution": {
+    "credit": "Own work",
+    "licence": "Public domain",
+    "file_page": "https://commons.wikimedia.org/wiki/File:Fattoush.JPG"
+   }
   },
   {
    "id": "tr-menemen",
@@ -1445,7 +1533,16 @@
      "title": "Serve",
      "text": "Serve straight from the pan with bread."
     }
-   ]
+   ],
+   "image": "recipes/images/menemen-dish.jpg",
+   "image_match": "dish",
+   "image_attribution": {
+    "artist": "FakirNL",
+    "credit": "Own work",
+    "licence": "CC BY-SA 4.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "file_page": "https://commons.wikimedia.org/wiki/File:Menemen_in_pan.jpg"
+   }
   },
   {
    "id": "tr-mercimek-corbasi",
@@ -1833,7 +1930,16 @@
      "title": "Rest and serve",
      "text": "Rest for 5 minutes and serve with rice and peas."
     }
-   ]
+   ],
+   "image": "recipes/images/jo-jerk-chicken.jpg",
+   "image_match": "dish",
+   "image_attribution": {
+    "artist": "Grahampurse",
+    "credit": "Own work",
+    "licence": "CC BY-SA 4.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "file_page": "https://commons.wikimedia.org/wiki/File:Jerk_chicken-1001.jpg"
+   }
   },
   {
    "id": "cb-rice-and-peas",
@@ -2487,7 +2593,16 @@
      "title": "Rest and serve",
      "text": "Rest for 5 minutes before serving."
     }
-   ]
+   ],
+   "image": "recipes/images/shepherds-pie-dish.jpg",
+   "image_match": "dish",
+   "image_attribution": {
+    "artist": "Sodanie Chea from Norwalk, Ca, United States",
+    "credit": "Shepherd's Pie",
+    "licence": "CC BY 2.0",
+    "licence_url": "https://creativecommons.org/licenses/by/2.0/",
+    "file_page": "https://commons.wikimedia.org/wiki/File:Shepherd's_Pie_(8227698373).jpg"
+   }
   },
   {
    "id": "gb-jacket-potato",
