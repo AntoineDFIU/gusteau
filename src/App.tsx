@@ -423,7 +423,7 @@ export default function App() {
     const command = asCommand(asked);
     if (GO_TO_SLEEP.test(command) || TURN_OFF.test(command)) {
       stopConversation();
-      return voice.say('Okay. Tap “Talk to Gusteau” when you need me.');
+      return voice.say('Okay. Tap the flame when you need me.');
     }
     if (MUTE.test(command)) {
       voice.setMicMuted(true);

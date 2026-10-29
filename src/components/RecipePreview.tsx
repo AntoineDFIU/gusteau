@@ -272,7 +272,7 @@ export function RecipePreview({
 
         <div className="sticky bottom-0 -mx-5 mt-6 flex flex-col gap-2 border-t border-cream-200 bg-cream-50/95 px-5 py-4 backdrop-blur sm:-mx-8 sm:flex-row sm:px-8">
           <Button size="lg" className="flex-1" disabled={plan.violations.length > 0 || busy} onClick={() => onCook(rules, leaveOut)}>
-            {busy ? 'Setting up…' : '👨‍🍳 Cook with Gusteau'}
+            {busy ? 'Setting up…' : 'Cook with Gusteau'}
           </Button>
           <Button size="lg" variant="secondary" onClick={onClose}>
             ← Back to recipes
