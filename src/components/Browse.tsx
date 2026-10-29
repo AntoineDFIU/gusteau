@@ -90,10 +90,10 @@ export function Browse({
     <div className="mx-auto max-w-7xl animate-rise">
       <div className="flex flex-col gap-6 lg:flex-row lg:items-end lg:justify-between">
         <div className="max-w-2xl">
-          <Eyebrow>{returning ? 'Welcome back' : 'Your personal chef assistant'}</Eyebrow>
+          {/* <Eyebrow>{returning ? 'Welcome back' : 'Your personal chef assistant'}</Eyebrow>
           <h1 className="mt-2 font-display text-4xl font-semibold leading-[1.05] text-charcoal-900 sm:text-5xl">
             What are you <span className="italic text-tomato-500">craving?</span>
-          </h1>
+          </h1> */}
         </div>
         <form onSubmit={(e) => e.preventDefault()} className="w-full lg:max-w-[270px]">
           <label className="dish-search">
@@ -213,12 +213,12 @@ export function Browse({
         </Card>
       )}
 
-      <div className="mt-8 grid gap-8 lg:grid-cols-[minmax(0,1fr)_320px]">
+      <div className="mt-8 grid gap-8 lg:grid-cols-[1fr]">
         <div className="min-w-0">
           {picks.length > 0 && (
             <section className="mb-10">
-              <SectionTitle>{returning ? 'Picked for you, based on what you’ve cooked' : profile.favoriteCuisines.length ? 'Picked for you' : 'Popular right now'}</SectionTitle>
-              <div className="mt-3 grid grid-cols-1 gap-[17px] sm:grid-cols-2 xl:grid-cols-4">
+              <SectionTitle>{returning ? 'Familiar Dishes' : profile.favoriteCuisines.length ? 'Picked for you' : 'Popular Dishes'}</SectionTitle>
+              <div className="mt-3 grid grid-cols-1 gap-[17px] sm:grid-cols-2 xl:grid-cols-3">
                 {picks.map((r, i) => (
                   <RecipeCard key={r.id} recipe={r} profile={profile} onOpen={() => onOpen(r)} index={i} favorite={favIds.has(r.id)} onToggleFavorite={() => toggleFavorite(r)} />
                 ))}
@@ -250,7 +250,7 @@ export function Browse({
           </section>
         </div>
 
-        <aside className={cx('space-y-4 lg:sticky lg:top-24 lg:self-start', !showPantry && 'hidden lg:block', 'order-first lg:order-none')}>
+        {/* <aside className={cx('space-y-4 lg:sticky lg:top-24 lg:self-start', !showPantry && 'hidden lg:block', 'order-first lg:order-none')}>
           <PantryPanel pantry={profile.pantry} basics={profile.pantryBasics} onChange={onPantry} />
           <Card className="overflow-hidden border-saffron-100 bg-gradient-to-br from-saffron-100/70 via-white to-tomato-50 p-5">
             <p className="font-display text-lg font-semibold text-charcoal-900">🎬 Try the live replanning demo</p>
@@ -261,7 +261,7 @@ export function Browse({
               Load demo kitchen
             </Button>
           </Card>
-        </aside>
+        </aside> */}
       </div>
     </div>
   );
