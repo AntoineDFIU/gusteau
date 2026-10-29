@@ -1,4 +1,4 @@
-import { useEffect, useId, useRef, useState } from 'react';
+import { useEffect, useId, useLayoutEffect, useRef, useState } from 'react';
 import { useDebugLog } from '../debug/debugLog';
 import { chime } from '../lib/sound';
 import { speakerSelectable, useAudioDevices } from '../voice/audioDevices';
@@ -202,8 +202,27 @@ export function VoicePanel({
  */
 function AudioDevicesButton({ voice }: { voice: Voice }) {
   const [open, setOpen] = useState(false);
+  const [menuLeft, setMenuLeft] = useState(0);
   const devices = useAudioDevices();
   const box = useRef<HTMLSpanElement>(null);
+  const menu = useRef<HTMLSpanElement>(null);
+  useLayoutEffect(() => {
+    if (!open) return;
+    const position = () => {
+      if (!box.current || !menu.current) return;
+      const anchor = box.current.getBoundingClientRect();
+      const width = menu.current.getBoundingClientRect().width;
+      // Open to the right, shifting left only enough to fit inside the viewport.
+      setMenuLeft(Math.max(16 - anchor.left, Math.min(0, window.innerWidth - 16 - anchor.left - width)));
+    };
+    position();
+    window.addEventListener('resize', position);
+    window.addEventListener('scroll', position, true);
+    return () => {
+      window.removeEventListener('resize', position);
+      window.removeEventListener('scroll', position, true);
+    };
+  }, [open]);
   useEffect(() => {
     if (!open) return;
     // Names and newly plugged-in devices show up once the mic is allowed, so look again on opening.
@@ -242,10 +261,12 @@ function AudioDevicesButton({ voice }: { voice: Voice }) {
       </button>
       {open && (
         <span
+          ref={menu}
           role="dialog"
           aria-label="Audio devices"
+          style={{ left: menuLeft }}
           className={cx(
-            'absolute right-0 z-[70] block w-72 max-w-[calc(100vw-2rem)] rounded-2xl border border-cream-200 bg-white p-4 text-left text-charcoal-700 shadow-card',
+            'absolute z-[70] block w-72 max-w-[calc(100vw-2rem)] rounded-2xl border border-cream-200 bg-white p-4 text-left text-charcoal-700 shadow-card',
             'top-full mt-2',
           )}
         >

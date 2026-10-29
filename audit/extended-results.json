@@ -1,0 +1,47 @@
+[
+  {
+    "name": "Mobile viewport screenshot and preview chat geometry",
+    "status": "pass",
+    "details": {
+      "x": 12,
+      "y": 476.5,
+      "width": 366,
+      "height": 355.5
+    }
+  },
+  {
+    "name": "Preview keyboard focus stays inside modal",
+    "status": "fail",
+    "error": "Focus escapes modal: [{\"inside\":false,\"label\":\"Demo mode · mock AI🐞 Debug⚙︎ PreferencesFind a dish/🌍 All \",\"tag\":\"BODY\"},{\"inside\":false,\"label\":\"Debug\",\"tag\":\"BUTTON\"},{\"inside\":false,\"label\":\"⚙︎ Preferences\",\"tag\":\"BUTTON\"},{\"inside\":false,\"label\":\"Find a dish\",\"tag\":\"INPUT\"},{\"inside\":false,\"label\":\"🌍 All 51\",\"tag\":\"BUTTON\"},{\"inside\":false,\"label\":\"🍝 Italian\",\"tag\":\"BUTTON\"},{\"inside\":false,\"label\":\"🌮 Mexican\",\"tag\":\"BUTTON\"}]\n+ actual - expected\n\n+ [\n+   {\n+     inside: false,\n+     label: 'Demo mode · mock AI🐞 Debug⚙︎ PreferencesFind a dish/🌍 All ',\n+     tag: 'BODY'\n+   },\n+   {\n+     inside: false,\n+     label: 'Debug',\n+     tag: 'BUTTON'\n+   },\n+   {\n+     inside: false,\n+     label: '⚙︎ Preferences',\n+     tag: 'BUTTON'\n+   },\n+   {\n+     inside: false,\n+     label: 'Find a dish',\n+     tag: 'INPUT'\n+   },\n+   {\n+     inside: false,\n+     label: '🌍 All 51',\n+     tag: 'BUTTON'\n+   },\n+   {\n+     inside: false,\n+     label: '🍝 Italian',\n+     tag: 'BUTTON'\n+   },\n+   {\n+     inside: false,\n+     label: '🌮 Mexican',\n+     tag: 'BUTTON'\n+   },\n+   {\n+     inside: false,\n+     label: '🥟 Chinese',\n+     tag: 'BUTTON'\n+   },\n+   {\n+     inside: false,\n+     label: '🍣 Japanese',\n+     tag: 'BUTTON'\n+   },\n+   {\n+     inside: false,\n+     label: '🍛 Indian',\n+     tag: 'BUTTON'\n+   },\n+   {\n+     inside: false,\n+     label: '🥐 French',\n+     tag: 'BUTTON'\n+   },\n+   {\n+     inside: false,\n+     label: '🍜 Thai',\n+     tag: 'BUTTON'\n+   },\n+   {\n+     inside: false,\n+     label: '🥘 Spanish',\n+     tag: 'BUTTON'\n+   },\n+   {\n+     inside: false,\n+     label: "
+  },
+  {
+    "name": "Favorites persist after reload",
+    "status": "fail",
+    "error": "locator.waitFor: Error: strict mode violation: getByRole('button', { name: 'Remove Spaghetti Aglio e Olio from favorites', exact: true }) resolved to 2 elements:\n    1) <button type=\"button\" aria-pressed=\"true\" class=\"dish-save is-saved\" aria-label=\"Remove Spaghetti Aglio e Olio from favorites\">♥</button> aka locator('section').filter({ hasText: 'Your favorites · 1vegetarian♥' }).getByLabel('Remove Spaghetti Aglio e Olio')\n    2) <button type=\"button\" aria-pressed=\"true\" class=\"dish-save is-saved\" aria-label=\"Remove Spaghetti Aglio e Olio from favorites\">♥</button> aka locator('section').filter({ hasText: 'Every cuisine · 51Indian♡' }).getByLabel('Remove Spaghetti Aglio e Olio')\n\nCall log:\n\u001b[2m  - waiting for getByRole('button', { name: 'Remove Spaghetti Aglio e Olio from favorites', exact: true }) to be visible\u001b[22m\n"
+  },
+  {
+    "name": "Voice greeting reaches listening state with live speech server",
+    "status": "fail",
+    "error": "locator.waitFor: Timeout 20000ms exceeded.\nCall log:\n\u001b[2m  - waiting for getByText('Listening� go ahead', { exact: true }) to be visible\u001b[22m\n"
+  },
+  {
+    "name": "Voice retries speech-server detection after initial failure",
+    "status": "pass",
+    "details": {
+      "healthCalls": 2,
+      "browserFallback": false
+    }
+  },
+  {
+    "name": "Live model conversational pasta search",
+    "status": "pass",
+    "details": {
+      "calls": [
+        {
+          "status": 200
+        }
+      ],
+      "text": "👨‍🍳\nChat with Gusteau\nFind a dish or ask a cooking question\nMinimize\nYou\nI want pasta\nGusteau\nI found two pasta dishes: Spaghetti Aglio e Olio and Stovetop Mac and Cheese. Which one would you like?\nSend"
+    }
+  }
+]
