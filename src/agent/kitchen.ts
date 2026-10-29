@@ -128,13 +128,22 @@ export const EMPTY_FILTERS: Filters = {
   equipment: null,
 };
 
+/** Searchable recipe text shared by the search bar and conversational discovery. */
+export function recipeSearchText(r: Recipe, includeDescription = true): string {
+  const names = `${r.title} ${r.ingredients.map((i) => i.name).join(' ')}`;
+  // Pasta is a category: recipes often name only the shape in their ingredients.
+  // Keep it separate from the broader "Pasta & noodles" filter (rice noodles, ramen, etc.).
+  const pasta = /\b(pasta|spaghetti|macaroni|penne|linguine|fettuccine|tagliatelle|rigatoni|fusilli|farfalle|rotini|lasagn[ae]|orzo|gnocchi|ravioli|tortellini)\b/i.test(names) ? 'pasta' : '';
+  return `${names} ${includeDescription ? r.description : ''} ${r.chef?.name ?? ''} ${r.tags.join(' ')} ${pasta}`.toLowerCase();
+}
+
 // `_profile` stays for callers; no filter depends on it since the ingredient inventory was removed.
 export function matchesFilters(r: Recipe, f: Filters, _profile: Profile): boolean {
   const facts = factsOf(r);
   if (f.cuisine && r.cuisine !== f.cuisine) return false;
   if (f.search) {
     const q = f.search.toLowerCase();
-    const hay = `${r.title} ${r.description} ${r.chef?.name ?? ''} ${r.tags.join(' ')} ${r.ingredients.map((i) => i.name).join(' ')}`.toLowerCase();
+    const hay = recipeSearchText(r);
     if (!q.split(/\s+/).every((w) => hay.includes(w))) return false;
   }
   // Diet filters are hard: a recipe that would need a swap is hidden while browsing.

@@ -1,0 +1,60 @@
+{
+  "results": [
+    {
+      "name": "Desktop load and pasta search",
+      "status": "pass",
+      "details": 2
+    },
+    {
+      "name": "Chat searches pasta without opening microphone",
+      "status": "pass",
+      "details": "Both pasta dishes listed"
+    },
+    {
+      "name": "Voice history collapsed and expanded message limits",
+      "status": "pass",
+      "details": "👨‍🍳\n\nI found two pasta dishes: Spaghetti Aglio e Olio and Stovetop Mac and Cheese. Which one would you like?\n\nYou: “I want pasta”"
+    },
+    {
+      "name": "Audio dropdown stays in viewport and above search",
+      "status": "pass",
+      "details": {
+        "x": 1136,
+        "y": 174,
+        "width": 288,
+        "height": 210.5
+      }
+    },
+    {
+      "name": "Chat draft persists in preview and does not close preview",
+      "status": "pass"
+    },
+    {
+      "name": "Escape minimizes chat and preserves recipe preview",
+      "status": "pass"
+    },
+    {
+      "name": "Start cooking from typed command",
+      "status": "pass",
+      "details": "👨‍🍳\n\nGusteau\n\nNot listening · tap Talk to Gusteau to start\n\n🎤\nTalk to Gusteau\n👨‍🍳\n\nFirst, cook the spaghetti in a large pot of well-salted boiling water for nine minutes. Save a mug of the pasta water before draining. I can time this for you: cook the spaghetti, nine minutes. Say “start the timer” when you’re ready.\n\nBOIL THE PASTA\n\nStep 1 of "
+    },
+    {
+      "name": "Typed next advances cooking step",
+      "status": "pass"
+    },
+    {
+      "name": "Typed timer creates visible countdown",
+      "status": "pass",
+      "details": 0
+    },
+    {
+      "name": "Mobile browse and chat fit viewport",
+      "status": "pass"
+    },
+    {
+      "name": "No uncaught browser errors during main flows",
+      "status": "pass"
+    }
+  ],
+  "errors": []
+}

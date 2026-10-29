@@ -14,7 +14,7 @@ import type { DiscoverIntent } from '../services/modelService';
 import { DIET_PATTERNS } from '../services/mock/intentParser';
 import type { DietRuleId, Equipment, Profile, Recipe } from '../types';
 import { picksLine, resultsLine, selectionIntro } from './discovery';
-import { EMPTY_FILTERS, matchesFilters, recommendScore, tasteOf, type Filters } from './kitchen';
+import { EMPTY_FILTERS, matchesFilters, recipeSearchText, recommendScore, tasteOf, type Filters } from './kitchen';
 
 /** The recipes the browse page lists for these filters, in the order it shows them. */
 export function shownRecipes(recipes: Recipe[], profile: Profile, filters: Filters): Recipe[] {
@@ -142,7 +142,7 @@ export function recipeNamed(q: string, recipes: Recipe[]): Recipe | null {
 }
 
 // Names only, not the prose: "what should I make" must not match a description that says "should".
-const haystack = (r: Recipe) => `${r.title} ${r.chef?.name ?? ''} ${r.tags.join(' ')} ${r.ingredients.map((i) => i.name).join(' ')}`.toLowerCase();
+const haystack = (r: Recipe) => recipeSearchText(r, false);
 
 /** The cook's words as a search: cuisine, time, diet, equipment and the words worth looking for. */
 export function parseSearch(text: string, profile: Profile): SearchSpec {
