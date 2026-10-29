@@ -3,9 +3,9 @@ import { EMPTY_FILTERS, activeFilterCount, matchesFilters, recommendScore, taste
 import { CUISINES, cuisineById } from '../data/cuisines';
 import { GRAINS, PROTEINS, type GrainId, type ProteinId } from '../data/ingredients';
 import { DIET_RULES, DIET_RULE_IDS, DIFFICULTIES, EQUIPMENT } from '../data/rules';
-import type { Profile, Recipe } from '../types';
+import type { PantryItem, Profile, Recipe } from '../types';
 import { RecipeCard } from './RecipeCard';
-import { Button, Card, Chip, Eyebrow, SectionTitle, Toggle, cx } from './ui';
+import { Button, Card, Chip, SectionTitle, Toggle, cx } from './ui';
 
 const TIMES = [15, 30, 45, 60];
 
@@ -15,8 +15,6 @@ export function Browse({
   filters,
   setFilters,
   onOpen,
-  onDemo,
-  micHint,
   onToast,
 }: {
   recipes: Recipe[];
@@ -24,8 +22,9 @@ export function Browse({
   filters: Filters;
   setFilters: (f: Filters) => void;
   onOpen: (r: Recipe) => void;
+  // Retained for the temporarily commented-out kitchen and demo panels.
+  onPantry: (pantry: PantryItem[], basics: boolean) => void;
   onDemo: () => void;
-  micHint: boolean;
   onToast?: (message: string) => void;
 }) {
   const [showAllCuisines, setShowAllCuisines] = useState(false);
@@ -48,9 +47,9 @@ export function Browse({
   // "/" focuses the search box, like the sandbox (skipped while typing or with a dialog open).
   useEffect(() => {
     const onKey = (e: KeyboardEvent) => {
-      if (e.key !== '/') return;
+      if (e.key !== '/' || e.metaKey || e.ctrlKey || e.altKey) return;
       const el = document.activeElement;
-      if (el instanceof HTMLInputElement || el instanceof HTMLTextAreaElement) return;
+      if (el instanceof HTMLInputElement || el instanceof HTMLTextAreaElement || (el instanceof HTMLElement && el.isContentEditable)) return;
       if (document.querySelector('[role="dialog"]')) return;
       e.preventDefault();
       searchRef.current?.focus();
@@ -84,30 +83,21 @@ export function Browse({
 
   return (
     <div className="mx-auto max-w-7xl animate-rise">
-      <div className="flex flex-col gap-6 lg:flex-row lg:items-end lg:justify-between">
-        <div className="max-w-2xl">
-          <Eyebrow>{returning ? 'Welcome back' : 'Your personal chef assistant'}</Eyebrow>
-          <h1 className="mt-2 font-display text-4xl font-semibold leading-[1.05] text-charcoal-900 sm:text-5xl">
-            What are you <span className="italic text-tomato-500">craving?</span>
-          </h1>
-        </div>
-        <form onSubmit={(e) => e.preventDefault()} className="w-full lg:max-w-[270px]">
-          <label className="dish-search">
-            <span className="dish-search-icon" aria-hidden />
-            <span className="sr-only">Find a dish</span>
-            <input
-              ref={searchRef}
-              type="search"
-              value={filters.search}
-              onChange={(e) => set({ search: e.target.value })}
-              placeholder="Find a dish…"
-              aria-label="Find a dish"
-            />
-            <kbd aria-hidden>/</kbd>
-          </label>
-          {micHint && <p className="mt-2 pl-4 text-xs text-charcoal-400">Or say “Hey Chef, something Thai under 20 minutes”.</p>}
-        </form>
-      </div>
+      <form role="search" onSubmit={(e) => e.preventDefault()} className="mx-auto w-full max-w-[720px]">
+        <label className="dish-search" style={{ height: 52 }}>
+          <span className="dish-search-icon" aria-hidden />
+          <span className="sr-only">Find a dish</span>
+          <input
+            ref={searchRef}
+            type="search"
+            value={filters.search}
+            onChange={(e) => set({ search: e.target.value })}
+            placeholder="Find a dish…"
+            aria-label="Find a dish"
+          />
+          <kbd aria-hidden>/</kbd>
+        </label>
+      </form>
 
       {/* Cuisines */}
       <div className="mt-6 flex flex-wrap items-center gap-2" role="group" aria-label="Cuisines">
@@ -137,6 +127,11 @@ export function Browse({
         <Button variant={showFilters || nFilters ? 'primary' : 'secondary'} size="sm" onClick={() => setShowFilters((v) => !v)} aria-expanded={showFilters}>
           ⚙︎ Filters{nFilters ? ` · ${nFilters}` : ''}
         </Button>
+        {/* Kitchen access is paused with the sidebar. Restore its showPantry state with the panel.
+        <Button variant="secondary" size="sm" className="lg:hidden" onClick={() => setShowPantry((v) => !v)} aria-expanded={showPantry}>
+          🧺 My kitchen{profile.pantry.length ? ` · ${profile.pantry.length}` : ''}
+        </Button>
+        */}
         {(nFilters > 0 || filters.search || filters.cuisine) && (
           <button onClick={() => setFilters(base)} className="px-2 text-sm font-medium text-charcoal-400 hover:text-tomato-600">
             Clear all
@@ -199,12 +194,12 @@ export function Browse({
         </Card>
       )}
 
-      <div className="mt-8 grid gap-8 lg:grid-cols-[minmax(0,1fr)_320px]">
+      <div className="mt-8 grid gap-8 lg:grid-cols-[1fr]">
         <div className="min-w-0">
           {picks.length > 0 && (
             <section className="mb-10">
-              <SectionTitle>{returning ? 'Picked for you, based on what you’ve cooked' : profile.favoriteCuisines.length ? 'Picked for you' : 'Popular right now'}</SectionTitle>
-              <div className="mt-3 grid grid-cols-1 gap-[17px] sm:grid-cols-2 xl:grid-cols-4">
+              <SectionTitle>{returning ? 'Familiar Dishes' : profile.favoriteCuisines.length ? 'Picked for you' : 'Popular Dishes'}</SectionTitle>
+              <div className="mt-3 grid grid-cols-1 gap-[17px] sm:grid-cols-2 xl:grid-cols-3">
                 {picks.map((r, i) => (
                   <RecipeCard key={r.id} recipe={r} profile={profile} onOpen={() => onOpen(r)} index={i} favorite={favIds.has(r.id)} onToggleFavorite={() => toggleFavorite(r)} />
                 ))}
@@ -236,7 +231,10 @@ export function Browse({
           </section>
         </div>
 
-        <aside className="space-y-4 lg:sticky lg:top-24 lg:self-start">
+        {/* Kitchen and demo panels are retained for later. To restore: import PantryPanel,
+            destructure onPantry/onDemo, and restore showPantry state and the mobile toggle.
+        <aside className={cx('space-y-4 lg:sticky lg:top-24 lg:self-start', !showPantry && 'hidden lg:block', 'order-first lg:order-none')}>
+          <PantryPanel pantry={profile.pantry} basics={profile.pantryBasics} onChange={onPantry} />
           <Card className="overflow-hidden border-saffron-100 bg-gradient-to-br from-saffron-100/70 via-white to-tomato-50 p-5">
             <p className="font-display text-lg font-semibold text-charcoal-900">🎬 Try the live replanning demo</p>
             <p className="mt-1 text-sm text-charcoal-500">
@@ -246,7 +244,7 @@ export function Browse({
               Load the demo
             </Button>
           </Card>
-        </aside>
+        </aside> */}
       </div>
     </div>
   );

@@ -2,6 +2,8 @@ import { useCallback, useEffect, useRef, useState } from 'react';
 import { EMPTY_FILTERS, activeFilterCount, matchesFilters, scaleRecipe, type Filters } from './agent/kitchen';
 import { Browse } from './components/Browse';
 import { CookingWorkspace } from './components/cooking/CookingWorkspace';
+import { GusteauIcon } from './components/GusteauIcon';
+import { GusteauPrompt } from './components/GusteauPrompt';
 import { Onboarding } from './components/Onboarding';
 import { RecipePreview, type Kitchen } from './components/RecipePreview';
 import { Modal, Spinner, cx } from './components/ui';
@@ -530,11 +532,8 @@ export default function App() {
     // Greeting out loud: the five seconds start once he's said it.
     if (wake) greet ? openWindow(REPLY_WINDOW_MS) : listen();
     // Load the model now so the first question doesn't wait for it, and invite the cook to talk.
-    void modelService.warmUp().catch(() => {});
-    if (!greet) return;
-    if (screen === 'cooking' && s) voice.say(`I’m listening. How can I help with your ${s.recipe.title}?`);
-    else if (preview) voice.say(`I’m listening. Say “let’s cook” to start ${preview.recipe.title}, or tell me if you’re missing anything.`);
-    else reply(`I’m listening. ${OPENING}`);
+    void modelService.warmUp().catch(() => { });
+    voice.say(`I’m listening. How can I help with your ${s.recipe.title}?`);
   };
 
   // Voice is on unless the cook stopped it. It starts as the page loads, waiting for "Hey Chef". Browsers only let the mic and speaker start after a first tap or key press,
@@ -617,13 +616,24 @@ export default function App() {
     <div className="min-h-screen bg-cream-100 bg-[radial-gradient(ellipse_at_top_right,rgba(242,140,56,0.12),transparent_55%),radial-gradient(ellipse_at_bottom_left,rgba(107,122,58,0.08),transparent_50%)]">
       <header className="sticky top-0 z-30 h-[61px] border-b border-cream-200/80 bg-cream-100/90 backdrop-blur">
         <div className="mx-auto flex h-full max-w-7xl items-center justify-between gap-3 px-4 sm:px-6">
-          <button onClick={() => (screen === 'cooking' ? leaveCooking() : profile.onboarded && setScreen('browse'))} className="flex items-center gap-2.5" aria-label="Gusteau home">
-            <span className="flex h-9 w-9 items-center justify-center rounded-2xl bg-tomato-500 text-lg shadow-lift">👨‍🍳</span>
+          {/* <button onClick={() => (screen === 'cooking' ? leaveCooking() : profile.onboarded && setScreen('browse'))} className="flex items-center gap-2.5" aria-label="Gusteau home">
+            <GusteauIcon />
             <span className="text-left leading-none">
               <span className="hidden font-display text-xl font-semibold text-charcoal-900 sm:block">Gusteau</span>
               <span className="hidden text-[11px] text-charcoal-400 sm:block">Your personal chef assistant</span>
             </span>
-          </button>
+          </button> */}
+
+
+          {
+
+            screen == 'cooking' ? <button onClick={() => (screen === 'cooking' ? leaveCooking() : profile.onboarded && setScreen('browse'))} className="flex items-center gap-2.5" aria-label="Gusteau home">
+              <span className="text-left leading-none">
+                <span className="block text-md font-normal text-charcoal-900">← All Dishes</span>
+              </span>
+            </button> : ''
+          }
+
 
           <div className="flex items-center gap-2">
             <ModelPicker />
@@ -637,6 +647,11 @@ export default function App() {
               🐞 <span className="hidden sm:inline">Debug</span>
             </button>
             {profile.onboarded && screen !== 'cooking' && (
+              <button onClick={() => setEditingPrefs(true)} className="rounded-full px-3 py-2 text-sm font-medium text-charcoal-500 hover:bg-cream-200 hover:text-charcoal-900">
+                ⚙︎ <span className="hidden sm:inline">Preferences</span>
+              </button>
+            )}
+            {micVisible && screen !== 'browse' && (
               <button
                 onClick={startOverAsNewUser}
                 title="Prototype only: clears preferences, kitchen and history, then shows the new-user screen"
@@ -651,12 +666,29 @@ export default function App() {
                 ⚙︎ <span className="hidden sm:inline">Preferences</span>
               </button>
             )}
+            {screen !== 'onboarding' && screen !== 'browse' && voice.state === 'blocked' && <span className="text-xs text-tomato-600">Mic blocked in browser settings</span>}
           </div>
         </div>
+        {screen !== 'browse' && listening && voice.interim && (
+          <p className="absolute inset-x-0 top-full truncate bg-charcoal-900 px-4 py-1.5 text-center text-xs italic text-white">“{voice.interim}”</p>
+        )}
       </header>
       {debug && <DebugPanel />}
 
-      <main className={cx('px-4 pt-8 sm:px-6 sm:pt-10', screen === 'browse' ? 'pb-40' : 'pb-16')}>
+      <main className="px-4 pb-16 pt-8 sm:px-6 sm:pt-10">
+        {screen === 'browse' && (
+          <GusteauPrompt
+            className="mx-auto mb-8 max-w-7xl"
+            onAsk={() => void voice.listenOnce()}
+            supported={voice.supported}
+            disabled={voice.handsFree}
+            listening={voice.state === 'listening' && !voice.handsFree}
+            connecting={voice.state === 'connecting' && !voice.handsFree}
+            blocked={voice.state === 'blocked'}
+            transcript={voice.interim}
+            notice={voice.notice}
+          />
+        )}
         {screen === 'onboarding' && (
           <Onboarding
             profile={profile}
@@ -686,7 +718,6 @@ export default function App() {
                   openPreview(recipe, voice.handsFree ? selectionIntro(recipe) : undefined);
                 }}
                 onDemo={loadDemo}
-                micHint={voice.supported}
                 onToast={setToast}
               />
             ) : (
