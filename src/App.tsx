@@ -126,7 +126,7 @@ export default function App() {
     await voice.setHandsFree(on);
     if (!on || !s) return;
     // Load the model now so the first question doesn't wait for it, and invite the cook to talk.
-    void modelService.warmUp().catch(() => {});
+    void modelService.warmUp().catch(() => { });
     voice.say(`I’m listening. How can I help with your ${s.recipe.title}?`);
   };
 
@@ -160,13 +160,24 @@ export default function App() {
     <div className="min-h-screen bg-cream-100 bg-[radial-gradient(ellipse_at_top_right,rgba(242,140,56,0.12),transparent_55%),radial-gradient(ellipse_at_bottom_left,rgba(107,122,58,0.08),transparent_50%)]">
       <header className="sticky top-0 z-30 h-[61px] border-b border-cream-200/80 bg-cream-100/90 backdrop-blur">
         <div className="mx-auto flex h-full max-w-7xl items-center justify-between gap-3 px-4 sm:px-6">
-          <button onClick={() => (screen === 'cooking' ? leaveCooking() : profile.onboarded && setScreen('browse'))} className="flex items-center gap-2.5" aria-label="Gusteau home">
+          {/* <button onClick={() => (screen === 'cooking' ? leaveCooking() : profile.onboarded && setScreen('browse'))} className="flex items-center gap-2.5" aria-label="Gusteau home">
             <GusteauIcon />
             <span className="text-left leading-none">
               <span className="block font-display text-xl font-semibold text-charcoal-900">Gusteau</span>
               <span className="hidden text-[11px] text-charcoal-400 sm:block">Your personal chef assistant</span>
             </span>
-          </button>
+          </button> */}
+
+
+          {
+
+            screen == 'cooking' ? <button onClick={() => (screen === 'cooking' ? leaveCooking() : profile.onboarded && setScreen('browse'))} className="flex items-center gap-2.5" aria-label="Gusteau home">
+              <span className="text-left leading-none">
+                <span className="block text-md font-normal text-charcoal-900">← All Dishes</span>
+              </span>
+            </button> : ''
+          }
+
 
           <div className="flex items-center gap-2">
             <span

@@ -40,7 +40,7 @@ export function GusteauPrompt({
         <div className="flex min-w-0 flex-1 items-center gap-4">
           {icon ?? <GusteauIcon size={64} />}
           <div className="min-w-0">
-            <h1 id={`${id}-title`} className="font-display text-2xl font-semibold text-charcoal-900 sm:text-3xl">Gusteau</h1>
+            <h1 id={`${id}-title`} className="font-display text-2xl font-semibold text-charcoal-900 sm:text-3xl">Order with Chef</h1>
             <p id={`${id}-helper`} className="mt-1 max-w-xl text-sm leading-relaxed text-charcoal-500">{helper}</p>
           </div>
         </div>
