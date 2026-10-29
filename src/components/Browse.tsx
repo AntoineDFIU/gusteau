@@ -74,10 +74,8 @@ export function Browse({
   const dietIsDefault = filters.diet.length === profile.hardExclusions.length && filters.diet.every((d) => profile.hardExclusions.includes(d));
   const nFilters = activeFilterCount(filters) - (dietIsDefault ? filters.diet.length : 0);
   const browsingAll = !filters.cuisine && !filters.search && !nFilters;
-  const returning = profile.history.some((h) => h.finished);
-  // Saved dishes come first, most recently saved first; the picks are the best of the rest.
+  // Saved dishes come first, most recently saved first.
   const saved = browsingAll ? [...profile.favoriteRecipes].reverse().flatMap((id) => recipes.filter((r) => r.id === id)) : [];
-  const picks = browsingAll ? scored.filter((r) => !favIds.has(r.id) && matchesFilters(r, base, profile)).slice(0, 4) : [];
   const cuisine = filters.cuisine ? cuisineById(filters.cuisine) : null;
 
   return (
@@ -201,17 +199,6 @@ export function Browse({
               <div className="mt-3 grid grid-cols-1 gap-[17px] sm:grid-cols-2 xl:grid-cols-3">
                 {saved.map((r, i) => (
                   <RecipeCard key={r.id} recipe={r} profile={profile} onOpen={() => onOpen(r)} index={i} favorite onToggleFavorite={() => toggleFavorite(r)} />
-                ))}
-              </div>
-            </section>
-          )}
-
-          {picks.length > 0 && (
-            <section className="mb-10">
-              <SectionTitle>{returning ? 'Familiar Dishes' : profile.favoriteCuisines.length ? 'Picked for you' : 'Popular Dishes'}</SectionTitle>
-              <div className="mt-3 grid grid-cols-1 gap-[17px] sm:grid-cols-2 xl:grid-cols-3">
-                {picks.map((r, i) => (
-                  <RecipeCard key={r.id} recipe={r} profile={profile} onOpen={() => onOpen(r)} index={i} favorite={favIds.has(r.id)} onToggleFavorite={() => toggleFavorite(r)} />
                 ))}
               </div>
             </section>
