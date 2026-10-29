@@ -13,7 +13,7 @@ import { breaksRule, isEssential } from './kitchen';
 
 type Rules = Pick<CookRules, 'hardExclusions' | 'allergies' | 'equipment'>;
 
-const CHEESE = /\b(cheese|cheddar|mozzarella|parmesan|pecorino|feta|monterey jack|pepper jack|queso|halloumi|paneer|ricotta|gouda|gruy[eè]re|swiss|provolone|brie|havarti|emmental|manchego|colby|fontina|comt[eé])\b/i;
+const CHEESE = /\b(cheese|cheddar|american|mozzarella|parmesan|pecorino|feta|monterey jack|pepper jack|queso|halloumi|paneer|ricotta|gouda|gruy[eè]re|swiss|provolone|brie|havarti|emmental|manchego|colby|fontina|comt[eé])\b/i;
 
 /** A swap does the same job in the dish: a known substitute, or the same kind of ingredient. */
 export function sameRole(from: string, to: string): boolean {
@@ -64,26 +64,25 @@ const list = (xs: string[]) => (xs.length <= 1 ? xs.join('') : `${xs.slice(0, -1
 const cap = (t: string) => t.charAt(0).toUpperCase() + t.slice(1);
 
 /** What Gusteau asks when the cook is missing `ing`, and what he'll accept as an answer. */
-export function missingQuestion(ing: RecipeIngredient, r: Recipe, rules: Rules, where: 'preview' | 'cooking', out = true): PendingChoice & { say: string } {
+export function missingQuestion(ing: RecipeIngredient, r: Recipe, rules: Rules, _where: 'preview' | 'cooking', out = true): PendingChoice & { say: string } {
   const from = ing.substitutedFor ?? ing.name;
   const label = ing.name.toLowerCase();
   const core = isCore(ing, r);
   const kind = kindOf(ing.name) && !breaksRule(kindOf(ing.name)!, rules) ? kindOf(ing.name) : null;
-  // Known stand-ins that pass the cook's rules and need only equipment they have; a generic
-  // "shredded cheese" is already covered by asking for another kind of cheese.
+  // Known stand-ins that pass the cook's rules and need only equipment they have.
   const options = substitutesFor(from)
     .filter(
       (o) =>
         !breaksRule(o.name, rules) &&
         (!o.method || o.method.equipment.some((e) => rules.equipment.includes(e))) &&
         !r.ingredients.some((i) => i.id !== ing.id && sameIngredient(i.name, o.name)) &&
-        !(kind && kindOf(o.name) === kind),
+        !sameIngredient(ing.name, o.name),
     )
     .map((o) => o.name);
-  const named = options.slice(0, 2).map((o) => o.toLowerCase());
+  const named = options.slice(0, 3).map((o) => o.toLowerCase());
   const ask =
     kind && named.length
-      ? `Do you have another kind of ${kind}, or ${list(named)}?`
+      ? `Do you have another kind of ${kind}, like ${list(named)}? Any of those would work.`
       : kind
         ? `Do you have another kind of ${kind} you’d like to use?`
         : named.length
@@ -91,7 +90,7 @@ export function missingQuestion(ing: RecipeIngredient, r: Recipe, rules: Rules, 
           : 'Do you have something you could use in its place?';
   const dish = dishName(r);
   const say = core
-    ? `${dish === 'it' ? 'This dish' : cap(dish)} really needs the ${label}, so I wouldn’t leave ${itOrThem(label)} out. ${ask} ${where === 'preview' ? 'If not, we could pick another dish.' : 'If not, tell me what you do have and we’ll work it out.'}`
+    ? `${dish === 'it' ? 'This dish' : cap(dish)} really needs the ${label}, so I wouldn’t leave ${itOrThem(label)} out. ${ask} If not, tell me what you do have and we’ll work it out.`
     : `${ask} Otherwise, we can make ${dish} without ${itOrThem(label)}.`;
   return { from, current: ing.name, options, out, core, kind: kind ?? undefined, say };
 }
@@ -155,19 +154,17 @@ export function answerMissing(text: string, q: PendingChoice, r: Recipe, rules: 
   if (!heard) return null;
   const thing = kitchenSpelling(heard);
   if (sameIngredient(thing, q.current) || sameIngredient(thing, q.from)) return { kind: 'say', say: `That’s the one you’re out of. What could you use instead?` };
-  const suggested = q.options.find((o) => sameIngredient(o, thing) || normalize(thing).includes(normalize(o)));
-  if (suggested) return { kind: 'swap', to: suggested };
-  const name = thing.replace(/^./, (c) => c.toUpperCase());
+  const suggested = q.options.find((o) => sameIngredient(o, thing) || normalize(thing).includes(normalize(o)) || normalize(o) === `${normalize(thing)} cheese`);
+  const name = suggested ?? thing.replace(/^./, (c) => c.toUpperCase());
   const rule = breaksRule(name, rules);
   if (rule) return { kind: 'say', say: `I can’t use ${thing}: it breaks your “${rule}” rule. Anything else you could use instead of the ${label}?` };
   if (r.ingredients.some((i) => !sameIngredient(i.name, q.current) && sameIngredient(i.name, thing))) {
     return { kind: 'say', say: `${cap(thing)} is already in the recipe. Anything else you could use instead of the ${label}?` };
   }
+  if (suggested || sameRole(q.from, thing)) return { kind: 'swap', to: name };
   return {
     kind: 'confirm',
     to: name,
-    say: sameRole(q.from, thing)
-      ? `${cap(thing)} will work instead of the ${label}. Shall I use ${itOrThem(thing)}?`
-      : `I’m not sure ${thing} would do the same job as the ${label} here. Do you want to try ${itOrThem(thing)} anyway?`,
+    say: `I’m not sure ${thing} would do the same job as the ${label} here. Do you want to try ${itOrThem(thing)} anyway?`,
   };
 }

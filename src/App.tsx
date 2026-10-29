@@ -12,6 +12,7 @@ import { confirmation, useCook } from './state/useCook';
 import { useProfile } from './state/profile';
 import type { CookSession, PendingChoice, Recipe } from './types';
 import { answerMissing, missingQuestion } from './agent/missing';
+import { PREVIEW_INGREDIENT_QUESTION, previewRequestsRecipes, previewSubstitution, substitutionClarification, type PendingPreviewIngredient } from './agent/previewIntent';
 import { useVoice } from './voice/useVoice';
 import { afterWakeWord } from './voice/wakeWord';
 import { unlockAudio } from './voice/audioUnlock';
@@ -19,6 +20,7 @@ import { browseByVoice, modelSearch, picksFor, positionIn, previewCommand, recip
 import { OPENING, discoveryCommand, ingredientsReading, missingIn, missingNames, optionsReading, readNext, selectionIntro, type Reading } from './agent/discovery';
 import { CUISINES } from './data/cuisines';
 import { VoicePanel, type Turn } from './components/VoicePanel';
+import { TextChat } from './components/TextChat';
 import { DebugPanel } from './components/DebugPanel';
 import { ModelPicker } from './components/ModelPicker';
 import { logHeard } from './debug/debugLog';
@@ -56,6 +58,7 @@ export default function App() {
   const [filters, setFilters] = useState<Filters>({ ...EMPTY_FILTERS, diet: profile.hardExclusions });
   const [preview, setPreview] = useState<{ recipe: Recipe; kitchen: Kitchen } | null>(null);
   const [editingPrefs, setEditingPrefs] = useState(false);
+  const [chatHost, setChatHost] = useState<HTMLDivElement | null>(null);
   const [toast, setToast] = useState<string | null>(null);
 
   useEffect(() => {
@@ -180,6 +183,11 @@ export default function App() {
   const [decided, setDecided] = useState<{ name: string; to?: string }[]>([]);
   /** Gusteau asked "Do you have another kind of cheese?" and waits for the answer. */
   const [asking, setAsking] = useState<(PendingChoice & { say: string }) | null>(null);
+  /** The substitution request is open, but its source ingredient wasn't understood yet. */
+  const [pendingIngredient, setPendingIngredient] = useState<PendingPreviewIngredient | null>(null);
+  useEffect(() => {
+    setPendingIngredient(null);
+  }, [preview?.recipe.id]);
   /** More missing ingredients named at once, asked about one at a time. */
   const toAsk = useRef<string[]>([]);
 
@@ -203,6 +211,7 @@ export default function App() {
     setPreview({ recipe, kitchen: preview?.kitchen ?? {} });
     setDecided([]);
     setAsking(null);
+    setPendingIngredient(null);
     reading.current = null;
     offeredReading.current = false;
     if (say) {
@@ -221,21 +230,23 @@ export default function App() {
     const ing = recipe.ingredients.find((i) => i.name === name);
     if (!ing) return;
     const q = missingQuestion(ing, recipe, previewRules(recipe), 'preview');
+    setPendingIngredient(null);
     setAsking(q);
     reply(q.say, queue);
   };
   /** The cook's answer, spoken, typed or tapped. False when it isn't one ("let's cook"). */
-  const answerAsking = (text: string, recipe: Recipe): boolean => {
-    if (!asking) return false;
-    const a = answerMissing(text, asking, recipe, previewRules(recipe), 'preview');
+  const answerAsking = (text: string, recipe: Recipe, question = asking): boolean => {
+    if (!question) return false;
+    const a = answerMissing(text, question, recipe, previewRules(recipe), 'preview');
     if (!a) return false;
     // Settled: the preview adapts the recipe and says how (onAdjusted), then asks about the next one.
     if (a.kind === 'drop' || a.kind === 'swap') {
       const to = a.kind === 'swap' ? a.to : undefined;
       setAsking(null);
-      setDecided((d) => [...d.filter((x) => x.name !== asking.current), { name: asking.current, to }]);
+      setPendingIngredient(null);
+      setDecided((d) => [...d.filter((x) => x.name !== question.current), { name: question.current, to }]);
     } else {
-      setAsking({ ...asking, confirming: a.kind === 'confirm' ? a.to : undefined, say: a.say });
+      setAsking({ ...question, confirming: a.kind === 'confirm' ? a.to : undefined, say: a.say });
       reply(a.say);
     }
     return true;
@@ -285,7 +296,7 @@ export default function App() {
     if (at !== null || named) return ruleBased(text);
     // "Let's cook" before choosing a dish: ask which.
     if (previewCommand(text) === 'cook') return reply(listed.current.length ? 'Which one? Say its name, or “the first one”.' : `Sure! ${OPENING}`);
-    if (modelService.mode === 'llm') void discoverWithModel(text);
+    if (modelService.mode === 'llm') return discoverWithModel(text);
     else ruleBased(text);
   };
 
@@ -333,6 +344,32 @@ export default function App() {
   };
 
   const previewVoice = (text: string, recipe: Recipe) => {
+    if (previewRequestsRecipes(text)) return browseVoice(text);
+    const go = previewCommand(text);
+    // Leaving or cancelling is explicit; a failed transcription never clears the request.
+    if (go === 'close' && /\b(?:close|go back|back to|cancel|never ?mind)\b/i.test(text)) {
+      setPendingIngredient(null);
+      setAsking(null);
+      toAsk.current = [];
+      if ((asking || pendingIngredient) && /\b(?:cancel|never ?mind)\b/i.test(text)) return reply('Okay, I’ve cancelled the substitution. We’re still on this recipe.');
+      setPreview(null);
+      return reply(`Sure. ${OPENING}`);
+    }
+    const swap = previewSubstitution(text, recipe, pendingIngredient);
+    if (swap && (swap.ingredient || !asking)) {
+      if (!swap.ingredient) {
+        setPendingIngredient({ recipeId: recipe.id, to: swap.to });
+        return reply(PREVIEW_INGREDIENT_QUESTION);
+      }
+      setPendingIngredient(null);
+      toAsk.current = [];
+      if (swap.to) {
+        const q = missingQuestion(swap.ingredient, recipe, previewRules(recipe), 'preview', false);
+        if (answerAsking(`use ${swap.to}`, recipe, q)) return;
+      }
+      return askMissing(recipe, swap.ingredient.name);
+    }
+    if (asking && substitutionClarification(text)) return reply(asking.say);
     // "Yes, I have gouda" to "Do you have another kind of cheese?".
     if (answerAsking(text, recipe)) return;
     // "I don't have cilantro": Gusteau asks what could stand in before the recipe changes.
@@ -341,7 +378,11 @@ export default function App() {
       // Matched by sound to the recipe ("flower" → flour): shown as "Interpreted as…", never swapped in silently.
       if (miss.respelled.length) setInterpreted(miss.respelled.reduce((t, [heard, as]) => t.replace(new RegExp(`\\b${heard}\\b`, 'i'), as), text));
       // Not in the recipe, and doesn't sound like anything in it: ask, rather than assume it isn't needed.
-      if (!miss.found.length) return reply(miss.elsewhere.length ? `I couldn’t find “${miss.elsewhere.join('” or “')}” in this recipe. Which ingredient do you mean?` : 'Which ingredient are you missing?');
+      if (!miss.found.length) {
+        setPendingIngredient({ recipeId: recipe.id });
+        setAsking(null);
+        return reply(miss.elsewhere.length ? `I couldn’t find “${miss.elsewhere.join('” or “')}” in this recipe. Which ingredient do you mean?` : 'Which ingredient are you missing?');
+      }
       const names = miss.found.map((i) => i.name);
       toAsk.current = names.slice(1);
       return askMissing(recipe, names[0]);
@@ -353,15 +394,12 @@ export default function App() {
     }
     if (cmd === 'more') return reading.current?.kind === 'ingredients' ? readOn(reading.current) : reply('Say “what do I need?” and I’ll read you the ingredients.');
     if (cmd === 'repeat') return reply(lastSaid.current || selectionIntro(recipe));
-    const go = previewCommand(text);
+    if (asking) return reply(asking.say);
     if (go === 'cook') return setCookSignal((n) => n + 1);
     if (go === 'close') {
       setPreview(null);
       return reply(`Sure. ${OPENING}`);
     }
-    // Another dish ("actually, show me pad thai") replaces this one; anything else gets a hint.
-    const a = library && browseByVoice(text, library.recipes, profile, filters, listed.current);
-    if (a && a.kind !== 'none' && !(a.kind === 'list' && a.generic)) return showByVoice(a);
     reply(`Say “let’s cook” to start ${recipe.title}, or tell me if you’re missing anything.`);
   };
   // The dishes on screen follow the filters, however they were set (by voice or by tapping).
@@ -401,6 +439,18 @@ export default function App() {
     else browseVoice(asked);
   };
   const voice = useVoice(onPhrase);
+  // Typing uses the same recipe actions without opening the mic or waiting for a voice turn.
+  const sendTyped = async (text: string) => {
+    voice.stopTalking();
+    setInterpreted('');
+    if (screen === 'cooking' && cook.session) {
+      await cook.sendChat(text);
+      return;
+    }
+    logHeard({ who: 'cook', text, note: 'typed message' });
+    if (preview) previewVoice(text, preview.recipe);
+    else await browseVoice(text);
+  };
   const voiceRef = useRef(voice);
   voiceRef.current = voice;
   // The mic closed (voice failed, or a conversation ended): the conversation is over.
@@ -441,7 +491,7 @@ export default function App() {
         // A question at the end, or anything still waiting on the cook's answer ("Do you have another
         // kind of cheese? Otherwise, …", a swap to confirm, "skip this step?"), waits for the reply.
         const s = cook.session;
-        const open = invited.current || (screen === 'cooking' ? !!(s?.pendingChoice || s?.pendingOffer?.length || s?.pendingConfirm) : !!asking);
+        const open = invited.current || (screen === 'cooking' ? !!(s?.pendingChoice || s?.pendingOffer?.length || s?.pendingConfirm) : !!(asking || pendingIngredient));
         if (!answered.current || !voiceRef.current?.handsFree) setTurn('waiting');
         else openWindow(open || expectsReply(last ?? '') ? REPLY_WINDOW_MS : LISTEN_WINDOW_MS);
       },
@@ -498,6 +548,8 @@ export default function App() {
     invited.current = true;
     setTurn('answering');
     if (screen === 'cooking' && cook.session) return voice.say(`Yes? I’m listening. How can I help with your ${cook.session.recipe.title}?`);
+    if (preview && pendingIngredient?.recipeId === preview.recipe.id) return reply(PREVIEW_INGREDIENT_QUESTION);
+    if (preview && asking) return reply(asking.say);
     if (preview) return reply(`Yes? Say “let’s cook” when you’re ready, or tell me if you’re missing anything.`);
     return reply(`Hey! ${OPENING}`);
   };
@@ -656,7 +708,7 @@ export default function App() {
         {/* Talking with Gusteau: one place, top left, on every screen (in the recipe preview, at the top of it). */}
         {screen !== 'onboarding' && !preview && (
           <div className="mx-auto mb-6 max-w-7xl">
-            <VoicePanel voice={voice} turn={turn} interpreted={interpreted} onTalk={startTalking} onStop={stopConversation} className="w-full lg:max-w-xl" />
+            <VoicePanel voice={voice} turn={turn} interpreted={interpreted} onTalk={startTalking} onStop={stopConversation} className="w-full" />
           </div>
         )}
         {screen === 'onboarding' && (
@@ -707,7 +759,7 @@ export default function App() {
         )}
       </main>
 
-      <Modal open={!!preview} onClose={() => setPreview(null)} label={preview?.recipe.title ?? 'Recipe'} wide>
+      <Modal open={!!preview} onClose={() => setPreview(null)} label={preview?.recipe.title ?? 'Recipe'} wide chatHostRef={setChatHost}>
         {preview && (
           <>
             <div className="px-4 pt-4 sm:px-6 sm:pt-6">
@@ -746,7 +798,7 @@ export default function App() {
         )}
       </Modal>
 
-      <Modal open={editingPrefs} onClose={() => setEditingPrefs(false)} label="Preferences" wide>
+      <Modal open={editingPrefs} onClose={() => setEditingPrefs(false)} label="Preferences" wide chatHostRef={setChatHost}>
         <div className="p-5 sm:p-8">
           <Onboarding
             editing
@@ -767,7 +819,9 @@ export default function App() {
         </div>
       )}
 
-      <footer className="border-t border-cream-200 px-4 py-6 text-center text-xs text-charcoal-400">
+      <TextChat host={chatHost} onSend={sendTyped} cook={screen === 'cooking' ? cook : null} busy={!!cook.busy} context={preview?.recipe.title ?? (screen === 'cooking' ? cook.session?.recipe.title : undefined)} />
+
+      <footer className="border-t border-cream-200 px-4 pb-28 pt-6 text-center text-xs text-charcoal-400">
         Gusteau is a cooking assistant, not a food-safety or allergy authority. It can’t verify freshness or allergens. Always check labels and use your judgment.
       </footer>
     </div>

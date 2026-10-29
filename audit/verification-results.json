@@ -1,0 +1,61 @@
+[
+  {
+    "name": "Favorites persistence with duplicate cards handled",
+    "status": "pass",
+    "details": [
+      "it-aglio-olio"
+    ]
+  },
+  {
+    "name": "Live speech startup and greeting without text encoding assumptions",
+    "status": "pass",
+    "details": {
+      "timeline": [
+        "👨‍🍳 | Gusteau | Starting the mic… | Stop",
+        "👨‍🍳 | Gusteau | Thinking… | Stop",
+        "👨‍🍳 | Gusteau | Speaking | Stop",
+        "👨‍🍳 | Gusteau | Thinking… | Stop",
+        "👨‍🍳 | Gusteau | Listening… go ahead | Stop"
+      ],
+      "calls": [
+        {
+          "url": "http://127.0.0.1:5173/api/asr/health",
+          "status": 200
+        },
+        {
+          "url": "http://127.0.0.1:5173/api/asr/health",
+          "status": 200
+        },
+        {
+          "url": "http://127.0.0.1:5173/api/asr/v1/models",
+          "status": 200
+        },
+        {
+          "url": "http://127.0.0.1:5173/api/asr/v1/models",
+          "status": 200
+        },
+        {
+          "url": "http://127.0.0.1:5173/api/asr/v1/audio/speech",
+          "status": 200
+        },
+        {
+          "url": "http://127.0.0.1:5173/api/asr/v1/audio/speech",
+          "status": 200
+        }
+      ],
+      "events": [
+        "{\"type\":\"connected\"}",
+        "{\"event_id\":\"event_41340\",\"session\":{\"input_audio_format\":\"pcm16\",\"model\":\".nemotron-3.5-asr-streaming-0.6b.q8_0.gguf\",\"sample_rate\":16000},\"type\":\"session.created\"}",
+        "{\"event_id\":\"event_41341\",\"session\":{\"automatic_punctuation\":true,\"sample_rate\":48000},\"type\":\"session.updated\"}",
+        "{\"audio_processed\":0.10000000149011612,\"event_id\":\"event_41343\",\"transcript\":\"\",\"type\":\"conversation.item.input_audio_transcription.completed\"}",
+        "{\"event_id\":\"event_41344\",\"type\":\"input_audio_buffer.committed\"}"
+      ],
+      "errors": []
+    }
+  },
+  {
+    "name": "Retry after initially unavailable speech server actually re-probes",
+    "status": "fail",
+    "error": "{\"baseline\":2,\"after\":2,\"text\":\"Audio devices\\nMicrophone\\nSystem default\\nFake Audio Input 1\\nFake Audio Input 2\\nLevel\\nThe browser’s speech recognition always uses the system’s default microphone.\\nSpeaker\\nSystem default\\nFake Audio Output 1\\nFake Audio Output 2\\nTest\\nGusteau is using the browser’s voice right now, which always plays on the system’s default speaker.\"}"
+  }
+]

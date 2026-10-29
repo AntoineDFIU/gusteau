@@ -1,4 +1,4 @@
-import { useEffect, useRef, useState } from 'react';
+import { useEffect, useId, useLayoutEffect, useRef, useState } from 'react';
 import { useDebugLog } from '../debug/debugLog';
 import { chime } from '../lib/sound';
 import { speakerSelectable, useAudioDevices } from '../voice/audioDevices';
@@ -9,7 +9,7 @@ import { cx } from './ui';
 // ─────────────────────────────────────────────────────────────
 // Talking with Gusteau, in one place at the top left of every screen:
 // one button that starts a conversation and stops it, what he's doing,
-// the last few things said (his words first and largest), and the mic
+// the latest message (or four when expanded), and the mic
 // and audio device settings. The mic is only open during a conversation.
 // ─────────────────────────────────────────────────────────────
 
@@ -65,10 +65,12 @@ export function VoicePanel({
   onTalk: () => void;
   /** End the conversation: he stops talking and the mic closes. */
   onStop: () => void;
-  /** Fewer lines of conversation, for the top of the recipe preview. */
+  /** Tighter spacing for the top of the recipe preview. */
   compact?: boolean;
   className?: string;
 }) {
+  const [collapsed, setCollapsed] = useState(true);
+  const conversationId = useId();
   // Redraw on the page's first tap or key press, when "tap anywhere" no longer applies.
   const [, touched] = useState(pageTouched());
   useEffect(() => {
@@ -87,11 +89,14 @@ export function VoicePanel({
   const active = IN_CONVERSATION.includes(status);
   const live = (turn === 'open' || turn === 'hearing') && !voice.micMuted ? voice.interim.trim() : '';
   // What was said: everything Gusteau said, and what the cook said to him (not chatter he ignored).
-  const lines = heard.filter((h) => h.who === 'gusteau' || !h.note?.startsWith('ignored')).slice(compact ? -2 : -4);
-  const lastCook = lines.map((l) => l.who).lastIndexOf('cook');
+  const conversation = heard.filter((h) => h.who === 'gusteau' || !h.note?.startsWith('ignored'));
+  // The live transcript occupies one slot in the visible message count.
+  const historySlots = (collapsed ? 1 : 4) - (live ? 1 : 0);
+  const lines = historySlots ? conversation.slice(-historySlots).reverse() : [];
+  const lastCook = lines.findIndex((l) => l.who === 'cook');
 
   return (
-    <section aria-label="Talk to Gusteau" className={cx('rounded-3xl border border-cream-200 bg-white/85 p-4 shadow-card backdrop-blur sm:p-5', className)}>
+    <section aria-label="Talk to Gusteau" className={cx('relative z-20 rounded-3xl border border-cream-200 bg-white/85 p-4 shadow-card backdrop-blur', !compact && 'sm:p-5', className)}>
       <div className="flex flex-wrap items-center gap-3">
         {/* His mark grows with your voice while he's listening. */}
         <GusteauIcon
@@ -139,17 +144,35 @@ export function VoicePanel({
             </button>
           )}
           <AudioDevicesButton voice={voice} />
+          <button
+            type="button"
+            onClick={() => setCollapsed((v) => !v)}
+            aria-expanded={!collapsed}
+            aria-controls={conversationId}
+            aria-label={collapsed ? 'Expand voice conversation' : 'Collapse voice conversation'}
+            title={collapsed ? 'Show last four messages' : 'Show latest message only'}
+            className="flex h-7 w-7 items-center justify-center rounded-full border border-cream-300 bg-white text-charcoal-700 hover:bg-cream-100 focus:outline-none focus-visible:ring-4 focus-visible:ring-tomato-100"
+          >
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden className={cx('transition-transform', collapsed && 'rotate-180')}>
+              <path d="m6 15 6-6 6 6" />
+            </svg>
+          </button>
         </span>
       </div>
 
-      {/* The conversation, oldest first: Gusteau's words large, the cook's small. */}
-      <ol className="mt-3 space-y-2 border-t border-cream-200 pt-3" aria-live="polite" aria-label="Conversation">
+      {/* Collapsed shows one message; expanded shows four, newest first. */}
+      <ol id={conversationId} className="mt-3 space-y-2 border-t border-cream-200 pt-3" aria-live="polite" aria-label="Latest conversation messages">
         {lines.length === 0 && !live && <li className="text-sm text-charcoal-500">Tap “Talk to Gusteau”, then tell him what you’re in the mood for. He only listens while you’re talking with him.</li>}
+        {live && (
+          <li className="pl-7 text-xs italic text-charcoal-500">
+            <span className="font-semibold not-italic">You:</span> “{live}”…
+          </li>
+        )}
         {lines.map((l, i) =>
           l.who === 'gusteau' ? (
             <li key={l.at + l.text} className="flex gap-2">
               <GusteauIcon size={20} className="mt-0.5" />
-              <p className={cx('min-w-0 font-medium leading-snug text-charcoal-900', i === lines.length - 1 ? 'text-[15px]' : 'line-clamp-2 text-sm text-charcoal-700')}>{l.text}</p>
+              <p className="min-w-0 text-[15px] font-medium leading-snug text-charcoal-900">{l.text}</p>
             </li>
           ) : (
             <li key={l.at + l.text} className="pl-7 text-xs text-charcoal-400">
@@ -157,11 +180,6 @@ export function VoicePanel({
               {i === lastCook && interpreted && <span className="block italic">Interpreted as “{interpreted}”</span>}
             </li>
           ),
-        )}
-        {live && (
-          <li className="pl-7 text-xs italic text-charcoal-500">
-            <span className="font-semibold not-italic">You:</span> “{live}”…
-          </li>
         )}
       </ol>
 
@@ -184,8 +202,27 @@ export function VoicePanel({
  */
 function AudioDevicesButton({ voice }: { voice: Voice }) {
   const [open, setOpen] = useState(false);
+  const [menuLeft, setMenuLeft] = useState(0);
   const devices = useAudioDevices();
   const box = useRef<HTMLSpanElement>(null);
+  const menu = useRef<HTMLSpanElement>(null);
+  useLayoutEffect(() => {
+    if (!open) return;
+    const position = () => {
+      if (!box.current || !menu.current) return;
+      const anchor = box.current.getBoundingClientRect();
+      const width = menu.current.getBoundingClientRect().width;
+      // Open to the right, shifting left only enough to fit inside the viewport.
+      setMenuLeft(Math.max(16 - anchor.left, Math.min(0, window.innerWidth - 16 - anchor.left - width)));
+    };
+    position();
+    window.addEventListener('resize', position);
+    window.addEventListener('scroll', position, true);
+    return () => {
+      window.removeEventListener('resize', position);
+      window.removeEventListener('scroll', position, true);
+    };
+  }, [open]);
   useEffect(() => {
     if (!open) return;
     // Names and newly plugged-in devices show up once the mic is allowed, so look again on opening.
@@ -224,10 +261,12 @@ function AudioDevicesButton({ voice }: { voice: Voice }) {
       </button>
       {open && (
         <span
+          ref={menu}
           role="dialog"
           aria-label="Audio devices"
+          style={{ left: menuLeft }}
           className={cx(
-            'absolute right-0 z-[70] block w-72 max-w-[calc(100vw-2rem)] rounded-2xl border border-cream-200 bg-white p-4 text-left text-charcoal-700 shadow-card',
+            'absolute z-[70] block w-72 max-w-[calc(100vw-2rem)] rounded-2xl border border-cream-200 bg-white p-4 text-left text-charcoal-700 shadow-card',
             'top-full mt-2',
           )}
         >
