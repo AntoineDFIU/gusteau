@@ -2,7 +2,7 @@ import { cuisineById, matchCuisine } from '../data/cuisines';
 import { GENERIC_WORDS, emojiFor, normalize, parseIngredientLine, sameIngredient, spellOutSpoons } from '../data/ingredients';
 import { DIFFICULTIES, EQUIPMENT_IDS, EQUIPMENT_WORDS } from '../data/rules';
 import { groupStages, validateStages } from '../agent/stages';
-import type { ChefCredit, Difficulty, Equipment, Nutrition, Recipe, RecipeIngredient, RecipeStage, RecipeStep } from '../types';
+import type { ChefCredit, Difficulty, Equipment, Nutrition, Recipe, RecipeImageAttribution, RecipeIngredient, RecipeStage, RecipeStep } from '../types';
 import { splitList } from './csv';
 
 // ─────────────────────────────────────────────────────────────
@@ -222,6 +222,22 @@ function parseNutrition(raw: Raw, servings: number): Nutrition | undefined {
   };
 }
 
+function parseImageAttribution(raw: unknown): RecipeImageAttribution | undefined {
+  if (!raw || typeof raw !== 'object' || Array.isArray(raw)) return undefined;
+  const o = raw as Raw;
+  const credit = str(pick(o, 'credit'));
+  const licence = str(pick(o, 'licence', 'license'));
+  const filePage = str(pick(o, 'filePage', 'file_page'));
+  if (!credit || !licence || !filePage) return undefined;
+  return {
+    credit,
+    artist: str(pick(o, 'artist')) || undefined,
+    licence,
+    filePage,
+    licenceUrl: str(pick(o, 'licenceUrl', 'licence_url', 'licenseUrl', 'license_url')) || undefined,
+  };
+}
+
 export function normalizeRecipe(raw: Raw, index: number): Recipe | null {
   const title = str(pick(raw, 'title', 'name', 'recipe'));
   if (!title) return null;
@@ -248,6 +264,12 @@ export function normalizeRecipe(raw: Raw, index: number): Recipe | null {
   const scale = totalMinutes / weights.reduce((a, b) => a + b, 0);
   steps.forEach((s, i) => (s.minutes = Math.round(weights[i] * scale * 10) / 10));
   const servings = Math.max(1, Math.round(num(pick(raw, 'servings', 'serves', 'yield')) ?? 2));
+  const imageMatchRaw = str(pick(raw, 'imageMatch', 'image_match'));
+  const imageMatch = imageMatchRaw === 'dish' || imageMatchRaw === 'representative' ? imageMatchRaw : undefined;
+  if (imageMatchRaw && !imageMatch) console.warn(`[Gusteau] Ignoring unsupported image match "${imageMatchRaw}" for ${title}.`);
+  const imageAttributionRaw = pick(raw, 'imageAttribution', 'image_attribution');
+  const imageAttribution = parseImageAttribution(imageAttributionRaw);
+  if (imageAttributionRaw !== undefined && !imageAttribution) console.warn(`[Gusteau] Ignoring incomplete image attribution for ${title}.`);
 
   return {
     id: str(pick(raw, 'id', 'slug')) || `${slug(title)}-${index}`,
@@ -256,6 +278,8 @@ export function normalizeRecipe(raw: Raw, index: number): Recipe | null {
     description: str(pick(raw, 'description', 'summary', 'intro')),
     chef: parseChef(raw),
     image: str(pick(raw, 'image', 'image_url', 'photo', 'thumbnail')) || undefined,
+    imageMatch,
+    imageAttribution,
     emoji: str(pick(raw, 'emoji')) || emojiFor(ingredients[0]?.name ?? '') || cuisineById(cuisine).emoji,
     totalMinutes,
     servings,

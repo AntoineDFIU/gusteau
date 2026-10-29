@@ -20,7 +20,15 @@ Either a plain array of recipes or `{ "recipes": [ ... ] }`.
   "cuisine": "mexican",
   "description": "Fluffy rice, warm black beans and melty cheese, all in one microwave.",
   "chef": { "name": "Chef Name", "url": "https://link-to-the-published-original", "relation": "Inspired by" },
-  "image": "https://…/burrito-bowl.jpg",
+  "image": "recipes/images/burrito-bowl.jpg",
+  "image_match": "dish",
+  "image_attribution": {
+    "artist": "Photographer",
+    "credit": "Own work",
+    "licence": "CC BY-SA 4.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "file_page": "https://commons.wikimedia.org/wiki/File:Example.jpg"
+  },
   "total_minutes": 14,
   "servings": 2,
   "difficulty": "Easy",
@@ -54,7 +62,8 @@ Either a plain array of recipes or `{ "recipes": [ ... ] }`.
 | `equipment` | optional | Any of `stovetop`, `oven`, `microwave`, `blender`, `grill`. An empty list means no cooking. If the field is missing, Gusteau works it out from the step text. |
 | `stages` | optional | 3–5 stages, each covering consecutive steps in order. Use step keys or 1-based step numbers. `icon` must be one of the ids in `src/data/stageIcons.ts`. If the stages are missing or invalid, a connected model or Gusteau's own heuristic groups the steps. |
 | `nutrition` | optional | Per serving: `{ "calories": 512, "protein": 21, "carbs": 82, "fat": 10, "fiber": 10, "sugar": 2, "sodium": 680 }` (grams, sodium in mg). Strings like `"21 g"` work, and `"per": "recipe"` means totals for the whole dish. In CSV, use flat `calories`, `protein`, `carbs`, `fat`, `fiber`, `sugar` and `sodium` columns. Without it, Gusteau estimates nutrition from the ingredients and labels it as an estimate. |
-| `total_minutes`, `servings`, `difficulty`, `popularity`, `tags`, `image`, `emoji`, `description` | optional | Reasonable defaults apply. |
+| `total_minutes`, `servings`, `difficulty`, `popularity`, `tags`, `image`, `emoji`, `description` | optional | `image` can be a hosted URL or a path relative to the app root. For local photos, put the file in `public/recipes/images/` and use `recipes/images/<filename>`. Other fields have reasonable defaults. |
+| `image_match`, `image_attribution` | optional | Use `dish` only when the photo depicts the recipe; mark generic related photos `representative` so the UI labels them. Include attribution credit and licence details with licensed local photos. |
 
 ## CSV
 
