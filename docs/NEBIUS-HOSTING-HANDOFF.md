@@ -18,6 +18,22 @@ Browser → HTTPS/Tailscale Funnel → Raspberry Pi → Token Factory → Nemotr
 
 The teammate does not need to edit code or configure Docker.
 
+## One-command deployment
+
+Run this from the repository on the Pi. It asks for the Token Factory key with
+hidden input, creates the protected `gusteau.env`, builds the app, restarts the
+service, and checks health:
+
+```bash
+cd ~/gusteau
+git pull origin codex/hackathon-audit
+chmod +x scripts/deploy-pi-nebius.sh
+./scripts/deploy-pi-nebius.sh
+```
+
+The only prompt is `Paste Nebius Token Factory API key (hidden):`. Never paste
+the key into chat or a shared document.
+
 ## Deployment
 
 On the Pi, pull `codex/hackathon-audit`, run `npm ci` and `npm run build`, and

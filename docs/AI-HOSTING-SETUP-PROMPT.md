@@ -23,18 +23,16 @@ private Token Factory key when asked. Never request the key in chat or commit it
    `docs/NEBIUS-HOSTING-HANDOFF.md`, and this document.
 3. Run `npm ci` and `npm run build`; fix safe build issues if necessary.
 4. SSH to the authorized Raspberry Pi and pull the branch.
-5. Build the production frontend and copy `dist` plus
-   `deploy/gusteau_server.py` into the Pi deployment directory.
-6. Configure `gusteau.env` on the Pi with provider `nebius`, base URL
-   `https://api.tokenfactory.nebius.com/v1`, the private `LLM_API_KEY`, and
-   model `nvidia/Llama-3_3-Nemotron-Super-49B-v1_5`.
-7. Restart the existing `gusteau.service` systemd service.
-8. Verify `/api/health`, public HTTPS access, and a real cooking question.
-9. Confirm the browser never receives the key and the UI is not mock mode.
-10. Preserve the Tailscale Funnel `/Gusteau` route if it shares the address
+5. Run `chmod +x scripts/deploy-pi-nebius.sh` and
+   `./scripts/deploy-pi-nebius.sh` on the Pi. The script builds the frontend,
+   prompts for the hidden key, creates protected `gusteau.env`, installs the
+   server file, restarts systemd, and checks health.
+6. Verify `/api/health`, public HTTPS access, and a real cooking question.
+7. Confirm the browser never receives the key and the UI is not mock mode.
+8. Preserve the Tailscale Funnel `/Gusteau` route if it shares the address
     with another application.
-11. Run `npm run build`, `git diff --check`, and `git status`.
-12. Report branch, commit, provider/model tested, health result, public URL,
+9. Run `npm run build`, `git diff --check`, and `git status`.
+10. Report branch, commit, provider/model tested, health result, public URL,
     and any blocker. Never claim completion without public and live-model tests.
 
 ## Safety
