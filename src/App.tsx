@@ -19,6 +19,7 @@ import { browseByVoice, modelSearch, picksFor, positionIn, previewCommand, recip
 import { OPENING, discoveryCommand, ingredientsReading, missingIn, missingNames, optionsReading, readNext, selectionIntro, type Reading } from './agent/discovery';
 import { CUISINES } from './data/cuisines';
 import { VoicePanel, type Turn } from './components/VoicePanel';
+import { TextChat } from './components/TextChat';
 import { DebugPanel } from './components/DebugPanel';
 import { ModelPicker } from './components/ModelPicker';
 import { logHeard } from './debug/debugLog';
@@ -56,6 +57,7 @@ export default function App() {
   const [filters, setFilters] = useState<Filters>({ ...EMPTY_FILTERS, diet: profile.hardExclusions });
   const [preview, setPreview] = useState<{ recipe: Recipe; kitchen: Kitchen } | null>(null);
   const [editingPrefs, setEditingPrefs] = useState(false);
+  const [chatHost, setChatHost] = useState<HTMLDivElement | null>(null);
   const [toast, setToast] = useState<string | null>(null);
 
   useEffect(() => {
@@ -285,7 +287,7 @@ export default function App() {
     if (at !== null || named) return ruleBased(text);
     // "Let's cook" before choosing a dish: ask which.
     if (previewCommand(text) === 'cook') return reply(listed.current.length ? 'Which one? Say its name, or “the first one”.' : `Sure! ${OPENING}`);
-    if (modelService.mode === 'llm') void discoverWithModel(text);
+    if (modelService.mode === 'llm') return discoverWithModel(text);
     else ruleBased(text);
   };
 
@@ -401,6 +403,18 @@ export default function App() {
     else browseVoice(asked);
   };
   const voice = useVoice(onPhrase);
+  // Typing uses the same recipe actions without opening the mic or waiting for a voice turn.
+  const sendTyped = async (text: string) => {
+    voice.stopTalking();
+    setInterpreted('');
+    if (screen === 'cooking' && cook.session) {
+      await cook.sendChat(text);
+      return;
+    }
+    logHeard({ who: 'cook', text, note: 'typed message' });
+    if (preview) previewVoice(text, preview.recipe);
+    else await browseVoice(text);
+  };
   const voiceRef = useRef(voice);
   voiceRef.current = voice;
   // The mic closed (voice failed, or a conversation ended): the conversation is over.
@@ -656,7 +670,7 @@ export default function App() {
         {/* Talking with Gusteau: one place, top left, on every screen (in the recipe preview, at the top of it). */}
         {screen !== 'onboarding' && !preview && (
           <div className="mx-auto mb-6 max-w-7xl">
-            <VoicePanel voice={voice} turn={turn} interpreted={interpreted} onTalk={startTalking} onStop={stopConversation} className="w-full lg:max-w-xl" />
+            <VoicePanel voice={voice} turn={turn} interpreted={interpreted} onTalk={startTalking} onStop={stopConversation} className="w-full" />
           </div>
         )}
         {screen === 'onboarding' && (
@@ -707,7 +721,7 @@ export default function App() {
         )}
       </main>
 
-      <Modal open={!!preview} onClose={() => setPreview(null)} label={preview?.recipe.title ?? 'Recipe'} wide>
+      <Modal open={!!preview} onClose={() => setPreview(null)} label={preview?.recipe.title ?? 'Recipe'} wide chatHostRef={setChatHost}>
         {preview && (
           <>
             <div className="px-4 pt-4 sm:px-6 sm:pt-6">
@@ -746,7 +760,7 @@ export default function App() {
         )}
       </Modal>
 
-      <Modal open={editingPrefs} onClose={() => setEditingPrefs(false)} label="Preferences" wide>
+      <Modal open={editingPrefs} onClose={() => setEditingPrefs(false)} label="Preferences" wide chatHostRef={setChatHost}>
         <div className="p-5 sm:p-8">
           <Onboarding
             editing
@@ -767,7 +781,9 @@ export default function App() {
         </div>
       )}
 
-      <footer className="border-t border-cream-200 px-4 py-6 text-center text-xs text-charcoal-400">
+      <TextChat host={chatHost} onSend={sendTyped} cook={screen === 'cooking' ? cook : null} busy={!!cook.busy} context={preview?.recipe.title ?? (screen === 'cooking' ? cook.session?.recipe.title : undefined)} />
+
+      <footer className="border-t border-cream-200 px-4 pb-28 pt-6 text-center text-xs text-charcoal-400">
         Gusteau is a cooking assistant, not a food-safety or allergy authority. It can’t verify freshness or allergens. Always check labels and use your judgment.
       </footer>
     </div>

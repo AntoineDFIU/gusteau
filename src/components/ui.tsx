@@ -1,4 +1,4 @@
-import { useEffect, type ButtonHTMLAttributes, type ReactNode } from 'react';
+import { useEffect, type ButtonHTMLAttributes, type ReactNode, type Ref } from 'react';
 
 const cx = (...c: (string | false | null | undefined)[]) => c.filter(Boolean).join(' ');
 export { cx };
@@ -111,12 +111,14 @@ export function Modal({
   label,
   children,
   wide = false,
+  chatHostRef,
 }: {
   open: boolean;
   onClose: () => void;
   label: string;
   children: ReactNode;
   wide?: boolean;
+  chatHostRef?: Ref<HTMLDivElement>;
 }) {
   useEffect(() => {
     if (!open) return;
@@ -133,6 +135,7 @@ export function Modal({
   return (
     <div className={cx('fixed inset-0 z-50 flex items-end justify-center bg-charcoal-900/40 backdrop-blur-sm sm:items-center sm:p-6')} onClick={onClose}>
       <div
+        ref={chatHostRef}
         role="dialog"
         aria-modal="true"
         aria-label={label}
@@ -140,6 +143,7 @@ export function Modal({
         className={cx(
           'relative w-full animate-pop overflow-y-auto rounded-t-3xl bg-cream-50 shadow-card sm:rounded-3xl',
           wide ? 'sm:max-w-4xl' : 'sm:max-w-lg',
+          chatHostRef && 'pb-36',
           'max-h-[94vh]',
         )}
       >
