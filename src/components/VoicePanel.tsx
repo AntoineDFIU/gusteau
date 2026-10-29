@@ -3,6 +3,7 @@ import { useDebugLog } from '../debug/debugLog';
 import { chime } from '../lib/sound';
 import { speakerSelectable, useAudioDevices } from '../voice/audioDevices';
 import type { Voice } from '../voice/useVoice';
+import type { FlameState } from './flame';
 import { GusteauIcon } from './GusteauIcon';
 import { cx } from './ui';
 
@@ -21,8 +22,8 @@ export type Turn = 'waiting' | 'open' | 'hearing' | 'answering';
 
 type VoiceStatus = 'idle' | 'off' | 'tap' | 'connecting' | 'speaking' | 'muted' | 'listening' | 'hearing' | 'thinking' | 'waiting';
 const STATUS: Record<VoiceStatus, { text: string; dot: string }> = {
-  idle: { text: 'Not listening · tap Talk to Gusteau to start', dot: 'bg-charcoal-400' },
-  off: { text: 'Voice unavailable · tap Talk to Gusteau to retry', dot: 'bg-tomato-500' },
+  idle: { text: 'Not listening · tap the flame to start', dot: 'bg-charcoal-400' },
+  off: { text: 'Voice unavailable · tap the flame to retry', dot: 'bg-tomato-500' },
   tap: { text: 'Tap anywhere to turn on voice', dot: 'bg-tomato-500 animate-pulse' },
   connecting: { text: 'Starting the mic…', dot: 'bg-saffron-400 animate-pulse' },
   speaking: { text: 'Speaking', dot: 'bg-saffron-400 animate-pulse' },
@@ -30,8 +31,32 @@ const STATUS: Record<VoiceStatus, { text: string; dot: string }> = {
   listening: { text: 'Listening… go ahead', dot: 'bg-olive-500 animate-pulse' },
   hearing: { text: 'Hearing you… take your time', dot: 'bg-olive-500 animate-pulse' },
   thinking: { text: 'Thinking…', dot: 'bg-saffron-400 animate-pulse' },
-  waiting: { text: 'Not listening · tap Talk to Gusteau to start', dot: 'bg-charcoal-400' },
+  waiting: { text: 'Not listening · tap the flame to start', dot: 'bg-charcoal-400' },
 };
+
+// While a conversation is going the flame rests in "speak"; it only turns to the listening flame
+// once the cook's voice stays above the threshold for LISTEN_AFTER_MS, and settles back after QUIET_BACK_MS.
+const FLAME: Record<VoiceStatus, FlameState> = {
+  idle: 'idle', off: 'idle', tap: 'idle', waiting: 'idle',
+  connecting: 'speak', listening: 'speak', hearing: 'speak', thinking: 'speak',
+  speaking: 'speak', muted: 'muted',
+};
+const VOICE_THRESHOLD = 0.3;
+const LISTEN_AFTER_MS = 200;
+const QUIET_BACK_MS = 500;
+
+function useFlameState(status: VoiceStatus, level: number): FlameState {
+  const base = FLAME[status];
+  const canListen = base === 'speak' && status !== 'speaking';
+  const loud = canListen && level > VOICE_THRESHOLD;
+  const [hearing, setHearing] = useState(false);
+  useEffect(() => {
+    if (!canListen) return setHearing(false);
+    const timer = setTimeout(() => setHearing(loud), loud ? LISTEN_AFTER_MS : QUIET_BACK_MS);
+    return () => clearTimeout(timer);
+  }, [canListen, loud]);
+  return canListen && hearing ? 'on' : base;
+}
 
 const pageTouched = () => (navigator as Navigator & { userActivation?: { hasBeenActive: boolean } }).userActivation?.hasBeenActive ?? true;
 
@@ -87,8 +112,9 @@ export function VoicePanel({
     };
   }, []);
   const { heard } = useDebugLog();
-  if (!voice.supported) return null;
   const status = voiceStatus(voice, turn);
+  const flame = useFlameState(status, voice.level);
+  if (!voice.supported) return null;
   const active = IN_CONVERSATION.includes(status);
   const live = (turn === 'open' || turn === 'hearing') && !voice.micMuted ? voice.interim.trim() : '';
   // What was said: everything Gusteau said, and what the cook said to him (not chatter he ignored).
@@ -101,12 +127,16 @@ export function VoicePanel({
   return (
     <section aria-label="Talk to Gusteau" className={cx('relative z-20 rounded-3xl border border-cream-200 bg-white/85 p-4 shadow-card backdrop-blur', !compact && 'sm:p-5', className)}>
       <div className="flex flex-wrap items-center gap-3">
-        {/* His mark grows with your voice while he's listening. */}
-        <GusteauIcon
-          size={44}
-          style={active && voice.level ? { transform: `scale(${1 + voice.level * 0.2})` } : undefined}
-          className={cx('transition-transform', active && 'ring-4 ring-olive-400/40 animate-pulse')}
-        />
+        {/* His mark is the main control: tap to start or stop the conversation. */}
+        <button
+          type="button"
+          onClick={active ? onStop : onTalk}
+          aria-pressed={active}
+          aria-label={active ? 'Stop talking with Gusteau' : 'Talk to Gusteau'}
+          className="shrink-0 rounded-[30%] transition-transform active:scale-95 focus:outline-none focus-visible:ring-4 focus-visible:ring-tomato-100"
+        >
+          <GusteauIcon size={96} state={flame} level={voice.level} />
+        </button>
         <div className="min-w-0 flex-1 basis-40">
           <p className="font-display text-lg font-semibold leading-tight text-charcoal-900">Gusteau</p>
           <p className="flex items-center gap-1.5 text-xs text-charcoal-500" aria-live="polite">
@@ -115,19 +145,6 @@ export function VoicePanel({
           </p>
         </div>
         <span className="flex shrink-0 items-center gap-1.5">
-          <button
-            type="button"
-            onClick={active ? onStop : onTalk}
-            aria-pressed={active}
-            className={cx(
-              'inline-flex min-h-[44px] items-center gap-2 rounded-full px-5 text-sm font-semibold text-white shadow-lift transition-colors focus:outline-none focus-visible:ring-4 focus-visible:ring-tomato-100',
-              active ? 'bg-charcoal-900 hover:bg-charcoal-700' : 'bg-tomato-500 hover:bg-tomato-600',
-              inviteToTalk && !active && 'talk-invite',
-            )}
-          >
-            {active ? <span aria-hidden className="h-2.5 w-2.5 rounded-sm bg-white" /> : <span aria-hidden>🎤</span>}
-            {active ? 'Stop' : 'Talk to Gusteau'}
-          </button>
           {voice.handsFree && (
             <button
               type="button"
@@ -166,7 +183,7 @@ export function VoicePanel({
 
       {/* Collapsed shows one message; expanded shows four, newest first. */}
       <ol id={conversationId} className="mt-3 space-y-2 border-t border-cream-200 pt-3" aria-live="polite" aria-label="Latest conversation messages">
-        {lines.length === 0 && !live && <li className="text-sm text-charcoal-500">Tap “Talk to Gusteau”, then tell him what you’re in the mood for. He only listens while you’re talking with him.</li>}
+        {lines.length === 0 && !live && <li className="text-sm text-charcoal-500">Tap the flame, then tell him what you’re in the mood for. He only listens while you’re talking with him.</li>}
         {live && (
           <li className="pl-7 text-xs italic text-charcoal-500">
             <span className="font-semibold not-italic">You:</span> “{live}”…
