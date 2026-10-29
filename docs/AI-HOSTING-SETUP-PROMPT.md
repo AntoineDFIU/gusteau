@@ -4,6 +4,11 @@ Paste this document into an AI coding agent with access to the Gusteau
 repository and the teammate's Nebius terminal. The agent must perform the
 setup, deployment, verification, and reporting—not just explain them.
 
+The teammate should not manually edit code, Docker files, environment files,
+or deployment commands. The AI should do all of that. The only required human
+input is authorized Nebius access and the private Token Factory key when the
+deployment script requests it.
+
 ## Goal
 
 Deploy Gusteau for the Nebius x NVIDIA Global AI Hackathon using Nebius AI
@@ -35,11 +40,12 @@ Use the **Best Apps and Agents** category unless the owner chooses another.
 
 8. If that model ID is unavailable, query the Token Factory catalog and use
    an available NVIDIA Nemotron or other NVIDIA open-source model.
-9. Build and run on the VM with:
+9. On the VM, run the automated deployment script. It hides the key while it
+   is entered, builds the Docker image, starts the service, and checks health:
 
-   `docker build -t gusteau:hackathon .`
+   `chmod +x scripts/deploy-nebius.sh`
 
-   `docker run -d --name gusteau --restart unless-stopped -p 8080:8080 -e GUSTEAU_PROVIDER=nebius -e GUSTEAU_HOST=0.0.0.0 -e GUSTEAU_PORT=8080 -e LLM_API_KEY="$LLM_API_KEY" -e LLM_MODEL="nvidia/Llama-3_3-Nemotron-Super-49B-v1_5" gusteau:hackathon`
+   `./scripts/deploy-nebius.sh`
 
 10. Verify `curl http://127.0.0.1:8080/Gusteau/api/health`, inspect
     `docker logs gusteau`, open the UI, and test a real cooking question.
