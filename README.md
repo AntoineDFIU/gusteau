@@ -173,33 +173,30 @@ Measured on the M5 Max through the real pipeline, from the moment a phrase is fi
 
 ## Raspberry Pi deployment
 
-### Nebius AI Cloud deployment
+### Nebius Token Factory deployment
 
-For the hackathon, deploy the included `Dockerfile` to a Nebius AI Cloud VM.
-The VM serves the frontend and proxies model requests, so the Token Factory key
-never reaches the browser:
+For the hackathon, the Raspberry Pi remains the public app host and the
+Gusteau server proxies text-model requests to Nebius Token Factory. The key
+stays on the Pi and never reaches the browser. Configure `gusteau.env` with:
 
-```bash
-docker build -t gusteau .
-docker run -d --name gusteau --restart unless-stopped \
-  -p 8080:8080 \
-  -e GUSTEAU_PROVIDER=nebius \
-  -e LLM_API_KEY='YOUR_TOKEN_FACTORY_KEY' \
-  -e LLM_MODEL='nvidia/Llama-3_3-Nemotron-Super-49B-v1_5' \
-  gusteau
+```env
+GUSTEAU_PROVIDER=nebius
+LLM_BASE_URL=https://api.tokenfactory.nebius.com/v1
+LLM_API_KEY=YOUR_TOKEN_FACTORY_KEY
+LLM_MODEL=nvidia/Llama-3_3-Nemotron-Super-49B-v1_5
 ```
 
-Open port 8080 in the VM security group, then put HTTPS in front of it with a
-domain and Caddy or Nginx. Verify `/api/health` and the live model path before
-submitting the public URL.
+Then rebuild, copy `dist/` and `deploy/gusteau_server.py` to the Pi, and run
+`sudo systemctl restart gusteau`. See
+[`docs/NEBIUS-HOSTING-HANDOFF.md`](docs/NEBIUS-HOSTING-HANDOFF.md) for the full
+handoff and AI-agent instructions.
 
 Gusteau runs on the Pi `antoineraspi` as a systemd service. It starts at boot and restarts if it crashes.
 
 - **URL:** http://antoineraspi:8080 or http://192.168.6.126:8080. Phones on the same network can use the IP address. The Pi also has Tailscale, so the app is reachable on the Pi's Tailscale address at port 8080.
 - **Files:** everything is in `/home/antoined/gusteau`: the `dist/` build, `gusteau_server.py`, `gusteau.env` and a copy of `gusteau.service`.
 - **Server:** `deploy/gusteau_server.py` uses only the Python standard library, so nothing was installed on the Pi. It serves the app, answers `/api/config` and `/api/health`, and proxies only the chat-completions route.
-- **Model:** `qwen3.6:35b-mlx` on the MacBook's Ollama (port 11434) handles planning and chat: about 6 s per plan and under 1 s per chat message.
-- **Thinking off:** these models "think" by default and spend the whole token budget doing it, which returns empty answers. The Ollama preset turns that off.
+- **Model:** NVIDIA Nemotron through Nebius Token Factory handles planning and chat. ASR/TTS continue using the existing Mac speech service.
 
 **Public access.** Tailscale Funnel publishes Gusteau at **https://antoineraspi.tailb406ce.ts.net/Gusteau**. It shares the HTTPS address with PulseCareAI, which stays at the root `/` on port 8787. Production builds use the base path `/Gusteau/`, set as `BUILD_BASE` in `vite.config.ts`. The Pi server accepts paths with or without that prefix, so LAN access on port 8080 still works. The route was added with:
 

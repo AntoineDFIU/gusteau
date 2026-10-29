@@ -1,114 +1,74 @@
-# Gusteau — Nebius Hosting Handoff
+# Gusteau — Raspberry Pi + Nebius Token Factory Handoff
 
-Use this guide to deploy Gusteau for the Nebius x NVIDIA Global AI Hackathon.
+The Raspberry Pi hosts the frontend and API proxy. Nebius Token Factory
+provides NVIDIA Nemotron text inference. ASR/TTS continue using the existing
+Mac speech service.
 
 ```text
-Browser → HTTPS → Nebius VM → Gusteau server → Token Factory → Nemotron
+Browser → HTTPS/Tailscale Funnel → Raspberry Pi → Token Factory → Nemotron
+                                      └────────→ Mac ASR/TTS
 ```
 
-Keep the Token Factory key on the VM only. Never commit it or expose it to the browser.
+## Teammate provides
 
-## Prerequisites
+- SSH access to the Raspberry Pi.
+- A Nebius Token Factory API key, entered privately on the Pi.
+- Mac ASR/TTS access if voice is demonstrated.
+- Tailscale/domain access if the public URL changes.
 
-- Nebius AI Cloud and Token Factory access
-- Token Factory API key
-- Ubuntu Nebius VM with public IP and SSH access
-- Docker installed on the VM
-- Optional domain name for HTTPS
+The teammate does not need to edit code or configure Docker.
 
-## Deploy
+## Deployment
 
-Allow ports 22, 80, 443, and temporary testing port 8080 in the VM security group.
+On the Pi, pull `codex/hackathon-audit`, run `npm ci` and `npm run build`, and
+copy `dist` plus `deploy/gusteau_server.py` into the existing deployment folder.
+Create `gusteau.env` with these values:
 
-```bash
-ssh ubuntu@VM_PUBLIC_IP
-sudo apt update
-sudo apt install -y docker.io git
-sudo systemctl enable --now docker
-git clone --branch codex/hackathon-audit https://github.com/AntoineDFIU/gusteau.git
-cd gusteau
-```
+`GUSTEAU_HOST=0.0.0.0`
 
-Build and run:
+`GUSTEAU_PORT=8080`
 
-```bash
-docker build -t gusteau:hackathon .
-docker rm -f gusteau 2>/dev/null || true
-docker run -d --name gusteau --restart unless-stopped -p 8080:8080 \
-  -e GUSTEAU_PROVIDER=nebius \
-  -e GUSTEAU_HOST=0.0.0.0 \
-  -e GUSTEAU_PORT=8080 \
-  -e LLM_API_KEY='PASTE_TOKEN_FACTORY_KEY_HERE' \
-  -e LLM_MODEL='nvidia/Llama-3_3-Nemotron-Super-49B-v1_5' \
-  gusteau:hackathon
-```
+`GUSTEAU_PROVIDER=nebius`
 
-Replace the placeholder with the private key. Do not save the command in a
-shared document or commit it with the real key.
+`LLM_BASE_URL=https://api.tokenfactory.nebius.com/v1`
 
-## Verify
+`LLM_API_KEY=PRIVATE_TOKEN_FACTORY_KEY`
 
-```bash
-curl -fsS http://127.0.0.1:8080/Gusteau/api/health
-docker logs -f gusteau
-```
+`LLM_MODEL=nvidia/Llama-3_3-Nemotron-Super-49B-v1_5`
 
-Expected health response:
+Keep the key only on the Pi. Never commit it or expose it to the browser.
+Restart the existing `gusteau.service` systemd service after copying the build.
 
-```json
-{"ok": true, "provider": "nebius"}
-```
+## Verification
 
-Open `http://VM_PUBLIC_IP:8080/Gusteau/`. Confirm recipes load, the badge says
-Nebius/Nemotron, and a cooking question receives a live response.
+Run `curl http://127.0.0.1:8080/api/health`. The response must show
+`provider: nebius`. Open the public URL, confirm recipes load, confirm the UI
+is not in mock mode, and ask a real cooking question.
 
-## HTTPS
+Existing public URL:
 
-Point a DNS `A` record such as `gusteau.example.com` to the VM IP, then:
+`https://antoineraspi.tailb406ce.ts.net/Gusteau/`
 
-```bash
-sudo apt install -y caddy
-```
+Preserve the `/Gusteau` Tailscale Funnel path. Do not replace Funnel with
+`tailscale serve` if another application shares the same Tailscale address.
 
-Create `/etc/caddy/Caddyfile`:
+Keep the Pi powered on and the Mac speech service awake during judging.
 
-```caddy
-gusteau.example.com {
-    reverse_proxy 127.0.0.1:8080
-}
-```
+## Update commands
 
-Restart Caddy:
-
-```bash
-sudo systemctl restart caddy
-```
-
-Final demo URL: `https://gusteau.example.com/Gusteau/`.
-
-## Update
-
-```bash
-cd gusteau
-git pull origin codex/hackathon-audit
-docker build -t gusteau:hackathon .
-docker rm -f gusteau
-```
-
-Run the same `docker run` command again with the private key.
+SSH to the Pi, run `git pull origin codex/hackathon-audit`, `npm ci`, and
+`npm run build`; copy `dist` and `deploy/gusteau_server.py`, then run
+`sudo systemctl restart gusteau`.
 
 ## Hackathon checklist
 
-- [ ] Public HTTPS demo URL works in a fresh browser.
-- [ ] App visibly uses Nebius/NVIDIA Nemotron.
-- [ ] A real cooking question gets a live response.
-- [ ] Public repository has the root `LICENSE` and setup README.
-- [ ] No credentials are committed.
-- [ ] Public YouTube demo is 3 minutes or shorter.
-- [ ] Devpost includes repository, demo URL, video, category, and description.
+- [ ] Public HTTPS URL works in a fresh browser.
+- [ ] UI reports Nebius/Nemotron, not mock mode.
+- [ ] A real cooking question returns a live model response.
+- [ ] Browser never receives the Token Factory key.
+- [ ] Pi and Mac stay powered on and connected.
+- [ ] Repository has the root `LICENSE` and setup README.
+- [ ] Public demo video is 3 minutes or shorter.
+- [ ] Devpost includes repository URL, demo URL, video, category, and description.
 
 Recommended category: **Best Apps and Agents**.
-
-If the app says mock mode, recreate the container with
-`GUSTEAU_PROVIDER=nebius`. If the page refuses the connection, check
-`docker ps`, `docker logs gusteau`, port 8080, and the Nebius security group.

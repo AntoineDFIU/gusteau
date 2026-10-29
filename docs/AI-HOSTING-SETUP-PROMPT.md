@@ -1,77 +1,54 @@
-# Gusteau Cloud Setup — AI Agent Instructions
+# Gusteau Hackathon Setup — AI Agent Instructions
 
-Paste this document into an AI coding agent with access to the Gusteau
-repository and the teammate's Nebius terminal. The agent must perform the
-setup, deployment, verification, and reporting—not just explain them.
-
-The teammate should not manually edit code, Docker files, environment files,
-or deployment commands. The AI should do all of that. The only required human
-input is authorized Nebius access and the private Token Factory key when the
-deployment script requests it.
+Give this document to an AI coding agent with access to the Gusteau repository
+and the teammate's Raspberry Pi terminal. The agent must complete the update,
+deployment, verification, and report. The teammate should not manually edit
+code or deployment files.
 
 ## Goal
 
-Deploy Gusteau for the Nebius x NVIDIA Global AI Hackathon using Nebius AI
-Cloud or Token Factory and an NVIDIA open-source model, preferably Nemotron.
-Use the **Best Apps and Agents** category unless the owner chooses another.
+Deploy Gusteau for the Nebius x NVIDIA Global AI Hackathon. The app runs on
+the Raspberry Pi, text reasoning uses NVIDIA Nemotron through Nebius Token
+Factory, and ASR/TTS use the existing Mac speech service.
 
-## Instructions to the AI agent
+## Required human input
 
-1. Work on `codex/hackathon-audit`; do not modify `main` directly.
-2. Read `README.md`, `Dockerfile`, `deploy/gusteau_server.py`,
-   `deploy/gusteau.env.example`, and `docs/NEBIUS-HOSTING-HANDOFF.md`.
-3. Run `npm ci` and `npm run build`. Fix small build errors safely if needed.
-4. Deploy this architecture:
-   `Browser → HTTPS → Nebius VM → Gusteau server → Token Factory → Nemotron`.
-5. Use the repository Dockerfile. Keep the API key server-side only.
-6. Ask the owner to enter the private Token Factory key through a protected
-   terminal or secret manager. Never print, commit, or screenshot the key.
-7. Use these runtime values:
+The teammate only provides authorized SSH access to the Pi and enters the
+private Token Factory key when asked. Never request the key in chat or commit it.
 
-   `GUSTEAU_PROVIDER=nebius`
+## Agent workflow
 
-   `GUSTEAU_HOST=0.0.0.0`
+1. Work on `codex/hackathon-audit` and pull the latest `origin/main` first.
+2. Read `README.md`, `deploy/gusteau_server.py`, `deploy/gusteau.service`,
+   `docs/NEBIUS-HOSTING-HANDOFF.md`, and this document.
+3. Run `npm ci` and `npm run build`; fix safe build issues if necessary.
+4. SSH to the authorized Raspberry Pi and pull the branch.
+5. Build the production frontend and copy `dist` plus
+   `deploy/gusteau_server.py` into the Pi deployment directory.
+6. Configure `gusteau.env` on the Pi with provider `nebius`, base URL
+   `https://api.tokenfactory.nebius.com/v1`, the private `LLM_API_KEY`, and
+   model `nvidia/Llama-3_3-Nemotron-Super-49B-v1_5`.
+7. Restart the existing `gusteau.service` systemd service.
+8. Verify `/api/health`, public HTTPS access, and a real cooking question.
+9. Confirm the browser never receives the key and the UI is not mock mode.
+10. Preserve the Tailscale Funnel `/Gusteau` route if it shares the address
+    with another application.
+11. Run `npm run build`, `git diff --check`, and `git status`.
+12. Report branch, commit, provider/model tested, health result, public URL,
+    and any blocker. Never claim completion without public and live-model tests.
 
-   `GUSTEAU_PORT=8080`
-
-   `LLM_API_KEY=<private Token Factory key>`
-
-   `LLM_MODEL=nvidia/Llama-3_3-Nemotron-Super-49B-v1_5`
-
-8. If that model ID is unavailable, query the Token Factory catalog and use
-   an available NVIDIA Nemotron or other NVIDIA open-source model.
-9. On the VM, run the automated deployment script. It hides the key while it
-   is entered, builds the Docker image, starts the service, and checks health:
-
-   `chmod +x scripts/deploy-nebius.sh`
-
-   `./scripts/deploy-nebius.sh`
-
-10. Verify `curl http://127.0.0.1:8080/Gusteau/api/health`, inspect
-    `docker logs gusteau`, open the UI, and test a real cooking question.
-    The health response must report `provider: nebius` and the UI must not be
-    in mock mode.
-11. Configure HTTPS with Caddy or Nginx, reverse proxying to port 8080. The
-    final URL should be `https://<domain>/Gusteau/`.
-12. Update the README with the non-secret provider, model, URL, and setup
-    details. Run `npm run build`, `git diff --check`, and `git status`.
-13. Report the branch, commit, build result, provider/model actually tested,
-    health result, public URL, and any remaining blocker. Do not claim success
-    without testing the public URL and a live model request.
-
-## Safety rules
+## Safety
 
 - Never commit or expose credentials.
-- Do not create paid resources without owner authorization.
-- Do not delete existing deployments or repositories.
-- Do not claim Nebius/Nemotron usage if only mock mode was tested.
+- Do not create paid resources or change DNS without authorization.
+- Do not delete the existing Pi deployment.
+- Do not claim Nebius/Nemotron use if only mock mode was tested.
 - Preserve existing validation and application behavior.
-- If login, MFA, billing, DNS ownership, YouTube upload, or Devpost submission
-  is required, pause only at that exact step and state the single human action
-  needed; complete all other work first.
+- If login, MFA, key entry, DNS, YouTube, or Devpost requires the owner,
+  pause only at that exact step and state the one precise action needed.
 
-## Human-only actions that may remain
+## Submission requirements
 
-Nebius login/MFA, billing approval, private key entry, DNS ownership,
-YouTube upload, and Devpost submission may require the owner. Everything else
-should be completed by the AI agent using these instructions.
+Provide a public HTTPS demo URL, public repository with license and setup
+instructions, public demo video of 3 minutes or less, and Devpost details.
+Recommended category: **Best Apps and Agents**.
