@@ -1,6 +1,4 @@
 import { useEffect, type ButtonHTMLAttributes, type ReactNode, type Ref } from 'react';
-import type { FlameState } from './flame';
-import { GusteauIcon } from './GusteauIcon';
 
 const cx = (...c: (string | false | null | undefined)[]) => c.filter(Boolean).join(' ');
 export { cx };
@@ -90,8 +88,20 @@ export function Spinner({ className }: { className?: string }) {
   return <span className={cx('inline-block h-4 w-4 animate-spin rounded-full border-2 border-current border-r-transparent', className)} />;
 }
 
-export function GusteauAvatar({ size = 'md', state }: { size?: 'sm' | 'md' | 'lg'; state?: FlameState }) {
-  return <GusteauIcon size={size === 'sm' ? 28 : size === 'md' ? 36 : 56} state={state} className="rounded-full ring-2 ring-white" />;
+export function GusteauAvatar({ size = 'md' }: { size?: 'sm' | 'md' | 'lg' }) {
+  return (
+    <span
+      className={cx(
+        'inline-flex shrink-0 items-center justify-center rounded-full bg-gradient-to-br from-saffron-100 to-tomato-100 ring-2 ring-white',
+        size === 'sm' && 'h-7 w-7 text-base',
+        size === 'md' && 'h-9 w-9 text-lg',
+        size === 'lg' && 'h-14 w-14 text-3xl',
+      )}
+      aria-hidden
+    >
+      👨‍🍳
+    </span>
+  );
 }
 
 /** Full-screen sheet on phones, centered dialog on larger screens. */
