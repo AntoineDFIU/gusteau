@@ -80,6 +80,7 @@ export function VoicePanel({
   onTalk,
   onStop,
   compact = false,
+  inviteToTalk = false,
   className,
 }: {
   voice: Voice;
@@ -92,6 +93,8 @@ export function VoicePanel({
   onStop: () => void;
   /** Tighter spacing for the top of the recipe preview. */
   compact?: boolean;
+  /** Brief visual invitation on the homepage, before the user tries voice. */
+  inviteToTalk?: boolean;
   className?: string;
 }) {
   const [collapsed, setCollapsed] = useState(true);
@@ -220,23 +223,37 @@ export function VoicePanel({
  */
 function AudioDevicesButton({ voice }: { voice: Voice }) {
   const [open, setOpen] = useState(false);
-  const [menuLeft, setMenuLeft] = useState(0);
+  const [menuPosition, setMenuPosition] = useState({ left: 0, width: 288 });
   const devices = useAudioDevices();
   const box = useRef<HTMLSpanElement>(null);
-  const menu = useRef<HTMLSpanElement>(null);
   useLayoutEffect(() => {
     if (!open) return;
     const position = () => {
-      if (!box.current || !menu.current) return;
+      if (!box.current) return;
       const anchor = box.current.getBoundingClientRect();
-      const width = menu.current.getBoundingClientRect().width;
-      // Open to the right, shifting left only enough to fit inside the viewport.
-      setMenuLeft(Math.max(16 - anchor.left, Math.min(0, window.innerWidth - 16 - anchor.left - width)));
+      // The preview is narrower than the viewport. Keep the entire menu inside
+      // its scrollable dialog (or the voice panel when browsing recipes).
+      const container = box.current.closest<HTMLElement>('[aria-modal="true"]') ?? box.current.closest('section');
+      let leftEdge = 16;
+      let rightEdge = document.documentElement.clientWidth - 16;
+      if (container) {
+        const containerLeft = container.getBoundingClientRect().left + container.clientLeft;
+        leftEdge = Math.max(leftEdge, containerLeft + 16);
+        rightEdge = Math.min(rightEdge, containerLeft + container.clientWidth - 16);
+      }
+      const width = Math.min(288, Math.max(0, rightEdge - leftEdge));
+      const left = Math.max(leftEdge, Math.min(anchor.left, rightEdge - width)) - anchor.left;
+      setMenuPosition({ left, width });
     };
     position();
     window.addEventListener('resize', position);
     window.addEventListener('scroll', position, true);
+    const observer = new ResizeObserver(position);
+    if (box.current) {
+      observer.observe(box.current.closest<HTMLElement>('[aria-modal="true"]') ?? box.current.closest('section') ?? box.current);
+    }
     return () => {
+      observer.disconnect();
       window.removeEventListener('resize', position);
       window.removeEventListener('scroll', position, true);
     };
@@ -256,7 +273,7 @@ function AudioDevicesButton({ voice }: { voice: Voice }) {
   }, [open]);
   const browserEars = voice.engine === 'browser';
   const browserVoice = !/Magpie/.test(voice.label);
-  const select = 'mt-1 w-full rounded-xl border border-cream-300 bg-white px-2 py-1.5 text-sm text-charcoal-900 focus:outline-none focus-visible:ring-4 focus-visible:ring-tomato-100';
+  const select = 'mt-1 min-w-0 w-full max-w-full rounded-xl border border-cream-300 bg-white px-2 py-1.5 text-sm text-charcoal-900 focus:outline-none focus-visible:ring-4 focus-visible:ring-tomato-100';
   return (
     <span ref={box} className="relative">
       <button
@@ -279,10 +296,9 @@ function AudioDevicesButton({ voice }: { voice: Voice }) {
       </button>
       {open && (
         <span
-          ref={menu}
           role="dialog"
           aria-label="Audio devices"
-          style={{ left: menuLeft }}
+          style={menuPosition}
           className={cx(
             'absolute z-[70] block w-72 max-w-[calc(100vw-2rem)] rounded-2xl border border-cream-200 bg-white p-4 text-left text-charcoal-700 shadow-card',
             'top-full mt-2',
