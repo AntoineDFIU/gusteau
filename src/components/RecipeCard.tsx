@@ -113,7 +113,6 @@ export function RecipeCard({
         )}
         <span className="dish-tag">{tag}</span>
       </button>
-      <RecipeImageCredit recipe={recipe} className="mt-1 px-1" />
       {onToggleFavorite && (
         <button
           type="button"
