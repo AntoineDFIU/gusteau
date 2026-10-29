@@ -4,9 +4,8 @@ import { CUISINES, cuisineById } from '../data/cuisines';
 import { GRAINS, PROTEINS, type GrainId, type ProteinId } from '../data/ingredients';
 import { DIET_RULES, DIET_RULE_IDS, DIFFICULTIES, EQUIPMENT } from '../data/rules';
 import type { PantryItem, Profile, Recipe } from '../types';
-import { PantryPanel } from './Pantry';
 import { RecipeCard } from './RecipeCard';
-import { Button, Card, Chip, Eyebrow, SectionTitle, Toggle, cx } from './ui';
+import { Button, Card, Chip, SectionTitle, Toggle, cx } from './ui';
 
 const TIMES = [15, 30, 45, 60];
 
@@ -16,9 +15,6 @@ export function Browse({
   filters,
   setFilters,
   onOpen,
-  onPantry,
-  onDemo,
-  micHint,
   onToast,
 }: {
   recipes: Recipe[];
@@ -26,14 +22,13 @@ export function Browse({
   filters: Filters;
   setFilters: (f: Filters) => void;
   onOpen: (r: Recipe) => void;
+  // Retained for the temporarily commented-out kitchen and demo panels.
   onPantry: (pantry: PantryItem[], basics: boolean) => void;
   onDemo: () => void;
-  micHint: boolean;
   onToast?: (message: string) => void;
 }) {
   const [showAllCuisines, setShowAllCuisines] = useState(false);
   const [showFilters, setShowFilters] = useState(false);
-  const [showPantry, setShowPantry] = useState(false);
   const [favIds, setFavIds] = useState<ReadonlySet<string>>(() => new Set());
   const searchRef = useRef<HTMLInputElement>(null);
   const set = (patch: Partial<Filters>) => setFilters({ ...filters, ...patch });
@@ -52,9 +47,9 @@ export function Browse({
   // "/" focuses the search box, like the sandbox (skipped while typing or with a dialog open).
   useEffect(() => {
     const onKey = (e: KeyboardEvent) => {
-      if (e.key !== '/') return;
+      if (e.key !== '/' || e.metaKey || e.ctrlKey || e.altKey) return;
       const el = document.activeElement;
-      if (el instanceof HTMLInputElement || el instanceof HTMLTextAreaElement) return;
+      if (el instanceof HTMLInputElement || el instanceof HTMLTextAreaElement || (el instanceof HTMLElement && el.isContentEditable)) return;
       if (document.querySelector('[role="dialog"]')) return;
       e.preventDefault();
       searchRef.current?.focus();
@@ -88,14 +83,12 @@ export function Browse({
 
   return (
     <div className="mx-auto max-w-7xl animate-rise">
-      <div className="flex flex-col gap-6 lg:flex-row lg:items-end lg:justify-between">
-        <div className="max-w-2xl">
-          {/* <Eyebrow>{returning ? 'Welcome back' : 'Your personal chef assistant'}</Eyebrow>
-          <h1 className="mt-2 font-display text-4xl font-semibold leading-[1.05] text-charcoal-900 sm:text-5xl">
-            What are you <span className="italic text-tomato-500">craving?</span>
-          </h1> */}
+      <div className="flex flex-col gap-4 sm:flex-row sm:items-end sm:justify-between sm:gap-6">
+        <div>
+          <h2 className="font-display text-2xl font-medium tracking-tight text-charcoal-900 sm:text-3xl">Find a dish</h2>
+          <p className="mt-1 text-sm text-charcoal-500">Explore your favorites or discover something new.</p>
         </div>
-        <form onSubmit={(e) => e.preventDefault()} className="w-full lg:max-w-[270px]">
+        <form role="search" onSubmit={(e) => e.preventDefault()} className="w-full shrink-0 sm:w-[270px]">
           <label className="dish-search">
             <span className="dish-search-icon" aria-hidden />
             <span className="sr-only">Find a dish</span>
@@ -109,7 +102,6 @@ export function Browse({
             />
             <kbd aria-hidden>/</kbd>
           </label>
-          {micHint && <p className="mt-2 pl-4 text-xs text-charcoal-400">Or tap 🎤 and say “something Thai under 20 minutes”.</p>}
         </form>
       </div>
 
@@ -141,9 +133,11 @@ export function Browse({
         <Button variant={showFilters || nFilters ? 'primary' : 'secondary'} size="sm" onClick={() => setShowFilters((v) => !v)} aria-expanded={showFilters}>
           ⚙︎ Filters{nFilters ? ` · ${nFilters}` : ''}
         </Button>
+        {/* Kitchen access is paused with the sidebar. Restore its showPantry state with the panel.
         <Button variant="secondary" size="sm" className="lg:hidden" onClick={() => setShowPantry((v) => !v)} aria-expanded={showPantry}>
           🧺 My kitchen{profile.pantry.length ? ` · ${profile.pantry.length}` : ''}
         </Button>
+        */}
         {(nFilters > 0 || filters.search || filters.cuisine) && (
           <button onClick={() => setFilters(base)} className="px-2 text-sm font-medium text-charcoal-400 hover:text-tomato-600">
             Clear all
@@ -250,7 +244,9 @@ export function Browse({
           </section>
         </div>
 
-        {/* <aside className={cx('space-y-4 lg:sticky lg:top-24 lg:self-start', !showPantry && 'hidden lg:block', 'order-first lg:order-none')}>
+        {/* Kitchen and demo panels are retained for later. To restore: import PantryPanel,
+            destructure onPantry/onDemo, and restore showPantry state and the mobile toggle.
+        <aside className={cx('space-y-4 lg:sticky lg:top-24 lg:self-start', !showPantry && 'hidden lg:block', 'order-first lg:order-none')}>
           <PantryPanel pantry={profile.pantry} basics={profile.pantryBasics} onChange={onPantry} />
           <Card className="overflow-hidden border-saffron-100 bg-gradient-to-br from-saffron-100/70 via-white to-tomato-50 p-5">
             <p className="font-display text-lg font-semibold text-charcoal-900">🎬 Try the live replanning demo</p>

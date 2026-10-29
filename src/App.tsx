@@ -4,6 +4,8 @@ import { parseBrowseIntent } from './agent/browseIntent';
 import { EMPTY_FILTERS, type Filters } from './agent/kitchen';
 import { Browse } from './components/Browse';
 import { CookingWorkspace } from './components/cooking/CookingWorkspace';
+import { GusteauIcon } from './components/GusteauIcon';
+import { GusteauPrompt } from './components/GusteauPrompt';
 import { Onboarding } from './components/Onboarding';
 import { mergePantry } from './components/Pantry';
 import { RecipePreview, type Kitchen } from './components/RecipePreview';
@@ -159,7 +161,7 @@ export default function App() {
       <header className="sticky top-0 z-30 h-[61px] border-b border-cream-200/80 bg-cream-100/90 backdrop-blur">
         <div className="mx-auto flex h-full max-w-7xl items-center justify-between gap-3 px-4 sm:px-6">
           <button onClick={() => (screen === 'cooking' ? leaveCooking() : profile.onboarded && setScreen('browse'))} className="flex items-center gap-2.5" aria-label="Gusteau home">
-            <span className="flex h-9 w-9 items-center justify-center rounded-2xl bg-tomato-500 text-lg shadow-lift">👨‍🍳</span>
+            <GusteauIcon />
             <span className="text-left leading-none">
               <span className="block font-display text-xl font-semibold text-charcoal-900">Gusteau</span>
               <span className="hidden text-[11px] text-charcoal-400 sm:block">Your personal chef assistant</span>
@@ -178,7 +180,7 @@ export default function App() {
                 ⚙︎ <span className="hidden sm:inline">Preferences</span>
               </button>
             )}
-            {micVisible && (
+            {micVisible && screen !== 'browse' && (
               <button
                 onClick={() => void voice.listenOnce()}
                 aria-label={listening ? 'Stop listening' : 'Talk to Gusteau'}
@@ -192,15 +194,28 @@ export default function App() {
                 <span className="hidden sm:inline">{listening ? 'Listening… tap to stop' : 'Ask Gusteau'}</span>
               </button>
             )}
-            {screen !== 'onboarding' && voice.state === 'blocked' && <span className="text-xs text-tomato-600">Mic blocked in browser settings</span>}
+            {screen !== 'onboarding' && screen !== 'browse' && voice.state === 'blocked' && <span className="text-xs text-tomato-600">Mic blocked in browser settings</span>}
           </div>
         </div>
-        {listening && voice.interim && (
+        {screen !== 'browse' && listening && voice.interim && (
           <p className="absolute inset-x-0 top-full truncate bg-charcoal-900 px-4 py-1.5 text-center text-xs italic text-white">“{voice.interim}”</p>
         )}
       </header>
 
       <main className="px-4 pb-16 pt-8 sm:px-6 sm:pt-10">
+        {screen === 'browse' && (
+          <GusteauPrompt
+            className="mx-auto mb-8 max-w-7xl"
+            onAsk={() => void voice.listenOnce()}
+            supported={voice.supported}
+            disabled={voice.handsFree}
+            listening={voice.state === 'listening' && !voice.handsFree}
+            connecting={voice.state === 'connecting' && !voice.handsFree}
+            blocked={voice.state === 'blocked'}
+            transcript={voice.interim}
+            notice={voice.notice}
+          />
+        )}
         {screen === 'onboarding' && (
           <Onboarding
             profile={profile}
@@ -223,7 +238,6 @@ export default function App() {
                 onOpen={(recipe) => setPreview({ recipe, kitchen: myKitchen })}
                 onPantry={(pantry, pantryBasics) => update({ pantry, pantryBasics })}
                 onDemo={loadDemo}
-                micHint={voice.supported}
                 onToast={setToast}
               />
             ) : (
