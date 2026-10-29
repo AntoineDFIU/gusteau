@@ -762,7 +762,8 @@ export default function App() {
       <Modal open={!!preview} onClose={() => setPreview(null)} label={preview?.recipe.title ?? 'Recipe'} wide chatHostRef={setChatHost}>
         {preview && (
           <>
-            <div className="px-4 pt-4 sm:px-6 sm:pt-6">
+            {/* Extra top padding leaves a clear strip where the Back and Close buttons sit above the voice panel. */}
+            <div className="px-4 pt-14 sm:px-6 sm:pt-16">
               <VoicePanel voice={voice} turn={turn} interpreted={interpreted} onTalk={startTalking} onStop={stopConversation} compact />
             </div>
           <RecipePreview

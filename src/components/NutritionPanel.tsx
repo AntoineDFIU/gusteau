@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { nutritionFor } from '../data/nutrition';
 import type { Recipe } from '../types';
-import { SectionTitle, cx } from './ui';
+import { cx, PreviewHeading } from './ui';
 
 // Validated with the dataviz palette checker against the cream surface
 // (#FFFCF7): protein uses Gusteau's tomato, carbs and fat the reference
@@ -41,9 +41,9 @@ export function NutritionPanel({ planned, original }: { planned: Recipe; origina
   return (
     <section className="mt-6 rounded-3xl border border-cream-200 bg-white p-4" aria-labelledby="nutrition-title">
       <div className="flex flex-wrap items-baseline justify-between gap-x-3 gap-y-1">
-        <SectionTitle>
+        <PreviewHeading>
           <span id="nutrition-title">Nutrition · per serving</span>
-        </SectionTitle>
+        </PreviewHeading>
         <span className="text-[11px] text-charcoal-400">{SOURCE_LABEL[view.source]}</span>
       </div>
 

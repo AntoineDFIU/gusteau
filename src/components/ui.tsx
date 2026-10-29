@@ -181,3 +181,11 @@ export function Badge({ children, tone = 'cream', className }: { children: React
 export function SectionTitle({ children, className }: { children: ReactNode; className?: string }) {
   return <h2 className={cx('text-[11px] font-semibold uppercase tracking-[0.14em] text-charcoal-400', className)}>{children}</h2>;
 }
+
+/**
+ * A section heading inside the recipe preview: Poppins and one step larger than
+ * the shared SectionTitle, so the preview reads well on phones and tablets.
+ */
+export function PreviewHeading({ children, className }: { children: ReactNode; className?: string }) {
+  return <h2 className={cx('font-head text-xs font-semibold uppercase tracking-[0.14em] text-charcoal-500', className)}>{children}</h2>;
+}
