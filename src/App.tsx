@@ -1,27 +1,77 @@
-import { useCallback, useEffect, useMemo, useRef, useState } from 'react';
-import { uid } from './agent/adapt';
-import { parseBrowseIntent } from './agent/browseIntent';
-import { EMPTY_FILTERS, type Filters } from './agent/kitchen';
+import { useCallback, useEffect, useRef, useState } from 'react';
+import { EMPTY_FILTERS, activeFilterCount, matchesFilters, scaleRecipe, type Filters } from './agent/kitchen';
 import { Browse } from './components/Browse';
 import { CookingWorkspace } from './components/cooking/CookingWorkspace';
 import { GusteauIcon } from './components/GusteauIcon';
 import { GusteauPrompt } from './components/GusteauPrompt';
 import { Onboarding } from './components/Onboarding';
-import { mergePantry } from './components/Pantry';
 import { RecipePreview, type Kitchen } from './components/RecipePreview';
 import { Modal, Spinner, cx } from './components/ui';
 import { recipeSource, type RecipeLibrary } from './recipes/source';
 import { modelService } from './services';
-import { DEMO_PANTRY, DEMO_RECIPE_ID, DEMO_RULES } from './services/mock/mockData';
-import { useCook } from './state/useCook';
+import { DEMO_RECIPE_ID, DEMO_RULES } from './services/mock/mockData';
+import { confirmation, useCook } from './state/useCook';
 import { useProfile } from './state/profile';
-import type { CookSession, Recipe } from './types';
+import type { CookSession, PendingChoice, Recipe } from './types';
+import { answerMissing, missingQuestion } from './agent/missing';
 import { useVoice } from './voice/useVoice';
+import { afterWakeWord } from './voice/wakeWord';
+import { unlockAudio } from './voice/audioUnlock';
+import { browseByVoice, modelSearch, picksFor, positionIn, previewCommand, recipeNamed, runSearch, shownRecipes, type BrowseAction } from './agent/voiceBrowse';
+import { OPENING, discoveryCommand, ingredientsReading, missingIn, missingNames, optionsReading, readNext, selectionIntro, type Reading } from './agent/discovery';
+import { CUISINES } from './data/cuisines';
+import { VoiceDock, type Turn } from './components/VoiceDock';
+import { chime } from './lib/sound';
+import { DebugPanel } from './components/DebugPanel';
+import { ModelPicker } from './components/ModelPicker';
+import { logHeard } from './debug/debugLog';
+import { speakable } from './agent/stepSpeech';
+import { changesMeaning, checkFirst, riskyReading } from './agent/heardAs';
+import { stepCommand, timerCommand } from './services/mock/intentParser';
 
 type Screen = 'onboarding' | 'browse' | 'cooking';
 
+/** The search on screen in words, for the model: "Thai, cheese, 30 minutes or less". */
+const describeFilters = (f: Filters) =>
+  [CUISINES.find((c) => c.id === f.cuisine)?.name, f.search, f.maxMinutes ? `${f.maxMinutes} minutes or less` : '', ...f.diet, f.equipment ? `only ${f.equipment.join(', ')}` : ''].filter(Boolean).join(', ');
+
+// Spoken controls, as whole phrases (after his name, or while he's listening).
+const asCommand = (t: string) => t.toLowerCase().replace(/[‘’]/g, "'").replace(/[?!.,]/g, '').replace(/\s+(please|gusteau|chef)$/, '').trim();
+/** "Go to sleep", "that's all": back to waiting for "Hey Gusteau". Hands-free stays on. */
+// Any short phrase ending in "sleep" counts: the recognizer writes "go to sleep" as "Kaučas sleep", "gotta sleep"…
+const GO_TO_SLEEP = /^(?:(?:ok|okay|thanks|thank you|great)\s+)*((?:\S+\s+){0,2}sleep|stop listening|you can stop listening|that'?s all( for now)?|that'?s it( for now)?|deactivate|goodbye|bye( for now)?|see you|i'?m good( for now)?|we'?re done( for now)?)$/;
+/** "Turn off hands-free", "stop listening": the same as the Stop button. */
+const TURN_OFF = /^(turn (off|yourself off) hands[- ]?free( mode)?|turn off hands[- ]?free( mode)?|hands[- ]?free off|stop hands[- ]?free( mode)?|turn (yourself )?off|switch off)$/;
+/** "Mute": the mic stops listening until the mute button is tapped again. */
+const MUTE = /^(mute|mute( the)? (mic|microphone)|mute yourself)$/;
+
+// The Stop button is remembered: Gusteau doesn't start listening again on the next visit until Start.
+const STOP_KEY = 'gusteau.listening';
+const rememberedStop = () => {
+  try {
+    return localStorage.getItem(STOP_KEY) === 'off';
+  } catch {
+    return false;
+  }
+};
+const rememberStop = (off: boolean) => {
+  try {
+    if (off) localStorage.setItem(STOP_KEY, 'off');
+    else localStorage.removeItem(STOP_KEY);
+  } catch {
+    // Private mode: it's only remembered until the page is closed.
+  }
+};
+
+/** After Gusteau answers (or when tapped), he waits this long for the cook to say more. */
+const LISTEN_WINDOW_MS = 5000;
+/** After Gusteau asks something or waits on an answer, he gives the cook longer to reply. */
+const REPLY_WINDOW_MS = 10000;
+/** He asked something, or asked the cook to say or choose something ("Say “more” for the next one, or pick one by name or number"). */
+const expectsReply = (said: string) => /\?\s*$/.test(said.trim()) || /\b(say “|tell me\b|let me know|pick (one|another)|choose|which one)/i.test(said);
+
 export default function App() {
-  const { profile, update } = useProfile();
+  const { profile, update, reset } = useProfile();
   const [library, setLibrary] = useState<RecipeLibrary | null>(null);
   const [screen, setScreen] = useState<Screen>(profile.onboarded ? 'browse' : 'onboarding');
   const [filters, setFilters] = useState<Filters>({ ...EMPTY_FILTERS, diet: profile.hardExclusions });
@@ -42,14 +92,14 @@ export default function App() {
     (s: CookSession) => update((p) => ({ history: [...p.history, { recipeId: s.original.id, cuisine: s.original.cuisine, at: Date.now(), finished: true }].slice(-50) })),
     [update],
   );
-  const cook = useCook({
-    onFinish,
-    onTimerDone: (label) => {
-      if (voiceRef.current?.handsFree) voiceRef.current.say(`Time’s up: ${label.replace(/ timer$/, '')}.`, true);
-    },
-  });
+  // What Gusteau says when a timer rings (and which timer is next) goes in the chat, which he reads aloud.
+  const cook = useCook({ onFinish });
 
   // ── Voice: one mic and one voice for the whole app ──
+  // Hands-free stays on from the craving page through the preview and the
+  // kitchen. Gusteau answers when he's called ("Hey Gusteau", "Hey Chef"),
+  // and for a few seconds after he's spoken, so a conversation flows.
+  //
   // While cooking, a spoken phrase goes to Gusteau like a chat message. A plain
   // answer is read aloud while the model is still writing it; plan changes are
   // answered with the validated replan message. A phrase that arrives while
@@ -71,18 +121,349 @@ export default function App() {
       })
       .finally(() => reading?.finish());
   };
-  const onPhrase = (text: string) => {
-    if (screen === 'cooking' && cook.session) return askByVoice(text);
-    if (screen !== 'browse') return;
-    const intent = parseBrowseIntent(text);
-    if (intent.addPantry.length) update((p) => ({ pantry: mergePantry(p.pantry, intent.addPantry, 'chat') }));
-    setFilters((f) => ({ ...f, ...intent.filters }));
+  // ── Is Gusteau being talked to? ──
+  // He always listens for his name, "Hey Gusteau" or "Hey Chef". Called, he greets the cook
+  // and listens ten seconds for an answer; tapped, he chimes and listens five. Once they start,
+  // he hears them out however long they talk (a request ends after two seconds without new words, so a pause to think doesn’t cut you off). After
+  // each answer he listens five seconds for more, or ten when he asked something or waits on an
+  // answer ("Do you have another kind of cheese?"). If nobody talks, he waits for his name again.
+  const [turn, setTurnState] = useState<Turn>('waiting');
+  /** The debug panel: transcriptions, model requests and responses. Remembered in this browser. */
+  const [debug, setDebugState] = useState(() => {
+    try {
+      return localStorage.getItem('gusteau.debug') === 'on';
+    } catch {
+      return false;
+    }
+  });
+  const setDebug = (f: (on: boolean) => boolean) =>
+    setDebugState((d) => {
+      const on = f(d);
+      try {
+        if (on) localStorage.setItem('gusteau.debug', 'on');
+        else localStorage.removeItem('gusteau.debug');
+      } catch {
+        // Private mode: not remembered.
+      }
+      return on;
+    });
+  const turnRef = useRef<Turn>('waiting');
+  const setTurn = (t: Turn) => {
+    turnRef.current = t;
+    setTurnState(t);
+  };
+  /** How long the current window waits for the cook to start talking. */
+  const windowMs = useRef(LISTEN_WINDOW_MS);
+  /** Listen for the cook to start talking, for `ms` once he's quiet. */
+  const openWindow = (ms: number) => {
+    windowMs.current = ms;
+    setTurn('open');
+  };
+  /** Tapped: chime, and listen. */
+  const listen = () => {
+    openWindow(LISTEN_WINDOW_MS);
+    chime();
+  };
+  /** He has started saying his answer, so once he's quiet the turn is over. */
+  const answered = useRef(false);
+  /** His answer invites a reply without asking a question ("When you're ready, say “let's cook”"). */
+  const invited = useRef(false);
+
+  // ── Choosing what to cook, by talking with Gusteau ──
+  // He asks what you're in the mood for, searches with what you tell him, and
+  // the thumbnails show the results while he names one or two (agent/discovery.ts).
+  // With a model, it reads what you mean (modelService.discover); the app runs
+  // the search and says what it found, so he can't name a dish that isn't there.
+  const [heard, setHeard] = useState('');
+  const [said, setSaid] = useState('');
+  /** How Gusteau understood what was heard, when that differs in meaning ("Interpreted as…"). */
+  const [interpreted, setInterpreted] = useState('');
+  /** The last few turns, so the model can follow the conversation. */
+  const talk = useRef<string[]>([]);
+  const lastSaid = useRef('');
+  /** `queue`: after whatever he's saying (an adjustment after his introduction), instead of cutting it off. */
+  const reply = (text: string, queue = false) => {
+    setSaid(text);
+    lastSaid.current = text;
+    talk.current = [...talk.current, `Gusteau: ${text}`].slice(-6);
+    voice.say(speakable(text), queue);
+  };
+  /** The dishes on screen, in order, so "the second one" or "number five" can be opened. */
+  const listed = useRef<Recipe[]>([]);
+  /** Options or ingredients being read out, so "more" goes on. */
+  const reading = useRef<Reading | null>(null);
+  /** Gusteau just offered to read the options, so a plain "yes" means read them. */
+  const offeredReading = useRef(false);
+  const [cookSignal, setCookSignal] = useState(0);
+  /** What the cook said they don't have for the dish being previewed, and what they agreed to use instead (no `to`: leave it out). */
+  const [decided, setDecided] = useState<{ name: string; to?: string }[]>([]);
+  /** Gusteau asked "Do you have another kind of cheese?" and waits for the answer. */
+  const [asking, setAsking] = useState<(PendingChoice & { say: string }) | null>(null);
+  /** More missing ingredients named at once, asked about one at a time. */
+  const toAsk = useRef<string[]>([]);
+
+  /** Things the cook said they don't have before choosing a dish ("I don't have butter"); the dish they pick works around them. */
+  const lacking = useRef<string[]>([]);
+  const openPreview = (recipe: Recipe, say?: string) => {
+    setPreview({ recipe, kitchen: preview?.kitchen ?? {} });
+    setDecided([]);
+    setAsking(null);
+    reading.current = null;
+    offeredReading.current = false;
+    if (say) {
+      reply(say);
+      // He just introduced the dish and asked to hear "let's cook" or what's missing: listen for it.
+      invited.current = true;
+    }
+    // "I don't have butter", said before choosing: asked about now, after his introduction.
+    const lacks = [...new Set(lacking.current.map((n) => missingIn(`I don't have ${n}`, recipe)?.found[0]?.name).filter((n): n is string => !!n))];
+    toAsk.current = lacks.slice(1);
+    if (lacks.length) askMissing(recipe, lacks[0], !!say);
+  };
+  const previewRules = (recipe: Recipe) => ({ hardExclusions: profile.hardExclusions, allergies: profile.allergies, equipment: [...new Set([...profile.equipment, ...recipe.equipment])] });
+  /** "I don't have cheddar": Gusteau asks what could stand in, and offers to go without only if the dish still works. Nothing changes until the cook answers. */
+  const askMissing = (recipe: Recipe, name: string, queue = false) => {
+    const ing = recipe.ingredients.find((i) => i.name === name);
+    if (!ing) return;
+    const q = missingQuestion(ing, recipe, previewRules(recipe), 'preview');
+    setAsking(q);
+    reply(q.say, queue);
+  };
+  /** The cook's answer, spoken, typed or tapped. False when it isn't one ("let's cook"). */
+  const answerAsking = (text: string, recipe: Recipe): boolean => {
+    if (!asking) return false;
+    const a = answerMissing(text, asking, recipe, previewRules(recipe), 'preview');
+    if (!a) return false;
+    // Settled: the preview adapts the recipe and says how (onAdjusted), then asks about the next one.
+    if (a.kind === 'drop' || a.kind === 'swap') {
+      const to = a.kind === 'swap' ? a.to : undefined;
+      setAsking(null);
+      setDecided((d) => [...d.filter((x) => x.name !== asking.current), { name: asking.current, to }]);
+    } else {
+      setAsking({ ...asking, confirming: a.kind === 'confirm' ? a.to : undefined, say: a.say });
+      reply(a.say);
+    }
+    return true;
+  };
+  const showByVoice = (a: Exclude<BrowseAction, { kind: 'none' }>) => {
+    if (a.kind === 'open') return openPreview(a.recipe, a.say);
     setPreview(null);
-    setToast(intent.summary.length ? `🎤 “${text}” → ${intent.summary.join(' · ')}` : `🎤 “${text}”`);
+    setFilters(a.filters);
+    listed.current = a.results;
+    reading.current = null;
+    offeredReading.current = true;
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+    reply(a.say);
+  };
+  /** Read the next group of options or ingredients ("Here are the first four: one, …"). */
+  const readOn = (r: Reading) => {
+    const next = readNext(r);
+    reading.current = next.reading;
+    offeredReading.current = false;
+    reply(next.say);
+  };
+  const ruleBased = (text: string) => {
+    const a = browseByVoice(text, library!.recipes, profile, filters, listed.current);
+    if (a.kind === 'none') return reply(a.say);
+    showByVoice(a);
+  };
+  const browseVoice = (text: string) => {
+    if (!library) return reply('One moment, I’m still loading the recipes.');
+    talk.current = [...talk.current, `Cook: ${text}`].slice(-6);
+    const cmd = discoveryCommand(text);
+    if (cmd === 'read_all' || (offeredReading.current && confirmation(text) === 'yes')) {
+      return listed.current.length ? readOn(optionsReading(listed.current)) : reply(`There’s nothing on the list yet. ${OPENING}`);
+    }
+    if (cmd === 'more') return reading.current?.kind === 'options' ? readOn(reading.current) : reply(`That’s everything I’ve read out. ${OPENING}`);
+    if (cmd === 'repeat') return reply(lastSaid.current || OPENING);
+    if (cmd === 'ingredients') return reply('Pick a dish first, and I’ll read you its ingredients.');
+    // "I don't have butter" before choosing: remembered for whichever dish they pick.
+    // Only "I don't have…" / "I'm out of…" here: "no oven, something with chicken" is a search.
+    const without = /^\s*(no|missing)\b/i.test(text) ? null : missingNames(text)?.filter((n) => !/\b(oven|stove|stovetop|hob|microwave|grill|blender|time|meat|dairy|gluten)\b/.test(n));
+    if (without?.length) {
+      lacking.current = [...new Set([...lacking.current, ...without])];
+      return reply(`Got it, no ${without.join(' or ')}. Pick a dish, and if it needs ${without.length > 1 ? 'any of that' : 'it'}, I’ll work around it.`);
+    }
+    // Sure things don't need the model: a position ("the second one") or a dish by name.
+    const at = listed.current.length ? positionIn(text) : null;
+    const named = recipeNamed(text, library.recipes.filter((r) => matchesFilters(r, { ...EMPTY_FILTERS, diet: profile.hardExclusions }, profile)));
+    if (at !== null || named) return ruleBased(text);
+    // "Let's cook" before choosing a dish: ask which.
+    if (previewCommand(text) === 'cook') return reply(listed.current.length ? 'Which one? Say its name, or “the first one”.' : `Sure! ${OPENING}`);
+    if (modelService.mode === 'llm') void discoverWithModel(text);
+    else ruleBased(text);
+  };
+
+  /** The model reads what the cook means; the app runs it, checks it and says what it found. */
+  const discoverWithModel = async (text: string) => {
+    const recipes = library!.recipes;
+    const timeout = new Promise<null>((r) => window.setTimeout(() => r(null), 15000));
+    const intent = await Promise.race([
+      modelService.discover(text, {
+        listed: listed.current.slice(0, 12).map((r) => r.title),
+        current: describeFilters(filters),
+        rules: [...profile.hardExclusions, ...profile.allergies.map((a) => `no ${a}`)],
+        recent: talk.current.slice(0, -1),
+      }),
+      timeout,
+    ]);
+    if (!intent) return ruleBased(text);
+    // "Interpreted as…" when the model read the sentence differently; a reading that changes a
+    // negation, number, allergy, diet or time isn't acted on: Gusteau asks.
+    const reading = intent.heardAs && changesMeaning(text, intent.heardAs) ? intent.heardAs : null;
+    if (reading && riskyReading(text, reading)) return reply(checkFirst(reading));
+    setInterpreted(reading ?? '');
+    const understood = reading ?? text;
+    const short = (s?: string) => (s && s.length <= 280 ? s : null);
+    if (!intent.onTopic) return reply(short(intent.reply) ?? `I’m only here for cooking. ${OPENING}`);
+    if (intent.action === 'ask' || intent.action === 'answer') {
+      const said = short(intent.reply);
+      return said ? reply(said) : ruleBased(text);
+    }
+    if (intent.action === 'choose' && intent.choose) {
+      const { position, title } = intent.choose;
+      const recipe = (position && listed.current[position - 1]) || (title && (recipeNamed(title, listed.current) ?? recipeNamed(title, recipes))) || null;
+      return recipe ? openPreview(recipe, selectionIntro(recipe)) : ruleBased(text);
+    }
+    if (intent.action === 'search' && intent.search) {
+      const a = runSearch(modelSearch(understood, intent.search, profile), recipes, profile, filters);
+      // If the model's reading finds nothing specific, Gusteau's own reading gets a try.
+      if (a.kind === 'none' || (a.kind === 'list' && a.generic)) {
+        const own = browseByVoice(understood, recipes, profile, filters, listed.current);
+        if (own.kind !== 'none' && !(own.kind === 'list' && own.generic)) return showByVoice(own);
+      }
+      return a.kind === 'none' ? reply(a.say) : showByVoice(a);
+    }
+    ruleBased(text);
+  };
+
+  const previewVoice = (text: string, recipe: Recipe) => {
+    // "Yes, I have gouda" to "Do you have another kind of cheese?".
+    if (answerAsking(text, recipe)) return;
+    // "I don't have cilantro": Gusteau asks what could stand in before the recipe changes.
+    const miss = missingIn(text, recipe);
+    if (miss) {
+      // Matched by sound to the recipe ("flower" → flour): shown as "Interpreted as…", never swapped in silently.
+      if (miss.respelled.length) setInterpreted(miss.respelled.reduce((t, [heard, as]) => t.replace(new RegExp(`\\b${heard}\\b`, 'i'), as), text));
+      // Not in the recipe, and doesn't sound like anything in it: ask, rather than assume it isn't needed.
+      if (!miss.found.length) return reply(miss.elsewhere.length ? `I couldn’t find “${miss.elsewhere.join('” or “')}” in this recipe. Which ingredient do you mean?` : 'Which ingredient are you missing?');
+      const names = miss.found.map((i) => i.name);
+      toAsk.current = names.slice(1);
+      return askMissing(recipe, names[0]);
+    }
+    const cmd = discoveryCommand(text);
+    if (cmd === 'ingredients' || cmd === 'read_all') {
+      const servings = preview?.kitchen.rules?.servings ?? recipe.servings;
+      return readOn(ingredientsReading(scaleRecipe(recipe, servings).ingredients));
+    }
+    if (cmd === 'more') return reading.current?.kind === 'ingredients' ? readOn(reading.current) : reply('Say “what do I need?” and I’ll read you the ingredients.');
+    if (cmd === 'repeat') return reply(lastSaid.current || selectionIntro(recipe));
+    const go = previewCommand(text);
+    if (go === 'cook') return setCookSignal((n) => n + 1);
+    if (go === 'close') {
+      setPreview(null);
+      return reply(`Sure. ${OPENING}`);
+    }
+    // Another dish ("actually, show me pad thai") replaces this one; anything else gets a hint.
+    const a = library && browseByVoice(text, library.recipes, profile, filters, listed.current);
+    if (a && a.kind !== 'none' && !(a.kind === 'list' && a.generic)) return showByVoice(a);
+    reply(`Say “let’s cook” to start ${recipe.title}, or tell me if you’re missing anything.`);
+  };
+  // The dishes on screen follow the filters, however they were set (by voice or by tapping).
+  useEffect(() => {
+    if (!library) return;
+    const generic = !filters.cuisine && !filters.search && activeFilterCount(filters) === filters.diet.length;
+    listed.current = generic ? picksFor(library.recipes, profile) : shownRecipes(library.recipes, profile, filters);
+  }, [filters, library, profile]);
+
+  // Gusteau answers when he's called: "Hey Gusteau, …" or "Hey Chef, …".
+  const onPhrase = (text: string) => {
+    if (screen === 'onboarding') return;
+    const called = afterWakeWord(text);
+    const cooking = screen === 'cooking' && !!cook.session;
+    // In the kitchen, "next", "go back", "repeat that", "pause the timer" and the like work without his name:
+    // only the whole phrase counts, so "what's next for the weekend?" doesn't. So does
+    // a yes or no while he waits for one ("Skip this step?").
+    const stepOnly = cooking && called === null && (!!stepCommand(text) || !!timerCommand(text) || (!!cook.session?.pendingConfirm && !!confirmation(text)));
+    const listening = turnRef.current === 'open' || turnRef.current === 'hearing';
+    logHeard({ who: 'cook', text, note: called !== null ? 'called by name' : listening ? 'heard while listening' : stepOnly ? 'step command (no name needed)' : turnRef.current === 'answering' ? 'ignored: he was answering' : 'ignored: no “Hey Chef”' });
+    if (called === null && !listening && !stepOnly) return;
+    const asked = called ?? text;
+    const command = asCommand(asked);
+    if (GO_TO_SLEEP.test(command)) {
+      setTurn('waiting');
+      return voice.say('Okay. Say “Hey Chef” when you need me.');
+    }
+    if (TURN_OFF.test(command)) {
+      // Said once the mic is off (turning voice off silences him).
+      return void stopListening().then(() => voice.say('Okay, I’ve stopped listening. Tap Start when you need me.'));
+    }
+    if (MUTE.test(command)) {
+      setTurn('waiting');
+      voice.setMicMuted(true);
+      return voice.say('Muted. Tap Unmute when you want me to listen again.');
+    }
+    // Only his name: he greets the cook, then gives them five seconds to start talking (counted once he's said it).
+    if (!asked) {
+      // "Hey! What are you in the mood for?" is a question: ten seconds to answer.
+      openWindow(REPLY_WINDOW_MS);
+      if (cooking) return voice.say('Yes? I’m listening.');
+      if (preview) return reply(`Yes? Say “let’s cook” when you’re ready, or tell me if you’re missing anything.`);
+      return reply(`Hey! ${OPENING}`);
+    }
+    answered.current = false;
+    invited.current = false;
+    setTurn('answering');
+    if (cooking) return askByVoice(asked);
+    setHeard(asked);
+    setInterpreted('');
+    if (preview) previewVoice(asked, preview.recipe);
+    else browseVoice(asked);
   };
   const voice = useVoice(onPhrase);
   const voiceRef = useRef(voice);
   voiceRef.current = voice;
+  // Voice off or muted: back to waiting for his name.
+  useEffect(() => {
+    if (!voice.handsFree || voice.micMuted) setTurn('waiting');
+  }, [voice.handsFree, voice.micMuted]);
+  // Five seconds to start talking, counted once he's quiet (his mic is closed while he speaks).
+  useEffect(() => {
+    if (turn !== 'open' || voice.talking) return;
+    const t = window.setTimeout(() => turnRef.current === 'open' && setTurn('waiting'), windowMs.current);
+    return () => window.clearTimeout(t);
+  }, [turn, voice.talking]);
+  // The cook started talking: no time limit now, the request ends when they pause.
+  useEffect(() => {
+    if (turnRef.current === 'open' && voice.interim.trim()) setTurn('hearing');
+  }, [voice.interim]);
+  // Words that stop coming without a finished request (a cough, a dropped connection): back to waiting.
+  useEffect(() => {
+    if (turn !== 'hearing') return;
+    const t = window.setTimeout(() => turnRef.current === 'hearing' && setTurn('waiting'), 8000);
+    return () => window.clearTimeout(t);
+  }, [turn, voice.interim]);
+  // His answer: once he's said it and gone quiet, he listens five seconds for more, or ten if he
+  // asked something or waits on an answer; then back to waiting for his name. An answer that
+  // never comes doesn't keep him listening.
+  useEffect(() => {
+    if (voice.talking) answered.current = true;
+    if (turn !== 'answering' || voice.talking || cook.busy) return;
+    const t = window.setTimeout(
+      () => {
+        if (turnRef.current !== 'answering') return;
+        const last = screen === 'cooking' ? [...(cook.session?.chat ?? [])].reverse().find((m) => m.from === 'gusteau')?.text : lastSaid.current;
+        // A question at the end, or anything still waiting on the cook's answer ("Do you have another
+        // kind of cheese? Otherwise, …", a swap to confirm, "skip this step?"), waits for the reply.
+        const s = cook.session;
+        const open = screen === 'cooking' ? !!(s?.pendingChoice || s?.pendingOffer?.length || s?.pendingConfirm) : !!asking || invited.current;
+        if (!answered.current) setTurn('waiting');
+        else openWindow(open || expectsReply(last ?? '') ? REPLY_WINDOW_MS : LISTEN_WINDOW_MS);
+      },
+      answered.current ? 700 : 20000,
+    );
+    return () => window.clearTimeout(t);
+  }, [turn, voice.talking, cook.busy]);
   useEffect(() => {
     if (cook.busy || !waiting.current) return;
     const text = waiting.current;
@@ -101,7 +482,7 @@ export default function App() {
     if (!last || last.from !== 'gusteau' || last.id === lastSpoken.current) return;
     lastSpoken.current = last.id;
     const asked = chat[chat.length - 2];
-    if (!last.spoken && (voice.handsFree || asked?.via === 'voice')) voice.say(last.text);
+    if (!last.spoken && (voice.handsFree || asked?.via === 'voice')) voice.say(speakable(last.text));
   }, [s?.chat, voice.handsFree]);
   // Read the current step aloud on request, or automatically in hands-free mode.
   const lastRead = useRef(0);
@@ -110,8 +491,8 @@ export default function App() {
     if (!s || req.n === lastRead.current) return;
     lastRead.current = req.n;
     if (!req.force && !voice.handsFree) return;
-    const step = s.recipe.steps[s.stepIndex];
-    voice.say(step ? `${step.title}. ${step.text}` : 'All done. Bon appétit!', !req.force);
+    // Said like a chef, not read off the screen: see agent/stepSpeech.ts.
+    voice.say(cook.stepLine(req.how), !req.force);
   }, [cook.readRequest]);
 
   // Esc silences Gusteau.
@@ -122,39 +503,114 @@ export default function App() {
     return () => window.removeEventListener('keydown', onKey);
   }, [voice.talking]);
 
-  const setHandsFree = async (on: boolean) => {
+  /**
+   * The voice button: a tap always means "I want to talk". It starts voice,
+   * wakes Gusteau, resumes a pause, or interrupts him mid-sentence. It never
+   * turns voice off; that's the Stop button (or "turn off hands-free").
+   */
+  const tapToTalk = () => {
+    // The tap itself is what lets the browser start the mic's audio and his voice.
+    unlockAudio();
+    if (!voice.handsFree) return void startListening();
+    // Still not listening a few seconds after a tap (stuck starting): start voice over, from this tap.
+    if (voice.state === 'connecting') {
+      window.setTimeout(() => {
+        if (voiceRef.current?.state !== 'connecting') return;
+        void voiceRef.current.setHandsFree(false).then(() => setHandsFree(true));
+      }, 3000);
+    }
+    if (voice.talking) voice.stopTalking();
+    if (voice.micMuted) voice.setMicMuted(false);
+    // Already listening: a tap gives the full five seconds again.
+    listen();
+  };
+
+  /** `wake`: switched on by a tap, he listens straight away; otherwise he waits for his name. */
+  const setHandsFree = async (on: boolean, greet = true, wake = true) => {
     await voice.setHandsFree(on);
-    if (!on || !s) return;
+    if (!on) return;
+    // Greeting out loud: the five seconds start once he's said it.
+    if (wake) greet ? openWindow(REPLY_WINDOW_MS) : listen();
     // Load the model now so the first question doesn't wait for it, and invite the cook to talk.
     void modelService.warmUp().catch(() => { });
     voice.say(`I’m listening. How can I help with your ${s.recipe.title}?`);
   };
 
-  const leaveCooking = () => {
-    void voice.setHandsFree(false);
+  // Voice is on unless the cook stopped it. It starts as the page loads, waiting for "Hey Chef". Browsers only let the mic and speaker start after a first tap or key press,
+  // so until then it finishes starting on the first one, anywhere on the page. If the speech
+  // server drops and nothing can stand in, it tries again every 15 seconds.
+  const starting = useRef(false);
+  const [retry, setRetry] = useState(0);
+  const [stopped, setStopped] = useState(rememberedStop);
+  const power = { on: !stopped, toggle: () => void (stopped ? startListening() : stopListening()) };
+  /** The Stop button (or "turn off"): no listening at all, not even for "Hey Chef", until Start. Remembered across reloads. */
+  const stopListening = async () => {
+    setStopped(true);
+    rememberStop(true);
+    setTurn('waiting');
+    await voice.setHandsFree(false);
+  };
+  /** The Start button: voice on, and Gusteau starts the conversation himself. */
+  const startListening = async () => {
+    unlockAudio();
+    setStopped(false);
+    rememberStop(false);
+    await setHandsFree(true);
+  };
+  useEffect(() => {
+    if (stopped || !voice.ready || !voice.supported || voice.handsFree || starting.current) return;
+    starting.current = true;
+    void setHandsFree(true, false, false).finally(() => {
+      starting.current = false;
+      window.setTimeout(() => setRetry((n) => n + 1), 15000);
+    });
+  }, [voice.ready, voice.supported, voice.handsFree, retry, stopped]);
+
+  // Prototype only: forget everything about this user and show the welcome screen again.
+  const startOverAsNewUser = () => {
+    if (!window.confirm('Reset Gusteau as a new user? This clears your preferences, kitchen and cooking history on this device.')) return;
+    // Voice stays on (it always is); he just goes back to waiting for "Hey Chef".
+    setTurn('waiting');
     voice.stopTalking();
     cook.stop();
-    setScreen('browse');
+    reset();
+    setPreview(null);
+    setEditingPrefs(false);
+    setFilters({ ...EMPTY_FILTERS });
+    setScreen('onboarding');
     window.scrollTo({ top: 0 });
   };
 
-  const startCooking = async (recipe: Recipe, kitchen: Kitchen, rules: Parameters<typeof cook.start>[1], leaveOut: string[]) => {
-    await cook.start(recipe, rules, kitchen.pantry, kitchen.basics, leaveOut);
+  // Hands-free stays on when leaving the kitchen: Gusteau goes back to helping choose.
+  const leaveCooking = () => {
+    voice.stopTalking();
+    cook.stop();
+    setScreen('browse');
+    setSaid('');
+    setHeard('');
+    window.scrollTo({ top: 0 });
+  };
+
+  const startCooking = async (recipe: Recipe, rules: Parameters<typeof cook.start>[1], leaveOut: string[]) => {
+    // No inventory: Gusteau only knows what the cook said they don't have.
+    const swaps = decided.filter((d) => d.to).map((d) => ({ from: d.name, to: d.to! }));
+    await cook.start(recipe, rules, [], true, leaveOut, decided.map((d) => d.name), swaps);
     setPreview(null);
     setScreen('cooking');
     window.scrollTo({ top: 0 });
+    // Hands-free: after his welcome, straight into the first step, without touching the screen.
+    if (voice.handsFree) cook.readStep();
   };
 
   const loadDemo = () => {
     const recipe = library?.recipes.find((r) => r.id === DEMO_RECIPE_ID);
     if (!recipe) return setToast('The demo recipe isn’t in this recipe file.');
     setFilters({ ...EMPTY_FILTERS, cuisine: 'mexican' });
-    setPreview({ recipe, kitchen: { pantry: DEMO_PANTRY.map((p) => ({ ...p, id: uid() })), basics: true, rules: DEMO_RULES, label: 'Demo kitchen' } });
+    setPreview({ recipe, kitchen: { rules: DEMO_RULES, label: 'Demo' } });
+    setDecided([]);
+    setAsking(null);
   };
 
-  const myKitchen: Kitchen = useMemo(() => ({ pantry: profile.pantry, basics: profile.pantryBasics }), [profile.pantry, profile.pantryBasics]);
-  const micVisible = screen !== 'onboarding' && voice.supported && !voice.handsFree;
-  const listening = (voice.state === 'listening' || voice.state === 'connecting') && !voice.handsFree;
 
   return (
     <div className="min-h-screen bg-cream-100 bg-[radial-gradient(ellipse_at_top_right,rgba(242,140,56,0.12),transparent_55%),radial-gradient(ellipse_at_bottom_left,rgba(107,122,58,0.08),transparent_50%)]">
@@ -163,7 +619,7 @@ export default function App() {
           {/* <button onClick={() => (screen === 'cooking' ? leaveCooking() : profile.onboarded && setScreen('browse'))} className="flex items-center gap-2.5" aria-label="Gusteau home">
             <GusteauIcon />
             <span className="text-left leading-none">
-              <span className="block font-display text-xl font-semibold text-charcoal-900">Gusteau</span>
+              <span className="hidden font-display text-xl font-semibold text-charcoal-900 sm:block">Gusteau</span>
               <span className="hidden text-[11px] text-charcoal-400 sm:block">Your personal chef assistant</span>
             </span>
           </button> */}
@@ -180,12 +636,16 @@ export default function App() {
 
 
           <div className="flex items-center gap-2">
-            <span
-              className={cx('hidden rounded-full px-3 py-1 text-[11px] font-semibold md:inline', modelService.mode === 'mock' ? 'bg-cream-200 text-charcoal-500' : 'bg-olive-100 text-olive-700')}
-              title={modelService.mode === 'mock' ? 'Using local mock services. See README to connect a model.' : 'Connected to a live model'}
+            <ModelPicker />
+            <button
+              onClick={() => setDebug((d) => !d)}
+              aria-pressed={debug}
+              aria-label="Debug"
+              title="Show what Gusteau heard, what was sent to the model, and what it answered"
+              className={cx('rounded-full px-3 py-1.5 text-xs font-semibold', debug ? 'bg-charcoal-900 text-white' : 'text-charcoal-500 hover:bg-cream-200 hover:text-charcoal-900')}
             >
-              {modelService.label}
-            </span>
+              🐞 <span className="hidden sm:inline">Debug</span>
+            </button>
             {profile.onboarded && screen !== 'cooking' && (
               <button onClick={() => setEditingPrefs(true)} className="rounded-full px-3 py-2 text-sm font-medium text-charcoal-500 hover:bg-cream-200 hover:text-charcoal-900">
                 ⚙︎ <span className="hidden sm:inline">Preferences</span>
@@ -193,16 +653,17 @@ export default function App() {
             )}
             {micVisible && screen !== 'browse' && (
               <button
-                onClick={() => void voice.listenOnce()}
-                aria-label={listening ? 'Stop listening' : 'Talk to Gusteau'}
-                aria-pressed={listening}
-                className={cx(
-                  'flex h-10 items-center gap-2 rounded-full px-3.5 text-sm font-semibold transition-colors',
-                  listening ? 'bg-tomato-500 text-white' : 'bg-charcoal-900 text-white hover:bg-charcoal-700',
-                )}
+                onClick={startOverAsNewUser}
+                title="Prototype only: clears preferences, kitchen and history, then shows the new-user screen"
+                className="rounded-full border border-dashed border-charcoal-400/50 px-3 py-1.5 text-xs font-medium text-charcoal-500 hover:border-tomato-400 hover:text-tomato-600"
               >
-                {listening ? <span className="h-2.5 w-2.5 animate-pulse rounded-full bg-white" /> : <span aria-hidden>🎤</span>}
-                <span className="hidden sm:inline">{listening ? 'Listening… tap to stop' : 'Ask Gusteau'}</span>
+                ↺ <span className="hidden sm:inline">Reset as new user</span>
+                <span className="ml-1 hidden rounded-full bg-cream-200 px-1.5 py-0.5 text-[10px] uppercase tracking-wider text-charcoal-400 lg:inline">Prototype</span>
+              </button>
+            )}
+            {profile.onboarded && screen !== 'cooking' && (
+              <button onClick={() => setEditingPrefs(true)} className="rounded-full px-3 py-2 text-sm font-medium text-charcoal-500 hover:bg-cream-200 hover:text-charcoal-900">
+                ⚙︎ <span className="hidden sm:inline">Preferences</span>
               </button>
             )}
             {screen !== 'onboarding' && screen !== 'browse' && voice.state === 'blocked' && <span className="text-xs text-tomato-600">Mic blocked in browser settings</span>}
@@ -212,6 +673,7 @@ export default function App() {
           <p className="absolute inset-x-0 top-full truncate bg-charcoal-900 px-4 py-1.5 text-center text-xs italic text-white">“{voice.interim}”</p>
         )}
       </header>
+      {debug && <DebugPanel />}
 
       <main className="px-4 pb-16 pt-8 sm:px-6 sm:pt-10">
         {screen === 'browse' && (
@@ -246,8 +708,15 @@ export default function App() {
                 profile={profile}
                 filters={filters}
                 setFilters={setFilters}
-                onOpen={(recipe) => setPreview({ recipe, kitchen: myKitchen })}
-                onPantry={(pantry, pantryBasics) => update({ pantry, pantryBasics })}
+                // A tap chooses too; in hands-free Gusteau introduces the dish.
+                onOpen={(recipe) => {
+                  // Chosen by tap: his introduction is a turn too, so he listens for the reply after it.
+                  if (voice.handsFree && !voice.micMuted) {
+                    answered.current = false;
+                    setTurn('answering');
+                  }
+                  openPreview(recipe, voice.handsFree ? selectionIntro(recipe) : undefined);
+                }}
                 onDemo={loadDemo}
                 onToast={setToast}
               />
@@ -260,10 +729,10 @@ export default function App() {
             </p>
           ))}
 
-        {screen === 'cooking' && cook.session && <CookingWorkspace cook={cook} voice={voice} onHandsFree={(on) => void setHandsFree(on)} onExit={leaveCooking} />}
+        {screen === 'cooking' && cook.session && <CookingWorkspace cook={cook} voice={voice} turn={turn} power={power} onHandsFree={tapToTalk} onExit={leaveCooking} />}
       </main>
 
-      <Modal open={!!preview} onClose={() => setPreview(null)} label={preview?.recipe.title ?? 'Recipe'} wide>
+      <Modal open={!!preview} onClose={() => setPreview(null)} label={preview?.recipe.title ?? 'Recipe'} wide aboveDock={screen === 'browse'}>
         {preview && (
           <RecipePreview
             key={preview.recipe.id}
@@ -272,7 +741,26 @@ export default function App() {
             kitchen={preview.kitchen}
             busy={cook.busy === 'starting'}
             onClose={() => setPreview(null)}
-            onCook={(rules, leaveOut) => void startCooking(preview.recipe, preview.kitchen, rules, leaveOut)}
+            onCook={(rules, leaveOut) => void startCooking(preview.recipe, rules, leaveOut)}
+            cookSignal={cookSignal}
+            onCantCook={(why) => reply(`Not yet: ${why} Tell me what to change, or pick something else.`)}
+            unavailable={decided.map((d) => d.name)}
+            swaps={decided.filter((d) => d.to).map((d) => ({ from: d.name, to: d.to! }))}
+            asking={asking}
+            onAnswer={(text) => answerAsking(text, preview.recipe) || reply(`Tell me what you’d like to use instead of the ${asking?.current.toLowerCase() ?? 'ingredient'}.`)}
+            // Said out loud in hands-free; on screen the ingredient list shows the change either way. Then the next missing one.
+            onAdjusted={(say) => {
+              if (voice.handsFree) reply(say, true);
+              const next = toAsk.current.shift();
+              if (next) askMissing(preview.recipe, next, true);
+            }}
+            onMissing={(name) => {
+              // Tapped again: undo.
+              if (decided.some((d) => d.name === name)) return setDecided((d) => d.filter((x) => x.name !== name));
+              if (asking?.current === name) return setAsking(null);
+              toAsk.current = [];
+              askMissing(preview.recipe, name);
+            }}
           />
         )}
       </Modal>
@@ -291,8 +779,13 @@ export default function App() {
         </div>
       </Modal>
 
+      {/* Hands-free from the craving page on; in the kitchen it lives in the status bar. */}
+      {profile.onboarded && screen === 'browse' && (
+        <VoiceDock voice={voice} turn={turn} heard={heard} interpreted={interpreted} said={said} onTap={tapToTalk} power={power} />
+      )}
+
       {toast && (
-        <div role="status" className="fixed inset-x-4 bottom-6 z-50 mx-auto max-w-md animate-pop rounded-2xl bg-charcoal-900 px-4 py-3 text-center text-sm text-white shadow-card">
+        <div role="status" className="fixed inset-x-4 bottom-28 z-50 mx-auto max-w-md animate-pop rounded-2xl bg-charcoal-900 px-4 py-3 text-center text-sm text-white shadow-card">
           {toast}
         </div>
       )}

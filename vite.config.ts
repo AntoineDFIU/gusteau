@@ -73,6 +73,95 @@ function gusteauConfigPlugin(publicConfig: object): Plugin {
 }
 
 // ─────────────────────────────────────────────────────────────
+// Technique videos: GET /api/videos?q=how+to+dice+an+onion returns
+// short YouTube videos (5 minutes or less) for a cooking technique.
+//
+// Keyless: the server reads YouTube's public search results page and
+// the data embedded in it. No API key or quota, but YouTube's terms
+// don't allow automated access, and it can break whenever YouTube
+// changes that page. Same contract as deploy/gusteau_server.py.
+// ─────────────────────────────────────────────────────────────
+
+export interface VideoHit {
+  id: string;
+  title: string;
+  channel: string;
+  thumb: string;
+}
+
+const MAX_VIDEO_SECONDS = 5 * 60;
+const seconds = (length = '') => length.split(':').reduce((t, part) => t * 60 + Number(part), 0);
+
+/** Video results from a YouTube search page: the `videoRenderer` entries inside `ytInitialData`. */
+function videosFromSearchPage(html: string): VideoHit[] {
+  const json = html.match(/var ytInitialData = (\{.*?\});<\/script>/s)?.[1];
+  if (!json) throw new Error('YouTube search page changed');
+  const found: VideoHit[] = [];
+  type Text = { runs?: { text?: string }[]; simpleText?: string };
+  const walk = (node: unknown) => {
+    if (!node || typeof node !== 'object') return;
+    const v = (node as { videoRenderer?: { videoId?: string; title?: Text; ownerText?: Text; lengthText?: Text } }).videoRenderer;
+    if (v?.videoId) {
+      const length = seconds(v.lengthText?.simpleText);
+      // Live streams have no length; long videos aren't "short".
+      if (length > 0 && length <= MAX_VIDEO_SECONDS) {
+        found.push({ id: v.videoId, title: v.title?.runs?.[0]?.text ?? '', channel: v.ownerText?.runs?.[0]?.text ?? '', thumb: `https://i.ytimg.com/vi/${v.videoId}/mqdefault.jpg` });
+      }
+      return;
+    }
+    for (const child of Object.values(node)) walk(child);
+  };
+  walk(JSON.parse(json));
+  return found.slice(0, 6);
+}
+
+function videoSearchPlugin(): Plugin {
+  const cache = new Map<string, VideoHit[]>();
+  const handler = async (req: { url?: string }, res: { statusCode: number; setHeader: (k: string, v: string) => void; end: (b: string) => void }) => {
+    const send = (status: number, body: object) => {
+      res.statusCode = status;
+      res.setHeader('Content-Type', 'application/json');
+      res.end(JSON.stringify(body));
+    };
+    const q = new URL(req.url ?? '', 'http://x').searchParams.get('q')?.trim().slice(0, 120);
+    if (!q) return send(400, { error: 'missing q' });
+    const key = q.toLowerCase();
+    if (cache.has(key)) return send(200, { videos: cache.get(key) });
+    try {
+      // sp=EgIYAQ%3D%3D is YouTube's "Under 4 minutes" filter.
+      const r = await fetch(`https://www.youtube.com/results?search_query=${encodeURIComponent(q)}&sp=EgIYAQ%253D%253D&hl=en&gl=US`, {
+        signal: AbortSignal.timeout(10000),
+        headers: { 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0 Safari/537.36', 'Accept-Language': 'en-US,en;q=0.9', Cookie: 'SOCS=CAI; CONSENT=YES+1' },
+      });
+      if (!r.ok) return send(502, { error: `YouTube ${r.status}` });
+      const found = videosFromSearchPage(await r.text());
+      // Keep only videos their owners allow on other sites (oEmbed refuses the rest).
+      const embeddable = await Promise.all(
+        found.map((v) =>
+          fetch(`https://www.youtube.com/oembed?format=json&url=${encodeURIComponent(`https://www.youtube.com/watch?v=${v.id}`)}`, { signal: AbortSignal.timeout(5000) })
+            .then((o) => o.ok)
+            .catch(() => false),
+        ),
+      );
+      const videos = found.filter((_, i) => embeddable[i]);
+      cache.set(key, videos);
+      send(200, { videos });
+    } catch (e) {
+      send(502, { error: (e as Error).message });
+    }
+  };
+  return {
+    name: 'gusteau-videos',
+    configureServer(server) {
+      server.middlewares.use('/api/videos', (req, res) => void handler(req, res));
+    },
+    configurePreviewServer(server) {
+      server.middlewares.use(`${BUILD_BASE}api/videos`, (req, res) => void handler(req, res));
+    },
+  };
+}
+
+// ─────────────────────────────────────────────────────────────
 // Speech recognition (dev only, used by /asr.html):
 //
 //   ASR_BASE_URL     NeMo-Speech.cpp server             (default: http://127.0.0.1:8080)
@@ -186,7 +275,7 @@ export default defineConfig(({ mode, command }) => {
 
   return {
     base: command === 'build' ? BUILD_BASE : '/',
-    plugins: [react(), gusteauConfigPlugin(cfg.public), asr.tunnel],
+    plugins: [react(), gusteauConfigPlugin(cfg.public), videoSearchPlugin(), asr.tunnel],
     server: { port: 5173, proxy: { ...llmProxy('/'), ...asr.proxy } },
     preview: { port: 4173, proxy: llmProxy(BUILD_BASE) },
   };

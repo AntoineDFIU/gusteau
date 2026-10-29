@@ -1,5 +1,5 @@
 import { useEffect, useMemo, useRef, useState } from 'react';
-import { EMPTY_FILTERS, MAX_MISSING_FOR_PANTRY, activeFilterCount, matchesFilters, recommendScore, tasteOf, type Filters } from '../agent/kitchen';
+import { EMPTY_FILTERS, activeFilterCount, matchesFilters, recommendScore, tasteOf, type Filters } from '../agent/kitchen';
 import { CUISINES, cuisineById } from '../data/cuisines';
 import { GRAINS, PROTEINS, type GrainId, type ProteinId } from '../data/ingredients';
 import { DIET_RULES, DIET_RULE_IDS, DIFFICULTIES, EQUIPMENT } from '../data/rules';
@@ -182,20 +182,13 @@ export function Browse({
               </Chip>
             ))}
           </FilterGroup>
-          <FilterGroup title="Equipment & ingredients">
+          <FilterGroup title="Equipment">
             <label className="flex w-full items-center justify-between gap-3 text-sm text-charcoal-700">
               <span>
                 Only my equipment
                 <span className="block text-xs text-charcoal-400">{profile.equipment.map((e) => EQUIPMENT[e].label).join(', ')}</span>
               </span>
               <Toggle checked={!!filters.equipment} onChange={(v) => set({ equipment: v ? profile.equipment : null })} label="Only my equipment" />
-            </label>
-            <label className={cx('flex w-full items-center justify-between gap-3 text-sm text-charcoal-700', !profile.pantry.length && 'opacity-50')}>
-              <span>
-                Uses what I have
-                <span className="block text-xs text-charcoal-400">{profile.pantry.length ? `Missing at most ${MAX_MISSING_FOR_PANTRY} ingredients` : 'Add your ingredients first'}</span>
-              </span>
-              <Toggle checked={filters.pantryOnly} onChange={(v) => profile.pantry.length && set({ pantryOnly: v })} label="Uses what I have" />
             </label>
           </FilterGroup>
         </Card>
@@ -245,10 +238,10 @@ export function Browse({
           <Card className="overflow-hidden border-saffron-100 bg-gradient-to-br from-saffron-100/70 via-white to-tomato-50 p-5">
             <p className="font-display text-lg font-semibold text-charcoal-900">🎬 Try the live replanning demo</p>
             <p className="mt-1 text-sm text-charcoal-500">
-              A microwave burrito bowl with rice, beans, tortillas, cheese and salsa. Vegetarian, 15 minutes, microwave only, no purchases. Then say “Actually, I don’t have rice.”
+              A microwave burrito bowl with rice, beans, tortillas, cheese and salsa. Vegetarian, 15 minutes, microwave only. Then say “Actually, I don’t have rice.”
             </p>
             <Button variant="olive" size="sm" className="mt-3" onClick={onDemo}>
-              Load demo kitchen
+              Load the demo
             </Button>
           </Card>
         </aside> */}

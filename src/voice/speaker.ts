@@ -1,4 +1,6 @@
+import { trackAudio } from './audioUnlock';
 import { ASR_BASE } from './nemotronAsr';
+import { forSpeech } from './spokenUnits';
 import { speak, stopSpeaking } from './useSpeech';
 
 // ─────────────────────────────────────────────────────────────
@@ -42,7 +44,7 @@ export function takeSentences(text: string): { sentences: string[]; rest: string
 
 /** What a voice shouldn't read out: markdown symbols and emoji. */
 const speakable = (text: string) =>
-  text
+  forSpeech(text)
     .replace(/[*_#`>~|]/g, '')
     .replace(/\p{Extended_Pictographic}/gu, '')
     .replace(/\s+/g, ' ')
@@ -57,7 +59,8 @@ export function createSpeaker(engine: VoiceEngine, opts: SpeakerOptions = {}): S
 let audio: AudioContext | undefined;
 
 function magpieSpeaker(voice: string, language: string, opts: SpeakerOptions): Speaker {
-  const ctx = (audio ??= new AudioContext());
+  // Tracked so a tap anywhere unlocks his voice (browsers block sound until the first one).
+  const ctx = (audio ??= trackAudio(new AudioContext()));
   void ctx.resume();
   const controller = new AbortController();
   const clips: Promise<AudioBuffer | null>[] = [];

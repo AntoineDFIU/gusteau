@@ -1,28 +1,23 @@
 import type { AdaptResult } from '../../agent/adapt';
-import type { CookSession, DetectedIngredient, Recipe } from '../../types';
-import type { ChefModelService, InterpretResult, PhotoInput, StageResult } from '../modelService';
+import type { CookSession, Recipe } from '../../types';
+import type { ChefModelService, DiscoverIntent, InterpretResult, StageResult } from '../modelService';
 import { parseIntent } from './intentParser';
-import { MOCK_FRIDGE_DETECTIONS, MOCK_PANTRY_DETECTIONS } from './mockData';
 
 const wait = (ms: number) => new Promise((r) => setTimeout(r, ms));
 
 /**
  * Fully local stand-in for a real model.
- * - analyzePhotos    → canned detections
  * - interpretMessage → rule-based intent parser
  * - stageRecipe      → the stages the database or Gusteau's heuristic already set
  * - adaptPlan        → Gusteau's rule-based replan, unchanged
+ * - phraseSteps      → nothing (Gusteau's own spoken wording is used)
+ * - discover         → nothing (choosing by voice uses the rule-based reading)
  */
 export class MockModelService implements ChefModelService {
   readonly mode = 'mock' as const;
   readonly label = 'Demo mode · mock AI';
-
-  async analyzePhotos(photos: PhotoInput[]): Promise<DetectedIngredient[]> {
-    await wait(2000);
-    const hint = photos.map((p) => p.name.toLowerCase()).join(' ');
-    if (photos.length === 1 && /pantry|shelf|cupboard/.test(hint)) return MOCK_PANTRY_DETECTIONS;
-    return [...MOCK_FRIDGE_DETECTIONS, ...MOCK_PANTRY_DETECTIONS];
-  }
+  readonly textModel = '';
+  setTextModel(): void {}
 
   async interpretMessage(message: string, session: CookSession): Promise<InterpretResult> {
     await wait(350);
@@ -38,5 +33,15 @@ export class MockModelService implements ChefModelService {
   async adaptPlan(_session: CookSession, draft: AdaptResult): Promise<AdaptResult> {
     await wait(500);
     return draft;
+  }
+
+  /** No model to phrase steps: Gusteau's own spoken wording is used. */
+  async phraseSteps(): Promise<Record<string, string>> {
+    return {};
+  }
+
+  /** No model: choosing by voice uses the rule-based reading. */
+  async discover(): Promise<DiscoverIntent | null> {
+    return null;
   }
 }

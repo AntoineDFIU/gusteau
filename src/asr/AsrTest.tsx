@@ -4,6 +4,7 @@ import type { ChatMessage } from '../services/llm/chatStream';
 import { checkAsrServer, startAsr, type AsrEvent, type AsrServerInfo, type AsrSession } from '../voice/nemotronAsr';
 import type { VoiceEngine } from '../voice/speaker';
 import { ttsSupported } from '../voice/useSpeech';
+import { gusteauVoice } from '../voice/useVoice';
 import { loadLlmConfig, startTurn, warmUp, type LlmInfo, type Turn } from './assistant';
 
 // ─────────────────────────────────────────────────────────────
@@ -98,9 +99,9 @@ export function AsrTest() {
   const lastLlmUse = useRef(0);
   const alive = useRef(true);
 
-  // Default voice: the server's first Magpie voice, else the browser's.
+  // Default voice: Gusteau's Magpie voice (Jason), else the browser's.
   const tts = server.state === 'ok' ? server.info.tts : undefined;
-  const voice = voiceChoice || (tts?.voices.length ? `magpie:${tts.voices[0]}` : ttsSupported ? 'browser' : 'off');
+  const voice = voiceChoice || (tts?.voices.length ? `magpie:${gusteauVoice(tts.voices)}` : ttsSupported ? 'browser' : 'off');
   const activeLlm = llm.state === 'ready' || llm.state === 'warming' ? llm.llm : null;
   // Handlers created when listening starts read the current settings from here.
   const now = useRef({ replies, activeLlm, voice, language, server });

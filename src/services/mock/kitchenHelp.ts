@@ -1,8 +1,10 @@
 import { describeChanges, substitutionHints, type SwapHint } from '../../agent/adapt';
-import { availability, breaksRule } from '../../agent/kitchen';
+import { availability, breaksRule, isEssential } from '../../agent/kitchen';
 import { normalize, sameIngredient, substitutesFor } from '../../data/ingredients';
 import type { CookSession, RecipeIngredient, SessionChange } from '../../types';
 import type { InterpretResult } from '../modelService';
+import { missingNames } from '../../agent/discovery';
+import { answerMissing, missingQuestion } from '../../agent/missing';
 
 // ─────────────────────────────────────────────────────────────
 // Rule-based kitchen help: swap questions and requests, additions,
@@ -24,15 +26,143 @@ const clean = (s: string) =>
 const strip = (s: string) => s.replace(/^(the|some|a|an|my|a little|a bit of|more)\s+/, '').replace(/\s+(too|as well|instead|please|in it|to it|in there)$/, '').trim();
 const list = (items: string[]) => (items.length <= 1 ? items.join('') : `${items.slice(0, -1).join(', ')} or ${items[items.length - 1]}`);
 
-/** "yes" / "no" to the swap or addition Gusteau just offered. */
+/**
+ * The cook's answer to what Gusteau just offered: "yes", one of the listed
+ * swap options by name, "leave it out", or "no". Changes returned here were
+ * agreed to, so they apply without asking again.
+ */
 export function answerOffer(raw: string, s: CookSession): InterpretResult | null {
-  if (!s.pendingOffer?.length) return null;
+  const choice = s.pendingChoice;
+  if (!s.pendingOffer?.length && !choice) return null;
   const m = clean(raw);
-  if (/^(yes|yeah|yep|yup|sure|ok|okay|please|do it|go ahead|sounds good|let's do (it|that)|switch|swap it|add it|perfect)( please| thanks| thank you)?$/.test(m)) {
-    return { reply: null, changes: s.pendingOffer, trigger: describeChanges(s.pendingOffer) };
+  const agreed = (changes: SessionChange[]): InterpretResult => ({ reply: null, changes, trigger: describeChanges(changes), confirmed: true });
+  const outOf: SessionChange[] = choice?.out ? [{ type: 'remove_ingredient', name: choice.current }] : [];
+  if (/^(yes|yeah|yep|yup|sure|ok|okay|please|do it|go ahead|sounds good|let's do (it|that)|switch|swap it|add it|perfect)( please| thanks| thank you)?$/.test(m) && s.pendingOffer?.length) {
+    return agreed(s.pendingOffer);
   }
-  if (/^(no|nope|nah|no thanks|no thank you|not now|keep it|leave it|never mind)( thanks| thank you)?$/.test(m)) return { reply: 'No problem, we’ll keep the plan as it is.', changes: [] };
+  if (choice?.out) {
+    // "Do you have another kind of cheese?": answered the same way as while choosing a dish.
+    const a = answerMissing(raw, choice, s.recipe, s.rules, 'cooking');
+    if (a?.kind === 'drop') return agreed([...outOf, { type: 'leave_out', name: choice.from }]);
+    if (a?.kind === 'swap') return agreed([...outOf, { type: 'swap_ingredient', from: choice.from, to: a.to }]);
+    if (a?.kind === 'confirm') return { reply: a.say, changes: [], offer: [...outOf, { type: 'swap_ingredient', from: choice.from, to: a.to }], choice: { ...choice, confirming: a.to } };
+    if (a?.kind === 'say') return { reply: a.say, changes: [], choice: { ...choice, confirming: undefined } };
+  } else if (choice) {
+    if (/\b(leave (it|them) out|without (it|them)|skip (it|them)|cook without|drop (it|them)|go without|do without)\b/.test(m)) return agreed([...outOf, { type: 'leave_out', name: choice.from }]);
+    const picked = choice.options.find((o) => m.includes(normalize(o)) || m.includes(o.toLowerCase()) || new RegExp(`\\b${normalize(o).split(' ').pop()}`).test(m));
+    if (picked) return agreed([...outOf, { type: 'swap_ingredient', from: choice.from, to: picked }]);
+    // Something else by name ("couscous", "how about pita?"): that's their pick. The usual checks still apply.
+    const named = m.match(/^(?:(?:can i |could i |let's |i'll )?(?:use|try|go with|have)|how about|what about)?\s*(?:the |some )?([a-z][a-z ]{2,30}?)(?: instead| please)?$/);
+    const other = named?.[1]?.trim();
+    if (other && other.split(' ').length <= 3 && !/^(yes|no|ok|okay|hmm|what|why|how|wait|sorry|thanks|thank you|maybe|not sure|i don't know)$/.test(other)) {
+      return agreed([...outOf, { type: 'swap_ingredient', from: choice.from, to: cap(other) }]);
+    }
+  }
+  if (/^(no|nope|nah|no thanks|no thank you|not now|keep it|never mind)( thanks| thank you)?$/.test(m)) {
+    // Still out of it: the plan can't simply stay as it is.
+    if (choice?.out) return { reply: `Okay. Since you’re out of ${choice.current.toLowerCase()}, tell me what you’d like to use instead, or I can leave it out.`, changes: [], choice, offer: [...outOf, { type: 'leave_out', name: choice.from }] };
+    return { reply: 'No problem, we’ll keep the plan as it is.', changes: [] };
+  }
   return null;
+}
+
+/** Still to be used: by an unfinished step, or not tied to any step. */
+const needed = (s: CookSession, i: RecipeIngredient) => {
+  const used = s.recipe.steps.filter((st) => st.uses.includes(i.id));
+  return !used.length || used.some((st) => !s.completedStepKeys.includes(st.key));
+};
+
+/**
+ * Running out of an ingredient, or asking for a swap, never changes the plan
+ * straight away: Gusteau lists the options that fit the cook's rules and
+ * kitchen and asks first. Returns the question, plus any other changes in the
+ * same message (they apply as usual). Null when nothing needs asking, e.g.
+ * the ingredient isn't used in what's left of the recipe.
+ */
+export function proposeIngredientChange(changes: SessionChange[], s: CookSession): { proposal: InterpretResult; rest: SessionChange[] } | null {
+  // "Out of X" comes first: it lists every option, not just the one a model picked.
+  const target = changes.find((c) => c.type === 'remove_ingredient') ?? changes.find((c) => c.type === 'swap_ingredient');
+  if (!target) return null;
+  // Every ingredient replacement in the message waits for the cook's answer (a model may send
+  // "out of rice" and "swap to tortillas" together); only unrelated changes apply straight away.
+  const rest = changes.filter((c) => c.type !== 'remove_ingredient' && c.type !== 'swap_ingredient' && c.type !== 'leave_out');
+  const named = target.type === 'remove_ingredient' ? target.name : target.from;
+  const ing = findIngredient(named, s);
+  if (!ing || !needed(s, ing)) return null;
+  const from = ing.substitutedFor ?? ing.name;
+  const label = ing.name.toLowerCase();
+  const out = target.type === 'remove_ingredient';
+  const outOf: SessionChange[] = out ? [{ type: 'remove_ingredient', name: target.name }] : [];
+
+  if (target.type === 'swap_ingredient') {
+    const note = substitutesFor(from).find((o) => sameIngredient(o.name, target.to))?.note ?? 'Use about the same amount.';
+    return {
+      rest,
+      proposal: {
+        reply: `${cap(target.to.toLowerCase())} can stand in for the ${label}. ${note} Shall I switch it in the plan?`,
+        changes: [],
+        offer: [{ type: 'swap_ingredient', from, to: target.to }],
+        choice: { from, current: ing.name, options: [target.to], out: false },
+      },
+    };
+  }
+
+  if (out) {
+    // Gusteau doesn't know what's in the kitchen: he suggests what could stand in and asks,
+    // and offers to go without only when the dish still works without it.
+    const { say, ...choice } = missingQuestion(ing, s.recipe, s.rules, 'cooking');
+    return { rest, proposal: { reply: say, changes: [], choice } };
+  }
+
+  const hint = substitutionHints(s).find((h) => h.ingredient === ing.name);
+  const options = hint?.options ?? [];
+  const owned = options.filter((o) => o.status === 'have').map((o) => o.name);
+  const maybe = options.filter((o) => o.status === 'unknown').map((o) => o.name);
+  const choices = [...owned, ...maybe];
+  const droppable = !isEssential(ing);
+  if (!choices.length) {
+    return {
+      rest,
+      proposal: {
+        reply: `No ${label}? I don’t have a swap for it that fits your rules and kitchen. Shall I carry on without it?`,
+        changes: [],
+        offer: [...outOf, { type: 'leave_out', name: from }],
+        choice: { from, current: ing.name, options: [], out },
+      },
+    };
+  }
+  const best = choices[0];
+  const lower = (xs: string[]) => xs.map((x) => x.toLowerCase());
+  const parts = [
+    owned.length && `You could use ${list(lower(owned))}, which you have.`,
+    maybe.length && `${cap(list(lower(maybe)))} would work too, if you have ${maybe.length > 1 ? 'any' : 'it'}.`,
+    options.find((o) => o.name === best)?.note,
+    `Shall I switch to ${best.toLowerCase()}${droppable ? `, or leave the ${label} out` : ''}?`,
+  ].filter(Boolean);
+  return {
+    rest,
+    proposal: {
+      reply: `${out ? `No ${label}? No problem. ` : ''}${parts.join(' ')}`,
+      changes: [],
+      offer: [...outOf, { type: 'swap_ingredient', from, to: best }],
+      choice: { from, current: ing.name, options: choices, out },
+    },
+  };
+}
+
+/**
+ * "I don't have cheddar", "I'm out of buns": running out of something the rest
+ * of the recipe still uses. Caught before the model, so Gusteau always asks the same way.
+ */
+export function outOfIngredient(raw: string, s: CookSession): InterpretResult | null {
+  const names = missingNames(raw);
+  if (!names) return null;
+  const changes: SessionChange[] = [];
+  for (const n of names) {
+    const ing = findIngredient(n, s);
+    if (ing && needed(s, ing)) changes.push({ type: 'remove_ingredient', name: ing.substitutedFor ?? ing.name });
+  }
+  return changes.length ? { reply: null, changes, trigger: describeChanges(changes) } : null;
 }
 
 /** The recipe ingredient a phrase refers to, preferring ones still to be used. */
@@ -64,7 +194,7 @@ const hintLine = (h: SwapHint) => {
 function cannotUse(name: string, s: CookSession): string | null {
   const rule = breaksRule(name, s.rules);
   if (rule) return `${name.toLowerCase()} breaks your “${rule}” rule`;
-  if (!s.rules.purchasesAllowed && availability(name, s.pantry, s.pantryBasics) === 'missing') return `${name.toLowerCase()} isn’t in your kitchen`;
+  if (availability(name, s.pantry, s.pantryBasics) === 'missing') return `${name.toLowerCase()} isn’t in your kitchen`;
   return null;
 }
 
@@ -109,7 +239,7 @@ const SPICY = /\b(hot sauce|chili flakes|red pepper flakes|chili|chile|jalape\w*
 function additionTalk(m: string, s: CookSession): InterpretResult | null {
   if (/\b(spic(y|ier)|more heat|more kick|hotter|some heat)\b/.test(m) && !/\btoo spicy\b/.test(m)) {
     const hot = [...s.pantry.map((p) => p.name), ...s.recipe.ingredients.map((i) => i.name)].find((n) => SPICY.test(n.toLowerCase()) && !breaksRule(n, s.rules));
-    if (!hot) return { reply: 'A pinch of chili flakes or a few dashes of hot sauce would do it, but I don’t see either in your kitchen. Tell me if you have something spicy.', changes: [] };
+    if (!hot) return { reply: 'A pinch of chili flakes or a few dashes of hot sauce would do it. Do you have either, or something else spicy?', changes: [] };
     const change: SessionChange = { type: 'add_to_recipe', name: hot.toLowerCase(), how: `Stir in a little ${hot.toLowerCase()}, taste, and add more if you want it hotter.`, when: 'end' };
     return { reply: `You could add a little ${hot.toLowerCase()} at the end, to taste. Want me to add it to the plan?`, changes: [], offer: [change] };
   }
