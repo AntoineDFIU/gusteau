@@ -22,9 +22,9 @@ export type Turn = 'waiting' | 'open' | 'hearing' | 'answering';
 
 type VoiceStatus = 'idle' | 'off' | 'tap' | 'connecting' | 'speaking' | 'muted' | 'listening' | 'hearing' | 'thinking' | 'waiting';
 const STATUS: Record<VoiceStatus, { text: string; dot: string }> = {
-  idle: { text: 'Not listening · tap the flame to start', dot: 'bg-charcoal-400' },
-  off: { text: 'Voice unavailable · tap the flame to retry', dot: 'bg-tomato-500' },
-  tap: { text: 'Tap anywhere to turn on voice', dot: 'bg-tomato-500 animate-pulse' },
+  idle: { text: 'Tap to enable microphone', dot: 'bg-charcoal-400' },
+  off: { text: 'Voice unavailable · tap to retry', dot: 'bg-tomato-500' },
+  tap: { text: 'Tap to turn on voice', dot: 'bg-tomato-500 animate-pulse' },
   connecting: { text: 'Starting the mic…', dot: 'bg-saffron-400 animate-pulse' },
   speaking: { text: 'Speaking', dot: 'bg-saffron-400 animate-pulse' },
   muted: { text: 'Muted · not listening, not even for “Hey Chef”', dot: 'bg-charcoal-400' },
