@@ -9,7 +9,7 @@ import { DIET_RULES, EQUIPMENT } from '../data/rules';
 import type { CookRules, Equipment, PendingChoice, Profile, Recipe } from '../types';
 import { NutritionPanel } from './NutritionPanel';
 import { RecipeArt, RecipeImageCredit, StageIcon } from './RecipeCard';
-import { Badge, Button, SectionTitle, cx } from './ui';
+import { Badge, Button, cx, PreviewHeading } from './ui';
 
 
 /**
@@ -118,6 +118,13 @@ export function RecipePreview({
 
   return (
     <div>
+      {/* Back control at the top left of the modal, mirroring the close button. */}
+      <button
+        onClick={onClose}
+        className="absolute left-3 top-3 z-30 flex h-9 items-center gap-1.5 rounded-full bg-white/90 pl-3 pr-4 text-sm font-semibold text-charcoal-700 shadow hover:bg-white"
+      >
+        <span aria-hidden>←</span> Back to recipes
+      </button>
       <RecipeArt recipe={recipe} big className="h-56 sm:h-64" />
       <RecipeImageCredit recipe={recipe} className="px-5 pt-1 sm:px-8" />
       <div className="p-5 sm:p-8">
@@ -125,21 +132,8 @@ export function RecipePreview({
           {cuisine.emoji} {cuisine.name}
           {kitchen.label && <span className="ml-2 rounded-full bg-saffron-100 px-2 py-0.5 text-charcoal-700">{kitchen.label}</span>}
         </p>
-        <div className="mt-2 flex items-center gap-3 sm:gap-5">
-          <h1 className="min-w-0 flex-1 font-display text-3xl font-semibold leading-tight text-charcoal-900 sm:text-4xl">{recipe.title}</h1>
-          <Button
-            size="lg"
-            className="min-h-14 shrink-0 whitespace-nowrap ring-4 ring-tomato-100 !font-bold !shadow-lg"
-            disabled={plan.violations.length > 0 || busy}
-            aria-label={busy ? 'Setting up cooking' : 'Cook with Gusteau'}
-            aria-busy={busy}
-            onClick={() => onCook(rules, leaveOut)}
-          >
-            <span className="text-xl" aria-hidden>👨‍🍳</span>
-            {busy ? 'Setting up…' : 'Let’s Cook!'}
-          </Button>
-        </div>
-        {recipe.chef ? (
+        <h1 className="mt-2 font-head text-3xl font-semibold leading-tight text-charcoal-900 sm:text-4xl">{recipe.title}</h1>
+        {recipe.chef && (
           <p className="mt-1 text-sm text-charcoal-500">
             {recipe.chef.relation ?? 'Recipe by'} <span className="font-semibold text-charcoal-700">{recipe.chef.name}</span>
             {recipe.chef.url && (
@@ -148,10 +142,8 @@ export function RecipePreview({
               </a>
             )}
           </p>
-        ) : (
-          <p className="mt-1 text-xs text-charcoal-400">Gusteau sample recipe</p>
         )}
-        {recipe.description && <p className="mt-3 max-w-2xl text-charcoal-700">{recipe.description}</p>}
+        {recipe.description && <p className="mt-3 max-w-2xl text-base leading-relaxed text-charcoal-700">{recipe.description}</p>}
 
         <div className="mt-5 flex flex-wrap items-center gap-2 text-sm">
           <Badge>⏱ {plan.recipe.totalMinutes} min</Badge>
@@ -159,10 +151,10 @@ export function RecipePreview({
           {recipe.equipment.length ? recipe.equipment.map((e) => <Badge key={e}>{EQUIPMENT[e].emoji} {EQUIPMENT[e].label}</Badge>) : <Badge>🥗 No cooking</Badge>}
           <span className="inline-flex items-center gap-1 rounded-full bg-cream-200 py-0.5 pl-2.5 pr-1 text-xs font-semibold text-charcoal-700">
             🍽 {servings} serving{servings === 1 ? '' : 's'}
-            <button onClick={() => setServings((s) => Math.max(1, s - 1))} aria-label="Fewer servings" className="ml-1 h-5 w-5 rounded-full bg-white hover:bg-cream-100">
+            <button onClick={() => setServings((s) => Math.max(1, s - 1))} aria-label="Fewer servings" className="ml-1 h-6 w-6 rounded-full bg-white hover:bg-cream-100">
               −
             </button>
-            <button onClick={() => setServings((s) => Math.min(12, s + 1))} aria-label="More servings" className="h-5 w-5 rounded-full bg-white hover:bg-cream-100">
+            <button onClick={() => setServings((s) => Math.min(12, s + 1))} aria-label="More servings" className="h-6 w-6 rounded-full bg-white hover:bg-cream-100">
               +
             </button>
           </span>
@@ -170,23 +162,23 @@ export function RecipePreview({
 
         <div className="mt-8 grid gap-8 md:grid-cols-[1.15fr_1fr]">
           <section>
-            <SectionTitle>Ingredients</SectionTitle>
-            <ul className="mt-3 space-y-1.5">
+            <PreviewHeading>Ingredients</PreviewHeading>
+            <ul className="mt-3 space-y-2.5">
               {rows.map(({ i, sub, swapped, blocked, out }) => (
-                <li key={i.id} className={cx('flex items-start gap-3 rounded-2xl px-3 py-2', blocked ? 'bg-tomato-50' : sub ? 'bg-saffron-100/50' : 'bg-cream-100')}>
+                <li key={i.id} className={cx('flex items-start gap-3 rounded-2xl px-3.5 py-2.5', blocked ? 'bg-tomato-50' : sub ? 'bg-saffron-100/50' : 'bg-cream-100')}>
                   <span className="text-xl" aria-hidden>
                     {emojiFor(i.name)}
                   </span>
-                  <span className="min-w-0 flex-1 text-sm">
+                  <span className="min-w-0 flex-1 text-base leading-relaxed">
                     <span className={cx('font-semibold text-charcoal-900', sub?.kind === 'drop' && 'line-through decoration-charcoal-400')}>{i.name}</span>
-                    <span className="text-charcoal-500"> · {amountOf(i)}</span>
+                    <span className="font-medium text-charcoal-700"> · {amountOf(i)}</span>
                     {i.optional && <span className="text-charcoal-400"> · optional</span>}
                     {sub?.kind === 'swap' && swapped && (
-                      <span className="block text-xs text-charcoal-700">
+                      <span className="block text-[13px] leading-relaxed text-charcoal-700">
                         → Gusteau will use <span className="font-semibold">{swapped.name.toLowerCase()}</span> ({amountOf(swapped)}). {sub.reason.split('. ').slice(1).join('. ')}
                       </span>
                     )}
-                    {sub?.kind === 'drop' && <span className="block text-xs text-charcoal-500">Left out: {sub.reason.split(', so ').pop()}</span>}
+                    {sub?.kind === 'drop' && <span className="block text-[13px] text-charcoal-500">Left out: {sub.reason.split(', so ').pop()}</span>}
                     {asking?.current === i.name && onAnswer && <MissingAsk asking={asking} onAnswer={onAnswer} />}
                   </span>
                   <span className="flex shrink-0 items-center gap-1.5 pt-0.5">
@@ -195,7 +187,7 @@ export function RecipePreview({
                       <button
                         onClick={() => onMissing(i.name)}
                         aria-pressed={out || asking?.current === i.name}
-                        className={cx('rounded-full px-2 py-0.5 text-[11px] font-semibold', out || asking?.current === i.name ? 'bg-charcoal-900 text-white' : 'text-charcoal-400 hover:bg-cream-200 hover:text-charcoal-700')}
+                        className={cx('rounded-full px-2.5 py-1 text-xs font-semibold', out || asking?.current === i.name ? 'bg-charcoal-900 text-white' : 'text-charcoal-500 hover:bg-cream-200 hover:text-charcoal-700')}
                       >
                         {out || asking?.current === i.name ? 'Don’t have it ✕' : 'Don’t have it?'}
                       </button>
@@ -204,21 +196,21 @@ export function RecipePreview({
                 </li>
               ))}
             </ul>
-            <p className="mt-2 text-xs text-charcoal-400">Missing something? Tap “Don’t have it?” or tell Gusteau, like “I don’t have cilantro”, and he’ll adapt the recipe.</p>
-            {scaled.ingredients.every((i) => !isStaple(i.name)) && <p className="mt-1 text-xs text-charcoal-400">Plus salt, pepper, oil and water.</p>}
+            <p className="mt-2 text-[13px] leading-relaxed text-charcoal-500">Missing something? Tap “Don’t have it?” or tell Gusteau, like “I don’t have cilantro”, and he’ll adapt the recipe.</p>
+            {scaled.ingredients.every((i) => !isStaple(i.name)) && <p className="mt-1 text-[13px] text-charcoal-500">Plus salt, pepper, oil and water.</p>}
             <NutritionPanel planned={plan.recipe} original={scaled} />
           </section>
 
           <section>
-            <SectionTitle>The plan · {plan.recipe.steps.length} steps</SectionTitle>
-            <ol className="mt-3 space-y-2">
+            <PreviewHeading>The plan · {plan.recipe.steps.length} steps</PreviewHeading>
+            <ol className="mt-3 space-y-3">
               {/* One line per step, titled as the cooking screen titles it: no sub-steps. */}
               {plan.recipe.steps.map((step, n) => {
                 const st = plan.recipe.stages.find((x) => x.stepKeys.includes(step.key));
                 return (
-                  <li key={step.key} className="flex items-center gap-3">
+                  <li key={step.key} className="flex items-start gap-3">
                     {st && <StageIcon icon={st.icon} />}
-                    <span className="min-w-0 text-sm font-semibold text-charcoal-900">
+                    <span className="min-w-0 text-base leading-relaxed font-semibold text-charcoal-900">
                       {n + 1}. {step.title}
                     </span>
                   </li>
@@ -226,7 +218,7 @@ export function RecipePreview({
               })}
             </ol>
 
-            <SectionTitle className="mt-8">Your rules for this cook</SectionTitle>
+            <PreviewHeading className="mt-8">Your rules for this cook</PreviewHeading>
             <div className="mt-3 space-y-4 rounded-3xl border border-cream-200 bg-white p-4">
               <div className="flex flex-wrap gap-1.5">
                 {rules.hardExclusions.map((r) => (
@@ -283,9 +275,9 @@ export function RecipePreview({
           <p className="mt-2 text-xs text-charcoal-500">Gusteau adapted this recipe for you, so it’s no longer exactly the original.</p>
         )}
 
-        <div className="mt-6 flex flex-col gap-2 border-t border-cream-200 pt-4 sm:flex-row">
-          <Button size="lg" variant="secondary" onClick={onClose}>
-            ← Back to recipes
+        <div className="sticky bottom-0 -mx-5 mt-6 flex flex-col gap-2 border-t border-cream-200 bg-cream-50/95 px-5 py-4 backdrop-blur sm:-mx-8 sm:flex-row sm:px-8">
+          <Button size="lg" className="flex-1" disabled={plan.violations.length > 0 || busy} onClick={() => onCook(rules, leaveOut)}>
+            {busy ? 'Setting up…' : '👨‍🍳 Cook with Gusteau'}
           </Button>
         </div>
       </div>
