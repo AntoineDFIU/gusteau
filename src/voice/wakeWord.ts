@@ -1,8 +1,8 @@
 // ─────────────────────────────────────────────────────────────
-// "Hey Gusteau" / "Hey Chef". There's no separate wake-word engine:
-// the mic is always open, the speech recognizer writes down everything,
-// and this spots his name in the words. Called, he listens five seconds
-// for a request, answers it, then waits for his name again (App.tsx).
+// "Hey Gusteau" / "Hey Chef" at the start of something said to him.
+// There's no wake word: conversations start with Talk to Gusteau, and the
+// mic is only open during one (App.tsx). A cook may still address him by
+// name ("Hey Chef, what's next?"), so the name is found here and dropped.
 //
 // Speech recognition rarely spells "Gusteau" right, so the ways
 // Nemotron and the browser actually write it count too: "Hei Gusta",

@@ -103,6 +103,8 @@ export interface AsrSession {
   commit(): void;
   /** Stop sending the mic, e.g. while Gusteau talks so he doesn't transcribe himself. */
   setMuted(muted: boolean): void;
+  /** Forget whatever is being said right now: it ends without being delivered. */
+  discard(): void;
   /** Finalize what's been said, then release the mic and the connection. */
   stop(): Promise<void>;
   /** Drop everything now. */
@@ -177,6 +179,8 @@ export async function startAsr(opts: AsrOptions): Promise<AsrSession> {
   let stopping: Promise<void> | undefined;
   const queued: ArrayBuffer[] = [];
   let partial = '';
+  /** Commits whose transcripts are discarded (said before a conversation started). Each commit's transcript arrives before the server confirms it. */
+  let dropping = 0;
   let lastWordAt = 0;
   let lastLoudAt = 0;
   let sentSeconds = 0; // audio sent since the last commit
@@ -275,11 +279,13 @@ export async function startAsr(opts: AsrOptions): Promise<AsrSession> {
           const text = String(m.transcript ?? '').trim();
           partial = '';
           opts.onPartial?.('', 0);
+          if (dropping > 0) break;
           if (text) opts.onFinal?.(text, { commitMs: commits.length ? Math.round(performance.now() - commits[0]) : undefined });
           break;
         }
         case 'input_audio_buffer.committed':
           commits.shift();
+          if (dropping > 0) dropping--;
           if (!commits.length) onCommitted?.();
           break;
         case 'error': {
@@ -333,6 +339,15 @@ export async function startAsr(opts: AsrOptions): Promise<AsrSession> {
     commit,
     setMuted(on) {
       muted = on;
+    },
+    discard() {
+      // What's already on its way, and what's still being said, are both dropped when they arrive.
+      // Audio sent since the last commit is closed off too, even if no words have come back for it yet.
+      const pending = uncommitted && ready && ws.readyState === WebSocket.OPEN;
+      if (pending) commit();
+      dropping = commits.length;
+      partial = '';
+      opts.onPartial?.('', 0);
     },
     cancel: release,
     stop() {

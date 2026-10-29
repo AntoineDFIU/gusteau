@@ -97,6 +97,99 @@ function timerTarget(t: string, named?: string): string | undefined {
   return w && !/^(it|that|this|one|the)$/.test(w) ? w : undefined;
 }
 
+// Also how speech recognition writes them after "step": "step A", "step won", "step to", "step for".
+const ORDINAL: Record<string, number> = { one: 1, first: 1, a: 1, won: 1, two: 2, second: 2, to: 2, too: 2, three: 3, third: 3, four: 4, fourth: 4, for: 4, five: 5, fifth: 5, six: 6, sixth: 6, seven: 7, seventh: 7, eight: 8, eighth: 8, ate: 8, nine: 9, ninth: 9, ten: 10, tenth: 10 };
+
+/**
+ * Gusteau said he's moving the cook along ("Great! Let's move on to step 2: smash and sear",
+ * "on to the next step", "let's go back to step 1"): the screen follows what he said.
+ */
+export function stepTalk(reply: string, s: CookSession): 'next' | 'back' | null {
+  const t = reply.toLowerCase().replace(/[‘’]/g, "'");
+  const at = s.stepIndex + 1;
+  const m = t.match(/\b(?:move on to|moving on to|on to|onto|go to|going to|head to|let'?s do|now for|next up is|up next is|time for|back to|go back to|going back to)\s+(?:the\s+)?(next step|previous step|step (\w+))/);
+  if (!m) return null;
+  if (m[1] === 'next step') return 'next';
+  if (m[1] === 'previous step') return 'back';
+  const n = ORDINAL[m[2]] ?? Number(m[2]);
+  return n === at + 1 ? 'next' : n === at - 1 && /\bback\b/.test(m[0]) ? 'back' : null;
+}
+const stemOf = (w: string) => w.replace(/(ing|ed|es|s|e)$/, '');
+
+/**
+ * Finishing a step, said in passing: "I'm done with step 1", "the patties are shaped,
+ * what's next?", "finished shaping the patties". The screen moves on with the
+ * conversation, so it never lags behind what Gusteau is talking about.
+ */
+export function progressAnswer(raw: string, s: CookSession): InterpretResult | null {
+  const step = s.recipe.steps[s.stepIndex];
+  if (!step) return null;
+  const t = clean(raw).replace(/[?!.,]/g, ' ').replace(/\s+/g, ' ').trim();
+  const next: InterpretResult = { reply: null, changes: [], command: { type: 'next' } };
+  // "I'm on step 3", "we're already at step four", "go to step 3", "skip to step 5", "back to step 2".
+  const jump = t.match(/\b(?:i'?m|we'?re|i am|we are)\s+(?:already\s+|now\s+)?(?:on|at|up to|doing|onto)\s+(?:the\s+)?step\s+(\w+)$|^(?:(?:can we|let'?s|please|ok|okay)\s+)?(?:go|skip|jump|move|head|take me)\s+(?:ahead\s+|forward\s+|back\s+)?to\s+step\s+(\w+)$|^(?:(?:ok|okay|let'?s)\s+)?back\s+to\s+step\s+(\w+)$/);
+  if (jump) {
+    const said = jump[1] ?? jump[2] ?? jump[3];
+    const n = ORDINAL[said] ?? Number(said);
+    if (n) return { reply: null, changes: [], command: { type: 'goto', step: n } };
+  }
+  // "…, what's next?" at the end of a longer sentence.
+  if (/\b(what'?s next|what is next|what now|what do i do next|on to the next( step| one)?|let'?s move on|ready for the next( step| one)?)$/.test(t) && !/\b(not|n't)\b/.test(t)) return next;
+  // Asking, or not finished: "is it done?", "how do I know when it's done?", "I'm not done".
+  if (/\b(not|n't|almost|nearly|how|when|whether|should|do i|is it|are they|until)\b/.test(t)) return null;
+  // "Done with step 1", "finished step one", "step 1 is done".
+  const numbered = t.match(/\b(?:done|finished|completed?|through) (?:with )?(?:the )?step (\w+)\b|\b(?:the )?(\w+) step (?:is |'s )?(?:done|finished|complete|completed)\b|\bstep (\w+) (?:is |'s )?(?:done|finished|complete|completed)\b/);
+  if (numbered) {
+    const said = numbered[1] ?? numbered[2] ?? numbered[3];
+    const n = ORDINAL[said] ?? Number(said);
+    if (!n) return null;
+    if (n === s.stepIndex + 1) return next;
+    const title = step.title.replace(/[.:]$/, '').toLowerCase();
+    return { reply: n <= s.stepIndex ? `That one’s already done. You’re on step ${s.stepIndex + 1}: ${title}.` : `You’re on step ${s.stepIndex + 1}: ${title}. Say “next” when it’s done, or “skip” to move on.`, changes: [] };
+  }
+  // "Done with the patties", "I've shaped the patties", "finished shaping", "the patties are shaped".
+  const finished = /\b(done|finished|completed?|i'?ve \w+ed|i have \w+ed|(are|is) (done|ready|shaped|formed|finished|cooked|chopped|sliced|mixed|browned|seared|toasted|melted))\b/.test(t);
+  if (!finished) return null;
+  const said = t.split(' ').map(stemOf);
+  const about = `${step.title} ${step.text}`.toLowerCase().split(/[^a-z]+/).filter((w) => w.length > 3 && !STEP_WORDS.has(w)).map(stemOf);
+  return about.some((w) => w.length > 2 && said.includes(w)) ? next : null;
+}
+/** Past tenses that don't end in -ed. */
+const IRREGULAR_PAST = new Set(['put', 'made', 'cut', 'set', 'spread', 'built', 'fried', 'dried', 'laid', 'left', 'threw', 'shook', 'stuck', 'beat', 'ground', 'split', 'tore', 'froze']);
+const PAST_STEM: Record<string, string> = { made: 'mak', built: 'build', fried: 'fry', dried: 'dry', laid: 'lay', threw: 'throw', shook: 'shak', ground: 'grind', tore: 'tear', froze: 'freez' };
+/** "flipped" → "flip", "toasted" → "toast", "shaped" → "shap" (as stemOf gives for "shape"). */
+const pastStem = (w: string) => PAST_STEM[w] ?? stemOf(w.replace(/([b-df-hj-np-tv-z])\1ed$/, '$1').replace(/ied$/, 'y').replace(/ed$/, ''));
+
+/**
+ * The cook describes doing a later step: "I flipped them and put the cheese on, how long until
+ * it melts?" while the screen still shows step 2. Returns the step (1-based) the screen should be
+ * on: that step, or the one after it when they say it's already done ("I've already toasted the
+ * buns"). The model then answers about the right step.
+ */
+export function stepDescribed(raw: string, s: CookSession): number | null {
+  const t = clean(raw).replace(/[?!.,]/g, ' ').replace(/\s+/g, ' ').trim();
+  if (/(\bnot\b|n't\b|\bnever\b|\byet\b|\bshould i\b|\bdo i\b|\bcan i\b|\bbefore i\b|\bafter i\b|\bwill i\b)/.test(t)) return null;
+  const past = t.split(' ').filter((w) => /^[a-z]{3,}ed$/.test(w) || IRREGULAR_PAST.has(w)).map(pastStem);
+  if (!past.length) return null;
+  const steps = s.recipe.steps;
+  // The latest later step whose title names something the cook says they did.
+  for (let j = steps.length - 1; j > s.stepIndex; j--) {
+    const doing = `${steps[j].title} ${steps[j].text}`.toLowerCase().split(/[^a-z]+/).filter((w) => w.length > 2 && !STEP_WORDS.has(w) && !['the', 'and', 'into', 'some'].includes(w)).map(stemOf);
+    if (!doing.some((d) => past.includes(d))) continue;
+    // Done: they say so, or the step is one action they say they did ("I toasted the buns").
+    // "Flip and melt" is two: "I flipped them" means they're in the middle of it.
+    const asking = /\?|\b(how|what|when|until)\b/.test(clean(raw));
+    // A merged step ("Cook meat": sear, flip and melt) is several actions too.
+    const oneAction = !/\band\b|,/.test(steps[j].title) && !steps[j].key.includes('+');
+    const finished = !asking && (/\b(already|done|finished|all set|ready)\b/.test(t) || oneAction);
+    return finished ? Math.min(j + 2, steps.length) : j + 1;
+  }
+  return null;
+}
+
+/** Words in a step that don't say what the step is about. */
+const STEP_WORDS = new Set(['with', 'into', 'from', 'until', 'then', 'each', 'them', 'over', 'your', 'this', 'that', 'minutes', 'minute', 'more', 'about', 'generously', 'very', 'well', 'side']);
+
 /** Instant, local commands for cooking mode (typed or spoken). */
 export function parseCommand(m: string): InterpretResult | null {
   const t = clean(m).replace(/[?!.,]/g, '').trim();
@@ -175,7 +268,7 @@ export function parseIntent(raw: string, s: CookSession): InterpretResult {
   const m = clean(raw);
   const cmd = parseCommand(m);
   if (cmd) return cmd;
-  const help = answerOffer(raw, s) ?? outOfIngredient(raw, s) ?? kitchenHelp(raw, s);
+  const help = answerOffer(raw, s) ?? progressAnswer(raw, s) ?? outOfIngredient(raw, s) ?? kitchenHelp(raw, s);
   if (help) return help;
   const explain = explainRequest(raw);
   if (explain) return { reply: null, changes: [], explain, interpreted: respelled(raw, explain) };

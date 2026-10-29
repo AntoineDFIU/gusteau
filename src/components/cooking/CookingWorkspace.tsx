@@ -7,8 +7,7 @@ import { techniqueFor, techniqueQuery } from '../../data/techniques';
 import { formatClock } from '../../lib/sound';
 import { timerLeft, type Cook } from '../../state/useCook';
 import { stepTimers } from '../../agent/stepTimers';
-import type { Voice } from '../../voice/useVoice';
-import type { Power, Turn } from '../VoiceDock';
+import { stepPrompts } from '../../agent/stepPrompts';
 import { RecipeArt, StageIcon } from '../RecipeCard';
 import { Button, Card, GusteauAvatar, Modal, SectionTitle, cx } from '../ui';
 import { ChatPanel } from './ChatPanel';
@@ -18,7 +17,7 @@ import { PlanUpdatedBanner } from './PlanUpdatedBanner';
 import { StatusBar } from './StatusBar';
 import { VideoCard } from './VideoCard';
 
-export function CookingWorkspace({ cook, voice, turn, power, onHandsFree, onExit }: { cook: Cook; voice: Voice; turn: Turn; power?: Power; onHandsFree: () => void; onExit: () => void }) {
+export function CookingWorkspace({ cook, onExit, favorite, onFavorite }: { cook: Cook; onExit: () => void; favorite: boolean; onFavorite: (on: boolean) => void }) {
   const s = cook.session!;
   const r = s.recipe;
   const finished = s.stepIndex >= r.steps.length;
@@ -52,7 +51,7 @@ export function CookingWorkspace({ cook, voice, turn, power, onHandsFree, onExit
 
   return (
     <div className="mx-auto max-w-7xl">
-      <StatusBar cook={cook} voice={voice} turn={turn} power={power} onHandsFree={onHandsFree} />
+      <StatusBar cook={cook} />
 
       <div className="mb-5 flex flex-wrap items-center justify-between gap-3">
         <div className="flex min-w-0 items-center gap-3">
@@ -90,10 +89,13 @@ export function CookingWorkspace({ cook, voice, turn, power, onHandsFree, onExit
               </p>
               <p className="mt-2 text-xs text-charcoal-400">Gusteau will use this to suggest dishes you’ll like next time.</p>
               <div className="mt-6 flex flex-wrap justify-center gap-3">
+                <Button variant={favorite ? 'secondary' : 'primary'} onClick={() => onFavorite(!favorite)} aria-pressed={favorite}>
+                  {favorite ? '♥ In your favorites' : '♡ Add to favorites'}
+                </Button>
                 <Button variant="secondary" onClick={cook.back}>
                   ← Back to last step
                 </Button>
-                <Button onClick={onExit}>Cook something else</Button>
+                <Button variant="secondary" onClick={onExit}>Cook something else</Button>
               </div>
             </Card>
           ) : (
@@ -136,7 +138,7 @@ export function CookingWorkspace({ cook, voice, turn, power, onHandsFree, onExit
                 <span className="flex items-center gap-2">
                   {stage && <StageIcon icon={stage.icon} state="current" size="sm" />}
                   <span className="text-xs font-bold uppercase tracking-wider text-tomato-600">
-                    {stage?.title} · Step {s.stepIndex + 1} of {r.steps.length}
+                    Step {s.stepIndex + 1} of {r.steps.length}
                   </span>
                 </span>
                 {isNewStep && <span className="rounded-full bg-saffron-100 px-3 py-1 text-xs font-bold uppercase tracking-wider text-saffron-500">✨ New step</span>}
@@ -197,6 +199,24 @@ export function CookingWorkspace({ cook, voice, turn, power, onHandsFree, onExit
                 )}
               </div>
 
+              {/* Questions cooks often have at this step, worded the way Gusteau answers them. */}
+              <div className="mt-5 rounded-2xl bg-cream-100 px-4 py-3">
+                <p className="text-[11px] font-semibold uppercase tracking-[0.14em] text-charcoal-400">Try asking Gusteau</p>
+                <div className="mt-2 flex flex-wrap gap-2">
+                  {stepPrompts(step, s.recipe).map((q) => (
+                    <button
+                      key={q}
+                      onClick={() => void cook.sendChat(q)}
+                      disabled={!!cook.busy}
+                      className="rounded-full border border-cream-300 bg-white px-3 py-1.5 text-left text-sm font-medium text-charcoal-700 hover:border-tomato-400 hover:text-tomato-600 disabled:opacity-50"
+                    >
+                      💬 “{q}”
+                    </button>
+                  ))}
+                </div>
+                <p className="mt-1.5 text-[11px] text-charcoal-400">Tap one, or say it after “Hey Chef”.</p>
+              </div>
+
               <div className="mt-8 flex items-center justify-between gap-2 sm:gap-3">
                 <Button variant="secondary" onClick={cook.back} disabled={s.stepIndex === 0 || s.paused}>
                   ← Back
@@ -233,7 +253,7 @@ export function CookingWorkspace({ cook, voice, turn, power, onHandsFree, onExit
             </Card>
           )}
 
-          <ChatPanel cook={cook} onMic={() => void voice.listenOnce()} micActive={(voice.state === 'listening' || voice.state === 'connecting') && !voice.handsFree} micSupported={voice.supported} interim={voice.handsFree ? undefined : voice.interim} />
+          <ChatPanel cook={cook} />
         </div>
 
         <aside className="min-w-0 space-y-6">

@@ -1,3 +1,4 @@
+import { speakable } from '../agent/stepSpeech';
 import { createSpeaker, takeSentences, type Speaker, type VoiceEngine } from './speaker';
 
 // ─────────────────────────────────────────────────────────────
@@ -32,7 +33,7 @@ export class VoiceOut {
 
   private make(): Speaker {
     let on = false;
-    return createSpeaker(this.engine, {
+    const sp = createSpeaker(this.engine, {
       onSpeaking: (speaking) => {
         if (speaking === on) return;
         on = speaking;
@@ -41,6 +42,9 @@ export class VoiceOut {
       },
       onError: this.onError,
     });
+    // His voice skips digits, so every sentence has its numbers said in words ("simmer for ten minutes"),
+    // whoever wrote it: Gusteau, a recipe or a streamed model reply.
+    return { ...sp, say: (t: string) => sp.say(speakable(t)) };
   }
 
   say(text: string, queue = false) {

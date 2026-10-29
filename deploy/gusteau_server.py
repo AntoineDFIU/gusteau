@@ -107,7 +107,7 @@ def _videos_from_search_page(page):
                 walk(child)
 
     walk(json.loads(page[start + len("var ytInitialData = "):end]))
-    return found[:6]
+    return found[:8]
 
 
 def _embeddable(video_id):
@@ -125,15 +125,26 @@ def search_videos(query):
     cache_key = query.lower()
     if cache_key in _video_cache:
         return 200, {"videos": _video_cache[cache_key]}
-    # sp=EgIYAQ%3D%3D is YouTube's "Under 4 minutes" filter.
-    url = f"https://www.youtube.com/results?search_query={urllib.parse.quote(query)}&sp=EgIYAQ%253D%253D&hl=en&gl=US"
-    try:
+    def search(search_filter):
+        url = f"https://www.youtube.com/results?search_query={urllib.parse.quote(query)}{search_filter}&hl=en&gl=US"
         with urllib.request.urlopen(urllib.request.Request(url, headers=_BROWSER_HEADERS), timeout=10) as r:
-            videos = _videos_from_search_page(r.read().decode("utf-8", "replace"))
+            return _videos_from_search_page(r.read().decode("utf-8", "replace"))
+
+    # sp=EgIYAQ%3D%3D is YouTube's "Under 4 minutes" filter. It can leave very few results for an
+    # unusual phrasing ("turn the meat into balls"), so then the plain search fills in, still 5 minutes or less.
+    try:
+        videos = search("&sp=EgIYAQ%253D%253D")
     except urllib.error.HTTPError as e:
         return 502, {"error": f"YouTube {e.code}"}
     except (urllib.error.URLError, TimeoutError, ValueError) as e:
         return 502, {"error": str(e)}
+    if len(videos) < 3:
+        try:
+            seen = {v["id"] for v in videos}
+            videos += [v for v in search("") if v["id"] not in seen]
+        except (urllib.error.URLError, TimeoutError, ValueError):
+            pass
+        videos = videos[:8]
     videos = [v for v in videos if _embeddable(v["id"])]
     _video_cache[cache_key] = videos
     return 200, {"videos": videos}

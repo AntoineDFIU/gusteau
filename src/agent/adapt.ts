@@ -393,7 +393,7 @@ export function validatePlan(r: Recipe, ctx: AdaptContext): string[] {
   }
   const left = remainingMinutes(r, ctx.completed);
   if (ctx.rules.timeLimit && left > ctx.rules.timeLimit) v.push(`The rest takes about ${left} minutes, and you have ${ctx.rules.timeLimit}.`);
-  const stages = validateStages(r.steps, r.stages, false);
+  const stages = validateStages(r.steps, r.stages);
   if (!stages.ok) v.push(`The stage plan is inconsistent (${stages.problems[0]}).`);
   return [...new Set(v)];
 }

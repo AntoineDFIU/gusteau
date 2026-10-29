@@ -10,6 +10,7 @@ const KEY = 'gusteau.profile.v1';
 export const NEW_PROFILE: Profile = {
   onboarded: false,
   favoriteCuisines: [],
+  favoriteRecipes: [],
   hardExclusions: [],
   allergies: [],
   equipment: ['stovetop', 'oven', 'microwave'],
