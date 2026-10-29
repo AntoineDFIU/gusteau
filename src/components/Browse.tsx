@@ -83,27 +83,21 @@ export function Browse({
 
   return (
     <div className="mx-auto max-w-7xl animate-rise">
-      <div className="flex flex-col gap-4 sm:flex-row sm:items-end sm:justify-between sm:gap-6">
-        <div>
-          <h2 className="font-display text-2xl font-medium tracking-tight text-charcoal-900 sm:text-3xl">Find a dish</h2>
-          <p className="mt-1 text-sm text-charcoal-500">Explore your favorites or discover something new.</p>
-        </div>
-        <form role="search" onSubmit={(e) => e.preventDefault()} className="w-full shrink-0 sm:w-[270px]">
-          <label className="dish-search">
-            <span className="dish-search-icon" aria-hidden />
-            <span className="sr-only">Find a dish</span>
-            <input
-              ref={searchRef}
-              type="search"
-              value={filters.search}
-              onChange={(e) => set({ search: e.target.value })}
-              placeholder="Find a dish…"
-              aria-label="Find a dish"
-            />
-            <kbd aria-hidden>/</kbd>
-          </label>
-        </form>
-      </div>
+      <form role="search" onSubmit={(e) => e.preventDefault()} className="mx-auto w-full max-w-[720px]">
+        <label className="dish-search" style={{ height: 52 }}>
+          <span className="dish-search-icon" aria-hidden />
+          <span className="sr-only">Find a dish</span>
+          <input
+            ref={searchRef}
+            type="search"
+            value={filters.search}
+            onChange={(e) => set({ search: e.target.value })}
+            placeholder="Find a dish…"
+            aria-label="Find a dish"
+          />
+          <kbd aria-hidden>/</kbd>
+        </label>
+      </form>
 
       {/* Cuisines */}
       <div className="mt-6 flex flex-wrap items-center gap-2" role="group" aria-label="Cuisines">
