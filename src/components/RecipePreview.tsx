@@ -89,14 +89,14 @@ export function RecipePreview({
   // Cheap enough to recompute on every change, so the preview is always exactly what cooking will start with.
   const plan = adaptRecipe(scaled, { rules, pantry: [], basics: true, unavailable, leaveOut, preferredSwaps: swaps, additions: [], completed: [] });
   const options = pauseOptions(plan);
-  // "I don't have cilantro": say how the plan changed for the ones just added.
-  // Starts at 0, so anything already known when the preview opens is said once too.
-  const reported = useRef(0);
+  // Announce new decisions, including choosing a different replacement for the same ingredient.
+  const reported = useRef(new Map<string, string | undefined>());
   useEffect(() => {
-    const added = unavailable.slice(reported.current);
-    reported.current = unavailable.length;
-    if (added.length) onAdjusted?.(adjustmentLine(added, plan));
-  }, [unavailable]);
+    const decisions = new Map(unavailable.map((name) => [name, swaps.find((s) => s.from === name)?.to]));
+    const changed = unavailable.filter((name) => !reported.current.has(name) || reported.current.get(name) !== decisions.get(name));
+    reported.current = decisions;
+    if (changed.length) onAdjusted?.(adjustmentLine(changed, plan));
+  }, [unavailable, swaps]);
   const asked = useRef(cookSignal);
   useEffect(() => {
     if (cookSignal === asked.current) return;

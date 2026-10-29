@@ -12,6 +12,7 @@ import { confirmation, useCook } from './state/useCook';
 import { useProfile } from './state/profile';
 import type { CookSession, PendingChoice, Recipe } from './types';
 import { answerMissing, missingQuestion } from './agent/missing';
+import { previewRequestsRecipes, previewSubstitution } from './agent/previewIntent';
 import { useVoice } from './voice/useVoice';
 import { afterWakeWord } from './voice/wakeWord';
 import { unlockAudio } from './voice/audioUnlock';
@@ -227,17 +228,17 @@ export default function App() {
     reply(q.say, queue);
   };
   /** The cook's answer, spoken, typed or tapped. False when it isn't one ("let's cook"). */
-  const answerAsking = (text: string, recipe: Recipe): boolean => {
-    if (!asking) return false;
-    const a = answerMissing(text, asking, recipe, previewRules(recipe), 'preview');
+  const answerAsking = (text: string, recipe: Recipe, question = asking): boolean => {
+    if (!question) return false;
+    const a = answerMissing(text, question, recipe, previewRules(recipe), 'preview');
     if (!a) return false;
     // Settled: the preview adapts the recipe and says how (onAdjusted), then asks about the next one.
     if (a.kind === 'drop' || a.kind === 'swap') {
       const to = a.kind === 'swap' ? a.to : undefined;
       setAsking(null);
-      setDecided((d) => [...d.filter((x) => x.name !== asking.current), { name: asking.current, to }]);
+      setDecided((d) => [...d.filter((x) => x.name !== question.current), { name: question.current, to }]);
     } else {
-      setAsking({ ...asking, confirming: a.kind === 'confirm' ? a.to : undefined, say: a.say });
+      setAsking({ ...question, confirming: a.kind === 'confirm' ? a.to : undefined, say: a.say });
       reply(a.say);
     }
     return true;
@@ -335,6 +336,17 @@ export default function App() {
   };
 
   const previewVoice = (text: string, recipe: Recipe) => {
+    if (previewRequestsRecipes(text)) return browseVoice(text);
+    const swap = previewSubstitution(text, recipe);
+    if (swap && (swap.ingredient || !asking)) {
+      if (!swap.ingredient) return reply('Which ingredient would you like to replace in this recipe?');
+      toAsk.current = [];
+      if (swap.to) {
+        const q = missingQuestion(swap.ingredient, recipe, previewRules(recipe), 'preview', false);
+        if (answerAsking(`use ${swap.to}`, recipe, q)) return;
+      }
+      return askMissing(recipe, swap.ingredient.name);
+    }
     // "Yes, I have gouda" to "Do you have another kind of cheese?".
     if (answerAsking(text, recipe)) return;
     // "I don't have cilantro": Gusteau asks what could stand in before the recipe changes.
@@ -361,9 +373,6 @@ export default function App() {
       setPreview(null);
       return reply(`Sure. ${OPENING}`);
     }
-    // Another dish ("actually, show me pad thai") replaces this one; anything else gets a hint.
-    const a = library && browseByVoice(text, library.recipes, profile, filters, listed.current);
-    if (a && a.kind !== 'none' && !(a.kind === 'list' && a.generic)) return showByVoice(a);
     reply(`Say “let’s cook” to start ${recipe.title}, or tell me if you’re missing anything.`);
   };
   // The dishes on screen follow the filters, however they were set (by voice or by tapping).
