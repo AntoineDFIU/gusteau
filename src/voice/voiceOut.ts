@@ -13,6 +13,7 @@ import { createSpeaker, takeSentences, type Speaker, type VoiceEngine } from './
 // ─────────────────────────────────────────────────────────────
 
 export class VoiceOut {
+  private enabled = false;
   private engine: VoiceEngine = { kind: 'off' };
   private current: Speaker | null = null;
   private chain: Promise<void> = Promise.resolve();
@@ -29,6 +30,12 @@ export class VoiceOut {
 
   get kind() {
     return this.engine.kind;
+  }
+
+  /** Speech requires an explicit Talk to Gusteau click in this session. */
+  setEnabled(enabled: boolean) {
+    this.enabled = enabled;
+    if (!enabled) this.stop();
   }
 
   private make(): Speaker {
@@ -48,7 +55,7 @@ export class VoiceOut {
   }
 
   say(text: string, queue = false) {
-    if (!text.trim() || this.engine.kind === 'off') return;
+    if (!this.enabled || !text.trim() || this.engine.kind === 'off') return;
     if (!queue) this.stop();
     const gen = this.generation;
     this.chain = this.chain.then(async () => {
@@ -64,20 +71,26 @@ export class VoiceOut {
 
   /** Interrupt, and return a speaker that reads a streamed reply sentence by sentence. Call finish() on it at the end. */
   stream(): Speaker & { push(textSoFar: string): void } {
+    if (!this.enabled) return { push: () => {}, say: () => {}, finish: () => Promise.resolve(), cancel: () => {} };
     this.stop();
+    const gen = this.generation;
     const sp = this.make();
     this.current = sp;
     let used = 0;
     let unspoken = '';
     return {
       push: (textSoFar: string) => {
+        if (!this.enabled || gen !== this.generation) return;
         const { sentences, rest } = takeSentences(unspoken + textSoFar.slice(used));
         used = textSoFar.length;
         unspoken = rest;
         sentences.forEach((s) => sp.say(s));
       },
-      say: (t) => sp.say(t),
+      say: (t) => {
+        if (this.enabled && gen === this.generation) sp.say(t);
+      },
       finish: () => {
+        if (!this.enabled || gen !== this.generation) return Promise.resolve();
         if (unspoken.trim()) sp.say(unspoken);
         unspoken = '';
         const finished = sp.finish();

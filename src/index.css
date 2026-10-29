@@ -2,6 +2,39 @@
 @tailwind components;
 @tailwind utilities;
 
+.talk-invite {
+  position: relative;
+  outline: 3px solid rgb(226 81 47 / 42%);
+  outline-offset: 3px;
+}
+
+.talk-invite::after {
+  content: '';
+  position: absolute;
+  inset: -6px;
+  border: 3px solid rgb(226 81 47 / 65%);
+  border-radius: inherit;
+  pointer-events: none;
+  animation: talk-invite-halo 2.4s ease-out 3 both;
+}
+
+@keyframes talk-invite-halo {
+  from {
+    transform: scale(1);
+    opacity: 1;
+  }
+  to {
+    transform: scale(1.18, 1.55);
+    opacity: 0;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .talk-invite::after {
+    display: none;
+  }
+}
+
 @layer base {
   html {
     -webkit-font-smoothing: antialiased;

@@ -52,9 +52,29 @@ const REPLY_WINDOW_MS = 10000;
 const expectsReply = (said: string) => /\?\s*$/.test(said.trim()) || /\b(say “|tell me\b|let me know|pick (one|another)|choose|which one)/i.test(said);
 
 export default function App() {
+  const [hideDevTools, setHideDevTools] = useState(() => {
+    try {
+      return localStorage.getItem('gusteau.hideDevTools') === 'on';
+    } catch {
+      return false;
+    }
+  });
+  useEffect(() => {
+    try {
+      localStorage.setItem('gusteau.hideDevTools', hideDevTools ? 'on' : 'off');
+    } catch {
+      // The toggle still works when browser storage is unavailable.
+    }
+  }, [hideDevTools]);
   const { profile, update, reset } = useProfile();
   const [library, setLibrary] = useState<RecipeLibrary | null>(null);
   const [screen, setScreen] = useState<Screen>(profile.onboarded ? 'browse' : 'onboarding');
+  const [inviteToTalk, setInviteToTalk] = useState(true);
+  useEffect(() => {
+    if (screen !== 'browse' || !inviteToTalk) return;
+    const timeout = window.setTimeout(() => setInviteToTalk(false), 9000);
+    return () => window.clearTimeout(timeout);
+  }, [screen, inviteToTalk]);
   const [filters, setFilters] = useState<Filters>({ ...EMPTY_FILTERS, diet: profile.hardExclusions });
   const [preview, setPreview] = useState<{ recipe: Recipe; kitchen: Kitchen } | null>(null);
   const [editingPrefs, setEditingPrefs] = useState(false);
@@ -559,7 +579,9 @@ export default function App() {
    * and listens. (The tap is also what lets the browser start the mic and his voice.)
    */
   const startTalking = () => {
+    setInviteToTalk(false);
     unlockAudio();
+    voice.enableSpeech();
     if (!voice.handsFree) return void startListening();
     // Still not listening a few seconds after a tap (stuck starting): start voice over, from this tap.
     if (voice.state === 'connecting') {
@@ -574,7 +596,7 @@ export default function App() {
   };
   /** The Stop button: he stops talking, the conversation ends and the mic closes. */
   const stopConversation = () => {
-    voice.stopTalking();
+    voice.disableSpeech();
     setTurn('waiting');
   };
 
@@ -605,7 +627,7 @@ export default function App() {
     if (!window.confirm('Reset Gusteau as a new user? This clears your preferences, kitchen and cooking history on this device.')) return;
     // Any conversation ends (and the mic closes).
     setTurn('waiting');
-    voice.stopTalking();
+    voice.disableSpeech();
     cook.stop();
     reset();
     setPreview(null);
@@ -672,17 +694,19 @@ export default function App() {
           }
 
 
-          <div className="flex items-center gap-2">
-            <ModelPicker />
-            <button
-              onClick={() => setDebug((d) => !d)}
-              aria-pressed={debug}
-              aria-label="Debug"
-              title="Show what Gusteau heard, what was sent to the model, and what it answered"
-              className={cx('rounded-full px-3 py-1.5 text-xs font-semibold', debug ? 'bg-charcoal-900 text-white' : 'text-charcoal-500 hover:bg-cream-200 hover:text-charcoal-900')}
-            >
-              🐞 <span className="hidden sm:inline">Debug</span>
-            </button>
+          <div className="ml-auto flex items-center gap-2">
+            {!hideDevTools && <ModelPicker />}
+            {!hideDevTools && (
+              <button
+                onClick={() => setDebug((d) => !d)}
+                aria-pressed={debug}
+                aria-label="Debug"
+                title="Show what Gusteau heard, what was sent to the model, and what it answered"
+                className={cx('rounded-full px-3 py-1.5 text-xs font-semibold', debug ? 'bg-charcoal-900 text-white' : 'text-charcoal-500 hover:bg-cream-200 hover:text-charcoal-900')}
+              >
+                🐞 <span className="hidden sm:inline">Debug</span>
+              </button>
+            )}
             {profile.onboarded && screen !== 'cooking' && (
               <button onClick={() => setEditingPrefs(true)} className="rounded-full px-3 py-2 text-sm font-medium text-charcoal-500 hover:bg-cream-200 hover:text-charcoal-900">
                 ⚙︎ <span className="hidden sm:inline">Preferences</span>
@@ -699,16 +723,31 @@ export default function App() {
               </button>
             )}
             {screen !== 'onboarding' && screen !== 'browse' && voice.state === 'blocked' && <span className="text-xs text-tomato-600">Mic blocked in browser settings</span>}
+            <button
+              type="button"
+              role="switch"
+              aria-checked={hideDevTools}
+              aria-label="End-user preview"
+              title={hideDevTools ? 'Show Debug and model controls' : 'Hide Debug and model controls'}
+              onClick={() => setHideDevTools((hidden) => !hidden)}
+              className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full text-charcoal-400 transition-colors hover:bg-cream-200 hover:text-charcoal-700 focus:outline-none focus-visible:ring-2 focus-visible:ring-tomato-400"
+            >
+              <svg viewBox="0 0 24 24" className="h-4 w-4" fill="none" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                <path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7S2 12 2 12Z" />
+                <circle cx="12" cy="12" r="3" />
+                {hideDevTools && <path d="m3 3 18 18" />}
+              </svg>
+            </button>
           </div>
         </div>
       </header>
-      {debug && <DebugPanel />}
+      {!hideDevTools && debug && <DebugPanel />}
 
       <main className="px-4 pb-16 pt-8 sm:px-6 sm:pt-10">
         {/* Talking with Gusteau: one place, top left, on every screen (in the recipe preview, at the top of it). */}
         {screen !== 'onboarding' && !preview && (
           <div className="mx-auto mb-6 max-w-7xl">
-            <VoicePanel voice={voice} turn={turn} interpreted={interpreted} onTalk={startTalking} onStop={stopConversation} className="w-full" />
+            <VoicePanel voice={voice} turn={turn} interpreted={interpreted} onTalk={startTalking} onStop={stopConversation} inviteToTalk={screen === 'browse' && inviteToTalk} className="w-full" />
           </div>
         )}
         {screen === 'onboarding' && (
