@@ -632,7 +632,7 @@ export default function App() {
               aria-label="Gusteau home"
               className="group flex min-w-0 items-center gap-2.5 rounded-2xl border border-cream-200/80 bg-white/70 py-1 pl-1 pr-3 text-left shadow-sm transition-all hover:border-tomato-200 hover:bg-white hover:shadow-card focus-visible:outline focus-visible:outline-2 focus-visible:outline-tomato-400"
             >
-              <GusteauIcon size={42} className="rounded-[14px]" />
+              <GusteauIcon size={42} className="rounded-[14px]" debugInteractive={debug} />
               <span className="min-w-0 leading-none">
                 <span className="hidden font-display text-lg font-semibold text-charcoal-900 sm:block">Gusteau</span>
                 <span className="hidden text-[10px] text-charcoal-400 sm:block">Your personal chef assistant</span>
@@ -677,7 +677,7 @@ export default function App() {
         {/* Talking with Gusteau: one place, top left, on every screen (in the recipe preview, at the top of it). */}
         {screen !== 'onboarding' && !preview && (
           <div className="mx-auto mb-6 max-w-7xl">
-            <VoicePanel voice={voice} turn={turn} interpreted={interpreted} onTalk={startTalking} onStop={stopConversation} className="w-full" />
+            <VoicePanel voice={voice} turn={turn} interpreted={interpreted} onTalk={startTalking} onStop={stopConversation} debugInteractive={debug} className="w-full" />
           </div>
         )}
         {screen === 'onboarding' && (
@@ -732,7 +732,7 @@ export default function App() {
         {preview && (
           <>
             <div className="px-4 pt-4 sm:px-6 sm:pt-6">
-              <VoicePanel voice={voice} turn={turn} interpreted={interpreted} onTalk={startTalking} onStop={stopConversation} compact />
+              <VoicePanel voice={voice} turn={turn} interpreted={interpreted} onTalk={startTalking} onStop={stopConversation} debugInteractive={debug} compact />
             </div>
           <RecipePreview
             key={preview.recipe.id}

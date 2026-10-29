@@ -54,6 +54,7 @@ export function VoicePanel({
   interpreted = '',
   onTalk,
   onStop,
+  debugInteractive = false,
   compact = false,
   className,
 }: {
@@ -65,6 +66,8 @@ export function VoicePanel({
   onTalk: () => void;
   /** End the conversation: he stops talking and the mic closes. */
   onStop: () => void;
+  /** Enable click-to-cycle burner states while visually testing the icon. */
+  debugInteractive?: boolean;
   /** Tighter spacing for the top of the recipe preview. */
   compact?: boolean;
   className?: string;
@@ -103,13 +106,16 @@ export function VoicePanel({
           state={
             status === 'speaking'
               ? 'speaking'
-              : status === 'listening' || status === 'hearing' || status === 'thinking' || status === 'connecting'
-                ? 'listening'
-                : status === 'muted' || status === 'off'
-                  ? 'muted'
-                  : 'idle'
+              : status === 'hearing'
+                ? 'hearing'
+                : status === 'listening' || status === 'thinking' || status === 'connecting'
+                  ? 'listening'
+                  : status === 'muted' || status === 'off'
+                    ? 'muted'
+                    : 'idle'
           }
           level={voice.level}
+          debugInteractive={debugInteractive}
           style={active && voice.level ? { transform: `scale(${1 + voice.level * 0.2})` } : undefined}
           className="transition-transform"
         />
