@@ -19,10 +19,11 @@ import { cx } from './ui';
  */
 export type Turn = 'waiting' | 'open' | 'hearing' | 'answering';
 
-type VoiceStatus = 'idle' | 'off' | 'tap' | 'connecting' | 'speaking' | 'muted' | 'listening' | 'hearing' | 'thinking' | 'waiting';
+type VoiceStatus = 'idle' | 'off' | 'unavailable' | 'tap' | 'connecting' | 'speaking' | 'muted' | 'listening' | 'hearing' | 'thinking' | 'waiting';
 const STATUS: Record<VoiceStatus, { text: string; dot: string }> = {
   idle: { text: 'Not listening · tap Talk to Gusteau to start', dot: 'bg-charcoal-400' },
   off: { text: 'Voice unavailable · tap Talk to Gusteau to retry', dot: 'bg-tomato-500' },
+  unavailable: { text: 'Voice unavailable · use text chat', dot: 'bg-charcoal-400' },
   tap: { text: 'Tap anywhere to turn on voice', dot: 'bg-tomato-500 animate-pulse' },
   connecting: { text: 'Starting the mic…', dot: 'bg-saffron-400 animate-pulse' },
   speaking: { text: 'Speaking', dot: 'bg-saffron-400 animate-pulse' },
@@ -87,8 +88,7 @@ export function VoicePanel({
     };
   }, []);
   const { heard } = useDebugLog();
-  if (!voice.supported) return null;
-  const status = voiceStatus(voice, turn);
+  const status = voice.supported ? voiceStatus(voice, turn) : 'unavailable';
   const active = IN_CONVERSATION.includes(status);
   const live = (turn === 'open' || turn === 'hearing') && !voice.micMuted ? voice.interim.trim() : '';
   // What was said: everything Gusteau said, and what the cook said to him (not chatter he ignored).
@@ -118,11 +118,13 @@ export function VoicePanel({
           <button
             type="button"
             onClick={active ? onStop : onTalk}
+            disabled={!voice.supported}
+            title={!voice.supported ? 'Voice needs a supported browser and an HTTPS connection. You can still use text chat.' : undefined}
             aria-pressed={active}
             className={cx(
-              'inline-flex min-h-[44px] items-center gap-2 rounded-full px-5 text-sm font-semibold text-white shadow-lift transition-colors focus:outline-none focus-visible:ring-4 focus-visible:ring-tomato-100',
+              'inline-flex min-h-[44px] items-center gap-2 rounded-full px-5 text-sm font-semibold text-white shadow-lift transition-colors focus:outline-none focus-visible:ring-4 focus-visible:ring-tomato-100 disabled:cursor-not-allowed disabled:opacity-50',
               active ? 'bg-charcoal-900 hover:bg-charcoal-700' : 'bg-tomato-500 hover:bg-tomato-600',
-              inviteToTalk && !active && 'talk-invite',
+              inviteToTalk && voice.supported && !active && 'talk-invite',
               compact && 'order-last',
             )}
           >
@@ -167,7 +169,7 @@ export function VoicePanel({
 
       {/* Collapsed shows one message; expanded shows four, newest first. */}
       <ol id={conversationId} className="mt-3 space-y-2 border-t border-cream-200 pt-3" aria-live="polite" aria-label="Latest conversation messages">
-        {lines.length === 0 && !live && <li className="text-sm text-charcoal-500">Tap “Talk to Gusteau”, then tell him what you’re in the mood for. He only listens while you’re talking with him.</li>}
+        {lines.length === 0 && !live && <li className="text-sm text-charcoal-500">{voice.supported ? 'Tap “Talk to Gusteau”, then tell him what you’re in the mood for. He only listens while you’re talking with him.' : 'Use the message button to chat with Gusteau. Your conversation will appear here.'}</li>}
         {live && (
           <li className="pl-7 text-xs italic text-charcoal-500">
             <span className="font-semibold not-italic">You:</span> “{live}”…
@@ -187,6 +189,14 @@ export function VoicePanel({
           ),
         )}
       </ol>
+
+      {!voice.supported && (
+        <p className="mt-3 text-xs text-charcoal-500" role="status">
+          {window.isSecureContext === false
+            ? 'Open the HTTPS version of Gusteau to use the microphone. Text chat is available here.'
+            : 'Voice isn’t available in this browser. You can still message Gusteau using text chat.'}
+        </p>
+      )}
 
       {voice.notice && (
         <p className="mt-2 flex items-center gap-2 text-xs text-tomato-700">
