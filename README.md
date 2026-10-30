@@ -190,6 +190,32 @@ scp -r dist deploy/gusteau_server.py antoined@antoineraspi:~/gusteau/
 ssh -t antoined@antoineraspi sudo systemctl restart gusteau
 ```
 
+### Production voice, including Firefox
+
+The production app uses Nemotron ASR and Magpie TTS through the same-origin
+`/Gusteau/api/asr/` routes. Firefox does not need the browser SpeechRecognition
+API: it captures microphone audio and sends it over a WebSocket to Nemotron.
+Open the HTTPS URL and grant microphone permission after clicking **Talk to Gusteau**.
+
+On `antoineraspi`, `gusteau-speech-tunnel.service` forwards local port `18080` to
+the Mac's localhost speech server on port `8080`. The dedicated SSH key is
+restricted on the Mac to forwarding that port. The tunnel starts at boot and
+reconnects automatically. Gusteau's systemd drop-in sets
+`ASR_BASE_URL=http://127.0.0.1:18080`; an optional `ASR_API_KEY` stays server-side.
+The service template is in `deploy/gusteau-speech-tunnel.service`.
+
+Check the speech connection with:
+
+```bash
+systemctl status gusteau-speech-tunnel
+curl http://127.0.0.1:8080/Gusteau/api/asr/health
+curl http://127.0.0.1:8080/Gusteau/api/asr/v1/models
+```
+
+The Git checkout on the Pi is `/home/antoined/gusteau/source`. Deployments pull
+`main` there, build and test on the Pi, then activate a release under
+`/home/antoined/gusteau/releases` through the Gusteau systemd service.
+
 ### The MacBook going to sleep
 
 When the MacBook sleeps, Ollama stops answering, and a request can freeze mid-answer. macOS will wake for connections to services it advertises over Bonjour, such as file sharing on port 445, AirPlay on 7000 and SSH on 22. Ollama isn't one of those.

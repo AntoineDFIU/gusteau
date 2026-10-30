@@ -1,0 +1,16 @@
+# Authorize this dedicated key on the Mac for forwarding 127.0.0.1:8080 only.
+# Adjust the user, key path and model host for a different installation.
+[Unit]
+Description=Gusteau Nemotron and Magpie speech tunnel
+After=network-online.target avahi-daemon.service
+Wants=network-online.target avahi-daemon.service
+StartLimitIntervalSec=0
+
+[Service]
+User=antoined
+ExecStart=/usr/bin/ssh -N -i /home/antoined/.ssh/gusteau_speech -o IdentitiesOnly=yes -o BatchMode=yes -o StrictHostKeyChecking=yes -o ExitOnForwardFailure=yes -o ConnectTimeout=10 -o ServerAliveInterval=15 -o ServerAliveCountMax=3 -L 127.0.0.1:18080:127.0.0.1:8080 antoine@macbook-pro-m5-max.local
+Restart=always
+RestartSec=5
+
+[Install]
+WantedBy=multi-user.target

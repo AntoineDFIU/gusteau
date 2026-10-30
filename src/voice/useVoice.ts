@@ -105,9 +105,8 @@ export function useVoice(onPhrase: (text: string) => void) {
     [],
   );
   useEffect(() => {
-    // Only the dev server proxies /api/asr (vite.config.ts); production uses the browser.
-    if (import.meta.env.DEV) void probe();
-    else setServer(null);
+    // Both development and production proxy Nemotron ASR and Magpie speech.
+    void probe();
   }, [probe]);
 
   const engine: 'nemotron' | 'browser' | 'none' = server ? 'nemotron' : speechSupported ? 'browser' : 'none';
@@ -188,7 +187,7 @@ export function useVoice(onPhrase: (text: string) => void) {
 
   // ── Public controls ──
   const listenOnce = useCallback(async () => {
-    if (engine !== 'nemotron') return browser.listenOnce();
+    if (engine !== 'nemotron' && (await probe()) === null) return browser.listenOnce();
     if (mode.current === 'once') {
       // Tapped again: finish the phrase now.
       mode.current = 'off';
@@ -208,7 +207,9 @@ export function useVoice(onPhrase: (text: string) => void) {
 
   const setHandsFree = useCallback(
     async (on: boolean) => {
-      if (engine !== 'nemotron') {
+      const nemotron = engine === 'nemotron' || (on && (await probe()) !== null);
+      if (!nemotron) {
+        if (on && !speechSupported) setNotice('Gusteau’s speech server is unavailable. Tap Talk to Gusteau to retry, or use text chat.');
         setHandsFreeState(on);
         if (!on) {
           mutedRef.current = false;
@@ -265,7 +266,7 @@ export function useVoice(onPhrase: (text: string) => void) {
     engine: viaBrowser ? (speechSupported ? 'browser' : 'none') : 'nemotron',
     /** Who's listening and who's talking, for tooltips. */
     label: `${viaBrowser ? 'Browser speech recognition' : 'Nemotron ASR on the Mac'} · ${out.current.kind === 'magpie' ? 'Magpie voice' : out.current.kind === 'browser' ? 'browser voice' : 'no voice'}`,
-    supported: engine !== 'none',
+    supported: engine !== 'none' || !!navigator.mediaDevices?.getUserMedia,
     /** False until we know whether the Mac's speech server is there. */
     ready: server !== undefined,
     state: viaBrowser ? (browser.state as VoiceState) : state,

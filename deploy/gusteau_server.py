@@ -5,7 +5,9 @@ Gusteau production server (standard library only; made for a Raspberry Pi).
   * Serves the built app from ./dist (next to this file, or $GUSTEAU_DIST).
   * GET  /api/config            -> provider + model names for the browser (no secrets).
   * POST /api/llm/chat/completions -> forwarded to $LLM_BASE_URL/chat/completions,
-    adding $LLM_API_KEY if set. Only this one route is proxied.
+    adding $LLM_API_KEY if set.
+  * /api/asr/health, /api/asr/v1/models, /api/asr/v1/audio/speech and the
+    realtime transcription WebSocket -> $ASR_BASE_URL (optional $ASR_API_KEY).
   * GET  /api/health            -> {"ok": true}
 
 Configuration is the same set of variables vite.config.ts uses in development:
@@ -29,7 +31,9 @@ Technique videos:
 import json
 import mimetypes
 import os
+import select
 import socket
+import ssl
 import sys
 import threading
 import time
@@ -229,6 +233,8 @@ def load_config():
 
 
 CONFIG = load_config()
+ASR_BASE_URL = os.environ.get("ASR_BASE_URL", "").rstrip("/")
+ASR_API_KEY = os.environ.get("ASR_API_KEY", "")
 # The build's base path (vite.config.ts BUILD_BASE). Requests may arrive with or without it.
 PATH_PREFIX = "/" + (os.environ.get("GUSTEAU_PATH_PREFIX") or "Gusteau").strip("/")
 WAKER = HostWaker(CONFIG["base_url"], CONFIG["wake_ports"], CONFIG["wake_wait"])
@@ -273,9 +279,97 @@ class Handler(SimpleHTTPRequestHandler):
         self._strip_prefix()
         return super().do_HEAD()
 
+    def _speech(self):
+        """Proxy only the NeMo discovery, synthesis and realtime transcription routes."""
+        path = urllib.parse.urlsplit(self.path).path
+        suffix = path.removeprefix("/api/asr")
+        realtime = suffix == "/v1/audio/transcriptions/realtime" and self.command == "GET"
+        allowed = (self.command, suffix) in {
+            ("GET", "/health"), ("GET", "/v1/models"), ("POST", "/v1/audio/speech"),
+        }
+        if not (allowed or realtime):
+            return self._json(404, {"error": "speech route not found"})
+        if not ASR_BASE_URL:
+            return self._json(503, {"error": "speech server not configured"})
+        if realtime:
+            return self._speech_socket(suffix)
+        headers = {"Content-Type": self.headers.get("Content-Type", "application/json")}
+        if ASR_API_KEY:
+            headers["Authorization"] = f"Bearer {ASR_API_KEY}"
+        try:
+            length = int(self.headers.get("Content-Length", "0"))
+            if length < 0 or length > MAX_BODY:
+                return self._json(413, {"error": "speech request too large"})
+            data = self.rfile.read(length) if self.command == "POST" else None
+            request = urllib.request.Request(ASR_BASE_URL + suffix, data=data, headers=headers, method=self.command)
+            with urllib.request.urlopen(request, timeout=UPSTREAM_TIMEOUT) as response:
+                body = response.read()
+                self.send_response(response.status)
+                self.send_header("Content-Type", response.headers.get("Content-Type", "application/octet-stream"))
+                self.send_header("Content-Length", str(len(body)))
+                self.send_header("Cache-Control", "no-store")
+                self.end_headers()
+                self.wfile.write(body)
+        except urllib.error.HTTPError as error:
+            return self._json(error.code, {"error": "speech server rejected the request"})
+        except (OSError, ValueError):
+            return self._json(502, {"error": "speech server unavailable"})
+
+    def _speech_socket(self, suffix):
+        """Relay WebSocket bytes unchanged, including masked client audio frames."""
+        if self.headers.get("Upgrade", "").lower() != "websocket":
+            return self._json(426, {"error": "WebSocket upgrade required"})
+        key = self.headers.get("Sec-WebSocket-Key")
+        if not key or self.headers.get("Sec-WebSocket-Version") != "13":
+            return self._json(400, {"error": "invalid WebSocket handshake"})
+        target = urllib.parse.urlsplit(ASR_BASE_URL)
+        upgraded = False
+        upstream = None
+        try:
+            upstream = socket.create_connection((target.hostname, target.port or (443 if target.scheme == "https" else 80)), timeout=10)
+            if target.scheme == "https":
+                upstream = ssl.create_default_context().wrap_socket(upstream, server_hostname=target.hostname)
+            lines = [f"GET {target.path.rstrip('/')}{suffix} HTTP/1.1", f"Host: {target.netloc}",
+                     "Upgrade: websocket", "Connection: Upgrade", f"Sec-WebSocket-Key: {key}", "Sec-WebSocket-Version: 13"]
+            if ASR_API_KEY:
+                lines.append(f"Authorization: Bearer {ASR_API_KEY}")
+            upstream.sendall(("\r\n".join(lines) + "\r\n\r\n").encode())
+            # Read only the handshake, leaving any immediately following frames intact.
+            handshake = bytearray()
+            while not handshake.endswith(b"\r\n\r\n"):
+                byte = upstream.recv(1)
+                if not byte or len(handshake) > 16384:
+                    raise OSError("invalid speech handshake")
+                handshake.extend(byte)
+            if handshake.split(b"\r\n", 1)[0].split()[1] != b"101":
+                raise OSError("speech upgrade rejected")
+            self.connection.sendall(handshake)
+            upgraded = True
+            self.close_connection = True
+            upstream.settimeout(None)
+            while True:
+                readable, _, _ = select.select([self.connection, upstream], [], [], 60)
+                if isinstance(upstream, ssl.SSLSocket) and upstream.pending() and upstream not in readable:
+                    readable.append(upstream)
+                if not readable:
+                    break
+                for source in readable:
+                    data = source.recv(65536)
+                    if not data:
+                        return
+                    (upstream if source is self.connection else self.connection).sendall(data)
+        except (OSError, ValueError, IndexError):
+            if not upgraded:
+                self._json(502, {"error": "realtime speech server unavailable"})
+        finally:
+            if upstream is not None:
+                upstream.close()
+
     def do_GET(self):
         self._strip_prefix()
         path = self.path.split("?", 1)[0]
+        if path.startswith("/api/asr/"):
+            return self._speech()
         if path == "/api/config":
             return self._json(200, CONFIG["public"])
         if path == "/api/health":
@@ -296,6 +390,8 @@ class Handler(SimpleHTTPRequestHandler):
     def do_POST(self):
         self._strip_prefix()
         path = self.path.split("?", 1)[0]
+        if path.startswith("/api/asr/"):
+            return self._speech()
         if path != "/api/llm/chat/completions":
             return self._json(404, {"error": "not found"})
         if not CONFIG["base_url"] or CONFIG["public"]["provider"] == "mock":

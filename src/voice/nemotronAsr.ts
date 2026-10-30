@@ -24,7 +24,7 @@ import { trackAudio } from './audioUnlock';
 // end a request mid-sentence.
 // ─────────────────────────────────────────────────────────────
 
-export const ASR_BASE = '/api/asr';
+export const ASR_BASE = `${import.meta.env.BASE_URL}api/asr`;
 const REALTIME_PATH = '/v1/audio/transcriptions/realtime';
 const CHUNK_SECONDS = 0.1;
 const CONNECT_TIMEOUT_MS = 10000;
@@ -45,7 +45,7 @@ const IDLE_RESET_SECONDS = 15;
 const DELTA = 'conversation.item.input_audio_transcription.delta';
 const COMPLETED = 'conversation.item.input_audio_transcription.completed';
 
-const UNREACHABLE = "Can't reach the ASR server. Is the SSH tunnel to the Mac up?";
+const UNREACHABLE = "Can't reach Gusteau's speech server. Please try again in a moment.";
 
 export interface AsrServerInfo {
   model: string;
@@ -57,13 +57,13 @@ export interface AsrServerInfo {
 
 /** Is the server up, and which model does it serve? Throws a readable message if not. */
 export async function checkAsrServer(): Promise<AsrServerInfo> {
-  const health = await fetch(`${ASR_BASE}/health`, { cache: 'no-store' })
-    .then((r) => r.json() as Promise<{ status?: string; version?: string }>)
+  const health = await fetch(`${ASR_BASE}/health`, { cache: 'no-store', signal: AbortSignal.timeout(8000) })
+    .then((r) => r.ok ? r.json() as Promise<{ status?: string; version?: string }> : null)
     .catch(() => null);
   if (!health) throw new Error(UNREACHABLE);
   if (health.status !== 'ok') throw new Error(`The ASR server is up but its model isn't ready (${health.status ?? 'unknown'}).`);
   type Model = { id: string; capability?: string; device?: string; voices?: string[]; languages?: string[] };
-  const models = await fetch(`${ASR_BASE}/v1/models`, { cache: 'no-store' })
+  const models = await fetch(`${ASR_BASE}/v1/models`, { cache: 'no-store', signal: AbortSignal.timeout(8000) })
     .then((r) => (r.ok ? (r.json() as Promise<{ data?: Model[] }>) : null))
     .catch(() => null);
   const asr = models?.data?.find((m) => m.capability === 'transcription');
