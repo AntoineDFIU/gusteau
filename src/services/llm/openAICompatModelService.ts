@@ -44,7 +44,7 @@ export interface LlmConfig {
 }
 
 // BASE_URL is "/" in dev and "/Gusteau/" in production builds.
-const ENDPOINT = `${import.meta.env.BASE_URL}api/llm/chat/completions`;
+const endpoint = (provider: string) => `${import.meta.env.BASE_URL}api/llm/${encodeURIComponent(provider)}/chat/completions`;
 
 type Content = string | ({ type: 'text'; text: string } | { type: 'image_url'; image_url: { url: string } })[];
 
@@ -257,7 +257,7 @@ export class OpenAICompatModelService implements ChefModelService {
   }
 
   private async post(model: string, messages: { role: string; content: Content }[], maxTokens: number, extra: Record<string, unknown>): Promise<string> {
-    const res = await fetch(ENDPOINT, {
+    const res = await fetch(endpoint(this.cfg.provider), {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       signal: AbortSignal.timeout(this.cfg.timeoutMs ?? 120_000),
@@ -480,7 +480,7 @@ Respond with ONLY JSON: {"heard_as": string|null, "on_topic": boolean, "action":
   }
 
   async warmUp(): Promise<void> {
-    await streamChat({ purpose: 'warm-up', model: this.cfg.textModel, extraBody: this.cfg.extraBody, maxTokens: 1, messages: [{ role: 'user', content: 'Hi' }], signal: AbortSignal.timeout(this.cfg.timeoutMs ?? 120_000) });
+    await streamChat({ purpose: 'warm-up', provider: this.cfg.provider, model: this.cfg.textModel, extraBody: this.cfg.extraBody, maxTokens: 1, messages: [{ role: 'user', content: 'Hi' }], signal: AbortSignal.timeout(this.cfg.timeoutMs ?? 120_000) });
   }
 
   // ── 5. Conversation → structured changes ──
@@ -510,6 +510,7 @@ Respond with ONLY JSON: {"heard_as": string|null, "on_topic": boolean, "action":
       let hold = false;
       const text = await streamChat({
         purpose: 'kitchen chat',
+        provider: this.cfg.provider,
         model: this.cfg.textModel,
         extraBody: this.cfg.extraBody,
         temperature: 0.2,

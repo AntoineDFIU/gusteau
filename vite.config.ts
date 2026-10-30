@@ -2,6 +2,7 @@ import { spawn, type ChildProcess } from 'node:child_process';
 import { connect } from 'node:net';
 import { defineConfig, loadEnv, type Plugin, type ProxyOptions } from 'vite';
 import react from '@vitejs/plugin-react';
+import { modelProviders, type ProviderConfig } from './server/modelProviders';
 
 // ─────────────────────────────────────────────────────────────
 // Model provider config (server-side only; same variables as
@@ -24,8 +25,8 @@ const PRESETS: Record<string, { baseUrl: string; visionModel: string; textModel:
   nebius: {
     baseUrl: 'https://api.tokenfactory.nebius.com/v1',
     visionModel: 'nvidia/Nemotron-Nano-12B-v2-VL',
-    textModel: 'nvidia/Llama-3_3-Nemotron-Super-49B-v1_5',
-    extraBody: {},
+    textModel: 'nvidia/Nemotron-3_5-Lightning',
+    extraBody: { chat_template_kwargs: { enable_thinking: false } },
   },
   // Thinking models on Ollama otherwise spend the whole token budget reasoning.
   ollama: { baseUrl: 'http://localhost:11434/v1', visionModel: '', textModel: '', extraBody: { reasoning_effort: 'none' } },
@@ -46,8 +47,8 @@ function resolveConfig(env: Env) {
   }
   const label = provider === 'nebius' ? 'NVIDIA Nemotron · Nebius' : provider === 'ollama' ? `Ollama · ${textModel}` : `${provider} · ${textModel}`;
   return {
-    baseUrl: (env.LLM_BASE_URL || env.NEBIUS_BASE_URL || preset.baseUrl).replace(/\/$/, ''),
-    apiKey: env.LLM_API_KEY || env.NEBIUS_API_KEY || '',
+    baseUrl: (env.LLM_BASE_URL || (provider === 'nebius' ? env.NEBIUS_BASE_URL : '') || preset.baseUrl).replace(/\/$/, ''),
+    apiKey: env.LLM_API_KEY || (provider === 'nebius' ? env.NEBIUS_API_KEY : '') || '',
     public:
       provider === 'mock'
         ? { provider: 'mock' }
@@ -265,22 +266,27 @@ const BUILD_BASE = '/Gusteau/';
 export default defineConfig(({ mode, command }) => {
   const env = loadEnv(mode, process.cwd(), '');
   const cfg = resolveConfig(env);
+  const providers = modelProviders(env, cfg);
   const asr = asrConfig(env);
-  const llmProxy = (prefix: string): Record<string, ProxyOptions> =>
-    cfg.baseUrl
-      ? {
-          [`${prefix}api/llm`]: {
-            target: cfg.baseUrl,
-            changeOrigin: true,
-            rewrite: (path) => path.replace(new RegExp(`^${prefix}api/llm`), ''),
-            headers: cfg.apiKey ? { Authorization: `Bearer ${cfg.apiKey}` } : {},
-          },
-        }
-      : {};
+  const llmProxy = (prefix: string): Record<string, ProxyOptions> => {
+    const routes: Record<string, ProxyOptions> = {};
+    const configs: [string, ProviderConfig][] = [...Object.entries(providers), ['', cfg]];
+    for (const [name, config] of configs) {
+      if (!config.baseUrl) continue;
+      const route = `${prefix}api/llm${name ? `/${name}` : ''}`;
+      routes[route] = {
+        target: config.baseUrl,
+        changeOrigin: true,
+        rewrite: (path) => path.slice(route.length),
+        headers: config.apiKey ? { Authorization: `Bearer ${config.apiKey}` } : {},
+      };
+    }
+    return routes;
+  };
 
   return {
     base: command === 'build' ? BUILD_BASE : '/',
-    plugins: [react(), gusteauConfigPlugin(cfg.public), videoSearchPlugin(), asr.tunnel],
+    plugins: [react(), gusteauConfigPlugin({ ...cfg.public, providers: Object.values(providers).map((p) => p.public) }), videoSearchPlugin(), asr.tunnel],
     server: { port: 5173, proxy: { ...llmProxy('/'), ...asr.proxy } },
     preview: { port: 4173, proxy: llmProxy(BUILD_BASE) },
   };

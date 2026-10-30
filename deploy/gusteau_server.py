@@ -47,8 +47,8 @@ PRESETS = {
     "nebius": {
         "base_url": "https://api.tokenfactory.nebius.com/v1",
         "vision": "nvidia/Nemotron-Nano-12B-v2-VL",
-        "text": "nvidia/Llama-3_3-Nemotron-Super-49B-v1_5",
-        "extra": {},
+        "text": "nvidia/Nemotron-3_5-Lightning",
+        "extra": {"chat_template_kwargs": {"enable_thinking": False}},
     },
     # Thinking models on Ollama otherwise spend the whole token budget reasoning.
     "ollama": {"base_url": "http://localhost:11434/v1", "vision": "", "text": "", "extra": {"reasoning_effort": "none"}},
@@ -192,8 +192,8 @@ class HostWaker:
             self.knock()
 
 
-def load_config():
-    env = os.environ
+def load_config(env=None):
+    env = os.environ if env is None else env
     provider = env.get("GUSTEAU_PROVIDER", "mock").strip().lower() or "mock"
     preset = PRESETS.get(provider, {"base_url": "", "vision": "", "text": "", "extra": {}})
     text = env.get("LLM_TEXT_MODEL") or env.get("LLM_MODEL") or preset["text"]
@@ -224,20 +224,53 @@ def load_config():
     )
     wake_ports = [int(p) for p in env.get("LLM_WAKE_PORTS", "").replace(" ", "").split(",") if p.isdigit()]
     return {
-        "base_url": (env.get("LLM_BASE_URL") or preset["base_url"]).rstrip("/"),
-        "api_key": env.get("LLM_API_KEY", ""),
+        "base_url": (env.get("LLM_BASE_URL") or (env.get("NEBIUS_BASE_URL") if provider == "nebius" else None) or preset["base_url"]).rstrip("/"),
+        "api_key": env.get("LLM_API_KEY") or (env.get("NEBIUS_API_KEY", "") if provider == "nebius" else ""),
         "public": public,
         "wake_ports": wake_ports,
         "wake_wait": float(env.get("LLM_WAKE_WAIT") or 25),
     }
 
 
+def model_providers(primary, env=None):
+    env = os.environ if env is None else env
+    providers = {}
+    for provider in ("ollama", "nebius"):
+        prefix = provider.upper()
+        legacy = primary if primary["public"]["provider"] == provider else None
+        preset = PRESETS[provider]
+        model = env.get(prefix + "_MODEL") or (legacy["public"]["textModel"] if legacy else None) or preset["text"] or "qwen3.6:35b-mlx"
+        key = env.get(prefix + "_API_KEY") or (legacy["api_key"] if legacy else "")
+        extra = legacy["public"].get("extraBody", {}) if legacy else preset["extra"]
+        if env.get(prefix + "_EXTRA_BODY"):
+            try:
+                extra = json.loads(env[prefix + "_EXTRA_BODY"])
+            except json.JSONDecodeError:
+                print(f"[gusteau] Invalid {prefix}_EXTRA_BODY; using provider defaults.", file=sys.stderr)
+        providers[provider] = {
+            "base_url": (env.get(prefix + "_BASE_URL") or (legacy["base_url"] if legacy else preset["base_url"])).rstrip("/"),
+            "api_key": key,
+            "wake_ports": legacy["wake_ports"] if legacy and provider == "ollama" else [int(p) for p in env.get("OLLAMA_WAKE_PORTS", "").split(",") if p.isdigit()] if provider == "ollama" else [],
+            "wake_wait": legacy["wake_wait"] if legacy else 25,
+            "public": {
+                "provider": provider, "label": f"{'Nebius' if provider == 'nebius' else 'Ollama'} · {model}",
+                "textModel": model, "visionModel": model, "extraBody": extra,
+                "timeoutMs": legacy["public"]["timeoutMs"] if legacy else 120000,
+                "available": bool(key) if provider == "nebius" else bool(legacy or env.get("OLLAMA_BASE_URL") or env.get("OLLAMA_MODEL")),
+            },
+        }
+    return providers
+
+
 CONFIG = load_config()
+PROVIDERS = model_providers(CONFIG)
+PUBLIC_CONFIG = {**CONFIG["public"], "providers": [config["public"] for config in PROVIDERS.values()]}
 ASR_BASE_URL = os.environ.get("ASR_BASE_URL", "").rstrip("/")
 ASR_API_KEY = os.environ.get("ASR_API_KEY", "")
 # The build's base path (vite.config.ts BUILD_BASE). Requests may arrive with or without it.
 PATH_PREFIX = "/" + (os.environ.get("GUSTEAU_PATH_PREFIX") or "Gusteau").strip("/")
 WAKER = HostWaker(CONFIG["base_url"], CONFIG["wake_ports"], CONFIG["wake_wait"])
+WAKERS = {name: HostWaker(config["base_url"], config["wake_ports"], config["wake_wait"]) for name, config in PROVIDERS.items()}
 DIST = Path(os.environ.get("GUSTEAU_DIST") or Path(__file__).resolve().parent / "dist").resolve()
 mimetypes.add_type("text/javascript", ".js")
 mimetypes.add_type("image/svg+xml", ".svg")
@@ -278,6 +311,34 @@ class Handler(SimpleHTTPRequestHandler):
     def do_HEAD(self):
         self._strip_prefix()
         return super().do_HEAD()
+
+    def _model_route(self):
+        suffix = urllib.parse.urlsplit(self.path).path.removeprefix("/api/llm/")
+        for name, config in PROVIDERS.items():
+            if suffix.startswith(name + "/"):
+                return config, WAKERS[name], suffix[len(name) + 1:]
+        if suffix in ("models", "chat/completions"):
+            name = CONFIG["public"]["provider"]
+            return PROVIDERS.get(name, CONFIG), WAKERS.get(name, WAKER), suffix
+        return None, None, None
+
+    def _model_catalog(self):
+        config, waker, suffix = self._model_route()
+        if config is None or suffix != "models":
+            return self._json(404, {"error": "model route not found"})
+        if not config["public"].get("available", False):
+            return self._json(503, {"error": "model provider not configured"})
+        if not waker.ensure_awake():
+            return self._json(503, {"error": "model provider unavailable"})
+        headers = {"Authorization": f"Bearer {config['api_key']}"} if config["api_key"] else {}
+        try:
+            request = urllib.request.Request(config["base_url"] + "/models", headers=headers)
+            with urllib.request.urlopen(request, timeout=10) as response:
+                return self._json(200, json.load(response))
+        except urllib.error.HTTPError as error:
+            return self._json(error.code, {"error": "model catalog request failed"})
+        except (OSError, ValueError):
+            return self._json(502, {"error": "model catalog unavailable"})
 
     def _speech(self):
         """Proxy only the NeMo discovery, synthesis and realtime transcription routes."""
@@ -371,7 +432,9 @@ class Handler(SimpleHTTPRequestHandler):
         if path.startswith("/api/asr/"):
             return self._speech()
         if path == "/api/config":
-            return self._json(200, CONFIG["public"])
+            return self._json(200, PUBLIC_CONFIG)
+        if path.startswith("/api/llm/"):
+            return self._model_catalog()
         if path == "/api/health":
             return self._json(200, {"ok": True, "provider": CONFIG["public"]["provider"]})
         if path == "/api/videos":
@@ -392,23 +455,24 @@ class Handler(SimpleHTTPRequestHandler):
         path = self.path.split("?", 1)[0]
         if path.startswith("/api/asr/"):
             return self._speech()
-        if path != "/api/llm/chat/completions":
+        config, waker, suffix = self._model_route() if path.startswith("/api/llm/") else (None, None, None)
+        if config is None or suffix != "chat/completions":
             return self._json(404, {"error": "not found"})
-        if not CONFIG["base_url"] or CONFIG["public"]["provider"] == "mock":
+        if not config["base_url"] or not config["public"].get("available", False):
             return self._json(503, {"error": "no model provider configured"})
         length = int(self.headers.get("Content-Length") or 0)
         if length <= 0 or length > MAX_BODY:
             return self._json(413, {"error": "request body missing or too large"})
         body = self.rfile.read(length)
-        if not WAKER.ensure_awake():
-            return self._json(503, {"error": f"model host {WAKER.host} is asleep or offline"})
+        if not waker.ensure_awake():
+            return self._json(503, {"error": f"model host {waker.host} is asleep or offline"})
         headers = {"Content-Type": "application/json"}
-        if CONFIG["api_key"]:
-            headers["Authorization"] = f"Bearer {CONFIG['api_key']}"
-        req = urllib.request.Request(f"{CONFIG['base_url']}/chat/completions", data=body, headers=headers, method="POST")
+        if config["api_key"]:
+            headers["Authorization"] = f"Bearer {config['api_key']}"
+        req = urllib.request.Request(f"{config['base_url']}/chat/completions", data=body, headers=headers, method="POST")
         stop = threading.Event()
-        if WAKER.enabled:
-            threading.Thread(target=WAKER.keep_awake, args=(stop,), daemon=True).start()
+        if waker.enabled:
+            threading.Thread(target=waker.keep_awake, args=(stop,), daemon=True).start()
         try:
             with urllib.request.urlopen(req, timeout=UPSTREAM_TIMEOUT) as up:
                 data = up.read()

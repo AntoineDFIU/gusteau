@@ -80,6 +80,31 @@ All model access goes through one interface, `ChefModelService`, in `src/service
 - The browser only calls `/api/llm/chat/completions`. The server forwards it to the provider and adds any API key, so keys never reach the browser. In development `vite.config.ts` does this. In production `deploy/gusteau_server.py` does.
 - **The model proposes, Gusteau disposes.** Stage groupings and replans written by the model are validated before use, and model chat output is sanitized into known change types. On any failure, Gusteau's own logic takes over.
 
+### Switching between Nebius Nemotron and Ollama Qwen
+
+The model picker groups models by provider and remembers both provider and model
+in this browser. Selecting Nebius or Ollama applies to the next request and
+keeps the current recipe and cooking conversation. Each provider has its own
+server route and credentials; Ollama's reasoning settings stay with Ollama.
+
+Keep the existing Ollama configuration and add this to `.env.local` for development,
+or `/home/antoined/gusteau/gusteau.env` on the Raspberry Pi:
+
+```dotenv
+NEBIUS_API_KEY=your-token-factory-key
+NEBIUS_MODEL=nvidia/Nemotron-3_5-Lightning
+```
+
+The key belongs only in those server-side files, never a `VITE_` variable or the
+browser. Restart the development server, or run `sudo systemctl restart gusteau`
+on the Pi, then reload the page. The Nebius option is disabled until its key is
+configured. The picker discovers available Nemotron models using the server's
+authenticated model-list request; choose the exact ID supported by your account.
+`NEBIUS_BASE_URL` can override the default `https://api.tokenfactory.nebius.com/v1`.
+If Nebius is the default provider, use `OLLAMA_BASE_URL` and `OLLAMA_MODEL` to
+configure Qwen alongside it. Changing the picker does not switch Nemotron ASR
+or Magpie TTS, which continue to use the existing speech server.
+
 ### Configuration
 
 The same variables work for `npm run dev` (put them in `.env.local`) and for the Pi (`gusteau.env`):

@@ -6,7 +6,7 @@
 
 import { logRequest, logResponse } from '../../debug/debugLog';
 
-const ENDPOINT = `${import.meta.env.BASE_URL}api/llm/chat/completions`;
+const endpoint = (provider?: string) => `${import.meta.env.BASE_URL}api/llm${provider ? `/${encodeURIComponent(provider)}` : ''}/chat/completions`;
 
 export interface ChatMessage {
   role: 'system' | 'user' | 'assistant';
@@ -14,6 +14,7 @@ export interface ChatMessage {
 }
 
 export interface StreamChatOptions {
+  provider?: string;
   model: string;
   messages: ChatMessage[];
   /** Provider extras from /api/config, e.g. {"reasoning_effort":"none"} for Ollama. */
@@ -43,7 +44,7 @@ export async function streamChat(opts: StreamChatOptions): Promise<string> {
 }
 
 async function streamReply(opts: StreamChatOptions, temperature: number, maxTokens: number, onRaw: (sofar: string) => void): Promise<string> {
-  const res = await fetch(ENDPOINT, {
+  const res = await fetch(endpoint(opts.provider), {
     method: 'POST',
     headers: { 'Content-Type': 'application/json' },
     signal: opts.signal,
