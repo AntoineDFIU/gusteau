@@ -6,6 +6,7 @@ import type { Profile } from '../types';
 // guarded and the app works without it.
 
 const KEY = 'gusteau.profile.v1';
+const CUISINE_DEFAULTS_VERSION = 1;
 
 export const NEW_PROFILE: Profile = {
   onboarded: false,
@@ -22,8 +23,15 @@ function load(): Profile {
     const raw = localStorage.getItem(KEY);
     if (!raw) return NEW_PROFILE;
     // Older profiles also kept a kitchen inventory; that's no longer used, so it's dropped.
-    const { pantry: _pantry, pantryBasics: _basics, ...saved } = JSON.parse(raw) as Partial<Profile> & { pantry?: unknown; pantryBasics?: unknown };
-    return { ...NEW_PROFILE, ...saved };
+    const { pantry: _pantry, pantryBasics: _basics, cuisineDefaultsVersion, ...saved } = JSON.parse(raw) as Partial<Profile> & { pantry?: unknown; pantryBasics?: unknown; cuisineDefaultsVersion?: number };
+    const profile = { ...NEW_PROFILE, ...saved };
+    // Older browsers may have saved an empty list before defaults existed.
+    // Migrate once so choosing no favorites afterward still remains a valid choice.
+    if (cuisineDefaultsVersion !== CUISINE_DEFAULTS_VERSION) {
+      if (!profile.favoriteCuisines?.length) profile.favoriteCuisines = [...NEW_PROFILE.favoriteCuisines];
+      save(profile);
+    }
+    return profile;
   } catch {
     return NEW_PROFILE;
   }
@@ -31,7 +39,7 @@ function load(): Profile {
 
 function save(p: Profile) {
   try {
-    localStorage.setItem(KEY, JSON.stringify(p));
+    localStorage.setItem(KEY, JSON.stringify({ ...p, cuisineDefaultsVersion: CUISINE_DEFAULTS_VERSION }));
   } catch {
     /* storage unavailable: keep going in memory */
   }
