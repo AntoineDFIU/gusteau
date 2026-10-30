@@ -9,7 +9,7 @@ const KEY = 'gusteau.profile.v1';
 
 export const NEW_PROFILE: Profile = {
   onboarded: false,
-  favoriteCuisines: [],
+  favoriteCuisines: ['american', 'italian', 'mexican', 'chinese', 'french'],
   favoriteRecipes: [],
   hardExclusions: [],
   allergies: [],

@@ -1,6 +1,8 @@
 import { useEffect, useState } from 'react';
-import { chooseModel, listModels, modelProviders, modelService, selectedProvider } from '../services';
+import { chooseModel, DEFAULT_NEBIUS_MODEL, listModels, modelProviders, modelService, selectedProvider } from '../services';
 import { cx } from './ui';
+
+const NEBIUS_MODEL = DEFAULT_NEBIUS_MODEL;
 
 /**
  * Which model Gusteau's brain runs on, from the models the provider offers.
@@ -13,6 +15,10 @@ export function ModelPicker() {
   const [model, setModel] = useState(modelService.textModel);
   const [chosenProvider, setProvider] = useState(selectedProvider());
   useEffect(() => {
+    if (selectedProvider() === 'nebius' && modelService.textModel !== NEBIUS_MODEL) {
+      chooseModel(NEBIUS_MODEL, 'nebius');
+      setModel(NEBIUS_MODEL);
+    }
     let live = true;
     for (const provider of providers.filter((p) => p.available)) {
       void listModels(provider.provider).then((ids) => {
@@ -47,7 +53,7 @@ export function ModelPicker() {
       >
         {providers.map((p) => (
           <optgroup key={p.provider} label={p.provider === 'nebius' ? 'Nebius Token Factory · Nemotron' : 'Ollama · local models'}>
-            {p.available ? [...new Set([p.textModel, ...(p.provider === chosenProvider ? [model] : []), ...(models[p.provider] ?? [])])].map((id) => (
+            {p.available ? (p.provider === 'nebius' ? [NEBIUS_MODEL] : [...new Set([p.textModel, ...(p.provider === chosenProvider ? [model] : []), ...(models[p.provider] ?? [])])]).map((id) => (
               <option key={id} value={JSON.stringify([p.provider, id])}>{id}</option>
             )) : <option disabled value={JSON.stringify([p.provider, p.textModel])}>{p.provider === 'nebius' ? 'Add NEBIUS_API_KEY on the server' : 'Configure Ollama on the server'}</option>}
           </optgroup>

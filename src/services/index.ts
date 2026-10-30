@@ -12,6 +12,7 @@ import { OpenAICompatModelService, type LlmConfig } from './llm/openAICompatMode
 // ─────────────────────────────────────────────────────────────
 
 let current: ChefModelService = new MockModelService();
+export const DEFAULT_NEBIUS_MODEL = 'nvidia/nemotron-3-super-120b-a12b';
 export type ModelProvider = LlmConfig & { available: boolean };
 let providers: ModelProvider[] = [];
 let activeProvider = '';
@@ -19,7 +20,8 @@ export const modelProviders = () => providers;
 export const selectedProvider = () => activeProvider;
 
 // The model picked in the header, remembered in this browser.
-const MODEL_KEY = 'gusteau.model';
+// Start existing browsers on the new default once; later explicit choices persist.
+const MODEL_KEY = 'gusteau.model.v2';
 const remembered = () => {
   try {
     return localStorage.getItem(MODEL_KEY) ?? '';
@@ -62,10 +64,12 @@ export async function initModelService(): Promise<void> {
     if (!res.ok) return;
     const cfg = (await res.json()) as Partial<LlmConfig> & { providers?: ModelProvider[] };
     providers = cfg.providers ?? (cfg.provider && cfg.provider !== 'mock' && cfg.textModel ? [{ ...cfg, available: true } as ModelProvider] : []);
-    const initial = providers.find((p) => p.provider === cfg.provider && p.available) ?? providers.find((p) => p.available);
+    const initial = providers.find((p) => p.provider === 'nebius' && p.available)
+      ?? providers.find((p) => p.provider === cfg.provider && p.available)
+      ?? providers.find((p) => p.available);
     if (!initial) return;
     activeProvider = initial.provider;
-    current = new OpenAICompatModelService(initial);
+    current = new OpenAICompatModelService({ ...initial, textModel: initial.provider === 'nebius' ? DEFAULT_NEBIUS_MODEL : initial.textModel });
     const raw = remembered();
     if (raw) {
       let pick: { provider: string; model: string };

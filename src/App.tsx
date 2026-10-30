@@ -57,9 +57,9 @@ const expectsReply = (said: string) => /\?\s*$/.test(said.trim()) || /\b(say “
 export default function App() {
   const [hideDevTools, setHideDevTools] = useState(() => {
     try {
-      return localStorage.getItem('gusteau.hideDevTools') === 'on';
+      return localStorage.getItem('gusteau.hideDevTools') !== 'off';
     } catch {
-      return false;
+      return true;
     }
   });
   useEffect(() => {
