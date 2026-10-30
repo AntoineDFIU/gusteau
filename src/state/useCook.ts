@@ -13,6 +13,7 @@ import { ambiguousAmount } from '../agent/heardAs';
 import { lineKey, plainStepLine, stepDetail, stepSpeech, whereWeAre, withTitle, type StepArrival } from '../agent/stepSpeech';
 import { controlTimers, notStarted, sayDuration, stepTimers, timerName, timerOffer, type StepTimer } from '../agent/stepTimers';
 import { mergeStages } from '../agent/stages';
+import { isRecallQuestion, recallAnswer, rememberStep } from '../agent/progressMemory';
 import type { ActiveTimer, CookCommand, CookRules, CookSession, PantryItem, Recipe, SessionChange } from '../types';
 
 /** A timer that's still ringing gets a reminder this often, this many times. */
@@ -144,6 +145,7 @@ export function useCook(events: CookEvents) {
       additions: [],
       stepIndex: 0,
       completedStepKeys: [],
+      stepMemory: [],
       substitutions: [],
       history: [],
       chat: [],
@@ -206,7 +208,7 @@ export function useCook(events: CookEvents) {
     const finishing = stepIndex >= s.recipe.steps.length;
     // The last step done: Gusteau congratulates the cook and asks to save the dish, unless it's already a favorite.
     const ask = finishing && !on.current.isFavorite?.(s.original.id) ? ('favorite' as const) : undefined;
-    const ns = { ...s, pendingConfirm: ask, completedStepKeys: completed, stepIndex };
+    const ns = { ...s, pendingConfirm: ask, completedStepKeys: completed, stepIndex, stepMemory: rememberStep(s, how === 'skip' ? 'skipped' : 'completed') };
     setSession(ns);
     setVideoCard(null);
     requestRead(how);
@@ -242,7 +244,7 @@ export function useCook(events: CookEvents) {
   const restart = () => {
     const s = ref.current;
     if (!s) return;
-    setSession({ ...s, pendingConfirm: undefined, stepIndex: 0, completedStepKeys: [] });
+    setSession({ ...s, pendingConfirm: undefined, stepIndex: 0, completedStepKeys: [], stepMemory: [] });
     setVideoCard(null);
     requestRead('restart');
   };
@@ -420,8 +422,9 @@ export function useCook(events: CookEvents) {
       // The screen follows the conversation: when Gusteau says "Let's move on to step 2", it moves on (and reads it).
       // The model says which step the cook is on now ("finished flipping, the cheese is melting" → step 3);
       // without that, its own words ("let's move on to step 2") are the cue.
-      const moved = r.goToStep ? 'goto' : stepTalk(reply, before);
-      if (r.goToStep) goTo(r.goToStep, false);
+      const recalling = isRecallQuestion(text);
+      const moved = recalling ? null : r.goToStep ? 'goto' : stepTalk(reply, before);
+      if (!recalling && r.goToStep) goTo(r.goToStep, false);
       else if (moved === 'next') next();
       else if (moved === 'back') back();
       // "How do I dice an onion?": short videos alongside the answer.
@@ -532,7 +535,8 @@ export function useCook(events: CookEvents) {
     }
     // "I flipped them and put the cheese on, how long until it melts?" on step 2: the screen moves to
     // step 3 first, so the answer (and any timer) is about the step they're really on.
-    const described = stepDescribed(text, before);
+    const recalling = isRecallQuestion(text);
+    const described = recalling ? null : stepDescribed(text, before);
     if (described) {
       goTo(described, false);
       before = ref.current ?? before;
@@ -558,6 +562,7 @@ export function useCook(events: CookEvents) {
     }
     setBusy(null);
     setPending(null);
+    if (recalling) r = { reply: r.reply ?? recallAnswer(text, before), changes: [], offer: before.pendingOffer, choice: before.pendingChoice };
     await handleInterpretation(text, r, ref.current ?? before, opts.via, streamed);
     // Keep "Interpreted as…" under the message in the chat.
     if (r.interpreted) {
@@ -571,7 +576,7 @@ export function useCook(events: CookEvents) {
     const [prev, ...rest] = undoStack;
     const cur = ref.current;
     if (!prev || !cur) return;
-    setSession({ ...prev, timers: cur.timers, chat: [...cur.chat, { id: uid(), from: 'gusteau', text: 'Undone. Back to the previous plan, with all your earlier progress intact.' }] });
+    setSession({ ...prev, stepMemory: cur.stepMemory, timers: cur.timers, chat: [...cur.chat, { id: uid(), from: 'gusteau', text: 'Undone. Back to the previous plan, with all your earlier progress intact.' }] });
     setUndoStack(rest);
     setBannerId(null);
   };

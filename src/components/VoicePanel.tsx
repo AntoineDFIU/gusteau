@@ -99,7 +99,7 @@ export function VoicePanel({
   const lastCook = lines.findIndex((l) => l.who === 'cook');
 
   return (
-    <section aria-label="Talk to Gusteau" className={cx('relative z-20 rounded-3xl border border-cream-200 bg-white/85 p-4 shadow-card backdrop-blur', !compact && 'sm:p-5', className)}>
+    <section aria-label="Talk to Gusteau" className={cx('relative z-[25] rounded-3xl border border-cream-200 bg-white/85 p-4 shadow-card backdrop-blur', !compact && 'sm:p-5', className)}>
       <div className="flex flex-wrap items-center gap-3">
         {/* His mark grows with your voice while he's listening. */}
         <GusteauIcon
@@ -114,7 +114,7 @@ export function VoicePanel({
             <span className="truncate">{STATUS[status].text}</span>
           </p>
         </div>
-        <span className="flex shrink-0 items-center gap-1.5">
+        <span className={cx('flex shrink-0 items-center gap-1.5', compact && 'ml-auto max-w-full flex-wrap justify-end')}>
           <button
             type="button"
             onClick={active ? onStop : onTalk}
@@ -123,6 +123,7 @@ export function VoicePanel({
               'inline-flex min-h-[44px] items-center gap-2 rounded-full px-5 text-sm font-semibold text-white shadow-lift transition-colors focus:outline-none focus-visible:ring-4 focus-visible:ring-tomato-100',
               active ? 'bg-charcoal-900 hover:bg-charcoal-700' : 'bg-tomato-500 hover:bg-tomato-600',
               inviteToTalk && !active && 'talk-invite',
+              compact && 'order-last',
             )}
           >
             {active ? <span aria-hidden className="h-2.5 w-2.5 rounded-sm bg-white" /> : <span aria-hidden>🎤</span>}

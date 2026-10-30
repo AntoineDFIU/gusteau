@@ -76,6 +76,42 @@ test('direct replacements use the same selection flow', () => {
   }
 });
 
+test('swap follow-ups resolve it against the cheese question and update the current recipe', () => {
+  const missing = missingIn("I don't have cheddar cheese", burger);
+  const q = missingQuestion(missing.found[0], burger, rules, 'preview');
+  for (const phrase of ['swap it with Swiss cheese', 'Can you swap it for Swiss cheese?',
+    'replace it with Swiss cheese', 'swap with Swiss cheese', 'switch it to Swiss cheese']) {
+    const request = previewSubstitution(phrase, burger, null, q);
+    assert.equal(request.ingredient?.id, cheddar.id, phrase);
+    assert.equal(request.to, 'swiss cheese', phrase);
+    const answer = answerMissing(`use ${request.to}`, q, burger, rules, 'preview');
+    assert.equal(answer.kind, 'swap', phrase);
+    const plan = adapt(burger, request.ingredient, answer.to);
+    assert.deepEqual(plan.violations, []);
+    assert.equal(plan.recipe.id, burger.id);
+    assert.ok(plan.recipe.ingredients.some((i) => i.name === 'Swiss cheese'));
+    assert.ok(!plan.recipe.ingredients.some((i) => i.name === cheddar.name));
+    assert.match(plan.recipe.steps.map((s) => s.text).join(' '), /Swiss cheese/i);
+  }
+});
+
+test('a follow-up uses the ingredient being discussed rather than cheese in the replacement', () => {
+  const beef = missingIn("I don't have beef", burger).found[0];
+  const q = missingQuestion(beef, burger, rules, 'preview');
+  assert.equal(previewSubstitution('swap it with Swiss cheese', burger, null, q).ingredient.id, beef.id);
+  for (const phrase of ['swap it with Swiss cheese', 'swap with Swiss cheese']) {
+    const unresolved = previewSubstitution(phrase, burger);
+    assert.equal(unresolved.ingredient, undefined);
+    assert.equal(unresolved.to, 'swiss cheese');
+  }
+});
+
+test('explicit source names still override the pending question', () => {
+  const beef = missingIn("I don't have beef", burger).found[0];
+  const q = missingQuestion(beef, burger, rules, 'preview');
+  assert.equal(previewSubstitution('replace cheddar with Swiss cheese', burger, null, q).ingredient.id, cheddar.id);
+});
+
 test('omitting cheddar removes it from the ingredients and the melting instruction', () => {
   assert.equal(answerMissing('leave it out', question(), burger, rules, 'preview').kind, 'drop');
   const plan = adapt(burger, cheddar);

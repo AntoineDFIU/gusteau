@@ -290,6 +290,13 @@ export interface Addition {
   beforeKey?: string;
 }
 
+export interface StepMemory {
+  number: number;
+  step: RecipeStep;
+  ingredients: RecipeIngredient[];
+  outcome: 'completed' | 'skipped';
+}
+
 export interface CookSession {
   /** The recipe as it came from the database, scaled to the user's servings. */
   original: Recipe;
@@ -314,6 +321,8 @@ export interface CookSession {
   pendingConfirm?: 'skip' | 'restart' | 'favorite';
   stepIndex: number;
   completedStepKeys: string[];
+  /** Snapshots of steps explicitly completed or skipped, retained when navigating or replanning. */
+  stepMemory?: StepMemory[];
   substitutions: Substitution[];
   history: PlanDiff[];
   chat: ChatMessage[];

@@ -132,7 +132,20 @@ export function RecipePreview({
           {cuisine.emoji} {cuisine.name}
           {kitchen.label && <span className="ml-2 rounded-full bg-saffron-100 px-2 py-0.5 text-charcoal-700">{kitchen.label}</span>}
         </p>
-        <h1 className="mt-2 font-head text-3xl font-semibold leading-tight text-charcoal-900 sm:text-4xl">{recipe.title}</h1>
+        <div className="mt-2 flex items-center gap-3 sm:gap-5">
+          <h1 className="min-w-0 flex-1 font-head text-3xl font-semibold leading-tight text-charcoal-900 sm:text-4xl">{recipe.title}</h1>
+          <Button
+            size="lg"
+            className="min-h-14 shrink-0 whitespace-nowrap ring-4 ring-tomato-100 !font-bold !shadow-lg"
+            disabled={plan.violations.length > 0 || busy}
+            aria-label={busy ? 'Setting up cooking' : 'Cook with Gusteau'}
+            aria-busy={busy}
+            onClick={() => onCook(rules, leaveOut)}
+          >
+            <span className="text-xl" aria-hidden>👨‍🍳</span>
+            {busy ? 'Setting up…' : 'Let’s Cook!'}
+          </Button>
+        </div>
         {recipe.chef && (
           <p className="mt-1 text-sm text-charcoal-500">
             {recipe.chef.relation ?? 'Recipe by'} <span className="font-semibold text-charcoal-700">{recipe.chef.name}</span>
@@ -275,11 +288,6 @@ export function RecipePreview({
           <p className="mt-2 text-xs text-charcoal-500">Gusteau adapted this recipe for you, so it’s no longer exactly the original.</p>
         )}
 
-        <div className="sticky bottom-0 -mx-5 mt-6 flex flex-col gap-2 border-t border-cream-200 bg-cream-50/95 px-5 py-4 backdrop-blur sm:-mx-8 sm:flex-row sm:px-8">
-          <Button size="lg" className="flex-1" disabled={plan.violations.length > 0 || busy} onClick={() => onCook(rules, leaveOut)}>
-            {busy ? 'Setting up…' : '👨‍🍳 Cook with Gusteau'}
-          </Button>
-        </div>
       </div>
     </div>
   );

@@ -3,7 +3,7 @@ import type { Lookup } from '../../services/lookup';
 import { Button, Spinner } from '../ui';
 
 /** "What is a zester?": the definition and a few pictures, out of the way with one tap, Esc, or "got it". */
-export function ExplainerCard({ explainer, onClose }: { explainer: { term: string; lookup?: Lookup; error?: string }; onClose: () => void }) {
+export function ExplainerCard({ explainer, onClose, returnLabel = 'Got it, back to cooking' }: { explainer: { term: string; lookup?: Lookup; error?: string }; onClose: () => void; returnLabel?: string }) {
   const { term, lookup, error } = explainer;
   const ref = useRef<HTMLDivElement>(null);
 
@@ -58,7 +58,7 @@ export function ExplainerCard({ explainer, onClose }: { explainer: { term: strin
           )}
         </p>
         <Button size="sm" onClick={onClose}>
-          Got it, back to cooking
+          {returnLabel}
         </Button>
       </div>
     </div>

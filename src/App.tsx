@@ -21,6 +21,9 @@ import { OPENING, discoveryCommand, ingredientsReading, missingIn, missingNames,
 import { CUISINES } from './data/cuisines';
 import { VoicePanel, type Turn } from './components/VoicePanel';
 import { TextChat } from './components/TextChat';
+import { ExplainerCard } from './components/cooking/ExplainerCard';
+import { explainRequest } from './services/mock/intentParser';
+import { LookupError, lookupTerm, type Lookup } from './services/lookup';
 import { DebugPanel } from './components/DebugPanel';
 import { ModelPicker } from './components/ModelPicker';
 import { logHeard } from './debug/debugLog';
@@ -77,6 +80,15 @@ export default function App() {
   }, [screen, inviteToTalk]);
   const [filters, setFilters] = useState<Filters>({ ...EMPTY_FILTERS, diet: profile.hardExclusions });
   const [preview, setPreview] = useState<{ recipe: Recipe; kitchen: Kitchen } | null>(null);
+  const [explanation, setExplanation] = useState<{ term: string; lookup?: Lookup; error?: string } | null>(null);
+  const explanationRequest = useRef(0);
+  const closeExplanation = () => {
+    explanationRequest.current++;
+    setExplanation(null);
+  };
+  useEffect(() => {
+    closeExplanation();
+  }, [preview?.recipe.id, screen]);
   const [editingPrefs, setEditingPrefs] = useState(false);
   const [chatHost, setChatHost] = useState<HTMLDivElement | null>(null);
   const [toast, setToast] = useState<string | null>(null);
@@ -192,6 +204,23 @@ export default function App() {
     talk.current = [...talk.current, `Gusteau: ${text}`].slice(-6);
     voice.say(speakable(text), queue);
   };
+  const explainOutsideCooking = async (term: string) => {
+    const request = ++explanationRequest.current;
+    setExplanation({ term });
+    try {
+      const lookup = await lookupTerm(term);
+      if (request !== explanationRequest.current) return;
+      setExplanation({ term, lookup });
+      reply(lookup.definition);
+    } catch (err) {
+      if (request !== explanationRequest.current) return;
+      const error = err instanceof LookupError && err.reason === 'not-found'
+        ? `I couldn’t find a reliable cooking definition for ${term}. Could you check the name or tell me a little more?`
+        : `I couldn’t load the definition and pictures for ${term} just now. Please try again.`;
+      setExplanation({ term, error });
+      reply(error);
+    }
+  };
   /** The dishes on screen, in order, so "the second one" or "number five" can be opened. */
   const listed = useRef<Recipe[]>([]);
   /** Options or ingredients being read out, so "more" goes on. */
@@ -294,6 +323,8 @@ export default function App() {
     showByVoice(a);
   };
   const browseVoice = (text: string) => {
+    const explain = explainRequest(text, true);
+    if (explain) return void explainOutsideCooking(explain);
     if (!library) return reply('One moment, I’m still loading the recipes.');
     talk.current = [...talk.current, `Cook: ${text}`].slice(-6);
     const cmd = discoveryCommand(text);
@@ -364,6 +395,8 @@ export default function App() {
   };
 
   const previewVoice = (text: string, recipe: Recipe) => {
+    const explain = explainRequest(text, true);
+    if (explain) return void explainOutsideCooking(explain);
     if (previewRequestsRecipes(text)) return browseVoice(text);
     const go = previewCommand(text);
     // Leaving or cancelling is explicit; a failed transcription never clears the request.
@@ -375,7 +408,7 @@ export default function App() {
       setPreview(null);
       return reply(`Sure. ${OPENING}`);
     }
-    const swap = previewSubstitution(text, recipe, pendingIngredient);
+    const swap = previewSubstitution(text, recipe, pendingIngredient, asking);
     if (swap && (swap.ingredient || !asking)) {
       if (!swap.ingredient) {
         setPendingIngredient({ recipeId: recipe.id, to: swap.to });
@@ -750,6 +783,11 @@ export default function App() {
             <VoicePanel voice={voice} turn={turn} interpreted={interpreted} onTalk={startTalking} onStop={stopConversation} inviteToTalk={screen === 'browse' && inviteToTalk} className="w-full" />
           </div>
         )}
+        {screen !== 'cooking' && !preview && explanation && (
+          <div className="mx-auto mb-6 max-w-7xl">
+            <ExplainerCard explainer={explanation} onClose={closeExplanation} returnLabel="Got it" />
+          </div>
+        )}
         {screen === 'onboarding' && (
           <Onboarding
             profile={profile}
@@ -805,6 +843,11 @@ export default function App() {
             <div className="px-4 pt-14 sm:px-6 sm:pt-16">
               <VoicePanel voice={voice} turn={turn} interpreted={interpreted} onTalk={startTalking} onStop={stopConversation} compact />
             </div>
+            {explanation && (
+              <div className="mt-4 px-4 sm:px-6">
+                <ExplainerCard explainer={explanation} onClose={closeExplanation} returnLabel="Got it, back to the recipe" />
+              </div>
+            )}
           <RecipePreview
             key={preview.recipe.id}
             recipe={preview.recipe}

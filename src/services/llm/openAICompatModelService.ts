@@ -10,6 +10,7 @@ import { explainRequest, howToRequest, parseCommand, parseIntent, progressAnswer
 import { answerOffer, groundedAnswer, outOfIngredient } from '../mock/kitchenHelp';
 import { culinary, offTopicReply, respelled } from '../topic';
 import { changesMeaning, checkFirst, partialHeardAs, riskyReading } from '../../agent/heardAs';
+import { isRecallQuestion, progressMemoryContext, recallAnswer } from '../../agent/progressMemory';
 import { streamChat } from './chatStream';
 import { logRequest, logResponse } from '../../debug/debugLog';
 import type { ChefModelService, DiscoverContext, DiscoverIntent, InterpretResult, StageResult } from '../modelService';
@@ -92,7 +93,6 @@ function lineProblem(line: string, step: RecipeStep, recipe: Recipe): string | n
 }
 
 /** Earlier messages sent along, so follow-ups like "and how long for that?" make sense. */
-const RECENT_TURNS = 6;
 
 /**
  * While {"changes": [...], "reply": "..."} streams in: the reply so far,
@@ -488,20 +488,21 @@ Respond with ONLY JSON: {"heard_as": string|null, "on_topic": boolean, "action":
     // Commands ("next", "set a 5 minute timer") are answered locally, instantly.
     const cmd = parseCommand(message);
     if (cmd) return cmd;
-    // "Yes" or "no" to a swap Gusteau just offered is answered instantly too.
-    // "Done with step 1", "the patties are shaped, what's next?": the screen moves on with the conversation.
-    const answered = answerOffer(message, session) ?? progressAnswer(message, session) ?? outOfIngredient(message, session) ?? groundedAnswer(message, session);
-    if (answered) return answered;
-    // "What is mirin?" is answered from Wikipedia, with pictures.
-    const explain = explainRequest(message);
-    if (explain) return { reply: null, changes: [], explain, interpreted: respelled(message, explain) };
+    const recalling = isRecallQuestion(message);
+    if (!recalling) {
+      // A definition request must not be consumed as an answer to a pending swap.
+      const explain = explainRequest(message, true);
+      if (explain) return { reply: null, changes: [], explain, interpreted: respelled(message, explain) };
+      // "Yes" or "no" to a swap Gusteau just offered is answered instantly too.
+      // "Done with step 1", "the patties are shaped, what's next?": the screen moves on with the conversation.
+      const answered = answerOffer(message, session) ?? progressAnswer(message, session) ?? outOfIngredient(message, session) ?? groundedAnswer(message, session);
+      if (answered) return answered;
+      const implicitExplain = explainRequest(message);
+      if (implicitExplain) return { reply: null, changes: [], explain: implicitExplain, interpreted: respelled(message, implicitExplain) };
+    }
     const step = session.recipe.steps[session.stepIndex];
     const hints = substitutionHints(session).map((h) => `${h.ingredient}: ${h.options.map((o) => `${o.name} (${HINT_STATUS[o.status]})`).join(', ')}`);
     const unused = session.pantry.filter((p) => !session.recipe.ingredients.some((i) => sameIngredient(i.name, p.name))).map((p) => p.name);
-    const recent = session.chat
-      .slice(-RECENT_TURNS)
-      .map((m) => `${m.from === 'user' ? 'Cook' : 'Gusteau'}: ${m.text}`)
-      .join('\n');
     try {
       let streamed = '';
       // How the model read the message (it comes first in the JSON); a risky reading holds the reply back.
@@ -524,6 +525,8 @@ Speak like a helpful chef beside the user: natural, concise, encouraging, and fo
 Treat the user's stated dietary restrictions, time, servings, available equipment, and missing ingredients as firm constraints. Do not assume the user has an ingredient merely because it is part of the recipe. The pantry data represents only ingredients the user has explicitly confirmed.
 
 Help with the active recipe, cooking techniques, timing, substitutions, serving, food storage, nutrition, drinks, and meal pairings. If the user asks about an unrelated topic, politely explain that you are here to help with cooking and steer back to the recipe. Do not answer the unrelated question.
+
+Use Cooking history to answer questions about earlier work. It contains every confirmed or skipped step as it was at that time, with its instructions, ingredients and quantities, plus the full session conversation. Prefer those snapshots over a later adapted recipe. Navigation-completed keys alone do not prove a step was actually performed. Distinguish user-reported actions from recipe instructions: confirming a step does not verify an exact cooking duration, temperature, doneness, or ingredient quantity actually used. If a detail was never reported, say so rather than inventing it. Questions about previous steps are read-only: do not navigate, start a timer, or change the recipe unless the user separately asks for that action.
 
 When an ingredient is missing, a constraint changes, or something goes wrong during cooking, help the user preserve their goal and adjust the remaining plan. Offer practical options before making an optional recipe change. Prefer substitutions already confirmed in the user's pantry when available, and never suggest something that conflicts with a hard restriction or unavailable equipment.
 
@@ -555,12 +558,13 @@ Use "changes" only when the user clearly asks for a change. Use "offer" for a su
           {
             role: 'user',
             content: `Session: ${JSON.stringify(sessionSummary(session))}
-Recipe steps: ${JSON.stringify(session.recipe.steps.map((s, i) => `${i + 1}. ${s.title}${session.completedStepKeys.includes(s.key) ? ' (done)' : ''}`))}
+Recipe steps: ${JSON.stringify(session.recipe.steps.map((s, i) => ({ number: i + 1, key: s.key, title: s.title, instructions: s.text, tip: s.tip })))}
+Cooking history: ${JSON.stringify(progressMemoryContext(session))}
 Current step: ${JSON.stringify(step ? { number: session.stepIndex + 1, of: session.recipe.steps.length, title: step.title, text: step.text, tip: step.tip, timer_seconds: step.timerSeconds } : 'all steps finished')}
 Ingredients: ${JSON.stringify(session.recipe.ingredients.map((i) => `${i.name}${i.amount !== null ? ` ${i.amount} ${i.unit}`.trimEnd() : ''}`))}
 Safe swaps for what's still to be used: ${hints.length ? hints.join('; ') : 'none known'}
 They've mentioned also having: ${unused.length ? unused.join(', ') : 'nothing'} (they haven't listed what they have, so never assume they lack anything they didn't say they lack)
-${recent ? `Recent conversation:\n${recent}\n` : ''}Cook: ${message}`,
+Cook: ${message}`,
           },
         ],
         onDelta: (sofar) => {
@@ -584,6 +588,10 @@ ${recent ? `Recent conversation:\n${recent}\n` : ''}Cook: ${message}`,
       const reading = typeof r.heard_as === 'string' && r.heard_as.trim() && changesMeaning(message, r.heard_as) ? r.heard_as.trim() : undefined;
       if (reading && riskyReading(message, reading)) return { reply: checkFirst(reading), changes: [] };
       const interpreted = reading;
+      if (recalling) return {
+        reply: typeof r.reply === 'string' && r.reply.trim() ? r.reply : recallAnswer(message, session),
+        changes: [], offer: session.pendingOffer, choice: session.pendingChoice, interpreted,
+      };
       // Not about cooking: a polite redirect and nothing else (no changes, videos or timers).
       if (r.on_topic === false && !culinary(interpreted ?? message, session)) return { reply: typeof r.reply === 'string' && r.reply.trim() ? r.reply : offTopicReply(session.recipe.title), changes: [], interpreted };
       const proposed = sanitizeChanges(r.changes);

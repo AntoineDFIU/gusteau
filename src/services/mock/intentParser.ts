@@ -5,6 +5,7 @@ import { TECHNIQUES, techniqueById, techniqueFor, techniqueFromQuestion, techniq
 import type { CookCommand, CookSession, DietRuleId, SessionChange, TimerAction } from '../../types';
 import type { InterpretResult } from '../modelService';
 import { culinary, kitchenSpelling, offTopicReply, respelled } from '../topic';
+import { isRecallQuestion, recallAnswer } from '../../agent/progressMemory';
 import { answerOffer, kitchenHelp, outOfIngredient } from './kitchenHelp';
 
 // ─────────────────────────────────────────────────────────────
@@ -245,17 +246,25 @@ export function howToRequest(raw: string, s: CookSession): string | null {
   return task.split(' ').length <= 8 ? task : null;
 }
 
-export function explainRequest(raw: string): string | null {
-  const t = clean(raw).replace(/[?!.,]/g, '').trim();
+export function explainRequest(raw: string, explicitOnly = false): string | null {
+  const t = clean(raw).replace(/[?!.,]/g, '').trim()
+    .replace(/^(?:(?:please|so|and|um|sorry|wait)\s+)+/, '')
+    .replace(/\s+please$/, '');
   const forms = [
+    /^(?:(?:can|could|would) you )?(?:tell me|explain|show me) what (?:an? |the |some )?(.+?) (?:is|are|looks? like)$/,
+    /^(?:(?:can|could|would) you )?(?:tell me|explain) what(?:'s| is| are)(?: an?| the| some)? (.+)$/,
+    /^what(?:'s| is) (?:an? |the )?(.+?) and what does it look like$/,
     /^(?:so |and |um |sorry |wait )?what(?:'s| is| are)(?: an?| the| some)? (.+?)(?: exactly| again| used for| for| anyway)?$/,
     /^what does (?:an?|the) (.+?) look like$/,
-    /^what do(?:es)? (.+?) look like$/,
+    /^what (?:do|does|should|would) (.+?) look like$/,
+    /^(?:what do you mean by|what's meant by|define|explain what) (?:an? |the |some )?(.+?)(?: is| are)?$/,
+    /^(?:show me|(?:can|could|would) you show me) (?:an? |the |some )?(?:pictures?|photos?|images?) of (?:an? |the |some )?(.+)$/,
+  ];
+  if (!explicitOnly) forms.push(
     /^(?:i don't know|i'm not sure|not sure|i've never heard of|never heard of) what (?:an? |the |some )?\s*(.+?) (?:is|are)$/,
     /^(?:i don't know|i've never heard of|never heard of|i've never used) (?:an? |the |some )?(.+)$/,
-    /^(?:what do you mean by|what's meant by|define|explain what) (?:an? |the |some )?(.+?)(?: is| are)?$/,
-    /^(?:show me|can you show me) (?:an? |the |some )?(?:picture of |photo of |pictures of )?(?:an?|the )?(.+)$/,
-  ];
+    /^(?:show me|(?:can|could|would) you show me) (?:an? |the |some )?(.+)$/,
+  );
   for (const re of forms) {
     const g = t.match(re);
     const term = g?.[1]?.trim().replace(/^((an?|the|some) )?(pictures?|photos?|images?) of /, '').replace(/^(an?|the|some) /, '').trim();
@@ -268,10 +277,13 @@ export function parseIntent(raw: string, s: CookSession): InterpretResult {
   const m = clean(raw);
   const cmd = parseCommand(m);
   if (cmd) return cmd;
+  if (isRecallQuestion(raw)) return { reply: recallAnswer(raw, s), changes: [], offer: s.pendingOffer, choice: s.pendingChoice };
+  const explain = explainRequest(raw, true);
+  if (explain) return { reply: null, changes: [], explain, interpreted: respelled(raw, explain) };
   const help = answerOffer(raw, s) ?? progressAnswer(raw, s) ?? outOfIngredient(raw, s) ?? kitchenHelp(raw, s);
   if (help) return help;
-  const explain = explainRequest(raw);
-  if (explain) return { reply: null, changes: [], explain, interpreted: respelled(raw, explain) };
+  const implicitExplain = explainRequest(raw);
+  if (implicitExplain) return { reply: null, changes: [], explain: implicitExplain, interpreted: respelled(raw, implicitExplain) };
   const howTo = howToRequest(raw, s);
   if (howTo) {
     const tech = techniqueFromQuestion(howTo) ?? TECHNIQUES.find((x) => x.match.test(howTo));
