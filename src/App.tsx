@@ -55,20 +55,7 @@ const REPLY_WINDOW_MS = 10000;
 const expectsReply = (said: string) => /\?\s*$/.test(said.trim()) || /\b(say “|tell me\b|let me know|pick (one|another)|choose|which one)/i.test(said);
 
 export default function App() {
-  const [hideDevTools, setHideDevTools] = useState(() => {
-    try {
-      return localStorage.getItem('gusteau.hideDevTools') !== 'off';
-    } catch {
-      return true;
-    }
-  });
-  useEffect(() => {
-    try {
-      localStorage.setItem('gusteau.hideDevTools', hideDevTools ? 'on' : 'off');
-    } catch {
-      // The toggle still works when browser storage is unavailable.
-    }
-  }, [hideDevTools]);
+  const [hideDevTools, setHideDevTools] = useState(true);
   const { profile, update, reset } = useProfile();
   const [library, setLibrary] = useState<RecipeLibrary | null>(null);
   const [screen, setScreen] = useState<Screen>(profile.onboarded ? 'browse' : 'onboarding');
