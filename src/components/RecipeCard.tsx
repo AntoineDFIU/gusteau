@@ -3,6 +3,7 @@ import { cuisineById } from '../data/cuisines';
 import { STAGE_ICONS } from '../data/stageIcons';
 import type { Profile, Recipe, StageIconId } from '../types';
 import { cx } from './ui';
+import { recipeImageUrl } from '../recipes/imageUrl';
 
 /** The recipe's picture, or a cuisine-colored tile with its emoji. */
 export function RecipeArt({ recipe, className, big = false }: { recipe: Recipe; className?: string; big?: boolean }) {
@@ -10,7 +11,7 @@ export function RecipeArt({ recipe, className, big = false }: { recipe: Recipe; 
   return (
     <div className={cx('relative overflow-hidden', className)} style={{ background: `linear-gradient(135deg, ${a}, ${b})` }}>
       {recipe.image ? (
-        <img src={recipe.image} alt="" loading="lazy" className="absolute inset-0 h-full w-full object-cover" />
+        <img src={recipeImageUrl(recipe.image, import.meta.env.BASE_URL)} alt="" loading="lazy" className="absolute inset-0 h-full w-full object-cover" />
       ) : (
         <span className={cx('absolute inset-0 flex select-none items-center justify-center drop-shadow-lg', big ? 'text-[7rem]' : 'text-6xl')} aria-hidden>
           {recipe.emoji}
@@ -105,7 +106,7 @@ export function RecipeCard({
           <span />
         </span>
         {recipe.image ? (
-          <img className="dish-photo" src={recipe.image} alt="" loading="lazy" decoding="async" width={480} height={360} />
+          <img className="dish-photo" src={recipeImageUrl(recipe.image, import.meta.env.BASE_URL)} alt="" loading="lazy" decoding="async" width={480} height={360} />
         ) : (
           <span className="dish-emoji" aria-hidden>
             {recipe.emoji}
