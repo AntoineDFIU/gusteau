@@ -30,7 +30,7 @@ import { logHeard } from './debug/debugLog';
 import { speakable } from './agent/stepSpeech';
 import { changesMeaning, checkFirst, riskyReading } from './agent/heardAs';
 
-type Screen = 'onboarding' | 'browse' | 'cooking';
+type Screen = 'browse' | 'cooking';
 
 /** The search on screen in words, for the model: "Thai, cheese, 30 minutes or less". */
 const describeFilters = (f: Filters) =>
@@ -58,7 +58,7 @@ export default function App() {
   const [hideDevTools, setHideDevTools] = useState(true);
   const { profile, update, reset } = useProfile();
   const [library, setLibrary] = useState<RecipeLibrary | null>(null);
-  const [screen, setScreen] = useState<Screen>(profile.onboarded ? 'browse' : 'onboarding');
+  const [screen, setScreen] = useState<Screen>('browse');
   const [inviteToTalk, setInviteToTalk] = useState(true);
   useEffect(() => {
     if (screen !== 'browse' || !inviteToTalk) return;
@@ -452,7 +452,6 @@ export default function App() {
   // What the cook says during a conversation. There's no wake word: the mic is only open in a
   // conversation started with Talk to Gusteau, and only what's said while he's listening counts.
   const onPhrase = (text: string) => {
-    if (screen === 'onboarding') return;
     const cooking = screen === 'cooking' && !!cook.session;
     const listening = turnRef.current === 'open' || turnRef.current === 'hearing';
     logHeard({ who: 'cook', text, note: listening ? 'heard in the conversation' : 'ignored: said while he was answering' });
@@ -642,7 +641,7 @@ export default function App() {
     }
   };
 
-  // Prototype only: forget everything about this user and show the welcome screen again.
+  // Prototype only: restore the default profile and return to browsing.
   const startOverAsNewUser = () => {
     if (!window.confirm('Reset Gusteau as a new user? This clears your preferences, kitchen and cooking history on this device.')) return;
     // Any conversation ends (and the mic closes).
@@ -653,7 +652,7 @@ export default function App() {
     setPreview(null);
     setEditingPrefs(false);
     setFilters({ ...EMPTY_FILTERS });
-    setScreen('onboarding');
+    setScreen('browse');
     window.scrollTo({ top: 0 });
   };
 
@@ -727,7 +726,7 @@ export default function App() {
                 🐞 <span className="hidden sm:inline">Debug</span>
               </button>
             )}
-            {profile.onboarded && screen !== 'cooking' && (
+            {screen !== 'cooking' && (
               <button onClick={() => setEditingPrefs(true)} className="rounded-full px-3 py-2 text-sm font-medium text-charcoal-500 hover:bg-cream-200 hover:text-charcoal-900">
                 ⚙︎ <span className="hidden sm:inline">Preferences</span>
               </button>
@@ -735,14 +734,14 @@ export default function App() {
             {screen !== 'browse' && (
               <button
                 onClick={startOverAsNewUser}
-                title="Prototype only: clears preferences, kitchen and history, then shows the new-user screen"
+                title="Prototype only: restores default preferences, clears kitchen and history, then returns to browsing"
                 className="rounded-full border border-dashed border-charcoal-400/50 px-3 py-1.5 text-xs font-medium text-charcoal-500 hover:border-tomato-400 hover:text-tomato-600"
               >
                 ↺ <span className="hidden sm:inline">Reset as new user</span>
                 <span className="ml-1 hidden rounded-full bg-cream-200 px-1.5 py-0.5 text-[10px] uppercase tracking-wider text-charcoal-400 lg:inline">Prototype</span>
               </button>
             )}
-            {screen !== 'onboarding' && screen !== 'browse' && voice.state === 'blocked' && <span className="text-xs text-tomato-600">Mic blocked in browser settings</span>}
+            {screen !== 'browse' && voice.state === 'blocked' && <span className="text-xs text-tomato-600">Mic blocked in browser settings</span>}
             <button
               type="button"
               role="switch"
@@ -765,7 +764,7 @@ export default function App() {
 
       <main className="px-4 pb-16 pt-8 sm:px-6 sm:pt-10">
         {/* Talking with Gusteau: one place, top left, on every screen (in the recipe preview, at the top of it). */}
-        {screen !== 'onboarding' && !preview && (
+        {!preview && (
           <div className="mx-auto mb-6 max-w-7xl">
             <VoicePanel voice={voice} turn={turn} interpreted={interpreted} onTalk={startTalking} onStop={stopConversation} inviteToTalk={screen === 'browse' && inviteToTalk} className="w-full" />
           </div>
@@ -775,19 +774,6 @@ export default function App() {
             <ExplainerCard explainer={explanation} onClose={closeExplanation} returnLabel="Got it" />
           </div>
         )}
-        {screen === 'onboarding' && (
-          <Onboarding
-            profile={profile}
-            onDone={(patch) => {
-              update(patch);
-              setFilters({ ...EMPTY_FILTERS, diet: patch.hardExclusions ?? [] });
-              setScreen('browse');
-              // To the top, where Gusteau is, not wherever the welcome screen was scrolled to.
-              window.scrollTo({ top: 0 });
-            }}
-          />
-        )}
-
         {screen === 'browse' &&
           (library ? (
             library.recipes.length ? (
