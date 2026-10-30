@@ -4,7 +4,28 @@ Gusteau helps you decide what to make and then cooks it with you. Start from wha
 
 Built as a hackathon MVP with React, TypeScript, Tailwind CSS and Vite. It runs fully offline with mock AI. Server-side configuration switches it to a real model: NVIDIA Nemotron through Nebius Token Factory, or any Ollama model on your network.
 
-A live deployment runs on the Raspberry Pi at **http://antoineraspi:8080** (or http://192.168.6.126:8080), using `qwen3.6:35b-mlx` on the MacBook's Ollama. See [Raspberry Pi deployment](#raspberry-pi-deployment).
+A live deployment runs on the Raspberry Pi at **https://antoineraspi.tailb406ce.ts.net/Gusteau/**, with Nemotron Super 120B on Nebius Token Factory as the default language model and speech models running on a local MacBook Pro M5 Max. See [Raspberry Pi deployment](#raspberry-pi-deployment).
+
+## Models: Nebius Token Factory and the local Mac
+
+Chef Gusteau combines cloud-hosted language reasoning with self-hosted speech. The Raspberry Pi serves the application and proxies requests; it does not run the models.
+
+| Role | Model used | Where it runs | What it does in Gusteau |
+| --- | --- | --- | --- |
+| Default language model | NVIDIA Nemotron Super 120B (`nvidia/nemotron-3-super-120b-a12b`) | **Nebius Token Factory** | Interprets cooking requests, answers questions, groups recipe steps into stages, and proposes ingredient substitutions and revised instructions. Application logic validates structured changes before applying them. |
+| Speech recognition | NVIDIA Nemotron `nemotron-3.5-asr-streaming-0.6b` (Q8_0 GGUF) | **Local MacBook Pro M5 Max**, through NeMo-Speech.cpp with Metal | Transcribes the user's spoken requests for the assistant. |
+| Speech synthesis | NVIDIA Magpie TTS, using the Jason voice | **Local Mac**, through the same NeMo-Speech.cpp server | Reads Gusteau's responses aloud, sentence by sentence. |
+| Alternative language model | Qwen `qwen3.6:35b-mlx` | **Local Mac**, through the Ollama-compatible endpoint on port 11434 | Provides a local option for language reasoning, selectable through the same model picker. |
+
+The conversation follows this path: **microphone → local Nemotron ASR → Nemotron Super on Token Factory → local Magpie TTS → speaker**. Selecting Qwen changes the language-model stage while keeping the speech pipeline and current recipe conversation.
+
+### Where Token Factory accelerated our workflow
+
+Token Factory let us integrate Nemotron Super 120B through a hosted, OpenAI-compatible API instead of setting up and operating inference infrastructure for that model. This reduced deployment work and let us focus on recipe substitutions, conversation context, cooking-state validation, and the voice interface.
+
+Because the cloud and local language models share the same application interface, we could switch between Nebius Nemotron and local Qwen while developing and checking the same cooking flows, without rebuilding the frontend. API keys stay on the server, so the Raspberry Pi deployment uses the hosted model without exposing credentials to browsers.
+
+This is a development and deployment benefit, not a measured inference-speed comparison. Speech recognition and synthesis remain self-hosted on the Mac; Token Factory supplies the default language-model reasoning.
 
 ## Run it locally
 
@@ -92,14 +113,16 @@ or `/home/antoined/gusteau/gusteau.env` on the Raspberry Pi:
 
 ```dotenv
 NEBIUS_API_KEY=your-token-factory-key
-NEBIUS_MODEL=nvidia/Nemotron-3_5-Lightning
+NEBIUS_MODEL=nvidia/nemotron-3-super-120b-a12b
 ```
 
 The key belongs only in those server-side files, never a `VITE_` variable or the
 browser. Restart the development server, or run `sudo systemctl restart gusteau`
 on the Pi, then reload the page. The Nebius option is disabled until its key is
-configured. The picker discovers available Nemotron models using the server's
-authenticated model-list request; choose the exact ID supported by your account.
+configured. The picker offers Nemotron Super 120B as the Nebius choice and
+discovers local models through Ollama. New browsers default to Nebius when available;
+an explicit provider/model selection is remembered in that browser. The controls
+start hidden on every page load; use the top-right toggle to reveal them.
 `NEBIUS_BASE_URL` can override the default `https://api.tokenfactory.nebius.com/v1`.
 If Nebius is the default provider, use `OLLAMA_BASE_URL` and `OLLAMA_MODEL` to
 configure Qwen alongside it. Changing the picker does not switch Nemotron ASR
@@ -131,17 +154,17 @@ NVIDIA Nemotron on Nebius Token Factory:
 ```bash
 GUSTEAU_PROVIDER=nebius
 LLM_API_KEY=your-token-factory-key
-# defaults: base https://api.tokenfactory.nebius.com/v1,
-# text nvidia/Llama-3_3-Nemotron-Super-49B-v1_5
+NEBIUS_MODEL=nvidia/nemotron-3-super-120b-a12b
+# default base: https://api.tokenfactory.nebius.com/v1
 ```
 
-Restart the server after changing them. The header badge shows the active model. Check the Token Factory catalog for exact Nemotron model IDs. The Nebius path was tested against a local fake of the API, not a live key.
+Restart the server after changing them. Reveal the header controls to see or change the active model. The production Nebius integration has been verified with live Nemotron Super 120B requests; automated tests also cover provider routing and model selection.
 
 ## Hands-free test (voice in, voice out)
 
 `npm run dev`, then open http://localhost:5173/asr.html. Press the mic (or Space) and talk to Gusteau. Your words appear as they're recognized. When you pause, the phrase goes to the text model, and the answer streams into a box while it's read aloud. The mic pauses while Gusteau speaks so he doesn't hear himself. Esc stops him, and a new phrase interrupts an answer he's still working on. Each answer shows how long the first words, the first audio and the whole reply took. The page is dev-only and isn't part of the production build.
 
-Everything runs on the M5 Max:
+Speech runs on the M5 Max; answers use the configured language-model provider:
 
 - **Speech to text:** NVIDIA `nemotron-3.5-asr-streaming-0.6b` (Q8_0 GGUF) in [NeMo-Speech.cpp](https://github.com/NVIDIA/NeMo-Speech.cpp) with the Metal backend.
 - **Answers:** the dev server's text model (`GUSTEAU_PROVIDER` and `LLM_*` above), for example `qwen3.6:35b-mlx` on Ollama. `src/asr/assistant.ts` has the spoken-style prompt and streams replies through `/api/llm` (`src/services/llm/chatStream.ts`). The page warms the model up when it opens, because a cold load takes about 5 s.
@@ -188,7 +211,7 @@ Gusteau runs on the Pi `antoineraspi` as a systemd service. It starts at boot an
 - **URL:** http://antoineraspi:8080 or http://192.168.6.126:8080. Phones on the same network can use the IP address. The Pi also has Tailscale, so the app is reachable on the Pi's Tailscale address at port 8080.
 - **Files:** everything is in `/home/antoined/gusteau`: the `dist/` build, `gusteau_server.py`, `gusteau.env` and a copy of `gusteau.service`.
 - **Server:** `deploy/gusteau_server.py` uses only the Python standard library, so nothing was installed on the Pi. It serves the app, answers `/api/config` and `/api/health`, and proxies only the chat-completions route.
-- **Model:** `qwen3.6:35b-mlx` on the MacBook's Ollama (port 11434) handles planning and chat: about 6 s per plan and under 1 s per chat message.
+- **Models:** Nemotron Super 120B on Nebius Token Factory is the default for planning and chat. Local `qwen3.6:35b-mlx` on the MacBook's Ollama-compatible endpoint (port 11434) is available through the model picker. Nemotron ASR and Magpie TTS run on the Mac through the persistent speech tunnel.
 - **Thinking off:** these models "think" by default and spend the whole token budget doing it, which returns empty answers. The Ollama preset turns that off.
 
 **Public access.** Tailscale Funnel publishes Gusteau at **https://antoineraspi.tailb406ce.ts.net/Gusteau**. It shares the HTTPS address with PulseCareAI, which stays at the root `/` on port 8787. Production builds use the base path `/Gusteau/`, set as `BUILD_BASE` in `vite.config.ts`. The Pi server accepts paths with or without that prefix, so LAN access on port 8080 still works. The route was added with:
